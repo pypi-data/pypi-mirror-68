@@ -1,0 +1,23 @@
+Metadata-Version: 1.0
+Name: lynlibtest
+Version: 1.0.0
+Summary: this is lyn's first lib
+Home-page: https://github.com/OldboyFzZF
+Author: Lyn
+Author-email: lyn207@163.com
+License: MIT
+Description: 
+        
+        虽然说我这个库不是很牛逼，但是我的描述文档非常牛逼，会让别人，觉得我的库也很牛逼::
+        
+            zhe shi dai ma kuai
+            second
+        
+        *斜体*
+        
+        **粗体**
+        
+        ``this is my code``
+        
+        
+Platform: UNKNOWN
