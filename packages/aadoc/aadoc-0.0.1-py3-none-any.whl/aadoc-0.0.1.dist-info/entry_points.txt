@@ -1,0 +1,3 @@
+[console_scripts]
+aadoc = aadocmodule.command_line:main
+
