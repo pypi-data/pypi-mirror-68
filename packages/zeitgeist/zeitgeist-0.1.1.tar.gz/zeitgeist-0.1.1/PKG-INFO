@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: zeitgeist
+Version: 0.1.1
+Summary: Gene Expression Program discovery in scRNAseq data
+Home-page: http://github.com/celsiustx/zeitgeist/
+Author: Mukund Varma, Noah Spies
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux

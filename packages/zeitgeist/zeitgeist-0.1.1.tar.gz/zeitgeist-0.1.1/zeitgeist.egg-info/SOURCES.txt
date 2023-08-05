@@ -1,0 +1,7 @@
+.gitignore
+README.md
+setup.py
+zeitgeist.egg-info/PKG-INFO
+zeitgeist.egg-info/SOURCES.txt
+zeitgeist.egg-info/dependency_links.txt
+zeitgeist.egg-info/top_level.txt
