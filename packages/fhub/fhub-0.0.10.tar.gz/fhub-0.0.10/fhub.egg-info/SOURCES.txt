@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+fhub/__init__.py
+fhub/core.py
+fhub/indicator_info.pkl
+fhub/real_time.py
+fhub/utils.py
+fhub.egg-info/PKG-INFO
+fhub.egg-info/SOURCES.txt
+fhub.egg-info/dependency_links.txt
+fhub.egg-info/top_level.txt
