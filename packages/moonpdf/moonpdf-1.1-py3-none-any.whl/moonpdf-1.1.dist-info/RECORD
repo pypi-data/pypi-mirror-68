@@ -1,0 +1,8 @@
+moonpdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moonpdf/pdf2image.py,sha256=c9SM9YqNUuf4QiF62sVYdD0FaLEugP9Kk34IUwwktIY,304
+moonpdf/pdf2text.py,sha256=1J448ePfWANuJm_1i1Z4K1kIosyKaGvEsHJORNhvpKw,42
+moonpdf-1.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+moonpdf-1.1.dist-info/METADATA,sha256=9GNvUjLNWgz78a_j2QNhulI6h9hYVsDE8fmGCXATLOM,194
+moonpdf-1.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+moonpdf-1.1.dist-info/top_level.txt,sha256=hSSeFK2guKdhGqVLIwsr5u_rmjRW3sYa8CTe3RHMZI4,8
+moonpdf-1.1.dist-info/RECORD,,
