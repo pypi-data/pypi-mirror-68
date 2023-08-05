@@ -1,0 +1,8 @@
+setup.py
+factanal/__init__.py
+factanal/wrapper.py
+factanal.egg-info/PKG-INFO
+factanal.egg-info/SOURCES.txt
+factanal.egg-info/dependency_links.txt
+factanal.egg-info/requires.txt
+factanal.egg-info/top_level.txt
