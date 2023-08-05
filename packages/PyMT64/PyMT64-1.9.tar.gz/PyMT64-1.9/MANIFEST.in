@@ -1,0 +1,6 @@
+include Makefile
+include mt64mp.h
+include pymt64lib.h
+include pymt64.pyx
+include pymt64_test_mp.py
+include pymt64_test.py

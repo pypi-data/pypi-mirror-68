@@ -1,0 +1,54 @@
+# PyMT64 Package
+
+                     PyMT64
+                     
+PyMT64 is a Python version of the Mersenne Twister (MT) 64-bit pseudorandom number generator by Takuji Nishimura and Makoto Matsumoto (see http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/emt64.html and the references below).
+
+This customised version is thread safe and was interfaced from C to Python (see pymt64.c)
+
+This module provides the following methods:
+- init : initialization of the state vector (mt) used by the pseudorandom number generator (PNG)
+- uniform : generation of an uniform distribution
+- normal : generation of two Normal distributions
+- poisson : generation of a Poisson distribution
+
+The period of the PNG is 2**19937-1.
+
+Example:
+    import pymt64
+    seed = 143439545 seed # the initial seed
+    mt = pymt64.init(seed) # initialisation of the state vector of MT
+    u = pymt64.uniform(mt,10) # generation of an uniform distribution
+    print (u)
+    [0.12444525 0.22084376 0.31059967 0.45578589 0.84743752 0.28825306
+    0.83320389 0.05085032 0.48682253 0.17667076]
+
+For a complete example, see pymt64_test.py
+
+Note: the state vector 'mt' returned by pymt64.init has 313 elements instead of the 312 elements of the original C code. This is because the 313th element store the associated counter (mti).
+
+Change history:
+1.9 : correct bug associated with the normal distribution
+1.8 : include a missing file
+1.7 : corrected data package contain
+1.6 : correct wrong size of the state vector 
+1.5 : module interface is now based on Cython, module now compatible with python 3
+1.4 : link problem fixed
+1.3 : fixe a compilation problem regading the Numpy include directory
+1.2 : the previous implementation of the poisson distribution was not thread safe
+1.1 : fix a problem with the initialization of the seed  (in the previous version the seed set by init() was not taken into account such that the results were not reproductible)
+1.0 : initial version
+
+
+R. Samadi (LESIA, Observatoire de Paris), 22 Dec. 2012	    
+
+References:
+   T. Nishimura, ``Tables of 64-bit Mersenne Twisters''
+     ACM Transactions on Modeling and 
+     Computer Simulation 10. (2000) 348--357.
+   M. Matsumoto and T. Nishimura,
+     ``Mersenne Twister: a 623-dimensionally equidistributed
+       uniform pseudorandom number generator''
+     ACM Transactions on Modeling and 
+     Computer Simulation 8. (Jan. 1998) 3--30.
+

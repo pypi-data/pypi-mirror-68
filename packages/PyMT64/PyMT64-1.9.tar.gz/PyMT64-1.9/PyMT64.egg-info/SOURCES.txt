@@ -1,0 +1,16 @@
+MANIFEST.in
+Makefile
+README.txt
+mt19937-64mp.c
+mt64mp.h
+pymt64.c
+pymt64.pyx
+pymt64_test.py
+pymt64_test_mp.py
+pymt64lib.c
+pymt64lib.h
+setup.py
+PyMT64.egg-info/PKG-INFO
+PyMT64.egg-info/SOURCES.txt
+PyMT64.egg-info/dependency_links.txt
+PyMT64.egg-info/top_level.txt
