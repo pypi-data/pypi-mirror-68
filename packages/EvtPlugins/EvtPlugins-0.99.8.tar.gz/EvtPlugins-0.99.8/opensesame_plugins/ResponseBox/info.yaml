@@ -1,0 +1,51 @@
+description: ResponseBox Buttonbox plug-in.
+version: 0.99b
+author: "Eise Hoekstra"
+url: "http://www.rug.nl/"
+category: "\r\nResearch Support\r\n         BSS"
+date: "2019"
+controls:
+-
+    type: "checkbox"
+    var: "_Demo_Mode"
+    label: "Demo mode"
+    name: "Demo_Mode_widget"
+    tooltip: "When checked, keyboard will be used" 
+-
+    type: "combobox"
+    var: "_ProductName"
+    label: "Select ProductName"
+    options:
+    - "RSP"
+    - "RSP-12"
+    - "RSP-14"
+    - "RTP-01"
+    - "RVK01"
+    - "EVT02"
+    - "EVT03"
+    name: "ProductName_widget"
+    tooltip: "Select desired ProductName" 
+-
+    type: "line_edit"
+    var: "_serialNumber"
+    label: "SerialNumber"
+    name: "serialNumber_widget"
+    tooltip: "Serial Number if multiple EVTs are attached"
+-
+    type: "line_edit"
+    var: "_CorrectButton"
+    label: "Correct Button"
+    name: "CorrectButton_widget"
+    tooltip: "Correct Button ( 1 - 8)"
+-
+    type: "line_edit"
+    var: "_AllowedButtons"
+    label: "Allowed Buttons"
+    name: "AllowedButtons_widget"
+    tooltip: "Allowed Buttons, ( 1 - 8 ) seperated by ;"
+-
+    type: "line_edit"
+    var: "_ResponseTimeout"
+    label: "ResponseTimeout"
+    name: "ResponseTimeout_widget"
+    tooltip: "ResponseTimeout in MSec"
