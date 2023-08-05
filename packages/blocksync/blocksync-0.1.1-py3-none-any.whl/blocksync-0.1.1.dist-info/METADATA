@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: blocksync
+Version: 0.1.1
+Summary: Synchronize (large) files to a destination (local/remote) using a incremental algorithm
+Home-page: https://github.com/ehdgua01/blocksync
+Author: ehdgua01
+Author-email: ehdgua01@gmail.com
+License: UNKNOWN
+Keywords: file synchronize,incremental algorithm
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: paramiko
+
+# blocksync
+
+This repo is a library that you can use [blocksync script](https://github.com/theraser/blocksync) as a library
+
