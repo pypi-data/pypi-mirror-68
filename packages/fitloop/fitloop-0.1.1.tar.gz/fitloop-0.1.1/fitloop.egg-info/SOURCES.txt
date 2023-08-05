@@ -1,0 +1,16 @@
+README.md
+setup.py
+fitloop/__init__.py
+fitloop/main_class.py
+fitloop/main_constants.py
+fitloop.egg-info/PKG-INFO
+fitloop.egg-info/SOURCES.txt
+fitloop.egg-info/dependency_links.txt
+fitloop.egg-info/requires.txt
+fitloop.egg-info/top_level.txt
+fitloop/helpers/__init__.py
+fitloop/helpers/constants.py
+fitloop/helpers/defaults.py
+fitloop/helpers/helpers.py
+fitloop/helpers/metrics.py
+fitloop/helpers/state.py
