@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: sierrapy
+Version: 0.3.0
+Summary: A Client of HIVdb Sierra GraphQL Webservice.
+Home-page: https://github.com/hivdb/sierra-client/tree/master/python
+Author: Philip Tzou
+Author-email: philiptz@stanford.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: click (==7.1.2)
+Requires-Dist: voluptuous (==0.11.7)
+Requires-Dist: gql (==0.4.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: idna (==2.9)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: promise (==2.3)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: rx (==1.6.1)
+Requires-Dist: graphql-core (==2.3.1)
+Requires-Dist: tqdm (==4.46.0)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: certifi (==2020.4.5.1)
+
+UNKNOWN
+
+
