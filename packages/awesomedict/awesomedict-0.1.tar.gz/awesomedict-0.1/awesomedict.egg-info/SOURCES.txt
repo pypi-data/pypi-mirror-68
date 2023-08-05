@@ -1,0 +1,9 @@
+README.md
+setup.py
+awesomedict/__init__.py
+awesomedict/awesomedict.py
+awesomedict.egg-info/PKG-INFO
+awesomedict.egg-info/SOURCES.txt
+awesomedict.egg-info/dependency_links.txt
+awesomedict.egg-info/not-zip-safe
+awesomedict.egg-info/top_level.txt
