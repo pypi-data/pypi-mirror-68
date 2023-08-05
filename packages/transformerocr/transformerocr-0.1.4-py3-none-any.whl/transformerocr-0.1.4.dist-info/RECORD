@@ -1,0 +1,10 @@
+transformerocr/__init__.py,sha256=qbhloZ9S3J5yjR50Y6M8IYycT3LdaFbpdeT__op4pMo,30
+transformerocr/predict.py,sha256=RBN7NBL46Nd-ir0WokE65mFF2z_os8c-1ko8DPNHV5o,570
+transformerocr/tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformerocr/tool/detector.py,sha256=32A6LlTUrmlHNvcBJhmPzSvoHj5DvvNcuTQWpag22GI,466
+transformerocr/tool/translate.py,sha256=c81jnpa2jmgK1H0ZXJOPdk4KIdsTouDJ_HoQkneRCDw,1635
+transformerocr-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+transformerocr-0.1.4.dist-info/METADATA,sha256=lVNdZvhgiRQzNlXhTO_dezxGbPSccfz1MxaF1EB4O6g,520
+transformerocr-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transformerocr-0.1.4.dist-info/top_level.txt,sha256=BnDm-_G2tpIAq8NlShl9DMAsfIvlpxFkwmSXdBbZfvA,15
+transformerocr-0.1.4.dist-info/RECORD,,
