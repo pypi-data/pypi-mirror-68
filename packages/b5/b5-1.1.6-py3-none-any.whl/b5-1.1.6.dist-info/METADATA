@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: b5
+Version: 1.1.6
+Summary: b5 - simple and sane task runner
+Author: David Danier
+Author-email: danier@team23.de
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: jinja2 (>=2.10.0,<3.0.0)
+Requires-Dist: markupsafe (>=1.1.0,<2.0.0)
+Requires-Dist: packaging (>=16.0)
+Requires-Dist: pyyaml (>=5.1.0,<6.0.0)
+Requires-Dist: termcolor (>=1.1.0,<1.2.0)
