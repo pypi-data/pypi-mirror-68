@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: lambda-gateway
+Version: 0.2.0
+Summary: Simple HTTP server to invoke a Lambda function locally
+Home-page: https://github.com/amancevice/python-lambda-gateway
+Author: amancevice
+Author-email: smallweirdnum@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
