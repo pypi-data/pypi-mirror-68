@@ -1,0 +1,10 @@
+README.md
+setup.py
+ion_detective/__init__.py
+ion_detective/ion_detective.py
+ion_detective/ion_detector.py
+ion_detective/utils.py
+ion_detective.egg-info/PKG-INFO
+ion_detective.egg-info/SOURCES.txt
+ion_detective.egg-info/dependency_links.txt
+ion_detective.egg-info/top_level.txt
