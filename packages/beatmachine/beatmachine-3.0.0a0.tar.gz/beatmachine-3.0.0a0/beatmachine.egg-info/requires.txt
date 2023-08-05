@@ -1,0 +1,10 @@
+deprecation==2.*,>=2.0.0
+madmom
+soundfile==0.*,>=0.10.3
+
+[dev]
+black==18.*,>=18.3.0.a0
+parameterized==0.*,>=0.7.1
+pre-commit==1.*,>=1.20.0
+pytest==5.*,>=5.3.5
+sphinx==2.*,>=2.2.0
