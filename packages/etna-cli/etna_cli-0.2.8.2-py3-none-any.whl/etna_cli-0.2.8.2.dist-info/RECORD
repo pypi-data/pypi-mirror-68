@@ -1,0 +1,16 @@
+etna_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etna_cli/activity.py,sha256=58o2oCa_DImWlvmjjEPDrXqhOy7kxq3II4JXtaG3wFM,49
+etna_cli/config.py,sha256=ktvnRJlyLVuISvDtd1l45ETRvo2RSm1c2kAfC4WTeD8,2701
+etna_cli/conversation.py,sha256=CvGKfMHsAZj6I060ST9e5X7WFCG17jI5ALsfIUJs3JQ,1879
+etna_cli/etna.py,sha256=zeWOHzrMCgBCUVDtGXatMLVb4VqSUb1PYD4AvmQtGE8,1003
+etna_cli/etna_gitlab.py,sha256=Gl-68fCqiGoHUmOI9OYYBi6tTeD_xkG5oshKIim5X88,1880
+etna_cli/event.py,sha256=ib7dIptdQrypRecFsBTpdRV3i1bNMe5yWjEX29nu9cE,1743
+etna_cli/project.py,sha256=Wcsp9cCy3qTWRUk6ZqK5gcHKBqBW_n-Nxh5I5VPNh-4,2625
+etna_cli/rank.py,sha256=tMcGNgPcGn2XchwMCbND5vBJZ3Kpe9VPJS7FWrwcTdo,2552
+etna_cli/student.py,sha256=EOWsU4jmltAWkV9EaIBzVUog6x7syNshMUu9DqQ8ReM,2679
+etna_cli/task.py,sha256=Zd0cD4ypihGfKhj7WLLdSZn0Tv58L1dNIe2AtRQiv0I,3097
+etna_cli-0.2.8.2.dist-info/entry_points.txt,sha256=LInmMYUTfH25ThgVasMyQIp9PJveJDbTO3hAyryFFlg,71
+etna_cli-0.2.8.2.dist-info/LICENSE,sha256=hVHUdNTGNkP4wQSbiM2DasEDXelyFhik70gv8TMC7rs,1104
+etna_cli-0.2.8.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+etna_cli-0.2.8.2.dist-info/METADATA,sha256=ZGpgmaFvHyf_JL-2YaCeoC6wd3lnSxXsY3eq8by1f7s,2425
+etna_cli-0.2.8.2.dist-info/RECORD,,
