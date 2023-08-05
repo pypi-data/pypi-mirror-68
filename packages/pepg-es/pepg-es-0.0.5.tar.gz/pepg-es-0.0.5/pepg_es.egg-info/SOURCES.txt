@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pepg/__init__.py
+pepg/nn.py
+pepg/optimizers.py
+pepg/pepg.py
+pepg_es.egg-info/PKG-INFO
+pepg_es.egg-info/SOURCES.txt
+pepg_es.egg-info/dependency_links.txt
+pepg_es.egg-info/requires.txt
+pepg_es.egg-info/top_level.txt
