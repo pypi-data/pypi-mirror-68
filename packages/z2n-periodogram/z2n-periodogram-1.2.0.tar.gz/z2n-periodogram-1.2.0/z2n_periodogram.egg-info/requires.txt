@@ -1,0 +1,13 @@
+click
+click-shell
+matplotlib
+astropy
+pandas
+scipy
+dask
+numpy
+numba
+tqdm
+
+[dev]
+pytest
