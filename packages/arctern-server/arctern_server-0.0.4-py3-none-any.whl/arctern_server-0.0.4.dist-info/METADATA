@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: arctern-server
+Version: 0.0.4
+Summary: arctern demo server
+Home-page: UNKNOWN
+Author: Zilliz
+Author-email: support@zilliz.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: waitress (==1.4.3)
+Requires-Dist: Flask-HTTPAuth (==3.3.0)
+Requires-Dist: flask-cors (==3.0.8)
+
+UNKNOWN
+
+
