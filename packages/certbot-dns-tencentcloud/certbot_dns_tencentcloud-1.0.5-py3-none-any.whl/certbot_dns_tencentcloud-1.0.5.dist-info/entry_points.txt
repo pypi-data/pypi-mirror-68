@@ -1,0 +1,3 @@
+[certbot.plugins]
+dns-tencentcloud = certbot_dns_tencentcloud.certbot_tencentcloud_plugins:Authenticator
+
