@@ -1,0 +1,3 @@
+[console_scripts]
+make_docx=si_wg_docgen.bin.make_docx:generate
+
