@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: autoprocess
+Version: 1.0.0
+Summary: A Python package for cleaning, making transformation of data and variables, making visualization of varibale. All this automated script will do all such mannual work. This is very helpful for such people having vary basic knowledge of python
+Home-page: https://github.com/roshanfande/autoprocess
+Author: Roshan Fande
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+
+
+#Auto Preprocess
+A Python package to preprocess the dataset.
+
+
+
