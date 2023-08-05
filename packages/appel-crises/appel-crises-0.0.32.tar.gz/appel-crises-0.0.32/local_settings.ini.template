@@ -1,0 +1,39 @@
+[app]
+mode: dev
+# secret_key: blah
+# assets_url: /assets/
+# max_thread_workers: 1
+
+[site]
+allowed_hosts: toto, titi, tata
+
+[db]
+# For sqlite
+database: sqlite
+
+# For postgresql
+# database: postgresql
+# host: localhost
+# name: hello
+# password: this.is.secret
+# port: 1234
+# user: jack
+
+[i18n]
+# language: fr-fr
+# tz: Europe/Paris
+
+[mail]
+# sendinblue_api_key: blablabla
+main_email: no-reply@example.com
+confirmation_email_id: 47
+
+# catchall; {} will be replaced with the actual email.
+catchall: invalid+{}@example.com
+
+[sentry]
+environment: dev
+# api_key: https://foo@bar.ingest.sentry.io/baz
+
+[mtcaptcha]
+# private_key: MTPrivate...
