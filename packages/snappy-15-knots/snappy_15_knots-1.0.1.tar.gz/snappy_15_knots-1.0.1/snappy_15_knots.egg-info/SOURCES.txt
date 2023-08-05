@@ -1,0 +1,14 @@
+README.rst
+setup.py
+manifold_src/15_knots.sqlite
+manifold_src/__init__.py
+manifold_src/make_sqlite_db.py
+python_src/__init__.py
+python_src/database.py
+python_src/test.py
+snappy_15_knots.egg-info/PKG-INFO
+snappy_15_knots.egg-info/SOURCES.txt
+snappy_15_knots.egg-info/dependency_links.txt
+snappy_15_knots.egg-info/not-zip-safe
+snappy_15_knots.egg-info/requires.txt
+snappy_15_knots.egg-info/top_level.txt
