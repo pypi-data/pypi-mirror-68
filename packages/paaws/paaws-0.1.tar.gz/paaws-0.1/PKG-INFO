@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: paaws
+Version: 0.1
+Summary: Deploy control for ECS
+Home-page: https://github.com/lincolnloop/paaws
+Author: Peter Baumgartner
+Author-email: pete@lincolnloop.com
