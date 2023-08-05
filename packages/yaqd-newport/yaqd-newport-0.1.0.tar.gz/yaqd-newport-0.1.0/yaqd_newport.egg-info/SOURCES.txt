@@ -1,0 +1,15 @@
+README.md
+setup.py
+yaqd_newport/VERSION
+yaqd_newport/__init__.py
+yaqd_newport/__version__.py
+yaqd_newport/_newport_conex_agp.py
+yaqd_newport/_newport_motor.py
+yaqd_newport/_newport_smc100.py
+yaqd_newport/_serial.py
+yaqd_newport.egg-info/PKG-INFO
+yaqd_newport.egg-info/SOURCES.txt
+yaqd_newport.egg-info/dependency_links.txt
+yaqd_newport.egg-info/entry_points.txt
+yaqd_newport.egg-info/requires.txt
+yaqd_newport.egg-info/top_level.txt

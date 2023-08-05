@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yaqd-newport
+Version: 0.1.0
+Summary: yaq daemons for Newport hardware
+Home-page: http://gitlab.com/yaq/yaqd-newport
+Author: yaq Developers
+License: LGPL v3
+Project-URL: Source, https://gitlab.com/yaq/yaqd-newport
+Project-URL: Issue Tracker, https://gitlab.com/yaq/yaqd-newport/issues
+Description: UNKNOWN
+Keywords: spectroscopy science multidimensional hardware
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
