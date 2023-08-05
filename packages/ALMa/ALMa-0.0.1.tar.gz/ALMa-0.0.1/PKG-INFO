@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ALMa
+Version: 0.0.1
+Summary: Easily track labeled and unlabeled data for active learning
+Home-page: https://github.com/lighttag/ALMa
+Author: Tal Perry
+Author-email: tal@lighttag.io
+License: UNKNOWN
+Description: # ALMa
+        ALMa (Active Learning Manager) Keeps track of labeled and unlabeled data for active learning
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

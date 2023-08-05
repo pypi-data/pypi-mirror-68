@@ -1,0 +1,8 @@
+README.md
+setup.py
+ALMa/__init__.py
+ALMa/activelearningmanager.py
+ALMa.egg-info/PKG-INFO
+ALMa.egg-info/SOURCES.txt
+ALMa.egg-info/dependency_links.txt
+ALMa.egg-info/top_level.txt
