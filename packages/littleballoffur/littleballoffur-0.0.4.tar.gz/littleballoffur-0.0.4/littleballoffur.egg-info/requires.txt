@@ -1,0 +1,6 @@
+networkx
+tqdm
+python-louvain
+pandas
+numpy
+six
