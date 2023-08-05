@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: creed
+Version: 0.2.3
+Summary: the one and only cross-platform Toaster/Notification in python
+Home-page: https://github.com/yusuf8ahmed/Creed
+Author: Yusuf Ahmed
+Author-email: yusufahmed172@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pypiwin32 (==223)
+Requires-Dist: win10toast (==0.9)
+
+<p align="center">
+  <a>
+    <img src="https://i.ibb.co/CHJ3Ws1/Py-Toast-JPG.jpg" alt="Py-Toast-JPG" border="0">
+    <br>
+    <br>
+    <img src="https://forthebadge.com/images/badges/oooo-kill-em.svg">
+    <img src="https://forthebadge.com/images/badges/made-with-crayons.svg">
+    <img src="https://forthebadge.com/images/badges/no-ragrets.svg">
+  </a>
+</p>
+<p align="center">
+    The one and only cross-platform Toaster/Notification in python.
+</p>
+
+```
+from creed import Notif
+
+Notif(title="Python", message="Hello, World", duration=20).Toast()
+```
+
