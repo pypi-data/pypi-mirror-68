@@ -1,0 +1,8 @@
+README.md
+setup.py
+craft-parser/__init__.py
+craft_parser.egg-info/PKG-INFO
+craft_parser.egg-info/SOURCES.txt
+craft_parser.egg-info/dependency_links.txt
+craft_parser.egg-info/not-zip-safe
+craft_parser.egg-info/top_level.txt
