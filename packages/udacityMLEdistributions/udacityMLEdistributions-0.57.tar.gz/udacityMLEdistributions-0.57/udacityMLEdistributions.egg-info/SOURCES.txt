@@ -1,0 +1,10 @@
+setup.py
+udacityMLEdistributions/Binomialdistribution.py
+udacityMLEdistributions/Gaussiandistribution.py
+udacityMLEdistributions/Generaldistribution.py
+udacityMLEdistributions/__init__.py
+udacityMLEdistributions.egg-info/PKG-INFO
+udacityMLEdistributions.egg-info/SOURCES.txt
+udacityMLEdistributions.egg-info/dependency_links.txt
+udacityMLEdistributions.egg-info/not-zip-safe
+udacityMLEdistributions.egg-info/top_level.txt
