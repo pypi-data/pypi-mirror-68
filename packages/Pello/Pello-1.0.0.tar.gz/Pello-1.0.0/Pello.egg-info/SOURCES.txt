@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+Pello.egg-info/PKG-INFO
+Pello.egg-info/SOURCES.txt
+Pello.egg-info/dependency_links.txt
+Pello.egg-info/entry_points.txt
+Pello.egg-info/not-zip-safe
+Pello.egg-info/top_level.txt
+pello/__init__.py
+pello/__main__.py
+pello/pello_greeting.py
