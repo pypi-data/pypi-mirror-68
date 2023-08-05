@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: yeelight
+Version: 0.5.2
+Summary: A Python library for controlling YeeLight RGB bulbs.
+Home-page: https://gitlab.com/stavros/python-yeelight
+Author: Stavros Korokithakis
+Author-email: hi@stavros.io
