@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pytest_canonical_data/__init__.py
+pytest_canonical_data/canonical_data.py
+pytest_canonical_data/drivers.py
+pytest_canonical_data/exceptions.py
+pytest_canonical_data/plugin.py
+pytest_canonical_data.egg-info/PKG-INFO
+pytest_canonical_data.egg-info/SOURCES.txt
+pytest_canonical_data.egg-info/dependency_links.txt
+pytest_canonical_data.egg-info/entry_points.txt
+pytest_canonical_data.egg-info/requires.txt
+pytest_canonical_data.egg-info/top_level.txt
