@@ -1,0 +1,3 @@
+[console_scripts]
+tap-typo = tap_typo:main
+
