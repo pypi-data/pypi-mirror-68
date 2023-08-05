@@ -1,0 +1,3152 @@
+{
+  "src/components/AreaChart.js": {
+    "description": "",
+    "displayName": "AreaChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/BarChart.js": {
+    "description": "",
+    "displayName": "BarChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/BubbleChart.js": {
+    "description": "",
+    "displayName": "BubbleChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Calendar.js": {
+    "description": "",
+    "displayName": "Calendar",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/CandlestickChart.js": {
+    "description": "",
+    "displayName": "CandlestickChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/ColumnChart.js": {
+    "description": "",
+    "displayName": "ColumnChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/ComboChart.js": {
+    "description": "",
+    "displayName": "ComboChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/GanttChart.js": {
+    "description": "",
+    "displayName": "GanttChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Gauge.js": {
+    "description": "",
+    "displayName": "Gauge",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/GeoChart.js": {
+    "description": "",
+    "displayName": "GeoChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Histogram.js": {
+    "description": "",
+    "displayName": "Histogram",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/LineChart.js": {
+    "description": "",
+    "displayName": "LineChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/OrgChart.js": {
+    "description": "",
+    "displayName": "OrgChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/PieChart.js": {
+    "description": "",
+    "displayName": "PieChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Sankey.js": {
+    "description": "",
+    "displayName": "Sankey",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/ScatterChart.js": {
+    "description": "",
+    "displayName": "ScatterChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/SteppedAreaChart.js": {
+    "description": "",
+    "displayName": "SteppedAreaChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Table.js": {
+    "description": "",
+    "displayName": "Table",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/Timeline.js": {
+    "description": "",
+    "displayName": "Timeline",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/TreeMap.js": {
+    "description": "",
+    "displayName": "TreeMap",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  },
+  "src/components/WordTree.js": {
+    "description": "",
+    "displayName": "WordTree",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID of this component, used to identify dash components\nin callbacks. The ID needs to be unique across all of the\ncomponents in an app."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Defines CSS styles which will override styles previously set."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Often used with CSS to style elements with common properties."
+      },
+      "height": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The height of the chart."
+      },
+      "width": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The width of the chart."
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "A dictionary of options for the chart"
+      },
+      "data": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The data for the chart"
+      },
+      "diffdata": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Some charts support passing `diffdata` for visualising a change over time"
+      },
+      "mapsApiKey": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Google maps api key for use with GeoChart"
+      },
+      "spreadSheetUrl": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "URL to google sheet for pulling data"
+      },
+      "spreadSheetQueryParameters": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Query parameters for external spreadsheet"
+      },
+      "formatters": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "object"
+              }
+            },
+            {
+              "name": "object"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Data formatting options."
+      },
+      "legend_toggle": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Allow legend to toggle inclusion of data in chart"
+      },
+      "selection": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Data associated to user selection for use in callbacks"
+      },
+      "dataTable": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "DataTable object, can be combined with selection data for use in callbacks"
+      }
+    }
+  }
+}
