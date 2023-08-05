@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: histoprint
+Version: 0.0.2
+Summary: histoprint
+Home-page: https://github.com/ast0815/histoprint
+Author: Lukas Koch
+Author-email: lukas.koch@mailbox.org
+License: MIT
+Description: histoprint
+        
+        Pretty print numpy histograms to the console.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
