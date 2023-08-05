@@ -1,0 +1,14 @@
+cocinero/__init__.py,sha256=av9oHQNE0DZ1OyEtkKovY3gBtDFoU6Ctfc1kh8jHhTk,52
+cocinero/cli.py,sha256=C5fVNccyaGb_xhSX3W8ZYdC5gYImSfwaRFRy-MIpSYM,1598
+cocinero/parser.py,sha256=EKhNzhVumRzGkY5nKzs2__6I3xpCtKZjZJPWM1A_YAA,288
+cocinero/plugins/__init__.py,sha256=bfJxTATliHWM4IHw5rcKj8C59R5t1lOTUHBW1mpOe5o,84
+cocinero/plugins/execute.py,sha256=0Im-zcrwx2sH40aan2G0ucAmA9Iy4xOM5mW96zdIkwo,39
+cocinero/plugins/rename.py,sha256=WQ2FJDwESHoZuwAVScx_9Rh0HRG6FDpDBIWsDdKZsgc,540
+cocinero/plugins/replace.py,sha256=BhHHthfcGM8dY6S9DbDuGMKgl0ntRnaNMmF2RvwpSGI,587
+cocinero/repo.py,sha256=2Ul7BL6vHHt3DwrV4hHD7prGBiOFK14ZxvFWhvhjQOA,896
+cocinero/requirements.py,sha256=uv__hQC9Q-1FPOusnYumGPskd_A2NP4huONHhpTJAho,70
+cocinero-0.1.1.dist-info/entry_points.txt,sha256=es8OhuFV8WjM7IHFtOzc8-jcoifXKy5V3B3irAi88Pk,41
+cocinero-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cocinero-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+cocinero-0.1.1.dist-info/METADATA,sha256=vOjzjvcmvrxgXMF48tVz_0v-AifH_fkfOFkBXtPxt4Y,2165
+cocinero-0.1.1.dist-info/RECORD,,
