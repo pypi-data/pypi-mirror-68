@@ -1,0 +1,9 @@
+kladama/__init__.py,sha256=fgEcxsfxDUcMqlYQqwnArbq0PbxDWnFrvl5AkuqSusM,6403
+kladama/entities.py,sha256=BPASVeP8hQljRfw6jtXl-MpKeSmyCWvnZGEzz4VHhYM,6244
+kladama/operations.py,sha256=zmtuCG82w3F7z2oH_N-A_cHTpK9sfzBiY8aKlcsbyRE,6327
+kladama/queries.py,sha256=FKFKewAuGWnGTfzd7D0Hs-HLhvMiYf0_54510V5cirA,10766
+kladama_api-0.9.5.dist-info/LICENSE,sha256=JwJQFxhvFeRspBxdxv2exU5V0oZavCGbHJAH0hLF8-w,1063
+kladama_api-0.9.5.dist-info/METADATA,sha256=lHOeHpVJQ8X_DhUuLsdojVmNC18p23GFzy7KDvDuYBM,4091
+kladama_api-0.9.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+kladama_api-0.9.5.dist-info/top_level.txt,sha256=ESH-QZ1RP4UMXhr0AR2FgU6l3SuUZ7st9o1CzFPznjE,8
+kladama_api-0.9.5.dist-info/RECORD,,
