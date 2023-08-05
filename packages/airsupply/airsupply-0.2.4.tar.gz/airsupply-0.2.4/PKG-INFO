@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: airsupply
+Version: 0.2.4
+Summary: Manage OTA distribution for IPA and APK files.
+License: MIT
+Author: Michael Merickel
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: boto3 (>=1.11.8,<2.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: jinja2 (>=2.10.3,<3.0.0)
+Requires-Dist: pyaxmlparser (>=0.3.24,<0.4.0)
