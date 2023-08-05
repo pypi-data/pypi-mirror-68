@@ -1,0 +1,2 @@
+google-cloud-logging<2,>=1.14.0
+python3-logstash==0.4.80
