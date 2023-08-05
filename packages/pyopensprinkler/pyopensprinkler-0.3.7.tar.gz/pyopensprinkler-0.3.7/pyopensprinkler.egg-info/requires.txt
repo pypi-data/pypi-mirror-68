@@ -1,0 +1,4 @@
+backoff==1.10.0
+cachetools==4.1.0
+httplib2==0.10.3
+ratelimit==2.2.1
