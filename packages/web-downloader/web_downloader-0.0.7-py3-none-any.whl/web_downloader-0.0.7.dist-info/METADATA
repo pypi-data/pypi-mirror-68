@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: web-downloader
+Version: 0.0.7
+Summary: A Python package using Selenium to download web content
+Home-page: https://github.com/gabrielchung/WebDownloader
+Author: Gabriel Chung
+Author-email: gabrielchung1128@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Requires-Dist: selenium
+Requires-Dist: pyautogui
+
+UNKNOWN
+
+
