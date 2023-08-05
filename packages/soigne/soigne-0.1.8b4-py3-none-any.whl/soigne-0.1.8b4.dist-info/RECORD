@@ -1,0 +1,12 @@
+soigne/__init__.py,sha256=UEDMx469WNyuanlvsdh4lWExOp5XuunuPEDu4vXkd9c,37
+soigne/container.py,sha256=c_Qk0BLWeKLUR8iRpbnT04lmyYlSRBSUSVh6yQSjmcQ,7213
+soigne/gamegui.py,sha256=LUuAar6JC8PZIdtIHQx5CPuwoJylc7YtXBw9p3jbXsw,25951
+soigne/components/__init__.py,sha256=UEDMx469WNyuanlvsdh4lWExOp5XuunuPEDu4vXkd9c,37
+soigne/components/configs.py,sha256=FNC2rXs5y1KTomYJUsTwvcWYDaUMNaInaAiHZR8Bwvc,694
+soigne/components/game.py,sha256=9GbCIX0W6NBxqe8fruB60sKN-uXJ6t72CMOWiH5c95A,3217
+soigne/components/l10n.py,sha256=-gDPitGGwoqu-JwAjFdWQEgnwkLirbfKrVf-1szuoJM,1883
+soigne-0.1.8b4.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+soigne-0.1.8b4.dist-info/METADATA,sha256=uYnEIpD8E7bnZ_YyQmy0MuvYtjJMXq1pmRFaDoXXXqs,2715
+soigne-0.1.8b4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+soigne-0.1.8b4.dist-info/top_level.txt,sha256=IUQn4HYxhJpTVr0Rq5kTxmKZ0spHloO1FB64vfpUaIM,7
+soigne-0.1.8b4.dist-info/RECORD,,
