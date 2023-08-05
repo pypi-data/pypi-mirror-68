@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: djangocms-algolia
+Version: 0.1.0.1
+Summary: Algolia integration for DjangoCMS
+Source Code = https://gitlab.com/victor-yunenko/djangocms-algolia
+Home-page: https://gitlab.com/victor-yunenko/djangocms-algolia
+Author: Victor Yunenko
+Author-email: victor@what.digital
+License: MIT
+Description: UNKNOWN
+Keywords: django
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python3
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django CMS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
