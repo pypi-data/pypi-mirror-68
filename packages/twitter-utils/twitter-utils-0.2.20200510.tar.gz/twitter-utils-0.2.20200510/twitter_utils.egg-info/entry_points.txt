@@ -1,0 +1,3 @@
+[console_scripts]
+twitter-utils = twitils.main:cli
+
