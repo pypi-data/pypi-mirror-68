@@ -1,0 +1,10 @@
+setup.py
+bin_distr_christoph2845/Binomialdistribution_challenge.py
+bin_distr_christoph2845/Gaussiandistribution.py
+bin_distr_christoph2845/Generaldistribution.py
+bin_distr_christoph2845/__init__.py
+bin_distr_christoph2845.egg-info/PKG-INFO
+bin_distr_christoph2845.egg-info/SOURCES.txt
+bin_distr_christoph2845.egg-info/dependency_links.txt
+bin_distr_christoph2845.egg-info/not-zip-safe
+bin_distr_christoph2845.egg-info/top_level.txt
