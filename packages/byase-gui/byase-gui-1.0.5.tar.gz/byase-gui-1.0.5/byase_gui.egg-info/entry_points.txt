@@ -1,0 +1,3 @@
+[console_scripts]
+byase-gui = byase_gui.gui:main
+
