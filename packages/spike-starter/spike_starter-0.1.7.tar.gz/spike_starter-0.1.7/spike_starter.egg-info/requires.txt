@@ -1,0 +1,8 @@
+click
+decorator
+GitPython
+
+[dev]
+pylint
+tox
+twine
