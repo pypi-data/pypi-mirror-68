@@ -1,0 +1,9 @@
+README.md
+setup.py
+matrix/__init__.py
+matrix/matrix.py
+matrix/test.py
+matrix_henryj.egg-info/PKG-INFO
+matrix_henryj.egg-info/SOURCES.txt
+matrix_henryj.egg-info/dependency_links.txt
+matrix_henryj.egg-info/top_level.txt

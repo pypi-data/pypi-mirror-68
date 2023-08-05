@@ -1,0 +1,181 @@
+# Matrix and Vector Algebra
+
+### Python list to contain elements in matrices
+
+A base class matrix implementing linear algebra
+matrices and typical operations, as well as child class vector
+with more specific operations for euclidean vectors.
+
+### Installation
+
+`python3 -m pip install matrix-henryj`
+
+### Documentation
+
+##### Example
+Code:
+```python
+A = Matrix(2,2)
+b = Matrix(2,1)
+A.setVals([1,3,0,1])
+b.setVals([1,1])
+print(A*b)
+```
+Output:
+```
+ _        _
+|  4.0000  |
+|  1.0000  |
+ ‾        ‾
+```
+
+* class Matrix:
+  * \_\_init__(self,rows,columns)
+  * setVals(self,values)
+  * zero(self)
+  * ID(self)
+  * \_\_str__(self)
+  * \_\_add__(self,other)
+  * \_\_mul__(self,other)
+  * \_\_rmul__(self,other)
+  * \_\_truediv__(self,other)
+  * \_\_neg__(self)
+  * \_\_sub__(self,other)
+  * \_\_pow__(self,factor)
+  * \_\_mod__(self,other)
+  * \_\_eq__(self,other)
+  * \_\_getitem__(self,index)
+  * size(self)
+  * Transpose(self)
+  * Trace(self)
+  * combMat(self,other)
+  * splitMat(self,col)
+  * \_\_rowSwap(self,row1,row2,factor)
+  * \_\_rowAdd(self,row1,row2,factor)
+  * \_\_rowMult(self,row,factor)
+  * solveLin(self,other)
+  * \_\_gaussElimination(self,other)
+  * \_\_jordanElimination(self,other)
+  * det(self)
+* class Vector(Matrix):
+  * \_\_init__(self,rows)
+  * \_\_mul__(self,other)
+  * cross(self,other)
+  * length(self,other)
+  * scalarProj(self,other)
+  * Normalize(self)
+
+#### class Matrix
+A class implementing linear algebra matrices and
+typical functions available for matrices.
+
+##### \_\_init__(self,other)
+Initialize matrix with a number of rows and columns.
+
+##### setVals(self,values)
+Give values to matrix in list values row by row left to right.
+
+##### zero(self)
+Makes the matrix a zero matrix.
+
+##### ID(self)
+Makes the matrix an identity matrix.
+
+##### \_\_str__(self)
+Defines string of matrix object.
+
+##### \_\_add__(self,other)
+Returns addition of two matrices.
+
+##### \_\_mul__(self,other)
+Returns multiplication of two matrices or a matrix with a factor.
+
+##### \_\_rmul(self,other)
+Returns multiplication of two matrices or a matrix with a factor,
+same as \_\_mul__.
+
+##### \_\_truediv__(self,other)
+Returns multiplication by other inverse to the right or 
+division by factor.
+
+##### \_\_neg__(self)
+Returns changed sign of all values in matrix.
+
+##### \_\_sub__(self,other)
+Returns difference of two matrices.
+
+##### \_\_pow__(self,factor)
+Raises a matrix to an whole number or takes inverse 
+if factor is negative one.
+
+##### \_\_mod__(self,other)
+Returns multiplication of self inverse from the right to other if
+matrix, otherwise takes modulus of each element in self.
+
+##### \_\_eq__(self,other)
+Checks if matrices are equal at every position.
+
+##### \_\_getitem(self,other)
+The value at the index in the matrix, counting by rows first.
+
+##### size(self)
+The size of the matrix in a list, columns and rows.
+
+##### Transpose(self)
+Returns transpose of the matrix, swapping rows with columns.
+
+##### Trace(self)
+Returns the trace of the matrix, sum of all diagonal elements.
+
+##### combMat(self,other)
+Returns the two matrices in a singular matrix, side by side.
+
+##### splitMat(self,col)
+Splits the matrix by column col and returns the objects in a list.
+
+##### \_\_rowSwap(self,row1,row2)
+Swaps places of row1 and row2.
+
+##### \_\_rowAdd(self,row1,row2,factor)
+Adds row2*factor to row1.
+
+##### \_\_rowMult(self,row,factor)
+Multiplies a row by factor.
+
+##### solveLin(self,other)
+Solves self*x=other and returns x for each solution for
+each column in other.
+
+##### \_\_gaussElimination(self,other)
+Returns the gaussian elimination of self and other in 
+self*x = other.
+
+##### \_\_jordanElimination(self,other)
+Returns the jordan elimination of self and other in 
+self*x = other.
+
+##### det(self)
+Calculates the determinant using gaussian elimination.
+
+#### class Vector(Matrix)
+A class implementing euclidean vectors and typical operations you
+can do with them.
+
+##### \_\_init__(self,rows)
+Initializes a vector with a number of rows.
+
+##### \_\_mul__(self,other)
+Returns the dot product of two vectors or multiplication of each
+element by a number.
+
+##### cross(self,other)
+Returns the cross product of the two vectors.
+
+##### length(self)
+Returns the euclidean vector length.
+
+##### scalarProj(self,other)
+Returns the scalar projection of self onto other.
+
+##### Normalize(self)
+Return a vector of length one in same direction.
