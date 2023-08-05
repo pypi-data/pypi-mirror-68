@@ -1,0 +1,13 @@
+README.md
+setup.py
+./__init__.py
+./autogen_event_types.py
+./config.py
+./plugin.py
+./test.py
+limnoria_github.egg-info/PKG-INFO
+limnoria_github.egg-info/SOURCES.txt
+limnoria_github.egg-info/dependency_links.txt
+limnoria_github.egg-info/entry_points.txt
+limnoria_github.egg-info/requires.txt
+limnoria_github.egg-info/top_level.txt
