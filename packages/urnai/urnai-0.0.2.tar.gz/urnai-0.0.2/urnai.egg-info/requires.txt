@@ -1,0 +1,8 @@
+absl-py
+gym
+tensorflow-gpu
+numpy
+matplotlib
+keras
+pysc2
+pandas
