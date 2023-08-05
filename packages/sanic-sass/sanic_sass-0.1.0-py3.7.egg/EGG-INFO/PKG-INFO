@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sanic-sass
+Version: 0.1.0
+Summary: Easy way to use Sass & SCSS with Sanic
+Home-page: https://github.com/Vepnar/Sanic-Sass
+Author: Arjan de Haan
+Author-email: vepnardev@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
