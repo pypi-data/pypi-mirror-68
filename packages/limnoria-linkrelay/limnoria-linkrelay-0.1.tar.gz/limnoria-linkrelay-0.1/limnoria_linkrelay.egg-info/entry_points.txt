@@ -1,0 +1,3 @@
+[limnoria.plugins]
+LinkRelay = limnoria_linkrelay
+
