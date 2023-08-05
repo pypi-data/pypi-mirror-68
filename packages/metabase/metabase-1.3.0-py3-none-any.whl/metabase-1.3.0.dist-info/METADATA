@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: metabase
+Version: 1.3.0
+Summary: python wrapper for metabase api
+Home-page: https://github.com/stunitas/metabase-py
+Author: flrngel
+Author-email: flrngel@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
