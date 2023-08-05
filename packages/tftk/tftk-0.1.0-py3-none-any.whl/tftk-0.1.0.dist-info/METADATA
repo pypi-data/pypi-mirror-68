@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tftk
+Version: 0.1.0
+Summary: TensorFlow Toolkit
+License: MIT
+Author: Naruhide KITADA
+Author-email: kitfactory@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphviz (>=0.14,<0.15)
+Requires-Dist: gym (>=0.17.1,<0.18.0)
+Requires-Dist: icrawler (>=0.6.2,<0.7.0)
+Requires-Dist: optuna (>=1.2.0,<2.0.0)
+Requires-Dist: pillow (>=7.0.0,<8.0.0)
+Requires-Dist: pydot-ng (>=2.0.0,<3.0.0)
+Requires-Dist: tensorboard_plugin_profile (>=2.2.0,<3.0.0)
+Requires-Dist: tensorflow (>=2.2.0,<3.0.0)
+Requires-Dist: tensorflow_datasets (>=2.1.0,<3.0.0)
+Requires-Dist: tensorflow_probability (>=0.9.0,<0.10.0)
+Requires-Dist: tfa-nightly (>=0.10.0-alpha.20200505184857,<0.11.0)
