@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nmcipher.caesar
+Version: 0.0.7
+Summary: A command line parser package for use with basic encryption algorithms
+Home-page: UNKNOWN
+Author: Neil Marshall
+Author-email: neil.marshall@dunelm.org.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+
+UNKNOWN
+
+
