@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: piweatherrock
+Version: 2.0.0.dev8
+Summary: Provides forecast data from ClimaCell for PiWeatherRock
+Home-page: https://github.com/genebean/PiWeatherRock
+Author: Gene Liverman
+Author-email: gene@technicalissues.us
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: darkskylib
+Requires-Dist: pygame
+Requires-Dist: pyserial
+Requires-Dist: requests
+Requires-Dist: cherrypy
+Requires-Dist: piweatherrock-webconfig (==1.4.0rc3)
+
+# PiWeatherRock
+
+![GitHub](https://img.shields.io/github/license/genebean/PiWeatherRock)
+![PyPI](https://img.shields.io/pypi/v/piweatherrock)
+
+PiWeatherRock displays local weather on (almost) any screen you connect to a Raspberry Pi. It also works on other platforms, including macOS, but is not tested as thoroughly there.
+
+More information can be found at https://piweatherrock.technicalissues.us
+
+## Release process
+
+- edit `version.py` according to the types of changes made
+- edit `requirements.txt` if needed
+- `python3 setup.py sdist bdist_wheel`
+- `tar tzf dist/piweatherrock-*.tar.gz`
+- `twine check dist/*`
+- [optional] `twine upload --repository-url https://test.pypi.org/legacy/ dist/*`
+- `twine upload dist/*`
+- Create a git tag and push it
+
+
