@@ -1,0 +1,12 @@
+xarray_leaflet/__init__.py,sha256=OVeV-sqx_v0wyDMNzGN4eSAWhR_3q_iOg99oGST-NNE,457
+xarray_leaflet/handler.py,sha256=YALT0es8ZggZpFNCeurck5eMrsv9RPzI6P58CqOzI6U,1682
+xarray_leaflet/server_extension.py,sha256=ItE4ywF_rMosxBcr4ReaNl7i3RY49sK17B4eAm1Vi9Y,913
+xarray_leaflet/xarray_leaflet.py,sha256=Hzp0ujsH4jMdKwXLti7UYZQsZbEq34OHv2zjUssu6ZE,8210
+xarray_leaflet-0.1.0.data/data/etc/jupyter/jupyter_notebook_config.d/xarray_leaflet.json,sha256=ZXaVtk1Ic1XKoHGnwfMMkLziBEwIh3k7EaNIIzlfRcY,109
+xarray_leaflet-0.1.0.data/data/etc/jupyter/jupyter_server_config.d/xarray_leaflet.json,sha256=3O1DkQdV-OMLS7gH9fbkbMJ2FI3bY7Lmh5M_IdjrlCg,107
+xarray_leaflet-0.1.0.data/data/etc/jupyter/nbconfig/notebook.d/xarray_leaflet.json,sha256=wdT4y9Cvgk0nNRIHyd1gEA1NKtKkOLsQ71SOGsq8w0A,74
+xarray_leaflet-0.1.0.dist-info/LICENSE,sha256=LZBuKg6bZN5gAJgBCFGBJLa1p1YPR-KGpXU5iXpUmTg,1073
+xarray_leaflet-0.1.0.dist-info/METADATA,sha256=zjqaoZAZSNCFVJNuFObVhqlnuf9PDcPJ23rC31NwcxI,925
+xarray_leaflet-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+xarray_leaflet-0.1.0.dist-info/top_level.txt,sha256=b2V3JMY8zQVKoiP_S7dn0edU5cy5geAGas1dLPMdB2E,15
+xarray_leaflet-0.1.0.dist-info/RECORD,,
