@@ -1,0 +1,5 @@
+py3nvml
+numpy
+psutil
+py-cpuinfo
+sparklines

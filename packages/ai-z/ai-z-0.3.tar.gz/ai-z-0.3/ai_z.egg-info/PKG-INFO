@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ai-z
+Version: 0.3
+Summary: GPU usage graph in the terminal for AMD and NVIDIA GPUs
+Home-page: https://www.ai-z.org
+Author: Mathieu Poliquin
+Author-email: mathieu.poliquin@gmail.com
+License: MIT
+Description: 
+        ![screenhsot](http://www.ai-z.org/assets/screenshot01.png)
+        
+        ### Install and usage
+        ```
+        git clone https://github.com/ai-z/ai-z.git
+        cd ai-z
+        pip3 install -r requirements.txt
+        python3 ai-z.py
+        ```
+        ### Known Issues
+        
+        * AMD GPUs name will be displayed as ‘cardX’
+        * PCIE bandwith usage graph on NVDIA cards is not correct
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
