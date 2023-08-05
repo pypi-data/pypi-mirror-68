@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyquicksql/__init__.py
+pyquicksql/connect.py
+pyquicksql.egg-info/PKG-INFO
+pyquicksql.egg-info/SOURCES.txt
+pyquicksql.egg-info/dependency_links.txt
+pyquicksql.egg-info/requires.txt
+pyquicksql.egg-info/top_level.txt
