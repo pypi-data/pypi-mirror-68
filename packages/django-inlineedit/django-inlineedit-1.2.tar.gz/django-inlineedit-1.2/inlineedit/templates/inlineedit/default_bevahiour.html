@@ -1,0 +1,81 @@
+<script type="text/javascript">
+    // Check jQuery is loaded
+    window.onload = function() {
+        if(!window.jQuery) {
+            alert("jQuery must be loaded for Django-inlineedit to work.\nIf it is, check it happens before the inlineedit_scripts template tag");
+        }
+    };
+
+    // Mouse enters toggle area
+    $(".inlineedit-toggle-area").mouseenter(
+        function() {
+            const id = $(this).attr("data-field-id");
+            $("#inlineedit-toggle-" + id).show();
+        }
+    );
+
+    // Mouse leaves toggle area
+    $(".inlineedit-toggle-area").mouseleave(
+        function() {
+            const id = $(this).attr("data-field-id");
+            $("#inlineedit-toggle-" + id).fadeOut(1000);
+        }
+    );
+
+    // Click in edit icon (toggles field editor on)
+    $(".inlineedit-toggle-area").click(
+        function() {
+            const id = $(this).attr("data-field-id");
+            $("#inlineedit-value-" + id).hide();
+            $("#inlineedit-toggle-" + id).hide();
+            $("#inlineedit-form-" + id).show();
+        }
+    );
+
+    // Cancel editing
+    function inlineedit_exit_editing(object) {
+        const id = $(object).closest('form').attr('data-field-id');
+        $("#inlineedit-form-" + id).hide();
+        $("#inlineedit-value-" + id).show();
+    }
+
+    // Override form submit action to prevent page refresh
+    $('.inlineedit-form').on('submit', function(event)
+    {
+        const id = $(this).attr("data-field-id");
+        event.preventDefault(); //prevent default action
+        let url = $(this).attr("action"); //get form action url
+        if (!url || url.length < 3) {
+            url = "{{ inlineedit_endpoint }}";
+        }
+
+        if ($(this).attr("adaptor").substr(0,8) === "ckeditor") {
+            for (instance in CKEDITOR.instances)
+                CKEDITOR.instances[instance].updateElement();
+        }
+
+        const param = {
+            url: url,
+            type: $(this).attr("method"), // GET/POST method
+            data: new FormData(this), // Serialised form data
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(response) {
+                if (response.empty_message)
+                {
+                    $("#inlineedit-value-" + id).html(response.empty_message);
+                    $("#inlineedit-value-" + id).attr("class", "inlineedit-value-transparent");
+                }
+                else {
+                    $("#inlineedit-value-" + id).html(response.value);
+                    $("#inlineedit-value-" + id).attr("class", "inlineedit-value");
+                }
+                $("#inlineedit-form-" + id).hide();
+                $("#inlineedit-value-" + id).show();
+            }
+        };
+
+        $.ajax(param);
+    });
+</script>
