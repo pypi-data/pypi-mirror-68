@@ -1,0 +1,3 @@
+[console_scripts]
+d2h = hydras.tools.dwarf2hydra:main
+
