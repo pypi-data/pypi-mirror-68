@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+weather_reporter/cli.py
+weather_reporter/utils.py
+weather_reporter_1.1.egg-info/PKG-INFO
+weather_reporter_1.1.egg-info/SOURCES.txt
+weather_reporter_1.1.egg-info/dependency_links.txt
+weather_reporter_1.1.egg-info/entry_points.txt
+weather_reporter_1.1.egg-info/requires.txt
+weather_reporter_1.1.egg-info/top_level.txt
