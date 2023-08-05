@@ -1,0 +1,10 @@
+README.md
+setup.py
+cloudgaze_cli/__init__.py
+cloudgaze_cli/__main__.py
+cloudgaze_cli.egg-info/PKG-INFO
+cloudgaze_cli.egg-info/SOURCES.txt
+cloudgaze_cli.egg-info/dependency_links.txt
+cloudgaze_cli.egg-info/entry_points.txt
+cloudgaze_cli.egg-info/requires.txt
+cloudgaze_cli.egg-info/top_level.txt
