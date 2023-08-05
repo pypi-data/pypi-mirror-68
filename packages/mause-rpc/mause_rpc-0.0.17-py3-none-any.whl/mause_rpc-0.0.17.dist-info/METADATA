@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: mause-rpc
+Version: 0.0.17
+Summary: A dumb as hell rpc implementation built on rabbitmq
+Home-page: https://github.com/Mause/rpc
+License: MIT
+Keywords: rabbitmq,rpc
+Author: Elliana May
+Author-email: me@mause.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: dill (>=0.3.1,<0.4.0)
+Requires-Dist: pika (>=1.1.0,<2.0.0)
+Requires-Dist: retry (>=0.9.2,<0.10.0)
+Project-URL: Repository, https://github.com/Mause/rpc
+Description-Content-Type: text/markdown
+
+Mause RPC
+=========
+
+A dumb as hell rpc implementation built on rabbitmq
+
+Need to write a server?
+
+```py
+from mause_rpc.server import Server
+
+rpc_queue = 'rpc.queue'
+server = Server(rpc_queue, 'rabbitmq://...')
+
+
+@server.register
+def hello(name: str) -> str:
+    return 'hello ' + name
+
+
+@server.register('divide')
+def div(a: int, b: int) -> float:
+    if b == 0:
+        raise ZeroDivisionError()
+    return a / b
+
+
+if __name__ == '__main__':
+    server.serve()
+
+```
+
+Need a client?
+
+```py
+from mause_rpc.client import get_client
+
+rpc_queue = 'rpc.queue'
+client = get_client(rpc_queue, 'rabbitmq://...')
+
+
+def test_basic_functionality():
+    assert client.hello('mark') == 'hello mark'
+    assert client.divide(5, 2) == 2.5
+
+    with pytest.raises(ZeroDivisionError):
+        client.divide(5, 0)
+```
+
