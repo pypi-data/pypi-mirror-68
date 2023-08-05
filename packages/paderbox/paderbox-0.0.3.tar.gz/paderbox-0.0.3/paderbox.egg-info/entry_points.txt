@@ -1,0 +1,3 @@
+[console_scripts]
+paderbox.strip_solution = paderbox.utils.strip_solution:entry_point
+
