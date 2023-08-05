@@ -1,0 +1,13 @@
+language: python
+python:
+    - "3.8"
+install:
+    - pip install coveralls
+    - pip install -r requirements.txt
+    - pip install tox
+script:
+    # run tests with coverage
+    - tox
+after_success:
+    # upload reports to coveralls.io
+    - coveralls
