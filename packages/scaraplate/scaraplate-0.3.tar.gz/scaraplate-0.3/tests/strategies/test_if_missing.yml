@@ -1,0 +1,23 @@
+
+strategy: IfMissing
+
+testcases:
+  - name: non_existing_target
+    template: |
+      from template!
+    target: null
+    out: |
+      from template!
+
+  - name: existing_target
+    template: |
+      from template!
+    target: |
+      from target!
+    out: |
+      from target!
+
+  - name: binary_files_with_newlines_are_not_corrupted
+    template: "a\ra"
+    target: "b\nb"
+    out: "b\nb"

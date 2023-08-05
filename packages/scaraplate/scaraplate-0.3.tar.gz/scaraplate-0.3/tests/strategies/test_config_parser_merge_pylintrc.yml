@@ -1,0 +1,127 @@
+strategy: ConfigParserMerge
+
+testcases:
+  - name: non_existing_target
+    template: |
+      [MASTER]
+      # Specify a configuration file.
+      #rcfile=
+
+      persistent=yes
+      optimize-ast=no
+    target: null
+    # Comments are removed, keys are sorted
+    out: |
+      [MASTER]
+      optimize-ast = no
+      persistent = yes
+    config: &default_config
+      preserve_sections: []
+      preserve_keys:
+      - sections: ^MASTER$
+        keys: ^extension-pkg-whitelist$
+      - sections: ^TYPECHECK$
+        keys: ^ignored-
+
+  - name: target_with_extraneous_sections
+    template: |
+      [MASTER]
+      # Specify a configuration file.
+      #rcfile=
+      persistent=yes
+      optimize-ast=no
+    target: |
+      [MASTER]
+      #rcfile=
+      optimize-ast=yes
+
+      [MESSAGES CONTROL]
+      confidence=
+    # Extraneous sections from target are removed
+    out: |
+      [MASTER]
+      optimize-ast = no
+      persistent = yes
+    config:
+      <<: *default_config
+
+  - name: target_with_ignored_keys
+    template: |
+      [MASTER]
+      # Specify a configuration file.
+      #rcfile=
+      persistent=yes
+      optimize-ast=no
+
+      [TYPECHECK]
+      ignored-modules=aaa,bbb
+      ignored-classes=aaa,bbb
+    target: |
+      [MASTER]
+      #rcfile=
+      optimize-ast=yes
+      [TYPECHECK]
+      ignored-modules=ccc,bbb
+      ignored-classes=ccc,bbb
+    # `ignored-*` keys of the TYPECHECK section are preserved
+    out: |
+      [MASTER]
+      optimize-ast = no
+      persistent = yes
+
+      [TYPECHECK]
+      ignored-classes = ccc,bbb
+      ignored-modules = ccc,bbb
+    config:
+      <<: *default_config
+
+  - name: target_containing_extra_ext_whitelist
+    template: |
+      [MASTER]
+      extension-pkg-whitelist=numpy,ujson
+    target: |
+      [MASTER]
+      extension-pkg-whitelist=ujson,lxml
+    out: |
+      [MASTER]
+      extension-pkg-whitelist = ujson,lxml
+    config:
+      <<: *default_config
+
+  - name: empty_config_raises
+    template: |
+      [MASTER]
+      extension-pkg-whitelist=numpy,ujson
+    target: |
+      [MASTER]
+      extension-pkg-whitelist=ujson,lxml
+    out: null
+    raises: marshmallow.exceptions.ValidationError
+
+  - name: empty_preserve_keys_passes
+    template: |
+      [MASTER]
+      extension-pkg-whitelist=numpy,ujson
+    target: |
+      [MASTER]
+      extension-pkg-whitelist=ujson,lxml
+    out: |
+      [MASTER]
+      extension-pkg-whitelist = numpy,ujson
+    config:
+      preserve_sections: []
+      preserve_keys: []
+
+  - name: bad_preserve_keys_item_raises
+    template: |
+      [MASTER]
+      extension-pkg-whitelist=numpy,ujson
+    target: |
+      [MASTER]
+      extension-pkg-whitelist=ujson,lxml
+    out: null
+    config:
+      preserve_sections: []
+      preserve_keys:
+        - keys: ^extension-pkg$
+    raises: marshmallow.exceptions.ValidationError

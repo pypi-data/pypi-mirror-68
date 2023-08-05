@@ -1,0 +1,138 @@
+
+strategy: SortedUniqueLines
+
+testcases:
+  - name: non_existing_target
+    template: |
+      zz с юникодом
+      Py тон
+      pysomething
+      # comment
+      graft
+    target: null
+    out: |
+      # comment
+      graft
+      Py тон
+      pysomething
+      zz с юникодом
+
+  - name: existing_target
+    template: |
+      include b
+      graft a
+    target: |
+      include c
+      graft a
+    out: |
+      graft a
+      include b
+      include c
+
+  - name: same_case_a
+    template: |
+      env/
+    target: |
+      ENV/
+    out: |
+      ENV/
+      env/
+
+  - name: same_case_b
+    template: |
+      ENV/
+    target: |
+      env/
+    out: |
+      ENV/
+      env/
+
+  - name: empty
+    template: ''
+    target: null
+    out: ''
+
+  - name: with_license_header
+    template: |
+      # Licensed under blah blah
+      # A Copyright blah blah
+
+      include b
+      graft a
+    target: |
+      # Licensed under blah blah
+      # A Copyright 1970 blah blah
+
+      include a
+    out: |
+      # Licensed under blah blah
+      # A Copyright blah blah
+
+      graft a
+      include a
+      include b
+
+  - name: with_comments_in_between
+    template: |
+      # Licensed under blah blah
+      # A Copyright blah blah
+
+      include b
+      # A T Copyright blah blah
+      graft a
+    target: |
+      # Licensed under blah blah
+      # A Copyright 1970 blah blah
+
+      include a
+      # A D Copyright blah blah
+    out: |
+      # Licensed under blah blah
+      # A Copyright blah blah
+
+      # A D Copyright blah blah
+      # A T Copyright blah blah
+      graft a
+      include a
+      include b
+
+  - name: with_custom_comments_header
+    template: |
+      .. rst comment
+
+      include b
+      graft a
+    target: |
+
+      include a
+    out: |
+      .. rst comment
+
+      graft a
+      include a
+      include b
+    config:
+      comment_pattern: "^ *[.][.] "
+
+  - name: with_invalid_pattern
+    template: hi
+    target: hello
+    out: null
+    config:
+      comment_pattern: '('
+    raises: marshmallow.exceptions.ValidationError
+
+  - name: with_mixed_newlines
+    template: "\
+      aaa\n\
+      ccc\n\
+      eee\n"
+    target: "\
+      bbb\r\n\
+      ddd\r\n"
+    out: "\
+      aaa\r\n\
+      bbb\r\n\
+      ccc\r\n\
+      ddd\r\n\
+      eee\r\n"
