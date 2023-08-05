@@ -1,0 +1,5 @@
+warcio
+click
+
+[python_version == "3.0" or python_version == "3.1"]
+argparse>=1.2.1
