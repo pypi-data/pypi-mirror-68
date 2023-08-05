@@ -1,0 +1,1 @@
+junopass-py==1.0.9
