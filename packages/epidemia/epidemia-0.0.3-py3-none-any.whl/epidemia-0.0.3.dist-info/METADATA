@@ -1,0 +1,378 @@
+Metadata-Version: 2.1
+Name: epidemia
+Version: 0.0.3
+Summary: Modelling COVID-19 using SIR-like models
+Home-page: https://github.com/COVID19-CMM/Epidemia
+Author: Taco de Wolff
+Author-email: tacodewolff@gmail.com
+License: MIT
+Keywords: epidemic,SIR,SEIR,COVID-19,corona,virus,compartmental
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: scikit-optimize
+Requires-Dist: pyswarms
+Requires-Dist: pymc3
+
+# Epidemia
+Epidemia is a Python library that simulates epidemic outbreaks using a SIR-like model.
+
+## Install
+```bash
+pip install epidemia
+```
+
+It is recommended to use PyPy instead of CPython (the default Python interpreter) if you have performance problems.
+
+## Models
+The following SIR-like models have been implemented.
+
+- **SIR**: susceptible, infected, recovered model
+- **SEIR**: susceptible, exposed, infected, recovered model
+- **ModelReport2**: the model defined in report 2 at [COVID-19 en Chile](http://www.cmm.uchile.cl/?p=37663)
+
+## Optimization methods
+List of available optimization methods.
+
+- `Nelder-Mead`, `Powell`, `CG`, `BFGS`, `Newton-CG`, `COBYLA`, `trust-constr`, `dogleg`, `trust-ncg`, `trust-exact`, `trust-krylov` using [scipy.optimize.minimize](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html) without bounds
+- `lm` using [scipy.optimize.least_squared](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html) without bounds
+- `L-BFGS-B`, `TNC`, `SLSQP` using [scipy.optimize.minimize](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html)
+- `trf`, `dogbox` using [scipy.optimize.least_squared](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html)
+- `annealing` using [scipy.optimize.dual_annealing](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.dual_annealing.html)
+- `bayesian` using [skopt.gp_minimize](https://scikit-optimize.github.io/stable/modules/generated/skopt.gp_minimize.html)
+- `gbrt` using [skopt.gbrt_minimize](https://scikit-optimize.github.io/stable/modules/generated/skopt.gbrt_minimize.html)
+- `forest` using [skopt.forest_minimize](https://scikit-optimize.github.io/stable/modules/generated/skopt.forest_minimize.html)
+- `PSO` using [pyswarms.single.global_best.GlobalBestPSO](https://pyswarms.readthedocs.io/en/latest/api/pyswarms.single.html)
+
+From experience it is necessary to have a good initial estimate of parameters before fitting. An initial optimization round using either `annealing` or especially `PSO` work very well. For improved speed it is recommended to use the `fast=True` flag for naive integration. Finally, an `L-BFGS-B` with `fast=False` (i.e. using RK4) will tweak the parameters to fit the curve as best as possible.
+
+## Examples
+Jupyter notebooks of trained models for specific countries.
+
+- [**China**](https://github.com/COVID19-CMM/Epidemia/blob/master/examples/China.ipynb)
+- [**Chile**](https://github.com/COVID19-CMM/Epidemia/blob/master/examples/Chile.ipynb)
+- [**Italy**](https://github.com/COVID19-CMM/Epidemia/blob/master/examples/Italy.ipynb)
+
+## Simulating
+We need to define the start time and initial state the compartments are in. Using a parameter function we can feed parameter values to the model dependent on time. To run the simulation we additionally define the end time.
+
+```python
+import numpy as np
+
+from epidemic import *
+
+# Initial time and state
+t0 = np.datetime64('2020-01-01')
+y0 = {'S': 1e7, 'E': 200, 'Im': 200, 'I': 20, 'H': 0, 'Hc': 0, 'R': 0, 'D': 0}
+
+# Our alpha at time 't'
+def α(t):
+    if t >= np.datetime64('2020-06-01') and t < np.datetime64('2020-09-01'):
+        return 0.5
+    return 1.0
+
+# Our parameters at time 't'
+params = lambda Y,t: {
+    'βE': α(t) * 0.062015625,
+    'βIm': α(t) * 0.12403125,
+    'βI': α(t) * 0.165375,
+    'βH': α(t) * 0.0,
+    'βHc': α(t) * 0.0,
+    'γE': 0.2,
+    'γIm': 0.1,
+    'γI': 0.1,
+    'γH': 0.1666,
+    'γHc': 0.1,
+    'μb': 3.57e-5,
+    'μd': 1.57e-5,
+    'φEI': 0.50,
+    'φIR': 0.85,
+    'φHR': 0.85,
+    'φD': 0.50,
+}
+
+# Create and run model till time 'tmax'
+model = ModelReport2()
+epidemic = Epidemic(model, t0, tmax=np.datetime64('2021-06-01'))
+epidemic.run(y0, params)
+epidemic.run_parameter('R_effective', model.R_effective)
+
+epidemic.plot('Epidemic', cols=['I', 'H', 'Hc', 'D'])
+epidemic.plot_params('Epidemic (R effective)', cols=['R_effective'])
+```
+
+See [example.py](https://github.com/COVID19-CMM/Epidemia/blob/master/examples/example.py).
+
+![Example](https://raw.githubusercontent.com/COVID19-CMM/Epidemia/master/figures/example.png)
+
+### Training parameters
+In order to train our parameters, we define a mapping function `x_params`: `x` => `params` with bounds `x_bounds` for `x`. The first parameter to `x_params` is the initial state `y0`, and the following parameters are those that are being optimized. The `x_params` function will return a new initial state `y0` and a new `params` function to define how parameters develop over time (see above).
+
+First we load our model like above, but we pass a `data` DataFrame from which we can calculate the error. The DataFrame must have column names that correspond to the model's compartments and derived compartments (more on that later). We define our training variables, bounds and function in order to train the model.
+
+```python
+# Define our training parameters: initial value, bounds, and mapping function to model parameters
+x = [
+    0.74,   # E0
+    10.3,   # Im0
+    0.38,   # CE
+    0.75,   # CIm
+    0.165,  # βI
+    0.2,    # γE
+    0.1,    # γIm
+    0.1,    # γI
+    0.1667, # γH
+    0.1,    # γHc
+]
+
+x_bounds = [
+    (0,20),        # E0
+    (0,20),        # Im0
+    (0.0,0.4),     # CE
+    (0.0,0.9),     # CIm
+    (0.0,0.75),    # βI
+    (0.17,0.25),   # γE
+    (0.07,0.14),   # γIm
+    (0.07,0.14),   # γI
+    (0.1,0.5),     # γH
+    (0.0625,0.14), # γHc
+]
+
+def x_params(E0, Im0, CE, CIm, βI, γE, γIm, γI, γH, γHc):
+    y0 = {
+        'S': 1e7,
+        'E': E0 * I0,
+        'Im': Im0 * I0,
+        'I': I0,
+        'H': 0,
+        'Hc': 0,
+        'R': 0,
+        'D': D0,
+    }
+
+    λ1 = np.datetime64('2020-04-01')
+    κ1 = 0.05
+    α2 = 0.75
+    α = lambda t: 1.0 if t < λ1 else α2 + (1.0-α2)*np.exp(-κ1*(t-λ1)/np.timedelta64(1,'D'))
+    return y0, lambda t: {
+        'βE': α(t) * CE * βI,
+        'βIm': α(t) * CIm * βI,
+        'βI': α(t) * βI,
+        'βH': 0.0,
+        'βHc': 0.0,
+        'γE': γE,
+        'γIm': γIm,
+        'γI': γI,
+        'γH': γH,
+        'γHc': γHc,
+        'μb': 3.57e-5,
+        'μd': 1.57e-5,
+        'φEI': 0.5,
+        'φIR': 0.6,
+        'φHR': 0.6,
+        'φD': 0.2,
+    }
+```
+
+Now we can train the parameters in `x` using a variety of methods. Currently implemented are the `scipy.optimize.minimize` methods, and the `scipy.optimize.dual_annealing`, `scipy.optimize.least_squares`, and `skopt.*_minimize` methods. It is recommended to use `fast=True` (which doesn't use Runge-Kutta 4 and is this ~4 times faster) for all but the last optimization.
+
+```python
+options = {
+    'bayesian': {
+        'n_calls': 100,
+        'n_random_starts': 10,
+        'fast': True,
+    },
+    'annealing': {
+        'seed': 1234567,
+        'fast': True,
+    },
+    'L-BFGS-B': {
+        'disp': True,
+    },
+}
+
+for method in ['annealing', 'L-BFGS-B']:
+    opt = {}
+    if method in options:
+        opt = options[method]
+    x = epidemic.optimize(x, x_bounds, x_params, method=method, **opt)
+
+epidemic.plot(cols=['I_cases', 'I'])
+epidemic.plot(cols=['D'])
+```
+
+See [example_train.py](https://github.com/COVID19-CMM/Epidemia/blob/master/examples/example_train.py).
+
+![Example training](https://raw.githubusercontent.com/COVID19-CMM/Epidemia/master/figures/example_train.png)
+
+### Loading data
+In order to optimize our simulation, we need to pass training data to the model. The `Epidemic` class accepts a `data` argument of that should be a DataFrame, where its columns correspond to the compartments or semi-compartments of the model. For instance, `I`, or `D` are valid compartments, but also derived compartments such as the cumulative `I_cases` or `H_cases`.
+
+```python
+df_infectados = pd.read_csv('data/chile_minsal_infectados.csv', sep=';', index_col=0)
+df_infectados = df_infectados.transpose()
+df_infectados.index = pd.to_datetime(df_infectados.index, format='%d-%b') + pd.offsets.DateOffset(years=120)
+
+df_fallecidos = pd.read_csv('data/chile_minsal_fallecidos.csv', sep=';', index_col=0)
+df_fallecidos = df_fallecidos.transpose()
+df_fallecidos.index = pd.to_datetime(df_fallecidos.index, format='%d-%b') + pd.offsets.DateOffset(years=120)
+
+data = pd.DataFrame({
+    'I_cases': df_infectados['Región Metropolitana'],
+    'D': df_fallecidos['Región Metropolitana'],
+})
+
+epidemic = Epidemic(model, t0, tmax, data=data)
+```
+
+### Change simulation time range
+Given an Epidemic, we can extend the simulation time range. This will run all simulations for the new time range.
+
+```python
+epidemic.extend(np.datetime64('2021-06-01'))
+```
+
+### Add confidence intervals
+When calling `run` on an `Epidemic`, we can pass the `tag` argument. If this is anything but `None`, empty, or `mean`, we will assume this is an extra curve that will be saved. If the tag name is `lower` or `upper`, it will serve as the lower and upper bounds respectively for the confidence intervals while plotting.
+
+```python
+epidemic.run(y0_lower, params_lower, tag='lower')
+epidemic.run(y0_upper, params_upper, tag='upper')
+
+# or
+epidemic.run(*x_params(*x_lower), tag='lower')
+epidemic.run(*x_params(*x_upper), tag='upper')
+```
+
+## Visualization and parameter analysis
+### Plotting data columns
+
+```python
+epidemic.plot(cols=['I', 'H', 'Hc', 'D'])
+```
+
+![Example](https://raw.githubusercontent.com/COVID19-CMM/Epidemia/master/figures/example_plot.png)
+
+### Plotting derived parameters
+
+```python
+epidemic.plot_params(cols=['Reff'])
+```
+
+![Example parameters](https://raw.githubusercontent.com/COVID19-CMM/Epidemia/master/figures/example_plot_params.png)
+
+### Printing parameters
+Display the model parameters and their values.
+
+```python
+epidemic.print_params()
+```
+
+<table><tbody><tr><th>Parameter</th><th>Value</th></tr><tr><td>βE</td><td><b>0.02293</b></td></tr><tr><td>βIm</td><td><b>0.06112</b></td></tr><tr><td>βI</td><td><b>0.1891</b></td></tr><tr><td>βH</td><td><b>0</b></td></tr><tr><td>βHc</td><td><b>0</b></td></tr><tr><td>γE</td><td><b>0.186</b></td></tr><tr><td>γIm</td><td><b>0.1376</b></td></tr><tr><td>γI</td><td><b>0.1116</b></td></tr><tr><td>γH</td><td><b>0.14</b></td></tr><tr><td>γHc</td><td><b>0.0626</b></td></tr><tr><td>μb</td><td><b>3.57e-05</b></td></tr><tr><td>μd</td><td><b>1.57e-05</b></td></tr><tr><td>φEI</td><td><b>0.5</b></td></tr><tr><td>φIR</td><td><b>0.6006</b></td></tr><tr><td>φHR</td><td><b>0.6049</b></td></tr><tr><td>φD</td><td><b>0.2</b></td></tr></tbody></table>
+
+### Printing training parameters
+Display the training parameters and their values and ranges.
+
+```python
+epidemic.print_x_params(x, x_bounds, x_params)
+```
+
+<table><tbody><tr><th>Parameter</th><th>Value</th><th>Range</th></tr><tr><td>E0</td><td><b>0.8514</b></td><td>[0, 20]</td></tr><tr><td>Im0</td><td><b>2.526</b></td><td>[0, 20]</td></tr><tr><td>CE</td><td><b>0.1213</b></td><td>[0, 0.4]</td></tr><tr><td>CIm</td><td><b>0.3233</b></td><td>[0, 0.9]</td></tr><tr><td>βI</td><td><b>0.2521</b></td><td>[0, 0.75]</td></tr><tr><td>γE</td><td><b>0.186</b></td><td>[0.17, 0.25]</td></tr><tr><td>γIm</td><td><b>0.1376</b></td><td>[0.07, 0.14]</td></tr><tr><td>γI</td><td><b>0.1116</b></td><td>[0.07, 0.14]</td></tr><tr><td>γH</td><td><b>0.14</b></td><td>[0.07, 0.14]</td></tr><tr><td>γHc</td><td><b>0.0626</b></td><td>[0.0625, 0.14]</td></tr></tbody></table>
+
+### Printing statistics
+Print relevant statistics about the simulation.
+
+```python
+epidemic.print_stats()
+```
+
+<table><tbody><tr><th>Parameter</th><th>Value</th><th>Date</th></tr><tr><td>R effective</td><td><b>1.76</b></td><td>2020-03-15</td></tr><tr><td>R effective</td><td><b>1.41</b></td><td>2020-05-01</td></tr><tr><td>Fatality</td><td><b>0.02</b></td><td>2020-05-01</td></tr><tr><td>max(I)</td><td><b>3011</b></td><td>2020-05-01</td></tr><tr><td>max(H)</td><td><b>1974</b></td><td>2020-05-01</td></tr><tr><td>max(Hc)</td><td><b>1139</b></td><td>2020-05-01</td></tr><tr><td>max(D)</td><td><b>173</b></td><td>2020-05-01</td></tr></tbody></table>
+
+### Parameter sensitivity
+Probing parameter sensitivity to the error. Each parameter is moved a small distance epsilon and evaluated to see how much it impacts the error. Higher values means these parameter are very sensitive. When zero it means it has no impact on the error and is thus independent.
+
+Each column shows the impact of the error on that data series, while * is the total model error.
+
+```python
+epidemic.param_sensitivity()
+```
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>*</th>
+      <th>D</th>
+      <th>I_cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>E0</th>
+      <td>0.0025952</td>
+      <td>0.00267847</td>
+      <td>0.00253102</td>
+    </tr>
+    <tr>
+      <th>Im0</th>
+      <td>0.000353852</td>
+      <td>0.000319161</td>
+      <td>0.00036079</td>
+    </tr>
+    <tr>
+      <th>CE</th>
+      <td>0.00634905</td>
+      <td>0.00140165</td>
+      <td>0.0113138</td>
+    </tr>
+    <tr>
+      <th>CIm</th>
+      <td>0.00543327</td>
+      <td>0.00270623</td>
+      <td>0.00813083</td>
+    </tr>
+    <tr>
+      <th>βI</th>
+      <td>0.0271594</td>
+      <td>0.00895137</td>
+      <td>0.0453727</td>
+    </tr>
+    <tr>
+      <th>γE</th>
+      <td>0.0110189</td>
+      <td>0.0161675</td>
+      <td>0.00588935</td>
+    </tr>
+    <tr>
+      <th>γIm</th>
+      <td>0.0115601</td>
+      <td>0.00123512</td>
+      <td>0.0219025</td>
+    </tr>
+    <tr>
+      <th>γI</th>
+      <td>0.00850704</td>
+      <td>0.0615199</td>
+      <td>0.0445023</td>
+    </tr>
+    <tr>
+      <th>γH</th>
+      <td>0.0087152</td>
+      <td>0.0174582</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>γHc</th>
+      <td>0.00790336</td>
+      <td>0.0157928</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+

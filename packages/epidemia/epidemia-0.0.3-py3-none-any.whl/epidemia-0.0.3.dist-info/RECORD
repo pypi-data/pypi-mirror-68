@@ -1,0 +1,13 @@
+epidemia/__init__.py,sha256=dBu-OD06xZOebMGDxWS4o56odh01_3jeplZONtguEDE,66
+epidemia/epidemia.py,sha256=nquPy2BmEAuxEmp_cfzvlsydl5M3OjnbW0E8-bVorOg,33508
+epidemia/epidemic.py,sha256=LhP63sHur_lPchJ3M8ZPcDqhQnzZSV2rN4GFl30iADE,36128
+epidemia/ivorra.py,sha256=XGlFClA0Y7B2AS40spfoUhmCN4KumcstDG8DyAeQnKI,3824
+epidemia/mcmc.py,sha256=8A6GjiguYBUAgh9DauS1xidJlCmd51rAEApP-jXJpj8,1953
+epidemia/models.py,sha256=rFV2Zr6rsVEwAQmLJqd5WS1vtrH6e3dk9H3q9G87F7o,6259
+epidemia/perf.py,sha256=jP4R3GUELjsyDmyodUaPtYufO4gRijkmNWAff7FgSDo,619
+epidemia/webapp.py,sha256=WloVsJCaC09WiPr4wFy5yFB1BCH8crMaNFYx40A8Ypk,3229
+epidemia-0.0.3.dist-info/LICENSE,sha256=6-UNHg5qBcsYIYdodP86VmNZeHqgIKPpkQHn-z2SJVs,1052
+epidemia-0.0.3.dist-info/METADATA,sha256=hTiDmuqD7C24MJ9yB7HxlEOljik0giaJU9fBtmDFjws,14259
+epidemia-0.0.3.dist-info/WHEEL,sha256=nvhOrkn7_9sGzJjxuUFjoJ6OkO7SJJqHSjq9VNu0Elc,92
+epidemia-0.0.3.dist-info/top_level.txt,sha256=THCyObu2zaB5eqP2HkXjJBPe0D1g-o7FwDsPhFVY7OQ,9
+epidemia-0.0.3.dist-info/RECORD,,
