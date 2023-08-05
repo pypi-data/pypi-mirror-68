@@ -1,0 +1,8 @@
+README.md
+setup.py
+skillshare/__init__.py
+skillshare.egg-info/PKG-INFO
+skillshare.egg-info/SOURCES.txt
+skillshare.egg-info/dependency_links.txt
+skillshare.egg-info/requires.txt
+skillshare.egg-info/top_level.txt
