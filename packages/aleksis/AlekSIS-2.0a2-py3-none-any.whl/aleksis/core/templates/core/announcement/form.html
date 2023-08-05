@@ -1,0 +1,33 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load i18n material_form %}
+
+
+{% block browser_title %}
+  {% if mode == "edit" %}
+    {% blocktrans %}Edit announcement{% endblocktrans %}
+  {% else %}
+    {% blocktrans %}Publish announcement{% endblocktrans %}
+  {% endif %}
+{% endblock %}
+{% block page_title %}
+  {% if mode == "edit" %}
+    {% blocktrans %}Edit announcement{% endblocktrans %}
+  {% else %}
+    {% blocktrans %}Publish new announcement{% endblocktrans %}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <form action="" method="post">
+    {% csrf_token %}
+    {% form form=form %}{% endform %}
+
+    <button type="submit" class="btn green waves-effect waves-light">
+      <i class="material-icons left">save</i>
+      {% trans "Save und publish announcement" %}
+    </button>
+  </form>
+{% endblock %}

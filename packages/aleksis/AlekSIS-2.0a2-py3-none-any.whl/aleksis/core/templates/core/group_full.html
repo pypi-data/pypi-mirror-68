@@ -1,0 +1,40 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+{% load rules %}
+
+{% load i18n static %}
+{% load render_table from django_tables2 %}
+
+{% block browser_title %}{{ group.name }}{% endblock %}
+
+{% block content %}
+  <h4>{{ group.name }} <small class="grey-text">{{ group.short_name }}</small></h4>
+
+  {% has_perm 'core.edit_group' user group as can_change_group %}
+  {% has_perm 'core.change_group_preferences' user group as can_change_group_preferences %}
+
+  {% if can_change_group or can_change_group_preferences %}
+    <p>
+      {% if can_change_group %}
+        <a href="{% url 'edit_group_by_id' group.id %}" class="btn waves-effect waves-light">
+          <i class="material-icons left">edit</i>
+          {% trans "Edit" %}
+        </a>
+      {% endif %}
+      {% if can_change_group_preferences %}
+        <a href="{% url "preferences_group" group.id %}" class="btn waves-effect waves-light">
+          <i class="material-icons left">settings</i>
+          {% trans "Change preferences" %}
+        </a>
+      {% endif %}
+    </p>
+  {% endif %}
+
+  <h5>{% blocktrans %}Owners{% endblocktrans %}</h5>
+  {% render_table owners_table %}
+
+  <h5>{% blocktrans %}Members{% endblocktrans %}</h5>
+  {% render_table members_table %}
+
+{% endblock %}
