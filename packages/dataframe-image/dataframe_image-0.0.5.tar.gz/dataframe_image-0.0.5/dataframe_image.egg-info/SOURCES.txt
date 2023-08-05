@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dataframe_image/__init__.py
+dataframe_image/_convert.py
+dataframe_image/_image_maker.py
+dataframe_image.egg-info/PKG-INFO
+dataframe_image.egg-info/SOURCES.txt
+dataframe_image.egg-info/dependency_links.txt
+dataframe_image.egg-info/requires.txt
+dataframe_image.egg-info/top_level.txt
+dataframe_image/css/style.css
