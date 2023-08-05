@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dataapp
+Version: 0.0.0
+Summary: Read the latest Real Python tutorials
+Home-page: https://github.com/DataAppHQ/dataapp
+Author: DataAppHQ
+Author-email: support@dataapp.io
+License: MIT
+Description: # dataapp
+        Something great is in the works
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

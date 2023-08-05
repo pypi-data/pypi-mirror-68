@@ -1,0 +1,8 @@
+README.md
+setup.py
+dataapp/__init__.py
+dataapp/__main__.py
+dataapp.egg-info/PKG-INFO
+dataapp.egg-info/SOURCES.txt
+dataapp.egg-info/dependency_links.txt
+dataapp.egg-info/top_level.txt
