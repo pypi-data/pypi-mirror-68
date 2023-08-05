@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pysumstats
+Version: 0.1
+Summary: Package for working with GWAS summary statistics
+Home-page: https://github.com/matthijsz/pysumstats
+Author: Matthijs D. van der Zee
+Author-email: m.d.vander.zee@vu.nl
+License: MIT
+Keywords: gwas summary statistics genetics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: pandas
+Requires-Dist: tables
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+Python package for reading, combining, meta-analyzing, and saving GWAS summary statistics data.
+
+

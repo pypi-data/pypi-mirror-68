@@ -1,0 +1,10 @@
+pysumstats/__init__.py,sha256=lPsfZvLEtOUOvkErq_nRW4xsddmx_fIVWCzEtQVBKU4,85
+pysumstats/base.py,sha256=nzCTDQy1GkT-Acx5FjEK720KluFqpB-5SVG2anmYHDE,9013
+pysumstats/mergedsumstats.py,sha256=8B9KWybPLsvFDz5CFtJU7P20VBxfcv6y8UyvIFDtziM,18809
+pysumstats/sumstats.py,sha256=R8YKUo6w_S4Oi-flXkaxVWY07AaUkW2_e0c1PpBqkc0,12118
+pysumstats/utils.py,sha256=g2HWMPAiIMgBf2jeRTDE-xt8HdTh9_jia3DaQ6dDrBQ,731
+pysumstats-0.1.dist-info/LICENSE,sha256=TLgf6ta-qntjv_ZeAeY6d3Kvfrreo2xODHteTtpez1c,1099
+pysumstats-0.1.dist-info/METADATA,sha256=srfNZshq4DAAEYgG5-emCmpEvuLMfi5vN9Ce5DOeMCw,694
+pysumstats-0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pysumstats-0.1.dist-info/top_level.txt,sha256=mvd79WFwmfRb3oLTCjIM3xnucFdQHFCDirrQNKhwMI4,11
+pysumstats-0.1.dist-info/RECORD,,
