@@ -1,0 +1,5 @@
+pytablewriter<1,>=0.52.0
+pytest<6,>=3.3.2
+typepy<2,>=1.1.1
+
+[test]
