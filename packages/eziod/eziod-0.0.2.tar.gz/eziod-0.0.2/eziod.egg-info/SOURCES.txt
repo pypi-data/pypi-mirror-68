@@ -1,0 +1,9 @@
+setup.py
+eziod/__init__.py
+eziod/iod.py
+eziod/utils.py
+eziod.egg-info/PKG-INFO
+eziod.egg-info/SOURCES.txt
+eziod.egg-info/dependency_links.txt
+eziod.egg-info/requires.txt
+eziod.egg-info/top_level.txt
