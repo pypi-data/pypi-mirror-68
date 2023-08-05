@@ -1,0 +1,17 @@
+% rebase('base.html')
+<h1>General</h1>
+<p>Status: {{status}}</p>
+
+<h1>Video upload</h1>
+<p>Videos left to upload: {{video_upload}}</p>
+
+<h1>Data directory</h1>
+<p>Data directory path:</p>
+<pre>{{data_path}}</pre>
+<p>
+	<a class="btn btn-primary" href="/open_data_path">Open in file manager</a>
+	<a class="btn btn-danger" href="/cleanup_data_path?back=status">Remove files		</a>
+</p>
+
+<h1>Exit</h1>
+<a class="btn btn-warning" href="/exit?back=status">Close application</a>
