@@ -1,0 +1,7 @@
+README.md
+setup.py
+pycoll/__init__.py
+pycoll.egg-info/PKG-INFO
+pycoll.egg-info/SOURCES.txt
+pycoll.egg-info/dependency_links.txt
+pycoll.egg-info/top_level.txt
