@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+flyr/__init__.py
+flyr/flyr.py
+flyr.egg-info/PKG-INFO
+flyr.egg-info/SOURCES.txt
+flyr.egg-info/dependency_links.txt
+flyr.egg-info/requires.txt
+flyr.egg-info/top_level.txt
