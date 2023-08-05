@@ -1,0 +1,11 @@
+scikit-learn>=0.20.0
+statistics
+pytexit
+sympy
+numpy
+
+[docs]
+Sphinx
+
+[testing]
+nose
