@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: covid-surge
+Version: 0.0.0
+Summary: Covid-Surge is a utility for computing and comparing surge periods            of communities afflicted by the COVID-19 virus pandemic.
+Home-page: https://github/dpploy/covid-surge
+Author: Valmor F. de Almeida
+Author-email: valmor_dealmeida@uml.edu
+License: UNKNOWN
+Description: # covid-surge
+        COVID-19 surge period calculation and clustering for states afflicted by the corona virus SARS-CoV-2
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Topic :: Education
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
