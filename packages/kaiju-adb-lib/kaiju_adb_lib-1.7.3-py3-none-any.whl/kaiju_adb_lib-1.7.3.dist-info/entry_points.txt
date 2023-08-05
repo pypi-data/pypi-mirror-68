@@ -1,0 +1,6 @@
+[console_scripts]
+testrunner = kaiju_adb_lib.__main__:main
+testrunner-cancel = kaiju_adb_lib.__main__:cancel_session_on_device
+testrunner-get-plan = kaiju_adb_lib.__main__:get_plan_from_device
+testrunner-support = kaiju_adb_lib.support:support
+

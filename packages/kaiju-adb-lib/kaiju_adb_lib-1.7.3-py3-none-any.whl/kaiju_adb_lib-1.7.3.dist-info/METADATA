@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kaiju-adb-lib
+Version: 1.7.3
+Summary: Introduction
+Home-page: https://stash.corp.netflix.com/projects/~DAVIDB/repos/kaiju_adb_lib/browse
+Author: TSC
+Author-email: davidb@netflix.com
+License: UNKNOWN
+Keywords: kaiju_adb_lib
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: kaiju-mqtt-py
+Requires-Dist: runez
+Requires-Dist: tox
+
+## Introduction
+
+New Library
+
