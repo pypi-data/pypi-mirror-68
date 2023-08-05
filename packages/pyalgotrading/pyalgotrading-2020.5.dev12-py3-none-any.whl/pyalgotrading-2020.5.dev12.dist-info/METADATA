@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyalgotrading
+Version: 2020.5.dev12
+Summary: Official Python Package for Algorithmic Trading APIs powered by AlgoBulls
+Home-page: https://github.com/algobulls/pyalgotrading
+Author: Pushpak Dagade
+Author-email: pushpak@algobulls.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/algobulls/pyalgotrading
+Project-URL: Documentation, https://pyalgotrading.readthedocs.io/en/latest/
+Project-URL: Bug Reports, https://github.com/algobulls/pyalgotrading/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/guanidene%40gmail.com
+Keywords: algotrading algorithmictrading trading strategies algostrategies apis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.23)
+Requires-Dist: pandas (>=1.0)
+
+# pyalgotrading
+Official Python Package for Algorithmic Trading APIs powered by AlgoBulls
+
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/guanidene@gmail.com)
+
