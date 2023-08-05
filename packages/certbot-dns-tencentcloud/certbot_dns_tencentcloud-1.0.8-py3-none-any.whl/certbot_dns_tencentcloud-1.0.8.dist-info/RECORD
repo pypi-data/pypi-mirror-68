@@ -1,0 +1,8 @@
+certbot_dns_tencentcloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_dns_tencentcloud/certbot_tencentcloud_plugins.py,sha256=1lv81k-yQJ4MbBvHR55TtI4qzb_GF5uxOXWmzhVQ9Co,6038
+certbot_dns_tencentcloud-1.0.8.dist-info/LICENSE,sha256=1qP2k0UxtJYO6Lm7FBQxsqZSa7LEsHFuzX8xZt3lzDo,1519
+certbot_dns_tencentcloud-1.0.8.dist-info/METADATA,sha256=OCq-IUkDj29cQsBE-KppH2ZMt6zlVpyrffxvtKW_Jh4,3453
+certbot_dns_tencentcloud-1.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+certbot_dns_tencentcloud-1.0.8.dist-info/entry_points.txt,sha256=TRvhx-1bWyElb4kCDrfSNA7_ugV1jzA0WUr9KIQks6Q,106
+certbot_dns_tencentcloud-1.0.8.dist-info/top_level.txt,sha256=BsPX6oBKA_FsB2XUEjsK57t5q2RQepwjzpq61wXzHYc,25
+certbot_dns_tencentcloud-1.0.8.dist-info/RECORD,,
