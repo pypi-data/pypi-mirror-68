@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: haplotype_plot
+Version: 1.1.1
+Summary: Generates haplotype plots from VCF files.
+Home-page: https://github.com/neobernad/haplotype_plot
+Author: José Antonio Bernabé-Díaz
+Author-email: joseantonio.bernabe1@um.com
+License: MIT
+Description: # Haplotype plot
+        
+        Generates haplotype plots for VCF files.
+        **Requires Python 3 to run**.
+        
+        [![Build Status](https://travis-ci.org/neobernad/haplotype_plot.svg?branch=master)](https://travis-ci.org/neobernad/haplotype_plot)
+        [![codecov](https://codecov.io/gh/neobernad/haplotype_plot/branch/master/graph/badge.svg)](https://codecov.io/gh/neobernad/haplotype_plot)
+        
+        # Pypi
+        
+        You may install haplotype plot from pip:
+        
+        ```bash
+        pip install haplotype-plot
+        ```
+        
+        # Usage
+        
+        ```bash
+        usage: main.py [-h] -v VCF [-o OUTPUT] -c CHR -p PARENTAL [--phase]
+                       [--version] [-z {HOM,HET}] [--conf KEY=VALUE [KEY=VALUE ...]]
+        
+        Creates a haplotype plot from a VCF file
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -v VCF, --vcf VCF     path to the input sorted VCF file
+          -o OUTPUT, --output OUTPUT
+                                path to the output PNG haplotype plot file
+          -c CHR, --chr CHR     chromosome to plot from the VCF
+          -p PARENTAL, --parental PARENTAL
+                                sample name from the VCF used as parental haplotype
+          --phase               if specified, it will phase the genotypes. An output
+                                VCF with the phased genotypes is created
+          --version             show program's version number and exit
+          -z {HOM,HET}, --zygosis {HOM,HET}
+                                zygosis of the input VCF file
+          --conf KEY=VALUE [KEY=VALUE ...]
+                                set a number of key-value pairs to modify the default
+                                plot configuration (do not put spaces before or after
+                                the = sign). If a value contains spaces, you should
+                                define it with double quotes: foo="this is a
+                                sentence". Possible values are: 'start=integer',
+                                'end=integer', 'show=boolean', 'xtickslabels=boolean',
+                                'size_y=float'
+        ```
+        
+        For examples of use please go to the [documentation](https://neobernad.github.io/haplotype_plot/#/).
+        
+        ---
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Description-Content-Type: text/markdown

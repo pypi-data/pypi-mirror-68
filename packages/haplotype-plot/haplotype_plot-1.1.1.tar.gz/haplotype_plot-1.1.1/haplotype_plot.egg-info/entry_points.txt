@@ -1,0 +1,3 @@
+[console_scripts]
+haplotype_plot = haplotype_plot.main:main
+
