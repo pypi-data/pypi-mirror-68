@@ -1,0 +1,16 @@
+numpy
+pyyaml>=5.1
+websockets
+kubernetes
+shortid
+GitPython
+pymongo
+ruamel.yaml
+cachetools
+prompt_toolkit>=2.0.0
+requests-async
+requests
+pandas
+
+[test]
+pytest
