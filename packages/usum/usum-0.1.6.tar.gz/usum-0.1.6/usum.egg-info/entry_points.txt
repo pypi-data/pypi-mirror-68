@@ -1,0 +1,3 @@
+[console_scripts]
+usum = usum.main:main
+
