@@ -1,0 +1,6 @@
+xarray
+ipyleaflet
+pillow
+rasterio
+affine
+mercantile
