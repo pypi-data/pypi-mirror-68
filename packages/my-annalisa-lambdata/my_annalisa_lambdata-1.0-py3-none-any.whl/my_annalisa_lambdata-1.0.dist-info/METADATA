@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: my-annalisa-lambdata
+Version: 1.0
+Summary: A short description
+Home-page: https://github.com/AnnalisaGibbs/lambdata-annalisagibbs
+Author: Your Full Name
+Author-email: your@email.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# lambdata-annalisagibbs
+python module
+
+## Installation
+
+TODO
+
+## Usage
+
+```py
+from my_lamdata.my_mod import enlarge
+
+x = 11
+print(enlarge(x))
+```
+
