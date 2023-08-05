@@ -1,0 +1,10 @@
+ackee/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ackee/middleware.py,sha256=zR0QhEovegZSPnkBp3Bsm1M1Xx4HQ8ZEVF6kotYHhl0,3410
+ackee/test_middleware.py,sha256=-9bY7JoKosrlRJHWJ6EuybnBzD2TCffxKT0ZKieLQNI,5405
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/settings.py,sha256=yZ9sk9lJ9DF39yadMr1iLzICopOJMUU51GOMGVmbRFk,19
+django_ackee_middleware-0.1.0.dist-info/LICENSE,sha256=xCYUJ_GyKHamYGW1Bj2aWffld5LpjnpqBKGiFQdQ3ng,1074
+django_ackee_middleware-0.1.0.dist-info/METADATA,sha256=up_PBWyfoW--nwC9TeBCEDhGlX_SJ2yGEJPDJC4FQqY,1882
+django_ackee_middleware-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_ackee_middleware-0.1.0.dist-info/top_level.txt,sha256=hY0JRS-uImIhtRkWgzqwLeQz7oAidV2RsTjBJ_iVNUk,11
+django_ackee_middleware-0.1.0.dist-info/RECORD,,
