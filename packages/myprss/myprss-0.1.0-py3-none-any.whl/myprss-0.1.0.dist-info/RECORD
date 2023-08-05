@@ -1,0 +1,11 @@
+myprss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myprss/config.py,sha256=xyuCUjiRZh40RBb2zUdydVtj2ZqkikDBaxCGPAYPv8Q,1277
+myprss/logger.py,sha256=VlXmO2ngbvNPRCFEN6pm7XcGksZzp1w7-0Lnk9-2gk0,419
+myprss/main.py,sha256=lcabRjr6fmN7OMpbXdq0OBSsT4AOgMlhDvdKwJ0fCFI,298
+myprss/parser.py,sha256=8-B8NnyoMmlWWhmKZScJavG9JUsE8kHmgoO_zSoAuHg,693
+myprss/reader.py,sha256=KFFxhM-_i2Su5QGJbscmDWWPCfEp80WOBkeb7yOtBsM,861
+myprss/registry.py,sha256=a6cdwiAcWAOM7fJwOSV89aVZyuL8WNoLn-m-QajJYMs,1451
+myprss-0.1.0.dist-info/entry_points.txt,sha256=wwrXuJTZmbTJJS_8THyhCA4UaNTkW7wazERVfdcbJxY,42
+myprss-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+myprss-0.1.0.dist-info/METADATA,sha256=Rh8DHDAInWoXLl76pbgHj_aZgd6gtKimtjSMzkYLunE,434
+myprss-0.1.0.dist-info/RECORD,,
