@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: yabox
+Version: 1.0.5
+Summary: Yet another black-box optimization library for Python
+Home-page: https://github.com/pablormier/yabox
+Author: Pablo Rodriguez-Mier
+Author-email: pablo.rodriguez.mier@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/pablormier/yabox/archive/v1.0.5.tar.gz
+Keywords: optimization,black-box,data science,evolutionary,algorithms
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: numpy (>=1.7)
+Provides-Extra: notebooks
+Requires-Dist: jupyter (>=1.0.0) ; extra == 'notebooks'
+Provides-Extra: show_progress
+Requires-Dist: tqdm (>=4.46.0) ; extra == 'show_progress'
+Provides-Extra: visualization
+Requires-Dist: matplotlib (>=1.3) ; extra == 'visualization'
+
+UNKNOWN
+
+
