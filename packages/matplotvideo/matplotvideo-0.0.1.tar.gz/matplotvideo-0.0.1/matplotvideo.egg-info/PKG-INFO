@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: matplotvideo
+Version: 0.0.1
+Summary: Syncing matplotlib and video
+Home-page: https://github.com/PySport/matplotvideo
+Author: Koen Vossen
+Author-email: info@koenvossen.nl
+License: MIT
+Description:  matplotvideo is a Python package providing an easy way to sync video to matplotlib
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
