@@ -1,0 +1,17 @@
+pysirix/__init__.py,sha256=I1DXOAEwxY5yDzbNEvCeoR05jdf3QxDKnQ82MowOjmo,1501
+pysirix/async_client.py,sha256=J_SGsFkLE5iEuREWdnSzL7Z0wXx-YrgPHiXciK1WI9c,6083
+pysirix/auth.py,sha256=kFlpHbHaqcGgsziBWMs-ul4P11aLIDPQ32JLJvubh9o,4312
+pysirix/constants.py,sha256=y2lS3PMhOqus-Vi26C5e78URJ4rZfimB_CnnlBLYq-0,522
+pysirix/database.py,sha256=TGaTVFei2s5WabXoHXMOViHL7en7zS5YfOQZJsQyNMg,3013
+pysirix/errors.py,sha256=fMTWcFeC6uQY-eCNvDRbOxqHBYiY0PYmD9iH0a9sTgg,402
+pysirix/info.py,sha256=V_nrPlf2Ph874hUWfENHi-T25Vbao60OYM4848LWJQY,945
+pysirix/json_store.py,sha256=ZTauu_jBzBJkI760c1A1wKiUbSr-JqQhN4i_ZFQIihw,5489
+pysirix/resource.py,sha256=CIVvD-KTsurotHPNhC9IW9jZ9FdCmfbuTT20jCCqOqs,9988
+pysirix/sirix.py,sha256=iDOtHYCHVo_XL2VcO8Lr1-4U2IxaJ15yivbUXUaOYbA,3599
+pysirix/sync_client.py,sha256=48iqdPkkWKsLfoiFnV3qDpWdagebD7JQyc6vLiBf-qM,10873
+pysirix/types.py,sha256=NgiIHqpzvsy11qehC3-33f6WDuXO_TN4vaemrFdEat4,3366
+pysirix-0.1.1.dist-info/LICENSE,sha256=-bhyNYxMGyrIZV9_q1gWnQWyp4ikc9O149bBpKqLWRg,11538
+pysirix-0.1.1.dist-info/METADATA,sha256=yev0En9FkLaY2mNpcm83iqUdWAWhFs_CLvI50yy-8R0,2230
+pysirix-0.1.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pysirix-0.1.1.dist-info/top_level.txt,sha256=KJ0cnlPIPvTXIMrM2BU2ogzB1IDtvpuXfJaIewVX2I4,8
+pysirix-0.1.1.dist-info/RECORD,,
