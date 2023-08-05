@@ -1,0 +1,17 @@
+README.md
+setup.py
+autoconfiguration/__init__.py
+autoconfiguration/autoconfiguration.py
+autoconfiguration/create_config.py
+autoconfiguration.egg-info/PKG-INFO
+autoconfiguration.egg-info/SOURCES.txt
+autoconfiguration.egg-info/dependency_links.txt
+autoconfiguration.egg-info/top_level.txt
+autoconfiguration/exceptions/__init__.py
+autoconfiguration/exceptions/base_error.py
+autoconfiguration/exceptions/config_class_errors.py
+autoconfiguration/exceptions/config_dir_errors.py
+autoconfiguration/exceptions/config_file_errors.py
+autoconfiguration/exceptions/data_type_errors.py
+autoconfiguration/helpers/__init__.py
+autoconfiguration/helpers/modify_class.py
