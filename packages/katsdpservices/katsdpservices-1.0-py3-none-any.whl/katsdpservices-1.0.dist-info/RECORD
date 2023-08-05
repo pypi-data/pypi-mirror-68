@@ -1,0 +1,17 @@
+katsdpservices/__init__.py,sha256=gP6n23PMzN4LZk_Ew7Yuvd26KjOGCouterEf8Zs5Nqg,1283
+katsdpservices/aiomonitor.py,sha256=kWZN4HwKc84KPTSvDIsb2wr4WinK9arM90y3kq2jsGM,3000
+katsdpservices/argparse.py,sha256=Jo6BfiBbWIGKdDAad2Cgz9RjpbAoiKi5Pd0HqQdnMic,6964
+katsdpservices/interfaces.py,sha256=BwDWfKxDeUWJBmk36EDfRjc4Ii3dwx1aDJeIXpC7Pu8,1788
+katsdpservices/logging.py,sha256=FRP1jpM32UHPWQZ-6tbfTCVnUb3FRZHJR_uK_VURlx0,6485
+katsdpservices/restart.py,sha256=F6MQb6DFYIQRzcR0xYu-buQrabU2_v-cqT5-2wlwlYg,3460
+katsdpservices/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+katsdpservices/test/test_aiomonitor.py,sha256=0wirrlouju_RkRQqsRO4adr6YqsKKSsV7QwDKCH-en0,2568
+katsdpservices/test/test_argparse.py,sha256=mjzhKp0geusBk4rS2egHs_F7EU6SLrWZkX7WGD7HfgA,7950
+katsdpservices/test/test_interfaces.py,sha256=JurqTnG9f36MoNdFzeDZ1AmhcS9bDB9J7UUyzr8zhSQ,2160
+katsdpservices/test/test_logging.py,sha256=kTviHOSp4oIzfrDP5ktV27sLy-929s_g8JzQUEGNGC4,6956
+katsdpservices/test/test_restart.py,sha256=O6iQMBkSOVgfzQEDEpF1c39MVVRxfRURbyG5regwzZw,2569
+katsdpservices-1.0.dist-info/LICENSE,sha256=rczEkn0HDH00CXbG__6HN9DQUwyfNDe6_yPPNfKgiDk,1527
+katsdpservices-1.0.dist-info/METADATA,sha256=ngEb9BPeZXC-LIIVKRbOZ8Vff4gHqnc7m86-8Ot37GM,1878
+katsdpservices-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+katsdpservices-1.0.dist-info/top_level.txt,sha256=lGYDbLe6EQTFbjsZJUG6OCCXGWvy5uBpK1ps7xhO4V0,15
+katsdpservices-1.0.dist-info/RECORD,,
