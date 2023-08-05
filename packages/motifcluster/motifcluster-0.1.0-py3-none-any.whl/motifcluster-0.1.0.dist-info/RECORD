@@ -1,0 +1,12 @@
+motifcluster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+motifcluster/clustering.py,sha256=Dvsk-2cM7IDPPcMDQfLlQ5jXF5Lt1I8eB3F1DaF5wgM,4460
+motifcluster/indicators.py,sha256=mOfTFjQRhARgAb64kZu53X7ojOUKcCu6h12c1xqLY08,4784
+motifcluster/motifadjacency.py,sha256=gHX3I5iS9sU4FwbfyYxeIkHgjecXvtuY0SfhHDX6V4o,56211
+motifcluster/sampling.py,sha256=nVYRYor7FNxRjPRrM7MfwC-Zem4DtX2LlXsSoT5Lobc,7233
+motifcluster/spectral.py,sha256=YGLB_ZAr8wPzAuX-d9zXBnEQofc5WYi4MyT0ds9rmew,8304
+motifcluster/utils.py,sha256=5hOOTH_OKHVnNzT_ajFMTbLtUn4jQHlfReQEy-9m9pw,5259
+motifcluster-0.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+motifcluster-0.1.0.dist-info/METADATA,sha256=RdX8DWlx13PRfMCtxznifQWPHLeOhG0tymesxesOJsc,2384
+motifcluster-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+motifcluster-0.1.0.dist-info/top_level.txt,sha256=R6ll5--xxa4bRKrABy56QKl4Ug2EjHp4jLdyzZ1YCO0,13
+motifcluster-0.1.0.dist-info/RECORD,,
