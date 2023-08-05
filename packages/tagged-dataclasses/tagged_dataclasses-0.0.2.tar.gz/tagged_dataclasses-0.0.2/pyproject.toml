@@ -1,0 +1,35 @@
+[tool.poetry]
+
+name = "tagged_dataclasses"
+version = "0.0.2"
+description = ""
+authors = [
+    "Andrey Cizov <acizov@gmail.com>"
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/andreycizov/python-tagged_dataclasses"
+repository = "https://github.com/andreycizov/python-tagged_dataclasses"
+documentation = "https://github.com/andreycizov/python-tagged_dataclasses"
+
+keywords = ["tagged union"]
+
+classifiers = [
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: Apache Software License',
+        'Natural Language :: English',
+        'Programming Language :: Python :: 3.6',
+]
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.6"
+typing_inspect = "^0.6"
+dataclasses = { version = ">0.1", python = "<3.7" }
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
