@@ -1,0 +1,12 @@
+gamba/__init__.py,sha256=0X4FfAw6-m3kakNHK3_xU7KQKH-ZVvAqFbhaILklKcQ,1721
+gamba/clustering.py,sha256=o8CSDpMNVAT-HTZQAj5yp_l6Tjgm9z-9IlDuaXr5ibQ,6946
+gamba/data.py,sha256=hscXpGDxx-OCexRO28zHTwa2Xl7tmX21cd91bVh9bGg,9286
+gamba/labels.py,sha256=t_r33OM9xAwEmwqkDaaXGLWyFMzyMQegVmiti-lOnFk,3426
+gamba/measures.py,sha256=lcZSkIGhnN7mwSCekzywF0D1AouL9R3WqDWbcyL3UPY,7040
+gamba/plots.py,sha256=4NShMd4rMu097lbtLBsEiscO8D8rx3CVhK20bhHxDbU,13680
+gamba/studies.py,sha256=hiT76NRAw7_lHPqv_QzpO1tg_0lUOICAJf8XlPu2_cQ,5405
+gamba/tests.py,sha256=sYKfxD318kjwsQBEQJXtPNn8rT87GIar5I7B9zkAh6w,14058
+gamba-0.1.0.dist-info/METADATA,sha256=fMt1xpC3s95TKRFuoB2-tJxGCJM67SWDD6veZAW2KS4,2523
+gamba-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gamba-0.1.0.dist-info/top_level.txt,sha256=G5B1eIlpxI6W9xYRdLe13MBsX6oBvL4Gl9XFkWJDBIQ,6
+gamba-0.1.0.dist-info/RECORD,,
