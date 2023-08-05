@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: siar
+Version: 0.3
+Summary: Python client for Siar API (Agroclimatic Information for Spain)
+Home-page: https://github.com/rarelano/python-siar
+Author: Rafael Arellano
+Author-email: rarellano-dev@riseup.net
+License: AGPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent

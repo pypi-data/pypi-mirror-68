@@ -1,0 +1,8 @@
+README.md
+setup.py
+siar/client.py
+siar/decorators.py
+siar.egg-info/PKG-INFO
+siar.egg-info/SOURCES.txt
+siar.egg-info/dependency_links.txt
+siar.egg-info/top_level.txt
