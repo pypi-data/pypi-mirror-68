@@ -1,0 +1,12 @@
+bottle
+Markdown
+pymdown-extensions
+setuptools
+
+[dev]
+flake8
+pytest
+pytest-cov
+
+[extra]
+Pygments
