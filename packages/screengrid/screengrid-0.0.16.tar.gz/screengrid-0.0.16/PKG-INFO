@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: screengrid
+Version: 0.0.16
+Summary: My short description for my project.
+Home-page: https://github.com/evfredericksen/screengrid
+Author: Evan Fredericksen
+Author-email: UNKNOWN
+License: MIT
+Description: abc
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
