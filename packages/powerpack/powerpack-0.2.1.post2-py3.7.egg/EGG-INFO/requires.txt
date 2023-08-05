@@ -1,0 +1,6 @@
+networkx
+numpy
+scipy
+dectree>=0.0.4
+volmdlr>=0.1.7
+dessia_common>=0.0.2
