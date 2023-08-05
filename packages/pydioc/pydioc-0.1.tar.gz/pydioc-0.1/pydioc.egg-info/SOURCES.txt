@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydioc/__init__.py
+pydioc.egg-info/PKG-INFO
+pydioc.egg-info/SOURCES.txt
+pydioc.egg-info/dependency_links.txt
+pydioc.egg-info/not-zip-safe
+pydioc.egg-info/requires.txt
+pydioc.egg-info/top_level.txt
