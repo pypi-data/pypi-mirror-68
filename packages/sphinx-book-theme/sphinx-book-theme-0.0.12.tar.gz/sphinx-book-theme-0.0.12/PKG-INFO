@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sphinx-book-theme
+Version: 0.0.12
+Summary: Jupyter Book: Create an online book with Jupyter Notebooks
+Home-page: https://jupyterbook.org/
+Author: Project Jupyter Contributors
+Author-email: jupyter@googlegroups.com
+License: BSD
+Project-URL: Documentation, https://jupyterbook.org
+Project-URL: Funding, https://jupyter.org/about
+Project-URL: Source, https://github.com/jupyter/jupyter-book/
+Project-URL: Tracker, https://github.com/jupyter/jupyter-book/issues
+Description: # sphinx-book-theme
+        
+        [![codecov](https://codecov.io/gh/ExecutableBookProject/sphinx-book-theme/branch/master/graph/badge.svg)](https://codecov.io/gh/ExecutableBookProject/sphinx-book-theme) | [![Documentation Status](https://readthedocs.org/projects/sphinx-book-theme/badge/?version=latest)](https://sphinx-book-theme.readthedocs.io/en/latest/?badge=latest)
+        
+        
+        A lightweight book theme built off of the pydata sphinx theme
+        
+Keywords: reproducible science environments scholarship notebook
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: sphinx
+Provides-Extra: testing
+Provides-Extra: code_style
