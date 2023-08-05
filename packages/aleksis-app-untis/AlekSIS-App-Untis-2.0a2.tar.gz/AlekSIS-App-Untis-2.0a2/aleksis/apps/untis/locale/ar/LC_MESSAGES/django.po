@@ -1,0 +1,238 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-04 15:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: forms.py:11
+msgid "Untis XML export"
+msgstr ""
+
+#: forms.py:33
+msgid "UNTIS import"
+msgstr ""
+
+#: management/commands/untis_import_xml.py:9
+msgid "Path to Untis XML export file"
+msgstr ""
+
+#: menus.py:6
+msgid "Untis XML import"
+msgstr ""
+
+#: menus.py:13
+msgid "Link subjects to groups (for UNTIS MySQL import)"
+msgstr ""
+
+#: model_extensions.py:9 model_extensions.py:12 model_extensions.py:29
+#: model_extensions.py:32 model_extensions.py:35 model_extensions.py:54
+#: model_extensions.py:57 model_extensions.py:60 model_extensions.py:63
+#: model_extensions.py:66 model_extensions.py:69 model_extensions.py:72
+msgid "UNTIS import reference"
+msgstr ""
+
+#: model_extensions.py:17
+msgid "UNTIS subject"
+msgstr ""
+
+#: model_extensions.py:19
+msgid ""
+"The UNTIS import will use this for matching course groups(along with parent "
+"groups)."
+msgstr ""
+
+#: model_extensions.py:38
+msgid "Lesson id in UNTIS"
+msgstr ""
+
+#: model_extensions.py:42 model_extensions.py:50
+msgid "Number of lesson element in UNTIS"
+msgstr ""
+
+#: model_extensions.py:46
+msgid "Term id in UNTIS"
+msgstr ""
+
+#: models.py:4222
+msgid "Can do XML import"
+msgstr ""
+
+#: models.py:4223
+msgid "Can assign subjects to groups"
+msgstr ""
+
+#: preferences.py:8
+msgid "UNTIS: MySQL"
+msgstr ""
+
+#: preferences.py:16
+msgid "Update values of existing subjects"
+msgstr ""
+
+#: preferences.py:24
+msgid "Update short name of existing persons"
+msgstr ""
+
+#: preferences.py:32
+msgid "Update name of existing persons"
+msgstr ""
+
+#: preferences.py:40
+msgid "Update short name of existing groups"
+msgstr ""
+
+#: preferences.py:48
+msgid "Update name of existing groups"
+msgstr ""
+
+#: preferences.py:55
+msgid "Overwrite group owners"
+msgstr ""
+
+#: preferences.py:64
+msgid "Update name of existing rooms"
+msgstr ""
+
+#: preferences.py:72
+msgid "Update existing supervision areas"
+msgstr ""
+
+#: preferences.py:80
+msgid "Use course groups"
+msgstr ""
+
+#: preferences.py:82
+msgid ""
+"Build or search course groups for every course instead of setting classes as "
+"groups."
+msgstr ""
+
+#: templates/untis/groups_subjects.html:7
+#: templates/untis/groups_subjects.html:9
+msgid "Assign subjects to groups"
+msgstr ""
+
+#: templates/untis/groups_subjects.html:17
+msgid ""
+"\n"
+"        You can use this form to assign subjects to groups. Please enter the "
+"exact names of the subjects as they are\n"
+"        saved in UNTIS (case-insensitive). These values are only used to "
+"match course groups while importing from MySQL.\n"
+"      "
+msgstr ""
+
+#: templates/untis/groups_subjects.html:27
+msgid ""
+"\n"
+"        If there are more than 100 groups, this table will have multiple "
+"pages. That means that you must save your\n"
+"        changes on every page. <strong>Please don't change the page before "
+"you saved your changes!</strong>\n"
+"      "
+msgstr ""
+
+#: templates/untis/groups_subjects.html:44
+msgid "Group"
+msgstr ""
+
+#: templates/untis/groups_subjects.html:45
+msgid "Subject"
+msgstr ""
+
+#: templates/untis/xml_import.html:7 templates/untis/xml_import.html:8
+msgid "Import Untis data via XML"
+msgstr ""
+
+#: templates/untis/xml_import.html:13
+msgid ""
+"\n"
+"      Untis provides a function for exporting all data as an XML file.\n"
+"    "
+msgstr ""
+
+#: templates/untis/xml_import.html:20
+msgid ""
+"\n"
+"        Newly imported data will be valid as of tomorrow.\n"
+"      "
+msgstr ""
+
+#: templates/untis/xml_import.html:23
+msgid ""
+"\n"
+"        The effective dates of all existing lessons will be set to end\n"
+"        today.\n"
+"      "
+msgstr ""
+
+#: templates/untis/xml_import.html:27
+msgid ""
+"\n"
+"        The effective dates of all newly imported lessons will be set to\n"
+"        start tomorrow.\n"
+"      "
+msgstr ""
+
+#: templates/untis/xml_import.html:31
+msgid ""
+"\n"
+"        Teachers, rooms, subjects and classes and periods will be updated in "
+"place.\n"
+"      "
+msgstr ""
+
+#: templates/untis/xml_import.html:40
+msgid "Import data"
+msgstr ""
+
+#: util/mysql/importers/lessons.py:48
+msgid "Import lesson {}"
+msgstr ""
+
+#: util/mysql/importers/lessons.py:51
+msgid "  Skip because missing times"
+msgstr ""
+
+#: util/mysql/importers/lessons.py:108
+msgid "    Skip because missing subject"
+msgstr ""
+
+#: util/xml/xml.py:74
+#, python-format
+msgid "Class %s"
+msgstr ""
+
+#: util/xml/xml.py:88
+#, python-format
+msgid "Could not set class teacher of %(class)s to %(teacher)s."
+msgstr ""
+
+#: util/xml/xml.py:149
+#, python-format
+msgid "Invalid list of classes: %s"
+msgstr ""
+
+#: util/xml/xml.py:157
+#, python-format
+msgid "Failed to import lesson: Teacher %s does not exist."
+msgstr ""
+
+#: views.py:52
+msgid "Your changes were successfully saved."
+msgstr ""
