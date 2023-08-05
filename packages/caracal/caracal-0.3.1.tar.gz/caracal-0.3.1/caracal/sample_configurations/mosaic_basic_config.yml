@@ -1,0 +1,15 @@
+schema_version: 1.0.0
+
+getdata:
+  dataid: ['']
+
+obsconf:
+  refant: '0'
+
+general:
+  prefix: mymosaic
+  prep_workspace: true
+
+mosaic:
+  enable: true
+  mosaic_type: spectral
