@@ -1,0 +1,3 @@
+[console_scripts]
+gitea-auto-update = gitea_auto_update.update:main
+
