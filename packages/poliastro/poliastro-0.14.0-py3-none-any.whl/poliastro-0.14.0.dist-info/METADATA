@@ -1,0 +1,275 @@
+Metadata-Version: 2.1
+Name: poliastro
+Version: 0.14.0
+Summary: =========
+Home-page: https://github.com/poliastro/poliastro/
+License: UNKNOWN
+Keywords: aero,aerospace,engineering,astrodynamics,orbits,kepler,orbital mechanics
+Author: Juan Luis Cano Rodríguez
+Author-email: hello@juanlu.space
+Requires-Python: >=3.6,<3.9
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Dist: astropy >=3.2,<5
+Requires-Dist: astroquery >=0.3.9
+Requires-Dist: cached_property ; python_version<'3.8'
+Requires-Dist: jplephem
+Requires-Dist: matplotlib >=2.0,!=3.0.1
+Requires-Dist: numba >=0.46,!=0.49.0 ; implementation_name=='cpython'
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: plotly ~=4.0
+Requires-Dist: scipy >=1.4.0
+Requires-Dist: czml3 ~=0.5.3 ; extra == "cesium"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: coverage ; extra == "dev"
+Requires-Dist: hypothesis ; extra == "dev"
+Requires-Dist: ipykernel ; extra == "dev"
+Requires-Dist: ipython>=5.0 ; extra == "dev"
+Requires-Dist: ipywidgets>=7.0 ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: jupyter-client ; extra == "dev"
+Requires-Dist: mypy>=0.740 ; extra == "dev"
+Requires-Dist: nbsphinx>=0.5.0 ; extra == "dev"
+Requires-Dist: nbconvert>=5.5 ; extra == "dev"
+Requires-Dist: pycodestyle ; extra == "dev"
+Requires-Dist: pytest>=3.2 ; extra == "dev"
+Requires-Dist: pytest-cov<2.6.0 ; extra == "dev"
+Requires-Dist: pytest-doctestplus ; extra == "dev"
+Requires-Dist: pytest-mpl ; extra == "dev"
+Requires-Dist: pytest-mypy ; extra == "dev"
+Requires-Dist: pytest-remotedata ; extra == "dev"
+Requires-Dist: sphinx ; extra == "dev"
+Requires-Dist: sphinx_rtd_theme==0.5.0rc1 ; extra == "dev"
+Requires-Dist: sphinx-hoverxref==0.3b1 ; extra == "dev"
+Requires-Dist: sphinx-notfound-page ; extra == "dev"
+Requires-Dist: tox ; extra == "dev"
+Requires-Dist: notebook ; extra == "jupyter"
+Project-URL: Source, https://github.com/poliastro/poliastro
+Project-URL: Tracker, https://github.com/poliastro/poliastro/issues
+Provides-Extra: cesium
+Provides-Extra: dev
+Provides-Extra: jupyter
+
+.. poliastro
+
+.. image:: http://poliastro.github.io/images/logo_text.png
+   :target: http://poliastro.github.io/
+   :alt: poliastro logo
+   :width: 675px
+   :align: center
+
+.. |orcid| image:: https://img.shields.io/badge/id-0000--0002--2187--161X-a6ce39.svg
+   :target: http://orcid.org/0000-0002-2187-161X
+
+:Name: poliastro
+:Website: https://poliastro.github.io/
+:Author: Juan Luis Cano Rodríguez |orcid|
+:Version: 0.14.0
+
+.. |azure_pipelines| image:: https://dev.azure.com/poliastro/poliastro/_apis/build/status/poliastro.poliastro?branchName=0.14.x
+   :target: https://dev.azure.com/poliastro/poliastro/_build/latest?definitionId=1&branchName=0.14.x
+
+.. |codecov| image:: https://img.shields.io/codecov/c/github/poliastro/poliastro.svg?style=flat-square
+   :target: https://codecov.io/github/poliastro/poliastro?branch=0.14.x
+
+.. |codeclimate| image:: https://api.codeclimate.com/v1/badges/fd2aa5bf8c4b7984d11b/maintainability
+   :target: https://codeclimate.com/github/poliastro/poliastro/maintainability
+
+.. |docs| image:: https://img.shields.io/badge/docs-v0.14.0-brightgreen.svg?style=flat-square
+   :target: https://docs.poliastro.space/en/v0.14.0/?badge=v0.14.0
+
+.. |license| image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+   :target: https://github.com/poliastro/poliastro/raw/0.14.x/COPYING
+
+.. |doi| image:: https://zenodo.org/badge/11178845.svg?style=flat-square
+   :target: https://zenodo.org/badge/latestdoi/11178845
+
+.. |astropy| image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat-square
+   :target: http://www.astropy.org/
+
+.. |mailing| image:: https://img.shields.io/badge/mailing%20list-groups.io-8cbcd1.svg?style=flat-square
+   :target: https://groups.io/g/poliastro-dev
+
+.. |matrix| image:: https://img.shields.io/matrix/poliastro:matrix.org.svg?style=flat-square
+   :alt: Join the chat at https://chat.openastronomy.org/#/room/#poliastro:matrix.org
+   :target: https://chat.openastronomy.org/#/room/#poliastro:matrix.org
+
+|azure_pipelines| |codecov| |codeclimate|
+
+|docs| |license| |doi| |astropy| |mailing| |matrix|
+
+poliastro is an open source pure Python package dedicated to problems arising in Astrodynamics and
+Orbital Mechanics, such as orbit propagation, solution of the Lambert's
+problem, conversion between position and velocity vectors and classical
+orbital elements and orbit plotting, focusing on interplanetary applications.
+It is released under the MIT license.
+
+.. code-block:: python
+
+    from poliastro.examples import molniya
+
+    molniya.plot()
+
+.. image:: https://github.com/poliastro/poliastro/raw/0.14.x/docs/source/examples/molniya.png
+   :align: center
+
+Documentation
+=============
+
+|docs|
+
+Complete documentation, including a user guide and an API reference, can be read on
+the wonderful `Read the Docs`_.
+
+https://docs.poliastro.space/
+
+.. _`Read the Docs`: https://readthedocs.org/
+
+Examples
+========
+
+.. |mybinder| image:: https://img.shields.io/badge/launch-binder-e66581.svg?style=flat-square
+   :target: https://beta.mybinder.org/v2/gh/poliastro/poliastro/0.14.x?filepath=index.ipynb
+
+
+|mybinder|
+
+In the examples directory you can find several Jupyter notebooks with specific
+applications of poliastro. You can launch a cloud Jupyter server using `binder`_ to edit
+the notebooks without installing anything. Try it out!
+
+https://beta.mybinder.org/v2/gh/poliastro/poliastro/0.14.x?filepath=index.ipynb
+
+.. _binder: https://beta.mybinder.org/
+
+Requirements
+============
+
+poliastro requires the following Python packages:
+
+* NumPy, for basic numerical routines
+* Astropy, for physical units and time handling
+* numba (optional), for accelerating the code
+* jplephem, for the planetary ephemerides using SPICE kernels
+* matplotlib, for orbit plotting
+* plotly, for 2D and 3D interactive orbit plotting
+* SciPy, for root finding and numerical propagation
+
+poliastro is tested on Linux, OS X and Windows on Python
+3.6, 3.7 and 3.8 against latest NumPy.
+
+|azure_pipelines|
+
+Installation
+============
+
+The easiest and fastest way to get the package up and running is to
+install poliastro using `conda <http://conda.io>`_::
+
+  $ conda install poliastro --channel conda-forge
+
+Please check out the `documentation for alternative installation methods`_.
+
+.. _`documentation for alternative installation methods`: https://docs.poliastro.space/en/v0.14.0/getting_started.html#alternative-installation-methods
+
+Problems and suggestions
+========================
+
+If for any reason you get an unexpected error message or an incorrect result,
+or you want to let the developers know about your use case,
+please open a new issue in the `issue tracker`_ and we will try to answer promptly.
+
+.. _`issue tracker`: https://github.com/poliastro/poliastro/issues
+
+Contributing
+============
+
+poliastro is a community project, hence all contributions are more than
+welcome! For more information, head to `CONTRIBUTING.rst`_.
+
+.. _`CONTRIBUTING.rst`: https://github.com/poliastro/poliastro/blob/0.14.x/CONTRIBUTING.rst
+
+Support
+=======
+
+|mailing|  |matrix|
+
+Release announcements and general discussion take place on our `Mailing List`_ .
+
+For further clarifications and discussions, feel free to join Poliastro `Chat Room`_.
+
+.. _`Chat Room`: https://chat.openastronomy.org/#/room/#poliastro:matrix.org
+.. _`Mailing List`: https://groups.io/g/poliastro-dev
+
+
+Citing
+======
+
+If you use poliastro on your project, please
+`drop me a line <mailto:hello@juanlu.space>`_.
+
+You can also use the DOI to cite it in your publications. This is the latest
+one:
+
+|doi|
+
+And this is an example citation format::
+
+ Juan Luis Cano Rodríguez et al.. (2015). poliastro: poliastro 0.4.0. Zenodo. 10.5281/zenodo.17462
+
+License
+=======
+
+|license|
+
+poliastro is released under the MIT license, hence allowing commercial
+use of the library. Please refer to the COPYING file.
+
+FAQ
+===
+
+What's up with the name?
+------------------------
+
+poliastro comes from Polimi, which is the shortened name of the Politecnico di
+Milano, the Italian university where I was studying while writing this
+software. It's my tiny tribute to a place I came to love. *Grazie mille!*
+
+Can I do <insert awesome thing> with poliastro?
+-----------------------------------------------
+
+poliastro is focused on interplanetary applications. This has two consequences:
+
+* It tries to be more general than other Flight Dynamics core libraries more
+  focused on Earth satellites (see `Related software`_ for a brief list),
+  allowing the algorithms to work also for orbits around non-Earth bodies.
+* It leaves out certain features that would be too Earth-specific, such as
+  TLE reading, SGP4 propagation, groundtrack plotting and others.
+
+.. _`Related software`: https://docs.poliastro.space/en/v0.14.0/about.html#related-software
+
+What's the future of the project?
+---------------------------------
+
+poliastro is actively maintained and receiving an influx of new contributors
+thanks to the generous sponsorship of Google and the European Space Agency.
+The best way to get an idea of the roadmap is to see the `Milestones`_ of
+the project.
+
+.. _`Milestones`: https://github.com/poliastro/poliastro/milestones
+
