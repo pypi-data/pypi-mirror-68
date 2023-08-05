@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: tclib
+Version: 0.0.1
+Summary: Personal library
+Home-page: https://github.com/TianyiChen/tclib
+Author: Tianyi Chen
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+
+# Backup and restore for linux
+My personal Python library.
+
+
+
+
