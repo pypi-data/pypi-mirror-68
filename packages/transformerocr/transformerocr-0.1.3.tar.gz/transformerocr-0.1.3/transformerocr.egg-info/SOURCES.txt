@@ -1,0 +1,9 @@
+README.md
+setup.py
+tool/__init__.py
+tool/detector.py
+tool/translate.py
+transformerocr.egg-info/PKG-INFO
+transformerocr.egg-info/SOURCES.txt
+transformerocr.egg-info/dependency_links.txt
+transformerocr.egg-info/top_level.txt
