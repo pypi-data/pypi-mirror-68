@@ -1,0 +1,16 @@
+invenio_rest/__init__.py,sha256=Uil0PgYIdHbogczRmmmVvnENWYpKr4L3MlLyRVMotgs,7820
+invenio_rest/config.py,sha256=FcrfZQS-PTqTagrj5wyoi14h8TeE-tzuEay3SPScFrc,4113
+invenio_rest/csrf.py,sha256=FU4nXEXRi9j7U5Rg0ry19F0m3lubEgEXrTPQN6N082w,8399
+invenio_rest/decorators.py,sha256=nBHvLOivE3VoPha7gRft-z5LbRm0X6eP3gjYVMwTOwE,1023
+invenio_rest/errors.py,sha256=jcYQjAR-XzLgDnUN9r_rf4lohQuisLToPGmpQcNzv10,4317
+invenio_rest/ext.py,sha256=Msg9hg8MqZz6Qzv4HI_wnX2VMdf33Ju9J4sTCkSwmWI,3758
+invenio_rest/serializer.py,sha256=JRdQWdhYHCD0oXwKUL6gsF9oio0V0DZpVxmW-16oEU8,2682
+invenio_rest/version.py,sha256=sPULqLCmDNLe2Dqy6PW4KTQ-WZaUVdpfHhOvNvcUqY0,440
+invenio_rest/views.py,sha256=RKZHzXsDz3ciVp3il98AF_1pSRJG9OvjVFJVd1ZQQYQ,12902
+invenio_rest-1.2.1.dist-info/AUTHORS.rst,sha256=0CSVnbJm4fYLjoQPB1vgn2WxGnr-JiujeU0iH_t7BQk,539
+invenio_rest-1.2.1.dist-info/LICENSE,sha256=7NdusrwW2CBXoBZXOYFnEKLE736o9LpcXGBRdwj0lQg,1067
+invenio_rest-1.2.1.dist-info/METADATA,sha256=4ZcV-Is2L6TWoaG193thJkt0FdNkb1EBMdAEJHiPqzU,4633
+invenio_rest-1.2.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+invenio_rest-1.2.1.dist-info/entry_points.txt,sha256=7ZCfgBvjPSmf5LGA3daaYcbH_ktc9w45f9jv7s-2lyM,139
+invenio_rest-1.2.1.dist-info/top_level.txt,sha256=wBLGA6u_8q-V2C93-H2Vezpy-1g2jrIX_4zAeimeFFo,13
+invenio_rest-1.2.1.dist-info/RECORD,,
