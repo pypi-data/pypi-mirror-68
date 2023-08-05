@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: mpcurses
+Version: 0.0.1
+Summary: A framework that exposes a simple set of APIs enabling multi-process integration with the curses screen painting library
+Home-page: https://github.com/soda480/mpcurses
+Author: Emilio Reyes
+Author-email: soda480@gmail.com
+License: Apache License, Version 2.0
+Description: 
+        mpcurses is a framework that exposes a simple set of APIs enabling multi-process integration with the curses screen painting library.
+        
+        With the mpcurses APIs, the complexities of setting up multi-processing within a curses environment are abstracted away. The only requirement is that the target method needs to implement logging.
+        
+        **How it works**
+        
+        The method you wish to execute concurrently is decorated with the queue handler decorator. The queue handler decorator creates a new log handler that will write all logged messages within the decorated method to a thread-safe queue. The main process creates the thread-safe message queue and handles the spawning of the desired number of concurrent processes, each process will be passed the reference to the message queue upon startup. The main process will then read messages from the message queue as they come in and update the curses screen accordingly.
+        
+        The layout of the curses screen is defined as a dictionary and can leverage builtin constructs for capturing messages, incrementing counters, and processing side effects such as changing text colors when certain messages appear. The result is a dynamic screen that is being updated dynamically from any number of concurrent processes running in the background.
+        
+        For samples checkout our home page: https://github.com/soda480/mpcurses
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
