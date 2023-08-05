@@ -1,0 +1,15 @@
+numpy_nn/__init__.py,sha256=sm46M9hy3LBvNoK8X1jJlL6XC3wZB4JpFzX-YS1bC50,230
+numpy_nn/numpy_nn.py,sha256=vR5AaF0iel21LvsdcqwheoBz0SIj9K9I_Ub8M8oA98Y,20
+numpy_nn/layers/Neuron.py,sha256=wz7bdVXyuNGGRilWrU3So2oJrzCh0nnM9JsoimS6GIs,1226
+numpy_nn/layers/__init__.py,sha256=Pv_nkcYayDmVj5sI5vJihJNZYLeKfBxtFmt5w2v7SBU,119
+numpy_nn/losses/MeanAbsoluteError.py,sha256=2K_bFjv2SUq7R5dLyNbzDL5V-jDj9TuHuk_Td3RjqXc,610
+numpy_nn/losses/MeanSquaredError.py,sha256=2IJKNp6-ELs3Si2jsFw6Wofsqh9g96bjE86BTxs49hA,474
+numpy_nn/losses/__init__.py,sha256=ad8FI70ysSu5jkmPH_nSN4_7KGuUhX4Au2GaXAOoodc,91
+numpy_nn/optimizers/SGD.py,sha256=xqQTHHStPcJG7W8mhUdACq4GjYBdjEy_Gt0S1EWTbE4,168
+numpy_nn/optimizers/__init__.py,sha256=pTSBdgQYDDWEPqrc_ZB9VnTgBGt4Dk0hBYv9PH4-hPE,20
+numpy_nn-0.1.0.dist-info/AUTHORS.rst,sha256=QRgzBUilVzwWFxb0pCjvUCTScZ5bE8bVkagky4IM5XU,177
+numpy_nn-0.1.0.dist-info/LICENSE,sha256=jJKdiPfnFu9kim0lVhpa0BHz_Gu4wjUCncy3aw0tRVY,1095
+numpy_nn-0.1.0.dist-info/METADATA,sha256=EcGezBKPulziyW7_KQ4gEPnuSSV3QXBa1fcPSBzU-5o,2243
+numpy_nn-0.1.0.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+numpy_nn-0.1.0.dist-info/top_level.txt,sha256=6RYvHhqCqYmoByKp_o4OTH4qv8BGu2jf-ktWkby6tRY,9
+numpy_nn-0.1.0.dist-info/RECORD,,
