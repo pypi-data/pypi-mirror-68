@@ -1,0 +1,14 @@
+automation/__init__.py,sha256=jTGgs4vNmN-t83fZhlt3p-VI3_LhOsz0fcIkMRV0V9M,69
+automation/cli.py,sha256=nOeL1pZq7KguJdPvQaa8yxQ88uBluEr7UqgpuSRtxco,2965
+automation/config.py,sha256=XHdOXmVZGtG4R-UCpf2cwDMSbcr0uoIwq9c1s-DglRw,441
+automation/logging.py,sha256=QQse8BYOh-16TQs2A8qLv7jCw2RhUf4h1V8xGhecr_U,411
+automation/parse_inputs.py,sha256=thl6Ppkfjj3XTEnsoWwcq89cBly5WUYDDr995X1eRZ4,4153
+automation/validation.py,sha256=QP_7cxozZf3mfroKn7ZyCpaB080fhf6MRSh9CDZLnYI,3584
+automation/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+automation/base/base_function.py,sha256=39eAta3vK1ee5EQHhVimrC2KQkS5zVrfYiy8Gd-XZpk,10657
+automation/base/git_actions.py,sha256=_eZ6PrBvcAoeRIF_jgR7azhMC0sAWoAirt6msa-T_Ek,2362
+mauto-0.0.1.dev1.dist-info/METADATA,sha256=LRcn2B1xAXr-RV-sOn9oHJfSAAGkFIkR-9y5IYwARHQ,3100
+mauto-0.0.1.dev1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mauto-0.0.1.dev1.dist-info/entry_points.txt,sha256=2kTISnbEi8GDZWCY3ERVEqnO9dYC6KwSPNbo_Y6jUyM,73
+mauto-0.0.1.dev1.dist-info/top_level.txt,sha256=6FPw8tX4RykuC6Wq7ti_JjKbNFsg6OSMwQB35ne8Ug0,11
+mauto-0.0.1.dev1.dist-info/RECORD,,
