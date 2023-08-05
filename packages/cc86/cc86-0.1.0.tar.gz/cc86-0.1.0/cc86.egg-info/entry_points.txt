@@ -1,0 +1,3 @@
+[console_scripts]
+cc86 = cc86.cli:main
+
