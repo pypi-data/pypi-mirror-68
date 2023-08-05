@@ -1,0 +1,9 @@
+README.md
+setup.py
+tagout/__init__.py
+tagout/_document.py
+tagout/_utils.py
+tagout.egg-info/PKG-INFO
+tagout.egg-info/SOURCES.txt
+tagout.egg-info/dependency_links.txt
+tagout.egg-info/top_level.txt
