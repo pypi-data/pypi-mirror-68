@@ -1,0 +1,9 @@
+limecore/logging/__init__.py,sha256=CiLsEjHJ4lw7THPg-pDuFOC4RLfAk6EeNDGR6196kVI,109
+limecore/logging/handler_factory.py,sha256=A9cme7fNRxZPNqWCcq8QkhgcOA9oS9fn2QtS1bSfSvM,687
+limecore/logging/logger_factory.py,sha256=qc6m6HtvbQunet2V8AZOOnvCm2iyB6b0b52RRdf2WlU,94
+limecore/logging/module.py,sha256=TVdGEP505m1ttTHpDKtGhKEodVP6z8mlBbo8HiVKlY0,2287
+limecore_logging-0.2.1.dist-info/LICENSE.txt,sha256=a8A0bk3wkc3CeBUjXW59ke5s1Maz2eDSS253mpEq6R8,1072
+limecore_logging-0.2.1.dist-info/METADATA,sha256=15CgeBpF3Pha7wQGQmv_p9f-SDtG9oyTWK8zACCOGjE,562
+limecore_logging-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+limecore_logging-0.2.1.dist-info/top_level.txt,sha256=AjPBLv5vIXBO-4Fnsaxh2pp8remUg9pPUX3WD7f2_TA,9
+limecore_logging-0.2.1.dist-info/RECORD,,
