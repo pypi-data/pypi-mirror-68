@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paymentcheckout
+Version: 1.0.5
+Summary: Payment verification for QIWI, Yandex Money, Payeer and QIWI Virtual Bank Card.
+Home-page: UNKNOWN
+Author: Blazzerrr
+License: MIT
+Description: Payment verification for QIWI, Payeer and QIWI Virtual Bank Card
+        
+        https://github.com/Blazzerrr/paymentcheckout
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
