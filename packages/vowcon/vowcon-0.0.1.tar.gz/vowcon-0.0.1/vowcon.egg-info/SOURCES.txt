@@ -1,0 +1,8 @@
+README.md
+setup.py
+vowcon/__init__.py
+vowcon/vowcon.py
+vowcon.egg-info/PKG-INFO
+vowcon.egg-info/SOURCES.txt
+vowcon.egg-info/dependency_links.txt
+vowcon.egg-info/top_level.txt

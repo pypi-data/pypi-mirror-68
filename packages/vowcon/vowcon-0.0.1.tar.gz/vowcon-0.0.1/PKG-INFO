@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: vowcon
+Version: 0.0.1
+Summary: A small example package to return count of vowels and consonants
+Home-page: https://github.com/Arun1106/vowcon
+Author: Arun I
+Author-email: isarun20@gmail.com
+License: UNKNOWN
+Description: A small package to return the count of vowels and consonants.
+        ## How to install
+        
+        ```
+        pip install vowcon
+        ```
+        
+        ## How to use
+        
+        Below example will help you
+        
+        ```
+        from vowcon import vowcon
+        str1= "Arun"
+        vowcon.vowels(str1)	# returns the number of vowels in the given string
+        
+        str1 = "Arun Iyappan"
+        vowcon.consonants(str1)     #returns the number of consonants in the given string
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
