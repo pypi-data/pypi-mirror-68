@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: STATFOX
+Version: 0.20
+Summary: Advanced statistical functions
+Home-page: https://github.com/user/reponame
+Author: Devin D. Whitten, MS
+Author-email: devin.d.whitten@gmail.com
+License: MIT
+Download-URL: https://github.com/DevinWhitten/STATFOX
+Description: STATFOX
+        ========
+        
+        $STATFOX is a Python toolkit for advanced statistical and exploratory analysis procedures.
+        
+        Look how easy it is to use:
+        
+            import STATFOX
+            # easily perform bootstrapped resampling, with optional error input for Gaussian noise injection.
+            STATFOX.resample(array, error)
+        
+        Features
+        --------
+        
+        - Robust statistical functions
+        - Kernel density estimation aided PDF determination
+        - Binned statistics with masking support
+        - Arbitrary function Bayesian maximization
+        
+        Installation
+        ------------
+        
+        Install $STATFOX by running:
+        
+            pip install STATFOX
+        
+        Contribute
+        ----------
+        
+        - Source Code: github.com/DevinWhitten/STATFOX
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        We have a mailing list located at: devin.d.whitten@gmail.com
+        
+        License
+        -------
+        
+        The project is licensed under the MIT license.
+        
+Keywords: Python,Statistics,Data Science,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
