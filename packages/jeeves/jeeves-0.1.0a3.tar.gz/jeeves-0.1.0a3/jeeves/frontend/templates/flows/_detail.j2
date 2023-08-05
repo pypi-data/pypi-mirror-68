@@ -1,0 +1,50 @@
+{% extends "flows/_base.j2" %}
+
+{% block content %}
+<div class="columns">
+  <div class="column">
+    <nav class="panel">
+        <p class="panel-heading">
+            {{ flow.name }}
+        </p>
+        <a class="panel-block {% if "flow-task-" in request.resolver_match.url_name %}is-active{% endif %}"
+            href="{% url "flow-task-list" flow.pk %}">
+            <span class="panel-icon">
+            <i class="fas fa-list" aria-hidden="true"></i>
+            </span>
+            Task list
+        </a>
+        <a class="panel-block {% if "flow-trigger-" in request.resolver_match.url_name %}is-active{% endif %}"
+            href="#">
+            <span class="panel-icon">
+            <i class="fas fa-bolt" aria-hidden="true"></i>
+            </span>
+            Triggers
+        </a>
+        <a class="panel-block {% if "flow-execution-" in request.resolver_match.url_name %}is-active{% endif %}"
+            href="{% url "flow-execution-list" flow.pk %}">
+            <span class="panel-icon">
+            <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
+            </span>
+            Executions
+        </a>
+        <a class="panel-block {% if "flow-run" in request.resolver_match.url_name %}is-active{% endif %}"
+            href="{% url "flow-run" flow.pk %}">
+            <span class="panel-icon">
+            <i class="fas fa-play" aria-hidden="true"></i>
+            </span>
+            Run now
+        </a>
+        <a class="panel-block {% if request.resolver_match.url_name == "flow-delete" %}is-active{% endif %}"
+            href="{% url "flow-delete" flow.pk %}">
+            <span class="panel-icon">
+            <i class="fas fa-trash" aria-hidden="true"></i>
+            </span>
+            Delete
+        </a>
+    </nav>
+  </div>
+  <div class="column is-three-quarters">
+    {% block flow_content %}{% endblock %}
+</div>
+{% endblock %}

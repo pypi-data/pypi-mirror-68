@@ -1,0 +1,41 @@
+{% extends "flows/_base.j2" %}
+{% load batch %}
+
+{% block content %}
+<div class="container has-text-right">
+  <a class="button is-success" href="{% url "flow-add" %}">Add flow</a>
+</div>
+
+{% if not flows %}
+<div class="container is-fullwidth">
+  <div class="box has-text-centered">
+    No flows defined
+  </div>
+</div>
+{% endif %}
+
+
+<div class="columns">
+  {% for items in flows|batch %}
+    {% for flow in items %}
+    <div class="column">
+      {% if flow %}
+      {# Handle null values to equalie columns #}
+      <article class="tile is-child box">
+        <p class="title">{{ flow.name }}</p>
+        <p class="subtitle">{{ flow.description }}</p>
+        <div class="content">
+          <td class="has-text-right">
+            <a class="button is-link" href="{% url "flow-detail" flow.pk %}">View</a>
+            <a class="button is-danger" href="{% url "flow-delete" flow.pk %}">Delete</a>
+          </td>
+        </div>
+      </article>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+    <div class="columns">
+  {% endfor %}
+</div>
+{% endblock %}

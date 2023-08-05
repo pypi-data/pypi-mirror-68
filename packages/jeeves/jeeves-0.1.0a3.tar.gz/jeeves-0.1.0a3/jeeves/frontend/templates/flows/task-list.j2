@@ -1,0 +1,59 @@
+{% extends "flows/_detail.j2" %}
+
+{% block flow_content %}
+    {% for task in flow.tasks %}
+    <div class="content">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{ task.type }}: {{ task.name }}
+          </p>
+        </header>
+        <div class="card-content">
+        {% spaceless %}<pre class="content">{{ task.definition.script }}</pre></div>{% endspaceless %}
+        <footer class="card-footer">
+          {% if not forloop.first %}
+          <a class="card-footer-item has-text-primary" aria-label="more options" href="{% url "flow-task-move" flow.pk task.pk "up" %}">
+            <span class="icon">
+              <i class="fas fa-arrow-up" aria-hidden="true"></i>
+            </span>
+            Move up
+          </a>
+          {% endif %}
+          {% if not forloop.last %}
+          <a class="card-footer-item has-text-primary" aria-label="more options" href="{% url "flow-task-move" flow.pk task.pk "down" %}">
+            <span class="icon">
+              <i class="fas fa-arrow-down" aria-hidden="true"></i>
+            </span>
+            Move down
+          </a>
+          {% endif %}
+          <a class="card-footer-item has-text-primary" aria-label="more options" href="{% url "flow-task-edit" flow.pk task.pk %}">
+            <span class="icon">
+              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+            </span>
+            Edit
+          </a>
+          <a class="card-footer-item has-text-danger" aria-label="more options" href="{% url "flow-task-delete" flow.pk task.pk %}">
+            <span class="icon">
+              <i class="fas fa-trash" aria-hidden="true"></i>
+            </span>
+            Delete
+          </a>
+        </footer>
+      </div>
+    </div>
+    {% empty %}
+    <div class="has-text-centered">This flow does not contain any tasks!</div>
+    {% endfor %}
+
+    <div class="has-text-centered">
+    <hr>
+      <a class="button is-primary" href="{% url "flow-task-add" flow.pk %}">
+            <span class="icon">
+            <i class="fab fa-plus"></i>
+            </span>
+            <span>Add task</span>
+        </a>
+  </div>
+{% endblock %}
