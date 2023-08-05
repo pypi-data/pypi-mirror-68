@@ -1,0 +1,14 @@
+README.md
+setup.py
+trajectify/ConstrainedState.py
+trajectify/Path.py
+trajectify/Pose.py
+trajectify/QuinticSpline.py
+trajectify/Robot.py
+trajectify/State.py
+trajectify/Trajectory.py
+trajectify/__init__.py
+trajectify.egg-info/PKG-INFO
+trajectify.egg-info/SOURCES.txt
+trajectify.egg-info/dependency_links.txt
+trajectify.egg-info/top_level.txt
