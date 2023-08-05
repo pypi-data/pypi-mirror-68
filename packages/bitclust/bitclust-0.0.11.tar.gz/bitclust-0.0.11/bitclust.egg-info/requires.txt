@@ -1,0 +1,4 @@
+bitarray>=1.2.1
+numpy
+pandas
+matplotlib
