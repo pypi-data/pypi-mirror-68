@@ -1,0 +1,9 @@
+pandas>=0.25.0
+pepars
+sparsedat>=1.0.0alpha5
+numpy
+plotly
+h5py
+sklearn
+scipy
+statsmodels

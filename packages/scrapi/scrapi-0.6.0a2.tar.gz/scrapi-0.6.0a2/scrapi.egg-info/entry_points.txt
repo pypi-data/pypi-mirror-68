@@ -1,0 +1,4 @@
+[console_scripts]
+scrap-init-ws = scrapi.dataset.initialize:initialize
+scrap-preprocess = scrapi.dataset.preprocess:preprocess
+
