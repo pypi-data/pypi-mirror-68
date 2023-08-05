@@ -1,0 +1,10 @@
+README.md
+setup.py
+img_renamer/__init__.py
+img_renamer/img_renamer
+img_renamer/img_renamer.py
+img_renamer.egg-info/PKG-INFO
+img_renamer.egg-info/SOURCES.txt
+img_renamer.egg-info/dependency_links.txt
+img_renamer.egg-info/requires.txt
+img_renamer.egg-info/top_level.txt
