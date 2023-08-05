@@ -1,0 +1,16 @@
+PyHydro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyHydro/dadosgerais.py,sha256=9AbE1D0OW_rJAObpvE2hT3M-AD8jjdjPa0OlB1tIzNY,1755
+PyHydro/fcf.py,sha256=lL-_cMg84y2JYhM8jo-pePA-mvNd7GW8S0qALifTrG0,1218
+PyHydro/hidr.py,sha256=cq-_i7YmDOQBpo-vY2d3QhpnRWZzAztKoDPofw32rvA,95959
+PyHydro/interc.py,sha256=l9gByFncun7we3skxm68QYanf5juM-NSUlA1q6HA-zQ,429
+PyHydro/mddh.py,sha256=uqoWdWt4sV6Em0eAuLLCfObDcAAEbFjEPMmmZvU-42Y,12938
+PyHydro/planerg.py,sha256=4LZjx0xwKjBBwhmV4eMTerdbRDT_zKn-x_Q5IyDHpHM,122
+PyHydro/pmo.py,sha256=_GlhL-xJlakVTgJUpnlzMXK5Da04h5oL1U1mR5O52xo,43339
+PyHydro/resequiv.py,sha256=y3LSViix4uh6RX2cxDvBOJPeP3rAv_5e_20J71eY8L0,12959
+PyHydro/submercado.py,sha256=AnuchtDeLZ01yOxqLj6om0g34ZHzt15AClYBJ1vOgis,103419
+PyHydro/term.py,sha256=k-KSXsoXWZNNJmSvRqvkuFBdasXz1avwGA0ERiKiIZo,603
+py_hydro-0.0.6.dist-info/LICENSE.txt,sha256=SY6_3KybRHBBKTn1ThGMyOkQRIels0lB9knSBJ6pSA0,1073
+py_hydro-0.0.6.dist-info/METADATA,sha256=qOhWa2I-aCj6TzIoyplMl1npQHEoRA13OeanKj8NPrs,1242
+py_hydro-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+py_hydro-0.0.6.dist-info/top_level.txt,sha256=_cK_ImNPv9agE1sXVv3o8z3wbX6fMdIg6Lv2D08gL3Q,8
+py_hydro-0.0.6.dist-info/RECORD,,
