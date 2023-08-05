@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: py-scripto
+Version: 0.1.0
+Summary: A package to run SQL script or SQL file script in an instance of sql server
+Home-page: https://github.com/datnguye/py_scripto
+Author: datnguye
+Author-email: datnguyen.it09@gmail.com
+License: LICENSE
+Platform: UNKNOWN
+Requires-Python: >=3.7.5
+Requires-Dist: pyodbc (==4.0.30)
+
+# py-scripto
+This is to run SQL script or file script in an instance of sql server
+
+### Version used
+SQL Server 2019
+Python 3.7.5
+
+
+## DEPENDENCIES
+
+### DbExec stored procedure
+Download from https://github.com/datnguye/SQL-Server/blob/master/maintenance/DbExec.sql
+Compile it to master database
+
+### xp_cmdshell need enabling on SQL instance
+```
+EXEC sp_configure 'show advanced option', 1
+RECONFIGURE
+GO
+EXEC sp_configure 'xp_cmdshell', 1
+RECONFIGURE
+GO
+```
+
+
+## USAGE
+
+```
+from py-scripto.sqlserver
+sqlserver.run_file_script(server="DAVID\DAVID", uid="py-scripto", pwd="py-scripto", connect_to_db="IMPORT", script_path="D:\\Downloads\\test.sql")
+sqlserver.run_script(server="DAVID\DAVID", uid="py-scripto", pwd="py-scripto", connect_to_db="IMPORT", sql="SELECT * FROM Test WITH (NOLOCK)")
+```
+
