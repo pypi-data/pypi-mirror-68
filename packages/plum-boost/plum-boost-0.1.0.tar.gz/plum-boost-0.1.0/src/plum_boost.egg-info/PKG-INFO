@@ -1,0 +1,34 @@
+Metadata-Version: 1.2
+Name: plum-boost
+Version: 0.1.0
+Summary: plum-py performance booster.
+Home-page: https://gitlab.com/dangass/plum/-/blob/master/boost/README.rst
+Author: Dan Gass
+Author-email: dan.gass@gmail.com
+Maintainer: Dan Gass
+Maintainer-email: dan.gass@gmail.com
+License: MIT License; http://opensource.org/licenses/MIT
+Description: 
+        ################################################
+        [plum-boost] plum-py Package Performance Booster
+        ################################################
+        
+        The ``plum-py`` Python package provides strictly Python based classes and
+        utility functions to efficiently pack and unpack bytes. When installed,
+        the "C" based implementations in this package are leveraged by the
+        ``plum-py`` package to improve packing and unpacking performance in the
+        following areas:
+        
+            - Integers (including Enums, Bit Fields, and Bit Flags)
+            - Floats
+            - Structures (fixed sized)
+        
+        
+Keywords: pack unpack bytes structure memory
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6.*
