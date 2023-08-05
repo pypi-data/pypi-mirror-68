@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: melan-html
+Version: 0.0.1
+Summary: A Melan extension to write HTML documents.
+Home-page: https://github.com/jhadida/melan_html
+Author: Jonathan Hadida
+Author-email: jonathan.hadida@unknown.invalid
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: melan
+
+
+# Melan:HTML
+
+A [Melan](https://github.com/jhadida/melan) extension to write HTML documents.
+
+## Known Issues
+
+Users appreciate tips and information about work in progress.
+
+## Release Notes
+
+Mention bug fixes and exciting new features.
+
+
