@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+etc/Example.ipynb
+src/euxfel_bunch_pattern/__init__.py
+src/euxfel_bunch_pattern/_version.py
+src/euxfel_bunch_pattern.egg-info/PKG-INFO
+src/euxfel_bunch_pattern.egg-info/SOURCES.txt
+src/euxfel_bunch_pattern.egg-info/dependency_links.txt
+src/euxfel_bunch_pattern.egg-info/requires.txt
+src/euxfel_bunch_pattern.egg-info/top_level.txt
+src/euxfel_bunch_pattern/tests/__init__.py
+src/euxfel_bunch_pattern/tests/test_bunch_pattern.py
