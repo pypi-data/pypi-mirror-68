@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+designer_cmd/__init__.py
+designer_cmd/api.py
+designer_cmd.egg-info/PKG-INFO
+designer_cmd.egg-info/SOURCES.txt
+designer_cmd.egg-info/dependency_links.txt
+designer_cmd.egg-info/top_level.txt
+designer_cmd/utils/__init__.py
+designer_cmd/utils/utils.py
