@@ -1,0 +1,52 @@
+# FloodGate SDK for Python
+
+## Overview
+
+This is an unofficial Python Client for [Floodgate](https://floodgate.io), a feature rollout service which provides a centralised management console for managing remote feature flags.
+
+This code is based on .NET SDK implementation.
+
+## Installing
+
+Install the Floodgate Client via pip
+
+```console
+pip install floodgateio-python
+```
+
+## Usage
+
+Below is a simple example of how you can use the FloodGate Client to check on the status of a flag.
+
+Add floodgateio to your application
+
+```python
+import floodgateio
+```
+
+Create a FloodGate Client instance
+
+```python
+client = floodgateio.FloodGateClient.initialize_from_key_autoupdate("ENTER-YOUR-API-KEY")
+```
+
+Retrieve your flag value
+
+```python
+feature_flag = client.get_value("my-feature-flag", False)
+
+if feature_flag:
+    # Do something new and amazing here
+
+else:
+    # Do whatever it is I'm usually doing here
+
+```
+
+## Usage in asyncio mode
+
+To use asyncio version create FloodGateClientAsync instead 
+
+```python
+client = floodgateio.FloodGateClientAsync.initialize_from_key_autoupdate("ENTER-YOUR-API-KEY")
+```

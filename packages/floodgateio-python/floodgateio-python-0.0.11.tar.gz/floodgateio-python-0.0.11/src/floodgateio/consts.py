@@ -1,0 +1,34 @@
+
+class Consts:
+
+    STATUS_OK = "OK"
+
+    STATUS_NOK = "NOK"
+
+    COMPARATOR_EQUAL_TO = 1
+
+    COMPARATOR_NOT_EQUAL_TO = 2
+
+    COMPARATOR_GREATER = 3
+
+    COMPARATOR_GREATER_EQUAL_TO = 4
+
+    COMPARATOR_LESS = 5
+
+    COMPARATOR_LESS_EQUAL_TO = 6
+
+    COMPARATOR_CONTAINS = 7
+
+    COMPARATOR_NOT_CONTAIN = 8
+
+    COMPARATOR_ENDS_WITH = 9
+
+    USER_ATTRIBUTE_ID = "id"
+
+    USER_ATTRIBUTE_EMAIL = "email"
+
+    USER_ATTRIBUTE_NAME = "name"
+
+    CACHE_NAME = "floodgate_cache"
+
+    FLAGS_CACHE_NAME = "floodgate_flags_cache"
