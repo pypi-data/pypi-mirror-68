@@ -1,0 +1,16 @@
+boar/__init__.py,sha256=WfBNjkqy4OxuXJ8e_8WtnH9c-azoLsAPNLs2to4gEt8,902
+boar/linting.py,sha256=YlXopoAAzUlG1-9XTFB-p5YWX08qikiCUjxGG_JgXhQ,2933
+boar/run.py,sha256=Kb6Tyi8m8tm-XlefSE13wWAXq0Ccm2D_PEk2FGIrdM8,1005
+boar/running.py,sha256=BhG9WiD3fDrFkDVO4UpnyYJqpsR0kN3zK3GLbOcxKJw,3119
+boar/testing.py,sha256=5WByEI61veTf-qBUTRduwyVuOkZdix_loJcyyLJjGtk,4246
+boar/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+boar/utils/apply.py,sha256=n41gOrOfxJtYB2Js2Smb0xVseplHnZeaEnPycnjEBCw,2184
+boar/utils/execute.py,sha256=MlgtuiCn2e4gSZacRZXl3EMDIqp41tLS4TmAjKB8cms,1936
+boar/utils/log.py,sha256=6hCvuwVLIVgHD03nxTmMn8DNRk4DTPWnSWcZy9Odd8g,1238
+boar/utils/parse.py,sha256=7fCfWXVcqwpY_6olk2zpZplJXFHprHDIWRj1BUWU-TY,2753
+boar/utils/split.py,sha256=cPdqmek1x4PbNDAepUXs6YaS3bKQnQp4lU_761xJEGQ,1778
+boar-0.0.1.dist-info/LICENSE,sha256=6gGHVaxvAj50w8Nrb8omAeLNNuyjBaK-5ZWbLH2AI0w,1097
+boar-0.0.1.dist-info/METADATA,sha256=wZ4GAMpNS2mTmHReoQSOUkV77kAIKlzpFQtnGXKSFxw,2405
+boar-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+boar-0.0.1.dist-info/top_level.txt,sha256=Tt_L2xBfjUdghdRWxYlvMnFixiJj3SxD2ir6S2DX2Is,5
+boar-0.0.1.dist-info/RECORD,,
