@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="decideurs bg-colored">
+        <div class="maincontainer flex-col ai-center">
+            <div id="call-out-form-container" class="form" style="display: block">
+
+                {% include "call_out_form.html" with no_js=True %}
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
