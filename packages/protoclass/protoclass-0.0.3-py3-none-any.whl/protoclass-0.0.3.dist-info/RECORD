@@ -1,0 +1,11 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/basic.py,sha256=rpzSUCKmP9ElcnRF6MvkHZg39ccYLrp5UGsjilg1a44,576
+examples/expression-problem.py,sha256=SLmmPkOgqKcvQ_aAEnIUlPbkjU1DQVsKQdeiUX6GI3k,993
+protoclass/__init__.py,sha256=mfapo7XzAZFNz2gx6AXIPLLKkZIVviQLTDkQ65nPFts,67
+protoclass/proto.py,sha256=uicqYn6_hgYaPUAh-JJyefQegonLCthq_3ibqocKdps,4262
+protoclass-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+protoclass-0.0.3.dist-info/METADATA,sha256=Tr68wMKR7pSHWnqPLQPlyqAnknfswyrc5qlFbGnob2c,5367
+protoclass-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+protoclass-0.0.3.dist-info/top_level.txt,sha256=C1yEhc1OxoUplr-kcmqyeZmSQvbr8-W9GIt_0fP-7II,20
+protoclass-0.0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+protoclass-0.0.3.dist-info/RECORD,,
