@@ -1,0 +1,10 @@
+ctinker/LICENSE,sha256=IKok206I51lkDM1xyMBr3C5xXfrbkAWIYQQwZtd_j_Y,11344
+ctinker/__init__.py,sha256=RSHf9AmscZh_YeKLBUSaFro_axBP5h4zLd_5b9DwcZw,3605
+ctinker/_supervisor.py,sha256=iSfeGD9yGKX4vqb0TA1BKFji1-PrUcX6g0TR4FG6dR4,12964
+ctinker-0.0.2.data/scripts/ctinker,sha256=W2PSnqeTmDptd4qXist_UthTjns4K5cQUEowSKQAIxc,965
+ctinker-0.0.2.dist-info/METADATA,sha256=jrs-NPkfzsuGaotjU0tctTPRsjC0XLwKdJq9KNrHm4s,7465
+ctinker-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ctinker-0.0.2.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ctinker-0.0.2.dist-info/top_level.txt,sha256=bUEx-iEP-25dlM_BQ-6lphas451oVRSc6mwfI8nML4U,8
+ctinker-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ctinker-0.0.2.dist-info/RECORD,,
