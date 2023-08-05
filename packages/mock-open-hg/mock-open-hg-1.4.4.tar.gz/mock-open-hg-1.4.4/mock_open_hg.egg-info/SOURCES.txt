@@ -1,0 +1,11 @@
+.version
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mock_open/__init__.py
+mock_open/mocks.py
+mock_open_hg.egg-info/PKG-INFO
+mock_open_hg.egg-info/SOURCES.txt
+mock_open_hg.egg-info/dependency_links.txt
+mock_open_hg.egg-info/top_level.txt
