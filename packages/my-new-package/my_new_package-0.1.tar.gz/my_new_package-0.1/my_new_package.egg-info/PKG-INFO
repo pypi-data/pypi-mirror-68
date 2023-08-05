@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: my-new-package
+Version: 0.1
+Summary: Awesome library
+Home-page: https://github.com/whatever/whatever
+Author: yourname
+Author-email: your@address.com
+License: MIT
+Description: UNKNOWN
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
