@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dotgit
+Version: 2.0.0a6
+Summary: A comprehensive solution to managing your dotfiles
+Home-page: https://github.com/kobus-v-schoor/dotgit
+Author: Kobus van Schoor
+Author-email: v.schoor.kobus@gmail.com
+License: GNU General Public License v2 (GPLv2)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+![tests](https://github.com/kobus-v-schoor/dotgit/workflows/tests/badge.svg)
+[![coverage](https://coveralls.io/repos/github/kobus-v-schoor/dotgit/badge.svg?branch=python)](https://coveralls.io/github/kobus-v-schoor/dotgit?branch=python)
+![publish](https://github.com/kobus-v-schoor/dotgit/workflows/publish/badge.svg)
+[![downloads](https://img.shields.io/pypi/dm/dotgit)](https://pypi.org/project/dotgit/)
+
+In this branch I'll be working on a python rewrite of dotgit with the aim of making the codebase more maintainable, durable and testable. Until this branch is merged into master you can expect abrupt changes to occur inside this branch with no regard for backward-compatibility, so tread lightly.
+
+
