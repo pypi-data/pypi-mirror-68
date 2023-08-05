@@ -1,0 +1,11 @@
+polymodels/__init__.py,sha256=EgOPnwEjyy26CCNgchp8TlriniW65pCcNI0HOX30XTI,114
+polymodels/fields.py,sha256=HwXI2n-76YuDMi2K1ySArUzDRDsb8TPqNWcekTSqHtc,6443
+polymodels/forms.py,sha256=TjPAAwCHVyZ21tDaDsOjgnyloF2_JZ-S3RMUf1zboJ8,989
+polymodels/managers.py,sha256=1tYRboWadd3pzMeLhHaM1h27UhP5Jfe7chmVH1mf9lM,4084
+polymodels/models.py,sha256=j587xPEsL4rqm43wlMnTyKMc4c-85mtWOmph98Zs9HA,7475
+polymodels/utils.py,sha256=XmQTfZTVpv-QO1G6q5teSAlV5Yb2Zkh1u4nambQTbqY,664
+django_polymodels-1.6.dist-info/LICENSE,sha256=FmcqGy9xA7dhUxId6VHDUtNsSX0uojE3zfqHWuD98m0,1059
+django_polymodels-1.6.dist-info/METADATA,sha256=HQRPZjd84yuNamZ77Wmpx9vwaHoTODBGeoOr8tea-Lo,5895
+django_polymodels-1.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+django_polymodels-1.6.dist-info/top_level.txt,sha256=WSaRdSqQvek0NwYU07l1n_KwHgXuWCVzdYK4f53JbC8,11
+django_polymodels-1.6.dist-info/RECORD,,
