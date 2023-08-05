@@ -1,0 +1,4 @@
+batou>=2.0dev0
+
+[test]
+mock
