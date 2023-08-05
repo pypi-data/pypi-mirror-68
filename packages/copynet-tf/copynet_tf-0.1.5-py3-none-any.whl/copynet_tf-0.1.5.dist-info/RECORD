@@ -1,0 +1,17 @@
+copynet_tf/__init__.py,sha256=auPG6DsigsHap20Es1ihlwu4AATonH7lEOiI4SlAn6o,123
+copynet_tf/decoder.py,sha256=mAkS1RlBnMUPOL-Q5Tk5zxPOM8Aohiu0RycSKD7t3-M,30713
+copynet_tf/metrics.py,sha256=U2nEGudU3eNkV4FG0SQ2j2xkQ1WLD0jqcmKfpzWQJwg,6401
+copynet_tf/util.py,sha256=ZJq9I6Oo0cHHQtSSfTCzvTjK5bf3ulbzLF_XXI76JoQ,962
+copynet_tf/vocab.py,sha256=qdqnabJfZn1Zeb4DNCgl4guyiYtw63i9eR8TafY_JNk,9540
+copynet_tf/layers/__init__.py,sha256=TcBYZ7oSkxslyZ7-Cyp_Vj4fvUmwZ-4w1zKWRaYCNuk,210
+copynet_tf/layers/additive_attention.py,sha256=qdNJpV4Ja88mNvySiJMUiyJL16dJNWfBagg58vfq-6o,2377
+copynet_tf/layers/fixed_dense.py,sha256=xYz6ZsPIRNaXxZuADKcoMhIa8kfp9u5C3sF20umJF44,349
+copynet_tf/layers/fixed_embedding.py,sha256=xIv6YDUOhDsBF1D_CScHCp8XPN6MLDdriS6b21fwlHk,854
+copynet_tf/search/__init__.py,sha256=Df0YIxcROt9gZAPOtTth9xqYWTNsqUmaJ14lHLnUGKc,176
+copynet_tf/search/beam_search.py,sha256=sYbeqpRkMnMrFDe64hpjA4vm4XK7bF11LPkQewoG208,9194
+copynet_tf/search/greedy_search.py,sha256=Do0Zkd4Ir4wv2EQlcfQZDE7IBrR3AYRYXVP5J2hMf-4,202
+copynet_tf/search/searcher.py,sha256=RkBljhuNzIoXifG2W557DupB-CNdRe2Zpb_DcdnAYK8,394
+copynet_tf-0.1.5.dist-info/METADATA,sha256=F4_FVVYJ9TzzuXlctyW_9G5AHBPGLq197FYcYpQC2OA,2953
+copynet_tf-0.1.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+copynet_tf-0.1.5.dist-info/top_level.txt,sha256=ZIWvHONKNkjA4dIamg0nPSXp-a7yyOTGzfO5I6fmnMo,11
+copynet_tf-0.1.5.dist-info/RECORD,,
