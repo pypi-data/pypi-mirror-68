@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cfa-taz
+Version: 3.4.0
+Summary: High level API for azure
+Home-page: UNKNOWN
+Author: Christophe Fauchard
+Author-email: christophe.fauchard@gmail.com
+License: MIT
+Description: SEE README file
+Platform: UNKNOWN
+Provides-Extra: dls
+Provides-Extra: blob
+Provides-Extra: dev
+Provides-Extra: aci
+Provides-Extra: auth
