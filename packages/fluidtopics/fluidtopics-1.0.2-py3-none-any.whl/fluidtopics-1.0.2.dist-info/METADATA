@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: fluidtopics
+Version: 1.0.2
+Summary: Fluid Topics API
+Home-page: UNKNOWN
+Author: Antidot
+Author-email: opensource@antidot.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: assertpy
+Requires-Dist: autovalue
+Requires-Dist: pyckson
+Requires-Dist: injector
+Requires-Dist: requests
+
+Python Fluid Topics API
+=======================
+The Python Fluid Topics API is an integrator kit for developing Fluid Topics
+connectors.
+
+Installation
+------------
+We recommend using https://pypi.org/project/fluidtopics/ to install the
+Fluid Topics API for Python.
+
+```shell script
+$ pip install fluidtopics
+```
+
+Getting started
+---------------
+We will see how to publish to Fluid Topics. To do this, you should have a
+Fluid Topics user with KHUB_ADMIN right.
+
+### 1. Create external source
+To use this api, a Fluid Topics external source should be created.
+It is possible to do it [manually](https://doc.antidot.net/reader/fDg10g1HbBSBbPZ~TV9zEg/c9Y0eA9P40saCHZ5ffqYWw), or programmatically:
+
+ ```python
+from fluidtopics.connector import LoginAuthentication, RemoteClient
+
+# First, create a RemoteClient
+auth = LoginAuthentication('khub_admin_user@domain.com', 'user_password')
+client = RemoteClient('https://my-fluidtopics.com', auth, 'external_source_id')
+
+# Then create the source
+client.create_source()
+ ```
+
+### 2. Publish document
+When the `RemoteClient` and the external source are created, it is possible to publish in Fluid Topics.
+
+#### Structured document
+```python
+from fluidtopics.connector import StructuredDocument, Topic
+
+topic = Topic.create(
+    topic_id='first_step',
+    title='First step',
+    body='<p>First, read this tutorial</p>'
+)
+document = StructuredDocument.create(
+    document_id='readme',
+    title='How to use fluidtopics python API',
+    toc=[topic]
+)
+
+client.publish(document)
+```
+
+#### Unstructured document
+```python
+from fluidtopics.connector import UnstructuredDocument
+
+document = UnstructuredDocument.from_uri(
+    document_id='markdown_readme',
+    uri='./README.md'
+)
+
+client.publish(document)
+```
+`uri` parameter can be a file path, or an url.
+
+#### External document
+```python
+from fluidtopics.connector import ExternalDocument
+
+document = ExternalDocument.create(
+    document_id='fluidtopics_on_pypi',
+    title='Fluid Topics python API on pypi.org',
+    url='https://pypi.org/project/fluidtopics/'
+)
+
+client.publish(document)
+```
+
+
