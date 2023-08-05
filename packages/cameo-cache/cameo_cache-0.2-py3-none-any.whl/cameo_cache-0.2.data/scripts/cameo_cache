@@ -1,0 +1,2 @@
+#!python
+echo "cameo_cache 可以運用 google storage 超高速讀取 json 讓緩慢的 API 事先快取"

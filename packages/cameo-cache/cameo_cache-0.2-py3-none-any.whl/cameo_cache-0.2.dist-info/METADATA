@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cameo-cache
+Version: 0.2
+Summary: Google cloud storage cache for any slow web API.
+Home-page: https://github.com/bohachu/cameo_cache
+Author: Bowen Chiu
+Author-email: bohachu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+pip install cameo_cache
+import cameo_cache
+
+#這是roy方便呼叫的方法
+bool_exist=cameo_cache.exist(dic_key_value) #判斷是否快取存在
+dic_values=cameo_cache.read(dic_key_value) #讀出快取並轉為python dic
+cameo_cache.write(dic_key_value, dic_content) #根據一串keys寫入python dic
+
+cameo_cache.set_bucket("gs://cameo_cache_taiwan_public")
+cameo_cache.set_bucket("gs://cameo_cache_taiwan_private")
+cameo_cache.set_bucket("gs://cameo_cache_korea")
+
+#這是 panda caro 方便呼叫的網址
+https://iotai-dev.cameo.tw/api/v2/iot/events?start_time=2020-04-01 00:00:00&end_time=2020-04-29 23:59:59&min_lat=22.43422&max_lat=22.89&min_lon=120.1393&max_lon=120.4398
+
+import cameo_cache
+cameo_cache.set_bucket("gs://cameo_cache_taiwan_public")
+cameo_cache.cache_url("https://iotai-dev.cameo.tw/api/v2/iot/events?start_time=2020-04-01 00:00:00&end_time=2020-04-29 23:59:59&min_lat=22.43422&max_lat=22.89&min_lon=120.1393&max_lon=120.4398")
+#這樣就可以直接把問號後面的東西儲存在設定好的 bucket, 問號前面的東西不會儲存，這樣可以確保 cameo_cache.write, 當中指定的 dic_key_value 兩邊都是一致的     
+
+
