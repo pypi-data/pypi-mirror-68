@@ -1,0 +1,493 @@
+[com]:
+    des     : COMMON           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4fc08,0x4fc14     
+    count   : 2,2
+	
+    des     : GPP_CTRL           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f004,0x4f00c
+    count   : 1,3
+	
+	des     : GPP_FW           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f020,0x4f040
+    count   : 1,1
+	
+	des     : FW_RECY_LBA           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f080
+    count   : 4
+	
+	des     : GPP_SR          
+    owner   : zhaohu jin     
+    date    : write and read        
+    addr    : 0x4f008     
+    count   : 1	
+	
+    des     : GPP_FTLREBUILD_SR           
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f008     
+    count   : 1	
+	
+	des     : GBM_CTRL           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f400,0x4f408     
+    count   : 1,1
+	
+	des     : GBM_SR           
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f404     
+    count   : 1
+	
+	des     : FW_ACC_BMI           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f40c,0x4f490     
+    count   : 1,1
+	
+	des     : GVPC_CTRL         
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f540,0x4f548     
+    count   : 1,2
+	
+	des     : GVPC_SR          
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f544     
+    count   : 1
+	
+	des     : FW_ACC_VPC           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f550     
+    count   : 5
+	
+	des     : GBE_CTRL           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f680     
+    count   : 1
+	
+	des     : GBE_SR           
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f684     
+    count   : 1
+	
+	des     : GBP_CTRL           
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f800,0x4f808     
+    count   : 1,10
+	
+	des     : GBP_SR          
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f804     
+    count   : 1
+	
+	des     : SOFT_GC          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f830     
+    count   : 2
+	
+	des     : FREE_BLK_REQ          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f838     
+    count   : 2
+	
+	des     : VPC_GC          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f840,0x4f85c     
+    count   : 1,1
+	
+	des     : CFG_EL          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f844     
+    count   : 2
+	
+	des     : RLS_CTRL          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f850     
+    count   : 2
+	
+	des     : FREE_BLK_CNT          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f858,0x4f860     
+    count   : 1,1
+	
+	des     : EL_PTR          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f864     
+    count   : 1
+	
+	des     : GDA_CTRL          
+    owner   : zhaohu jin     
+    date    : read          
+    addr    : 0x4f880,0x4f888     
+    count   : 1,1
+	
+	des     : GDA_SR          
+    owner   : zhaohu jin     
+    date    : write and read          
+    addr    : 0x4f884     
+    count   : 1
+	
+	des     : GDP          
+    owner   : damao zhang     
+    date    : read          
+    addr    : 0x4e000     
+    count   : 5
+	
+[var]:
+	#COMMON
+	init_done = reg(0x4fc08)[0:0]
+	gc_enable = reg(0x4fc0c)[0:0]
+	badb_thd = reg(0x4fc14)[15:0]
+	sys_free_blk_cnt = reg(0x4fc18)[15:0]
+	
+	#GPP_CTRL
+	gpp_cr = reg(0x4f004)[31:0]
+	gpp_pmu_act = reg(0x4f00c)[0:0]
+
+	#GPP_FW
+	sw_hdl_blk0 = reg(0x4f020)[15:0]
+	sw_hdl_blk_vld = reg(0x4f040)[0:0]
+	
+	#FW_RECY_LBA
+	recy_lba_req = reg(0x4f080)[0:0]
+	lba_for_rec = reg(0x4f084)[31:0]
+	ppa_for_rec = reg(0x4f088)[31:0]
+	recy_lba_done = reg(0x4f08c)[0:0]
+	
+	#GPP_SR
+	reg(0x4f01c) = 0
+	gpp_sr_0 = reg(0x4f008)[31:0]
+	reg(0x4f01c) = 1
+	wrm2gc_rdlba_req_cnt = reg(0x4f008)[31:16]
+	gc2wrm_rdlba_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 2
+	gc2bfm_req_cnt = reg(0x4f008)[31:16]
+	bfm2gc_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 3
+	gc2ftl_req_cnt = reg(0x4f008)[31:16]
+	ftl2gc_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 4
+	ftl_log_load_fail_cnt = reg(0x4f008)[19:16]
+	gc2rdm_cmd_vld_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 5
+	gpp2gbp_clr_busy_cnt = reg(0x4f008)[31:16]
+	rrc2gc_data_vld_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 6
+	gbp2gpp_data_vld_cnt = reg(0x4f008)[31:16]
+	gbp2gpp_gc_done_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 7
+	gpp2gda_cmd_req_cnt = reg(0x4f008)[31:16]
+	gda2gpp_cmd_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 8
+	gpp2gvpc_req_cnt = reg(0x4f008)[31:16]
+	gvpc2gpp_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 9
+	gpp_sr_9 = reg(0x4f008)[31:0]
+	reg(0x4f01c) = 10
+	to_ftlrebuild_req_cnt = reg(0x4f008)[31:16]
+	from_ftlrebuild_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 18
+	recy_lba_req_cnt = reg(0x4f008)[31:16]
+	recy_lba_done_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 21
+	recy_lba_sum = reg(0x4f008)[31:16]
+	recy_ppa_sum = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 22
+	sw_hdl_blk_vld_cnt = reg(0x4f008)[31:16]
+	sw_hdl_blk_clr_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 31
+	gpp_version = reg(0x4f008)[31:0]
+	
+	#GPP_FTLREBUILD_SR
+	reg(0x4f01c) = 128
+	gpp_ftlrebuild_sr_0 = reg(0x4f008)[31:0]
+	reg(0x4f01c) = 129
+	i_req_cnt = reg(0x4f008)[31:0]
+	o_ack_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 130
+	o_ack_cnt_00 = reg(0x4f008)[31:16]
+	o_ack_cnt_01 = reg(0x4f008)[15:0]
+    reg(0x4f01c) = 131
+	o_ack_cnt_11 = reg(0x4f008)[31:16]
+	reg(0x4f01c) = 132
+	i_gda_cmd_ack_cnt = reg(0x4f008)[31:16]
+	o_gda_cmd_req_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 133
+	i_rrc_rdat_vld_ecnt = reg(0x4f008)[31:16]
+	o_rdm_cmd_vld_cnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 134
+	i_rrc_rdat_vld_scnt = reg(0x4f008)[15:0]
+	reg(0x4f01c) = 143
+	gpp_ftlrebuild_version = reg(0x4f008)[31:0]
+	
+	#GBM_CTRL
+	gbm_cr = reg(0x4f400)[31:0]
+	gbm_pmu_act = reg(0x4f408)[31:0]
+	
+	#GBM_SR
+	reg(0x4f494) = 0
+	gbm_sr_0 = reg(0x4f404)[31:0]
+	reg(0x4f494) = 1
+	rdm2gc_req_cnt = reg(0x4f404)[23:16]
+	gc2rdm_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 2
+	wrm2gc_req_cnt = reg(0x4f404)[23:16]
+	gc2wrm_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 3
+	rre2gc_req_cnt = reg(0x4f404)[23:16]
+	gc2rre_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 4
+	rre2gc_badb_req_cnt = reg(0x4f404)[23:16]
+	gc2rre_badb_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 5
+	gbp2gbm_req_cnt = reg(0x4f404)[23:16]
+	gbm2gbp_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 6
+	gbm2gbp_free_blk_inc_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 7
+	gbe2gbm_req_cnt = reg(0x4f404)[23:16]
+	gbm2gbe_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 8
+	gbm2gvpc_req_cnt = reg(0x4f404)[23:16]
+	gvpc2gbm_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 9
+	cpu2gbm_req_cnt = reg(0x4f404)[23:16]
+	gbm2cpu_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 10
+	gbm2gda_req_cnt = reg(0x4f404)[23:16]
+	gda2gbm_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 11
+	bmi_base = reg(0x4f404)[31:0]
+	reg(0x4f494) = 12
+	rre2gc_aes_req_cnt = reg(0x4f404)[23:16]
+	gc2rre_aes_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 14
+	gpp2gbm_thd_req_cnt = reg(0x4f404)[23:16]
+	gbm2gpp_thd_ack_cnt = reg(0x4f404)[7:0]
+	reg(0x4f494) = 31
+	gbm_version = reg(0x4f404)[31:0]
+	
+	#FW_ACC_BMI
+	bmi_cmd_info = reg(0x4f40c)[31:0]
+	bmi_access_done = reg(0x4f490)[0:0]
+	
+	#GVPC_CTRL
+	gvpc_cr = reg(0x4f540)[31:0]
+	gvpc_pmu_act = reg(0x4f548)[0:0]
+	user_ena = reg(0x4f54c)[0:0]
+	
+	#GVPC_SR
+	reg(0x4f564) = 0
+	gvpc_sr_0 = reg(0x4f544)[31:0]
+	reg(0x4f564) = 1
+	ftl2gc_req_cnt = reg(0x4f544)[31:16]
+	gc2ftl_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 2
+	rdm2gc_req_cnt = reg(0x4f544)[31:16]
+	gc2rdm_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 3
+	rre2gc_vpc_req_cnt = reg(0x4f544)[31:16]
+	gc2rre_vpc_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 4
+	gc2ftl_vpc_ren_cnt = reg(0x4f544)[31:16]
+	ftl2gc_vpc_rdata_vld_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 5
+	gbp2gvpc_req_cnt = reg(0x4f544)[31:16]
+	gvpc2gbp_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 6
+	gpp2gvpc_req_cnt = reg(0x4f544)[31:16]
+	gvpc2gpp_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 7
+	cpu2gvpc_req_cnt = reg(0x4f544)[31:16]
+	gvpc2cpu_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 8
+	gbm2gvpc_req_cnt = reg(0x4f544)[31:16]
+	gvpc2gbm_ack_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 9
+	gvpc2gbp_ers_wen_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 10
+	ftl2gc_incvpc_cnt = reg(0x4f544)[31:16]
+	ftl2gc_decvpc_cnt = reg(0x4f544)[15:0]
+	reg(0x4f564) = 12
+	revert_blk_info = reg(0x4f544)[31:0]
+	reg(0x4f564) = 31
+	gvpc_version = reg(0x4f544)[31:0]
+
+	#FW_ACC_VPC
+	vpc_cmd_info = reg(0x4f550)[31:0]
+	vpc_req_data = reg(0x4f554)[31:0]
+	vpc_rdy = reg(0x4f558)[0:0]
+	vpc_cmd_exd = reg(0x4f55c)[31:0]
+	vpc_req_data_exd = reg(0x4f560)[31:0]
+	
+	#GBE_CTRL
+	gbe_cr = reg(0x4f680)[31:0]
+	
+	#GBE_SR
+	reg(0x4f68c) = 0 
+	gbe_sr = reg(0x4f684)[31:0]
+	reg(0x4f68c) = 1
+	gbp2gbe_req_cnt = reg(0x4f684)[31:16]
+	gbe2gbp_ack_cnt = reg(0x4f684)[15:0]
+	reg(0x4f68c) = 2
+	gbe2gbm_req_cnt = reg(0x4f684)[31:16]
+	gbm2gbe_ack_cnt = reg(0x4f684)[15:0]
+	reg(0x4f68c) = 15
+	gbe_version = reg(0x4f684)[31:0]
+	
+	#GBP_CTRL
+	gbp_cr = reg(0x4f800)[31:0]
+	gbp_pmu_act = reg(0x4f808)[0:0]
+	era_time_thd_en = reg(0x4f80c)[31:31]
+	era_time_thd = reg(0x4f80c)[15:0]
+	gc_time_thd_en = reg(0x4f810)[31:31]
+	gc_time_thd = reg(0x4f810)[15:0]
+	gc_low_en = reg(0x4f814)[31:31]
+	gc_low_thd = reg(0x4f814)[15:0]
+	gc_high_en = reg(0x4f818)[31:31]
+	gc_high_thd = reg(0x4f818)[15:0]
+	gc_switch = reg(0x4f81c)[31:0]
+	ret_thd = reg(0x4f820)[31:0]
+	wl_time_thd = reg(0x4f824)[31:0]
+	wl_pe_thd = reg(0x4f828)[31:0]
+	rd_cnt_thd = reg(0x4f82c)[31:0]
+	
+	#GBP_SR
+	reg(0x4f84c) = 0
+	gbp_sr_0 = reg(0x4f804)[31:0] 
+	reg(0x4f84c) = 1
+	gbp2gvpc_req_cnt = reg(0x4f804)[31:16]
+	gvpc2gbp_ack_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 2
+	gvpc2gbp_ers_wen_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 3
+	gbp2gbe_req_cnt = reg(0x4f804)[31:16]
+	gbe2gbp_ack_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 4
+	gbp2gpp_data_vld_cnt = reg(0x4f804)[31:16]
+	gbp2gpp_gc_done_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 5
+	wrm2gc_fblk_req_cnt = reg(0x4f804)[31:16]
+	gc2wrm_fblk_ack_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 6
+	gbp2gbm_req_cnt = reg(0x4f804)[31:16]
+	gbm2gbp_ack_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 7
+	gbp2gda_req_cnt = reg(0x4f804)[31:16]
+	gda2gbp_ack_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 12
+	cpu2gc_vpc_scan_trig_cnt= reg(0x4f804)[15:0]
+	reg(0x4f84c) = 16
+	soft_gc_blk_wr_cnt = reg(0x4f804)[23:16]
+	soft_gc_blk_wr_cnt_fw = reg(0x4f804)[7:0]
+	reg(0x4f84c) = 17
+	other_type_blk_cnt = reg(0x4f804)[31:16]
+	normal_blk_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 18
+	normal_free_bad_blk_cnt = reg(0x4f804)[31:16]
+	normal_free_blk_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 19
+	normal_close_bad_blk_cnt = reg(0x4f804)[31:16]
+	normal_close_blk_cnt = reg(0x4f804)[15:0]
+	reg(0x4f84c) = 31
+	gbp_version = reg(0x4f804)[31:0]
+	
+	#SOFT_GC
+	soft_gc_blk = reg(0x4f830)[31:0]
+	recycling_blk = reg(0x4f834)[31:16]
+	sw_gc_busy = reg(0x4f834)[2:2]
+	sw_gc_done = reg(0x4f834)[1:1]
+	sw_gc_blk_locked = reg(0x4f834)[0:0]
+	
+	#FREE_BLK_REQ
+	free_blk_info = reg(0x4f838)[31:0]
+	free_blk_rdy = reg(0x4f83c)[0:0]
+	
+	#VPC_GC
+	force_vpc_scan = reg(0x4f840)[0:0]
+	vpc_gc_info = reg(0x4f85c)[31:0]
+
+	#CFG_EL
+	cfg_el_head = reg(0x4f844)[31:0]
+	cfg_el_tail = reg(0x4f848)[31:0]
+	
+	#RLS_CTRL
+	rls_ctrl = reg(0x4f850)[31:0]
+	rls_ctrl_step = reg(0x4f854)[31:0]
+
+	#FREE_BLK_CNT
+	free_blk_sec = reg(0x4f858)[31:0]
+	free_blk_twins = reg(0x4f860)[31:0]
+	
+	#EL_PTR
+	el_head = reg(0x4f864)[31:16]
+	el_tail = reg(0x4f864)[15:0]
+	
+	#GDA_CTRL
+	gda_cr = reg(0x4f880)[31:0]
+	gda_pmu_act = reg(0x4f888)[0:0]
+	
+	#GDA_SR
+	reg(0x4f88c) = 0
+	gda_sr = reg(0x4f884)[31:0]
+	gda_rd_sr = reg(0x4f884)[31:0]
+	
+	#GDP
+	gdp_debug_reg0 = reg(0x4e000)[31:0]
+	gdp_debug_reg1 = reg(0x4e004)[31:0]
+	gdp_debug_reg2 = reg(0x4e008)[31:0]
+	gdp_debug_reg3 = reg(0x4e00c)[31:0]
+	gdp_debug_reg4 = reg(0x4e010)[31:0]
+	
+[exp]:
+	
+	wrm2gc_rdlba_req_cnt != gc2wrm_rdlba_ack_cnt {"GPP","wrm2gc_rdlba_req_cnt != gc2wrm_rdlba_ack_cnt"}
+	gc2bfm_req_cnt != bfm2gc_ack_cnt {"GPP","gc2bfm_req_cnt != bfm2gc_ack_cnt"}
+	gc2ftl_req_cnt != ftl2gc_ack_cnt {"GPP","gc2ftl_req_cnt != ftl2gc_ack_cnt"}
+	gpp2gvpc_req_cnt != gvpc2gpp_ack_cnt {"GPP","gpp2gvpc_req_cnt != gvpc2gpp_ack_cnt"}
+	to_ftlrebuild_req_cnt != from_ftlrebuild_ack_cnt {"GPP","to_ftlrebuild_req_cnt != from_ftlrebuild_ack_cnt"}
+	gbp2gpp_data_vld_cnt != gpp2gbp_clr_busy_cnt {"GPP","gbp2gpp_data_vld_cnt != gpp2gbp_clr_busy_cnt"}
+	i_req_cnt != o_ack_cnt {"GPP_FTLREBUILD","i_req_cnt != o_ack_cnt"}
+	i_gda_cmd_ack_cnt != o_gda_cmd_req_cnt {"GPP_FTLREBUILD","i_gda_cmd_ack_cnt != o_gda_cmd_req_cnt"}
+	i_rrc_rdat_vld_ecnt != o_rdm_cmd_vld_cnt {"GPP_FTLREBUILD","i_rrc_rdat_vld_ecnt != o_rdm_cmd_vld_cnt"}
+	rdm2gc_req_cnt != gc2rdm_ack_cnt {"GBM","rdm2gc_req_cnt != gc2rdm_ack_cnt"}
+	wrm2gc_req_cnt != gc2wrm_ack_cnt {"GBM","wrm2gc_req_cnt != gc2wrm_ack_cnt"}
+	rre2gc_req_cnt != gc2rre_ack_cnt {"GBM","rre2gc_req_cnt != gc2rre_ack_cnt"}
+	rre2gc_badb_req_cnt != gc2rre_badb_ack_cnt {"GBM","rre2gc_badb_req_cnt != gc2rre_badb_ack_cnt"}
+	gbp2gbm_req_cnt != gbm2gbp_ack_cnt {"GBM","gbp2gbm_req_cnt != gbm2gbp_ack_cnt"}
+	gbe2gbm_req_cnt != gbm2gbe_ack_cnt {"GBM","gbe2gbm_req_cnt != gbm2gbe_ack_cnt"}
+	rre2gc_aes_req_cnt != gc2rre_aes_ack_cnt {"GBM","rre2gc_aes_req_cnt != gc2rre_aes_ack_cnt"}
+	gpp2gbm_thd_req_cnt != gbm2gpp_thd_ack_cnt {"GBM","gpp2gbm_thd_req_cnt != gbm2gpp_thd_ack_cnt"}
+	ftl2gc_req_cnt != gc2ftl_ack_cnt {"GVPC","ftl2gc_req_cnt != gc2ftl_ack_cnt"}
+	rdm2gc_req_cnt != gc2rdm_ack_cnt {"GVPC","rdm2gc_req_cnt != gc2rdm_ack_cnt"}
+	rre2gc_vpc_req_cnt != gc2rre_vpc_ack_cnt {"GVPC","rre2gc_vpc_req_cnt != gc2rre_vpc_ack_cnt"}
+	gc2ftl_vpc_ren_cnt != ftl2gc_vpc_rdata_vld_cnt {"GVPC","gc2ftl_vpc_ren_cnt != ftl2gc_vpc_rdata_vld_cnt"}
+	gbp2gvpc_req_cnt != gvpc2gbp_ack_cnt {"GVPC","gbp2gvpc_req_cnt != gvpc2gbp_ack_cnt"}
+	gpp2gvpc_req_cnt != gvpc2gpp_ack_cnt {"GVPC","gpp2gvpc_req_cnt != gvpc2gpp_ack_cnt"}
+	cpu2gvpc_req_cnt != gvpc2cpu_ack_cnt {"GVPC","cpu2gvpc_req_cnt != gvpc2cpu_ack_cnt"}
+	gbm2gvpc_req_cnt != gvpc2gbm_ack_cnt {"GVPC","gbm2gvpc_req_cnt != gvpc2gbm_ack_cnt"}
+	gbp2gbe_req_cnt != gbe2gbp_ack_cnt {"GBE","gbp2gbe_req_cnt != gbe2gbp_ack_cnt"}
+	wrm2gc_fblk_req_cnt != gc2wrm_fblk_ack_cnt {"GBP","wrm2gc_fblk_req_cnt != gc2wrm_fblk_ack_cnt"}
+	
