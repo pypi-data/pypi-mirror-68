@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "kafka-streamer"
+version = "0.1.0"
+description = ""
+authors = ["Sam Mosleh <sam.mosleh@ut.ac.ir>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/sam-mosleh/kafka-streamer"
+keywords = ["Apache Kafka", "Stream processing"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+confluent_kafka = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-timeout = "^1.3.4"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
