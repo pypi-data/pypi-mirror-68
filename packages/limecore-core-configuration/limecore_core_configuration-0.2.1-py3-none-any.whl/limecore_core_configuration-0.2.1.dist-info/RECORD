@@ -1,0 +1,9 @@
+limecore/core/configuration/__init__.py,sha256=F3QZPiM_kVLqPW82izrpBphQuxB7x9KHHBAwvCRV_m8,185
+limecore/core/configuration/configuration.py,sha256=jds4yJnxYJlbDbNI-7Nj7mI2MvvMBGgCQggPXp3RaPM,1629
+limecore/core/configuration/configuration_loader.py,sha256=5zYln4vIDgxAXOoWl7b_xyabaUkKCbw--wPcto2lt4A,2793
+limecore/core/configuration/module.py,sha256=RHRLI7djXvoHcKbPu7DJK01-j7DnA0KZnGEHoQdLnSA,1168
+limecore_core_configuration-0.2.1.dist-info/LICENSE.txt,sha256=a8A0bk3wkc3CeBUjXW59ke5s1Maz2eDSS253mpEq6R8,1072
+limecore_core_configuration-0.2.1.dist-info/METADATA,sha256=7COWDXOppPy6nsbfe2UfcSbhmX5c8h3Tt1kcfWWsDcY,631
+limecore_core_configuration-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+limecore_core_configuration-0.2.1.dist-info/top_level.txt,sha256=AjPBLv5vIXBO-4Fnsaxh2pp8remUg9pPUX3WD7f2_TA,9
+limecore_core_configuration-0.2.1.dist-info/RECORD,,
