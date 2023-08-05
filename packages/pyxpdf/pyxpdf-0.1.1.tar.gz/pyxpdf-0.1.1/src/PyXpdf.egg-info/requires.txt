@@ -1,0 +1,6 @@
+
+[dev]
+cython
+
+[source]
+Cython>=0.29.7
