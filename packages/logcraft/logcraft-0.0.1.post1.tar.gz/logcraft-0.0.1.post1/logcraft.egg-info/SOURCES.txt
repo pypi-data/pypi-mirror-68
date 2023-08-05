@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+logcraft/__init__.py
+logcraft/macro.py
+logcraft.egg-info/PKG-INFO
+logcraft.egg-info/SOURCES.txt
+logcraft.egg-info/dependency_links.txt
+logcraft.egg-info/top_level.txt
