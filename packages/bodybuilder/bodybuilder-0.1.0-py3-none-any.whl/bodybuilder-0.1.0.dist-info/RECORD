@@ -1,0 +1,11 @@
+bodybuilder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bodybuilder/builder.py,sha256=-fcRjnvpdkhXbks_4SlqLdLS9-26BaIrrc5wZ9PutpI,8464
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=N-Deoxw5DBEQzwmzYaBU4cEeSXlqQKIJG2zLktIzeVM,20701
+venv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+venv/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bodybuilder-0.1.0.dist-info/LICENSE,sha256=3ml3mSiwtyNmZXCfUHVXTp2YxLdOAn4WLFsWpV9cOjM,1068
+bodybuilder-0.1.0.dist-info/METADATA,sha256=MOG4K6SyO9yS1CCkbQARscvzgYAVQmwXXolPm-P5ksw,1935
+bodybuilder-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bodybuilder-0.1.0.dist-info/top_level.txt,sha256=C833gZ5VYLzPuGDpCL38NAkOzb_iu9sMVE37QuPp8zo,23
+bodybuilder-0.1.0.dist-info/RECORD,,

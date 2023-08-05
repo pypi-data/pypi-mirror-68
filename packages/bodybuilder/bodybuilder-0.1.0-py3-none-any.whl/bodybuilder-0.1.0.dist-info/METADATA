@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: bodybuilder
+Version: 0.1.0
+Summary: A python port of the NPM Bodybuilder Package
+Home-page: https://github.com/alexsanjoseph/bodybuilder
+Author: Alex Joseph
+Author-email: alexsanjoseph@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# bodybuilder
+An (almost!) drop in replacement in python of the [Elasticsearch Bodybuilder Package on NPM](https://github.com/danpaz/bodybuilder)
+
+The API has been designed to be as close to the original package. 
+
+Also, you can use https://bodybuilder.js.org/ to test your constructions with minor changes described below:
+
+## Variations
+- `from` -> `from_` because `from` is a python keyword
+- need `\` new-line indicator for multi line incantations in python which is not necessary in JS
+- individual Filter/Query/Aggregations classes not implemented (shouldn't affect user)
+- lambda functions instead of anonymous functions (Duh!)
+
+# Installation
+
+## Install from source
+
+1. Clone package locally
+2. Go to the root directory
+2. `python3 setup.py install`
+
+# Usage
+
+```python
+from bodybuilder.builder import BodyBuilder as bodyBuilder
+bodyBuilder().query("a", "b", "c").build()
+```
+
+```
+{'query': {'a': {'b': 'c'}}}
+```
+
+# Not Implemented
+
+## To be implemented
+- minimum_should_match query and filter
+- aggregation metadata
+
+## No plans to implement
+
+- Complicated multi sort
+- `clone` method (users can use `copy.deepcopy()` if required)
+- `orQuery`, `andQuery`, `notQuery` which has been deprecated n favor of `bool` method
+
+# Credits
+
+Thanks to [Danpaz](https://github.com/danpaz) and [contributors of the original package](https://github.com/danpaz/bodybuilder#contributors) for the original package from which I have liberally copied (with his permission!)
+
+
