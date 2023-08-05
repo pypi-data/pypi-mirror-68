@@ -1,0 +1,15 @@
+pyyaml
+
+[all]
+spidev
+smbus2
+dynamixel-sdk
+
+[dynamixel]
+dynamixel-sdk
+
+[i2c]
+smbus2
+
+[spi]
+spidev
