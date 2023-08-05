@@ -1,0 +1,9 @@
+README.rst
+filebacked.py
+setup.cfg
+setup.py
+FileBacked.egg-info/PKG-INFO
+FileBacked.egg-info/SOURCES.txt
+FileBacked.egg-info/dependency_links.txt
+FileBacked.egg-info/requires.txt
+FileBacked.egg-info/top_level.txt
