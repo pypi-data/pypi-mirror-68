@@ -1,0 +1,5 @@
+setup.py
+digitaldraw.egg-info/PKG-INFO
+digitaldraw.egg-info/SOURCES.txt
+digitaldraw.egg-info/dependency_links.txt
+digitaldraw.egg-info/top_level.txt
