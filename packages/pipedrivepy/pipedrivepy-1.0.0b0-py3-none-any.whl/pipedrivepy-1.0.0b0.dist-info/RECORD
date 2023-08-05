@@ -1,0 +1,11 @@
+pipedrive/__init__.py,sha256=T1auFhwxVmbH3T9p1lqTSxVH-aFWEFRKN9abWQBDo5E,35
+pipedrive/abstract.py,sha256=nUwy4NT5zgMx6KjV3STEb_TU81oc1mlJ_-rjeXhJTzk,510
+pipedrive/aio.py,sha256=rRnN7Im4w2Yiw1iGKCc2Nal_kIplOw2Fl2fXl7QJST4,1166
+pipedrive/chain.py,sha256=JNzmHQsjJYPPL1J5H15p_C29agJxy-xSvwTqPUGSo0w,912
+pipedrive/errors.py,sha256=Q2u3IMzpYLi7wY4Y4vaEzZYwLvHvEjioVKwHPEtgcQM,142
+pipedrive/sio.py,sha256=gPW5wQir5JdTY_itf4KJlIK9i1Tukr_YH9SE3N1qwAE,895
+pipedrivepy-1.0.0b0.dist-info/LICENSE,sha256=54DyvycjeWN7ALA81U2rTUWojV8yHbNC_i-nQdSeNTM,1071
+pipedrivepy-1.0.0b0.dist-info/METADATA,sha256=iIl1RaSIss6gignqhuEH1t1Z01l3zLFPeoN7oFoKQwQ,2879
+pipedrivepy-1.0.0b0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pipedrivepy-1.0.0b0.dist-info/top_level.txt,sha256=sXt4qplRLbatK6LxVT8_ujXa3UksnnkMr1Ka5bTbONc,10
+pipedrivepy-1.0.0b0.dist-info/RECORD,,
