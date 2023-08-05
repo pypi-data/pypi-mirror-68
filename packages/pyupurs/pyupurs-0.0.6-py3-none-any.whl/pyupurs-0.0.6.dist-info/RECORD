@@ -1,0 +1,16 @@
+pyupurs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyupurs/exceptions/FileIsEmptyError.py,sha256=oc8TRMnXdC-pX8UuW2t3v1UxHWDxGx1hcPfjgKD43kM,383
+pyupurs/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyupurs/stateless_file_ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyupurs/stateless_file_ops/auditing_ops.py,sha256=2J3du2tb4s2HUPKuAEu2UID1BpSAIUy6TnFWrfR2pyM,2302
+pyupurs/stateless_file_ops/transversal_ops.py,sha256=bTRfgT74hpoKu1tLfcn1iXUIL6rt9IApWF--iiinhIU,1398
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pyupurs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pyupurs/stateless_file_ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pyupurs/stateless_file_ops/test_auditing_ops.py,sha256=eo9adQ2exeNqa55ASov5sFHfcsoJCaHsihvffqZBzZQ,4990
+tests/pyupurs/stateless_file_ops/test_transversal_ops.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyupurs-0.0.6.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+pyupurs-0.0.6.dist-info/METADATA,sha256=f6ps0KPKGVQFHKjmZq0T1ecP9FymhQMIIX-bPuZcm6g,988
+pyupurs-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyupurs-0.0.6.dist-info/top_level.txt,sha256=V9Nmw1cADLWsxS5VDAoCvJvFhH7gxhY6sjKj0VRE4AQ,14
+pyupurs-0.0.6.dist-info/RECORD,,
