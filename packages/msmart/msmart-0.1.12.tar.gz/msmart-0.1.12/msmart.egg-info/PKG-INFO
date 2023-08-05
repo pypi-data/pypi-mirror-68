@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: msmart
+Version: 0.1.12
+Summary: A library to control Midea appliances via the Local area network
+Home-page: https://github.com/mac-zhou/midea-msmart-py
+Author: mac_zhou
+Author-email: mac.zfl@gmail.com
+License: UNKNOWN
+Description: This is a library to allow communicating to a Midea AC via the Local area network.
+        
+        # midea-msmart
+        
+        This a mirror from the repo at [NeoAcheron/midea-ac-py](https://github.com/NeoAcheron/midea-ac-py).
+        
+        But this library just allow communicating to a Midea AC via the Local area network, not via the Midea Cloud yet.
+        
+        Thanks for [yitsushi's project](https://github.com/yitsushi/midea-air-condition), [NeoAcheron's project](https://github.com/NeoAcheron/midea-ac-py), [andersonshatch's project](https://github.com/andersonshatch/midea-ac-py).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
