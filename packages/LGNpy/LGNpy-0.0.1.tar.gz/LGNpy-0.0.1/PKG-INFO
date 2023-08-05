@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: LGNpy
+Version: 0.0.1
+Summary: Linear Gaussian Networks - Inference, Parameter Learning and Representation
+Home-page: https://github.com/ostwalprasad/lgnpy
+Author: Prasad Ostwal
+Author-email: prasadostwal@gmail.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/ostwalprasad/lgnpy.svg?branch=master)](https://travis-ci.org/ostwalprasad/lgnpy)
+        
+        
+        ## Linear Gaussian Networks
+        
+        Features-
+        1. Network Representation
+        2. Parameter Learning through Pandas dataframe
+        3. Network related EDA
+        4. Inference with Evidence
+        
+Keywords: linear gaussian networks representation inference
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
