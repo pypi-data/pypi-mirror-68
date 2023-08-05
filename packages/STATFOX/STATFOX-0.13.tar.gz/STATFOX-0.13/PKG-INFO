@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: STATFOX
+Version: 0.13
+Summary: Advanced statistical functions
+Home-page: https://github.com/user/reponame
+Author: Devin D. Whitten, MS
+Author-email: devin.d.whitten@gmail.com
+License: MIT
+Download-URL: https://github.com/DevinWhitten/STATFOX
+Description: ![GitHub_Logo](https://github.com/DevinWhitten/STAT_FOX/blob/master/png/STAT_FOX_v2.png)
+        
+        # STATFOX
+        ### STATFOX
+        ### Author: Devin Whitten
+        ### Date: February 18, 2020
+        
+Keywords: Python,Statistics,Data Science,Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
