@@ -1,0 +1,5 @@
+rdflib
+deprecated
+lxml
+requests
+urllib3
