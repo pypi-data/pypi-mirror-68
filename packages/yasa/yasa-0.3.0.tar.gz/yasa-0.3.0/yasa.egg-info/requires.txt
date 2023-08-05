@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+mne>=0.20.0
+numba
+scikit-learn>=0.21
+tensorpac>=0.6.3
+pyriemann
+lspopt
