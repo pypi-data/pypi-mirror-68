@@ -1,0 +1,65 @@
+CHANGES
+=======
+
+* Correct releases link
+
+v0.3
+----
+
+* Added badge, quick start instruction
+* Travis CI: Corrected typo
+* Add building on next Python versions
+* Correct method signature to match interface
+* Python: Add missing handling of arguments Tests: Increase tests coverage IO and sh(): Correct capturing of stdout/stderr, able to capture into StringIO()
+* Refactor to make testable: RiotKitDoApplication
+* Refactor to make testable: RiotKitDoApplication
+* Increased coverage of tasks parsing in YAML parser
+* Increased coverage of tasks parsing in YAML parser
+* WIP correct unit tests after recent change in constructor
+* WIP introduce makefile.yaml syntax - add RKD\_PATH to the example
+* WIP introduce makefile.yaml syntax
+* WIP
+* Add copy\_internal\_dependencies()
+* Add jinja2 dependency - RKD will strongly rely on this dependency
+* BaseShellCommandWithArgumentParsingTask: Remove not necessary stacktrace
+* Add \`BaseShellCommandWithArgumentParsingTask\`
+* Add \`BaseShellCommandWithArgumentParsingTask\`
+* Add makefile path as Python path
+
+v0.2
+----
+
+* Set default log level to info
+* Update docs
+* Update docs
+* Add :rkd:create-structure
+* Add authors note
+* Add rule
+* Add images
+* Add notice
+* Improve docs
+* Add docs
+* Add docs
+* Add unit tests coverage for TaskInterface methods
+* WIP cover resolver, fix issue: cannot declare at least twice tasks of same type in single alias task
+* WIP fix travis
+* WIP move io, ctx and executor out of task ExecutionContext, properly merge envs from different sources and validate
+* WIP :version
+* WIP introduced RKD\_PATH
+* WIP global switches are now prefixed with "r" eg. "-rl", added --log-level switch
+* WIP fix: docker component
+* WIP fix: properly interrupting the pipeline, add :exec task
+* WIP update the banner
+* WIP update the banner
+* WIP add description to alias tasks and banner if no task is specified
+* WIP adjusted unittests
+* WIP add .gitignore
+* WIP add unittest task and travis config
+* WIP multiline sh scripts, Makefile-like example
+
+v0.1
+----
+
+* WIP correct env variable name
+* WIP add error handling for non-existing tasks
+* WIP correct task alias definition
