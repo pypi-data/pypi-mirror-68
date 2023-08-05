@@ -1,0 +1,16 @@
+FlickrMirroring/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlickrMirroring/__main__.py,sha256=czD3SyCLP8TDO4buepdUoi0T5F0j5Zll7MX4v-nwsN4,16994
+FlickrMirroring/model/FlickrApi.py,sha256=0D3PaUwbUSK-Iz5MVuJpMCOnkXKP-pQluoSxx_r3ViY,8595
+FlickrMirroring/model/FlickrPhoto.py,sha256=QeRR7Le2MOMhZrq_DR6SVCWugM_wUQSleiT5eDJEYAk,3745
+FlickrMirroring/model/FlickrPhotoSize.py,sha256=8Ry06TxZzZkm4UAWVPHL7p5wzBazufULV2q-kS7LZq4,2069
+FlickrMirroring/model/FlickrUser.py,sha256=XMyu05MVC62wi2Q0I9YdRYGLs4S31CMIp_iT-UMxod8,2299
+FlickrMirroring/model/Label.py,sha256=HG3bhDGeUo9LwDkxpBR7Z_tohmvE78dtayHpEzUIFMk,883
+FlickrMirroring/model/Locale.py,sha256=NtDrMmik-bAPtx_2vBValLY2LQ68DRRMxAf_hR68T9U,3265
+FlickrMirroring/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+FlickrMirroring/model/constants.py,sha256=oPJLaPRfnm0lTpog7lojuxskbNMZK1z8TuUi8_aFJvA,1845
+FlickrMirroring-1.0.0.dist-info/LICENSE,sha256=b_uB40XVGzONvn5guuNSPvzsu-MBrvWpC8FPB_R_GH4,1059
+FlickrMirroring-1.0.0.dist-info/METADATA,sha256=Dy0upH7URM5Hr_NNxSlFSZUImv7TycjNwlQB34-fv8M,7968
+FlickrMirroring-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+FlickrMirroring-1.0.0.dist-info/entry_points.txt,sha256=qgObmPap_ekaDDz4lbkUHkzqEVtyKw-kYYilsXl1Hv4,65
+FlickrMirroring-1.0.0.dist-info/top_level.txt,sha256=Civxf9usEEEfGLp0twYo-v13BAZIRsvOJxWz7uWuvls,16
+FlickrMirroring-1.0.0.dist-info/RECORD,,
