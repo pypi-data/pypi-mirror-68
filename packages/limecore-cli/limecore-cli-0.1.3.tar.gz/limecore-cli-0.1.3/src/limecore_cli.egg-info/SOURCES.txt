@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/limecore/cli/__init__.py
+src/limecore/cli/app.py
+src/limecore/cli/app_factory.py
+src/limecore/cli/command.py
+src/limecore_cli.egg-info/PKG-INFO
+src/limecore_cli.egg-info/SOURCES.txt
+src/limecore_cli.egg-info/dependency_links.txt
+src/limecore_cli.egg-info/requires.txt
+src/limecore_cli.egg-info/top_level.txt
