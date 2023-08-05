@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: exponot
+Version: 0.0.5
+Summary: Exposure Notification reference implementation
+Home-page: https://github.com/vietlq/exponot
+Author: Viet Le
+Author-email: vietlq85@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Keywords: covid-19 exposure notification contact-tracing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+=======================================================================
+exponot - Reference implementation of Apple/Google COVID-19 tracing API
+=======================================================================
+
+Reference implementation of crytographic API of Exposure Notification system based on documents shared by Apple/Google.
+
+This reference implementation uses `pycryptodome <https://www.pycryptodome.org/en/latest/>`_ and `cryptography <https://cryptography.io/en/latest/>`_ libraries.
+
+References
+----------
+
+* https://www.apple.com/covid19/contacttracing/
+* https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ExposureNotification-CryptographySpecificationv1.2.pdf
+* https://www.pycryptodome.org/en/latest/
+* https://cryptography.io/en/latest/
+* https://github.com/DP-3T/documents
+* https://sunblaze-ucb.github.io/privacy/papers/epione.pdf
+
+
