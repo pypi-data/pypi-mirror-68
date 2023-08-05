@@ -1,0 +1,17 @@
+zensols/deeplearn/__init__.py,sha256=gBQFY8Fx2tqmStkWXbSdaX2FozwvtCvYLnWi_vG85Zo,434
+zensols/deeplearn/batch.py,sha256=4USh5kuLmMUPasrwcYRW7r8k9Ru9Fl53PJs_sMmNcjg,21557
+zensols/deeplearn/conv.py,sha256=5sWA0ZETQkQA9td38V2MsDAzO-iKxJHI2tsqLQniLwQ,5479
+zensols/deeplearn/linear.py,sha256=vJVwOpx5LbqofnUeKwVcNums8MqqlZu9XwRyoT3flrI,5606
+zensols/deeplearn/manager.py,sha256=jAt5s2My3PdOUUVdNA5eq8_-pmSZHhrEGRBZIBFIX1w,13783
+zensols/deeplearn/module.py,sha256=U6CwINWNF4fW7JRuHeBC4_3z__8_9oWbDaUOPK2M-OU,1433
+zensols/deeplearn/plot.py,sha256=iF0cCpYV0UIKBg3_9Cq_mkmG8uUcaHsgifH00-luEWo,4725
+zensols/deeplearn/result.py,sha256=219NF-UuBYGcdswOHgUASkR9k0m2oQrde3L4QUyWLNg,19338
+zensols/deeplearn/settings.py,sha256=9IprsPmBcFz3YfvebQgzruEckPSVwbdNf18L1hJ_aiw,3150
+zensols/deeplearn/stash.py,sha256=-289Lpj4TktgpyPLTYIrwKLxunBVCXxVYt7YSKIo5Iw,11290
+zensols/deeplearn/torchconfig.py,sha256=jtLDSWaovlOO2waUOaur4GecVNAOZM3JM92fG8kADuo,11856
+zensols/deeplearn/vectorize.py,sha256=JOzhiqCFzs6BN9zLqMynuKpUS6Oqp9fVGl0eI-fJ83s,13373
+zensols.deeplearn-0.0.6.dist-info/LICENSE.txt,sha256=-3nZ2PA1pRrguub2MCELSEpP3xiTYP4zwUc2W0CMUWo,1068
+zensols.deeplearn-0.0.6.dist-info/METADATA,sha256=rdszYg9_qsau3HxMx1AluBR1CquFVtw9Btf-owtIqSM,2889
+zensols.deeplearn-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+zensols.deeplearn-0.0.6.dist-info/top_level.txt,sha256=wjtW_XGrj7RjoINZv0KwwxF2Ves4iwp5JXrhqa4vUz0,54
+zensols.deeplearn-0.0.6.dist-info/RECORD,,
