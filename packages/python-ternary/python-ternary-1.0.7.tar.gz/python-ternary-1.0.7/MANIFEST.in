@@ -1,0 +1,7 @@
+include *.md
+include *.txt
+include LICENSE
+
+graft examples
+graft readme_images
+graft tests
