@@ -1,0 +1,14 @@
+license,sha256=V750Iu7MyZhMqwLrZ6CliqShzz4tgjRYMd83IYxWZIk,1676
+pyvplm/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+pyvplm/addon/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+pyvplm/addon/comsoladdon.py,sha256=TWx9PLuyjfn0UDjioyYGuBRuOZPLsf3hRbzUgQQw-Og,15100
+pyvplm/addon/pixdoe.py,sha256=506aQLnesZVTlNKCEa3WGl-a7_AcSJ3frXKhNm2YGOs,51194
+pyvplm/addon/variablepowerlaw.py,sha256=6zl22hU7IxVHNlbh8bbdZ7ArTR0Zi3h_PQ0UJQIOW5E,167622
+pyvplm/addon/variablepowerlaw.py.bak,sha256=fGzSywYH0FTG1Uox8hZ99WZp1GMNmSEv5yuNowMXPd0,155106
+pyvplm/core/__init__.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+pyvplm/core/definition.py,sha256=0fz65teRw4So7NCEaCUBduUKHP8bI-IcMPrJGDfo9Ek,35526
+pyvplm/core/definition.py.bak,sha256=fltcWh73kivq2f6cpIq-zJwNt3kzj8tAc7-oY5TyI2M,25637
+pyvplm-0.1.0.dist-info/license,sha256=V750Iu7MyZhMqwLrZ6CliqShzz4tgjRYMd83IYxWZIk,1676
+pyvplm-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pyvplm-0.1.0.dist-info/METADATA,sha256=nAG_VfetCLuboZ_Lv69p1qJL3XRnS-ujbxEuKJ6qEBk,8512
+pyvplm-0.1.0.dist-info/RECORD,,
