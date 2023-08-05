@@ -1,0 +1,9 @@
+cvlog/__init__.py,sha256=6tsw05euM4NdoO6LdTKKDkG8btxuc5LUCR_xu39Ix9s,223
+cvlog/config.py,sha256=wGgHrZcWvZqIFn5hAVfmjHMigTMJyyf4WXpdUSxZLW8,2265
+cvlog/html_logger.py,sha256=oXFRh9e_I08LxCViH6mOcXTHq-sBqPU09xeSAjN77k0,3112
+cvlog/html_template.py,sha256=fkKYy0vJZa8x7sUzmZifPSFOX63eXGwc07dliGEWQYQ,4128
+cvlog/log.py,sha256=lwrvTBW_DnyBMRX0SWbiC6c6v3o4pVl6FzN_5dG93u0,1527
+opencv_log-1.2.2.dist-info/LICENSE,sha256=UIqvypkIJnweZ4UtPeWI1isQ61uSILlLn4bRhc5O0Cw,1065
+opencv_log-1.2.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+opencv_log-1.2.2.dist-info/METADATA,sha256=t01B2trxTVxBPFYd4Yju8apXQy18THIyA9qm6ZbL6vM,2862
+opencv_log-1.2.2.dist-info/RECORD,,
