@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: katsdpservices
+Version: 1.0
+Summary: Common code used by services that make up the MeerKAT Science Data Processor, such as a common logging setup
+Home-page: https://github.com/ska-sa/katsdpservices
+Author: MeerKAT SDP team
+Author-email: sdpdev+katsdpservices@ska.ac.za
+License: Modified BSD
+Description: # Common code for MeerKAT Science Data Processor services
+        
+        This contains common code used by services that make up the Science Data Processor
+        subsystem of the MeerKAT radio telescope. It includes
+        
+        - A common logging setup, which examines environment variables to configure
+          some logging options and specify a server to receive logs in Graylog
+          format.
+        - An extension to `argparse` to receive command-line options via
+          [katsdptelstate](https://github.com/ska-sa/katsdptelstate).
+        - Signal handlers to restart the process and adjust log levels.
+        - Utilities to simplify integration with
+          [aiomonitor](https://github.com/aio-libs/aiomonitor).
+        - A simple wrapper around [netifaces](https://github.com/al45tair/netifaces) to
+          get the IP address of a network interface.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: argparse
+Provides-Extra: aiomonitor
+Provides-Extra: test

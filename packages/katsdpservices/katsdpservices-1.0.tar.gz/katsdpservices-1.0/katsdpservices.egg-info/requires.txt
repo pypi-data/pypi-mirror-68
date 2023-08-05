@@ -1,0 +1,13 @@
+netifaces
+pygelf>=0.3.6
+
+[aiomonitor]
+aiomonitor
+
+[argparse]
+katsdptelstate
+
+[test]
+nose
+katsdptelstate
+aiomonitor

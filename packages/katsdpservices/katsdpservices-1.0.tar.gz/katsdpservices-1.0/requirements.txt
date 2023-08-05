@@ -1,0 +1,10 @@
+aiomonitor
+aioconsole
+certifi
+redis
+msgpack
+netifaces
+numpy
+pygelf
+terminaltables
+katsdptelstate @ git+https://github.com/ska-sa/katsdptelstate
