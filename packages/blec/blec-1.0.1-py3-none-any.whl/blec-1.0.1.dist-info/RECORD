@@ -1,0 +1,11 @@
+blec/__init__.py,sha256=6Unre5Rig37PVfC1wtNU0TwLmep2RAlrlfFB7ObxsxQ,54
+blec/_version.py,sha256=3KXfAcA5rzzQXMtfwpHphgbJNZdA0XWaW96kdWVSZJw,22
+blec/main.py,sha256=LAey5iDaGDnxd3BHq9Oua4_W4OImErawOlnygyIyXok,7319
+blec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blec/tests/test_blec.py,sha256=PyI_ozqbGa9OGGTgtckJYiG6ZYlHGIdpjpCFP_tPiYw,253
+blec-1.0.1.dist-info/LICENSE,sha256=kAUwJzwtspzYgr097uqMOp2e56R9z4Bp8WSSpkwqF5A,1062
+blec-1.0.1.dist-info/METADATA,sha256=jAn9iadbg_boTNVUx3tpegQWbPJ6tGkQ87RzCmBVy8Y,947
+blec-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+blec-1.0.1.dist-info/entry_points.txt,sha256=BHdZKHaaz1oowx4GbFxu90Z8zbQFA2bUA8FIw5IJ0fc,36
+blec-1.0.1.dist-info/top_level.txt,sha256=yrflsT7qXl0HPFrnL-0KyOmszROn4vxYx3Kh7kZ4vzk,5
+blec-1.0.1.dist-info/RECORD,,
