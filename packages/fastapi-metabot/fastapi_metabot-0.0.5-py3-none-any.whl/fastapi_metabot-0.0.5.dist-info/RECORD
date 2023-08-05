@@ -1,0 +1,16 @@
+fastapi_metabot/VERSION,sha256=C4j3pj86QPw4Cq8hq8csyN7ZzSjX7pAbxzJ0l7toMRY,5
+fastapi_metabot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_metabot/models.py,sha256=XZML_DJcn_XQVXUNzF-Wi82rDykPDDLQ1n19zxWQF24,327
+fastapi_metabot/module.py,sha256=HYdbvL_0sQFzLJzD5Lagjjclktx6_l9sxah8VXNVpJg,5878
+fastapi_metabot/routes.py,sha256=SEnvW9X0uCPsZTyaCc06sYyluBEeszg7bryo31MJMcw,699
+fastapi_metabot/utils.py,sha256=xcW8C1LsA767ABn3GWJ6GCOciuDToE_cWFAZQLsqYFQ,365
+fastapi_metabot/client/__init__.py,sha256=H2BJe7LK-dFE1Pj2dpaBsxHHO6DhmHRBGE_4V-g1Us4,343
+fastapi_metabot/client/api_client.py,sha256=_5miht4tLSjbcrc2w5HjE7-Iee4Gq7IRk52cYSVQ3wU,3969
+fastapi_metabot/client/exceptions.py,sha256=wsHv1_58DJ74dgpa9CmAId3Ed0dPn_zwAq4eqXog5gs,1616
+fastapi_metabot/client/models.py,sha256=NVd1U1ARlVyDdZE7dviqTXnz3ogrVeRa1QcdwERIBAI,1582
+fastapi_metabot/client/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_metabot/client/api/metabot_api.py,sha256=mF3zW_k-8Pt1SnJKJR4UbasxbWPE69lQ67uGnOn-W_A,3133
+fastapi_metabot-0.0.5.dist-info/METADATA,sha256=x7_2zxAY1ILM1j2pJyVtB-P65Banxz8HgkVXELINFgs,1192
+fastapi_metabot-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fastapi_metabot-0.0.5.dist-info/top_level.txt,sha256=Dg-S4LRlxPRvPnST1vxNluC6WSNhyguE8Rpn5BXm21I,16
+fastapi_metabot-0.0.5.dist-info/RECORD,,
