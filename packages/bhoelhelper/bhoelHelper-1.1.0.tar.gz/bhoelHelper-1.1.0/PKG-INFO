@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bhoelhelper
+Version: 1.1.0
+Summary: Misc helper functionalities.
+Home-page: https://python.xn--hllmanns-n4a.de/bhoelHelper/
+License: MIT
+Author: Berthold Höllmann
+Author-email: berthold-gitlab@xn--hllmanns-n4a.de
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: backports.functools-lru-cache (>=1.6.1,<2.0.0); python_version < "3.3"
+Requires-Dist: pathlib2 (>=2.3.5,<3.0.0); python_version < "3.4"
+Project-URL: Repository, https://gitlab.com/berhoel/python/bhoelHelper.git
+Description-Content-Type: text/markdown
+
+# bhoelHelper module #
+
+Some helper modules used in my other modules.
+
+# Installation #
+
+pip install bhoelHelper
+
+## Availability
+
+The latest version should be available at my
+[GitLab](https://gitlab.com/berhoel/python/bhoelHelper.git) repository, the
+package is avaliable at [pypi](https://pypi.org/project/bhoelHelper/) via
+`pip install bhoelHelper`.
+
