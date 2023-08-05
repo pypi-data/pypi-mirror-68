@@ -1,0 +1,10 @@
+celery
+cherrypy
+jsonschema
+pacifica-namespace
+peewee>2
+psutil
+pyyaml
+requests
+setuptools
+tqdm
