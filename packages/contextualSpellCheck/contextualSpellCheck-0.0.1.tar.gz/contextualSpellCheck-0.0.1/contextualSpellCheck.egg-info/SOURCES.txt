@@ -1,0 +1,10 @@
+README.md
+setup.py
+contextualSpellCheck/__init__.py
+contextualSpellCheck/contextualSpellCheck.py
+contextualSpellCheck.egg-info/PKG-INFO
+contextualSpellCheck.egg-info/SOURCES.txt
+contextualSpellCheck.egg-info/dependency_links.txt
+contextualSpellCheck.egg-info/top_level.txt
+contextualSpellCheck/tests/__init__.py
+contextualSpellCheck/tests/test_contextualSpellCheck.py
