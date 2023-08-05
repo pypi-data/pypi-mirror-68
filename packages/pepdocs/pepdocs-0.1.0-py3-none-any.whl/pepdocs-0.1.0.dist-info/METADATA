@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: pepdocs
+Version: 0.1.0
+Summary: PepDocs, read PEPs in your console
+Home-page: https://github.com/gahjelle/pepdocs
+License: UNKNOWN
+Keywords: pep
+Author: Geir Arne Hjelle
+Author-email: geirarne@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Dist: importlib_resources; python_version < '3.7'
+Requires-Dist: pyconfs[toml]
+Requires-Dist: requests
+Requires-Dist: typer
+Requires-Dist: black; extra == "dev"
+Requires-Dist: bumpversion; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: flit; extra == "dev"
+Requires-Dist: interrogate; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: mkdocs; extra == "doc"
+Requires-Dist: black; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: interrogate; extra == "test"
+Requires-Dist: isort; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: tox; extra == "test"
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+# PepDocs
+
+_Read PEPs in your console_
+
+[![v0.1.0](https://img.shields.io/pypi/v/pepdocs.svg)](https://pypi.org/project/pepdocs/)
+[![Python versions](https://img.shields.io/pypi/pyversions/pepdocs.svg)](https://pypi.org/project/pepdocs/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+[![Interrogate DocStrings](https://github.com/gahjelle/pepdocs/blob/master/interrogate_badge.svg)](https://interrogate.readthedocs.io/)
+[![CircleCI](https://circleci.com/gh/gahjelle/pepdocs.svg?style=shield)](https://circleci.com/gh/gahjelle/pepdocs)
+
+
+## Installing PepDocs
+
+PepDocs is available at [PyPI](https://pypi.org/project/pepdocs/). You can install it using Pip:
+
+    $ python -m pip install pepdocs
+
+
+## Using PepDocs
+
+To read a PEP in your console, use the `pep` command line command:
+
+    $ pep 8
+
+You can use `pep --help` to see available options.
+
+You can also call PepDocs from your own scripts. In that case, use `pepdocs.get()`:
+
+    import pepdocs
+    pep8 = pepdocs.get(8)
+
+
+## Installing From Source
+
+You can always download the [latest version of PepDocs from GitHub](https://github.com/gahjelle/pepdocs). PepDocs uses [Flit](https://flit.readthedocs.io/) as a setup tool.
+
+To install PepDocs from the downloaded source, run Flit:
+
+    $ python -m flit install --deps production
+
+If you want to change and play with the PepDocs source code, you should install it in editable mode:
+
+    $ python -m flit install --symlink

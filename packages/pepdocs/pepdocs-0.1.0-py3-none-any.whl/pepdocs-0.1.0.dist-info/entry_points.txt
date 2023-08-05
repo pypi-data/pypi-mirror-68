@@ -1,0 +1,4 @@
+[console_scripts]
+pep=pepdocs.__main__:main
+pepdocs=pepdocs.__main__:main
+
