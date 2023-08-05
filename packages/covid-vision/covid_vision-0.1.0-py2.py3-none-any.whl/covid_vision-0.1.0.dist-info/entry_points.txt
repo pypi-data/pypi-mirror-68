@@ -1,0 +1,3 @@
+[console_scripts]
+covid_vision = covid_vision.cli:main
+

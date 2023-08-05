@@ -1,0 +1,10 @@
+covid_vision/__init__.py,sha256=NRWHo9IjMjwHsn_PQuyUfXhDsFwWrfBTzvPEwUkJYLM,150
+covid_vision/cli.py,sha256=wrmKP80ci9FsEdIX0dTQOaCYLmXv8AcVumqj1zvNcag,451
+covid_vision/covid_vision.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+covid_vision-0.1.0.dist-info/AUTHORS.rst,sha256=7tQvojnadysbSdxa-n1vtEroBhJXYcX222UnoWcH5_k,176
+covid_vision-0.1.0.dist-info/LICENSE,sha256=oBpFOJCAHhxYMLb_C9Qowxl0miPcA66hW3X_LDOb3Pw,1080
+covid_vision-0.1.0.dist-info/METADATA,sha256=BADJNVD-qTQi6UjHWn0Z7j79i0VnKLe7_nav6zFRp-M,1901
+covid_vision-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+covid_vision-0.1.0.dist-info/entry_points.txt,sha256=nuxoyHRlCs-njmoENY_uGbTVBHB-iTAyPFHyF4o8Who,56
+covid_vision-0.1.0.dist-info/top_level.txt,sha256=yMVxD8Z4D9sot8p-txZiiZl2U9ARiOrHuYbhgno_XCA,13
+covid_vision-0.1.0.dist-info/RECORD,,
