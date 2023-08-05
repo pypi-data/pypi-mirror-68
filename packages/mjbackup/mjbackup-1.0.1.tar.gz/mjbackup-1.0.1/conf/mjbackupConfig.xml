@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MJBackupConfig>
+<BackupList>
+	<Path>backup1.xml</Path>
+	<Path>backup2.xml</Path>
+	<Path>backup3.xml</Path>
+</BackupList>
+<EmailNotifyList>
+	<Email>remote_email1@dont_use_this.com</Email>
+	<Email>remote_email2@dont_use_this.com</Email>
+	<Email>remote_email3@dont_use_this.com/Email>
+</EmailNotifyList>
+<EmailSource>example_email@dont_use_this.com</EmailSource>
+<LimitCopies>3</LimitCopies>
+<Verbose>1</Verbose>
+</MJBackupConfig>

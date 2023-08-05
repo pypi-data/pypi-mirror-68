@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BackupList name="examplebackup1" target="example1" targetdir="targetdir/backups1">
+  <Backup>
+    <Name>user1</Name>
+    <Path>/home/user1</Path>
+    <Note>user1 backup</Note>
+  </Backup>
+  <Backup>
+    <Name>user2</Name>
+    <Path>/home/user2</Path>
+    <Note>user2 backup</Note>
+  </Backup>
+  </BackupList>

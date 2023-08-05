@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BackupList name="examplebackup3" target="example3" targetdir="targetdir/backups3">
+  <Backup>
+    <Name>Emails</Name>
+    <Path>/var/email</Path>
+    <Note>Backup Emails</Note>
+  </Backup>
+  <Backup>
+    <Name>System Configuration</Name>
+    <Path>/etc</Path>
+    <Note>Backup System Configuration</Note>
+  </Backup>
+  </BackupList>
