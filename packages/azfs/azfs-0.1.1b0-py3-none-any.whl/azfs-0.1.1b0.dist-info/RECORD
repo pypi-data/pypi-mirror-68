@@ -1,0 +1,16 @@
+azfs/__init__.py,sha256=KpBhUUHQWOUooc5UMpQatw6MzJK8bncI8opuKwYFqj8,106
+azfs/core.py,sha256=8Ojk32VJe9Oh1s9_z8RxmHgA46eGkkjU2O5VdhhDj0M,6912
+azfs/error.py,sha256=Zt18YaZ57r0YLfuIACaUKmSwnl8FR0vwT5WSlclT_NU,89
+azfs/utils.py,sha256=A_JIDyCbu-y0nRf8oovMTEOSXMmep2YNPCw7uUI96iY,6029
+azfs/clients/__init__.py,sha256=E-2uT6yyl6CbgrvLCwLwPdrUG0DTIrho3MB-uoIuSTE,108
+azfs/clients/blob_client.py,sha256=1328lqrvggROnby7sFoLHIl0tT9FwxWfnPMrpXKKn6U,1818
+azfs/clients/client_interface.py,sha256=kny-EFe6SeylwXalm8H6h11cbn9XdywdcVZBDMqpS4g,3511
+azfs/clients/datalake_client.py,sha256=7izhd_Kt0VMGEe1JB_L3trnpBNQTLZW0Xqm4V0N5ErI,1920
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=r6xXzkCpagj4bZl1s7STk3ZgDCUT6IMwcP7sNJB9ezQ,256
+test/test_utils.py,sha256=6b52B9KF6l7axyE3EarLjlsWRnzhscBtjNbjkelo-NE,2496
+azfs-0.1.1b0.dist-info/LICENSE,sha256=t1Tl4m1SsVHXbwMPox91dSc9qMcrGEghLefJl9PNNpM,1046
+azfs-0.1.1b0.dist-info/METADATA,sha256=lfqPnSuLR6BvLdad_e8lKB9zhQG5mmRfdTt5D4zlpYM,3560
+azfs-0.1.1b0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+azfs-0.1.1b0.dist-info/top_level.txt,sha256=6N60v9Zyu2bmm3kO7RgmcXD0X00ZhOeP-Wrg8xQE9R8,10
+azfs-0.1.1b0.dist-info/RECORD,,
