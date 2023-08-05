@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/gpgodzilla.py
+src/gpgodzilla.egg-info/PKG-INFO
+src/gpgodzilla.egg-info/SOURCES.txt
+src/gpgodzilla.egg-info/dependency_links.txt
+src/gpgodzilla.egg-info/top_level.txt
