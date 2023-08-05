@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PyOCT
+Version: 1.0.2
+Summary: OCT imaging reconstruction on spectral-domain optical coherence tomography
+Home-page: https://github.com/NeversayEverLin/PyOCT
+Author: Yuechuan Lin
+Author-email: linyuechuan1989@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyOCT: Imaging Reconstruction of Spectral-Domain Optical Coherence Tomography
+PyOCT is developed to conduct normal spectral-domain optical coherence tomography (SD-OCT) imaging reconstruction with main steps as:
+1. Reading Data
+2. Background Subtraction 
+3. Spectral Resampling 
+3. Comutational Aberration Correction (Alpha-correction)
+4. Camera Dispersion Correction (Beta-correction with camera calibration factors) 
+5. Inverse Fourier Transform 
+6. Obtain OCT Image
+
+The algorithms was developed initially in Prof. Steven G. Adie research lab at Cornell University using MATLAB. The reconstruction speed has been improved with matrix-operation. Compared with MATLAB, Python language have a much better performance in loading data from binary files tested only in our lab computer. 
+
