@@ -1,0 +1,140 @@
+Filename : /home/lucas/working/github/FastaChar/data/COI_sequences_MUSCLE.fas
+--------------------------------------------------------------------------------
+List A:
+ 1 Lyrodus_pedicellatus_Ms_TK (WBET130)
+ 2 Lyrodus_pedicellatus_Ms_TK (WBET133)
+ 3 Lyrodus_pedicellatus_Ms_TK (WBET134)
+ 4 Lyrodus_pedicellatus_Ms_TK (WBET135)
+
+List B:
+ 1 Lyrodus_pedicellatus_Mb_FR (WBET042)
+ 2 Lyrodus_pedicellatus_Mb_FR (WBET043)
+ 3 Lyrodus_pedicellatus_Bd_FR (WBET061)
+ 4 Lyrodus_pedicellatus_Mb_FR (WBET078)
+ 5 Lyrodus_pedicellatus_Tl_FR (WBET087)
+ 6 Lyrodus_pedicellatus_Tl_FR (WBET090)
+ 7 Lyrodus_pedicellatus_Tl_FR (WBET108)
+ 8 Lyrodus_pedicellatus_Tl_FR (WBET118)
+--------------------------------------------------------------------------------
+
+
+The species in List A have the following MDCs:
+
+position: character(s) |  characters for species in List B
+                       |  1 2 3 4 5 6 7 8 
+--------------------------------------------------------------------------------
+      13: C            |  T T T T T T T T
+      16: G            |  A A A A A A A A
+      19: T            |  A A A A A A A A
+      20: G            |  T T T T T T T T
+      22: T            |  A A A A A A A A
+      28: G            |  A A A A A A A A
+      34: T            |  A A A A A A A A
+      38: T            |  C C C C C C C C
+      40: A            |  T T T T T T T T
+      43: T            |  A A A A A A A A
+      46: T            |  A A A A A A A A
+      52: A            |  G G G G G G G G
+      55: G            |  A A A A A A A A
+      61: C            |  T T T T T T T T
+      64: G            |  A A A A A A A A
+      67: T            |  G G G G G G G G
+      68: C            |  T T T T T T T T
+      88: G            |  A A A A A A A A
+      94: G            |  T T T T T T T T
+     103: C            |  T T T T T T T T
+     106: G            |  A A A A A A A A
+     109: C            |  T T T T T T T T
+     112: G            |  C C C C C C C C
+     115: C            |  T T T T T T T T
+     118: C            |  T T T T T T T T
+     121: G            |  A A A A A A A A
+     127: C            |  G G G G G G G G
+     130: T            |  A A A A A A A A
+     142: G            |  A A A A A A A A
+     148: G            |  A A A A A A A A
+     154: C            |  T T T T T T T T
+     172: G            |  A A A A A A A A
+     181: T            |  A A A A A A A A
+     193: C            |  T T T T T T T T
+     197: C            |  T T T T T T T T
+     199: C            |  A A A A A A A A
+     202: C            |  T T T T T T T T
+     206: C            |  T T T T T T T T
+     208: G            |  A A A A A A A A
+     212: C            |  T T T T T T T T
+     214: A            |  G G G G G G G G
+     217: T            |  A A A A A A A A
+     241: A            |  T T T T T T T T
+     244: G            |  A A A A A A A A
+     251: C            |  T T T T T T T T
+     256: G            |  T T T T T T T T
+     263: C            |  T T T T T T T T
+     265: T            |  A A A A A A A A
+     268: G            |  A A A A A A A A
+     274: G            |  A A A A A A A A
+     304: C            |  T T T T T T T T
+     307: T            |  G G G G G G G G
+     310: G            |  A A A A A A A A
+     313: G            |  A A A A A A A A
+     316: T            |  A A A A A A A A
+     319: C            |  T T T T T T T T
+     325: A            |  T T T T T T T T
+     328: T            |  G G G G G G G G
+     331: A            |  G G G G G G G G
+     335: C            |  T T T T T T T T
+     337: T            |  G G G G G G G G
+     358: C            |  T T T T T T T T
+     373: C            |  T T T T T T T T
+     382: A            |  T T T T T T T T
+     400: G            |  T T T T T T T T
+     409: G            |  A A A A A A A A
+     412: T            |  A A A A A A A A
+     415: G            |  A A A A A A A A
+     448: T            |  C C C C C C C C
+     463: G            |  A A A A A A A A
+     466: G            |  A A A A A A A A
+     469: T            |  A A A A A A A A
+     472: T            |  A A A A A A A A
+     475: T            |  A A A A A A A A
+     478: T            |  A A A A A A A A
+     481: T            |  A A A A A A A A
+     484: G            |  T T T T T T T T
+     490: T            |  C C C C C C C C
+     493: G            |  T T T T T T T T
+     499: A            |  T T T T T T T T
+     502: G            |  A A A A A A A A
+     509: C            |  T T T T T T T T
+     520: A            |  T T T T T T T T
+     526: G            |  T T T T T T T T
+     529: G            |  C C C C C C C C
+     536: C            |  T T T T T T T T
+     538: T            |  A A A A A A A A
+     547: T            |  A A A A A A A A
+     550: A            |  G G G G G G G G
+     553: G            |  T T T T T T T T
+     557: C            |  T T T T T T T T
+     559: T            |  A A A A A A A A
+     565: T            |  G G G G G G G G
+     569: C            |  T T T T T T T T
+     571: G            |  A A A A A A A A
+     574: G            |  T T T T T T T T
+     577: G            |  A A A A A A A A
+     580: G            |  A A A A A A A A
+     586: G            |  T T T T T T T T
+     607: G            |  T T T T T T T T
+     610: C            |  T T T T T T T T
+     619: G            |  T T T T T T T T
+     625: C            |  T T T T T T T T
+     626: T            |  C C C C C C C C
+     628: A            |  T T T T T T T T
+     640: G            |  A A A A A A A A
+     641: T            |  C C C C C C C C
+     652: C            |  T T T T T T T T
+     655: G            |  A A A A A A A A
+     658: C            |  T T T T T T T T
+
+110 of 658 characters are unique (16.7%)
+================================================================================
+
+
