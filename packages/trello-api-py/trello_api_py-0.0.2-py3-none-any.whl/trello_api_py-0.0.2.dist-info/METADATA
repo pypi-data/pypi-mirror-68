@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: trello-api-py
+Version: 0.0.2
+Summary: Updated and extended version of py-trello
+Home-page: https://github.com/Caloba1/trello-api-py
+Author: Michael Caloba
+Author-email: michaelcaloba@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Trello-API-Py Package
+
+This package is an attempt to test pip and extend the functionality of the already existing and outdated package, py-trello."# trello-api-py" 
+
+
