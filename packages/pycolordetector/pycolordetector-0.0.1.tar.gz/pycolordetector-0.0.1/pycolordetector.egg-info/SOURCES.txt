@@ -1,0 +1,8 @@
+README.md
+setup.py
+pycolordetector/__init__.py
+pycolordetector/pycolordetector.py
+pycolordetector.egg-info/PKG-INFO
+pycolordetector.egg-info/SOURCES.txt
+pycolordetector.egg-info/dependency_links.txt
+pycolordetector.egg-info/top_level.txt
