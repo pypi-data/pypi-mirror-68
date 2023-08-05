@@ -1,0 +1,3 @@
+[console_scripts]
+numiner=numiner.__main__:main
+
