@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/limecore/core/configuration/__init__.py
+src/limecore/core/configuration/configuration.py
+src/limecore/core/configuration/configuration_loader.py
+src/limecore/core/configuration/module.py
+src/limecore_core_configuration.egg-info/PKG-INFO
+src/limecore_core_configuration.egg-info/SOURCES.txt
+src/limecore_core_configuration.egg-info/dependency_links.txt
+src/limecore_core_configuration.egg-info/requires.txt
+src/limecore_core_configuration.egg-info/top_level.txt
