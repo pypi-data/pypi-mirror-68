@@ -1,0 +1,16 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whoishistory/__init__.py,sha256=kc_oxsQktRo9X-dgTRY2se3s8b9_dEtz1fYBuuXWZCs,117
+whoishistory/api_client.py,sha256=v6mHh0Gu0-poJFAnS05DDExfAHPWWujG8N32oVXTNAc,4407
+whoishistory/requester.py,sha256=aipP8VhS4qufi19XZ8Rqrr-b3pp8T2bET5XjtH5L6ts,1091
+whoishistory/exceptions/__init__.py,sha256=ZKWvUgoJs3V_QyNXxgfS8gqDJ1frR_-U3Ckb4c7K4Lo,297
+whoishistory/exceptions/empty_response_exception.py,sha256=v3QjDVMJhpd0JC3dRja-R1LXuQSZYtXLb-Q85rp5FWA,50
+whoishistory/exceptions/server_error_exception.py,sha256=FQlBh2N6SLNk5MIw1_s7hfRpsOD2uB5xBQGJ6fXXgo0,155
+whoishistory/exceptions/unparsable_response_exception.py,sha256=lBeGyJp_OXLbTS4yGECzmA0TO3JeAyosqsQ3B-5bu8M,55
+whoishistory/models/__init__.py,sha256=-ShCobk8qZ5gmOC7yfE9gjCS3yQiYAOrelfGqhhcFwI,61
+whoishistory/models/historic.py,sha256=UWNwyWFQ0c-ohBKvcE_NJoJpD_ht1RHSDZ4repL2wDk,8744
+whois_history-1.0.2.dist-info/AUTHORS.rst,sha256=3eMGnZo165q71FFgI_xdJiPwUhSxP7R6Qh11WCi7nRo,82
+whois_history-1.0.2.dist-info/LICENSE,sha256=0c-2XpY9-C0YzMTchJ1lc_dSQ7mNdNiLmPX07K8nB94,1057
+whois_history-1.0.2.dist-info/METADATA,sha256=EzrxkluYxfY3L4_kgxx9MQNn9x_D7DXh5Ke9VXrFqJI,2207
+whois_history-1.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+whois_history-1.0.2.dist-info/top_level.txt,sha256=kjzBOH2QduXDBwc8xPt0WJYWBb7xABSHcprKiemy44U,22
+whois_history-1.0.2.dist-info/RECORD,,
