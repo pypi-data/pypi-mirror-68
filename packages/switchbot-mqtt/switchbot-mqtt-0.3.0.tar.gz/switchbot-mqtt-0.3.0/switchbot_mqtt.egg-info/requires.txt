@@ -1,0 +1,2 @@
+PySwitchbot
+paho-mqtt<2
