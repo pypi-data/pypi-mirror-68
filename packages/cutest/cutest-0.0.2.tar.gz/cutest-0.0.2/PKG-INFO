@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cutest
+Version: 0.0.2
+Summary: A cute, composable unit test framework for Python
+Home-page: https://github.com/jessebrennan/cutest
+Author: jessebrennan
+Author-email: brennan@pacific.net
+License: UNKNOWN
+Description: # cutest
+        
+        [![Build Status](https://travis-ci.com/jessebrennan/cutest.svg?branch=master)](https://travis-ci.com/jessebrennan/cutest)
+        
+        A cute, composable unit test framework for Python
+        
+        ## Documentation
+        
+        TODO :) but for an example took in `test/sample`.
+        
+        ## Release instructions
+        
+        1. On a clean, up-to-date, version of `master`, run:
+           ```
+           make release version=VERSION
+           ```
+           where `VERSION` is one of `{major, minor, patch, X.X.X}`.
+        
+        2. Commit with a message like `Update version`.
+        
+        3. Push to `master` (😱).
+        
+        4. Make a release through the Github UI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
