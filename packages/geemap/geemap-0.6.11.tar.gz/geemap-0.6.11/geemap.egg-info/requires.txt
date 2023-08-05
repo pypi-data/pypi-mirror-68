@@ -1,0 +1,14 @@
+bqplot
+click
+colour
+earthengine-api
+folium
+geeadd
+geocoder
+ipyfilechooser
+ipyleaflet>=0.12.6
+ipynb-py-convert
+matplotlib
+mss
+pillow
+pyshp
