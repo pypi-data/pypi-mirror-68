@@ -1,0 +1,8 @@
+README.txt
+setup.py
+pydomywork/__init__.py
+pydomywork.egg-info/PKG-INFO
+pydomywork.egg-info/SOURCES.txt
+pydomywork.egg-info/dependency_links.txt
+pydomywork.egg-info/requires.txt
+pydomywork.egg-info/top_level.txt
