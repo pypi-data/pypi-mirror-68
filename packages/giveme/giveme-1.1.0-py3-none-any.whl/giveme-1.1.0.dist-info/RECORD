@@ -1,0 +1,9 @@
+giveme/__init__.py,sha256=lLdtShYLXIhxe9BK8Jyx-s9DmwBpZBSFUUhB20njYBM,123
+giveme/core.py,sha256=KvKzGJ0nWuJAnyrFL7We6tyXjJ1PSI7LSW5eEOIWfCU,5459
+giveme/deferredproperty.py,sha256=nltYT08JqRPSe76casZwNsqj9Af5V6NxnPohhewCqcw,423
+giveme/injector.py,sha256=TkYt3eIr0TwLcTwCSg9VYGbjcm79yHZzrnWBiZzSU6Q,7772
+giveme-1.1.0.dist-info/LICENSE,sha256=g8kUecwWlMf97HZb7s2wNl0VVLzt4tO1bpciqfo2Vxo,1076
+giveme-1.1.0.dist-info/METADATA,sha256=K8Ot3blzUB3bq4RxmFuDMCNgoKXLcbNsSIMBXv0aC-Q,243
+giveme-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+giveme-1.1.0.dist-info/top_level.txt,sha256=JsZJJe0YeCgTQBkOUXqpqB99fqZ4N17ci5Oupqp5bp8,7
+giveme-1.1.0.dist-info/RECORD,,
