@@ -1,0 +1,17 @@
+README.rst
+setup.py
+pscli.egg-info/PKG-INFO
+pscli.egg-info/SOURCES.txt
+pscli.egg-info/dependency_links.txt
+pscli.egg-info/entry_points.txt
+pscli.egg-info/not-zip-safe
+pscli.egg-info/requires.txt
+pscli.egg-info/top_level.txt
+psclient/__init__.py
+psclient/batch.py
+psclient/cli.py
+psclient/commands.py
+psclient/config.py
+psclient/psclient.py
+psclient/utils.py
+psclient/version.py
