@@ -1,0 +1,6 @@
+
+[async]
+aiohttp
+
+[sync]
+requests

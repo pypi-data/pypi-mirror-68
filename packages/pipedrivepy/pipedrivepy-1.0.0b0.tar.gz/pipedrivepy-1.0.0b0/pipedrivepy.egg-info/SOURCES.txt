@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+pipedrive/__init__.py
+pipedrive/abstract.py
+pipedrive/aio.py
+pipedrive/chain.py
+pipedrive/errors.py
+pipedrive/sio.py
+pipedrivepy.egg-info/PKG-INFO
+pipedrivepy.egg-info/SOURCES.txt
+pipedrivepy.egg-info/dependency_links.txt
+pipedrivepy.egg-info/requires.txt
+pipedrivepy.egg-info/top_level.txt
