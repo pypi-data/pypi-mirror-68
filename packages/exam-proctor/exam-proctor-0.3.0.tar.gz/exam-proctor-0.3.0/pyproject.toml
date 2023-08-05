@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "exam-proctor"
+version = "0.3.0"
+description = ""
+authors = ["Luca Allulli <luca@skeed.it>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+mss = "^5.0.0"
+ipython = "^7.13.0"
+opencv-python = "^4.2.0"
+python-ffmpeg = "^1.0.11"
+psutil = "^5.7.0"
+bottle = "^0.12.18"
+requests = "^2.23.0"
+peewee = "^3.13.2"
+pystray = "^0.15.0"
+ffsend = "^0.1.3"
+waitress = "^1.4.3"
+
+[tool.poetry.scripts]
+exam_proctor = 'exam_proctor.bootstrap:main'
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
