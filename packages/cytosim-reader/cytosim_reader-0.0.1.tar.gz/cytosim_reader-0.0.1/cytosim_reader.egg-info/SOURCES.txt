@@ -1,0 +1,8 @@
+README.rst
+cytosim_reader.py
+setup.py
+cytosim_reader.egg-info/PKG-INFO
+cytosim_reader.egg-info/SOURCES.txt
+cytosim_reader.egg-info/dependency_links.txt
+cytosim_reader.egg-info/requires.txt
+cytosim_reader.egg-info/top_level.txt
