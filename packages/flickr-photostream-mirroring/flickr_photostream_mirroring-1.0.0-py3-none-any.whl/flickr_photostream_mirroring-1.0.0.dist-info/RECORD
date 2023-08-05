@@ -1,0 +1,14 @@
+flickr_photostream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flickr_photostream/__main__.py,sha256=k6Ju0QYWEfgCd6hegAkbUbTvHT2qfJPQTkKYh5bsk4I,7332
+flickr_photostream/constants.py,sha256=13CIJV1fAUQ3Ughinph7gcqW7SDyj-NdFySNDjx_Ru4,4118
+flickr_photostream/exception.py,sha256=KfhLqnEDMMOvTNx2kTeKqaTtoOd7Gh5Bwoy-3T2DUCs,177
+flickr_photostream/flickr_agent.py,sha256=TiOFmbue0aSz-syqu6VSOpbM_OXfJKJcP-4AeHtL5sQ,14925
+flickr_photostream/flickr_api.py,sha256=MY4T5dwC93QbzSVtp_B06BhpBIl6zfCRTRdjiG82024,6195
+flickr_photostream/flickr_model.py,sha256=k6EevDvSjJzwwnjOm7o1ON5tjAgbbaAhoGQ5EaM5G0U,10052
+flickr_photostream/utils.py,sha256=9kdfzqxqd1TpFYQhyfy6EsGGgnBJ32CI7pGy_4bDJQQ,1450
+flickr_photostream_mirroring-1.0.0.dist-info/LICENSE,sha256=fUsMe3RXy75mxLhDaQ-uOYjtf4GW0GLvT4P6fqPyR9A,1094
+flickr_photostream_mirroring-1.0.0.dist-info/METADATA,sha256=SML5_PotdYBuuN65Iw-JvFWeajCkiUOsrnZFFcWM8CM,7327
+flickr_photostream_mirroring-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flickr_photostream_mirroring-1.0.0.dist-info/entry_points.txt,sha256=mMPLmCyQS0Y73gGpZVFlC7VFCmS3S4aiOwNcZGk5voI,68
+flickr_photostream_mirroring-1.0.0.dist-info/top_level.txt,sha256=8EipBiZ33na1_mLjmpEJiIIlpwj__aseuVvCOZAx0OU,19
+flickr_photostream_mirroring-1.0.0.dist-info/RECORD,,
