@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CRRD
+Version: 0.0.2
+Summary: China Railway Raido Decoder
+Home-page: https://github.com/radonyl/CRRD
+Author: radonyl
+Author-email: i@alex.ac.cn
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: railway radio decoder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
