@@ -1,0 +1,17 @@
+setup.py
+fastapi_metabot/__init__.py
+fastapi_metabot/models.py
+fastapi_metabot/module.py
+fastapi_metabot/routes.py
+fastapi_metabot/utils.py
+fastapi_metabot.egg-info/PKG-INFO
+fastapi_metabot.egg-info/SOURCES.txt
+fastapi_metabot.egg-info/dependency_links.txt
+fastapi_metabot.egg-info/requires.txt
+fastapi_metabot.egg-info/top_level.txt
+fastapi_metabot/client/__init__.py
+fastapi_metabot/client/api_client.py
+fastapi_metabot/client/exceptions.py
+fastapi_metabot/client/models.py
+fastapi_metabot/client/api/__init__.py
+fastapi_metabot/client/api/metabot_api.py
