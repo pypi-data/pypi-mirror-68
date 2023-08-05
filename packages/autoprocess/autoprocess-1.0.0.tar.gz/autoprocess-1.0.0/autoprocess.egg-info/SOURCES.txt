@@ -1,0 +1,9 @@
+README.md
+setup.py
+autoprocess/clean.py
+autoprocess/transformation.py
+autoprocess/visualization.py
+autoprocess.egg-info/PKG-INFO
+autoprocess.egg-info/SOURCES.txt
+autoprocess.egg-info/dependency_links.txt
+autoprocess.egg-info/top_level.txt
