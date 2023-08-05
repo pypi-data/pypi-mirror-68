@@ -1,0 +1,203 @@
+---
+# https://pre-commit.com/
+# Install pre-commit for your current user:
+#   pip3 install --user pre-commit
+#
+# and then, in the git repo:
+#   pre-commit install
+
+repos:
+
+# ┏━━━━━┓
+# ┃ Git ┃
+# ┗━━━━━┛
+
+#  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+#    rev: 1.11.0
+#    hooks:
+#      - id: check-mailmap
+#      - id: forbid-binary
+#        exclude: '.*\.mo'
+#      - id: git-check  # Configure in .gitattributes
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: forbid-new-submodules
+
+# ┏━━━━━━━━━┓
+# ┃ Generic ┃
+# ┗━━━━━━━━━┛
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-byte-order-marker
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-symlinks
+      - id: check-vcs-permalinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+# - repo: https://github.com/jumanjihouse/pre-commit-hooks
+#   rev: 1.11.0
+#   hooks:
+#     - id: require-ascii
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.1.6
+    hooks:
+      - id: forbid-crlf
+      - id: remove-crlf
+      - id: forbid-tabs
+      - id: remove-tabs
+
+# ┏━━━━━━━━━━━┓
+# ┃ Languages ┃
+# ┗━━━━━━━━━━━┛
+
+# ╔══════╗
+# ║ Json ║
+# ╚══════╝
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-json
+      - id: pretty-format-json
+        args:
+          - --autofix
+
+# ╔══════════╗
+# ║ Markdown ║
+# ╚══════════╝
+
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 1.11.0
+    hooks:
+      - id: markdownlint  # Configure in .mdlrc
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
+    rev: v1.1.0
+    hooks:
+      - id: markdown-toc
+
+# ╔════════╗
+# ║ Python ║
+# ╚════════╝
+
+# ┌───────────┐
+# │ Formatter │
+# └───────────┘
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-ast
+        language_version: python3.6
+      - id: check-builtin-literals
+        language_version: python3.6
+      - id: check-docstring-first
+        language_version: python3.6
+      - id: debug-statements
+        language_version: python3.6
+      - id: fix-encoding-pragma
+        args:
+          - --remove
+      - id: requirements-txt-fixer
+
+# - repo: https://github.com/asottile/add-trailing-comma
+#   rev: v0.8.0
+#   hooks:
+#     - id: add-trailing-comma
+
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v1.12.0
+    hooks:
+      - id: pyupgrade
+
+  - repo: https://github.com/ambv/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3.6
+      exclude: migrations
+      args:
+        - --skip-string-normalization
+
+# - repo: https://github.com/pre-commit/mirrors-isort
+#   rev: v4.3.9
+#   hooks:
+#     - id: isort
+#       args: [--lines=99]
+
+# ┌────────┐
+# │ Linter │
+# └────────┘
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v1.2.3
+    hooks:
+    - id: flake8
+      language_version: python3.6
+      args:
+        - --config=.flake8
+
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+    rev: v1.1.0
+    hooks:
+      - id: python-safety-dependencies-check
+
+#  - repo: https://github.com/PyCQA/bandit
+#    rev: master
+#    hooks:
+#      - id: bandit
+
+# ╔═══════╗
+# ║ Shell ║
+# ╚═══════╝
+
+  - repo: https://github.com/bemeurer/beautysh.git
+    rev: '4.1'
+    hooks:
+      - id: beautysh
+
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 1.11.0
+    hooks:
+      - id: script-must-have-extension
+#      - id: script-must-not-have-extension
+#      - id: shellcheck
+#      - id: shfmt
+
+# ╔═════╗
+# ║ Xml ║
+# ╚═════╝
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-xml
+
+# ╔══════╗
+# ║ Yaml ║
+# ╚══════╝
+
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.15.0
+    hooks:
+      - id: yamllint
+        args:
+          - "-d {rules: {line-length: {max: 99}}}"
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.1.0
+    hooks:
+      - id: check-yaml
+      - id: sort-simple-yaml
+
+exclude: 'Pipfile.lock'

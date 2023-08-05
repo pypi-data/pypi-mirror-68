@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <section class="start" style="margin: auto">
+    <div style="margin: auto; width: max-content; padding-bottom: 60px">
+        <div style="padding: 40px">
+            <h1 style="text-align: center">Signer l'appel</h1>
+        </div>
+        <div class="mainform">
+            <form action="{% url 'sign' %}" method="POST" class="flex-col flex-sb ">
+                {% csrf_token %}
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <input id="firstname" type="text" placeholder="Prénom" name="firstname" required>
+                </div>
+                <div>
+                    <label for="surname">Nom</label>
+                    <input type="text" placeholder="Nom" name="surname" id="surname" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+
+                <div style="margin: 20px 0">
+                    <p>
+                        Question de vérification
+                    </p>
+                    <p style="font-size: 11px; font-style: oblique">
+                        Une petite question pour vérfier que vous êtes bien un humain.
+                    </p>
+                    <div>
+                        <label for="challenge">{{ challenge }}</label>
+                        <input type="text" placeholder="Indiquez la réponse ici" name="challenge_answer" id="challenge" required>
+                    </div>
+
+                    <input type="hidden" name="challenge_id" value="{{ id }}">
+                </div>
+
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="news">
+                    Je souhaite recevoir des nouvelles par courriel et je certifie avoir plus de 15 ans
+                </label>
+
+                <div style="text-align: center; margin-top: 20px">
+                    <button type="submit" class="btn button">Signer l'appel</button>
+                </div>
+                <div class="mainform-details">
+                    <p>
+                        Nous vérifions régulièrement la validité des signatures et le
+                        compteur est actualisé plusieurs fois par jour.
+                    </p>
+                    <p style="margin-top: 20px">
+                        Vos données personnelles collectées resteront strictement
+                        confidentielles. Elles ne seront ni vendues ni échangées
+                        conformément à nos mentions légales. L'exercice de vos
+                        droits, dont la désinscription, est possible à tout moment,
+                        voir notre par "Mentions légales".
+                    </p>
+
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+{% endblock %}

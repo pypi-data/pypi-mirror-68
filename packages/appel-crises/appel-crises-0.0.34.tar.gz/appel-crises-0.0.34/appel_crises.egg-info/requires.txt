@@ -1,0 +1,15 @@
+django>=3.0
+importlib-metadata
+psycopg2
+getconf
+whitenoise[brotli]
+requests
+sentry-sdk==0.14.3
+
+[dev]
+check-manifest
+flake8
+pre-commit
+openpyxl
+tqdm
+zest.releaser[recommended]
