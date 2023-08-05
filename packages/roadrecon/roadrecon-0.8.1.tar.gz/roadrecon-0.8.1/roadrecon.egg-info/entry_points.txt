@@ -1,0 +1,4 @@
+[console_scripts]
+roadrecon = roadtools.roadrecon.main:main
+roadrecon-gui = roadtools.roadrecon.server:main
+

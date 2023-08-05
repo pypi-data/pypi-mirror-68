@@ -1,0 +1,9 @@
+roadlib
+flask
+sqlalchemy
+marshmallow
+flask-sqlalchemy
+flask-marshmallow
+flask-cors
+marshmallow-sqlalchemy
+aiohttp
