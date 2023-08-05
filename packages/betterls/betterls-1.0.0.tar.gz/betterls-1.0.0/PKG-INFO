@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: betterls
+Version: 1.0.0
+Summary: Better ls command.
+License: MIT
+Author: Cyrus Yip
+Author-email: cyruscmyip1@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
