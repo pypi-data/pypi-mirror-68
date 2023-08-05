@@ -1,0 +1,10 @@
+[tool.black]
+line-length = 99
+exclude = '''(
+    /opt/ixian/dist/*
+  | /opt/ixian/.tox/*
+  | /opt/ixian/.eggs/*
+  | /opt/ixian/venv/*
+  | snapshots/*
+  )
+'''
