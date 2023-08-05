@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: taburu
+Version: 2020.5.9
+Summary: a module that supports an event-sourced system of tracking parameterizations of methods.
+Home-page: https://github.com/TRI-AMDD/taburu
+Author: joseph.montoya
+Author-email: joseph.montoya@tri.global
+Maintainer: joseph.montoya
+Maintainer-email: joseph.montoya@tri.global
+License: Apache
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: monty (>=3.0.2)
+Requires-Dist: indexed (==1.0.0)
+Requires-Dist: tqdm (>=4.46.0)
+
+
+taburu (after テーブル) is a module for using hashed arrays as parameter tables
+developed by the
+[Toyota Research Institute's AMDD division](http://www.tri.global/accelerated-materials-design-and-discovery/).
+
+It's primary purpose is to use event sourcing and hashed parameter tables
+to ensure that prior methods can be accounted for when doing new experiments.
+
+
