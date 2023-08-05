@@ -1,0 +1,16 @@
+opqua/__init__.py,sha256=zpsUYfvPu7jBhni8DnFZhETmkeZfeA8pbvwhsQpIH6w,423
+opqua/model.py,sha256=Z42Qv2cc8oKrLld7ZZkgQLolCOcOCg1lU8X9-VatwG4,44203
+opqua/internal/__init__.py,sha256=XMsRrB-g9jNIfh5GtrbeKQSc7ooS4J0aN3e19J984ew,222
+opqua/internal/data.py,sha256=ActRG5mCP3215wKjICTfeaSpQohcruIIRh5esHqS_YU,19101
+opqua/internal/gillespie.py,sha256=F9aN_JNhaqGzXLjeW5jiTuwAYYl9omHbDXekZqHFQQY,14727
+opqua/internal/host.py,sha256=D0cBmreAU2MLmkP7TKNvCQAGKZpvuunSQGu9XXhITko,7087
+opqua/internal/intervention.py,sha256=yX0n_cPGw5oUcm0gmbsHv9CG6FawDLC21JfRhdoJgVY,849
+opqua/internal/plot.py,sha256=-o9f-SGp0xe-EyAW0VF_uRjGqSxigW8BVfcoWEanli8,14891
+opqua/internal/population.py,sha256=BmDhUdE2JapXbkq-Swc-r3_0BicpRBC2xuuMj5tfzfQ,27841
+opqua/internal/setup.py,sha256=Rmy7mKS3skm7_qsq0zXRShATokqSq6rFy36EjxwQFs0,4693
+opqua/internal/vector.py,sha256=sTNZRwQKumYAWhdNodIiV7zLOgyRVWMhj95TSG-ahy8,4982
+opqua-0.1.6.dist-info/LICENSE,sha256=geKGncTq6VK1FE6OpWgnBOgyYq7jpWwi7FLezcMGelQ,1081
+opqua-0.1.6.dist-info/METADATA,sha256=rx9FDYMfOp1cdv1UB7yt442CBo4eknVqnx3TeuKRHxA,1379
+opqua-0.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+opqua-0.1.6.dist-info/top_level.txt,sha256=tS2PDDmGY1yR1_nUdvb3gnZ6ZW7UNNHHV5Gp13_a09I,6
+opqua-0.1.6.dist-info/RECORD,,
