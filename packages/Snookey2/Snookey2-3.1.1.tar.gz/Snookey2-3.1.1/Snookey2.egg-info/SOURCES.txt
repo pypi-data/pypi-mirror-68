@@ -1,0 +1,9 @@
+README.md
+setup.py
+snookey2.py
+Snookey2.egg-info/PKG-INFO
+Snookey2.egg-info/SOURCES.txt
+Snookey2.egg-info/dependency_links.txt
+Snookey2.egg-info/entry_points.txt
+Snookey2.egg-info/requires.txt
+Snookey2.egg-info/top_level.txt
