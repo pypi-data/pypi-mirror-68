@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ijr
+Version: 0.0.15
+Summary: IJsvogel Package
+Home-page: https://github.com/IJsvogel/ijr
+Author: Herman Holterman
+Author-email: herman.holterman@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: google-cloud-pubsub
+Requires-Dist: pymongo
+
+UNKNOWN
+
+
