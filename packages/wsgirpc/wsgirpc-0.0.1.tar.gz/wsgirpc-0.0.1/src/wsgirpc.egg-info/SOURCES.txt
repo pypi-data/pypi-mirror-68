@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/wsgirpc.py
+src/wsgirpc.egg-info/PKG-INFO
+src/wsgirpc.egg-info/SOURCES.txt
+src/wsgirpc.egg-info/dependency_links.txt
+src/wsgirpc.egg-info/requires.txt
+src/wsgirpc.egg-info/top_level.txt

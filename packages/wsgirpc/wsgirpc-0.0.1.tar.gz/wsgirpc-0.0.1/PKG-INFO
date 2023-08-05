@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: wsgirpc
+Version: 0.0.1
+Summary: Tiny implementation of a WSGI-based RPC server and client
+Home-page: https://github.com/luismsgomes/wsgirpc
+Author: Luís Gomes
+Author-email: luismsgomes@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
