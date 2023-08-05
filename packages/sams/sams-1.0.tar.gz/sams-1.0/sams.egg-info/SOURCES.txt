@@ -1,0 +1,7 @@
+setup.py
+sams/__init__.py
+sams/pdf2 text.py
+sams.egg-info/PKG-INFO
+sams.egg-info/SOURCES.txt
+sams.egg-info/dependency_links.txt
+sams.egg-info/top_level.txt
