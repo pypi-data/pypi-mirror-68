@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+cdocs/__init__.py
+cdocs/cdocs.py
+cdocs/config.py
+cdocs/contextual_docs.py
+cdocs/dict_finder.py
+cdocs.egg-info/PKG-INFO
+cdocs.egg-info/SOURCES.txt
+cdocs.egg-info/dependency_links.txt
+cdocs.egg-info/top_level.txt
+tests/__init__.py
+tests/tests.py
