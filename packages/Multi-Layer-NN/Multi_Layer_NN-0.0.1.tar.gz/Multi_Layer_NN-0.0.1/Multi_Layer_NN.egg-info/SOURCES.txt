@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Multi_Layer_NN/NeuralNetwork.py
+Multi_Layer_NN/__init__.py
+Multi_Layer_NN.egg-info/PKG-INFO
+Multi_Layer_NN.egg-info/SOURCES.txt
+Multi_Layer_NN.egg-info/dependency_links.txt
+Multi_Layer_NN.egg-info/not-zip-safe
+Multi_Layer_NN.egg-info/requires.txt
+Multi_Layer_NN.egg-info/top_level.txt
