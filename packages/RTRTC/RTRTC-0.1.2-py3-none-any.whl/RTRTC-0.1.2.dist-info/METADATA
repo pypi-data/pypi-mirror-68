@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: RTRTC
+Version: 0.1.2
+Summary: Toy ray-tracer based on ThrustRTC on CURandRTC
+Home-page: https://github.com/fynv/RTRTC
+Author: Fei Yang
+Author-email: hyangfeih@gmail.com
+License: Anti 996
+Keywords: GPU CUDA RayTracing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: CURandRTC
+Requires-Dist: ThrustRTC
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+RTRTC
+================
+
+RTRTC is a toy ray-tracer based on ThrustRTC on CURandRTC. This package is for Python 3.
+
+
+
+
+
