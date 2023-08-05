@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ni-core-server
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/pypa/sampleproject
+Author: Primael Bruant
+Author-email: primael.bruant@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pika (==1.1.0)
+Requires-Dist: tornado (==6.0.4)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: ni-logging-utils (==0.0.3)
+Requires-Dist: coloredlogs (==14.0)
+
+# Core Server
+
+
+## API
+
+### `POST` /upload
+
+Upload an image.
+
+#### parameters
+
+| name        | type | value                                | required |
+|:------------|:----:|:------------------------------------:|:--------:|
+|description  |string| Image description                    | yes      |
+|categorie    |string| Image category                       | yes      |
+|operations   |string| List of operations, comma-separated  | no       |
+|image        |file  | Image to upload                      | yes      |
+
+
+
