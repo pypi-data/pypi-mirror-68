@@ -1,0 +1,8 @@
+README.md
+dtree.py
+setup.py
+dtree_python.egg-info/PKG-INFO
+dtree_python.egg-info/SOURCES.txt
+dtree_python.egg-info/dependency_links.txt
+dtree_python.egg-info/not-zip-safe
+dtree_python.egg-info/top_level.txt
