@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gigabloat
+Version: 0.1.0
+Summary: Tool to get general file and directory statistics
+Home-page: https://github.com/ArtemKolichenkov/gigabloat_scanner
+License: UNKNOWN
+Author: Artem Kolichenkov
+Author-email: artem@kolichenkov.com
+Project-URL: Source, https://github.com/ArtemKolichenkov/gigabloat_scanner
