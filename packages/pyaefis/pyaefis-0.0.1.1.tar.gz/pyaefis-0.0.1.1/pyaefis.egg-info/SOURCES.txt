@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyaefis-lib/__init__.py
+pyaefis.egg-info/PKG-INFO
+pyaefis.egg-info/SOURCES.txt
+pyaefis.egg-info/dependency_links.txt
+pyaefis.egg-info/top_level.txt
