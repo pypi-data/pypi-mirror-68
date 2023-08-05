@@ -1,0 +1,4 @@
+include LICENSE MANIFEST.in README.rst version.py
+graft env
+graft tests
+recursive-include scp_data *

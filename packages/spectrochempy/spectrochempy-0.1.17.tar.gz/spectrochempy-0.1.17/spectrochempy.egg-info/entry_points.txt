@@ -1,0 +1,3 @@
+[console_scripts]
+scpy = spectrochempy.scripts.launch_api:main
+

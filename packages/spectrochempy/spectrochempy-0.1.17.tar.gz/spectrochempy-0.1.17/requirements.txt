@@ -1,0 +1,26 @@
+# dependencies:
+# for the core package
+numpy
+matplotlib
+traitlets
+pint==0.9
+quaternion
+quadprog
+cantera
+pandas
+xlrd
+scipy
+numba
+
+# mainly for install and a bit more...
+setuptools_scm
+
+# need this, because the API is mainly designed to run in Jupyter notebook
+ipython
+jupyterlab
+ipykernel
+ipywidgets
+ipympl
+widgetsnbextension
+nodejs
+pyqt
