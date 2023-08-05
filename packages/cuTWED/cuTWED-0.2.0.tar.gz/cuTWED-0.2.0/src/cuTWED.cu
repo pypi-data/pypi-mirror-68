@@ -1,0 +1,114 @@
+/*  Copyright 2020 Garrett Wright, Gestalt Group LLC
+
+    This file is part of cuTWED.
+
+    cuTWED is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    cuTWED is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with cuTWED.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+
+#include "cuTWED.h"
+
+/* Flip on debug prints.
+   Warning, I don't recomend for large inputs, 10x20 ish is fine...
+*/
+/* #define DEBUG */
+
+
+/* Note this DIMENSION_CUTOVER is easily changed with some care.
+   But you want to stay in fast memory...
+   Small values can live in registers...
+   Medium, __shared__...
+   Absurd, global...
+*/
+static const int DIMENSION_CUTOVER = 32;
+
+
+/*
+  CUDA Utility
+*/
+#define HANDLE_ERROR(ans) { gpuAssert((ans), __FILE__, __LINE__); }
+static inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)
+{
+  if (code != cudaSuccess)
+  {
+    fprintf(stderr,"GPUassert: %s %s %d\n", cudaGetErrorString(code), file, line);
+    if (abort) exit(code);
+  }
+}
+
+
+/*
+  These are just some helper utilities,
+  mainly to help me remember how I translate between the index systems
+*/
+
+typedef struct rcIdx {
+  int row;
+  int col;
+} rcIdx_t;
+
+typedef struct diagIdx {
+  int orth_diag;  // the "left" diagonals
+  int idx; // index along the diag
+} diagIdx_t;
+
+static __inline__ __host__ __device__ rcIdx_t map_diag_to_rc(int orth_diag, int idx){
+  /* orth_diag is the zero based ortho diagonal ("left" diagonals),
+     idx is the zero based index into orth_diag */
+  return { orth_diag - idx, idx};
+}
+
+static __inline__ __host__ __device__ diagIdx_t map_rc_to_diag(int row, int col){
+  /* orth_diag is the zero based ortho diagonal,
+     idx is the zero based index into orth_diag */
+  return {row+col, col};
+}
+
+static __inline__ __device__ size_t dim_offset(size_t idx, int dim){
+  return dim*idx;
+}
+
+/*
+  The core alogorithm is expanded here for doubles then single precision.
+  See cuTWED_core.h
+*/
+
+#define REAL_t double
+#define _TWED_MALLOC_DEV twed_malloc_dev
+#define _TWED_FREE_DEV twed_free_dev
+#define _TWED_COPY_TO_DEV twed_copy_to_dev
+#define _TWED_DEV twed_dev
+#define _TWED twed
+#include "cuTWED_core.h"
+#undef REAL_t
+#undef _TWED_MALLOC_DEV
+#undef _TWED_FREE_DEV
+#undef _TWED_COPY_TO_DEV
+#undef _TWED_DEV
+#undef _TWED
+
+#define REAL_t float
+#define _TWED_MALLOC_DEV twed_malloc_devf
+#define _TWED_FREE_DEV twed_free_devf
+#define _TWED_COPY_TO_DEV twed_copy_to_devf
+#define _TWED_DEV twed_devf
+#define _TWED twedf
+#include "cuTWED_core.h"
+#undef REAL_t
+#undef _TWED_MALLOC_DEV
+#undef _TWED_FREE_DEV
+#undef _TWED_COPY_TO_DEV
+#undef _TWED_DEV
+#undef _TWED
