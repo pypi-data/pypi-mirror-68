@@ -1,0 +1,12 @@
+mkdocs_apidoc/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+mkdocs_apidoc/auto.py,sha256=TT82bmRpGRvpYj4-3Rx0SAqboEnNPUFysswlne8qEkU,1202
+mkdocs_apidoc/collect.py,sha256=FMdTtTHh9CZ7lpun1emvlpIL9tmQ_aoGsHcRMnjfEjQ,782
+mkdocs_apidoc/docstring.py,sha256=Xyvd0aEboBhL51xUWmWGolxWX6O5JUPiLD_ZOM2upWU,316
+mkdocs_apidoc/inspections.py,sha256=qWgYwQnviOP_YsuK-WxURFT2ac0DyV6ndr6Rt7GY9ag,6053
+mkdocs_apidoc/parse_numpy.py,sha256=f23lSIYZfaF7v-Z1L1rRSZJBT8m2hd7KSDsidleOI08,600
+mkdocs_apidoc/plugin.py,sha256=1KaQrARbInoOSQkki2C0_CqjzuRNR6xGjzQ6PyGba4k,430
+mkdocs_apidoc-0.1.4.dist-info/entry_points.txt,sha256=r4a4jcOCy0vrdp1_1Ub1v7F5YDnTeGhPfOAfVDY5M50,66
+mkdocs_apidoc-0.1.4.dist-info/LICENSE,sha256=kuR6d9u0_O-j28Uz33Ow2F1FsuavNJOaZ6DXtvkIuYM,1070
+mkdocs_apidoc-0.1.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+mkdocs_apidoc-0.1.4.dist-info/METADATA,sha256=9pAZCvs67fHoy0We8B1hnBGRpsdKtp8ipAIGY2vczHk,405
+mkdocs_apidoc-0.1.4.dist-info/RECORD,,
