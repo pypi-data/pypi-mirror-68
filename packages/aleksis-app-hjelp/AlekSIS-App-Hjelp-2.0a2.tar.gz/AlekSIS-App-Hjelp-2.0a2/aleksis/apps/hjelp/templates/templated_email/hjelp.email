@@ -1,0 +1,22 @@
+{% load i18n %}
+
+{% block subject %} {% trans "New" %} {{ type }} {% trans "from" %} {{ user.username }} {% endblock %}
+
+
+{% block plain %}
+    {% trans "The user" %} {{ user.username }} ({% trans "full name: " %} {{ user.first_name }} {{ user.last_name }}, {% trans "e-mail: " %} {{ user.email }}) {% trans "has submitted the following" %} {{ type }}:
+    {% for item in description %}
+        {{ item }}
+    {% endfor %}
+{% endblock %}
+
+{% block html %}
+<main>
+    <p>{% trans "The user" %} {{ user.username }} ({% trans "full name: " %} {{ user.first_name }} {{ user.last_name }}, {% trans "e-mail: " %} {{ user.email }}) {% trans "has submitted the following" %} {{ type }}: </p>
+    <blockquote>
+        {% for item in description %}
+            <p>{{ item }}</p>
+        {% endfor %}
+    </blockquote>
+</main>
+{% endblock %}

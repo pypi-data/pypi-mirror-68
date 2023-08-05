@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-04 15:44+0200\n"
+"PO-Revision-Date: 2020-04-19 18:26+0000\n"
+"Last-Translator: Jonathan Weth <teckids@jonathanweth.de>\n"
+"Language-Team: Latin <https://translate.edugit.org/projects/aleksis/aleksis-"
+"app-hjelp/la/>\n"
+"Language: la\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.1\n"
+
+#: admin.py:33
+msgid "Publish selected questions"
+msgstr ""
+
+#: admin.py:40
+msgid "Unpublish selected questions"
+msgstr ""
+
+#: forms.py:12
+msgid "Your question"
+msgstr ""
+
+#: forms.py:19
+msgid "Category 1"
+msgstr ""
+
+#: forms.py:27
+msgid "Select a category"
+msgstr ""
+
+#: forms.py:32
+msgid "Category 2"
+msgstr ""
+
+#: forms.py:42
+msgid "Category 3"
+msgstr ""
+
+#: forms.py:52
+msgid "Please specify the issue according to the chosen category."
+msgstr ""
+
+#: forms.py:55
+msgid "Please describe the issue in one sentence."
+msgstr ""
+
+#: forms.py:58
+msgid "Please describe the issue in more detail."
+msgstr ""
+
+#: forms.py:66
+msgid "Design of the user interface"
+msgstr ""
+
+#: forms.py:73
+msgid "Speed"
+msgstr ""
+
+#: forms.py:80
+msgid "User friendliness"
+msgstr ""
+
+#: forms.py:87
+msgid "AlekSIS in general"
+msgstr ""
+
+#: forms.py:94
+msgid "What do you like? What would you change?"
+msgstr ""
+
+#: forms.py:98
+msgid "What else do you want to tell us?"
+msgstr ""
+
+#: forms.py:102
+msgid "What do you think should be added to AlekSIS?"
+msgstr ""
+
+#: menus.py:6
+msgid "Support"
+msgstr ""
+
+#: menus.py:12 templates/hjelp/issue_report.html:11
+msgid "Report an issue"
+msgstr ""
+
+#: menus.py:21
+msgid "Give feedback"
+msgstr ""
+
+#: menus.py:29
+msgid "FAQ"
+msgstr ""
+
+#: models.py:14
+msgid "Can view FAQ"
+msgstr ""
+
+#: models.py:15
+msgid "Can ask FAQ question"
+msgstr ""
+
+#: models.py:16
+msgid "Can report issues"
+msgstr ""
+
+#: models.py:17
+msgid "Can send feedback"
+msgstr ""
+
+#: models.py:22 models.py:70
+msgid "Name"
+msgstr "Nomen"
+
+#: models.py:25 models.py:39 models.py:72
+msgid "Icon"
+msgstr ""
+
+#: models.py:32
+msgid "FAQ section"
+msgstr ""
+
+#: models.py:33
+msgid "FAQ sections"
+msgstr ""
+
+#: models.py:37
+msgid "Question"
+msgstr ""
+
+#: models.py:42
+msgid "Show"
+msgstr ""
+
+#: models.py:44
+msgid "Answer"
+msgstr ""
+
+#: models.py:46
+msgid ""
+"Because of our CSS framework the HTML tag <strong>&lt;ul&gt;</strong> must "
+"have the CSS class <em>browser-default</em>. In this case, please use the "
+"manual editor mode."
+msgstr ""
+
+#: models.py:58
+msgid "FAQ Section"
+msgstr ""
+
+#: models.py:65 views.py:44
+msgid "FAQ question"
+msgstr ""
+
+#: models.py:66
+msgid "FAQ questions"
+msgstr ""
+
+#: models.py:80
+msgid "Parent category"
+msgstr ""
+
+#: models.py:82
+msgid "Free text input allowed"
+msgstr ""
+
+#: models.py:83
+msgid "Placeholder"
+msgstr ""
+
+#: models.py:94
+msgid "Issue category"
+msgstr ""
+
+#: models.py:95
+msgid "Issue categories"
+msgstr ""
+
+#: preferences.py:19
+msgid "Public visibility of FAQ"
+msgstr ""
+
+#: preferences.py:29
+msgid "Recipient e-mail address for FAQ questions"
+msgstr ""
+
+#: preferences.py:39
+msgid "Recipient e-mail address for issue reports"
+msgstr ""
+
+#: preferences.py:49
+msgid "Recipient e-mail address for feedback"
+msgstr ""
+
+#: templates/hjelp/ask.html:6
+msgid "You have a question?"
+msgstr ""
+
+#: templates/hjelp/ask.html:8
+msgid ""
+"\n"
+"        You have a question about AlekSIS and didn't find the answer to your "
+"question in the FAQ? Then you can ask us your question here:\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/faq.html:39
+msgid ""
+"\n"
+"\t    Your question is not listed above?\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/faq.html:47
+msgid ""
+"\n"
+"\t\t    Ask your question\n"
+"\t\t"
+msgstr ""
+
+#: templates/hjelp/faq.html:52
+msgid ""
+"\n"
+"                If you have a question please ask one of you site "
+"administrators:\n"
+"            "
+msgstr ""
+
+#: templates/hjelp/feedback.html:9
+msgid ""
+"\n"
+"            Please give us detailed and honest feedback so that we can make "
+"AlekSIS even better!\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/feedback.html:100
+msgid "Send feedback"
+msgstr ""
+
+#: templates/hjelp/feedback_submitted.html:7
+msgid ""
+"\n"
+"            Thank you for your feedback. It was successfully submitted.\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/feedback_submitted.html:14
+msgid ""
+"\n"
+"\t    Back to landing page</a>\n"
+"        "
+msgstr ""
+
+#: templates/hjelp/issue_report.html:64
+msgid "Please describe your issue in <strong>one</strong> sentence"
+msgstr ""
+
+#: templates/hjelp/issue_report.html:73
+msgid "Please describe your issue <strong>more detailed</strong> (optional)"
+msgstr ""
+
+#: templates/hjelp/issue_report.html:78
+msgid "Submit bugreport"
+msgstr ""
+
+#: templates/hjelp/issue_report.html:91
+msgid "Please fill in all required fields!"
+msgstr ""
+
+#: templates/hjelp/issue_report_submitted.html:8
+msgid ""
+"\n"
+"\t    We've received your bug report and will be look at it as soon a "
+"possible. Thank you for your report.\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/issue_report_submitted.html:15
+msgid ""
+"\n"
+"\t    Back to home\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/question_submitted.html:9
+msgid ""
+"\n"
+"\t    We've received your question and will answer as soon as possible.\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/question_submitted.html:16
+msgid ""
+"\n"
+"\t    Back to landing page\n"
+"\t"
+msgstr ""
+
+#: templates/hjelp/question_submitted.html:22
+msgid ""
+"\n"
+"\t    Back to FAQ\n"
+"\t"
+msgstr ""
+
+#: templates/templated_email/hjelp.email:3
+msgid "New"
+msgstr ""
+
+#: templates/templated_email/hjelp.email:3
+msgid "from"
+msgstr ""
+
+#: templates/templated_email/hjelp.email:7
+msgid "The user"
+msgstr ""
+
+#: templates/templated_email/hjelp.email:7
+msgid "full name: "
+msgstr ""
+
+#: views.py:34
+msgid "You have submitted a question."
+msgstr ""
+
+#: views.py:94
+msgid "You reported a problem."
+msgstr ""
+
+#: views.py:111
+msgid "Issue"
+msgstr ""
+
+#: views.py:143
+msgid "You submitted feedback."
+msgstr ""
+
+#: views.py:144
+#, python-brace-format
+msgid "You rated AlekSIS with {overall_rating} from 5 stars."
+msgstr ""
+
+#: views.py:161
+msgid "Feedback"
+msgstr ""
