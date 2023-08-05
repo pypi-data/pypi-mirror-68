@@ -1,0 +1,9 @@
+codeforces_api/__init__.py,sha256=71fFSAiWB7Qr5YH-mkHrsm4ayO71mMkBNy9u3zayPkM,306
+codeforces_api/api_request_maker.py,sha256=jbv51_BOFmo0osFO_CXz-RxnH9PtaHEgwVkU9n2hhPI,4375
+codeforces_api/api_requests.py,sha256=xZkM4lnaKKt_k_mjFZp2FJ9zgYKd1eI16GoLhS7dcNw,10109
+codeforces_api/parse_methods.py,sha256=oJ-4TmZeVDC83e_KNercUhJs9Ac_TGAE0fSPN8eG9Xk,691
+CodeforcesApiPy-1.2.3.dist-info/LICENSE,sha256=7do9fy4SaX8JnDHAu7Un71dG1x0eixH0l39nPOVqpG0,1120
+CodeforcesApiPy-1.2.3.dist-info/METADATA,sha256=SzImTT7LIHwmQV8EOweDIBv6n310Fc4h7HBUf64py9E,1182
+CodeforcesApiPy-1.2.3.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+CodeforcesApiPy-1.2.3.dist-info/top_level.txt,sha256=P-DAyrGwdZs0C-IkFBV5pD2-HvCGEVJ5ySeXEvyOiQg,15
+CodeforcesApiPy-1.2.3.dist-info/RECORD,,
