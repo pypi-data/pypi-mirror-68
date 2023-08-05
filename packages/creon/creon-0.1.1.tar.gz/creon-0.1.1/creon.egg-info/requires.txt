@@ -1,0 +1,5 @@
+PyAutoGUI<1.0,>=0.9
+pywin32==227
+pywinauto<0.7,>=0.6
+psutil<5.8.0,>=5.7.0
+typing-extensions<3.8,>=3.7
