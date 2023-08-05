@@ -1,0 +1,118 @@
+#!/usr/bin/env python
+
+import os
+import sys
+
+import radicale
+from etesync_dav import radicale_main
+
+from etesync_dav.manage import Manager
+from etesync_dav.config import DATA_DIR, LISTEN_ADDRESS, LISTEN_PORT, HTPASSWD_FILE, SSL_KEY_FILE, SSL_CERT_FILE
+from etesync_dav.mac_helpers import has_ssl
+
+
+def manage(args):
+    import argparse
+    import getpass
+
+    manager = Manager()
+
+    def print_credentials(username, password):
+        print("User: {}\nPassword: {}".format(username, password))
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("command",
+                        choices=('add', 'del', 'get', 'list'),
+                        help="Either add to add a user, del to remove a user, get to show login creds, " +
+                             "or list to list all users.")
+    parser.add_argument("username",
+                        nargs='?',
+                        help="The username used with EteSync")
+    parser.add_argument("--login-password",
+                        help="The password to login to the EteSync server.")
+    parser.add_argument("--encryption-password",
+                        help="The encryption password")
+    args = parser.parse_args(args=args)
+
+    if args.command == 'add':
+        exists = manager.validate_username(args.username)
+        if exists:
+            raise RuntimeError("User already exists. Delete first if you'd like to override settings.")
+
+        login_password = (getattr(args, 'login_password') or
+                          getpass.getpass(prompt="Please enter the EteSync login password: "))
+        encryption_password = (getattr(args, 'encryption_password') or
+                               getpass.getpass(prompt="Please enter your encryption password: "))
+
+        print_credentials(args.username, manager.add(args.username, login_password, encryption_password))
+
+    elif args.command == 'del':
+        print("Deleting user")
+        manager.delete(args.username)
+
+    elif args.command == 'get':
+        print_credentials(args.username, manager.get(args.username))
+
+    elif args.command == 'list':
+        for user in manager.list():
+            print(user)
+
+
+def certgen(args):
+    from etesync_dav.mac_helpers import generate_cert, macos_trust_cert
+    generate_cert()
+    macos_trust_cert()
+
+
+if len(sys.argv) > 1 and sys.argv[1] == 'manage':
+    manage(sys.argv[2:])
+    sys.exit(0)
+
+
+if len(sys.argv) > 1 and sys.argv[1] == 'certgen':
+    certgen(sys.argv[2:])
+    sys.exit(0)
+
+
+if len(sys.argv) > 1 and sys.argv[1] == '--version':
+    import etesync_dav
+    print("EteSync DAV version: ", etesync_dav.__version__)
+    print("Radicale version: ", radicale.VERSION)
+    sys.exit(0)
+
+
+radicale_args = [
+    '--hosts', '{}:{}'.format(LISTEN_ADDRESS, LISTEN_PORT),
+
+    '--auth-type', 'htpasswd',
+    '--auth-htpasswd-filename', HTPASSWD_FILE,
+    '--auth-htpasswd-encryption', 'plain',
+
+    '--storage-type', 'etesync_dav.radicale.storage',
+
+    '--rights-type', 'etesync_dav.radicale.rights',
+]
+
+if not os.getenv('ETESYNC_NO_WEBUI', None):
+    radicale_args.extend([
+        '--web-type', 'etesync_dav.radicale.web'
+    ])
+else:
+    radicale_args.extend([
+        '--web-type', 'none'
+    ])
+
+if has_ssl():
+    radicale_args += [
+        '--ssl',
+        '--server-key', SSL_KEY_FILE,
+        '--server-certificate', SSL_CERT_FILE,
+    ]
+
+# Init data if no data dir
+if not os.path.exists(DATA_DIR):
+    Manager()
+
+radicale_main.run(radicale_args + sys.argv[1:])
+
+sys.exit(0)
