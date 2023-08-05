@@ -1,0 +1,3 @@
+[console_scripts]
+oli = oli.run:run_as_command
+
