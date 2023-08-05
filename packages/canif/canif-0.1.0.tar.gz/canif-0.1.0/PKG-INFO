@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: canif
+Version: 0.1.0
+Summary: Pretty-printer for JSON and JSON-like data
+Home-page: https://github.com/saintamh/canif/
+Author: Hervé Saint-Amand
+Author-email: canif@saintamh.org
+License: UNKNOWN
+Description: Pretty-printer for JSON and JSON-like data.
+        
+        Can parse data in these formats:
+        
+        * JSON
+        * JavaScript object literals
+        * Python `repr` output
+        * MongoDB BSON
+        
+        and can pretty-print it, either in its original format, or as valid JSON.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
