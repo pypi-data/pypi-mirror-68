@@ -1,0 +1,351 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: mailman-developers@python.org\n"
+"POT-Creation-Date: 2019-06-22 10:59+0200\n"
+"PO-Revision-Date: 2020-04-01 23:49+0000\n"
+"Last-Translator: Derek Zhou <derek@3qin.us>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"gnu-mailman/django-mailman3/zh_Hans/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.0-dev\n"
+
+#: forms.py:43
+msgid "A user with that username already exists."
+msgstr "此用户名已存在."
+
+#: templates/account/email.html:6
+#: templates/django_mailman3/profile/base.html:16
+#: templates/django_mailman3/profile/base.html:17
+msgid "Account"
+msgstr "账户"
+
+#: templates/account/email.html:11
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "下列电子邮件地址与你的账户相关:"
+
+#: templates/account/email.html:25
+msgid "Verified"
+msgstr "已验证"
+
+#: templates/account/email.html:27
+msgid "Unverified"
+msgstr "未验证"
+
+#: templates/account/email.html:29
+msgid "Primary"
+msgstr "首要的"
+
+#: templates/account/email.html:35
+msgid "Make Primary"
+msgstr "设为首要的"
+
+#: templates/account/email.html:36
+msgid "Re-send Verification"
+msgstr "重发验证信"
+
+#: templates/account/email.html:37 templates/socialaccount/connections.html:34
+msgid "Remove"
+msgstr "去掉"
+
+#: templates/account/email.html:44
+msgid "Warning:"
+msgstr "警告:"
+
+#: templates/account/email.html:44
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr "你现在尚未设定任何电子邮件地址. 你需要添加电子邮件地址来接收通知, 重置密码, 等等."
+
+#: templates/account/email.html:49
+msgid "Add E-mail Address"
+msgstr "添加电子邮件地址"
+
+#: templates/account/email.html:55
+msgid "Add E-mail"
+msgstr "添加电子邮件"
+
+#: templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "你确信要删除选中的电子邮件地址吗?"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "确认电子邮件地址"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"请确认 <a href=\"mailto:%(email)s\">%(email)s</a> 是用户 %(user_display)s "
+"的一个电子邮件地址."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "确认"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr "这份电子邮件确认链接已过期或无效. 请 <a href=\"%(email_url)s\">重新请求新的电子邮件确认信</a>."
+
+#: templates/account/login.html:7 templates/account/login.html:11
+#: templates/account/login.html:48
+msgid "Sign In"
+msgstr "登录"
+
+#: templates/account/login.html:18
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"请用你现有\n"
+"第三方账户之一登录. 或者, <a href=\"%(signup_url)s\">注册</a>\n"
+"一个%(site_name)s账户再登录:"
+
+#: templates/account/login.html:30
+#: templates/django_mailman3/profile/profile.html:67
+msgid "or"
+msgstr "或"
+
+#: templates/account/login.html:37
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"如果你尚未创建一个账户, 那么请先\n"
+"<a href=\"%(signup_url)s\">注册</a>."
+
+#: templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "忘记密码了吗?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:17
+msgid "Sign Out"
+msgstr "退出登录"
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "你确信要退出登录吗?"
+
+#: templates/account/password_change.html:12
+#: templates/account/password_reset_from_key.html:6
+#: templates/account/password_reset_from_key.html:9
+#: templates/django_mailman3/profile/base.html:20
+#: templates/django_mailman3/profile/base.html:21
+msgid "Change Password"
+msgstr "更改密码"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+msgid "Password Reset"
+msgstr "重置密码"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr "忘记密码了吗? 请输入你的电子邮件地址, 我们会发送一封电子邮件来帮助你重置你的密码."
+
+#: templates/account/password_reset.html:22
+msgid "Reset My Password"
+msgstr "重置我的密码"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "如果你有困难重置你的密码的话, 请联系我们."
+
+#: templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "错误的口令"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr "此密码重置链接无效, 可能已经使用过. 请重新要求一个<a href=\"%(passwd_reset_url)s\">新的密码重置</a>."
+
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr "更改密码"
+
+#: templates/account/password_reset_from_key.html:25
+msgid "Your password is now changed."
+msgstr "你的密码已经更改."
+
+#: templates/account/password_set.html:12
+msgid "Set Password"
+msgstr "设定密码"
+
+#: templates/account/signup.html:6 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr "注册"
+
+#: templates/account/signup.html:9 templates/account/signup.html:20
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+msgid "Sign Up"
+msgstr "注册"
+
+#: templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "已经有账户了吗? 请<a href=\"%(login_url)s\">登录</a>."
+
+#: templates/django_mailman3/paginator/pagination.html:41
+msgid "Jump to page:"
+msgstr "跳转到页面:"
+
+#: templates/django_mailman3/paginator/pagination.html:59
+msgid "Results per page:"
+msgstr "每页显示的结果个数:"
+
+#: templates/django_mailman3/paginator/pagination.html:75
+#: templates/django_mailman3/profile/profile.html:66
+msgid "Update"
+msgstr "更新"
+
+#: templates/django_mailman3/profile/base.html:5
+msgid "User Profile"
+msgstr "用户信息"
+
+#: templates/django_mailman3/profile/base.html:12
+msgid "User profile"
+msgstr "用户信息"
+
+#: templates/django_mailman3/profile/base.html:12
+msgid "for"
+msgstr "为了"
+
+#: templates/django_mailman3/profile/base.html:24
+#: templates/django_mailman3/profile/base.html:25
+msgid "E-mail Addresses"
+msgstr "电子邮件地址"
+
+#: templates/django_mailman3/profile/base.html:29
+#: templates/django_mailman3/profile/base.html:30
+msgid "Account Connections"
+msgstr "账户的关联"
+
+#: templates/django_mailman3/profile/base.html:33
+#: templates/django_mailman3/profile/base.html:34
+#: templates/django_mailman3/profile/delete_profile.html:18
+msgid "Delete Account"
+msgstr "删除账户"
+
+#: templates/django_mailman3/profile/delete_profile.html:13
+msgid ""
+"Are you sure you want to delete your account? This will remove your account "
+"along with all your subscriptions."
+msgstr "你确信要删除你的账户吗? 这会同时删除你所有的订阅."
+
+#: templates/django_mailman3/profile/profile.html:18
+#: templates/django_mailman3/profile/profile.html:53
+msgid "Edit on"
+msgstr "编辑"
+
+#: templates/django_mailman3/profile/profile.html:25
+msgid "Primary email:"
+msgstr "首要的电子邮件地址:"
+
+#: templates/django_mailman3/profile/profile.html:31
+msgid "Other emails:"
+msgstr "其他电子邮件地址:"
+
+#: templates/django_mailman3/profile/profile.html:37
+msgid "(no other email)"
+msgstr "(无其他电子邮件)"
+
+#: templates/django_mailman3/profile/profile.html:42
+msgid "Link another address"
+msgstr "再链接一个地址"
+
+#: templates/django_mailman3/profile/profile.html:49
+msgid "Avatar:"
+msgstr "头像:"
+
+#: templates/django_mailman3/profile/profile.html:58
+msgid "Joined on:"
+msgstr "加入日期:"
+
+#: templates/django_mailman3/profile/profile.html:67
+msgid "cancel"
+msgstr "中止"
+
+#: templates/openid/login.html:10
+msgid "OpenID Sign In"
+msgstr "用OpenID登录"
+
+#: templates/socialaccount/connections.html:9
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "你还能用以下第三方账户来登录你的账户:"
+
+#: templates/socialaccount/connections.html:42
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "你现在没有关联的社交网络账户."
+
+#: templates/socialaccount/connections.html:45
+msgid "Add a 3rd Party Account"
+msgstr "加入一个第三方账户"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"你即将用%(provider_name)s 账户来登录\n"
+"%(site_name)s. 作为最后一步, 请填完下面的表格:"
+
+#: templatetags/pagination.py:43
+msgid "Newer"
+msgstr "更新的"
+
+#: templatetags/pagination.py:44
+msgid "Older"
+msgstr "更旧的"
+
+#: templatetags/pagination.py:46
+msgid "Previous"
+msgstr "之前的"
+
+#: templatetags/pagination.py:47
+msgid "Next"
+msgstr "之后的"
+
+#: views/profile.py:73
+msgid "The profile was successfully updated."
+msgstr "用户信息已成功更新."
+
+#: views/profile.py:75
+msgid "No change detected."
+msgstr "没检测到更新."
+
+#: views/profile.py:108
+msgid "Successfully deleted account"
+msgstr "已成功删除账户"

@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: mailman-developers@python.org\n"
+"POT-Creation-Date: 2019-06-22 10:58+0200\n"
+"PO-Revision-Date: 2020-02-27 21:33+0000\n"
+"Last-Translator: akoscomp <nagy.akos@libreoffice.ro>\n"
+"Language-Team: Hungarian <https://hosted.weblate.org/projects/gnu-mailman/"
+"django-mailman3/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0-dev\n"
+
+#: forms.py:43
+msgid "A user with that username already exists."
+msgstr "Már létezik egy felhasználó evvel a felhasználónévvel."
+
+#: templates/account/email.html:6
+#: templates/django_mailman3/profile/base.html:16
+#: templates/django_mailman3/profile/base.html:17
+msgid "Account"
+msgstr "Fiók"
+
+#: templates/account/email.html:11
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "A fiókjához a következő e-mail címek vannak hozzárendelve:"
+
+#: templates/account/email.html:25
+msgid "Verified"
+msgstr "Ellenőrzött"
+
+#: templates/account/email.html:27
+msgid "Unverified"
+msgstr "Nem ellenőrzött"
+
+#: templates/account/email.html:29
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: templates/account/email.html:35
+msgid "Make Primary"
+msgstr "Elsődlegessé tesz"
+
+#: templates/account/email.html:36
+msgid "Re-send Verification"
+msgstr "Ellenőrzés újraküldése"
+
+#: templates/account/email.html:37 templates/socialaccount/connections.html:34
+msgid "Remove"
+msgstr "Töröl"
+
+#: templates/account/email.html:44
+msgid "Warning:"
+msgstr "Figyelmeztetés:"
+
+#: templates/account/email.html:44
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"Jelenleg nincs beállított e-mail címe. Be kellene állítson egy e-mail címet, "
+"így értesítéseket kaphat, módosíthatja a jelszavát, stb."
+
+#: templates/account/email.html:49
+msgid "Add E-mail Address"
+msgstr "E-mail cím hozzáadása"
+
+#: templates/account/email.html:55
+msgid "Add E-mail"
+msgstr "E-mail hozzáadás"
+
+#: templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "Biztos törölni szeretné a kiválasztott e-mail címet?"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "E-mail cím visszaigazolása"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"Igazolja, hogy a <a href=\"mailto:%(email)s\">%(email)s</a> a(z) "
+"%(user_display)s felhasználó e-mail címe."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "Megerősít"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"Ez az e-mailcím megerősítő hivatkozás lejárt vagy érvénytelen. Kérem <a href="
+"\"%(email_url)s\"> kérjen úgy e-mail megerősítést</a>."
+
+#: templates/account/login.html:7 templates/account/login.html:11
+#: templates/account/login.html:48
+msgid "Sign In"
+msgstr "Bejelentkezés"
+
+#: templates/account/login.html:18
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"Jelentkezzen be egy\n"
+"már létező fiókkal. Vagy, <a href=\"%(signup_url)s\">regisztráljon</a>\n"
+"a %(site_name)s listára és lépjen be lejjebb:"
+
+#: templates/account/login.html:30
+#: templates/django_mailman3/profile/profile.html:67
+msgid "or"
+msgstr "vagy"
+
+#: templates/account/login.html:37
+#, fuzzy, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"Ha még nincs fiókja, előbb kérem\n"
+"<a href=\"%(signup_url)s\">iratkozzon be</a>."
+
+#: templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "Elfelejtette a jelszavát?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:17
+msgid "Sign Out"
+msgstr "Kijelentkezés"
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "Biztos ki szeretne jelentkezni?"
+
+#: templates/account/password_change.html:12
+#: templates/account/password_reset_from_key.html:6
+#: templates/account/password_reset_from_key.html:9
+#: templates/django_mailman3/profile/base.html:20
+#: templates/django_mailman3/profile/base.html:21
+msgid "Change Password"
+msgstr "Jelszó módosítása"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+#, fuzzy
+msgid "Password Reset"
+msgstr "Jelszó visszaállítása"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"Elfelejtette a jelszavát? Írja be az e-mail címét, és küldünk egy e-mailt "
+"amelyben beállíthat egy újat."
+
+#: templates/account/password_reset.html:22
+msgid "Reset My Password"
+msgstr "Jelszó visszaállítása"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "Keressen meg minket amennyiben nem sikerül visszaállítania a jelszavát."
+
+#: templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "Hibás Token"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"A jelszó visszaállító hivatkozás érvénytelen, valószínűleg mert már "
+"használva volt.  Kérjen egy új <a href=\"%(passwd_reset_url)s\""
+">jelszóvisszaállítást</a>."
+
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr "jelszócsere"
+
+#: templates/account/password_reset_from_key.html:25
+msgid "Your password is now changed."
+msgstr "A jelszava le lett cserélve."
+
+#: templates/account/password_set.html:12
+msgid "Set Password"
+msgstr "Jelszóbeállítás"
+
+#: templates/account/signup.html:6 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr "Regisztráció"
+
+#: templates/account/signup.html:9 templates/account/signup.html:20
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+msgid "Sign Up"
+msgstr "Regisztráció"
+
+#: templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "Már van fiókja? Akkor <a href=\"%(login_url)s\">jelentkezzen be</a>."
+
+#: templates/django_mailman3/paginator/pagination.html:41
+msgid "Jump to page:"
+msgstr "Ugrás az oldalra:"
+
+#: templates/django_mailman3/paginator/pagination.html:59
+msgid "Results per page:"
+msgstr "Találatok az oldalon:"
+
+#: templates/django_mailman3/paginator/pagination.html:75
+#: templates/django_mailman3/profile/profile.html:66
+msgid "Update"
+msgstr "Frissítés"
+
+#: templates/django_mailman3/profile/base.html:5
+msgid "User Profile"
+msgstr "Felhasználóprofil"
+
+#: templates/django_mailman3/profile/base.html:12
+msgid "User profile"
+msgstr "Felhasználóprofil"
+
+#: templates/django_mailman3/profile/base.html:12
+#, fuzzy
+msgid "for"
+msgstr "-ért"
+
+#: templates/django_mailman3/profile/base.html:24
+#: templates/django_mailman3/profile/base.html:25
+msgid "E-mail Addresses"
+msgstr "E-mail cím"
+
+#: templates/django_mailman3/profile/base.html:29
+#: templates/django_mailman3/profile/base.html:30
+msgid "Account Connections"
+msgstr "Fiókkapcsolatok"
+
+#: templates/django_mailman3/profile/base.html:33
+#: templates/django_mailman3/profile/base.html:34
+#: templates/django_mailman3/profile/delete_profile.html:18
+msgid "Delete Account"
+msgstr "Fiók törlése"
+
+#: templates/django_mailman3/profile/delete_profile.html:13
+msgid ""
+"Are you sure you want to delete your account? This will remove your account "
+"along with all your subscriptions."
+msgstr ""
+"Biztos benne, hogy törli a fiókját? Evvel törli a fiókot és az összes "
+"feliratkozását."
+
+#: templates/django_mailman3/profile/profile.html:18
+#: templates/django_mailman3/profile/profile.html:53
+msgid "Edit on"
+msgstr "Szerkesztés"
+
+#: templates/django_mailman3/profile/profile.html:25
+msgid "Primary email:"
+msgstr "Elsődleges e-mail:"
+
+#: templates/django_mailman3/profile/profile.html:31
+msgid "Other emails:"
+msgstr "Más e-mail:"
+
+#: templates/django_mailman3/profile/profile.html:37
+msgid "(no other email)"
+msgstr "(nincs más e-mail)"
+
+#: templates/django_mailman3/profile/profile.html:42
+msgid "Link another address"
+msgstr "Más cím kapcsolása"
+
+#: templates/django_mailman3/profile/profile.html:49
+#, fuzzy
+msgid "Avatar:"
+msgstr "Avatar:"
+
+#: templates/django_mailman3/profile/profile.html:58
+msgid "Joined on:"
+msgstr "Csatlakozva:"
+
+#: templates/django_mailman3/profile/profile.html:67
+msgid "cancel"
+msgstr "mégsem"
+
+#: templates/openid/login.html:10
+msgid "OpenID Sign In"
+msgstr "OpenID bejelentkezés"
+
+#: templates/socialaccount/connections.html:9
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "Bejelentkezhet a fiókjába felhasználva a következő külső fiókokat:"
+
+#: templates/socialaccount/connections.html:42
+#, fuzzy
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+"Jelenleg nincs egyetlen közösségi háló fiókja sem hozzárendelve a fiókjához."
+
+#: templates/socialaccount/connections.html:45
+#, fuzzy
+msgid "Add a 3rd Party Account"
+msgstr "3. fél fiók hozzáadása"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"Arra készül, hogy használja a(z) %(provider_name)s fiókját, hogy "
+"bejelentkezzen ide:\n"
+"%(site_name)s. Mint utolsó lépés, töltse ki a következő kérdőívet:"
+
+#: templatetags/pagination.py:43
+msgid "Newer"
+msgstr "Újabb"
+
+#: templatetags/pagination.py:44
+msgid "Older"
+msgstr "Régebbi"
+
+#: templatetags/pagination.py:46
+msgid "Previous"
+msgstr "Előző"
+
+#: templatetags/pagination.py:47
+msgid "Next"
+msgstr "Következő"
+
+#: views/profile.py:73
+msgid "The profile was successfully updated."
+msgstr "A profil sikeresen frissítve."
+
+#: views/profile.py:75
+msgid "No change detected."
+msgstr "Nem találtunk változást."
+
+#: views/profile.py:108
+msgid "Successfully deleted account"
+msgstr "A fiók sikeresen törölve"

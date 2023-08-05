@@ -1,0 +1,360 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: mailman-developers@python.org\n"
+"POT-Creation-Date: 2019-06-22 10:58+0200\n"
+"PO-Revision-Date: 2019-12-26 08:21+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: Hebrew <https://hosted.weblate.org/projects/gnu-mailman/"
+"django-mailman3/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.10\n"
+
+#: forms.py:43
+msgid "A user with that username already exists."
+msgstr "כבר קיים משתמש עם שם המשתמש הזה."
+
+#: templates/account/email.html:6
+#: templates/django_mailman3/profile/base.html:16
+#: templates/django_mailman3/profile/base.html:17
+msgid "Account"
+msgstr "חשבון"
+
+#: templates/account/email.html:11
+msgid "The following e-mail addresses are associated with your account:"
+msgstr "כתובות הדוא״ל הבאות משויכות לחשבון שלך:"
+
+#: templates/account/email.html:25
+msgid "Verified"
+msgstr "מאומתת"
+
+#: templates/account/email.html:27
+msgid "Unverified"
+msgstr "בלתי מאומתת"
+
+#: templates/account/email.html:29
+msgid "Primary"
+msgstr "עיקרית"
+
+#: templates/account/email.html:35
+msgid "Make Primary"
+msgstr "הפיכה לעיקרית"
+
+#: templates/account/email.html:36
+msgid "Re-send Verification"
+msgstr "שליחת אימות מחדש"
+
+#: templates/account/email.html:37 templates/socialaccount/connections.html:34
+msgid "Remove"
+msgstr "הסרה"
+
+#: templates/account/email.html:44
+msgid "Warning:"
+msgstr "אזהרה:"
+
+#: templates/account/email.html:44
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+"לא הגדרת אף כתובת דוא״ל עדיין. עליך להוסיף כתובות דוא״ל כדי שיתאפשר לך לקבל "
+"התראות, לאפס את הססמה שלך וכן הלאה."
+
+#: templates/account/email.html:49
+msgid "Add E-mail Address"
+msgstr "הוספת כתובת דוא״ל"
+
+#: templates/account/email.html:55
+msgid "Add E-mail"
+msgstr "הוספת דוא״ל"
+
+#: templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr "להסיר את כתובת הדוא״ל הנבחרת?"
+
+#: templates/account/email_confirm.html:6
+#: templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr "אישור כתובת דוא״ל"
+
+#: templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+"נא לאשר שהכתובת <a href=\"mailto:%(email)s\">%(email)s</a> היא כתובת הדוא״ל "
+"עבור המשתמש %(user_display)s."
+
+#: templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr "באימות"
+
+#: templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+"קישור אישור זה פג או שאינו תקף. נא <a href=\"%(email_url)s\">להגיש בקשת "
+"אימות דוא״ל מחדש</a>."
+
+#: templates/account/login.html:7 templates/account/login.html:11
+#: templates/account/login.html:48
+msgid "Sign In"
+msgstr "כניסה"
+
+#: templates/account/login.html:18
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+"נא להיכנס בעזרת\n"
+"אחד מחשבונות שלך דרך צד־שלישי. או, <a href=\"%(signup_url)s\">להירשם</a>\n"
+"לקבלת חשבון אצל %(site_name)s ולהיכנס להלן:"
+
+#: templates/account/login.html:30
+#: templates/django_mailman3/profile/profile.html:67
+msgid "or"
+msgstr "או"
+
+#: templates/account/login.html:37
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+"אם טרם יצרת חשבון, אז נא\n"
+"<a href=\"%(signup_url)s\">להירשם</a> first."
+
+#: templates/account/login.html:50
+msgid "Forgot Password?"
+msgstr "שכחת ססמה?"
+
+#: templates/account/logout.html:5 templates/account/logout.html:8
+#: templates/account/logout.html:17
+msgid "Sign Out"
+msgstr "יציאה"
+
+#: templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr "לצאת?"
+
+#: templates/account/password_change.html:12
+#: templates/account/password_reset_from_key.html:6
+#: templates/account/password_reset_from_key.html:9
+#: templates/django_mailman3/profile/base.html:20
+#: templates/django_mailman3/profile/base.html:21
+msgid "Change Password"
+msgstr "החלפת ססמה"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset.html:11
+msgid "Password Reset"
+msgstr "איפוס ססמה"
+
+#: templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+"שכחת את הססמה שלך? נא להקליד את כתובת הדוא״ל שלך להלן ואנו נשלח לך הודעה "
+"בדוא״ל שתאפשר לך לאפס אותה."
+
+#: templates/account/password_reset.html:22
+msgid "Reset My Password"
+msgstr "איפוס הססמה שלי"
+
+#: templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr "נא ליצור קשר אם נתקלת בתקלות באיפוס הססמה שלך."
+
+#: templates/account/password_reset_from_key.html:9
+msgid "Bad Token"
+msgstr "אסימון שגוי"
+
+#: templates/account/password_reset_from_key.html:13
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+"הקישור לאיפוס הססמה היה שגוי, כנראה כיוון שכבר נעשה בו שימוש.  נא לבקש <a "
+"href=\"%(passwd_reset_url)s\">לאפס את הססמה מחדש</a>."
+
+#: templates/account/password_reset_from_key.html:20
+msgid "change password"
+msgstr "החלפת ססמה"
+
+#: templates/account/password_reset_from_key.html:25
+msgid "Your password is now changed."
+msgstr "הססמה שלך הוחלפה."
+
+#: templates/account/password_set.html:12
+msgid "Set Password"
+msgstr "הגדרת ססמה"
+
+#: templates/account/signup.html:6 templates/socialaccount/signup.html:6
+msgid "Signup"
+msgstr "הרשמה"
+
+#: templates/account/signup.html:9 templates/account/signup.html:20
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+msgid "Sign Up"
+msgstr "הרשמה"
+
+#: templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr "כבר יש לך חשבון? אז נא <a href=\"%(login_url)s\">להיכנס</a>."
+
+#: templates/django_mailman3/paginator/pagination.html:41
+msgid "Jump to page:"
+msgstr "קפיצה לעמוד:"
+
+#: templates/django_mailman3/paginator/pagination.html:59
+msgid "Results per page:"
+msgstr "תוצאות לעמוד:"
+
+#: templates/django_mailman3/paginator/pagination.html:75
+#: templates/django_mailman3/profile/profile.html:66
+msgid "Update"
+msgstr "עדכון"
+
+#: templates/django_mailman3/profile/base.html:5
+msgid "User Profile"
+msgstr "פרופיל משתמש"
+
+#: templates/django_mailman3/profile/base.html:12
+msgid "User profile"
+msgstr "פרופיל משתמש"
+
+#: templates/django_mailman3/profile/base.html:12
+msgid "for"
+msgstr "למשך"
+
+#: templates/django_mailman3/profile/base.html:24
+#: templates/django_mailman3/profile/base.html:25
+msgid "E-mail Addresses"
+msgstr "כתובות דוא״ל"
+
+#: templates/django_mailman3/profile/base.html:29
+#: templates/django_mailman3/profile/base.html:30
+msgid "Account Connections"
+msgstr "חיבורים לחשבון"
+
+#: templates/django_mailman3/profile/base.html:33
+#: templates/django_mailman3/profile/base.html:34
+#: templates/django_mailman3/profile/delete_profile.html:18
+msgid "Delete Account"
+msgstr "מחיקת חשבון"
+
+#: templates/django_mailman3/profile/delete_profile.html:13
+msgid ""
+"Are you sure you want to delete your account? This will remove your account "
+"along with all your subscriptions."
+msgstr ""
+"למחוק את החשבון שלך? פעולה זו תסיר את החשבון שלך יחד עם כל המינויים שלך."
+
+#: templates/django_mailman3/profile/profile.html:18
+#: templates/django_mailman3/profile/profile.html:53
+msgid "Edit on"
+msgstr "עריכה תחת"
+
+#: templates/django_mailman3/profile/profile.html:25
+msgid "Primary email:"
+msgstr "כתובת דוא״ל עיקרית:"
+
+#: templates/django_mailman3/profile/profile.html:31
+msgid "Other emails:"
+msgstr "כתובת דוא״ל אחרות:"
+
+#: templates/django_mailman3/profile/profile.html:37
+msgid "(no other email)"
+msgstr "(אין כתובות דוא״ל אחרות)"
+
+#: templates/django_mailman3/profile/profile.html:42
+msgid "Link another address"
+msgstr "קישור כתובת נוספת"
+
+#: templates/django_mailman3/profile/profile.html:49
+msgid "Avatar:"
+msgstr "תמונת משתמש:"
+
+#: templates/django_mailman3/profile/profile.html:58
+msgid "Joined on:"
+msgstr "מועד ההצטרפות:"
+
+#: templates/django_mailman3/profile/profile.html:67
+msgid "cancel"
+msgstr "ביטול"
+
+#: templates/openid/login.html:10
+msgid "OpenID Sign In"
+msgstr "כניסה עם OpenID"
+
+#: templates/socialaccount/connections.html:9
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr "באפשרותך להיכנס לחשבון שלך בכל עת באמצעות החשבונות הבאים מצד־שלישי:"
+
+#: templates/socialaccount/connections.html:42
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr "אין לך חשבונות רשתות חברתיות מקושרים לחשבון זה."
+
+#: templates/socialaccount/connections.html:45
+msgid "Add a 3rd Party Account"
+msgstr "הוספת חשבון צד־שלישי"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+"פעולה זו תשתמש בחשבונך אצל %(provider_name)s כדי להיכנס אל\n"
+"%(site_name)s. כצעד סופי בהרשמה, נא להשלים את הטופס הבא:"
+
+#: templatetags/pagination.py:43
+msgid "Newer"
+msgstr "חדש יותר"
+
+#: templatetags/pagination.py:44
+msgid "Older"
+msgstr "ישן יותר"
+
+#: templatetags/pagination.py:46
+msgid "Previous"
+msgstr "הקודם"
+
+#: templatetags/pagination.py:47
+msgid "Next"
+msgstr "הבא"
+
+#: views/profile.py:73
+msgid "The profile was successfully updated."
+msgstr "הפרופיל עודכן בהצלחה."
+
+#: views/profile.py:75
+msgid "No change detected."
+msgstr "לא התגלה אף שינוי."
+
+#: views/profile.py:108
+msgid "Successfully deleted account"
+msgstr "החשבון נמחק בהצלחה"
