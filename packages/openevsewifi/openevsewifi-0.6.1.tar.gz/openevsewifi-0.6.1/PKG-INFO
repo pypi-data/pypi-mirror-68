@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: openevsewifi
+Version: 0.6.1
+Summary: A python library for communicating with the ESP8266-based wifi module from OpenEVSE
+Home-page: https://github.com/miniconfig/python-openevse-wifi
+License: MIT
+Author: Michelle Avery
+Author-email: dev@miniconfig.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pytest-cov (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Repository, https://github.com/miniconfig/python-openevse-wifi
+Description-Content-Type: text/markdown
+
+# python-openevse-wifi
+A python library for communicating with the ESP8266-based wifi module from OpenEVSE
+
