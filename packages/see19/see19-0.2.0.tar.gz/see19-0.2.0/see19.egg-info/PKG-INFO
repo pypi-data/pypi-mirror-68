@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: see19
+Version: 0.2.0
+Summary: An interface for visualizing and analysing the see19 dataset
+Home-page: https://github.com/ryanskene/see19
+Author: Ryan Skene
+Author-email: rjskene83@gmail.com
+License: UNKNOWN
+Description: 
+          v0.2 Release Notes:
+          
+        > change base df object to remove NaNs from strindex categories
+          
+        > Make start_hurdle for dates; added labels
+          
+        > Added key3 subs and key3_sum
+          
+        > Added weighting to strindex values that occurred earlier via favor_earlier and factors_to_favor_earlier
+          
+        > fixed stringency and case issues with agg_to_country_level
+          
+        > moved agg_to_contry_level inside CaseStudy class and added country_level flag for use
+          
+        > added helpers module for namespacing issues
+          
+        > added scatter flow and bar charts chart methods
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
