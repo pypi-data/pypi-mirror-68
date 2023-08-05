@@ -1,0 +1,11 @@
+colcon_coveragepy_result/__init__.py,sha256=OAu_r4b0tFBr93kcZpxhWx9jsxNRmDUUn2W9zGuN1Zo,108
+colcon_coveragepy_result/task/__init__.py,sha256=GAfpeiKYPnC161w6pUByDBnK2tdSCudsa4704HHRMro,84
+colcon_coveragepy_result/task/coveragepy.py,sha256=QLm3PB6ZBRpZt4GMqGDY6EyWtHG0MVf67k2eR85CWcU,4327
+colcon_coveragepy_result/verb/__init__.py,sha256=GAfpeiKYPnC161w6pUByDBnK2tdSCudsa4704HHRMro,84
+colcon_coveragepy_result/verb/coveragepy_result.py,sha256=Q6KY26qSueoHjFmOO2FvvqKDz3UG8OGS5n9GcKT7gh4,5769
+colcon_coveragepy_result-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+colcon_coveragepy_result-0.0.1.dist-info/METADATA,sha256=fs94aG5M7uy-pHfvwSJ9TO-gdq_zVZKz6CmKKuyCgW8,1501
+colcon_coveragepy_result-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+colcon_coveragepy_result-0.0.1.dist-info/entry_points.txt,sha256=Sk6F4m9GWLsgGH-kGtDQudUKQLP0aMTlCiG5JDjvvvo,109
+colcon_coveragepy_result-0.0.1.dist-info/top_level.txt,sha256=LW5xTj5FGlck2ma-NIXJ3cT6_ULqVkI2TzuC7tobJxg,25
+colcon_coveragepy_result-0.0.1.dist-info/RECORD,,

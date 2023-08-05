@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: colcon-coveragepy-result
+Version: 0.0.1
+Summary: colcon extension for collecting coverage.py results
+Home-page: https://colcon.readthedocs.io
+Author: Christophe Bedard
+Author-email: bedard.christophe@gmail.com
+Maintainer: Christophe Bedard
+Maintainer-email: bedard.christophe@gmail.com
+License: Apache License, Version 2.0
+Project-URL: Changelog, https://github.com/christophebedard/colcon-coveragepy-result/milestones?state=closed
+Project-URL: GitHub, https://github.com/christophebedard/colcon-coveragepy-result/
+Keywords: colcon,coverage
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: colcon-core
+Requires-Dist: coverage
+
+# colcon-coveragepy-result
+
+[![GitHub Action Status](https://github.com/christophebedard/colcon-coveragepy-result/workflows/Test/badge.svg)](https://github.com/christophebedard/colcon-coveragepy-result/actions)
+
+A [colcon](https://colcon.readthedocs.io/) extension for collecting [coverage.py](https://coverage.readthedocs.io/en/stable/) results.
+
+
