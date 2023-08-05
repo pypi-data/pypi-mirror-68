@@ -1,0 +1,10 @@
+README.md
+setup.py
+msgbuzz/__init__.py
+msgbuzz/generic.py
+msgbuzz/rabbitmq.py
+msgbuzz.egg-info/PKG-INFO
+msgbuzz.egg-info/SOURCES.txt
+msgbuzz.egg-info/dependency_links.txt
+msgbuzz.egg-info/requires.txt
+msgbuzz.egg-info/top_level.txt
