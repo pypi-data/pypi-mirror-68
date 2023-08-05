@@ -1,0 +1,15 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+graphql_dsl/__init__.py
+graphql_dsl/translator.py
+graphql_dsl.egg-info/PKG-INFO
+graphql_dsl.egg-info/SOURCES.txt
+graphql_dsl.egg-info/dependency_links.txt
+graphql_dsl.egg-info/not-zip-safe
+graphql_dsl.egg-info/top_level.txt
+requirements/local.txt
+requirements/minimal.txt
