@@ -1,0 +1,13 @@
+backup_to_dropbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backup_to_dropbox/clients.py,sha256=ys1EMXeAE7-ZRL1QzlIUSTfowU489LVxcRAHcsYCy98,2872
+backup_to_dropbox/services.py,sha256=aocPoMhPbXh_zC279lLDhXnROZ314jttdqGG-2NZhA8,3221
+backup_to_dropbox-0.2.0.data/scripts/backup-to-dropbox.py,sha256=bjlBNigD1hDelFE2-LCZWNAfl-tal2edTPfc5vRVHK4,2214
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/backup_service_test.py,sha256=KZn-U0nhondkdoM_XIA68ivc8hnbL2SnqT2agmJmetY,5062
+tests/client_test.py,sha256=oFMXtXltQwfHMGei09PMhi9h1dXXN6LORqA2_kkJQNs,4900
+tests/encryption_service_test.py,sha256=lUhAPfRfa-tQDc7iy_GUhXuVCLagE9EUm_5RK_caiiI,1796
+backup_to_dropbox-0.2.0.dist-info/LICENSE,sha256=nDqp0GOMnVsWV0RIbtHJqoccvyzAKsCdVRCRuRjR14A,1076
+backup_to_dropbox-0.2.0.dist-info/METADATA,sha256=zSXE0USNche0v793bYRhlZClYYGx5WHSbq6B5mzj6W8,4488
+backup_to_dropbox-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+backup_to_dropbox-0.2.0.dist-info/top_level.txt,sha256=-hC37UhTgQ0bP5Nbbul85uF3dE4Izy76XTS7qe74f_Y,24
+backup_to_dropbox-0.2.0.dist-info/RECORD,,
