@@ -1,0 +1,13 @@
+finam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finam/config.py,sha256=QOUFQhABwuY4ahE2Cqe5Mvfxx9pa8wR9nmhMLuIqMu0,66
+finam/export.py,sha256=OA3C8xOLmJ8Uyz_UkRucoDc_8jhLWSBsPQijgt-06ME,11805
+finam/utils.py,sha256=PgyiAOKfgkoOemAtT2bogrbDhRZbNukSHuvWCJqNaTw,1654
+finam_export-2.0.0.data/scripts/download.py,sha256=kuTUT-gOBuf-6GBMlIuAw_6_5pObR-nSRWClmihdB1I,4108
+finam_export-2.0.0.data/scripts/finam-download.py,sha256=WtTbifs9pLYQz-9PlWddKjzBjC7Ckk6GBHVAd43zpK4,4140
+finam_export-2.0.0.data/scripts/finam-lookup.py,sha256=gY04yOXmhDWfNkTrk176Afqyx60vC0RTPW5OhElryQI,1252
+finam_export-2.0.0.data/scripts/lookup.py,sha256=3TdzAGRnaCmPt6fbMzq0S5Q3Cap-OF0pmbtPBZx0CCg,1241
+finam_export-2.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+finam_export-2.0.0.dist-info/METADATA,sha256=2GOOqsXySYvVuTEQsweJPkbw8YmzyJcmreoDtGz-C3w,3614
+finam_export-2.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+finam_export-2.0.0.dist-info/top_level.txt,sha256=IaukOyGEoGIxbKhSEt6BaG2AanHdsjZp9_pS4X5bh88,6
+finam_export-2.0.0.dist-info/RECORD,,
