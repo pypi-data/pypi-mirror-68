@@ -1,0 +1,6 @@
+yaqd-core[aserial]
+
+[dev]
+black
+pre-commit
+pydocstyle
