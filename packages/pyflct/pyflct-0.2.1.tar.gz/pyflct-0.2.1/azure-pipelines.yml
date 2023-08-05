@@ -1,0 +1,78 @@
+name: $(BuildDefinitionName)_$(Date:yyyyMMdd)$(Rev:.rr)
+variables:
+  CI_NAME: Azure Pipelines
+  CI_BUILD_ID: $(Build.BuildId)
+  CI_BUILD_URL: "https://dev.azure.com/sunpy/pyflct/_build/results?buildId=$(Build.BuildId)"
+  CIBW_BUILD: cp36-* cp37-* cp38-*
+  CIBW_SKIP: "*-win32"
+  CIBW_BEFORE_BUILD_LINUX: "yum -y install fftw-devel; git clean -xfd -e wheelhouse"
+  CIBW_BEFORE_BUILD_MACOS: "brew install fftw; git clean -xfd -e wheelhouse"
+
+resources:
+  repositories:
+  - repository: OpenAstronomy
+    type: github
+    endpoint: sunpy
+    name: OpenAstronomy/azure-pipelines-templates
+    ref: master
+
+trigger:
+  branches:
+    include:
+    - '*'
+    exclude:
+    - '*backport*'
+  tags:
+    include:
+    - 'v*'
+    exclude:
+    - '*dev*'
+    - '*pre*'
+    - '*post*'
+
+jobs:
+- template: run-tox-env.yml@OpenAstronomy
+  parameters:
+    submodules: false
+    coverage: codecov
+    libraries:
+      apt:
+        - libfftw3-dev
+      brew:
+        - fftw
+    envs:
+      - macos: py36
+        name: py36_test
+
+      - windows: py38-conda
+        name: py38_conda
+
+      - linux: py37
+        name: py37_test
+
+      - linux: py38
+        name: py38_test
+
+      - linux: codestyle
+        name: codestyle
+
+# On not Pull Requests, build the wheels but only upload them on tags
+- ${{ if ne(variables['Build.Reason'], 'PullRequest') }}:
+  - template: publish.yml@OpenAstronomy
+    parameters:
+      # Only Upload to PyPI on tags
+      ${{ if startsWith(variables['Build.SourceBranch'], 'refs/tags/') }}:
+        pypi_connection_name : 'PyPI'
+      libraries:
+        - libfftw3-dev
+      test_extras: 'test'
+      test_command: 'pytest --pyargs pyflct'
+      submodules: false
+      targets:
+        - wheels_linux
+        - wheels_macos
+        - sdist
+      dependsOn:
+        - py36_test
+        - py37_test
+        - py38_test
