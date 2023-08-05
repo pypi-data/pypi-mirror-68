@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+src/siglib/__init__.py
+src/siglib/siglib.py
+src/siglib.egg-info/PKG-INFO
+src/siglib.egg-info/SOURCES.txt
+src/siglib.egg-info/dependency_links.txt
+src/siglib.egg-info/requires.txt
+src/siglib.egg-info/top_level.txt
+test/test_siglib.py
