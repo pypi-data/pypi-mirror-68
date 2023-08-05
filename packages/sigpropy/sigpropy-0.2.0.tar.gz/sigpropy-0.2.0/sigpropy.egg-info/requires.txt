@@ -1,0 +1,9 @@
+scipy
+numpy
+obspy
+numba
+
+[dev]
+hypothesis
+pandas
+coverage
