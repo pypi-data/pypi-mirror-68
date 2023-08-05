@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: selenium-youtube
+Version: 0.2
+Summary: selenium_youtube
+Home-page: https://github.com/kkristof200/selenium_youtube
+Author: Kovács Kristóf-Attila
+License: UNKNOWN
+Description: # selenium_youtube
+        
+        ## Install
+        ~~~~
+        pip3 install selenium-youtube
+        ~~~~
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
