@@ -1,0 +1,22 @@
+
+<a href="https://choosealicense.com/licenses/eupl-1.2/"><img src="https://img.shields.io/badge/License-EUPL--1.2-orange" alt="License: EUPL-1.2" align="middle" style="margin:0 20px;"></a>
+<a href="https://pypi.org/project/melan/"><img src="https://img.shields.io/badge/PyPI-melan-blue" alt="PyPI: melan" align="middle" style="margin:0 20px;"></a>
+<a href="https://jhadida.github.io/melan/"><img src="https://img.shields.io/badge/Docs-https%3A%2F%2Fjhadida.github.io%2Fmelan%2F-green" alt="Documentation" align="middle" style="margin:0 20px;"></a>
+
+# Melan: the meta-language with Python backend
+
+Melan is a text-processor with LaTeX-like syntax that allows you to bind commands to Python functions.
+
+## Quick install
+
+The `melan` package is [available on PyPI](https://pypi.org/project/melan/), and can be installed (without `sudo` privileges) with:
+```
+python3 -m pip install --user --upgrade melan
+```
+
+Download the VSCode language extension: [melan](https://marketplace.visualstudio.com/items?itemName=jhadida.melan).
+
+## Example
+
+To-do
+

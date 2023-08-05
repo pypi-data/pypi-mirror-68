@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+
+import argparse
+from warnings import warn
+
+# include path to melan module
+try:
+    import melan as mel
+except:
+    import os.path as op 
+    import sys 
+    root = op.dirname(op.realpath(__file__))
+    root = op.realpath(op.join(root,'..'))
+
+    warn( f'Melan is not on the Python path. Loading from "{root}" instead.' )
+    sys.path.append(op.join( root, 'src' ))
+    import melan as mel
+
+# ------------------------------------------------------------------------
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser( prog='melan' )
+    parser.add_argument( 'infile', help='Input file.' )
+
+    parser.add_argument( '-o', '--output', default='', 
+        help='Output file to be written.' )
+
+    parser.add_argument( '-p', '--print', default=False,
+        action='store_true', help='Print output to console.' )
+
+    parser.add_argument( '-r2l', '--right2left', default=False, dest='r2l',
+        action='store_true', help='Read input file from right to left.' )
+
+    parser.add_argument( '--parse', default=False,
+        action='store_true', help='Only parse the specified file.' )
+
+    # ----------  =====  ----------
+    
+    args = parser.parse_args()
+
+    # compute output
+    if args.parse:
+        out = mel.parse_file( args.infile, r2l=args.r2l )
+        out = str(out)
+    else:
+        out = mel.compile_file( args.infile, r2l=args.r2l )
+
+    # print to console
+    if args.print:
+        print(out)
+
+    # write to file
+    if args.output:
+        with open(args.output,'w') as fh:
+            fh.write(out)
