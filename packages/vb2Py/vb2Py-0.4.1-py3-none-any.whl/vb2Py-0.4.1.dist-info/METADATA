@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: vb2Py
+Version: 0.4.1
+Summary: Visual Basic to Python Converter
+Home-page: http://vb2py.sourceforge.net
+Author: Paul Paterson
+Author-email: paulpaterson@users.sourceforge.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: mako
+Requires-Dist: chardet
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: simpleparse
+Requires-Dist: docutils
+
+UNKNOWN
+
+
