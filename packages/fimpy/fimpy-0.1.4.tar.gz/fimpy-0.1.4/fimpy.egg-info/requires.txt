@@ -1,0 +1,9 @@
+numpy
+numba
+scipy
+scikit-image
+imageio
+h5py
+flammkuchen
+lightparam
+split_dataset
