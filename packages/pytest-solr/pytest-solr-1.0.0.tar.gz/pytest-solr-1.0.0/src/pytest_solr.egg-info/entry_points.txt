@@ -1,0 +1,3 @@
+[pytest11]
+pytest_solr = pytest_solr.plugin
+
