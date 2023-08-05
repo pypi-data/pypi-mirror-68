@@ -1,0 +1,8 @@
+README.md
+setup.py
+w3htmlmaker/__init__.py
+w3htmlmaker/core.py
+w3htmlmaker_math_s.egg-info/PKG-INFO
+w3htmlmaker_math_s.egg-info/SOURCES.txt
+w3htmlmaker_math_s.egg-info/dependency_links.txt
+w3htmlmaker_math_s.egg-info/top_level.txt
