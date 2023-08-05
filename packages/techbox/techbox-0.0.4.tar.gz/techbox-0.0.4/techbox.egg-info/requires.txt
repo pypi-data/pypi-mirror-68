@@ -1,0 +1,3 @@
+gitpython
+fire
+boto3==1.12.17
