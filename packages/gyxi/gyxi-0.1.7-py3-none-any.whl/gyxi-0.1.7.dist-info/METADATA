@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gyxi
+Version: 0.1.7
+Summary: Gyxi API Client
+Author: gabluc
+Author-email: gabluc@protonmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Description-Content-Type: text/x-rst
+
+Gyxi is a free document database which basically works as a key-value (multi value) database and by allowing configuration of views, makes it possible to organize content in any way desired.
+
+GyxiClient is ready to use without any prior registration required and you get 1 GB storage for free.
+
+You choose a Region (from an enum) and a guid which will be your database id. Simply start using it - there is no need to sign up or register your database beforehand.
+
+Keep your guid secret because anyone who has access to the guid has full access to your database.
+
+Example:
+
+.. code:: python
+
+  from gyxi import GyxiClient, GyxiRegion
+
+  gyxi = GyxiClient("dfca164c-b19d-4abd-a5a7-4eabdfb8b123", GyxiRegion.GERMANY)
+  gyxi.save("mytype", "all", my_obj);
+
+Please note: Use any other guid than the one from the sample above.
+
