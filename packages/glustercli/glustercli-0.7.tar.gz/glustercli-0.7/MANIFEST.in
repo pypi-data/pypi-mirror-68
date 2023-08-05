@@ -1,0 +1,5 @@
+include README.md COPYING-GPLV2 COPYING-LGPLV3 MAINTAINERS
+include .functests .unittests test-requirements.txt tox.ini test/test.conf
+recursive-include glustercli *.py
+recursive-include test *.py
+graft doc

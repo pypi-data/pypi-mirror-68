@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: glustercli
+Version: 0.7
+Summary: Python bindings for GlusterFS CLI and Metrics collection
+Home-page: https://github.com/gluster/glustercli-python
+Author: Aravinda Vishwanathapura
+Author-email: aravinda@kadalu.io
+License: GPLv2 or LGPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: System :: Filesystems
