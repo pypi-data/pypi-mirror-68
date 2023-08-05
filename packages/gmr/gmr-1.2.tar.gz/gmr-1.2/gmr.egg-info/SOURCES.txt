@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+examples/plot_estimate_gmm.py
+examples/plot_estimate_mvn.py
+examples/plot_regression.py
+gmr/__init__.py
+gmr/gmm.py
+gmr/mvn.py
+gmr/utils.py
+gmr.egg-info/PKG-INFO
+gmr.egg-info/SOURCES.txt
+gmr.egg-info/dependency_links.txt
+gmr.egg-info/top_level.txt
