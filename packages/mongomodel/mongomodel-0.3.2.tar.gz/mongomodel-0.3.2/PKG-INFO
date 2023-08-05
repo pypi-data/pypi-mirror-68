@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mongomodel
+Version: 0.3.2
+Summary: Tiny mongodb orm document oriented
+License: MIT
+Author: Sébastien NICOLET
+Author-email: snicolet@student.42.fr
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pymongo (>=3.10.1,<4.0.0)
