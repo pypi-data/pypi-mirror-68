@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: PrintWithPager
+Version: 1.0.0
+Summary: Simple pager package to helpwith printing output using a pager
+Home-page: https://github.com/NAndLib/pager
+Author: Andrew Tran
+Author-email: andremail03@gmail.com
+License: MIT
+Keywords: pager printer less python
+Platform: UNKNOWN
+Requires-Python: >3
+Description-Content-Type: text/markdown
+
+# PrintWithPager
+
+A simple python module providing a simple pager to use with printing output
+through a pager instead of just stdout.
+
+## Usage
+
+```
+from PrintWithPager import pager
+
+pager.maybePrintWithPager( string )
+```
+
+## Installation
+
+Through pip:
+```
+pip install PrintWithPager
+```
+
+Through source:
+```
+git clone https://github.com/NAndLib/pager.git
+cd pager
+pip install .
+```
+
+
