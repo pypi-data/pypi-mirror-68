@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyeplan
+Version: 0.0.2
+Summary: Python library for planning and operation of resilient microgrids.
+Home-page: https://apetros.github.io/pyeplan/
+Author: Shahab Dehghan and Petros Aristidou
+Author-email: s.dehghan@ieee.org
+License: GPL-3.0
+Description: About
+        -----
+        
+        PyEPLAN is Python module for planning and operation of resilient microgrids.
+        
+        More details to come.
+Keywords: Operation,Planning,Microgrids
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
