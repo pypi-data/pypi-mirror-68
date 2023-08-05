@@ -1,0 +1,9 @@
+flamechess/__init__.py,sha256=rKthR0K1KKxv4yZEQxDpQnwq3o0i871jBguRVQm0m5s,41
+flamechess/jiuqi.py,sha256=ec5TscLeKjR_eWJkq6BHsG7dSC-eRKWI9UdPQ_vOp7E,188
+flamechess/luqi.py,sha256=TPxEEWUh1L3Vr13lxOrxpyQYazQTv2P7shlb8I-tTnk,8261
+flamechess/play.py,sha256=QALXF-BZGgWQBl9yHl6OSdMTFC46UHj7OLgF5f0sEys,2843
+flamechess-0.1.4.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+flamechess-0.1.4.dist-info/METADATA,sha256=gVrvQ-jIEQAaJWv9lmSQ5XLTzx3pAhzC1Xq6vNNJbS8,2553
+flamechess-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flamechess-0.1.4.dist-info/top_level.txt,sha256=8sgfZpRCIfF-aSMAyUUOwc8SPc6tGb8SYIrU1p6ZTLE,11
+flamechess-0.1.4.dist-info/RECORD,,
