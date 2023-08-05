@@ -1,0 +1,11 @@
+target_snowflake/__init__.py,sha256=CDhpbmVTmZSoe9nwcnyxgBVSmWpg8EKl02eNmN-1Ufw,1718
+target_snowflake/connection.py,sha256=lu0UwA_XNwKzJ_HDoOfsGrDg4XAwA3yRhaUyaZM8qHU,1710
+target_snowflake/exceptions.py,sha256=c0OH4MxyMdY7tb4qI6Kun2cXG2NeITwZm6F4fjaRRbs,301
+target_snowflake/snowflake.py,sha256=QCwFmTlINCZJJ4PILaF5CvvqTiMXQLY67y9YiGmyhII,31115
+target_snowflake/sql.py,sha256=D5JbVkQf6ERhhQx5Px3eb2sjpxLgnPtRpfBkq2uiHmY,983
+target_snowflake-0.2.4.dist-info/LICENSE,sha256=2N5ReRelkdqkR9a-KP-y-shmcD5P62XoYiG-miLTAzo,34519
+target_snowflake-0.2.4.dist-info/METADATA,sha256=T8nY5xAQ39agusH2Vlwj_wXPyRylqtDSzqf47wfMGE4,11868
+target_snowflake-0.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+target_snowflake-0.2.4.dist-info/entry_points.txt,sha256=SQFm_nvlaA7JT3UxmT7__iZz7w2SJri_zwWQbpq8f8M,73
+target_snowflake-0.2.4.dist-info/top_level.txt,sha256=DgFcPkZmbpAnvneOMjbuvLtknw2dD9Xd10dZwuT108Q,17
+target_snowflake-0.2.4.dist-info/RECORD,,
