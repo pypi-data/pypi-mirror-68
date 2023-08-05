@@ -1,0 +1,3 @@
+[console_scripts]
+turbot=turbot:main
+
