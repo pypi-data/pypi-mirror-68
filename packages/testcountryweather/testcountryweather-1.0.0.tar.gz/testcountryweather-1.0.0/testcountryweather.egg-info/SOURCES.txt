@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+testcountryweather.egg-info/PKG-INFO
+testcountryweather.egg-info/SOURCES.txt
+testcountryweather.egg-info/dependency_links.txt
+testcountryweather.egg-info/entry_points.txt
+testcountryweather.egg-info/requires.txt
+testcountryweather.egg-info/top_level.txt
+weather_reporter/cli.py
+weather_reporter/utils.py
