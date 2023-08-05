@@ -1,0 +1,10 @@
+dict_typer/__init__.py,sha256=U2nho2vgvvSUMKifc4lMEKb-Qq3R5s8dmKRERXXZ6C8,1587
+dict_typer/exceptions.py,sha256=-eTIxikeN6PG_RkQWUBSDvF9cgOb9mkZO8USObMS1uY,92
+dict_typer/models.py,sha256=YPS3Rf6AEBXHDpxYSlbipgx9R7XXV36k8-H7KTO93uQ,7132
+dict_typer/type_definitions.py,sha256=AWq1IAtp2UzBXwrC4-A4aDW1JrEmR1HzMZE-aGXtc6o,7440
+dict_typer/utils.py,sha256=r1JuWnI1JvalANlTVRe8TI4T_bUdV7qSqUAJH5mo6Eg,741
+dict_typer-0.1.10.dist-info/entry_points.txt,sha256=A3swY8sQtYsgTOtE2kI_VtH-z5YxCoeg_Mylz4kdIoY,45
+dict_typer-0.1.10.dist-info/LICENSE,sha256=0eXQKwmu3N9KX8npfjYSsM2eBo9X7geHRA2PMPrUS0E,1078
+dict_typer-0.1.10.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+dict_typer-0.1.10.dist-info/METADATA,sha256=W8RCpNsZslGPJeZAKERvGTGTtyvUzyqoR-YbxJeL0Ko,7431
+dict_typer-0.1.10.dist-info/RECORD,,
