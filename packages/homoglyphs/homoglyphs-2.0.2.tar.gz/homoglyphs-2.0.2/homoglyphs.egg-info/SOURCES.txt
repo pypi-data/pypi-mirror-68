@@ -1,0 +1,8 @@
+README.md
+README.rst
+setup.py
+homoglyphs/core.py
+homoglyphs/__init__.py
+homoglyphs/confusables.json
+homoglyphs/languages.json
+homoglyphs/categories.json
