@@ -1,0 +1,8 @@
+README.rst
+setup.py
+onany/__init__.py
+onany/manager.py
+onany.egg-info/PKG-INFO
+onany.egg-info/SOURCES.txt
+onany.egg-info/dependency_links.txt
+onany.egg-info/top_level.txt
