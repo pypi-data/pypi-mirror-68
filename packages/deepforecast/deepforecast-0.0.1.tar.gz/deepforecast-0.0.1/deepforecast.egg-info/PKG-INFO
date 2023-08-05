@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: deepforecast
+Version: 0.0.1
+Summary: An easy-to-use deep model for time series forecast
+Home-page: https://github.com/NELSONZHAO/DeepForecast
+Author: Nelson Zhao
+Author-email: dutzhaoyeyu@example.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
