@@ -1,0 +1,30 @@
+#!/bin/bash -eu
+
+cd "$(dirname "$0")"
+cd ../..
+
+if ! command -v sudo; then
+    # e.g. CI doesn't have it..
+    function sudo {
+        "$@"
+    }
+fi
+
+if ! [ -z "$CI" ]; then
+    PYJQ_DEPS=('autoconf' 'automake' 'libtool') # see https://github.com/mwilliamson/jq.py#installation
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # Mac OSX
+        brew install "${PYJQ_DEPS[@]}"
+
+        # TODO hmm. this should be in setup.py?
+        brew install libmagic # for python-magic
+    else
+        sudo apt update
+
+        # TODO also need to warn from readme??
+        sudo apt install "${PYJQ_DEPS[@]}" python3-dev
+    fi
+fi
+
+pip3 install --user tox
+tox

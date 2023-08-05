@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: promnesia
+Version: 0.11.20200510
+Summary: Enhancement of your browsing history
+Home-page: https://github.com/karlicoss/promnesia
+Author: Dmitrii Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: telegram
+Provides-Extra: reddit
+Provides-Extra: org
+Provides-Extra: optional
+Provides-Extra: linting
+Provides-Extra: markdown
+Provides-Extra: testing
+Provides-Extra: HPI
+Provides-Extra: html

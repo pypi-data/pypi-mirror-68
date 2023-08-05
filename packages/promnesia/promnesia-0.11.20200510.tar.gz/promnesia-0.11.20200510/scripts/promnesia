@@ -1,0 +1,17 @@
+#!/bin/bash
+# runs promnesia from the current repository (instead of the installed version)
+set -eu
+
+ROOT="$(cd "$(dirname "$0")" && git rev-parse --show-toplevel)"
+
+if [[ -n "${PYTHONPATH:=}" ]]; then
+    PPATH=":$PYTHONPATH"
+else
+    PPATH=""
+fi
+
+PPATH="$ROOT/src$PPATH"
+
+export DIRTY_RUN='YES' # ugh.
+
+PYTHONPATH="$PPATH" exec python3 -m promnesia "$@"
