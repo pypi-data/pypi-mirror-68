@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: si-wg-docgen
+Version: 0.1.0
+Summary: 
+Author: Gabe Fierro
+Author-email: gtfierro@cs.berkeley.edu
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: mistletoe (>=0.7.2,<0.8.0)
+Requires-Dist: owlrl (>=5.2.1,<6.0.0)
+Requires-Dist: rdflib (>=5.0,<6.0)
