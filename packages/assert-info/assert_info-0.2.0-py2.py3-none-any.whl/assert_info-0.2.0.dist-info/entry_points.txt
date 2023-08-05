@@ -1,0 +1,3 @@
+[console_scripts]
+assert-info=assert_info:main
+
