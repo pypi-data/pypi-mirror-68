@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tuck
+Version: 0.0.5
+Summary: Semi-automated Python formatting.
+Home-page: https://github.com/PeterJCLaw/tuck
+Author: Peter Law
+Author-email: PeterJCLaw@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Requires-Dist: asttokens
+
+# Tuck
+
+[![CircleCI](https://circleci.com/gh/PeterJCLaw/tuck.svg?style=svg)](https://circleci.com/gh/PeterJCLaw/tuck)
+
+Semi-automated Python formatting.
+
+The aim of this tool is to build up developer-assistance tooling for python
+formatting. In general it will only format things when it needs to or when
+directly instructed to.
+
+Current capability is wrapping of various python statements (see `demo.py`) at
+locations specified by the developer.
+
+

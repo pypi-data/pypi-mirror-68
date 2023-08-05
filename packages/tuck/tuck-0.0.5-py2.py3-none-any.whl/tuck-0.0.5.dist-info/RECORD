@@ -1,0 +1,11 @@
+tuck/__init__.py,sha256=y8ITpZ9LJ6hmtcEvInIlkPHj1fAaqwYXEHD-8VHhnIU,421
+tuck/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+tuck/ast.py,sha256=k-UaYfoGR59s4GAhm-AVOKg_p884FPUH8VrUkFkSdww,4555
+tuck/cli.py,sha256=K2YeyHNVXR0WLx0dzINPD2sLEaqrEELDjs7qDJpaneI,2828
+tuck/editing.py,sha256=5wMBtvD2xx5qcqILjso0foeAWJ5FwL8QIR1_7crCjj4,2856
+tuck/main.py,sha256=JR-jzpBbQ1b1nF3UKTjIwUebYoMnIKnHyQb7boF7sWk,2221
+tuck/wrappers.py,sha256=eV1Z-86sQhzlKnkNOOOezzY12FV-jAva5cACgMILLeI,11099
+tuck-0.0.5.dist-info/METADATA,sha256=IjbnFg0QD1OdaWUQhc9GYSEe_HMdpyb1z4GS9_9Kuy4,1161
+tuck-0.0.5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tuck-0.0.5.dist-info/top_level.txt,sha256=VK3bBMBRLOFAAKU8mAvmCLtu3nWjtehZPmMemuyWi5I,5
+tuck-0.0.5.dist-info/RECORD,,
