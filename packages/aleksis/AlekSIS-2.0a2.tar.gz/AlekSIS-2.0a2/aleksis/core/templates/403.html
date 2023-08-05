@@ -1,0 +1,22 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+
+{% block content %}
+  <div class="container">
+    <div class="card red">
+      <div class="card white-text">
+        <i class="material-icons small">error_outline</i>
+        <span class="card-title">{% trans "Error" %} (403): {% blocktrans %}You are not allowed to access the requested page or
+          object.{% endblocktrans %}</span>
+        <p>
+          {% blocktrans %}
+            If you think this is an error in AlekSIS, please contact your site
+            administrators:
+          {% endblocktrans %}
+        </p>
+        {% include "core/admins_list.html" %}
+      </div>
+    </div>
+  </div>
+{% endblock %}

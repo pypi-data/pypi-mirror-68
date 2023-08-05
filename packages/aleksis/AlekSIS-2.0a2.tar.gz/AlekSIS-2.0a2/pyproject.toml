@@ -1,0 +1,124 @@
+[tool.poetry]
+name = "AlekSIS"
+version = "2.0a2"
+packages = [
+    { include = "aleksis" }
+]
+readme = "README.rst"
+include = ["CHANGELOG.rst", "CODE_OF_CONDUCT.rst", "CONTRIBUTING.rst", "Dockerfile", "LICENCE.rst", "manage.py", "docker/*", "docker/**/*", "docker-compose.yml", "docs/*", "docs/**/*", "tox.ini"]
+
+description = "AlekSIS (School Information System) — Core"
+authors = ["Dominik George <dominik.george@teckids.org>", "Julian Leucker <leuckeju@katharineum.de>", "mirabilos <thorsten.glaser@teckids.org>", "Frank Poetzsch-Heffter <p-h@katharineum.de>", "Tom Teichler <tom.teichler@teckids.org>", "Jonathan Weth <wethjo@katharineum.de>", "Hangzhi Yu <yuha@katharineum.de>"]
+maintainers = ["Jonathan Weth <wethjo@katharineum.de>", "Dominik George <dominik.george@teckids.org>"]
+license = "EUPL-1.2-or-later"
+homepage = "https://aleksis.org/"
+repository = "https://edugit.org/AlekSIS/official/AlekSIS"
+documentation = "https://aleksis.org/AlekSIS/docs/html/"
+keywords = ["SIS", "education", "school", "digitisation", "school apps"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django :: 3.0",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = "^3.0"
+django-any-js = "^1.0"
+django-debug-toolbar = "^2.0"
+django-easy-audit = {version ="^1.2rc1", allow-prereleases = true}
+django-middleware-global-request = "^0.1.2"
+django-menu-generator = "^1.0.4"
+django-tables2 = "^2.1"
+Pillow = "^7.0"
+django-phonenumber-field = {version = ">=3.0, <4.0", extras = ["phonenumbers"]}
+django-sass-processor = "^0.8"
+libsass = "^0.20.0"
+colour = "^0.1.5"
+dynaconf = {version = "^2.0", extras = ["yaml", "toml", "ini"]}
+django-settings-context-processor = "^0.2"
+django-auth-ldap = { version = "^2.0", optional = true }
+django-maintenance-mode = "^0.14.0"
+django-ipware = "^2.1"
+easy-thumbnails = "^2.6"
+django-image-cropping = "^1.2"
+django-impersonate = "^1.4"
+python-memcached = "^1.59"
+django-hattori = "^0.2"
+psycopg2 = "^2.8"
+django_select2 = "^7.1"
+requests = "^2.22"
+django-two-factor-auth = { version = "^1.11.0", extras = [ "yubikey", "phonenumbers", "call", "sms" ] }
+django-yarnpkg = "^6.0"
+django-material = "^1.6.0"
+django-pwa = "^1.0.8"
+django-dynamic-preferences = "^1.9"
+django_widget_tweaks = "^1.4.5"
+django-filter = "^2.2.0"
+django-templated-email = "^2.3.0"
+html2text = "^2020.0.0"
+django-ckeditor = "^5.8.0"
+django-js-reverse = "^0.9.1"
+calendarweek = "^0.4.3"
+Celery = {version="^4.4.0", optional=true, extras=["django", "redis"]}
+django-celery-results = {version="^1.1.2", optional=true}
+django-celery-beat = {version="^2.0.0", optional=true}
+django-celery-email = {version="^3.0.0", optional=true}
+django-jsonstore = "^0.4.1"
+django-polymorphic = "^2.1.2"
+django-otp = "0.9.0"
+django-colorfield = "^0.3.0"
+django-bleach = "^0.6.1"
+django-guardian = "^2.2.0"
+rules = "^2.2"
+django-cache-memoize = "^0.1.6"
+django-haystack = {version="3.0b1", allow-prereleases = true}
+celery-haystack = {version="^0.7.0", optional=true}
+django-dbbackup = "^3.3.0"
+spdx-license-list = "^0.4.0"
+license-expression = "^1.2"
+django-reversion = "^3.0.7"
+django-favicon-plus-reloaded = "^1.0.4"
+
+[tool.poetry.extras]
+ldap = ["django-auth-ldap"]
+celery = ["Celery", "django-celery-results", "django-celery-beat", "django-celery-email", "celery-haystack"]
+
+[tool.poetry.dev-dependencies]
+sphinx = "^3.0"
+sphinxcontrib-django = "^0.5.0"
+sphinx-autodoc-typehints = "^1.7"
+django-stubs = "^1.1"
+pytest = "^5.3"
+pytest-django = "^3.7"
+pytest-django-testing-postgresql = "^0.1"
+selenium = "^3.141.0"
+safety = "^1.8.5"
+flake8 = "^3.7.9"
+flake8-django = "^1.0.0"
+flake8-fixme = "^1.1.1"
+flake8-mypy = "^17.8.0"
+flake8-bandit = "^2.1.2"
+flake8-builtins = "^1.4.1"
+flake8-docstrings = "^1.5.0"
+flake8-rst-docstrings = "^0.0.13"
+black = "^19.10b0"
+flake8-black = "^0.1.1"
+isort = "^4.3.21"
+flake8-isort = "^3.0.0"
+pytest-cov = "^2.8.1"
+pytest-sugar = "^0.9.2"
+
+[tool.black]
+line-length = 100
+exclude = "/migrations/"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"

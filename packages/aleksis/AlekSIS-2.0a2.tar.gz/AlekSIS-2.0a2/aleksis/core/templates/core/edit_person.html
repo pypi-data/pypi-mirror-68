@@ -1,0 +1,20 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load material_form i18n %}
+
+
+{% block browser_title %}{% blocktrans %}Edit person{% endblocktrans %}{% endblock %}
+{% block page_title %}{% blocktrans %}Edit person{% endblocktrans %}{% endblock %}
+
+
+{% block content %}
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% form form=edit_person_form %}{% endform %}
+    {% include "core/save_button.html" %}
+  </form>
+
+{% endblock %}

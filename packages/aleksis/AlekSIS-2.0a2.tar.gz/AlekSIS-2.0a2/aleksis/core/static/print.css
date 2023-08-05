@@ -1,0 +1,90 @@
+.sheet.infinite {
+    height: auto !important;
+}
+
+@page {
+    size: A4;
+    padding: 30mm;
+}
+
+header {
+    display: block;
+    width: 190mm;
+}
+
+
+#print-header {
+    display: block !important;
+    border-bottom: 1px solid;
+    margin-bottom: 0;
+    height: 22mm;
+    background: white;
+}
+
+header, main, footer {
+    margin: 0;
+}
+
+#print-header .col.right-align {
+    padding: 15px;
+}
+
+.sheet {
+    padding: 10mm;
+}
+
+
+.header-space, .footer-space {
+    height: 0;
+}
+
+.print-layout-table td {
+    padding: 0;
+}
+
+.print-layout-table .no-border {
+    border: 0;
+}
+
+
+footer {
+    margin-top: 5mm;
+    text-align: center;
+    width: 190mm;
+
+}
+
+header .row, header .col {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#print-logo {
+    padding: 2mm;
+    height: 22mm;
+    width: auto;
+}
+
+@media print {
+    .header-space {
+        height: 35mm;
+    }
+
+    .footer-space {
+        height: 20mm
+    }
+
+    header, footer {
+        height: 22mm;
+    }
+
+    header {
+        position: fixed;
+        top: 10mm;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}

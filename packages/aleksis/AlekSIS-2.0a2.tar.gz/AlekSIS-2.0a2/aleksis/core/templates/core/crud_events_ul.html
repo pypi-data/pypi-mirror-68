@@ -1,0 +1,24 @@
+{# FIXME Migrate to materialize #}
+<ul class="{{ class_ul }}">
+  {% for event in obj.crud_events %}
+    <li class="{{ class_li }}">
+      <div>
+        <p>{{ event.user.person.full_name }}</p>
+        <small>({{ event.datetime }})</small>
+      </div>
+      <span class="badge badge-light text-dark">
+        {% if event.event_type == event.CREATE %}
+          <span class="mdi mdi-plus"></span>
+        {% elif event.event_type == event.UPDATE %}
+          <span class="mdi mdi-pencil"></span>
+        {% elif event.event_type == event.DELETE %}
+          <span class="mdi mdi-delete"></span>
+        {% elif event.event_type == event.M2M_CHANGE %}
+          <span class="mdi mdi-pencil"></span>
+        {% elif event.event_type == event.M2M_CHANGE_REV %}
+          <span class="mdi mdi-pencil"></span>
+        {% endif %}
+      </span>
+    </li>
+  {% endfor %}
+</ul>
