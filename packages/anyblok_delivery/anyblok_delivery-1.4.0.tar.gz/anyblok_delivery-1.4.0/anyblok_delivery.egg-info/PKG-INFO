@@ -1,0 +1,175 @@
+Metadata-Version: 1.1
+Name: anyblok-delivery
+Version: 1.4.0
+Summary: Carrier delivery management
+Home-page: https://github.com/AnyBlok/AnyBlok-Delivery
+Author: Franck Bret
+Author-email: franckbret@gmail.com
+License: UNKNOWN
+Description: .. This file is a part of the AnyBlok / Delivery project
+        ..
+        ..    Copyright (C) 2018 Franck Bret <franckbret@gmail.com>
+        ..    Copyright (C) 2018 Jean-Sebastien SUZANNE <jssuzanne@anybox.fr>
+        ..    Copyright (C) 2019 Jean-Sebastien SUZANNE <js.suzanne@gmail.com>
+        ..
+        .. This Source Code Form is subject to the terms of the Mozilla Public License,
+        .. v. 2.0. If a copy of the MPL was not distributed with this file,You can
+        .. obtain one at http://mozilla.org/MPL/2.0/.
+        
+        Anyblok Delivery
+        ================
+        
+        .. image:: https://img.shields.io/pypi/pyversions/anyblok_delivery.svg?longCache=True
+            :alt: Python versions
+        
+        .. image:: https://travis-ci.org/AnyBlok/AnyBlok-Delivery.svg?branch=master
+            :target: https://travis-ci.org/AnyBlok/AnyBlok-Delivery
+            :alt: Build status
+        
+        .. image:: https://coveralls.io/repos/github/AnyBlok/AnyBlok-Delivery/badge.svg?branch=master
+            :target: https://coveralls.io/github/AnyBlok/AnyBlok-Delivery?branch=master
+            :alt: Coverage status
+        
+        .. image:: https://img.shields.io/pypi/v/anyblok_delivery.svg
+           :target: https://pypi.python.org/pypi/anyblok_delivery/
+           :alt: Version status
+        
+        .. image:: https://readthedocs.org/projects/anyblok-delivery/badge/?version=latest
+            :alt: Documentation Status
+            :scale: 100%
+            :target: https://doc.anyblok-delivery.anyblok.org/?badge=latest
+        
+        Delivery management
+        
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Package dependencies
+        --------------------
+        
+        * anyblok_mixins
+        * anyblok_postgres
+        * anyblok_attachment
+        * anyblok_address
+        
+        Bloks
+        -----
+        
+        +------------------------+----------------------+------------------------------------------------------------------+
+        | Blok                   | Dependancies         | Description                                                      |
+        +========================+======================+==================================================================+
+        | **delivery**           | * **attachment**     | Main blok to define what a delivery, an account, a delivery type |
+        |                        | * **address**        |                                                                  |
+        |                        | * **anyblok-mixins** |                                                                  |
+        +------------------------+----------------------+------------------------------------------------------------------+
+        | **delivery_colissimo** | **delivery**         | Add delivery type: Colissimo                                     |
+        +------------------------+----------------------+------------------------------------------------------------------+
+        
+        Author
+        ------
+        
+        Franck Bret
+        ~~~~~~~~~~~
+        
+        * franckbret@gmail.com
+        * https://github.com/franckbret
+        
+        Contributors
+        ------------
+        
+        Jean-Sébastien Suzanne
+        ~~~~~~~~~~~~~~~~~~~~~~
+        
+        * js.suzanne@gmail.com
+        * https://github.com/jssuzanne
+        * https://github.com/AnyBlok
+        
+        Credits
+        -------
+        
+        .. _`Anyblok`: https://github.com/AnyBlok/AnyBlok
+        
+        This `Anyblok`_ package was created with `audreyr/cookiecutter`_ and the `AnyBlok/cookiecutter-anyblok-project`_ project template.
+        
+        .. _`AnyBlok/cookiecutter-anyblok-project`: https://github.com/Anyblok/cookiecutter-anyblok-project
+        .. _`audreyr/cookiecutter`: https://github.com/audreyr/cookiecutter
+        
+        
+        Change Log
+        ==========
+        
+        All notable changes to this project will be documented in this file.
+        This project adheres to [Semantic Versioning](http://semver.org/).
+        
+        1.4.0 (2020-05-06)
+        ------------------
+        
+        Fixed
+        ~~~~~
+        
+        * Fixed colissimo adapter for address
+        
+        Added
+        ~~~~~
+        
+        * Colissimo Services
+        * First implementation of CN23 for colissimo
+        
+        
+        1.3.0 (2019-06-10)
+        ------------------
+        
+        Fixed
+        ~~~~~
+        
+        * script to update label
+        
+        Added
+        ~~~~~
+        
+        * Colissimo adapter to format address in function of the country
+          - FRA: default if the adapter does not exist
+          - BEL
+          - CHE
+        
+        Refactored
+        ~~~~~~~~~~
+        
+        * Unittest: Replaced dependencies of nose by pytest
+        
+        1.2.0 (2019-01-16)
+        ------------------
+        
+        Refactored
+        ~~~~~~~~~~
+        
+        * ``returned`` status was renamed ``error``, to not create status each time
+        
+        Fixed
+        ~~~~~
+        
+        * When a pack have been created for more than 90 days, then the status is now replaced
+          by ``error`` status.
+        
+        1.0.0 (2018-07-07)
+        ------------------
+        
+        Added
+        ~~~~~
+        
+        * Delivery Blok
+        * Colissimo Blok  specialization
+        
+Keywords: anyblok_delivery
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

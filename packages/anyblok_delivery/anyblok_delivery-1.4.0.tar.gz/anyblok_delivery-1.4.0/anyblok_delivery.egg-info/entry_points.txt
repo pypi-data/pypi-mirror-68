@@ -1,0 +1,7 @@
+[bloks]
+delivery = anyblok_delivery.bloks.delivery:DeliveryBlok
+delivery_colissimo = anyblok_delivery.bloks.colissimo:DeliveryColissimoBlok
+
+[console_scripts]
+anyblok_update_labels_status = anyblok_delivery.scripts:update_labels_status
+
