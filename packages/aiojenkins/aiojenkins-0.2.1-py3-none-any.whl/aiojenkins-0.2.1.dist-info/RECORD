@@ -1,0 +1,8 @@
+aiojenkins/__init__.py,sha256=oiQ8IF0Z-KitJ_8sOQ-R1rCzAPLSNKAjUIdGjDMzvrU,6179
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_aiojenkins.py,sha256=uW4Gwx_uqqTkIpohpfKTUn6plTKGqu91g4crk3cFDTU,5643
+aiojenkins-0.2.1.dist-info/LICENSE,sha256=wPeDESYP7nY0M9XxTB9YukuBEdP53N_vnDr1rSEANx4,1069
+aiojenkins-0.2.1.dist-info/METADATA,sha256=FJmMu2qkkhcCTkTbJZW3CFj0eOl4JMrP4GeS4eBecLQ,1636
+aiojenkins-0.2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiojenkins-0.2.1.dist-info/top_level.txt,sha256=3HDvbv5hPjJz6DJPGMBw_3c03CK1EcgSCRkg1Cn-SwQ,17
+aiojenkins-0.2.1.dist-info/RECORD,,
