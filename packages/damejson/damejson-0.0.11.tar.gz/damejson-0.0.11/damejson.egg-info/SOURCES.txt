@@ -1,0 +1,14 @@
+README.md
+setup.py
+damejson/__init__.py
+damejson/runtests.sh
+damejson.egg-info/PKG-INFO
+damejson.egg-info/SOURCES.txt
+damejson.egg-info/dependency_links.txt
+damejson.egg-info/not-zip-safe
+damejson.egg-info/requires.txt
+damejson.egg-info/top_level.txt
+damejson/files/__init__.py
+damejson/files/exer1-interface-data.json
+damejson/tests/__init__.py
+damejson/tests/test_damejson.py
