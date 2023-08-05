@@ -1,0 +1,6 @@
+bokeh
+colorcet
+matplotlib
+pandas2pgfplots
+pandas>=0.24
+seaborn
