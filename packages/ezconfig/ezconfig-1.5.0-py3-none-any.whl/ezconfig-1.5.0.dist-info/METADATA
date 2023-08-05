@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ezconfig
+Version: 1.5.0
+Summary: Utility class for reading configuration files.
+Home-page: http://bitbucket.org/nathanaddy/ezconfig
+Author: Nathan Addy
+Author-email: nathan.addy@windfalltechnical.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >3.6.0
+Requires-Dist: dateutils
+
+UNKNOWN
+
+
