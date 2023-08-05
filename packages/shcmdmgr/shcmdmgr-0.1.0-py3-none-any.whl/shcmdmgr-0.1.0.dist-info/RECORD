@@ -1,0 +1,16 @@
+shcmdmgr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shcmdmgr/__main__.py,sha256=_ruyKztZhEhQyLyGIxYs0vAMO4XH9_bLwp-3GPaDRxQ,17448
+shcmdmgr/cio.py,sha256=2qcY_PVvPYlEjog0YJxv5WUfgG_ebB5t1DXRx7HFH9E,1404
+shcmdmgr/cmdcomplete.py,sha256=iwBZxU0napswrslvwp0Nw67fogu2EHTl9Gg9NMEr1pA,637
+shcmdmgr/config.py,sha256=oKj2DQwWZbKHarxkmIAy2mBq16LUiNGND_fqNoR_GmA,1319
+shcmdmgr/filemanip.py,sha256=pOhRoUl3BHliCAu-0Q_cMgGYR7GhjU6dWpQo368E2kU,620
+shcmdmgr/process.py,sha256=tIuGufaaRqyvCYQHQHZ1ktVZ2ABif25m4nbl_x5_uAE,567
+shcmdmgr/structure.py,sha256=14PTJMMySRaoDf5tFgsxkETIkLDP0LbM9PGpMAyO4J0,4589
+shcmdmgr/test.py,sha256=mYva6NPxdYE5SGS_Gt5WMSbgpwAJPi74dLty0MNt-oU,870
+shcmdmgr/util.py,sha256=sKgTpI_ohrde11f1GgFdeisDQqum5HDtNgGv9WkQW2o,146
+shcmdmgr-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+shcmdmgr-0.1.0.dist-info/METADATA,sha256=bzsQUNu3jIm0j-bOQDWRGylxQEjUSVxzfMHAyNPduoA,5338
+shcmdmgr-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shcmdmgr-0.1.0.dist-info/entry_points.txt,sha256=p2GjMCljQQKGtlNVbzqtIq1Hy2UCXNZKHYj8glKVZ4g,48
+shcmdmgr-0.1.0.dist-info/top_level.txt,sha256=DitBRvpjbJf50EAGzw1HhRIHfZaMqYq3agGJ8_IHctw,9
+shcmdmgr-0.1.0.dist-info/RECORD,,
