@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: ucal-client
+Version: 0.4.1
+Summary: Client for Ucal Manager Server
+Home-page: https://bitbucket.com/zimka/ucal_client
+Author: Boris Zimka, Igor Stepanenko
+Author-email: zimka@phystech.edu, igor.stepanenko@phystech.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >3.5.0
+Requires-Dist: pandas (>=0.24.0)
+Requires-Dist: grpcio-tools (>=1.23.0)
+Requires-Dist: grpcio (>=1.23.0)
+
+Description
+-----------
+Python client for server from UcalManager server (https://bitbucket.org/zimka_b/ucal_manager/).
+
+Install
+-------
+
+To install package run in terminal (or anaconda prompt):
+::
+
+   pip install -e git+https://bitbucket.org/zimka_b/ucal_client.git#egg=ucal_client
+
+Tests
+-----
+To check tests run in terminal (or anaconda prompt):
+::
+
+  pip install pytest
+  pytest --pyargs ucal_client
+
+Usage
+-----
+See `example.ipynb` for examples and description.
+
+Docs
+----
+To build docs goto docs/ and run *make.bat html*
+To generate docs from scratch:
+::
+
+  mkdir docs/
+  cd docs/
+  sphinx-quickstart
+  # modify docs/source/conf.py to be able to import ucal_client
+  # modify source/*.rst to include necessary modules
+  # build docs
+
+See https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/ for details.
+
+
+
