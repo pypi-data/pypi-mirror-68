@@ -1,0 +1,10 @@
+README.md
+setup.py
+junky/__init__.py
+junky/_version.py
+junky/junky.py
+junky.egg-info/PKG-INFO
+junky.egg-info/SOURCES.txt
+junky.egg-info/dependency_links.txt
+junky.egg-info/requires.txt
+junky.egg-info/top_level.txt
