@@ -1,0 +1,13 @@
+gitpython
+requests
+validate_version_code>=1.0.4
+pathlib
+pypandoc
+userinput>=1.0.13
+beautifulsoup4
+
+[test]
+pytest
+pytest-cov
+coveralls
+httmock

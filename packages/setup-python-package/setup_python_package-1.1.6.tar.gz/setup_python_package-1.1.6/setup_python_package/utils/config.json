@@ -1,0 +1,11 @@
+{
+    "tests_directory":"tests",
+    "tests_dependencies":[
+        "pytest",
+        "pytest-cov",
+        "coveralls",
+        "validate_version_code",
+        "codacy-coverage"
+    ],
+    "badges":".spp_cache/badges.json"
+}
