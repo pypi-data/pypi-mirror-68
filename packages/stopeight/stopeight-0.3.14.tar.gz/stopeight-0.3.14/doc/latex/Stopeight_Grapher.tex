@@ -1,0 +1,104 @@
+\documentclass{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\title{Stopeight Grapher}
+\author{Fassio Blatter}
+\maketitle
+
+\chapter{Definitions}
+\section{Vector Graph}
+Consider a function that produces a sequence of independent vectors with coordinates $x,y \in \mathbb{R}$.
+\begin{equation}
+Anything \rightarrow \{(x,y)_{m}\}_{m \in \mathbb{Z}}
+\end{equation}
+Note: It is a metric space with the Euclidean norm $(\mathbb{R}^2,\norm{\cdot}_2)$.\\\\
+The Vector Graph of the sequence of vectors is its appended form. The vectors are translated by the preceding ones.\\
+\begin{equation}
+vectorgraph_{\log_{2}(m)}: (x,y)_{n}=\sum_{i=0}^{n} (x,y)_{i}
+\end{equation}
+Note: It is a metric space with a taxicab norm $(X,\norm{\cdot}_1)$.
+\section{Wavelets}
+The appended form can, but does not have to be, subdivided into $2^j$ partitions of size $m/2^j$. The vectors in the partition are sumed and the resulting vector is stretched by the effective length of the taxicab norm of the vectors in the partition.
+\begin{equation}
+vectorgraph_{j}:(x,y)_{n}=\sum_{i=0}^{n} (\norm{(x,y)_{(i+1)*m/2^j}}_{1} - \norm{(x,y)_{i*m/2^j}}_{1} * \frac{\sum_{k=i*m/2^j}^{(i+1)*m/2^j} (x,y)_{k}}{\vert \sum_{k=i*m/2^j}^{(i+1)*m/2^j} (x,y)_{k} \vert})
+\end{equation}
+Algorithm Version: Affine 2D scaling transformation (to be disclosed)\\\\
+This ensures that the traversal distances are preserved!
+\begin{equation}
+(vectorgraph_{j},\norm{\cdot}_{1})=(vectorgraph_{j+1},\norm{\cdot}_{1})
+\end{equation}
+\section{Time Variant}
+Even a time-variant version of the Vector Graph can be thought of. It is composed of a sequence of $p$ Vector Graph pieces on the same taxicab norm $(\{X_{p}\}_{p\in \mathbb{Z}},\norm{\cdot}_1)$.
+\subsection{Equalising Length}
+It may be desirable to work with vectors of the same length. This may be required for inverting the Vector Graph $vectorgraph^{-1}$ or comparing two different Vector Graphs.\\\\
+To avoid interpolation, integer multiples of the vector lengths over all sequences would have to be used.\\\\
+Clearly, choosing a $j$ that results in a Euclidean distance smaller than the highest Euclidean distance in the entire sequence $\{X_{p}\}$ is not recommended for comparison because of missing data.
+\begin{equation}
+(m/2^j)*\inf \limits _{X} \sqrt{(x^2+y^2)} \geq \sup \limits _{\{X_{p}\}} \sqrt{(x^2+y^2)}\label{eq:4}
+\end{equation}
+
+\chapter{Usage Scenarios}
+\section{Comparison}
+After the feature points have been extracted in the Analyser, a reference Vector Graph can be compared to a subsection of a query Vector Graph. This is being done by geometrically overlaying and matching them within an offset threshold. The overlay is being done using affine transformations. This is not documented but currently implemented in the Stopeight Comparator project.
+\section{Domain (Time) Scalability}
+This Vector Graph has to be constructed by appending vectors to each other.
+\begin{align}
+vectorgraph_{j}: (x,y)_{n}=\sum \limits _{i=0}^{n}(Re(z_{i}),Im(z_{i}))
+\end{align}
+The complex numbers $z_{n}$ are obtained from a Polar to Cartesian transform. The angles are scaled to the maximum expected angle in the specific vectorgraph.
+\begin{align}
+z_{n}=\prod \limits _{i=n*m/2^j}^{(n+1)*m/2^j-1}r_{n}\cos(\phi_{n})+r_{n}\mathrm{i}\sin(\phi_{n})\\
+\phi_{n}=\frac{s(t_{n+1})-s(t_{n})}{\sup \limits _{t_{m+1}-t_{m}=m/2^j;t_{0}=0}(s(t_{m+1})-s(t_{m}))}*\pi,r_{n}=t_{n+1}-t_{n}
+\end{align}
+Note: The convolution is a Riesz space. It multiplies a factor on both sides $(X,+,*,\leq)$.\\\\
+Note: Because the convolution is invertible, it is a wavelet orthonormal basis. \cite{Mallat}[1.3])\\\\
+Note: The vectorgraph can be constructed upon a domain-variant $s: \mathbb{R} \rightarrow \mathbb{R}$ (See \eqref{eq:4}).
+\subsection{Finding Bounds}
+In a one dimensional mixed signal $s(t)$, there are quiet, low frequencies. They are difficult to spot because of the presence of high frequency noise. Creating a Vector Graph provides a high precision solution to the adequate time-localisation of these pulses, and even half pulses where the wavelength is not known.
+\subsection{Pitch}
+The benefit of this method is that a sequence of variable wavelength pulses can be compared at different pitches. The unbound independent scalar is exposing a wavelength/amplitude correlation (unlike just amplitude; See \eqref{eq:3}).\\\\
+A harmonic at a particular frame and window size will show up as a Straight. This is because the complex conjugate cancels the angle of its complex (multiplication).
+\subsection{Compression}
+Image Variance (to be disclosed).
+\section{Image (Amplitude) Scalability}
+This Vector Graph has to be constructed by appending vectors to each other.
+\begin{align}
+vectorgraph_{j}: (x,y)_{n}=\sum \limits _{i=0}^{n}(\mathrm{Re(z_{i})},\mathrm{Im(z_{i})})
+\end{align}
+The complex numbers $z_{n}$ are obtained from Fourier Transform of $2^j$ partitions (Polar to Cartesian). The frequency multiplier is set to the frame size.
+\begin{align}
+z_{n}= \sum \limits _{i=n*(m/2^j)}^{(n+1)*(m/2^j)} s(t_{i})*(\cos(\frac{2\pi}{m/2^j}t_{i})+\mathrm{i}\sin(\frac{2\pi}{m/2^j}t_{i}))\label{eq:3}
+\end{align}
+Note: The convolution is a Riesz space. It multiplies a factor on both sides $(X,+,*,\leq)$.\\\\
+Note: Because the convolution is invertible, it is a wavelet orthonormal basis. \cite{Mallat}[1.3])\\\\
+Note: The Heisenberg Uncertainty can be reinterpreted: Arbitrary precision in the wavelength and amplitude domain can not be found.
+\subsection{Harmonics}
+The benefit of this method is that an audio feature in a mixed signal $s(t)$ can test positive in geometric overlay comparison regardless of the amplitude of the feature.\\\\
+\cite{Mallat}
+
+\chapter{Mathematical Methods}
+\section{Integrating a Derivative in Two Dimensions}
+Based on the assumption, that a quadratic approximation has enough accuracy for a curve estimation. (to be disclosed)
+\section{Interpolating a One Dimensional Domain-Variant Signal}
+Based on the assumption, that there are enough data points available to avoid significant time-shift of feature points. (to be disclosed)
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

@@ -1,0 +1,212 @@
+\documentclass[a4paper,landscape]{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\begin{document}
+\title{Spline Axioms}
+\author{Fassio Blatter}
+\maketitle
+
+\chapter{Single Spline}
+
+\subsection{Affine Transformations}
+The matrix $M$ is a product of affine (sub-)space transformations. Any set of vectors $h'$ within bounds $[a,b]$ can be translated, rotated and scaled, so that $h'(a)=\begin{pmatrix}0 & 0\end{pmatrix}$ and $h'(b)=\begin{pmatrix}1 & 0\end{pmatrix}$. Any approximation with a parametrisation $t$ can be expressed with a single spline if the Coefficients can be brought into a triangular form.\\\\
+The simple case of a straight line
+\begin{equation}
+line(t):
+\begin{pmatrix}
+1 & t
+\end{pmatrix}
+\underbrace{\begin{bmatrix}
+1 & 0\\
+-1 & 1
+\end{bmatrix}}_{Coefficients}
+M
+\begin{pmatrix}
+h_{1} \\
+h_{2}
+\end{pmatrix}
+=
+\begin{pmatrix}
+h_{1}' & h_{2}'
+\end{pmatrix}
+\end{equation}
+The more complicated case of a quadratic bezier spline
+\begin{equation}
+quad(t):
+\begin{pmatrix}
+1 & t & t^2
+\end{pmatrix}
+\underbrace{\begin{bmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+0 & -1 &1
+\end{bmatrix}}_{Coefficients}
+M
+\begin{pmatrix}
+h_{1} \\
+h_{2} \\
+h_{3}
+\end{pmatrix}
+=
+\begin{pmatrix}
+h_{1}' & h_{2}' & h_{3}'
+\end{pmatrix}
+\end{equation}
+The Coefficients are composed of the sum of identity matrices in lower left sub-spaces.
+The characteristic polynomials of the diagonal and bidiagonal is composed of binomial coefficients.
+\begin{equation}
+\chi_{\begin{pmatrix}1 & 0 & 0\\0 & 1 & 0\\0 & 0 & 1\end{pmatrix}} = \begin{pmatrix}3 \\ 0\end{pmatrix}*t^0 - \begin{pmatrix}3 \\ 1\end{pmatrix}*t^1 + \begin{pmatrix}3 \\ 2\end{pmatrix}*t^2 - \begin{pmatrix}3 \\ 3\end{pmatrix}*t^3;
+\chi_{\begin{pmatrix}-1 & 0\\0 & -1\end{pmatrix}} = \begin{pmatrix}2 \\ 0\end{pmatrix}*t^0 + \begin{pmatrix}2 \\ 1\end{pmatrix}*t^1 + \begin{pmatrix}2 \\ 2\end{pmatrix}*t^2
+\end{equation}
+The quartic spline
+\begin{equation}
+quart(t):
+\begin{pmatrix}
+1 & t & t^2 & t^3 & t^4
+\end{pmatrix}
+\underbrace{\begin{bmatrix}
+1 & 0 & 0 & 0 & 0\\
+-1 & 1 & 0 & 0 & 0\\
+0 & -1 &1 & 0 & 0\\
+0 & 0 & -1 & 1 & 0\\
+0 & 0 & 0 & -1 & 1
+\end{bmatrix}}_{Coefficients}
+M
+\begin{pmatrix}
+h_{1} \\
+h_{2} \\
+h_{3} \\
+h_{4} \\
+h_{5}
+\end{pmatrix}
+=
+\begin{pmatrix}
+h_{1}' & h_{2}' & h_{3}' & h_{4}' & h_{5}'
+\end{pmatrix}
+\end{equation}
+Note: Because we are only interested in a $2x2$ subspace, the tri- and quadridiagonals can be ignored. It is a polynomial of degree 4 in a 2 dimensional subspace. $h'_{3},h'_{4},h'_{5}$ are irrelevant in this case.\\\\
+Axiom: Because of associativity, an inverse of the control points can be left multiplied. Because of associativity, an inverse of the transformation can be left multiplied. Because of associativity, an inverse of the Coefficients can be left multiplied.
+\begin{equation}
+quart(t):
+\begin{pmatrix}
+1 & t & t^2 & t^3 & t^4
+\end{pmatrix}
+=
+\underbrace{\begin{bmatrix}
+1 & 0 & 0 & 0 & 0\\
+1 & 1 & 0 & 0 & 0\\
+1 & 1 &1 & 0 & 0\\
+1 & 1 & 1 & 1 & 0\\
+1 & 1 & 1 & 1 & 1
+\end{bmatrix}}_{Coefficients^{-1}}
+M^{-1}H^{-1}
+\begin{pmatrix}
+h_{1}' & h_{2}' & h_{3}' & h_{4}' & h_{5}'
+\end{pmatrix}
+\end{equation}
+
+\iffalse
+\subsection{Number of Variables}
+Axiom: Within the bounds $[a,b]$ a combination of multiple $splines$ can occur. They are independent, $iff$ for all vectors there is a sum $g' +h'$\\\\
+\begin{equation}
+sum(t):
+\begin{bmatrix}
+1 & t & t^2\\
+1 & u & u^2
+\end{bmatrix}
+\underbrace{CMH}_{}
+=
+\begin{pmatrix}
+g_{1}' & g_{2}' & g_{3}'\\
+h_{1}' & h_{2}' & h_{3}'
+\end{pmatrix}
+\end{equation}
+Theorem: They are harmonic, hence there is a non-sparse separation.
+\fi
+
+\subsection{Spline Group}
+\subsubsection{Existence of Bounds}
+A group spline can be found for the integer $Image \in \mathbb{Z}^3$ in dimensions $x,y$
+\begin{equation}
+splinegroup(t):
+\begin{pmatrix}
+1 & t & t^2
+\end{pmatrix}
+\begin{pmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+0 & -1 & 1
+\end{pmatrix}\begin{bmatrix}
+\underbrace{Mh_{1}}_{S=\begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix}} & \underbrace{Mh_{2}}_{c_{1}} & \underbrace{Mh_{3}}_{E=\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}}
+\end{bmatrix}
+=
+\underbrace{
+\begin{pmatrix}
+h_{1}' & h_{2}' & h_{3}'
+\end{pmatrix}}_{Image}
+\end{equation}
+For a Lie Group
+\begin{align}
+\text{\{GL(3,$\mathbb{Z}$)} \subset M \vert \forall m \in M \exists c_{1}\}
+\end{align}
+Axiom: For a spline base with $S=\begin{pmatrix}0 \\ 0 \\ 0\end{pmatrix}$ and $E=\begin{pmatrix}1 \\ 0 \\ 0\end{pmatrix}$, there exist only two Eigenvalues ~\cite["Spline\_Eigensystems.nb"]{Stopeight}
+\begin{align}
+ev_{1}=Eigenvalue(
+\underbrace{\begin{pmatrix}
+a & 0 & 0\\
+b & c & 0\\
+0 & d & e
+\end{pmatrix}}_{Base})\\
+ev_{2}=Eigenvalue(
+\underbrace{\begin{pmatrix}
+0 & 0 & 0\\
+b & 0 & 0\\
+0 & d & 0
+\end{pmatrix}}_{Base})
+\end{align}
+Theorem: The approximation algorithm imposes a constraint on the Eigenvectors ~\cite["Spline\_EVConstraint.nb"]{Stopeight}
+
+\chapter{Polynomial Degree}
+\subsection{Combination of Spaces}
+A quartic bezier spline has a total of five Control points which can be reduced to three if the subspline alignment is smooth. A circle has a total of two focal points, which can be reduced to one if smoothness applies. If we deviate from this smoothness, a Spiral forms.
+\subsection{Parametrised Korners}
+Beyond quadratic approximation, each Corner is a Korner $K$ with a focal vector. On a Spiral there are multiple Korners, on a ZigZag, there is none. The Korners mostly make sense in the context of sub-pulse analysis, i.e. the comparison of rise and fall.\\\\
+If we have $T_{3}$ and all the Compact Covers worked out, Korners can be defined (Swell?) and new differences and areas parametrised. $p$ supremums are considered over the whole section of the Compact Cover $V_{n}$. The interval over the bounds of a supremum is $[a(K_{p}),b(K_{p})]$.
+\begin{align}
+K_{p+1} = \{ C_{3} \in  [a,b]\vert \sup \limits _{V_{n} \setminus [a(K_{p}),b(K_{p})]} \lvert curvature(a,b) \rvert \}
+\end{align}
+There is one Korner per arc $\{U_{m}\}$.\\
+As a consequence $diameter$ and $area$ could be parametrised on the new Korners $dom(\iota)=T_{3}\cup K_{p}$. ($dom(\xi)$?).\\
+\begin{align}
+area_{sup}(K_{p})=\int \limits _{a(K_{p})}^{b(K_{p})} \lvert \iota_{K_{p}}(t)-\iota_{K_{p+1}}(t) \rvert \mathrm{d}t\\
+diameter_{sup}(a,b)=\sup \limits _{c,d \in [a,b]} \lvert \xi(d) - \xi(c) \rvert
+\end{align}
+The solid angle now depends on the bisection and $area_{sup}$. (sum or product?)
+\begin{equation}
+solidangle_{Abs}(a,b)=\sum \limits _{i=0}^{p} \frac{area_{sup}(K_{i})}{(\xi(t(K_{i}))-\iota(t(K_{i})))^2}
+\end{equation}
+The horizontals on the bisections are defined by the transversality of the eliptic approximation.
+\begin{align}
+area_{horiz}(a,b)=\int \limits _{0}^{?} \lvert \xi(b-t)-\xi(a+t) \rvert \mathrm{d}t
+\end{align}
+(change of variable?)
+\subsection{Tangential Paraglide Differences}
+Focal points are intersections of normals on tangents. Distribution can be parametrised without breaking the bounds $iff$ there is only one Korner. Adjusted $area$
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

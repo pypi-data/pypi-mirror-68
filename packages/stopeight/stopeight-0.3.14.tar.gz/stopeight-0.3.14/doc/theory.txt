@@ -1,0 +1,26 @@
+Theory
+======
+
+Comprehensive mathematical definitions can be found here :doc:`build_latex`.
+
+Preparing the data involves the following two or three steps:
+
+.. toctree::
+   :maxdepth: 2
+
+* :doc:`vector-graph`
+    Working.
+
+    Turning a Function Graph into a Vector Graph.
+
+* :doc:`analyzer`
+    Legacy pen-stroke version: Partially working.
+
+    Analyzer time-series and resolution independent version: Not yet implemented.
+
+    Extracting feature points from a Vector Graph for matchline overlay comparison.
+
+The Comparator can do searches in the prepared data:
+
+* Comparator
+    Working.

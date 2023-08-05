@@ -1,0 +1,24 @@
+#sdist package descriptor
+include README.md LICENSE.txt
+#python.py
+include python.py
+#cmake.py
+global-include CMakeLists.txt *.cmake
+recursive-include pybind11/include *.h
+include stopeight-clibs/cmake-git-version-tracking/git_watcher.cmake
+include stopeight-clibs/cmake-git-version-tracking/better-example/git.cc.in
+include stopeight-clibs/cmake-git-version-tracking/better-example/git.h
+#shared
+recursive-include stopeight-clibs/include *.h *.cpp
+#matrix
+recursive-include stopeight-clibs/matrix *.h *.cpp
+recursive-include stopeight-clibs/matrix-wrappers *.h *.cpp
+#grapher
+recursive-include stopeight-clibs/grapher *.h *.cpp
+recursive-include stopeight-clibs/grapher-wrappers *.h *.cpp
+#analyzer
+recursive-include stopeight-clibs/analyzer *.h *.cpp
+recursive-include stopeight-clibs/analyzer-wrappers *.h *.cpp
+#legacy
+recursive-include stopeight-clibs/legacy *.h *.cpp
+recursive-include stopeight-clibs/legacy-wrappers *.h *.cpp

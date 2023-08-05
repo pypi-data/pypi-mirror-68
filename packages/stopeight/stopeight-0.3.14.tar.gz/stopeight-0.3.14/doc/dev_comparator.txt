@@ -1,0 +1,32 @@
+Comparator
+==========
+
+API Access
+----------
+
+This example uses the :mod:`stopeight.legacy`, :mod:`stopeight.tests` module and sample data. Please refer to :doc:`stopeight` and :doc:`sample-data` on how to install them.
+
+This attempts to load all the files with ".sp" extension into parallel implementation of stroke analyzer::
+
+    $ cd /path/to/where/stopeight
+    >>> from stopeight.util import parser
+    >>> lines = parser.process_directory('path/to/where/extracted/sample/data','.sp',legacy._parse_file,legacy.stroke_parallel)
+
+The :mod:`stopeight.multiprocessing.pooling` makes parallel calls to :mod:`stopeight.comparator`.
+Note: The IDLE shell does not support spawning.
+Run from a Python shell instead::
+
+    >>> from stopeight.multiprocessing import pooling
+    >>> comparator = pooling.MPLine(lines)
+
+.. autoclass:: stopeight.comparator.shapeMatchSubSection.ShapeMatchSubSectionClass
+
+   .. automethod:: stopeight.comparator.shapeMatchSubSection.ShapeMatchSubSectionClass.match
+
+   Note: This includes a check for occurences in reverse order.
+
+It tests every line against the whole dataset and itself::
+
+    >>> for i,line in enumerate(lines):
+    >>>     matches = comparator.matchLine(line)
+    >>>     print('Line '+str(i)+' matched '+str(len(matches))+' occurences '+str(matches))
