@@ -1,0 +1,7 @@
+README.md
+setup.py
+kinesis_stream_consumer.egg-info/PKG-INFO
+kinesis_stream_consumer.egg-info/SOURCES.txt
+kinesis_stream_consumer.egg-info/dependency_links.txt
+kinesis_stream_consumer.egg-info/requires.txt
+kinesis_stream_consumer.egg-info/top_level.txt
