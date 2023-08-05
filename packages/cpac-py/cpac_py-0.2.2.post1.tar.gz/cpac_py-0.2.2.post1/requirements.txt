@@ -1,0 +1,14 @@
+coveralls
+docker
+docker-pycreds
+pandas >= 0.23.4
+pytest
+pytest-remotedata>=0.3.2
+pytest-runner
+pyyaml
+setuptools
+sphinx
+spython
+tabulate >= 0.8.6
+tornado
+websocket-client
