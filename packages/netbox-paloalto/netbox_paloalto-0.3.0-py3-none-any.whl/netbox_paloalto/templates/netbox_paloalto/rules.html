@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ name }} - Palo Alto rules {% endblock %}
+
+{% block content %}
+{% with config=settings.PLUGINS_CONFIG.netbox_paloalto %}
+{% if not name %}
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel-body">
+                    <form action="" method="post">{% csrf_token %}
+                        <strong>Device/virtual machine</strong>
+                        <input name="name" id="name" type="text" />
+                        <input type="submit" value="Find rules!">
+                    </form>
+                </div>
+            </div>
+	    </div>
+	</div>
+</div>
+{% else %}
+{% if error %}
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-danger" style="margin-top: 100px">
+		    <div class="panel-heading">
+			<strong>
+			    <i class="fa fa-warning"></i>
+			    {{ error_heading }}
+			</strong>
+                    </div>
+		    <div class="panel-body">
+			<pre>{{ error }}</pre>
+			{{ error_body }}
+		    </div>
+		    </div>
+	    </div>
+	</div>
+</div>
+{% else %}
+{% if output|length > 0 %}
+<h2 class="text-center" style="margin-top: 100px">
+	Showing firewall rules involving <strong>{{ name }}</strong>
+</h2>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Firewalls/device groups with matching rules
+	</div>
+	<div class="panel-body">
+	<ul>
+		{% for fw in output %}
+			{% if fw.total_rules > 0 and fw.found_rules|length > 0%}
+				{% if fw.panorama %}
+					<li><a href="#{{ fw.hostname }}{{ fw.device_group }}">{{ fw.hostname }} - {{ fw.device_group }}</a></li>
+				{% else %}
+					<li><a href="#{{ fw.hostname }}">{{ fw.hostname }}</a></li>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	</ul>
+	</div>
+</div>
+{% for fw in output %}
+	{% if fw.total_rules > 0 and fw.found_rules|length > 0%}
+	<div class="panel panel-default">
+			{% if fw.panorama %}
+			    <div class="panel-heading">
+				    <a id="{{ fw.hostname }}{{ fw.device_group }}"></a><strong>Panorama {{ fw.hostname }} 
+					    - device group {{ fw.device_group }} 
+					    - ({{ fw.found_rules|length }}/{{ fw.total_rules }} rules)</strong><br />
+				    Searching for rules containing one of these address objects/address group objects: <i>{{ fw.search_term|join:", " }}</i>
+			    </div>
+			{% else %}
+			    <div class="panel-heading">
+				    <a id="{{ fw.hostname }}"></a><strong>Firewall rules on firewall {{ fw.hostname }} 
+					    ({{ fw.found_rules|length }}/{{ fw.total_rules }} rules)<br /></strong>
+				    Searching for rules containing one of these address objects/address group objects: <i>{{ fw.search_term|join:", " }}</i>
+			    </div>
+			{% endif %}
+
+			{% if fw.found_rules|length > 0 %}
+			    <table id="rules_table" class="table table-hover table-headings panel-body component-list">
+				<thead>
+				    <tr>
+					<th>Name</th>
+					<th>Source zone</th>
+					<th>Source</th>
+					<th>Destination zone</th>
+					<th>Destination</th>
+					<th>Service</th>
+					<th>Application</th>
+					<th>Description</th>
+					<th></th>
+				    </tr>
+				</thead>
+				<tbody>
+					{% for rule in fw.found_rules %}
+					<tr class="interface" id="rules_detail">
+						<td>{{ rule.name }}</td>
+						<td>{{ rule.fromzone|join:", <br />" }}</td>
+						<td>{{ rule.source|join:", <br />" }}</td>
+						<td>{{ rule.tozone|join:", <br />" }}</td>
+						<td>{{ rule.destination|join:", <br />" }}</td>
+						<td>{{ rule.service|join:", <br />" }}</td>
+						<td>{{ rule.application|join:", <br />" }}</td>
+						<td>{{ rule.description }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			    </table>
+			    {% else %}
+			    <div class="panel-body">
+				<p>No matching rules found.</p>
+			    </div>
+			    {% endif %}
+	</div>
+	{% endif %}
+{% endfor %}
+{% else %}
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-info" style="margin-top: 200px">
+		    <div class="panel-heading">
+			<strong>
+				Unable to find any rules involving {{ name }}
+			</strong>
+                    </div>
+		    <div class="panel-body">
+			    <p>Remember the following constraints with this tool:
+			    <ul>
+				<li>Only one level of address group nesting is done</li>
+				<li>The search does not include subnets which may contain the object</li>
+				<li>Rules with 'any' is omitted</li>
+			    </ul>
+		    </div>
+		    </div>
+	    </div>
+	</div>
+</div>
+{% endif %}
+{% endif %}
+{% endif %}
+{% endwith %}
+{% endblock %}
