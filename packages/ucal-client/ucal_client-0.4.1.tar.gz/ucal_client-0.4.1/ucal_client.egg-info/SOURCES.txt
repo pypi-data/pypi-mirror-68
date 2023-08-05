@@ -1,0 +1,10 @@
+README.rst
+setup.py
+ucal_client/__init__.py
+ucal_client/base.py
+ucal_client/client.py
+ucal_client.egg-info/PKG-INFO
+ucal_client.egg-info/SOURCES.txt
+ucal_client.egg-info/dependency_links.txt
+ucal_client.egg-info/requires.txt
+ucal_client.egg-info/top_level.txt
