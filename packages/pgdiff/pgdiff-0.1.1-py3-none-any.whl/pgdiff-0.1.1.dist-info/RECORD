@@ -1,0 +1,11 @@
+pgdiff/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgdiff/cli.py,sha256=gParpl9LU6PgMcu9sF7K9PtGNYrOn339JfvouOX30L8,253
+pgdiff/diff.py,sha256=Lio4XXOIE0S9MibGzoLe-EYNzdmqhk-rDuqnt0cUOj4,7346
+pgdiff/helpers.py,sha256=C7_95ew1Jc-Xw10L1nGtpDzMPbiIWqJh_AyyRB9QLX8,2502
+pgdiff/objects.py,sha256=d97aaDyaUgEb5TcK81RpHejK6164P1t_624U8aEMmKE,2357
+pgdiff/sync.py,sha256=Bl7xCWxUFFMMTD0uIHsOtC2JMZUCApHAy58u61XP448,753
+pgdiff/utils.py,sha256=t5a3QCDI_qKMhYrAFC0dWtxy6dKuanUu1cnzpN_vxT8,7899
+pgdiff-0.1.1.dist-info/entry_points.txt,sha256=swbj7Q4aht5Jg3mDpse-9SpZ1sZlaY7hz8g_Zgvg0tE,41
+pgdiff-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pgdiff-0.1.1.dist-info/METADATA,sha256=svZ2C1slnxhKAlUQhOteoYZnQm0_5u3EsBYsvpazAfM,507
+pgdiff-0.1.1.dist-info/RECORD,,
