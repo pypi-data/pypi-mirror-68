@@ -1,0 +1,7 @@
+qaseio==1.0.0
+pytest>=5.2.0
+
+[testing]
+pytest
+pytest-cov
+requests_mock
