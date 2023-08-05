@@ -1,0 +1,3 @@
+aioworkers>=0.13
+sentry_sdk>=0.14.3
+aiocontextvars
