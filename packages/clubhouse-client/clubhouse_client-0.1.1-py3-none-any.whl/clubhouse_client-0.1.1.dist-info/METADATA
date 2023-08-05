@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clubhouse-client
+Version: 0.1.1
+Summary: An unofficial python client for clubhouse.io
+Home-page: https://gitlab.com/mjburling/clubhouse-client
+License: MIT
+Author: Michael J Burling
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: python-semantic-release (>=6.3.0,<7.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/mjburling/clubhouse-client
