@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ccacb"
+version = "0.6.5"
+description = "Watches the clipboard for youtube urls and downloads them"
+authors = ["Chris Allison <chris.charles.allison+ccacb@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/ccdale/ccacb"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pyperclip = "^1.8.0"
+ccalogging = "^0.3.3"
+ccaconfig = "^0.3.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+
+[tool.poetry.scripts]
+ytcb = "ccacb.watchclipboard:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
