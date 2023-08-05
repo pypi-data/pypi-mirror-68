@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+vertool/__init__.py
+vertool/__main__.py
+vertool/versioning.py
+vertool.egg-info/PKG-INFO
+vertool.egg-info/SOURCES.txt
+vertool.egg-info/dependency_links.txt
+vertool.egg-info/entry_points.txt
+vertool.egg-info/not-zip-safe
+vertool.egg-info/top_level.txt

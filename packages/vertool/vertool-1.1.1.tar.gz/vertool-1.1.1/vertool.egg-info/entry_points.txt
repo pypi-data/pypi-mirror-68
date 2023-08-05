@@ -1,0 +1,3 @@
+[console_scripts]
+vertool = vertool.__main__:main
+
