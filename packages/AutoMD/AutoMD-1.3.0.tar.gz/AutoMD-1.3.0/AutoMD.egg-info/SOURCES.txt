@@ -1,0 +1,8 @@
+README.md
+setup.py
+AutoMD.egg-info/PKG-INFO
+AutoMD.egg-info/SOURCES.txt
+AutoMD.egg-info/dependency_links.txt
+AutoMD.egg-info/not-zip-safe
+AutoMD.egg-info/requires.txt
+AutoMD.egg-info/top_level.txt

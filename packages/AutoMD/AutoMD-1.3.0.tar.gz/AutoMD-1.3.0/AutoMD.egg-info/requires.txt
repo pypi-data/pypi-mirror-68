@@ -1,0 +1,7 @@
+flask
+flask-restful
+webargs
+apispec
+pyyaml
+marshmallow
+werkzeug
