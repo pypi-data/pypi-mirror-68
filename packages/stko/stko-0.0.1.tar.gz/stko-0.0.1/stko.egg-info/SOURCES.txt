@@ -1,0 +1,8 @@
+README.md
+setup.py
+stko/__init__.py
+stko.egg-info/PKG-INFO
+stko.egg-info/SOURCES.txt
+stko.egg-info/dependency_links.txt
+stko.egg-info/top_level.txt
+stko/optimizers/__init__.py

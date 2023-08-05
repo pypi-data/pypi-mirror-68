@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stko
+Version: 0.0.1
+Summary: Contains optimizers for use with stk.
+Home-page: https://github.com/stevenbennett96/stk_optimizers-1
+Author: Steven Bennett, Andrew Tarzia
+Author-email: s.bennett18@imperial.ac.uk
+License: UNKNOWN
+Description: # stk_optimizers
+        A collection of molecular optimisers and property calculators for use within stk.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
