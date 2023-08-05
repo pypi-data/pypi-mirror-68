@@ -1,0 +1,13 @@
+gql/__init__.py,sha256=aTgg0MSS68Rfoxg6V96OYR33a0wbbq34czbW2xbpQqI,77
+gql/client.py,sha256=15AYVnkfugsqMLVJerV1qWJWrTPT7d4UHmSWt8u4GJo,3677
+gql/dsl.py,sha256=oidb8TDYnC4XIhQo3pVptj2HxqRTBjDlZuyq4icxSII,4543
+gql/gql.py,sha256=QYvcOhr4mUi-qoRI_8EZV7lzT0dSG1MejphoMLnAqeQ,360
+gql/utils.py,sha256=zI6v5EVy5IrbKOLVZ3jYUYhZVVvtVi2tzcjzxBw2-9Y,422
+gql/transport/__init__.py,sha256=F6SJm-i571tsvs3PnxDi-BHpEHeqyPdJdTSAvJHrI7s,1023
+gql/transport/local_schema.py,sha256=ihge1KkCyKRGIacyrnUDKLnx-iA8uZAksEG_3Hhvexg,1244
+gql/transport/requests.py,sha256=qWNx4MxALhoCo0MCaI5qlbZBKtogGhMCNYCL9isFZQM,5151
+gql-0.4.0.dist-info/LICENSE,sha256=ZxLYmwcNtY92zZ62jKtUGq3qczv4lsCVavMGN9G3Uq8,1081
+gql-0.4.0.dist-info/METADATA,sha256=noqJYwicArbBMgpiPkoklY_d70Fl8ocEtbssk3-nKD0,4837
+gql-0.4.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+gql-0.4.0.dist-info/top_level.txt,sha256=4R0fCgjgYFQOsKkkZTswWPetUgR6U7ndzm5wQfs02_g,4
+gql-0.4.0.dist-info/RECORD,,
