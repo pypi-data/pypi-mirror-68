@@ -1,0 +1,18 @@
+# See PEP 518: https://www.python.org/dev/peps/pep-0518/ for info on this file's structure.
+
+[tool.pyflow]
+name = "anyleaf"
+py_version = "3.8"
+version = "0.1.0"
+authors = ["Anyleaf <david.alan.oconnor@gmail.com>"]
+description = "Support for the AnyLeaf pH module"
+keywords = ["scientific", "measurement", "ph", "anyleaf"]
+homepage = "https://github.com/anyleaf/anyleaf"
+
+
+[tool.pyflow.dependencies]
+adafruit-circuitpython-ads1x15="^2.2.1"
+
+
+[tool.pyflow.dev-dependencies]
+black = "^19.10b0"
