@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+ikku/__init__.py
+ikku/bracket_state.py
+ikku/node.py
+ikku/parser.py
+ikku/reviewer.py
+ikku/scanner.py
+ikku/song.py
+ikku.egg-info/PKG-INFO
+ikku.egg-info/SOURCES.txt
+ikku.egg-info/dependency_links.txt
+ikku.egg-info/requires.txt
+ikku.egg-info/top_level.txt
