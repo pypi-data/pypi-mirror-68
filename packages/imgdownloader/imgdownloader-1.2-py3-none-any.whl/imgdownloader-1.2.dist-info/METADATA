@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: imgdownloader
+Version: 1.2
+Summary: Use this library to download any image from a given URL.
+Home-page: https://github.com/Ankit404butfound/pydownimg
+Author: Ankit Raj Mahapatra
+Author-email: ankitrajjitendra816@gmail.com
+License: MIT
+Download-URL: https://github.com/Ankit404butfound/pydownimg
+Keywords: download
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+# imgdownloader
+
+Use this library to download any image from a given URL.
+
+## Installation
+
+```bash
+pip install imgdownloader
+```
+
+## Usage
+
+```python
+import imgdownloader as py
+
+py.download(url = "www.google.com/image-kim-jon-un",path = "C/User/pc/Desktop/img.png")#Will download image at the given URL to the given path.
+
+py.download_bulk(txt_file = "Path to text file, containing URLs",folder="Path to folder where you what to save images")
+
+```
+
+## Source code
+https://github.com/Ankit404butfound/pydownimg
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
