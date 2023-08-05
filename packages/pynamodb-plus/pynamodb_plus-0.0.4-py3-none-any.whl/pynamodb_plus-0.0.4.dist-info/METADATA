@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pynamodb-plus
+Version: 0.0.4
+Summary: Python 3 library with some utilities to use with PynamoDB
+Home-page: https://github.com/MaisTodos/pynamodb-plus
+Author: Murilo Viana
+Author-email: murilo.vianamo@gmail.com
+License: MIT License
+Keywords: python pynamodb plus
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pynamodb (>=4.0.0)
+
+# pynamodb-plus
+
+[![PyPi Version](https://img.shields.io/pypi/v/pynamodb-plus.svg)](https://pypi.python.org/pypi/pynamodb-plus/)
+[![PyPi Python Versions](https://img.shields.io/pypi/pyversions/pynamodb-plus.svg)](https://pypi.python.org/pypi/pynamodb-plus/)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![Build Status](https://travis-ci.com/MaisTodos/pynamodb-plus.svg?branch=master)](https://travis-ci.com/MaisTodos/pynamodb-plus)
+
+## Project in development stage
+
+Python 3 library with some utilities to use with PynamoDB.
+
+### Installation
+
+```bash
+pip install pynamodb-plus
+```
+
+

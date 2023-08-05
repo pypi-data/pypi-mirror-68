@@ -1,0 +1,8 @@
+pynamodbplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynamodbplus/attributes.py,sha256=KzuzLzthekGM4RZxoYMCc_jzJbSd3QAzuy3BwGWoS9g,932
+pynamodbplus/models.py,sha256=ejbVW9jgPYBEvAn3Yr1kzSifkqOxwgoRCHPas7QHD_E,3940
+pynamodb_plus-0.0.4.dist-info/LICENSE,sha256=QZxbMprW8li1ApNEACyc1xK2HbNej369q62vt7RsyMk,1066
+pynamodb_plus-0.0.4.dist-info/METADATA,sha256=m8Bz3HiVxmhze9Et4hq9x6DFyfStGVcXFDR1hXpPxHU,1318
+pynamodb_plus-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pynamodb_plus-0.0.4.dist-info/top_level.txt,sha256=p-L2s8BUo_j3Z8C1doFqHEWhXbt2NtZFd0gbg32xrtQ,13
+pynamodb_plus-0.0.4.dist-info/RECORD,,
