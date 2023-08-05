@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ex4ml
+Version: 1.0a0
+Summary: A library for streamlining machine learning experiments
+License: MIT
+Author: MInDS at Mines
+Author-email: minds@mines.edu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tensorflow
