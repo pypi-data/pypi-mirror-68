@@ -1,0 +1,8 @@
+setup.py
+karellen_pyb_plugin/__init__.py
+karellen_pyb_plugin.egg-info/PKG-INFO
+karellen_pyb_plugin.egg-info/SOURCES.txt
+karellen_pyb_plugin.egg-info/dependency_links.txt
+karellen_pyb_plugin.egg-info/namespace_packages.txt
+karellen_pyb_plugin.egg-info/top_level.txt
+karellen_pyb_plugin.egg-info/zip-safe
