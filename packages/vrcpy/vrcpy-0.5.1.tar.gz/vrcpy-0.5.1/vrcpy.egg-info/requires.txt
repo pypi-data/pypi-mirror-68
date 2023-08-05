@@ -1,0 +1,7 @@
+aiohttp
+requests
+
+[aquick]
+cchardet
+aiodns
+brotlipy
