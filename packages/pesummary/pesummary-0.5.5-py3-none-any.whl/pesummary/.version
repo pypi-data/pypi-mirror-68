@@ -1,0 +1,13 @@
+# pesummary version information
+
+last_release = 0.5.5
+
+git_hash = b9f40e8
+git_author = Charlie Hoy <hoyc1@cardiff.ac.uk>
+git_status = CLEAN: All modifications committed
+git_builder = Charlie Hoy <hoyc1@cardiff.ac.uk>
+git_build_date = 2020-05-11 00:01:12 +0000
+
+# Install information
+
+install_path = /Users/Charlie/virtualenvs/pesummary_non_gw
