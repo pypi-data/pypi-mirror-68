@@ -1,0 +1,202 @@
+Metadata-Version: 2.1
+Name: pywikibot
+Version: 3.0.20200508
+Summary: Python MediaWiki Bot Framework
+Home-page: https://www.mediawiki.org/wiki/Manual:Pywikibot
+Maintainer: The Pywikibot team
+Maintainer-email: pywikibot@lists.wikimedia.org
+License: MIT License
+Download-URL: https://tools.wmflabs.org/pywikibot/
+Description: .. image:: https://travis-ci.org/wikimedia/pywikibot.svg?branch=master
+           :alt: Travis Build Status
+           :target: https://travis-ci.org/wikimedia/pywikibot
+        .. image:: https://ci.appveyor.com/api/projects/status/xo2g4ctoom8k6yvw/branch/master?svg=true
+           :alt: AppVeyor Build Status
+           :target: https://ci.appveyor.com/project/ladsgroup/pywikibot-g4xqx
+        .. image:: https://codecov.io/gh/wikimedia/pywikibot/branch/master/graph/badge.svg
+           :alt: Code coverage
+           :target: https://codecov.io/gh/wikimedia/pywikibot
+        .. image:: https://api.codeclimate.com/v1/badges/de6ca4c66e7c7bee4156/maintainability
+           :alt: Maintainability
+           :target: https://codeclimate.com/github/wikimedia/pywikibot/maintainability
+        .. image:: https://img.shields.io/pypi/pyversions/pywikibot.svg
+           :alt: Python
+           :target: https://www.python.org/downloads/
+        .. image:: https://img.shields.io/pypi/v/pywikibot.svg
+           :alt: Pywikibot release
+           :target: https://pypi.org/project/pywikibot/
+        
+        Pywikibot
+        =========
+        
+        The Pywikibot framework is a Python library that interfaces with the
+        `MediaWiki API <https://www.mediawiki.org/wiki/API:Main_page>`_
+        version 1.14 or higher.
+        
+        Also included are various general function scripts that can be adapted for
+        different tasks.
+        
+        For further information about the library excluding scripts see
+        the full `code documentation <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        Quick start
+        -----------
+        
+        ::
+        
+            git clone https://gerrit.wikimedia.org/r/pywikibot/core.git
+            cd core
+            git submodule update --init
+            python pwb.py script_name
+        
+        Or to install using PyPI (excluding scripts)
+        ::
+        
+            pip install -U setuptools
+            pip install pywikibot
+        
+        Our `installation
+        guide <https://www.mediawiki.org/wiki/Manual:Pywikibot/Installation>`_
+        has more details for advanced usage.
+        
+        Basic Usage
+        -----------
+        
+        If you wish to write your own script it's very easy to get started:
+        
+        ::
+        
+            import pywikibot
+            site = pywikibot.Site('en', 'wikipedia')  # The site we want to run our bot on
+            page = pywikibot.Page(site, 'Wikipedia:Sandbox')
+            page.text = page.text.replace('foo', 'bar')
+            page.save('Replacing "foo" with "bar"')  # Saves the page
+        
+        -------------------------------------------------------------------------------------------
+        
+        For more documentation on pywikibot see our `docs <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        The contents of the package
+        ---------------------------
+        
+            +----------------------------------------------------------------------------------+
+            |  Directories                                                                     |
+            +===========================+======================================================+
+            |  pywikibot                | Library routines, control files and global settings  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/comms          | Communication layer                                  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/data           | Module with several layers for data access to wiki   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/families       | wiki-specific information and settings               |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/page           | Module with classes for MediaWiki page content       |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/site           | Module with classes for MediaWiki sites              |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/specialbots    | Module containing special bots reusable by scripts   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/tools          | Miscellaneous helper functions (not wiki-dependent)  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/userinterfaces | GUI and terminal interface                           |
+            +---------------------------+------------------------------------------------------+
+        
+        Required external programs
+        ---------------------------
+        
+        It may require the following programs to function properly:
+        
+        * `7za`: To extract 7z files
+        
+        Roadmap
+        -------
+        
+        Current release
+        ~~~~~~~~~~~~~~~
+        
+        * Unify and extend formats for setting sitelinks (T225863, T251512)
+        * Do not return a random i18n.translation() result (T220099)
+        * tools.ip_regexp has been removed (T174482)
+        * Page.getVersionHistory and Page.fullVersionHistory() methods has been desupported (T136513, T151110)
+        * Update wikimediachapter_family (T250802)
+        * Raise SpamblacklistError with spamblacklist APIError (T249436)
+        * Do not removeUselessSpaces inside source/syntaxhighlight tags (T250469)
+        * Restrict Pillow to 6.2.2+ (T249911)
+        * Fix PetScan generator language and project (T249704)
+        * test_family has been removed (T228375, T228300)
+        * Bugfixes and improvements
+        * Localisation updates
+        
+        Future releases
+        ~~~~~~~~~~~~~~~
+        
+        * Page.getVersionHistory and Page.fullVersionHistory() methods will be removed (T136513, T151110)
+        * 3.0.20200405: Site and Page methods deprecated for 10 years or longer will be removed
+        * 3.0.20200405: Usage of SkipPageError with BaseBot will be removed
+        * 3.0.20200326: Functions dealing with stars list will be removed
+        * 3.0.20200306: Support of MediaWiki releases below 1.19 will be dropped (T245350)
+        * 3.0.20200306: tools.ip will be dropped in favour of tools.is_IP (T243171)
+        * 3.0.20200111: Support for Python 3.4 will be dropped (T239542)
+        * 3.0.20190722: Support for Python 2 will be dropped in 4/2020 (T213287)
+        
+        Release history
+        ---------------
+        
+        See https://github.com/wikimedia/pywikibot/blob/stable/HISTORY.rst
+        
+        Contributing
+        ------------
+        
+        Our code is maintained on Wikimedia's `Gerrit installation <https://gerrit.wikimedia.org/>`_,
+        `learn <https://www.mediawiki.org/wiki/Developer_account>`_ how to get
+        started.
+        
+        Code of Conduct
+        ---------------
+        
+        The development of this software is covered by a `Code of Conduct <https://www.mediawiki.org/wiki/Code_of_Conduct>`_.
+        
+        
+Keywords: API,bot,framework,mediawiki,pwb,python,pywikibot,pywikipedia,pywikipediabot,wiki,wikimedia,wikipedia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7.4, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Provides-Extra: weblinkchecker.py
+Provides-Extra: Tkinter
+Provides-Extra: data_ingestion.py
+Provides-Extra: isbn
+Provides-Extra: states_redirect.py
+Provides-Extra: isbn.py
+Provides-Extra: http
+Provides-Extra: csv
+Provides-Extra: Graphviz
+Provides-Extra: eventstreams
+Provides-Extra: Google
+Provides-Extra: imageharvest.py
+Provides-Extra: mwoauth
+Provides-Extra: scripts
+Provides-Extra: flickrripper.py
+Provides-Extra: mwparserfromhell
+Provides-Extra: patrol.py
+Provides-Extra: match_images.py
+Provides-Extra: flake8
+Provides-Extra: html
+Provides-Extra: security
