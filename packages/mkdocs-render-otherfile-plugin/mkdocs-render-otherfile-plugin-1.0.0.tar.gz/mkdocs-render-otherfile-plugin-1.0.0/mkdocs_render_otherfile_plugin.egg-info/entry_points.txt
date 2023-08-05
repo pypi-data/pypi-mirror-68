@@ -1,0 +1,4 @@
+[mkdocs.plugins]
+mkdocs-render-otherfile-plugin = mkdocs_render_otherfile_plugin.plugin:RenderOtherfilePlugin
+render-otherfile = mkdocs_render_otherfile_plugin.plugin:RenderOtherfilePlugin
+
