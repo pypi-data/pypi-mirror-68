@@ -1,0 +1,9 @@
+cellfinder
+dist
+doc_build
+docs
+pypi_upload
+resources
+tests
+travis
+wheelhouse
