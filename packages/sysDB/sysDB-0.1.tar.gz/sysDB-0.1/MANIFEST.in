@@ -1,0 +1,4 @@
+include LICENSE
+include sysDB/*.py
+include data/*.pickle
+include README.md

@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+data/scrapedx64.pickle
+data/scrapedx86.pickle
+sysDB/__init__.py
+sysDB.egg-info/PKG-INFO
+sysDB.egg-info/SOURCES.txt
+sysDB.egg-info/dependency_links.txt
+sysDB.egg-info/top_level.txt
+sysDB/syscallLookup/scrape/syscallScrapex64.py
+sysDB/syscallLookup/scrape/syscallScrapex86.py

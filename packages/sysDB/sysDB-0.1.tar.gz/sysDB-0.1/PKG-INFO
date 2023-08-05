@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sysDB
+Version: 0.1
+Summary: A x86 and x64 syscall database
+Home-page: https://github.com/marwenn02/syscallDB
+Author: nnewram
+Author-email: marwenn02@gmail.com
+License: UNKNOWN
+Description: # syscallDB
+        ## x86 and x64 syscall database
+        Have you ever been doing some assembly and finding yourself looking furiously for some nisch syscall\
+        Well, that will no longer be a problem with syscallDB's reverse lookup, did you forget rax for execve?
+        ## x86
+        ```py
+        import sysDB
+        sysDB.syscall32(0) # gives syscall 0
+        sysDB.syscall32("exec") # gives all syscalls with "exec" in their name
+        ```
+        ## x64
+        ```py
+        import sysDB
+        sysDB.syscall64(0) # gives syscall 0
+        sysDB.syscall64("exec") # gives all syscalls with "exec" in their name
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
