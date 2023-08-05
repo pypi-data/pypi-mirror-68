@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+ottype/__init__.py
+ottype/core.py
+ottype/core_boost.c
+ottype/py.typed
+python_ottype.egg-info/PKG-INFO
+python_ottype.egg-info/SOURCES.txt
+python_ottype.egg-info/dependency_links.txt
+python_ottype.egg-info/not-zip-safe
+python_ottype.egg-info/requires.txt
+python_ottype.egg-info/top_level.txt
