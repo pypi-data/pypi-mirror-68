@@ -1,0 +1,63 @@
+
+.. blogpost::
+    :title: Exploration with pybind11 and ExtensionArray
+    :keywords: pybind11, C++, pandas
+    :date: 2018-08-03
+    :categories: C++
+
+    I tried the version of :epkg:`pybind11`
+    to expose a dummy C++ object
+    :class:`WeightedDouble <cpyquickhelper.numbers.weighted.number.WeightedDouble>`,
+    to implement a couple of operators and to see
+    how it behaves into a dataframe.
+
+    .. runpython::
+        :showcode:
+
+        from pandas import DataFrame, Series
+        from cpyquickhelper.numbers.weighted_number import WeightedDouble
+        from cpyquickhelper.numbers.weighted_dataframe import WeightedSeries
+
+        n1 = WeightedDouble(1, 1)
+        n2 = WeightedDouble(3, 2)
+        ser = Series([n1, n2])
+        df = DataFrame(data=dict(wd=ser, x=[6., 7.]))
+        df["A"] = df.wd + df.x
+        # Whole dataframe.
+        print(df)
+        # Show only the values for column 'wd'.
+        print(df.wd.wdouble.value)
+        # About types
+        print(df.dtypes)
+
+    The latest version of :epkg:`pandas`
+    (0.23) introduced :epkg:`ExtensionArray`
+    to define array of custom types and get rid
+    of the  type ``object``. The current implemented does not
+    use a true C++ array but a series of
+    :class:`WeightedDouble <cpyquickhelper.numbers.weighted.number.WeightedDouble>`
+    underneath but still show what it looks like
+    despite the potential speed issue.
+
+    .. runpython::
+        :showcode:
+
+        from pandas import DataFrame, Series
+        from cpyquickhelper.numbers.weighted_number import WeightedDouble
+        from cpyquickhelper.numbers.weighted_dataframe import WeightedArray
+
+        n1 = WeightedDouble(1, 1)
+        n2 = WeightedDouble(3, 2)
+        ser = WeightedArray([n1, n2])
+        df = DataFrame(data=dict(wd=ser, x=[6., 7.]))
+        df["A"] = df.wd + df.x
+        # Whole dataframe.
+        print(df)
+        # Show only the values for column 'wd'.
+        print(df.wd.wdouble.value)
+        # About types
+        print(df.dtypes)
+
+    The property ``wdouble`` should not be necessary but
+    the type of a column is still a :epkg:`Series`,
+    the new array is just a container.

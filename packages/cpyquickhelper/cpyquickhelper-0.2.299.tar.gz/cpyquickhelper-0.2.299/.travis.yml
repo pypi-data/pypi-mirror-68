@@ -1,0 +1,14 @@
+dist: bionic
+sudo: true
+language: python
+python:
+    - "3.7"
+    - "3.8"
+install:
+  - pip install -r requirements.txt
+  - pip install pyquickhelper --no-deps
+before_script:
+  - gcc --version
+  - python setup.py build_ext --inplace
+script:
+  - python setup.py unittests
