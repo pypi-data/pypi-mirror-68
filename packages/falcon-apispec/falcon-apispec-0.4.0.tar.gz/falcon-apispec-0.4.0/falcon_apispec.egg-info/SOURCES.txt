@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+falcon_apispec/__init__.py
+falcon_apispec/falcon_plugin.py
+falcon_apispec/version.py
+falcon_apispec.egg-info/PKG-INFO
+falcon_apispec.egg-info/SOURCES.txt
+falcon_apispec.egg-info/dependency_links.txt
+falcon_apispec.egg-info/not-zip-safe
+falcon_apispec.egg-info/requires.txt
+falcon_apispec.egg-info/top_level.txt
