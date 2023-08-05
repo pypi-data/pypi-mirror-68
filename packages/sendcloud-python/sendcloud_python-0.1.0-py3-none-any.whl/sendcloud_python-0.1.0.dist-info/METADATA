@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sendcloud-python
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/stasfilin/sendcloud
+Author: Stanislav Filin
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (==2.23.0)
+Provides-Extra: develop
+Requires-Dist: requests (==2.23.0) ; extra == 'develop'
+Requires-Dist: pytest (==5.4.1) ; extra == 'develop'
+Requires-Dist: black (==19.10b0) ; extra == 'develop'
+Requires-Dist: requests-mock (==1.8.0) ; extra == 'develop'
+Requires-Dist: pytest-mock (==3.1.0) ; extra == 'develop'
+
+UNKNOWN
+
+
