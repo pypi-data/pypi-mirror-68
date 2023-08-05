@@ -1,0 +1,3 @@
+[console_scripts]
+gandi=gandi.console:run
+
