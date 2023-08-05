@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: limecore-cli
+Version: 0.1.2
+Summary: limecore: CLI
+Home-page: https://github.com/limecore/cli
+Author: Daniel Bradberry
+Author-email: daniel@danielbradberry.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: limecore-core (>=0.2.1)
+Requires-Dist: limecore-util (>=0.1.4)
+
+limecore: CLI
+=============
+
+CLI
+
+
