@@ -1,0 +1,9 @@
+README.md
+setup.py
+cogsly/__init__.py
+cogsly/nbloader.py
+cogsly.egg-info/PKG-INFO
+cogsly.egg-info/SOURCES.txt
+cogsly.egg-info/dependency_links.txt
+cogsly.egg-info/requires.txt
+cogsly.egg-info/top_level.txt
