@@ -1,0 +1,58 @@
+import json
+import requests
+import time
+import datakitchen_api_tools.dk_api_helpers as dk_api_helpers
+from datakitchen_api_tools.DKOrder import DKOrder
+
+
+class DKConnection():
+    def __init__(self, hostname, username, password, timeout=1):
+        self.hostname = hostname
+        payload = {'username': username, 'password': password}
+        r = requests.post('https://%s/v2/login' % hostname, data=payload)
+        if r.text == 'Credentials are invalid':
+            raise Exception
+        self.token = r.text
+        self.headers =  {'content-type': 'application/json', 'authorization': 'bearer ' + self.token}
+
+    def createOrder(self, kitchen, recipe, variation, overrides={}):
+        headers = {'content-type': 'application/json', 'authorization': 'bearer ' + self.token}
+        url = 'https://%s/v2/order/create/%s/%s/%s' % (self.hostname, kitchen, recipe, variation)
+        payload = {'parameters': overrides}
+        return requests.put(url, headers=headers, data=json.dumps(payload))
+
+    def safeCreateOrder(self, kitchen, recipe, variation, overrides={}, wait_time=10, timeout=100000):
+        response = self.createOrder(kitchen, recipe, variation, overrides=overrides)
+        if response.status_code != 200:
+            raise Exception
+        order = json.loads(response.text)
+        order_id = order['order_id']
+        order_run = self.getOrder(kitchen, order_id)
+        time.sleep(wait_time)
+        time_running = 0
+        while (order_run.getOrderStatus() == "ACTIVE_ORDER" or order_run.getOrderStatus() == "PLANNED_SERVING") and time_running < timeout:
+            time.sleep(wait_time)
+            order_run = self.getOrder(kitchen, order_id)
+            time_running += wait_time
+        if time_running >= timeout:
+            raise Exception
+        return order_run
+
+    def OrderRunInfo(self, kitchen, order_id):
+        url = "https://%s/v2/order/details/%s" % ( self.hostname, kitchen)
+        headers = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + self.token}
+        payload = {'order_id': order_id, 'summary': True, 'logs': True, 'timingresults': True,
+                   'testresults': True, 'servingjson': True, "schedule": "now"}
+        r = requests.post(url, headers=headers, data=json.dumps(payload))
+        if "does not exist." in r.text:
+            raise Exception("Order run id %s not found." % order_run_id )
+        return DKOrder(json.loads(r.text))
+
+    def getOrder(self, kitchen, order_run_id):
+        return self.OrderRunInfo(kitchen, order_run_id)
+
+    def TestsFromOrderRun(self, kitchen, order_run_id):
+        return self.getOrder(kitchen, order_run_id).getTests()
+
+    def OrderStatus(self, kitchen, order_run):
+        return self.getOrder(kitchen, order_run_id).getOrderStatus()
