@@ -1,0 +1,9 @@
+django-cms>=3.6
+djangocms-text-ckeditor>=3.6.1
+sorl-thumbnail
+
+[dev]
+flake8
+pytest
+pytest-django
+factory-boy
