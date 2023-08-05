@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        auto-deprecate = auto_deprecator:main
+    
