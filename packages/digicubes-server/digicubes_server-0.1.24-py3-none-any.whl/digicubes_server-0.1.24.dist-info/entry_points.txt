@@ -1,0 +1,3 @@
+[console_scripts]
+digicubes-server = digicubes_rest.server.commandline:evaluate_command
+
