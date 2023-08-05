@@ -1,0 +1,9 @@
+README.md
+setup.py
+pandas2pgfplots/__init__.py
+pandas2pgfplots/pandas2pgfplots.py
+pandas2pgfplots.egg-info/PKG-INFO
+pandas2pgfplots.egg-info/SOURCES.txt
+pandas2pgfplots.egg-info/dependency_links.txt
+pandas2pgfplots.egg-info/requires.txt
+pandas2pgfplots.egg-info/top_level.txt
