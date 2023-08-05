@@ -1,0 +1,13 @@
+Analyzer
+========
+
+Extraction of Feature Points
+----------------------------
+
+The analyzer then converts the vector graph into a sequence of one Turn, one Corner and one Turn. The sequence - starting with a Turn - has one Corner terminated by a turn and is concatenated into Turn-Corner-Turn-Corner-Turn.
+
+.. image:: _static/extraction_sequence.svg
+
+For developer information on how this is done see :doc:`dev_analyzer`
+
+This input can be used to make a matchline overlay comparison (See :doc:`dev_comparator`) to previously recorded vector graphs.

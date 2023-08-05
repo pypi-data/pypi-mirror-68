@@ -1,0 +1,35 @@
+GitHub & Sphinx
+===============
+
+Get python sphinx / dvisvgm on ubuntu::
+
+    $ sudo apt-get install python-sphinx texlive texlive-latex-extra make
+
+In order to rebuild the docs, do::
+
+    $ cd doc/
+    $ rm -R ./_build
+    $ make html
+    $ cd ../
+    $ git checkout gh-pages
+    $ git rm `git ls-files`
+    $ git add doc/_build/html/*
+    $ git mv -v doc/_build/html/_static ./
+    $ git mv -v doc/_build/html/_sources ./
+
+Only if Sphinx version is lower than 1.2::
+
+    $ git show master:doc/_extra/CNAME > ./CNAME
+    $ git show master:doc/_extra/robots.txt > ./robots.txt
+    $ git add ./CNAME
+    $ git add ./robots.txt
+
+Continue::
+
+    $ git mv -v doc/_build/html/* ./
+    $ touch ./.nojekyll
+    $ git add ./.nojekyll
+    $ git commit -m "Documentation vX.Y.Z"
+    $ git push
+    $ git checkout master
+

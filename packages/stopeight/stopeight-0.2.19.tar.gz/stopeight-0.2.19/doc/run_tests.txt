@@ -1,0 +1,26 @@
+Stopeight Comparator
+--------------------
+
+The API is installed with stopeight.
+
+To run the tests using the legacy frontend pooling is needed.
+
+:mod:`stopeight.multiprocessing` is using the Python multiprocessing module. You can test if your Python installation and the underlying OS support this by running from within a Python shell::
+
+    >>> from multiprocessing import synchronize
+
+Unpack the legacy test files::
+
+    $ cd /path/to/where/stopeight-clibs/legacy/tests
+    $ tar xvfz v0-1-0.tar.gz
+
+Run the tests::
+
+    $ cd /path/to/where/stopeight
+    $ python -m stopeight.tests.parser stopeight-clibs/legacy/tests/
+
+Show the result of the legacy stroke analyzer which served as input for the comparator matching::
+
+    $ eog parser.out.svg
+
+To remove the check pattern transparent background go to menu (Image Viewer -> Preferences -> Image View -> Transparent Parts -> As custom color).

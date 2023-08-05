@@ -1,0 +1,95 @@
+\documentclass{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\title{Antis}
+\author{Fassio Blatter}
+\maketitle
+
+\chapter{Introduction}
+Geometric overlay comparison works for unseparated signals, but it is only of limited use, because it is inaccurate. The goal of separation is to find impulses or notes as they may be referred to in a musical context. It is important to note that the individual pulses have a causal relationship that connects them. Most oscillations are subject to amplitude and/or frequency-modulation, but they are usually repetitive, so they can be removed by statistical means. Truly random/stochastic signals on the other hand can not be filtered.\\\\
+In signal analysis, there is the notion of source separation vs. spectral separation of pulses. The method of separation referred to in this text is meant to work $blind$ in a scenario where no prior knowledge of the likelyhood of occurence of waveforms is made. If prior statistical data, event metadata or multiple channels (stereo, etc.) are available, some of the requirements mentioned may be relaxed.
+
+\subsection{Pulse}
+A symmetric pulse has two half pulses with the same wavelength/amplitude correlation.
+
+\subsection{Impulses}
+Impulses are consecutive half-pulses of variable wavelengths which originate from the same source and are separated from other overlaping impulses.
+
+\chapter{Source Separation}
+Stopeight Comparator may provide a means of either finding exact frames (of length pulse or impulse?) in the original signal $s(t)$ (See Grapher), or in the signal as in parametric curve differences.\\\\
+Also Vector Graph manipulations such as finding/counting intersections and setting oriented section type occurence limitations (ex. Spiral $\Rightarrow$ scale) could yield interesting results.
+
+\subsection{Signs}
+The difference of the signs over an interval.
+\begin{align}
+dsi(a,b) = card(\mu_{+}\subseteq [a,b])-card(\mu_{-} \subseteq [a,b])\\
+ori(a,b) = \frac{dsi(a,b)}{\lvert dsi(a,b) \rvert}
+\end{align}
+A sequence of sections between $[a,b]$ is alternating $\mu_{-}\cup \mu_{zero}\cup\mu_{+}=\mu$.
+\begin{enumerate}
+\item $dsi(a,b)= 0; \exists(\mu_{n}\subseteq \mu_{+}) \land \exists(\mu_{n+1}\subseteq \mu_{zero}) \land \exists(\mu_{n+2}\subseteq \mu_{-}) \Leftrightarrow alt(a,b)=n$
+\item $dsi(a,b)= 0; \exists(\mu_{n}\subseteq \mu_{-}) \land \exists(\mu_{n+1}\subseteq \mu_{zero}) \land \exists(\mu_{n+2}\subseteq \mu_{+}) \Leftrightarrow alt(a,b)=-n$
+\item $dsi(a,b)= 1; \exists(\mu_{n}\subseteq \mu_{+}) \land \exists(\mu_{n+1}\subseteq \mu_{zero}) \land \nexists(\mu_{n+2}\subseteq \mu_{-}) \Leftrightarrow alt(a,b)=\frac{1}{n}$
+\item $dsi(a,b)= -1; \exists(\mu_{n}\subseteq \mu_{-}) \land \exists(\mu_{n+1}\subseteq \mu_{zero}) \land \nexists(\mu_{n+2}\subseteq \mu_{+}) \Leftrightarrow alt(a,b)=-\frac{1}{n}$
+\item $dsi(a,b)> \pm 1\Leftrightarrow alt(a,b)=0$;
+\end{enumerate}
+When the difference of the signs $dsi(a,b)$ is larger than one, orientation $ori$ serves as a weak expression of the imbalance.
+
+\chapter{Spectral Separation}
+\section{Indicator}
+Every zero crossing $t_{m}$ of the 2nd derivative
+\begin{equation}
+\{t_{m}\}_{m \in \mathbb{Z} , f''(t_{m})=0}
+\end{equation}
+For all the Intervals $t_{m}-t_{m-1}=T$ of a signal $f: \mathbb{R} \rightarrow \mathbb{R}$
+\begin{equation}
+\eta(T)=\{t \in \mathbb{R}; t_{m} - t_{m-1}=T \vert f''(t_{m})=0, f''(t_{m-1})=0, t \le t_{m}, t \ge t_{m-1} \}
+\end{equation}
+Note: $\eta$ is a Lebesgue.\\\\
+For all the positive and negative function values $f(t)$ respectively
+\begin{align}
+\eta_{+}(T)=\{{\eta \vert f(t) \ge 0}\}\\
+\eta_{-}(T)=\{{\eta \vert f(t) \le 0}\}
+\end{align}
+Parseval's theorem
+\begin{equation}
+\int\limits_{-\infty}^{\infty} \vert f(t) \vert ^2 \mathrm{d} t = 1/2\pi * \int\limits_{-\infty}^{\infty} \vert \hat{f}(1/T) \vert ^2  \mathrm{d} T
+\end{equation}
+Can be interpreted for signed function values as
+\begin{equation}
+\int\limits_{-\infty}^{\infty} (\underbrace{\int\limits_{-\infty}^{\infty} \delta (U - T) \mathrm{d} U}_{1} * (\int\int f(t) \mathrm{d} t \underbrace{\mathrm{d} \eta}_{\text{depends on T}}) )\mathrm{d} T = 1/2\pi * \int\limits_{-\infty}^{\infty} \hat{f}(1/T) \mathrm{d} T
+\end{equation}
+Note: Major $U$ is a unique period, not a point in time. $U$ is not continuous, $\delta$ is the discrete Dirac Delta.\\\\
+The convolution of the signal with a periodicity T is equal the distributed energy of two semi-pulse functions of the same periodicity. The negative part $\eta_{-}$ is interpreted as a purely imaginary complex number $z_{2}$.
+\begin{equation}
+\int\limits_{-\infty}^{\infty}(\int\limits_{-\infty}^{\infty} \delta (U - T) \mathrm{d} U * (\underbrace{\int \int f(t) \mathrm{d} t \mathrm{d} \eta_{+}}_{z_{1}} * \underbrace{\mathrm{i} \int \int f(t) \mathrm{d} t \mathrm{d} \eta_{-}}_{z_{2}}))  \mathrm{d} T = 1/2\pi * \int\limits_{-\infty}^{\infty} ( \int\limits_{-\infty}^{\infty}  f(t) * (cos(t/T)+\mathrm{i} sin(t/T)) \mathrm{d} t ) \mathrm{d} T
+\end{equation}
+Note: If the angle $\phi$ between two complex numbers $z_{1},z_{2}$ is $\pm\frac{pi}{2}$, their complex multiple $z_{1}*z_{2}$ is equal the real $\lvert z_{1}\rvert*\lvert z_{2}\rvert$. If $x_{1}=y_{2}$, this simplifies to $\lvert x_{1} \rvert ^2$, which is what we have noted above (Parseval Theorem) for the real function $f(t)$ .\\\\
+This equation holds for every signal with frequency components separated in the time domain and symmetric in $mod(n/2)=0$ equal length parts. If this is not the case, we have either:\\
+1. Longer wavelength pulses overlapping the frequency component, which results in a amplitude modulation of the combined signal.\\
+2. Shorter wavelength pulses intersecting the segments of the frequency component, which results in frequency modulation of the combined signal.\\
+3. Non-symmetric waveforms and/or different length half-pulses, which can not be removed with this procedure. See Source Separation for further discussion of such signals.\\\\
+(A longer wavelength, undetected harmonic can be excluded in this scenario since source separated harmonics are symmetric pulses of integer multiples of the wavelength and we imply that the shortest $symmetric$ pulse is found beforehand in the removal procedure below, i.e. the higher harmonics are $not symmetric$ because of criteria 1)\\\\
+Conclusion: This method provides an indication for the spectral separation of the signal. For blind removal of individual pulses, the $waveform$ of the pulse needs to be known. Longer wavelength pulses have the highest likelyhood to contain pulses which violate the above criteria, so their $amplitude$ can not be determined. We have to start removal with the shortest isolated pulses which can be found in the sample.\\\\
+The main drawback of Fourier Transformation is that frames (integration bounds) and frequency window (measure) have to be adjusted. There are methods for finding bases in order to remove functions from the combined signal. Fourier Transformation does fulfil the task of spectral separation, but arbitrary precision in the time and frequency domain can not be found.
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

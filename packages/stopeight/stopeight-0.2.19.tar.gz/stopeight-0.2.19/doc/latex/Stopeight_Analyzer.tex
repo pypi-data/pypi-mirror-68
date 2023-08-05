@@ -1,0 +1,379 @@
+\documentclass{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\title{Stopeight Analyzer}
+\author{Fassio Blatter}
+\maketitle
+
+\chapter{Introduction}
+The main algorithm in this text is the Analyzer. It has been developed during the years 2009 to 2016 by Specific Purpose Software GmbH. It is now open sourced, but mostly exists in the form of code fragments.\\
+This file is in the Stopeight repository on Github. Please edit here:\\
+\href{https://github.com/specpose/stopeight/tree/master/doc/latex/Stopeight\_Analyzer.tex}{https://github.com/specpose/stopeight/tree/master/doc/latex/Stopeight\_Analyzer.tex}\\
+The DOI can be found here ~\cite{Stopeight}.\\
+A brief overview can be found here:\\
+\href{https://specpose.github.io/stopeight/dev_analyzer.html}{https://specpose.github.io/stopeight/dev\_analyzer.html}\\\\
+Notation: Please keep in mind that a single (') denotes an image or transformation of a variable or function. Derivatives are always denoted as $(\frac{\mathrm{d}}{\mathrm{d}t})$.\\\\
+The purpose of the Analyzer is to find intervals in a Vector Graph and produce an approximation. The input Vector Graph can be obtained from the Grapher. \cite{Grapher}[1.1]\\\\
+The sequence of Arcs $A \subset \mathbb{R}^2$ are an approximation of a Vector Graph $X \subset \mathbb{R}^2$:
+\begin{align}
+f \circ g: X \rightarrow A
+\end{align}
+\begin{equation*}
+1 < card(X) < \infty
+\end{equation*}
+via the intermediate functions $f,g$ where the intermediate transversality $Y = X \cap A$ defines Arcs $U_{m}$. ~\cite[9.9]{Loring} ($f \circ g$ is neither injective nor surjective) ~\cite[2.1]{LauresSzymik}:
+\begin{align}
+f: X \approx W \rightarrow Y; g: Y \rightarrow A
+\end{align}
+Note: The sequence of Arcs A is a dim 1-manifold. In $A$ we can find a system of open sets. The set of charts $\{U_{m}\}$ covering the whole manifold $A$ is an atlas. ~\cite[3.1.1.]{Fomenko} ~\cite[4.5]{Wall}
+\begin{align}
+A = \cup_{m}U_{m}
+\end{align}
+$X$ is formally a discrete / dim 0-manifold
+\begin{align}
+Y: \text{0-submanifold} \Rightarrow (dim(X)=0)<(codim(Y)=1) \Rightarrow X \text{ disjoint } A
+\end{align}
+but $W$ is not. See \eqref{eq:1}.
+\begin{align}
+Y: \text{0-submanifold} \Rightarrow (dim(W)=1)=(codim(Y)=1) \Rightarrow W \text{ joint } A
+\end{align}
+The approximation aims to find the maximal smooth atlas. Each chart $U_{m}$ has a start of Turn $T \ni S = \min \limits _{U_{m}}$, a Corner $C \in U_{m}$ and an end of Turn $T \ni E = \max \limits _{U_{m}}$. This format has the benefit of reducing the amount of data for $Comparison$ (see Stopeight Comparator), while preserving the $Representation$ using quadratic bezier splines.\\\\
+
+\chapter{Representation}
+
+The affine transformations $q$ are functions that map to control points $Q \subset \mathbb{R}^2$:
+\begin{align}
+q: S \times C \times E \rightarrow Q\\
+Q \cap X = 0; Q \cap Y = 0
+\end{align}
+The combination $Y \cup Q$ has parts from the original $X$'s, and constructed $Q$'s that are not in $A$ $\footnote{insertion: $C \notin X$, otherwise: $C \in X \cap A$}$:
+\begin{align*}
+S,C,E \in X; Q \setminus A=\{q_{1}(S,C,E),q_{3}(S,C,E),q_{4}(S,C,E),q_{6}(S,C,E)\}
+\end{align*}
+and is composed of four quadratic bezier splines $\gamma_{H}(t)$:
+\begin{align}
+\gamma_{H}: \mathbb{R} \rightarrow \mathbb{R}^2; t \mapsto (x,y)
+\end{align}
+with control point sets $\{H_{1},...,H_{4}\}$ per chart of $Y \cup Q$. The Arc segment defining function $\xi$ forms the planar coordinates $(x',y')$ of Arc $U_{m}$:
+\begin{equation}
+\xi: \mathbb{R} \rightarrow A; t \mapsto (x,y)
+\end{equation}
+\begin{align*}
+\xi(t) =
+\begin{cases}
+\gamma_{H_{1}}(t); H_{1}=\{S,q_{1}(S,C_{3},E),q_{2}(S,C_{3},E)\} & t \in [0,\frac{1}{4}]\\
+\gamma_{H_{2}}(t); H_{2}=\{q_{2}(S,C_{3},E),q_{3}(S,C_{3},E),C_{3}\} & t \in [\frac{1}{4},\frac{1}{2}]\\
+\gamma_{H_{3}}(t); H_{3}=\{C_{3},q_{4}(S,C_{3},E),q_{5}(S,C_{3},E)\} & t \in [\frac{1}{2},\frac{3}{4}]\\
+\gamma_{H_{3}}(t); H_{4}=\{q_{5}(S,C_{3},E),q_{6}(S,C_{3},E),E\} & t \in [\frac{3}{4},1]
+\end{cases}
+\end{align*}
+(Do we need a quartic for correct scaling of $t$?)\\
+Note: The continuous function $\xi$ makes the topological space $A$ path-connected. Therefore it is a $path$ from $U_{m}$ to $U_{m+1}$ and intersects at least once at the unilateral limit $S \cap E$. ~\cite[6.1.3.]{Mortad}\\\\
+In order to compare the length from $[a,b] \subseteq A$ with $[a.b] \subseteq X$, we have to connect all $P_{n}, P_{n+1} \in X$ with one linear bezier spline each, because $X$ is discrete:
+\begin{align}
+\iota: \mathbb{R} \rightarrow W; t \mapsto (x,y)\\
+\iota_{X}(t) = \{ \gamma_{H}(t)\lvert H=\{P_{n},P_{n}+\frac{(P_{n+1}-P_{n})}{2},P_{n+1}; P_{n}, P_{n+1} \in X\}\}
+\end{align}
+Note: For both $W$ and $A$, the length of the curve is now independent of the choice of parameter on the curve. ~\cite[1.1]{Taimanov}\\\\
+The arc-length metric $d(a,b)$ turns both manifolds $A$ and $W$ into metric spaces $(A,d)$ and $(W,d)$. ~\cite[1.1.3]{Klingenberg}
+\begin{equation}
+d(a,b) = \int \limits _{a}^{b}\lvert \frac{\mathrm{d}}{\mathrm{d}t}\gamma(t)\rvert \mathrm{d}t\label{eq:1}
+\end{equation}
+We can now establish an injective $link$ between elements of $W$ and $A$. ($X \rightarrow A$ would be injective, $but$ $A \rightarrow X$ is not accurate):
+\begin{equation}
+link: W \rightarrow A, (x,y) \mapsto (x',y'); link^{-1}: A \rightarrow W, (x',y') \mapsto (x,y)
+\end{equation}
+
+\chapter{Computation}
+
+\section{Non-Oriented Segments}
+Auxiliary functions are functions of the form $A,B \times A,B \rightarrow \mathbb{R}$ that can be applied to any segment $[a,b] \subseteq (B,d),(A,d)$ without any constraints.\\\\
+The curve functions $ \gamma (t)$ can be interprated as $\gamma(x(t),y(t))$. The derivative in the following is meant to be the total derivative. (chain rule)
+\begin{align}
+\frac{\mathrm{d}}{\mathrm{d} t} \gamma (t) = \frac{\mathrm{d}}{\mathrm{d} t} \gamma (x(t),y(t)) = \gamma(t)* (\frac{\partial}{\partial x}  \frac{\mathrm{d} x}{\mathrm{d}t} + \frac{\partial}{\partial y} \frac{\mathrm{d} y}{\mathrm{d}t})
+\end{align}\\
+The second order total derivative. (product rule)
+\begin{align}
+\frac{\mathrm{d}^2}{\mathrm{d}t^2}\gamma(t)= \gamma(t)* (\frac{\partial^2}{\partial x^2}\frac{\mathrm{d}x}{\mathrm{d}t} + \frac{\partial}{\partial x}\frac{\mathrm{d}^2x}{\mathrm{d}t^2} + \frac{\partial^2}{\partial y^2}\frac{\mathrm{d}y}{\mathrm{d}t} + \frac{\partial}{\partial y}\frac{\mathrm{d}^2y}{\mathrm{d}t^2})
+\end{align}
+The direction of analysis $dir_{Y}$ is preserved in the sign for both straightness and curvature.
+\begin{align}
+dir = \frac{(b-a)}{\lvert b-a \rvert}
+\end{align}
+The horizontal diameter is based on the metric of $\iota_{T}$.
+\begin{equation}
+diameter_{horiz,T}(a,b)= dir \lvert \iota_{T}(b) - \iota_{T}(a) \rvert
+\end{equation}
+When the direction of analysis $dir_{Y}$ is reversed, the curve areas lie on the other side, therefore the direction flips the sign of the curve segments.
+\begin{align}
+\mu_{+}(\xi(t) -\iota_{T}(t))=\{[a,b] \subseteq A,B; \gamma(t)=\xi(t) -\iota_{T}(t) \vert \gamma(t)>0\}
+\end{align}
+Note: $\mu$ is a Lebesgue.
+
+\subsection{Affine Transformation}
+An affine transformation $M$ of a parametrised curve $\gamma_{H}$ with control points $\{h_{1},h_{2},h_{3}\} = H$ and parameter $t$:
+\begin{equation}
+transform(\gamma):
+\begin{pmatrix}
+1 & t & t^2
+\end{pmatrix}
+\underbrace{\begin{bmatrix}
+1 & 0 & 0\\
+-1 & 1 & 0\\
+0 & -1 &1
+\end{bmatrix}}_{Coefficients}
+M
+\begin{pmatrix}
+h_{1} \\
+h_{2} \\
+h_{3}
+\end{pmatrix}
+=
+\begin{pmatrix}
+h_{1}' & h_{2}' & h_{3}'
+\end{pmatrix}
+\end{equation}
+The composite $transform(\xi)$ is based on parameter $t$ and $\{H_{1}, ... ,H_{4}\}$. ~\cite[Spline\_Axioms.tex]{Stopeight}
+
+\subsection{Legal Segment}
+A legal segment is an affine transformation of the arc curve function $transform(\xi) = \xi'$, so that all $\xi'_{y}(t)$ for $\xi'_{x}(t)$ are continuous:
+\begin{align}
+a<t<b\rightarrow \xi'_{x}(a)<\xi'_{x}(t)<\xi'_{x}(b) \Leftrightarrow \iota'_{x}(a)<\iota'_{x}(t)<\iota'_{x}(b)
+\end{align}
+When:
+\begin{align}
+\xi'_{x}(a),\xi'_{y}(a), \xi'_{y}(b) = 0 \Leftrightarrow \iota'_{x}(a),\iota'_{y}(a), \iota'_{y}(b) = 0
+\end{align}
+The orientation $ori(a,b)$ of any point $a < t < b$ is the $sign(\xi'_{y}(t))$ or $sign(\iota'_{y}(t))$ after the aforementioned affine transformation.
+
+\subsection{Straightness}
+A straight line segment is determined by means of straightness.\\
+The metric allows us to take the ratio of the difference of the jitter to the straight with $P_{n},P_{n+1} \in X$. \\
+\begin{align}
+straightness_{Rel}(a,b)=\frac{\int \limits _{a}^{b} \lvert \iota_{X}'(t) \rvert \mathrm{d}t}{diameter_{horiz,T}(a,b)}
+\end{align}
+A threshold can be chosen, which makes the segment straight or bent in A.\\
+It is closely related to the curvature.
+\subsubsection{Algorithm Version}
+It is using Heron's formula for the area of a triangle in $P_{n}, P_{n+1},P_{n+2} \in [a,b] \subseteq X$.
+\begin{align*}
+\mathcal{A}=\lvert P_{i+1}-P_{i} \rvert\\
+\mathcal{B}=\lvert P_{i+2} - P_{i+1} \rvert\\
+\mathcal{C}=\lvert P_{i+2} - P_{i} \rvert\\
+\mathcal{L}=\frac{\mathcal{A}+\mathcal{B}+\mathcal{C}}{2}\\
+\mathcal{Q}=\sqrt{\mathcal{L}(\mathcal{L}-\mathcal{A})(\mathcal{L}-\mathcal{B})(\mathcal{L}-\mathcal{C})}
+\end{align*}
+to calculate the ratio of the areas in $A$ and lines in $W$.
+\begin{align}
+straightness_{Algo}(a,b)=dir \sum_{i=0}^{n+2}\frac{\mathcal{Q}}{\mathcal{A}+\mathcal{B}}
+\end{align}
+
+\subsection{Curvature}
+Curvature is determined by the ratio of Area to Diameter.
+\begin{align}
+curvature_{Rel}(a,b) = \frac{\int \limits _{a}^{b} \lvert \xi'(t) \rvert \mathrm{d}t}{diameter_{horiz,T}(a,b)}
+\end{align}
+\subsubsection{Algorithm Version}
+The sum of the pieces in the legal segment [a,b] with $P_{n}, P_{n+1} \in [a,b] \subseteq X$.
+\begin{align}
+curvature_{Algo}(a,b)= dir \frac{\sum \limits _{i=0}^{n}y(P_{i})*(x(P_{i+1})-x(P_{i}))}{x(P_{n+1})-x(P_{0})}
+\end{align}
+
+\subsection{Corner}
+A curvature is composed of an infinite amount of local maxima. Therefore the Corner $C$ in a section $[a,b] \subseteq W$ is.
+\begin{equation}
+C_{3} = \{C_{3} \in T_{1} \mid \max_{U}\lvert curvature(a,b) \rvert \cap (\inf_{t \in U} \lvert \frac{\mathrm{d}}{\mathrm{d}t}\gamma(t) \rvert \approx 0) \}
+\end{equation}
+The indexing corresponds to the minimal grade of the polynomial that is necessary.
+\begin{align}
+\xi_{C_{1}} : \text{Quadratic Bezier Spline}\\
+\xi_{C_{2}} : \text{Cubic Bezier Spline}\\
+\xi_{C_{3}} : \text{Quartic Bezier Spline}
+\end{align}
+Note: Except for insertion (See Straight), $C_{3},C_{0} \in Y$, but all the others $C_{1},C_{2},C_{4},... \not\in X$, because they are only found in the approximation $C_{1},C_{2},C_{4},... \in A$.\\
+(To be disclosed: Algorithms for finding lower Corner indexes from higher Corner indices $q_{2},q_{5}$, Control points inbetween $q_{1},q_{3},q_{4},q_{6}$ and the inverse.)
+
+\subsection{Turn}
+A turn $T$ is a change of sign in the orientation of the curve. In a segment $[a,b] \subseteq W$ an infinite amount of non-straight sections can be found.
+\begin{equation}
+T_{2} \subseteq \inf_{t \in U} \lvert \frac{\mathrm{d}^2}{\mathrm{d}t^2}\gamma(t) \rvert \approx 0
+\end{equation}
+
+\section*{Oriented Sections}
+Sectioning/charting functions are functions of the form $(a,b) \mapsto (a,b')$ that can be applied to certain sections $[a,b] \subseteq (B,d),(A,d)$ with constraints of computational priority. They create further sections of Turns $T$ in the transversality $Y$.
+
+\section{Non-recursive Sections}
+Non-recursive sections are not proper section types, but merely an expression of intermediate calculation and are therefore of medium computational priority (See discussion of oriented submanifolds in Compact Covers). They do induce a shift inside the Compact Cover if they're not centered.\\\\
+
+\subsection{Cliff}
+A Cliff is a section $[a,b']$. A single Cliff can have no more than the maximum $curvature(a,b)$. The maximum curvature is defined by the area of a half unit circle divided by the diameter $2r=1$. It is a part of a Spiral.
+\begin{align}
+Max_{Curve}=\frac{(\pi r^2) /2}{2r}\\
+C_{4} \ni b'
+\end{align}
+
+\subsection{Straight}
+A Straight is a segment $[a,b]$ where $straightness(a,b)$ is smaller or equal to the ratio of arc-length of one eight of a circle to its direct connecting line. This happens to coincide with the number of on curve control points for a quartic spline. It is a part of a Spike, or being used at lowest priority of computation to replace the Straight half of an $\{S,C,E\} \subset T$, or to identify a Spike with an angle of less than 90 degrees. A Corner is $inserted$.
+\begin{align}
+Max_{Straight}=\frac{\pi r / 4}{\sqrt{(\frac{r}{2})^2+(\frac{r}{2})^2}}\\
+C_{3} \ni \frac{b-a}{2}
+\end{align}
+A special case is when $card(U_{m})=2$, a Corner is inserted as well.\\\\
+Straightness is no more than what is not to be considered straight under any linear transformation of any segment.
+
+\subsection{Swing}
+A Swing is the section $[a,b']$ $\footnote{$a \in Y, b' \in A,B$ but it is not guaranteed, that $b' \in X$}$, where a legal segment $[a,b]$ is delimited by a sign change $[c,d]; c<b'<d$ under affine transformation $\xi'$. It is part of the Crest detection.\\
+\begin{align}
+\xi'(c)>0;\xi'(b')=0;\xi'(d)<0\\
+T_{2} \ni b'
+\end{align}
+The criteria, whether a segment is within a chart is ~\cite[20.7]{Loring}.
+\begin{equation}
+[a,b] \subseteq U_{m} \Rightarrow \exists  \xi'(t) - \iota_{T}'(t) >0 \land \nexists \xi'(t) - \iota_{T}'(t) \leq 0
+\end{equation}
+(both vice-versa)\\\\
+A special case is where the whole chart is flat and Straight.
+\begin{equation}
+[a,b] \subseteq U_{m} \Rightarrow \nexists \xi'(t) - \iota_{T}'(t) <0 \land \nexists \xi'(t) - \iota_{T}'(t) >0
+\end{equation}
+
+\subsection{Dune}
+A frontside Dune $[a,b',c]$ is a segment [a,b], where a Straight segment $[a,b']$ is followed by a Non-Straight segment $[b',c]; $. It is part of the Edge detection.
+\begin{align}
+straightness(a,b')\leq Max_{Straight}\\ straightness(b',c)> Max_{Straight}
+\end{align}
+
+\section{Recursive Sections}
+In the method discussed in this paper, the maximal order of the polynomials considered is quartic with restrictions, i.e. the representation is quadratic.  (The functions $q$ and the points $S,C,E$ pose a constraint on the quartic analytic form ~\cite[Spline\_CharacteristicPolynomials.nb]{Stopeight} and its inverse.)\\\\
+The following recursive subsections reveal hidden derivatives.
+\begin{equation}
+T_{2} \subseteq \inf_{t \in U} \lvert \frac{\mathrm{d}^2}{\mathrm{d}^2t}\gamma(t) \rvert \approx 0
+\end{equation}
+
+\subsection{Crest}
+A backside Crest section $[a,a']$ is an iteration of:
+\begin{enumerate}
+\item The Forward direction of analysis $dir_{Y}=1$ of a $[a,b']$ Swing, followed by 
+\item The Reverse direction of analysis $dir_{Y}=-1;[b',a]$ reveals a Backward $[b',a']$ Swing
+\item Continue iteration $[a',b']...$
+\end{enumerate}
+The breaking condition is that no more entities are being found after the second step.
+\begin{equation}
+b' \in T_{2}
+\end{equation}
+
+\subsection{Edge}
+A frontside Edge segment $[a,b']$ is an iteration of:
+\begin{enumerate}
+\item The Forward direction of analysis $dir_{Y}=1$ of a frontside Dune $[a,b',c]$
+\item The Reverse direction of analysis $dir_{Y}=-1;[b',a]$ of a frontside Dune $[b',b'',a]; b''<b<b'$ 
+\item Continue iteration $[a,b'',b']...$
+\end{enumerate}
+The breaking condition is that no more entities are being found after the second step.
+\begin{equation}
+b' \in T_{2}
+\end{equation}
+
+\subsection{Spike}
+A frontside Spike is a section $[a,b',c]$, where
+\begin{enumerate}
+\item The Forward direction of analysis $dir_{Y}=1$ reveals a frontside Edge $[a,b']$, and
+\item The Backward direction of analysis $dir_{Y}=-1$ reveals a frontside Edge $[c,b'']$ 
+\end{enumerate}
+and the $angle$ in the intersection of the extensions of the two edges is between 90 and 135 degrees.\\
+\begin{align}
+Max_{angle}=\frac{3\pi}{4}\\
+Min_{angle}=\frac{pi}{2}\\
+b' \in T_{2},C_{4}
+\end{align}
+Or 90 and 0 degrees:
+\begin{align}
+Max_{angle}=\frac{pi}{2}\\
+Min_{angle}=0\\
+b' \in T_{3}
+\end{align}
+Note: Very steep angles are likely not to be continuous when a lot of data points are available. They may be caught by Cliff detection.\\\\
+It is part of ZigZag detection.
+
+\subsection{Moustache?}
+Indicates a break or change of direction $dir_{Z}$ in Swells and Spirals $[a,b',c]$ at the most. A Spike on the other hand only leads to the creation of a ZigZag.
+\begin{equation}
+b' \in T_{3}
+\end{equation}
+Moustache is correctly handled by the backside Crest, but it would only be a $T_{2}$ if not caught by Compact Covers.
+
+\subsection*{Adjusted Differences}
+By now, we can improve the differences by setting $dom(\xi,\iota)=Crest \cup Spike \cup C_{4}$.
+
+\section{Compact Covers}
+We introduce another set of charts $\{V_{n}\} \subset Z$ which span one or more of the charts $\{U_{n}\} \subset A$.
+\subsubsection*{Open}
+\begin{align}
+A \text{ is open} \Leftrightarrow \inf_{A},\sup_{A}\in T_{0},C_{0}
+\end{align}
+In computer science there is the concept of the stream operator. This means that approximation $A$ would have to be recomputed whenever elements are added to the front or to the tail. Also it would require that a supremum arc length would have to be found from all the sections between turns $A \cap T$. It would make sense that the longest Spiral be chosen, which depends on curvature. One could also argue that the longest ZigZag with an absolute straightness of $1$ be chosen for the first center. Spreading out left and right, a mixed approach or a fully centered one could be chosen. One could also decide to interleave frontside and backside entities of the same type.
+\subsubsection*{Closed}
+\begin{align}
+A \text{ is closed} \Leftrightarrow \min_{A},\max_{A}\in T_{0},C_{0}
+\end{align}
+For the time being, the approach in this paper is a compromise. Half-open front and tail sections $\footnote{It is questionable, whether losing front/tail sections is significant for most uses}$ are obliterated and the oriented manifolds between them are never fully centered. In particular the Crests and Edges exhibit a transcendence of fractal dimension, which significantly offset the consecutive oriented functions. Even finding Swings and Edg shifts the adjacent entities. The reversal and priority of segments and sections imposes a certain rigor in programming technique. A compatible software architecture is a requirement.\\
+Nevertheless the curve can be interpreted, if a threshold in Stopeight Comparator is increased, which lowers the requirement for overlay comparison matching accuracy ($Comparator$).
+It all comes down to whether oriented submanifolds are allowed and whether the enclosing submanifolds and the whole manifold are allowed to be oriented (Causal Structure).
+
+\subsection{Spiral}
+Spiral $\supset$ Cliff $\not \supset$ Straight\\
+A Spiral section $[a,b']$ is a Cliff, where
+\begin{align}
+Max_{Spiral}=\frac{curvature(a,b)}{\{n-m\in \mathbb{N} \vert U_{m},...,U_{n} \subseteq Spiral\}}\\
+b' \in C_{4}
+\end{align}
+The Cliffs are centered outside in so that all cliffs in a spiral have the same curvature measured inward from $a,b$.
+\subsection{ZigZag}
+ZigZag $\supset$ Spike $\supset$ Straight\\\\
+Whether it is a Turn or a Corner depends on orientation of the adjacent Straights relative to each other.\\\\
+Whether angles less than 90 degree are allowed to be in the dataset is subject of definition.
+From 90 degree to 180 degree, it is not losing its orientation. A single Spike section is in this case.
+\begin{align}
+b' \in C_{4} \lor b' \in T_{2}
+\end{align}
+Below 90 degree, a single Spike section is.
+\begin{align}
+b' \in T_{3} \Rightarrow (\text{third derivative }= 0?)
+\end{align}
+\subsection{Swell}
+Swell $\supset$ Crest $\supset$ Swing $\supset$ Straight(?)\\
+A swell is centered by triplets.\\\\
+The Captain of Swing\\
+Picking up where Sisyphos left in the previous article. At the top of the hill. Waves fall in formation. The captain is steering in high seas. He is swinging the wheel off the top as the next wave builds up. As if the water could feel the magnetic disruption, the surface tension breaks up. The second peak crumbles. The engine roars up in an attempt to dig the stern deeper into the dune. It stutters and almost...\\
+The rigidity of the frame makes it tremble in a gigantic resonant groan to the impact of the third wave. To which it can not react. This is almost real-time. Hawaiians measure the wave from the back.\\
+So how many waves does it take to measure the peak?\\
+You can see the first peak from the second. But because the wave segment reacts to its environment, the second peak is only locally defined when the third peak has passed.\\
+But we are not looking at the peaks, are we?\\
+We are dealing with frequencies. The waveform starts with an upward swing. The ship is almost in a suspended state mid-air, before it starts falling into the trough after the second swing. At the foot of the third swing we can almost make out the first peak. This is when we can start finding out where we fell through:\\
+The second swing.\\
+The triplet of swings is our most accurate index for stabilising the frequencies.
+
+\subsection*{Direction}
+If the affine transformations $dir_{Y}$ are applied left to right $[a,b];a<b$, the Compact Cover $dir_{Z}$ is positive. If the direction of analysis $dir_{Y}$ is reversed $[b,a]$, it is negative. The same applies to the diameter, but it is not the analytic direction but the direction of integration $dir_{X}$.\\\\
+Summary: $X$ is original data, $A$ full approximation, $Y$ initial transversality only, $Z$ Compact Cover point transversality only.
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

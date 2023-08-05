@@ -1,0 +1,103 @@
+Visual Studio Integration
+=========================
+
+Install: Visual Studio 2015 Update 3 from `Microsoft <http://visualstudio.com>`_
+--------------------------------------------------------------------------------
+
+Common Tools for Visual C++ 2015
+
+Python Tools for Visual Studio (June 2016)
+
+Install: `Digia <http://qt.io/download-open-source/#section-2>`_
+----------------------------------------------------------------
+
+`Qt 5.7.0 MSVC <http://download.qt.io/official_releases/qt/5.7/5.7.0/qt-opensource-windows-x86-msvc2015_64-5.7.0.exe>`_
+
+msvc2015 64-bit
+
+Install: `Python Software Foundation <https://www.python.org/downloads/release/python-352/>`_
+---------------------------------------------------------------------------------------------
+
+`Python 3.5.2 x86_64 <https://www.python.org/ftp/python/3.5.2/python-3.5.2-amd64-webinstall.exe>`_
+
+Install just for me
+
+Build: Visual Studio 2015
+-------------------------
+
+Extensions and Updates, click online and search for Qt5Package
+
+In Qt5 / Qt Options Add path to Qt/Qt5.7.0/5.7/msvc2015_54
+
+From Qt5 menu in Visual studio, open
+
+Open stopeight-clibs/legacy/legacy.pro
+
+Open stopeight-clibs/legacy-wrappers/legacy-wrappers.pro
+
+Right-click legacy-wrappers project and modify two entries:
+
+Change Target Extension from .dll to .pyd
+
+Change Linker Output File extension from .dll to .pyd
+
+This should have converted the qmake project files to VS projects. Build the Debug version of the C++ projects.
+
+Install: `LLVM >= 4.0 <http://llvm.org/builds/>`_
+-------------------------------------------------
+
+`LLVM 4 x86_64 <http://llvm.org/pre-releases/win-snapshots/LLVM-4.0.0-r277442-win64.exe>`_
+
+Extract: `Boost <http://www.boost.org/users/history/version_1_61_0.html>`_
+--------------------------------------------------------------------------
+
+`Boost.MultiArray <https://sourceforge.net/projects/boost/files/boost/1.61.0/boost_1_61_0.zip>`_
+
+Clone: `amd/triSYCL <https://github.com/amd/triSYCL>`_
+------------------------------------------------------
+In Git Bash::
+
+    $ cd /path/to/where/the/sources
+
+    $ git clone https://github.com/amd/triSYCL.git
+
+Build: New Code-Base using SYCL
+-------------------------------
+
+Open stopeight-clibs/analyzer/stopeight-clibs-analyzer/stopeight-clibs-analyzer.vcxproj
+
+In Project/Properties:
+
+Change Platform to LLVM-vs2014
+
+C/C++/Language Enable Runtime Type Information (-frtti)
+
+Adjust library paths if necessary
+
+Open stopeight-clibs/analyzer-wrappers/analyzer-wrappers.pro
+
+Right-click analyzer-wrappers project and modify two entries:
+
+Change Target Extension from .dll to .pyd
+
+Change Linker Output File extension from .dll to .pyd
+
+Create: Visual Studio 2015, Python project From Existing Python Code
+--------------------------------------------------------------------
+
+Add stopeight-clibs/analyzer-wrappers/debug
+
+and stopeight-clibs/legacy-wrappers/debug to the Search path
+
+Also don't forget to add stopeight top-level directory "." to the Search path
+
+Under projects properties / Debug enable native code debugging
+
+In the same window add the following line to Environment Variables and save
+
+PATH=%PATH%;C:\\Python27\\libs;C:\\Qt\\Qt5.7.0\\5.7\\msvc2015_64\\bin;
+
+Under Python environment pip install numpy, pyqt5
+
+Try the stopeight/tests/parser.py script to parse test files with .sp extension (v0.1.0).
+Try the stopeight/util/editor/dispatch.py to test algorithms and files using the new file format (v0.1.1).

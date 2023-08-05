@@ -1,0 +1,110 @@
+Stopeight Server
+================
+
+The server is only available in the git repository. See :doc:`stopeight`
+
+It relies on SOAP for client/server communication, therefore ZSI is needed.
+
+Python 3: ZSI 2.0 release candidates don't work. Also ConfigParser is missing in Python3. Status Not working.
+
+ZSI 2.1a2 is a version that does not require PyXML anymore. Install ZSI::
+
+    $ svn checkout svn://svn.code.sf.net/p/pywebsvcs/code/trunk pywebsvcs-code
+
+Download and run in subdirectory zsi::
+
+    $ python setup.py install
+
+Storage Setups
+--------------
+
+File Storage
+............
+
+For running against a file storage, you need ZODB::
+
+    $ pip install ZODB3
+
+Tested working with version:
+
+ZODB3-3.10.5.tar.gz
+
+Run zodbTools to make a Data.fs file::
+
+    >>> from ZODB.FileStorage import FileStorage
+    >>> from stopeight.server import server_include
+    >>> FileStorage(server_include.zodb_filename)
+
+Run::
+
+    $ python -m stopeight.server.zodbTools
+
+Database
+........
+
+For running against a rails2.3 style db instead, you need elixir, SQLAlchemy, mysqlclient::
+
+    $ pip install mysqlclient Elixir SQLAlchemy==0.7.8
+
+Tested working with versions:
+
+Elixir-0.7.1.tar.gz
+
+SQLAlchemy-0.7.8.tar.gz
+
+You need to modify 3 lines of code in the server module. Change occurences of::
+
+    "from zodbTools import DBLine"
+
+to::
+
+    "from elixirTools import DBLine"
+
+And setting the database connection in stopeight.server.server_include according to your database installation. I have successfully tested MySQL. The elixir code follows the rails ActiveRecord convention.
+
+stopeight Server
+----------------
+
+To launch the server do the following from the same directory::
+
+    >>> from stopeight.server import server_soap
+    >>> server_soap.run(8888)
+
+.. automodule:: stopeight.server.server_soap
+   :members:
+
+stopeight Server: Testing it
+............................
+
+I have provided example-scripts for all of the SOAP commands::
+
+    $ cd /path/to/where/stopeight
+
+To save your first line on the server, run::
+
+    >>> from stopeight.server import client_saveLine_test
+    >>> client_saveLine_test.run()
+
+This should produce output containing the id of your newly created line.
+Store this id.
+
+To check whether an input line matches any of the reference lines, do the following::
+
+    >>> from stopeight.server import client_matchLine_test
+    >>> client_matchLine_test.run()
+
+This will return both the data and the id's that have matched your input.
+
+If you want to just retrieve the data of a reference line, you can do so by submitting the id::
+
+    >>> from stopeight.server import client_getLine_test
+    >>> client_getLine_test.run()
+
+This will return the data associated to the reference line on record.
+
+And finally, if you want to delete a reference line in the database, send the id::
+
+    >>> from stopeight.server import client_deleteLine_test
+    >>> client_deleteLine_test.run()
+
+Please refer to the code-samples for further information on how to use this from within your code.

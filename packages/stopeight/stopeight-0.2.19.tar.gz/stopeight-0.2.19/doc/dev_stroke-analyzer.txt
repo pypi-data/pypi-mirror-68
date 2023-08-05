@@ -1,0 +1,19 @@
+Stroke Analyzer
+===============
+
+Analyzing pen-strokes from a 2D input device.
+---------------------------------------------
+
+Load a file with pen-stroke test data::
+
+    >>> import stopeight.legacy
+    >>> line = stopeight.legacy.parse_file('/path/to/where/FILENAME.sp')
+    >>> print line
+
+To extract the feature points from the pen-stroke::
+
+    >>> points = stopeight.legacy.stroke_parallel(line)
+    >>> print points
+
+.. automodule:: stopeight.legacy
+   :members:

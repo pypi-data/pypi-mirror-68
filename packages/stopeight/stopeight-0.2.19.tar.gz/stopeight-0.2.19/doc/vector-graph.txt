@@ -1,0 +1,86 @@
+Grapher
+=======
+
+The continuous function within the interval.
+
+.. math::
+
+   r: t\longmapsto r(t), t \in \left[ t_{0}, t_{n} \right], t \in \mathbb{D}, n \in \mathbb{N}
+
+.. image:: _static/function_graph.svg
+   :height: 350pt
+
+These two entities are being used to construct a planar graph of consecutive vectors (Banach space).
+
+.. math::
+   t_{n}-t_{n-1}\text{: Distance between two elements in r(t)}
+.. math::
+   \alpha (t):\text{Angle between two elements in r(t)}
+
+Building the vector graph starting at origin.
+
+.. math::
+   \mathbf{v_{0}} = \begin{pmatrix}
+   0 \\
+   0
+   \end{pmatrix}
+   \quad
+   \mathbf{v_{n}} = \mathbf{v_{n-1}} + \mathbf{v}(t_{n})
+
+.. image:: _static/vector_graph.svg
+   :height: 350pt
+   
+The vector for each element of r(t) built from the rotation of all preceding element-vectors, its own angle and distance.
+
+.. math::
+   \mathbf{v}(t) = M(\int\limits_{t_{0}}^{t_{n}}\alpha(t))\mathrm{d}t \cdot \begin{pmatrix} 
+   \mathrm{d}t \\
+   0
+   \end{pmatrix}
+   \approx M(\displaystyle\sum_{t_{1}}^{t_{n}}\alpha(t)) \cdot \begin{pmatrix}
+   t_{n}-t_{n-1} \\
+   0
+   \end{pmatrix}, n \neq 0
+.. math::
+   \alpha(t) = \arctan \frac{a * r'(t)}{t} \approx \arctan \frac{a(r(t_{n})-r(t_{n-1}))}{t_{n}-t_{n-1}}, n \neq 0
+.. math::
+   M(\alpha):\text{2x2 rotation matrix of angle }\alpha
+.. math::
+   M(\alpha) = \begin{pmatrix}
+   \cos \alpha & -\sin \alpha \\
+   \sin \alpha & \cos \alpha
+   \end{pmatrix}
+
+In the example given below, for simplicity r(t) is not time-variant. Otherwise step-length could vary.
+
+.. math::
+   \Delta q=\Delta t
+
+.. image:: _static/vector_construction.svg
+   :height: 400pt
+
+Within the interval satisfying the condition,
+
+.. math::
+   q \in \left[ t_{x}, t_{y} \right], k * \Delta q=t_{n}-t_{n-1}, k \in \mathbb{N}, k \neq 0
+
+the scaling factor using the arithmetic mean of changes in value of r(t) is.
+
+.. math::
+   a = \frac{1}{\frac{\int\limits_{t_{x}}^{t_{y}}\left|r'(q)\right|\mathrm{d}q}{\frac{t_{y}-t_{x}}{t}}} \approx \frac{1}{\frac{\displaystyle\sum_{t_{x}}^{t_{y}}\left|r(t_{y})-r(t_{y-1})\right|}{\frac{t_{y}-t_{x}}{t_{n}-t_{n-1}}}}, n \neq 0
+   \quad
+   a \in \mathbb{R}
+
+A different scaling factor can be chosen. The criteria for choosing a scaling factor is whether the shortest impulse in the non time-variant function r(q) forms a distinguishable shape in the planar graph.
+
+This would be something similar to the above vector graph using a different factor.
+
+.. image:: _static/vector_graph2.svg
+   :height: 350pt
+
+And something similar using an even bigger factor.
+
+.. image:: _static/vector_graph3.svg
+   :height: 300pt
+
+Once the vector graph has been calculated, it can be used as input for the Analyzer.

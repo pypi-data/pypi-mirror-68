@@ -1,0 +1,45 @@
+Operating Systems
+-----------------
+
+Windows 64-Bit
+^^^^^^^^^^^^^^
+
+Installing 64-Bit Python (version 2.7.3) in a 64-Bit Windows Environment is not recommended if you intend to install packages that require to be built natively.
+The build scripts require cl.exe which can only be found in Windows XP and 2003, read:
+
+http://msdn.microsoft.com/en-us/library/9s7c9wdw(v=vs.80).aspx
+
+Also you need to download Windows SDK (=7.1) and Visual Studio C++ Express 2008 to get a 100% 64bit toolchain:
+
+http://mattptr.net/2010/07/28/building-python-extensions-in-a-modern-windows-environment/
+
+The standard setuptools installer is also not working, you need to download the ez_setup.py script from:
+
+http://packages.python.org/an_example_pypi_project/setuptools.html
+
+According to the article above using Mingw can also be problematic.
+
+Windows 32-Bit
+^^^^^^^^^^^^^^
+
+If you choose to use the 32-Bit Python you should be able to fetch precompiled packages using easy_setup and pip, however this has not been tested.
+
+A general guide on installing Python binaries with screenshots can be found here:
+
+http://www.stat.ucla.edu/~rosario/classes/07F/202a/python/index.html
+
+
+Mac OSX
+^^^^^^^
+
+If you are using OSX Lion you have to download the Command Line Tools from the 'Apple Developer site <http://developer.apple.com>' to get a working compiler.
+In OSX Mountain Lion you should be able to download them from within the Xcode Preferences.
+
+Linux or BSD
+^^^^^^^^^^^^
+
+I have tested installing all of the dependencies from within Ubuntu 12.04 and Gentoo (March 2012) repositories.
+
+Usually they have more up-to date packages with bug-fixes which should be preferred over the pip/easy_setup packages.
+
+The dependencies should compile and install out-of-the box within a few minutes.

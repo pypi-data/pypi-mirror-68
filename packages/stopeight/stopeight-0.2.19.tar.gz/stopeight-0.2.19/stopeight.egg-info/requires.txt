@@ -1,0 +1,5 @@
+numpy<1.17.0
+future
+funcsigs
+matplotlib<3.0
+pybind11>=2.4
