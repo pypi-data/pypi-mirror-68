@@ -1,0 +1,11 @@
+facecast_io/__init__.py,sha256=lJmjbOa2rsjOjgxcJ9WcC_3EVaSB2lMFLqdRaMkt4WY,126
+facecast_io/api.py,sha256=8fTWoP-Eo6JcDA4S7hhxupMVnS33XH8nya3ucHAIXP4,4070
+facecast_io/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+facecast_io/core/entities.py,sha256=EWmbh2JXwkwD9mLitS4cT6jBSHvAhA8RArRhedaHxbg,2345
+facecast_io/core/server_connector.py,sha256=CxeYSjVCbboxI32t-Xv0s2X5Q9EifJ9_ItmyRe_aLP4,11451
+facecast_io/logger_setup.py,sha256=J4cMKcIe9tV8oBzBD31Mf3tLTGIu_GqeFmjkuBcLnTY,1067
+facecast_io/models.py,sha256=i4lpvmAj1tVfL4XRq4jUvGMWW1vNsBhbyMwO0i2PwE4,6523
+facecast_io/utils.py,sha256=uTQ5-rc2GG1LK9hE7-wbFkDv0Os1ZRLP2lj9UzzERts,483
+facecast_io-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+facecast_io-0.2.0.dist-info/METADATA,sha256=fg2_WNb8bX1dXqwv2v4WeCQhF81JwuvW1EyTzO_Vk4c,510
+facecast_io-0.2.0.dist-info/RECORD,,
