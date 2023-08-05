@@ -1,0 +1,3 @@
+[console_scripts]
+zacc=zuora_aqua_client_cli.cli:cli
+
