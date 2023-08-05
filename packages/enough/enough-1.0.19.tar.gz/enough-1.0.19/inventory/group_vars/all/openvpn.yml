@@ -1,0 +1,13 @@
+---
+#
+# Directory where the client certificates are stored
+#
+openvpn_local_directory: "{{ enough_domain_config_directory }}/openvpn"
+#
+# List of active openvpn clients
+#
+#openvpn_active_clients: []
+#
+# List of retired openvpn clients
+#
+#openvpn_retired_clients: []

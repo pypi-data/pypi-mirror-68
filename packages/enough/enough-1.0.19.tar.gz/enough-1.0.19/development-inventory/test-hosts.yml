@@ -1,0 +1,41 @@
+---
+all-hosts:
+  hosts:
+    # infrastructure
+    infrastructure1-host:
+    infrastructure2-host:
+    infrastructure3-host:
+    # bind
+    external-host:
+    bind-client-host:
+    # certificate
+    ownca-host:
+    owncanotweb-host:
+    letsencryptstaging-host:
+    client-host:
+    # openvpn
+    openvpnclient-host:
+    # misc
+    debian-host:
+    # backup
+    pet-host:
+
+firewall_web_server_group:
+  hosts:
+    # certificate
+    ownca-host:
+    owncanotweb-host:
+    letsencryptstaging-host:
+    client-host:
+    bind-host:
+    # wekan
+    wekan-host:
+
+wekan-service-group:
+  hosts:
+    wekan-host:
+
+pets:
+  hosts:
+    # backup
+    pet-host:

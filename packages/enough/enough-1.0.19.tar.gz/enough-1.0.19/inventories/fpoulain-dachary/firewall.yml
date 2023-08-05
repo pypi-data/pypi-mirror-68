@@ -1,0 +1,4 @@
+firewall_web_server_group:
+  hosts:
+    wereport-host:
+    cloud-host:
