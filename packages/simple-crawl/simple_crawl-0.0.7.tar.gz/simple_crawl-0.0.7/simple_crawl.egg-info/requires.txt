@@ -1,0 +1,6 @@
+requests
+DecryptLogin
+cleancc
+lxml
+beautifulsoup4
+pymysql
