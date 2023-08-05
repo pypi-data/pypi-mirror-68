@@ -1,0 +1,8 @@
+dh_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dh_utils/tei.py,sha256=wWMyiww6MPYMCjvmJcF7l6gq5ZKa0_abNAQ5d4QFAKE,1555
+dh_utils/unicode.py,sha256=mEQShDUATegR-ZdOQHRfQbiQ8Bu0au_aDoGhkAvCJuM,565
+dh_utils-0.1.1.dist-info/LICENSE,sha256=IIx1gN6AJtk7EuXZNUleMG6XezCha8uQrivlrWVcRT4,1073
+dh_utils-0.1.1.dist-info/METADATA,sha256=iHAl9YwEA2GAj7aBtt3keEmv0EX9fa9Q4a89r1alvH0,1431
+dh_utils-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dh_utils-0.1.1.dist-info/top_level.txt,sha256=OFzV_Sg6oKm9F0Dy8EWGFwdW12DXJ8B221PEKhs2luU,9
+dh_utils-0.1.1.dist-info/RECORD,,
