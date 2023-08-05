@@ -1,0 +1,4 @@
+pyyaml
+
+[:sys_platform == "darwin"]
+dmgbuild

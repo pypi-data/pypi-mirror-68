@@ -1,0 +1,9 @@
+Source: ${PACKAGE}
+Maintainer: ${MAINTAINER} <${EMAIL}>
+
+Package: ${PACKAGE}
+Priority: optional
+Architecture: ${MACHINE}
+Depends: ${DEPENDS}
+Description: ${TAGLINE}
+ ${DESCRIPTION}
