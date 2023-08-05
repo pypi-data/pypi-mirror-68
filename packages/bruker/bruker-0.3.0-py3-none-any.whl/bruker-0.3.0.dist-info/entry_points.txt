@@ -1,0 +1,4 @@
+[console_scripts]
+brk-backup = brkraw.scripts.brk_backup:main
+brkraw = brkraw.scripts.brkraw:main
+

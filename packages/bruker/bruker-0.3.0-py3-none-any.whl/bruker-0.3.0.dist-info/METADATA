@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bruker
+Version: 0.3.0
+Summary: Bruker PvDataset Loader
+Home-page: https://github.com/dvm-shlee/bruker
+Author: SungHo Lee
+Author-email: shlee@unc.edu
+License: GNLv3
+Keywords: bruker data_handler converter administrator_tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >3.5, <3.8
+Requires-Dist: slfmri (>=0.0.1)
+Requires-Dist: pillow (>=7.1.1)
+Requires-Dist: tqdm (>=4.45.0)
+Requires-Dist: openpyxl (>=3.0.3)
+Requires-Dist: xlrd (>=1.0.0)
+
+UNKNOWN
+
+
