@@ -1,0 +1,10 @@
+vertool/__init__.py,sha256=nhyQjMndv5bTeMlsWveZ6FKZIkCdNJHhwpjfkRKgQY8,110
+vertool/__main__.py,sha256=CjcqdS_M9xsn6GjtaBxFWnVZpV6pDKlSthS-L1jtoBU,223
+vertool/versioning.py,sha256=crzWoH469O1txTMzt2rNKeT4QRnVgrYXFHir7UWpco4,2773
+vertool-1.1.1.data/scripts/__main__.py,sha256=CjcqdS_M9xsn6GjtaBxFWnVZpV6pDKlSthS-L1jtoBU,223
+vertool-1.1.1.dist-info/LICENSE,sha256=Pl_wfpoUg-uAaWWLUaaGBVMrlBjV3sh_gCtokZNSCUM,1080
+vertool-1.1.1.dist-info/METADATA,sha256=P9n5QJmWCLgXO1HsZ90UMXoNHWT_8AHvuxZOMefslNs,2730
+vertool-1.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+vertool-1.1.1.dist-info/entry_points.txt,sha256=NaVu00b9bY8qAs96H6fE2EN6ltq_hFCuuCKvQIKWzLQ,51
+vertool-1.1.1.dist-info/top_level.txt,sha256=01rMeQHC7kjnF0PCB_iQumiD-t5o58mJ5FVD7GzfgQ0,8
+vertool-1.1.1.dist-info/RECORD,,
