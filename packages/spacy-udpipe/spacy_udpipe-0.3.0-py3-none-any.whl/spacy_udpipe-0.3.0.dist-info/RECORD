@@ -1,0 +1,11 @@
+spacy_udpipe/__init__.py,sha256=FH3PdDWsUJSguYGw29pEuX3xF7TbQ7X5mCOwFlQip90,194
+spacy_udpipe/language.py,sha256=RKyRrsTyMOU5auSlAC7RCkaia5j9LANq1bxocmIcPVs,9612
+spacy_udpipe/languages.json,sha256=-CCB8ExZitANMlAA8R2F2SlSRbdIlk67yE93ArucADI,5846
+spacy_udpipe/udpipe.py,sha256=zkbj8f-Y5097JQSZiyZGp58ujvpPTInj4bXjzSL5b1E,8380
+spacy_udpipe/utils.py,sha256=HcxX8uZ4VRIbXHmYu4Ee3Hj0Rv55P4dLSfm4AowXT_k,2454
+spacy_udpipe-0.3.0.dist-info/LICENSE,sha256=Qqc9iU-PubD0QU2uH0nCO9v5w2P7kBuzpEH2w8uw8uo,1115
+spacy_udpipe-0.3.0.dist-info/METADATA,sha256=tS-CTZ-UV-P_E6OpArYLwwQLXDp0oU4NtSCf1RL4YSA,6250
+spacy_udpipe-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+spacy_udpipe-0.3.0.dist-info/entry_points.txt,sha256=W8xtpnTf5hFe7Kg35dmJJE_goTUy3k87sgaeDMFDk00,2468
+spacy_udpipe-0.3.0.dist-info/top_level.txt,sha256=LabVdt2youeJzA7yDRyzKaAmfO-6x0VgjyWD7nq9e6g,13
+spacy_udpipe-0.3.0.dist-info/RECORD,,
