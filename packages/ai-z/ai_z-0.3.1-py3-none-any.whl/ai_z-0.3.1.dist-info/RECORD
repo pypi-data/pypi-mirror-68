@@ -1,0 +1,12 @@
+ai_z-0.3.1.data/scripts/ai-z,sha256=BdjgYf71NTeIwR_cC88AnQfVl2wFoKerYw128vtiu7A,203
+aiz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiz/aiz.py,sha256=kKieAcv93_ZmnN0JqhfOWCkhZC8f2-I4qiyNyN11fO0,1698
+aiz/cpu.py,sha256=jUx9s88m-4-p_xa9kyy0v3B0ImUT7krEzWOf4zfS58s,999
+aiz/gpu_amd.py,sha256=ssroKlZOdDBhWrW7-iH6Av6SuZUrisGhuK3T4JsUjLE,15882
+aiz/gpu_nvidia.py,sha256=kUcP3WA4JdRnAin82EpV0iBSiXxNMg9pLzfXRAoyLj0,1796
+aiz/hwinfo.py,sha256=rI1jyeLR0VEhF6ljnAjAB7mCjYiRbtxLoqcJxiCLUX8,3443
+ai_z-0.3.1.dist-info/LICENSE,sha256=HK76ffqBUugwSjYWwEg-g3fhxeMOxFFzF_vEeKoLITk,1072
+ai_z-0.3.1.dist-info/METADATA,sha256=8v9_buk_KhHHYBpoX_n7gKGq2SKBm0--cJEa13uxsRc,949
+ai_z-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ai_z-0.3.1.dist-info/top_level.txt,sha256=xP2naPJtx2fY4x6w_gatYCHzGEvjTdICXGRxZGUF-QI,4
+ai_z-0.3.1.dist-info/RECORD,,
