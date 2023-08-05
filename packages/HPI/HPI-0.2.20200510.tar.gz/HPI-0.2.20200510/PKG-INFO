@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: HPI
+Version: 0.2.20200510
+Summary: A Python interface to my life
+Home-page: https://github.com/karlicoss/HPI
+Author: Dmitrii Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: testing
+Provides-Extra: optional
