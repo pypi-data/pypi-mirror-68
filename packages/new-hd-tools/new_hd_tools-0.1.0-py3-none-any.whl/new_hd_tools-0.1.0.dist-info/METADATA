@@ -1,0 +1,31 @@
+Metadata-Version: 2.0
+Name: new-hd-tools
+Version: 0.1.0
+Summary: HD wallet Tools.
+Home-page: https://github.com/pschy/new_hd_tools
+Author: pschy
+Author-email: cj82@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: base58 (==1.0.3)
+Requires-Dist: base58check (==1.0.2)
+Requires-Dist: eth-utils (==1.7.0)
+Requires-Dist: pycrypto (==2.6.1)
+Requires-Dist: pycryptodome (==3.9.0)
+Requires-Dist: two1
+
+# Tools for HD wallet
+
+
+## 1. Installtion
+`
+pip install new_hd_tools
+`
+
+## 2. Usages
+`
+from new_hd_tools import hd_tools, crypto
+`
+
+
