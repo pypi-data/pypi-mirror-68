@@ -1,0 +1,69 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load i18n %}
+
+{% block browser_title %}{% blocktrans %}Assign subjects to groups{% endblocktrans %}{% endblock %}
+{% block page_title %}
+  {% blocktrans %}Assign subjects to groups{% endblocktrans %}
+{% endblock %}
+
+
+{% block content %}
+  <div class="alert info">
+    <p>
+      <i class="material-icons left">info</i>
+      {% blocktrans %}
+        You can use this form to assign subjects to groups. Please enter the exact names of the subjects as they are
+        saved in UNTIS (case-insensitive). These values are only used to match course groups while importing from MySQL.
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <div class="alert warning">
+    <p>
+      <i class="material-icons left">warning</i>
+      {% blocktrans %}
+        If there are more than 100 groups, this table will have multiple pages. That means that you must save your
+        changes on every page. <strong>Please don't change the page before you saved your changes!</strong>
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ formset.management_form }}
+
+    {% include "core/save_button.html" %}
+
+    {% include "components/pagination.html" %}
+
+    <table>
+      <tr>
+        <th>{% blocktrans %}Group{% endblocktrans %}</th>
+        <th>{% blocktrans %}Subject{% endblocktrans %}</th>
+      </tr>
+      {% for form in formset %}
+        {{ form.id }}
+        <tr>
+          <td>
+            {{ form.name }} {{ form.short_name }}
+            {{ form.name.value }} {% if form.short_name.value %}({{ form.short_name.value }}){% endif %}
+          </td>
+          <td>{{ form.untis_subject }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+
+    {% include "components/pagination.html" %}
+
+    {% include "core/save_button.html" %}
+
+    <div class="fixed-action-btn">
+      <button class="btn-floating btn-large green" type="submit">
+        <i class="large material-icons">save</i>
+      </button>
+    </div>
+  </form>
+{% endblock %}

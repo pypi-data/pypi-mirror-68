@@ -1,0 +1,43 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+
+{% load material_form i18n %}
+
+{% block browser_title %}{% blocktrans %}Import Untis data via XML{% endblocktrans %}{% endblock %}
+{% block page_title %}{% blocktrans %}Import Untis data via XML{% endblocktrans %}{% endblock %}
+
+{% block content %}
+
+  <p class="flow-text">
+    {% blocktrans %}
+      Untis provides a function for exporting all data as an XML file.
+    {% endblocktrans %}
+  </p>
+  <div class="alert warning">
+    <p>
+      <i class="material-icons left">warning</i>
+      {% blocktrans %}
+        Newly imported data will be valid as of tomorrow.
+      {% endblocktrans %}
+      {% blocktrans %}
+        The effective dates of all existing lessons will be set to end
+        today.
+      {% endblocktrans %}
+      {% blocktrans %}
+        The effective dates of all newly imported lessons will be set to
+        start tomorrow.
+      {% endblocktrans %}
+      {% blocktrans %}
+        Teachers, rooms, subjects and classes and periods will be updated in place.
+      {% endblocktrans %}
+    </p>
+  </div>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% form form=upload_form %}{% endform %}
+    {% include "core/save_button.html" with icon="import_export" caption=_("Import data") %}
+  </form>
+
+{% endblock %}
