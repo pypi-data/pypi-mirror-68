@@ -1,0 +1,10 @@
+[console_scripts]
+dbash = docker_shell.entrypoints:bash
+dcmd = docker_shell.entrypoints:cmd
+docker-shell = docker_shell.entrypoints:main
+dpowershell = docker_shell.entrypoints:powershell
+dps = docker_shell.entrypoints:powershell
+dpwsh = docker_shell.entrypoints:pwsh
+dsh = docker_shell.entrypoints:sh
+dzsh = docker_shell.entrypoints:zsh
+

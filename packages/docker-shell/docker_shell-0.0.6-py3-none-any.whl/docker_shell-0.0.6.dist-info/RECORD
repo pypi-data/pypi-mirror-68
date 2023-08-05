@@ -1,0 +1,14 @@
+docker_shell/Configuration.py,sha256=Vn0K_4lLlnwR441gUEiqUqdtLiko55Ib3FVVhhOZKC4,357
+docker_shell/DaemonSelection.py,sha256=nbkjA_f68kJNkDuiU9FzXf6boD2-CwD1whq2uwTAiys,1687
+docker_shell/DockerShell.py,sha256=BEz6QBbNV0YDFlt8wHK9n1PIwK7CHBV-yoBZ23_KNcw,4899
+docker_shell/Utility.py,sha256=etMt7YBKc-5gEPLvpoEoD6QWIjKIhboB0SiylDT0pBM,419
+docker_shell/__init__.py,sha256=w_9I-wLGyhc6Uzo6zVMtyFCPb1mXIA7uV6gAMghVAU8,96
+docker_shell/__main__.py,sha256=ACTIg5glO_M85b3fqyzVoonEEf4L77uR3xLLO0hWxs4,66
+docker_shell/entrypoints.py,sha256=uL_jgWodPpYkl-zhyWeVNloSIoLgoeJ7sXHtQJNsbwo,2233
+docker_shell-0.0.6.dist-info/LICENSE,sha256=nAjNVmuN5MFVsbeByO85SSxgFzF20oHLRxPhJ3tHiaU,1066
+docker_shell-0.0.6.dist-info/METADATA,sha256=eG06OoGNuwson1vyG4MXflf74mBuslxKnyZjh7fvY3E,7047
+docker_shell-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+docker_shell-0.0.6.dist-info/entry_points.txt,sha256=TQj7zwNEilCrskWYctEgshzQCd-k0wK4BeBH-acPMP4,338
+docker_shell-0.0.6.dist-info/top_level.txt,sha256=C7p0oBR7m8QkIv7gQq2zqqXGHCp4r6ZFe76UYd2F9K0,13
+docker_shell-0.0.6.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+docker_shell-0.0.6.dist-info/RECORD,,
