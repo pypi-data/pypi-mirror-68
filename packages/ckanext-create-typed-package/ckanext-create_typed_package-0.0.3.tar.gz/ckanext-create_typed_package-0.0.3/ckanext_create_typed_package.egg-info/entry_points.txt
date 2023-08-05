@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        create_typed_package=ckanext.create_typed_package.plugin:CreateTypedPackagePlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
