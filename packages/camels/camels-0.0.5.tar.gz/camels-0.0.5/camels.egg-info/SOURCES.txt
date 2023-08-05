@@ -1,0 +1,14 @@
+README.md
+setup.py
+camels/__init__.py
+camels/data.py
+camels/flycheck___init__.py
+camels/processing.py
+camels/pytorch.py
+camels.egg-info/PKG-INFO
+camels.egg-info/SOURCES.txt
+camels.egg-info/dependency_links.txt
+camels.egg-info/requires.txt
+camels.egg-info/top_level.txt
+test/test_download.py
+test/test_plot.py
