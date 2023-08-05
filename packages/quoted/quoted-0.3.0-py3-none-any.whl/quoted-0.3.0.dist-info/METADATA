@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: quoted
+Version: 0.3.0
+Summary: Feed your brain with the best random quotes from multiple web portals.
+Home-page: https://github.com/rcares/quoted/
+License: MIT
+Keywords: Quote,Motivation,Words,Reflect,Meditate
+Author: Rodrigo Cares
+Author-email: rcares@gmail.com
+Maintainer: Rodrigo Cares
+Maintainer-email: rcares@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: importlib-metadata (>=1.6.0,<2.0.0)
+Requires-Dist: rich (>=1.0.3,<2.0.0)
+Requires-Dist: scrapy (>=2.1.0,<3.0.0)
+Project-URL: Documentation, https://github.com/rcares/quoted/
+Project-URL: Repository, https://github.com/rcares/quoted/
+Project-URL: issues, https://github.com/rcares/quoted/issues
+Project-URL: source, https://github.com/rcares/quoted/
+Description-Content-Type: text/markdown
+
+# quoted
+
+Feed your brain with the best random quotes from multiple web portals.
+
+## Features
+
+* Multiple WEB sources
+* Rich Text
+* Argument options
+* Logs
+
+## Requirements
+
+```
+git
+python 3x
+poetry
+```
+
+## Installation
+
+### Linux/MacOS
+
+```
+$ pip install quoted
+```
+
+### Windows
+
+
+## Usage
+
+```
+$ quoted
+
+“Insanity is doing the same thing, over and over again, but expecting different results.”
+―― Narcotics Anonymous
+
+tags: humor, insanity, life, misattributed-ben-franklin, misattributed-mark-twain, misattributed-to-einstein
+link: https://www.goodreads.com/quotes/5543-insanity-is-doing-the-same-thing-over-and-over-again
+
+© goodreads
+
+Powered by quoted
+```
+## Development
+
+### Run
+
+```
+$ poetry install
+$ poetry run quoted
+```
+
+### Build
+
+```
+$ poetry build
+```
+
+The distribution packages are located in `dist` directory.
+
+### Publish
+
+```
+$ poetry publish
+```
+
+### Spiders
+
+Spider output is a list of dicts with the structure:
+```
+[
+    {
+        'author': 'Author Name',
+        'text': 'Text of Quote',
+        'tags': ['tag1','tag2'],
+        'url': 'https://www.quotesource.com/linktoquote'
+    }
+]
+```
+
+## Todo
+
+* Cache
+* Supports `bash` and `zsh`
+* Output formats
+
+## Contribution
+
+* File bugs, feature requests in [GitHub Issues](https://github.com/rcares/quoted/issues).
+
