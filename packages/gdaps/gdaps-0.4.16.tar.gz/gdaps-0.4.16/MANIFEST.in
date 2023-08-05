@@ -1,0 +1,8 @@
+include LICENSE.md
+include README.md
+graft gdaps/management/templates
+graft docs
+prune docs/_build
+global-exclude *.py[co]
+global-exclude .coverage
+exclude scripts
