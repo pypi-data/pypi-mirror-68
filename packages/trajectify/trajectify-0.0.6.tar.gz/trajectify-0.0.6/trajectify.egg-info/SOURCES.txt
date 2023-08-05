@@ -1,0 +1,8 @@
+README.md
+setup.py
+trajectify/__init__.py
+trajectify/trajectify_classes.py
+trajectify.egg-info/PKG-INFO
+trajectify.egg-info/SOURCES.txt
+trajectify.egg-info/dependency_links.txt
+trajectify.egg-info/top_level.txt
