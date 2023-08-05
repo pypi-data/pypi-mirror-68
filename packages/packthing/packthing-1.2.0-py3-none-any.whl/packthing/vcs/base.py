@@ -1,0 +1,45 @@
+import os
+import sys
+
+from .. import util
+
+
+class Repo:
+    def __init__(self, url, path, ref=None):
+        self.url = url
+        self.path = path
+        self.ref = "master"
+
+        if not ref == None:
+            self.ref = ref
+
+        self.version = self.set_version()
+
+        sys.stdout.write(
+            "  ( {:>10} ) {:<30} {}\n".format(self.version, self.path, self.url)
+        )
+
+    def get_version(self):
+        return self.version
+
+    def update(self):
+        if os.path.exists(self.path):
+            if self.path == ".":
+                raise OSError("Repository must be child of current directory")
+            else:
+                self.pull()
+        else:
+            self.clone()
+
+        self.checkout(self.ref)
+        self.update_externals()
+
+    def list_files(self):
+        out, err = self.filelist()
+        out = out.split("\n")
+        out.pop()  # remove empty last element
+        output = []
+        for o in out:
+            o = os.path.join(self.path, o)
+            output.append(o)
+        return output
