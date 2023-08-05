@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: py-multi-pager
+Version: 0.1.0
+Summary: Easy and fast python SNS notifier.
+Home-page: https://github.com/archdo0909/NotiPy
+Author: Doyeon Kim
+Author-email: archdo0909@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+
+# Notipy
+
+## How to use NotiPy's email system
+
+Create Note object :
+
+    my_note = note.NOTE()
+
+Select Email :
+
+    mail = my_note.Email(YOUR_EMAIL_ID, YOUR_EMAIL_PASSWORD)
+
+Set recevier's mail address, addressee, sender :
+
+    mail.recevier = "receiver_addr@gmail.com"
+    mail.message = MESSAGE
+    mail.set_from = ME
+    mail.set_to = YOU
+    mail.set_subject = SUBJECT
+
+Send email
+
+    mail.send_email()
+
+
+
+
