@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+deploy_tools.egg-info/PKG-INFO
+deploy_tools.egg-info/SOURCES.txt
+deploy_tools.egg-info/dependency_links.txt
+deploy_tools.egg-info/requires.txt
+deploy_tools.egg-info/top_level.txt
