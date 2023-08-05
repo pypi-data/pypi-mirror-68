@@ -1,0 +1,11 @@
+df_and_order/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df_and_order/df_cache.py,sha256=3seoG9lkAXa5AiC1Xn_-iikrkhkB5hT_bcWo6Xsqsfw,1514
+df_and_order/df_config.py,sha256=pdetvC5b-FzQy3GvBSYogHaOLq0edXGMLvdh3GrVeoQ,4203
+df_and_order/df_reader.py,sha256=Z-F0pT4Th2LGxqt1AANSaXDpRTxfxYhz8T5jNuWaDJQ,7700
+df_and_order/df_transform.py,sha256=BW1lUELB8qriooVwGJmtKUsqds5SWGugJ-u5qgUu_t8,2469
+df_and_order/helpers.py,sha256=LpjqJZ64mu-A85CUg-8F740Ze7aNyEFJvuEOq8VhznQ,537
+df_and_order-0.0.1.dist-info/LICENSE,sha256=cHBEqxRKEFPqckpAqvm_KwGlvmCQDHzJjRyko5QdsGE,1064
+df_and_order-0.0.1.dist-info/METADATA,sha256=xuBpxo8zpafVLjYQJorvbbV5GraUPDQ53guVncn__kk,502
+df_and_order-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+df_and_order-0.0.1.dist-info/top_level.txt,sha256=gykfEqHoaPjGekc6o0PaxnnNUlZN8cIR5YMkizyxXX4,13
+df_and_order-0.0.1.dist-info/RECORD,,
