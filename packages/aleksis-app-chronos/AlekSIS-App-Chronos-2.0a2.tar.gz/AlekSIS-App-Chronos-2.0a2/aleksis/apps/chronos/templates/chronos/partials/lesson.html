@@ -1,0 +1,92 @@
+{% load i18n %}
+
+<div style="
+        {# Display background color only if lesson is not cancelled and it is not the old room #}
+        {% if not lesson_period.get_substitution.cancelled and not lesson_period.get_substitution.cancelled_for_teachers %}
+          {% if not type.value == "room" or lesson_period.room == lesson_period.get_room or lesson_period.get_room == el %}
+            {% include "chronos/partials/subject_colour.html" with subject=lesson_period.lesson.subject %}
+          {% endif %}
+        {% endif %}
+        "
+        {# Add CSS class for sub when it's a sub #}
+     class="{% if lesson_period.get_substitution and smart %}lesson-with-sub{% endif %}"
+>
+  <p>
+    {% if lesson_period.is_hol and smart %}
+      {# Do nothing #}
+    {% elif lesson_period.get_substitution and smart %}
+      {% with sub=lesson_period.get_substitution %}
+        {# SUBSTITUTION #}
+        {% if type.value == "room" and lesson_period.room != lesson_period.get_room and lesson_period.get_room != el %}
+          {# When it's the old room, let it empty #}
+
+        {% elif sub.cancelled or sub.cancelled_for_teachers %}
+          {# When a badge (cancellation, etc.) exists, then display it with the teacher#}
+
+          {# Class or room > Display teacher #}
+          {% if type.value == "group" or type.value == "room" and lesson_period.lesson.teachers.all %}
+            {% include "chronos/partials/teachers.html" with teachers=lesson_period.lesson.teachers.all %}<br/>
+          {% endif %}
+
+          {# Badge #}
+          {% include "chronos/partials/subs/badge.html" with sub=sub %}
+
+        {% else %}
+          {# Display sub #}
+
+          {# Teacher or room > display classes #}
+          {% if type.value == "teacher" or type.value == "room" %}
+            {% include "chronos/partials/groups.html" with groups=lesson_period.lesson.groups.all %}
+          {% endif %}
+
+          {# Display teacher with tooltip #}
+          {% include "chronos/partials/subs/teachers.html" with type="substitution" el=sub %}
+
+          {# Display subject #}
+          {% include "chronos/partials/subs/subject.html" with type="substitution" el=sub %}
+
+          {# Teacher or class > display room #}
+          {% if type.value == "teacher" or type.value == "group" %}
+            {% include "chronos/partials/subs/room.html" with type="substitution" el=sub %}
+          {% endif %}
+        {% endif %}
+
+
+        {# When it isn't a room or the old plan, then display the extra text (e. g. work orders) #}
+        {% if not lesson_period.room == lesson_period.get_room and lesson_period.get_room != el and sub.comment %}
+          <br>
+          <small>
+            <em>{{ lesson_period.get_substitution.comment }}</em>
+          </small>
+        {% endif %}
+      {% endwith %}
+
+
+    {% else %}
+      {# Normal plan #}
+
+      {# Teacher or room > Display classes #}
+      {% if type.value == "teacher" or type.value == "room" %}
+        {#                            {{ element_container.element.classes }}#}
+        {% if lesson_period.lesson.groups %}
+          {% include "chronos/partials/groups.html" with groups=lesson_period.lesson.groups.all %}
+        {% endif %}
+      {% endif %}
+
+      {# Class or room > Display teacher #}
+      {% if type.value == "room" or type.value == "group" %}
+        {% include "chronos/partials/teachers.html" with teachers=lesson_period.lesson.teachers.all %}
+      {% endif %}
+
+      {# Display subject #}
+      {% include "chronos/partials/subject.html" with subject=lesson_period.lesson.subject %}
+
+      {# Teacher or class > Display room #}
+      {% if type.value == "teacher" or type.value == "group" %}
+        {% if lesson_period.room %}
+          {% include "chronos/partials/room.html" with room=lesson_period.room %}
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  </p>
+</div>

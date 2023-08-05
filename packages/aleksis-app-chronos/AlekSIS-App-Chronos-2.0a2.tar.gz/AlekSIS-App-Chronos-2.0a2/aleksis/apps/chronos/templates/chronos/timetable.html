@@ -1,0 +1,176 @@
+{# -*- engine:django -*- #}
+
+{% extends 'core/base.html' %}
+
+{% load data_helpers static i18n %}
+
+{% block extra_head %}
+  <link rel="stylesheet" href="{% static 'css/chronos/timetable.css' %}">
+{% endblock %}
+
+{% block browser_title %}{% blocktrans %}Timetable{% endblocktrans %}{% endblock %}
+{% block content %}
+
+  {% if smart %}
+    <script type="text/javascript" src="{% static "js/helper.js" %}"></script>
+    {{ week_select|json_script:"week_select" }}
+    <script type="text/javascript" src="{% static "js/chronos/week_select.js" %}"></script>
+  {% endif %}
+
+  <div class="row no-margin">
+    <div class="col s8 m6 l8 xl9">
+      <h4>
+        {% trans "Timetable" %} <i>{{ el }}</i>
+      </h4>
+
+      {# Show class teacher and deputy class teacher #}
+      {% if type.value == "group" and el.owners.all %}
+        <h5>{% trans "Group teachers:" %}
+          {% for teacher in el.owners.all %}
+            <span data-position="bottom" class="tooltipped"
+                  data-tooltip="{{ teacher }}">
+                            <a href="{% url "timetable" "teacher" teacher.pk %}">
+                                {{ teacher.short_name }}</a></span>{% if not forloop.last %},{% endif %}
+          {% endfor %}
+        </h5>
+      {% endif %}
+    </div>
+    {# Show print button only if not on mobile #}
+    <div class="col s4 m6 l4 xl3 right align-right no-print">
+      <a class="waves-effect waves-teal btn-flat btn-flat-medium right hide-on-small-and-down" id="print">
+        <i class="material-icons center">print</i>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    {% if smart %}
+      {# Show if smart #}
+      {# Toggle button to regular and smart plan badge #}
+      <div class="row s12 m6 left">
+        <span class="badge new primary-color left smart-plan-badge">{% trans "SMART PLAN" %}</span>
+
+        <a class="waves-effect waves-light btn-flat no-print"
+           href="{% url "timetable_regular" type.value pk "regular" %}">
+          <i class="material-icons left">slideshow</i>
+          {% trans "Show regular timetable" %}
+        </a>
+      </div>
+
+      {# Week select #}
+      {% include "chronos/partials/week_select.html" with wanted_week=week %}
+
+    {% else %}
+      {# Show if regular #}
+      <a class="waves-effect waves-light btn-flat no-print"
+         href="{% url "timetable" type.value pk %}">
+        <i class="material-icons left">slideshow</i>
+        {% trans "Show SMART PLAN" %}
+      </a>
+    {% endif %}
+  </div>
+
+  {% include "core/announcements.html" with announcements=announcements show_interval=1 %}
+
+  {# show full timetable on tablets, laptops and pcs #}
+  <div class="timetable-plan hide-on-small-and-down">
+
+    {#  Week days #}
+    <div class="row">
+      <div class="col s2">
+
+      </div>
+      {# Show short weekdays on tablets #}
+      {% for weekday in weekdays_short %}
+        <div class="col s2 hide-on-large-only">
+          <div class="card timetable-title-card">
+            <div class="card-content">
+              <span class="card-title">
+                {{ weekday.name }}
+              </span>
+              {{ weekday.date }}
+              {% if weekday.holiday %}
+                <br/>{% include "chronos/partials/holiday.html" with holiday=weekday.holiday %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+
+      {# Show long weekdays elsewere #}
+      {% for weekday in weekdays %}
+        <div class="col s2 hide-on-med-only">
+          <div class="card timetable-title-card">
+            <div class="card-content">
+              <span class="card-title">
+                {{ weekday.name }}
+              </span>
+              {{ weekday.date }}
+              {% if weekday.holiday %}
+                <br/>{% include "chronos/partials/holiday.html" with holiday=weekday.holiday %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    {#  Lessons #}
+    {% for row in timetable %}
+      <div class="row">
+        <div class="col s2">
+          {% if row.type == "period" %}
+            {% include "chronos/partials/period_time.html" with period=row.period periods=periods %}
+          {% endif %}
+        </div>
+
+        {% for col in row.cols %}
+          {# A lesson #}
+          <div class="col s2">
+            {% if row.type == "period" %}
+              {% include "chronos/partials/elements.html" with elements=col %}
+            {% else %}
+              {% include "chronos/partials/supervision.html" with supervision=col %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  {# show 5 seperate ones on mobiles #}
+  <div class="timetable-plan hide-on-med-and-up">
+    {% for weekday in weekdays %}
+      <div class="card timetable-mobile-title-card">
+        <div class="card-content">
+          <span class="card-title">
+            {{ weekday.name }}
+          </span>
+          {{ weekday.date }}
+          {% if weekday.holiday %}
+            <br/>{% include "chronos/partials/holiday.html" with holiday=weekday.holiday %}
+          {% endif %}
+        </div>
+      </div>
+      {% for row in timetable %}
+        <div class="row">
+          <div class="col s4">
+            {% include "chronos/partials/period_time.html" with period=row.period periods=periods %}
+          </div>
+
+          {% for col in row.cols %}
+            {% if forloop.counter0 == weekday.key %}
+              <div class="col s8">
+                {# A lesson #}
+                {% if row.type == "period" %}
+                  {% include "chronos/partials/elements.html" with elements=col %}
+                {% else %}
+                  {% include "chronos/partials/supervision.html" with supervision=col %}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endfor %}
+    {% endfor %}
+  </div>
+{% endblock %}

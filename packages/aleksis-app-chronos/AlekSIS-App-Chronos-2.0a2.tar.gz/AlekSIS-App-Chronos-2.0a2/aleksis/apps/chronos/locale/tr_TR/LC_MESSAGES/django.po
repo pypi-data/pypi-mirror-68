@@ -1,0 +1,499 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-04 15:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: forms.py:29
+msgid "Options for timetables"
+msgstr ""
+
+#: menus.py:6
+msgid "Timetables"
+msgstr ""
+
+#: menus.py:16 templates/chronos/my_timetable.html:11
+#: templates/chronos/my_timetable.html:18
+msgid "My timetable"
+msgstr ""
+
+#: menus.py:27 templates/chronos/all.html:11 templates/chronos/all.html:12
+msgid "All timetables"
+msgstr ""
+
+#: menus.py:38
+msgid "Daily lessons"
+msgstr ""
+
+#: menus.py:49 templates/chronos/substitutions.html:11
+#: templates/chronos/substitutions.html:17
+#: templates/chronos/substitutions_print.html:12
+#: templates/chronos/substitutions_print.html:17
+msgid "Substitutions"
+msgstr ""
+
+#: model_extensions.py:89
+msgid "Show announcement in timetable views?"
+msgstr ""
+
+#: models.py:45
+msgid "Week day"
+msgstr ""
+
+#: models.py:46
+msgid "Number of period"
+msgstr ""
+
+#: models.py:48
+msgid "Start time"
+msgstr ""
+
+#: models.py:49
+msgid "End time"
+msgstr ""
+
+#: models.py:144 models.py:277 models.py:732
+msgid "Time period"
+msgstr ""
+
+#: models.py:145
+msgid "Time periods"
+msgstr ""
+
+#: models.py:149 models.py:165 models.py:375 models.py:531 models.py:546
+msgid "Short name"
+msgstr ""
+
+#: models.py:150 models.py:166 models.py:532 models.py:547
+msgid "Long name"
+msgstr ""
+
+#: models.py:152
+msgid "Foreground colour"
+msgstr ""
+
+#: models.py:153
+msgid "Background colour"
+msgstr ""
+
+#: models.py:160 models.py:179 models.py:224 models.py:739
+#: templates/chronos/substitutions.html:46
+#: templates/chronos/substitutions_print.html:29
+msgid "Subject"
+msgstr ""
+
+#: models.py:161
+msgid "Subjects"
+msgstr ""
+
+#: models.py:173 models.py:229 models.py:281 models.py:423 models.py:748
+#: templates/chronos/substitutions.html:47
+#: templates/chronos/substitutions_print.html:30
+msgid "Room"
+msgstr ""
+
+#: models.py:174 models.py:691 templates/chronos/all.html:39
+msgid "Rooms"
+msgstr ""
+
+#: models.py:182 models.py:227 models.py:693 models.py:745 tables.py:35
+#: templates/chronos/all.html:17 templates/chronos/substitutions_print.html:28
+msgid "Teachers"
+msgstr ""
+
+#: models.py:185
+msgid "Periods"
+msgstr ""
+
+#: models.py:187 models.py:690 models.py:742 tables.py:34
+#: templates/chronos/all.html:28
+msgid "Groups"
+msgstr ""
+
+#: models.py:189 models.py:426 models.py:496 models.py:677
+msgid "Start date"
+msgstr ""
+
+#: models.py:190 models.py:427 models.py:497 models.py:678
+msgid "End date"
+msgstr ""
+
+#: models.py:205 models.py:274 models.py:463
+msgid "Lesson"
+msgstr ""
+
+#: models.py:206 templates/chronos/lessons_day.html:9
+#: templates/chronos/lessons_day.html:19
+msgid "Lessons"
+msgstr ""
+
+#: models.py:212 models.py:730
+msgid "Week"
+msgstr ""
+
+#: models.py:215 models.py:330
+msgid "Lesson period"
+msgstr ""
+
+#: models.py:231
+msgid "Cancelled?"
+msgstr ""
+
+#: models.py:233
+msgid "Cancelled for teachers?"
+msgstr ""
+
+#: models.py:236 models.py:442 models.py:483 models.py:751
+msgid "Comment"
+msgstr ""
+
+#: models.py:240
+msgid "Lessons can only be either substituted or cancelled."
+msgstr ""
+
+#: models.py:264
+msgid "Lesson substitution"
+msgstr ""
+
+#: models.py:265
+msgid "Lesson substitutions"
+msgstr ""
+
+#: models.py:331
+msgid "Lesson periods"
+msgstr ""
+
+#: models.py:370
+msgid "Timetable widget"
+msgstr ""
+
+#: models.py:371
+msgid "Timetable widgets"
+msgstr ""
+
+#: models.py:376
+msgid "Name"
+msgstr ""
+
+#: models.py:385 models.py:398
+msgid "Absence reason"
+msgstr ""
+
+#: models.py:386
+msgid "Absence reasons"
+msgstr ""
+
+#: models.py:407 models.py:617 models.py:654
+#: templates/chronos/substitutions.html:45
+msgid "Teacher"
+msgstr ""
+
+#: models.py:415
+msgid "Group"
+msgstr ""
+
+#: models.py:431 models.py:470
+msgid "Start period"
+msgstr ""
+
+#: models.py:438 models.py:477
+msgid "End period"
+msgstr ""
+
+#: models.py:452
+msgid "Unknown absence"
+msgstr ""
+
+#: models.py:457
+msgid "Absence"
+msgstr ""
+
+#: models.py:458
+msgid "Absences"
+msgstr ""
+
+#: models.py:466
+msgid "Date of exam"
+msgstr ""
+
+#: models.py:482 models.py:495 models.py:675
+msgid "Title"
+msgstr ""
+
+#: models.py:488
+msgid "Exam"
+msgstr ""
+
+#: models.py:489
+msgid "Exams"
+msgstr ""
+
+#: models.py:498
+msgid "Comments"
+msgstr ""
+
+#: models.py:526
+msgid "Holiday"
+msgstr ""
+
+#: models.py:527
+msgid "Holidays"
+msgstr ""
+
+#: models.py:541 models.py:610
+msgid "Supervision area"
+msgstr ""
+
+#: models.py:542
+msgid "Supervision areas"
+msgstr ""
+
+#: models.py:552
+msgid "Time period after break starts"
+msgstr ""
+
+#: models.py:560
+msgid "Time period before break ends"
+msgstr ""
+
+#: models.py:600 models.py:614
+msgid "Break"
+msgstr ""
+
+#: models.py:601
+msgid "Breaks"
+msgstr ""
+
+#: models.py:641 models.py:648 templates/chronos/partials/subs/subject.html:23
+#: templates/chronos/partials/supervision.html:15
+msgid "Supervision"
+msgstr ""
+
+#: models.py:642
+msgid "Supervisions"
+msgstr ""
+
+#: models.py:646
+msgid "Date"
+msgstr ""
+
+#: models.py:666
+msgid "Supervision substitution"
+msgstr ""
+
+#: models.py:667
+msgid "Supervision substitutions"
+msgstr ""
+
+#: models.py:683
+msgid "Start time period"
+msgstr ""
+
+#: models.py:687
+msgid "End time period"
+msgstr ""
+
+#: models.py:700
+#, python-brace-format
+msgid "Event {self.pk}"
+msgstr ""
+
+#: models.py:721 templates/chronos/partials/subs/subject.html:27
+msgid "Event"
+msgstr ""
+
+#: models.py:722
+msgid "Events"
+msgstr ""
+
+#: models.py:757
+msgid "Extra lesson"
+msgstr ""
+
+#: models.py:758
+msgid "Extra lessons"
+msgstr ""
+
+#: models.py:765
+msgid "Can view all timetables"
+msgstr ""
+
+#: models.py:766
+msgid "Can view timetable overview"
+msgstr ""
+
+#: models.py:767
+msgid "Can view all lessons per day"
+msgstr ""
+
+#: preferences.py:8
+msgid "Chronos"
+msgstr ""
+
+#: preferences.py:16
+msgid "Use parent groups in timetable views"
+msgstr ""
+
+#: preferences.py:18
+msgid ""
+"If an lesson or substitution has only one group and this group has parent "
+"groups, show the parent groups instead of the original group."
+msgstr ""
+
+#: preferences.py:29
+msgid "Shorten groups in timetable views"
+msgstr ""
+
+#: preferences.py:30
+msgid "If there are more groups than the set limit, they will be collapsed."
+msgstr ""
+
+#: preferences.py:38
+msgid "Limit of groups for shortening of groups"
+msgstr ""
+
+#: preferences.py:40
+msgid ""
+"If an user activates shortening of groups,they will be collapsed if there "
+"are more groups than this limit."
+msgstr ""
+
+#: preferences.py:50
+msgid "Number of days shown on substitutions print view"
+msgstr ""
+
+#: preferences.py:58
+msgid "Show header box in substitution views"
+msgstr ""
+
+#: preferences.py:59
+msgid "The header box shows affected teachers/groups."
+msgstr ""
+
+#: tables.py:41
+msgid "Substitution"
+msgstr ""
+
+#: tables.py:43
+msgid "Manage substitution"
+msgstr ""
+
+#: templates/chronos/edit_substitution.html:6
+msgid "Edit substitution."
+msgstr ""
+
+#: templates/chronos/edit_substitution.html:7
+msgid "Edit substitution"
+msgstr ""
+
+#: templates/chronos/edit_substitution.html:20
+msgid "Delete"
+msgstr ""
+
+#: templates/chronos/my_timetable.html:19 templates/chronos/timetable.html:50
+msgid "SMART PLAN"
+msgstr ""
+
+#: templates/chronos/my_timetable.html:22
+msgid "Show week timetable for"
+msgstr ""
+
+#: templates/chronos/partials/headerbox.html:10
+msgid "Absent teachers"
+msgstr ""
+
+#: templates/chronos/partials/headerbox.html:22
+msgid "Absent groups"
+msgstr ""
+
+#: templates/chronos/partials/headerbox.html:34
+msgid "Affected teachers"
+msgstr ""
+
+#: templates/chronos/partials/headerbox.html:46
+msgid "Affected groups"
+msgstr ""
+
+#: templates/chronos/partials/subs/badge.html:4
+msgid "Cancelled"
+msgstr ""
+
+#: templates/chronos/partials/subs/badge.html:6
+msgid "Cancelled for teachers"
+msgstr ""
+
+#: templates/chronos/partials/week_select.html:14
+#: templates/chronos/partials/week_select.html:25
+#: templates/chronos/partials/week_select.html:36
+msgid "CW"
+msgstr ""
+
+#: templates/chronos/substitutions.html:48
+#: templates/chronos/substitutions_print.html:31
+msgid "Notes"
+msgstr ""
+
+#: templates/chronos/substitutions.html:56
+#: templates/chronos/substitutions_print.html:41
+msgid "No substitutions available."
+msgstr ""
+
+#: templates/chronos/substitutions_print.html:11
+msgid "Print: Substitutions"
+msgstr ""
+
+#: templates/chronos/timetable.html:11 templates/chronos/timetable.html:23
+msgid "Timetable"
+msgstr ""
+
+#: templates/chronos/timetable.html:28
+msgid "Group teachers:"
+msgstr ""
+
+#: templates/chronos/timetable.html:55
+msgid "Show regular timetable"
+msgstr ""
+
+#: templates/chronos/timetable.html:67
+msgid "Show SMART PLAN"
+msgstr ""
+
+#: templates/chronos/widget.html:8
+#, python-format
+msgid ""
+"\n"
+"        My timetable for %(day)s\n"
+"      "
+msgstr ""
+
+#: templates/chronos/widget.html:19
+msgid ""
+"\n"
+"              There is no timetable linked to your person.\n"
+"            "
+msgstr ""
+
+#: templates/chronos/widget.html:29
+msgid "Go to smart plan"
+msgstr ""
+
+#: views.py:234
+msgid "The substitution has been saved."
+msgstr ""
+
+#: views.py:255
+msgid "The substitution has been deleted."
+msgstr ""

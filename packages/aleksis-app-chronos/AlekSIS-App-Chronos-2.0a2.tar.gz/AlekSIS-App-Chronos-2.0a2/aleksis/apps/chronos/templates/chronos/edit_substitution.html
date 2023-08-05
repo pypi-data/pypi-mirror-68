@@ -1,0 +1,24 @@
+{# -*- engine:django -*- #}
+
+{% extends "core/base.html" %}
+{% load material_form i18n %}
+
+{% block browser_title %}{% blocktrans %}Edit substitution.{% endblocktrans %}{% endblock %}
+{% block page_title %}{% blocktrans %}Edit substitution{% endblocktrans %}{% endblock %}
+
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+
+    {% form form=edit_substitution_form %}{% endform %}
+
+    {% include "core/save_button.html" %}
+    {% if substitution %}
+      {# FIXME Respect year as well #}
+      <a href="{% url 'delete_substitution' substitution.lesson_period.id substitution.week %}"
+         class="btn red waves-effect waves-light">
+        <i class="material-icons left">delete</i> {% trans "Delete" %}
+      </a>
+    {% endif %}
+  </form>
+{% endblock %}
