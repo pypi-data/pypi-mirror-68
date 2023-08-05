@@ -1,0 +1,10 @@
+README.md
+setup.py
+creed/__init__.py
+creed/python.ico
+creed.egg-info/PKG-INFO
+creed.egg-info/SOURCES.txt
+creed.egg-info/dependency_links.txt
+creed.egg-info/requires.txt
+creed.egg-info/top_level.txt
+test/test.py
