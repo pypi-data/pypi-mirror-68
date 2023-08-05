@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mathx"
+version = "0.2.0"
+description = "Array handling and mathematics built on top of numpy and scipy."
+authors = ["Dane Austin <dane_austin@fastmail.com.au>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/draustin/mathx"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.18.4"
+scipy = "^1.4.1"
+numba = "^0.49.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
