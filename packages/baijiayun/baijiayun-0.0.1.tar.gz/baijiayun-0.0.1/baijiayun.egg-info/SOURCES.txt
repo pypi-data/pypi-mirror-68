@@ -1,0 +1,6 @@
+setup.py
+baijiayun.egg-info/PKG-INFO
+baijiayun.egg-info/SOURCES.txt
+baijiayun.egg-info/dependency_links.txt
+baijiayun.egg-info/not-zip-safe
+baijiayun.egg-info/top_level.txt
