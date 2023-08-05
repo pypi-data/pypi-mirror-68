@@ -1,0 +1,240 @@
+[com]:
+    des     : NRX           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0x4c000       
+    count   : 4     
+    
+    des     : RDM           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0x92000       
+    count   : 32      
+    
+    des     : BFM           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0x93000       
+    count   : 51     
+    
+    des     : ECC_DEC0           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0xc4100       
+    count   : 17     
+    
+    des     : ECC_DEC1           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0xc5100       
+    count   : 17    
+    
+    des     : ECC_DEC2           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0xc6100       
+    count   : 17   
+    
+    des     : ECC_DEC3           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0xc7100       
+    count   : 17   
+    
+    des     : RRE           
+    owner   : biao chen     
+    date    : write and read          
+    addr    : 0x43100       
+    count   : 24  
+    
+    des     : RRC           
+    owner   : biao chen     
+    date    : read          
+    addr    : 0x44100       
+    count   : 24  
+    
+    des     : RRC           
+    owner   : biao chen     
+    date    : write and read      
+    addr    : 0x45100       
+    count   : 24  
+    
+    des     : NTX           
+    owner   : biao chen     
+    date    : read      
+    addr    : 0x46100       
+    count   : 8  
+
+[var]:
+    #NRX
+    nrx_nvc2nsc_cnt = reg(0x4c004)[15:0]
+    
+    #RDM
+    rdm_gc_rd_cnt   = reg(0x92050)[31:0]
+    rdm_nrx_rd_cnt  = reg(0x92054)[31:0]
+    rdm_ftl_rd_cnt  = reg(0x92058)[31:0]
+    rdm_rre_rd_cnt  = reg(0x9205c)[31:0]
+    rdm_total_rd_cnt = var(rdm_gc_rd_cnt) + var(rdm_nrx_rd_cnt) + var(rdm_ftl_rd_cnt) + var(rdm_rre_rd_cnt)
+    rdm_2ncs_all_cnt= reg(0x92030)[7:0]
+    rdm_2ncs_era_cnt= reg(0x92030)[15:8]
+    rdm_2rrc_rd_cnt = reg(0x92040)[15:0]
+    rdm_2rre_rd_cnt = reg(0x92040)[31:16]
+    rdm_state       = reg(0x92000)[3:0]
+    rdm_2total_rd_cnt = var(rdm_2ncs_all_cnt) + var(rdm_2rrc_rd_cnt) + var(rdm_2rre_rd_cnt)
+    rdm_2ncs_rd_cnt = var(rdm_2ncs_all_cnt) - var(rdm_2ncs_era_cnt)
+    #BFM
+    bfm_gc_max     = reg(0x930bc)[31:0]
+    bfm_ftl_max    = reg(0x930c0)[31:0]
+    bfm_wrm_buf    = reg(0x930c4)[31:0]
+    bfm_wrm_base   = reg(0x930c8)[31:0]
+    bfm_wrm_cnt    = reg(0x93010)[18:0]
+    bfm_gc_cnt     = reg(0x93014)[15:0]
+    bfm_ftl_cnt    = reg(0x93018)[15:0]
+    #ECC_DEC0
+    ecc_dec0_nfc0_err = reg(0xc4100)[7:7]
+    ecc_dec0_nfc4_err = reg(0xc4104)[7:7]
+    ecc_dec0_nfc8_err = reg(0xc4108)[7:7]
+    ecc_dec0_nfcc_err = reg(0xc410c)[7:7]
+    ecc_dec1_nfc1_err = reg(0xc4100)[7:7]
+    ecc_dec1_nfc5_err = reg(0xc4104)[7:7]
+    ecc_dec1_nfc9_err = reg(0xc4108)[7:7]
+    ecc_dec1_nfcd_err = reg(0xc410c)[7:7]
+    ecc_dec2_nfc2_err = reg(0xc4100)[7:7]
+    ecc_dec2_nfc6_err = reg(0xc4104)[7:7]
+    ecc_dec2_nfca_err = reg(0xc4108)[7:7]
+    ecc_dec2_nfce_err = reg(0xc410c)[7:7]
+    ecc_dec3_nfc3_err = reg(0xc4100)[7:7]
+    ecc_dec3_nfc7_err = reg(0xc4104)[7:7]
+    ecc_dec3_nfcb_err = reg(0xc4108)[7:7]
+    ecc_dec3_nfcf_err = reg(0xc410c)[7:7]
+    ecc_dec0_nfc_err  = var(ecc_dec0_nfc0_err) | var(ecc_dec0_nfc4_err) | var(ecc_dec0_nfc8_err) | var(ecc_dec0_nfcc_err)
+    ecc_dec1_nfc_err  = var(ecc_dec1_nfc1_err) | var(ecc_dec1_nfc5_err) | var(ecc_dec1_nfc9_err) | var(ecc_dec1_nfcd_err)
+    ecc_dec2_nfc_err  = var(ecc_dec2_nfc2_err) | var(ecc_dec2_nfc6_err) | var(ecc_dec2_nfca_err) | var(ecc_dec2_nfce_err)
+    ecc_dec3_nfc_err  = var(ecc_dec3_nfc3_err) | var(ecc_dec3_nfc7_err) | var(ecc_dec3_nfcb_err) | var(ecc_dec3_nfcf_err)
+    ecc_dec0_nfc0_cnt = reg(0xc4100)[23:8]
+    ecc_dec0_nfc4_cnt = reg(0xc4104)[23:8]
+    ecc_dec0_nfc8_cnt = reg(0xc4108)[23:8]
+    ecc_dec0_nfcc_cnt = reg(0xc410c)[23:8]
+    ecc_dec1_nfc1_cnt = reg(0xc5100)[23:8]
+    ecc_dec1_nfc5_cnt = reg(0xc5104)[23:8]
+    ecc_dec1_nfc9_cnt = reg(0xc5108)[23:8]
+    ecc_dec1_nfcd_cnt = reg(0xc510c)[23:8]
+    ecc_dec2_nfc2_cnt = reg(0xc6100)[23:8]
+    ecc_dec2_nfc6_cnt = reg(0xc6104)[23:8]
+    ecc_dec2_nfca_cnt = reg(0xc6108)[23:8]
+    ecc_dec2_nfce_cnt = reg(0xc610c)[23:8]
+    ecc_dec3_nfc3_cnt = reg(0xc7100)[23:8]
+    ecc_dec3_nfc7_cnt = reg(0xc7104)[23:8]
+    ecc_dec3_nfcb_cnt = reg(0xc7108)[23:8]
+    ecc_dec3_nfcf_cnt = reg(0xc710c)[23:8]
+    rre2ecc_dec0_fc = reg(0xc4100)[12:12]
+    rre2ecc_dec1_fc = reg(0xc5104)[12:12]
+    rre2ecc_dec2_fc = reg(0xc6108)[12:12]
+    rre2ecc_dec3_fc = reg(0xc710c)[12:12]
+    ecc_dec0_nfc_cnt = (var(ecc_dec0_nfc0_cnt) + var(ecc_dec0_nfc4_cnt) + var(ecc_dec0_nfc8_cnt) + var(ecc_dec0_nfcc_cnt) + var(ecc_dec1_nfc1_cnt) + var(ecc_dec1_nfc5_cnt) + var(ecc_dec1_nfc9_cnt) + var(ecc_dec1_nfcd_cnt) + var(ecc_dec2_nfc2_cnt) + var(ecc_dec2_nfc6_cnt) + var(ecc_dec2_nfca_cnt) + var(ecc_dec2_nfce_cnt) + var(ecc_dec3_nfc3_cnt) + var(ecc_dec3_nfc7_cnt) + var(ecc_dec3_nfcb_cnt) + var(ecc_dec3_nfcf_cnt))
+    rre2ecc_fc = var(rre2ecc_dec0_fc) | var(rre2ecc_dec1_fc) | var(rre2ecc_dec2_fc) | var(rre2ecc_dec3_fc)
+    
+    #RRE
+    red_val0 = reg(0x43004)[31:0] & 0xffffffbf
+    reg(0x43004) = var(red_val0)
+    rre_fc = reg(0x43100)[31:0]
+    rre_ecc0_sop_cnt = reg(0x43104)[7:0]  
+    rre_ecc1_sop_cnt = reg(0x43104)[15:8] 
+    rre_ecc2_sop_cnt = reg(0x43104)[23:16]
+    rre_ecc3_sop_cnt = reg(0x43104)[31:24]
+    rre_ecc0_bspp_sop_cnt = reg(0x43108)[7:0]  
+    rre_ecc1_bspp_sop_cnt = reg(0x43108)[15:8] 
+    rre_ecc2_bspp_sop_cnt = reg(0x43108)[23:16]
+    rre_ecc3_bspp_sop_cnt = reg(0x43108)[31:24]
+    rre_ecc_sop_cnt  = var(rre_ecc0_sop_cnt) + var(rre_ecc1_sop_cnt) + var(rre_ecc2_sop_cnt) + var(rre_ecc3_sop_cnt)
+    rre_ecc_bspp_sop_cnt  = var(rre_ecc0_bspp_sop_cnt) + var(rre_ecc1_bspp_sop_cnt) + var(rre_ecc2_bspp_sop_cnt) + var(rre_ecc3_bspp_sop_cnt)
+    rre_rdm_sop_cnt  = reg(0x4310c)[7:0]  
+    rre_2rdm_cnt     = reg(0x4310c)[15:8] 
+    rre_2rrc_sop_cnt = reg(0x4310c)[23:16]
+    rre_total_sop_cnt = var(rre_ecc_sop_cnt) + var(rre_ecc_bspp_sop_cnt) + var(rre_rdm_sop_cnt)
+    rre_2total_sop_cnt = var(rre_2rdm_cnt) + var(rre_2rrc_sop_cnt)
+    
+    #RRC
+    rrc_fc = reg(0x44100)[15:0]
+    rrc_ncs_eop_cnt = reg(0x44104)[7:0]
+    rrc_rre_eop_cnt = reg(0x44104)[15:8]
+    rrc_rdm_eop_cnt = reg(0x44104)[23:16]
+    rrc_total_eop_cnt = var(rrc_ncs_eop_cnt) + var(rrc_rre_eop_cnt) + var(rrc_rdm_eop_cnt)
+    rrc_2gc_sop_cnt  = reg(0x44108)[7:0]
+    rrc_2gdp_sop_cnt = reg(0x44108)[15:8]
+    rrc_2ftl_sop_cnt = reg(0x44108)[23:16]
+    rrc_2rbc_sop_cnt = reg(0x44108)[31:24]
+    rrc_2total_sop_cnt = var(rrc_2gc_sop_cnt) + var(rrc_2gdp_sop_cnt) + var(rrc_2ftl_sop_cnt) + var(rrc_2rbc_sop_cnt)
+    
+    #RBC
+    red_val1 = reg(0x45010)[31:0] & 0xfffffffe
+    reg(0x45010) = var(red_val1)
+    rbc_fc = reg(0x45100)[15:0] & 0xfeff
+    rbc_wrm_eop_cnt = reg(0x45104)[11:0]
+    rbc_rrc_eop_cnt = reg(0x45104)[27:16]
+    rbc_hpi_eop_cnt = reg(0x45108)[7:0]
+    rbc_total_eop_cnt = var(rbc_wrm_eop_cnt) + var(rbc_rrc_eop_cnt) + var(rbc_hpi_eop_cnt)
+    rbc_2ntx_sop_cnt  = reg(0x45108)[23:16]
+    rbc_2spc1_sop_cnt = reg(0x45108)[31:24]
+    rbc_2total_sop_cnt = var(rbc_2ntx_sop_cnt) + var(rbc_2spc1_sop_cnt)
+    rbc_init_eop_cnt  = reg(0x4510c)[7:0]
+    rbc_nrx_eop_cnt   = reg(0x4510c)[15:8]
+    rbc_2spc0_sop_cnt = reg(0x4510c)[31:24]
+
+    #NTX
+    nvc2nsc_fc = reg(0x46100)[11:11]
+    
+    #NSC
+    nrx_nvc2nsc_cnt = reg(0x4c004)[15:0]
+    ntx_nsc2nvc_cnt = (reg(0x46108)[31:16] + reg(0x46108)[15:0]) & 0xffff
+    
+    #DEMO
+    nrx_header_crc_err_cnt = reg(0x4c008)[7:0]
+    nrx_data_crc_err_cnt = reg(0x4c008)[15:8]
+    
+    #SPC
+    rbc2spc0_cnt = reg(0x4510c)[31:24]
+    rbc2spc1_cnt = reg(0x45100)[23:16]
+    spc2nrx_cnt  = reg(0x4c004)[31:16]
+    spc2ntx_cnt  = reg(0x46108)[15:0]
+    spc_output_cnt = (var(spc2nrx_cnt)  + var(spc2ntx_cnt) ) & 0xff
+    spc_input_cnt  = (var(rbc2spc0_cnt) + var(rbc2spc1_cnt)) & 0xff
+
+[exp]:
+    #NSC
+    nrx_nvc2nsc_cnt != ntx_nsc2nvc_cnt {"NSC","NSC LOST PACKET!"} {"NSC","INFO: NVC send == NSC return"}
+    #NRX
+    #RDM
+    rdm_state & 0xf == 2    {"RDM","FTL does not ack RDM"}
+    (rdm_state & 0xf == 4) | (rdm_state & 0xf == 5)   {"RDM","GC does not ack RDM"}
+    rdm_state & 0xf != 0    {"RDM","RDM hang"}
+    (rdm_total_rd_cnt & 0xff) != (rdm_2total_rd_cnt & 0xff) {"RDM","RDM LOST READ PACKET!"}{"RDM","INFO: RDM RECIEVE == RDM SEND"}
+    #BFM
+    (bfm_gc_max & 0xffffffff) == (bfm_gc_cnt & 0xffff) {"BFM","GC bfn is empty"}{"BFM","We still have GC bfn"}
+    (bfm_wrm_base & 0xffffffff) == (bfm_wrm_cnt & 0x7ffff) {"BFM","WRM bfn is empty"}{"BFM","We still have WRM bfn"}
+    (bfm_ftl_max & 0xffffffff) == (bfm_ftl_cnt & 0xffff) {"BFM","FTL bfn is empty"}{"BFM","We still have FTL bfn"}
+    #ECC_DEC0
+    ecc_dec0_nfc_err != 0 {"SEQ","ECC_DEC0 SEQ PACKET LENGTH ERROR!"}
+    ecc_dec1_nfc_err != 0 {"SEQ","ECC_DEC1 SEQ PACKET LENGTH ERROR!"}
+    ecc_dec2_nfc_err != 0 {"SEQ","ECC_DEC2 SEQ PACKET LENGTH ERROR!"}
+    ecc_dec3_nfc_err != 0 {"SEQ","ECC_DEC3 SEQ PACKET LENGTH ERROR!"}
+    (ecc_dec0_nfc_cnt & 0xff) != (rdm_2ncs_rd_cnt & 0xff) {"SEQ","SEQ or NCS LOST READ PACKET!"}
+    rre2ecc_fc != 0 {"ECC_DEC","RRE TO ECC_DEC FC"}
+    #RRE
+    rre_fc != 0 {"RRE","RRE FC!"}
+    (rre_total_sop_cnt & 0xff) != (rre_2total_sop_cnt & 0xff) {"RRE","RRE LOST PACKET!"}
+    (ecc_dec0_nfc_cnt & 0xf) != (rre_ecc_sop_cnt + rre_ecc_bspp_sop_cnt) & 0xf {"ECC_DEC","ECC_DEC LOST READ PACKET!"}
+    (ecc_dec0_nfc_cnt & 0xff) != (rre_ecc_sop_cnt + rre_ecc_bspp_sop_cnt) & 0xff {"ECC_DEC","ECC_DEC LOST READ PACKET!"}
+    #RRC
+    (rrc_total_eop_cnt & 0xff) != (rrc_2total_sop_cnt & 0xff) {"RRC","RRC LOST READ PACKET!"}
+    #RBC
+    (rbc_total_eop_cnt & 0xff) != (rbc_2total_sop_cnt & 0xff) {"RBC","RBC LOST READ PACKET!"}
+    ((rbc_init_eop_cnt + rbc_nrx_eop_cnt) & 0xff) != (rbc_2spc0_sop_cnt & 0xff) {"RBC","RBC LOST FW READ PACKET!"}
+    #NTX
+    nvc2nsc_fc == 1 {"NTX","NVC FC!"}
+    #DEMO
+    nrx_nvc2nsc_cnt != ntx_nsc2nvc_cnt {"NRX","NSC LOST PACKET!"} {"NRX","INFO: NVC send == NSC return"}
+    nrx_header_crc_err_cnt != 0 {"NRX","NRX Frame header CRC error counter"}
+    nrx_data_crc_err_cnt != 0 {"NRX","NRX Frame data CRC error counter"}
+    #SPC
+    spc_output_cnt != spc_input_cnt {"SPC","SPC LOST PACKET!"}
