@@ -1,0 +1,12 @@
+README.md
+setup.py
+chattest/__init__.py
+chattest.egg-info/PKG-INFO
+chattest.egg-info/SOURCES.txt
+chattest.egg-info/dependency_links.txt
+chattest.egg-info/requires.txt
+chattest.egg-info/top_level.txt
+chattest/evaluation/__init__.py
+chattest/evaluation/similarity.py
+chattest/visual_tool/__init__.py
+chattest/visual_tool/compare.py

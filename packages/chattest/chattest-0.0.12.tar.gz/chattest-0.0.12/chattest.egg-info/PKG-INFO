@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: chattest
+Version: 0.0.12
+Summary: A Library for deep chat
+Home-page: https://github.com/jshmSimon/chattest
+Author: chattest contributors
+Author-email: chattest-dev@googlegroups.com
+License: MIT
+Description: # chattest
+        The implement of deep chat for test
+        
+Keywords: chat generative deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Provides-Extra: examples
