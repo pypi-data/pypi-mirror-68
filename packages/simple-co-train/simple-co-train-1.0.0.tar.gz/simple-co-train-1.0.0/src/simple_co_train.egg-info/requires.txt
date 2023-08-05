@@ -1,0 +1,4 @@
+keras
+pandas
+numpy
+scikit-learn
