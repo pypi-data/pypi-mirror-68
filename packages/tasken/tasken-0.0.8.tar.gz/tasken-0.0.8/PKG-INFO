@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: tasken
+Version: 0.0.8
+Summary: task state notify tool
+Home-page: https://github.com/ChanryLimmy/tasken
+Author: limmy
+Author-email: tianqi218@126.com
+License: MIT Licence
+Description: task state notify tool
+Platform: any
+Requires-Python: >=3.6

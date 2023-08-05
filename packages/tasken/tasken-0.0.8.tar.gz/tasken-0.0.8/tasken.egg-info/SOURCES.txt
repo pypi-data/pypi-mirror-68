@@ -1,0 +1,8 @@
+setup.py
+tasken/__init__.py
+tasken/tasken.py
+tasken.egg-info/PKG-INFO
+tasken.egg-info/SOURCES.txt
+tasken.egg-info/dependency_links.txt
+tasken.egg-info/requires.txt
+tasken.egg-info/top_level.txt
