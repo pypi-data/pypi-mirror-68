@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: vtime
+Version: 2.0.0
+Summary: Time related functions
+Home-page: https://github.com/villoro/vtime
+License: MIT
+Author: Arnau Villoro
+Author-email: arnau@villoro.com
+Maintainer: Arnau Villoro
+Maintainer-email: arnau@villoro.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/villoro/vtime
+Description-Content-Type: text/markdown
+
+# Palettes
+[![Build Status](https://travis-ci.com/villoro/v-time.svg?branch=master)](https://travis-ci.com/villoro/v-time)
+[![codecov](https://codecov.io/gh/villoro/v-time/branch/master/graph/badge.svg)](https://codecov.io/gh/villoro/v-time)
+
+Time related functions
+
+## Authors
+* [Arnau Villoro](https://villoro.com)
+
+## License
+The content of this repository is licensed under a [MIT](https://opensource.org/licenses/MIT).
+
+## Nomenclature
+Branches and commits use some prefixes to keep everything better organized.
+
+### Branches
+* **f/:** features
+* **r/:** releases
+* **h/:** hotfixs
+
+### Commits
+* **[NEW]** new features
+* **[FIX]** fixes
+* **[REF]** refactors
+* **[PYL]** [pylint](https://www.pylint.org/) improvements
+* **[TST]** tests
+
