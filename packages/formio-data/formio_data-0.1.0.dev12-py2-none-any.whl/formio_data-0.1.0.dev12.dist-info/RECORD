@@ -1,0 +1,14 @@
+formio-data/__init__.py,sha256=84vsafG_lig4Iq0X-eZRTxsUgqnMY4lODt0uy5E6HxU,171
+formio-data/builder.py,sha256=1N_GJHFxCFZOJlvrolpaBHPOeL7DC7yqODjJJSMoOKA,1942
+formio-data/components.py,sha256=rwZoNGfZJBNlpGM8VWi22F3to_voha7z6MuvYZVbuAQ,970
+formio-data/submission.py,sha256=6q5B6TW6kdfPH0h4wgRiq44Cgq1Ch-zLp1lzbnO9ZiY,1819
+formiodata/__init__.py,sha256=84vsafG_lig4Iq0X-eZRTxsUgqnMY4lODt0uy5E6HxU,171
+formiodata/builder.py,sha256=51Buzk7hohCIQX6HnNXEwjvNPOgjvgHyL8dTRHTBT50,3239
+formiodata/components.py,sha256=3QUZOmFwB-UCfeD-OCDfYpFZprfW3YR4guoEH5hIL5Y,4138
+formiodata/form.py,sha256=6zRw9e60bXNlqJ3DdWwWTu9_E6fKNPqtpiDwJ9FQhgs,1757
+formiodata/submission.py,sha256=XzQKP8rOzU7tr31obbs2PQfkSyzGYiJKsIysc5gtB2s,1830
+formio_data-0.1.0.dev12.dist-info/LICENSE,sha256=scaT1mvZKiu4i3l8LK1mz6ibgBM7Qr61pJIkymJQx4I,1066
+formio_data-0.1.0.dev12.dist-info/METADATA,sha256=WZPwnY87FxBlQXjO4KyNSmsnkXNjnHXZY98bq0eSOF8,243
+formio_data-0.1.0.dev12.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+formio_data-0.1.0.dev12.dist-info/top_level.txt,sha256=eI4gNmCkNVqV1er4jk4Ig6gQQBBO2bAkmfbt2y-iboE,11
+formio_data-0.1.0.dev12.dist-info/RECORD,,
