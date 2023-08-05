@@ -1,0 +1,15 @@
+pygame_vkeyboard/DejaVuSans.ttf,sha256=LhCKbYpijlHaAzJzr90EORDKXmuNxWGPlNCLNbGoiO4,720012
+pygame_vkeyboard/__init__.py,sha256=EaHl2a7QcpYMun31N1Mn7n8nk2baapnw3V5Y_NBAbrI,208
+pygame_vkeyboard/vkeyboard.py,sha256=ahS5ju1GPQi7uCl68OxYp8DJZM3Cc8Q9_i2ico5Snro,24740
+pygame_vkeyboard/vkeys.py,sha256=98hruVXfs6xLY5lzfQR4IOH5mTXeT5YIthCjrd79nr8,10495
+pygame_vkeyboard/vrenderers.py,sha256=ua4gL9uES8ijl2jMNC32G7Nl_WOlZ9VCzWj0m6yNjxM,13672
+pygame_vkeyboard/vtextinput.py,sha256=swaajySoV_om0ci79OYKZkQGTmDzuEMC0pMWcFXRArE,15468
+pygame_vkeyboard/examples/__init__.py,sha256=7eKzztuigjVOXDfmIr8KiNCl1bSOr1UuRYom0T6RSaA,63
+pygame_vkeyboard/examples/azerty.py,sha256=rHB_KHZfsMMkiq0cmrLgTToDWV1573gKS_7i6VIu9t0,1171
+pygame_vkeyboard/examples/numeric.py,sha256=ea9k6iacGiptpDw3f8j_RlCwSyCpZ9iBAZs8MgMgRMM,1411
+pygame_vkeyboard/examples/textinput.py,sha256=UrxbNoQi-3z5T_lemGqMdeS3r5vkEdl9GGh87oup65k,1535
+pygame_vkeyboard-2.0.6.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pygame_vkeyboard-2.0.6.dist-info/METADATA,sha256=HfUBx4BPgztvTTLkuzo6J-mKqv9cxTaw3Us-xnctvAM,7591
+pygame_vkeyboard-2.0.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pygame_vkeyboard-2.0.6.dist-info/top_level.txt,sha256=hU9JtEmzqAGdQBiB2Q8vzGmql3o73wYo43nDKJoQQII,17
+pygame_vkeyboard-2.0.6.dist-info/RECORD,,
