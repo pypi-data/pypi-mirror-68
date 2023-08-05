@@ -1,0 +1,9 @@
+multiple_permissions/__init__.py,sha256=FkzQLtTqbf_Ne1RYXmzqfKiod3s_yn96QuhN36AiVAk,34
+multiple_permissions/middlewares.py,sha256=C4B47ww7BJEV8JfmFHtQNrlfgDvKUB9MvJf4SFLioIc,1426
+multiple_permissions/permissions.py,sha256=53_FMqV4jy2CkkGbWz6QX-8hGlZ-ZcwlYKBeQkjJbwQ,602
+multiple_permissions/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+multiple_permissions-0.1.9.dist-info/LICENCE,sha256=lQ-KuAIKeFUtulVqwT8IwSfkJZ_4phYGt0Q3CBlXU0M,1069
+multiple_permissions-0.1.9.dist-info/METADATA,sha256=U2DNcH-Htk0ZOquxAvRJ4e_9t_9wg4acdXrxcd1cmmo,2647
+multiple_permissions-0.1.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+multiple_permissions-0.1.9.dist-info/top_level.txt,sha256=emShm5g5HYVHFVFBNkuJnq0_3xndHz28SZpuJ5O-QMQ,21
+multiple_permissions-0.1.9.dist-info/RECORD,,
