@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include attachment/static *
+recursive-include attachment/templates *
+recursive-include docs *
