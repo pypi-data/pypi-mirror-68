@@ -1,0 +1,58 @@
+def app(env, resp):
+ form = getformdict(env)
+ if form.get('submitted'):
+   try:
+    fname = make_graph(form.get('code'), batch=True)
+   except Exception, e:
+    resp('500 ERR', [('Content-type', 'text/plain')])
+    return [traceback.format_exc()]
+   else:
+    resp('200 OK', [('Content-type', 'image/png')])
+    return [
+  'Try values such as <pre>fri-gb;AVE</pre>',
+  '<pre>fri-gb;TSCO</pre> <pre>fri-us;DELL</pre>',
+  '<form>', 'insert code ',
+  '<input type="text" name="code"/>',
+  '<input type="submit", name="submitted",'
+  ' value="submit" />',
+  '</form>']
+
+
+def getformdict(env):
+   qs = env.get('QUERY_STRING')
+   if qs:
+       return dict((k, v[0])
+              for k, v in cgi.parse_qsl(qs))
+   else:
+       return {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+try:
+ page = getattr(root, script_name)
+except AttributeError:
+ resp('404 Not Found',[('content-type','text/plain')])
+ return lambda:['missing page %r'%script_name]
+exposed = getattr(page, 'exposed', False)
+if not exposed:
+ resp('404 Not Found',[('content-type','text/plain')])
+ return lambda : [
+  '%r is not exposed!' % script_name]
+return self.getsubpage(page, env, resp)
+

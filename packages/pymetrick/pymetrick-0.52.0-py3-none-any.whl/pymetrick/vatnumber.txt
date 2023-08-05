@@ -1,0 +1,192 @@
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      Javier
+#
+# Created:     05/11/2015
+# Copyright:   (c) Javier 2015
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+
+"""COMO CREAR CIF EUROPEOS"""
+
+""" ITALIA
+
+Come è fatto il codice fiscale
+
+Il codice fiscale è composto da 16 caratteri alfanumerici. I primi 15 contengono informazioni relative al nome, al cognome, alla data e al luogo di nascita della persona fisica secondo il seguente ordine:
+
+    3 caratteri alfabetici per il cognome
+    3 caratteri alfabetici per il nome
+    2 numeri per l'anno di nascita
+    1 carattere alfabetico per il mese di nascita
+    2 numeri per il giorno di nascita e per il sesso
+    4 caratteri alfanumerici (3 caratteri + 1 numero) per il comune italiano o lo stato estero di nascita
+
+Il sedicesimo carattere, infine, è un carattere alfabetico di controllo trovato con uno specifico algoritmo sulla base degli altri quindici.
+Carattere di controllo
+
+Il carattere di controllo viene determinato nel modo seguente:
+
+si assegnano ai caratteri in posizione dispari i corrispondenti valori contenuti nella seguente tabella:
+Carattere 	Valore 	Carattere 	Valore
+A o 0 	1 	N 	20
+B o 1 	0 	O 	11
+C o 2 	5 	P 	3
+D o 3 	7 	Q 	6
+E o 4 	9 	R 	8
+F o 5 	13 	S 	12
+G o 6 	15 	T 	14
+H o 7 	17 	U 	16
+I o 8 	19 	V 	10
+J o 9 	21 	W 	22
+K 	2 	X 	25
+L 	4 	Y 	24
+M 	18 	Z 	23
+
+si assegnano ai caratteri in posizione pari i corrispondenti valori contenuti nella seguente tabella:
+Carattere 	Valore 	Carattere 	Valore
+A o 0 	0 	N 	13
+B o 1 	1 	O 	14
+C o 2 	2 	P 	15
+D o 3 	3 	Q 	16
+E o 4 	4 	R 	17
+F o 5 	5 	S 	18
+G o 6 	6 	T 	19
+H o 7 	7 	U 	20
+I o 8 	8 	V 	21
+J o 9 	9 	W 	22
+K 	10 	X 	23
+L 	11 	Y 	24
+M 	12 	Z 	25
+
+si sommano tutti i valori così ottenuti, si divide il valore calcolato al punto precedente per 26 e si considera il resto di tale divisione in base al risultato così ottenuto si cerca il carattere di controllo nella seguente tabella:
+Numero 	Lettera 	Numero 	Lettera
+0 	A 	13 	N
+1 	B 	14 	O
+2 	C 	15 	P
+3 	D 	16 	Q
+4 	E 	17 	R
+5 	F 	18 	S
+6 	G 	19 	T
+7 	H 	20 	U
+8 	I 	21 	V
+9 	J 	22 	W
+10 	K 	23 	X
+11 	L 	24 	Y
+12 	M 	25 	Z
+
+Private Function VCFI(Entrada As String)
+' Validación del Codice Fiscale Italiano.
+Dim Letrai As String * 1
+Dim Sumtot As Integer
+Dim i As Integer
+Dim Varnum As String
+'
+' A cada letra o numero se le asigna un valor entre 0 y 25
+Dim Letras(2) As String * 26
+Dim Numeros(2) As String * 26
+Letras(0) = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" ' Valor para posicion Par
+Letras(1) = "BAKPLCQDREVOSFTGUHMINJWZYX" ' Valor para posición Impar
+Numeros(0) = "0123456789________________" ' Valor posición Par
+Numeros(1) = "10___2_3_4___5_6_7_8_9____" ' Valor posición Impar
+' El digito de control del resultado
+Const LetrasR As String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+Resfunc = "Error"
+If Len(Entrada) <> 16 Then GoTo Salir
+Varnum = UCase(RTrim$(LTrim$(Entrada)))
+'
+Sumtot = 0
+For i = 1 To 15
+Letrai = Mid$(Varnum, i, 1)
+Posicion = i Mod 2
+If InStr(1, Letras(Posicion), Letrai) <> 0 Then
+Valor = InStr(1, Letras(Posicion), Letrai) - 1
+Sumtot = Sumtot + Valor
+Else
+If InStr(1, Numeros(Posicion), Letrai) <> 0 Then
+Valor = InStr(1, Numeros(Posicion), Letrai) - 1
+Sumtot = Sumtot + Valor
+Else
+GoTo Salir
+End If
+End If
+Next i
+'
+'
+Sumtot = Sumtot Mod 26
+Sumtot = Sumtot + 1
+If Mid$(LetrasR, Sumtot, 1) = Right$(Varnum, 1) Then
+Resfunc = vbTrue
+Else
+Resfunc = vbFalse
+End If
+'
+Salir: '
+VCFI = Resfunc
+End Function
+
+
+COMO SE CALCULA CIF EUROPEO-ITALIANO
+
+L'algoritmo impiegato per calcolare la cifra di controllo è la Formula di Luhn:
+
+    Sia X la somma delle prime cinque cifre in posizione dispari
+    Sia Y la somma dei doppi delle cinque cifre in posizione pari, sottraendo 9 se il doppio della cifra è superiore a 9
+    Sia T=(X+Y) mod 10 l'unità corrispondente alla somma dei numeri sopra calcolati
+    Allora la cifra di controllo C = (10-T) mod 10
+
+Ad esempio, si vuole calcolare il codice di controllo C della Partita IVA 0764352056C:
+
+0 7 6 4 3 5 2 0 5 6 C (dove C è il codice di controllo da individuare)
+
+    X = 0+6+3+2+5 = 16 (somma delle cifre di posto dispari)
+    Y = ((2*7)-9) + 2*4 + ((2*5)-9) + 2*0 + ((2*6)-9) = 17
+    T = (16+17) mod 10 = 33 mod 10 = 3 (somma modulo 10)
+    C = (10-T) mod 10 = 7 (unità mancanti alla prima decina successiva)
+
+Pertanto il numero di partita IVA sarà 07643520567
+
+"""
+
+""" VIES EUROPEO
+
+Numeri IVA nell'Unione Europea
+Nazione 	Nome locale 	Abbreviazione 	Codice nazione 	Formato[1][2]
+Austria 	Umsatzsteuer-Identifikationsnummer 	UID 	AT 	'ATU'+8 caratteri, – es. ATU99999999
+Belgio 	BTW identificatienummer / Numéro de TVA 	n° TVA
+
+BTW-nr Mwst-nr
+	BE 	'BE'+ 9 o 10 cifre,
+Bulgaria 	???????????????? ????? ?? ???[3]
+Identifikacionen nomer po DDS
+??? ????? 	BG 	9 o 10 cifre – es. BG999999999
+Croazia 	PDV Id. Broj OIB 	PDV-ID; OIB 	HR 	11 cifre (es. HR12345678901) usando ISO 7064, MOD 11-10
+Cipro 	????µ?? ????af?? F.?.?.
+Arithmós Engraph?s phi. pi. a. 	F?? 	CY 	9 caratteri – e.g. CY99999999L
+Repubblica Ceca 	Danové identifikacní císlo 	DIC 	CZ 	'CZ'+8-10 cifre
+Danimarca 	Momsregistreringsnummer 	CVR 	DK 	8 cifre – es. DK99999999,[4] last digit is check digit[5]
+Estonia 	Käibemaksukohustuslase number 	KMKR 	EE 	9 cifre
+Finlandia 	Arvonlisäveronumero 	ALV nro 	FI 	8 cifre - es. FI99999999,[6] last digit is a check digit utilizing MOD 11-2
+Francia 	Numéro d'identification à la taxe sur la valeur ajoutée / Numéro de TVA intracommunautaire 	n° TVA 	FR
+Germania 	Umsatzsteuer-Identifikationsnummer 	USt-IdNr. 	DE 	9 cifre, es. DE999999999
+Grecia 	????µ?? ??t???? F.?.?.
+Arithmós Metr?ou Fi-Pi-A 	- 	EL 	9 cifre, ultima di controllo
+Ungheria 	Közösségi adószám 	ANUM 	HU 	8 cifre – es. HU12345678
+Irlanda 	Value added tax identification no. 	VAT no 	IE
+Lettonia 	Pievienotas vertibas nodokla (PVN) registracijas numurs 	PVN 	LV 	11 cifre
+Lituania 	PVM (abbrev. Pridetines vertes mokestis) moketojo kodas 	PVM kodas 	LT 	9 o 12 cifre
+Lussemburgo 	Numéro d'identification à la taxe sur la valeur ajoutée 	No. TVA 	LU 	8 cifre
+Malta 	Vat reg. no. 	Vat No. 	MT 	8 cifre
+Paesi Bassi 	Btw-nummer 	Btw-nr. 	NL 	'NL'+9 digits+B+2-digit company index – e.g. NL999999999B99
+Polonia 	Numer Identyfikacji Podatkowej 	NIP 	PL 	10 cifre
+Portogallo 	Número de Identificação Fiscal (NIF) - for individual persons / Número de Identificação de Pessoa Colectiva (NIPC) – for companies 	NIF or NIPC 	PT 	9 cifre
+Romania 	Codul de identificare fiscala 	CIF 	RO 	2–10 cifre; l'ultima cifra è un codice di controllo
+Slovacchia 	Identifikacné císlo pre dan z pridanej hodnoty 	IC DPH 	SK 	'SK'+10 cifre
+Slovenia 	Identifikacijska številka za DDV 	ID za DDV 	SI 	8 cifre, ultima di controllo,[7]
+Spagna 	Número de Identificación Fiscal (for freelancers) or Código de Identificación Fiscal (for companies) 	NIF / CIF 	ES 	'ES'+9 cifre, es. ESX9999999X
+Svezia 	VAT-nummer or momsnummer 	Momsnr. 	SE 	12 cifre
+Regno Unito e Isola di Man 	Value added tax registration number 	VAT Reg No 	GB
+
+"""

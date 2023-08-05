@@ -1,0 +1,142 @@
+sqlite
+
+null 	Includes any NULL values.
+integer Signed integers, stored in 1, 2, 3, 4, 6, or 8 bytes depending on the magnitude of the value.
+real 	Real numbers, or floating point values, stored as 8-byte floating point numbers.
+text 	Text strings stored using the database encoding, which can either be UTF-8, UTF-16BE or UTF-16LE.
+blob 	Any blob of data, with every blob stored exactly as it was input.
+
+mysql
+
+Numeric types:
+
+tinyint 	A very small integer. The signed range for this numeric data type is -128 to 127, while the unsigned range is 0 to 255.
+smallint 	A small integer. The signed range for this numeric type is -32768 to 32767, while the unsigned range is 0 to 65535.
+mediumint 	A medium-sized integer. The signed range for this numeric data type is -8388608 to 8388607, while the unsigned range is 0 to 16777215.
+int or integer 	A normal-sized integer. The signed range for this numeric data type is -2147483648 to 2147483647, while the unsigned range is 0 to 4294967295.
+bigint 	A large integer. The signed range for this numeric data type is -9223372036854775808 to 9223372036854775807, while the unsigned range is 0 to 18446744073709551615.
+float 	A small (single-precision) floating-point number.
+double, double precision, or real 	A normal sized (double-precision) floating-point number.
+dec, decimal, fixed, or numeric 	A packed fixed-point number. The display length of entries for this data type is defined when the column is created, and every entry adheres to that length.
+bool or boolean 	A Boolean is a data type that only has two possible values, usually either true or false.
+bit 	A bit value type for which you can specify the number of bits per value, from 1 to 64.
+
+Date and time types:
+
+date 	A date, represented as YYYY-MM-DD.
+datetime 	A timestamp showing the date and time, displayed as YYYY-MM-DD HH:MM:SS.
+timestamp 	A timestamp indicating the amount of time since the Unix epoch (00:00:00 on January 1, 1970).
+time 	A time of day, displayed as HH:MM:SS.
+year 	A year expressed in either a 2 or 4 digit format, with 4 digits being the default.
+
+String types:
+
+char 	A fixed-length string; entries of this type are padded on the right with spaces to meet the specified length when stored.
+varchar 	A string of variable length.
+binary 	Similar to the char type, but a binary byte string of a specified length rather than a nonbinary character string.
+varbinary 	Similar to the varchar type, but a binary byte string of a variable length rather than a nonbinary character string.
+blob 	A binary string with a maximum length of 65535 (2^16 - 1) bytes of data.
+tinyblob 	A blob column with a maximum length of 255 (2^8 - 1) bytes of data.
+mediumblob 	A blob column with a maximum length of 16777215 (2^24 - 1) bytes of data.
+longblob 	A blob column with a maximum length of 4294967295 (2^32 - 1) bytes of data.
+text 	A string with a maximum length of 65535 (2^16 - 1) characters.
+tinytext 	A text column with a maximum length of 255 (2^8 - 1) characters.
+mediumtext 	A text column with a maximum length of 16777215 (2^24 - 1) characters.
+longtext 	A text column with a maximum length of 4294967295 (2^32 - 1) characters.
+enum 	An enumeration, which is a string object that takes a single value from a list of values that are declared when the table is created.
+set 	Similar to an enumeration, a string object that can have zero or more values, each of which must be chosen from a list of allowed values that are specified when the table is created.
+
+
+postgresql
+
+Numeric types:
+
+bigint 	A signed 8 byte integer.
+bigserial 	An autoincrementing 8 byte integer.
+double precision 	An 8 byte double precision floating-point number.
+integer 	A signed 4 byte integer.
+numeric or decimal 	An number of selectable precision, recommended for use in cases where exactness is crucial, such as monetary amounts.
+real 	A 4 byte single precision floating-point number.
+smallint 	A signed 2 byte integer.
+smallserial 	An autoincrementing 2 byte integer.
+serial 	An autoincrementing 4 byte integer.
+
+Character types:
+
+character 	A character string with a specified fixed length.
+character varying or varchar 	A character string with a variable but limited length.
+text 	A character string of a variable, unlimited length.
+
+Date and time types:
+
+date 	A calendar date consisting of the day, month, and year.
+interval 	A time span.
+time or time without time zone 	A time of day, not including the time zone.
+time with time zone 	A time of day, including the time zone.
+timestamp or timestamp without time zone 	A date and time, not including the time zone.
+timestamp with time zone 	A date and time, including the time zone.
+
+Geometric types:
+
+box 	A rectangular box on a plane.
+circle 	A circle on a plane.
+line 	An infinite line on a plane.
+lseg 	A line segment on a plane.
+path 	A geometric path on a plane.
+point 	A geometric point on a plane.
+polygon 	A closed geometric path on a plane.
+
+Network address types:
+
+cidr 	An IPv4 or IPv6 network address.
+inet 	An IPv4 or IPv6 host address.
+macaddr 	A Media Access Control (MAC) address.
+
+Bit string types:
+
+bit 	A fixed-length bit string.
+bit varying 	A variable-length bit string.
+
+Text search types:
+
+tsquery 	A text search query.
+tsvector 	A text search document.
+
+JSON types:
+
+json 	Textual JSON data.
+jsonb 	Decomposed binary JSON data.
+
+Other data types:
+
+boolean 	A logical Boolean, representing either true or false.
+bytea 	Short for "byte array", this type is used for binary data.
+money 	An amount of currency.
+pg_lsn 	A PostgreSQL Log Sequence Number.
+txid_snapshot 	A user-level transaction ID snapshot.
+uuid 	A universally unique identifier.
+xml 	XML data.
+
+
+
+
+MySQL / MariaDB
+
+    WHERE a <=> b
+    WHERE NOT (a <=> b)
+
+PostgreSQL
+
+    WHERE a IS NOT DISTINCT FROM b
+    WHERE a IS DISTINCT FROM b
+
+SQLite
+
+    WHERE a IS b
+    WHERE a IS NOT b
+
+SQLite 	sqlite://nombrebd.db
+MySQL 	mysql://usuario:contraseña@localhost/nombrebd
+PostgreSQL 	postgres://usuario:contraseña@localhost/nombrebd
+
+
