@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+kmor.egg-info/PKG-INFO
+kmor.egg-info/SOURCES.txt
+kmor.egg-info/dependency_links.txt
+kmor.egg-info/requires.txt
+kmor.egg-info/top_level.txt
