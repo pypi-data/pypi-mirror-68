@@ -1,0 +1,3 @@
+[console_scripts]
+crwlr = crwlr.command_line:main
+
