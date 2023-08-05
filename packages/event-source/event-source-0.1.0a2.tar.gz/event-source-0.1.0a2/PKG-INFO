@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: event-source
+Version: 0.1.0a2
+Summary: W3C compliant EventSource client for Python.
+Home-page: https://github.com/overcat/event-source
+License: MIT
+Author: overcat
+Author-email: 4catcode@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Documentation, https://github.com/overcat/event-source
+Project-URL: Repository, https://github.com/overcat/event-source
+Description-Content-Type: text/x-rst
+
+
