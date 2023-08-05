@@ -1,0 +1,10 @@
+README.md
+setup.py
+certbot_dns_tencentcloud/__init__.py
+certbot_dns_tencentcloud/certbot_tencentcloud_plugins.py
+certbot_dns_tencentcloud.egg-info/PKG-INFO
+certbot_dns_tencentcloud.egg-info/SOURCES.txt
+certbot_dns_tencentcloud.egg-info/dependency_links.txt
+certbot_dns_tencentcloud.egg-info/entry_points.txt
+certbot_dns_tencentcloud.egg-info/requires.txt
+certbot_dns_tencentcloud.egg-info/top_level.txt
