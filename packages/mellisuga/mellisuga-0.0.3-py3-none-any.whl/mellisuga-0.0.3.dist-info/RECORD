@@ -1,0 +1,10 @@
+mellisuga/__init__.py,sha256=li-XChvIw0OOYrbPvLTZ5Z4TvSa7u1w8hzxNQ5WaY98,340
+mellisuga/api.py,sha256=3CKBBifBhfSQYwc5VLR0S4h7DRerL2Jr9U5mrjECG5A,2751
+mellisuga/errors.py,sha256=iK0V1eJiK2o7Xffj5UqCRIXLn6SRtehyO-GF74UI9vY,1093
+mellisuga/mellisuga.py,sha256=hwZGAvaXEUURJEohRVgDRVJWVRDX6OInZ-wnG6OEVFg,6194
+mellisuga/request.py,sha256=cqfpW8bNQDe6drJq4JXWhkUes7kCB7boE_QpEnJ4i00,1958
+mellisuga/response.py,sha256=9Kh1ctdhVZvmujRs6OUGQNjHbppfLR8VkeHLu2wlL9k,1562
+mellisuga-0.0.3.dist-info/METADATA,sha256=b0RDHhHFsybd1hPlotZm69BL_ecJnM2WFADlf25j4N8,432
+mellisuga-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mellisuga-0.0.3.dist-info/top_level.txt,sha256=QUrxidX5EhMLr2yCohlUYnzG-DkQ1D0DplihCEf7sgs,10
+mellisuga-0.0.3.dist-info/RECORD,,
