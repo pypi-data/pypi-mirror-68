@@ -1,0 +1,4 @@
+nltk
+statistics
+ChatterBot
+sklearn

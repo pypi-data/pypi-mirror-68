@@ -1,0 +1,8 @@
+include README.md LICENSE 
+include chattrainer/all_words.pickle
+include chattrainer/documents.pickle
+include chattrainer/MNB_clf.pickle
+include chattrainer/db.sqlite3
+include chattrainer/highscore.pickle
+include chattrainer/main.spec
+include chattrainer/sentence_tokenizer.pickle

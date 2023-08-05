@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+chattrainer/MNB_clf.pickle
+chattrainer/all_words.pickle
+chattrainer/chattrainer.py
+chattrainer/db.sqlite3
+chattrainer/documents.pickle
+chattrainer/highscore.pickle
+chattrainer/main.spec
+chattrainer/sentence_tokenizer.pickle
+python_chattrainer.egg-info/PKG-INFO
+python_chattrainer.egg-info/SOURCES.txt
+python_chattrainer.egg-info/dependency_links.txt
+python_chattrainer.egg-info/entry_points.txt
+python_chattrainer.egg-info/requires.txt
+python_chattrainer.egg-info/top_level.txt
