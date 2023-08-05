@@ -1,0 +1,10 @@
+koreanbots/__init__.py,sha256=iOQycyMF57gFve6o08oz1NNWXS7-X3ymKFt9lL5p06c,416
+koreanbots/client.py,sha256=fbLzaSuZV6XUAlU6IVXGdeeYFFb800Q7E20nrXoC92I,2577
+koreanbots/errors.py,sha256=D5fqa6MCj0ws2RMhzcTAL2bdL3bLaMtfQq2qmCS8iqU,1770
+koreanbots/http.py,sha256=QUMpnj284Pq6g95CQ-N1k-GJTM-j1cEqim4mzs1H4Po,4059
+koreanbots/model.py,sha256=SPL7WTlRVHvNdOoiwkJP73shLGTycb4cAE90dg6YTEs,2269
+koreanbots-0.1.0.dist-info/LICENSE,sha256=QtYHV_d-dCpx5TkkpzNvzy2N1tGlL3ps2MCfaPsxHOY,1084
+koreanbots-0.1.0.dist-info/METADATA,sha256=YC4p3WR5eCEqnEOPvUCzs6ufN9XIpdDKkFz80WEIaXQ,2023
+koreanbots-0.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+koreanbots-0.1.0.dist-info/top_level.txt,sha256=KJD9zAUhdhM8kCaAgm_ItQNCMIRwJ6-p8CutHjALyw8,11
+koreanbots-0.1.0.dist-info/RECORD,,
