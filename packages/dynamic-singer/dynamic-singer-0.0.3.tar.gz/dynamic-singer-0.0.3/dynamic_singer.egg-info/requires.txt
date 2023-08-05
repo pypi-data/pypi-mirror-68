@@ -1,0 +1,4 @@
+genson
+singer-python
+jsonschema
+herpetologist
