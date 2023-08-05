@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pyemit
+Version: 0.4.4
+Summary: 轻量级的异步消息通信，支持进程内消息通信，以及基于REDIS PUBSUB的远程消息。提供了进一步封装RPC的底层机制。
+Home-page: https://github.com/hbaaron/pyemit
+Author: Aaron Yang
+Author-email: code@jieyu.ai
+License: MIT license
+Keywords: pyemit
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: aioredis (==1.3.1)
+
+=======
+py-emit
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/pyemit.svg
+        :target: https://pypi.python.org/pypi/pyemit
+
+.. image:: https://img.shields.io/travis/jieyu-tech/pyemit.svg
+        :target: https://travis-ci.com/zillionare/pyemit
+
+.. image:: https://readthedocs.org/projects/pyemit/badge/?version=latest
+        :target: https://pyemit.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://codecov.io/gh/zillionare/pyemit/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/zillionare/pyemit
+
+
+light-weight asynchronous event system, support in-process communication, remote message server (currently redis
+ only) communication and remote procedure call (RPC).
+
+
+* Free software: MIT license
+* Documentation: https://pyemit.readthedocs.io.
+
+
+Features
+--------
+
+* asynchronous support.
+* support in-process communication
+* support remote message server (currently redis, aioredis is required)
+* RPC (Remote procedure call)
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-04-23)
+------------------
+
+* First release on PyPI.
+
+0.3.0 (2020-04-25)
+-------------------
+* RPC feature implemented
+* use pickle instead of json for serialization for better performance. Currently protocol 4 is used.
+
+0.4.0 (2020-04-30)
+-------------------
+* Change signature of `Remote.execute` to `Remote.invoke`
+
+
