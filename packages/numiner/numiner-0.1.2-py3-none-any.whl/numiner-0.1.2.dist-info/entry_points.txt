@@ -1,0 +1,4 @@
+[console_scripts]
+numiner=numiner.__main__:main
+version=numiner.__main__:get_version
+
