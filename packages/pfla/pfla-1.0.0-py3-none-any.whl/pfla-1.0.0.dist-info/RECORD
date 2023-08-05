@@ -1,0 +1,17 @@
+pfla/__init__.py,sha256=RKNw4nrdJtlfzhSeS6jnBEzVXqaqQHb84Eey9EXh-hg,234
+pfla/annotate.py,sha256=ha91gg69Il-GfBmXGmna-m-mGNDj1AAfjD-PWpElnJk,1381
+pfla/cli.py,sha256=C22nzpVjNADW517dt0ulYjJsPhkdPf4HeF3iWr_l8Tg,6757
+pfla/face_detect.py,sha256=JrcBkUG1qQvpl89ORyn_MCrPSkLS0NsB80bKPcSE4D0,964
+pfla/img_prep.py,sha256=-fWi0FKrhsmB2uYlF3rKL7xaCzhURAyujnMdXapwbp0,1802
+pfla/linear.py,sha256=ZT2AjauKlp_sn8qlOe7FxwfYPOOB7wzUtI3JsfSd5H8,1397
+pfla/logger.py,sha256=A-TZ_atTK08C_zpVTBq5ydIpWP4UHhkcwx8x2-chwZs,808
+pfla/metrics.py,sha256=aQadRXGyAF8G5A8Pnp1Lz5F4VS9pbimY1y7kcW10VGU,1967
+pfla/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pfla/tests/test_integration.py,sha256=bdZ_I-58mzW-oTLNSdUkANeotl416RRzegmZK82rYi4,3025
+pfla/tests/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pfla-1.0.0.dist-info/LICENSE.txt,sha256=BTrAp4pmCry8aVSuaxjy44mXomCazUqDDemyXv3yRiU,1059
+pfla-1.0.0.dist-info/METADATA,sha256=Op2IOXj06MZxLfzITW9lctK7MP_jBT0n8nh2PXh-_bk,4906
+pfla-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pfla-1.0.0.dist-info/entry_points.txt,sha256=34BFo4bY-mgs4Kq5kWJEZ2YNNPQUuH9qx9D0KnhCsbg,40
+pfla-1.0.0.dist-info/top_level.txt,sha256=VV9oOWnsW99QR_citMXiIgZygt7dB7AqBAQguTZIufc,5
+pfla-1.0.0.dist-info/RECORD,,
