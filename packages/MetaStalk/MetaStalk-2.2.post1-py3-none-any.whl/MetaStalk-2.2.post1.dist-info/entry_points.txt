@@ -1,0 +1,3 @@
+[console_scripts]
+metastalk = MetaStalk.main:start
+
