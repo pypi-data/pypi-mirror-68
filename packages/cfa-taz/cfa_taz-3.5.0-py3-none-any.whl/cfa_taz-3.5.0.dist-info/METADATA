@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: cfa-taz
+Version: 3.5.0
+Summary: High level API for azure
+Home-page: UNKNOWN
+Author: Christophe Fauchard
+Author-email: christophe.fauchard@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: azure-keyvault-secrets (>=4.1.0)
+Requires-Dist: azure-identity (>=1.3.0)
+Provides-Extra: aci
+Requires-Dist: azure-mgmt-containerinstance (>=1.5.0) ; extra == 'aci'
+Requires-Dist: azure-mgmt-containerregistry (>=2.8.0) ; extra == 'aci'
+Provides-Extra: auth
+Requires-Dist: adal (>=1.2.2) ; extra == 'auth'
+Requires-Dist: azure-mgmt-msi (>=1.0.0) ; extra == 'auth'
+Requires-Dist: azure-mgmt-containerinstance (>=1.5.0) ; extra == 'auth'
+Provides-Extra: blob
+Requires-Dist: azure-storage-blob (>=12.3.0) ; extra == 'blob'
+Requires-Dist: pandas (>=0.25.3) ; extra == 'blob'
+Provides-Extra: dev
+Requires-Dist: nose ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: dls
+Requires-Dist: azure-datalake-store (>=0.0.48) ; extra == 'dls'
+
+SEE README file
+
+
