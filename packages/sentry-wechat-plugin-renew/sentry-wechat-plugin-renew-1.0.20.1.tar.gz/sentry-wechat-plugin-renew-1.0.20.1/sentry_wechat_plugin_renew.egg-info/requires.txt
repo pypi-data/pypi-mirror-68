@@ -1,0 +1,6 @@
+sentry>=9.1.0
+requests
+pytz
+django
+
+[test]
