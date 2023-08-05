@@ -1,0 +1,72 @@
+{
+  "name": "jupyter-jsmol",
+  "version": "0.1.2",
+  "author": {
+    "name": "Adam Fekete",
+    "email": "adam@fekete.co.uk"
+  },
+  "description": "JSmol viewer widget for Jupyter",
+  "homepage": "https://github.com/fekad/jupyter-jsmol",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fekad/jupyter-jsmol"
+  },
+  "bugs": {
+    "url": "https://github.com/fekad/jupyter-jsmol/issues"
+  },
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension",
+    "widgets"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js",
+    "css/*.css"
+  ],
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "npm run build:lib && npm run build:nbextension",
+    "build:lib": "tsc",
+    "build:nbextension": "webpack -p",
+    "build:labextension": "npm run clean:labextension && mkdirp ../jupyter_jsmol/labextension && cd ../jupyter_jsmol/labextension && npm pack ../../js",
+    "build:all": "npm run build:labextension && npm run build:nbextension",
+    "clean": "npm run clean:lib && npm run clean:nbextension",
+    "clean:lib": "rimraf lib",
+    "clean:nbextension": "rimraf ../jupyter_jsmol/nbextension/static/index.js && rimraf ../jupyter_jsmol/nbextension/static/extension.js",
+    "clean:labextension": "rimraf ../jupyter_jsmol/labextension",
+    "clean:all": "npm run clean:labextension && npm run clean:nbextension && npm run clean:lib",
+    "prepack": "npm run build:lib",
+    "watch": "npm-run-all -p watch:*",
+    "watch:lib": "tsc -w",
+    "watch:nbextension": "webpack --watch"
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^3"
+  },
+  "devDependencies": {
+    "@jupyterlab/application": "^2.1.2",
+    "@jupyterlab/coreutils": "^4.1.0",
+    "@lumino/application": "^1.9.1",
+    "@lumino/widgets": "^1.12.1",
+    "@types/node": "^13.13.5",
+    "@types/webpack-env": "^1.15.2",
+    "css-loader": "^3.5.3",
+    "fs-extra": "^9.0.0",
+    "mkdirp": "^1.0.4",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.3",
+    "typescript": "~3.8",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "jupyterlab": {
+    "extension": "lib/plugin"
+  }
+}
