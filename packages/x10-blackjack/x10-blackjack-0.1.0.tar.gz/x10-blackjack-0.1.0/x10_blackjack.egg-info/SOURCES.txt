@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+blackjack/__init__.py
+blackjack/__main__.py
+blackjack/cli.py
+x10_blackjack.egg-info/PKG-INFO
+x10_blackjack.egg-info/SOURCES.txt
+x10_blackjack.egg-info/dependency_links.txt
+x10_blackjack.egg-info/entry_points.txt
+x10_blackjack.egg-info/requires.txt
+x10_blackjack.egg-info/top_level.txt

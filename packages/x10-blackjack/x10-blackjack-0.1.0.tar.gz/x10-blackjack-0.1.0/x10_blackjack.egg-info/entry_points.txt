@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        blackjack=blackjack.cli:main
+    

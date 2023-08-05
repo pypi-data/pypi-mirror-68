@@ -1,0 +1,28 @@
+# Blackjack
+
+## Usage
+### Installation of requirements
+- `make install` or `pipenv install --editable .`
+### Commandline usage alternatives
+Execute program with any of the following terminal commandline options (when located in root of Git repo);
+- `make run`	# Recommended way #1
+- `pipenv blackjack` (after having executed `pipenv install --editable .`	# Recommended way #2
+- `python3 -m blackjack`	# Recommended way #3
+- `python3 blackjack`
+- `python3 blackjack/__main__.py`
+
+## Developer Usage
+### Requirements
+1. `pipenv` available through PATH (e.g. installed through `pipsi` so as to contain it to USER PATH env).
+2. `python3.7`
+
+### Installation steps
+1. `git clone <clone url>`
+2. `cd <into cloned repo folder root>`
+3. `make install`
+
+### Development iteration steps
+1. `<modify code>`
+2. `make check_all`
+3. `make run`
+4. `<feature/change specific test(s)>`
