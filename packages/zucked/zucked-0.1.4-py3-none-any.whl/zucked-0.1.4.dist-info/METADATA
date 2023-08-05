@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: zucked
+Version: 0.1.4
+Summary: Python library for parsing through facebook messenger data
+Home-page: https://github.com/Jordan-Milne/zucked
+Author: Jordan Milne
+Author-email: jordan.milne2@gmail.com
+License: MIT
+Download-URL: https://github.com/Jordan-Milne/zucked
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Facebook-Messenger-Data
+How to parse through your facebook messenger data to see you most used words!
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/zucked)
+
+
