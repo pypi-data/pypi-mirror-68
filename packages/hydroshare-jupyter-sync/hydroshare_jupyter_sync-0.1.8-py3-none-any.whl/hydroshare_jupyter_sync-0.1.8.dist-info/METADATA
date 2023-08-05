@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hydroshare-jupyter-sync
+Version: 0.1.8
+Summary: A web app and server for syncing files between the local filesystem and HydroShare. Can run as a Jupyter notebook extension.
+Home-page: https://github.com/hydroshare/hydroshare_jupyter_sync
+Author: CUAHSI
+Author-email: scope-cuahsi@olin.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: hs-restclient
+Requires-Dist: jupyter
+Requires-Dist: notebook
+Requires-Dist: requests
+
+UNKNOWN
+
+
