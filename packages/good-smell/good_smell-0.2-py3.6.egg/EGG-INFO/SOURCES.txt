@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+good_smell/__init__.py
+good_smell/flake8_ext.py
+good_smell/lint_smell.py
+good_smell/main.py
+good_smell/nested_for.py
+good_smell/range_len_fix.py
+good_smell/smell_warning.py
+good_smell.egg-info/PKG-INFO
+good_smell.egg-info/SOURCES.txt
+good_smell.egg-info/dependency_links.txt
+good_smell.egg-info/entry_points.txt
+good_smell.egg-info/requires.txt
+good_smell.egg-info/top_level.txt
