@@ -1,0 +1,5 @@
+aiohttp
+aiohttp_cors
+aiohttp_swagger
+jamdict>=0.1a6
+pyyaml
