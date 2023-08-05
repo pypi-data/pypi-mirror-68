@@ -1,0 +1,77 @@
+(self.webpackJsonp=self.webpackJsonp||[]).push([[87],{332:function(e,t,i){"use strict";var r=i(138),n=i(12);const a=()=>Promise.all([i.e(3),i.e(5),i.e(17),i.e(149),i.e(68)]).then(i.bind(null,725)),o=(e,t)=>{Object(n.a)(e,"show-dialog",{dialogTag:"hui-dialog-suggest-card",dialogImport:a,dialogParams:t})};i.d(t,"a",function(){return s});const s=async(e,t,a,s,l)=>{var c,d;if("yaml"!==(null===(c=null===(d=t.panels.lovelace)||void 0===d?void 0:d.config)||void 0===c?void 0:c.mode)){if(!s)try{s=await Object(r.f)(t.connection,null,!1)}catch{return void alert(t.localize("ui.panel.lovelace.editor.add_entities.generated_unsupported"))}s.views.length?(l||(l=(async e=>{try{await Object(r.i)(t,null,e)}catch{alert(t.localize("ui.panel.config.devices.add_entities.saving_failed"))}})),1!==s.views.length?((e,t)=>{Object(n.a)(e,"show-dialog",{dialogTag:"hui-dialog-select-view",dialogImport:()=>Promise.all([i.e(0),i.e(3),i.e(21),i.e(67)]).then(i.bind(null,726)),dialogParams:t})})(e,{lovelaceConfig:s,viewSelectedCallback:t=>{o(e,{lovelaceConfig:s,saveConfig:l,path:[t],entities:a})}}):o(e,{lovelaceConfig:s,saveConfig:l,path:[0],entities:a})):alert("You don't have any Lovelace views, first create a view in Lovelace.")}else o(e,{entities:a})}},367:function(e,t,i){"use strict";i.d(t,"c",function(){return s}),i.d(t,"a",function(){return l}),i.d(t,"b",function(){return c});const r=["zone","persistent_notification"],n=(e,t)=>{if("call-service"!==t.action||!t.service_data||!t.service_data.entity_id)return;let i=t.service_data.entity_id;Array.isArray(i)||(i=[i]);for(const r of i)e.add(r)},a=(e,t)=>{"string"!=typeof t?(t.entity&&e.add(t.entity),t.camera_image&&e.add(t.camera_image),t.tap_action&&n(e,t.tap_action),t.hold_action&&n(e,t.hold_action)):e.add(t)},o=(e,t)=>{t.entity&&a(e,t.entity),t.entities&&Array.isArray(t.entities)&&t.entities.forEach(t=>a(e,t)),t.card&&o(e,t.card),t.cards&&Array.isArray(t.cards)&&t.cards.forEach(t=>o(e,t)),t.elements&&Array.isArray(t.elements)&&t.elements.forEach(t=>o(e,t)),t.badges&&Array.isArray(t.badges)&&t.badges.forEach(t=>a(e,t))},s=e=>{const t=new Set;return e.views.forEach(e=>o(t,e)),t},l=(e,t)=>{const i=new Set;for(const n of Object.keys(e.states))t.has(n)||r.includes(n.split(".",1)[0])||i.add(n);return i},c=(e,t)=>{const i=s(t);return l(e,i)}},734:function(e,t,i){"use strict";i.r(t),i.d(t,"HuiUnusedEntities",function(){return E});i(260);var r=i(0),n=i(50),a=i(144),o=i(12),s=i(142),l=i(198),c=i(114),d=(i(266),i(211),i(124),i(304),i(367)),u=i(332),h=(i(125),i(100));function f(e){var t,i=b(e.key);"method"===e.kind?t={value:e.value,writable:!0,configurable:!0,enumerable:!1}:"get"===e.kind?t={get:e.value,configurable:!0,enumerable:!1}:"set"===e.kind?t={set:e.value,configurable:!0,enumerable:!1}:"field"===e.kind&&(t={configurable:!0,writable:!0,enumerable:!0});var r={kind:"field"===e.kind?"field":"method",key:i,placement:e.static?"static":"field"===e.kind?"own":"prototype",descriptor:t};return e.decorators&&(r.decorators=e.decorators),"field"===e.kind&&(r.initializer=e.value),r}function p(e,t){void 0!==e.descriptor.get?t.descriptor.get=e.descriptor.get:t.descriptor.set=e.descriptor.set}function m(e){return e.decorators&&e.decorators.length}function v(e){return void 0!==e&&!(void 0===e.value&&void 0===e.writable)}function y(e,t){var i=e[t];if(void 0!==i&&"function"!=typeof i)throw new TypeError("Expected '"+t+"' to be a function");return i}function b(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var i=e[Symbol.toPrimitive];if(void 0!==i){var r=i.call(e,t||"default");if("object"!=typeof r)return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}function g(e,t){(null==t||t>e.length)&&(t=e.length);for(var i=0,r=new Array(t);i<t;i++)r[i]=e[i];return r}function w(e,t,i){return(w="undefined"!=typeof Reflect&&Reflect.get?Reflect.get:function(e,t,i){var r=function(e,t){for(;!Object.prototype.hasOwnProperty.call(e,t)&&null!==(e=k(e)););return e}(e,t);if(r){var n=Object.getOwnPropertyDescriptor(r,t);return n.get?n.get.call(i):n.value}})(e,t,i||e)}function k(e){return(k=Object.setPrototypeOf?Object.getPrototypeOf:function(e){return e.__proto__||Object.getPrototypeOf(e)})(e)}let E=function(e,t,i,r){var n=function(){var e={elementsDefinitionOrder:[["method"],["field"]],initializeInstanceElements:function(e,t){["method","field"].forEach(function(i){t.forEach(function(t){t.kind===i&&"own"===t.placement&&this.defineClassElement(e,t)},this)},this)},initializeClassElements:function(e,t){var i=e.prototype;["method","field"].forEach(function(r){t.forEach(function(t){var n=t.placement;if(t.kind===r&&("static"===n||"prototype"===n)){var a="static"===n?e:i;this.defineClassElement(a,t)}},this)},this)},defineClassElement:function(e,t){var i=t.descriptor;if("field"===t.kind){var r=t.initializer;i={enumerable:i.enumerable,writable:i.writable,configurable:i.configurable,value:void 0===r?void 0:r.call(e)}}Object.defineProperty(e,t.key,i)},decorateClass:function(e,t){var i=[],r=[],n={static:[],prototype:[],own:[]};if(e.forEach(function(e){this.addElementPlacement(e,n)},this),e.forEach(function(e){if(!m(e))return i.push(e);var t=this.decorateElement(e,n);i.push(t.element),i.push.apply(i,t.extras),r.push.apply(r,t.finishers)},this),!t)return{elements:i,finishers:r};var a=this.decorateConstructor(i,t);return r.push.apply(r,a.finishers),a.finishers=r,a},addElementPlacement:function(e,t,i){var r=t[e.placement];if(!i&&-1!==r.indexOf(e.key))throw new TypeError("Duplicated element ("+e.key+")");r.push(e.key)},decorateElement:function(e,t){for(var i=[],r=[],n=e.decorators,a=n.length-1;a>=0;a--){var o=t[e.placement];o.splice(o.indexOf(e.key),1);var s=this.fromElementDescriptor(e),l=this.toElementFinisherExtras((0,n[a])(s)||s);e=l.element,this.addElementPlacement(e,t),l.finisher&&r.push(l.finisher);var c=l.extras;if(c){for(var d=0;d<c.length;d++)this.addElementPlacement(c[d],t);i.push.apply(i,c)}}return{element:e,finishers:r,extras:i}},decorateConstructor:function(e,t){for(var i=[],r=t.length-1;r>=0;r--){var n=this.fromClassDescriptor(e),a=this.toClassDescriptor((0,t[r])(n)||n);if(void 0!==a.finisher&&i.push(a.finisher),void 0!==a.elements){e=a.elements;for(var o=0;o<e.length-1;o++)for(var s=o+1;s<e.length;s++)if(e[o].key===e[s].key&&e[o].placement===e[s].placement)throw new TypeError("Duplicated element ("+e[o].key+")")}}return{elements:e,finishers:i}},fromElementDescriptor:function(e){var t={kind:e.kind,key:e.key,placement:e.placement,descriptor:e.descriptor};return Object.defineProperty(t,Symbol.toStringTag,{value:"Descriptor",configurable:!0}),"field"===e.kind&&(t.initializer=e.initializer),t},toElementDescriptors:function(e){var t;if(void 0!==e)return(t=e,function(e){if(Array.isArray(e))return e}(t)||function(e){if("undefined"!=typeof Symbol&&Symbol.iterator in Object(e))return Array.from(e)}(t)||function(e,t){if(e){if("string"==typeof e)return g(e,t);var i=Object.prototype.toString.call(e).slice(8,-1);return"Object"===i&&e.constructor&&(i=e.constructor.name),"Map"===i||"Set"===i?Array.from(i):"Arguments"===i||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(i)?g(e,t):void 0}}(t)||function(){throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}()).map(function(e){var t=this.toElementDescriptor(e);return this.disallowProperty(e,"finisher","An element descriptor"),this.disallowProperty(e,"extras","An element descriptor"),t},this)},toElementDescriptor:function(e){var t=String(e.kind);if("method"!==t&&"field"!==t)throw new TypeError('An element descriptor\'s .kind property must be either "method" or "field", but a decorator created an element descriptor with .kind "'+t+'"');var i=b(e.key),r=String(e.placement);if("static"!==r&&"prototype"!==r&&"own"!==r)throw new TypeError('An element descriptor\'s .placement property must be one of "static", "prototype" or "own", but a decorator created an element descriptor with .placement "'+r+'"');var n=e.descriptor;this.disallowProperty(e,"elements","An element descriptor");var a={kind:t,key:i,placement:r,descriptor:Object.assign({},n)};return"field"!==t?this.disallowProperty(e,"initializer","A method descriptor"):(this.disallowProperty(n,"get","The property descriptor of a field descriptor"),this.disallowProperty(n,"set","The property descriptor of a field descriptor"),this.disallowProperty(n,"value","The property descriptor of a field descriptor"),a.initializer=e.initializer),a},toElementFinisherExtras:function(e){var t=this.toElementDescriptor(e),i=y(e,"finisher"),r=this.toElementDescriptors(e.extras);return{element:t,finisher:i,extras:r}},fromClassDescriptor:function(e){var t={kind:"class",elements:e.map(this.fromElementDescriptor,this)};return Object.defineProperty(t,Symbol.toStringTag,{value:"Descriptor",configurable:!0}),t},toClassDescriptor:function(e){var t=String(e.kind);if("class"!==t)throw new TypeError('A class descriptor\'s .kind property must be "class", but a decorator created a class descriptor with .kind "'+t+'"');this.disallowProperty(e,"key","A class descriptor"),this.disallowProperty(e,"placement","A class descriptor"),this.disallowProperty(e,"descriptor","A class descriptor"),this.disallowProperty(e,"initializer","A class descriptor"),this.disallowProperty(e,"extras","A class descriptor");var i=y(e,"finisher"),r=this.toElementDescriptors(e.elements);return{elements:r,finisher:i}},runClassFinishers:function(e,t){for(var i=0;i<t.length;i++){var r=(0,t[i])(e);if(void 0!==r){if("function"!=typeof r)throw new TypeError("Finishers must return a constructor.");e=r}}return e},disallowProperty:function(e,t,i){if(void 0!==e[t])throw new TypeError(i+" can't have a ."+t+" property.")}};return e}();if(r)for(var a=0;a<r.length;a++)n=r[a](n);var o=t(function(e){n.initializeInstanceElements(e,s.elements)},i),s=n.decorateClass(function(e){for(var t=[],i=function(e){return"method"===e.kind&&e.key===a.key&&e.placement===a.placement},r=0;r<e.length;r++){var n,a=e[r];if("method"===a.kind&&(n=t.find(i)))if(v(a.descriptor)||v(n.descriptor)){if(m(a)||m(n))throw new ReferenceError("Duplicated methods ("+a.key+") can't be decorated.");n.descriptor=a.descriptor}else{if(m(a)){if(m(n))throw new ReferenceError("Decorators can't be placed on different accessors with for the same property ("+a.key+").");n.decorators=a.decorators}p(a,n)}else t.push(a)}return t}(o.d.map(f)),e);return n.initializeClassElements(o.F,s.elements),n.runClassFinishers(o.F,s.finishers)}([Object(r.d)("hui-unused-entities")],function(e,t){class i extends t{constructor(...t){super(...t),e(this)}}return{F:i,d:[{kind:"field",decorators:[Object(r.h)()],key:"lovelace",value:void 0},{kind:"field",decorators:[Object(r.h)()],key:"hass",value:void 0},{kind:"field",decorators:[Object(r.h)()],key:"narrow",value:void 0},{kind:"field",decorators:[Object(r.h)()],key:"_unusedEntities",value:()=>[]},{kind:"field",decorators:[Object(r.h)()],key:"_selectedEntities",value:()=>[]},{kind:"get",key:"_config",value:function(){return this.lovelace.config}},{kind:"field",key:"_columns",value(){return Object(a.a)(e=>{const t={icon:{title:"",type:"icon",template:(e,t)=>r.f`
+          <state-badge
+            @click=${this._handleEntityClicked}
+            .hass=${this.hass}
+            .stateObj=${t.stateObj}
+          ></state-badge>
+        `},name:{title:this.hass.localize("ui.panel.lovelace.unused_entities.entity"),sortable:!0,filterable:!0,grows:!0,direction:"asc",template:(t,i)=>r.f`
+          <div @click=${this._handleEntityClicked} style="cursor: pointer;">
+            ${t}
+            ${e?r.f`
+                  <div class="secondary">
+                    ${i.stateObj.entity_id}
+                  </div>
+                `:""}
+          </div>
+        `}};return e?t:(t.entity_id={title:this.hass.localize("ui.panel.lovelace.unused_entities.entity_id"),sortable:!0,filterable:!0,width:"30%"},t.domain={title:this.hass.localize("ui.panel.lovelace.unused_entities.domain"),sortable:!0,filterable:!0,width:"15%"},t.last_changed={title:this.hass.localize("ui.panel.lovelace.unused_entities.last_changed"),type:"numeric",sortable:!0,width:"15%",template:e=>r.f`
+        <ha-relative-time
+          .hass=${this.hass}
+          .datetime=${e}
+        ></ha-relative-time>
+      `},t)})}},{kind:"method",key:"updated",value:function(e){w(k(i.prototype),"updated",this).call(this,e),e.has("lovelace")&&this._getUnusedEntities()}},{kind:"method",key:"render",value:function(){return this.hass&&this.lovelace?"storage"===this.lovelace.mode&&!1===this.lovelace.editMode?r.f``:r.f`
+      ${this.narrow?"":r.f`
+            <ha-card
+              header="${this.hass.localize("ui.panel.lovelace.unused_entities.title")}"
+            >
+              <div class="card-content">
+                ${this.hass.localize("ui.panel.lovelace.unused_entities.available_entities")}
+                ${"storage"===this.lovelace.mode?r.f`
+                      <br />${this.hass.localize("ui.panel.lovelace.unused_entities.select_to_add")}
+                    `:""}
+              </div>
+            </ha-card>
+          `}
+      <ha-data-table
+        .columns=${this._columns(this.narrow)}
+        .data=${this._unusedEntities.map(e=>{const t=this.hass.states[e];return{icon:"",entity_id:e,stateObj:t,name:Object(l.a)(t),domain:Object(s.a)(e),last_changed:t.last_changed}})}
+        .id=${"entity_id"}
+        selectable
+        @selection-changed=${this._handleSelectionChanged}
+      ></ha-data-table>
+
+      ${this._selectedEntities.length?r.f`
+            <mwc-fab
+              class="${Object(n.a)({rtl:Object(c.a)(this.hass)})}"
+              .label=${this.hass.localize("ui.panel.lovelace.editor.edit_card.add")}
+              @click=${this._addToLovelaceView}
+            >
+              <ha-svg-icon slot="icon" path=${h.k}></ha-svg-icon>
+            </mwc-fab>
+          `:""}
+    `:r.f``}},{kind:"method",key:"_getUnusedEntities",value:function(){if(!this.hass||!this.lovelace)return;this._selectedEntities=[];const e=Object(d.b)(this.hass,this._config);this._unusedEntities=[...e].sort()}},{kind:"method",key:"_handleSelectionChanged",value:function(e){this._selectedEntities=e.detail.value}},{kind:"method",key:"_handleEntityClicked",value:function(e){const t=e.target.closest(".mdc-data-table__row").rowId;Object(o.a)(this,"hass-more-info",{entityId:t})}},{kind:"method",key:"_addToLovelaceView",value:function(){Object(u.a)(this,this.hass,this._selectedEntities,this.lovelace.config,this.lovelace.saveConfig)}},{kind:"get",static:!0,key:"styles",value:function(){return r.c`
+      :host {
+        background: var(--lovelace-background);
+        display: flex;
+        flex-direction: column;
+      }
+      ha-card {
+        --ha-card-box-shadow: none;
+        --ha-card-border-radius: 0;
+      }
+      ha-data-table {
+        --data-table-border-width: 0;
+        flex-grow: 1;
+        margin-top: -20px;
+      }
+      mwc-fab {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        z-index: 1;
+      }
+      mwc-fab.rtl {
+        left: 16px;
+        right: auto;
+      }
+    `}}]}},r.a)}}]);
+//# sourceMappingURL=chunk.e48f188438b51af299f8.js.map
