@@ -1,0 +1,15 @@
+sqlalchemy
+tabulate
+tqdm
+
+[:python_version == "3.6.*"]
+dataclasses
+
+[dev]
+requests
+requests-cache
+sphinx
+
+[test]
+pytest
+pytest-cov
