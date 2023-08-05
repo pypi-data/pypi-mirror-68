@@ -1,0 +1,3 @@
+[console_scripts]
+braindead=braindead.__main__.application.run
+
