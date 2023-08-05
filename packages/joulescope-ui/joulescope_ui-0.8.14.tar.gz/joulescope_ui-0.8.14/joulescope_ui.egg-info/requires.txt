@@ -1,0 +1,21 @@
+json5>=0.6.1
+numpy>=1.15.2
+pyperclip>=1.7.0
+python-dateutil>=2.7.3
+pyqtgraph@ https://github.com/jetperch/pyqtgraph/tarball/fc3192a9c8187405ee6655daffdba19ea6d35b13#egg=pyqtgraph-0.11.0.dev1
+requests>=2.0.0
+joulescope>=0.8.14
+pypiwin32>=223
+
+[:python_version == "3.7"]
+pyside2==5.13.2
+
+[:python_version == "3.8"]
+pyside2>=5.14.2.1
+
+[dev]
+check-manifest
+Cython
+coverage
+wheel
+pyinstaller
