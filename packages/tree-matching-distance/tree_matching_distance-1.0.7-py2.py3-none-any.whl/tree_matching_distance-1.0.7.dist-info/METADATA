@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tree-matching-distance
+Version: 1.0.7
+Summary: Compute tree distance using a method by Lin et al
+Home-page: https://github.com/arvestad/tree_matching_distance
+Author: Lars Arvestad
+Author-email: arve@math.su.se
+License: gpl3
+Project-URL: Documentation, https://github.com/arvestad/tree_matching_distance
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: ete3
+Requires-Dist: networkx
+
+
+# tree_matching_distance
+
+An implementation of the tree distance metric suggested by Lin, Rajan, and Moret, at ISBRA 2011.
+
+
+## Description
+
+This package contains a function to import and provides a command-line tool that compares two given
+trees and return a distance between them.
+
+## Usage
+
+Run the program like
+
+```shell
+  tree_matching_distance t1.tree t2.tree
+```
+
+where the two file parameters contain trees in Newick format on the same taxa.
+
+To use the distance method from within your own code, write
+```python
+  from ete3 import Tree
+  from tree_matching_distance import distance
+  t1 = Tree('((a, b), (c, d));')
+  t2 = Tree('((a, c), (b, d));')
+  d = distance(t1, t2)
+  print(d)
+```
+for a simple test. Note that this package requires ETE3 trees.
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+tree_matching_distance = tree_matching_distance.main:run
+
