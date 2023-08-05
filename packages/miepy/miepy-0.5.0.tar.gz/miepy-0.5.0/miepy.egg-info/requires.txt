@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+tqdm
+sympy
+pandas
+pyyaml
+numpy_quaternion
+spherical_functions
+vpython
