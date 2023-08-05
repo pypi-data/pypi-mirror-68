@@ -1,0 +1,11 @@
+blec/__init__.py,sha256=pZOveLO8YfXVLQcONN0GyYYWSbiaHOdMid55qwWZDbg,76
+blec/_com_github_igrmk_blec_version.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+blec/main.py,sha256=jR85Uk5MshulPUsEF_U9_1n6eusmB_a8xQbdwlToR8o,7341
+blec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blec/tests/test_blec.py,sha256=PyI_ozqbGa9OGGTgtckJYiG6ZYlHGIdpjpCFP_tPiYw,253
+blec-1.0.2.dist-info/LICENSE,sha256=kAUwJzwtspzYgr097uqMOp2e56R9z4Bp8WSSpkwqF5A,1062
+blec-1.0.2.dist-info/METADATA,sha256=UTFCmHvSeVMwh04dG44vqg5EAM_h33LO1gkvWyqvTX8,947
+blec-1.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+blec-1.0.2.dist-info/entry_points.txt,sha256=BHdZKHaaz1oowx4GbFxu90Z8zbQFA2bUA8FIw5IJ0fc,36
+blec-1.0.2.dist-info/top_level.txt,sha256=yrflsT7qXl0HPFrnL-0KyOmszROn4vxYx3Kh7kZ4vzk,5
+blec-1.0.2.dist-info/RECORD,,
