@@ -1,0 +1,4 @@
+[console_scripts]
+caesar = nmcipher.cli:caesar
+transposition = nmcipher.cli:transposition
+
