@@ -1,0 +1,11 @@
+pvpcbill/__init__.py,sha256=ZkECbEy4MNfznOxr15jK7lwwSZ6iyr5J2pxo7duBVdI,401
+pvpcbill/base.py,sha256=W_9suFHHpP5PopKmSlzW0PDcGzo-CNrrPo3d-XLVOWU,1656
+pvpcbill/handler.py,sha256=3x-VV5nGeqsrxLCt9ED7j6hUMkU-Rm5xPHp1XI52670,3390
+pvpcbill/helpers.py,sha256=TFK_51wvuxdHQ3PQsFpAu54v_p_TQ6Uu-A5j_RhwU9Y,4526
+pvpcbill/models.py,sha256=Ko5FV5AShZ4ZqAY3Y1RFSmeKaOmX2Z2UrUfaGJgJ5S4,8961
+pvpcbill/official.py,sha256=4y89EHh7TClzKu3wZSPZlH2Yo_hcFy7MS3zIA5IEklY,6553
+pvpcbill/text_bill.py,sha256=6ixklIR-snd8ILcdF83j7uXtLr1AdX_WvThjiwOKhnY,8178
+pvpcbill-1.0.0.dist-info/LICENSE,sha256=0VFrtNQc8ma8PoPqLPum66K8UydQdPppYXoCPhweeTg,1074
+pvpcbill-1.0.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pvpcbill-1.0.0.dist-info/METADATA,sha256=ctaUIx00JkfyipdVNeMFjwLVTSCluKlxgCvK-IzAW8I,6934
+pvpcbill-1.0.0.dist-info/RECORD,,
