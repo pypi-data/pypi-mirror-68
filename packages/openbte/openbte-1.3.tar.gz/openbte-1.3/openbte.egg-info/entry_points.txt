@@ -1,0 +1,3 @@
+[console_scripts]
+AlmaBTE2OpenBTE = openbte.almabte2openbte:main
+
