@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+vennam/Analysis.py
+vennam/DataFrameToDict.py
+vennam/__init__.py
+vennam.egg-info/PKG-INFO
+vennam.egg-info/SOURCES.txt
+vennam.egg-info/dependency_links.txt
+vennam.egg-info/requires.txt
+vennam.egg-info/top_level.txt
