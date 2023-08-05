@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+clow/__init__.py
+clow.egg-info/PKG-INFO
+clow.egg-info/SOURCES.txt
+clow.egg-info/dependency_links.txt
+clow.egg-info/requires.txt
+clow.egg-info/top_level.txt

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: clow
+Version: 0.5
+Summary: Clow Language
+Home-page: https://github.com/yrapop01/clow
+Author: Yuri Rapoport
+Author-email: yuri.rapoport@gmail.com
+License: MIT
+Download-URL: https://github.com/yrapop01/clow/archive/v_05.tar.gz
+Description: UNKNOWN
+Keywords: STATIC,TYPES,TYPING,INFERENCE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
