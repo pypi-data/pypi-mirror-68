@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: nb_log
+Version: 1.0
+Summary: very sharp display  and high-performance multiprocess safe roating file handler log
+Home-page: UNKNOWN
+Author: bfzs
+Author-email: 909686719@qq.com
+Maintainer: ydf
+Maintainer-email: 909686719@qq.com
+License: BSD License
+Description: very sharp display ,auto monkey patch_print and high-performance multiprocess safe roating file handler log
+        
+        Examples of simple usage:
+        
+        
+        from nb_log import LogManager
+        
+        logger = LogManager('bbb').get_logger_and_add_handlers()
+        
+        logger.debug('aaaaaaaaa')
+        
+        logger.info('aaaaaaaaa')
+        
+        logger.warn('aaaaaaaaa')
+        
+        logger.error('aaaaaaaaa')
+        
+        logger.critical('aaaaaaaaa')
+        
+        print('dsaaaaaaaaaaa')
+        
+        
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
