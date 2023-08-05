@@ -1,0 +1,15 @@
+sysDB/__init__.py,sha256=CILfNf69u515mzKgUqdiTjv6IdjN-jgn0PvJa-dmGHc,2899
+sysDB/scrapedx64.pickle,sha256=KpGV5shYt2QQwgldSX2jc7pighyU3LfZfxmsFbUmTmg,43584
+sysDB/scrapedx86.pickle,sha256=5ddvIEAKrBdmA4zIiF6Zfq3PMAPhTIxGwixDk13Idf0,23002
+sysDB/sysDB.py,sha256=gnyKk18t5kkofeLbtvZHPCYWpim6KmDHatCvg4o2wII,2505
+sysDB/syscallLookup/scrapedx64.pickle,sha256=KpGV5shYt2QQwgldSX2jc7pighyU3LfZfxmsFbUmTmg,43584
+sysDB/syscallLookup/scrapedx86.pickle,sha256=5ddvIEAKrBdmA4zIiF6Zfq3PMAPhTIxGwixDk13Idf0,23002
+sysDB/syscallLookup/scrape/syscallScrapex64.py,sha256=32BwCSSoc-_rjy2x7dXRFlXAC7f0cOnipmRZ5kHluIc,729
+sysDB/syscallLookup/scrape/syscallScrapex86.py,sha256=VwzSH-inlZkOPt37SjJ47TBL-TG-6ZVb7qnG5Zayp7g,665
+sysDB-0.1.data/scripts/__init__.py,sha256=CILfNf69u515mzKgUqdiTjv6IdjN-jgn0PvJa-dmGHc,2899
+sysDB-0.1.data/scripts/sysDB.py,sha256=gnyKk18t5kkofeLbtvZHPCYWpim6KmDHatCvg4o2wII,2505
+sysDB-0.1.dist-info/LICENSE,sha256=FLj2RNfqylf7s9n4HnJ6rHyH6N5cH34AoFGb8-MkzZw,1079
+sysDB-0.1.dist-info/METADATA,sha256=29RLKd_17J2lvibSmLIHIN8gr5p6QxfhdNFy-SCMLZ0,937
+sysDB-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sysDB-0.1.dist-info/top_level.txt,sha256=HEANwzkGLFxsbGw-8ztO09KIJodFsqWpBiU0cxPpr24,6
+sysDB-0.1.dist-info/RECORD,,
