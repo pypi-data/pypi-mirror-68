@@ -1,0 +1,11 @@
+fdet/__init__.py,sha256=KxNZrjCuh0_fcz3T6dRc4zU9NGVFEfQdcB1B7mqOv5Q,223
+fdet/detector.py,sha256=ZJxOaVI3VcnAWfsqGxG9dEGJZiNXet8ba2zlNx0A-oc,7536
+fdet/io.py,sha256=W6AUuqfgo_fD0iHTOBgKsTWpUmQLuMYT2xfAJcsJm1Q,3450
+fdet/mtcnn.py,sha256=dATMapQJ6UgN-MUUp3WE_ZATlEKhDEwNowQ41ePwAy4,31074
+fdet/retinaface.py,sha256=qQCN0Z-kK3LixH-gvB4wsMwaRkQIidih8logXHciKPc,19247
+fdet-0.1.0.dist-info/LICENSE,sha256=brVHmy0ddUwbNL2yFD9SeB6lvn9GYfAtYts7lnC3WXw,1071
+fdet-0.1.0.dist-info/METADATA,sha256=nn-JnuDwXTX9ZelmzNAD9PQJAmsoI6SDY6YDux-YQJA,1834
+fdet-0.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+fdet-0.1.0.dist-info/entry_points.txt,sha256=Im2JAabccQFAzC9tcfGdtlVq7lZn0Ysg0C69b38V0c8,45
+fdet-0.1.0.dist-info/top_level.txt,sha256=y7_wH7qLveSlYUcTY-W1ypmd-sorFHwXSuKVCzb3exI,5
+fdet-0.1.0.dist-info/RECORD,,
