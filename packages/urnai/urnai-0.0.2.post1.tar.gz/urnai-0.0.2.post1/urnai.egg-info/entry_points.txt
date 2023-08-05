@@ -1,0 +1,3 @@
+[console_scripts]
+urnai = urnai.urnai_cmd:main
+
