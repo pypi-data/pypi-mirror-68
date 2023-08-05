@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ion-detective
+Version: 0.1.7
+Summary: Virtual laboratory for chemistry students to simulate qualitative ion analysis.
+Home-page: https://github.com/Dom1L/ion_detective
+Author: Dominik Lemm
+Author-email: lemm92.d@gmail.com
+License: gpl-3.0
+Description: # Ion Detective
+        
+        This library provides functionalities to assist students to perform qualitative chemical analysis in Python.
+        
+        Usually, this analysis is performed in the wet lab, in which students are provided a sample probe that contains 
+        a random composition of anions or cations, respectively. To determine the composition of their sample, students
+        have to perform a variety of chemical detection reactions.
+        
+        This library tries to simulate this experience in a virtual, text-based way and contains real workflows for the
+        reactions.
+        
+        
+        # Installation
+        
+        ```pip install ion_detective```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
