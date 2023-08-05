@@ -1,0 +1,24 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {job_name}
+  labels:
+    app: automation-hub
+spec:
+  activeDeadlineSeconds: 600
+  backoffLimit: 0
+  template:
+    spec:
+      automountServiceAccountToken: false
+      containers:
+      - name: {job_name}
+        image: {image}
+        resources:
+          requests:
+            cpu: {requests_cpu}
+            memory: {requests_memory}
+          limits:
+            cpu: {limits_cpu}
+            memory: {limits_memory}
+      restartPolicy: Never
+      imagePullPolicy: IfNotPresent
