@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: TimeDistributedImageDataGenerator
+Version: 0.4
+Summary: Extension of Keras ImageDataGenerator class for TimeDistributed layer support.
+Home-page: https://github.com/kivijoshi/TimeDistributedImageDataGenerator
+Author: Kaustubh Joshi
+Author-email: kaustubh.kivijoshi@gmail.com
+License: MIT
+Download-URL: https://github.com/kivijoshi/TimeDistributedImageDataGenerator/archive/v_04.tar.gz
+Description: UNKNOWN
+Keywords: Keras,TimeDistributed,Extension
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
