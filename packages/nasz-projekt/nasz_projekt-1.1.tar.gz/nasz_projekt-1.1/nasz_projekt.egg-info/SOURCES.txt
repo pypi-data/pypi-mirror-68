@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+my_app/__init__.py
+my_app/app.py
+my_app/tools.py
+my_app/templates/index.html
+nasz_projekt.egg-info/PKG-INFO
+nasz_projekt.egg-info/SOURCES.txt
+nasz_projekt.egg-info/dependency_links.txt
+nasz_projekt.egg-info/top_level.txt
