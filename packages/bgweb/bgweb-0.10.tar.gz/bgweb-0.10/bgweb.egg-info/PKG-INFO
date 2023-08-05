@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bgweb
+Version: 0.10
+Summary: BBGLab web framework
+Home-page: https://bitbucket.org/bgframework/bgweb
+Author: Barcelona Biomedical Genomics Lab
+Author-email: bbglab@irbbarcelona.org
+License: UNKNOWN
+Project-URL: BBGLab website, https://bbglab.irbbarcelona.org
+Description: BBGLab common web framework
+        ===========================
+        
+        This framework provides to all our websites:
+        
+          * Local and remote job execution
+          * Users authentication
+          * Users profile management
+          * Common cherrypy application setup
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
