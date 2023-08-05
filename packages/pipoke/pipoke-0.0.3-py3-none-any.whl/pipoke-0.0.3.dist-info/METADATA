@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pipoke
+Version: 0.0.3
+Summary: Utils to work with pypi, packaging, etc.
+Home-page: https://https://github.com/thorwhalen/pipoke
+Author: Thor Whalen
+Author-email: thorwhalen1@gmail.com
+License: Apache Software License
+Platform: any
+Requires-Dist: bs4
+Requires-Dist: requests
+Requires-Dist: argh
+
+UNKNOWN
+
+
