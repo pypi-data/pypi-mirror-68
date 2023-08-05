@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: paddletools
+Version: 0.0.5
+Summary: UNKNOWN
+Home-page: https://github.com/LKKlein/PaddleTools
+Author: lvkun
+Author-email: lkklein@163.com
+License: MIT
+Keywords: Paddle,Tools
+Platform: UNKNOWN
+Requires-Python: >=3.3
+Requires-Dist: colorlog (==4.1.0)
+Requires-Dist: numpy (>=1.14.3)
+Requires-Dist: docopt (==0.6.2)
+Requires-Dist: requests (==2.18.4)
+
+UNKNOWN
+
+
