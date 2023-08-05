@@ -1,0 +1,14 @@
+README.md
+setup.py
+spacy_udpipe/__init__.py
+spacy_udpipe/language.py
+spacy_udpipe/languages.json
+spacy_udpipe/udpipe.py
+spacy_udpipe/utils.py
+spacy_udpipe.egg-info/PKG-INFO
+spacy_udpipe.egg-info/SOURCES.txt
+spacy_udpipe.egg-info/dependency_links.txt
+spacy_udpipe.egg-info/entry_points.txt
+spacy_udpipe.egg-info/not-zip-safe
+spacy_udpipe.egg-info/requires.txt
+spacy_udpipe.egg-info/top_level.txt
