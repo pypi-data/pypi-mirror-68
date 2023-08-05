@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+cli.py
+helper.py
+setup.py
+humdrum.egg-info/PKG-INFO
+humdrum.egg-info/SOURCES.txt
+humdrum.egg-info/dependency_links.txt
+humdrum.egg-info/entry_points.txt
+humdrum.egg-info/requires.txt
+humdrum.egg-info/top_level.txt
