@@ -1,0 +1,6 @@
+README.md
+setup.py
+trello_api_py.egg-info/PKG-INFO
+trello_api_py.egg-info/SOURCES.txt
+trello_api_py.egg-info/dependency_links.txt
+trello_api_py.egg-info/top_level.txt
