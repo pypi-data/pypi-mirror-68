@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "myprss"
+version = "0.2.1"
+description = "rss reader for terminal"
+authors = ["rarnal <arnal.romain@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.23.0"
+click = "^7.1.2"
+defusedxml = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.14.0"
+black = "^19.10b0"
+pylint = "^2.5.2"
+
+[tool.black]
+line-length = 79
+
+[tool.poetry.scripts]
+myprss = "myprss.main:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
