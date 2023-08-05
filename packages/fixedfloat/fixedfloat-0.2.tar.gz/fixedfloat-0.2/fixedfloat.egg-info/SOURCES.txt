@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+fixedfloat/__init__.py
+fixedfloat/api.py
+fixedfloat/apiasync.py
+fixedfloat/error.py
+fixedfloat.egg-info/PKG-INFO
+fixedfloat.egg-info/SOURCES.txt
+fixedfloat.egg-info/dependency_links.txt
+fixedfloat.egg-info/requires.txt
+fixedfloat.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: fixedfloat
+Version: 0.2
+Summary: FixedFloat API wrapper
+Home-page: http://github.com/fixedfloat/api-python
+Author: Leon Todd
+Author-email: leontodd@protonmail.com
+License: MIT
+Description: The FixedFloat API allows you to automate the receipt of information about the exchange rates of currencies, created orders, presented on the FixedFloat service, create orders and manage them using it.
+Keywords: fixedfloat api exchange crypto
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Office/Business :: Financial
