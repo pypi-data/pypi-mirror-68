@@ -1,0 +1,3 @@
+datetime
+numpy
+PyQt5

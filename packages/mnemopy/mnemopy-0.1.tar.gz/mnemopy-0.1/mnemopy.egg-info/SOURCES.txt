@@ -1,0 +1,14 @@
+README.md
+setup.py
+mnemopy/__init__.py
+mnemopy/layout-main_window.py
+mnemopy/main.py
+mnemopy/mnemopy.py
+mnemopy/resources.py
+mnemopy.egg-info/PKG-INFO
+mnemopy.egg-info/SOURCES.txt
+mnemopy.egg-info/dependency_links.txt
+mnemopy.egg-info/entry_points.txt
+mnemopy.egg-info/not-zip-safe
+mnemopy.egg-info/requires.txt
+mnemopy.egg-info/top_level.txt
