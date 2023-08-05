@@ -1,0 +1,15 @@
+pyramid_mixpanel/__init__.py,sha256=-EXBKIDt0aTCH0W6nfvBnAlmrFOU9EfXhaZ8197rsgY,8405
+pyramid_mixpanel/consumer.py,sha256=Oe0gd7HiceaQd50VmiTkpX-yQ5k4Z8nVHT_8QkbIJuY,2442
+pyramid_mixpanel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyramid_mixpanel/query.py,sha256=ECHnWbJpPrrzwlbTtX7UO2AbvHdR5wrBsfGsSWDATXA,1967
+pyramid_mixpanel/track.py,sha256=NE7OEbgYJn7zifyDu57FiQk1xBu3XIurayBCWBqoZrQ,14295
+pyramid_mixpanel/tests/__init__.py,sha256=mJkaZzvYgBnxsBAGv8y_P1yzonHqWgw6VF2Zs4rmJEA,7
+pyramid_mixpanel/tests/test_consumers.py,sha256=jjKHEcLgmbgS4-Zm4ug4xpPw2ToNL7ek5iusq96jNF4,2132
+pyramid_mixpanel/tests/test_functional.py,sha256=pbSFQTDyofnAa9WFjdF_u5JyXJXJbHbb0fvqbcnD7Kk,10365
+pyramid_mixpanel/tests/test_query.py,sha256=u242L7RiYw0zSSKIsLRDqyqA_0vpv-yL_DxrBuOX64Q,1452
+pyramid_mixpanel/tests/test_track.py,sha256=fdYAO5zbnO0s8KizEOLlIEFM3e3xUr0V2vCXF08yRNg,25116
+pyramid_mixpanel-0.8.0.dist-info/LICENSE,sha256=SgJh_iMcrTmq1wIZckTR6UkSGaJp8Tc5aZ9y5Duv0zw,1062
+pyramid_mixpanel-0.8.0.dist-info/METADATA,sha256=W03Mr4fgbB8Tu1cyzfh2j7tJJQGN3dIFUKum6IywMvo,11223
+pyramid_mixpanel-0.8.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pyramid_mixpanel-0.8.0.dist-info/top_level.txt,sha256=pYgbQSuLS2eSAWrgkS5He5koL3rPG8a0mcTzBy0j_-Q,17
+pyramid_mixpanel-0.8.0.dist-info/RECORD,,
