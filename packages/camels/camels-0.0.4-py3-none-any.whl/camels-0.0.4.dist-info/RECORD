@@ -1,0 +1,9 @@
+camels/__init__.py,sha256=-gWyEIY8zMOkeBvxgj6Z8vOFbreWbpqgt2wG2dOKvBI,4629
+camels/data.py,sha256=sBFomfHehxEW5E7HUhR00KlTfywm1__-tZCK8yr9Uqg,13319
+camels/processing.py,sha256=cuJzUvC4GaY5KzfSusgP6n0g_rUwWmQjVRzGQpzNimM,4604
+camels/pytorch.py,sha256=U7y2DRk3hiUogxg59ss31g6A78jGqD_IRGQ_cfAiv4M,2893
+camels-0.0.4.dist-info/LICENSE,sha256=DVkWN96hCYEQfv9aZJ-zAWmuHtflpNszMA3zRuPuiJA,1997
+camels-0.0.4.dist-info/METADATA,sha256=CjmfDSIr1yzkcgi9TeO1wxmENaglE2QvUlxL0teZ_Ro,1534
+camels-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+camels-0.0.4.dist-info/top_level.txt,sha256=GOniTimtlsvS4ywp1pw3ebAqmu2KxoXxbDTMja2gnxo,7
+camels-0.0.4.dist-info/RECORD,,
