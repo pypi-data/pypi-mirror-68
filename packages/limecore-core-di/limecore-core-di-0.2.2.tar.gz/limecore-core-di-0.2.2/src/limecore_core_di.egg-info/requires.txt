@@ -1,0 +1,3 @@
+injector
+limecore-core>=0.2.1
+limecore-util>=0.1.4
