@@ -1,0 +1,13 @@
+build
+dist
+dynamic_singer.egg-info
+.ipynb_checkpoints
+dynamic_singer/__pycache__
+*__pycache__
+*.DS_Store
+*Untitled*.ipynb
+test.ipynb
+dask-worker-space
+*client_secret.json
+*egg-info
+*bq-account.json
