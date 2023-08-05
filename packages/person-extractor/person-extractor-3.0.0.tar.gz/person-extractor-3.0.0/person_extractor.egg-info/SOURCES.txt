@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+person_extractor/__init__.py
+person_extractor.egg-info/PKG-INFO
+person_extractor.egg-info/SOURCES.txt
+person_extractor.egg-info/dependency_links.txt
+person_extractor.egg-info/top_level.txt
+person_extractor/test/__init__.py
+person_extractor/test/data/uk.csv
