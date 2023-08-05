@@ -1,0 +1,10 @@
+MANIFEST.in
+requirements.txt
+setup.py
+jsys.egg-info/PKG-INFO
+jsys.egg-info/SOURCES.txt
+jsys.egg-info/dependency_links.txt
+jsys.egg-info/top_level.txt
+my_app/__init__.py
+my_app/main.py
+my_app/templates/index.html
