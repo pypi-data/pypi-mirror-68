@@ -1,0 +1,10 @@
+aws_sso_credential_process/__init__.py,sha256=ZpymY1BoB7ZMHGgb-93bvRPYc9dUdDL-7DeUH4g31WU,52
+aws_sso_credential_process/aws_sso_credential_process.py,sha256=0gE_Ca9BGH-nhLfJpsHU1faEUMcQk0mFpeRFICWnc4k,12503
+aws_sso_credential_process/credentials.py,sha256=auPIp-NqGy7Xjqgl8sepdMfRcxaBYpE6BpgWJrPB314,4225
+aws_sso_credential_process/exceptions.py,sha256=LvYXKTnBU0vnzcLUCcP43pJBZVA0qAgJgytugRsSb2s,722
+aws_sso_credential_process/utils.py,sha256=-155E4XmbatX_EMnBwuQX0VdRirU7sYpUURqHhU_Gqo,8176
+aws_sso_credential_process-0.1.2.dist-info/entry_points.txt,sha256=bPGJHaiojPQC2rARTw0yZ107-JllFJXf4I7EnZ5am4Y,105
+aws_sso_credential_process-0.1.2.dist-info/LICENSE,sha256=oUaAvKXz1oDgxk1rThVpoHyUQRqLqxoh-OaH2xep-G0,550
+aws_sso_credential_process-0.1.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+aws_sso_credential_process-0.1.2.dist-info/METADATA,sha256=smsOy2AKo9KEoUZhiMo9t7t2b5BvdbsaCB7q6E6w5V4,756
+aws_sso_credential_process-0.1.2.dist-info/RECORD,,
