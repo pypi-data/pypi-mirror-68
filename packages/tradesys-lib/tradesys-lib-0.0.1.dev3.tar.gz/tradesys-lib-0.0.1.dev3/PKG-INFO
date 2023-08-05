@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tradesys-lib
+Version: 0.0.1.dev3
+Summary: A unified, extensible lib for developing trading algorithms.
+Home-page: https://github.com/moisesbenzan/tradesys-sdk
+Author: Moises Benzan
+Author-email: info@mbenzan.com
+License: GNU
+Project-URL: Documentation, https://tradesys.gitlab.io/tradesys-sdk/
+Project-URL: Source, https://github.com/moisesbenzan/tradesys-sdk
+Description: # Tradesys-sdk
+        
+        ## Description
+        ## Motivation
+        ## Road map
+        ## Considerations
+        This is a library in heavy development, expect things to break between consecutive minor versions until first release.
+Keywords: trading forex stocks lib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
