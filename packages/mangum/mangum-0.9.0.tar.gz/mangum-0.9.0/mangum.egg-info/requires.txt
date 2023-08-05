@@ -1,0 +1,15 @@
+typing_extensions
+
+[:python_version < "3.7"]
+dataclasses
+
+[aws]
+boto3
+
+[postgresql]
+psycopg2
+boto3
+
+[redis]
+redis
+boto3
