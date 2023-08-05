@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "historical-robots-txt-parser"
+version = "0.1.2"
+description = "Parses historical robots.txt files from Wayback Machine"
+authors = ["Alex Litel"]
+license = 'MIT'
+keywords = ['robots.txt', 'wayback machine', 'historical data', 'historical']
+readme = 'README.md'
+homepage = 'https://github.com/alexlitel/historical-robots-txt-parser'
+repository = 'https://github.com/alexlitel/historical-robots-txt-parser'
+packages = [
+    { include = 'historical_robots' }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.7.9"
+black = {version = "^19.10b0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
