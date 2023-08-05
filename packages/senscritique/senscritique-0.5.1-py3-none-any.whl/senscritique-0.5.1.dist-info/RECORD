@@ -1,0 +1,14 @@
+senscritique/__init__.py,sha256=OMQ0E0-YoHMKBGDnZgwuFDa2mBElHdO8747iBdh2DNM,57
+senscritique/data_utils.py,sha256=54Gq0NP-FD0_CG-q9YCTDpiu6suC_m6GBt81_bsWo_A,474
+senscritique/parse_utils.py,sha256=Nva5RWuuuReiVUAW82SNtdakJmv0c4rIYlTdZiunbD0,548
+senscritique/process_collection.py,sha256=5yha0Fm6f9Q3RVh24VG5tzVja2kdJJX7QxZVd_CkxoM,1708
+senscritique/process_critiques.py,sha256=cqIYfZ77OZA2drzeNCqIj0dk_7egP2BrLQSZ0pGY9bw,2578
+senscritique/process_generic.py,sha256=PzPgYlOYNoYTJQaei5vDFJGzTm0U-fJGjcsMaXvNCxA,1689
+senscritique/process_listes.py,sha256=kuOaO4a8RZr8zcd5PdPbPGi53Vc9zYEAiwWC9t2scjA,3106
+senscritique/takeout.py,sha256=s2JGcwg0a9Aw1pqlQ--6KGSC2JVbgETNxC69KfxiamA,1782
+senscritique/utils.py,sha256=CfpETeGu8fcmGXYOKFkywelU8Pl9xM_8xemzuQl3rho,993
+senscritique-0.5.1.dist-info/LICENSE,sha256=ln9EsOxSeQ54i_BgZ3mAXL_0_pGWjdXKU0e0fili5xI,1081
+senscritique-0.5.1.dist-info/METADATA,sha256=VY5oa10ixc6QAKVwC4ToljtkVXdn5_ZubE34kPD9Spw,809
+senscritique-0.5.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+senscritique-0.5.1.dist-info/top_level.txt,sha256=WVM86jns88vZyMbeFc5HTSGel07w5pQSLxVZ9Bm5PaI,13
+senscritique-0.5.1.dist-info/RECORD,,

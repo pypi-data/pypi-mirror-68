@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: senscritique
+Version: 0.5.1
+Summary: SensCritique Takeout on PyPI
+Home-page: https://github.com/woctezuma/SensCritique-Takeout
+Author: Wok
+Author-email: wok@tuta.io
+License: UNKNOWN
+Download-URL: https://github.com/woctezuma/SensCritique-Takeout/archive/0.5.1.tar.gz
+Keywords: senscritique,takeout,takeaway
+Platform: UNKNOWN
+Classifier: Topic :: Games/Entertainment
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: French
+Description-Content-Type: text/x-rst
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: lxml
+
+Export your data from SensCritique.com, similarly to Google Takeout.
+
+
