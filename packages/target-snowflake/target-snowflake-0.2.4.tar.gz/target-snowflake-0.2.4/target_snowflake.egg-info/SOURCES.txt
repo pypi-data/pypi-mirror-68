@@ -1,0 +1,13 @@
+README.md
+setup.py
+target_snowflake/__init__.py
+target_snowflake/connection.py
+target_snowflake/exceptions.py
+target_snowflake/snowflake.py
+target_snowflake/sql.py
+target_snowflake.egg-info/PKG-INFO
+target_snowflake.egg-info/SOURCES.txt
+target_snowflake.egg-info/dependency_links.txt
+target_snowflake.egg-info/entry_points.txt
+target_snowflake.egg-info/requires.txt
+target_snowflake.egg-info/top_level.txt
