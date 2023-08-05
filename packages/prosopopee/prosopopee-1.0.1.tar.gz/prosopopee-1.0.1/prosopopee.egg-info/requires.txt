@@ -1,0 +1,6 @@
+docopt
+future
+jinja2
+path.py
+pillow
+ruamel.yaml
