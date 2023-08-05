@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyantenna
+Version: 0.1
+Summary: Open source package for getting the dimensions of various types of antenna used in
+Home-page: https://github.com/Cenrax/pyantenna
+Author: Subham Kundu
+Author-email: subhamkundu999@gmail.com
+License: MIT
+Download-URL: https://github.com/Cenrax/pyantenna/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Antenna,OpenSource
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
