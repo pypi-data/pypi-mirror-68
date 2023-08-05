@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pyc2e
+Version: 0.0.4
+Summary: Engine management & script injection for the Creatures Evolution Engine
+Home-page: https://github.com/pushfoo/pyc2e
+Author: pushfoo
+Author-email: pushfoo@gmail.com
+License: To be determined
+Description: =====
+        pyc2e
+        =====
+        
+        A pure python interface for managing the
+        `Creatures Evolution Engine (c2e) <https://creatures.wiki/Creatures_Evolution_Engine>`_
+        with no external dependencies. Based off of
+        `Chris Double's documentation of the c2e shared memory interface <http://double.nz/creatures/developer/sharedmemory.htm>`_.
+        
+        **This isn't ready for real-world use yet. It might break your Creatures 3 / DS install.**
+        
+        See bottom for more details.
+        
+        License TBD, probably a BSD or LGPL.
+        
+        
+        ---------------------------
+        How to inject CAOS from CLI
+        ---------------------------
+        
+        If you're still sure you want to try it, clone the repo and::
+        
+            pip install -e .
+        
+        
+        It supports reading from stdin, ::
+        
+            cat filename.cos | pyc2e inject
+        
+        
+        from files, ::
+        
+            pyc2e inject --file filename.cos
+        
+        and arbitrary strings passed from the command line: ::
+        
+            pyc2e inject --caos "outs \"testing\""
+        
+        On windows, you might need to omit the escapes around the quotes  .
+        
+        -----------------------------------------
+        Not ready for use in production, very WIP
+        -----------------------------------------
+        
+        At the moment, it only handles running & injecting `CAOS <https://creatures.wiki/CAOS>`_ on Windows.
+        It's posted early because some developers need it. Much of the implementation may miss edge cases or just be ugly.
+        
+        Engine, config, and launch management for testing and fuzzing will be added later. Linux support will be
+        added later as well. Assume just about everything could change.
+        
+        Assumes Python 3.7+, but it might work on lower versions.
+Keywords: modding,tools,creatures,script injection,caos
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Games/Entertainment :: Simulation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
