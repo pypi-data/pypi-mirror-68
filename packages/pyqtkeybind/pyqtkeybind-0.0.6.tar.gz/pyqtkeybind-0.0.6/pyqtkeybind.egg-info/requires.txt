@@ -1,0 +1,4 @@
+PyQt5
+
+[:sys_platform != "win32"]
+xcffib
