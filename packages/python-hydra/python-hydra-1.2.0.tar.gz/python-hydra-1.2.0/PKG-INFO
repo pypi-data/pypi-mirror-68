@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-hydra
+Version: 1.2.0
+Summary: Python API for interfacing with Hydra Execution Environment
+Home-page: https://github.com/lukecavabarrett/python-hydra
+Author: Luca Cavalleri
+Author-email: luca.cavallery@gmail.com
+License: MIT
+Description: # Python APIs for Hydra
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
