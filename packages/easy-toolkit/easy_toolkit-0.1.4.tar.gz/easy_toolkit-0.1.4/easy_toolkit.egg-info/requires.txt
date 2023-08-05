@@ -1,0 +1,2 @@
+Click
+PyGithub>=1.51
