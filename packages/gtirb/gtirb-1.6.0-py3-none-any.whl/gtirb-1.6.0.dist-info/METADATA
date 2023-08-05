@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gtirb
+Version: 1.6.0
+Summary: The gtirb package
+Home-page: UNKNOWN
+Author: abhaskar
+Author-email: abhaskar@grammatech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: protobuf
+Requires-Dist: typing ; python_version < "3.5.0"
+
+UNKNOWN
+
+
