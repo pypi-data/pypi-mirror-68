@@ -1,0 +1,9 @@
+arcus/__init__.py,sha256=azyB0FHukkn3IZBTfVIpr6-YI05BPu-R5KqDGP3LF4E,22
+arcus/azureml/__init__.py,sha256=ogCzlPS1lbJit7txPu75i3izEM-0ToyT91BgsD9amW8,94
+arcus/azureml/version.py,sha256=kjw6nqSsFCZSWdKz2GAN4lN0PR8Go7_bokJa0kZ59Uc,63
+samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcus_azureml-1.0.0.dev202005090045.dist-info/LICENSE,sha256=z2wJZ-gv-p2PHpPt50c6iNSimbtV1IRrQEgsMu5285A,1062
+arcus_azureml-1.0.0.dev202005090045.dist-info/METADATA,sha256=oeM6imTHDVkk7crK9sUkVVKMB8PfXU0iliDTspvJTvU,865
+arcus_azureml-1.0.0.dev202005090045.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+arcus_azureml-1.0.0.dev202005090045.dist-info/top_level.txt,sha256=Lliavcjd58YjBLHgoVSfGxuoCTpJLKdyzojRSs1-N7w,8
+arcus_azureml-1.0.0.dev202005090045.dist-info/RECORD,,
