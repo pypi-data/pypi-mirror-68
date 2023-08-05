@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: netauto
+Version: 0.1.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: httpx (==0.12.1)
+Requires-Dist: pydantic (==1.5)
+
+UNKNOWN
+
+
