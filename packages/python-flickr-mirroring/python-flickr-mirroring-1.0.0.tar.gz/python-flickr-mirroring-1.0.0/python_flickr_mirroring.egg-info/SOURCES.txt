@@ -1,0 +1,15 @@
+README.md
+setup.py
+flickr/__init__.py
+flickr/__main__.py
+flickr/constants.py
+flickr/flickr_api.py
+flickr/flickr_model.py
+flickr/mirroring_agent.py
+flickr/parser.py
+python_flickr_mirroring.egg-info/PKG-INFO
+python_flickr_mirroring.egg-info/SOURCES.txt
+python_flickr_mirroring.egg-info/dependency_links.txt
+python_flickr_mirroring.egg-info/entry_points.txt
+python_flickr_mirroring.egg-info/requires.txt
+python_flickr_mirroring.egg-info/top_level.txt

@@ -1,0 +1,93 @@
+# **Flickr Mirroring**
+
+## **Description**
+The project provide a Command-Line Interface for mirroring Flickr Photos of a Flickr user
+
+---
+
+## **How to use**
+
+End-users should be able to install it using `pipenv` and run tool with the Bash command `mirror_flickr`
+- ## Prequisite
+  python>=3.6
+
+- ## Installation
+
+  ### Setup a binary directory to install our Flickr mirroring utility
+  ```bash
+  $ mkdir -p ~/.local/bin/flickr_mirroring
+  $ cd ~/.local/bin/flickr_mirroring
+  ```
+
+  ### Setup a Python virtual environment
+  ```bash
+  $ pipenv shell --three
+  ```
+
+  ### Install our Flickr mirroring utility
+  ```bash
+  (flickr_mirroring) $ pipenv install python-flickr-mirroring
+  ```
+
+- ## Usage
+
+  For example:
+  ```bash
+  (flickr_mirroring) $ mirror_flickr --username manhhai --save-api-keys
+  Enter your Flickr API key:    <--Your Flickr API key-->
+  Enter your Flickr API secret: <--Your Flickr API secret-->
+  ```
+  You should read the docs for more information
+  ```
+  (flickr_mirroring) $ mirror_flickr --help
+  usage: mirror_flickr [-h] --username USERNAME [--cache-path CACHE_PATH]
+                      [--cache-directory-depth CACHE_DIRECTORY_DEPTH]
+                      [--save-api-keys] [--image-only | --info-only]
+                      [--info-level LEVEL] [--debug LEVEL] [--fifo | --lifo]
+
+  Flickr Mirroring.
+
+  optional arguments:
+    -h, --help            show this help message and exit
+
+    --username USERNAME   username of the account of a user on Flickr to mirror
+                          their photostream
+
+    --cache-path CACHE_PATH
+                          The absolute path where the script saves photos
+                          downloaded from Flickr.
+
+    --cache-directory-depth CACHE_DIRECTORY_DEPTH
+                          The depth of the directory structure
+
+    --save-api-keys       Specify whether to save the Flickr API keys for
+                          further usage
+
+    --image-only          Specify whether the script must only download photo's
+                          images
+
+    --info-only           Specify whether the script must only download photo's
+                          information
+
+    --info-level LEVEL    specify the level of information of a photo to fetch
+                          (value between 0 and 2)
+
+    --debug LEVEL         specify the logging level (value between 0 and 4, from
+                          critical to debug)
+
+    --fifo                specify the First-In First-Out method to mirror the
+                          user's photostream, from the oldest uploaded photo to
+                          the earliest
+
+    --lifo                specify the Last-In First-Out method to mirror the
+                          user's photostream, from the earliest uploaded photo
+  ```
+
+
+---
+## **Contact**
+Email: long.nguyen@f4.intek.edu.vn
+
+---
+## **License**
+This project is licensed under the MIT License - see the LICENSE file for details

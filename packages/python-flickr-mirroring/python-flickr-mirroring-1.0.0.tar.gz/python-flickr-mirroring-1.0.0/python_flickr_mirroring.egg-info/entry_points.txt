@@ -1,0 +1,3 @@
+[console_scripts]
+mirror_flickr = flickr.__main__:main
+
