@@ -1,0 +1,3 @@
+[console_scripts]
+grafatko = grafatko.__init__:run
+
