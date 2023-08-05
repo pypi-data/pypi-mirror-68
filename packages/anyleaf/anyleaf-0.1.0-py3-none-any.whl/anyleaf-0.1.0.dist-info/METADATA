@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: anyleaf
+Version: 0.1.0
+Summary: Driver for the Anyleaf pH sensor
+Home-page: https://github.com/anyleaf/anyleaf_ph
+Author: Anyleaf
+Author-email: david.alan.oconnor@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Hardware :: Hardware Drivers 
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Anyleaf
+
+## For use with the Anyleaf pH sensor
+
+## Example use:
+```python
+import time
+
+import board
+import busio
+from anyleaf_ph_py import PhSensor, CalPt
+
+
+def main():
+    i2c = busio.I2C(board.SCL, board.SDA)
+    ph_sensor = PhSensor(i2c)
+
+    # Can use 2 or 3-pt calibration.
+    ph_sensor.calibrate(
+        CalPt(0., 7., 25.), CalPt(-0.18, 4., 25.), CalPt(0.18, 4., 25.)
+    )
+
+    while True:
+        pH = ph_sensor.read()
+        print(f"pH: {pH}")
+        time.sleep(.5)
+
+
+if __name__ == "__main__":
+    main()
+
+
+```
+
