@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/Model.py
+src/neuralnetworks_shine7.egg-info/PKG-INFO
+src/neuralnetworks_shine7.egg-info/SOURCES.txt
+src/neuralnetworks_shine7.egg-info/dependency_links.txt
+src/neuralnetworks_shine7.egg-info/requires.txt
+src/neuralnetworks_shine7.egg-info/top_level.txt
