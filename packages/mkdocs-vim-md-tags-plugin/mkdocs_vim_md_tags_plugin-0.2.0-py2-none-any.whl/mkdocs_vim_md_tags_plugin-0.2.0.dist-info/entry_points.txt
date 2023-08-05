@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+vim-md-tags = mkdocs_vim_md_tags_plugin.plugin:VimMdTags
+
