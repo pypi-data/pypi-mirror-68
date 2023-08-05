@@ -1,0 +1,6 @@
+my_new_package/__init__.py,sha256=qNm_mZrCP5pQ0xc-Ahuu9n3LX4r5YUEiz3zRE-F7qJ8,272
+my_new_package/hoge.py,sha256=hWMo-4gKobjmmglxeZPXuWYxq7OAjriCDaUra-J19d8,36
+my_new_package-0.2.dist-info/METADATA,sha256=p2HJwcl-9L8iv5MEj2rrV-YFHLlS_CaKDVxjqAvfWOA,344
+my_new_package-0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+my_new_package-0.2.dist-info/top_level.txt,sha256=B7H5YgZoQ-FteN6DwHYZgEJruMVQUfZCv-X_1MFpTTM,15
+my_new_package-0.2.dist-info/RECORD,,
