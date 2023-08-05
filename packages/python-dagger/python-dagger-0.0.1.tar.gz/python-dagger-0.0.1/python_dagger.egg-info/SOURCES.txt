@@ -1,0 +1,7 @@
+setup.py
+dagger/__init__.py
+python_dagger.egg-info/PKG-INFO
+python_dagger.egg-info/SOURCES.txt
+python_dagger.egg-info/dependency_links.txt
+python_dagger.egg-info/requires.txt
+python_dagger.egg-info/top_level.txt

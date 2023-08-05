@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: python-dagger
+Version: 0.0.1
+Summary: Api for python
+Home-page: https://github.com/dagger-team/python-dagger
+Author: Mike Lyons
+Author-email: mdl0394@gmail.com
+License: MIT
+Description: # Python Dagger Project
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
