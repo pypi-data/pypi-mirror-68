@@ -1,0 +1,7 @@
+README.md
+setup.py
+qdjarv/__init__.py
+qdjarv.egg-info/PKG-INFO
+qdjarv.egg-info/SOURCES.txt
+qdjarv.egg-info/dependency_links.txt
+qdjarv.egg-info/top_level.txt
