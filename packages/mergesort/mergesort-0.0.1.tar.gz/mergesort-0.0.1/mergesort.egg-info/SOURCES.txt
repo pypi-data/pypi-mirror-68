@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+mergesort.egg-info/PKG-INFO
+mergesort.egg-info/SOURCES.txt
+mergesort.egg-info/dependency_links.txt
+mergesort.egg-info/top_level.txt
