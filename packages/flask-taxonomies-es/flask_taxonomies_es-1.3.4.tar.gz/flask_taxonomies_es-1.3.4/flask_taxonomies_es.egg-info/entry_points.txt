@@ -1,0 +1,9 @@
+[flask.commands]
+taxonomies_es = flask_taxonomies_es.cli:taxonomies
+
+[invenio_base.api_apps]
+flask_taxonomies = flask_taxonomies_es.ext:FlaskTaxonomiesES
+
+[invenio_base.apps]
+flask_taxonomies = flask_taxonomies_es.ext:FlaskTaxonomiesES
+
