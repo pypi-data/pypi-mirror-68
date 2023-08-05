@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libGetAvatarGitHub.egg-info/PKG-INFO
+libGetAvatarGitHub.egg-info/SOURCES.txt
+libGetAvatarGitHub.egg-info/dependency_links.txt
+libGetAvatarGitHub.egg-info/not-zip-safe
+libGetAvatarGitHub.egg-info/requires.txt
+libGetAvatarGitHub.egg-info/top_level.txt
+libpythonpro/__init__.py
+libpythonpro/github_api.py
