@@ -1,0 +1,13 @@
+gitea_auto_update/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitea_auto_update/update.py,sha256=JjGkzMOFQNbaXInB_gisOvMuPRUHBBdifum-Ob1nXEc,2937
+gitea_auto_update/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitea_auto_update/lib/build.py,sha256=wAuYppOUdHLW2yc4emeO5oQpqsqH2VQd3YrnJHYpeZw,521
+gitea_auto_update/lib/download.py,sha256=_iyqHyYvQDNgRSNkAcIogxtN1l62vjU10TnQ8xjyRcg,3030
+gitea_auto_update/lib/test_version.py,sha256=t9qkNTgU6GlQs4bRlhMU7f3yaAJDSYOlUpLWH0QyqlY,1596
+gitea_auto_update/lib/version.py,sha256=TmGoyNf3-phtpb5x41OQxk9krKDrKjdlX16ECFTwxNo,1944
+gitea_auto_update-2.0.8.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+gitea_auto_update-2.0.8.dist-info/METADATA,sha256=WPbbzAMO3tH6PwkxOpBEV23gvzx22HR87XdfoVv-WWQ,3506
+gitea_auto_update-2.0.8.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gitea_auto_update-2.0.8.dist-info/entry_points.txt,sha256=EvTyQ2_4fLQ-wqiqkpOUu6sJIhItc8ijeUrE3610GGY,69
+gitea_auto_update-2.0.8.dist-info/top_level.txt,sha256=i0MAj3Og5CYo_iryIJOa--peoTpEwP10rfiKwPJtn7Q,18
+gitea_auto_update-2.0.8.dist-info/RECORD,,
