@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: limnoria-trigger
+Version: 0.1
+Summary: UNKNOWN
+Home-page: http://supybot.fr.cr/Trigger
+Author: Valentin Lorentz
+Author-email: progval@gmail.com
+License: UNKNOWN
+Description: Trigger is a very basic plugin, that allows channel ops to trigger commands
+        by an event on there channel (join, part, quit, ...), through the
+        configuration.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Chat
