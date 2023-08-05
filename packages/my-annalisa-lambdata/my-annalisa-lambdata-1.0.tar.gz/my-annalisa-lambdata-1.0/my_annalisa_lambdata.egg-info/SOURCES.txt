@@ -1,0 +1,9 @@
+README.md
+setup.py
+my_annalisa_lambdata.egg-info/PKG-INFO
+my_annalisa_lambdata.egg-info/SOURCES.txt
+my_annalisa_lambdata.egg-info/dependency_links.txt
+my_annalisa_lambdata.egg-info/top_level.txt
+my_lamdata/__init__.py
+my_lamdata/my_mod.py
+my_lamdata/my_script.py
