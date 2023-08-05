@@ -1,0 +1,18 @@
+[tool.poetry]
+authors = ["Michael J Burling"]
+description = "An unofficial python client for clubhouse.io"
+license = "MIT"
+name = "clubhouse_client"
+repository = "https://gitlab.com/mjburling/clubhouse_client"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
