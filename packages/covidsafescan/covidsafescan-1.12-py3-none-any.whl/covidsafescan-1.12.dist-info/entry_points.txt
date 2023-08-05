@@ -1,0 +1,3 @@
+[console_scripts]
+covidsafescan = covidsafescan:__main__
+
