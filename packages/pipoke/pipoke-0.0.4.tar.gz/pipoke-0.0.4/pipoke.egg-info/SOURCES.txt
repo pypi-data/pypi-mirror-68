@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pipoke.egg-info/PKG-INFO
+pipoke.egg-info/SOURCES.txt
+pipoke.egg-info/dependency_links.txt
+pipoke.egg-info/requires.txt
+pipoke.egg-info/top_level.txt
