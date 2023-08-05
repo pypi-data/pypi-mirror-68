@@ -1,0 +1,111 @@
+#!python
+
+"""ScriptEngine command line interface (cli).
+
+The se command provides a command line interface to ScriptEngine, allowing for
+the creation of scripts from YAML files and runnig the scripts via the
+SimpleScriptEngine.
+"""
+
+__copyright__ = """
+Copyright 2019, 2020 Uwe Fladrich
+
+This file is part of ScriptEngine.
+
+ScriptEngine is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+ScriptEngine is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with ScriptEngine. If not, see <https://www.gnu.org/licenses/>.
+"""
+__license__ = "GPLv3+"
+
+import os
+import logging
+import argparse
+
+import scriptengine.version
+import scriptengine.logging
+import scriptengine.yaml
+import scriptengine.tasks.base
+
+from scriptengine.scripts import SimpleScriptEngine
+
+from scriptengine.helpers import terminal_colors as tc
+
+__version__ = scriptengine.version.__version__
+
+def parse_command_line_arguments():
+
+    arg_parser = argparse.ArgumentParser(description="ScriptEngine command line tool")
+
+    arg_parser.add_argument("-V", "--version", help="show ScriptEngine version and exit",
+                            action="version", version=__version__)
+    arg_parser.add_argument("-t", "--taskset", help="load taskset", action="append")
+    arg_parser.add_argument("-q", "--quiet", help="be quiet, no extra output", action="store_true")
+    arg_parser.add_argument("--debug", help="lots of extra debug output", action="store_true")
+    arg_parser.add_argument("--nocolor", help="do not use colored terminal output",
+                            action="store_true")
+    arg_parser.add_argument("file", help="YAML file(s) to read", nargs="+")
+
+    args = arg_parser.parse_args()
+
+    return {"files": args.file,
+            "taskset": args.taskset,
+            "quiet": args.quiet,
+            "debug": args.debug,
+            "nocolor": args.nocolor}
+
+
+if __name__ == "__main__":
+
+    context = {"_se_ocwd": os.getcwd()}
+
+    cfg = parse_command_line_arguments()
+
+    if cfg["nocolor"]:
+        tc.set_theme("none")
+
+    if cfg["quiet"]:
+        LOG = scriptengine.logging.logger("scriptengine", level=logging.WARN)
+    elif cfg["debug"]:
+        LOG = scriptengine.logging.logger("scriptengine", level=logging.DEBUG)
+    else:
+        LOG = scriptengine.logging.logger("scriptengine", level=logging.INFO)
+
+    taskset = ["scriptengine.tasks.base"] + [f"scriptengine.tasks.{tasks}" for tasks in cfg["taskset"] or []]
+    scriptengine.tasks.base.load(taskset)
+    LOG.debug(f"Loaded tasks: {', '.join(scriptengine.tasks.base.loaded_tasks().keys())}")
+
+    LOG.debug("Start processing files")
+    if len(cfg["files"]) == 1:
+        file = cfg["files"][0]
+        LOG.debug(f"Parsing file '{file}'")
+        script = scriptengine.yaml.parse_file(file)
+    else:
+        script = []
+        for file in cfg["files"]:
+            LOG.debug(f"Parsing file '{file}'")
+            next_script = scriptengine.yaml.parse_file(file)
+            if isinstance(next_script, list):
+                script.extend(next_script)
+            else:
+                script.append(next_script)
+    for file in cfg["files"]:
+        dirname = os.path.dirname(os.path.abspath(file))
+        if dirname not in context.get("_se_filepath", []):
+            context.setdefault("_se_filepath", []).append(dirname)
+    LOG.debug("Finish processing files")
+
+    LOG.debug("Start running jobs")
+    script_engine = SimpleScriptEngine(log_level=LOG.level)
+    context["_se_instance"] = script_engine
+    script_engine.run(script, context)
+    LOG.debug("Finish running jobs")
