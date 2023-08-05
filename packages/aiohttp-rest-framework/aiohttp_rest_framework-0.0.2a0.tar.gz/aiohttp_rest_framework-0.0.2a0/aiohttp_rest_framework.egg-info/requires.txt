@@ -1,0 +1,5 @@
+aiohttp
+aiohttp-cors
+aiopg
+marshmallow
+sqlalchemy
