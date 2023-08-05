@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: arctern-server
+Version: 0.0.3
+Summary: arctern demo server
+Home-page: UNKNOWN
+Author: Zilliz
+Author-email: support@zilliz.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
