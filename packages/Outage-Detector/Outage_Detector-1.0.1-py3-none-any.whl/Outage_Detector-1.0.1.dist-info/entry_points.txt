@@ -1,0 +1,3 @@
+[console_scripts]
+outage_detector = outagedetector.__main__:main
+
