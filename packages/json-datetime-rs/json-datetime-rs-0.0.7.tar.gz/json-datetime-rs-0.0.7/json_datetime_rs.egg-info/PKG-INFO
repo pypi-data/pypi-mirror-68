@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: json-datetime-rs
+Version: 0.0.7
+Summary: allows you to dump / load jsons that contain date / datetime objects
+Home-page: https://gitlab.com/srons/my-cool-project
+Author: Ron S
+Author-email: sron.saad@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test

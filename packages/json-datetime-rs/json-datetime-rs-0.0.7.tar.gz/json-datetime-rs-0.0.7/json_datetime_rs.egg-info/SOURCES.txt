@@ -1,0 +1,5 @@
+json_datetime_rs.egg-info/PKG-INFO
+json_datetime_rs.egg-info/SOURCES.txt
+json_datetime_rs.egg-info/dependency_links.txt
+json_datetime_rs.egg-info/requires.txt
+json_datetime_rs.egg-info/top_level.txt
