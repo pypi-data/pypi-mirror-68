@@ -1,0 +1,7 @@
+setuptools
+numpy
+scipy
+
+[tests]
+pytest
+matplotlib
