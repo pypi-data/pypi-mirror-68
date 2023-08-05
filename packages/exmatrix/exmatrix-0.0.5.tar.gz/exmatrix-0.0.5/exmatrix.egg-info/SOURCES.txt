@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+exmatrix.egg-info/PKG-INFO
+exmatrix.egg-info/SOURCES.txt
+exmatrix.egg-info/dependency_links.txt
+exmatrix.egg-info/requires.txt
+exmatrix.egg-info/top_level.txt
+src/temp.py

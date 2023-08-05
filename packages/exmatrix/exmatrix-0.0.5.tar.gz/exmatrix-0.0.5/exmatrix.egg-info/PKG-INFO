@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: exmatrix
+Version: 0.0.5
+Summary: A Python package to ExMatrix method, supporting Random Forest models interpretability.
+Home-page: https://gitlab.com/blindreview/??
+Author: Blind Review
+Author-email: blindreview@gmail.com
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+Description: # ExMatrix Method
+        
+        The **ExMatrix** method aims **Random Forest** models **interpretability** by global and local explanations. A scientific paper has been submitted presenting the method, and the python package for it will be release as soon as the paper get evaluated.
+Platform: UNKNOWN
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
