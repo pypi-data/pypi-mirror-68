@@ -1,0 +1,10 @@
+cc86/__init__.py,sha256=fah1GQts5ipYIdqshWUnbo1pNVzlRPWh0p3XC0hyRJM,125
+cc86/cc86.py,sha256=9Fgx9ePGGJsOoM_DadeAiG4YbCEbWTPr1OdYd0AxQW4,20
+cc86/cli.py,sha256=h5AzJPfQRKhedeHOd_dbEIq1pzPEt9NVGR6nNNFNZzg,390
+cc86-0.1.1.dist-info/AUTHORS.rst,sha256=kFxcoOfT1o7GEnQuUPjE184Kqk5j82L-dXvQgFEyDss,159
+cc86-0.1.1.dist-info/LICENSE,sha256=2iFN_7YDWvgbrxszg3wqoYQYFiDehtOJTG7UKTllA4s,1559
+cc86-0.1.1.dist-info/METADATA,sha256=TqHzpCdKYkKxz7HG9Tel2uaYECu3Vhx3TAOgROBikXE,1434
+cc86-0.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+cc86-0.1.1.dist-info/entry_points.txt,sha256=ANixP50bT8Upb0jrSY8L9izOrtPEUJt7Fhoe_PTYA4k,40
+cc86-0.1.1.dist-info/top_level.txt,sha256=jIy1uXxb4Xf6CASLtfxTeSsSSus5P2BPIsSM97MF7RU,5
+cc86-0.1.1.dist-info/RECORD,,
