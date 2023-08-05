@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: human-dates2
+Version: 0.1.6
+Summary: Dates for humans
+Home-page: https://github.com/AleCandido/human_dates
+Author: Alessandro Candido
+Author-email: candido.ale@gmail.com
+License: UNKNOWN
+Project-URL: Original SO, http://stackoverflow.com/a/1551394/192791
+Project-URL: Original Package, https://pypi.org/project/human_dates/0.1.0/
+Keywords: datetime pretty-print human-readable
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+human_dates
+===========
+
+.. image:: https://codecov.io/gh/AleCandido/human_dates/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/AleCandido/human_dates
+
+This is a fork of the original package
+`human_dates <https://github.com/jtushman/human_dates>`_ made by Jonathan Tushman, but currently unmaintained.
+
+Already the original package was based on a `Stack Overflow
+answer <http://stackoverflow.com/a/1551394/192791>`_, referencing still another
+sources (check the post).
+
+---------
+
+I came from the Ruby/Rails world and I missed some of my date sugar.  And instead of keeping complaining about it, I
+thought I would do something about it
+
+
+It offers two sets of functionality:
+
+#. and foremost it has a nice `time_ago_in_words` function.
+#. has some natural language for getting to the beginning and end of things
+
+Note I stole much of this from the following StackOverflow post: http://stackoverflow.com/a/1551394/192791
+
+Note: when you do not pass a time into a function it uses `datetime.utcnow()`
+
+
+Installation
+------------
+
+.. code-block:: bash
+
+    $ pip install human_dates
+
+
+time_ago_in_words Usage
+-----------------------
+
+.. code-block:: python
+
+    from human_dates import time_ago_in_words, beginning_of_day
+
+    print time_ago_in_words()
+    #prints "just now"
+
+    print time_ago_in_words(beginning_of_day())
+    # prints "8 hours ago"
+
+
+Natural Language Helpers
+------------------------
+
+.. code-block:: python
+
+    from human_dates import *
+
+    print beginning_of_day()
+    print beginning_of_hour()
+    print beginning_of_year()
+    print end_of_month()
+    # and so on ....
+
+    # you can also pass a datetime to each of these functions
+    import human_dates
+    from datetime import datetime
+    date = datetime.strptime('Feb 13 2008  1:33PM', '%b %d %Y %I:%M%p')
+    result = human_dates.end_of_month(date)
+    print result
+    # 2008-02-29 23:59:59.999999
+
+
+Alternatives
+------------
+
+- Delorean: http://delorean.readthedocs.org/en/latest/quickstart.html  (<-- please look at this before using human_dates.  It's heavyweight for me but might be great for you)
+
+Other Important Time Libraries
+------------------------------
+
+- DateUtil: http://labix.org/python-dateutil
+- PyTz: http://pytz.sourceforge.net/
+
+
+
+
