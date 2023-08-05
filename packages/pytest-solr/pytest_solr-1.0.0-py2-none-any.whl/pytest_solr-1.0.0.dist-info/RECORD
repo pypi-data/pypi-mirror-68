@@ -1,0 +1,8 @@
+pytest_solr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_solr/factories.py,sha256=T3NlqA_HntOxdHt4AMr7f6zuha_Sa8dfhOSykWVcu-g,3152
+pytest_solr/plugin.py,sha256=W1ub2AilJy0ba-cvlXUL3DQo-n7KchY7J_iiLABX4CE,721
+pytest_solr-1.0.0.dist-info/METADATA,sha256=JrdTZqwmrvgkVnKHLW9po_V3s_YZWo9pSYlF6ytfZH8,5345
+pytest_solr-1.0.0.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+pytest_solr-1.0.0.dist-info/entry_points.txt,sha256=BkXjPdyC04cKJ6qcijv06i-xbL6vGIHbSmDnJv51lr4,45
+pytest_solr-1.0.0.dist-info/top_level.txt,sha256=ToVW-wvxlY2UNqKxP64Qx5w1nB7Xl1qe3i_59o_uwiA,12
+pytest_solr-1.0.0.dist-info/RECORD,,
