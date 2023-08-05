@@ -1,0 +1,12 @@
+README.md
+setup.py
+rsyncstats/__init__.py
+rsyncstats/cli.py
+rsyncstats/influxdb.py
+rsyncstats/rsyncstats.py
+rsyncstats.egg-info/PKG-INFO
+rsyncstats.egg-info/SOURCES.txt
+rsyncstats.egg-info/dependency_links.txt
+rsyncstats.egg-info/entry_points.txt
+rsyncstats.egg-info/requires.txt
+rsyncstats.egg-info/top_level.txt

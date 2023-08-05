@@ -1,0 +1,6 @@
+Click>=7.0.0
+influxdb==5.2.1
+maxminddb==1.5.2
+maxminddb-geolite2==2018.703
+regex==2020.2.20
+geohash2==1.1
