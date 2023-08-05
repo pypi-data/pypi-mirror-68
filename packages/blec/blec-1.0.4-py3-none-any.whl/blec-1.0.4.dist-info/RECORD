@@ -1,0 +1,10 @@
+blec/__init__.py,sha256=ab4NAzu5HOOV__Xp8WYpVoTtO14uHY3Hg3cAReOG2rg,50
+blec/main.py,sha256=DkJ4F2E3oURsVd6gsg83gNU5Ra4iN8N5PNWqFrg8qaI,7262
+blec/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blec/tests/test_blec.py,sha256=PyI_ozqbGa9OGGTgtckJYiG6ZYlHGIdpjpCFP_tPiYw,253
+blec-1.0.4.dist-info/LICENSE,sha256=kAUwJzwtspzYgr097uqMOp2e56R9z4Bp8WSSpkwqF5A,1062
+blec-1.0.4.dist-info/METADATA,sha256=kwKITZuWEEAbARVd0DG62ckHS1eUlfObxSCZyXWQ7Xw,947
+blec-1.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+blec-1.0.4.dist-info/entry_points.txt,sha256=BHdZKHaaz1oowx4GbFxu90Z8zbQFA2bUA8FIw5IJ0fc,36
+blec-1.0.4.dist-info/top_level.txt,sha256=yrflsT7qXl0HPFrnL-0KyOmszROn4vxYx3Kh7kZ4vzk,5
+blec-1.0.4.dist-info/RECORD,,
