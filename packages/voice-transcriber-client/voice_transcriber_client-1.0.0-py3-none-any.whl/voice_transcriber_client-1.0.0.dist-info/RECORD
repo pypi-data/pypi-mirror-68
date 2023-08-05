@@ -1,0 +1,8 @@
+voice_transcriber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voice_transcriber/config.py,sha256=8jrtGuUqYZ_d0tx4_rHJhL8PKCAyDahRvRNziG3f9Zk,766
+voice_transcriber/voice_transcriber.py,sha256=6u9CGxy80VGprowbwUCFGbeCC_Mav2WXCKXnyKHdVog,831
+voice_transcriber_client-1.0.0.data/scripts/voice-transcriber,sha256=xAu9ndPbE_YQhSa0qU-QQyaQyow8OwN8iEg2fkKQ7ow,1630
+voice_transcriber_client-1.0.0.dist-info/METADATA,sha256=Sry6l7SOn6Z4opAPwDfaGJwdWhvyXNOBOPpbZwQrWAg,1298
+voice_transcriber_client-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+voice_transcriber_client-1.0.0.dist-info/top_level.txt,sha256=Q4qFyuaxFCw1AGWKLftvWy-Ua_TZvQMJD_0CDYrSwiw,18
+voice_transcriber_client-1.0.0.dist-info/RECORD,,
