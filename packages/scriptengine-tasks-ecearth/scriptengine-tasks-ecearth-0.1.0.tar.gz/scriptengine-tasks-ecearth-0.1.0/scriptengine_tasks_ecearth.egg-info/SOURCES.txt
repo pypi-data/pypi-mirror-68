@@ -1,0 +1,10 @@
+README.md
+setup.py
+scriptengine/tasks/ecearth/__init__.py
+scriptengine/tasks/ecearth/slurm.py
+scriptengine/tasks/ecearth/version.py
+scriptengine_tasks_ecearth.egg-info/PKG-INFO
+scriptengine_tasks_ecearth.egg-info/SOURCES.txt
+scriptengine_tasks_ecearth.egg-info/dependency_links.txt
+scriptengine_tasks_ecearth.egg-info/requires.txt
+scriptengine_tasks_ecearth.egg-info/top_level.txt
