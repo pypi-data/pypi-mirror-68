@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+configpilot/__init__.py
+configpilot/exceptions.py
+configpilot/models.py
+configpilot/parsers.py
+configpilot/pilot.py
+configpilot/utils.py
+configpilot.egg-info/PKG-INFO
+configpilot.egg-info/SOURCES.txt
+configpilot.egg-info/dependency_links.txt
+configpilot.egg-info/top_level.txt
