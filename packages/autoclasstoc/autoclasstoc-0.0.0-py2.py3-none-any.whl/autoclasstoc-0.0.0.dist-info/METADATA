@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: autoclasstoc
+Version: 0.0.0
+Summary: Add a succinct TOC to auto-documented classes.
+Home-page: https://github.com/kalekundert/autoclasstoc
+License: UNKNOWN
+Author: Kale Kundert
+Author-email: kale@thekunderts.net
+Requires-Python: ~=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: sphinx
+Requires-Dist: docutils
+Project-URL: Bug Tracker, https://github.com/kalekundert/autoclasstoc/issues
+Project-URL: Documentation, https://autoclasstoc.readthedocs.io/en/latest/
+Project-URL: Version Control, https://github.com/kalekundert/autoclasstoc
