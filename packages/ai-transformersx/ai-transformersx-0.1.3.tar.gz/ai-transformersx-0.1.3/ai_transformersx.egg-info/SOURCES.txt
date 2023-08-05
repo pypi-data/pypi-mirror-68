@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+ai_transformersx.egg-info/PKG-INFO
+ai_transformersx.egg-info/SOURCES.txt
+ai_transformersx.egg-info/dependency_links.txt
+ai_transformersx.egg-info/requires.txt
+ai_transformersx.egg-info/top_level.txt
