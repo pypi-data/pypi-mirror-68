@@ -1,0 +1,2 @@
+from Loss.SmoothingLabel import LabelSmoothSoftmaxCEV1
+from Loss.AngularPenaltySMLoss import AngularPenaltySMLoss
