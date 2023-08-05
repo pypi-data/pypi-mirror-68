@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flask-util
+Version: 0.0.1.dev0
+Summary: My personal Flask utility package.
+Home-page: https://github.com/Fakas/flask-util
+Author: Matthew Cazaly
+Author-email: matthewcaz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Werkzeug (==0.16.0)
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: flask-restplus (==0.13.0)
+
+UNKNOWN
+
+
