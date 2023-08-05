@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: limecore-core-di
+Version: 0.2.2
+Summary: limecore: Core DI
+Home-page: https://github.com/limecore/core-di
+Author: Daniel Bradberry
+Author-email: daniel@danielbradberry.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: injector
+Requires-Dist: limecore-core (>=0.2.1)
+Requires-Dist: limecore-util (>=0.1.4)
+
+limecore: Core DI
+=================
+
+Dependency Injection
+
+
