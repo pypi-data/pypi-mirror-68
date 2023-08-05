@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cathy
+Version: 3.3.2
+Summary: Discord chat bot using AIML artificial intelligence.
+Home-page: https://github.com/DevDungeon/ChattyCathy
+Author: DevDungeon
+Author-email: nanodano@devdungeon.com
+License: GPL-3.0
+Description: See https://github.com/DevDungeon/cathy
+Platform: UNKNOWN
+Requires-Python: >=3.7
