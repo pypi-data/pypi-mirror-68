@@ -1,0 +1,13 @@
+README.md
+setup.py
+LGNpy.egg-info/PKG-INFO
+LGNpy.egg-info/SOURCES.txt
+LGNpy.egg-info/dependency_links.txt
+LGNpy.egg-info/requires.txt
+LGNpy.egg-info/top_level.txt
+lgnpy/GaussianBP.py
+lgnpy/LinearGaussian.py
+lgnpy/__init__.py
+lgnpy/logging_config.py
+tests/__init__.py
+tests/test_lgnpy.py
