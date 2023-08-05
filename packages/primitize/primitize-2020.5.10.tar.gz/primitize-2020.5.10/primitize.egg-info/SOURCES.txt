@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+primitize/__init__.py
+primitize/core.py
+primitize.egg-info/PKG-INFO
+primitize.egg-info/SOURCES.txt
+primitize.egg-info/dependency_links.txt
+primitize.egg-info/requires.txt
+primitize.egg-info/top_level.txt
