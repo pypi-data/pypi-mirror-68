@@ -1,0 +1,2924 @@
+{
+  "new__experiment": {
+    "corresponding_term": {
+      "type": "experiment",
+      "name": "Experiment",
+      "parent_sections": ""
+    },
+    "props": {
+      "start-time": {
+        "type": "string",
+        "example_value": "['07.05.2015, 11:22:00']",
+        "corresponding_term": {
+          "name": "Start",
+          "type": "datetime",
+          "format": "%d.%m.%Y, %H:%M:%S",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "end-time": {
+        "type": "string",
+        "example_value": "['07.05.2015, 11:32:00']",
+        "corresponding_term": {
+          "name": "End",
+          "type": "datetime",
+          "format": "%d.%m.%Y, %H:%M:%S",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "research-group": {
+        "type": "string",
+        "example_value": "['BRUVAR']",
+        "corresponding_term": {
+          "name": "PrincipleInvestigator",
+          "type": "string",
+          "definition": "The name of the research group",
+          "parent_sections": "project__Project"
+        }
+      },
+      "scenario-title": {
+        "type": "string",
+        "example_value": "['P3 Numbers']",
+        "corresponding_term": {
+          "name": "ProjectName",
+          "type": "string",
+          "parent_sections": "experiment__Experiment"
+        }
+      },
+      "temperature": {
+        "type": "string",
+        "example_value": "['22']",
+        "corresponding_term": {
+          "name": "RoomTemperature",
+          "type": "string",
+          "parent_sections": "environment__Environment"
+        }
+      },
+      "start time": {
+        "type": "string",
+        "example_value": "['2015/01/07 11:57']",
+        "corresponding_term": {
+          "name": "Start",
+          "type": "datetime",
+          "format": "%Y/%m/%d %H:%M",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "end time": {
+        "type": "string",
+        "example_value": "['2015/01/07 12:07']",
+        "corresponding_term": {
+          "name": "End",
+          "type": "datetime",
+          "format": "%Y/%m/%d %H:%M",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "research group": {
+        "type": "string",
+        "example_value": "['BRUVAR']",
+        "corresponding_term": {
+          "name": "PrincipleInvestigator",
+          "type": "string",
+          "definition": "The name of the research group",
+          "parent_sections": "project__Project"
+        }
+      },
+      "scenario title": {
+        "type": "string",
+        "example_value": "['P3 Numbers']",
+        "corresponding_term": {
+          "name": "ProjectName",
+          "type": "string",
+          "definition": "The scenario title",
+          "parent_sections": "experiment__Experiment"
+        }
+      }
+    }
+  },
+  "new__experimenters": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Experimenters",
+      "parent_sections": ""
+    },
+    "props": {
+      "experimenter #1": {
+        "type": "string",
+        "example_value": "['Ing. Roman Mou\u010dek, Ph.D.']",
+        "corresponding_term": {
+          "name": "FullName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1",
+          "add_props": [
+            {
+              "name": "Role",
+              "value": "Experimenter",
+              "type": "string"
+            }
+          ],
+          "section_reference": [
+            {
+              "section": "recording__Recording",
+              "prop": "Experimenter",
+              "ref_type": "string",
+              "definition": "Contains id references to Experimenters 'person' sections"
+            }
+          ]
+        }
+      },
+      "experimenter #2": {
+        "type": "string",
+        "example_value": "['Ing. Luka\u0161 Va\u0159eka']",
+        "corresponding_term": {
+          "name": "FullName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #2",
+          "add_props": [
+            {
+              "name": "Role",
+              "value": "Experimenter",
+              "type": "string"
+            }
+          ],
+          "section_reference": [
+            {
+              "section": "recording__Recording",
+              "prop": "Experimenter",
+              "ref_type": "string",
+              "definition": "Contains id references to Experimenters 'person' sections"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "new__subject": {
+    "corresponding_term": {
+      "type": "subject",
+      "name": "Subject",
+      "parent_sections": ""
+    },
+    "props": {
+      "gender": {
+        "type": "string",
+        "example_value": "['female', 'male']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "age": {
+        "type": "string",
+        "example_value": "['14']",
+        "corresponding_term": {
+          "name": "Age",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "laterality": {
+        "type": "string",
+        "example_value": "['right-hander', 'left-hander']",
+        "corresponding_term": {
+          "name": "Laterality",
+          "type": "string",
+          "parent_sections": "subject__Subject___person__Person Info"
+        }
+      },
+      "height [cm]": {
+        "type": "string",
+        "example_value": "['158']",
+        "corresponding_term": {
+          "name": "Size",
+          "type": "string",
+          "unit": "cm",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "weight [kg]": {
+        "type": "string",
+        "example_value": "['48']",
+        "corresponding_term": {
+          "name": "Weight",
+          "type": "string",
+          "unit": "kg",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "diseases": {
+        "type": "string",
+        "example_value": "['-']",
+        "corresponding_term": {
+          "name": "HealthStatus",
+          "type": "string",
+          "definition": "The health status of the subject (lists if subject has any diseases)",
+          "parent_sections": "subject__Subject"
+        }
+      }
+    }
+  },
+  "new__digitization": {
+    "corresponding_term": {
+      "type": "",
+      "name": "",
+      "parent_sections": ""
+    },
+    "props": {
+      "sampling-rate": {
+        "type": "string",
+        "example_value": "['1000 Hz']",
+        "corresponding_term": {
+          "name": "SampleRate",
+          "type": "string",
+          "unit": "Hz",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "sampling rate": {
+        "type": "string",
+        "example_value": "['1000 Hz']",
+        "corresponding_term": {
+          "name": "SampleRate",
+          "type": "string",
+          "unit": "Hz",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      }
+    }
+  },
+  "new__hardware": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__eeg cap": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "EEG cap",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['yellow - small (50 - 55 cm)', 'red - medium (54 - 58 cm)', 'blue - large (58 - 62 cm)']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['EEG cap captures the signal  of neuronal activity in the brain from the head surface using electrode application technique.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['16884', '17196', '21050']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['12262', '21459', '23433']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "hardware manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__EEG cap"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.walter-graphtek.cz/index.php/eegaccessories/ccessorieseeg/eciacceeg/item/e1-l?category_id=41 http://www.electro-cap.com']",
+        "use_as_reference": "collection/hardware_properties__HardwareProperties___hardware__EEG cap",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      }
+    }
+  },
+  "new__electrode": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Electrodes",
+      "parent_sections": ""
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['An electrode is an electrical conductor used to make contact with a nonmetallic part of a circuit (e.g., the human scalp) and is used to measure electrical activity. http://purl.bioontology.org/NEMO/ontology/NEMO.owl#NEMO_0000501']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes"
+        }
+      }
+    }
+  },
+  "new__eye blink detection electrode": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Eye Blink Detection Electrode",
+      "parent_sections": "collection__Electrodes"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['E21-9S DISK ELECTRODE']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A pure tin cup electrode with a 48\" (122 cm) lead wire and a female socket. Device is used as a reference electrode.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Standard 9mm cup']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.electro-cap.com/index.cfm/supplies/']",
+        "use_as_reference": "collection__Electrodes___electrode__Eye Blink Detection Electrode",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      },
+      "hardware manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Eye Blink Detection Electrode"
+        }
+      }
+    }
+  },
+  "new__reference electrode": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Reference Electrode",
+      "parent_sections": "collection__Electrodes"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['E21-9S DISK ELECTRODE']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A pure tin cup electrode with a 48\" (122 cm) lead wire and a female socket. Device is used as a reference electrode.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Standard 9mm cup']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.electro-cap.com/index.cfm/supplies/']",
+        "use_as_reference": "collection__Electrodes___electrode__Reference Electrode",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      },
+      "hardware manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Reference Electrode"
+        }
+      }
+    }
+  },
+  "new__ground electrode": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Ground Electrode",
+      "parent_sections": "collection__Electrodes"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['E5-9S EAR ELECTRODE']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A pair of pure tin cup electrodes with a 48\" (122 cm) lead wire and a female socket. A spring-clip back, covered with plastic for patient comfort, is used to hold the electrode in place. Device is used as a ground electrode.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Standard 9mm cup']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.electro-cap.com/index.cfm/supplies/']",
+        "use_as_reference": "collection__Electrodes___electrode__Ground Electrode",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      },
+      "hardware manufacturer": {
+        "type": "string",
+        "example_value": "['Electro-Cap International, Inc. Eaton, Ohio 45320 USA']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___electrode__Ground Electrode"
+        }
+      }
+    }
+  },
+  "new__car simulator": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Car simulator",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__bodywork": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Bodywork",
+      "parent_sections": "collection__Car simulator"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Bodywork is the body of a motor vehicle (automobile, bus or truck), a horse-drawn coach or carriage (whence the term originated), or, by extension, a railroad car or railway carriage. An obsolescent synonym is carrossery.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car simulator___hardware__Bodywork"
+        }
+      },
+      "car model": {
+        "type": "string",
+        "example_value": "['Skoda Octavia - is a brand of the car bodywork used for our experimental car.']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Car simulator___hardware__Bodywork"
+        }
+      }
+    }
+  },
+  "new__steering wheel": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Steering wheel",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['G27 Racing Wheel Steering wheel']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Steering wheel"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A game wheel that controls steering, as in the car simulator. Device is used for measuring driver\u00b4s experiments.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Steering wheel"
+        }
+      }
+    }
+  },
+  "new__pedals": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Pedals",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['G27 Racing Wheel pedals']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Pedals"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['G27 Racing Wheel pedals device has the steel gas, brake, and clutch pedals deliver precise throttle, braking, and shifting control for heightened realism.Device is used for measuring driver\u00b4s experiments.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Pedals"
+        }
+      }
+    }
+  },
+  "new__shifter": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Shifter",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['G27 Racing Wheel shifter']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Shifter"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['G27 Racing Wheel shifter is a six-speed shifter used for shift gears in driver\u00b4s experiments.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Shifter"
+        }
+      }
+    }
+  },
+  "new__digital projector": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Digital projector",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['The Acer P5280']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Digital projector"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The Acer P5280 is a digital projector used for projection of stimulation protokol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Digital projector"
+        }
+      }
+    }
+  },
+  "new__sound system": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Sound system",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['Logitech X140']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Sound system"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Total RMS power: 5 watts RMS (2.5 x 2) Total peak power: 10 watts Frequency response: 80Hz - 18kHz 7 cm high-excursion driver with 7.6 cm pressure driver Speaker dimensions 24.1 x 9.9 x 12.4 (H x W x D, cm)']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Sound system"
+        }
+      }
+    }
+  },
+  "new__camera system": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Camera system",
+      "parent_sections": "collection__Car Simulator"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['HD Pro Webcam C920']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Camera system"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Full HD 1080p video calling (up to 1920 x 1080 pixels) with the latest version of Skype for Windows* 720p HD video calling (up to 1280 x 720 pixels) with supported clients Full HD video recording (up to 1920 x 1080 pixels) with a recommended system** Logitech Fluid Crystal\u2122 Technology H.264 video compression* Carl Zeiss\u00ae lens with 20-step autofocus Built-in dual stereo mics with automatic noise reduction Automatic low-light correction Hi-Speed USB 2.0 certified (USB 3.0 ready) Tripod-ready universal clip fits laptops, LCD or CRT monitors']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Car Simulator___hardware__Camera system"
+        }
+      }
+    }
+  },
+  "new__amplifier": {
+    "corresponding_term": {
+      "type": "hardware/amplifier",
+      "name": "Amplifier",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['V-Amp 16']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['digital DC amplifier input 5V DC, 450mA']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The V-Amp is used for recording EEG signal and the full range of evoked potentials. Amplifier has two auxiliary ports for measuring peripheral signals like GSR, blood flow, body temperature.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['AMP 10021151 VA16']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['501421']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "number of channels": {
+        "type": "string",
+        "example_value": "['18']",
+        "corresponding_term": {
+          "name": "AIChannelCount",
+          "type": "int",
+          "parent_sections": "hardware/daq__DataAcquisition"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Brain Products']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.brainproducts.com/productdetails.php?id=15']",
+        "use_as_reference": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      },
+      "hardware manufacturer": {
+        "type": "string",
+        "example_value": "['Brain Products']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "model name": {
+        "type": "string",
+        "example_value": "['V-Amp 16']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      }
+    }
+  },
+  "new__stimulation computer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Stimulation computer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['HP station']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Stimulation computer"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Stimulation computer used processor Intel Xeon E5 1650 3,5 GHz. It has 16 GB RAM. Stimulation computer is used for playing stimulation protocol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Stimulation computer"
+        }
+      }
+    }
+  },
+  "new__recording computer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Recording computer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['Notebook DELL LATITUDE']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Recording computer"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Recording computer used processor Intel Core i7 CPU 3,2GHz 3,19GHz. It has 12 GB RAM. Device is used for recording EEG/ERP from drivers or mice blindness expreriments.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Recording computer"
+        }
+      }
+    }
+  },
+  "new__auditory presentation computer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Auditory presentation computer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Auditory presentation computer used processor Intel Core i7 CPU 2,67GHz 2,67GHz. It has 12 GB RAM. Stimulation computer is used for playing stimulation protocol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Auditory presentation computer"
+        }
+      }
+    }
+  },
+  "new__gsr module": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "GSR module",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['The GSR module acquires the skin conductance by applying a constant voltage of 0.5 volts and recording the resulting current.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__GSR module"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['EDA1201248']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__GSR module"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__GSR module"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['BP-BM-30']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__GSR module"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Becker Meditec, Karlsruhe, Germany']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__GSR module"
+        }
+      }
+    }
+  },
+  "new__accessories": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Accessories",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__electro gel": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Electro Gel",
+      "parent_sections": "collection__Accessories"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['ELECTRO-GEL NET:16']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Electro Gel"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['This electro-gel is an off white color, water-miscible conductive gel. Electro-gel is a mixture of the following components: Water, Sodium Chloride, Aragum, Glycerin, Pottasium Bitartrate, Methylparaben and Propylparaben. Electro gel is applied by inserting the gel into the EEG cap electrodes by using a syringe and blunted needle. Electro gel is used for setting low electrode impedance and limitations of electrode artifacts.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Electro Gel"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['ELECTRO-Cap International, Inc. 1011 W. Lexington Road Eaton, Ohio 45320 U.S.A.']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Electro Gel"
+        }
+      }
+    }
+  },
+  "new__conductive paste": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Conductive Paste",
+      "parent_sections": "collection__Accessories"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Ten 20 CONDUCTIVE EEG Paste']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Conductive Paste"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Ten20 is a conductive and adhesive paste specifically formulated for use with reusable (non-disposable) electrodes. Primarily used for EEG electrodes. (http://www.biopac.com/ten20-conductivegel)']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Conductive Paste"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Weaver and Company 565 Nucla Way Unit B Aurora, CO 80011 Toll Free 800-525-2130 Fax 303-367-5118']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Conductive Paste"
+        }
+      }
+    }
+  },
+  "new__degreasing gel": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Degreasing Gel",
+      "parent_sections": "collection__Accessories"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Nuprep']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Degreasing Gel"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Nuprep gel is applied to electrode site on scalp with cotton swab. EEG electrode paste and reference or ground electrode is applied over Nuprep gel.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Degreasing Gel"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Weaver and Company 565 Nucla Way Unit B Aurora, CO 80011 Toll Free 800-525-2130 Fax 303-367-5118']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection__Accessories___hardware__Degreasing Gel"
+        }
+      }
+    }
+  },
+  "new__software": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Software",
+      "parent_sections": ""
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['BrainVision Recorder 1.2']",
+        "corresponding_term": {
+          "name": "Name",
+          "type": "string",
+          "parent_sections": "software__Software"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['EEG/ERP recording software']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "software__Software"
+        }
+      }
+    }
+  },
+  "experiment__experiment": {
+    "corresponding_term": {
+      "type": "experiment",
+      "name": "Experiment",
+      "parent_sections": ""
+    },
+    "props": {
+      "private-experiment": {
+        "type": "boolean",
+        "example_value": "[False]",
+        "corresponding_term": {
+          "name": "Private Experiment",
+          "type": "boolean",
+          "parent_sections": "experiment__Experiment"
+        }
+      },
+      "start-time": {
+        "type": "datetime",
+        "example_value": "[datetime.datetime(2014, 3, 31, 10, 0)]",
+        "corresponding_term": {
+          "name": "Start",
+          "type": "datetime",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "end-time": {
+        "type": "datetime",
+        "example_value": "[datetime.datetime(2014, 3, 31, 12, 0)]",
+        "corresponding_term": {
+          "name": "End",
+          "type": "datetime",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "temperature": {
+        "type": "int",
+        "example_value": "[22]",
+        "corresponding_term": {
+          "name": "RoomTemperature",
+          "type": "string",
+          "parent_sections": "environment__Environment"
+        }
+      },
+      "environment-note": {
+        "type": null,
+        "example_value": "[]",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "environment__Environment"
+        }
+      },
+      "research-group": {
+        "type": "string",
+        "example_value": "['BRUVAR']",
+        "corresponding_term": {
+          "name": "PrincipleInvestigator",
+          "type": "string",
+          "definition": "The name of the research group",
+          "parent_sections": "project__Project"
+        }
+      },
+      "scenario-title": {
+        "type": "string",
+        "example_value": "['Driver\u00b4s attention with auditory stimulation']",
+        "corresponding_term": {
+          "name": "ProjectName",
+          "type": "string",
+          "definition": "The scenario title",
+          "parent_sections": "experiment__Experiment"
+        }
+      }
+    }
+  },
+  "person__subject": {
+    "corresponding_term": {
+      "type": "subject",
+      "name": "Subject",
+      "parent_sections": ""
+    },
+    "props": {
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "age (years, months)": {
+        "type": "string",
+        "example_value": "['8y 3m']",
+        "corresponding_term": {
+          "name": "Age",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "comorbidities": {
+        "type": "string",
+        "example_value": "['no']",
+        "corresponding_term": {
+          "name": "Comorbidities",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "laterality": {
+        "type": "string",
+        "example_value": "['right-handed']",
+        "corresponding_term": {
+          "name": "Laterality",
+          "type": "string",
+          "parent_sections": "subject__Subject___person__Person Info"
+        }
+      },
+      "myopia": {
+        "type": "string",
+        "example_value": "['no']",
+        "corresponding_term": {
+          "name": "Myopia",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      },
+      "age": {
+        "type": "int",
+        "example_value": "[21]",
+        "corresponding_term": {
+          "name": "Age",
+          "type": "string",
+          "parent_sections": "subject__Subject"
+        }
+      }
+    }
+  },
+  "weather__weather": {
+    "corresponding_term": {
+      "type": "environment",
+      "name": "Weather",
+      "parent_sections": ""
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Changeable weather']",
+        "corresponding_term": {
+          "name": "Weather",
+          "type": "string",
+          "parent_sections": "environment__Weather"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Sunny or cloudy']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "environment__Weather"
+        }
+      }
+    }
+  },
+  "collection__devices": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "hardware__response button": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Response Button",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['\"A response button is an electrical component that can break an electrical circuit, interrupting the current or diverting it from one conductor to another. A switch is used by a tested subject as a control signal (response) for a stimulation system.\" &#xd;http://en.wikipedia.org/wiki/Switch']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Response Button"
+        }
+      }
+    }
+  },
+  "hardware__power supply": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Power Supply",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['PS607110246wr']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The component that supplies power to a amplifier. (http://www.webopedia.com/TERM/P/power_supply.html)']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      }
+    }
+  },
+  "hardware__reference electrode": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Reference Electrode",
+      "parent_sections": "collection__Electrodes"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['E21-9S DISK ELECTRODE']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___hardware__Reference Electrode"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A pure tin cup electrode with a 48\" (122 cm) lead wire and a female socket. Device is used as a reference electrode, and is located at the root of the nose.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___hardware__Reference Electrode"
+        }
+      }
+    }
+  },
+  "hardware__small eeg cap": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Small EEG Cap",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['HEAD CIRCUMFERENCE: 50 - 54 cm']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Small EEG Cap"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['EEG cap captures the signal of neuronal activity in the brain from the head surface using electrode application technique.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Small EEG Cap"
+        }
+      }
+    }
+  },
+  "hardware__digital portable - real hardware-mixer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Digital Portable - Real Hardware-mixer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Digital PortaStudio 564']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Digital Portable - Real Hardware-mixer"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['PortaStudio564']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Digital Portable - Real Hardware-mixer"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Device is used for audio stimulation of tested subject within EEG stimulation protocol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Digital Portable - Real Hardware-mixer"
+        }
+      }
+    }
+  },
+  "hardware__ground electrode": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Ground Electrode",
+      "parent_sections": "collection__Electrodes"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['E5-9S EAR ELECTRODE']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___hardware__Ground Electrode"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['A pair of pure tin cup electrodes with a 48\" (122 cm) lead wire and a female socket. A spring-clip back, covered with plastic for patient comfort, is used to hold the electrode in place.Device is used as a ground electrode.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Electrodes___hardware__Ground Electrode"
+        }
+      }
+    }
+  },
+  "hardware__amplifier": {
+    "corresponding_term": {
+      "type": "hardware/amplifier",
+      "name": "Amplifier",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['BRAIN AMP DC']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['AMP0711758DC']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The BrainAmp DC includes all the outstanding features of the BrainAmp amplifier with the addition of the DC recording mode as well as with multiple hardware filtering options. The setup of the amplifier is fully controllable via the recording software.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      }
+    }
+  },
+  "hardware__usb 2 adapter": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "USB 2 Adapter",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['USB 2']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2 Adapter"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Hardware device which provides an interface between an amplifier (optic fiber) and computer (USB2).']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2 Adapter"
+        }
+      }
+    }
+  },
+  "hardware__headphones": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Headphones",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['Circumaural headphones']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Headphones"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Device is used for audio stimulation of tested subject within EEG stimulation protocol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Headphones"
+        }
+      }
+    }
+  },
+  "hardware__clinical audiometer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Clinical Audiometer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['DA74']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Clinical Audiometer"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['An audiometer is a machine used for evaluating hearing mechanism. (http://en.wikipedia.org/wiki/Audiometer)']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Clinical Audiometer"
+        }
+      }
+    }
+  },
+  "hardware__electrode input box 64 channel": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Electrode Input Box 64 Channel",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['EIB06031122']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box 64 Channel"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['64-channel Electrode Input Box is a device that only allowed electrodes with single-input safety sockets to be connected to the BrainAmp recording amplifiers.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box 64 Channel"
+        }
+      }
+    }
+  },
+  "hardware__sound-proof cabin": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Sound-proof Cabin",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['2x2x1,5m']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Sound-proof Cabin"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Closable cabin formed by conducting material for one person (approx 2x2x1,5m) which muffle external noise. Cabin blocks external static and non-static electric fields by channeling electricity through conducting material and provides constant voltage on all sides of the cabin. Subject inside is screened out from events in the lab during the experiment. The cabin contains ventilation, light and window.&#xd;http://en.wikipedia.org/wiki/Faraday_cage']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Sound-proof Cabin"
+        }
+      }
+    }
+  },
+  "collection__softwares": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Software",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "software__presentation": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Presentation",
+      "parent_sections": "collection__Software"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Presentation is a stimulus delivery and experimental control program for neuroscience. Program delivers auditory, visual and multimodal stimuli with sub-millisecond temporal precision.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Presentation"
+        }
+      }
+    }
+  },
+  "software__brainvision recorder 1.2": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Brainvision Recorder 1.2",
+      "parent_sections": "collection__Software"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['The BrainVision Recorder is used to control EEG amplifiers and record EEG signals.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Brainvision Recorder 1.2"
+        }
+      }
+    }
+  },
+  "collection__projecttypes": {
+    "corresponding_term": {
+      "type": "",
+      "name": "",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "projecttype__projecttype": {
+    "corresponding_term": {
+      "type": "project",
+      "name": "Project",
+      "parent_sections": ""
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Thesis']",
+        "corresponding_term": {
+          "name": "Title",
+          "type": "string",
+          "parent_sections": "project__Project"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Thesis describes Driver\u00b4s attention with auditory stimuli experiments.']",
+        "corresponding_term": {
+          "name": "Topic",
+          "type": "string",
+          "parent_sections": "project__Project"
+        }
+      }
+    }
+  },
+  "collection__experimentators": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Experimenters",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "person__person": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Experimenter",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Bruha']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Petr']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter"
+        }
+      },
+      "username": {
+        "type": "string",
+        "example_value": "['bruhap@seznam.cz']",
+        "corresponding_term": {
+          "name": "Email",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter"
+        }
+      },
+      "role": {
+        "type": "string",
+        "example_value": "['ROLE_ADMIN']",
+        "corresponding_term": {
+          "name": "User Role",
+          "type": "string",
+          "value": "Experimenter",
+          "parent_sections": "collection__Experimenters___person__Experimenter"
+        }
+      }
+    }
+  },
+  "person__person1": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Experimenter #1",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Bruha']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Petr']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1"
+        }
+      },
+      "username": {
+        "type": "string",
+        "example_value": "['bruhap@seznam.cz']",
+        "corresponding_term": {
+          "name": "Username",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1"
+        }
+      },
+      "role": {
+        "type": "string",
+        "example_value": "['ROLE_ADMIN']",
+        "corresponding_term": {
+          "name": "User Role",
+          "type": "string",
+          "value": "Experimenter",
+          "parent_sections": "collection__Experimenters___person__Experimenter #1"
+        }
+      }
+    }
+  },
+  "person__person2": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Experimenter #2",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Bruha']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #2"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Petr']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #2"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #2"
+        }
+      }
+    }
+  },
+  "person__person3": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Experimenter #3",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Mou\u010dek']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #3"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Roman']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #3"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #3"
+        }
+      }
+    }
+  },
+  "person__person4": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Experimenter #4",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Mou\u010dek']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #4"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Roman']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #4"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['M']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Experimenter #4"
+        }
+      }
+    }
+  },
+  "artifact__artifact": {
+    "corresponding_term": {
+      "type": "artifact",
+      "name": "Artifact",
+      "parent_sections": ""
+    },
+    "props": {
+      "compensation": {
+        "type": "string",
+        "example_value": "['NotKnown']",
+        "corresponding_term": {
+          "name": "Compensation",
+          "type": "string",
+          "parent_sections": "artifact__Artifact"
+        }
+      },
+      "reject-condition": {
+        "type": "string",
+        "example_value": "['NotKnown']",
+        "corresponding_term": {
+          "name": "Reject-condition",
+          "type": "string",
+          "parent_sections": "artifact__Artifact"
+        }
+      }
+    }
+  },
+  "digitization__digitization": {
+    "corresponding_term": {
+      "type": "",
+      "name": "",
+      "parent_sections": ""
+    },
+    "props": {
+      "filter": {
+        "type": "string",
+        "example_value": "['NotKnown']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/filter__Filter"
+        }
+      },
+      "gain": {
+        "type": "float",
+        "example_value": "[-1.0]",
+        "corresponding_term": {
+          "name": "Gain",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      },
+      "sampling-rate": {
+        "type": "float",
+        "example_value": "[-1.0]",
+        "corresponding_term": {
+          "name": "SampleRate",
+          "type": "string",
+          "unit": "Hz",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware/amplifier__Amplifier"
+        }
+      }
+    }
+  },
+  "collection/hardware_properties__HardwarePropertiess": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "hardware__hardware": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Hardware",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['V-Amp Amplifier']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['digital DC amplifier input 5V']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The V-Amp is used for recording EEG signal and the full range of evoked potentials. Amplifier has two auxiliary ports for measuring peripheral signals like GSR, blood flow, body temperature.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware"
+        }
+      }
+    }
+  },
+  "hardware__hardware1": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Hardware1",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['RESPIRATION BELT']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware1"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['BP-BM-10']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware1"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Device is used for measuring respiration curve. The sensor consists of a disposable belt with an internal sinuous wire. The ends of this belt are fastened in two clamps which can be sticked together to hold the belt on the body and give the electrical contact for the wire in the belt which acts as the inductance of an oscillating circuit . Stretching the belt changes the frequency of the oscillator slightly. These changes are amplified and low pass filtered and result in the respiration curve.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware1"
+        }
+      }
+    }
+  },
+  "software__software": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Software",
+      "parent_sections": "collection__Software"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Presentation']",
+        "corresponding_term": {
+          "name": "Name",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Presentation is a stimulus delivery and experimental control program for neuroscience. It delivers auditory, visual and multimodal stimuli.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software"
+        }
+      }
+    }
+  },
+  "hardware__hardware2": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Hardware2",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Medium EEG cap']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware2"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['HEAD CIRCUMFERENCE: 54 - 58 cm']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware2"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['EEG cap captures the signal of']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware2"
+        }
+      }
+    }
+  },
+  "hardware__hardware3": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Hardware3",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Headphones']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware3"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Sehnheiser HD 202']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware3"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Device is a headphones used for audio stimulation of tested subject within EEG stimulation protocol. Frequency range:18 - 18 000 Hz&#xd;\\nHarmonic distortion:below 0.5%&#xd;\\nSensitivity:115 dB SPL&#xd;\\nImpedance:32 Ohm&#xd;\\nWeight:130 g&#xd;\\nInlet cable:direct 3 m, 3__5 mm stereo jack, reduction to 6.3 mm stereo jack']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware3"
+        }
+      }
+    }
+  },
+  "hardware__hardware4": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Hardware4",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['Computer speakers Logitech X140']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware4"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Computer speakers']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware4"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Device is a computer speaker. Device is used for audio stimulation of tested subject within EEG stimulation protocol.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Hardware4"
+        }
+      }
+    }
+  },
+  "software__software1": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Software1",
+      "parent_sections": "collection__Software"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['BrainVision Recorder 1.2']",
+        "corresponding_term": {
+          "name": "Name",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software1"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['EEG/ERP recording software']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software1"
+        }
+      }
+    }
+  },
+  "collection__diseases": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Diseases",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "disease__disease": {
+    "corresponding_term": {
+      "type": "disease",
+      "name": "Disease",
+      "parent_sections": "subject__Subject___collection__Diseases"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['myopia']",
+        "corresponding_term": {
+          "name": "Title",
+          "type": "string",
+          "parent_sections": "subject__Subject___collection__Diseases___disease__Disease"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Myopia']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "subject__Subject___collection__Diseases___disease__Disease"
+        }
+      }
+    }
+  },
+  "software__software2": {
+    "corresponding_term": {
+      "type": "software",
+      "name": "Software2",
+      "parent_sections": "collection__Software"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['World Racing 2']",
+        "corresponding_term": {
+          "name": "Name",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software2"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Computer game which is focused on the simulation aspect of driving car in real enviroment. This game is played by tested subject.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection__Software___software__Software2"
+        }
+      }
+    }
+  },
+  "new__soundproof cabin": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Soundproof Cabin",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Closable cabin formed by conducting material for one person (approx 2x2x1,5m) which muffle external noise. Cabin blocks external static and non-static electric fields by channeling electricity through conducting material and provides constant voltage on all sides of the cabin. Subject inside is screened out from events in the lab during the experiment. The cabin contains ventilation, light and window.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Soundproof Cabin"
+        }
+      },
+      "faraday cage": {
+        "type": "string",
+        "example_value": "['A Faraday cage or Faraday shield is an enclosure formed by conducting material or by a mesh of such material. Such an enclosure blocks external static and non-static electric fields.']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Soundproof Cabin"
+        }
+      }
+    }
+  },
+  "new__eeg devices": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__usb 2.0 adapter": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "USB 2.0 Adapter",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Hardware device which provides an interface between an amplifier (optic fiber) and computer (USB2).']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['BUA64-0711330']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['192422']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      },
+      "new property name5": {
+        "type": "string",
+        "example_value": "['New property value']",
+        "corresponding_term": {
+          "name": "New property name5",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['Brain BUA 64']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__USB 2.0 Adapter"
+        }
+      }
+    }
+  },
+  "new__power supply": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Power Supply",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['The component that supplies power to a amplifier.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['PS607110246wr']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "type": {
+        "type": "string",
+        "example_value": "['input 1x100-240V 50/60Hz (100Watts-180mA, output 5,6 DC)']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "manufacturer": {
+        "type": "string",
+        "example_value": "['Brain Products']",
+        "corresponding_term": {
+          "name": "Manufacturer",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.webopedia.com/TERM/P/power_supply.html']",
+        "use_as_reference": "collection/hardware_properties__HardwareProperties___hardware__Power Supply",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      }
+    }
+  },
+  "new__power pack": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Power Pack",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['\"POWER PACK is used as a power system for standard EEG/ERP recordings as it fully eliminates problems with 50/60 Hertz mains noise.\"']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Pack"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['PP0711288']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Pack"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['190257']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Pack"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Pack"
+        }
+      },
+      "reference": {
+        "type": "string",
+        "example_value": "['http://www.brainproducts.com/productdetails.php?id=16&tab=3']",
+        "use_as_reference": "collection/hardware_properties__HardwareProperties___hardware__Power Pack",
+        "corresponding_term": {
+          "name": "",
+          "type": "",
+          "parent_sections": ""
+        }
+      }
+    }
+  },
+  "new__electrode input box": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Electrode Input Box",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "title": {
+        "type": "string",
+        "example_value": "['ELECTRODE INPUT BOX 64 CHANNEL']",
+        "corresponding_term": {
+          "name": "Model",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Input box device which provides an interface between an EEG cap and amplifier.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box"
+        }
+      },
+      "serial number": {
+        "type": "string",
+        "example_value": "['EIB06031122']",
+        "corresponding_term": {
+          "name": "SerialNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['191683']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Electrode Input Box"
+        }
+      }
+    }
+  },
+  "new__signal tester": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Signal Tester",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['Signal tester is a device for verify the functionality of the amplifier__ Device generates rectangular waveform__']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Signal Tester"
+        }
+      },
+      "inventory number": {
+        "type": "string",
+        "example_value": "['190258']",
+        "corresponding_term": {
+          "name": "InventoryNo",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Signal Tester"
+        }
+      },
+      "owner": {
+        "type": "string",
+        "example_value": "['Department of Computer Science and Engineering, University of West Bohemia, Pilsen, Czech Republic']",
+        "corresponding_term": {
+          "name": "Owner",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Signal Tester"
+        }
+      }
+    }
+  },
+  "new__stimulation device for cognitive research": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Simulation Device For Cognitive Research",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['Stimulation device']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Simulation Device For Cognitive Research"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['Stimulation device is based on ARM Cortex microcontroller unit and it can present visual stimuli, auditory stimuli and combination of these. Outputs: 1) Visual stimuli - simple LED diodes, LED panels, patterns presented on small LCD displays or any images in defined format presented on normal LCD monitor, 2) Auditory stimuli - simple tones of various frequencies, any sound saved in wav file, 3) Synchronization output - for synchronizing events with measuring device. Can be also used as GPIO Inputs: 4 response buttons - can be assigned to any visual or auditory stimulus.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Simulation Device For Cognitive Research"
+        }
+      }
+    }
+  },
+  "new__recording and auditory presentation computer": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Recording And Auditory Presentation Computer",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['Corsair']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Recording And Auditory Presentation Computer"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['This computer used processor Intel Core i7 CPU 3,2GHz 3,19GHz. It has 12 GB RAM. Device is used for recording EEG/ERP.']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Recording And Auditory Presentation Computer"
+        }
+      }
+    }
+  },
+  "new__devices": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__experimentators": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Experimenters",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "new__person 1": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Person 1",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Moucek']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 1"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Roman']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 1"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['male']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 1"
+        }
+      }
+    }
+  },
+  "new__person 2": {
+    "corresponding_term": {
+      "type": "person",
+      "name": "Person 2",
+      "parent_sections": "collection__Experimenters"
+    },
+    "add_props": [
+      {
+        "name": "Role",
+        "value": "Experimenter",
+        "type": "string"
+      }
+    ],
+    "section_reference": [
+      {
+        "section": "recording__Recording",
+        "prop": "Experimenter",
+        "ref_type": "string",
+        "definition": "Contains id references to Experimenters 'person' sections"
+      }
+    ],
+    "props": {
+      "surname": {
+        "type": "string",
+        "example_value": "['Vareka']",
+        "corresponding_term": {
+          "name": "LastName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 2"
+        }
+      },
+      "givenname": {
+        "type": "string",
+        "example_value": "['Lukas']",
+        "corresponding_term": {
+          "name": "FirstName",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 2"
+        }
+      },
+      "gender": {
+        "type": "string",
+        "example_value": "['male']",
+        "corresponding_term": {
+          "name": "Gender",
+          "type": "string",
+          "parent_sections": "collection__Experimenters___person__Person 2"
+        }
+      }
+    }
+  },
+  "new__licenses": {
+    "corresponding_term": {
+      "type": "license",
+      "name": "License",
+      "parent_sections": ""
+    },
+    "props": {
+      "license": {
+        "type": "string",
+        "example_value": "['General Public License']",
+        "corresponding_term": {
+          "name": "Name",
+          "type": "string",
+          "parent_sections": "license__License"
+        }
+      }
+    }
+  },
+  "new__electrodes": {
+    "corresponding_term": {
+      "type": "collection",
+      "name": "Electrodes",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  }
+}

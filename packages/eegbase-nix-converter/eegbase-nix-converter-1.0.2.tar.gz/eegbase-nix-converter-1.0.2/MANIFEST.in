@@ -1,0 +1,3 @@
+include nixconverter/brainvisionconverter/brainvision_mapping.json
+include nixconverter/odmlconverter/odml_mapping.json
+recursive-include tests/data *
