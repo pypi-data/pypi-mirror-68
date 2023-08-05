@@ -1,0 +1,14 @@
+README.md
+setup.py
+ai_z.egg-info/PKG-INFO
+ai_z.egg-info/SOURCES.txt
+ai_z.egg-info/dependency_links.txt
+ai_z.egg-info/requires.txt
+ai_z.egg-info/top_level.txt
+aiz/__init__.py
+aiz/aiz.py
+aiz/cpu.py
+aiz/gpu_amd.py
+aiz/gpu_nvidia.py
+aiz/hwinfo.py
+bin/ai-z
