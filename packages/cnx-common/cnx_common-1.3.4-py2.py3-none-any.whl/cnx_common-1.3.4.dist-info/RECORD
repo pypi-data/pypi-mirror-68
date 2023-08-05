@@ -1,0 +1,13 @@
+cnxcommon/__init__.py,sha256=GcCmUD_J3vCYfUHHlCMLCcYWdtmKiFTCXx_IUjqtA1M,295
+cnxcommon/_version.py,sha256=clXp_7_4CKK_USCwElGwp--tJDVSAT7tSSrXqJMYQjc,497
+cnxcommon/ident_hash.py,sha256=x5bL7Eop_-LdaU3f2Q8PgEc4WrcNhKCIFn1QZbsraes,6575
+cnxcommon/urlslug.py,sha256=vTCnQodJh9BcakXrSB9F9Z-cDjKML3jr8wE8bbEUNB8,2009
+cnxcommon/utils.py,sha256=8xHhbpalhK8YqYejfOuDRT0NMSAyFpy5FwQZIZe__sM,451
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ident_hash.py,sha256=5UBfLG881en3yc0jUGhLuB3kxSggpmvs8A4UaRwrYQE,17957
+tests/test_urlslug.py,sha256=4m2trnKxgn_JdEvBz1mt5RUyEb3RD1U7SkhSW7djbb4,9666
+cnx_common-1.3.4.dist-info/LICENSE.txt,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+cnx_common-1.3.4.dist-info/METADATA,sha256=qjF6Rwiz4I0DuA9iTqGdwuCAzqMIZ8KsGrww0rTV2tU,829
+cnx_common-1.3.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+cnx_common-1.3.4.dist-info/top_level.txt,sha256=_KoQQiWa1oKUG_Skvox3GR4G9N3jAYtz9aXFXSgjQFA,16
+cnx_common-1.3.4.dist-info/RECORD,,
