@@ -1,0 +1,38 @@
+.gitignore
+LICENSE
+README.md
+publish.sh
+setup.cfg
+setup.py
+data/chile_hospitalizados.csv
+data/chile_minsal_fallecidos.csv
+data/chile_minsal_infectados.csv
+data/chile_rm_hospitalizados.csv
+data/china_nhc.csv
+data/china_who.csv
+data/csse_confirmed.csv
+data/csse_deaths.csv
+data/csse_recovered.csv
+epidemia/__init__.py
+epidemia/epidemia.py
+epidemia/ivorra.py
+epidemia/mcmc.py
+epidemia/models.py
+epidemia/perf.py
+epidemia.egg-info/PKG-INFO
+epidemia.egg-info/SOURCES.txt
+epidemia.egg-info/dependency_links.txt
+epidemia.egg-info/requires.txt
+epidemia.egg-info/top_level.txt
+examples/Chile adjust Reff.ipynb
+examples/Chile fix Reff.ipynb
+examples/Chile strategies.ipynb
+examples/Chile.ipynb
+examples/China.ipynb
+examples/Italy.ipynb
+examples/example.py
+examples/example_train.py
+figures/example.png
+figures/example_plot.png
+figures/example_plot_params.png
+figures/example_train.png
