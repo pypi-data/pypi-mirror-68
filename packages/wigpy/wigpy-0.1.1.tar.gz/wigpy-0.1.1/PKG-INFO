@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wigpy
+Version: 0.1.1
+Summary: computation of Wasserstein Index Generation model
+Home-page: https://github.com/mark-fangzhou-xie/wigpy
+Author: Fangzhou Xie
+Author-email: fangzhou.xie@nyu.edu
+License: MIT
+Download-URL: https://github.com/mark-fangzhou-xie/wigpy/archive/v_0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: WIG,pWIG
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
