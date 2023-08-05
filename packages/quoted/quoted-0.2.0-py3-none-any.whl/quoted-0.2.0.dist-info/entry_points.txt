@@ -1,0 +1,3 @@
+[console_scripts]
+quoted=quoted.quoted:main
+
