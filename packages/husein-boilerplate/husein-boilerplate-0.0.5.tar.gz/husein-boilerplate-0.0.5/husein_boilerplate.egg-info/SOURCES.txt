@@ -1,0 +1,12 @@
+.gitignore
+README.md
+build.sh
+setup.py
+husein_boilerplate/__init__.py
+husein_boilerplate/multiprocessing.py
+husein_boilerplate/rules.py
+husein_boilerplate.egg-info/PKG-INFO
+husein_boilerplate.egg-info/SOURCES.txt
+husein_boilerplate.egg-info/dependency_links.txt
+husein_boilerplate.egg-info/requires.txt
+husein_boilerplate.egg-info/top_level.txt

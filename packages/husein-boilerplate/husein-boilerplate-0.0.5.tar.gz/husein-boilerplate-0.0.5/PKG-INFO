@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: husein-boilerplate
+Version: 0.0.5
+Summary: Boilerplate for Husein
+Home-page: https://github.com/huseinzol05/husein-boilerplate
+Author: huseinzol05
+Author-email: husein.zol05@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.*
