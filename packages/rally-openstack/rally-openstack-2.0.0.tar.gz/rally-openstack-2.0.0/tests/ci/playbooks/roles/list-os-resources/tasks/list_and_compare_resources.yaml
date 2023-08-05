@@ -1,0 +1,22 @@
+- name: Check OpenStack resources after Rally launch
+  become: yes
+  become_user: stack
+  osresources:
+    compare_with: "{{ resources_at_start_dest }}"
+  ignore_errors: yes
+  register: command_result
+
+- name: Check the existence of status.txt
+  stat:
+    path: '{{ zuul.project.src_dir }}/rally-jobs/plugins'
+  register: status_txt_stat
+  when: command_result.rc != 0
+
+- name: Update status.txt
+  shell: echo "{{ cleanup_error_msg }}" > "{{ rally_results_dir }}/status.txt"
+  when: command_result.rc != 0 and custom_plugins_stat.stat.exists == False
+
+- name: Fail if there are some resources left after Rally execution (for rally-openstack project)
+  fail:
+    msg: "{{ cleanup_error_msg }}"
+  when: command_result.rc != 0 and zuul.project.name == "openstack/rally-openstack"
