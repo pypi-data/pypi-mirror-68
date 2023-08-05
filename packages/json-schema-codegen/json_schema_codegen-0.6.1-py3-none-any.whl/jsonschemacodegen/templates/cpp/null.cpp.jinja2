@@ -1,0 +1,35 @@
+{%-set className = resolver.cpp_resolve_namespace(ns)+Name%}
+{%-set exception %}{{resolver.cpp_get_lib_ns() | join('::')}}::JsonSchemaException{%endset%}
+{{className}}::{{Name}}()
+{
+}
+
+boost::none_t {{className}}::Get() const
+{
+    return boost::none;
+}
+
+{{className}} {{className}}::FromJson(const {{resolver.cpp_resolve_namespace(['rapidjson'])}}Value& json)
+{
+    if (!(json.IsNull()))
+    {
+        throw {{exception}}("Not the NULL value");
+    }
+
+    return {{className}}();
+}
+
+void {{className}}::ToJson({{resolver.cpp_resolve_namespace(['rapidjson'])}}Value& value, {{resolver.cpp_resolve_namespace(['rapidjson', 'Value'])}}AllocatorType& allocator) const
+{
+    value.SetNull();  
+}
+
+void {{className}}::SetHandle(const std::string& handle)
+{
+    _handle = handle;
+}
+
+std::string {{className}}::GetHandle() const
+{
+    return _handle;
+}
