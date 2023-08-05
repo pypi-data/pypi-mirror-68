@@ -1,0 +1,8 @@
+README.md
+setup.py
+kdecorators/__init__.py
+kdecorators/decorators.py
+kdecorators.egg-info/PKG-INFO
+kdecorators.egg-info/SOURCES.txt
+kdecorators.egg-info/dependency_links.txt
+kdecorators.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: kdecorators
+Version: 0.1
+Summary: kdecorators
+Home-page: https://github.com/kkristof200/kdecorators
+Author: Kovacs Kristof-Attila
+License: UNKNOWN
+Description: # kdecorators
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
