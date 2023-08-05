@@ -1,0 +1,14 @@
+[config]
+base_url = "/"  # give full url ending with slash here
+title = "Site generated with braindead"
+description = "Just a description of site generated in braindead"
+author = "Olaf Górski"
+content = ""
+name = "braindeadsite"
+logo = "logo_url"
+heading = "Braindead Example"
+github = ""
+linkedin = ""
+copy_text = "Olaf Górski"
+copy_link = "https://grski.pl"
+language = "en"
