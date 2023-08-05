@@ -1,0 +1,8 @@
+README.md
+setup.py
+onnlogger/__init__.py
+onnlogger/logger.py
+onnlogger.egg-info/PKG-INFO
+onnlogger.egg-info/SOURCES.txt
+onnlogger.egg-info/dependency_links.txt
+onnlogger.egg-info/top_level.txt
