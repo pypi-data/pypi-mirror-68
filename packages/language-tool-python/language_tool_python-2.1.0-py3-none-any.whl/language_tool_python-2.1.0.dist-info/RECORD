@@ -1,0 +1,15 @@
+language_tool_python/__init__.py,sha256=VhobQlIG77s4GkIaSdoDyeUyNTA12l7WQu7rig0gfnc,248
+language_tool_python/__main__.py,sha256=RGhPf4CdVSD4MCu8dVYfLIJs-OZrpWl_iNi_yj666ro,6113
+language_tool_python/console_mode.py,sha256=GpnfkitAY-jbmnQIc6vL3AeeoVuIVfZwre-9OT91zD4,2085
+language_tool_python/download_lt.py,sha256=tfUd4dkAHwdcjs6opmbFhqF9vAqPTYFEAV4WJv0_1yA,4986
+language_tool_python/language_tag.py,sha256=FCCAqJ_9yV-3S5ajZJMIA8LFeMGw_64vrMmd0cNL3Cs,1261
+language_tool_python/match.py,sha256=jqVkJv1J0LxNmRPHq77uv9KHJHiWhfsJ_syOifk_IpA,4225
+language_tool_python/server.py,sha256=8E9C2TubcfEEWS8bwAWhlr75jvnZwA-tCihbmgaM_EY,10725
+language_tool_python/utils.py,sha256=7fwOqgXKc5YhccsVDKLxrYAkUgWs4I24eQ8fsJ9cGMI,6171
+language_tool_python/which.py,sha256=G_4Z2eT6tyE4I2gIMQLYvxWk7xYSI2kv4l-cGKrjQ8k,1828
+language_tool_python/backports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+language_tool_python/backports/subprocess.py,sha256=N1v06nl5QAwZuIxJ_L1ne133YJZt0GaJSCojyVmP0kU,1902
+language_tool_python-2.1.0.dist-info/METADATA,sha256=ArwqAlKfb43VxDpmMuqIyI8NIr9DdihIyoK1bbHEc2g,4054
+language_tool_python-2.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+language_tool_python-2.1.0.dist-info/top_level.txt,sha256=FyfFG5qVoO5_jv-C4EHb1a2PBWzb2Vw1D2Ztr_xNRR0,21
+language_tool_python-2.1.0.dist-info/RECORD,,
