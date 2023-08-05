@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: protosearch
+Version: 2020.5.10
+Summary: Software for enumerating crystal structure prototypes to by used for active learning exploration with DFT and machine learning.
+Home-page: https://github.com/ToyotaReseachInstitute/protosearch
+Author: Kirsten Winther, SUNCAT-Center, TRI-AMDD
+Author-email: 
+Maintainer: Kirsten Winther
+Maintainer-email: 
+License: Apache
+Description: 
+        Protosearch is software that supports the creation of libraries of
+        crystal structures according to structure prototypes derived from
+        the ICSD and OQMD
+        
+Keywords: materials,chemistry,science,crystal,density functional theory,energy,AI,artificial intelligence,sequential learning,active learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: enumerator

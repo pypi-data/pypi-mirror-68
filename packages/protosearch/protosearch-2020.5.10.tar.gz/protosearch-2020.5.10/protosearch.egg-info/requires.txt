@@ -1,0 +1,7 @@
+ase>=3.19
+numpy>=1.18
+CatLearn>=0.6.2
+shapely
+
+[enumerator]
+BulkEnumerator>=0.0.2
