@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: flake8-prometheus-metrics-name
+Version: 0.1.0
+Summary: Flake8 plugin for prometheus metric name validation
+Home-page: https://github.com/perminovs/flake8_prometheus_metrics_name
+License: MIT
+Keywords: flake8,linter,python,prometheus
+Author: perminovs
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: flake8 (>=3.7.9,<4.0.0)
+Requires-Dist: prometheus_client (>=0.7.1,<0.8.0)
+Project-URL: Repository, https://github.com/perminovs/flake8_prometheus_metrics_name
+Description-Content-Type: text/plain
+
+# Flake8 prometheus metric name plugin
+
+coming soon!
+
