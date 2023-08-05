@@ -1,0 +1,17 @@
+cryptography
+
+[admin]
+pytz
+requests
+pypandoc
+google-cloud-firestore
+google-auth
+sendgrid
+
+[cli]
+click
+pikepdf
+pytz
+requests
+fpdf
+pypandoc
