@@ -1,0 +1,9 @@
+README.md
+setup.py
+johnny/__init__.py
+johnny.egg-info/PKG-INFO
+johnny.egg-info/SOURCES.txt
+johnny.egg-info/dependency_links.txt
+johnny.egg-info/entry_points.txt
+johnny.egg-info/requires.txt
+johnny.egg-info/top_level.txt
