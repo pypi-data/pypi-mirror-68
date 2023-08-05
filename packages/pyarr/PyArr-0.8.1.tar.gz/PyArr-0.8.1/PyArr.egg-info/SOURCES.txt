@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyArr/__init__.py
+PyArr/radarr_api.py
+PyArr/request_api.py
+PyArr/sonarr_api.py
+PyArr.egg-info/PKG-INFO
+PyArr.egg-info/SOURCES.txt
+PyArr.egg-info/dependency_links.txt
+PyArr.egg-info/requires.txt
+PyArr.egg-info/top_level.txt
