@@ -1,0 +1,16 @@
+README.rst
+setup.py
+Products/__init__.py
+Products.BeakerZopeSessionManager.egg-info/PKG-INFO
+Products.BeakerZopeSessionManager.egg-info/SOURCES.txt
+Products.BeakerZopeSessionManager.egg-info/dependency_links.txt
+Products.BeakerZopeSessionManager.egg-info/namespace_packages.txt
+Products.BeakerZopeSessionManager.egg-info/not-zip-safe
+Products.BeakerZopeSessionManager.egg-info/requires.txt
+Products.BeakerZopeSessionManager.egg-info/top_level.txt
+Products/BeakerZopeSessionManager/BeakerPermissions.py
+Products/BeakerZopeSessionManager/BeakerSessionManager.py
+Products/BeakerZopeSessionManager/Interfaces.py
+Products/BeakerZopeSessionManager/SessionObject.py
+Products/BeakerZopeSessionManager/SessionTraversal.py
+Products/BeakerZopeSessionManager/__init__.py

@@ -1,0 +1,5 @@
+setuptools
+collective.beaker
+beaker
+Zope2
+zope.interface
