@@ -1,0 +1,7 @@
+README.md
+pyssembly.py
+setup.py
+pyssembly.egg-info/PKG-INFO
+pyssembly.egg-info/SOURCES.txt
+pyssembly.egg-info/dependency_links.txt
+pyssembly.egg-info/top_level.txt
