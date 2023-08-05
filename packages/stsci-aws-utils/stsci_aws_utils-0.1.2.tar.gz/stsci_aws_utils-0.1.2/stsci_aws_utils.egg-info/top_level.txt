@@ -1,0 +1,2 @@
+stsci_aws_utils
+tests
