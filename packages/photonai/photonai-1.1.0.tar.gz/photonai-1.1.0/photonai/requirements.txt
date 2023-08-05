@@ -1,0 +1,34 @@
+###### Requirements without Version Specifiers ######
+numpy
+matplotlib
+progressbar2
+Pillow
+scikit-learn
+keras
+nilearn
+pandas
+nibabel
+six
+h5py
+xlrd
+plotly
+imblearn
+pymodm
+scipy
+statsmodels
+flask
+prettytable
+seaborn
+joblib
+dask
+distributed
+scikit-optimize
+scikit-image
+pytest
+
+# bcolz
+# fabolas
+# george
+# emcee
+# you need FORTRAN compiler for the DIRECT package: sudo apt-get install gfortran
+# DIRECT
