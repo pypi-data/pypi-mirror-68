@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/jsii_library_template/__init__.py
+src/jsii_library_template/py.typed
+src/jsii_library_template.egg-info/PKG-INFO
+src/jsii_library_template.egg-info/SOURCES.txt
+src/jsii_library_template.egg-info/dependency_links.txt
+src/jsii_library_template.egg-info/requires.txt
+src/jsii_library_template.egg-info/top_level.txt
+src/jsii_library_template/_jsii/__init__.py
+src/jsii_library_template/_jsii/jsii-library-template@1.0.0.jsii.tgz
