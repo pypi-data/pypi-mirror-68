@@ -1,0 +1,3 @@
+[console_scripts]
+mca-traceroute = mca.__main__:main
+

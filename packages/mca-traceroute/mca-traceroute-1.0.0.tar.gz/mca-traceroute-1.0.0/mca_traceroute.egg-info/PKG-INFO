@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: mca-traceroute
+Version: 1.0.0
+Summary: mca-traceroute: Detection and Classification of Load Balancers
+Home-page: https://www.dcc.ufmg.br/~rlca/mca
+Author: Rafael Almeida
+Author-email: rlca@dcc.ufmg.br
+Maintainer: Ítalo Cunha
+License: GPLv3
+Project-URL: Source Code, https://github.com/rlcalmeida/mca
+Description: # MCA
+        
+        
+        This tool implements the Multipath Classification Algorithm (MCA), an extension to Paris traceroute and the Multipath Detection Algorithm (MDA). MCA can detect routers that perform load balancing and identify what fields in the IP and transport headers are used for load balancing.
+        
+        A more detailed explanation of MCA, together with a characterization of load balancing appeared in our INFOCOM 2020 paper:
+        
+        R. Almeida, Í. Cunha, R. Teixeira, D. Veitch, and C. Diot. "Classification of Load Balancing in the Internet". In Proc. IEEE INFOCOM, 2020. [PDF][1] [BibTeX][2]
+        
+        ## Installation
+        
+        MCA has been tested on Linux. It requires Python 3.6+ and Scapy 2.4+. The latest version is available on [PyPI](https://pypi.python.org/pypi/mca-traceroute), the Python Package Index:
+        
+        ``` {sh}
+        pip3 install mca-traceroute
+        mca-traceroute --help
+        ```
+        
+        You can also run MCA as a Python module directly from the Git repository. You may need to install Scapy as `root` as MCA requires root privileges to execute.
+        
+        ``` {sh}
+        sudo pip3 install scapy
+        git clone https://github.com/rlcalmeida/mca.git
+        cd mca
+        sudo python3 -m mca --help
+        ```
+        
+        ## Additional Resources
+        
+        [Route Explorer](https://github.com/rlcalmeida/route-explorer) is a visualization framework for MCA results.  It renders MCA measurements in a Web browser using Javascript libraries and supports IP-to-AS, AS-to-name, and rDNS metadata.  Our paper's dataset and some example load balancers configuration are [publicly available](https://homepages.dcc.ufmg.br/~rlca/mca).
+        
+        [1]: http://homepages.dcc.ufmg.br/~cunha/papers/almeida20infocom-mca.pdf
+        [2]: https://homepages.dcc.ufmg.br/~cunha/papers/almeida20infocom-mca.txt
+Keywords: network
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Python: >=3.6, < 4
+Description-Content-Type: text/markdown
