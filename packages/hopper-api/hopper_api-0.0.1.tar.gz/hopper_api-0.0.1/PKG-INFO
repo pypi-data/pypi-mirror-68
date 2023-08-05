@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hopper_api
+Version: 0.0.1
+Summary: Hopper's app API
+Home-page: https://github.com/hopper-team/hopper-api
+Author: The hopper team
+Author-email: info@hoppercloud.net
+License: UNKNOWN
+Description: # Hopper app API for Python
+        See [developer.hoppercloud.net](https://developer.hoppercloud.net)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
