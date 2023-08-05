@@ -1,0 +1,10 @@
+setup.py
+dsnd_distributions_pri/Binomialdistribution.py
+dsnd_distributions_pri/Gaussiandistribution.py
+dsnd_distributions_pri/Generaldistribution.py
+dsnd_distributions_pri/__init__.py
+dsnd_distributions_pri.egg-info/PKG-INFO
+dsnd_distributions_pri.egg-info/SOURCES.txt
+dsnd_distributions_pri.egg-info/dependency_links.txt
+dsnd_distributions_pri.egg-info/not-zip-safe
+dsnd_distributions_pri.egg-info/top_level.txt
