@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+prog_work/__init__.py
+prog_work/arithmetical_progression.py
+prog_work/base_progression.py
+prog_work/exceptions.py
+prog_work/geometrical_progression.py
+prog_work.egg-info/PKG-INFO
+prog_work.egg-info/SOURCES.txt
+prog_work.egg-info/dependency_links.txt
+prog_work.egg-info/not-zip-safe
+prog_work.egg-info/top_level.txt
