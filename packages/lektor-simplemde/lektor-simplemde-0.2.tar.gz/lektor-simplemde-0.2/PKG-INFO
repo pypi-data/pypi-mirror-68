@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lektor-simplemde
+Version: 0.2
+Summary: Plugin integrating SimpleMDE into Lektor admin
+Home-page: UNKNOWN
+Author: Anton Patrushev
+Author-email: ap@spherical.pm
+Maintainer: spherical.pm
+Maintainer-email: support@spherical.pm
+License: MIT
+Description: # SimpleMDE
+        
+        This plugin integrates SimpleMDE editor to textareas of lektor admin
+        
+Keywords: Lektor admin plugin simplemde wysiwyg markdown editor
+Platform: UNKNOWN
+Classifier: Framework :: Lektor
+Classifier: Environment :: Plugins
+Description-Content-Type: text/markdown
+Provides-Extra: dev
