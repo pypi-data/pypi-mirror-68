@@ -1,0 +1,14 @@
+twisted
+
+[pyqt5]
+pyqt5
+
+[pyside2]
+pyside2
+
+[test]
+coverage
+pytest
+pytest-cov
+pytest-twisted
+tox>=3.1

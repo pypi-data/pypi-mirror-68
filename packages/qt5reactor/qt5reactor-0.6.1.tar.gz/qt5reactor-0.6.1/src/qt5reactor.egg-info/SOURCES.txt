@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+src/qt5reactor/__init__.py
+src/qt5reactor/_version.py
+src/qt5reactor/core.py
+src/qt5reactor.egg-info/PKG-INFO
+src/qt5reactor.egg-info/SOURCES.txt
+src/qt5reactor.egg-info/dependency_links.txt
+src/qt5reactor.egg-info/requires.txt
+src/qt5reactor.egg-info/top_level.txt
+src/qt5reactor/tests/__init__.py
+src/qt5reactor/tests/test_core.py
