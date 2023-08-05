@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: roadlib
+Version: 0.8.1
+Summary: ROADtools common components library
+Home-page: https://github.com/dirkjanm/ROADtools/
+Author: Dirk-jan Mollema
+Author-email: dirkjan@dirkjanm.io
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: adal
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+
