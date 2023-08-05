@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyupurs
+Version: 0.0.6
+Summary: PYthon Utilitary Processing, Useful and Reliable Stuff
+Home-page: https://gitlab.com/ImadYIdrissi/pyupurs
+Author: Imad Youbi Idrissi
+Author-email: imad.youbi.idrissi@gmail.com
+License: LICENSE.txt
+Description: # pyupurs
+        
+        Yet another python library for useful utilities.
+        
+        - **How do you pronounce pyupurs ?** - "pie-up-yuurs"
+        
+        # List of modules and their features
+        ## stateless_file_ops
+        This package assembles modules to process files without loading data into memory.
+        ### auditing_ops.py 
+        This module assembles functions to audit data integrity.
+        ### transversal_ops.py
+        This module assembles functions that operate transversely across file operations.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: Unix
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
