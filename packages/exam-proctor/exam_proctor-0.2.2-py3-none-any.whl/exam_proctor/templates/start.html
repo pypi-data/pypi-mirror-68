@@ -1,0 +1,25 @@
+% rebase('base.html')
+
+<script language="javascript">
+	function refresh() {
+		document.getElementById('img').src = "cam.jpg?num=" + Math.random();
+	}
+	setInterval(refresh, 500);
+</script>
+<img id="img">
+% if error:
+	<p class="alert alert-danger" role="alert">
+		{{error}}
+	</p>
+% end
+<p>
+	Please center your webcam image, then insert exam URL provided by your instructor:
+</p>
+<form method="POST">
+	Exam URL: <input class="form-control" type="text" name="url" /> <br />
+	<input class="btn btn-primary" type="submit" name="submit" value="Start"/>
+	<a class='btn btn-warning' href='/exit?back=privacy'>Exit</a>
+</form>
+<script>
+	refresh();
+</script>

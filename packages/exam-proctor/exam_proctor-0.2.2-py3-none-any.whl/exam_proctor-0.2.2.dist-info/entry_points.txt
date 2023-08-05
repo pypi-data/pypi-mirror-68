@@ -1,0 +1,3 @@
+[console_scripts]
+exam_proctor=exam_proctor.bootstrap:main
+
