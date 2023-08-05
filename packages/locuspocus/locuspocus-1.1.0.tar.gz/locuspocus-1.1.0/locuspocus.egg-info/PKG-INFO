@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: locuspocus
+Version: 1.1.0
+Summary: Genetic coordinates made easy!
+Home-page: http://linkage.io
+Author: Rob Schaefer
+Author-email: rob@linkage.io
+License: Copyright Linkage Analytics 2016. Available under the MIT License
+Project-URL: Documentation, http://linkage.io
+Project-URL: Source, https://github.com/LinkageIO/LocusPocus
+Project-URL: Tracker, https://github.com/LinkageIO/LocusPocus/issues
+Description: UNKNOWN
+Keywords: data genetics biology coordinates
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
