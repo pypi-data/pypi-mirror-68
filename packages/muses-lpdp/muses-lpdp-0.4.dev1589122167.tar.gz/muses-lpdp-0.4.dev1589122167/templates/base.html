@@ -1,0 +1,76 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% block stylesheets %}
+        <script src="https://kit.fontawesome.com/6a2b232e7b.js" crossorigin="anonymous"></script>
+        {% if user.is_authenticated %}
+            <link rel="stylesheet" href="{% static selected_theme %}">
+        {% else %}
+            <link rel="stylesheet" href="{% static 'web/css/muses_default.css' %}">
+        {% endif %}
+    {% endblock %}
+    {% block scripts %}
+        <script src="{% static 'web/js/carousel.js' %}"></script>
+        <script defer src="{% static 'web/js/button.js' %}"></script>
+        <script src="{% static 'web/assets/awesomplete/awesomplete.js' %}"></script>
+    {% endblock %}
+    {% block extra_meta %}{% endblock %}
+    <title>
+        {% block title %}
+            {{ site_title }} - {{ view.section_name }}
+        {% endblock %}
+    </title>
+</head>
+<body>
+<div class="muses-main-container">
+    {% block pageloader %}
+        <!--<div class="pageloader"></div>-->
+    {% endblock %}
+    {% if user.is_authenticated %}
+        <div class="muses-top-bar">
+            {% block top_bar %}
+                {% include '_partials/top_bar.html' %}
+            {% endblock %}
+        </div>
+    {% endif %}
+    <div class="muses-top-menu">
+        {% block top_menu %}
+            {% include '_partials/top_menu.html' %}
+        {% endblock %}
+    </div>
+    <div class="muses-nav-bar">
+        {% block nav_bar %}
+            {% include '_partials/nav_bar.html' %}
+        {% endblock %}
+    </div>
+    <div class="muses-search-bar">
+        {% block search_bar %}
+            {% include '_partials/search_bar.html' %}
+        {% endblock %}
+    </div>
+    <div class="muses-tags-selector">
+        {% block tags_selector %}
+            {% include "_partials/tags_selector.html" %}
+        {% endblock %}
+    </div>
+    <div class="muses-current-context">
+        {% block current_context %}
+            {% include '_partials/current_context.html' %}
+        {% endblock %}
+    </div>
+    <div class="muses-main-content" id="content">
+        {% block content %}{% endblock %}
+    </div>
+    <div class="muses-footer">
+        {% block footer %}
+            {% include '_partials/footer.html' %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>
