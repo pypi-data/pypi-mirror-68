@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: multiple_permissions
+Version: 0.1.9
+Summary: Use multiple permission classes in django class based views.
+Home-page: https://github.com/aram2726/django_multiple_permissions
+Author: Aram Haroyan
+Author-email: aramharoyan@gmail.com
+License: MIT
+Description: Django multiple permissions
+        ===========================
+        
+        [![Python](https://img.shields.io/pypi/pyversions/multiple-permissions)](https://img.shields.io/pypi/pyversions/multiple-permissions)
+        [![License](https://img.shields.io/github/license/aram2726/django_multiple_permissions)](https://img.shields.io/github/license/aram2726/django_multiple_permissions)
+        
+        Usage
+        ------
+        
+        * Install the package.
+        
+        ```shell script
+        $ pip install multiple-permissions
+        ```
+        
+        * Add `multiple_permissions` to installed apps.
+        
+        ```python
+        INSTALLED_APPS = [
+            ...,
+            "multiple_permissions",
+            ...,
+        ]
+        ```
+        
+        * Add `PermissionMiddleware` to MIDDLEWARE list.
+        
+        ```python
+        MIDDLEWARE = [
+            ...,
+            "multiple_permissions.middlewares.PermissionMiddleware",
+        ]
+        ```
+        
+        * Set `permission_classes` attribute to view classes.
+        
+        ```python
+        from django.views.generic import ListView, CreateView
+        
+        from multiple_permissions.permissions import IsAuthenticated, IsSuperuser, IsManager
+        
+        
+        class PollsListView(ListView):
+            multiple_permissions = (IsAuthenticated,)
+            ...
+        
+        
+        class PollsCreateView(CreateView):
+            multiple_permissions = (IsSuperuser, IsManager)
+            ...
+        ```
+        
+        #### Creating new permissions
+        
+        * create new file in your apps named `permissions.py` and write the followng code
+        
+        * **note that your user should have `is_manager` attribute or model field otherwise you'll catch AttributeError**
+        
+        ```python
+        from multiple_permissions.permissions import BasePermission
+        
+        
+        class IsManager(BasePermission):
+            def has_permission(self, request, view=None):
+                if request.user.is_authenticated and request.user.is_active and request.user.is_manager:
+                    return True
+                return False
+        
+        ```
+        
+Keywords: django multiple permissions use many permission python rest framework
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown; charset=UTF-8
