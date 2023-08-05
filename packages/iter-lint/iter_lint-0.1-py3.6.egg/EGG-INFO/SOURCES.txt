@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+iter_lint.egg-info/PKG-INFO
+iter_lint.egg-info/SOURCES.txt
+iter_lint.egg-info/dependency_links.txt
+iter_lint.egg-info/entry_points.txt
+iter_lint.egg-info/requires.txt
+iter_lint.egg-info/top_level.txt
