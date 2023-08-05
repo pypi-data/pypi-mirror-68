@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: test-release
+Version: 0.0.1
+Summary: Test release from nbdev
+Home-page: https://github.com/gstaff/test_release/tree/master/
+Author: Grant Stafford
+Author-email: grant.d.stafford@gmail.com
+License: Apache Software License 2.0
+Description: # test_release
+        > Test a release from nbdev to pypi.
+        
+        
+        This file will become your README and also the index of your documentation.
+        
+        ## Install
+        
+        `pip install test_release`
+        
+        ## How to use
+        
+        Call like normal
+        
+        ```
+        double(2)
+        ```
+        
+        
+        
+        
+            4
+        
+        
+        
+Keywords: prototype
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
