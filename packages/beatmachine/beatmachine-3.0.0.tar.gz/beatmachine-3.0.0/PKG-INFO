@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: beatmachine
+Version: 3.0.0
+Summary: A library for procedurally remixing songs
+Author: dhsavell
+Author-email: dhsavell05@gmail.com
+License: MIT
+Requires-Python: ==3.*,>=3.6.0
+Provides-Extra: dev
