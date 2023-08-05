@@ -1,0 +1,6 @@
+README.md
+setup.py
+transformerocr.egg-info/PKG-INFO
+transformerocr.egg-info/SOURCES.txt
+transformerocr.egg-info/dependency_links.txt
+transformerocr.egg-info/top_level.txt
