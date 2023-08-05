@@ -1,0 +1,2 @@
+class MemoryExceededError(Exception):
+    pass
