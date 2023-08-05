@@ -1,0 +1,8 @@
+gremlinpython
+marshmallow
+pymysql
+python-box
+pyyaml
+semver
+uritools
+wheel
