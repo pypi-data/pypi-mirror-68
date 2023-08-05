@@ -1,0 +1,9 @@
+simple_crawl/__init__.py,sha256=2yMiGBWIHwS_BfsPm5fnOnZX0F1FHq_VeKiQcC9JE4k,72
+simple_crawl/ip_proxy.py,sha256=9WjFPKFN12OoNS-giV5MrG09AbAvNnUVdIBeaTHDqWo,3018
+simple_crawl/request.py,sha256=BoT_2hWH4lYPdAafq4Jjn88DWEz7MfMMsMSdzXiiz9Y,17927
+simple_crawl/write_SQL.py,sha256=mk3XjCJQep_G7LH1VFSuN1fZkhCcBtykCcf-FPhh-WU,3002
+simple_crawl-0.0.7.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+simple_crawl-0.0.7.dist-info/METADATA,sha256=dL4mHPr8jHET91Qpqnuku8OHkK8KTIBY88CVe4M0SAQ,11591
+simple_crawl-0.0.7.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+simple_crawl-0.0.7.dist-info/top_level.txt,sha256=xC2_yZweklFojzWBgKl823ZFvoMUsoXsxYO9gO4RB-M,13
+simple_crawl-0.0.7.dist-info/RECORD,,
