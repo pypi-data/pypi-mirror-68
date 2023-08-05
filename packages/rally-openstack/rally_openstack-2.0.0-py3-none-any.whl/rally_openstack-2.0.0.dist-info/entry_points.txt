@@ -1,0 +1,7 @@
+[oslo.config.opts]
+rally_openstack = rally_openstack.common.cfg.opts:list_opts
+
+[rally_plugins]
+options = rally_openstack.common.cfg.opts:list_opts
+path = rally_openstack
+
