@@ -1,0 +1,93 @@
+{
+  "experiment__experiment": {
+    "corresponding_term": {
+      "type": "experiment",
+      "name": "Experiment",
+      "parent_sections": ""
+    },
+    "props": {
+      "start-time": {
+        "type": "datetime",
+        "example_value": "[datetime.datetime(2014, 3, 31, 10, 0)]",
+        "corresponding_term": {
+          "name": "Start",
+          "type": "datetime",
+          "parent_sections": "recording__Recording"
+        }
+      },
+      "temperature": {
+        "type": "int",
+        "example_value": "[22]",
+        "corresponding_term": {
+          "name": "RoomTemperature",
+          "type": "string",
+          "parent_sections": "environment__Environment"
+        }
+      },
+      "scenario-title": {
+        "type": "string",
+        "example_value": "['Driver\u00b4s attention with auditory stimulation']",
+        "corresponding_term": {
+          "name": "ProjectName",
+          "type": "string",
+          "definition": "The scenario title",
+          "parent_sections": "experiment__Experiment"
+        }
+      }
+    }
+  },
+  "collection__devices": {
+    "corresponding_term": {
+      "type": "collection/hardware_properties",
+      "name": "HardwareProperties",
+      "parent_sections": ""
+    },
+    "props": {
+    }
+  },
+  "hardware__response button": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Response Button",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "description": {
+        "type": "string",
+        "example_value": "['\"A response button is an electrical component that can break an electrical circuit, interrupting the current or diverting it from one conductor to another. A switch is used by a tested subject as a control signal (response) for a stimulation system.\" &#xd;http://en.wikipedia.org/wiki/Switch']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Response Button"
+        }
+      }
+    }
+  },
+  "hardware__power supply": {
+    "corresponding_term": {
+      "type": "hardware",
+      "name": "Power Supply",
+      "parent_sections": "collection/hardware_properties__HardwareProperties"
+    },
+    "props": {
+      "type": {
+        "type": "string",
+        "example_value": "['PS607110246wr']",
+        "corresponding_term": {
+          "name": "Type",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      },
+      "description": {
+        "type": "string",
+        "example_value": "['The component that supplies power to a amplifier. (http://www.webopedia.com/TERM/P/power_supply.html)']",
+        "corresponding_term": {
+          "name": "Description",
+          "type": "string",
+          "parent_sections": "collection/hardware_properties__HardwareProperties___hardware__Power Supply"
+        }
+      }
+    }
+  }
+}
