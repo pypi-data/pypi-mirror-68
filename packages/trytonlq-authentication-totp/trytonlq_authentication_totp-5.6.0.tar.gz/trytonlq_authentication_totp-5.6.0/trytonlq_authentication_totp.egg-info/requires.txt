@@ -1,0 +1,6 @@
+passlib
+trytond<5.7,>=5.6
+
+[qrcode]
+pillow
+qrcode
