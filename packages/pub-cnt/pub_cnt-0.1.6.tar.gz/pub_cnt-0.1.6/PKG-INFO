@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pub_cnt
+Version: 0.1.6
+Summary: Publication Content
+Home-page: https://github.com/Shaila96/pub_cnt
+Author: Shaila Zaman
+Author-email: shaila.zaman96@gmail.com
+License: MIT
+Download-URL: https://github.com/Shaila96/pub_cnt/archive/0.1.6.tar.gz
+Description: UNKNOWN
+Keywords: Altmetrics,Publications
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

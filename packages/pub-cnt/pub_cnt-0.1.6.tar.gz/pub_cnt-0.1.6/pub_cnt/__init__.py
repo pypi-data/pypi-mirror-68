@@ -1,0 +1,1 @@
+from pub_cnt.altmetric import get_data
