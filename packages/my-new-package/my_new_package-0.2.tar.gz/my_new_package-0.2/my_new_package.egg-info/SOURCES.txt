@@ -1,0 +1,8 @@
+setup.py
+my_new_package/__init__.py
+my_new_package/hoge.py
+my_new_package.egg-info/PKG-INFO
+my_new_package.egg-info/SOURCES.txt
+my_new_package.egg-info/dependency_links.txt
+my_new_package.egg-info/requires.txt
+my_new_package.egg-info/top_level.txt
