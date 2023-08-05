@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: get-abtest
+Version: 0.1.1
+Summary: My short description for my project.
+Home-page: https://github.com/me/myproject
+Author: Xianglu He
+Author-email: xlhe@ucdavis.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+# get_abtest
+Hello everyone,
+this is a customized ab test frame work package
+For time to time, I realize that there is a need to run hypothsis test on ab testing experiment
+So I tried to build a python modules to automative the work a little bit
+Hope everyone who see this enjoy it :) 
+
+
