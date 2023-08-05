@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kmor
+Version: 1.0
+Summary: Python wrapper for liquibase
+Home-page: https://github.com/sunho/kmor-np
+Author: Sunho Kim
+Author-email: ksunhokim123@naver.com
+License: UNKNOWN
+Keywords: kmor,anomality detection,cleaning,k-mean,data science
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: numpy
+
+UNKNOWN
+
+
