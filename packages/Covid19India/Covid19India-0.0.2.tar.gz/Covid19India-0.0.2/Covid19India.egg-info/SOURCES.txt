@@ -1,0 +1,9 @@
+README.md
+setup.py
+Covid19India/__init__.py
+Covid19India/covid19india.py
+Covid19India.egg-info/PKG-INFO
+Covid19India.egg-info/SOURCES.txt
+Covid19India.egg-info/dependency_links.txt
+Covid19India.egg-info/requires.txt
+Covid19India.egg-info/top_level.txt
