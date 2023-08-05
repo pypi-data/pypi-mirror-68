@@ -1,0 +1,10 @@
+notebook==6.0.3
+version_parser
+questionary
+ssh_config==0.0.14
+databricks_cli
+
+[dev]
+pytest
+jupyter-console
+pyyaml
