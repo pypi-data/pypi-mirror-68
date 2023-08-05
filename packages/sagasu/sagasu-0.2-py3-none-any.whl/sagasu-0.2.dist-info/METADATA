@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: sagasu
+Version: 0.2
+Summary: sagasu is search all my contents
+License: MIT
+Author: funwarioisii
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: tweepy (>=3.8.0,<4.0.0)
