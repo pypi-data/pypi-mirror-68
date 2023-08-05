@@ -1,0 +1,12 @@
+README.md
+setup.py
+transcriptor/__init__.py
+transcriptor/amazon.py
+transcriptor/job.py
+transcriptor/markers.py
+transcriptor/speakers.py
+transcriptor.egg-info/PKG-INFO
+transcriptor.egg-info/SOURCES.txt
+transcriptor.egg-info/dependency_links.txt
+transcriptor.egg-info/not-zip-safe
+transcriptor.egg-info/top_level.txt
