@@ -1,0 +1,8 @@
+numpy
+msgpack
+msgpack_numpy
+typeguard
+scipy
+mergedeep
+humanize
+matplotlib
