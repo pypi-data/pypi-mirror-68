@@ -1,0 +1,3 @@
+[flake8.extension]
+SML = good_smell:GoodSmellFlake8
+
