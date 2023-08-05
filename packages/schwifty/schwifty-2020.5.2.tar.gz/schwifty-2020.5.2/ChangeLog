@@ -1,0 +1,194 @@
+CHANGES
+=======
+
+2020.05.2
+---------
+
+* Reorder imports
+* Add country-methods to IBAN and BIC
+
+2020.05.1
+---------
+
+* Remove bogus editor tmpfile
+* Update BE script
+* Update SI banks and script
+* Update PL banks and script
+* Update FI script
+* Reformat LV banks
+* Update HR script
+* Update LV banks and script
+* Update CZ banks and script
+* Update AT banks and script
+* Update registry for german and belgian banks
+* Documentation - Fixed line lenght issues reported by doc8
+* Doc8 - added documentation linter to github workflows
+
+2020.04.1
+---------
+
+* Add tests for italian check char
+* Exclude W503 error about line break before binary operator
+* Reformatting code with black
+* Make a general bban\_checksum function
+* Calculate Italian bban checksum code and fix Italian iban generation
+* A new Spanish bank
+* Add "schwifty image"
+* Remove unused import
+* Refactor and simplify logic
+* Add script to generate Slovenia bank account registry
+* Add generated Slovenia bank account registry
+* Remove unnecessary if statement
+* Add generate Latvia bank registry script
+* Add auto generated Latvia bank account registry
+* Add script to generate AT bank registry
+* Add generated AT bank account registry
+* Create script to generate PL bank registry
+* Add generated PL bank account registry
+* Refactor script slightly
+* Add script to generate CZ bank bic codes registry
+* Add generated CZ bank codes registry
+* Add script to generate HR bic code registry
+* Add generated HR registry
+* Fixed too long line in URL
+* Added script to auto generate bic code from FFI site
+* Added auto generated Finnish banks registry
+
+2020.02.2
+---------
+
+* Fix formatting
+* Removed try/catch, removed if/and and replaced with shorthand if third cell empty
+* Added if statement to catch empty third field
+* Updated missing path
+* Refactored code as per review, added try block for sheet index
+* Run PyPI deployment only from one stage
+
+2020.02.1
+---------
+
+* Use rst compliant hyperlink targets
+* Use black as code formatter
+* Add \`\_\_hash\_\_()\` method to \`Base\`
+* last try to correct identation
+* Corrected indentation again.
+* Corrected indentation again as per Travis
+* Deleted over-indentation
+* Added extra indentation
+* Added extra space before last If statement as per Travis
+* Added generate\_be to bank\_register
+* Refactored slightly into function
+* Added xlrd dependency
+* cleaned too long line
+* remove print, changed if statement from == to 'is'
+* Added get\_bank\_registry\_be.py to scripts, pulls and parses data from National Bank of Belgium
+* Improve documentation with examples
+* chore: Add tox and remove default python envs
+* Add explicit travis build-matrix
+* Add explicit basepython version per environment
+* Fix linter errors
+* Add Makefile for common tasks
+
+2020.01.2
+---------
+
+* Adding manual bank-registry for 'ES' and 'GB'
+
+2020.01.1
+---------
+
+* Add logo to docs
+* Add deprecation marker to docs
+* Allow to extend the IBAN and bank registry
+
+2020.01.0
+---------
+
+* Rename script
+* Reenable test
+* Skip failing test. Should probably be replaced with a non-failing test
+* Update BLZ registry
+* Change BLZ reader script: Use the text format directly
+* Upgrade project meta-info and CI configuration
+* Deprecate methods on BIC
+* Allow index to be accumulate values with same key
+* Remove deprecated test environments
+* Update IBAN and bank registry
+
+2018.09.1
+---------
+
+* SI IBAN spec and other IBAN spec updates
+* fix: update development status and python versions in metadata
+
+2018.04.1
+---------
+
+* chore: removed pdb
+* chore: new line at end of file, fix data-title
+* chore: make doctests python2.7 compatible
+* chore: doc test in all envs
+* chore: add python3.4
+* chore: test 3.6 AND 3.5
+* switch to CalVer, use python3.6 instead of 3.5 in tox
+* fix: update bank registry, update script
+
+2.1.0
+-----
+
+* Fix pep8 error in tests
+* Add tests for name and short\_name, refactor property testing
+* Resort BIC properties to order of occurence in BIC
+* Add properties for long and short bank name to BIC
+
+2.0.1
+-----
+
+* Fix really minor typos
+
+2.0.0
+-----
+
+* one pytest call is enough
+* some leftovers..
+* remove accidently commited env
+* fix doc test
+* add doctests to py35 environment
+* remove casting
+
+1.1.3
+-----
+
+* pep8 fix
+
+1.1.2
+-----
+
+* add german bic data from december 2016
+* skip header line when parsing csv
+
+1.1.1
+-----
+
+* Add \_\_version\_\_ to schwifty package
+* Remove bogus data from bank-registry
+
+1.1.0
+-----
+
+* Return BIC for primary bank
+* Update bank-registry: Version 2016-06-06
+
+1.0.6
+-----
+
+* Fix PyPI deploy password
+
+1.0.5
+-----
+
+* Change author to figo GmbH
+
+1.0.4
+-----
+
