@@ -1,0 +1,11 @@
+README.md
+setup.py
+pynamodb_plus.egg-info/PKG-INFO
+pynamodb_plus.egg-info/SOURCES.txt
+pynamodb_plus.egg-info/dependency_links.txt
+pynamodb_plus.egg-info/not-zip-safe
+pynamodb_plus.egg-info/requires.txt
+pynamodb_plus.egg-info/top_level.txt
+pynamodbplus/__init__.py
+pynamodbplus/attributes.py
+pynamodbplus/models.py
