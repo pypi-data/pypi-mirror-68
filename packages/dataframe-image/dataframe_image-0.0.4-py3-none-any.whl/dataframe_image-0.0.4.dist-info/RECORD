@@ -1,0 +1,12 @@
+dataframe_image/__init__.py,sha256=OIhSMdbMeq00czbJ5htWq0B8ewCwZfHtDZ8OBxGXgTQ,70
+dataframe_image/_convert.py,sha256=06Im0ScedxBq7wwW8MyYdo7VTreio_nmdvnZTXhyFUM,7075
+dataframe_image/_image_maker.py,sha256=9yD1Jv0i8G-ZDjtC7tmIFnMn5xkLta7QKRGGauVZd4U,6069
+dataframe_image/_to_image.py,sha256=5trfZDQDRC373xbrY_k66Czbeo6eZZTIFaduOBu51HE,2156
+dataframe_image/convert.py,sha256=XqKAHKAUhkxBVcIRB84g4qlC17Yxdc2OuvZDBOUpV8M,6915
+dataframe_image/image_maker.py,sha256=NVEiPL1jCKQxGnHGGRgkrnhBsesinXKr2AM28vhsEnM,4116
+dataframe_image/css/style.css,sha256=suAm3UVQcSQr93ei1dPQtfbIlVcn7O8KqEqo4mXVESE,720
+dataframe_image-0.0.4.dist-info/LICENSE,sha256=aYEO07IDvIhcN20TczGub9YGntTYRVSNDLBWN5WSUi0,1063
+dataframe_image-0.0.4.dist-info/METADATA,sha256=BoY8znD0KVzztP1P0WXS4fvnSU7uhfrX9SE8UFcg52U,2363
+dataframe_image-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dataframe_image-0.0.4.dist-info/top_level.txt,sha256=VCh2K4FKv2olmP53fuvETC_egboLkDGa3TDRCX0cEEE,16
+dataframe_image-0.0.4.dist-info/RECORD,,
