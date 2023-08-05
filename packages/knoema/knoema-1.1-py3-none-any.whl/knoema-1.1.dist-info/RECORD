@@ -1,0 +1,13 @@
+.DS_Store,sha256=k8zc3grRT4EN-m4vvPO8hHSS4gSSCUjHHTviVPgwN60,6148
+knoema/__init__.py,sha256=vuTFNKLKUBl6N7lU9l96ZbSQRGo_FW_7oMcWZFLE5Ag,4845
+knoema/api_client.py,sha256=SJXd2A7ITHKtKoboQeOA26vjBepzzSu9MDqcPx3K4uA,13643
+knoema/api_config.py,sha256=l6viwf16yyMXvds-tp83tj7NbhUFevh4EQ734jr1zWM,1008
+knoema/api_definitions.py,sha256=pYhHTK4_-COWNUrlxYbc7Sis8z-1UzvXLQ2V4o4JBt0,14177
+knoema/api_definitions_search.py,sha256=CzVOk-Xh3wyM2iVtKaLNqMgXFLUCdMDO9gJdxJ5HS_4,3972
+knoema/api_definitions_sema.py,sha256=lbtEnRZGEpTnci4Pgq4-OVfVAkLOlbCu2TrMLT0j3Jw,3274
+knoema/data_reader.py,sha256=Z4piZZlDq8xtqNLtxMBlWID2kAS3TxZVjHVSBEFley4,36879
+knoema-1.1.dist-info/LICENSE,sha256=WKmYk8r-2EOmCY1vsuNgyIm4EYMaWMIkbdCuYr1JcnY,1075
+knoema-1.1.dist-info/METADATA,sha256=rsJEbI8WWd9lfF4D_kMEDpi9cOMKRK5azx-9DNOC558,15288
+knoema-1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+knoema-1.1.dist-info/top_level.txt,sha256=-hO7ERBpyfHRTxhZmdHVbJ73CobHE-3APLeQ7mffbes,7
+knoema-1.1.dist-info/RECORD,,
