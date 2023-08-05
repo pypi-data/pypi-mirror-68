@@ -1,0 +1,3 @@
+[console_scripts]
+myprss=myprss.main:cli
+
