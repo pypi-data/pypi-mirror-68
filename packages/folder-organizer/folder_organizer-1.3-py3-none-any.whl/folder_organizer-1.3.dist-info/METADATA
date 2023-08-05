@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: folder-organizer
+Version: 1.3
+Summary: A simple folder organizer
+Home-page: https://github.com/unihernandez22/folder-organizer/
+Author: Unai Hernández
+Author-email: unihernandez22@yahoo.com
+License: UNKNOWN
+Download-URL: https://github.com/unihernandez22/folder-organizer/tarball/0.1
+Keywords: folder,organizer,organization
+Platform: UNKNOWN
+Requires-Dist: pyqt5
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
