@@ -1,0 +1,6 @@
+#!python
+
+import data_usage
+
+data_usage.main()
+
