@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: applepyautomator
+Version: 0.1
+Summary: applepyautomator is a simplified implementation of applescript automation for macOs in python3. With applepyautomator you can easily automate ur macOs without having to write applescript or using automator.
+Home-page: https://github.com/hardik1504/applepyautomator
+Author: Hardik Sharma
+Author-email: sharmahardikdev@gmail.com
+License: MIT
+Download-URL: https://github.com/hardik1504/applepyautomator/archive/v_1.0.tar.gz
+Description: UNKNOWN
+Keywords: applescript,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Environment :: MacOS X
