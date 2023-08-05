@@ -1,0 +1,9 @@
+README.md
+setup.py
+fritz_switch_profiles/__init__.py
+fritz_switch_profiles/fritz_switch_profiles.py
+fritz_switch_profiles.egg-info/PKG-INFO
+fritz_switch_profiles.egg-info/SOURCES.txt
+fritz_switch_profiles.egg-info/dependency_links.txt
+fritz_switch_profiles.egg-info/requires.txt
+fritz_switch_profiles.egg-info/top_level.txt
