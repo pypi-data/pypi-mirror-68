@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pySEED
+Version: 1.0.0
+Summary: pySEED is a python inplementation of the SEED optimization algorithm that was published in IEEE Accsses, with DOI: 10.1109/ACCESS.2019.2948199
+Home-page: https://github.com/juandeanda/pySEED.git
+Author: Valentin Calzada Ledesma, Juan de Anda Suarez
+Author-email: m.c.juandeanda@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5.2
+Description-Content-Type: text/markdown
