@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+target_jsonl.py
+target_jsonl.egg-info/PKG-INFO
+target_jsonl.egg-info/SOURCES.txt
+target_jsonl.egg-info/dependency_links.txt
+target_jsonl.egg-info/entry_points.txt
+target_jsonl.egg-info/requires.txt
+target_jsonl.egg-info/top_level.txt
