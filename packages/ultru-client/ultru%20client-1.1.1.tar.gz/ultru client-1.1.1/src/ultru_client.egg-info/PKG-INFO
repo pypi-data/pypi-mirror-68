@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: ultru-client
+Version: 1.1.1
+Summary: Query the Ultru API using a simple to use CLI
+Home-page: UNKNOWN
+Author: Matt
+Author-email: matt@ultru.io
+License: UNKNOWN
+Project-URL: Signup, http://www.ultru.io
+Project-URL: Source, https://github.com/ultru/ultru-cli/
+Description: UNKNOWN
+Keywords: ultru query development api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
