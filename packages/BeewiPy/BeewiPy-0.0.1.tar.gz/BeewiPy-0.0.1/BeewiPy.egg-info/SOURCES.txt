@@ -1,0 +1,8 @@
+README.md
+setup.py
+BeewiPy/BeewiPy.py
+BeewiPy/__init__.py
+BeewiPy.egg-info/PKG-INFO
+BeewiPy.egg-info/SOURCES.txt
+BeewiPy.egg-info/dependency_links.txt
+BeewiPy.egg-info/top_level.txt
