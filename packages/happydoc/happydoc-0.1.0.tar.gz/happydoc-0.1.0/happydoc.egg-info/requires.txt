@@ -1,0 +1,11 @@
+click~=7.0
+pyyaml~=5.0
+weasyprint==51
+markdown~=3.0
+
+[dev]
+pytest
+pytest-cov
+pytest-mypy
+flake8
+pydocstyle

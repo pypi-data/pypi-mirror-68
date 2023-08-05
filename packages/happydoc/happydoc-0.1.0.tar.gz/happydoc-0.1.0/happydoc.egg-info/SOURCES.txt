@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+happydoc/__init__.py
+happydoc/cli.py
+happydoc/document.py
+happydoc.egg-info/PKG-INFO
+happydoc.egg-info/SOURCES.txt
+happydoc.egg-info/dependency_links.txt
+happydoc.egg-info/entry_points.txt
+happydoc.egg-info/requires.txt
+happydoc.egg-info/top_level.txt
+happydoc/samples/devis.md
+happydoc/samples/report.md
+happydoc/styles/happydev.css
+happydoc/styles/logo_HD_generique.png
