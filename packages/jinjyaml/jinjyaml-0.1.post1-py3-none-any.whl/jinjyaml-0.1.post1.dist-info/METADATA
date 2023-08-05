@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: jinjyaml
+Version: 0.1.post1
+Summary: A custom YAML tag for Jinja2 template 
+Home-page: https://github.com/tanbro/jinjyaml
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Jinja2
+Requires-Dist: PyYAML (<6.0,>=5.3)
+
+# jinjyaml
+
+[![PyPI](https://img.shields.io/pypi/v/jinjyaml.svg)](https://pypi.org/project/jinjyaml/)
+[![Documentation Status](https://readthedocs.org/projects/jinjyaml/badge/?version=latest)](https://jinjyaml.readthedocs.io/en/latest/?badge=latest)
+[![CircleCI](https://circleci.com/gh/tanbro/jinjyaml.svg?style=svg)](https://circleci.com/gh/tanbro/jinjyaml)
+[![codecov](https://codecov.io/gh/tanbro/jinjyaml/branch/master/graph/badge.svg)](https://codecov.io/gh/tanbro/jinjyaml)
+
+Application specific YAML tag of Jinja2 template
+
+## Usage
+
+```python
+>>> from pprint import pprint
+>>> import yaml
+>>> from jinjyaml import JinjyamlConstructor, jinjyaml_render
+>>> 
+>>> txt = '''
+... array:
+...   !jinja2 |
+...     {% for n in range(3) %}
+...     - sub{{n}}: {{loop.index}}
+...     {% endfor %}
+... '''
+>>> 
+>>> loader_class = yaml.FullLoader
+>>> constructor = JinjyamlConstructor()
+>>> loader_class.add_constructor('!jinja2', constructor)
+>>> obj = yaml.load(txt, loader_class)
+>>> rendered = jinjyaml_render(obj, loader_class)
+>>> pprint(rendered)
+{'array': [{'sub0': 1}, {'sub1': 2}, {'sub2': 3}]}
+```
+
+
+# CHANGELOG
+
+## v0.1
+
+An early version, maybe not stable enough.
+
+
+# AUTHORS
+
+* Liu Xue Yan (<liu_xue_yan@foxmail.com>)
+
+  [![liu_xue_yan@foxmail.com](https://www.gravatar.com/avatar/049d2fae1fd2df6439e87d1383d0276b)](mailto:liu_xue_yan@foxmail.com)
+
+
