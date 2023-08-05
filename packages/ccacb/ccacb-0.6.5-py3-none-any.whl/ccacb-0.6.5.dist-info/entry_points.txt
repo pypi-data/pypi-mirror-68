@@ -1,0 +1,3 @@
+[console_scripts]
+ytcb=ccacb.watchclipboard:main
+
