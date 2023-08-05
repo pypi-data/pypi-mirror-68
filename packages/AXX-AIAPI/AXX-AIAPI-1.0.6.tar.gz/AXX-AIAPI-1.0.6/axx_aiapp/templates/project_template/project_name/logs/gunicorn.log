@@ -1,0 +1,17 @@
+[process=98484] [timestamp=[2020-05-08 19:01:15]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  GET controller.index
+[process=98478] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98478>
+[process=98478] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98478)
+[process=98479] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98479>
+[process=98479] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98479)
+[process=98482] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98482>
+[process=98482] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98482)
+[process=98483] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98483>
+[process=98483] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98483)
+[process=98484] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98484>
+[process=98484] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98484)
+[process=98485] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98485>
+[process=98485] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98485)
+[process=98486] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98486>
+[process=98486] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98486)
+[process=98487] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Parent changed, shutting down: <Worker 98487>
+[process=98487] [timestamp=[2020-05-08 19:04:37]] [tx_id=] [level=INFO]  [bu_id=JT_AILab] [app_id=AI_Folder Recommendation]  Worker exiting (pid: 98487)
