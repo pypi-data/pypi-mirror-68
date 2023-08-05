@@ -1,0 +1,8 @@
+include README.rst
+include pvimage/files/data/Minimodules/*
+include pvimage/files/data/FullSizeModules/*
+include pvimage/files/data/out
+include pvimage/files/tutorials/*
+exclude pvimage/pvimage/*.py
+include pvimage/pvimage/process.py
+include pvimage/pvimage/pipelines.py
