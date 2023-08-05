@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "AlekSIS-App-DashboardFeeds"
+version = "2.0a2"
+packages = [
+    { include = "aleksis" }
+]
+readme = "README.rst"
+include = ["CHANGELOG.rst", "LICENCE.rst"]
+
+description = "AlekSIS (School Information System) — App Dashboard Feeds (Include feeds from external resources as widgets on dashboard)"
+authors = ["Julian Leucker <leuckerj@gmail.com>", "Dominik George <dominik.george@teckids.org>"]
+maintainers = ["Jonathan Weth <wethjo@katharineum.de>", "Dominik George <dominik.george@teckids.org>"]
+license = "EUPL-1.2-or-later"
+homepage = "https://aleksis.org/"
+repository = "https://edugit.org/AlekSIS/official/AlekSIS-App-DashboardFeeds"
+documentation = "https://aleksis.org/AlekSIS/docs/html/"
+keywords = ["SIS", "education", "school", "calendar", "rss"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Django :: 3.0",
+    "Intended Audience :: Education",
+    "Topic :: Education",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+AlekSIS = "^2.0a2"
+feedparser = "^5.2.1"
+django-feed-reader = "^0.2.1"
+ics = "^0.7"
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
