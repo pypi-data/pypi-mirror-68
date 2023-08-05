@@ -1,0 +1,9 @@
+ftw.upgrade
+setuptools
+Plone
+plone.api
+
+[tests]
+ftw.testbrowser
+ftw.testing
+plone.app.testing

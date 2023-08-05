@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<registry>
+  <records interface="ftw.colorbox.interfaces.IColorboxSettings" />
+
+  <records interface="Products.CMFPlone.interfaces.controlpanel.IImagingSchema"
+           prefix="plone">
+    <value key="allowed_sizes" purge="false">
+      <element>colorbox 2000:2000</element>
+    </value>
+  </records>
+
+    <records prefix="plone.bundles/ftw-colorbox-resources"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry">
+        <value key="enabled">True</value>
+        <value key="depends">plone</value>
+        <value key="stub_js_modules">jquery</value>
+        <value key="compile">False</value>
+        <value key="jscompilation">++resource++ftw.colorbox.resources/ftw-colorbox-compiled.js</value>
+        <value key="csscompilation">++resource++ftw.colorbox.resources/ftw-colorbox-compiled.css</value>
+        <value key="last_compilation">2019-12-17 15:25:00</value>
+        <value key="merge_with">default</value>
+    </records>
+
+</registry>
