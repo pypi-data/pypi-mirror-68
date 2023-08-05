@@ -1,0 +1,3 @@
+[console_scripts]
+my-script=cloudia:main
+
