@@ -1,0 +1,191 @@
+[com]:
+	des     : COMM_CFG           
+    owner   : jialin hu     
+    date    : write and read          
+    addr    : 0xc000c   
+    count   : 1
+	
+	des     : EE_CR           
+    owner   : jialin hu     
+    date    : read          
+    addr    : 0xc0010   
+    count   : 1
+	
+	des     : QUAD0_SR          
+    owner   : jialin hu     
+    date    : write and read          
+    addr    : 0xc000c   
+    count   : 1
+	
+	des     : QUAD1_SR           
+    owner   : jialin hu     
+    date    : write and read          
+    addr    : 0xc000c   
+    count   : 1
+	
+	des     : QUAD2_SR          
+    owner   : jialin hu     
+    date    : write and read          
+    addr    : 0xc000c   
+    count   : 1
+	
+	des     : QUAD3_SR           
+    owner   : jialin hu     
+    date    : write and read          
+    addr    : 0xc000c   
+    count   : 1
+	
+[var]:
+	#COMM_CFG
+	reg(0xc0008) = 9
+	ecc_level = reg(0xc000c)[15:0]
+	reg(0xc0008) = 10
+	rdd_size = reg(0xc000c)[15:0]
+	reg(0xc0008) = 11
+	raw_size = reg(0xc000c)[15:0]
+	reg(0xc0008) = 12
+	ori_seg_size = reg(0xc000c)[15:0]
+	
+	#EE_CR
+	cfg_meta_offset_en = reg(0xc0010)[31:31]
+	cfg_meta_offset = reg(0xc0010)[15:0]
+	scramble_en = reg(0xc0010)[30:30]
+	
+	#QUAD0_SR
+	reg(0xc0008) = 0
+	quad0_sr_0 = reg(0xc000c)[31:31]
+	reg(0xc0008) = 1
+	quad0_sop_cnt0 = reg(0xc000c)[31:16]
+	quad0_eop_cnt0 = reg(0xc000c)[15:0]
+	reg(0xc0008) = 2
+	quad0_sop_cnt1 = reg(0xc000c)[31:16]
+	quad0_eop_cnt1 = reg(0xc000c)[15:0]
+	reg(0xc0008) = 3
+	quad0_sop_cnt2 = reg(0xc000c)[31:16]
+	quad0_eop_cnt2 = reg(0xc000c)[15:0]
+	reg(0xc0008) = 4
+	quad0_sop_cnt3 = reg(0xc000c)[31:16]
+	quad0_eop_cnt3 = reg(0xc000c)[15:0]
+	reg(0xc0008) = 5
+	quad02wrm_eop_cnt0 = reg(0xc000c)[15:0] 
+	reg(0xc0008) = 6
+	quad02wrm_eop_cnt1 = reg(0xc000c)[15:0] 
+	reg(0xc0008) = 7
+	quad02wrm_eop_cnt2 = reg(0xc000c)[15:0] 
+	reg(0xc0008) = 8
+	quad02wrm_eop_cnt3 = reg(0xc000c)[15:0] 
+	
+	#QUAD1_SR
+	reg(0xc1008) = 0
+	quad1_sr_0 = reg(0xc100c)[31:31]
+	reg(0xc1008) = 1
+	quad1_sop_cnt0 = reg(0xc100c)[31:16]
+	quad1_eop_cnt0 = reg(0xc100c)[15:0]
+	reg(0xc1008) = 2
+	quad1_sop_cnt1 = reg(0xc100c)[31:16]
+	quad1_eop_cnt1 = reg(0xc100c)[15:0]
+	reg(0xc1008) = 3
+	quad1_sop_cnt2 = reg(0xc100c)[31:16]
+	quad1_eop_cnt2 = reg(0xc100c)[15:0]
+	reg(0xc1008) = 4
+	quad1_sop_cnt3 = reg(0xc100c)[31:16]
+	quad1_eop_cnt3 = reg(0xc100c)[15:0]
+	reg(0xc1008) = 5
+	quad12wrm_eop_cnt0 = reg(0xc100c)[15:0] 
+	reg(0xc1008) = 6
+	quad12wrm_eop_cnt1 = reg(0xc100c)[15:0] 
+	reg(0xc1008) = 7
+	quad12wrm_eop_cnt2 = reg(0xc100c)[15:0] 
+	reg(0xc1008) = 8
+	quad12wrm_eop_cnt3 = reg(0xc100c)[15:0]
+	
+	#QUAD2_SR
+	reg(0xc2008) = 0
+	quad2_sr_0 = reg(0xc200c)[31:31]
+	reg(0xc2008) = 1
+	quad2_sop_cnt0 = reg(0xc200c)[31:16]
+	quad2_eop_cnt0 = reg(0xc200c)[15:0]
+	reg(0xc2008) = 2
+	quad2_sop_cnt1 = reg(0xc200c)[31:16]
+	quad2_eop_cnt1 = reg(0xc200c)[15:0]
+	reg(0xc2008) = 3
+	quad2_sop_cnt2 = reg(0xc200c)[31:16]
+	quad2_eop_cnt2 = reg(0xc200c)[15:0]
+	reg(0xc2008) = 4
+	quad2_sop_cnt3 = reg(0xc200c)[31:16]
+	quad2_eop_cnt3 = reg(0xc200c)[15:0]
+	reg(0xc2008) = 5
+	quad22wrm_eop_cnt0 = reg(0xc200c)[15:0] 
+	reg(0xc2008) = 6
+	quad22wrm_eop_cnt1 = reg(0xc200c)[15:0] 
+	reg(0xc2008) = 7
+	quad22wrm_eop_cnt2 = reg(0xc200c)[15:0] 
+	reg(0xc2008) = 8
+	quad22wrm_eop_cnt3 = reg(0xc200c)[15:0]
+	
+	#QUAD3_SR
+	reg(0xc3008) = 0
+	quad3_sr_0 = reg(0xc300c)[31:31]
+	reg(0xc3008) = 1
+	quad3_sop_cnt0 = reg(0xc300c)[31:16]
+	quad3_eop_cnt0 = reg(0xc300c)[15:0]
+	reg(0xc3008) = 2
+	quad3_sop_cnt1 = reg(0xc300c)[31:16]
+	quad3_eop_cnt1 = reg(0xc300c)[15:0]
+	reg(0xc3008) = 3
+	quad3_sop_cnt2 = reg(0xc300c)[31:16]
+	quad3_eop_cnt2 = reg(0xc300c)[15:0]
+	reg(0xc3008) = 4
+	quad3_sop_cnt3 = reg(0xc300c)[31:16]
+	quad3_eop_cnt3 = reg(0xc300c)[15:0]
+	reg(0xc3008) = 5
+	quad32wrm_eop_cnt0 = reg(0xc300c)[15:0] 
+	reg(0xc3008) = 6
+	quad32wrm_eop_cnt1 = reg(0xc300c)[15:0] 
+	reg(0xc3008) = 7
+	quad32wrm_eop_cnt2 = reg(0xc300c)[15:0] 
+	reg(0xc3008) = 8
+	quad32wrm_eop_cnt3 = reg(0xc300c)[15:0]
+	
+[exp]:
+	quad0_sr_0 == 1 {"ECC_ENC_QUAD0","QUAD0 has packet length err!!"}
+	quad0_sop_cnt0 != quad0_eop_cnt0 {"ECC_ENC_QUAD0","quad0_sop_cnt0 != quad0_eop_cnt0"}
+	quad0_sop_cnt1 != quad0_eop_cnt1 {"ECC_ENC_QUAD0","quad0_sop_cnt1 != quad0_eop_cnt1"}
+	quad0_sop_cnt2 != quad0_eop_cnt2 {"ECC_ENC_QUAD0","quad0_sop_cnt2 != quad0_eop_cnt2"}
+	quad0_sop_cnt3 != quad0_eop_cnt3 {"ECC_ENC_QUAD0","quad0_sop_cnt3 != quad0_eop_cnt3"}
+	quad0_eop_cnt0 != quad02wrm_eop_cnt0 {"ECC_ENC_QUAD0","quad0_eop_cnt0 != quad02wrm_eop_cnt0"}
+	quad0_eop_cnt1 != quad02wrm_eop_cnt1 {"ECC_ENC_QUAD0","quad0_eop_cnt1 != quad02wrm_eop_cnt1"}
+	quad0_eop_cnt2 != quad02wrm_eop_cnt2 {"ECC_ENC_QUAD0","quad0_eop_cnt2 != quad02wrm_eop_cnt2"}
+	quad0_eop_cnt3 != quad02wrm_eop_cnt3 {"ECC_ENC_QUAD0","quad0_eop_cnt3 != quad02wrm_eop_cnt3"}
+	quad1_sr_0 == 1 {"ECC_ENC_QUAD1","QUAD1 has packet length err!!"}
+	quad1_sop_cnt0 != quad1_eop_cnt0 {"ECC_ENC_QUAD1","quad1_sop_cnt0 != quad1_eop_cnt0"}
+	quad1_sop_cnt1 != quad1_eop_cnt1 {"ECC_ENC_QUAD1","quad1_sop_cnt1 != quad1_eop_cnt1"}
+	quad1_sop_cnt2 != quad1_eop_cnt2 {"ECC_ENC_QUAD1","quad1_sop_cnt2 != quad1_eop_cnt2"}
+	quad1_sop_cnt3 != quad1_eop_cnt3 {"ECC_ENC_QUAD1","quad1_sop_cnt3 != quad1_eop_cnt3"}
+	quad1_eop_cnt0 != quad12wrm_eop_cnt0 {"ECC_ENC_QUAD1","quad1_eop_cnt0 != quad12wrm_eop_cnt0"}
+	quad1_eop_cnt1 != quad12wrm_eop_cnt1 {"ECC_ENC_QUAD1","quad1_eop_cnt1 != quad12wrm_eop_cnt1"}
+	quad1_eop_cnt2 != quad12wrm_eop_cnt2 {"ECC_ENC_QUAD1","quad1_eop_cnt2 != quad12wrm_eop_cnt2"}
+	quad1_eop_cnt3 != quad12wrm_eop_cnt3 {"ECC_ENC_QUAD1","quad1_eop_cnt3 != quad12wrm_eop_cnt3"}
+	quad2_sr_0 == 1 {"ECC_ENC_QUAD2","QUAD2 has packet length err!!"}
+	quad2_sop_cnt0 != quad2_eop_cnt0 {"ECC_ENC_QUAD2","quad2_sop_cnt0 != quad2_eop_cnt0"}
+	quad2_sop_cnt1 != quad2_eop_cnt1 {"ECC_ENC_QUAD2","quad2_sop_cnt1 != quad2_eop_cnt1"}
+	quad2_sop_cnt2 != quad2_eop_cnt2 {"ECC_ENC_QUAD2","quad2_sop_cnt2 != quad2_eop_cnt2"}
+	quad2_sop_cnt3 != quad2_eop_cnt3 {"ECC_ENC_QUAD2","quad2_sop_cnt3 != quad2_eop_cnt3"}
+	quad2_eop_cnt0 != quad22wrm_eop_cnt0 {"ECC_ENC_QUAD2","quad2_eop_cnt0 != quad22wrm_eop_cnt0"}
+	quad2_eop_cnt1 != quad22wrm_eop_cnt1 {"ECC_ENC_QUAD2","quad2_eop_cnt1 != quad22wrm_eop_cnt1"}
+	quad2_eop_cnt2 != quad22wrm_eop_cnt2 {"ECC_ENC_QUAD2","quad2_eop_cnt2 != quad22wrm_eop_cnt2"}
+	quad2_eop_cnt3 != quad22wrm_eop_cnt3 {"ECC_ENC_QUAD2","quad2_eop_cnt3 != quad22wrm_eop_cnt3"}
+	quad3_sr_0 == 1 {"ECC_ENC_QUAD3","QUAD3 has packet length err!!"}
+	quad3_sop_cnt0 != quad3_eop_cnt0 {"ECC_ENC_QUAD3","quad3_sop_cnt0 != quad3_eop_cnt0"}
+	quad3_sop_cnt1 != quad3_eop_cnt1 {"ECC_ENC_QUAD3","quad3_sop_cnt1 != quad3_eop_cnt1"}
+	quad3_sop_cnt2 != quad3_eop_cnt2 {"ECC_ENC_QUAD3","quad3_sop_cnt2 != quad3_eop_cnt2"}
+	quad3_sop_cnt3 != quad3_eop_cnt3 {"ECC_ENC_QUAD3","quad3_sop_cnt3 != quad3_eop_cnt3"}
+	quad3_eop_cnt0 != quad32wrm_eop_cnt0 {"ECC_ENC_QUAD3","quad3_eop_cnt0 != quad32wrm_eop_cnt0"}
+	quad3_eop_cnt1 != quad32wrm_eop_cnt1 {"ECC_ENC_QUAD3","quad3_eop_cnt1 != quad32wrm_eop_cnt1"}
+	quad3_eop_cnt2 != quad32wrm_eop_cnt2 {"ECC_ENC_QUAD3","quad3_eop_cnt2 != quad32wrm_eop_cnt2"}
+	quad3_eop_cnt3 != quad32wrm_eop_cnt3 {"ECC_ENC_QUAD3","quad3_eop_cnt3 != quad32wrm_eop_cnt3"}
+	
+	
+	
+	
+	
