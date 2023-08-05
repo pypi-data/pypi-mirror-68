@@ -1,0 +1,3 @@
+[console_scripts]
+pyc2e = pyc2e.__main__:main
+
