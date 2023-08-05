@@ -1,0 +1,3 @@
+[console_scripts]
+chainsaw = chainsaw:main
+
