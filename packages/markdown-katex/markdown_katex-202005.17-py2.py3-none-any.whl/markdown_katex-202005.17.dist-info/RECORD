@@ -1,0 +1,14 @@
+markdown_katex/__init__.py,sha256=zx5McngmmrmbNRqbYViqyM_qp2Kdfo8hAs6kHJIgMK0,1792
+markdown_katex/__main__.py,sha256=fXiBQa03ZtM086EAnc1UU86pkcr8Fgri5K91xipKHp0,2316
+markdown_katex/extension.py,sha256=nHwhjnD5JhWUMX_9I_fe_RW_Bqub9H1tGquJvXApHds,9593
+markdown_katex/wrapper.py,sha256=0d3PkbDsPeDrV9_OB2vEfwxoSJcPIVRSuSeR30Maj1o,7408
+markdown_katex/bin/katex_v0.11.1_x86_64-Darwin,sha256=koe3LLaKM0_yPDlCaAgEDaRhZPJkqUCzZ9CBLVAqQt8,45435721
+markdown_katex/bin/katex_v0.11.1_x86_64-Linux,sha256=4gcMdYhqipc-3XunceLRitxOaP0ECYEE9o9HCHRho9Y,44422277
+markdown_katex/bin/katex_v0.11.1_x86_64-Windows,sha256=4ulXg9JPs10AagkgKepZQTjQp4e2qz4diRZe0CdZ86g,40704763
+markdown_katex-202005.17.dist-info/LICENSE,sha256=Zr7SZydIfcCTi_pQ_YwQ17Jyavs92j3nvHcl1d2NfyA,1122
+markdown_katex-202005.17.dist-info/METADATA,sha256=gUvrHqHAPVMJH-69pEH2SyEBuTzbR94LBtIMFnR8UL0,8119
+markdown_katex-202005.17.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+markdown_katex-202005.17.dist-info/entry_points.txt,sha256=KMiYSLu9Gj-T_Wdq8NLDB02dtcV9RgRMFAdIGpRnpwY,80
+markdown_katex-202005.17.dist-info/top_level.txt,sha256=DflPZ-ip-JrPZP0Rj7N6j9MkRRz40JUfK67MQFXezi4,15
+markdown_katex-202005.17.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+markdown_katex-202005.17.dist-info/RECORD,,
