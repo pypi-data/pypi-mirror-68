@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: noirpi-jsonhandler
+Version: 1.0.2
+Summary: A small json Filehandler
+Home-page: https://github.com/noirpi/json-filehandler
+Author: NoirPi
+Author-email: noirpi@noircoding.de
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a simple JSON Filehandler. 
+        
+        It adds functions to save, load, validate, read, and failsave dump json files
+        Also it has simple Functions to get and set Values
+        At least there is a function to check_files and create files and pathes recursively if needed
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
