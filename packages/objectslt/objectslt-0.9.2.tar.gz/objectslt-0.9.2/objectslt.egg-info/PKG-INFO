@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: objectslt
+Version: 0.9.2
+Summary: Minimal JSON template populator using ObjectPath as source of substitution.
+Home-page: https://github.com/nastasi/ObjectSLT
+Author: Matteo Nastasi
+Author-email: nastasi@alternativeoutput.it
+License: GPLv3
+Download-URL: https://github.com/nastasi/ObjectSLT/archive/v0.9.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3

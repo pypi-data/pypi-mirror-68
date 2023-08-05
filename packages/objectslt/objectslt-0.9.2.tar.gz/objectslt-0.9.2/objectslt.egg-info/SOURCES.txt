@@ -1,0 +1,15 @@
+COPYING
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+objectslt/__init__.py
+objectslt/base.py
+objectslt.egg-info/PKG-INFO
+objectslt.egg-info/SOURCES.txt
+objectslt.egg-info/dependency_links.txt
+objectslt.egg-info/entry_points.txt
+objectslt.egg-info/not-zip-safe
+objectslt.egg-info/requires.txt
+objectslt.egg-info/top_level.txt
