@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyslackline/__init__.py
+pyslackline/plot.py
+pyslackline.egg-info/PKG-INFO
+pyslackline.egg-info/SOURCES.txt
+pyslackline.egg-info/dependency_links.txt
+pyslackline.egg-info/top_level.txt

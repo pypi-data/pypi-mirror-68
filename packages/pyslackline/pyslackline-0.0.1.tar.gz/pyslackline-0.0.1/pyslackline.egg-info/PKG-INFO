@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyslackline
+Version: 0.0.1
+Summary: Package to analyze load cell data
+Home-page: https://gitlab.com/Grommi/pyslackline
+Author: Markus Rampp
+Author-email: markus.rampp@tum.de
+License: UNKNOWN
+Description: # pyslack
+        
+        Python module to analyze load cell data of slacklines. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
