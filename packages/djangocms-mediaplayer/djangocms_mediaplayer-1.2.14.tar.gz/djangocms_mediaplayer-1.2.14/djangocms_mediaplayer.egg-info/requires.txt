@@ -1,0 +1,5 @@
+django-filer>=1.7.0
+djangocms-plus
+
+[test]
+tox>=2.3
