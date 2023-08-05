@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: testproject1234
+Version: 0.8
+Summary: Test Project
+Home-page: https://github.com/hhslepicka/testproject1234
+Author: hhslepicka
+License: BSD
+Description: Nothing to see here... keep moving.
+        
+        beep boop
+        beep beep
+        boop boop
+        blah blah
+        
+        small change...
+        another one...
+        and another...
+        again...
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
