@@ -1,0 +1,401 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_head %}
+    <script>
+      {% include "js/mt_captcha.js" %}
+    </script>
+    <script src="https://browser.sentry-cdn.com/5.15.5/bundle.min.js" integrity="sha384-wF7Jc4ZlWVxe/L8Ji3hOIBeTgo/HwFuaeEfjGmS3EXAG7Y+7Kjjr91gJpJtr+PAT" crossorigin="anonymous"></script>
+    {# this is in a style tag so that the url of the image is defined dynamically by Django #}
+    <style>
+    @media screen and (max-width:1020px) {
+        #top-text{
+            background-image: linear-gradient(60deg, rgba(194,78,52,0.10), #F6C224), linear-gradient(to left, transparent, rgba(27, 27, 27, 1)), url('{% static "appel_crises/img/bg2.jpg" %}');
+        }
+    }
+    </style>
+{% endblock %}
+
+{% block top_bar %}{% endblock %}
+
+{% block content %}
+    <section class="start" style="background-image: linear-gradient(60deg, rgba(194,78,52,0.10), #F6C224), linear-gradient(to left, transparent, rgba(27, 27, 27, 1)), url('{% static "appel_crises/img/bg2.jpg" %}')">
+        <div class="stats ai-center flex-row">
+            <div class="side"></div>
+            <div class="flex-row ai-center stats-details">
+                <div class="flex-col flex-sb ac-center" style="margin-top: 12px; z-index: 2">
+                    <p id="stats">{{ counter }}</p>
+                    <p class="text-center">Soutiens citoyens</p>
+                </div>
+                <img src="{% static "appel_crises/img/team.svg" %}" alt="Icon d'équipe" class="people-icon">
+                <div class="bottom-border"></div>
+            </div>
+            <div class="side"></div>
+        </div>
+        <div class="maincontainer flex-row top" style="justify-content: space-between">
+            <div id="top-text">
+                <h1 class="has-text-shadowed-mobile title is-hidden-mobile">Appel commun <br> à la reconstruction</h1>
+                <h1 class="has-text-shadowed-mobile title is-shown-mobile" style="font-size: 62px">Appel <br> commun à la reconstruction</h1>
+                <p class="has-text-shadowed-mobile subtitle">
+                    Pour assurer une reconstruction écologique et sociale de notre société, interpellons nos élus !
+                </p>
+                <div style="margin-top: 40px">
+                    <p class="paragraph has-text-shadowed-mobile is-marginless">
+                        Partager l'appel
+                    </p>
+                    <div class="social flex-row flex-sb" style="max-width: 250px; margin-top: 15px">
+                        <a onclick="socialNetworkPopup('facebook')"><img src="{% static "appel_crises/img/fb_blanc.svg" %}" alt="Logo Facebook"></a>
+                        <a target="_blank" href="{{ social_network_urls.twitter }}"><img src="{% static "appel_crises/img/twitter_blanc.svg" %}" alt="Logo Twitter"></a>
+                        <a target="_blank" href="{{ social_network_urls.linkedin }}"><img src="{% static "appel_crises/img/linkedin_blanc.svg" %}" alt="Logo LinkedIn"></a>
+                        <a onclick="socialNetworkPopup('instagram')"><img src="{% static "appel_crises/img/insta_blanc.svg" %}" alt="Logo Instagram"></a>
+                        <a onclick="socialNetworkPopup('whatsapp')"><img src="{% static "appel_crises/img/whatsapp_blanc.svg" %}" alt="Logo Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainform" id="mainform">
+                <h3 style="color: white; max-width: 320px">Nous sommes déjà
+                    <span>{{ counter }}</span> citoyens à
+                    soutenir cet appel</h3>
+                <hr>
+
+                <form class="flex-col flex-sb display-if-js" method="post" id="sign-form">
+                    <input type="text" placeholder="Prénom" name="firstname" id="firstname" required>
+                    <input type="text" placeholder="Nom" name="surname" id="surname" required>
+                    <input type="email" placeholder="mon@courriel.fr" name="email" id="email" required>
+                    <div class="flex-row" style="text-align: left">
+                        <input type="checkbox" name="news" id="news-checkbox">
+                        <label for="news-checkbox">
+                            Je souhaite recevoir des nouvelles des suites de la mobilisation citoyenne par mail
+                        </label>
+                    </div>
+
+                    <div class="sign-captcha" style="display: none">
+                        <!-- MTCap library by default looks for a DIV of class='mtcaptcha' to place the captcha widget -->
+                        <div id="mtcaptcha-1"></div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 20px">
+                        <button type="submit" class="btn is-primary is-disabled" id="submit-btn">signer l'appel</button>
+                    </div>
+
+                    <div class="mainform-details">
+                        <p>
+                            Nous vérifions régulièrement la validité des signatures et le
+                        compteur est actualisé plusieurs fois par jour.
+                        </p>
+                        <p style="margin-top: 20px">
+                            Vos données personnelles collectées resteront strictement
+                            confidentielles. Elles ne seront ni vendues ni échangées
+                            conformément à nos mentions légales. L'exercice de vos
+                            droits, dont la désinscription, est possible à tout moment,
+                            voir notre page "Mentions légales".
+                        </p>
+
+                    </div>
+                </form>
+
+                <div class="text-center" id="signature-result">
+                    <div style="margin-bottom: -30px">
+                        <img src="{% static 'appel_crises/img/check.svg' %}" alt="check icon">
+                    </div>
+                    <p>Vous soutenez l'appel&nbsp;!</p>
+                    <p>Partagez-le sur vos réseaux pour que d'autres vous suivent&nbsp;:</p>
+                    <div class="social flex-row flex-sb" style="">
+                        <a onclick="socialNetworkPopup('facebook')"><img src="{% static "appel_crises/img/fb_blanc.svg" %}" alt="Logo Facebook"></a>
+                        <a target="_blank" href="{{ social_network_urls.twitter }}"><img src="{% static "appel_crises/img/twitter_blanc.svg" %}" alt="Logo Twitter"></a>
+                        <a target="_blank" href="{{ social_network_urls.linkedin }}"><img src="{% static "appel_crises/img/linkedin_blanc.svg" %}"alt="Logo LinkedIn"></a>
+                        <a onclick="socialNetworkPopup('instagram')"><img src="{% static "appel_crises/img/insta_blanc.svg" %}" alt="Logo Instagram"></a>
+                        <a onclick="socialNetworkPopup('whatsapp')"><img src="{% static "appel_crises/img/whatsapp_blanc.svg" %}"alt="Logo Whatsapp"></a>
+                    </div>
+                </div>
+
+                <div class="text-center" id="signature-error" style="display: none">
+                    <p> Erreur lors de l'enregistrement de votre signature. </p>
+                    <p id="signature-error-text"></p>
+                    <p> Veuillez réessayer. </p>
+
+                    <p style="text-align: center; margin-top: 30px">
+                        <button onclick="retrySignature()" class="btn">Ré-essayer</button>
+                    </p>
+                </div>
+
+                <div class="remove-if-js btn-container">
+                    <a class="btn" href="{% url 'form-no-js' %}">
+                        Signer l'appel
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="decideurs bg-colored">
+        <div class="maincontainer flex-col ai-center">
+            <div onclick="toggleCallOutForm()" class="flex-row flex-sb ai-center" style="width: 100%;" id="depute-form">
+                <h2 style="max-width: 500px; color: white; font-size: 37px">Après avoir signé l’Appel, interpeller ses élus par mail en 3 clics</h2>
+
+                <span class="hide-call-out display-if-js">
+                    <button class="btn flex-row flex-sb ai-center" id="decideur">
+                        <img src="{% static "appel_crises/img/arrow_down.svg" %}" alt="Fleche vers le bas"
+                             style="padding-right: 10px; width: 30px">
+                        <span style="font-size: 16px; text-align: left">Envoyer un mail <br> à ses élus</span>
+                    </button>
+                </span>
+                <span class="hide-call-out remove-if-js">
+                    <a href="{% url 'call-out-no-js' %}" style="text-decoration: none">
+                        <button class="btn flex-row flex-sb ai-center remove-if-js" id="decideur">
+                        <span style="font-size: 16px">Envoyer un mail <br> à ses élus</span>
+                    </button>
+                    </a>
+                </span>
+
+                <button class="btn flex-row flex-sb ai-center display-call-out" style="display: none">
+                    <span style="font-size: 16px">Fermer le formulaire</span>
+                </button>
+            </div>
+
+            <div id="call-out-form-container"
+                 class="form display-call-out"
+                 style="display: none; padding-top: 30px">
+                {% include "call_out_form.html" with no_js=False %}
+            </div>
+        </div>
+    </section>
+    <div class="content flex-row flex-sb">
+        <div class="main">
+            <section style="margin-bottom: 60px">
+                <div class="container">
+                    <p class="paragraph">
+                        Nous aimions nous croire invulnérables. <br>
+                        La réalité nous a rattrapés.
+                    </p>
+                    <p class="paragraph">
+                        La crise
+                        sanitaire que nous traversons a interrompu brutalement le cours de nos vies. Elle a
+                        imposé le confinement de la moitié de la planète et perturbé toutes nos habitudes.
+                        Des millions de personnes ont perdu leur emploi. Beaucoup ont dû dire adieu à des
+                        proches. Avec la crise, nos préoccupations ont profondément changé.
+                    </p>
+                    <p class="paragraph">
+                        Aujourd'hui, le gouvernement prend des mesures extraordinaires pour sauver des
+                        entreprises. Demain, il organisera la relance de l’économie. Mais la grande erreur
+                        serait de reconstruire notre monde en conservant les méthodes d’hier. Notre société
+                        s’est révélée fragile, alors que nous sommes face à de nombreux autres périls. En
+                        plus des crises sanitaires, les désastres écologiques nous menacent et les inégalités
+                        sociales nous rendent toujours plus vulnérables.
+                    </p>
+                </div>
+                <div class="container">
+                    <p class="quote">
+                        Regardons en face nos vulnérabilités.
+                    </p>
+                    <hr>
+                    <p class="paragraph">
+                        La
+                        <a href="https://www.dropbox.com/sh/yd8l2v0u4jqptp3/AAACtf6ctsoUQ9hlPQxLpVsKa?dl=0&preview=20190504+IPBES7+Media+Release+Global+Assessment+Final+Errata2+FRE.pdf"
+                           target="_blank" rel="noreferrer noopener">
+                            destruction de la biodiversité</a>
+                        augmente considérablement le risque de pandémie.
+                        La déforestation et le braconnage créent une proximité forcée avec des animaux
+                        sauvages et nous exposent à des crises sanitaires. Nos systèmes de santé ne
+                        peuvent pas y faire face.
+                    </p>
+                    <p class="paragraph">
+                        Certaines activités économiques conduisent à d’autres désastres environnementaux
+                        qui nous menacent directement. Les bouleversements climatiques, l’épuisement des
+                        ressources, les pollutions entraîneront
+                        inévitablement
+                        <a href="https://www.ipcc.ch/site/assets/uploads/sites/2/2019/09/IPCC-Special-Report-1.5-SPM_fr.pdf"
+                           target="_blank" rel="noreferrer noopener">
+                            des situations parfois plus meurtrières que le Covid-19</a>:
+                        pénuries alimentaires, canicules, catastrophes
+                        naturelles plus fréquentes, raréfaction de l’eau douce, mais aussi augmentation des
+                        inégalités, migrations climatiques, etc.
+                    </p>
+                </div>
+                <div class="container">
+                    <p class="quote">
+                        Nous appelons donc nos décideuses et décideurs à revoir nos priorités dans
+                        la reconstruction qui s’annonce pour éviter les catastrophes à venir.
+                    </p>
+                    <hr>
+                    <div class="text-emphasis" style="margin-top: 25px">
+                        Le temps est venu de garantir la pérennité des activités essentielles
+                        assurées par nos services publics.
+                    </div>
+                    <p class="paragraph">
+                        Investissons massivement dans notre système de santé, dans l’éducation et dans la
+                        recherche.
+                        Revalorisons enfin ces métiers, plus que jamais nécessaires.
+                    </p>
+                    <div class="text-emphasis">
+                        Le temps est venu de développer les activités et métiers nécessaires à
+                        une reconstruction écologique et sociale.
+                    </div>
+                    <p class="paragraph">
+                        Investissons massivement, formons et créons des emplois dans les activités
+                        écologiquement et
+                        socialement responsables, comme la rénovation thermique des bâtiments et les transports
+                        décarbonés. Passons à des modèles industriels, agricoles et alimentaires de proximité
+                        accessibles à tous. Relocalisons les activités utiles à notre société sans pour autant
+                        bannir nos échanges avec le reste du monde.
+                    </p>
+                    <div class="text-emphasis">
+                        Le temps est venu d’imposer le ralentissement des activités qui nous
+                        mènent à des désastres écologiques et sociaux.
+                    </div>
+                    <p class="paragraph">
+                        Conditionnons strictement le sauvetage de certains secteurs, comme l’automobile, à
+                        l’alignement de leurs activités avec nos objectifs écologiques. Engageons les secteurs
+                        incapables d’y parvenir suffisamment rapidement, comme l’aviation et le tourisme de
+                        masse, à
+                        suivre des impératifs écologiques et sociaux très forts, et à réduire progressivement
+                        leur
+                        activité. Mettons en place ces mesures dans le respect des engagements climatiques pris
+                        par
+                        la France. Accompagnons également la formation et la reconversion des salariés qui ne
+                        doivent pas subir les conséquences des choix industriels effectués par le passé.
+                    </p>
+                </div>
+                <div class="container">
+                    <p class="quote">
+                        Ne ratons pas le rendez-vous de la reconstruction
+                    </p>
+                    <hr>
+                    <p class="paragraph">
+                        Le monde de demain dépend plus que jamais des décisions que nous prenons en ce moment. Pour
+                        assurer une reconstruction écologique et sociale de notre société, interpellons nos élus&nbsp;!”
+                    </p>
+                    <p class="paragraph">
+                        Soyons optimistes ! L’État vient de montrer qu’il est capable d’écouter la communauté
+                        scientifique et de mobiliser des moyens financiers exceptionnels lorsque la situation l’impose.
+                        En tant que citoyens, nous montrons que nous sommes capables d’accepter de changer radicalement
+                        notre mode de vie quand l'intérêt général est en jeu. Depuis 2019, la ​ Convention Citoyenne
+                        pour le Climat prouve qu’un collectif réunissant des citoyens tirés au sort qui se forment aux
+                        questions écologiques peut faire des propositions constructives.
+                    </p>
+                    <p class="paragraph">
+                        L’État doit désormais intégrer les enjeux écologiques et sociaux dans la reconstruction de notre
+                        société. Il est de son devoir d’associer la société civile aux débats et aux prises de décision
+                        qui vont avoir un impact décisif sur notre futur. Nous sommes nombreuses et nombreux à vouloir
+                        participer à la construction d’un avenir désirable.
+                    </p>
+                    <h2>
+                        Décideuses, Décideurs, <br>
+                        il est temps d’agir&nbsp;!
+                    </h2>
+                </div>
+            </section>
+        </div>
+        <div class="sidebar flex-col">
+            <div class="share-container">
+                <p class="share">Il faut être nombreux : <wbr>partager&nbsp;l'appel</p>
+                <p class="share-mobile">Partager l'Appel</p>
+                <div class="bg-colored">
+                    <div class="social flex-row flex-sb">
+                        <a onclick="socialNetworkPopup('facebook')"><img src="{% static "appel_crises/img/facebook-neon.svg" %}" alt="Logo Facebook"></a>
+                        <a target="_blank" href="{{ social_network_urls.twitter }}" target="_blank"><img src="{% static "appel_crises/img/twitter-neon.svg" %}" alt="Logo Twitter"></a>
+                        <a target="_blank" href="{{ social_network_urls.linkedin }}" target="_blank"><img src="{% static "appel_crises/img/linkedin-neon.svg" %}" alt="Logo LinkedIn"></a>
+                        <a onclick="socialNetworkPopup('instagram')"><img src="{% static "appel_crises/img/instagram-neon.svg" %}" alt="Logo Instagram"></a>
+                        <a onclick="socialNetworkPopup('whatsapp')"><img src="{% static "appel_crises/img/whatsapp-neon.svg" %}" alt="Logo Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-button flex-col flex-sb ai-center bg-colored" id="button-before-sidebar">
+                <a href="#sign-form" class="btn" style="padding: 17px 0; width: 220px">signer l'appel</a>
+                <a href="#depute-form" onclick="showCallOutForm()" class="btn" style="padding: 17px 0; width: 220px; font-size: 15px">
+                    Envoyer un mail à ses élus
+                </a>
+            </div>
+            <div class="content assos">
+                <h3 style="color: white">
+                    Ils portent l'appel
+                </h3>
+                <p>
+                    {% for association in associations %}
+                        <a href="{{ association.0 }}">{{ association.1 }}</a>
+                    {% endfor %}
+                </p>
+
+            </div>
+            <div>
+                <p class="share"> Il faut être nombreux : <wbr>partager&nbsp;l'appel </p>
+                <div class="bg-colored">
+                    <div class="social flex-row flex-sb">
+                        <a onclick="socialNetworkPopup('')"><img src="{% static "appel_crises/img/facebook-neon.svg" %}" alt="Logo Facebook"></a>
+                        <a target="_blank" href="{{ social_network_urls.twitter }}" target="_blank"><img src="{% static "appel_crises/img/twitter-neon.svg" %}" alt="Logo Twitter"></a>
+                        <a target="_blank" href="{{ social_network_urls.linkedin }}" target="_blank"><img src="{% static "appel_crises/img/linkedin-neon.svg" %}" alt="Logo LinkedIn"></a>
+                        <a onclick="socialNetworkPopup('instagram')"><img src="{% static "appel_crises/img/instagram-neon.svg" %}" alt="Logo Instagram"></a>
+                        <a onclick="socialNetworkPopup('whatsapp')"><img src="{% static "appel_crises/img/whatsapp-neon.svg" %}" alt="Logo Whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bottom-button bg-colored" style="margin-top: 20px">
+        <div class="remove-if-js is-flex flex-col flex-sb ai-center btn-container">
+            <a class="btn" href="{% url 'form-no-js' %}">
+                Signer l'appel
+            </a>
+            <a class="btn" href="{% url 'call-out-no-js' %}">
+                Envoyer un mail à ses élus
+            </a>
+        </div>
+
+        <div class="display-if-js is-flex flex-col flex-sb ai-center">
+            <a href="#mainform" class="btn" style="padding: 17px 0; width: 220px">signer l'appel</a>
+            <a href="#depute-form" onclick="showCallOutForm()" class="btn" style="padding: 17px 20px; width: 220px; font-size: 15px">Envoyer un mail à ses élus</a>
+        </div>
+    </section>
+
+
+
+    <div id="newsletter-popup" class="popup">
+        <div onclick="newsletterModal.style.display = 'none'" class="pop-up-background"></div>
+        <div class="popup-content">
+            <span onclick="newsletterModal.style.display = 'none'" class="close" id="close-modal">&times;</span>
+            <div class="flex-row">
+                <p>Voulez-vous être informé des suites de la mobilisation citoyenne autour de l’Appel ?</p>
+            </div>
+            <div class="flex-row flex-sb">
+                <span><button onclick="acceptReceiveNews()" class="btn is-primary btn-margin flex-row ai-center" id="yes-newsletter">Oui, je souhaite être informé</button></span>
+                <span><button onclick="denyReceiveNews()" class="btn btn-margin no-background flex-row ai-center" id="no-newsletter">Non, je m’informerai autrement</button></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="social-network-popup" class="popup">
+        <div onclick="socialNetworkModal.style.display = 'none'" class="pop-up-background"></div>
+        <div class="popup-content">
+            <span onclick="socialNetworkModal.style.display = 'none'" class="close" id="close-modal">&times;</span>
+            <div>
+                <p>Nous vous proposons un exemple de texte à partager sur les réseaux sociaux :</p>
+                <p style="font-size: 12px; margin-top: 20px">
+                    Je viens de signer l’Appel commun à la reconstruction, un appel citoyen pour interpeller les décideurs et demander à ce que les mesures de relance soient à la hauteur des enjeux sociaux, sanitaires et écologiques. Nous ne pouvons tout simplement pas refaire le monde d'hier, un monde trop vulnérable et qui ne pourra pas faire face aux catastrophes à venir !
+                    <br><br>
+                    Il faut être nombreux à soutenir l'Appel si nous voulons reconstruire un monde plus écologique, plus juste : signez vous aussi l'Appel, et partagez-le autour de vous pour que nous soyons entendus !
+                    <br><br>
+                    https://www.appel-commun-reconstruction.org/
+                </p>
+            </div>
+            <div style="text-align: center; margin-top: 20px">
+                <button onclick="copyPostTextToClipBoard()" class="btn is-marginless" style="font-size: 14px">copier le texte</button>
+            </div>
+            <div style="font-style: oblique; text-align: center; display: none; font-size: 14px" id="text-copied">
+                copié dans le presse-papier !
+            </div>
+            <div style="text-align: center; margin-top: 20px">
+                <a href="" target="_blank" id="social-network-link">
+                    <button class="btn is-primary">
+                        Aller sur <span id="social-network-name"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    {{ email_templates | json_script:"email-templates-data" }}
+    <script type="text/javascript">{% include "js/home.js" %}</script>
+{% endblock %}
