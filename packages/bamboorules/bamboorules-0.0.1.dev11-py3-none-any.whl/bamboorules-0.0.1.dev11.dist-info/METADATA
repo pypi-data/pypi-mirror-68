@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bamboorules
+Version: 0.0.1.dev11
+Summary: JSON-logic alongside Pandas
+Home-page: https://github.com/tnesztler/bamboorules
+Author: Thibaud Nesztler
+Author-email: thibaud@nesztler.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: numpy (==1.18.3)
+Requires-Dist: pandas (==1.0.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.1)
+Requires-Dist: six (==1.14.0)
+
+# Bamboo Rules - JSON Rules fed to Pandas
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![License: MIT](https://img.shields.io/github/license/tnesztler/bamboorules)
+![PyPi: Version](https://img.shields.io/pypi/v/bamboorules)
+
+Inspired by Jeremy Wadhams's [JSON-Logic](http://jsonlogic.com/) library.\
+Based on [json-logic-py](https://github.com/nadirizr/json-logic-py) by nadirizr.\
+Built with [Pandas](https://pandas.pydata.org/).
+
+
+
