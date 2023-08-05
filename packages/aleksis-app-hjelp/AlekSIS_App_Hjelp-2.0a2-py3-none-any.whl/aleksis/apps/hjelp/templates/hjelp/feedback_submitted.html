@@ -1,0 +1,17 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <p class="flow-text">
+	{% blocktrans %}
+            Thank you for your feedback. It was successfully submitted.
+	{% endblocktrans %}
+    </p>
+
+    <a href="{% url 'index' %}" class="waves-effect waves-light btn green">
+        <i class="material-icons left">home</i>
+	{% blocktrans %}
+	    Back to landing page</a>
+        {% endblocktrans %}
+{% endblock %}

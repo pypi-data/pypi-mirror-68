@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+
+{% block content %}
+    <h4 class="h-with-subtitle">{% blocktrans %}You have a question?{% endblocktrans %}</h4>
+    <p class="flow-text">
+	{% blocktrans %}
+        You have a question about AlekSIS and didn't find the answer to your question in the FAQ? Then you can ask us your question here:
+	{% endblocktrans %}
+    </p>
+    <form class="col s12" method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="{{ form.question.id_for_label }}" class="materialize-textarea validate"
+                          name="{{ form.question.html_name }}" required></textarea>
+                <label for="{{ form.question.id_for_label }}">{{ form.question.label }}</label>
+            </div>
+        </div>
+
+        <button class="btn waves-effect waves-light green" type="submit" name="action">Frage stellen
+            <i class="material-icons right">send</i>
+        </button>
+
+    </form>
+{% endblock %}

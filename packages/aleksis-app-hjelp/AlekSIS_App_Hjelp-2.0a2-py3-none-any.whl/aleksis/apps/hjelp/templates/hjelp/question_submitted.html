@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load i18n %}
+
+
+{% block content %}
+
+    <p class="flow-text">
+        <i class="material-icons">done_all</i>
+	{% blocktrans %}
+	    We've received your question and will answer as soon as possible.
+	{% endblocktrans %}
+    </p>
+
+    <a href="{% url 'index' %}" class="waves-effect waves-light btn green">
+        <i class="material-icons left">home</i>
+	{% blocktrans %}
+	    Back to landing page
+	{% endblocktrans %}
+    </a>
+    <a href="{% url 'faq' %}" class="waves-effect waves-light btn orange">
+        <i class="material-icons left">question_answer</i>
+	{% blocktrans %}
+	    Back to FAQ
+	{% endblocktrans %}
+    </a>
+
+{% endblock %}
