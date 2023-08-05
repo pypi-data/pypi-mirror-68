@@ -1,0 +1,5 @@
+recursive-include doc *
+recursive-include static *
+recursive-include media *
+recursive-include templates *
+recursive-include logos *

@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: muses-lpdp
+Version: 0.3.dev2
+Summary: Muses from La Passion des Poèmes.
+Home-page: https://gitlab.com/lpdp/muses/-/wikis/Accueil
+Author: Eric Laugier
+Author-email: devteam@lapassiondespoemes.com
+License: GNU Lesser General Public License v3 (LGPLv3)
+Description: ## Roadmap du projet
+        
+        Vous pouvez consulter la Roadmap du projet à l'adresse suivante: https://gitlab.com/lpdp/muses/-/milestones
+        
+        ## Contact
+        
+        Pour toute demande, envoyez un email à devteam@lapassiondespoemes.com
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
