@@ -1,0 +1,12 @@
+dataiter/__init__.py,sha256=5bzylJuK8q-05PE1lQh10O6oHpiOeqmwS9t6ncLZuBw,1666
+dataiter/array.py,sha256=_EuRPOgPaTee0bF7ZZljpNTjeoEG0yUDfhtBYupCjUQ,6243
+dataiter/data_frame.py,sha256=EgIRFhlIpqTIIXtCqWJi_1wvr13ZqVH7aiwKYXA2AN8,18055
+dataiter/deco.py,sha256=yDUJY8LpMllFwXFwl268147iyT0fafhbU1SceM70u_g,1910
+dataiter/list_of_dicts.py,sha256=x0nZ24QUAzms7jwH4eCdAdZNF-ChgWtgZDUWM-sWnKE,14033
+dataiter/util.py,sha256=2UykyCtc08zM9_Lk_hLuvrUlwjADa1ilJafuZw59GJU,2116
+dataiter-0.8.dist-info/AUTHORS.md,sha256=DkBUjOMQs21VsurU8QyVx5n-jK86HvFckGhLpDWeRps,31
+dataiter-0.8.dist-info/COPYING,sha256=SWApU95EMYuG2RzmiZXP-V-xmBgm1c23ToG5PEfZjvs,1084
+dataiter-0.8.dist-info/METADATA,sha256=e9Hv9JXOPb0IHyQMqS-dU4FBT-MQKIJQbWpIA8souTk,2949
+dataiter-0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dataiter-0.8.dist-info/top_level.txt,sha256=AyzhuconxSL0vtzMidFUK3fSaDR7vds2QLyM3Xt6C0Y,9
+dataiter-0.8.dist-info/RECORD,,
