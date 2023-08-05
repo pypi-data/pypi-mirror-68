@@ -1,0 +1,7 @@
+#!python
+from google_keep_tasks.exceptions import catch
+from google_keep_tasks.management import cli
+
+
+if __name__ == '__main__':
+    catch(cli)()
