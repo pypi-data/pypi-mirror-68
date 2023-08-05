@@ -1,0 +1,3 @@
+[console_scripts]
+tamplar = tamplar.__cmd.main:main
+
