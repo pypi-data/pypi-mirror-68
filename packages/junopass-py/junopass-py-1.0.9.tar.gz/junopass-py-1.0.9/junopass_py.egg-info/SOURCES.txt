@@ -1,0 +1,12 @@
+README.md
+setup.py
+junopass/__init__.py
+junopass/client.py
+junopass/signatures.py
+junopass/tests/__init__.py
+junopass/tests/test_encryption.py
+junopass_py.egg-info/PKG-INFO
+junopass_py.egg-info/SOURCES.txt
+junopass_py.egg-info/dependency_links.txt
+junopass_py.egg-info/requires.txt
+junopass_py.egg-info/top_level.txt
