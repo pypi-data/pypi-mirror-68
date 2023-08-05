@@ -1,0 +1,3 @@
+[console_scripts]
+power-profiler = power_profiler.power_profiler:main
+
