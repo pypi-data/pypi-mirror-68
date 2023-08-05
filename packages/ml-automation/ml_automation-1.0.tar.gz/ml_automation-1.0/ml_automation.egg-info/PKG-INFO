@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: ml-automation
+Version: 1.0
+Summary: Automated machine learning
+Home-page: https://github.com/ChillBoss/ml_automation/tree/master/ml_automation
+Author: Tavva Prudhvith
+Author-email: iamsinglemap@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ChillBoss/ml_automation/tree/master/ml_automation
+Description: "# ml_automation" 
+        
+Keywords: Auto_ML
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
