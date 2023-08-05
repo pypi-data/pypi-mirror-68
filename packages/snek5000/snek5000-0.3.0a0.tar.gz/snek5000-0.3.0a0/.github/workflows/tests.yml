@@ -1,0 +1,59 @@
+name: Tests
+
+on: pull_request
+
+env:
+  PIP_CACHE_DIR: ~/.cache/pip
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 4
+      matrix:
+        python-version: [3.7]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Fetch all history for all tags and branches
+      run: git fetch --prune --unshallow
+
+    - name: Clone private submodules
+      run: |
+        git config --file .gitmodules --get-regexp url | while read url; do
+         git config --file .gitmodules $(echo "$url" | sed -E "s|git@github.com:\|https://github.com/|https://${{ secrets.GITHUB_ACTIONS_PAT }}:${{ secrets.GITHUB_ACTIONS_PAT }}@github.com/|")
+        done
+        git submodule sync
+        git submodule update --init --recursive
+  
+    - name: Install apt packages
+      run: |
+        sudo apt-get update
+        sudo apt-get install gfortran libopenmpi-dev
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip requirements
+      id: pip-cache
+      uses: actions/cache@v1
+      with:
+        path: ${{ env.PIP_CACHE_DIR }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.*') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .[tests]
+
+    - name: Run tests
+      run: |
+        source activate.sh
+        pytest -s

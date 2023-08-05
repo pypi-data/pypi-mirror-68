@@ -1,0 +1,40 @@
+snakemake
+fluidsim
+jinja2
+inflection
+
+[dev]
+sphinx
+recommonmark
+sphinx_rtd_theme
+breathe
+setuptools_scm
+pytest
+phill@ https://github.com/exabl/snek5000-phill/tarball/master
+ipython
+click
+colorlog
+pdbpp
+rope
+python-language-server
+fortran-language-server
+pre-commit
+twine
+readme-renderer[md]
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme
+breathe
+setuptools_scm
+
+[hpc]
+pytest
+phill@ https://github.com/exabl/snek5000-phill/tarball/master
+ipython
+click
+
+[tests]
+pytest
+phill@ https://github.com/exabl/snek5000-phill/tarball/master
