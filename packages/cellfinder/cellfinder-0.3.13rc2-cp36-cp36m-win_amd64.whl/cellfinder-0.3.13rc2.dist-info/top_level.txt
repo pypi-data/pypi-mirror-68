@@ -1,0 +1,6 @@
+cellfinder
+doc_build
+docs
+resources
+tests
+travis
