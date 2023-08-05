@@ -1,0 +1,12 @@
+ucal_client/__init__.py,sha256=NAMTJ5Wcxhw55duYHe_ImXoW0oMuOhIaJ4hgB89OOSw,376
+ucal_client/base.py,sha256=M0o_q5idbJDIGKM15XXIKtVuTFUxjdOqL_-rkLdUFU4,7116
+ucal_client/client.py,sha256=fxMz0uaoj_K-BaMg_UROmFlyr03YMFk43sKgXsVNEco,9228
+ucal_client/_internal_grpc/__init__.py,sha256=SUwTwzYiJO0qFFEK-60KMRgb3Ht9qPRxEChBXnWQW7E,23
+ucal_client/_internal_grpc/server_pb2.py,sha256=FcF3tm5QNp7hoTaRkhDqAjx5SRvV5lMTio_y21B1YI0,17579
+ucal_client/_internal_grpc/server_pb2_grpc.py,sha256=WdGAtxgTAYduLEiBicnwKkdBsN1PQGjsc51k6QOKYU0,8085
+ucal_client/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ucal_client/test/test_ucal_client.py,sha256=hXOTJu3pIEaYRz7yRmeBXlcImH2Gan97WsHQUBAe1wE,3524
+ucal_client-0.4.3.dist-info/METADATA,sha256=hDIMr-xTXtne-ACjnuGgt3sCwsCgGE2_0tqGc18qXIY,1564
+ucal_client-0.4.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ucal_client-0.4.3.dist-info/top_level.txt,sha256=CYLUFj0ovTdnX2tsIx3YhbyraXnZH9gjHCPRxofG7s8,12
+ucal_client-0.4.3.dist-info/RECORD,,
