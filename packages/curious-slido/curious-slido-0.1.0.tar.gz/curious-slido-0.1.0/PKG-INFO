@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: curious-slido
+Version: 0.1.0
+Summary: Sends question to a sli.do event
+Home-page: https://github.com/b0g3r/curious-slido
+License: MIT
+Keywords: slido,sli.do
+Author: Dima Boger
+Author-email: kotvberloge@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Repository, https://github.com/b0g3r/curious-slido
+Description-Content-Type: text/markdown
+
+# curious-slido
+
+Sends your questions to a [sli.do](https://sli.do) event
+
+## How to install
+
+```
+pip install curious-slido 
+```
+
+## How to use
+
+```python
+from curious_slido import SlidoClient
+
+# You can grab it from URL with event, for example
+# https://app.sli.do/event/abcd1234/live/questions -> event_hash = 'abcd1234'
+event_hash = 'abcd1234'
+
+# You can grab it from cookie Slido.EventAuthTokens (part after comma) or from 
+# any api request: 
+# Developer Tools -> Network -> (request to api.sli.do) -> Headers -> Request headers -> authorization (part after `Bearer`)
+auth_token = 'longlonglongstring'
+
+slido_client = SlidoClient(event_hash=event_hash, auth_token=auth_token)
+slido_client.send_question('Your question')
+```
