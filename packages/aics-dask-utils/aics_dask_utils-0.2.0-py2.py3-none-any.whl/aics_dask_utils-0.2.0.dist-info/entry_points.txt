@@ -1,0 +1,3 @@
+[console_scripts]
+my_example = aics_dask_utils.bin.my_example:main
+
