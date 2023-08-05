@@ -1,0 +1,3 @@
+[console_scripts]
+make_docx=bin.make_docx:generate
+
