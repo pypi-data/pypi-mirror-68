@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+maliarov/__init__.py
+maliarov/common.py
+maliarov/webdriver.py
+maliarov.egg-info/PKG-INFO
+maliarov.egg-info/SOURCES.txt
+maliarov.egg-info/dependency_links.txt
+maliarov.egg-info/requires.txt
+maliarov.egg-info/top_level.txt
+maliarov/data/desktop_user_agents.txt
+maliarov/data/mobile_user_agents.txt
