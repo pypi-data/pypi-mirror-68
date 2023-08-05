@@ -1,0 +1,9 @@
+aiohttp
+asyncio-extras
+google-api-core
+google-auth
+google-cloud-pubsub
+gordon-dns
+gordon-janitor
+jsonschema
+zope.interface
