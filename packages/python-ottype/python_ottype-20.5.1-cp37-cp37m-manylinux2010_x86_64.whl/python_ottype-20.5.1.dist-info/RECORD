@@ -1,0 +1,10 @@
+ottype/__init__.py,sha256=5FdTlK4NwtiYAd90oNs8dx5OCU5rasT-fdBuCmUKTzs,1106
+ottype/_core.cpython-37m-x86_64-linux-gnu.so,sha256=alVzZP0QkHhxAxiudVfpyHa8zwi-hP4WZhbHiKa0wTk,733976
+ottype/core.py,sha256=AljD_Sa-p--J9QeS4OhC9rAmmG7DJxJFit8Lh0IV6rA,15850
+ottype/core_boost.cpython-37m-x86_64-linux-gnu.so,sha256=PaTxGAexJnGQNcnUMre6NOXtImiteJ3k9TN50il1SUM,739272
+ottype/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_ottype-20.5.1.dist-info/LICENSE,sha256=Jv0xlFSPK69j2mHSwF6yDVAmdpagks5MKDA1un3uFys,1080
+python_ottype-20.5.1.dist-info/METADATA,sha256=hBkgeCLXkhbbCZE8XFMp08jyx7l8skbjKnvN_LYVW5s,10687
+python_ottype-20.5.1.dist-info/WHEEL,sha256=fgEDqTvJ7t6Dks7wJIP8MuGNJfT7rZstMDs3LUSwCl8,112
+python_ottype-20.5.1.dist-info/top_level.txt,sha256=Uqxj7mTZwvR5C5Q1mKAvmpxbLdqUkRXhZIgUsvEX9IA,7
+python_ottype-20.5.1.dist-info/RECORD,,
