@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=ihPBk7ivS0D5uXXKCXueT2Ii7jQBw-029twJmMgaGiM,298
+tests/test_vw.py,sha256=xS3tZUaxRsejpCGxYVT2SwZc0Li9fJLeAMK9s1pCkng,367
+visvalingamwyatt/__init__.py,sha256=YKmq8kQFaKAA2VJ3dRsM0zHuUPIRNfHziqsL0DyTzLI,418
+visvalingamwyatt/__main__.py,sha256=mk9DBMimBTl9JBzc-R7jtJla6bXmFJzY-BK8GFGhxGA,2278
+visvalingamwyatt/cli.py,sha256=phqTMymENL5BO3Ev12fc5RNCA3x5Wx7MHwq-0iAvH6c,1724
+visvalingamwyatt/visvalignamwyatt.py,sha256=BdAcas8Yi_KcKclLIXQuw_BIEpWvaHYZ-frDvo1tAKM,8819
+visvalingamwyatt/visvalingamwyatt.py,sha256=feIOY_PRUk-LeKqt8i-_uyTXAfsxXp60Z2d3IS-tbs4,9132
+visvalingamwyatt/cli/__init__.py,sha256=twEovVwqq6VE7XavvtOdzr5BbyojBND0ZLL8eMiQKuE,1523
+visvalingamwyatt/cli/simplify_fiona.py,sha256=2nCYnvYyZWTvWxwjAk1l7FuqB-0x4Gxz25Snq4RNTTw,773
+visvalingamwyatt/cli/simplify_json.py,sha256=0JGDmQh3wGaXSR5QhTQtVQgOFG0rtAkL-qJDbclhbks,806
+visvalingamwyatt-0.1.3.dist-info/LICENSE.txt,sha256=_QS2i_F5JbArLUrczaekMnGXpUkmyo8HO8Ywuj4UcO0,1113
+visvalingamwyatt-0.1.3.dist-info/METADATA,sha256=G6qUWtYPeENZnDN9Jmy9RUai6aLHt0WpUUZbVD8b9Tg,2916
+visvalingamwyatt-0.1.3.dist-info/WHEEL,sha256=aSdOKpzTGLLkKenfdFGiq92od_Dmr98YfEe8iw7iZoo,110
+visvalingamwyatt-0.1.3.dist-info/entry_points.txt,sha256=RYDpBVwnkLRqdAKbf-YWy-H2vVhsH_j6jZezO45Olh8,63
+visvalingamwyatt-0.1.3.dist-info/top_level.txt,sha256=n9FvS_NT_-DSYCyUBHjaFK249WgQfkF2lwddZpY0LZk,17
+visvalingamwyatt-0.1.3.dist-info/RECORD,,
