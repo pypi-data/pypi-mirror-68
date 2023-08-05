@@ -1,0 +1,9 @@
+adbnx_adapter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adbnx_adapter/arangoDB_networkx_adapter.py,sha256=p8gsy-PmOp-SMFjeF85IA6gnTkGybOljx91vkdOfNjM,2978
+adbnx_adapter/arangodb_networkx_adapter_base.py,sha256=j4Ok1ECeWTAxqbRHcc4V_VbiGG35c84X318Fv-ad9vg,221
+adbnx_adapter/test_conn.py,sha256=hgmnJdqlJZXdhp6gHdn2paMfcW68aRB9kDqILqzymyE,1155
+adbnx_adapter-0.0.0.2.1.dist-info/LICENSE,sha256=uVPE5TuU7BkTKXhbVC7rF-QI51mpX8YA2RdhorRn7G8,10273
+adbnx_adapter-0.0.0.2.1.dist-info/METADATA,sha256=4vMXjAv-7YyNr_fFim9wtueXGlW4s0QlOGHRg2macLk,518
+adbnx_adapter-0.0.0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+adbnx_adapter-0.0.0.2.1.dist-info/top_level.txt,sha256=WDWT4bvrOy_XKzO-V6W8NyOJmOW1wDAIPjz_9ZgKTuM,14
+adbnx_adapter-0.0.0.2.1.dist-info/RECORD,,
