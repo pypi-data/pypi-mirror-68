@@ -1,0 +1,16 @@
+lxml
+requests
+selenium
+webdriver_manager
+xlrd
+xlwt
+pyparsing
+pyhocon
+pytest
+pytest-html
+pytest-dependency
+PyYAML
+mimesis
+jsonpath-rw
+jsonpath-rw-ext
+Pallets-Sphinx-Themes
