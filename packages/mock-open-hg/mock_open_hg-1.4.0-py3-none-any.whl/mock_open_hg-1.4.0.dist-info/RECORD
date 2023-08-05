@@ -1,0 +1,12 @@
+mock_open/__init__.py,sha256=igJAMNnlyfg84y-xfKWzS6rxK0anwWSMvsy6guNsj7k,63
+mock_open/mocks.py,sha256=zlKGz2GTRGaf5Pi9PKP2OXshMbefAZ556QCaULUIm_Y,7648
+mock_open/test/__init__.py,sha256=-A7YgBLDF_I9MehtnafCmJ6uShpjtpGNAnmcKNA04vg,161
+mock_open/test/test_mocks.py,sha256=XzYcgkDgm-7bJyoS_hTKuSGOWfkocBKJoUIG7FnU8c0,24292
+mock_open/test/cpython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mock_open/test/cpython/testmock.py,sha256=SFfJ4x-TOEyNV-9z-heLvOpDnYYIfjEPnluoZsrnpu0,4364
+mock_open/test/cpython/testwith.py,sha256=A_rwVicgnBwc7J8T2lTgi1vuW1Ub_LoP5sTVam5DUyk,8496
+mock_open_hg-1.4.0.dist-info/LICENSE,sha256=hchJzaz0RGD8U7j2X5O01hOj0f-Ztzj7L2e-YvTIBIA,1081
+mock_open_hg-1.4.0.dist-info/METADATA,sha256=NYg3ZvVjbQuwNHCcnEvEhXKv-dGCuuK8m4pP3yxet_Q,3292
+mock_open_hg-1.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mock_open_hg-1.4.0.dist-info/top_level.txt,sha256=CsUWkj3uT7qBjZk0B9iHV44oaabYQm5qgFSj9nmJX2Q,10
+mock_open_hg-1.4.0.dist-info/RECORD,,
