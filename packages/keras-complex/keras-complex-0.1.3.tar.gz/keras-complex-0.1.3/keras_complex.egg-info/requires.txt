@@ -1,0 +1,10 @@
+numpy
+scipy
+sklearn
+keras
+
+[tf]
+tensorflow
+
+[tf_gpu]
+tensorflow-gpu
