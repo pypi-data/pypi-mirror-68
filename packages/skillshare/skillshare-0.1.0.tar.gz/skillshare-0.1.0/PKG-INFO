@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: skillshare
+Version: 0.1.0
+Summary: Async library to download Skillshare Courses
+Home-page: https://gitlab.com/TECHNOFAB/skillshare
+Author: Technofab
+Author-email: skillshare.git@technofab.de
+License: MIT
+Description: # Skillshare Downloader
+        
+        Downloads all Skillshare lesson from a given course URL asynchronously
+        Python port of this 
+        [Chrome Extension](https://chrome.google.com/webstore/detail/skillshare-free-downloade/dafpgbifpihaomcjenlnebhepkklhkfh)
+        
+        # Examples
+        
+        See [examples](examples)
+        
+        # Convert to MP4
+        Neat one liner to convert the m3u8 files to normal mp4 files on Linux:
+        ```bash
+        for i in *.m3u8; do ffmpeg -protocol_whitelist file,http,https,tcp,tls,crypto -i "$i" -c copy -bsf:a aac_adtstoasc "${i%.*}.mp4"; done
+        ```
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
