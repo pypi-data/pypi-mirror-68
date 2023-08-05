@@ -1,0 +1,17 @@
+pvimage/__init__.py,sha256=b3yDX8BpJ1BNKFnLP_6ytLXHx-uEYLwDThsTLPyAEpw,699
+pvimage/conf.py,sha256=3Qer_k1p7ig_RdLitdLklU4zfi_0_QCIihEUT0RmKKY,2166
+pvimage/pipelines.py,sha256=oNWmz3mX6IGZp_8jTru9ilV6ZzS5-J4Cj_I1CB5PJeI,5290
+pvimage/process.py,sha256=9Y32cMYB2N5AEpaHNuRvdDzVL7rBwjqX6ktQuQhRpAA,14785
+pvimage/files/data/FullSizeModules/A1 DH 2000hrs.jpg,sha256=HsOHcHw9A6DrDjIGsuM7hj2qVZHDQcvC7hVzsAbEadQ,514062
+pvimage/files/data/FullSizeModules/A7 TC600 final.jpg,sha256=sfcBMSMFX9o7HTwaicTpoV1llCkdTB_OnA1GvH9V8L4,527252
+pvimage/files/data/Minimodules/MMEL1.JPG,sha256=h8EJ39Nite3R71JiFGSS44vbkc0Z32ULEwzMnCr34jU,1381695
+pvimage/files/data/Minimodules/MMEL2.JPG,sha256=4Qf5WQ_4qB0tK5m-PYxWKPF6Lqa-0DUYmM9dLF9Eiiw,1458098
+pvimage/files/data/Minimodules/MMEL3.tiff,sha256=MmJO-eT4xlFtNqCN3_Wsum5NqHep423AxxSpQBy9UUY,26967386
+pvimage/files/data/Minimodules/MMPL.tiff,sha256=HEMO9AukQBJ5la7y2uwiPxsjult0Z5TcHc_RnjbMJ6c,26967386
+pvimage/files/tutorials/full_module_processing.py,sha256=6MoQAL6D2uCskIVjSILZSQ01HDYjsyVIGwiwnDmScrM,1094
+pvimage/files/tutorials/minimodule_processing.py,sha256=IAqqcipfsZ4nrLB4OVwxFLgtrNi_kqHlQRBc4eb_Hkc,1286
+pvimage-0.0.8.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+pvimage-0.0.8.dist-info/METADATA,sha256=PHHmRmblVqb2D89_8U5lgd-hmHeycfSr9jHL0S5ddnw,4041
+pvimage-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pvimage-0.0.8.dist-info/top_level.txt,sha256=fjqdaWF6Qe_tCzm_hFCdgF8k2JI6Uk8Q67MC-Lt0agA,8
+pvimage-0.0.8.dist-info/RECORD,,
