@@ -1,0 +1,6 @@
+
+        [console_scripts]
+        translate=loguetools.translate:translate
+        explode=loguetools.explode:explode
+        dump=loguetools.dump:dump
+    
