@@ -1,0 +1,10 @@
+awscli_saml/__init__.py,sha256=Jzb_RfgvXCrm_SQ4AfeGVi1N36YybxnM5mpyxrnihgI,33
+awscli_saml/assume_role.py,sha256=7GqluJ_df7siUp43mgiRrL4uikzOs4xDWbWqgJdOkH4,2600
+awscli_saml/main.py,sha256=IzadvYFRrjM4xFrgCyuccj7DQNf1BEPWYz1gOYz8rEA,1232
+awscli_saml/version.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+awscli_saml-2.0.0.dist-info/LICENSE.txt,sha256=xfsgamRJTz41f1tx44um-fr1Wo9PX66o3IhLdh1G4oo,1069
+awscli_saml-2.0.0.dist-info/METADATA,sha256=MHGNuX_9jdjlTU0YzhJyF2amckyz6s5kyWaVusFbVi4,2443
+awscli_saml-2.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+awscli_saml-2.0.0.dist-info/entry_points.txt,sha256=lyZ1f70rwbfjGwOyBy4pua7N9XUrj9TimorC3RL3fSE,52
+awscli_saml-2.0.0.dist-info/top_level.txt,sha256=bTlrbsZcwPS1D0dJKDfoAiedhbpgxp5nITN_I6nOYd4,12
+awscli_saml-2.0.0.dist-info/RECORD,,
