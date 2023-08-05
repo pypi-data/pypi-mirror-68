@@ -1,0 +1,17 @@
+django_user_email_extension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_email_extension/admin.py,sha256=H98_N44y8vRAdFL-lx1cDtnFolQ-6zTg84EeAOPWv4A,1966
+django_user_email_extension/apps.py,sha256=78VWmZAgkKlaRDz6b7TPSbIyIunsAV5ex4USQsfp0iM,121
+django_user_email_extension/forms.py,sha256=zB0XyM2wmIwguzuYkT8Ha23BCclOu4ix4uuW9xZ_8VM,4953
+django_user_email_extension/languages.py,sha256=NhzNr5YI7UxLj9wEUVCs-u1uui9RpGuyxSq4ExDnCts,12697
+django_user_email_extension/models.py,sha256=O9Ot4II1vDlEXXB5oKJSTdPewwewOCQ4GxZOQD8VW70,15144
+django_user_email_extension/validators.py,sha256=-fCth9QLHbxifOwIp5dobUWdZmDktTJwI4zTKaiBCXw,1440
+django_user_email_extension/migrations/0001_initial.py,sha256=fTVRX81luwcCkSIjJBF8wEhk9BpxxQV9BkNZ0APr2rc,34586
+django_user_email_extension/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_email_extension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_user_email_extension/tests/settings.py,sha256=dUQq8vwl43vgWE9wVuLetnPg813sv2f53Ces-R0WDzg,2941
+django_user_email_extension/tests/tests.py,sha256=Kdutiot6fzkxzmdBZUSxX9Rqj8ePF7BN8P31jqv67GI,9526
+django_user_email_extension-2.0.1.dist-info/LICENSE,sha256=a51oCHpBvC241HTra8pAx_H70YFc0bJ0s3dsn6Gljlc,10759
+django_user_email_extension-2.0.1.dist-info/METADATA,sha256=qeX05BPiWlsRts9qNC_x9WqFlHZn2aBFRdtvMAT9acU,3057
+django_user_email_extension-2.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_user_email_extension-2.0.1.dist-info/top_level.txt,sha256=laj0w4igp5Ny0zJ6Id39ppzuMnD64NJU3_4kisKTWcc,28
+django_user_email_extension-2.0.1.dist-info/RECORD,,
