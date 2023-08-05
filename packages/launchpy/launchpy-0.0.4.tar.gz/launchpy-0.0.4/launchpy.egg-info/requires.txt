@@ -1,0 +1,5 @@
+pandas
+requests
+PyJWT
+pathlib2
+PyJWT[crypto]
