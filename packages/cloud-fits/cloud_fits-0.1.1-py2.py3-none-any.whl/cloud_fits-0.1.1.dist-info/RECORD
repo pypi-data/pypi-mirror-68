@@ -1,0 +1,17 @@
+cloud_fits/__init__.py,sha256=hcTHJc723Q4bvJ4nIG-oLHHTKjL513u8ubRHrQPuH0M,246
+cloud_fits/bucket_operations.py,sha256=lmSK27kVZ2ybjBiyh6Lq2wfMOHZ4SX8y331yqztwOsU,1964
+cloud_fits/exceptions.py,sha256=Gb9V1E0ClsL5t0ExGssArix9rw0XmZXu3_3pnZDDAPA,43
+cloud_fits/local_index.py,sha256=_7pP4YW5q58pRgKyWfi5hm5ECYdEjFFtc0WkaodPEyU,4472
+cloud_fits/auth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_fits/auth/aws.py,sha256=8DcTAn6flyuiG2-WLHWIneHABzTdVhOxhXqcvXV1720,5324
+cloud_fits/data_types/__init__.py,sha256=r4U3ONcpgFU61YIGg6G63oHAbgFNTxutZe0dkcO7eP4,11929
+cloud_fits/data_types/shortcuts.py,sha256=K1p6tWkbCAC2UxOy_nt9ov7gSyppZaK-2E6yZEiWH-U,4102
+cloud_fits/data_types/utils.py,sha256=nzDjdz2enDl3OBC2ww8rSE5ZZVtkAZzYGZOxbTUddhs,6668
+cloud_fits/fits_index/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloud_fits/fits_index/factory.py,sha256=SwIF7xhZqB5bUN0qfNyRLyYoZOJExufRW_fW-7Zy6tg,2211
+cloud_fits-0.1.1.dist-info/LICENSE,sha256=sb1MyW42MeobfR_QWXbz0iDwRXpGAHEAyCk4aJw98k0,1070
+cloud_fits-0.1.1.dist-info/METADATA,sha256=Uid4dWpdxwObWtRNPaqvAbtiGZ_6WWJcempfcfsbaDM,4796
+cloud_fits-0.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+cloud_fits-0.1.1.dist-info/entry_points.txt,sha256=1WPkVhR5jAKHGLChqVHeDdl4571-7o-BmqQIHKdEFqI,81
+cloud_fits-0.1.1.dist-info/top_level.txt,sha256=Aecq9J7nErpsNNdHEMPc5E4DMO_wwZaZOpd-w0y7LU8,11
+cloud_fits-0.1.1.dist-info/RECORD,,
