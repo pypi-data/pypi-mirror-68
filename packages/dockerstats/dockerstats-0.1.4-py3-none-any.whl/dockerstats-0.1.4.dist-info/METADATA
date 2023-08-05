@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dockerstats
+Version: 0.1.4
+Summary: A package to sum memory usage on containers
+Home-page: UNKNOWN
+Author: Lukas Kienast
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# dockerstats package
+
+## Usage
+Usage: main (-f | --filter) <filter><br/>
+       main (-h | --help)<br/>
+<br/>
+<br/>
+Options:<br/>
+ - h --help   Show helptext<br/>
+ - f --filter the filter defined in key=value format e.g. app=backend<br/>
+
+
