@@ -1,0 +1,7 @@
+README.md
+setup.py
+script/BAOSNetLib_python.egg-info/PKG-INFO
+script/BAOSNetLib_python.egg-info/SOURCES.txt
+script/BAOSNetLib_python.egg-info/dependency_links.txt
+script/BAOSNetLib_python.egg-info/requires.txt
+script/BAOSNetLib_python.egg-info/top_level.txt
