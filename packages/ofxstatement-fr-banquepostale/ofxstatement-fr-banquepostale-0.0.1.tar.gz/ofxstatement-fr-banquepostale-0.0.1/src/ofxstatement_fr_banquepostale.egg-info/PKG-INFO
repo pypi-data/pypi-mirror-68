@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: ofxstatement-fr-banquepostale
+Version: 0.0.1
+Summary: ofxstatement plugin for La Banque Postale - France
+Home-page: https://gitlab.com/crepi22/ofxstatement-fr-labanquepostale
+Author: Pierre Cregut
+Author-email: crepi22y@gmail.com
+License: GPLv3
+Description: ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        plugin for ofxstatement La Banque Postale
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. _ofxstatement: https://github.com/kedder/ofxstatement
+        
+        ofxstatement_ is a tool to convert proprietary bank statement to OFX format,
+        suitable for importing to GnuCash. 
+        
+        La Banque Postale is a french bank. The plugin can convert PDF statements and
+        convert them to OFX format. Those statements contain more information than
+        the OFX files supplied by 'La Banque Postale'.
+        
+        Parameters
+        ----------
+        
+        pdftotext
+           path to the `pdftotext` binary (default `pdftotext`)
+        
+        smart
+           use smart algorithm for payee/memo split (default 'y')
+        
+Keywords: ofx,banking,statement
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)

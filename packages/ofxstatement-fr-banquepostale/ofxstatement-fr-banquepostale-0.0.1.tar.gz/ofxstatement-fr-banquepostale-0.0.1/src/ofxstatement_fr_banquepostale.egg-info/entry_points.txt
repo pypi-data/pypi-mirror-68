@@ -1,0 +1,3 @@
+[ofxstatement]
+labanquepostale = ofxstatement.plugins.fr.banquepostale:BanquePostalePlugin
+
