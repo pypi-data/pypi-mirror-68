@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+maieutics/Socrates.py
+maieutics/__init__.py
+maieutics/albert.py
+maieutics/bm25_retreiver.py
+maieutics/utils.py
+maieutics.egg-info/PKG-INFO
+maieutics.egg-info/SOURCES.txt
+maieutics.egg-info/dependency_links.txt
+maieutics.egg-info/not-zip-safe
+maieutics.egg-info/requires.txt
+maieutics.egg-info/top_level.txt
