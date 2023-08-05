@@ -1,0 +1,30 @@
+---
+- name: mkdir -p /srv/snap
+  file:
+    state: directory
+    path: /srv/snap
+
+- name: mkdir -p /var/snap
+  file:
+    state: directory
+    path: /var/snap
+
+- name: mount --bind /var/snap /srv/snap
+  mount:
+    path: /var/snap
+    src: /srv/snap
+    fstype: none
+    opts: defaults,bind
+    state: mounted
+
+- name: apt-get install snapd
+  apt:
+    name: [snapd]
+    state: present
+
+# https://github.com/wekan/wekan-snap/wiki/Install
+# https://github.com/wekan/wekan/wiki/Adding-users
+- name: snap install wekan
+  shell: |
+    snap install wekan
+    snap set wekan root-url='https://{{ wekan_vhost_fqdn }}'

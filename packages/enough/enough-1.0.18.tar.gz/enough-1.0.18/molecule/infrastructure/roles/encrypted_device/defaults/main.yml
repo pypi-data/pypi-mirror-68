@@ -1,0 +1,2 @@
+---
+encrypted_volume_name: "{{ openstack_volumes[0].name }}"

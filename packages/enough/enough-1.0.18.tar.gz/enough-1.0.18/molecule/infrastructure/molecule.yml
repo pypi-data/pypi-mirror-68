@@ -1,0 +1,37 @@
+---
+driver:
+  name: delegated
+lint:
+  name: yamllint
+platforms:
+  - name: infrastructure1-host
+  - name: infrastructure2-host
+  - name: infrastructure3-host
+provisioner:
+  name: ansible
+  options:
+    i: ../../development-inventory
+    limit: infrastructure1-host,infrastructure2-host,infrastructure3-host,localhost
+  lint:
+    name: ansible-lint
+  env:
+    ANSIBLE_ROLES_PATH: roles:../infrastructure/roles:../firewall/roles
+  inventory:
+    links:
+      group_vars: ../../inventory/group_vars
+      host_vars: ../../inventory/host_vars
+scenario:
+  name: infrastructure
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - verify
+    - destroy
+verifier:
+  name: testinfra
+  options:
+    v: True
+    s: True
+  lint:
+    name: flake8

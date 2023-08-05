@@ -1,0 +1,42 @@
+---
+driver:
+  name: delegated
+lint:
+  name: yamllint
+platforms:
+  - name: bind-host
+  - name: letsencryptstaging-host
+  - name: owncanotweb-host
+  - name: client-host
+  - name: ownca-host
+provisioner:
+  name: ansible
+  options:
+    i: ../../development-inventory
+    limit: bind-host,letsencryptstaging-host,owncanotweb-host,client-host,ownca-host,localhost
+#  options:
+#    vvv: True
+  lint:
+    name: ansible-lint
+  env:
+    ANSIBLE_ROLES_PATH: roles:../infrastructure/roles:../firewall/roles:../bind/roles:../enough-nginx/roles:../jdauphant.nginx/roles
+  inventory:
+    links:
+      group_vars: ../../inventory/group_vars
+      host_vars: ../../inventory/host_vars
+scenario:
+  name: certificate
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - verify
+    - destroy
+verifier:
+  name: testinfra
+  options:
+    v: True
+    s: True
+#    k: test_letsencryptstaging_fails_because_no_ownca_installed
+  lint:
+    name: flake8
