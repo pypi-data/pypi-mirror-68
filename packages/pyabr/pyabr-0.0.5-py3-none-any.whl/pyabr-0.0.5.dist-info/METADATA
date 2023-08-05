@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: pyabr
+Version: 0.0.5
+Summary: pyabr clouding system
+Home-page: https://github.com/manijamali2003/pyabr
+Author: Mani Jamali
+Author-email: manijamali2003@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+Requires-Dist: pyqtconsole
+
+
+# Pyabr clouding system
+
+In the name of God, the Compassionate, the Merciful
+
+Pyabr &copy; 2020 Mani Jamali. Free Software GNU General Public License v3.0
+
+ - How to install it?
+ - Kernel Parameters
+ - Apps in Pyabr
+
+# How to install it?
+- Open Terminal or CMD then run:
+
+`pip install pyabr`
+
+`python -m pyabr`
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-1.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-1.png)
+
+- Click Next button
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-2.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-2.png)
+
+-  Choose a new location for install Pyabr by clicking the Browse button
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-3.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-3.png)
+
+- Fill out the cloud information form
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-4.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-4.png)
+
+- Fill out the account information form
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-5.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-5.png)
+
+- Find the installed location then run:
+
+`python vmnam.pyc`
+
+or in Window:
+
+Click the vmnam.pyc
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-6.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-6.png)
+
+- Enter you username
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-7.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-7.png)
+
+- Enter your password
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-8.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-8.png)
+
+Welcome to Pyabr clouding system
+
+# Kernel parameters in Pyabr
+
+NamNam is kernel of Pyabr, written in python and just 6kB size.
+This kernel can call and run with this parameters:
+
+- Run CLI at once:
+
+`python vmnam.pyc kernel` 
+
+- Run CLI always:
+
+`echo CLI > etc/interface`
+
+`python vmnam.pyc`
+
+- Run GUI always:
+
+`echo GUI > etc/interface `
+
+`python vmnam.pyc`
+
+- Run CLI with user password
+
+`python vmnam.pyc user [youruser] [yourpassword]`
+
+- Run CLI login:
+
+`python vmnam.pyc login`
+
+- Run GUI login:
+
+`python vmnam.pyc gui-login`
+
+# Apps in Pyabr
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-9.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-9.png)
+
+Commento is a default terminal emulator
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-10.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/screenshot-10.png)
+
+Barge is a default text editor
+
+This README.md file created by editor.md with MIT License
+
