@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: synthpops
+Version: 0.5.0
+Summary: Synthetic population generation
+Home-page: UNKNOWN
+Author: Dina Mistry
+Author-email: covid@idmod.org
+License: UNKNOWN
+Keywords: synthetic population,census,demography
+Platform: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: sciris (>=0.16.5)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: numba
+Requires-Dist: networkx
+Requires-Dist: cmocean
+Requires-Dist: graphviz
+
+UNKNOWN
+
+
