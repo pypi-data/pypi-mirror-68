@@ -1,0 +1,17 @@
+inaSpeechSegmenter/__init__.py,sha256=Eo47F7Mh150HqS6e1q8nkqvsjkgCgiTQbm9vet-B13Y,1219
+inaSpeechSegmenter/features.py,sha256=Fa_uZZ4rUCqhHAnB5OJ8Grw-a2Or6BLKEtQy2yrpfZg,3528
+inaSpeechSegmenter/keras_male_female_cnn.hdf5,sha256=LtNxS9vafx7RFbMHf_KFzLsjJ533o7q2lp7pi2AZc28,6040200
+inaSpeechSegmenter/keras_speech_music_cnn.hdf5,sha256=FDebpxNS2JgbwkoVwGnITPb3j_L_5zd9Q7MkZevQbgE,5885888
+inaSpeechSegmenter/keras_speech_music_noise_cnn.hdf5,sha256=8EtePIb6LoFmbRBrCGc1D-eFjHvQBsKnTCe1tFUH59g,3244808
+inaSpeechSegmenter/segmenter.py,sha256=GS4s6f0yWZUQTcOyw6obxDmF-jD0IJ9SfNbbpGz-HAc,12383
+inaSpeechSegmenter/thread_returning.py,sha256=FPJNRTKpGnEvVz46rFi_WCU5YETUIdEyOj--iLhKXz0,553
+inaSpeechSegmenter/viterbi_utils.py,sha256=cfpGfQ6CxoA_QNp02ysdiEw1DrB10F-UhdbDCZG4st0,1755
+inaSpeechSegmenter-0.6.0.data/data/LICENSE,sha256=oAUIWp7IHUToF3rICnUIJkpWSNizeStnRK3wHEbz_fk,1102
+inaSpeechSegmenter-0.6.0.data/scripts/ina_speech_segmenter.py,sha256=wnQDczRrOtF-H90EUV4GX3JANTEj-3iTsUZbkFdTqK4,4676
+inaSpeechSegmenter-0.6.0.data/scripts/ina_speech_segmenter_pyro_client.py,sha256=JvaPXUX0Q1KR4zhvTnqq6r7yxSeI7poWPK142iJvbOo,1700
+inaSpeechSegmenter-0.6.0.data/scripts/ina_speech_segmenter_pyro_server.py,sha256=k8ii_z9qhaFqDQVHK-hX_XbyY7taHMoz9wkOpnUDf_0,2564
+inaSpeechSegmenter-0.6.0.dist-info/LICENSE,sha256=oAUIWp7IHUToF3rICnUIJkpWSNizeStnRK3wHEbz_fk,1102
+inaSpeechSegmenter-0.6.0.dist-info/METADATA,sha256=Ae5hAxDtWbXksDJH_Sb-1pv6ygNLMhTsCzzcJxpx1RU,2798
+inaSpeechSegmenter-0.6.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+inaSpeechSegmenter-0.6.0.dist-info/top_level.txt,sha256=nbBBzx5tRB_2-fJLwTnF4JCn0PSiNu_j49ImqX8nX48,19
+inaSpeechSegmenter-0.6.0.dist-info/RECORD,,
