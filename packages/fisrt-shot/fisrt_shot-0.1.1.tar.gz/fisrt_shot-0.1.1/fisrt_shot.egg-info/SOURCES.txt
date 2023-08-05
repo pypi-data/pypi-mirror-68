@@ -1,0 +1,8 @@
+setup.py
+fisrt_shot/__init__.py
+fisrt_shot/main.py
+fisrt_shot.egg-info/PKG-INFO
+fisrt_shot.egg-info/SOURCES.txt
+fisrt_shot.egg-info/dependency_links.txt
+fisrt_shot.egg-info/not-zip-safe
+fisrt_shot.egg-info/top_level.txt
