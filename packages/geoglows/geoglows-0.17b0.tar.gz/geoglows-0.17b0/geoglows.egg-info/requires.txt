@@ -1,0 +1,6 @@
+requests
+plotly
+jinja2
+pandas
+shapely
+scipy
