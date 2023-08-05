@@ -1,0 +1,11 @@
+setup.py
+kubegen/__init__.py
+kubegen/__main__.py
+kubegen/kubepolicygen.py
+kubegen/util.py
+kubegen.egg-info/PKG-INFO
+kubegen.egg-info/SOURCES.txt
+kubegen.egg-info/dependency_links.txt
+kubegen.egg-info/entry_points.txt
+kubegen.egg-info/requires.txt
+kubegen.egg-info/top_level.txt
