@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+confset/__init__.py
+confset/__main__.py
+confset/arguments.py
+confset/cli.py
+confset/confset.py
+confset/debug.py
+confset/metadata.py
+confset/package_metadata.json
+confset.egg-info/PKG-INFO
+confset.egg-info/SOURCES.txt
+confset.egg-info/dependency_links.txt
+confset.egg-info/entry_points.txt
+confset.egg-info/top_level.txt
