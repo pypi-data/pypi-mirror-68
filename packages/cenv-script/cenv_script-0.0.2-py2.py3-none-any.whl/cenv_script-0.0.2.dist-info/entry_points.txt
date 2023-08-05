@@ -1,0 +1,3 @@
+[console_scripts]
+cenv-script = cenv_script.cli:main
+
