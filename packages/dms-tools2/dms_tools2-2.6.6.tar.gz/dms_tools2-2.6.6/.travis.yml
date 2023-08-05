@@ -1,0 +1,44 @@
+language: python
+
+python:
+  - "3.6"
+  - "3.7"
+
+cache: pip
+
+before_install:
+  - sudo apt-get -qq install ghostscript
+  - sudo apt-get -qq install dvipng
+  - sudo apt-get -qq install texlive-latex-extra
+  - sudo apt-get -qq install texlive-fonts-recommended
+  - sudo apt-get -qq install cm-super
+  - sudo apt-get install -y r-base
+  # install samtools
+  - wget https://github.com/samtools/samtools/releases/download/1.9/samtools-1.9.tar.bz2
+  - tar xvf samtools-1.9.tar.bz2
+  - cd samtools-1.9
+  - ./configure
+  - make
+  - cd ..
+  - export PATH=$PWD/samtools-1.9:$PATH
+  # install minimap2
+  - wget https://github.com/lh3/minimap2/releases/download/v2.12/minimap2-2.12_x64-linux.tar.bz2
+  - tar xvf minimap2-2.12_x64-linux.tar.bz2
+  - export PATH=$PWD/minimap2-2.12_x64-linux:$PATH
+
+install:
+  - pip install -e .
+
+# following here: https://docs.travis-ci.com/user/gui-and-headless-browsers/#using-xvfb-to-run-tests-that-require-a-gui
+services:
+  - xvfb
+
+script: 
+  - pytest
+
+branches:
+  only:
+    - master
+
+notifications:
+  slack: jbloomlab:JRB6s9Rw88c7YPaL2VGmVJaq
