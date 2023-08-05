@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+metawarc/__init__.py
+metawarc/__main__.py
+metawarc/constants.py
+metawarc/core.py
+metawarc/utils.py
+metawarc.egg-info/PKG-INFO
+metawarc.egg-info/SOURCES.txt
+metawarc.egg-info/dependency_links.txt
+metawarc.egg-info/entry_points.txt
+metawarc.egg-info/not-zip-safe
+metawarc.egg-info/requires.txt
+metawarc.egg-info/top_level.txt
+metawarc/cmds/__init__.py
+metawarc/cmds/extractor.py
