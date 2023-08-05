@@ -1,0 +1,10 @@
+README.md
+setup.py
+varda2_client/__init__.py
+varda2_client.egg-info/PKG-INFO
+varda2_client.egg-info/SOURCES.txt
+varda2_client.egg-info/dependency_links.txt
+varda2_client.egg-info/entry_points.txt
+varda2_client.egg-info/not-zip-safe
+varda2_client.egg-info/requires.txt
+varda2_client.egg-info/top_level.txt

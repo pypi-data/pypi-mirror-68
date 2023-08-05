@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: varda2-client
+Version: 0.8
+Summary: A python CLI to Varda2 frequency database server.
+Home-page: http://github.com/varda/varda2-client
+Author: Mark Santcroos
+Author-email: m.a.santcroos@lumc.nl
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

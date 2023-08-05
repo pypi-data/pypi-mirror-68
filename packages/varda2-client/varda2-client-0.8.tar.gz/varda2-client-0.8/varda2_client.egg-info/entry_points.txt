@@ -1,0 +1,3 @@
+[console_scripts]
+varda2-client = varda2_client:main
+
