@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+parseltongue.egg-info/PKG-INFO
+parseltongue.egg-info/SOURCES.txt
+parseltongue.egg-info/dependency_links.txt
+parseltongue.egg-info/requires.txt
+parseltongue.egg-info/top_level.txt
+parseltongue_grammar/parseltongue.py
