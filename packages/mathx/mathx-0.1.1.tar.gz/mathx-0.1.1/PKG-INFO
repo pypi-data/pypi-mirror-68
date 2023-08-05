@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mathx
+Version: 0.1.1
+Summary: Array handling and mathematics built on top of numpy and scipy.
+Home-page: https://github.com/draustin/mathx
+License: MIT
+Author: Dane Austin
+Author-email: dane_austin@fastmail.com.au
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numba (>=0.49.1,<0.50.0)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
+Project-URL: Repository, https://github.com/draustin/mathx
+Description-Content-Type: text/markdown
+
+# mathx
+A mathematics toolbox built on top of `Numpy` and `Scipy`.
+
+Much of this package was developed in support of optical physics calculations and experimental tools. The contents
+are expressed in mathematical rather than physical terms.
+
+## Installation
+
+Development version: `pip install git+https://github.com/draustin/mathx`
+
+Release version: `pip install mathx`
+
+## Testing
+
+Uses `tox` (with [Poetry](https://python-poetry.org/) and `pytest`.
+
+
+
+
