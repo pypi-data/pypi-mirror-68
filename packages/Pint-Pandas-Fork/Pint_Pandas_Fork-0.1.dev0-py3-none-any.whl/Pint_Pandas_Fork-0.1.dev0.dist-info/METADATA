@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: Pint-Pandas-Fork
+Version: 0.1.dev0
+Summary: Pandas interface for Pint
+Home-page: https://github.com/dschien/pint-pandas
+Author: Original author - Hernan E. Grecco (hernan.grecco@gmail.com). Fork uploaded by Dan Schien
+Author-email: daniel.schien@bristol.ac.uk
+License: BSD
+Keywords: physical quantities unit conversion science
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pint (>=0.10.1)
+Requires-Dist: pandas (>=0.24.0)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: nbval ; extra == 'test'
+
+# Fork of pint-pandas
+Pandas support for pint
+
+FORK from https://github.com/hgrecco/pint-pandas
+FORK URL: https://github.com/dschien/pint-pandas
+
+ORGINAL AUTHOR hernan.grecco@gmail.com
+
+
