@@ -1,0 +1,11 @@
+ncurl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ncurl/api.py,sha256=WaXyXw6z4pDxtQqE4cNCn-WFYTF7Vzoo9CwhTN_LkSc,1860
+ncurl/app.py,sha256=84N8IWnuazV5I-6wu9Dlt4v67TkfZEg4IULQllZagt4,701
+ncurl/curl_utils.py,sha256=QIcDhM2__sUnzEqkoG2pOfvoiKneN1uo_DqfytAlMWc,668
+ncurl/utils.py,sha256=2ZXyaxqeLL0mI7a_bcW4jLs6Sl4LXs1HUb-sVS48VVU,1695
+ncurl-0.4.1.dist-info/METADATA,sha256=4AT5NJe1vyEoyWQzNQjjUdVgT1DKM3YBS6fML_TFRXY,319
+ncurl-0.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ncurl-0.4.1.dist-info/entry_points.txt,sha256=OTT2mgV1JH2qq1Xa_obab42UTvuhlhhTWmZ4ss3eejo,42
+ncurl-0.4.1.dist-info/top_level.txt,sha256=H6vYeNYyhMyzx2Pl0-BlOHytkYvP1HwYk4KmnO6ZhoE,6
+ncurl-0.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ncurl-0.4.1.dist-info/RECORD,,
