@@ -1,0 +1,17 @@
+pandasvault
+scikit-image==0.15git+git://github.com/FirmAI-Research/ecopy.git
+scikit-image
+deltapy
+esig
+ImageHash
+porespyshap
+pytstensorly
+pandas
+scikit-learn
+scipy
+statsmodels
+numpy
+google
+tensorflow
+keras
+opencv-python
