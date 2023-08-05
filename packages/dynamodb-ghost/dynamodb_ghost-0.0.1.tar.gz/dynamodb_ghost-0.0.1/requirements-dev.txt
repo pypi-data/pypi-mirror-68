@@ -1,0 +1,8 @@
+-r requirements.txt
+pytest
+pytest-cov
+codecov
+moto
+flake8
+pathlib
+zest-releaser
