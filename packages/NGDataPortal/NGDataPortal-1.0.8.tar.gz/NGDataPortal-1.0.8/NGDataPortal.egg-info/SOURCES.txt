@@ -1,0 +1,9 @@
+README.md
+setup.py
+NGDataPortal/NGDataPortal.py
+NGDataPortal/__init__.py
+NGDataPortal/stream_to_resource_id.json
+NGDataPortal.egg-info/PKG-INFO
+NGDataPortal.egg-info/SOURCES.txt
+NGDataPortal.egg-info/dependency_links.txt
+NGDataPortal.egg-info/top_level.txt
