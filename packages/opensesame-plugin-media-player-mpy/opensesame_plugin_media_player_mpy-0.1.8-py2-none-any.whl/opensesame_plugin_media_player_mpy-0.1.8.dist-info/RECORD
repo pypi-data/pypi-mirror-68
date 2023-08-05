@@ -1,0 +1,15 @@
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/info.yaml,sha256=ujQls1DNJ6Kgic-pgRYtxi5OlcU_gKanDxeuXJtdivU,1948
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/media_player_mpy.md,sha256=Udn5qbpXA8FSmrsL1R9iQ1rPzd9DUPMSl9-_FyurYcY,4049
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/media_player_mpy.py,sha256=J0vxPxpzSVOaUiGdrFw3Nb7aX_4tBY7LoN6Tr0h_RLM,11527
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/__init__.py,sha256=4856xt6VnoMN3T4QLkbSFNrZyoCYIioj-oH9cLyCMPw,342
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/expyriment_handler.py,sha256=1SLN0gMC9W-v4On_PpGjla86ewHTGQylzIo4POhCNRU,618
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/legacy_handler.py,sha256=aAGMndFMm0QaWY_MCulXFV4Tv6tJcQG4OR7H9lRR7yk,2318
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/opengl_renderer.py,sha256=G8HsgC6OaU74wyGUugz6woyvqtv3gtDqG5aUXSgzaNc,3866
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/psychopy_handler.py,sha256=JyBfwJNcfz8aAb9lC81OESD75OV-9114MBoIhV2DOkw,5661
+opensesame_plugin_media_player_mpy-0.1.8.data/data/share/opensesame_plugins/media_player_mpy/handlers/pygame_handler.py,sha256=tb_hXh2k0JEVUPDizjOSCXvR1eFD3C2s6h5bmpqREMg,6249
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/METADATA,sha256=BQUQz10yt0rbyeecAjIhIGd3P8W6CZN0HCToh2LPuqM,915
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/RECORD,,
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/metadata.json,sha256=Y5OwPvypVVxnqsjsXeAOV8__DIPLaUJUYyyws7L1fJY,1036
+opensesame_plugin_media_player_mpy-0.1.8.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
