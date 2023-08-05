@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+pyBigWig
+bx-python
