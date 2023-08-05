@@ -1,0 +1,3 @@
+[console_scripts]
+caesar = nmcipher.caesar:main
+
