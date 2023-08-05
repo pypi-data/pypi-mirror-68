@@ -1,0 +1,10 @@
+README.md
+setup.py
+covidsafescan/__main__.py
+covidsafescan/host.py
+covidsafescan.egg-info/PKG-INFO
+covidsafescan.egg-info/SOURCES.txt
+covidsafescan.egg-info/dependency_links.txt
+covidsafescan.egg-info/entry_points.txt
+covidsafescan.egg-info/requires.txt
+covidsafescan.egg-info/top_level.txt
