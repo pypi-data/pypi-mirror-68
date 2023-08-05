@@ -1,0 +1,3 @@
+from matrix_transpose.transpose_without_numpy import transpose_without_numpy
+import matrix_transpose
+from matrix_transpose import transpose_without_numpy
