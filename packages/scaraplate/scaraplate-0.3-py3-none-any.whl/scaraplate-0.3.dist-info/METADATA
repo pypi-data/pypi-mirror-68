@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: scaraplate
+Version: 0.3
+Summary: Scaraplate is a wrapper around cookiecutter which allows to repeatedly rollup project templates onto concrete projects.
+Home-page: https://github.com/rambler-digital-solutions/scaraplate
+Author: Usermodel @ Rambler&Co
+Author-email: um@rambler-co.ru
+Maintainer: Kostya Esmukov
+Maintainer-email: kostya@esmukov.ru
+License: MIT
+Project-URL: CI: Travis, https://travis-ci.org/rambler-digital-solutions/scaraplate
+Project-URL: Docs, https://scaraplate.readthedocs.io/
+Project-URL: Issue Tracker, https://github.com/rambler-digital-solutions/scaraplate/issues
+Project-URL: Source Code, https://github.com/rambler-digital-solutions/scaraplate
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (<8,>=6)
+Requires-Dist: cookiecutter (<2,>=1.6)
+Requires-Dist: jinja2 (<3,>=2.7)
+Requires-Dist: marshmallow (<4,>=2.15)
+Requires-Dist: packaging
+Requires-Dist: pyyaml (<6,>=3)
+Requires-Dist: setuptools
+Provides-Extra: develop
+Requires-Dist: black (==19.10b0) ; extra == 'develop'
+Requires-Dist: coverage (==5.1) ; extra == 'develop'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'develop'
+Requires-Dist: isort (==4.3.21) ; extra == 'develop'
+Requires-Dist: mypy (==0.770) ; extra == 'develop'
+Requires-Dist: pylint (==2.5.2) ; extra == 'develop'
+Requires-Dist: pytest (==5.4.2) ; extra == 'develop'
+Requires-Dist: sphinx (==3.0.3) ; extra == 'develop'
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'develop'
+Provides-Extra: gitlab
+Requires-Dist: python-gitlab (<2,>=1.6.0) ; extra == 'gitlab'
+
+# scaraplate
+
+[![Travis CI Build status][travis-badge]][travis-link]
+[![scaraplate on pypi][pypi-badge]][pypi-link]
+[![docs at readthedocs][docs-badge]][docs-link]
+[![Licensed under MIT][license-badge]][license-link]
+[![Code style: black][black-badge]][black-link]
+
+[travis-badge]: https://travis-ci.org/rambler-digital-solutions/scaraplate.svg
+[travis-link]: https://travis-ci.org/rambler-digital-solutions/scaraplate
+[pypi-badge]: https://img.shields.io/pypi/v/scaraplate.svg
+[pypi-link]: https://pypi.org/project/scaraplate/
+[docs-badge]: https://readthedocs.org/projects/scaraplate/badge/?version=latest
+[docs-link]: https://scaraplate.readthedocs.io/
+[license-badge]: https://scaraplate.readthedocs.io/en/latest/_static/license.svg
+[license-link]: https://github.com/rambler-digital-solutions/scaraplate/blob/master/LICENSE
+[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]: https://github.com/psf/black
+
+
+Scaraplate is a wrapper around [cookiecutter][cookiecutter]
+which allows to repeatedly rollup project templates onto concrete projects.
+
+[cookiecutter]: https://github.com/cookiecutter/cookiecutter
+
+Docs: https://scaraplate.readthedocs.io/
+
+
