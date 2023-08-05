@@ -1,0 +1,8 @@
+RnDPackage/Datasets.py,sha256=BiCZW8q-e9BNQJ7A5qA6caXMMkg-d-3ViQgWVHW-ql8,2051
+RnDPackage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+RnDPackage/data/WPP2019_TotalPopulationBySex.csv,sha256=n09NCXNRhG94jQwKBp3TrhZPSarZySqPFJ5FMRv0tn8,22383021
+RnDPackage/data/covid_19_clean_complete.csv,sha256=tSXdOx3_-s7X0LrbRdOqNGZ38JmjThnzBg95aBuFiYg,1253356
+RnDPackage-0.20.dist-info/METADATA,sha256=Ierp8tIo9dfocxAgXFyh6MEi7padVhshApDBPvnttFQ,228
+RnDPackage-0.20.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+RnDPackage-0.20.dist-info/top_level.txt,sha256=XAtIuph1KpEjrWkfy9kLGj3lqUB6Rziy74Mmf10moWw,11
+RnDPackage-0.20.dist-info/RECORD,,
