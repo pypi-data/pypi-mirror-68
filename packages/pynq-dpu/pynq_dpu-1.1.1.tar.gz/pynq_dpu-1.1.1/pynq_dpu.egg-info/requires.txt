@@ -1,0 +1,4 @@
+pynq>=2.5.1
+pybind11
+CppHeaderParser
+mnist
