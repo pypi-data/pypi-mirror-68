@@ -1,0 +1,11 @@
+bottle
+click
+gunicorn
+gevent
+threadsafevariable
+pydal
+pyjwt
+yatl
+tornado
+pluralize
+requests
