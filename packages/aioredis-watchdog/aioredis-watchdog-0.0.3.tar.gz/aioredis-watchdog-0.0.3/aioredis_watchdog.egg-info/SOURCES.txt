@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+TODO.rst
+VERSION
+requirements.txt
+setup.cfg
+setup.py
+aioredis_watchdog/__init__.py
+aioredis_watchdog/__main__.py
+aioredis_watchdog/watchdog.py
+aioredis_watchdog.egg-info/PKG-INFO
+aioredis_watchdog.egg-info/SOURCES.txt
+aioredis_watchdog.egg-info/dependency_links.txt
+aioredis_watchdog.egg-info/entry_points.txt
+aioredis_watchdog.egg-info/not-zip-safe
+aioredis_watchdog.egg-info/requires.txt
+aioredis_watchdog.egg-info/top_level.txt
