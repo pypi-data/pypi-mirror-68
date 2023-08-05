@@ -1,0 +1,3 @@
+[console_scripts]
+swagger2locustio = swagger2locustio.__main__:main
+
