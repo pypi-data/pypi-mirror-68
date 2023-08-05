@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: python-chattrainer
+Version: 0.0.1
+Summary: A python package to do train people how to chat
+Home-page: UNKNOWN
+Author: Sahil Ahuja
+Author-email: sahil27ahuja1999@gmail.com
+License: MIT
+Description: ### Installation
+        The aim of the project is to build a software solution to train people and employees to interact with the chatting and messaging consoles. This can also be used by people to train themselves how to chat with people without conveying false sentiments to the receiver. Customer care employees can be trained using this software to make them efficient communicators and agents who convey positive sentiment to the clients of the company.  
+        
+        Usages: python-chattrainer 
+        	
+        ```sh
+        $ pip install python-chattrainer
+        $ python-chattrainer
+        ```
+        ### License
+        MIT
+        ### Author
+        Sahil Ahuja
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
