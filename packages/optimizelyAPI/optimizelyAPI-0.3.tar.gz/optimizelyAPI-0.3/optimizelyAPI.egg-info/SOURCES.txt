@@ -1,0 +1,10 @@
+setup.py
+optimizelyAPI/__init__.py
+optimizelyAPI/optlyAPI.py
+optimizelyAPI/responses.py
+optimizelyAPI.egg-info/PKG-INFO
+optimizelyAPI.egg-info/SOURCES.txt
+optimizelyAPI.egg-info/dependency_links.txt
+optimizelyAPI.egg-info/not-zip-safe
+optimizelyAPI.egg-info/requires.txt
+optimizelyAPI.egg-info/top_level.txt
