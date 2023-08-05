@@ -1,0 +1,13 @@
+psycopg2>=2.7
+zc.lockfile
+
+[dev]
+flake8
+pytest
+
+[docs]
+recommonmark
+sphinx
+sphinx_paramlinks
+sphinx_rtd_theme
+wheel
