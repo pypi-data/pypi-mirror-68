@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/overview_plugin_workqueue.egg-info/PKG-INFO
+src/overview_plugin_workqueue.egg-info/SOURCES.txt
+src/overview_plugin_workqueue.egg-info/dependency_links.txt
+src/overview_plugin_workqueue.egg-info/top_level.txt
+src/workqueue/__init__.py
