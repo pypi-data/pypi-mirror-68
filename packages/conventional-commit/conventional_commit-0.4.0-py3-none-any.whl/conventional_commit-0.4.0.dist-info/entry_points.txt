@@ -1,0 +1,4 @@
+[console_scripts]
+commit=gitcommit.gitcommit:main
+gitcommit=gitcommit.gitcommit:main
+
