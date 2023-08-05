@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyarmstrongnum
+Version: 1.2
+Summary: Python library to check if a given number is an Armstrong number or not.
+Home-page: https://github.com/shyams1993/pyarmstrongnum
+Author: SHYAM SALIL
+Author-email: shyamsalil1993@gmail.com
+License: MIT
+Description: # pyarmstrongnum
+        Python library to check if a given number is an armstrong number or not.
+        
+Keywords: ARM(STRONG),NARCISSTIC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown

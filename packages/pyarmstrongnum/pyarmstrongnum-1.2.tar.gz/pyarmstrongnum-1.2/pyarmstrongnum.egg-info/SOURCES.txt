@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyarmstrongnum/__init__.py
+pyarmstrongnum/pyarmstrongnum.py
+pyarmstrongnum/setup.py
+pyarmstrongnum.egg-info/PKG-INFO
+pyarmstrongnum.egg-info/SOURCES.txt
+pyarmstrongnum.egg-info/dependency_links.txt
+pyarmstrongnum.egg-info/entry_points.txt
+pyarmstrongnum.egg-info/top_level.txt
