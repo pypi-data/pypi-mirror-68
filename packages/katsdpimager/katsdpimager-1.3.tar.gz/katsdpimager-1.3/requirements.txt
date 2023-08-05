@@ -1,0 +1,52 @@
+ansicolors
+appdirs                   # via katsdpsigproc
+argparse                  # via python-casacore
+astropy==3.1.2
+botocore                  # for S3 authentication in katdal
+certifi                   # via requests
+chardet                   # via requests
+cityhash                  # via katdal
+cycler                    # via matplotlib
+dask                      # via katdal
+decorator                 # via pycuda, katsdpsigproc
+docutils                  # via botocore
+ephem                     # via pyephem
+future                    # via katdal, katpoint
+h5py                      # via katdal
+idna                      # via requests
+jmespath                  # via botocore
+kiwisolver==1.1.0         # via matplotlib
+llvmlite                  # via numba
+Mako
+MarkupSafe                # via Mako
+matplotlib==3.1.3         # pinned because katsdpdockerbase is too old
+msgpack                   # via katsdptelstate
+netifaces                 # via katsdptelstate
+numba
+numpy
+pandas                    # via katsdpsigproc
+progress==1.2
+pycuda
+pyephem                   # via katpoint
+pygelf                    # via katsdpservices
+pyjwt                     # via katdal
+python-casacore==3.1.1
+python-dateutil           # via pandas, botocore
+python-lzf                # via katsdptelstate
+pytools                   # via pycuda
+pytz                      # via pandas
+rdbtools                  # via katsdptelstate
+redis                     # via katsdptelstate
+requests                  # via katdal
+scikit-cuda
+scipy                     # via katdal (its fallback interpolation behaves differently)
+six                       # via pytools, python-dateutil
+toolz                     # via dask[array]
+typing_extensions         # via katsdpsigproc
+urllib3                   # via requests
+
+katdal @ git+https://github.com/ska-sa/katdal
+katpoint @ git+https://github.com/ska-sa/katpoint
+katsdpsigproc @ git+https://github.com/ska-sa/katsdpsigproc
+katsdptelstate @ git+https://github.com/ska-sa/katsdptelstate
+katsdpservices @ git+https://github.com/ska-sa/katsdpservices
