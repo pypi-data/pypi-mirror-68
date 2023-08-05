@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: caracal
+Version: 0.3.1
+Summary: End-to-end data reduction pipeline for radio interferometry data
+Home-page: https://github.com/ska-sa/caracal
+Author: Caracal peeps
+Author-email: sphemakh@gmail.com
+License: ['GNU GPL v2']
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.5
+Requires-Dist: ruamel.yaml
+Requires-Dist: decorator
+Requires-Dist: numpy
+Requires-Dist: stimela (>=1.4.3)
+Requires-Dist: scipy
+Requires-Dist: pysolr
+Requires-Dist: progressbar2
+Requires-Dist: pykwalify
+Requires-Dist: yamlordereddictloader
+Requires-Dist: astroquery
+Requires-Dist: npyscreen
+Requires-Dist: ipdb
+Requires-Dist: astropy
+Requires-Dist: matplotlib
+Requires-Dist: bokeh
+Requires-Dist: aplpy
+Requires-Dist: pandas
+Requires-Dist: nbconvert
+Requires-Dist: regions
+Requires-Dist: radiopadre-client
+Requires-Dist: jinja2
+
+UNKNOWN
+
+

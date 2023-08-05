@@ -1,0 +1,58 @@
+type: map
+mapping:
+  general:
+    desc: General pipeline information, including data IDs, and prefixes for output files.
+    type: map
+    mapping:
+      title:
+        type: str
+        required: false
+        desc: Execute the 'general' worker.
+        example: ''
+      rawdatadir:
+        type: str
+        required: false
+        desc: Location where CARACal (over-)writes HDF5 files and JSON info files downloaded by the getdata worker.
+        example: ''     
+      msdir:
+        type: str
+        required: false
+        desc: Location where CARACal will write and expect to find measurement set (.MS) files.
+        example: 'msdir'
+      input:
+        type: str
+        required: false
+        desc: Location where CARACal expects to find various input files (e.g., RFI flagging strategy files).
+        example: 'input'
+      output:
+        type: str
+        required: false
+        desc: Location where CARACal writes output products.
+        example: 'output'
+      prefix:
+        type: str
+        required: false
+        desc: Prefix for CARACal output products.
+        example: 'caracal'
+      prep_workspace:
+        desc: Initialise the pipeline by copying input files (i.e. those that are MeerKAT specific, flagging strategies, beam model, etc.).
+        required: false
+        type: bool
+        example: 'True'
+      init_notebooks:
+        desc: Install standard radiopadre notebooks, given by list of basenames.
+        seq:
+          - type: str
+        required: false
+        example: std-progress-report, project-logs
+      report_notebooks:
+        desc: Like init_notebooks, but will also be automatically rendered to HTML when report=True in a worker
+        seq:
+          - type: str
+        required: false
+        example: detailed-final-report
+      final_report:
+        desc: Render report_notebooks to HTML at the end of each pipeline run
+        required: false
+        type: bool
+        example: 'True'
