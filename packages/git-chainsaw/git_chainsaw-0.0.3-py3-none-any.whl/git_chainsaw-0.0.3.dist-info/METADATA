@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: git-chainsaw
+Version: 0.0.3
+Summary: A lightweight wrapper around git subtrees that lets you work with many subtrees at once
+Home-page: https://github.com/JakeHillHub/port-linker
+Author: Jake Hill
+Author-email: jakehillgithub@gmail.net
+License: UNKNOWN
+Keywords: subtree
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+
+# Chainsaw
+A lightweight wrapper around git subtrees that lets you work with many subtrees at once
+
+# Installation
+```bash
+pip install git-chainsaw
+```
+
+# Usage
+Create a chainsaw.json file in your top level directory
+
+Example chainsaw.json
+```json
+[
+    {
+        "prefix": "bingo",
+        "remote": "https://github.com/nasa/bingo.git",
+        "branch": "master"
+    },
+    {
+        "prefix": "trick",
+        "remote": "https://github.com/nasa/trick.git",
+        "branch": "master"
+    }
+]
+```
+
+Add all subtrees: 
+```bash
+chainsaw add --all --squash
+```
+
+List subtrees:
+```bash
+chainsaw ls
+```
+
+
