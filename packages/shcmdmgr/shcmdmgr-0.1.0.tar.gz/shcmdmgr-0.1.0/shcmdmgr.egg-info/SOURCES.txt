@@ -1,0 +1,17 @@
+README.md
+setup.py
+shcmdmgr/__init__.py
+shcmdmgr/__main__.py
+shcmdmgr/cio.py
+shcmdmgr/cmdcomplete.py
+shcmdmgr/config.py
+shcmdmgr/filemanip.py
+shcmdmgr/process.py
+shcmdmgr/structure.py
+shcmdmgr/test.py
+shcmdmgr/util.py
+shcmdmgr.egg-info/PKG-INFO
+shcmdmgr.egg-info/SOURCES.txt
+shcmdmgr.egg-info/dependency_links.txt
+shcmdmgr.egg-info/entry_points.txt
+shcmdmgr.egg-info/top_level.txt
