@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pyckup.egg-info/PKG-INFO
+pyckup.egg-info/SOURCES.txt
+pyckup.egg-info/dependency_links.txt
+pyckup.egg-info/requires.txt
+pyckup.egg-info/top_level.txt
