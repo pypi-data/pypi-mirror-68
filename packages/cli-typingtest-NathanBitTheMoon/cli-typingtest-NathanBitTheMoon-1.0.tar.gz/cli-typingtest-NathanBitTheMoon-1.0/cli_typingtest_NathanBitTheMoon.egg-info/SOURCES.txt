@@ -1,0 +1,6 @@
+README.md
+setup.py
+cli_typingtest_NathanBitTheMoon.egg-info/PKG-INFO
+cli_typingtest_NathanBitTheMoon.egg-info/SOURCES.txt
+cli_typingtest_NathanBitTheMoon.egg-info/dependency_links.txt
+cli_typingtest_NathanBitTheMoon.egg-info/top_level.txt
