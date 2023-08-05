@@ -1,0 +1,4 @@
+hs_restclient
+jupyter
+notebook
+requests
