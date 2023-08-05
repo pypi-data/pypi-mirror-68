@@ -1,0 +1,4 @@
+python-dateutil>2.7
+pyyaml
+rdap
+requests
