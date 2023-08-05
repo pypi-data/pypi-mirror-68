@@ -1,0 +1,11 @@
+omero-py
+omero-certificates
+
+[debian9]
+tables<3.6
+
+[default]
+tables
+
+[ubuntu1604]
+tables<3.6
