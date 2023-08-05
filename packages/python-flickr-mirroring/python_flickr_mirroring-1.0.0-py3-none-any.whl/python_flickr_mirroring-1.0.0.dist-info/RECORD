@@ -1,0 +1,13 @@
+flickr/__init__.py,sha256=D6U3UC2ard_Gsx-KjTqJXDeoEX7-xjyo1hBK3yfOVxs,31
+flickr/__main__.py,sha256=MkXKagnTLFNpgkr7Ihzwfe3eux2yAq8ScbSAbojMSzQ,4430
+flickr/constants.py,sha256=uVReqV2U1faAXdjNjDKtU531G56yfM-lUjD6EejQJSg,3777
+flickr/flickr_api.py,sha256=mW6DDwYGIMjU4AUYDV76zM5M_Uq1fS7aJbz_p1t4kXc,11032
+flickr/flickr_model.py,sha256=vd0OXemvfMn9bsiFdJM34agvJEZhEEWyCms_uQ6Tefw,16219
+flickr/mirroring_agent.py,sha256=ZCiA43QfVAMPRGxAf-5rv61htFOMRSwXa1zOz41jK8M,13316
+flickr/parser.py,sha256=moBd_58Wsb11xlXARYN3vdITlfbVN6Fz9XCou_vzMpw,3110
+python_flickr_mirroring-1.0.0.dist-info/LICENSE,sha256=HRTyVq4FvcKUxCJ4pGVXa5WcvJ5v9vdHXck_HxV7leU,1095
+python_flickr_mirroring-1.0.0.dist-info/METADATA,sha256=_Mn3fI_EjwnosSc8CPp_MTe2z66uDMF_Gijdiz1iF8Y,4107
+python_flickr_mirroring-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_flickr_mirroring-1.0.0.dist-info/entry_points.txt,sha256=smq8pF2gKZKg67aOW-9N2FcBebs8JQUkmWutJbkNoj4,56
+python_flickr_mirroring-1.0.0.dist-info/top_level.txt,sha256=9Gk6UF7drRzsfMgVcpupysN50K9OH_61JoyjTqe_2Qk,7
+python_flickr_mirroring-1.0.0.dist-info/RECORD,,
