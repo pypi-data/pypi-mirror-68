@@ -1,0 +1,22 @@
+##TITLE= Audit trail, TopSpin 4.0.7
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= christian
+$$ /Users/christian/Dropbox/SCP/spectrochempy/scp_data/testdata/nmrdata/bruker/tests/nmr/bruker_1d/1/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2019-12-12 15:00:28.799 +0100>,<christian>,<cf-macbookpro.home>,<proc1d>,<TopSpin 4.0.7>,
+      <ft FT_mod = 6 PKNL = 1 SI = 16K 
+       data hash MD5: 16K
+       79 F5 B3 80 D3 4B E9 85 0A 06 0B 19 42 D1 89 41>)
+(   2,<2019-12-12 15:13:21.412 +0100>,<christian>,<cf-macbookpro.home>,<proc1d>,<TopSpin 4.0.7>,
+      <apk 
+       data hash MD5: 16K
+       28 F2 BA 40 13 18 EA 47 7D 98 8F B0 1A 7E 3F CA>)
+(   3,<2019-12-12 15:34:51.853 +0100>,<christian>,<cf-macbookpro.home>,<proc1d>,<TopSpin 4.0.7>,
+      <pk fgphup PHC0 = 0 PHC1 = 0 
+       data hash MD5: 16K
+       28 F2 BA 40 13 18 EA 47 7D 98 8F B0 1A 7E 3F CA>)
+##END=
+
+$$ hash MD5
+$$ 97 2B 1A 33 E2 FC 9B 9F 68 10 DA C9 53 B3 AB DC
