@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: remote-exec
+Version: 1.3.8
+Summary: A CLI to sync codebases and execute commands remotely
+Home-page: https://github.com/shirshanka/remote
+Author: Shirshanka Das
+Author-email: UNKNOWN
+License: BSD-2-CLAUSE
+Platform: UNKNOWN
+Requires-Dist: click (>=7.1.1)
+Requires-Dist: dataclasses ; python_version <= "3.6"
+
+UNKNOWN
+
+
