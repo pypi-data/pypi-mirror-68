@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: symmetry-py-telemc
+Version: 0.1.0
+Summary: A Symmetry Telemetry Client Library
+Home-page: https://git.dsg.tuwien.ac.at/mc2/py-telemc
+Author: Thomas Rausch
+Author-email: t.rausch@dsg.tuwien.ac.at
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: redis (>=3.2.1)
+
+py-telemc
+=========
+
+Symmetry telemetry client library in python.
+
+
+
