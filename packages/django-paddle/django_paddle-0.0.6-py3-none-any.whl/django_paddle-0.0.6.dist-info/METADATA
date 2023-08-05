@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-paddle
+Version: 0.0.6
+Summary: Django models for integrating Paddle.com subscriptions
+Home-page: https://github.com/kennell/django-paddle
+Author: Kevin Kennell
+Author-email: kevin@kennell.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django
+Requires-Dist: requests
+Requires-Dist: cryptography
+Requires-Dist: phpserialize
+Provides-Extra: dev
+Requires-Dist: responses ; extra == 'dev'
+
+UNKNOWN
+
+
