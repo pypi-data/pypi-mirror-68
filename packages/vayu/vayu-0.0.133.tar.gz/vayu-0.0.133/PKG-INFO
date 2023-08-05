@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: vayu
+Version: 0.0.133
+Summary: Tools for Air Quality Data Analysis.
+Home-page: https://sustainability-lab.github.io/vayu
+Maintainer: Sustainability-Lab@IITGN
+Maintainer-email: apoorv.agnihotri@iitgn.ac.in, deepak.narayanan@iitgn.ac.in
+License: MIT
+Download-URL: https://sustainability-lab.github.io/vayu
+Description: ![](logo.png)
+        
+        Tools for Air Quality Data Analysis 
+        
+        
+        Description
+        ===========
+        Python Library to better understand the air quaility data through visualizations.
+        
+        
+        # Installation
+        ```
+        pip install vayu
+        ```
+        
+        # Sample Usage
+        For sample usage please look at the jupyer notebooks in the examples folder.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Provides-Extra: tests
+Provides-Extra: docs
