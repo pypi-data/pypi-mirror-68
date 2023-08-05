@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: tensorplane
+Version: 0.0.1
+Summary: A modular and expressive interface for managing data in Python
+Home-page: https://github.com/JonathanHanna/tensorplane
+Author: Jonathan Hanna
+Author-email: jonathanyussefhanna@gmail.com
+License: LICENSE.txt
+Description: # Tensorplane: Unified data management in Python
+        
+        To be filled out
+        
+        
+        ## About
+        
+        Supported Libraries...
+        
+        ## Installation
+        
+        ...
+        
+        ## Usage
+        
+        ...
+        
+        ## To-do
+        
+        ...
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
