@@ -1,0 +1,27 @@
+#content .sib-login-forms .error {
+    color: red;
+    margin: 0 0 2rem 0;
+    padding: 0;
+}
+
+#content .sib-login-forms>div:last-child {
+    margin-top: 45px;
+}
+
+#content .sib-link.sib-register-link {
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+
+.other-login-title {
+    border-bottom:1px solid var(--title-bottom);
+    color: var(--title-color);
+    display:inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1.3em;
+    padding-bottom: 0.7em;
+}
+
