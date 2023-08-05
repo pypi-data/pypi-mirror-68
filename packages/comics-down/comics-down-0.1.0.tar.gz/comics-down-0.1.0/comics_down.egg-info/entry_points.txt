@@ -1,0 +1,3 @@
+[console_scripts]
+comicsdown = comics_down.console:main
+
