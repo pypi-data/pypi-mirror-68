@@ -1,0 +1,15 @@
+AUTHORS
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ds/__init__.py
+ds/ds_list.py
+ds/ds_queue.py
+ds/ds_stack.py
+ds/version.py
+pure_datastructures.egg-info/PKG-INFO
+pure_datastructures.egg-info/SOURCES.txt
+pure_datastructures.egg-info/dependency_links.txt
+pure_datastructures.egg-info/not-zip-safe
+pure_datastructures.egg-info/top_level.txt
