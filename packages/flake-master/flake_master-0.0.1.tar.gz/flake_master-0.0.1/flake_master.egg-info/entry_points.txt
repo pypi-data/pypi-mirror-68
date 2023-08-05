@@ -1,0 +1,3 @@
+[console_scripts]
+flake_master = flake_master.run:main
+
