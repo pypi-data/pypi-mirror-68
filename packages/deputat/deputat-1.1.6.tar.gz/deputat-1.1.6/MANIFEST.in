@@ -1,0 +1,4 @@
+include ./deputat/GUI/*
+include ./deputat/GUI/pictures/*.svg
+include MANIFEST.in
+include LICENSE
