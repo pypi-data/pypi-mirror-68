@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+django_horizontal_sharding.egg-info/PKG-INFO
+django_horizontal_sharding.egg-info/SOURCES.txt
+django_horizontal_sharding.egg-info/dependency_links.txt
+django_horizontal_sharding.egg-info/top_level.txt
