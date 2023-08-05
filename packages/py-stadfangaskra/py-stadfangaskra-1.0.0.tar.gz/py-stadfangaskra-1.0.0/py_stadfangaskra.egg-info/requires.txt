@@ -1,0 +1,16 @@
+pandas>=1.0.3
+geopandas>=0.7.0
+
+[:python_version<'3.7']
+dataclasses
+
+[dev]
+ipython
+coverage
+pytest-cov
+pytest-env
+pytest
+pylint
+
+[dev:python_version>="3.6"]
+black
