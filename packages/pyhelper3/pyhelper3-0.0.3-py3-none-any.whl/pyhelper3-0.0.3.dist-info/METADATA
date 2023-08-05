@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyhelper3
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: http://gitee.com/shellvv/pyhelper3
+Author: shellvv
+Author-email: shellvv@yeah.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: pymysql
+
+# pyhelper3
+* python工具库`Python3`
+
+
