@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+fava_envelope/__init__.py
+fava_envelope.egg-info/PKG-INFO
+fava_envelope.egg-info/SOURCES.txt
+fava_envelope.egg-info/dependency_links.txt
+fava_envelope.egg-info/not-zip-safe
+fava_envelope.egg-info/requires.txt
+fava_envelope.egg-info/top_level.txt
+fava_envelope/modules/__init__.py
+fava_envelope/modules/beancount_envelope.py
+fava_envelope/modules/main.py
+fava_envelope/templates/EnvelopeBudget.html
+fava_envelope/templates/__init__.py
+fava_envelope/templates/_budget_table.html
