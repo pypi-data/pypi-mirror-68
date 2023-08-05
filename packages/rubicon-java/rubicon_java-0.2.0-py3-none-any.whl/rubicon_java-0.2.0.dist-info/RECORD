@@ -1,0 +1,11 @@
+rubicon_java-0.2.0-py3.8-nspkg.pth,sha256=NwwU-h4xNPMq8YIB5c3OhSJG6ElyV7WFSBtxAssV0Gc,544
+rubicon/java/__init__.py,sha256=RAIqUqHe47Ilo2PmiOzcPl1hqovwrC-M1iewV3eyNlI,144
+rubicon/java/api.py,sha256=BXSZNDkb46YaEOEn0oiQhxmHVquxe_llYzvGCuROPUw,43592
+rubicon/java/jni.py,sha256=lX7TGe2clTRLP7-5QERWZEYpI3xX1QDE_DjwwHSrU_4,11827
+rubicon/java/types.py,sha256=0KqL5yOkuuHMjOQI-7j46qzqMghI0ooZXumCpAD_pPw,1952
+rubicon_java-0.2.0.dist-info/LICENSE,sha256=RPkv9evW0ARm3GCWJIPqviO2lX1XKhPaLksc9zTRe6Q,1522
+rubicon_java-0.2.0.dist-info/METADATA,sha256=GAlWUimqm9-_1yczn9Y5pR4cSVN1hitexLYK1MgGzgs,7382
+rubicon_java-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+rubicon_java-0.2.0.dist-info/namespace_packages.txt,sha256=EWgQZTBqvpDWyS3EacpRBApxh67OK_yt43gzM2f7xg4,8
+rubicon_java-0.2.0.dist-info/top_level.txt,sha256=EWgQZTBqvpDWyS3EacpRBApxh67OK_yt43gzM2f7xg4,8
+rubicon_java-0.2.0.dist-info/RECORD,,
