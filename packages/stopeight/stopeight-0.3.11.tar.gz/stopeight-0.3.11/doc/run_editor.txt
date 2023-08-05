@@ -1,0 +1,8 @@
+Editor
+======
+
+The editor is the main entry point to the code. Currently it allows for drawing, importing pen-stroke and WAV files. In the editor you can apply algorithms to the imported data. Launch it from the command line::
+
+    $ python -m stopeight.util.editor.dispatch
+
+Note: The comparator algorithms are currently not accessible from the editor. They are accessible through the API and the tests.

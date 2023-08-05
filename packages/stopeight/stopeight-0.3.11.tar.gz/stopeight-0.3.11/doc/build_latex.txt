@@ -1,0 +1,29 @@
+LaTeX
+=====
+
+Most of the mathematics are only available in LaTeX form at the moment. PDF files have to be built from source.
+
+The directory for mathematical definitions (.tex) and bibliography (.bib) is::
+
+    $ cd /path/to/where/stopeight/doc/latex
+
+Install from the universe repository (same as :doc:`dev_doc`)::
+
+    $ sudo apt-get install texlive texlive-latex-extra
+
+Install from the universe repository::
+
+    $ sudo apt-get install texlive-bibtex-extra
+
+First run pdflatex to create the bcf file. If there is an aux file already, delete it::
+
+    $ rm ./filename.aux
+    $ pdflatex ./filename.tex
+
+Then run bibtex on the bcf file (Don't add the file extension)::
+
+    $ bibtex ./filename
+
+Create the PDF::
+
+    $ pdflatex ./filename.tex

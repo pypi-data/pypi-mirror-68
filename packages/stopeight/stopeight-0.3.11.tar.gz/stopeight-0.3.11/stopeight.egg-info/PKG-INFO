@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: stopeight
+Version: 0.3.11
+Summary: stopeight: Comparing sequences of points in 2 dimensions
+Home-page: https://github.com/specpose/stopeight
+Author: Fassio Blatter
+Author-email: fassio@specpose.com
+License: GNU General Public License, version 2
+Project-URL: Documentation, https://specpose.github.io/stopeight
+Description: stopeight: Comparing sequences of points in 2 dimensions by visually overlapping them using matrix transformations (translation, scaling and rotation) and getting a boolean result.
+Keywords: signal-analysis time-series pen-stroke
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5

@@ -1,0 +1,6 @@
+numpy
+future
+funcsigs
+matplotlib
+pybind11>=2.5.0
+PyQt5

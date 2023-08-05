@@ -1,0 +1,6 @@
+[submodule "stopeight-clibs"]
+	path = stopeight-clibs
+	url = https://github.com/specpose/stopeight-clibs.git
+[submodule "pybind11"]
+	path = pybind11
+	url = https://github.com/pybind/pybind11.git

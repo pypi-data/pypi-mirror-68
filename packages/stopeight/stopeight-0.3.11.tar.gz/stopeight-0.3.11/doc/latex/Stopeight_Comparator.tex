@@ -1,0 +1,130 @@
+\documentclass{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\title{Stopeight Comparator}
+\author{Fassio Blatter}
+\maketitle
+
+\chapter{Introduction}
+(Formula are work in progress. The present state of the software implementation includes working overlay comparison.)\\\\
+This file is in the Stopeight repository on Github. Please edit here:\\
+\href{https://github.com/specpose/stopeight/tree/master/doc/latex/Stopeight\_Comparator.tex}{https://github.com/specpose/stopeight/tree/master/doc/latex/Stopeight\_Comparator.tex}\\
+The DOI can be found here ~\cite{Stopeight}.\\\\
+Initially the aim of this paper was to make separated sources in a mixed signal comparable using either numeric or geometric overlay comparison (currently implemented), regardless of time and amplitude stretch, but preserving frequency modulation and amplitude ratios.\\
+In the course of specifying the Stopeight Analyzer transversality, which serves as a foundation for the subsequent procedures, some more aspects have taken shape. These aspects are encapsulated in the definition of two wavelets, isolation and visibility. They may lead to a method of approximating polynomials of arbitrary degree. They are an indication of the fractal dimension and cutoff of the approximation.
+
+\chapter{Isolation}
+Isolation is the integral of the absolute difference of the input and approximation transversalities.
+\begin{equation}
+isolation(a,b)=\int \limits _{a}^{b} \vert\iota_{X}(t)-\xi(t)\vert \mathrm{d}t
+\end{equation}
+Note: The antiderivative exists. It is smooth (~\cite[Riemann Integrable]{Widon}).\\\\
+
+\chapter{Visibility}
+An auxiliary set of chart-wise points:
+\begin{equation}
+h: U_{n} \mapsto [a,b] \mapsto O_{n}
+\end{equation}
+Note: Because of Corner insertion (\cite{Stopeight}[3.20]), $card(U_{n}) > 2$.\\\\
+are Centres of Cliffs by the arithmetic mean:
+\begin{align}
+O_{n}=\int \limits _{a(U_{n})}^{b(U_{n})} \iota_{X}(t)\mathrm{d}t
+\end{align}
+Algorithm Version
+\begin{align}
+O_{n}=(\sum \limits _{i=0}^{m} (x,y)_{i})/(m+1)
+\end{align}
+Visibility is the integral of the absolute difference of the cliff-center and approximation transversalities.
+\begin{align}
+visibility(a,b)= \int \limits _{a}^{b} \vert \xi(t)-\iota_{O}(t)\vert  \mathrm{d}t
+\end{align}
+The integrand does not change in the case of a geometric circle, but it does in the case of a geometric spiral.\\
+For a Spiral type Compact Cover, the transversality is irregular.
+\begin{align*}
+\iota_{O}(t) =
+\begin{cases}
+(S,O_{0}) & t \in [t(S),t(C_{3})]\\
+(O_{0},O_{1}, ... , O_{n}) & t \in [t(C_{3}),t(C_{3})]\\
+(O_{n},E) & t \in [t(C_{3}),t(E)]
+\end{cases}
+\end{align*}
+For a Swell or a ZigZag type Compact Cover, the transversality is as expected.
+\begin{align*}
+\iota_{O}(t) =
+\begin{cases}
+(S,O_{0},E) & t \in [t(S),t(E)]\\
+(S,O_{1},E) & t \in [t(S),t(E)]\\
+...\\
+(S,O_{n},E) & t \in [t(S),t(E)]\\
+\end{cases}
+\end{align*}
+Note: The outer bounds $S_{0},E_{n}$ of the Compact Cover are enforced. $t_{0}$ and $t_{m}$ have to be aligned with these bounds.
+
+\chapter{Wavelets}
+Because of the fractal nature of the two variables isolation and visibility, a recursive function has to be used. The recursive step is applied on each downsampling step. We start with $2^j=m$, which is the full resolution of the Vector Graph. On each step we double the partition size until we reach $2^0$. The Vector Graph and any approximations thereof now consist of only one vector.\\\\
+The recursion is defined as follows. Here $t$ is the same parametrisation $t$ as used in previous chapters.
+\begin{equation}
+\psi_{j,n}(t)=\frac{1}{\sqrt{2^j}}\psi(\frac{t-2^j n}{2^j})
+\end{equation}
+Note: This is the dilation and translation of an individual time-frequency box of a Wavelet \cite{Mallat}[1.3.4].\\\\
+For this time-frequency box, a coefficient $vis_{j,n}$ or $iso_{j,n}$ can be calculated. This has to be done on the parametrisation bounds of the vector $(x,y)_n$ of the corresponding $vectorgraph_{j}$ \cite{Grapher}[1.3].
+\begin{align}
+vis_{j,n}=visibility(\norm{(x,y)_{n}}_{1},\norm{(x,y)_{n+1}}_{1})\\
+iso_{j,n}=isolation(\norm{(x,y)_{n}}_{1},\norm{(x,y)_{n+1}}_{1})
+\end{align}\\
+Note: Time-scaling has to be preserved in the lengths of the vectors in the construction of the Vector Graph for this to work.
+
+\chapter{Spectrogram}
+The frequency content in an approximation can be evaluated by a spectrogram.\\\\
+The spectrogram is calculated by applying a convolution transform to an artificially constructed signal for $t \in [a,b]$.
+\begin{align}
+rays(t)=ori(t)*\vert\iota_{X}(t)-\iota_{O}(t)\vert\\
+woodpecker(\phi)=\cos(\arctan(\cot(\phi))) + \mathrm{i} arccot(\phi)\\
+nautilus(a,b,\phi)=\int \limits _{-\infty}^{\infty}\int \limits _{a}^{b}rays(t)*woodpecker(\phi)\mathrm{d}t\mathrm{d}\phi
+\end{align}
+Unlike visibility, the orientation can change between two charts $ori(a,b)\neq ori(b,c)$. The flip of the sign is reflected in the Real part.
+
+\chapter{Vector Graph Inverses}
+\section{Graph Inverse}
+The full resolution $vectorgraph$ is considered $2^j=m$. Start of the signal $s(t);t=0$ and end of the signal $s(t);t=m$ are needed.
+\begin{equation}
+(vectorgraph_{log_{2}(m)})^{-1}: \mathbb{R}^2 \rightarrow \mathbb{R}
+\end{equation}
+The signal reconstruction is lossless, albeit normalized.
+\section{Approximation Inverse}
+Start of the signal, end of the signal and approximation $\xi(t)$ are needed for interpolation. There is a loss of information in Arcs $A$ caused by Straights and Spikes.
+\begin{equation}
+vectorgraph^{-1}: \mathbb{R}^2 \rightarrow \mathbb{R}
+\end{equation}
+It is possible to reconstruct a signal from the approximation, effectively making it a suitable format for compression or even upsampling. It can also make Vector Graphs, which have not been obtained from a signal, audible or suitable for 1-dimensional analysis.\\
+Note: The compression is dynamic. In some cases, the data may actually increase.
+
+
+\chapter{After Separation}
+Asymetric, non-repetitive half-pulses, which can be compared by matchline overlay comparison.\\\\
+Sisyphus: A Foray into Fractals\\
+Let's take the example of Sisyphus rolling a rock up a parabolic hill. We measure the altitude of the rock as a function of time. Sisyphus will roll the rock up the hill much slower than it will roll down the hill. Therefore variance of the Vector Graph in one direction is much lower than going in the other direction, but the periodicity of the falling depends on the rising.\\
+If we compare this to the formation of mountain ridges and their erosion, we can still say they depend on each other, but the periodicity is much more disconnected. The formation of mountain ridges depends on the flow of magma and ultimately on the thermomagnetic energy within the planet. Erosion, however depends on a much shorter period, which depends on the availability of atmosphere and ocean and the electromagnetic energy directed at them by the sun.\\
+The Vector Graph is non-symmetric in regard of time. Because phase varies there is no frequency; We speak of periodicity. An acoustic impulse propagates symmetrically as it oscillates between two fixed values. We can therefore assume that it has a fixed variance in both directions. This criteria is not true for our geological example. We may have to use different means to find correlations. This is where the Stopeight Comparator comes in handy.\\
+
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

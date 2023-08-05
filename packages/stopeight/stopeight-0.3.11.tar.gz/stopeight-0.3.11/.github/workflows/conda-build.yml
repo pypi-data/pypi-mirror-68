@@ -1,0 +1,80 @@
+name: "Conda Build"
+
+on: [push, pull_request]
+
+jobs:
+  conda-build-ubuntu:
+    name: Ubuntu Conda Build
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: 'false'
+      - name: Checkout submodules
+        shell: bash -l {0}
+        run: |
+          git submodule update --init --recursive
+      - name: Bash
+        shell: bash -l {0}
+        run: |
+          eval "$($CONDA/condabin/conda shell.bash hook)"
+          conda create --name btest
+          conda activate btest
+          conda install --channel specpose python stopeight-clibs
+          python -m pip install -r requirements.txt
+          python -m pip install setuptools wheel
+          python setup.py sdist bdist
+
+  conda-build-mac:
+    name: Mac Conda Build
+    runs-on: 'macos-latest'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: 'false'
+      - name: Checkout submodules
+        shell: zsh -l {0}
+        run: |
+          git submodule update --init --recursive
+      - name: Zsh
+        shell: zsh -l {0}
+        run: |
+          echo `ls -alF /usr/bin/gcc`
+          echo `clang --version`
+          echo "Activating conda version 4.8.x"
+          sudo chown -R 501:20 /usr/local/miniconda
+          eval "$($CONDA/condabin/conda shell.zsh hook)"
+          conda create --name btest
+          conda activate btest
+          conda install --channel specpose python stopeight-clibs
+          python -m pip install -r requirements.txt
+          python -m pip install setuptools wheel
+          python setup.py sdist bdist
+
+  conda-build-win:
+    name: Windows Conda Build
+    runs-on: 'windows-latest'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: 'false'
+      - name: Checkout submodules
+        shell: powershell
+        run: |
+          git submodule update --init --recursive
+      - name: PowerShell
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Continue'
+          echo $ErrorActionPreference
+          Get-ExecutionPolicy
+          Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+          Get-ExecutionPolicy
+          echo "Activating conda version 4.6.x"
+          (& $env:CONDA"\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
+          conda create --name btest
+          conda activate btest
+          conda install --channel specpose python stopeight-clibs
+          python -m pip install -r requirements.txt
+          python -m pip install setuptools wheel
+          python setup.py sdist bdist

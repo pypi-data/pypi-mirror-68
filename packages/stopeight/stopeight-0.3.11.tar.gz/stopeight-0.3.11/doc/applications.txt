@@ -1,0 +1,21 @@
+Applications
+============
+
+It can be applied to a lot of different applications:
+
+* Pen-Stroke Comparison
+   :mod:`stopeight.legacy`: Extracts feature points. Reduces the amount of data points in a format suitable for overlay comparison using affine transformations. Status Partially working.
+
+   Example: Recognising Asian characters. (See http://www.symboloh.com)
+* Analyzing a time-based Series of Function Graph data
+   :mod:`stopeight.grapher`: Turns a Function Graph into a Vector Graph. The Vector Graph can then be processed like a pen-stroke. Status Working.
+
+   :mod:`stopeight.analyzer`: Makes a quadratic approximation of the Vector Graph similar to the legacy method above. Resolution independent version. Status Not yet implemented.
+
+   Example: Frontend for non-realtime signal analysis.
+
+In different fields:
+
+* Pen-Stroke UI
+* Signal Analysis
+* Data Visualisation

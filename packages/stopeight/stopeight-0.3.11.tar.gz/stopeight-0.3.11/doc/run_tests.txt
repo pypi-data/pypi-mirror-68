@@ -1,0 +1,15 @@
+PyTest
+------
+
+Unpack the legacy test files :doc:`sample-data`.
+
+Run the tests::
+
+    $ cd /path/to/where/stopeight
+    $ pytest stopeight
+
+Show SVG results from the parser::
+
+    $ eog SOMETEST.out.svg
+
+To remove the check pattern transparent background go to menu (Image Viewer -> Preferences -> Image View -> Transparent Parts -> As custom color).

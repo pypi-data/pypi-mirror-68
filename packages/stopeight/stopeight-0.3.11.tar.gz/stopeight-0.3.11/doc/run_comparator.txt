@@ -1,0 +1,18 @@
+Stopeight Comparator
+--------------------
+
+The API is installed with stopeight.
+
+To run the tests using the legacy frontend pooling is needed.
+
+:mod:`stopeight.multiprocessing` is using the Python multiprocessing module. You can test if your Python installation and the underlying OS support this by running from within a Python shell::
+
+    >>> from multiprocessing import synchronize
+
+Unpack the legacy test files :doc:`sample-data`.
+
+Run the test::
+
+    $ cd /path/to/where/stopeight
+    >>> from stopeight.test.test_comparator import test_comparator
+    >>> test_comparator()

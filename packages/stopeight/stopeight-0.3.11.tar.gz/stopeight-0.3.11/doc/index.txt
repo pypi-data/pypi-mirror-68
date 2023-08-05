@@ -1,0 +1,56 @@
+.. stopeight documentation master file, created by
+   sphinx-quickstart on Wed Sep 12 14:27:50 2012.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Background
+==========
+
+.. toctree::
+   :maxdepth: 3
+
+   theory
+
+   applications
+
+Installation
+============
+
+.. toctree::
+   :maxdepth: 1
+
+   dev_build
+
+   sample-data
+
+Usage
+=====
+
+.. toctree::
+   :maxdepth: 1
+
+   run_editor
+
+   run_tests
+
+   run_comparator
+
+Developer
+=========
+
+.. toctree::
+   :maxdepth: 1
+
+   dev_analyzer
+
+   build_latex
+
+   dev_doc
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

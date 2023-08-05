@@ -1,0 +1,261 @@
+\documentclass{report}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\iffalse
+\usepackage{biblatex}
+\addbibresource{Stopeight.bib}
+\fi
+\usepackage{natbib}
+
+\renewcommand{\baselinestretch}{1.25}
+\newcommand\norm[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+\title{Not Used Formula}
+\author{Fassio Blatter}
+\maketitle
+
+\section{Implementations}
+More complex scenarios may be considered, where Spirals are avoided, the number of 8's are limited or the signal is resampled.\\
+Within $f$ we are assigning a sequence of three points to compact Hausdorf invervals ~\cite[6.1.3.]{Mortad}:
+\begin{equation}
+\{x_{n}\}_{n \in \mathbb{N}} \mapsto \{S,C,E\}
+\end{equation}\\
+
+The function $vectorgraph(a,b)$ is a angle function with relative angles scaled by
+\begin{align}
+\pi*(\sup_{s(t)} s'(t)-\inf_{s(t)} s'(t))
+\end{align}
+
+The purpose of the Analyzer is to find intervals in a Vector Graph and produce an approximation. The input Vector Graph may be obtained from the Grapher, or it may be present in another mathematical context. Certain properties, such as the maximum derivative or the quantity or quality of measure spaces involved, are inherited from this context.
+, or it may be present in another mathematical context.\\\\
+Preliminary: Grapher can turn a time-invariant series/signal $s(x)$ into a Vector Graph $\mathbb{R}^2$. The scaling of the angles between vectors can be adjusted. An average $\frac{\int \limits _{a}^{b}\vert s'(t) \vert\mathrm{d}t}{\vert b-a \vert}$ can be used (current implementation). Also a maximum angle of 180 degrees can be used instead of 90.
+\begin{equation}
+vectorgraph: \mathbb{R} \rightarrow \mathbb{R}^2
+\end{equation}
+Note: An absolute maximum $\sup_{}\vert s'(t) \vert$ can be used. Time-variant versions are excluded.\\\\
+
+This Vector Graph has to be constructed by appending a vector $(0,y)_{n+1}$ to an existing vector $(x,y)_{n}$ at an angle relative to the existing vector. Here, the length is the same sampling rate $2^j$ and the angle is chosen to be based on the average of the signal change and the actual change. The values are fitted to be in the range $[-\pi,\pi]$ to allow for the occurence of the full feature set supported by the Analyser.
+\begin{align}
+angle_{n+1}=angle_{n}+2*\arcsin(\vert(x,y)_{n+1}\vert/\frac{\int \limits _{a}^{b} s'(t) \mathrm{d}t}{b-a})
+\end{align}
+
+
+\section{Stopeight Analyzer}
+
+\subsection{Legal Segment}
+(~\cite[Riemann Integrable?]{Widon})
+
+\subsection{Straight}
+A Straight is a segment $[a,b]$ where $straightness(a,b)$ is smaller or equal to the ratio of the arc length of a hyperbola $1/x$ to the arc length of its direct connecting line $-\frac{x}{\mathrm{e}}+\frac{1+\mathrm{e}}{\mathrm{e}}$ from $1$ to $\mathrm{e}$. It is a part of a Spike, or transfering the Straight half of an Edge to an adjacent ZigZag, or being used as part of Edge detection. A Corner is $inserted$ .
+\begin{align}
+Max_{Straight}=\int \limits _{1}^{\mathrm{e}}\frac{\lvert\frac{\mathrm{d}}{\mathrm{d}t}\frac{1}{x}\rvert}{\lvert\frac{\mathrm{d}}{\mathrm{d}t}(-\frac{x}{\mathrm{e}}+\frac{1+\mathrm{e}}{\mathrm{e}})\rvert}\mathrm{d}t\\
+C_{3} \ni \frac{b-a}{2}
+\end{align}
+
+Non-recursive sections are not proper section types, but merely an expression of intermediate calculation and are therefore of medium computational priority (See discussion of oriented submanifolds in Compact Covers). They do induce a shift inside the Compact Cover if they're not centered.\\\\
+The $Max$ thresholds are reductions of measure spaces. The $derivatives$ are affected by $Max_{Straight}$. The Grapher $scale$ interacts with $Max_{Curvre}.$\\\\
+Measure Space: Curvature is no more than $(x')^2 + (y')^2 =1$  under any linear transformation of any segment and implies a creation of measure-spaces depending on scale.
+\subsection*{Half Cliff}
+Even though Half Cliffs are not being used, it is worth mentioning, that they produce Corners just to make the notation complete.
+\begin{align}
+Max_{Quarter}=\frac{((\pi-2) r^2) /4}{r}\\
+C_{3} \ni b'
+\end{align}\\
+Measure Space: Straightness is no more than what is required for a hyperbola not to be considered straight under any linear transformation of any segment and implies a creation of measure spaces depending on intervals of changing signs.\\\\
+
+\subsection*{Absolute Differences}
+Once these entities have been found, we can start to use absolute differences by means of setting the domain of $\xi$ and $\iota$ to $Swing \cup C_{3} \cup C_{4}$ unless noted otherwise.
+\begin{align}
+jitter(a.b)=\int \limits _{a}^{b}\lvert \iota_{X}(t) - \xi(t) \rvert \mathrm{d}t\\
+area_{vert}(a,b)=\int \limits _{a}^{b} \lvert \xi(t)-\iota(t) \rvert \mathrm{d}t
+\end{align}
+\begin{align}
+straightness_{Abs}(a.b)=\frac{jitter(a,b)}{diameter_{horiz}(a,b)}
+\end{align}
+\begin{align}
+curvature_{Abs}(a,b) = \frac{area_{vert}(a,b)}{diameter_{horiz}(a,b)}
+\end{align}
+
+\section{Recursive Sections}
+Derivatives are opening up interval measure spaces. The scale-space sets the maximal order of the polynomials considered. In the method discussed in this paper, it is quartic with restrictions, i.e. the representation is quadratic.  (The functions $q$ and the points $S,C,E$ pose a constraint on the quartic analytic form ~\cite[Spline\_CharacteristicPolynomials.nb]{Stopeight} and its inverse.)\\\\
+The following recursive subsections reveal hidden derivatives.
+
+\subsection{Spike}
+(Also?)
+\begin{align}
+angle(a,b',c)\geq\\
+straightness(a,b)\approx 1\\
+curvature(a,b)>0
+\end{align}
+
+\subsection{Relative Areas}
+The $solidangle(a,c)$ is defined by the Spike Margin $[a,b',b'',c]$.
+\begin{align}
+solidangle_{Rel}(a,c) = \frac{area(b',b'')}{(diameter_{horiz}(a,c)/2)^2}
+\end{align}
+
+\subsection{Spiral}
+Note: $b'$ is the Corner $C_{4}$ of the Eliptic Approximation if the Focal Points overlap (full circle). See Spline Axioms / Eliptic Approximation.
+
+\subsection{ZigZag}
+Note: $b'$ is the Corner $C$ of the Eliptic Approximation where the Focal Point is perpendicular to the tangent in $C$, but infinitely far away. See Spline Axioms / Eliptic Approximation.
+
+\subsection{Area of Jitter}
+The integral of the parametrisation on a non-Straight segment is larger than the integral of the parametrisation of a straight segment. (Additional benefits?)
+\begin{align}
+area_{jitter}(a,b)=\frac{\int \limits _{0}^{(b-a)/2} \lvert \iota_{X}(b-t)-\iota_{X}(a+t)\rvert \mathrm{d}t}{\int \limits _{0}^{(b-a)/2} diameter_{horiz,T}(a+t,b-t)\mathrm{d}t}
+\end{align}
+
+\section{Stopeight Comparator}
+
+\subsection{Recursion}
+($alt(a,b)$ products across interval spaces?)\\\\
+Typically, we do $signs$ over scale-spaces by setting the domain to $dom(\iota,\xi)=K_{p}$.
+Which is reflected in the $\mu(\gamma_{dom})$ of sum of a function over a scale space.\\
+\begin{equation}
+signs(\mu_{+},function )= \sum \limits _{\inf \limits _{\mu_{+}} (b-a)}^{\sup \limits _{\mu_{+}} (b-a)} function (a,b)
+\end{equation}
+$times$ is the product of a function over a interval space $dom(\iota,\xi)=T_{n}$.
+\begin{equation}
+times(\mu_{+},function) = \prod_{\inf \limits _{\mu_{+}} (b-a)}^{\sup \limits _{\mu_{+}} (b-a)} function(a,b)
+\end{equation}
+
+\subsection{Imaginary Visibility}
+Visibility is an increase of the polynomial Coefficients(?) of a curve segment.
+(No: When visibility is increased in a Spiral, it creates more subsegments/scale spaces). Points in $Y$ become uncertain at around $2\pi/3$. It is a Cantor-like diminishing isolation.
+\begin{align}
+visibility(a,b)= alt(a,b) * signs(\mu,solidangle_{Rel}(a,b))\\
+visibility(a,b)= alt(a,b) * signs(\mu,curvature(a,b)-Q(a,b))(?)
+\end{align}
+(Lebesgue on curvature? $Max_{Curve}$ based or sign based?)
+\subsection*{Cases}
+When curvature is decreased in a Spiral, it becomes a ZigZag.
+\subsection*{Scale Space}
+$area$ grows, but $diameter$ constant.
+
+\subsection{Real Isolation}
+(No: A lack of isolation is directly linked to the creation of more interval spaces.)
+\begin{align}
+isolation(a,b) = ori(a,b)*times(\mu,\frac{1}{area_{jitter}(a,b)})\\
+isolation(a,b) = ori(a,b)*times(\mu,straightness(a,b))(?)
+\end{align}
+(Frame bundle orthonormal?)
+\subsection*{Interval Space}
+$jitter$ grows, but $diameter$ constant.
+
+\subsection{Jaggedness}
+Is aliasing of discretisation/rasterisation, but not to be confused with signal aliasing. Can be defined on Focals and Turns.
+\begin{align}
+jaggedness(a,b)=\int \limits _{a}^{b} \lvert \iota_{X}(t)-\xi_{F}(t)\rvert \mathrm{d}t
+\end{align}
+
+\section{Indicator}
+In order for Stopeight overlay comparison to work, source separation has to be performed. A complex function measuring separation can be defined as.
+\begin{equation}
+separation(a,b) = isolation(a,b) + \mathrm{i} visibility(a,b)
+\end{equation}
+Important: This can be calculated while resampling. (See Grapher)\\\\
+Eventually, bounds of periodicity could be found. The directed waves of straightness and curvature going forward/backward synchronously are periodic.
+\begin{align}
+periodicity(a,b) =  (\int \limits _{a}^{b} \xi(t)-\iota_{X}(t) \mathrm{dt}) *(visibility(a,b) +\mathrm{i} isolation(a,b))
+\end{align}
+Or directly on the signal?
+\begin{align}
+periodicity(a,b) =  (\int \limits _{a}^{b} s(t) \mathrm{dt}) *(visibility(a,b) +\mathrm{i} isolation(a,b))
+\end{align}
+Note: $visibility$ and $isolation$ already include the trigonometric functions of the polar to cartesian transform.\\\\
+Consider: A polar to cartesian transform is a convolution with a sum of two fundamental numeric Taylor Series Expansions. Sine and Cosine functions are intrinsically linked to the quadratic entity $\sqrt{x^2 + y^2} =1$ and dividing the circle by four (90 deg.). Hyperbolic Sine is linked to $1/x$.\\\\
+Explanation:\\
+The imaginary part is the other side of the wave vs\\
+The imaginary part is the phase shift (fft)
+
+\subsection*{Complex Norm}
+A complex norm $\norm{\cdot}$.
+\begin{align}
+\norm{\cdot} : \mathbb{C} \rightarrow \mathbb{R}\\
+\end{align}
+Banach Space
+\begin{align}
+\norm{z} = \sqrt{Re(z)^2+Im(z)^2}
+\end{align}
+Hilbert Space
+\begin{align}
+\norm{z} = z*ComplexConjugate(z)
+\end{align}
+
+\subsection{Downsampling Wavelet}
+Because the Vector Graph is invertible, any basis that can reconstruct the Vector Graph $\iota_{X}$ from derived parametrisations is also a basis of the original signal $s(x)$.\\
+The method is a multiresolution approach. It is not a proper wavelet. Instead, a frequency-only basis is applied inside the Grapher \cite{Stopeight}[1.1] \emph{before} the \emph{transversality} $Y$ is calculated. Then, a local cosine basis is applied on the parametrisations. \cite{Mallat}[1.3.4]\\\\
+The angles in the Vector Graph are a Wavelet if $2^j$ is the block size, n is the block index, t is as previously defined.\\\\
+The signal $s(t)$ is a parametrisation of $s(x)$. The taxicab norm $\norm{\cdot}_{1}$ is preserved $c,d \in X$.\\\\
+Summing the vectors in the Vector Graph up to the period $T \in dom(s)$ removes jitter and is subject to shift $i \in dom(s)$.
+\begin{align}
+Z = \{c,d \in X \vert T=\frac{\norm{d}_1-\norm{c}_1}{2^j};c=i+kT;k,j \in \mathbb{Z}\}
+\end{align}
+Note: Downsampling the signal $s(x)$ before calculating the \emph{Vector Graph}, would obliterate points in $\iota_{X}$. They would not be recoverable, because as a consequence of downsampling, the Vector Graph folds differently, rendering the points in the original full resolution invalid.\\\\
+In the following chapters the domain of the functions $f \circ g \circ h$ on which sets $Y,A,O$ depend on is overridden $dom(\iota_{Y},\xi,\iota_{O})=Z$.\\\\
+If $j=\inf$, then $T=0$. The resulting limits for isolation and visibility are one and zero respectively.
+If the sequence of Centres of Cliffs $O$ for a particular $vectorgraph_{j}$ is preserved, it can be reconstructed from its $visibility^{-1}(\omega)$. The Approximation Inverse makes visibility a base of a signal $s(x)$ \cite{Grapher}[current implementation] at a particular downsampling frequency $\frac{\norm{(x,y)_{m}}_{1}}{2^j}$.\\ Note: It is a wavelet orthonormal basis. \cite{Mallat}[1.3]\\\\
+The $isolation(a,b)$ is not invertible.\\\\
+
+
+\subsection{Isolation}
+Isolation is the product of the ratios of the arc-lengths of the approximation and the input.
+\begin{equation}
+isolation(a,b)=\lim _{k\rightarrow\infty} \prod _{i=0}^{(b-a)/k} \int \limits _{i*\frac{b-a}{k}}^{(i+1)*\frac{b-a}{k}} \frac{\xi'(t)}{\iota'_{X}(t)} \mathrm{d}t
+\end{equation}
+The discrete notation of isolation is.
+\begin{equation}
+isolation(a,b)= \prod _{i=a}^{b-1} (\frac{\norm{\xi(i+1)-\xi(i)}_{2}}{\norm{\iota_{X}(i+1)-\iota_{X}(i)}_{2}}/(b-a))
+\end{equation}
+Note: This may seem odd at first, because the full resolution is always used. But consider that the approximation $\xi$ changes drastically if the Vector Graph partitions change.
+The square root of the product $\sqrt{\xi'(t)*\iota'_{X}(t)}$ happens to be the geometric mean.
+\begin{equation}
+isolation(a,b,T)=\int \limits _{a}^{b} \sqrt{\xi'(t)*\iota'_{X}(t)} \mathrm{d}t
+\end{equation}
+Note: Taking the mean instead of the ratio has a few implications. Lets assume we have computed the Stopeight Analyzer transversality by applying the affine transformations in a positive direction $dir_{Y}=1$. We now measure this against the actual input in the same direction $dir_{X}=1$. The resulting number is entirely real.\\\\
+Therefore a convolution can be applied \emph{after} integration.\\\\
+It can have values between $[0,\inf]$, which is useful for woodpecker convolution:\\\\
+Note: If we had chosen a product of geometric means instead of the convolution would make that isolation grows if the means are $(0,1]$, or even worse canceled out for zeros. A sum would not amplify the effect of large geometric means in short intervals.
+
+\subsection{Visibility}
+$[-\pi,\pi]$ is replaced with $[a,b]$. This is the energy of the Continuous Fourier \emph{Transform} as in the Plancherel equality.
+\begin{align}
+visibility(a,b)= \int \limits _{-\infty}^{+\infty}\int \limits _{a}^{b}\lvert \vert \xi(t)-\iota_{O}(t)\vert * \mathrm{e}^{-\mathrm{i}\omega t} \rvert^2 \mathrm{d}t \mathrm{d}\omega
+\end{align}\\
+Note: A Discrete, Fast version of the Fourier Transform can be applied. \cite{Formelsammlung}[7.9]
+\begin{align}
+angle(t)=\arctan\frac{x(\gamma(t)-O_{m})}{y(\gamma(t)-O_{m})},t \in U_{m}
+\end{align}
+Note: Angle not smooth and flips sign!! Integration \emph{after} convolution. Division of two complex numbers is partial/total derivative?\\\\
+Eventually a Discrete, Fast version of visibility can be used.\\
+The polar unit circle line corresponding to the absolute value of an angle is.
+\begin{align}
+z(k) = \cos(k*(m/2^j) + \mathrm{i}\sqrt{1-(\cos(k*(m/2^j)))^2}
+\end{align}
+Visibility is now based on the Haar spots in the approximation.
+\begin{align}
+visibility(a,b,j)= \sum _{k=0}^{(b-a)/(m/2^j)}\lvert \vert \xi(k*(m/2^j))-\iota_{O}(k*(m/2^j))\vert * z(k) \rvert^2
+\end{align}
+
+\chapter{Polynomials and Splines}
+Finding their Handrolls (chart on Spiral, tangential space).
+\begin{align}
+C_{O}=\sup_{t \in U} \lvert \frac{\mathrm{d}^2}{\mathrm{d}t^2}visibility(t) \rvert \approx 0
+\end{align}
+Finding Eliptic Joints.\\
+\begin{align}
+T_{O}=\inf_{t \in V} \lvert \frac{\mathrm{d}^2}{\mathrm{d}t^2}visibility(t) \rvert \approx 0
+\end{align}
+
+\iffalse
+\printbibliography
+\fi
+\bibliography{Stopeight}{}
+\bibliographystyle{plain}
+
+\end{document}

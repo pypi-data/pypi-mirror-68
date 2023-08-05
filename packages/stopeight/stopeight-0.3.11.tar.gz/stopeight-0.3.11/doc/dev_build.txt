@@ -1,0 +1,44 @@
+Stopeight
+=========
+
+Instructions have been tested on Ubuntu 20.04 Focal Fossa.
+
+Installation
+------------
+
+Minimal Requirements (main repository)::
+
+    $ sudo apt-get install git build-essential python3-dev cmake
+
+To run the editor, legacy tests and install to a separate environment (universe repository)::
+
+    $ sudo apt-get install qtbase5-dev python3-venv
+
+The stopeight repository contains stopeight-clibs (Github)::
+
+    $ git clone --recurse-submodules https://github.com/specpose/stopeight.git
+    $ cd /path/to/where/stopeight
+
+Build and install stopeight (easy_install)::
+
+    $ python -m venv ~/stopeight-test
+    $ source ~/stopeight-test/bin/activate
+    
+Run this before setup. easy_install may provide broken packages::
+
+    $ python -m pip install setuptools pybind11 PyQt5
+    
+And finally. This is using easy_install, not pip::
+
+    $ python setup-easydev.py develop
+
+Try the editor for a start. PyQt5 may segfault when running from inside a snap or an IDE-bound shell::
+
+    $ ~/stopeight-test/bin/python -m stopeight.util.editor.dispatch
+
+Uninstall::
+
+    $ ~/stopeight-test/bin/python setup-easydev.py develop --uninstall
+    $ rm -R ~/stopeight-test
+    $ rm -Rf /path/to/where/stopeight
+    $ rm -R ~/.stopeight
