@@ -1,0 +1,53 @@
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
+
+
+[tool.poetry]
+name = "safe-assert"
+version = "0.2.0"
+description = "Safe assert for Python that can be used together with optimised mode"
+license = "MIT"
+
+authors = [
+  "sobolevn <mail@sobolevn.me>"
+]
+
+readme = "README.md"
+
+repository = "https://github.com/sobolevn/safe-assert"
+
+keywords = [
+  "assert",
+  "utility",
+  "helper",
+  "optimized mode"
+]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.770"
+
+wemake-python-styleguide = "^0.14"
+flake8-pytest-style = "^1.1"
+nitpick = "^0.22"
+
+safety = "^1.9"
+
+pytest = "^5.4"
+pytest-cov = "^2.7"
+pytest-randomly = "^3.3"
