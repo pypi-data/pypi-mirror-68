@@ -1,0 +1,17 @@
+numpy
+scipy
+imageio
+pillow
+
+[development]
+flake8
+isort
+yapf
+pytest
+pytest-pep8
+pytest-xdist
+pytest-cov
+
+[examples]
+jupyterlab
+matplotlib
