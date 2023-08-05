@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: uptodate
+Version: 0.2.1
+Summary: Command line script checking if your requirements are uptodate
+Home-page: https://gitlab.com/havk/uptodate
+Author: Paweł Jastrzębski
+Author-email: pj@napcode.eu
