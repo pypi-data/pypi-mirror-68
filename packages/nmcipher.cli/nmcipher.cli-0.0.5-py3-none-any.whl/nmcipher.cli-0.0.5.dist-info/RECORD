@@ -1,0 +1,8 @@
+nmcipher/cli/__init__.py,sha256=QrwuZdkXXRQgGJeoTe00dEO9mApf3fapKqDh1dPidkE,4986
+nmcipher/cli/detect_english.py,sha256=UqXAABhzfd3RYNlhxOT9ovzwphdPKdfPrfzzPzHk_IA,260
+nmcipher/cli/parser.py,sha256=FL970QWyHXRPXCRfkgK-AGJ-__y-7RWB42TYg3fW9DY,2901
+nmcipher.cli-0.0.5.dist-info/METADATA,sha256=Ch7ZFhMvExLGI91pjHsZRAF-VZi7i2JLSMQRR8I9qTQ,388
+nmcipher.cli-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nmcipher.cli-0.0.5.dist-info/entry_points.txt,sha256=aGfjVqFk4N8ZRxZwS-7L31g-IiAXroHIpClFOd0h9YQ,120
+nmcipher.cli-0.0.5.dist-info/top_level.txt,sha256=PiHSI6vc85AMZ4rG93pHgtqhUsuJrhEK2df2gNgn1OA,9
+nmcipher.cli-0.0.5.dist-info/RECORD,,

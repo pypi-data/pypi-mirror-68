@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nmcipher.cli
+Version: 0.0.5
+Summary: A command line parser package for use with basic encryption algorithms
+Home-page: UNKNOWN
+Author: Neil Marshall
+Author-email: neil.marshall@dunelm.org.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: nmcipher.affine
+Requires-Dist: nmcipher.caesar
+Requires-Dist: nmcipher.transposition
+
+UNKNOWN
+
+
