@@ -1,0 +1,3 @@
+six
+xdis
+click<= 4.0
