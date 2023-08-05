@@ -1,0 +1,3 @@
+[console_scripts]
+celeref = celeref_lang.main:main
+
