@@ -1,0 +1,3 @@
+genson
+singer-python
+jsonschema
