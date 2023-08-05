@@ -1,0 +1,11 @@
+vrcpy/__init__.py,sha256=uleEZvSIadFIHQZG1SFA9G4sr20EfEymZQSJrhMRMgg,163
+vrcpy/aobjects.py,sha256=eNE7zXxEas1MFaA2uLoIsbvGiIviZmWcmXB6KBr9490,1432
+vrcpy/client.py,sha256=8SClbGBySx2x8xBFtHEUSVZ-PGlYCwBHk0TPhBt8jQY,7068
+vrcpy/errors.py,sha256=mL0WT24dbn4GXlliFv4rjZrT1es_k4fWtD67iTdWwoM,801
+vrcpy/objects.py,sha256=C3VKSFJhoev82mgbQnUEXePKPOuofievwqRpjuszkvQ,7547
+vrcpy/request.py,sha256=FfTJ8ts-juYLvPwrRAfi0nGeWHnZcnaRY9ey4Co5MS8,6232
+vrcpy/types.py,sha256=AX4D--lAKAmOOmyjCAqo1Qz_KH2kgAI_vHM_iKbYIgA,256
+vrcpy-0.5.2.dist-info/METADATA,sha256=kqLMVuV83zDmcvjKeVvgsLHdpYOkps274Lqi5XV-WVw,1265
+vrcpy-0.5.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+vrcpy-0.5.2.dist-info/top_level.txt,sha256=nvdZvyPacg4Y-URJjcRPaAo-RNF6X2uyeNzgnBZK3NA,6
+vrcpy-0.5.2.dist-info/RECORD,,
