@@ -1,0 +1,17 @@
+ssh_ipykernel/__init__.py,sha256=tGQsD2TxmRr_NxNnFJF3ijBEZsIvU3pNrqGOaCy9osQ,760
+ssh_ipykernel/__main__.py,sha256=MjFNNWAI6Hma809Q2I55ynoWwLIfukmLI1uAF_PqZ3c,2355
+ssh_ipykernel/_version.py,sha256=W4MU_ALzUFZMA-2hSwS2xWumIwEvMIa4m8wh16GRBA8,540
+ssh_ipykernel/kernel.py,sha256=a7_WeSkoZp7uosf3K9XWXWQ0tXiTj0OlAqTKEwGfn2s,11160
+ssh_ipykernel/manage.py,sha256=64ZFnrTSOKrwNu1Xo0y88pj-vHaGc2_WRCtw7wUkEuI,3899
+ssh_ipykernel/status.py,sha256=bg8_3LboGtZeZfZcW1_cmQZUP0p59ft_wXeqTU3S_pM,7529
+ssh_ipykernel/utils.py,sha256=olZCFIF-y-7w3nWoZl2oCmPf5rUrfFchsLDLDJg9YIk,1440
+ssh_ipykernel/ssh_ipykernel_interrupt/__init__.py,sha256=zQblhlTB_1p4ldPr82KwUwlXHZSKAnCVhC_Dpad3pBo,51
+ssh_ipykernel/ssh_ipykernel_interrupt/interrupt_handler.py,sha256=tZ-vbfAp2d47uAUBeBIzRQrLftqn6jp_hEO3FIylLMw,2172
+ssh_ipykernel/ssh_ipykernel_interrupt/etc/ssh-ipykernel-interrupt.json,sha256=rPSDBGGBMxqRl8iFVqzbHF1uEwkmZBV4hSSSMvLlQeI,89
+ssh_ipykernel-1.0.1.data/data/etc/jupyter/jupyter_notebook_config.d/ssh-ipykernel-interrupt.json,sha256=rPSDBGGBMxqRl8iFVqzbHF1uEwkmZBV4hSSSMvLlQeI,89
+ssh_ipykernel-1.0.1.dist-info/AUTHORS.md,sha256=cQYRZjFOINB0uT-7Ig0AW-17Uh6ENLKeUEGzyOEepUo,70
+ssh_ipykernel-1.0.1.dist-info/LICENSE,sha256=ZnJpfXVniiC65YU2aVnASVZIPaLdkGVyEColdpmFJbA,1074
+ssh_ipykernel-1.0.1.dist-info/METADATA,sha256=N3gIPGdglWM_xQPrnKUMsS9CzzRFP-jfbU9Q5TkYEKo,5835
+ssh_ipykernel-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ssh_ipykernel-1.0.1.dist-info/top_level.txt,sha256=WJeJ1MIg8xoaXuRTze4htuKvom7jefRQS_8a9zNQZZM,14
+ssh_ipykernel-1.0.1.dist-info/RECORD,,
