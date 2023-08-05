@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aioworkers_sentry/__init__.py
+aioworkers_sentry/client.py
+aioworkers_sentry/sentry.ini
+aioworkers_sentry/version.py
+aioworkers_sentry.egg-info/PKG-INFO
+aioworkers_sentry.egg-info/SOURCES.txt
+aioworkers_sentry.egg-info/dependency_links.txt
+aioworkers_sentry.egg-info/requires.txt
+aioworkers_sentry.egg-info/top_level.txt
