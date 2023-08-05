@@ -1,0 +1,11 @@
+statsapi/__init__.py,sha256=tvNaK_wS0jH-gfVDKB4vAXq8axYd6W0imjUoQNVv5ak,58188
+statsapi/endpoints.py,sha256=WLQ4PBx2yM6sGSpEhqE7fxNgevxq43GrXzn5mxtnuPw,41012
+statsapi/test.py,sha256=tIZG_CH5Q5WFn3qnl70Lr80jyuOS5bI1njyl138bA8s,25
+statsapi/version.py,sha256=m5UM9EyYHsxtCsIQIL2TbR9i0cB1azGoOdiypEJjH-E,44
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get.py,sha256=-V5FYZVO7YjbA0znyFXT_8YsZZS9KsVe4QI2X1amxj4,2133
+MLB_StatsAPI-0.1.7.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+MLB_StatsAPI-0.1.7.dist-info/METADATA,sha256=23M67vhIXqw_rZnF69gN1TF79R6FEGdu8kjrr897DxM,1051
+MLB_StatsAPI-0.1.7.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+MLB_StatsAPI-0.1.7.dist-info/top_level.txt,sha256=UFcLeQsFwQUZtXZJgFbt23FzhMyvLFJ4Vx9Bw8Ay0gE,15
+MLB_StatsAPI-0.1.7.dist-info/RECORD,,
