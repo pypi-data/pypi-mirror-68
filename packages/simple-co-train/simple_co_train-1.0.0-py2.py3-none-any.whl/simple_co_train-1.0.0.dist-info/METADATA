@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: simple-co-train
+Version: 1.0.0
+Summary: A simple co-training library built on Keras.
+Home-page: UNKNOWN
+Author: Daniel Marinov Petrov
+Author-email: daniel.marinov.a100111@mcast.edu.mt
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Requires-Dist: keras
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+
+========
+Overview
+========
+
+A simple co-training library built with Keras.
+
+* Free software: MIT license
+
+Installation
+============
+
+Before installing simple-co-train, please install one of Keras' backend engines: TensorFlow, Theano, or CNTK.
+
+::
+
+    pip install simple-co-train
+
+Documentation
+=============
+
+
+Basic usage:
+
+.. code-block:: python
+
+    from sctrain import CoTrainer, SelectionStrategy
+    from sctrain.results import print_results
+
+    trainer = CoTrainer(
+        data_path='imdb.csv',  # this can be a directory, e.g. 'data'
+        x_name='review',  # optional, defaults to 'text'
+        y_name='sentiment',  # optional, defaults to 'label'
+        unlabelled_size=0.9, # optional, what portion of total data should be used as unlabelled
+        train_size=0.8, # optional, what portion of labelled data should be used as training data
+        mapping={'negative': 0, 'positive': 1}  # optional mapping, y column must be 0 or 1
+        selection = SelectionStrategy.UNSURE_ONLY # optional, can be CONFIDENT_ONLY or BOTH
+    )
+    # run the co-training, this may take a while...
+    trainer.run()
+    # print out accuracy, f1 score, precision, recall, and labelled samples at each co-training round
+    print_results(trainer)
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.1.0 (2020-05-07)
+------------------
+
+* First release on PyPI.
+
+

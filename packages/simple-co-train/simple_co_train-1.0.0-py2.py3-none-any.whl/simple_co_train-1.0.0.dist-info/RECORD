@@ -1,0 +1,13 @@
+sctrain/__init__.py,sha256=4p_lRw2-WRwlLpO0ih1XOUH-INNCb837FMHiPqROcms,158
+sctrain/co_training.py,sha256=w2egdPaIoopWvx8jLd9_WN8flLftc-fpGth3SFATet8,10427
+sctrain/data.py,sha256=KTGvB-1OuP_ICpgmZNzobxAxcjzIW9yAQqjcjpkN4zQ,1241
+sctrain/k_fold.py,sha256=OXLsmjwP335qB4a4hC4w-xCJb9MVdKteM7HTAi0LQ64,2844
+sctrain/models.py,sha256=4XT71DIlTZammDh214TO4_Z0wPsLR4SFXMlBMyixTqc,1988
+sctrain/results.py,sha256=nX8FwUcJ9i4tjjLfqGOFyOtm2LBCq91zyOgfK8D71-4,948
+sctrain/self_training.py,sha256=S7hCTR6TjWv-H0z7IPK1OdLxBrzGEONHtg_FJIO9jsE,4516
+simple_co_train-1.0.0.dist-info/AUTHORS.rst,sha256=RO3rqjgRRQ-blCvJp5vfrrQiJENn8o6pnGhn7jqv7h8,42
+simple_co_train-1.0.0.dist-info/LICENSE,sha256=ivAxZkgX5Vngz8yC9rb_xV8eiheu1BEwp13EUuSpFxE,1117
+simple_co_train-1.0.0.dist-info/METADATA,sha256=r2TZNaTswNGG2qqQgYQ0HXyWt7hHYKTTg03O4bbBxzI,2733
+simple_co_train-1.0.0.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+simple_co_train-1.0.0.dist-info/top_level.txt,sha256=dyBGEiOMaEpIPVk8nKCT1FMC0AlIhfUgGIfD4TjfnhA,8
+simple_co_train-1.0.0.dist-info/RECORD,,
