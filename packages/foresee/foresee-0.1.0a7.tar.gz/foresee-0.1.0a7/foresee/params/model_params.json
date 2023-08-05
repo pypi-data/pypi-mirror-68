@@ -1,0 +1,7 @@
+{
+"sarimax":				{},
+"holt_winters":			{},
+"prophet":				{},
+"fft":					{},
+"ewm_model":			{}
+}

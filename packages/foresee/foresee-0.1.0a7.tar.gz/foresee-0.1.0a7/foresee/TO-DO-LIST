@@ -1,0 +1,22 @@
+front-end
+
+read column names from input data and prompt user to select ts id columns and date-stamp column.
+
+display pandas df.info() as text (double checking input data, as read function) # done but needs line break
+
+add functionality to set model parameters or accept default parameters or tune parameters
+
+
+
+back-end
+
+calculate out of sample mse and incorporate it in model comparison.
+
+add more models
+
+return input data and train/test/forecast split flag in result table
+
+prophet frequency set real number to string
+ 
+pre-processing!!!
+

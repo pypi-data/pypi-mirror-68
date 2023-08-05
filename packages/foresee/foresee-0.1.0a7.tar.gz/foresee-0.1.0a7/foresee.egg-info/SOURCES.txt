@@ -1,0 +1,37 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+foresee/TO-DO-LIST
+foresee/__init__.py
+foresee.egg-info/PKG-INFO
+foresee.egg-info/SOURCES.txt
+foresee.egg-info/dependency_links.txt
+foresee.egg-info/top_level.txt
+foresee/data/__init__.py
+foresee/data/basic_time_series_data.csv
+foresee/data/test_data.csv
+foresee/data/test_data_light.csv
+foresee/examples/__init__.py
+foresee/examples/basic tutorial, multi column input dataframe.ipynb
+foresee/examples/basic tutorial, one column input dataframe.ipynb
+foresee/examples/drop file to forecast.ipynb
+foresee/models/__init__.py
+foresee/models/ewm.py
+foresee/models/fft.py
+foresee/models/holt_winters.py
+foresee/models/models_util.py
+foresee/models/prophet.py
+foresee/models/sarimax.py
+foresee/params/__init__.py
+foresee/params/model_params.json
+foresee/params/param_config.json
+foresee/scripts/__init__.py
+foresee/scripts/compose.py
+foresee/scripts/fitter.py
+foresee/scripts/main.py
+foresee/scripts/utils.py
+foresee/webapp/__init__.py
+foresee/webapp/dash_app.py
