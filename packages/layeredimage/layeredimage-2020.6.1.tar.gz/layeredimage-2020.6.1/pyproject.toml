@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "layeredimage"
+version = "2020.6.1"
+description = "Use this module to read, and write to a number of layered image formats"
+authors = ["FredHappyface"]
+classifiers = [
+	"Environment :: Console",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Intended Audience :: Education",
+	"License :: OSI Approved :: MIT License",
+	"Natural Language :: English",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.6",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: Implementation :: CPython",
+	"Topic :: Multimedia :: Graphics",
+	"Topic :: Software Development :: Libraries :: Python Modules",
+	"Topic :: Utilities"
+]
+homepage = "https://github.com/FHPythonUtils/LayeredImage"
+repository = "https://github.com/FHPythonUtils/LayeredImage"
+documentation = "https://github.com/FHPythonUtils/LayeredImage/blob/master/README.md"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+defusedxml = "^0.6.0"
+metprint = "^2020.6.1"
+pillow = "^7.1.2"
+pyora = "^0.3.0"
+pypdn = "^1.0.5"
+psd-tools3 = "^1.8.2"
+pylsr = "^2020.0.3"
+blendmodes = "^2020.2.2"
+gimpformats = "^2020.2.1"
+numpy = "^1.18.4"
+
+[tool.poetry.dev-dependencies]
+imgcompare = "^2.0.1"
+
+[tool.dephell.main]
+from = "pyproject.toml"
+to = "requirements.txt"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
