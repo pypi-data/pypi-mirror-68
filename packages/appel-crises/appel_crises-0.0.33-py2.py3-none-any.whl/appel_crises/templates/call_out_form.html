@@ -1,0 +1,163 @@
+{% load static %}
+
+<div id="call-out-container">
+    <form action="{% url 'call-out' %}" method="post" id="call-out-form" class="call-out-container" style="display: flex">
+        {% if no_js %}{% csrf_token %}{% endif %}
+        <div style="flex-grow: 3">
+            <!-- mail header -->
+            <div>
+                <div style="background: #2C2D2C; text-align: center; padding: 6px 0 3px 0; border-radius: 20px 20px 0 0;">
+                    <img src="{% static 'appel_crises/img/mail.svg' %}" alt="mail" style="width: 30px">
+                </div>
+            </div>
+
+            <div style="background: white; border-radius: 0 0 20px 20px; padding: 10px 20px">
+                {% if not no_js %}
+                    <div class="mail-underlined" id="call-out-from-fake-input">
+                        <span style="margin-right: 10px">
+                            De :
+                        </span>
+
+                        <span id="from-fake-input">
+
+                        </span>
+                    </div>
+                {% endif %}
+
+                <div class="mail-underlined" id="call-out-recipients">
+                    <span style="margin-right: 10px">
+                        A :
+                    </span>
+
+                    {% if no_js %}
+                        <span class="mail-to-tag">
+                            <input type="checkbox" name="send_to_government" id="send_to_government" checked>
+                            <label for="send_to_government">Gouvernement</label>
+                        </span>
+                        <span class="mail-to-tag">
+                            <input type="checkbox" name="send_to_depute" id="send_to_depute" checked>
+                            <label for="send_to_depute">Mon député</label>
+                        </span>
+                    {% else %}
+                        <span onclick="toggleTag('government-tag')" id="government-tag" class="mail-to-tag" data-circonscription="gvt">
+                            <span class="close">x</span>
+                            <span class="add">+</span>
+                            Gouvernement
+                        </span>
+                        <span onclick="toggleTag('depute-tag')"  id="depute-tag" class="mail-to-tag depute-tag">
+                            <span class="close">x</span>
+                            <span class="add">+</span>
+                            Mon député
+                        </span>
+                    {% endif %}
+                </div>
+                <div class="mail-underlined" id="call-out-subject">
+                    <label for="mail-subject" style="margin-right: 10px">
+                        Objet :
+                    </label>
+
+                    <textarea name="subject" id="mail-subject"
+                              rows="1">{% if no_js %}{{ email_template.subject }}{% else %}Je voudrais un autre monde{% endif %}</textarea>
+                </div>
+
+                <input type="hidden" name="template_id" id="mail-template-id"
+                       value="{% if no_js %}{{ email_template.template_id }}{% else %}None{% endif %}"/>
+
+                <div class="mail-underlined content" style="padding-bottom: 25px; color: #161616">
+                    <textarea name="content" id="mail-content">
+                        {% if no_js %}
+                            {{ email_template.content }}
+                        {% else %}
+Chers décideurs,
+
+Édouard Philippe l’a énoncé clairement : il veut agir avec « prudence ». En présentant devant l’Assemblée nationale son plan de déconfinement, le premier ministre a confirmé que la réalité de la crise sanitaire était bien plus complexe que de simples promesses présidentielles. « Je le dis aux Français, si les indicateurs ne sont pas au rendez-vous, nous ne déconfinerons pas le 11 mai, ou nous le ferons plus strictement », a-t-il insisté, mardi 28 avril, avant de détailler « l’architecture générale » de la stratégie gouvernementale.
+
+Contrairement à Emmanuel Macron qui avait martelé la date du 11 mai lors de sa dernière allocution, le locataire de Matignon a renvoyé bon nombre de dispositifs à celle du 2 juin, qui fait aujourd’hui figure de nouvelle échéance. Il a également précisé que les mesures seraient adaptées « département par département », en fonction d’un certain nombre de critères établis par la direction générale de la santé (DGS) et Santé publique France (SPF). Le déconfinement ne sera donc pas « régionalisé », comme l’avait indiqué l’Élysée, mais « départementalisé ». Ce qui revient peu ou prou à la même chose.
+
+Cordialement,
+[Votre signature]
+                        {% endif %}
+                    </textarea>
+                </div>
+
+                <div style="margin-top: 16px">
+                    <label style="color: rgba(45, 45, 45, 1); font-size: 12px">
+                        <input type="checkbox" id="call-out-legal">
+                        En cochant cette case, vous reconnaissez votre entière et unique responsabilité dans le contenu du mail envoyé. Vous attestez sur l'honneur que les informations soumises (Nom, Prénom, adresse électronique) sont exactes et consentez à ce qu'elles soient transmises aux destinataires du mail.
+                    </label>
+                </div>
+
+                <div style="display: flex; margin-top: 16px">
+                    <div>
+                        {% if no_js %}
+                            <button type="submit" class="btn" style="background: #F6C224; padding: 8px 12px">
+                        {% else %}
+                            <button onclick="sendMail()" type="button" id="call-out-submit" class="send btn is-primary is-disabled">
+                        {% endif %}
+                            Envoyer
+                        </button>
+                    </div>
+                    <div style="font-size: 0.8em; color: #161616; margin-left: 20px; padding-top: 7px">
+                        Personnalisez le courriel <br>
+                        avant de l'envoyer&nbsp;!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right column -->
+        <div id="mail-right-col">
+            <div>
+                <div class="input-holder">
+                    <label for="call-out-sender">Prénom et nom</label>
+                    <input type="text" id="call-out-sender" name="sender" placeholder="Jean Dupont" required>
+                </div>
+                <div class="input-holder">
+                    <label for="call-out-postal_code">Code Postal</label>
+                    <input type="text" id="call-out-postal_code" name="postal_code" placeholder="35200" required>
+                </div>
+                <div class="input-holder">
+                    <label for="call-out-from_email">Email</label>
+                    <input type="email" id="call-out-from_email" name="from_email" placeholder="mon@courriel.fr" required>
+                </div>
+            </div>
+
+            <div id="mtcaptcha-2" class="call-out-captcha" style="display: none; min-width: 264px"></div>
+
+            <div class="call-out-why">
+                <p>
+                    <strong>Personnalisez le mail&nbsp;!</strong>
+                </p>
+                <p>
+                    Interpellez vos élus par mail pour peser sur les mesures de relance qui vont être prises&nbsp;!
+                </p>
+                <p>
+                    Le mail sera envoyé à vos députés, au gouvernement et à l’Elysée pour mobiliser à chaque niveau. Un
+                    seul impératif&nbsp;: rester poli&nbsp;!
+                </p>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="call-out-success" class=" call-out-result" style="display: none">
+    <div>
+        <img src="{% static 'appel_crises/img/check.svg' %}" alt="check icon">
+    </div>
+    <div>
+        <h2>Email envoyé !</h2>
+    </div>
+</div>
+<div id="call-out-error" class="call-out-result" style="display: none">
+    <div>
+        <h2>Something unexpected happened ...</h2>
+    </div>
+    <div>
+        <p id="call-out-error-text">
+            An error happened, please retry.
+        </p>
+    </div>
+    <div>
+        <button onclick="retryCallOutForm()" class="btn">Ré-essayer</button>
+    </div>
+</div>
