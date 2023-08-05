@@ -1,0 +1,12 @@
+cdocs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdocs/cdocs.py,sha256=TR2L6JHZ2S9fU_ZeQQG84Qn3Iij8NT8RbVBunG8naKI,4879
+cdocs/config.py,sha256=CLbLMbwUS_s0p96ouIMkrn167kU2wNZatVdQo0wWyHg,852
+cdocs/contextual_docs.py,sha256=laaL6x-N-Ir8XwidQPy9HpfseNSX1iZBb88iHwEeb88,2582
+cdocs/dict_finder.py,sha256=rZX-BzXWF2pWkraPCDPqWyWHSCzPtp0yA1M0Ipwpo7w,1345
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests.py,sha256=pSqXeNj53GLy4a9SDewsU6eZrQTjKCzukNGz-m4XCWM,4334
+cdocs-0.0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+cdocs-0.0.4.dist-info/METADATA,sha256=bIavrH7olmNBH3qOBY3SveyFaHxHM7BZJW8FSHInKsk,4381
+cdocs-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cdocs-0.0.4.dist-info/top_level.txt,sha256=hENUW3HevlvcWUoLhuybp7ZB1UUkdvhMuiowgp4qhqs,12
+cdocs-0.0.4.dist-info/RECORD,,
