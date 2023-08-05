@@ -1,0 +1,10 @@
+README.md
+setup.py
+pymindiff/__init__.py
+pymindiff/groups.py
+pymindiff/partitions.py
+pymindiff/scale.py
+pymindiff.egg-info/PKG-INFO
+pymindiff.egg-info/SOURCES.txt
+pymindiff.egg-info/dependency_links.txt
+pymindiff.egg-info/top_level.txt
