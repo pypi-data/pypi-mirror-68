@@ -1,0 +1,9 @@
+README.md
+setup.py
+csvtool/__init__.py
+csvtool/csvtool.py
+csvtool.egg-info/PKG-INFO
+csvtool.egg-info/SOURCES.txt
+csvtool.egg-info/dependency_links.txt
+csvtool.egg-info/entry_points.txt
+csvtool.egg-info/top_level.txt
