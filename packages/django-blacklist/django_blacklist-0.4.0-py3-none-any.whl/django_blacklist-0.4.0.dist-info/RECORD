@@ -1,0 +1,13 @@
+blacklist/__init__.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+blacklist/admin.py,sha256=gBUNMn5ZFNawrFz3CzHRFRsJntLMTnEkxLlfmk8Ize8,333
+blacklist/middleware.py,sha256=Pvza9PZcLZndlR-YsfZ2PzAI6saQ7JiJXFITqSt30yE,4156
+blacklist/models.py,sha256=CENKzrLeApSWw2sGC1wpkMoVVDeB2FjaD-jyU9ARsIo,1921
+blacklist/ratelimit.py,sha256=fI31whu59jnk-9c3_nPXHuJakK0s1-KpI5pRijFUNgc,2069
+blacklist/management/commands/trim_blacklist.py,sha256=HwNFzoN3TLTLhZtSiNOUgTiI26dhRyruicX-SzkzhNM,1157
+blacklist/migrations/0001_initial.py,sha256=BLFMQQU4L1CPSpx9wOuACsAZ9ylSGJfwKI_oQsCKzvY,1341
+blacklist/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_blacklist-0.4.0.dist-info/LICENSE,sha256=NR1d13Jv9YBHEasQ_sE_MOcYCw9gze6dZRnhvdEcfGY,1072
+django_blacklist-0.4.0.dist-info/METADATA,sha256=ZzxHaPSofDK1kXTHwCyKRPOSiT91-McAq5Fe81bkOQk,5483
+django_blacklist-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_blacklist-0.4.0.dist-info/top_level.txt,sha256=aEtbT8fg8lYO3oUHCsZVoeuuvd6nIzCCXwk1ve1Hlac,10
+django_blacklist-0.4.0.dist-info/RECORD,,
