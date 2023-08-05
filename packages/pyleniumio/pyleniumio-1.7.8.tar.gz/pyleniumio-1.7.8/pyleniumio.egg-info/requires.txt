@@ -1,0 +1,8 @@
+selenium
+pytest
+pytest-xdist
+pydantic
+faker
+requests
+webdriver-manager
+click
