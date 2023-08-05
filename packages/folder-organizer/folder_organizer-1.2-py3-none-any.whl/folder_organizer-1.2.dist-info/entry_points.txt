@@ -1,0 +1,3 @@
+[console_scripts]
+folder-organizer = open:main
+
