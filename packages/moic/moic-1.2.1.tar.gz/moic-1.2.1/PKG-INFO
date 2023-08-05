@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: moic
+Version: 1.2.1
+Summary: My Own Issue CLI (Jira, Gitlab etc...)
+Home-page: https://gitlab.com/brice.santus/moic
+Author: Brice Santus
+Author-email: brice.santus@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: antidote (>=0.7.0,<0.8.0)
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: commonmark (>=0.9.1,<0.10.0)
+Requires-Dist: dynaconf (>=2.2.3,<3.0.0)
+Requires-Dist: jira
+Requires-Dist: keyring (>=21.1.1,<22.0.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
+Requires-Dist: rich (>=0.8.8,<0.9.0)
+Requires-Dist: tomd (>=0.1.3,<0.2.0)
+Project-URL: Documentation, https://gitlab.com/brice.santus/moic/-/blob/master/README.md
+Description-Content-Type: text/markdown
+
+# MOIC : My Own Issue CLI
+
+> Freely inspired by https://pypi.org/project/jira-cli/
+
+Command line utility to interact with issue manager such as Jira
+
+## Getting Started
+
+* Install moic
+```bash
+> pip install moic
+```
+
+* Configure moic
+```bash
+> moic configure
+```
+
+* Commands
+```bash
+> moic
+Usage: moic [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  config    Configure Jira cli, setting up instance, credentials etc...
+  issue     Create, edit, list Jira issues
+  list      List projects, issue_types, priorities, status
+  rabbit    Print an amazing rabbit: Tribute to @fattibenji...
+  sprint    Create, edit, list Jira Sprints
+  template  List, edit templates
+  version   Provide the current moic installed version
+```
+
+## Autocompletion
+
+To activate bash autocompletion just add:
+* For bash
+```
+# In your .bashrc
+eval "$(_MOIC_COMPLETE=source_bash moic)"
+```
+* For zsh
+```
+# In your .zshrc
+eval "$(_MOIC_COMPLETE=source_zsh moic)"
+```
+
+## Contribute
+
+Feel free [open issues on Gitlab](https://gitlab.com/brice.santus/moic/-/issues) or propose Merge Requests
+
+### Prerequisites
+
+This project is based on [Poetry](https://python-poetry.org/docs/) as a package manager. It allows the use of virtual environments and the lock of package versions, whether they are in your dependencies or just sub-dependencies of these dependencies.
+
+### Setup
+
+* Create virtualenv (Optionnaly you can use [pyenv](https://github.com/pyenv/pyenv) which is a Python Virtualenv Manager in combination with **Poetry**)
+```bash
+poetry shell
+```
+* Install dependencies
+```bash
+poetry install
+```
+* Install pre-commit (using [Pre-commit framework](https://pre-commit.com/))
+```bash
+pre-commit install
+```
+> Pre-commit will check isort, black, flake8
+
+### Commit messages
+
+This project uses semantic versioning so it is important to follow the rules of [conventional commits](https://www.conventionalcommits.org/).
+
