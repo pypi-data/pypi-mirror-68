@@ -1,0 +1,8 @@
+docutils
+nbformat
+sphinx
+dask
+distributed
+ipython
+nbconvert
+jupyter_client
