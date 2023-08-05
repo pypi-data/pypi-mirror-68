@@ -1,0 +1,10 @@
+transcriptor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transcriptor/amazon.py,sha256=k2CAnEZUDCGNZjpEf6aOLDy-3wsMEyQvvegzeGOFMVY,2249
+transcriptor/job.py,sha256=8XxKRuiWE_o5wQsCcddJSsPb2SAGjazL2P1H2IHV1cU,269
+transcriptor/markers.py,sha256=NJ9kQeR51RFyhmt8GUeJVSnaa8fmmOrVnKGeWrjccwM,179
+transcriptor/speakers.py,sha256=MatIS1VZTOIbgRmTs5go0P5-X3flsH7xIhUiY8_rTq4,128
+transcriptor-2020.5.1.dist-info/LICENSE,sha256=-FUXj1PKVuXCQodLQMyUZoRcAEE2lhXjcyOGRqnz1JE,1067
+transcriptor-2020.5.1.dist-info/METADATA,sha256=pJgxbzljpAZo-a6BpFW5P7BifCH2yOdtgVHOlIdwXp8,242
+transcriptor-2020.5.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transcriptor-2020.5.1.dist-info/top_level.txt,sha256=6a7Uf7xr5zKAKT_ItQsbYg9lvZrUdiAKCIhTsw8GAyg,13
+transcriptor-2020.5.1.dist-info/RECORD,,
