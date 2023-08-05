@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pybuilder-docker
+Version: 0.1.12
+Summary: A pybuilder plugin that stages a python package into a docker container and optionally publishes it to a registry.
+Home-page: https://github.com/AlienVault-Engineering/pybuilder-docker
+Author: 
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+License: Apache 2.0
+Description: A pybuilder plugin that stages a python package into a docker container and optionally publishes it to a registry.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
