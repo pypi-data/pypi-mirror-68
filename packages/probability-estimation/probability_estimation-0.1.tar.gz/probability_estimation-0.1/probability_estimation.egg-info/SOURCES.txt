@@ -1,0 +1,10 @@
+setup.py
+probability_estimation/Binomialdistribution.py
+probability_estimation/Gaussiandistribution.py
+probability_estimation/Generaldistribution.py
+probability_estimation/__init__.py
+probability_estimation.egg-info/PKG-INFO
+probability_estimation.egg-info/SOURCES.txt
+probability_estimation.egg-info/dependency_links.txt
+probability_estimation.egg-info/not-zip-safe
+probability_estimation.egg-info/top_level.txt
