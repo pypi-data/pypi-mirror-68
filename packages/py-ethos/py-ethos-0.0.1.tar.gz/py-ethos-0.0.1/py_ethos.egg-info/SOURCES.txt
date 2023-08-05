@@ -1,0 +1,7 @@
+README.md
+setup.py
+py-ethoslib/__init__.py
+py_ethos.egg-info/PKG-INFO
+py_ethos.egg-info/SOURCES.txt
+py_ethos.egg-info/dependency_links.txt
+py_ethos.egg-info/top_level.txt
