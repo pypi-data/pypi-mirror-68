@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: my-lambdata-khislatz
+Version: 1.0
+Summary: A short description
+Home-page: https://github.com/Khislatz/lambdata-khislatz
+Author: Khislat Zhuraeva
+Author-email: your@email.com
+License: MIT
+Description: # lambdata-khislatz
+        
+        ## Installation
+        
+        TODO 
+        
+        ## Usage 
+        
+        TODO
+        
+        '''py
+        from my_lambdata.my_mod import enlarge #this works
+        
+        x = 11 
+        print(enlarge(x)) #importing only enlarge function
+        #if we use from my_mod import enlarge without "if __name__ == "__main__":"
+        # then the entire file my_mod will be executed 
+        '''
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
