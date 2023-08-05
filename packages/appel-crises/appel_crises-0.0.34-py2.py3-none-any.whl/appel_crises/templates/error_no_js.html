@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ error_title }}</h1>
+    <div>
+        <p>{{ error_text|safe }}</p>
+    </div>
+    <div>
+        Retourner à <a href="{% url "home" %}">la page d'accueil</a>,
+        au <a href="{% url "form-no-js" %}">formulaire de signature </a>
+        ou au <a href="{% url "call-out-no-js" %}">formulaire d'interpélation des décideurs</a>.
+    </div>
+{% endblock %}

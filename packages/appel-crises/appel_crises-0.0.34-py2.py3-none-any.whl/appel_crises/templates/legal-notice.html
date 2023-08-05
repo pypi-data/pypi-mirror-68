@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+        a {
+            color: black;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h2, h3, hr {
+            margin: 30px 0 20px;
+        }
+
+        p {
+            margin-top: 10px
+        }
+    </style>
+    <section style="max-width: 800px; margin: auto; padding: 20px">
+        <h1>Mentions légales et politique de confidentialité</h1>
+        <p style="text-align: right">
+            <a href="{% url 'home' %}">Retourner au site principal</a>
+        </p>
+        <h2>Editeur</h2>
+        <p>
+            Le site <a href="https://www.appel-commun-reconstruction.org">www.appel-commun-reconstruction.org</a> est
+            édité par Soutien au collectif Pour Un Réveil Écologique, association loi 1901 déclarée auprès de la
+            Préfecture de Police de Paris.
+        </p>
+        <p>
+            Immatriculation RNA : W751253612
+            <br>
+            Siège social : 19 rue du jour, 75001, Paris, France
+            <br>
+            Directrice de la publication : Claire Egnell, présidente de l’association “Soutien au collectif Pour Un
+            Réveil Écologique”
+
+        </p>
+        <p>
+            L’Appel commun à la reconstruction est porté collectivement par les organisations listées dans le bandeau
+            “Ils portent l'appel” du site.
+        </p>
+        <p>
+            <strong>Contact général</strong> :
+            <a href="mailto:contact@appel-commun-reconstruction.org">contact@appel-commun-reconstruction.org</a>
+            <br>
+            <strong>Contact presse</strong> : Antoine Trouche, du collectif Pour un réveil écologique -
+            <a href="mailto:press@appel-commun-reconstruction.org">press@appel-commun-reconstruction.org</a>
+            <br>
+            <strong>Contact Protection des Données</strong> :
+            <a href="mailto:contact@appel-commun-reconstruction.org">contact@appel-commun-reconstruction.org</a>
+        </p>
+
+        <hr>
+
+        <h2>Formulaire d’interpellation des décideurs</h2>
+        <p>
+            Les mails envoyés via notre site sont destinés à interpeller les décideurs publics concernant l’Appel commun
+            à la reconstruction. Ils ne peuvent avoir d’autres usages, et ne doivent exprimer aucun propos injurieux,
+            diffamatoire, raciste ou contraire à l'ordre public et au droit en vigueur. Seule la personne ayant envoyé
+            le mail est responsable de son contenu. Merci de nous signaler les abus sur le mail de contact général ,
+            nous bloquerons tous les expéditeurs contrevenant à ces principes aussitôt que cela nous sera signalé.
+        </p>
+
+        <hr>
+
+        <h2> Hébergeur</h2>
+        <p>
+            OVH - 2 rue Kellermann - 59100 Roubaix - France
+            <br>
+            <a href="https://www.ovh.com">www.ovh.com</a>
+        </p>
+
+
+        <hr>
+
+        <h2> Données personnelles et politique de confidentialité </h2>
+
+        <h3> Politique d’utilisation des données </h3>
+        <p>
+            Nous ne recueillons sur notre site web aucune information permettant l’identification des personnes, hormis
+            celles qui nous sont volontairement transmises via le formulaire (nom, prénom, email). Lorsque vous acceptez
+            de nous donner des informations, celles-ci restent strictement confidentielles.
+        </p>
+        <p>
+            Elles ne seront jamais vendues, échangées, louées ou données à d’autres organisations à des fins de
+            prospection commerciale. Nous nous engageons par ailleurs à supprimer la base de données à la fin de la
+            campagne de mobilisation
+        </p>
+
+        <h3> Propriété intellectuelle </h3>
+        <p>
+            L’ensemble des contenus du site www.appel-commun-reconstruction.org est sous licence AGPL3. Tout contenu
+            peut être reproduit sans modification, à titre non lucratif, et avec mention de la source et présence d’un
+            lien vers la source.
+        </p>
+
+        <h3> Cookies </h3>
+        <p>
+            Un cookie est un petit élément d’information que notre site peut envoyer à votre navigateur, et qui pourra
+            alors être conservé sur votre disque dur. Notre site web utilise des cookies, par exemple pour avoir des
+            statistiques anonymisées de fréquentation du site (nombre de visites, temps passé sur le site, etc.) Si vous
+            ne souhaitez pas que notre site envoie des cookies à votre ordinateur, vous pouvez configurer votre
+            navigateur pour qu’il ne les accepte pas. Pour cela, consultez l’aide de votre navigateur ou rendez-vous sur
+            la rubrique “Cookies” du site de la CNIL.
+        </p>
+
+        <h3> Sollicitations par courriel </h3>
+        <p>
+            Si vous cochez la case dédiée lors de la signature de l’Appel, des courriels pourront vous être envoyés pour
+            vous informer de la mobilisation citoyenne autour de l’Appel. Vous restez toujours libre d’accepter ou de
+            refuser tout ou partie de ces propositions et vous pourrez vous désinscrire à tout moment, en cliquant sur
+            le lien dédié en bas des courriels envoyés.
+        </p>
+
+        <h3> Rectification des données </h3>
+        <p>
+            Conformément au règlement européen sur la protection des données (RGPD) vous disposez d’un droit d’accès, de
+            modification, de rectification, d’effacement et d’opposition, droit à la limitation du traitement, droit à
+            la portabilité des données vous concernant.
+        </p>
+        <p>
+            Pour l’exercer, adressez vous par courrier postal ou par email à :
+            <br>
+            Soutien au collectif Pour un réveil écologique
+            <br>
+            19 rue du jour
+            <br>
+            75001, Paris, France
+            <br>
+            ou par email au Délégué à la Protection des Données à :
+            <a href="mailto:contact@appel-commun-reconstruction.org">contact@appel-commun-reconstruction.org</a>
+        </p>
+
+
+        <h3>Accès aux données</h3>
+        <p>
+            Seuls les responsables du collectif Pour un réveil écologique en charge de la campagne autour de l’Appel,
+            qui ont besoin de ces informations pour une tâche spécifique (ex : envoyer un email), ont accès aux
+            informations permettant d’identifier les personnes. Ils sont prévenus de l’importance que nous accordons au
+            respect de la vie privée.
+        </p>
+
+        <p style="margin-top: 50px; text-align: right">
+            <small>
+                Dernière édition: 4 mai 2020.
+            </small>
+        </p>
+
+        <p>
+            <a href="{% url 'home' %}">Retourner au site principal</a>
+        </p>
+    </section>
+{% endblock %}
