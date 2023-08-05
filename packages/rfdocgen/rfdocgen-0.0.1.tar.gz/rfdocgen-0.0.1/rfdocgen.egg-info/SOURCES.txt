@@ -1,0 +1,8 @@
+README.md
+setup.py
+rfdocgen.egg-info/PKG-INFO
+rfdocgen.egg-info/SOURCES.txt
+rfdocgen.egg-info/dependency_links.txt
+rfdocgen.egg-info/top_level.txt
+server/__init__.py
+server/docs.py
