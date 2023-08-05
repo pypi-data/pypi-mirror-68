@@ -1,0 +1,34 @@
+atomicwrites>=1.0.0
+bugsnag>=3.4.0
+click>=7.1.1
+dropbox>=10.0.0
+keyring>=19.0.0
+keyrings.alt>=3.1.0
+lockfile>=0.12.0
+packaging
+pathspec>=0.5.8
+Pyro5>=5.7
+requests
+sdnotify
+setuptools
+watchdog>=0.10.0
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[:sys_platform == "darwin"]
+rubicon-objc>=0.3.1
+
+[:sys_platform == "linux"]
+jeepney
+
+[gui]
+
+[gui:sys_platform == "darwin"]
+maestral_cocoa>=1.0.0
+
+[gui:sys_platform == "linux"]
+maestral_qt>=1.0.0
+
+[syslog]
+systemd-python
