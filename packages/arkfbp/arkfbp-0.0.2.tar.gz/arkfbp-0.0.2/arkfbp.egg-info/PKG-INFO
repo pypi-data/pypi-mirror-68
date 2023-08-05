@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: arkfbp
+Version: 0.0.2
+Summary: Python implementation of the arkfbp
+Home-page: https://github.com/longguikeji/arkfbp-py
+Author: Rock Lee
+Author-email: insfocus@gmail.com
+Maintainer: Rock Lee
+Maintainer-email: insfocus@gmail.com
+License: MIT
+Description: # arkfbp-py
+        
+        arkfbp-py is the python implementation of the arkfbp.
+        
+        
+        
+        # Quick Usage
+        
+        arkfbp-cli create --name demo --type server --language python --web-framework django --feature djangorestframework
+        
+        arkfbp-cli create --name demo --type server --language python --web-framework flask
+        
+        arkfbp-cli create --name demo --type script --language python
+        
+        
+        
+Keywords: arkfbp
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
