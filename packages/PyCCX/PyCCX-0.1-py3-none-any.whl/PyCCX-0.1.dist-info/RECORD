@@ -1,0 +1,15 @@
+pyccx/__init__.py,sha256=IpIwV8OfAcxgnK3ZuyAenX2Zbr5K0Rr-9Oq96qVOoC4,240
+pyccx/boundarycondition.py,sha256=x66feAs4IBFWd372akt0peFtWQ9Z9UsM1sOn4HiB04U,12538
+pyccx/core.py,sha256=z2zb7h02NDF53Gj5xrzoYw-pCMtZWj_2cNHw49fi0zg,22836
+pyccx/loadcase.py,sha256=F1Da7G7TJuTuoXVQmrEfZh-mgDv6s4iMlIHpbOl4R-c,8803
+pyccx/material.py,sha256=79HjYl_c-7QsW4AwGH-628OiQCLvf_jTnTyi3Kcr7Ew,9028
+pyccx/results.py,sha256=yJh03edYLHKv1-zx2gQyHAjaJ1__skeHNcJco7T_L7w,13922
+pyccx/version.py,sha256=mH3ey6uln7xha1g8sjGyehynV8eHhXosUNmpZT2jJNM,21
+pyccx/mesh/__init__.py,sha256=yK8o01MwciITx91IsohmUgdeXRTqrjIli-5FhfA_xeM,77
+pyccx/mesh/mesh.py,sha256=3vSFX3AgSpYfntC0TbwHuRXu9hLiHpaZqpZ-gP1eQvg,3884
+pyccx/mesh/mesher.py,sha256=dQcL5PyKutGDvdUqNug1qzu_Z94UADGCWrzL7HVbmLw,34183
+PyCCX-0.1.dist-info/LICENSE,sha256=a_DGs112NQuj8iR9cIRu9DacK5QqA4-AwCqILVpAIKI,1282
+PyCCX-0.1.dist-info/METADATA,sha256=frOl-EZOmRVD0exJyOave2QMAL4Vi9JxASuJ-MGj3H0,8627
+PyCCX-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PyCCX-0.1.dist-info/top_level.txt,sha256=Yy66xretvHU6g5dTPtzMclN6hva8JdgpNvsfPIg5pTE,6
+PyCCX-0.1.dist-info/RECORD,,
