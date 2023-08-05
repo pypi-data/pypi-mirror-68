@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-04 15:43+0200\n"
+"PO-Revision-Date: 2020-05-04 14:32+0000\n"
+"Last-Translator: Tom Teichler <tom.teichler@teckids.org>\n"
+"Language-Team: German <https://translate.edugit.org/projects/aleksis/"
+"aleksis-app-dashboardfeeds/de/>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.1\n"
+
+#: models.py:16
+msgid "RSS feed source URL"
+msgstr "RSS-Feed-Quell-URL"
+
+#: models.py:18
+msgid "Base URL of related website"
+msgstr "Basis-URL der verbundenen Website"
+
+#: models.py:19
+msgid ""
+"The widget will have a link to visit a related website to read more news"
+msgstr ""
+"Dieses Widget wird einen Link haben, um die verbundene Website zu besuchen, "
+"um weitere Neuigkeiten zu erfahren"
+
+#: models.py:22
+msgid "Text only"
+msgstr "Nur Text"
+
+#: models.py:23
+msgid "Do not show an image to depict the news item"
+msgstr "Kein Bild darstellen"
+
+#: models.py:59
+msgid "RSS Widget"
+msgstr "RSS-Widget"
+
+#: models.py:60
+msgid "RSS Widgets"
+msgstr "RSS-Widgets"
+
+#: models.py:66
+msgid "iCalendar URL"
+msgstr "iCalendar-URL"
+
+#: models.py:68
+msgid "Base URL of related calendar"
+msgstr "Basis-URL des verbundenen Kalenders"
+
+#: models.py:69
+msgid ""
+"The widget will have a link to visit a related website to see more events"
+msgstr ""
+"Dieses Widget wird einen Link haben, um die verbundene Website zu besuchen, "
+"um mehr Veranstaltungen zu sehen"
+
+#: models.py:71
+msgid "Number of displayed events"
+msgstr "Anzahl der anzuzeigenden Ereignisse"
+
+#: models.py:81
+msgid "iCalendar Widget"
+msgstr "iCalendar-Widget"
+
+#: models.py:82
+msgid "iCalendar Widgets"
+msgstr "iCalendar-Widgets"
+
+#: templates/dashboardfeeds/ical.html:5
+msgid "Current Events"
+msgstr "Aktuelle Ereignisse"
+
+#: templates/dashboardfeeds/ical.html:12
+msgid "No events to display"
+msgstr "Keine Termine zum Anzeigen"
+
+#: templates/dashboardfeeds/ical.html:18
+msgid "Further events"
+msgstr "Weitere Termine"
+
+#: templates/dashboardfeeds/rss.html:19 templates/dashboardfeeds/rss.html:21
+msgid "title image"
+msgstr "Titelbild"
+
+#: templates/dashboardfeeds/rss.html:24
+msgid "no feed image"
+msgstr "Kein Bild vorhanden"
+
+#: templates/dashboardfeeds/rss.html:36
+msgid "Read more"
+msgstr "Mehr lesen"
+
+#: templates/dashboardfeeds/rss.html:40
+msgid "Further articles"
+msgstr "Weitere Artikel"
+
+#~ msgid "RSS Url"
+#~ msgstr "RSS-URL"
+
+#~ msgid "Base URL"
+#~ msgstr "Basis-URL"
+
+#~ msgid "index url of the news website (as link for users)"
+#~ msgstr "Startseite der Website (als Link für Nutzer)"
+
+#~ msgid "Rss Source"
+#~ msgstr "RSS-Quelle"
+
+#~ msgid "Text Only RSS Feed"
+#~ msgstr "RSS-Feed nur mit Text"
+
+#~ msgid "index url of the calendar (as link for users)"
+#~ msgstr "URL der Kalenderansicht (als Link für Nutzer)"
