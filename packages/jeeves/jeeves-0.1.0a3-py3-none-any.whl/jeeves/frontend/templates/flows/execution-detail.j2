@@ -1,0 +1,47 @@
+{% extends "flows/_detail.j2" %}
+
+{% block flow_content %}
+<a href="{% url "flow-execution-list" flow.pk %}"><i class="fa fa-arrow-left"></i> Go back to execution list</a>
+
+<h1 class="title">{{ execution.created_at }}</h1>
+<div class="tags has-addons">
+  <span class="tag">Status</span>
+  <span class="tag {% if execution.status == execution.FINISHED %}{% if execution.success %}is-success{% else %}is-danger{% endif %}{% else %}is-warning{% endif %}">{{ execution.get_status_display }}</span>
+</div>
+
+{% if execution.output %}
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Output
+    </p>
+  </header>
+  <div class="card-content">
+    <pre class="content">{{ execution.output }}</pre>
+  </div>
+</div>
+{% endif %}
+
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Definition
+    </p>
+  </header>
+  <div class="card-content">
+    <pre class="content">{{ execution.definition|pprint }}</pre>
+  </div>
+</div>
+
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Result
+    </p>
+  </header>
+  <div class="card-content">
+    <pre class="content">{{ execution.result|pprint }}</pre>
+  </div>
+</div>
+
+{% endblock %}

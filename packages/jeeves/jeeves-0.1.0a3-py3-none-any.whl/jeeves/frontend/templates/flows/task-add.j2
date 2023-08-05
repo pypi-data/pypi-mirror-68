@@ -1,0 +1,71 @@
+{% extends "flows/_detail.j2" %}
+
+{% block flow_content %}
+<h1 class="title">{% if task %}Edit{% else %}Add{% endif %} task</h1>
+<form method="post">
+{{ form.non_field_errors }}
+
+<div class="field">
+  <label class="label">Name</label>
+  <div class="control {% if form.name.errors %}has-icons-right{% endif %}">
+    <input class="input {% if form.name.errors %}is-danger{% endif %}" name="name" placeholder="Task name" value="{{ form.name.value|default:"" }}">
+    {% if form.name.errors %}
+    <span class="icon is-small is-right is-danger">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+    {% endif %}
+  </div>
+  {% if form.name.errors %}
+  <div class="help is-danger">
+    {{ form.name.errors }}
+  </div>z
+  {% endif %}
+</div>
+
+<div class="field">
+  <label class="label">Type</label>
+  <div class="control is-fullwidth select {% if form.type.errors %}has-icons-right{% endif %}">
+    <select class="input {% if form.type.errors %}is-danger{% endif %}" name="type" placeholder="Task type">
+      {% for task_type in task_types %}
+      <option value="jeeves.tasks.shell:ScriptTask" {% if task_type == form.type.value %}selected{% endif %}>{{ task_type }}</option>
+      {% endfor %}
+    </select>
+    {% if form.type.errors %}
+    <span class="icon is-small is-right is-danger">
+      <i class="fas fa-exclamation-triangle"></i>
+    </span>
+    {% endif %}
+  </div>
+  {% if form.type.errors %}
+  <div class="help is-danger">
+    {{ form.type.errors }}
+  </div>
+  {% endif %}
+</div>
+
+<div class="field">
+  <label class="label">Definition</label>
+  <div class="control is-fullwidth {% if form.definition.errors %}has-icons-right{% endif %}">
+  <textarea name="definition" class="is-hidden" id="definition_value">{{ form.definition.value|default:"{}" }}</textarea>
+  <div id="definition_editor" class="{% if form.definition.errors %}is-danger{% endif %}" data-schema='{{ task.instance.parameters.schema_json|default:'{}' }}'></div>
+  {% if form.definition.errors %}
+  <div class="help is-danger">
+    {{ form.definition.errors }}
+  </div>
+  {% endif %}
+</div>
+<script type="text/javascript">
+const container = document.getElementById("definition_editor")
+const options = {}
+const editor = new JSONEditor(container, {modes: ['tree', 'view', 'form', 'code', 'text', 'preview'], onChangeText: function(value) { document.getElementById("definition_value").value = value }, name: "definition", schema: JSON.parse(container.getAttribute('data-schema'))}, JSON.parse(document.getElementById("definition_value").value))
+</script>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link">{% if task %}Edit{% else %}Add Task{% endif %}</button>
+  </div>
+</div>
+
+{% csrf_token %}
+</form>
+{% endblock %}

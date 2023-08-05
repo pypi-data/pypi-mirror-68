@@ -1,0 +1,12 @@
+{% extends "flows/_detail.j2" %}
+
+{% block flow_content %}
+<div class="has-text-centered has-text-weight-bold">
+    <p>Are you sure you want to delete this flow and all it's defined tasks?</p>
+    <p class="has-text-danger">This action is not reversible!</p>
+    <form method="post">
+        {% csrf_token %}
+        <button class="button is-danger">Yes, delete</button>
+    </form>
+</div>
+{% endblock %}

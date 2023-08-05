@@ -1,0 +1,31 @@
+{% extends "flows/_detail.j2" %}
+
+{% block flow_content %}
+<table class="table is-fullwidth">
+    <tr>
+        <th>Stared on</th>
+        <th>Duration</th>
+        <th>Result</th>
+        <th></th>
+    </tr>
+{% for execution in flow.run_set.all %}
+    <tr>
+        <td>{{ execution.created_at }}</td>
+        <td>{{ execution.duration }}</th>
+        <td class="has-text-weight-bold {% if execution.status == execution.FINISHED %}{% if execution.success %}has-text-success{% else %}has-text-danger{% endif %}{% else %}has-text-warning{% endif %}">
+            {{ execution.get_status_display }}
+        </td>
+        <td class="has-text-right">
+            <a class="button" href="{% url "flow-execution-detail" flow.pk execution.pk %}">
+                <i class="fa fa-eye"></i>
+                View details
+            </a>
+            <a class="button" href="{% url "flow-execution-delete" flow.pk execution.pk %}">
+                <i class="fa fa-trash"></i>
+                Delete
+            </a>
+        </td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}

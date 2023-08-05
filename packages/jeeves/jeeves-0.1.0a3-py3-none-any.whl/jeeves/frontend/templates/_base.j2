@@ -1,0 +1,50 @@
+{% load bulma %}
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/7.0.4/jsoneditor.min.css" integrity="sha256-GK81dwcrOmy4XxYUe7SQQIwd9qQymkYx2vMjTNv4pRw=" crossorigin="anonymous" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/7.0.4/jsoneditor.min.js" integrity="sha256-Unl8JvClhiabi3Jws+GLYjx47DTS5y7PkDIK0y3GXCE=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-bold">
+                        JEEVES
+                    </a>
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="{% url "dashboard" %}">
+                            Dashboard
+                        </a>
+
+                        <a class="navbar-item" href="{% url "flow-list" %}">
+                            Flows
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            {% if messages %}
+                {% for message in messages %}
+                <div{% if message.tags %} class="notification {{ message.tags|to_bulma }}"{% endif %}>
+                <button class="delete"></button>
+                {{ message }}</div>
+                {% endfor %}
+            {% endif %}
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

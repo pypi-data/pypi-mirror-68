@@ -1,0 +1,29 @@
+{% extends "flows/_base.j2" %}
+
+{% block content %}
+<div class="box">
+    <h1 class="title">Add flow</h1>
+
+    <form method="post" class="form">
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control is-fullwidth {% if form.name.errors %}has-icons-right{% endif %}">
+            <input class="input {% if form.name.errors %}is-danger{% endif %}" name="name" value="{{ form.name.value|default:"" }}" />
+            {% if form.name.errors %}
+            <div class="help is-danger">
+                {{ form.name.errors }}
+            </div>
+            {% endif %}
+        </div>
+        {% csrf_token %}
+        <hr>
+        <div class="field is-grouped">
+            <div class="control is-fullwidth">
+                <button class="button is-link">
+                    <i class="fa fa-plus"></i> {% if flow %}Edit{% else %}Add Flow{% endif %}
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
