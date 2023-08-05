@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mnemopy
+Version: 0.1
+Summary: A GUI app for training for memory competitions
+Home-page: https://github.com/VivekThazhathattil/mnemopy
+Author: Vivek Thazhathattil
+Author-email: vivek.thazhathattil@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: datetime
+Requires-Dist: numpy
+Requires-Dist: PyQt5
+
+UNKNOWN
+
+
