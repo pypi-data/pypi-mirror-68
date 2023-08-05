@@ -1,0 +1,13 @@
+streamsql/__init__.py,sha256=5VI6U4gp3B3279WUJhFV09--GAPP5_mPJjIQzqay3J4,4673
+streamsql/client.py,sha256=JeYh10fmyKYgXQuoYCVnh_vtTmx-Dmw3a6-4QT8kMrM,7209
+streamsql/connect.py,sha256=axg-0vqGkrSw6ajnzR7-sjYZz1V6wouHnGeiVURGA4Y,447
+streamsql/const.py,sha256=Qj_z8fpMjOaFfNWUqTpY82D8JCprwIZNDZiKMYa6GM4,1434
+streamsql/execution.py,sha256=svvka5deSaGphxhHpY2gbjY5BypYGB9QTo8J3-LqTS8,15000
+streamsql/matrix.py,sha256=s6JZDfXEMKub8xFy5obZYeWConz1If-W0yD1HdD8ldA,7766
+streamsql/matrix_pb2.py,sha256=2B-Il6DGRdYZoTzBaOlC_tPvvVQalCNmHF-MdH1iBxM,22797
+streamsql/matrix_pb2_grpc.py,sha256=_Ktii6HsGfIGPxLCBMGmirvof9C5DAt0qoQpyaNjAeo,5239
+streamsql-1.0.5.dist-info/LICENSE,sha256=bCAjAJxJdNi0hmXoI3YqpOSv8MT8dOTZCiSRZKgkwks,1065
+streamsql-1.0.5.dist-info/METADATA,sha256=h6_rs1MDzhCuhW0dYwiEV5LUrVkjA027uq6igflCBWk,2917
+streamsql-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+streamsql-1.0.5.dist-info/top_level.txt,sha256=5RXaa4xMzDuDKbdpqvjrPtugiTY2Yw_vpdlY9PLYwTk,10
+streamsql-1.0.5.dist-info/RECORD,,
