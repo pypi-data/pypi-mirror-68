@@ -1,0 +1,16 @@
+build/lib/test/path.py,sha256=eHI5y-4oEsAstkmVSOBzK4BTY5fC9oKdCsJlvFcksoE,284
+build/lib/test/test.py,sha256=IFvD7DCgRBCSOR14O8C4JsFy0J3AqdW6Ob7zccIPQDY,83
+build/lib/test/test/path.py,sha256=Qz_HryvdtFWztiFjNO-zuUCD_kJMj9GxrZObzeK2nDU,284
+build/lib/test/test/test.py,sha256=s-n2jmUzPIfKihNTYaEdG2IVIVXot_R9Bt-qmTGtDz8,106
+build/lib/wpath/__init__.py,sha256=TbrJ568yj2e_89qsd95_Ibpa4WYwNQ_INx9j7Wu_3H4,1151
+test/path.py,sha256=eHI5y-4oEsAstkmVSOBzK4BTY5fC9oKdCsJlvFcksoE,284
+test/test.py,sha256=IFvD7DCgRBCSOR14O8C4JsFy0J3AqdW6Ob7zccIPQDY,83
+test/test/path.py,sha256=Qz_HryvdtFWztiFjNO-zuUCD_kJMj9GxrZObzeK2nDU,284
+test/test/test.py,sha256=s-n2jmUzPIfKihNTYaEdG2IVIVXot_R9Bt-qmTGtDz8,106
+wpath/__init__.py,sha256=TbrJ568yj2e_89qsd95_Ibpa4WYwNQ_INx9j7Wu_3H4,1151
+wpath-0.0.4.dist-info/LICENSE,sha256=z9T6Zfv4_6E1WCGISjZxei1UpZsAWsuYQoZ0w3kep6w,1062
+wpath-0.0.4.dist-info/METADATA,sha256=l0VmrDm1m__u2onkry4Z1gpC2rNtQcz1Xa_PC6Vlykg,1107
+wpath-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+wpath-0.0.4.dist-info/top_level.txt,sha256=9abGdxESjgMCnFcGmHwuQ6OQ1JCvcTR_FP3In14Pc9I,22
+wpath-0.0.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+wpath-0.0.4.dist-info/RECORD,,
