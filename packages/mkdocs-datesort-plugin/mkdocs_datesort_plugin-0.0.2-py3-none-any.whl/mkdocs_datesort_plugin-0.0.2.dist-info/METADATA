@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mkdocs-datesort-plugin
+Version: 0.0.2
+Summary: Mkdocs datesort plugin
+Home-page: https://github.com/kubilus1/mkdocs-datesort-plugin
+Author: Matt Kubilus
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: mkdocs (>=0.17)
+
+UNKNOWN
+
+
