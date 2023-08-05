@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/human_dates/__init__.py
+src/human_dates/from_human.py
+src/human_dates/to_human.py
+src/human_dates2.egg-info/PKG-INFO
+src/human_dates2.egg-info/SOURCES.txt
+src/human_dates2.egg-info/dependency_links.txt
+src/human_dates2.egg-info/top_level.txt
