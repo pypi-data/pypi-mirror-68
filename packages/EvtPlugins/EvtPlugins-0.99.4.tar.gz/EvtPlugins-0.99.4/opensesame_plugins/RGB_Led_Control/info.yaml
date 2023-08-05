@@ -1,0 +1,102 @@
+description: "Sets and/or sends RGB led data from\r\nEventExchanger-based digital input/output device."
+description: ResponseBox Buttonbox plug-in.
+version: 0.99b
+author: "Eise Hoekstra"
+url: "http://www.rug.nl/"
+category: "\r\nResearch Support\r\n         BSS"
+date: "2019"
+controls:
+-
+    type: "checkbox"
+    var: "_Demo_Mode"
+    label: "Demo mode"
+    name: "Demo_Mode_widget"
+    tooltip: "When checked, keyboard will be used" 
+-
+    type: "combobox"
+    var: "_ProductName"
+    label: "Select ProductName"
+    options:
+    - "RSP"
+    - "RSP-12"
+    - "RSP-14"
+    - "RTP-01"
+    - "RVK01"
+    - "EVT02"
+    - "EVT03"
+    - "RGB"
+
+    name: "ProductName_widget"
+    tooltip: "Select desired ProductName" 
+-
+    type: "line_edit"
+    var: "_serialNumber"
+    label: "SerialNumber"
+    name: "serialNumber_widget"
+    tooltip: "Serial Number if multiple EVTs are attached"
+-
+    type: "line_edit"
+    var: "_CorrectButton"
+    label: "Correct Button"
+    name: "CorrectButton_widget"
+    tooltip: "Correct Button ( 1 - 8)"
+-
+    type: "line_edit"
+    var: "_AllowedButtons"
+    label: "Allowed Buttons"
+    name: "AllowedButtons_widget"
+    tooltip: "Allowed Buttons, ( 1 - 8 ) seperated by ;"
+-
+    type: "line_edit"
+    var: "_ResponseTimeout"
+    label: "ResponseTimeout"
+    name: "ResponseTimeout_widget"
+    tooltip: "ResponseTimeout in MSec"
+-
+    type: "color_edit"
+    var: "_Button1_Led_Color"
+    label: "Color Led button 1"
+    name: "Button1_Led_Color"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
+-
+    type: "color_edit"
+    var: "_Button2_Led_Color"
+    label: "Color Led button 2"
+    name: "Button2_Led_Color"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
+-
+    type: "color_edit"
+    var: "_Button3_Led_Color"
+    label: "Color Led button 3"
+    name: "Button3_Led_Color"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
+-
+    type: "color_edit"
+    var: "_Button4_Led_Color"
+    label: "Color Led button 4"
+    name: "Button4_Led_Color"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
+-
+    type: "checkbox"
+    var: "Feedback"
+    label: "Color Feedback"
+    name: "Feedbackwidget"
+    tooltip: "When checked, Colors in the buttons give feedback" 
+-
+    type: "line_edit"
+    var: "ResetAfter"
+    label: "Reset Feedback after"
+    name: "ResetAfter_widget"
+    tooltip: "Reset Feedback Color after ms"
+-
+    type: "color_edit"
+    var: "CorrectColor"
+    label: "Correct Button Feedback Color"
+    name: "CorrectColor_widget"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
+-
+    type: "color_edit"
+    var: "InCorrectColor"
+    label: "InCorrect Button Feedback Color"
+    name: "InCorrectColor_widget"
+    tooltip: "Expecting a colorname (e.g., 'blue') or an HTML color (e.g., '#0000FF')"
