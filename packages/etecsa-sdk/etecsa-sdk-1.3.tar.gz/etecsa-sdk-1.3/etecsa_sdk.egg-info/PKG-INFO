@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: etecsa-sdk
+Version: 1.3
+Summary: Etecsa SDK
+Home-page: https://github.com/sebastiancuba/etecsa-sdk
+Author: sebastian
+Author-email: sebastian.rodriguez@etecsa.cu
+License: MIT
+Download-URL: https://github.com/sebastiancuba/etecsa-sdk/archive/v1.3.tar.gz
+Description: UNKNOWN
+Keywords: sdk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
