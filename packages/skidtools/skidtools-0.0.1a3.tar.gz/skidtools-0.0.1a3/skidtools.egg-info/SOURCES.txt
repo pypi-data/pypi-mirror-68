@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+skidtools/__init__.py
+skidtools/__main__.py
+skidtools/config_template.py
+skidtools/exceptions.py
+skidtools/sfactory.py
+skidtools/sio.py
+skidtools/slogging.py
+skidtools.egg-info/PKG-INFO
+skidtools.egg-info/SOURCES.txt
+skidtools.egg-info/dependency_links.txt
+skidtools.egg-info/requires.txt
+skidtools.egg-info/top_level.txt
