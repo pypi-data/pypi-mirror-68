@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: alink
+Version: 0.0.1
+Summary: Bring users directly to specific content in your Android app.
+Home-page: http://refactor.cn/
+Author: andyxialm
+Author-email: andyxialm@gmail.com
+License: UNKNOWN
+Description: # al
+        
+        Bring users directly to specific content in your Android app.
+        
+        
+        
+        ### Installation
+        
+            $ pip3 install al
+        
+        
+        
+        ### Usage
+        
+            $ hugo https://m.taobao.com
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
