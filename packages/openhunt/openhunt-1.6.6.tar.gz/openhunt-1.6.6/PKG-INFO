@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: openhunt
+Version: 1.6.6
+Summary: A Python library to expedite the analysis of data during hunting engagements
+Home-page: https://github.com/Cyb3rPanda/openhunt
+Author: Jose Rodriguez
+License: GNU General Public License v3 (GPLv3)
+Description: # OpenHunt
+        
+        A python library used to expedite data analysis via statistical functions and visualizations.
+        
+        ## Requirements
+        
+        Python 3+
+        
+        ## Installation
+        
+        You can install it via PIP:
+        
+        ```
+        pip install openhunt
+        ```
+        
+        Or you can also do the following:
+        
+        ```
+        git clone https://github.com/hunters-forge/openhunt
+        cd openhunt
+        pip install
+        ```
+        
+        # Author
+        
+        * Jose Luis Rodriguez [@Cyb3rPandaH](https://twitter.com/Cyb3rPandaH)
+        
+        # Contributors
+        
+        * Roberto Rodriguez [@Cyb3rWard0g](https://twitter.com/Cyb3rWard0g)
+        
+        
+Keywords: threat hunting python pandas jupyter notebook
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
