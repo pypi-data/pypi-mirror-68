@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+PKGBUILD
+README.md
+setup.py
+ansilog/__init__.py
+ansilog.egg-info/PKG-INFO
+ansilog.egg-info/SOURCES.txt
+ansilog.egg-info/dependency_links.txt
+ansilog.egg-info/entry_points.txt
+ansilog.egg-info/top_level.txt
