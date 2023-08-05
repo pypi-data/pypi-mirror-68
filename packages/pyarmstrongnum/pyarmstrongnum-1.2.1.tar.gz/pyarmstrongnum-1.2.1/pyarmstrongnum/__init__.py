@@ -1,0 +1,1 @@
+from pyarmstrongnum.pyarmstrongnum import pyarmstrongnum
