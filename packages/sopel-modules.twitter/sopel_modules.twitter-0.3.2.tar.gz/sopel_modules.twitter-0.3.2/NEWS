@@ -1,0 +1,64 @@
+Changes between 0.3.1 and 0.3.2
+===============================
+
+Fixed:
+* Regression in profile link handling (#16)
+
+
+Changes between 0.3.0 and 0.3.1
+===============================
+
+Fixed:
+* Stricter `/i/` URL matching (#15)
+
+
+Changes between 0.2.1 and 0.3.0
+===============================
+
+Changed:
+* Tweet output includes a timestamp now (#13)
+* Improved media link handling (#5, #12)
+
+Added:
+* Handling for profile/user links (#7)
+* Handling for less common `/i/web/status` style links (#11)
+
+Fixed:
+* Decode HTML entities before output (#14)
+
+
+Changes between 0.2.0 and 0.2.1
+===============================
+
+Fixed:
+* Some quoted tweets would cause `KeyError: 'text'` (#9)
+
+
+Changes between 0.1.2 and 0.2.0
+===============================
+
+Changed:
+* Now requires Sopel 7.x (#8)
+* Newlines in tweet text will be replaced with a carriage return symbol, to
+  indicate author intention (#4)
+
+Added:
+* Handling of 280-character tweets (#4)
+* More graceful handling of API errors (#6)
+
+Meta:
+* Package metadata updated (new maintainer, HTTPS links)
+
+
+Changes between 0.1.1 and 0.1.2
+===============================
+
+Added:
+* Tweet link handling
+
+
+Changes between 0.1.0 and 0.1.1
+===============================
+
+Fixed:
+* Unicode on Python 3
