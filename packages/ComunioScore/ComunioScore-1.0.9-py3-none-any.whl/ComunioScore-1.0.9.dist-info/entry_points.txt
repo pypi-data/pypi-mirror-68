@@ -1,0 +1,3 @@
+[console_scripts]
+ComunioScore = ComunioScore.app:main
+
