@@ -1,0 +1,3 @@
+[console_scripts]
+autoxlsx=autoxlsx.cli:cli
+
