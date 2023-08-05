@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: kladama-api
+Version: 0.9.3
+Summary: Kladama API package
+Home-page: https://github.com/plexilar/kladama-api-python
+Author: Plexilar
+Author-email: hdkrus@gmail.com
+License: UNKNOWN
+Keywords: kladama api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsonlib-python3
+Requires-Dist: requests
+
+# Kladama API for Python
+
+![Master Build](https://github.com/plexilar/kladama-api-python/workflows/Build/badge.svg?branch=master)
+
+Python API for Kladama Services Integration
+
+
