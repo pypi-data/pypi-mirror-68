@@ -1,0 +1,67 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% block head %}
+        <title>Appel commun à la reconstruction</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="{% static "appel_crises/css/appel-crises.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "appel_crises/css/responsive.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "appel_crises/css/popup.css" %}"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Passion+One:400,700&display=swap" rel="stylesheet">
+
+        {# Favicon templates #}
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static "appel_crises/img/apple-icon-57x57.png" %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static "appel_crises/img/apple-icon-60x60.png" %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static "appel_crises/img/apple-icon-72x72.png" %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static "appel_crises/img/apple-icon-76x76.png" %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static "appel_crises/img/apple-icon-114x114.png" %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static "appel_crises/img/apple-icon-120x120.png" %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static "appel_crises/img/apple-icon-144x144.png" %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static "appel_crises/img/apple-icon-152x152.png" %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static "appel_crises/img/apple-icon-180x180.png" %}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{% static "appel_crises/img/android-icon-192x192.png" %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static "appel_crises/img/favicon-32x32.png" %}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{% static "appel_crises/img/favicon-96x96.png" %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static "appel_crises/img/favicon-16x16.png" %}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{% static "appel_crises/img/ms-icon-144x144.png" %}">
+        <meta name="theme-color" content="#ffffff">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% endblock %}
+    <meta property="og:title" content="{% if og_title %}{{ og_title }}{% else %}Appel Commun à la Reconstruction{% endif %}">
+    <meta property="og:description" content="{% if og_description %}{{ og_description }}{% else %}Demandons aux décideurs de ne pas faire les mêmes choix qu’hier : reconstruisons notre société sur des impératifs écologiques, sanitaires et sociaux ! Signez l'Appel commun à la reconstruction.{% endif %}">
+    <meta property="og:image" content="{% if og_image %}{{ og_image }}{% else %}{% static "appel_crises/img/appel_commun_a_la_reconstruction.png" %}{% endif %}">
+    <meta property="og:url" content="{% if og_url %}{{ og_url }}{% else %}https://www.appel-commun-reconstruction.org/{% endif %}">
+
+    {% block extra_head %}
+    {% endblock %}
+</head>
+<body>
+
+{% block top_bar %}
+    <div class="top-bar" style="border-bottom: 2px solid lightgrey; padding: 20px 0">
+        <a href="/" style="text-decoration: none">
+            <p class="title" style="text-align: center; font-size: 5vw; text-decoration: none">Appel commun à la reconstruction</p>
+        </a>
+    </div>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+<footer class="flex-row" style="justify-content: center">
+    <div class="mention flex-col  flex-sb">
+        <a href="{% url 'legal-notice' %}"><p>Mentions légales</p></a>
+    </div>
+    <div class="contact flex-col flex-sb" style="margin-left: 10vw">
+        <a href="mailto:press@appel-commun-reconstruction.org"><p>Contact presse</p></a>
+    </div>
+</footer>
+
+{% block extra_js %}{% endblock %}
+
+</body>
+</html>

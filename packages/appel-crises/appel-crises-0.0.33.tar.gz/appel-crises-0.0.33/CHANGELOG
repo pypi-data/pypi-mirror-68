@@ -1,0 +1,195 @@
+CHANGELOG
+=========
+
+0.0.33 (2020-05-08)
+-------------------
+
+- models: longer max_length in CallOutEmail.circonscription_numbers with migration
+
+
+0.0.32 (2020-05-08)
+-------------------
+
+- models: longer max_length in CallOutEmail.circonscription_numbers
+
+
+0.0.31 (2020-05-08)
+-------------------
+
+- Chgts Adresses Mails et associations
+
+
+0.0.30 (2020-05-07)
+-------------------
+
+- admin: better manual verification
+
+
+0.0.29 (2020-05-07)
+-------------------
+
+- show version in /version
+
+
+0.0.28 (2020-05-07)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.27 (2020-05-07)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.26 (2020-05-07)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.25 (2020-05-06)
+-------------------
+
+- fix path for error reporting
+
+
+0.0.24 (2020-05-06)
+-------------------
+
+- more error reporting in the backend (in management commands and more precise locations)
+- error reporting on the frontend
+
+
+0.0.23 (2020-05-06)
+-------------------
+
+- some UI changes
+- testing error reporting
+- check if no-js users have checked the news checkbox
+
+
+0.0.22 (2020-05-06)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.21 (2020-05-06)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.20 (2020-05-06)
+-------------------
+
+- Change default signature in message
+
+- Update small UI points of the recette
+
+
+0.0.19 (2020-05-06)
+-------------------
+
+- Add catchall on signatures too.
+
+
+0.0.18 (2020-05-06)
+-------------------
+
+- Add an option to use a 'catchall' email address.
+
+
+0.0.17 (2020-05-05)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.16 (2020-05-04)
+-------------------
+
+- New home page with better responsiveness.
+
+
+0.0.15 (2020-05-04)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.14 (2020-05-03)
+-------------------
+
+- Improve caching policy
+
+
+0.0.13 (2020-05-02)
+-------------------
+
+- home.html has been updated
+
+0.0.11 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
+0.0.10 (2020-05-02)
+-------------------
+
+- Dev: Always run whitenoise, even in dev.
+- Bugfix: Proper URL for static in call_out form
+
+
+0.0.9 (2020-05-02)
+------------------
+
+- Packaging: Fix providing Twine username/password.
+
+
+0.0.8 (2020-05-01)
+------------------
+
+- Packaging: Trigger builds on new tags
+
+
+0.0.7 (2020-05-01)
+------------------
+
+- Add sentry
+
+
+0.0.6 (2020-04-27)
+------------------
+
+- Fix calls to static files
+
+
+0.0.5 (2020-04-27)
+------------------
+
+- Add target text.
+
+
+0.0.4 (2020-04-26)
+------------------
+
+- Improve staticfiles compression, using the 'brotli' algorithm.
+
+
+0.0.3 (2020-04-26)
+------------------
+
+- Fix statics serving
+- Add logging to stderr (not configurable for now)
+
+
+0.0.2 (2020-04-26)
+------------------
+
+- Initial codebase.
+
+.. vim:et:ts=2:sw=2:tw=79:ft=rst:
