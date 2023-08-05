@@ -1,0 +1,10 @@
+zdcode/__init__.py,sha256=iDKLhhFv1wocW6mvdaH2FAIvzHN0hbBUhS1lora1ItE,63496
+zdcode/__main__.py,sha256=bQTdbDPnd-m5Y67RHEpQEZUBwb2Ffw990EuD19b9yGA,37
+zdcode/bundle.py,sha256=adeZwrpxyk2Ol7BJsUIDEb8WChqC5jB0eeuE9y6kbOo,6424
+zdcode/program.py,sha256=Bx5R3zh97o-q0Fu0hChNR44kJGez4IDdeTfh50WQQi8,2870
+zdcode/zdlexer.py,sha256=8VR5ACa2xmrRQTpAqVWDGgr7mG0TKxKX1R3oTd9jn9w,33612
+ZDCode-2.10.1.dist-info/LICENSE.md,sha256=qjPRElc-ZJm_CtmHIu8O17t_Y5ZE1U4QpVjOZFGuXwg,1101
+ZDCode-2.10.1.dist-info/METADATA,sha256=t3fiwfT7jw6l9BN9tT8l1o2-3MvtxchjeT6KeAGuZus,310
+ZDCode-2.10.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ZDCode-2.10.1.dist-info/top_level.txt,sha256=w9VLqPD3WQ4mmsc-fl7ukUsY3ipsRgL_TxxXvjHBA9o,7
+ZDCode-2.10.1.dist-info/RECORD,,
