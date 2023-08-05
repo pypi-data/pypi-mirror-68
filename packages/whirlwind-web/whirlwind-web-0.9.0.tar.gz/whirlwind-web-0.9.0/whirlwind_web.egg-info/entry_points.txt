@@ -1,0 +1,3 @@
+[console_scripts]
+run_whirlwind_pytest = whirlwind.test_helpers:run_pytest
+
