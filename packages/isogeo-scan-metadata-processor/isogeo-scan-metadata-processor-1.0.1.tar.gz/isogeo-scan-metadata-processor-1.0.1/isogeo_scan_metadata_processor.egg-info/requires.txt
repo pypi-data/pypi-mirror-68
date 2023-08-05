@@ -1,0 +1,16 @@
+click==7.1.*
+isogeo-pysdk<3.5,>=3.4
+python-dotenv<0.14,>=0.12
+semver<2.11,>=2.9
+Send2Trash==1.5.*
+
+[db-elastic]
+elasticsearch<7.7,>=7.5
+
+[dev]
+black
+flake8
+
+[test]
+pytest
+pytest-cov
