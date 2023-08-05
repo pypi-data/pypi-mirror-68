@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lastipy
+Version: 1.0.11
+Summary: Python library that combines Last.fm and Spotify
+Home-page: http://github.com/evanjamesjackson/lastipy
+Author: Evan Jackson
+Author-email: evanjamesjackson@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: spotipy
+Requires-Dist: pytest
+
+UNKNOWN
+
+
