@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: djjunopass
+Version: 1.1.2
+Summary: JunoPass support for Django. Implement OTP and Passwordless strategy.
+Home-page: https://github.com/junopass/django-junopass
+Author: Felix Cheruiyot
+Author-email: felix@junopass.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
