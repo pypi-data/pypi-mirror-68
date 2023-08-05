@@ -1,0 +1,15 @@
+AUTHORS.md
+MANIFEST.in
+README.md
+setup.py
+licenses/names.txt
+prenoms/__init__.py
+prenoms/dist.noms.txt
+prenoms/dist.prenoms.txt
+prenoms/main.py
+prenoms/utils.py
+prenoms.egg-info/PKG-INFO
+prenoms.egg-info/SOURCES.txt
+prenoms.egg-info/dependency_links.txt
+prenoms.egg-info/entry_points.txt
+prenoms.egg-info/top_level.txt
