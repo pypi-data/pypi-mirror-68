@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/pepephone-data
+data_usage/__init__.py
+pepephone_data.egg-info/PKG-INFO
+pepephone_data.egg-info/SOURCES.txt
+pepephone_data.egg-info/dependency_links.txt
+pepephone_data.egg-info/requires.txt
+pepephone_data.egg-info/top_level.txt
