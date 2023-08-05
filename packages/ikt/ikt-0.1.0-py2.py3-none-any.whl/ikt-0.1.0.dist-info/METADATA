@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: ikt
+Version: 0.1.0
+Summary: Python tool to detect image content and make tags suggestions.
+Home-page: https://github.com/insspb/ikt
+Author: Andrey Shpak
+Author-email: ashpak@ashpak.ru
+License: MIT
+Keywords: image-recognition,image-classification,image-analysis,image-annotation-tool,image-recognition-tool,image,keywords,tags,recognition,classification,tool
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.1.0)
+
+# Image Keyword Tool
+
+[![pypi](https://img.shields.io/pypi/v/ikt.svg)](https://pypi.python.org/pypi/ikt)
+[![python](https://img.shields.io/pypi/pyversions/ikt.svg)](https://pypi.python.org/pypi/ikt)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/insspb/ikt/Run%20checks/master)](https://github.com/insspb/ikt)
+[![docs](https://readthedocs.org/projects/ikt/badge/?version=latest)](https://ikt.readthedocs.io/en/latest/?badge=latest)
+[![Code Qaulity](https://img.shields.io/scrutinizer/g/insspb/ikt.svg)](https://scrutinizer-ci.com/g/insspb/ikt/?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Image Keyword Tool (IKT) is command-line utility that simplify usage of deep
+learning libraries for image tags generation.
+
+This tool is in active development. Most futures only in planned state now.
+
+## Features
+
+* Python 3.7+ only
+* Linux, Mac and Windows support
+* [planned] JPG images recognition and tagging
+* [planned] Convert PNG images to JPG images for tagging
+* [planned] Write tags to JPGs exif
+* [planned] Write tags to separate txt files
+* [planned] Recognition threshold configuration
+* [planned] Pluggable and selectable IA modules
+* [planned] Pluggable modules for stock sites upload
+
+## Installation
+
+```bash
+pip install ikt
+```
+
+## Usage instructions
+
+```bash
+ikt --help
+```
+
+## Documentation
+
+Check out the [documentation](https://ikt.readthedocs.io/en/latest/) for more
+info.
+
+## Contributions
+
+Contributions are very welcome. Please check
+[contributors Guide](CONTRIBUTING.md).
+
+## Code of Conduct
+
+Everyone interacting in the Image Keywords tools project's codebases, issue
+trackers, chat rooms, and mailing lists is expected to follow the
+[Code of Conduct](CODE_OF_CONDUCT.md).
+
+## License
+
+MIT License
+
+See [LICENSE](https://github.com/insspb/ikt/blob/master/LICENSE) to see the full
+text.
+
+
