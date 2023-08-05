@@ -1,0 +1,40 @@
+from pycsp3.problems.tests.tester import Tester, run
+
+NAME = "g1_single"
+
+diff = (Tester(NAME)
+        .add("Allergy")
+        .add("Alpha")
+        .add("Picnic")
+        .add("Purdey")
+        .add("Recipe")
+        .add("Sandwich")
+        .add("Zebra")
+        )
+
+same = (Tester(NAME)
+        .add("LabeledDice")
+        .add("TrafficLights")
+        .add("Witch")
+        )
+
+xcsp = (Tester(NAME)
+        .add("Agatha")
+        .add("Allergy")
+        .add("Alpha")
+        .add("Alpha", variant="var")
+        .add("LabeledDice")
+        .add("NFractions")
+        .add("Photo")
+        .add("Photo", variant="aux")
+        .add("Picnic")
+        .add("Purdey")
+        .add("Recipe")
+        .add("Sandwich")
+        .add("SendMore")
+        .add("TrafficLights")
+        .add("Witch")
+        .add("Zebra")
+        )
+
+run(xcsp, diff, same)
