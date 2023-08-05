@@ -1,0 +1,15 @@
+Cython
+XlsxWriter
+argparse
+configparser
+cyvcf2==0.9.0
+matplotlib
+matplotlib-venn
+numpy
+openpyxl
+pandas
+pyyaml
+requests
+tqdm
+xlrd
+xmltodict
