@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aiida-sssp
+Version: 0.1.0
+Summary: AiiDA plugin for the Standard Solid State Pseudopotential (SSSP) library
+Home-page: https://github.com/aiidateam/aiida-sssp
+Author: The AiiDA team
+Author-email: developers@aiida.net
+License: MIT License
+Description: # `aiida-sssp`
+        
+        This is the official AiiDA plugin for the Standard Solid State Pseudopotential (SSSP) library.
+        
+        [![Build Status](https://github.com/aiidateam/aiida-sssp/workflows/continuous-integration/badge.svg?event=push)](https://github.com/aiidateam/aiida-sssp/actions)
+        [![Docs status](https://readthedocs.org/projects/aiida-sssp/badge)](http://aiida-sssp.readthedocs.io/)
+        [![PyPI version](https://badge.fury.io/py/aiida-sssp.svg)](https://badge.fury.io/py/aiida-sssp)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/aiida-sssp.svg)](https://pypi.python.org/pypi/aiida-sssp/)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: pre-commit
