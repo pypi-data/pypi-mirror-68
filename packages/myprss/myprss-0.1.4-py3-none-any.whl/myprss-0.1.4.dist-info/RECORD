@@ -1,0 +1,12 @@
+myprss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myprss/config.py,sha256=4bDAsf1G0n6j98JtyHX7Fy1kzWPHnjv4J879bVJYjs4,1481
+myprss/logger.py,sha256=VlXmO2ngbvNPRCFEN6pm7XcGksZzp1w7-0Lnk9-2gk0,419
+myprss/main.py,sha256=lcabRjr6fmN7OMpbXdq0OBSsT4AOgMlhDvdKwJ0fCFI,298
+myprss/parser.py,sha256=8-B8NnyoMmlWWhmKZScJavG9JUsE8kHmgoO_zSoAuHg,693
+myprss/reader.py,sha256=IehJqLCIP077gtyJH7Szc9CHwEwL3W1xtWkITuVP2lU,942
+myprss/registry.py,sha256=u78tPF65do9-1ahfYUXQ59T96BLKomdi4dFQZv3Xw2g,1526
+myprss/utils.py,sha256=QXcNaTyfqS-SAnC4TEtwIbRIPqXUN3dv1X0fUE03Ms0,150
+myprss-0.1.4.dist-info/LICENSE,sha256=FCqDCnJ2z7Sd-QYuUiqPYD3vMFi3_9QsGhjb3AXqX-4,1064
+myprss-0.1.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+myprss-0.1.4.dist-info/METADATA,sha256=jq5ov_T9oMnbfrwRpkKsB1EQzkkm5A-qzQzFWcWGQ88,434
+myprss-0.1.4.dist-info/RECORD,,
