@@ -1,0 +1,11 @@
+README.md
+setup.py
+transformerocr/__init__.py
+transformerocr/predict.py
+transformerocr.egg-info/PKG-INFO
+transformerocr.egg-info/SOURCES.txt
+transformerocr.egg-info/dependency_links.txt
+transformerocr.egg-info/top_level.txt
+transformerocr/tool/__init__.py
+transformerocr/tool/detector.py
+transformerocr/tool/translate.py
