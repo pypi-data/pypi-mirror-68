@@ -1,0 +1,3 @@
+[console_scripts]
+PyTujian = PyTujian.__main__:main
+
