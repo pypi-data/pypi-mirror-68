@@ -1,0 +1,7 @@
+setup.py
+nmcipher.affine.egg-info/PKG-INFO
+nmcipher.affine.egg-info/SOURCES.txt
+nmcipher.affine.egg-info/dependency_links.txt
+nmcipher.affine.egg-info/top_level.txt
+nmcipher/affine/__init__.py
+nmcipher/affine/affine.py
