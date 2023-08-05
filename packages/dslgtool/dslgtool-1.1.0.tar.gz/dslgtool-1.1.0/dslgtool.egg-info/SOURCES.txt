@@ -1,0 +1,14 @@
+README.md
+setup.py
+dslgtool/__init__.py
+dslgtool/__main__.py
+dslgtool/detector.py
+dslgtool/exif_data.py
+dslgtool/location.py
+dslgtool/qrcode_detector.py
+dslgtool/track.py
+dslgtool.egg-info/PKG-INFO
+dslgtool.egg-info/SOURCES.txt
+dslgtool.egg-info/dependency_links.txt
+dslgtool.egg-info/entry_points.txt
+dslgtool.egg-info/top_level.txt
