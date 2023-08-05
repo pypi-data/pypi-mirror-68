@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: healsparse
+Version: 1.0.2
+Summary: Sparse healpix maps and geometry library
+Home-page: https://github.com/lsstdesc/healsparse
+Author: Eli Rykoff and others
+Author-email: erykoff@stanford.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: healpy
+Requires-Dist: astropy
+
+UNKNOWN
+
+
