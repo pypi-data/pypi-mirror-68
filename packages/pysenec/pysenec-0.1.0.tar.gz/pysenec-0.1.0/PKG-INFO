@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pysenec
+Version: 0.1.0
+Summary: Unofficial, local SENEC Battery Client
+Home-page: https://github.com/mchwalisz/pysenec
+License: Apache-2.0
+Keywords: senec,api client
+Author: Mikołaj Chwalisz
+Author-email: m.chwalisz@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp (>=3.6.2,<4.0.0)
+Project-URL: Repository, https://github.com/mchwalisz/pysenec
+Description-Content-Type: text/markdown
+
+# pySenec: Python Client for Senec Home
+
+Targeted at the Senec Home V2.1 System.
+
+
+
+## References
+
+I have used the [ioBroker.senec](https://github.com/nobl/ioBroker.senec) for the API details.
+
