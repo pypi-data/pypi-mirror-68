@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cloudia"
+version = "0.2.0"
+description = "Tools to easily create a word cloud"
+authors = ["vaaaaanquish <6syun9@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/vaaaaanquish/cloudia"
+repository = "https://github.com/vaaaaanquish/cloudia"
+documentation = ""
+keywords = ["wordcloud", "matplotlib"]
+
+[tool.poetry-dynamic-versioning]
+enable = true
+style = "pep440"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+nagisa = "*"
+wordcloud = "*"
+pandas = "*"
+matplotlib = "*"
+wurlitzer = "*"
+joblib = "*"
+japanize_matplotlib = "^1.1.1"
+
+[tool.poetry.scripts]
+my-script = 'cloudia:main'
+
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
