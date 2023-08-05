@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: timedlist
+Version: 1.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/mtingers/timedlist
+Author: Matthew Ingersoll
+Author-email: matth@mtingers.com
+License: MIT License
+Description: A self-pruning list based off of time.
+Keywords: TimedList,Sliding window
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
