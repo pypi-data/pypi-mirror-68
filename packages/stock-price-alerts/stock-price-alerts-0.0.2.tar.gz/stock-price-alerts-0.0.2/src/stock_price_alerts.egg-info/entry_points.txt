@@ -1,0 +1,3 @@
+[console_scripts]
+stock-price-alerts = src.tracker_v2:main
+

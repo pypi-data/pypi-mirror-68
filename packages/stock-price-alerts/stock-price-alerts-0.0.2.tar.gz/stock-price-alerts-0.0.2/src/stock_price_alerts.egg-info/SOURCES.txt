@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/stock_price_alerts.egg-info/PKG-INFO
+src/stock_price_alerts.egg-info/SOURCES.txt
+src/stock_price_alerts.egg-info/dependency_links.txt
+src/stock_price_alerts.egg-info/entry_points.txt
+src/stock_price_alerts.egg-info/top_level.txt
