@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: uptodate
+Version: 0.2.0
+Summary: Command line script checking if your requirements are uptodate
+Home-page: https://gitlab.com/havk/uptodate
+License: UNKNOWN
+Keywords: requirements, requirements.txt, uptodate
+Author: Paweł Jastrzębski
+Author-email: pj@napcode.eu
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click==7.1.2
+Requires-Dist: requests==2.23.0
+Requires-Dist: rich==1.0.0
