@@ -1,0 +1,11 @@
+si_wg_docgen/__init__.py,sha256=z61QIn-KSjw6cpGcriGQH_H-2Uiu5PutaDobRryGrFw,179
+si_wg_docgen/bin/make_docx.py,sha256=Pl5BvWgscGIRfHev2O1pnYdcXWZ-sR5K1sIKBEOjdDs,1007
+si_wg_docgen/data/template.docx,sha256=yKks4SEzIXIx29p-Vcu5J2kb3WgswF9vmXi6BrQoJ8o,17734
+si_wg_docgen/md2word.py,sha256=poJpq8k0AwhARJXzG35PZJQ9dVaUs9oaI5wmO9bPyhU,6220
+si_wg_docgen/md2word_styles.py,sha256=-b9TuU6XxREnttj4iW0VEVX6kLco4-Mf7OqcBlO903A,9243
+si_wg_docgen/ttl2md.py,sha256=1QQSyVeadCQ-OmEN54r6eE3ZAEMojv5RSRtJy5F3ynw,5156
+si_wg_docgen-0.1.2.dist-info/entry_points.txt,sha256=YBLuEfQ3zeDS_Xj-mKDJH49eOpSgF4rd8QcOq4Qgcx0,52
+si_wg_docgen-0.1.2.dist-info/LICENSE,sha256=_ulO3qh4b4EPkQwi-pc5pxqtyU4amuJN1OMtpS7M6IQ,1511
+si_wg_docgen-0.1.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+si_wg_docgen-0.1.2.dist-info/METADATA,sha256=gFIs78cazKmjk8VHgnXeCIqFV1jVWjQA9z17chMR-8U,416
+si_wg_docgen-0.1.2.dist-info/RECORD,,
