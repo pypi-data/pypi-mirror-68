@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: imitation
+Version: 0.1.0
+Summary: Implementation of modern IRL and imitation learning algorithms.
+Home-page: https://github.com/HumanCompatibleAI/imitation
+Author: Center for Human-Compatible AI and Google
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: awscli
+Requires-Dist: cloudpickle (>=0.5.5)
+Requires-Dist: gym[classic_control]
+Requires-Dist: matplotlib
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn (>=0.21.2)
+Requires-Dist: stable-baselines (~=2.10.0)
+Requires-Dist: jax (~=0.1.66)
+Requires-Dist: jaxlib (~=0.1.47)
+Requires-Dist: sacred (==0.7.4)
+Provides-Extra: cpu
+Requires-Dist: tensorflow (<2.0,>=1.15.0) ; extra == 'cpu'
+Provides-Extra: dev
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: ntfy[slack] ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: pytype ; extra == 'dev'
+Requires-Dist: codespell ; extra == 'dev'
+Requires-Dist: seals (~=0.1.0) ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage (==4.5.4) ; extra == 'dev'
+Requires-Dist: codecov ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-blind-except ; extra == 'dev'
+Requires-Dist: flake8-builtins ; extra == 'dev'
+Requires-Dist: flake8-debugger ; extra == 'dev'
+Requires-Dist: flake8-isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-shard ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Provides-Extra: gpu
+Requires-Dist: tensorflow-gpu (<2.0,>=1.15.0) ; extra == 'gpu'
+Provides-Extra: parallel
+Requires-Dist: ray[debug,tune] (~=0.8.5) ; extra == 'parallel'
+Provides-Extra: test
+Requires-Dist: seals (~=0.1.0) ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: coverage (==4.5.4) ; extra == 'test'
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: codespell ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: flake8-blind-except ; extra == 'test'
+Requires-Dist: flake8-builtins ; extra == 'test'
+Requires-Dist: flake8-debugger ; extra == 'test'
+Requires-Dist: flake8-isort ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-shard ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: pytype ; extra == 'test'
+
+[![CircleCI](https://circleci.com/gh/HumanCompatibleAI/imitation.svg?style=svg)](https://circleci.com/gh/HumanCompatibleAI/imitation)
+[![Documentation Status](https://readthedocs.org/projects/imitation/badge/?version=latest)](https://imitation.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/gh/HumanCompatibleAI/imitation/branch/master/graph/badge.svg)](https://codecov.io/gh/HumanCompatibleAI/imitation)
+[![PyPI version](https://badge.fury.io/py/imitation.svg)](https://badge.fury.io/py/imitation)
+
+
+# Imitation Learning Baseline Implementations
+
+This project aims to provide clean implementations of imitation learning algorithms.
+Currently we have implementations of [AIRL](https://arxiv.org/abs/1710.11248) and 
+[GAIL](https://arxiv.org/abs/1606.03476), and intend to add more in the future.
+
+### To install:
+```
+conda create -n imitation python=3.8  # python 3.7 and virtualenv are also okay.
+conda activate imitation
+pip install -e '.[dev]'  # install `imitation` in developer mode
+```
+
+### Optional Mujoco Dependency:
+
+Follow instructions to install [mujoco_py v1.5 here](https://github.com/openai/mujoco-py/tree/498b451a03fb61e5bdfcb6956d8d7c881b1098b5#install-mujoco).
+
+### To run:
+```
+# Train PPO2 agent on cartpole and collect expert demonstrations
+python -m imitation.scripts.expert_demos with cartpole
+# Train AIRL on from demonstrations
+python -m imitation.scripts.train_adversarial with cartpole airl
+```
+View Tensorboard with `tensorboard --logdir output/`.
+
+
+# Contributing
+
+Please follow a coding style of:
+  * PEP8, with line width 88.
+  * Use the `black` autoformatter.
+  * Follow the [Google Python Style Guide](http://google.github.io/styleguide/pyguide.html) unless
+    it conflicts with the above. Examples of Google-style docstrings can be found
+    [here](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).
+
+PRs should include unit tests for any new features, and add type annotations where possible. 
+It is OK to omit annotations when it would make the code significantly more complex.
+
+We use `pytest` for unit testing: run `pytest tests/` to run the test suite.
+We use `pytype` for static type analysis.
+You should run `ci/code_checks.sh` to run linting and static type checks, and may wish
+to configure this as a Git pre-commit hook.
+
+These checks are run on CircleCI and are required to pass before merging.
+Additionally, we track test coverage by CodeCov, and mandate that code coverage
+should not decrease. This can be overridden by maintainers in exceptional cases.
+Files in `imitation/{examples,scripts}/` have no coverage requirements.
+
+
