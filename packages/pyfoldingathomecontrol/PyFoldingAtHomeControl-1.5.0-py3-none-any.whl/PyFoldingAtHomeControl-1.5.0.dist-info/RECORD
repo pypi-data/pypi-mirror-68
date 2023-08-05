@@ -1,0 +1,12 @@
+FoldingAtHomeControl/__init__.py,sha256=cQVntabN4f4ruhUD2o8prNpYYgcPGL4GLg8WNEBJ4v0,437
+FoldingAtHomeControl/const.py,sha256=toSwjQyBNqEE8ztWQTH3wm2bkatlT22Yox6VrxJD8iE,720
+FoldingAtHomeControl/exceptions.py,sha256=5KYAyih4uT9HyaIFcsef4BcqG3qnih7sGkjzAlyRAik,642
+FoldingAtHomeControl/foldingathomecontrol.py,sha256=K5A91Dttjuc6j70xOHNdaSJErFbljBM39e5WR0u78_w,11000
+FoldingAtHomeControl/pyonparser.py,sha256=IWBKqbb04Soe8hDt4sYPv9FaNi8Dbliw3h3L4czof8Q,421
+FoldingAtHomeControl/serialconnection.py,sha256=jDP-UqmPcvA7PeM-uDbGKObTWN5BRgmH9qTM4OESb5o,5708
+PyFoldingAtHomeControl-1.5.0.dist-info/LICENSE,sha256=42Ta7SH_abYmLz_dBLYSJUhjj8LgoLgyg82K3PZrR2w,1071
+PyFoldingAtHomeControl-1.5.0.dist-info/METADATA,sha256=N4Zoph1nlm9z3qjZDjBu_BY65LjyhaqX-uVtx8XPY-A,2344
+PyFoldingAtHomeControl-1.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PyFoldingAtHomeControl-1.5.0.dist-info/top_level.txt,sha256=I_-RiPYxSf5y3YqDflijV4RZ5No_C3Cn9Z0nV3zMwhw,21
+PyFoldingAtHomeControl-1.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+PyFoldingAtHomeControl-1.5.0.dist-info/RECORD,,
