@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dh-utils
+Version: 0.1.0
+Summary: Python package containing various utilities relevant in the field of digital humanities.
+Home-page: https://github.com/andredelft/dh-utils
+Author: Andre van Delft
+Author-email: andrevandelft@outlook.com
+License: UNKNOWN
+Description: # Digital Humanities Utilities
+        
+        Python package containing various utilities relevant in the field of digital humanities.
+Keywords: ebook understanding nltk reading toolkit
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

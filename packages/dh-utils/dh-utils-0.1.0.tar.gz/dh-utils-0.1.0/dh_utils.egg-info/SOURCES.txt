@@ -1,0 +1,10 @@
+README.md
+setup.py
+dh_utils/__init__.py
+dh_utils/tei.py
+dh_utils/unicode.py
+dh_utils.egg-info/PKG-INFO
+dh_utils.egg-info/SOURCES.txt
+dh_utils.egg-info/dependency_links.txt
+dh_utils.egg-info/requires.txt
+dh_utils.egg-info/top_level.txt
