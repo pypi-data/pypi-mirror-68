@@ -1,0 +1,191 @@
+{
+  "meas_date": {
+    "name": "StartDate",
+    "type": "date",
+    "parent_section": "recording__Recording",
+    "add_props": [
+      {
+        "name": "StartTime",
+        "type": "time",
+        "parent_section": "recording__Recording"
+      }
+    ]
+  },
+  "highpass": {
+    "name": "HighpassCutoff",
+    "type": "float",
+    "unit": "Hz",
+    "parent_section": "collection/hardware_settings__HardwareSettings___hardware/amplifier__Amplifier"
+  },
+  "lowpass": {
+    "name": "LowpassCutoff",
+    "type": "float",
+    "unit": "Hz",
+    "parent_section": "collection/hardware_settings__HardwareSettings___hardware/amplifier__Amplifier"
+  },
+  "sfreq": {
+    "name": "SampleRate",
+    "type": "float",
+    "parent_section": "collection/hardware_settings__HardwareSettings___hardware/amplifier__Amplifier"
+  },
+  "chs": {
+    "name": "Channels",
+    "type": "collection",
+    "parent_section": "collection/hardware_settings__HardwareSettings",
+    "subsection": {
+      "prefix": "Channel",
+      "type": "hardware/daq"
+    }
+  },
+  "Channels__ch_name": {
+    "name": "Name",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Channels__range": {
+    "name": "AIResolution",
+    "type": "float",
+    "unit": "V",
+    "parent_section": ""
+  },
+  "Channels__nchan": {
+    "name": "AIUsedChannelCount",
+    "type": "int",
+    "parent_section": ""
+  },
+  "Channels__imp": {
+    "name": "Impedance",
+    "type": "float",
+    "parent_section": "",
+    "unit_field": "imp_unit"
+  },
+  "Channels__imp_meas_date": {
+    "name": "ImpedanceMeasurementDate",
+    "type": "time",
+    "parent_section": ""
+  },
+  "Channels__imp_lower_bound": {
+    "name": "ImpedanceLowerBound",
+    "type": "float",
+    "parent_section": "",
+    "unit_field": "imp_unit"
+  },
+  "Channels__imp_upper_bound": {
+    "name": "ImpedanceUpperBound",
+    "type": "float",
+    "parent_section": "",
+    "unit_field": "imp_unit"
+  },
+  "segmentation": {
+    "name": "Segmentation",
+    "type": "segmentation",
+    "parent_section": ""
+  },
+  "Segmentation__type": {
+    "name": "Type",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Segmentation__data_points": {
+    "name": "DataPoints",
+    "type": "int",
+    "parent_section": ""
+  },
+  "Segmentation__averaged": {
+    "name": "Averaged",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Segmentation__averaged_segments": {
+    "name": "AveragedSegments",
+    "type": "int",
+    "parent_section": ""
+  },
+  "Segmentation__artifact_rejection": {
+    "name": "ArtifactRejection",
+    "type": "segmentation/artifact_rejection",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Gradient": {
+    "name": "Gradient",
+    "type": "string",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Max. Difference": {
+    "name": "Max. Difference",
+    "type": "string",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Amplitude": {
+    "name": "Amplitude",
+    "type": "string",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Low Activity": {
+    "name": "Low Activity",
+    "type": "string",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Test Interval": {
+    "name": "Test Interval",
+    "type": "string",
+    "parent_section": ""
+  },
+  "ArtifactRejection__Untested Channels": {
+    "name": "Untested Channels",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Segmentation__intervals": {
+    "name": "Intervals",
+    "type": "collection",
+    "parent_section": ""
+  },
+  "Intervals__Prestimulus": {
+    "name": "Prestimulus",
+    "type": "segmentation/interval",
+    "parent_section": ""
+  },
+  "Prestimulus__duration": {
+    "name": "Duration",
+    "type": "int",
+    "parent_section": "",
+    "unit_field": "unit"
+  },
+  "Intervals__Poststimulus": {
+    "name": "Poststimulus",
+    "type": "segmentation/interval",
+    "parent_section": ""
+  },
+  "Poststimulus__duration": {
+    "name": "Duration",
+    "type": "int",
+    "parent_section": "",
+    "unit_field": "unit"
+  },
+  "Segmentation__averaging": {
+    "name": "Averaging",
+    "type": "segmentation/averaging",
+    "parent_section": ""
+  },
+  "Averaging__Averaging": {
+    "name": "Averaging",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Averaging__Baseline Correction": {
+    "name": "Baseline Correction",
+    "type": "string",
+    "parent_section": ""
+  },
+  "Segmentation__miscellaneous": {
+    "name": "Miscellaneous",
+    "type": "segmentation/miscellaneous",
+    "parent_section": ""
+  },
+  "Miscellaneous__Max. Segments": {
+    "name": "Max. Segments",
+    "type": "string",
+    "parent_section": ""
+  }
+}
