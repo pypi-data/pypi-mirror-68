@@ -1,0 +1,16 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/datacatalog_util/__init__.py
+src/datacatalog_util/datacatalog_util_cli.py
+src/datacatalog_util.egg-info/PKG-INFO
+src/datacatalog_util.egg-info/SOURCES.txt
+src/datacatalog_util.egg-info/dependency_links.txt
+src/datacatalog_util.egg-info/entry_points.txt
+src/datacatalog_util.egg-info/not-zip-safe
+src/datacatalog_util.egg-info/requires.txt
+src/datacatalog_util.egg-info/top_level.txt
+tests/datacatalog_util/datacatalog_util_cli_test.py
