@@ -1,0 +1,6 @@
+# Core requirements for using this package
+
+mako                                # Used by xblockutils.resources
+simplejson
+web-fragments
+Xblock
