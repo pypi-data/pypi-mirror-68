@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MinutiaeClassificator
+Version: 0.1.8
+Summary: Minutiae extraction and classification tool
+Home-page: https://github.com/jakubarendac/MinutiaeClassificator
+Author: Jakub Arendac
+Author-email: jakub.arendac105@gmail.com
+License: MIT
+Download-URL: https://github.com/jakubarendac/MinutiaeClassificator/archive/0.1.7.tar.gz
+Description: Minutiae extractor
+Keywords: minutiae,extraction,classification,biometrics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown
