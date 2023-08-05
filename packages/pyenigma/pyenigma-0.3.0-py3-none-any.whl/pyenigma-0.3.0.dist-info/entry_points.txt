@@ -1,0 +1,3 @@
+[console_scripts]
+enigma=bin.enigma:main
+
