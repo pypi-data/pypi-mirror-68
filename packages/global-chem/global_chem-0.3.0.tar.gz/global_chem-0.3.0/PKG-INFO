@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: global_chem
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: https://www.github.com/Sulstice/global-chem
+Author: Suliman Sharif
+Author-email: sharifsuliman1@gmail.com
+License: MPL 2.0
+Description: GlobalChem: A content variable store for Chemistry!
+        ===================================================
+        
+        [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+        ![Python](https://img.shields.io/badge/python-3.6-blue.svg)
+        [![Documentation Status](https://readthedocs.org/projects/globalchem/badge/?version=latest)](https://globalchem.readthedocs.io/en/latest/?badge=latest)
+        ![Repo Size](https://img.shields.io/github/repo-size/Sulstice/global-chem)
+        [![PyPI version](https://badge.fury.io/py/global-chem.svg)](https://badge.fury.io/py/global-chem)
+        
+        Global Chem is a content variable store for cheminformaticians. Variables that we often use in research should be added here. 
+        The main motivation behind this is to eliminate the development time for when folk build their applications or conduct 
+        research.
+        
+        Announcements
+        =============
+        
+        -   Work has began! April 2020 (added the amino acids)
+        
+        Using GlobalChem
+        =====================
+        
+        GlobalChem, initially, is one class object that have a fixed set of variables. Eventually and hopefully as the package 
+        grows it will be abstracted out by field i.e protein chemistry, analytical, and so on. 
+        
+        Installation 
+        ============
+        
+        GlobalChem is going to be distribute via PyPi and as the content store grows we can expand it to other pieces of software
+        making it accessible to all regardless of what you use. Alternatively, you could have a glance at the source code and copy/paste
+        it yourself.
+        
+        Variables List
+        ==============
+        - functional groups (SMILES)
+        - functional groups (SMARTS)
+        - amino acids (SMILES)
+        
+        Structure of GlobalChem
+        =======================
+        
+        Currently, the main subpackages are:
+        
+        - **global-chem**: globalchem main class. 
+        
+        
+        Genesis
+        =======
+        
+        GlobalChem was created because I noticed I was using the same variable across multiple scripts and figure it would be useful
+        for folk to have.
+        
+        - Lead Developer [Suliman sharif](http://sulstice.github.io/)
+        
+        * * * * *
+        
+        External links
+        ==============
+        
+        
+        
+Keywords: smiles molecules chemistry
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
