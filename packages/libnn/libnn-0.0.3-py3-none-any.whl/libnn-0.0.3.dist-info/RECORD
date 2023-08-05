@@ -1,0 +1,13 @@
+libnn/__init__.py,sha256=ppP8saboixDVDi2D6m8-YRZg9XZKPhe2qPOvEBtbQfU,220
+libnn/dispatch.py,sha256=XH0CZ3jpRuATLqiYI2Cq2z84Ljo9kYT65SQAbyjMnjI,8282
+libnn/networks/__init__.py,sha256=Zxub-JhDvCbX1Vwekaogg0Eif1BG-3nQZiK2JPWom2A,257
+libnn/networks/lstms.py,sha256=MOXI9jn1A9sjwjVn4R1CIPx6_RpQhbHePykp7QpTDIk,1420
+libnn/networks/resnets.py,sha256=J0GnizRz9TOstrGec3IWh6jfanKgWaBwjnZF6jhDCMM,5328
+libnn/toolbox/__init__.py,sha256=LcS27auVoiz2-nKaWq9inFpiFXP7-MhBOSSpCUfJI8w,168
+libnn/toolbox/dataloader.py,sha256=OoDME0REon1XI5UtuLAhfUq5SYlrm8wF1-qOAcNcZlg,947
+libnn/toolbox/datasplit.py,sha256=tOsIVji8Vy2StpATHbaiL0OQ_6cSkn_BrbTS457ZM2w,3470
+libnn/toolbox/funcs.py,sha256=JJo5GO3ZYThMaRgliUaIteCKubfjio5tzv1n_wH364c,1566
+libnn-0.0.3.dist-info/METADATA,sha256=fQEVHmhuDI5SfwSJeBuRZyQzL5BUhxIBEFAg8F93Z5I,244
+libnn-0.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+libnn-0.0.3.dist-info/top_level.txt,sha256=p9-djUdYdM_I1ePTMEBNEehnh-9oLFAmJTzmS6M431E,6
+libnn-0.0.3.dist-info/RECORD,,
