@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: fdet
+Version: 0.1.0
+Summary: The fdet is an easy to use face detection implementation based on PyTorch.
+Home-page: http://github.com/acnazarejr/fdet
+Author: Antonio C. Nazare Jr.
+Author-email: antonio.nazare@dcc.ufmg.br
+Maintainer: Antonio C. Nazare Jr.
+Maintainer-email: antonio.nazare@dcc.ufmg.br
+License: UNKNOWN
+Download-URL: http://github.com/acnazarejr/fdet
+Description: # FDet - Deep Learning Face Detector
+        
+        The `fdet` is an easy to use face detection implementation based on PyTorch.
+        
+        
+        
+        
+        
+Keywords: face recognition detection biometry
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,14 @@
+README.md
+setup.py
+fdet/__init__.py
+fdet/detector.py
+fdet/io.py
+fdet/mtcnn.py
+fdet/retinaface.py
+fdet.egg-info/PKG-INFO
+fdet.egg-info/SOURCES.txt
+fdet.egg-info/dependency_links.txt
+fdet.egg-info/entry_points.txt
+fdet.egg-info/not-zip-safe
+fdet.egg-info/requires.txt
+fdet.egg-info/top_level.txt

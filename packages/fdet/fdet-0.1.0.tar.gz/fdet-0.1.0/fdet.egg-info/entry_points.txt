@@ -1,0 +1,3 @@
+[console_scripts]
+fdet = fdet.cli.fdet:main
+
