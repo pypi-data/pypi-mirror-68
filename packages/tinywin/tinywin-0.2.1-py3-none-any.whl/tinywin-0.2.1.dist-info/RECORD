@@ -1,0 +1,10 @@
+tinywin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tinywin/core.py,sha256=sTWuHf0fHw7vQE8rRjNRcOTYhNx_YVBmaQNawur-T7Y,28501
+tinywin/helpers.py,sha256=ubxuq2G2dGKGXFMktHt3b6UKmqkJKGtr8zZJGHf4_Ag,3926
+tinywin/panes.py,sha256=zZHsNgyqOda7i0omdKvRB9vK95AH5nR56XJkdhgW4Yg,43445
+tinywin/screen.py,sha256=67xDDhtEwx-StU0too2uBVWayzdYITOyIySD6ZqMbRA,17477
+tinywin-0.2.1.dist-info/LICENSE,sha256=HsA3F5obADVAnudiKN5OPo6fAuGWhLQQXw7oCVdOo3E,1073
+tinywin-0.2.1.dist-info/METADATA,sha256=k-JWeZcjkNuhhvInGD35Ez8nVgdlfn4sk8phx8_lMa4,462
+tinywin-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tinywin-0.2.1.dist-info/top_level.txt,sha256=rZxqVxoGFk316SepGKMxMlZgZl5nwYs2oefVy1_fX0Q,8
+tinywin-0.2.1.dist-info/RECORD,,
