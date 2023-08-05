@@ -1,0 +1,37 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python36-x64"
+      TOXENV: py36
+      PYTEST_ADDOPTS: ""
+    - PYTHON: "C:\\Python37-x64"
+      TOXENV: py37
+      PYTEST_ADDOPTS: ""
+    - PYTHON: "C:\\Python38-x64"
+      TOXENV: py38
+      PYTEST_ADDOPTS: ""
+
+init:
+  - ps: New-ItemProperty -Path Registry::HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem `
+        -Name 'LongPathsEnabled' -Type DWord -Value 1
+
+install:
+  - "%PYTHON%\\python.exe -m pip install wheel tox"
+  - "%PYTHON%\\python.exe -m pip install codecov coveralls"
+
+build: off
+
+test_script:
+  - "%PYTHON%\\python.exe -m tox"
+
+after_test:
+  - ps: |
+      "%PYTHON%\\Scripts\\coverage xml --ignore-errors"
+      "%PYTHON%\\Scripts\\codecov -X gcov pycov search --file coverage.xml --flags %TOXENV:-= % windows"
+      "%PYTHON%\\Scripts\\coveralls"
+      "%PYTHON%\\python.exe setup.py bdist_wheel"
+
+artifacts:
+  - path: "dist\\*"
+
+matrix:
+  fast_finish: false
