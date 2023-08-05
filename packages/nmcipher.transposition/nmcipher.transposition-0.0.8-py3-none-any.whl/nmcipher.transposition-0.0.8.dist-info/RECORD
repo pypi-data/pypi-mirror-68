@@ -1,0 +1,8 @@
+nmcipher/transposition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nmcipher/transposition/columnar.py,sha256=KUX6_iIcwLDnkUtnkg2Urbbs1076y2Fprf5A8QQXdIc,717
+nmcipher/transposition/detect_english.py,sha256=UqXAABhzfd3RYNlhxOT9ovzwphdPKdfPrfzzPzHk_IA,260
+nmcipher.transposition-0.0.8.dist-info/METADATA,sha256=_HhBblS2CObySarz5vaAyZdi_FCn2zKhJtHsdaH-jyQ,298
+nmcipher.transposition-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nmcipher.transposition-0.0.8.dist-info/entry_points.txt,sha256=rN68QOI-1TitXXuKzRq9YMZF6zWrZ65DhyCtD0wM3c8,63
+nmcipher.transposition-0.0.8.dist-info/top_level.txt,sha256=PiHSI6vc85AMZ4rG93pHgtqhUsuJrhEK2df2gNgn1OA,9
+nmcipher.transposition-0.0.8.dist-info/RECORD,,

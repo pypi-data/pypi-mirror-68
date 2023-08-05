@@ -1,0 +1,3 @@
+[console_scripts]
+transposition = nmcipher.transposition:main
+
