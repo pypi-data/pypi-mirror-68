@@ -1,0 +1,11 @@
+bbbmon/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+bbbmon/bbbmon.py,sha256=4VSBzzMn6kxp3JP3_Bu3Ces4p3tCF3CVSyIBGcZOLt0,7467
+bbbmon/configuration.py,sha256=wV5Ur308cdqyvNp712GcXewf7ZfsVkrtMAYcNTYx8II,7883
+bbbmon/meetings.py,sha256=9iQwGilYW5NewdReJyWAKZSufyri998-j-C9hOXGr0k,11696
+bbbmon/printing.py,sha256=wJAQBFy-VJ23mYE0xhcDzD-2i7HlfSUYcRAN8iYxwvU,5777
+bbbmon/xmldict.py,sha256=dLrCyaNSqEctRYAXe3cACPxlXwuEFXiAVG6TaN2hO40,2682
+bbbmon-0.1.24.dist-info/entry_points.txt,sha256=-HeT3NuFJmjvSb8Zo5Bd_YHS_OeNaq2NyGynO7O-npI,45
+bbbmon-0.1.24.dist-info/LICENSE,sha256=E9_VY9hEW6ZnLI86svPFLc-A86G3iWKt4xnwosh1-fM,35063
+bbbmon-0.1.24.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+bbbmon-0.1.24.dist-info/METADATA,sha256=in54IicoJvbEoXNTkZFyCNFDhBSn8V376zAkS5in0Tg,3281
+bbbmon-0.1.24.dist-info/RECORD,,
