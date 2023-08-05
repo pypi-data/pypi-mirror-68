@@ -1,0 +1,3 @@
+[console_scripts]
+s3-concat = s3_concat.cli:cli
+
