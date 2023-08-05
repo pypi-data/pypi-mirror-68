@@ -1,0 +1,8 @@
+README.md
+setup.py
+sanic_sass/__init__.py
+sanic_sass.egg-info/PKG-INFO
+sanic_sass.egg-info/SOURCES.txt
+sanic_sass.egg-info/dependency_links.txt
+sanic_sass.egg-info/requires.txt
+sanic_sass.egg-info/top_level.txt
