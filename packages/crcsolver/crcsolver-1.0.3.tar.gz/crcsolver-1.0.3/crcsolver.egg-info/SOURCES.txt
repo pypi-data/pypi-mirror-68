@@ -1,0 +1,11 @@
+README.md
+setup.py
+crcsolver/__init__.py
+crcsolver/bitmatrix.py
+crcsolver/crc_catalog.py
+crcsolver/main.py
+crcsolver/subsetxor.py
+crcsolver.egg-info/PKG-INFO
+crcsolver.egg-info/SOURCES.txt
+crcsolver.egg-info/dependency_links.txt
+crcsolver.egg-info/top_level.txt
