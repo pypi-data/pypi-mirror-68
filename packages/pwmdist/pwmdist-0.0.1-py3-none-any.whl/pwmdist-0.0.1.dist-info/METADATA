@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pwmdist
+Version: 0.0.1
+Summary: package for essential statistics of extreme value distirbutions using probability weighted moments
+Home-page: https://github.com/Nitish-Sharma01/pwmdist
+Author: Nitish Sharma
+Author-email: nitish.sharma0712@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# pwmdist
+PWM estimation of multiple distributions 
+
+
