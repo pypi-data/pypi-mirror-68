@@ -1,0 +1,9 @@
+README.md
+setup.py
+phone_number_jp/__init__.py
+phone_number_jp/make_prefix_numbers.py
+phone_number_jp/prefix_numbers.py
+python_phone_number_jp.egg-info/PKG-INFO
+python_phone_number_jp.egg-info/SOURCES.txt
+python_phone_number_jp.egg-info/dependency_links.txt
+python_phone_number_jp.egg-info/top_level.txt
