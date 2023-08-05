@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+crime_news_classifer_spanish/.DS_Store
+crime_news_classifer_spanish/__init__.py
+crime_news_classifer_spanish/crime_classifier.py
+crime_news_classifer_spanish/test_crime_classifier.py
+crime_news_classifer_spanish.egg-info/PKG-INFO
+crime_news_classifer_spanish.egg-info/SOURCES.txt
+crime_news_classifer_spanish.egg-info/dependency_links.txt
+crime_news_classifer_spanish.egg-info/top_level.txt
+crime_news_classifer_spanish/__pycache__/cleaner.cpython-37.pyc
+crime_news_classifer_spanish/__pycache__/sentiment_analysis.cpython-37.pyc
+crime_news_classifer_spanish/saved_model/.DS_Store
+crime_news_classifer_spanish/saved_model/model.h5
+crime_news_classifer_spanish/saved_model/model.json
+crime_news_classifer_spanish/saved_model/tokenizer.pickle
