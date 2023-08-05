@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: CURandRTC
+Version: 0.1.1
+Summary: Random number generation module based on ThrustRTC
+Home-page: https://github.com/fynv/CURandRTC
+Author: Fei Yang
+Author-email: hyangfeih@gmail.com
+License: Anti 996
+Keywords: GPU CUDA Random XORWOR
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: ThrustRTC
+
+CURandRTC
+================
+
+CURandRTC is a random number generation module based on ThrustRTC. This package is for Python 3.
+
+
+
+
