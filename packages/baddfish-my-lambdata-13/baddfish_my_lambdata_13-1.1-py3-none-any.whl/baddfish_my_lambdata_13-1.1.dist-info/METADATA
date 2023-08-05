@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: baddfish-my-lambdata-13
+Version: 1.1
+Summary: For example purposes
+Home-page: https://github.com/baddfish/my-lambdata-13
+Author: Tony Maddalone
+Author-email: tjmaddalonec@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# my-lambdata-13
+
+## installation directions here 
+
+
+Install from test PyPi
+
+pip install baddfish-my-lambdata-13
+
+In colab !pip install baddfish-my-lambdata-13
+
+
+Using the package from PIPY instructions:
+
