@@ -1,0 +1,11 @@
+pytest_canonical_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_canonical_data/canonical_data.py,sha256=y8GYgevl_bViNv3lKw8A58bh3iPTD6-rOHWzF03nPz4,1465
+pytest_canonical_data/drivers.py,sha256=0FhDzJ_C64CPRPUqII8VbCWRe2euSuQXnwaOV6H6cLo,1449
+pytest_canonical_data/exceptions.py,sha256=JjbIvugyaEUssG1OKy0ze8HFiz99vVKwh8nzW1tmCiY,618
+pytest_canonical_data/plugin.py,sha256=P_wkqOL2waJN6BUy31sUVBJMoaP1mJNHrUiSOVHsqdQ,642
+pytest_canonical_data-0.1.0.dist-info/LICENSE,sha256=4mFYf5I3-_Z6cOWNFwj7vN2_Gv-C1CuPHWXY1J-w2us,1082
+pytest_canonical_data-0.1.0.dist-info/METADATA,sha256=tlL6-vLXqLBi4gRZPR6fkFqm26BGqcxjz0l5maqyGG8,4800
+pytest_canonical_data-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytest_canonical_data-0.1.0.dist-info/entry_points.txt,sha256=gqGGkGfVoqXSlxQIuG33k2QsZkQ2twoXrmj_Q4cujJs,58
+pytest_canonical_data-0.1.0.dist-info/top_level.txt,sha256=PBoA0QTy-d9o9_DE7cOL0U1mLCGrUI5uyV-EftAJ5Do,22
+pytest_canonical_data-0.1.0.dist-info/RECORD,,

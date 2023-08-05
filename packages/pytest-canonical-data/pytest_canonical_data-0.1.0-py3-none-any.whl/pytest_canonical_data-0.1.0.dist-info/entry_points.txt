@@ -1,0 +1,3 @@
+[pytest11]
+canonical_data = pytest_canonical_data.plugin
+
