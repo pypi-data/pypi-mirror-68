@@ -1,0 +1,3 @@
+[console_scripts]
+mirror_flickr = FlickrMirroring.__main__:main
+
