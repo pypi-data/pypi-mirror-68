@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: wagascianpy
+Version: 0.2.2
+Summary: WAGASCI ANPAN for Python
+Home-page: https://git.t2k.org/wagasci_babymind/WagasciAnpy
+Author: Pintaudi Giorgio
+Author-email: giorgio-pintaudi-kx@ynu.jp
+License: GPLv3
+Keywords: WAGASCI ANPAN for Python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: bitarray (~=1.2.1)
+Requires-Dist: six (~=1.14.0)
+Requires-Dist: paramiko (~=2.7.1)
+Requires-Dist: scp (~=0.13.2)
+Requires-Dist: pytz (~=2020.1)
+Requires-Dist: tinydb (~=3.15.2)
+Requires-Dist: recordclass (~=0.13.2)
+
+# WAGASCI ANPAN for Python v0.2.2
+
+This collective package contains all the Python functions anc classes used
+by the ANPAN framework of the WAGASCI/T2K experiment.
+
+## T2K experiment
+
+T2K (Tokai-to-Kamioka) is a long-baseline off-axis neutrino oscillation
+experiment that focuses on measuring muon (anti)-neutrinos oscillating into
+electron (anti)-neutrinos. A very pure muon neutrino beam is produced at J-PARC
+accelerator complex and detected 295 km away at the Super-Kamiokande (SK) far
+detector. T2K uses a set of near detectors in order to reduce the large
+uncertainties on the oscillation parameters that come from the neutrino fluxes
+and interaction models.
+
+## WAGASCI experiment
+
+WAGASCI (WAter-Grid-SCIintilator-Detector) is proposed to
+
+- reduce the T2K systematic error
+- measurement of the charge current cross-section ratio between water and
+  scintillator targets with 3% accuracy
+- measurement of different charged current neutrino interaction channels with
+  high precision and large acceptance.
+
+## ANPAN
+
+ANPAN (Acquisition Network Program for Accelerated Neutrinos) is a collective
+ name to identify all the software used to acquire data and analyze it for
+  the WAGASCI experiment. It is composed of many packages:
+  - [Pyrame](http://llr.in2p3.fr/sites/pyrame/) (C/Python2)
+  - [Calicoes](http://llr.in2p3.fr/sites/pyrame/calicoes/) (C/Python2)
+  - [WagasciCalibration](https://git.t2k.org/wagasci_babymind/WagasciCalibration) (C++)
+  - [WagasciRunControl](https://git.t2k.org/wagasci_babymind/WagasciRunControl) (Python2)
+  - [WagasciDatabaseViewer](https://git.t2k.org/wagasci_babymind/wagasci-db) (Python3)
+  - [WagasciAnpy (this package)](https://git.t2k.org/wagasci_babymind/WagasciAnpy) (Python2/3)
+
+ ## Dependencies
+
+ - **Python2.7 or Python3.4+**
+ - **pip**
+
+ This package is compatible with both Python2.7 and Python3.4+. It is tested
+ usually with Python 3.8 and sporadically with other Python versions.
+ Therefore, it may happen that the compatibility with Python2.7 is not
+ perfect.
+
+ To install Python, please google _"Install Python \<Your favourite OS\>"_.
+ All the other Python dependencies can be installed using Pip. 
+
+ ### Optional dependencies
+
+To use the raw data decoder and spill number fixer, you have to install ROOT
+and the WagasciCalibration package. Please refer to the links for an in-depth
+explanation about the installation process.
+  - [ROOT 6](https://root.cern.ch/)
+  - [WagasciCalibraion](https://git.t2k.org/wagasci_babymind/WagasciCalibration)
+
+  To update the WAGASCI run database you need
+  - [BorgBackup](https://borgbackup.readthedocs.io/en/stable/installation.html)
+
+If you do not plan to use those features you can avoid installing these
+dependencies.
+
+## Installation
+
+### Python 2.7
+Open a terminal and issue
+```shell script
+python2 -m pip install --upgrade --user wagascianpy
+```
+
+### Python 3.4+
+Open a terminal and issue
+```shell script
+python3 -m pip install --upgrade --user wagascianpy
+```
+
+
+## Usage
+
+TODO
+
