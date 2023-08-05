@@ -1,0 +1,7 @@
+py4knn/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+py4knn/distance.py,sha256=qvwcXAQnC37ifK7iiPV_azuzKgK0nrKQEjIO4eRT2GQ,951
+py4knn/k_nearest_neighbors.py,sha256=nmiltkJsgrzcIbag84--7U2tOxAqrgBwEesBWBBFSd8,1814
+py4knn-0.0.1.dist-info/METADATA,sha256=5S24eFQhR-3DeWGfltTycSxxJmTs3L7hRu2AzBqNUx8,1289
+py4knn-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+py4knn-0.0.1.dist-info/top_level.txt,sha256=4TtOlf96rNQLnMisL1uLyW1hYLpEnu3mpnBvr_dVCcg,7
+py4knn-0.0.1.dist-info/RECORD,,
