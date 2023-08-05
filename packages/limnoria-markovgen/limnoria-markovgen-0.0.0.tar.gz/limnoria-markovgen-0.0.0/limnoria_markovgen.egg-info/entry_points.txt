@@ -1,0 +1,3 @@
+[limnoria.plugins]
+Markovgen = limnoria_markovgen
+

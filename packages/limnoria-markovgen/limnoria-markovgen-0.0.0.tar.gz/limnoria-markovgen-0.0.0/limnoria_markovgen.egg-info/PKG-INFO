@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: limnoria-markovgen
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Insert a description of your plugin here, with any notes, etc. about 
+        using it.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Chat

@@ -1,0 +1,12 @@
+README.md
+setup.py
+./__init__.py
+./config.py
+./plugin.py
+./test.py
+limnoria_markovgen.egg-info/PKG-INFO
+limnoria_markovgen.egg-info/SOURCES.txt
+limnoria_markovgen.egg-info/dependency_links.txt
+limnoria_markovgen.egg-info/entry_points.txt
+limnoria_markovgen.egg-info/requires.txt
+limnoria_markovgen.egg-info/top_level.txt
