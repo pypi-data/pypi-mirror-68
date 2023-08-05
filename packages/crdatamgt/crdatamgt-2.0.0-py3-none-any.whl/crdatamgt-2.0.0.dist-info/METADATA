@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: crdatamgt
+Version: 2.0.0
+Summary: Chemistry research data management application
+Author: Michael Jaquier
+Author-email: michael.jaquier@contracted.pmi.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: openpyxl (>=3.0.3,<4.0.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: simplelogging (>=0.10.0,<0.11.0)
+Requires-Dist: toolz (>=0.10.0,<0.11.0)
+Requires-Dist: xlsxwriter (>=1.2.8,<2.0.0)
