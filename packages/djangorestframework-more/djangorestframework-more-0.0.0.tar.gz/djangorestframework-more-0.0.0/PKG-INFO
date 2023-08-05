@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: djangorestframework-more
+Version: 0.0.0
+Summary: More Cool Django Rest Framework Stuff
+Home-page: https://github.com/DanielJDufour/djangorestframework-more
+Author: Daniel J. Dufour
+Author-email: daniel.j.dufour@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/DanielJDufour/djangorestframework-more/tarball/download
+Description: # django-rest-framework-more
+        More Cool Django Rest Framework Stuff
+        
+Keywords: csv,django,django-rest-framework,drf,djangorestframework-csv
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
