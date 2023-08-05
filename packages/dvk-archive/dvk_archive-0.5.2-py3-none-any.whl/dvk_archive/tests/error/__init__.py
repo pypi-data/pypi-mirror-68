@@ -1,0 +1,1 @@
+"""Defines error package."""

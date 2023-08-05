@@ -1,0 +1,7 @@
+[console_scripts]
+dvk-archive-test = dvk_archive.tests.unit_all:main
+dvk-missing-media = dvk_archive.error.missing_media:main
+dvk-rename = dvk_archive.reformat.rename_files:main
+dvk-same-ids = dvk_archive.error.same_ids:main
+dvk-unlinked = dvk_archive.error.unlinked:main
+
