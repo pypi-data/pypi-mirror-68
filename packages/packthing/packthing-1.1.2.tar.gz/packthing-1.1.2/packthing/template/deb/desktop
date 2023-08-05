@@ -1,0 +1,10 @@
+[Desktop Entry]
+Exec=${FILENAME}
+Icon=/usr/share/pixmaps/${ICON}.png
+Terminal=false
+Type=Application
+Categories=${CATEGORIES}
+StartupNotify=true
+Name=${NAME}
+GenericName=${TAGLINE}
+Comment=${DESCRIPTION}
