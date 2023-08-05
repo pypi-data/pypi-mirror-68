@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: ai-transformersx
+Version: 0.1.5
+Summary: A project for downloading pretrained model of huggingface easily
+Home-page: https://github.com/aicanhelp/ai-transformers
+Author: modongsong
+Author-email: modongsongml@163.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/aicanhelp/ai-transformersx/issues
+Project-URL: Source, https://github.com/aicanhelp/ai-transformersx/
+Keywords: deeplearning tools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# ai-transformers
+
+A trick for downloading pretrained models from huggingface easily, especially in China.  
+
+
+Because it's hard to download the pretrained models from huggingface, especially in China, here tries to use a trick to 
+solve this problem.  
+
+For personal, Aliyun is free to build the docker image, typically, the image building can use the overseas machine 
+to build the docker image. So when the image is built by the overseas machine, it can download the pretrained models from
+huggingface fastly.  
+
+After the image is built, the image can be pull from Aliyun fastly. And then the pretrained models can be take from the docker image.
+
+
+
