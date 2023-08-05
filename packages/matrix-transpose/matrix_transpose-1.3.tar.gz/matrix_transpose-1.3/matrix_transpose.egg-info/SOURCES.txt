@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+matrix_transpose/__init__.py
+matrix_transpose/transpose_without_numpy.py
+matrix_transpose.egg-info/PKG-INFO
+matrix_transpose.egg-info/SOURCES.txt
+matrix_transpose.egg-info/dependency_links.txt
+matrix_transpose.egg-info/top_level.txt
