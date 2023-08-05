@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: simple-mailer
+Version: 0.9.6
+Summary: A simple mailer for web forms
+Home-page: https://github.com/zedr/simple-mailer
+Author: Rigel Di Scala
+Author-email: zedr@zedr.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bottle (==0.12.18)
+Requires-Dist: lxml (==4.5.0)
+Requires-Dist: jinja2 (==2.11.2)
+
+# Simple Mailer
+A simple Python mailer script that's suitable for Namecheap Shared Hosting.
+
+[![Build Status](https://travis-ci.com/zedr/simple-namecheap-mailer.svg?branch=master)](https://travis-ci.com/zedr/simple-namecheap-mailer)
+
+
