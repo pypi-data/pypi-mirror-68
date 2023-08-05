@@ -1,0 +1,13 @@
+musicftdl/__init__.py,sha256=LwJOSeiWJy_-YinUFjBzl3pcgLt_LGzbLDv8fLnmDgg,139
+musicftdl/cli.py,sha256=AqBSZrYKGKsoQtA4rDqmHh4YDaO-2Xv3ljMyfFz4HLY,5419
+musicftdl/id3_genres.py,sha256=Hb-v52wAeaqgj91Xit3k8bqD7j4wOcYjrAl9kikDFNI,5094
+musicftdl/models.py,sha256=6oMb8gCLdhrXSjY4hdzq0opHMABXkuuqW6SQe8HtIig,6299
+musicftdl/musicftdl.py,sha256=AIVe_3rQjd8UzWVs9JaMAuxQoWW9eOY8A5HnRfvlSwE,10516
+musicftdl/utils.py,sha256=S9YJYZYzkOSU_cA4GcSMUckDYncQXFt_TcCTK4wNaho,2258
+musicftdl-0.1.0a0.dist-info/AUTHORS.rst,sha256=YLgvv6B2gvcL6rXFGHA108isjdUswEvr0meq-01ZgRw,151
+musicftdl-0.1.0a0.dist-info/LICENSE,sha256=HsiW1ZgNAxB0MzfhIIB7oIdM0gPudhBk__R_d3ISCrk,1069
+musicftdl-0.1.0a0.dist-info/METADATA,sha256=T-gh0chhF6ILKVbzXAIk-_9RCzsOfT52gK-5AOQHFQE,1995
+musicftdl-0.1.0a0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+musicftdl-0.1.0a0.dist-info/entry_points.txt,sha256=TsnC0WFQZ-FJas0rMAlvXy5wY7fQLxxOHVTogh3RxtU,49
+musicftdl-0.1.0a0.dist-info/top_level.txt,sha256=i1h4dFzNao5Hr-rdYbRveSflC9_ldTKUuB1IC3PcDZA,10
+musicftdl-0.1.0a0.dist-info/RECORD,,
