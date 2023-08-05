@@ -1,0 +1,6 @@
+[console_scripts]
+wandbox = wandbox.__main__:main
+wandbox-clang++ = wandbox.__cxx__:clang
+wandbox-cxx = wandbox.__cxx__:main
+wandbox-g++ = wandbox.__cxx__:gcc
+
