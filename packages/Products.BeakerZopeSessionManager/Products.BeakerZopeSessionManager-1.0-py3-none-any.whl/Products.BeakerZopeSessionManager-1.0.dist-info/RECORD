@@ -1,0 +1,13 @@
+Products.BeakerZopeSessionManager-1.0-py3.7-nspkg.pth,sha256=nq2GLEDBKV9G0i4LEhkEEQT0gMqQlG1ToxVfs90lBMs,549
+Products/BeakerZopeSessionManager/BeakerPermissions.py,sha256=wEkry-e-uwC-bm32PBieD3xczCM780a6F2R_p8wICtY,368
+Products/BeakerZopeSessionManager/BeakerSessionManager.py,sha256=ITDoP8lsPeP78H-aeK54_OHS4qdLWvEDCQItm7Vu1BI,3832
+Products/BeakerZopeSessionManager/Interfaces.py,sha256=wlk9VjMk5UezYFBGfn4tpRuSYgZS8Cr8o3eoLPHuxdM,3208
+Products/BeakerZopeSessionManager/SessionObject.py,sha256=yQAIWC2-hduSNFc5a_Xg5QeIcxY54R5DgbnnIHYBGqo,2059
+Products/BeakerZopeSessionManager/SessionTraversal.py,sha256=XsCKVdxNLwHfJtBTc7-tWRiHfDxUYpCn_s9DFzl7Zzw,1167
+Products/BeakerZopeSessionManager/__init__.py,sha256=FiczIPZAMi-lJsQzP2OociznmdqAbDCj0bwNpL8s0XI,977
+Products.BeakerZopeSessionManager-1.0.dist-info/LICENSE.txt,sha256=GKT4F0NDbMCvA9oNBldFHYVNbCZoxU7O7e80zvPwloo,1076
+Products.BeakerZopeSessionManager-1.0.dist-info/METADATA,sha256=obYuzAe-szFc2JSnUCWx_dlnL5-t1EW0HqWaVP94S1g,2650
+Products.BeakerZopeSessionManager-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Products.BeakerZopeSessionManager-1.0.dist-info/namespace_packages.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.BeakerZopeSessionManager-1.0.dist-info/top_level.txt,sha256=UgMr3LVXWHS9vjnxTk8VOZd7xxgBn5T02HOaMRXjjTM,9
+Products.BeakerZopeSessionManager-1.0.dist-info/RECORD,,
