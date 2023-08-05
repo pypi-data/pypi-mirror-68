@@ -1,0 +1,3 @@
+[console_scripts]
+bsam = bsamcli.cli.main:cli
+
