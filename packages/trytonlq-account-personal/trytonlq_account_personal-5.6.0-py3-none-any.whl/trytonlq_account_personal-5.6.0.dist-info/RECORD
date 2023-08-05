@@ -1,0 +1,12 @@
+trytond/modules/account_personal/__init__.py,sha256=ozX6l_BD1qeUDVuiTSt6hsEp-9fyG6xBAOrcK5REJBc,209
+trytond/modules/account_personal/account_personal.xml,sha256=XW5SNpOxXbR8Udx5Qn38m5g6TRAIi_m1XN_9agniH08,38510
+trytond/modules/account_personal/tryton.cfg,sha256=5jlrS2NOweKqJOMx78fSsWyw2A3Zuw9ZgsduaQsG_bM,81
+trytond/modules/account_personal/tests/__init__.py,sha256=qrrgC0-UZco6BEhKiIhPFVsvJFuCX6xq-6pnGJSk8bM,397
+trytond/modules/account_personal/tests/test_account_personal.py,sha256=0z9yn5ms2D60B7eYW3p7HNCINjKpSULT2u4YHl8iiaI,569
+trytonlq_account_personal-5.6.0.dist-info/DESCRIPTION.rst,sha256=vsYNJj5QLYklKGaWh5ba8GnbWeNeD-fz0YFNjKAQxb0,288
+trytonlq_account_personal-5.6.0.dist-info/METADATA,sha256=eMl9YVS-ZyUE10WJTxwgiNaz3B3Jt3o7_1GpCI0UPpc,1796
+trytonlq_account_personal-5.6.0.dist-info/RECORD,,
+trytonlq_account_personal-5.6.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+trytonlq_account_personal-5.6.0.dist-info/entry_points.txt,sha256=Szu7AHzJPAux7Bk0-SzAny7jUuSSQz5OdhvqhOVuJSw,83
+trytonlq_account_personal-5.6.0.dist-info/metadata.json,sha256=sBliKR97jYSx-mLwMk5ZZLA4Fbk9bqgG7edMiG_JLSg,1659
+trytonlq_account_personal-5.6.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
