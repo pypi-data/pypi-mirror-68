@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: macapype
+Version: 0.1.1
+Summary: Pipeline for anatomic processing for macaque
+Home-page: UNKNOWN
+Author: David Meunier, Bastien Cagna
+Author-email: UNKNOWN
+License: BSD 3
+Platform: UNKNOWN
+Requires-Dist: nipype
+Requires-Dist: networkx (>=2.0)
+Requires-Dist: pybids
+
+UNKNOWN
+
+
