@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ghostipy
+Version: 0.0.1
+Summary: Signal processing and spectral analysis toolbox
+Home-page: UNKNOWN
+Author: Joshua Chu
+Author-email: jpc6@rice.edu
+License: Apache License
+Description: UNKNOWN
+Keywords: neuroscience spectral analysis
+Platform: any
