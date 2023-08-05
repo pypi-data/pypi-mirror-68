@@ -1,0 +1,11 @@
+contextualSpellCheck/__init__.py,sha256=tlbGsON0hQfEDHtPTZ5Ft0XWVryntKTIv_6UfzBAHk4,251
+contextualSpellCheck/contextualSpellCheck.py,sha256=8OBVf8Gmmm3KYVzwXah8EFAe8Te4qvPOc3t-FMCPWeU,14415
+contextualSpellCheck/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contextualSpellCheck/tests/test_contextualSpellCheck.py,sha256=Mx78hWqFU7_yW9jm3ETVL9jaPlUl8Lwnk3i6v21tb4w,12415
+spellCheck/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spellCheck/spellCheck.py,sha256=1LuridRuYOJvLljOtau9t3muFYSq1OhMy0uVIMd68Go,12861
+contextualSpellCheck-0.0.1.dist-info/LICENSE,sha256=VNKFHlKvB2nvHzvY4vSm4p1bghaxxHXQ8H8YoHq51o8,1067
+contextualSpellCheck-0.0.1.dist-info/METADATA,sha256=zoFuJmFBSvLUrkbwvAG59yTeeMmELNsu4SqCdi16IHc,5787
+contextualSpellCheck-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+contextualSpellCheck-0.0.1.dist-info/top_level.txt,sha256=4wa6eOw93zQr41-ZWR1w_KOBrEBaWJXy_4aURGEI-J0,21
+contextualSpellCheck-0.0.1.dist-info/RECORD,,
