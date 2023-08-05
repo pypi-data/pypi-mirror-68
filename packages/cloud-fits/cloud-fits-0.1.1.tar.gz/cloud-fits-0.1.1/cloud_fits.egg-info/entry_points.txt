@@ -1,0 +1,3 @@
+[console_scripts]
+cloud-fits-index = cloud_fits.fits_index.factory:run_from_cli
+
