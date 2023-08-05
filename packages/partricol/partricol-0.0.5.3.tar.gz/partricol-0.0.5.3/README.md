@@ -1,0 +1,88 @@
+# PARTRICOL
+
+## making this pkg available on pypi
+0. install some tools, once for all
+```
+python3 -m pip install --user --upgrade setuptools wheel twine
+```
+1. generate the package for uploading
+```
+python3 setup.py sdist bdist_wheel
+```
+change the version number every time for new versions in the `setup.py`
+
+2. upload the package
+```
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/partricol-0.0.X.tar.gz
+```
+Replace 'X' witht the correct version number. The 0.0.1 was deleted (I tried to remove the project), and it will never come back...
+
+You can also upload to the testpy first for checking if everything fine:
+```
+twine upload --repository testpypi dist/partricol-0.0.X.tar.gz
+```
+
+## installation
+```
+pip install --user partricol
+```
+
+## update
+```
+pip install partricol --upgrade --user
+```
+
+## Usage
+
+### cypar: reading mine-style parameter files
+The original package is at https://pypi.org/project/cypar/
+```
+from partricol import cypar
+test=cypar.read('test.par')
+```
+
+### def_par_trilegal and write_par_trilegal
+```
+from partricol import tripar
+test1=tripar.def_par_trilegal()
+print(test1.tri.output_kind)
+   #to change the values
+
+tripar.write_par_trilegal(test1.cmd, 'cmd.par', test1.tri, 'tri.par') #which writes 'cmd.par' and 'tri.par'
+```
+
+### run_trilegal
+```
+from partricol import tripar
+tripar.run_trilegal('S_002_phat_regions_M08.par','./main','.fits')
+```
+where `./main` is the trilegal executable.
+
+### colibri2trilegal
+```
+from partricol.colibri2trilegal.colibri2trilegal_cycy_noeagb import colibri2trilegal
+#besides colibri2trilegal_cycy_noeagb the other options are colibri2trilegal_phil, colibri2trilegal_cycy_eagb, colibri2trilegal_cycy_noeagb_fake
+from partricol.colibri2trilegal.def_par_colibri2trilegal import def_par_colibri2trilegal
+from partricol.colibri2trilegal.write_par_colibri2trilegal import write_par_colibri2trilegal
+s=def_par_colibri2trilegal()
+
+   #to change the values
+
+write_par_colibri2trilegal(s,'test.inp')
+colibri2trilegal('test.inp')
+```
+
+
+### parcol
+```
+from partricol import parcol
+parcol.parcol(exe="../isotracks/code/revisegrid/main",parsec_dbert_dir="../isotracks/isotrack_parsec/CAF09_V1.2S_M36_S12D_NS_MAS3/dbert_comp",inpdir="./INP",indir="./S_035",outdir="isotrack_parcol/CAF09_V1.2S_M36_S12D_NS_MAS3/dbert_comp035",outfile="isotrack_parcol/CAF09_V1.2S_M36_S12D_NS_MAS3_parcol_comp035.dat")
+```
+
+
+### match2trilegal
+```
+from match2trilegal import process_match_sfh, process_match_popbox
+sfr_match=glob.glob(os.path.join(sfr_dir,region,'region_'+region+'.optir'+quartile+'_*.popbox'))
+process_match_popbox(sfr_match, outfile=sfr_tri)
+```
