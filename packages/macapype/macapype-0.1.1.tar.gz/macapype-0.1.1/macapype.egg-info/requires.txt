@@ -1,0 +1,3 @@
+nipype
+networkx>=2.0
+pybids
