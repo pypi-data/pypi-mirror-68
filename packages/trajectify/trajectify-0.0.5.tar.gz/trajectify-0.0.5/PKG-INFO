@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: trajectify
+Version: 0.0.5
+Summary: A python package to create continuous quintic hermite splines out of user-selected points.
+Home-page: https://github.com/adham-elarabawy/trajectify
+Author: Adham Elarabawy
+Author-email: adhamelarabawy@gmail.com
+License: UNKNOWN
+Description: # trajectify
+        A python package to create continuous quintic hermite splines out of user-selected points.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
