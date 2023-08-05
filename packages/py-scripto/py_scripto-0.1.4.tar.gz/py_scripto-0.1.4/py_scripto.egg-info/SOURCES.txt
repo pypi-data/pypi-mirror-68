@@ -1,0 +1,9 @@
+README.md
+setup.py
+py_scripto/__init__.py
+py_scripto/sqlserver.py
+py_scripto.egg-info/PKG-INFO
+py_scripto.egg-info/SOURCES.txt
+py_scripto.egg-info/dependency_links.txt
+py_scripto.egg-info/requires.txt
+py_scripto.egg-info/top_level.txt
