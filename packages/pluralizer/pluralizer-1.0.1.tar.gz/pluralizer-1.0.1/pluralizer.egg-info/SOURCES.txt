@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pluralizer/__init__.py
+pluralizer/pluralizer.py
+pluralizer/pluralizer_rules.py
+pluralizer.egg-info/PKG-INFO
+pluralizer.egg-info/SOURCES.txt
+pluralizer.egg-info/dependency_links.txt
+pluralizer.egg-info/top_level.txt
