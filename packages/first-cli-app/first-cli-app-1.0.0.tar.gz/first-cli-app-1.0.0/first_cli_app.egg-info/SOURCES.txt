@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+.github/README.md
+first_cli_app.egg-info/PKG-INFO
+first_cli_app.egg-info/SOURCES.txt
+first_cli_app.egg-info/dependency_links.txt
+first_cli_app.egg-info/entry_points.txt
+first_cli_app.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/module.py

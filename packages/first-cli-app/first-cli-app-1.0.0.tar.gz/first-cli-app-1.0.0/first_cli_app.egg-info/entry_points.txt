@@ -1,0 +1,3 @@
+[console_scripts]
+my-app = src.__main__:cli
+
