@@ -1,0 +1,19 @@
+[build-system]
+requires = ['flit_core >=2,<4']
+build-backend = 'flit_core.buildapi'
+
+[tool.flit.metadata]
+module = 'uptodate'
+author = 'Paweł Jastrzębski'
+author-email = 'pj@napcode.eu'
+home-page = 'https://gitlab.com/havk/uptodate'
+classifiers = ['License :: OSI Approved :: MIT License']
+requires = [
+    'click==7.1.2',
+    'requests==2.23.0',
+    'rich==1.0.0',
+]
+keywords = 'requirements, requirements.txt, uptodate'
+
+[tool.flit.scripts]
+uptodate = 'uptodate.cli:up_to_date'
