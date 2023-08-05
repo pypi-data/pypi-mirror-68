@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: common_francis-francis95-han
+Version: 0.0.0.2
+Summary: python common_francis package
+Home-page: https://github.com/francis95-han/common-francis95-han
+Author: francis95-han
+Author-email: zhangbohan.dell@gmail.com
+License: MIT
+Description: # common-francis95-han
+        python comon package 
+        
+        + annotation  
+        + log
+        
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
