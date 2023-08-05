@@ -1,0 +1,60 @@
+#!/usr/bin/env python
+from docopt import docopt
+import configparser, docker, json
+
+usage = '''
+Usage: main (-f | --filter) <filter>
+       main (-h | --help)
+
+
+Options:
+ - h --help   Show helptext
+ - f --filter the filter defined in key=value format e.g. app=backend
+'''
+
+#Create a Class Template for storing the data and returning the concatenated string
+class ResponseEntity(object):
+    status = 0
+    statSum = 0
+    description = ""
+
+    # The class "constructor" - It's actually an initializer
+    def __init__(self, status, statSum, description):
+        self.status = status
+        self.statSum = statSum
+        self.description = description
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+#Get Docker from localhost
+client = docker.from_env()
+
+containers = client.containers
+
+def interpretArguments(arguments):
+    if(arguments['<filter>']):
+
+        mem_usage = 0
+        mem_limit = 0
+        try:
+            for container in containers.list(filters = {"label":arguments['<filter>']}):
+                if container:
+                    stats = container.stats(stream=False)
+
+                    mem_usage += stats["memory_stats"]["usage"]
+                    mem_limit += stats["memory_stats"]["limit"]
+
+            if mem_usage >0 and mem_limit > 0:
+                return ResponseEntity(200, round(int(mem_usage)*100/int(mem_limit), 2), "success").toJSON()
+            else:
+                return ResponseEntity(404, 999, "no containers found.").toJSON()
+        except docker.errors.NotFound as e:
+            return ResponseEntity(404, 999, str(e)).toJSON()
+
+    else:
+        return ResponseEntity(404, 999, "argument not given").toJSON()
+
+if __name__ == '__main__':
+    args = docopt(usage)
+    print(interpretArguments(args))
