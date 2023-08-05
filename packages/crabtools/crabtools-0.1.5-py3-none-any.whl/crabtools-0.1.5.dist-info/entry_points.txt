@@ -1,0 +1,3 @@
+[console_scripts]
+crab = crab.cli:main
+

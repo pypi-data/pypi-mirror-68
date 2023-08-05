@@ -1,0 +1,10 @@
+crab/__init__.py,sha256=rPSfWgIeq2YWVPyESOAwCBt8vftsTpIkuLAGDEzyRQc,22
+crab/__main__.py,sha256=u5TSppmykJYek03hkIDbzxUqQxeV4d_TkNIz5Mbs5uI,34
+crab/cli.py,sha256=z6HaWipJ2hAiT2Pvh7QHs6d07FJSChdEljZsYxxjcFk,2660
+crab/router.py,sha256=sSRb6Vfi7oVrdh8TFJ5FNZaa7wTNGN0GJq7-WRmiUvY,2162
+crabtools-0.1.5.dist-info/LICENSE,sha256=gcx34ycwXz-bgi2AK0tziF_8izHDa4LjDN4QHi9HdX8,1290
+crabtools-0.1.5.dist-info/METADATA,sha256=T1ymwban7cZ4ltiVfJcYVoI7WgSxXJCke8TJDRiON2g,8332
+crabtools-0.1.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+crabtools-0.1.5.dist-info/entry_points.txt,sha256=Hnxdmaj6ySM5fcHmd-YbAxRELokleVyhAB98-uOFcKk,40
+crabtools-0.1.5.dist-info/top_level.txt,sha256=eCa3CMZmAI0HWZDehhoJ5N5YSrAyI5FRdowmFQKQo4Y,5
+crabtools-0.1.5.dist-info/RECORD,,
