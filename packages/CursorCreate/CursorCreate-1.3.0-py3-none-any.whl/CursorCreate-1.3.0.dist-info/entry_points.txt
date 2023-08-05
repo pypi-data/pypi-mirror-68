@@ -1,0 +1,3 @@
+[console_scripts]
+CursorCreate = CursorCreate.cursorcreate:main
+
