@@ -1,0 +1,3 @@
+[console_scripts]
+azure-nag = azure_nag.main:main
+
