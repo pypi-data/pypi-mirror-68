@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: IOTAssignmentServerdorachua
+Version: 0.0.19
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Dora Chua
+Author-email: msdorachua@gmail.com
+License: UNKNOWN
+Description: This is a simple package created by **Dora Chua** on *07 May 2020* for ST0324 IOT assignment.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
