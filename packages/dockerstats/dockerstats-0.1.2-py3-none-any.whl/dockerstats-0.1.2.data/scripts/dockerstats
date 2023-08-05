@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+from docopt import docopt
+import configparser, docker, json
+
+usage = '''
+Usage: main <containernames>...
+       main (-h | --help)
+
+
+Options:
+ - h --help   Show helptext
+
+Arguments:
+containersnames  fill in the containernames without comma e.g main container-a container-b
+'''
+
+#Create a Class Template for storing the data and returning the concatenated string
+class ResponseEntity(object):
+    status = 0
+    statSum = 0
+    description = ""
+
+    # The class "constructor" - It's actually an initializer
+    def __init__(self, status, statSum, description):
+        self.status = status
+        self.statSum = statSum
+        self.description = description
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+#Get Docker from localhost
+client = docker.from_env()
+
+containers = client.containers
+
+def interpretArguments(arguments):
+    if(arguments['<containernames>']):
+
+        mem_usage = 0
+        mem_limit = 0
+        try:
+            for c in arguments['<containernames>']:
+                container = containers.get(c)
+                stats = container.stats(stream=False)
+
+                mem_usage += stats["memory_stats"]["usage"]
+                mem_limit += stats["memory_stats"]["limit"]
+
+            return ResponseEntity(200, round(int(mem_usage)*100/int(mem_limit), 2), "success").toJSON()
+        except docker.errors.NotFound as e:
+            return ResponseEntity(404, 999, str(e)).toJSON()
+
+    else:
+        return ResponseEntity(404, 999, "argument not given").toJSON()
+
+if __name__ == '__main__':
+    args = docopt(usage)
+    print(interpretArguments(args))
