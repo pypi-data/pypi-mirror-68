@@ -1,0 +1,11 @@
+screengrid/__init__.py,sha256=mGve84zOms15pl6Y0JPQlhZIBqyJjcf_LERQnK0VqAI,32
+screengrid/grid.py,sha256=4CIVy4dsQ-HNLZQwMd-zemjfEKmBp_U4iFSyKF0hZ9Y,3587
+screengrid/main.py,sha256=ik_vGcC09ddtL9F4F4HWCeoMv2VcgOP7MlYTBSEBVTc,320
+screengrid/rectangle.py,sha256=3qK3oaVsYId-fowx-8SH0q5Izx982OtK35cTbmdIsws,653
+screengrid/screencanvas.py,sha256=F3e92hPG6CxFUlU2ngzVslQk3Dx9J7U1XetJUnwdf7Q,5638
+screengrid/win32_contants.py,sha256=p9WVC6wLn596ZtG1kwywrfzqpu8_1lFxrzEchz2Bi3Y,2410
+screengrid-0.0.16.dist-info/LICENSE,sha256=fQQNacbOKz0COI7CQ4b8NNUpJyCH1frHcUJZDqY8VMI,1078
+screengrid-0.0.16.dist-info/METADATA,sha256=Bev5DtM6ID3l577Y0WA_S_3c7sexRdwYA3lal9W4rto,577
+screengrid-0.0.16.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+screengrid-0.0.16.dist-info/top_level.txt,sha256=xdTPFraZC5yb3oqcjA3Cy2yC5SwNCpmeUR31srR4VI0,11
+screengrid-0.0.16.dist-info/RECORD,,
