@@ -1,0 +1,9 @@
+flickr_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flickr_pkg/__main__.py,sha256=0rq4M-vreitoo1b2xbO5gwJ1EqnmJuqVOl3UCOhgyKs,1302
+flickr_pkg/flickr.py,sha256=p180w86-Wi7hv7RlRe4SggIAYfpVeFTqq8QiS2PW-nA,41086
+flickr_pkg/language_json.py,sha256=lAEskiK4tDCh4-2A9IMEokvQ4cItj9qW8M_Lkr7ETw4,7120
+flickr_minh_quoc-1.0.1.dist-info/METADATA,sha256=m8oiQg6f3IDRVejgnXSaQAUnprdXJb-LT-EttVQqdoQ,65581
+flickr_minh_quoc-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flickr_minh_quoc-1.0.1.dist-info/entry_points.txt,sha256=oJJkLTMOyBTyBUVEf5wbTABJiifPUOcMebhdjx7Nl6Q,60
+flickr_minh_quoc-1.0.1.dist-info/top_level.txt,sha256=xWwLsF31seVZnNG1uXE2PWM3Oq6S-xnwJA0e_UiCNO4,11
+flickr_minh_quoc-1.0.1.dist-info/RECORD,,
