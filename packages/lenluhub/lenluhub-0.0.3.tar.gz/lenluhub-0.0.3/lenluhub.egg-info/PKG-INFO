@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: lenluhub
+Version: 0.0.3
+Summary: lenluhub
+Home-page: https://gitlab.lenovo.com/moli
+Author: yangst2
+Author-email: yangst2@lenovo.com
+Maintainer: yanst2
+Maintainer-email: yangst2@lenovo.com
+License: MIT
+Description: Nothing to say.
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
