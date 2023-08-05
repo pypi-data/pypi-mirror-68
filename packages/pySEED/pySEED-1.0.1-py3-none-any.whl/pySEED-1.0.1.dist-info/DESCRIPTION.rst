@@ -1,0 +1,3 @@
+pySEED-EDA is a Python implementation of the Symmetric-Approximation Energy-Based Estimation of Distribution (SEED) algorithm: A Continuous Optimization Algorithm , which allows the optimization in continuous space for independent variable functions, based on distribution estimation algorithms, in the Univariate Marginal Distribution scheme [2], the main idea is to make a generational change in each population evolution under the Boltzmann distribution probability function (PDF-B), because PDF-B is a function that has the property that states with less energy are unlikely, so SEED converges in each evolution to a better or equal energy state.
+
+
