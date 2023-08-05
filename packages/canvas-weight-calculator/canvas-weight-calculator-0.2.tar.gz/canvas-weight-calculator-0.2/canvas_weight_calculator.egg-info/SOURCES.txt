@@ -1,0 +1,12 @@
+README.rst
+gamification.py
+setup.cfg
+setup.py
+canvas_weight_calculator.egg-info/PKG-INFO
+canvas_weight_calculator.egg-info/SOURCES.txt
+canvas_weight_calculator.egg-info/dependency_links.txt
+canvas_weight_calculator.egg-info/entry_points.txt
+canvas_weight_calculator.egg-info/requires.txt
+canvas_weight_calculator.egg-info/top_level.txt
+test/__init__.py
+test/test_weight_calculator.py
