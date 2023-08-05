@@ -1,0 +1,15 @@
+aiohttp_rest_framework/__init__.py,sha256=zta9FhGpvx7Brqvo949Dj4PEe-KROayrHYc-T5qW2gY,509
+aiohttp_rest_framework/db.py,sha256=0mGeP8iFa4DhHCmSPMGHYttRUbIbTKpdQ2YIy-LeJ1I,3684
+aiohttp_rest_framework/exceptions.py,sha256=5gznuqdsixu30pm2Owet_jXHdUximgEglHvyQbqyAK8,1139
+aiohttp_rest_framework/fields.py,sha256=p4WMaDtlydGEWRmImLvdGUcPfFvlEwPiCjiMUGYkXn0,9875
+aiohttp_rest_framework/mixins.py,sha256=ORPsMgEqO2Bne7zZxh5EVSCeSEaSjgsh1s5JMUh4URE,2035
+aiohttp_rest_framework/serializers.py,sha256=uuiU55b7XCCbScZkPKSDv4-PU0sgh7QUaFGEXQlg1xY,9433
+aiohttp_rest_framework/settings.py,sha256=A096sDhBrA_TDBsQd7U_p6Mc_ONaD1NYdM8H8VmW8KA,2363
+aiohttp_rest_framework/types.py,sha256=fEvNsI96xvOcwxOVlGoIZSpNMlq_dPafrLlc8lLvDd4,613
+aiohttp_rest_framework/utils.py,sha256=mVI-KmQjgcxLpnHCdc4Qhx0cIMfAm0m7wQwZdKgDfDw,1642
+aiohttp_rest_framework/views.py,sha256=urmqymZvnHqjVSYNE_iKQso0LUOKJiI93vctD47dDw4,5623
+aiohttp_rest_framework-0.0.2a0.dist-info/LICENCE,sha256=hxDJOqnuMoWQN_WYJprG7eIdN-3Z43bGEQFU_AWRg84,1070
+aiohttp_rest_framework-0.0.2a0.dist-info/METADATA,sha256=z-rs6dwcCJ0e3ZpMJiAIFDVqTO18QioK_IUYoq1_2GA,4853
+aiohttp_rest_framework-0.0.2a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aiohttp_rest_framework-0.0.2a0.dist-info/top_level.txt,sha256=89S2xu0qQSgn3QPrHDXhKxC_cntm1HoLIgm7f1h3SE0,23
+aiohttp_rest_framework-0.0.2a0.dist-info/RECORD,,
