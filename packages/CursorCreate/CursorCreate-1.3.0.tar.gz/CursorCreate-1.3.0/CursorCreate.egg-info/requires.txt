@@ -1,0 +1,6 @@
+CairoSVG
+Pillow
+numpy
+
+[gui]
+PySide2
