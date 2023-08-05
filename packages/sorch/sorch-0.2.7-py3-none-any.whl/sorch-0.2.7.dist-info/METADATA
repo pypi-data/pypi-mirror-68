@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sorch
+Version: 0.2.7
+Summary: Simple PyTorch utils, yet another package :)
+Home-page: https://github.com/PiotrDabkowski/sorch
+Author: Piotr Dabkowski
+Author-email: piodrus@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+Simple PyTorch utils, yet another package.
+This one is mostly for my personal applications.
+
