@@ -1,0 +1,7 @@
+jinja2
+teradataml
+requests
+pyyaml
+pathlib
+findspark
+gitpython
