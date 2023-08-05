@@ -1,0 +1,4 @@
+Pygments
+uncurl
+requests
+setuptools
