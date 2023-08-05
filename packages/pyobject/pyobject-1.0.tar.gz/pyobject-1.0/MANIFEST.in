@@ -1,0 +1,5 @@
+include README.rst
+include setup.py
+include pyobject/images/*
+include pyobject/*
+include pyobject.egg-info/*

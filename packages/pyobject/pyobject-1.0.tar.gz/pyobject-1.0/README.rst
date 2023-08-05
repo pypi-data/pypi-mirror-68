@@ -1,0 +1,24 @@
+pyobject - 一个Python对象浏览器模块。A python object browser with tkinter and command-lines.
+
+所包含模块 Included modules: 
+============================
+
+browse.py - 以图形方式浏览Python对象
+""""""""""""""""""""""""""""""""""""
+包含的函数 Functions:
+
+desc(object,maxlevel=1,tab=4,verbose=False)::
+
+    "描述"一个对象,即打印出对象的各个属性。
+    参数说明:
+    maxlevel:打印对象属性的层数。
+    tab:缩进的空格数,默认为4。
+    verbose:一个布尔值,是否打印出对象的特殊方法(如__init__)。
+
+browse(object,verbose=False)::
+
+    以图形方式浏览一个Python对象。
+    verbose:与describe相同,是否打印出对象的特殊方法(如__init__)
+
+作者 Author:
+*七分诚意 qq:3076711200 邮箱:3416445406@qq.com*
