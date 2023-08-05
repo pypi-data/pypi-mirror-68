@@ -1,0 +1,36 @@
+environment:
+  COVERALLS_PARALLEL: true
+  COVERALLS_REPO_TOKEN:
+    secure: dZWaKkr6xvP+aDksWLreF0p0L7LLiybUY2bUgGAqc3m/uVWHszncQcsXe5X1+rrf
+  matrix:
+    - PYTHON: "C:\\Python36-x64"
+      TOXENV: py36
+      PYTEST_ADDOPTS: ""
+    - PYTHON: "C:\\Python37-x64"
+      TOXENV: py37
+      PYTEST_ADDOPTS: ""
+    - PYTHON: "C:\\Python38-x64"
+      TOXENV: py38
+      PYTEST_ADDOPTS: ""
+
+install:
+  - "%PYTHON%\\python.exe -m pip install wheel tox"
+  - "%PYTHON%\\python.exe -m pip install codecov coveralls"
+
+build: off
+
+test_script:
+  - "%PYTHON%\\python.exe -m tox"
+
+after_test:
+  - ps: |
+      "%PYTHON%\\python.exe setup.py bdist_wheel"
+      if ($LastExitCode -ne 0) { $host.SetShouldExit($LastExitCode)  }
+      "%PYTHON%\\Scripts\\codecov -X gcov pycov search --file coverage.xml --flags %TOXENV:-= % windows"
+      "%PYTHON%\\Scripts\\coverage xml --ignore-errors"
+
+artifacts:
+  - path: dist\*
+
+matrix:
+  fast_finish: false
