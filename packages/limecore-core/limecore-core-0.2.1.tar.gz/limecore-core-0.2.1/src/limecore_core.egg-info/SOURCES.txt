@@ -1,0 +1,8 @@
+README.rst
+setup.py
+src/limecore/core/rollback_exception.py
+src/limecore/core/types.py
+src/limecore_core.egg-info/PKG-INFO
+src/limecore_core.egg-info/SOURCES.txt
+src/limecore_core.egg-info/dependency_links.txt
+src/limecore_core.egg-info/top_level.txt
