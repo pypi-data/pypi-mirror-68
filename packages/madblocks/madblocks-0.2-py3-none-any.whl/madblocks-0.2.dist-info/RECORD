@@ -1,0 +1,11 @@
+madblocks/__init__.py,sha256=9qAeGf39Pp6tSrV-aLbH-EpLBQoA4O4DJ_bdPz4-qME,295
+madblocks/mbaws.py,sha256=2oH2id5FYHe5HmchLtukHD2p0x1Xbd0P_WMBZJVz8bs,2403
+madblocks/mbcloud.py,sha256=Fh36y0e43B4ziOAHQDdaSfXkjiWuYoK0-VsNBJ7MmG0,1369
+madblocks/mbibm.py,sha256=SLXzvjaY8b9Rt-acED-hwnFWHvQagIKwFnxV1t7q0mA,1093
+madblocks/mbmail.py,sha256=fgKxyUPAForrpcotDHC_JOTDk_qIIrX8L0EXbqtNjMU,1766
+madblocks/mbotp.py,sha256=rPEKXODXDmYmV0td_Xittg8IOXWMWj5GmV15nXMNL7g,153
+madblocks/thingspeak.py,sha256=ITzvxedQV4tx_z0ytUx2l2Uis2VZe4bW6N4qaVgM9NM,976
+madblocks-0.2.dist-info/METADATA,sha256=Zd1JE2b46kI_Ue4yMOsKcYV-kOpCMHQceMaNWzKo_PM,230
+madblocks-0.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+madblocks-0.2.dist-info/top_level.txt,sha256=dITH2RGcntUm_jH8ntxpJB-fo48g2zBxuHIv-xsUIkY,10
+madblocks-0.2.dist-info/RECORD,,
