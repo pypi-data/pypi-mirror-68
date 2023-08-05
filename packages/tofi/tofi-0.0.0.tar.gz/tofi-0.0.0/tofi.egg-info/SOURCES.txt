@@ -1,0 +1,7 @@
+README.md
+setup.py
+tofi/__init__.py
+tofi.egg-info/PKG-INFO
+tofi.egg-info/SOURCES.txt
+tofi.egg-info/dependency_links.txt
+tofi.egg-info/top_level.txt
