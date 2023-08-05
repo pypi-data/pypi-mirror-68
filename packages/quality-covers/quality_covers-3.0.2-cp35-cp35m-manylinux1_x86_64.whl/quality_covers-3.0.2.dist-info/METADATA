@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: quality-covers
+Version: 3.0.2
+Summary: Python Package with quality covers C++ extension
+Home-page: UNKNOWN
+Author: Nicolas Gros
+Author-email: nicolas.gros01@u-bourgogne.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Quality covers
+
+Quality covers is a pattern mining algorithm.
+
+# How to use
+
+```shell
+pip install --upgrade quality_covers
+```
+
+## Transactional file
+
+If your file looks like this
+
+chess.dat: 
+```
+1 3 5 7 10 
+1 3 5 7 10 
+1 3 5 8 9 
+1 3 6 7 9 
+1 3 6 8 9 
+```
+
+or
+
+```
+P30968
+P48551 P17181
+P05121 Q03405 P00747 P02671
+Q02643
+P48551 P17181
+```
+
+use
+
+```python
+import quality_covers
+
+quality_covers.run_classic_size("chess.dat", False)
+```
+
+## Binary file
+
+If your file looks like this
+
+chess.data: 
+```
+1 0 1 0 1 0 1 0 0 1
+1 0 1 0 1 0 1 0 0 1
+1 0 1 0 1 0 0 1 1 0
+1 0 1 0 0 1 1 0 1 0
+1 0 1 0 0 1 0 1 1 0
+```
+
+use
+
+```python
+import quality_covers
+
+quality_covers.run_classic_size("chess.data", True)
+```
+
+## Output of the functions
+
+The functions will create two files in current directory:
+- *chess.data.out*: the result file
+- *chess.data.clock*: information about time execution
+
+# Extract binary matrices
+
+You can obtain binary matrices by calling `extract_binary_matrices` on the output file
+
+```python
+quality_covers.extract_binary_matrices('chess.data.out')
+```
+
+# Optional arguments
+
+## Threshold coverage
+
+You can provide a threshold to the coverage.
+
+```python
+# 60% of coverage
+quality_covers.run_classic_size("chess.data", True, 0.6)
+```
+
+## Measures
+
+You can also ask for information about measures:
+- frequency
+- monocle
+- separation
+- object uniformity
+
+```python
+quality_covers.run_classic_size("chess.data", True, 0.6, True)
+```
+
+```
+3,4,9 ; 4,5,6,7,8#Object Uniformity=0.81944; Monocole=91.00000; Frequency=0.33333; Separation=0.48387
+2,9 ; 1,3,7#Object Uniformity=0.68750; Monocole=28.00000; Frequency=0.22222; Separation=0.27273
+1,6,9 ; 2,7#Object Uniformity=0.63889; Monocole=28.00000; Frequency=0.33333; Separation=0.31579
+# Mandatory: 0
+# Non-mandatory: 3
+# Total: 3
+# Coverage: 25/38(65.78947%)
+# Mean frequency: 0.29630
+# Mean monocole: 49.00000
+# Mean object uniformity: 0.71528
+# Mean separation: 0.35746
+```
+
+# Different algorithms
+
+There are currently four different algorithms:
+
+- `run_classic_size`
+- `run_approximate_size`
+- `run_fca_cemb_with_mandatory`
+- `run_fca_cemb_without_mandatory`
+
+
+# More info
+
+## Paper associated
+
+To come
+
+## Research lab
+
+- http://www.ciad-lab.fr/
+
+## More tools about association rules
+
+- https://marm.checksem.fr/api/ui/
+- https://app.marm.checksem.fr/
+
+## Authors
+
+Amira Mouakher (<amira.mouakher@u-bourgogne.fr>)
+Nicolas Gros (<nicolas.gros01@u-bourgogne.fr>)
+Sebastien Gerin (<sebastien.gerin@sayens.fr>)
+
+
