@@ -1,0 +1,14 @@
+pytest_reporter_html1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_reporter_html1/plugin.py,sha256=wJJvO912BkGoDru3Xfxz7h08aWC3coonaLZsWpltJoE,4359
+pytest_reporter_html1/templates/html1/base.html,sha256=WeBBd3s1RXsAKY9jXXP_0NLRL14Uq-KWa8cNcWUZlrA,902
+pytest_reporter_html1/templates/html1/chart.svg,sha256=tuMyFlffe9MzSalbLNsVVaykIJVdDH70swNYh6Xzr7E,809
+pytest_reporter_html1/templates/html1/index.html,sha256=SmvlRFr5KLJAUfQBuv1whwHMyKC8gW54BNqVaO8ebEg,2988
+pytest_reporter_html1/templates/html1/module.html,sha256=eAuDKP_6MdB9Vlo59Jyy6MnyYmx8dAlONmR7-amM_0I,4029
+pytest_reporter_html1/templates/html1/style.css,sha256=tr3KzwcblJt0ZEMnrIQCyCOATPHln-FHmFjegfiAmnA,6391
+pytest_reporter_html1/templates/html1/icons/arrow.svg,sha256=CKktDdRTFYyc2ii_O2RID2n_vS6sB9ufLDX39uL5_BU,241
+pytest_reporter_html1-0.3.0.dist-info/LICENSE,sha256=X-2r_c2RkyQG7QclQtkF0_MoU5nhrwknqX3AMtwJzCU,1108
+pytest_reporter_html1-0.3.0.dist-info/METADATA,sha256=6gq1-WeFxUwv-guacSBXsNvTKdNq4LUk_9-Uv_SIV0I,3978
+pytest_reporter_html1-0.3.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pytest_reporter_html1-0.3.0.dist-info/entry_points.txt,sha256=v_WJ2FYHJPkQKq5HstEkNT6_BKQ9uq59KbOfR3f8hg8,58
+pytest_reporter_html1-0.3.0.dist-info/top_level.txt,sha256=4CQLmwWKwl_EtcVK8kNNFMl2r9c0oaEorouWcDs3_5I,22
+pytest_reporter_html1-0.3.0.dist-info/RECORD,,
