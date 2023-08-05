@@ -1,0 +1,14 @@
+__rdflib_hdt_native__.cpython-37m-darwin.so,sha256=x-t6li7uW_9NaHB5xlQb4xV_frB0h3PQEd7FRqcQdTA,1742856
+hdt.cpython-37m-darwin.so,sha256=ueu7JEC5NdTFgd4WRE99oPu1nJKy7WPTJUWzmADUes0,1742856
+rdflib_hdt/__init__.py,sha256=HYhncq8QXsi4qr8kqQPFi1lGuF4hRi10yfA940KIcfs,315
+rdflib_hdt/hdt_document.py,sha256=fe-jQ3MbWaFBRnMZqfDJdewwedAKrc7FRJnffOxasqU,8274
+rdflib_hdt/hdt_store.py,sha256=Dc79Cci09_NWy_EMX6GYMUYsIRZg3fCTvkd5zL4Waek,3475
+rdflib_hdt/iterators.py,sha256=HQ9kIy1jCmgZna9YbqNHLVjnFh4aIIbHT4u6Uoy8xDU,3233
+rdflib_hdt/mapping.py,sha256=unxLtE0mJB4ffES2gnBukMh9BaW_ogRDRWAgsFl0dck,713
+rdflib_hdt/sparql_op.py,sha256=Knvm1VWqZqaw0f6B8EQ489kutEoApEtTb3UW5Io3p0k,1663
+rdflib_hdt/types.py,sha256=tVbLlhMpaLc-GribM_DXg9CzfmoOfFjuaPK4XnVP6C4,397
+rdflib_hdt-3.0.dist-info/LICENSE,sha256=ww7g4ogtTA51ZiJ9Nvsb5ntfCvPz5sbFAqCKmrHEoco,1075
+rdflib_hdt-3.0.dist-info/METADATA,sha256=rPRxY-hOiGqfaQa36Dds2KAZ-ZmJy6Ul_FoLv32iBWo,6836
+rdflib_hdt-3.0.dist-info/WHEEL,sha256=3MaGW2p97bAuypYB82dW_j_Lc_Fni2yOyOJA9oupd_4,111
+rdflib_hdt-3.0.dist-info/top_level.txt,sha256=s_Alj73C7wrSoSFiHTCn7BmNAthjcf2WMzHpimtkPAU,15
+rdflib_hdt-3.0.dist-info/RECORD,,
