@@ -1,0 +1,6 @@
+README.md
+setup.py
+chat_pkg_esteban9706.egg-info/PKG-INFO
+chat_pkg_esteban9706.egg-info/SOURCES.txt
+chat_pkg_esteban9706.egg-info/dependency_links.txt
+chat_pkg_esteban9706.egg-info/top_level.txt
