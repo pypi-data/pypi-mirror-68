@@ -1,0 +1,14 @@
+confset/__init__.py,sha256=WGaahfgalA3lyVGhQWlxfhxrY0YPD3PKsjRL6MxCklw,2599
+confset/__main__.py,sha256=lTzjXSDZta4sxcsEvpu2F0_mDDnz-4D0jgNdT5DLwgQ,88
+confset/arguments.py,sha256=TQnDEHBzg8FFB5EgPp4xp2q5eBCwFEcqr4AdgCvHDFg,5042
+confset/cli.py,sha256=IkCzDlrOEbyi3hoBb2jKQeSPS-lmol-duon3PCMM8ds,379
+confset/confset.py,sha256=LMmClKpJpo60i-ZMD7uETg9g_ti6ajMg4Hs0JZjZMWM,9141
+confset/debug.py,sha256=A5vi_fYRgPGQ4ICZQ3Rpv6jO5eqtkIcUqAIyDqBR7Hg,1402
+confset/metadata.py,sha256=NIyB2nQ3ehGzJCKgRtAGdzpRD9u5CN49ZWnel4tMHGs,1303
+confset/package_metadata.json,sha256=UsE-skzo-QxVVy-Qe_-d3KxsBYK_Q26bJUVZ6yG9yPE,255
+confset-0.1.0.dist-info/LICENSE.txt,sha256=aOueFEXBtlJLQdUsdbaW35uC-ClzWy7rGs89VnXw-DE,621
+confset-0.1.0.dist-info/METADATA,sha256=j95F_OD-JDhIxk9AVD1q_PQfpMdd61sXZUP0bqAOkL0,17323
+confset-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+confset-0.1.0.dist-info/entry_points.txt,sha256=R64U1gJg9NqKOd4sgGesKLaoomCdeV8Ab6pdrYxp9O4,46
+confset-0.1.0.dist-info/top_level.txt,sha256=8QCZwqYImyaWrCy24VMu5-K8K6AJ23VilLbcGCNn8Zo,8
+confset-0.1.0.dist-info/RECORD,,
