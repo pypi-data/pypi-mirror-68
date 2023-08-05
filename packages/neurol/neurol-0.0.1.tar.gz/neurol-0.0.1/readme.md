@@ -1,0 +1,29 @@
+<p align='center' >
+    <img src='https://github.com/Awni00/neurol/blob/dev/docs/logo/neurol_360dpi.png?raw=true' alt='neurol logo' width='400'/>
+</p>
+
+<p align='center'>
+    <a href='https://neurol.readthedocs.io/en/latest/?badge=latest'>
+        <img src='https://readthedocs.org/projects/neurol/badge/?version=latest' alt='Documentation Status' />
+    </a>
+    <a href='https://www.python.org/downloads/release'>
+  	    <img alt="Python 3.6+" src='https://img.shields.io/badge/python-3.6+-blue.svg'>
+    </a>
+    <!-- release -->
+    <!-- pypi -->
+    <a href=https://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project>
+        <img alt='PR welcome' src='https://img.shields.io/badge/PR-Welcome-%23FF8300.svg?'/>
+    </a>
+</p>
+
+
+Neurol is a python package for implementing Brain-Computer Interfaces in a modular manner. With the help of tools in this package, you will be able define the behavior of your intended BCI and easily implement it. A `neurol` BCI is defined by a number of components:
+
+- A `classifier` which decodes brain data into some kind of 'brain-state'
+- An `action` which provides feedback depending on the decoded 'brain-state'
+- An optional `calibrator` which runs at startup and modifies the operation of the BCI
+- An optional `transformer` which transforms the current `buffer` of data into the form expected by the `classifier`
+
+The `neurol` BCI manages an incoming stream of brain data and uses the above user-defined functions to run a brain-computer interface.
+
+The package includes generic utility functions to aid in creating `classifier`'s, `transfromer`'s, and `calibrator`'s for common BCI use-cases. It also comes prepackaged with a growing list of trained machine learning models for common BCI classification tasks.
