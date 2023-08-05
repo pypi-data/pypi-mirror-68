@@ -1,0 +1,10 @@
+aiohttp<4
+async-timeout
+async-generator
+coverage==4.5.1
+coveralls
+pylava
+pytest
+pytest-cov~=2.5.1
+timeout-decorator
+tox>=2.4
