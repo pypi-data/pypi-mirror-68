@@ -1,0 +1,10 @@
+deprecated
+furl>=2.0.0
+requests>=2.22.0
+simplejson>=3.16.0
+
+[pytz]
+pytz
+
+[yaml]
+pyyaml>=5.1

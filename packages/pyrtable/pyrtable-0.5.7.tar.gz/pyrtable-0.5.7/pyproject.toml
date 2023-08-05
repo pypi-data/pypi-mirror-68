@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pyrtable"
+version = "0.5.7"
+description = "Django-inspired library to interface with Airtable"
+authors = ["Vilar da Camara Neto <vilarneto@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+deprecated = "*"
+furl = "^2.0.0"
+pytz = "*"
+requests = "^2.22.0"
+simplejson = "^3.16.0"
+pyyaml = "^5.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "*"
+sphinx = "^3.0.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
