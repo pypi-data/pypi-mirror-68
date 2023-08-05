@@ -1,0 +1,17 @@
+README.md
+setup.py
+bin/nisnap
+nisnap/__init__.py
+nisnap/snap.py
+nisnap/xnat.py
+nisnap.egg-info/PKG-INFO
+nisnap.egg-info/SOURCES.txt
+nisnap.egg-info/dependency_links.txt
+nisnap.egg-info/requires.txt
+nisnap.egg-info/top_level.txt
+nisnap/utils/__init__.py
+nisnap/utils/aseg.py
+nisnap/utils/colormap.json
+nisnap/utils/montage.py
+nisnap/utils/parse.py
+nisnap/utils/slices.py
