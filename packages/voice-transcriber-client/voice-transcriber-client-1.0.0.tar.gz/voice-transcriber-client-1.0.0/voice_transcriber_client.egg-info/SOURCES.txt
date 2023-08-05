@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/voice-transcriber
+voice_transcriber/__init__.py
+voice_transcriber/config.py
+voice_transcriber/voice_transcriber.py
+voice_transcriber_client.egg-info/PKG-INFO
+voice_transcriber_client.egg-info/SOURCES.txt
+voice_transcriber_client.egg-info/dependency_links.txt
+voice_transcriber_client.egg-info/requires.txt
+voice_transcriber_client.egg-info/top_level.txt

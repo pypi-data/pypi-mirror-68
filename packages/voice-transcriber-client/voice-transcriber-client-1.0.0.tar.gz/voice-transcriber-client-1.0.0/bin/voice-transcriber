@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+import argparse
+import sys
+
+import pyperclip
+from voice_transcriber.config import Config
+from voice_transcriber.voice_transcriber import VoiceTranscriber
+
+def main():
+    parser = argparse.ArgumentParser(description='Voice Transcriber Client')
+    subparsers = parser.add_subparsers(dest='command')
+    subparsers.required = True
+
+    config_parser = subparsers.add_parser('config', help='Configure Voice Transciber Client')
+    config_parser.add_argument('-d', '--domain', type=str, required=True)
+    config_parser.add_argument('-a', '--api-key', type=str, required=True)
+
+    create_parser = subparsers.add_parser('transcribe', help='Transcribe an audio file')
+    create_parser.add_argument('name', type=str)
+    create_parser.add_argument('file', type=str)
+    create_parser.add_argument('-t', '--token', type=str)
+
+    args = parser.parse_args()
+
+    config = Config()
+
+    if args.command == "config":
+        config.set_credentials(args.domain, args.api_key)
+        sys.exit(0)
+
+    credentials = config.get_credentials()
+    if credentials is None:
+        print("Please use the 'config' command to provide the details of your API endpoint")
+        sys.exit(1)
+
+    voice_transcriber = VoiceTranscriber(credentials['domain'], credentials['api_key'])
+
+    if args.command == "transcribe":
+        voice_transcriber = voice_transcriber.transcribe(args.name, args.file)
+        if voice_transcriber:
+            print('Audio file uploaded successfully')
+            sys.exit(0)
+        else:
+            print('An error occurred uploading the file')
+            sys.exit(1)
+
+if __name__ == '__main__':
+    main()
