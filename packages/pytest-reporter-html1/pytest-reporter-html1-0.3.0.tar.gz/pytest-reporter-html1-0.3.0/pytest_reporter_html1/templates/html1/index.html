@@ -1,0 +1,89 @@
+{% extends "html1/base.html" %}
+{% block content %}
+<div class="container">
+  <section class="summary">
+    {% block summary %}
+    <div class="metadata">
+      <table>
+        {% block session_metadata %}
+        <tr>
+          <th>Started</th>
+          <td>{{ started|strftime('%Y-%m-%d %H:%M:%S') }}</td>
+        </tr>
+        <tr>
+          <th>Ended</th>
+          <td>{{ ended|strftime('%Y-%m-%d %H:%M:%S') }}</td>
+        </tr>
+        <tr>
+          <th>Duration</th>
+          {% set duration = ended - started %}
+          <td>{{ duration|timedelta }}</td>
+        </tr>
+        {% if config._metadata %}
+          {% for key, value in config._metadata.items() %}
+            <tr>
+              <th>{{ key }}</th>
+              <td>
+                {% if value is mapping %}
+                  {% for key, value in value.items() %}
+                    {{ key }}: {{ value }}<br/>
+                  {% endfor %}
+                {% else %}
+                  {{ value|urlize }}
+                {% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+        {% endif %}
+        {% endblock %}
+      </table>
+    </div>
+    <div class="graph">
+      {% include "html1/chart.svg" %}
+      <div class="legend">
+        {% for category, tests in tests|groupby('status.category') %}
+          <span class="status badge {{ category }} {{ tests|map(attribute='status.style')|first|join(' ') }}">
+            {{ tests|count }}
+          </span>
+          <span>{{ category }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endblock %}
+  </section>
+  {% if warnings %}
+    <section class="warnings">
+      {% for warning in warnings %}
+        <div class="status badge warning">WARNING</div>
+        <div>{{ warning.filename }}:{{ warning.lineno }}<br>{{ warning.message }}</div>
+      {% endfor %}
+    </section>
+  {% endif %}
+  <section class="test-files">
+    {% for fspath, tests in tests|groupby('item.fspath') %}
+      {% set item = tests|map(attribute='item.parent')|first %}
+      <details class="file">
+        <summary class="title">
+          {% block module_title scoped %}
+          <h2 class="fspath">
+            {% block module_name scoped %}
+            {{ fspath|replace(config.rootdir, '')|replace('\\', '/') }}
+            {% endblock %}
+          </h2>
+          <span class="counts">
+          {% for category, tests in tests|groupby('status.category') -%}
+            <div title="{{ tests|count }} {{ category }}" class="status badge {{ category }} {{ tests|map(attribute='status.style')|first|join(' ') }}">{{ tests|count }}</div>
+          {%- endfor %}
+          </span>
+          {% endblock %}
+        </summary>
+        <div class="content">
+          {% block module_content scoped %}
+            {% include "html1/module.html" %}
+          {% endblock %}
+        </div>
+      </details>
+    {% endfor %}
+  </section>
+</div>
+{% endblock %}
