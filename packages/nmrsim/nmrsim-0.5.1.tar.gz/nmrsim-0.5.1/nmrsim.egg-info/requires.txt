@@ -1,0 +1,20 @@
+matplotlib
+numpy
+sparse
+
+[:python_version < "3.7"]
+importlib_resources
+
+[dev]
+flake8
+ipykernel
+jupyter
+nbsphinx
+pytest
+pyfakefs
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-napoleon
+bokeh
+tox
+tox-pyenv
