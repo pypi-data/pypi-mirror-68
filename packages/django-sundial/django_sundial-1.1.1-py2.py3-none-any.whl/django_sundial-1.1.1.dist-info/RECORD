@@ -1,0 +1,11 @@
+sundial/__init__.py,sha256=62qJIX1xhrondsCl84NVCglgixOkLTCejypi9mPrB2E,148
+sundial/fields.py,sha256=LcGxsKQ8kAp5cYULuMxiWqr6D9oaBvJw4yxeFa2EQV8,1562
+sundial/forms.py,sha256=ByZitr42DSXurj_Je2fx8yENi8m0UeVFxDOtb1TLKXY,575
+sundial/middleware.py,sha256=-IuT9Bg44kaE6mWp0xeVkO40RgyuqmneFXB4NK2CoxQ,875
+sundial/utils.py,sha256=VgHSL7ZEoF7uOlCgBlg1lTtrsHfdLj94PWJBaLMSOto,668
+sundial/zones.py,sha256=umdlvQgn5vnlWnhbhEI2L6LzRSRmDJ9ogP9jT9oWSzg,1692
+django_sundial-1.1.1.dist-info/LICENSE,sha256=FmcqGy9xA7dhUxId6VHDUtNsSX0uojE3zfqHWuD98m0,1059
+django_sundial-1.1.1.dist-info/METADATA,sha256=GVaKR_KXueHRIIA97uAh7yI5Sjqj6EKzc6bb5xVEO0M,3502
+django_sundial-1.1.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+django_sundial-1.1.1.dist-info/top_level.txt,sha256=Xu8tmKtxfMY_PWKrr_yNWeTC7QqyfsUQRCLg4zR8TuA,8
+django_sundial-1.1.1.dist-info/RECORD,,
