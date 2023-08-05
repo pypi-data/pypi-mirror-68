@@ -1,0 +1,6 @@
+noise
+Pillow
+
+[dev]
+
+[test]
