@@ -1,0 +1,12 @@
+peppercorn
+apply-defaults
+attrs
+cbor
+click
+importlib-metadata
+jsonschema
+jsonrpcclient
+pyrsistent
+six
+websockets
+zipp
