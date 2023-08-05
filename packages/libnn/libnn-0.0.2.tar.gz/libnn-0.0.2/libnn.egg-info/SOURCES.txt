@@ -1,0 +1,11 @@
+README.md
+setup.py
+libnn/__init__.py
+libnn/dataloader.py
+libnn/dispatch.py
+libnn.egg-info/PKG-INFO
+libnn.egg-info/SOURCES.txt
+libnn.egg-info/dependency_links.txt
+libnn.egg-info/top_level.txt
+libnn/networks/__init__.py
+libnn/networks/resnets.py
