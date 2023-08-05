@@ -1,0 +1,10 @@
+numpy>=1.7
+
+[notebooks]
+jupyter>=1.0.0
+
+[show_progress]
+tqdm>=4.46.0
+
+[visualization]
+matplotlib>=1.3
