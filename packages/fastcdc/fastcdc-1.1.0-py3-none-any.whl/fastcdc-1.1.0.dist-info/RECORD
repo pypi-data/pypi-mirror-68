@@ -1,0 +1,10 @@
+fastcdc/__init__.py,sha256=AAlS1E7JVwJgDlXG8PNRZrcMgInGIgxDIPD5CO7XTLI,95
+fastcdc/cli.py,sha256=pqfg0U8_d2CCuNecapqLfj-8KsIImiGdIjc14Y_M7Ss,1826
+fastcdc/const.py,sha256=hyHDh45JohaLgrBD9Hqb1p53B_JgPqyCwoIbRsfugkw,5159
+fastcdc/lib.py,sha256=0eJvBeLUrbDUUcPHLxyAqW7QOe1aKE1jcqrwVlBGpCo,3503
+fastcdc/original.py,sha256=TIv4OIJ88Gqs5Bo9C5UWHQWfxZqtZRz_apN0oG468hk,3938
+fastcdc-1.1.0.dist-info/entry_points.txt,sha256=jR4vWYhtrtz1QLMZsnTD6xh0iOomD2OKxXjeNwogtdw,43
+fastcdc-1.1.0.dist-info/LICENSE,sha256=deasM6lmTa6obeDkJYkPpA3zVZCFDxUIYuYwTQ3hXgs,1081
+fastcdc-1.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+fastcdc-1.1.0.dist-info/METADATA,sha256=fBoONIiTAZxTwAcRDxVidnz3ozDzhId1E0_DXc7eBhQ,6991
+fastcdc-1.1.0.dist-info/RECORD,,
