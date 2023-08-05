@@ -1,0 +1,6 @@
+mako
+chardet
+flask
+flask_cors
+simpleparse
+docutils
