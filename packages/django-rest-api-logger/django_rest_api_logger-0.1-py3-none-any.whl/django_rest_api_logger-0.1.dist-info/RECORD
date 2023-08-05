@@ -1,0 +1,9 @@
+django_rest_api_logger/__init__.py,sha256=yfwRpPvtUUV6GN5Ir0s-uVqnXu0tc1oTzwKDXzqDOiQ,37
+django_rest_api_logger/logger.py,sha256=czccI8FzFfABlkyZucg6M98CwhAZM5ZtwZkPcn1J1sA,458
+django_rest_api_logger/logging.py,sha256=Jq-o9tutPZUXgIalmHyAqVu213pnVXBQQnHB0gw2BL8,6541
+django_rest_api_logger/mongo_config.py,sha256=tU4J9BjyfDR5TnnZo_p-6Q9_C5V4zL2gswkwarjGQi8,694
+django_rest_api_logger/utils.py,sha256=m8T5Tl8n0QQ5l6ACeNn5y3yBKvFJ4KRcdrVeps_VGVI,734
+django_rest_api_logger-0.1.dist-info/METADATA,sha256=zjZM4QvOrK6kgGyBoQQm8vi3SDninZITj7jNHpUR3OQ,1953
+django_rest_api_logger-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_rest_api_logger-0.1.dist-info/top_level.txt,sha256=oQd7J_WsLNkzb3oP67enWC0Zc8HzDT7KHqjxJz8Njfg,23
+django_rest_api_logger-0.1.dist-info/RECORD,,
