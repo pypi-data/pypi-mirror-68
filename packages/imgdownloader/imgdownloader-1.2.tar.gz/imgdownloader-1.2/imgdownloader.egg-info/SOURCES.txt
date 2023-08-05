@@ -1,0 +1,8 @@
+README.txt
+setup.py
+imgdownloader/__init__.py
+imgdownloader.egg-info/PKG-INFO
+imgdownloader.egg-info/SOURCES.txt
+imgdownloader.egg-info/dependency_links.txt
+imgdownloader.egg-info/requires.txt
+imgdownloader.egg-info/top_level.txt
