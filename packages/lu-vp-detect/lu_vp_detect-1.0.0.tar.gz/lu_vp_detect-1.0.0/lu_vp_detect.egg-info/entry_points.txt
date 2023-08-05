@@ -1,0 +1,3 @@
+[console_scripts]
+run_vp_detect = lu_vp_detect.run_vp_detect:main
+
