@@ -1,0 +1,7 @@
+jupyter_server
+xarray
+ipyleaflet
+pillow
+rasterio
+affine
+mercantile
