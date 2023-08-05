@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: how
+Version: 0.1.1
+Summary: Impressive Linux commands cheat sheet.
+Home-page: https://github.com/chenjiandongx/how
+Author: chenjiandongx
+Author-email: chenjiandongx@qq.com
+License: MIT
+Keywords: python,linux-command,cheat sheet
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: commonmark
+Requires-Dist: huepy
+Requires-Dist: requests
+Requires-Dist: tenacity
+
+UNKNOWN
+
+
