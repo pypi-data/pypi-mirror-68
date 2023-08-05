@@ -1,0 +1,3 @@
+[limnoria.plugins]
+AttackProtector = limnoria_attackprotector
+
