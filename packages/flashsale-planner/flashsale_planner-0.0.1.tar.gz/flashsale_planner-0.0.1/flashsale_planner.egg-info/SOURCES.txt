@@ -1,0 +1,8 @@
+README.md
+setup.py
+flashsale_planner/__init__.py
+flashsale_planner/flashsale_planner.py
+flashsale_planner.egg-info/PKG-INFO
+flashsale_planner.egg-info/SOURCES.txt
+flashsale_planner.egg-info/dependency_links.txt
+flashsale_planner.egg-info/top_level.txt
