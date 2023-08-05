@@ -1,0 +1,8 @@
+numpy
+texttable
+matplotlib
+pandas
+urllib3
+cuitools==1.7.0.2
+prompt-toolkit
+dateutils
