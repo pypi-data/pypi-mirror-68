@@ -1,0 +1,10 @@
+blackjack/__init__.py,sha256=-gCbNq7zxKFQH5JwV6QCAN1bQ5Btr_vHLlbZQz2_D88,207
+blackjack/__main__.py,sha256=OjNCdsWNaQQm6a-z6G7tayyflgPGqfpwco06Cz46ovg,283
+blackjack/cli.py,sha256=_DUV9d33zq5NCZQR-2KStQjlAOhTarJMZAJZXQEWkL4,908
+blackjack/utils.py,sha256=Gl794zWjrLOIcVg_krjQnaRU3HrQhd_93Djjfj1WBUU,287
+x10_blackjack-0.2.0.dist-info/LICENSE,sha256=2FDYQYUW9fIv1mmVomB_WoVFR6S___3McIsBITW0GRo,11342
+x10_blackjack-0.2.0.dist-info/METADATA,sha256=zPZW9RtxvceSDohp2utmXw4TOaXcpUu3ljz9RmVlRms,2487
+x10_blackjack-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+x10_blackjack-0.2.0.dist-info/entry_points.txt,sha256=N7G3XkRkapCTWtgHSgVaMID8HnF8n1Fx0-jdZ0rSYiU,67
+x10_blackjack-0.2.0.dist-info/top_level.txt,sha256=2-O9-tnc7Sxn1BMerZF8vBPghsqAqDHXwfxCCQwulLw,10
+x10_blackjack-0.2.0.dist-info/RECORD,,
