@@ -1,0 +1,3 @@
+[console_scripts]
+ssh-commander = ssh_commander.ssh_commander:main
+
