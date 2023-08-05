@@ -1,0 +1,3 @@
+[console_scripts]
+alink = hugo.hugo:main
+
