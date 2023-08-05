@@ -1,0 +1,6 @@
+jaydebeapi
+click
+prompt_toolkit
+cli_helpers
+kafka-python
+fs
