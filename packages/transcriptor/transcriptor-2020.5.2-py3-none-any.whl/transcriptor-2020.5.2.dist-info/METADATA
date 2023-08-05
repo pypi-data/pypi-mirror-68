@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: transcriptor
+Version: 2020.5.2
+Summary: A wrapper for transcription results.
+Home-page: https://github.com/kjaymiller/transcriptor
+Author: Jay Miller
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+# Transcriptor
+### The transcription tool that talks to transcriptions services.
+
+## Supported Services
+- Amazon Transcribe
+
+## Planned Support For
+- Google Speech-To-Text
+
+
