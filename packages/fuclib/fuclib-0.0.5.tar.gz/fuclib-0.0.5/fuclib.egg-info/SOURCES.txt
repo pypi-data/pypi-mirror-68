@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+fuclib/__init__.py
+fuclib/ezdb.py
+fuclib/ezfuc.py
+fuclib/test.py
+fuclib.egg-info/PKG-INFO
+fuclib.egg-info/SOURCES.txt
+fuclib.egg-info/dependency_links.txt
+fuclib.egg-info/top_level.txt
