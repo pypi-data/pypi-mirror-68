@@ -1,0 +1,10 @@
+lgnpy/LinearGaussian.py,sha256=SIPS7VgzBMKTMTbyGOEDB3cuFZVcke-Arerk9TXE950,9261
+lgnpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lgnpy/logging_config.py,sha256=YwRQNhBKm-tT-FckKwWUI1KELSs1m07Sv9PWeLMyw0I,1117
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_LinearGaussian.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LGNpy-0.0.1.dist-info/LICENSE,sha256=qdXIERWA2E7qA1nR3gsT4E4Gm6vkP2_AUNtwmZnFQZM,1091
+LGNpy-0.0.1.dist-info/METADATA,sha256=JXMI-S2LNwBBkvh7oyYWT_8oyfbyamu-rGs2TVZF3wc,1150
+LGNpy-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+LGNpy-0.0.1.dist-info/top_level.txt,sha256=iQPxn2fzXz53x_AgocuffHnWCqjgssIA5FJKS0oHl14,12
+LGNpy-0.0.1.dist-info/RECORD,,
