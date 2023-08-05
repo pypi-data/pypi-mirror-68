@@ -1,0 +1,5 @@
+include README.rst
+include CHANGELOG.rst
+include sphinxcontrib/excel_table_plus/templates/*.html
+include sphinxcontrib/excel_table_plus/resources/_static/*
+include sphinxcontrib/excel_table_plus/resources/_templates/*
