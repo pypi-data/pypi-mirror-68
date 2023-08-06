@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: kxy
+Version: 0.0.11
+Summary: Python API to the AutoML KXY platform
+Home-page: https://docs.kxysolutions.com
+Author: Dr. Yves-Laurent Kom Samo
+Author-email: github@kxy.ai
+License: AGPLv3
+Download-URL: https://github.com/kxytechnologies/kxy-python/archive/v0.0.11.tar.gz
+Project-URL: Documentation, https://docs.kxysolutions.com
+Project-URL: Source Code, https://github.com/kxytechnologies/kxy-python/
+Description: The KXY platform is the first and only AutoML platform for model-free pre-learning and post-learning. More information at https://docs.kxysolutions.com.
+Keywords: AutoML,Pre-Learning,Post-Learning,Model-Free ML
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
