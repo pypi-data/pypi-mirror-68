@@ -1,0 +1,16 @@
+flexsolve/__init__.py,sha256=2FZdfF2pqEMoGOuplRXCC68KyHmDZu_k6QIIamo9-f4,851
+flexsolve/bounded_solvers.py,sha256=oaCIgTVdumUsS4s40VmO_m-Cr4FKVLZX0YzbKTVySDY,6232
+flexsolve/counter.py,sha256=7aHPUEsZgCLdP-gfgLI0VGLa3lWPfCezm0RslHXIdqg,590
+flexsolve/exceptions.py,sha256=UcJ7_foRmmvVIqZkpmd4LSvhRcAr-I0tLamCwFQ7FEQ,728
+flexsolve/fast.py,sha256=fXaiscozL0GI4-3XSr32HYjmtP9-YFyJEv6A9V9CUDY,94
+flexsolve/iterative_solvers.py,sha256=KBeypoYzg9uIXyIi3o4AhMmmi5muuMAxUJsuVhtA-WE,3773
+flexsolve/jit_speed.py,sha256=dbwi9IaBCgZBs3ohS7PVB8YQOhT0FbswCfNWd8kZbkc,1794
+flexsolve/least_squares_iteration.py,sha256=ESbex4asQde-uXKiOIwQtQPyIrKjv0i-yOrrAD_miy0,2245
+flexsolve/open_solvers.py,sha256=nj3xe22qsy40VmqhQmZlzsv36yp_PvCk0L3eC_lbgUM,2250
+flexsolve/profiler.py,sha256=f1ljw_bfC1GOcsD5KEXAWOY-dieMRFzabf0_GHzI2Rs,5039
+flexsolve/utils.py,sha256=Fg-QcDuIICkuIdXhuByvhGWjepx9tISlFwYRUNSC9nU,2651
+flexsolve-0.3.0.dist-info/LICENSE.txt,sha256=mMSIV7polqCZu4JMzIXw3O-NhNbZ94zckKx1Z-Y14x0,1120
+flexsolve-0.3.0.dist-info/METADATA,sha256=AhlPJSfmSD7IDZfAlL8o9Wlwr100JczITgKzeCa_5Yk,8214
+flexsolve-0.3.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+flexsolve-0.3.0.dist-info/top_level.txt,sha256=yw6Ky8vfhlTNvCeq-tnEiSWr1JZsXEUa1u3RKXWjiP4,10
+flexsolve-0.3.0.dist-info/RECORD,,
