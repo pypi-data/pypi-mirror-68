@@ -1,0 +1,8 @@
+README.md
+setup.py
+bark_simulator.egg-info/PKG-INFO
+bark_simulator.egg-info/SOURCES.txt
+bark_simulator.egg-info/dependency_links.txt
+bark_simulator.egg-info/not-zip-safe
+bark_simulator.egg-info/requires.txt
+bark_simulator.egg-info/top_level.txt
