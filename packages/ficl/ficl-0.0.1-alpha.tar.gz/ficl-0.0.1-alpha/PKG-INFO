@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ficl
+Version: 0.0.1-alpha
+Summary: Empty large batches of files in one command
+Home-page: https://github.com/arkadyt/ficl
+Author: Andrew Titenko
+Author-email: contact.me@arkadyt.dev
+License: GPLv3
+Download-URL: https://github.com/arkadyt/ficl/archive/0.0.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: quick,easy,batch,empty,clean,file,files
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Filesystems
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
