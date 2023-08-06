@@ -1,0 +1,10 @@
+README.md
+setup.py
+tradocs/__init__.py
+tradocs/tradocs.py
+tradocs.egg-info/PKG-INFO
+tradocs.egg-info/SOURCES.txt
+tradocs.egg-info/dependency_links.txt
+tradocs.egg-info/entry_points.txt
+tradocs.egg-info/requires.txt
+tradocs.egg-info/top_level.txt
