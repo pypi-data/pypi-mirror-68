@@ -1,0 +1,14 @@
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx_rtd_theme
+tpDcc-libs-python
+gazu
+artellapipe
+
+[dev]
+wheel
+
+[test]
+pytest
