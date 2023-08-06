@@ -1,0 +1,14 @@
+fire>=0.2.1
+modulegraph>=0.18
+pip-tools>=4.5.0
+requirements-parser>=0.2.0
+six>=1.14.0
+
+[:python_version < "3.2"]
+configparser>=4.0.2
+
+[:python_version < "3.4"]
+enum34>=1.1.9
+
+[:python_version < "3.8"]
+importlib_metadata>=1.5.0
