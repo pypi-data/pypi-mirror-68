@@ -1,0 +1,11 @@
+high_order_layers/FourierLayers.py,sha256=KXST-72Ca6MyfSwrEz_XetwByx-aR_5f9MYd12Dho0A,1625
+high_order_layers/Functions.py,sha256=ue9QmJvslbL3YEwlEJzWMY1HsmxOCDcVwp5NgJ-Fm1Y,7519
+high_order_layers/HighOrderConvolution2D.py,sha256=OgKwhA90Z7hJz0IybmAKQGR1GGiX0Zhl-wX35WsBsqE,1940
+high_order_layers/HighOrderLayer.py,sha256=t_5ZJ0hx09d_tre3qecoxB0z4zI30LDC-ytRx6yXXTQ,1619
+high_order_layers/PolynomialLayers.py,sha256=jFcs89_Ix8-wZLxANE-ObTnZ72zKDGe7vJ9lriNamYA,2030
+high_order_layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+high_order_layers-1.1.6.dist-info/LICENSE,sha256=A7bpRMVIjtEGu_2lhgpriCvGlHNWmTNGBNdfIMbEvHY,1065
+high_order_layers-1.1.6.dist-info/METADATA,sha256=nuFju2M6A5e0vJQLymflh_BZ-bUYuTUHu0NtvEHz728,7638
+high_order_layers-1.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+high_order_layers-1.1.6.dist-info/top_level.txt,sha256=gRFjy0pArsHv_mr_Bln1yWEV0fe9pQDHXEKYdD3U57w,18
+high_order_layers-1.1.6.dist-info/RECORD,,
