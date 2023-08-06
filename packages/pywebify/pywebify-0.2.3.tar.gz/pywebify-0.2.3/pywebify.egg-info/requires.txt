@@ -1,0 +1,4 @@
+pandas
+numpy
+natsort
+fileio==0.1.0
