@@ -1,0 +1,5 @@
+orjson==3.0.0
+httpx==0.12.1
+
+[:python_version <= "3.7"]
+typing_extensions==3.7.4.2
