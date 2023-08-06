@@ -1,0 +1,4 @@
+fasteners
+future
+setuptools
+setuptools_scm>
