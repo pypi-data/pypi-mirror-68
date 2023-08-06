@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nodeview
+Version: 0.1.0.dev0
+Summary: Monitoring for Elrond Network nodes
+Home-page: https://github.com/flyingbasalt/nodeviewer
+Author: Flying Stone
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tomlkit
+
+# Vilya
+
+Monitoring for Elrond Network [nodes](https://github.com/ElrondNetwork/elrond-go). This is 
+a work in progress and it is not affiliated with [Elrond Network](https://elrond.com/).
+
+
+
