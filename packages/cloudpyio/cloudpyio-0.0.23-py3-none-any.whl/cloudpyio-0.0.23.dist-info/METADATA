@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cloudpyio
+Version: 0.0.23
+Summary: cloudpy.io
+Home-page: https://github.com/ortutay/cloudpy
+Author: cloudpy.io
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (<=1.15.4)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: cloudpickle (>=0.6.1)
+Requires-Dist: humanize (>=2.2.0)
+Requires-Dist: requests (>=2.20.0)
+Requires-Dist: requests-toolbelt (>=0.8.0)
+Requires-Dist: psutil (>=5.4.8)
+
+# CloudPy
+
+it's numpy/pands, but in the cloud!
+
+
