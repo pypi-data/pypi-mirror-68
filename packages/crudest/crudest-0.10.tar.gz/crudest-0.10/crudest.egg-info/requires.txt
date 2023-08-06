@@ -1,0 +1,6 @@
+Flask
+apispec>3.0
+webargs==6
+marshmallow>3.0
+flask-swagger-ui>3.0
+Flask-JWT-Extended
