@@ -1,0 +1,10 @@
+README.md
+setup.py
+blockbuffer/__init__.py
+blockbuffer/blockbuffer.py
+blockbuffer/exceptions.py
+blockbuffer.egg-info/PKG-INFO
+blockbuffer.egg-info/SOURCES.txt
+blockbuffer.egg-info/dependency_links.txt
+blockbuffer.egg-info/requires.txt
+blockbuffer.egg-info/top_level.txt
