@@ -1,0 +1,17 @@
+scrapy_testmaster/__init__.py,sha256=bcg-zls4mg5lHlRJxz3TluiR3VcTIhWL-g15X--jaYk,74
+scrapy_testmaster/cli.py,sha256=JsYmvPhtGerJKkqE3i-BtM3Gt8Y_rTlZPGBKDRQMOHg,14643
+scrapy_testmaster/config_doc.py,sha256=Lb-SuB8jThPfRIbbJidvULLhJ4aXkV9qUOr1ljwq0II,3457
+scrapy_testmaster/middleware.py,sha256=Rhwy8LA-LPAjcZRPaYWt8jmTrdUVg1mCToAZUv1jugk,8220
+scrapy_testmaster/parse.py,sha256=bH4qKgUSIxb75SyqWflv0snQrSiIa15JVVC7rz6m4_Y,10319
+scrapy_testmaster/utils.py,sha256=GIc6_wynRk4bhTyAAABn_zZmn12YTNAFJ3HfnWbSnpI,15221
+scrapy_testmaster/utils_novel.py,sha256=2VziGJ49WxZ7j97JPa51GCyZQjDxIMAMcVfSGw0TYoo,16115
+tests/__init__.py,sha256=EbGnJXiWQTjZ2_lF-AqfIDjrRD1GwLsO5A8Z3ZscgYw,89
+tests/test_middleware.py,sha256=HYz9cLrsV-Q4gmw9pQaYfg432JrXNR0PZFNMt_9OQ5I,872
+tests/test_record.py,sha256=q8CLCyQli8aTm0UfkboWmNG09863x6TbVfMMr4_Fgx0,17353
+tests/test_validation.py,sha256=pJW_aFGXSHjbVKVcqzWhYM37TwRe04q8kp8yfErM12E,1534
+scrapy_testmaster-0.1.1.dist-info/LICENSE,sha256=2k1RK_DdNDSEADkEhOf5dgHGcfjp4rB0rxXar0wwqFQ,5309
+scrapy_testmaster-0.1.1.dist-info/METADATA,sha256=GZczcoKjhd03Cx4WmVxtwVyvqp5cZ_tkOvC8S3MJdTg,36416
+scrapy_testmaster-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+scrapy_testmaster-0.1.1.dist-info/entry_points.txt,sha256=gAIpeip3lB7iKkcQ4mlJV2jAvZko9s8BPZSX6uWsvNc,59
+scrapy_testmaster-0.1.1.dist-info/top_level.txt,sha256=5ExPibMylWX5h2eoNkI4eRAQ_m2et5TG_St5JAEGH3k,24
+scrapy_testmaster-0.1.1.dist-info/RECORD,,
