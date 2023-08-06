@@ -1,0 +1,9 @@
+README.md
+setup.py
+deeplearn/__init__.py
+deeplearnt.egg-info/PKG-INFO
+deeplearnt.egg-info/SOURCES.txt
+deeplearnt.egg-info/dependency_links.txt
+deeplearnt.egg-info/not-zip-safe
+deeplearnt.egg-info/top_level.txt
+tests/__init__.py
