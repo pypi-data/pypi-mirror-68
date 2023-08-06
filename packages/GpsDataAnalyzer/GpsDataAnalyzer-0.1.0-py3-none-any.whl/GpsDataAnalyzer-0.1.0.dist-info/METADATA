@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: GpsDataAnalyzer
+Version: 0.1.0
+Summary: A simple Python toolkit to analyze GPS data
+Home-page: https://github.com/adrien-berchet/GpsDataAnalyzer
+Author: Adrien Berchet
+Author-email: adrien.berchet@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cartopy
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: rtree
+Requires-Dist: scipy
+Requires-Dist: shapely
+Provides-Extra: dev
+Requires-Dist: m2r ; extra == 'dev'
+Requires-Dist: sphinx (<3) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-html ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-benchmark ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-html ; extra == 'dev'
+Requires-Dist: pytest-mpl ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: tox-conda ; extra == 'dev'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: flake8-html ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-benchmark ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-html ; extra == 'tests'
+Requires-Dist: pytest-mpl ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+Requires-Dist: tox-conda ; extra == 'tests'
+
+# Welcome to GpsDataAnalyzer
+
+This package contains some helpers I use in other projects to handle GPS data.
+It is currently designed to suit my own needs but it might be extended when I need new
+features. Of course, comments, issues, feature requests and PR are welcome.
+
+## Installation
+
+This package can be installed using pip:
+```bash
+pip install GpsDataAnalyzer
+```
+
+## Main features
+
+The main features consists in:
+* format GPS data according to their use (e.g. tracks or points of interest).
+* compute some properties of these GPS data (e.g. the time spent in an area around
+each point).
+* compute heatmaps.
+* plot figures with background, data and annotations.
+
+## Caveats
+
+Please note that this is a project I work on in my spare time, as such there might be
+errors in the implementations and sub-optimal performance.
+
+
