@@ -1,0 +1,12 @@
+common.py,sha256=v3fvDiUJoOkqDfGnJUBAiP6FXpOlgs8xNx3BSPp895k,4966
+webdriver.py,sha256=jr6vNCT1QyYDtSEiDo3G_qcXbo7DylXVvyVEkM9Ua6w,6158
+maliarov/__init__.py,sha256=-CxBtyra5kNCeknQDOTdM1QSsNTuHwFN_4-kwqKffWY,35
+maliarov/common.py,sha256=v3fvDiUJoOkqDfGnJUBAiP6FXpOlgs8xNx3BSPp895k,4966
+maliarov/webdriver.py,sha256=jr6vNCT1QyYDtSEiDo3G_qcXbo7DylXVvyVEkM9Ua6w,6158
+maliarov/data/desktop_user_agents.txt,sha256=U8Jn-cqRMy-MC4ZVsw880Caup_EJ_RbtDpopH_kKx9E,50419
+maliarov/data/mobile_user_agents.txt,sha256=SRIvLzI0_g4vP3Hun5nWJqCkHuvz0IWJhWFK0mVzIm0,77067
+maliarov-0.2.3.dist-info/LICENSE.txt,sha256=lASIbDBl2LnlPWOdVY0Gp-0ocDe5p-FjFdHKpXR5dms,1080
+maliarov-0.2.3.dist-info/METADATA,sha256=EQgtXjRhV38bSRuTaemNYbC4iXGBUcaAF5IRHVnDXd8,666
+maliarov-0.2.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+maliarov-0.2.3.dist-info/top_level.txt,sha256=qgei8vXUnyqf_WjiTjb8k-bp6QJz8Idb8YoU3nIaNHg,26
+maliarov-0.2.3.dist-info/RECORD,,
