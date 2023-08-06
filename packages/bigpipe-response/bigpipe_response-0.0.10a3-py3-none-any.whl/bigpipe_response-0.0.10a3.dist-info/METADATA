@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: bigpipe-response
+Version: 0.0.10a3
+Summary: Bigpipe, Pipelining web pages for high performance, django response object
+Home-page: https://github.com/shacoshe/bigpipe-response
+Author: Shay Tessler
+Author-email: shay.te@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: libsass
+Requires-Dist: watchdog
+Requires-Dist: ansi2html
+Requires-Dist: requests
+Requires-Dist: pre-commit
+Requires-Dist: hydra-core
+
+
+[![PyPI](https://img.shields.io/pypi/v/bigpipe-response)](https://pypi.org/project/bigpipe-response/)
+![PyPI - License](https://img.shields.io/pypi/l/bigpipe-response)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/bigpipe-response)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/bigpipe-response.svg)](https://pypistats.org/packages/bigpipe-response)
+
+# Bigpipe Response
+A standard [django](https://www.djangoproject.com/) `StreamingHttpResponse` response object with the extra capabilities for building fast loading application.   
+
+Check the [website](https://bigpiperesponse.netlify.com/) for more information
+
+## License
+BigpipepResponse in licenced under [MIT](https://github.com/shacoshe/bigpipe-response/blob/master/LICENSE)
+
+
