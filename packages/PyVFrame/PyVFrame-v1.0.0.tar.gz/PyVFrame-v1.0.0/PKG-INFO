@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PyVFrame
+Version: v1.0.0
+Summary: Framework built in python for easy vanilla web development
+Home-page: https://github.com/drewtadams
+Author: Drew Adams
+Author-email: drew@drewtadams.com
+License: MIT
+Download-URL: https://github.com/drewtadams/PyVFrame/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: framework,html,scss,css,js
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
