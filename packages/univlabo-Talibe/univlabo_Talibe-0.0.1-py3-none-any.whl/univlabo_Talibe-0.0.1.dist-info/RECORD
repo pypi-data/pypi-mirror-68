@@ -1,0 +1,17 @@
+ml/__init__.py,sha256=lUybgWAScV1RefbLJoP8xBD7E4nKxSBGlP4e4IsYULU,19004
+ml/unsupervised/BC_Clust.py,sha256=d9kyHzvZlJ0W1yuBTTu-oW9srj4_V533RIC_eP7OQAI,4024
+ml/unsupervised/DS2L_SOM.py,sha256=uq5Z_zM-z2v7FC0djaUTiMyThIURTZwJF0Upr4btgaE,2816
+ml/unsupervised/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml/unsupervised2/StreamBarycentric.py,sha256=0hVtuJB7-WHoL3Ilq_fmYUQlW_x4c8QdqjMeELaqlHU,13123
+ml/unsupervised2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unsupervised/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unsupervised/test_BC_Clust.py,sha256=AzFdEXUtFtwPrvVl6un62Vm00NxQNhwEfxvuYWSNVz8,1793
+test/unsupervised/test_DS2L_SOM.py,sha256=Jrgr2uV-_5TJSbCFbPvG36uQfsIrZL5v6Pw4qJgNGPw,1593
+test/unsupervised2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/unsupervised2/test_StreamBarycentric.py,sha256=ak3TP7QCOt2qAo58wORxly3LguA4WGkK4cIZ6QA1kHI,1125
+univlabo_Talibe-0.0.1.dist-info/LICENSE,sha256=nA404otS3EgvJxlVZuGh_c1fw-pu27fSS25LBCavbNU,2187
+univlabo_Talibe-0.0.1.dist-info/METADATA,sha256=YN_9tnZbfTId_Pk3ep04HVNQBbSrIx5KHGb2AmArGEM,667
+univlabo_Talibe-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+univlabo_Talibe-0.0.1.dist-info/top_level.txt,sha256=h9KG5K-YUtIkx-yfEp6fBEYjuA-mpFlD8St6nQaMYDA,8
+univlabo_Talibe-0.0.1.dist-info/RECORD,,
