@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyplayingcards/__init__.py
+pyplayingcards/playingcards.py
+pyplayingcards.egg-info/PKG-INFO
+pyplayingcards.egg-info/SOURCES.txt
+pyplayingcards.egg-info/dependency_links.txt
+pyplayingcards.egg-info/top_level.txt
