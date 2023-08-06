@@ -1,0 +1,11 @@
+numpy
+requests
+attrs
+pandas
+diskcache
+tqdm
+clize
+humanize
+fastparquet
+pyarrow
+openpyxl

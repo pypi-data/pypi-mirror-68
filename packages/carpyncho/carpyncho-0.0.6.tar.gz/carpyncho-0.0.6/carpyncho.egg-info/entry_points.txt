@@ -1,0 +1,3 @@
+[console_scripts]
+carpyncho = carpyncho:main
+
