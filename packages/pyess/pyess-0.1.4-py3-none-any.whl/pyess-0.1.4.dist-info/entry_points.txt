@@ -1,0 +1,4 @@
+[console_scripts]
+esscli = pyess.cli:main
+essmqtt = pyess.essmqtt:main
+
