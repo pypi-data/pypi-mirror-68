@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: covid-models
+Version: 0.1.1
+Summary: Covid
+Home-page: http://github.com/fabiommendes/covid-19
+License: UNKNOWN
+Author: Fábio Macêdo Mendes
+Author-email: fabiomacedomendes@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Babel~=2.8.0
+Requires-Dist: click~=7.1.1
+Requires-Dist: invoke==1.4.1
+Requires-Dist: matplotlib==3.2.1
+Requires-Dist: numpy~=1.18.2
+Requires-Dist: pandas~=1.0.3
+Requires-Dist: requests~=2.23.0
+Requires-Dist: seaborn~=0.10.0
+Requires-Dist: streamlit~=0.57.3
+Requires-Dist: xlrd~=1.2.0
+Requires-Dist: black==19.10b0 ; extra == "dev"
+Requires-Dist: pycodestyle==2.5.0 ; extra == "dev"
+Requires-Dist: coverage==5.0.4 ; extra == "test"
+Requires-Dist: pytest==5.4.1 ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: test
