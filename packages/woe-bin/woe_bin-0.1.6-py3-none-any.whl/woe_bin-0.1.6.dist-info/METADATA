@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: woe-bin
+Version: 0.1.6
+Summary: split the continuous variable,while the ouput woe value is monotonous
+Home-page: https://github.com/jinxinbo/woe_bin
+Author: jinxinbo
+Author-email: tmacabo@163.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+woe\_linear\_bin
+================
+
+The core code is include split\_data and apply\_woetab. the function
+split\_data then split\_onevar is split then split the continuous
+variable, the ouput woe value is monotonous and the applywoetab is
+translet the origin data into woetab
+
+
