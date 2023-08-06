@@ -1,0 +1,4 @@
+include artellapipe/libs/kitsu/__logging__.ini
+recursive-include artellapipe/libs/kitsu/resources/* *.*
+include versioneer.py
+include artellapipe/libs/kitsu/_version.py
