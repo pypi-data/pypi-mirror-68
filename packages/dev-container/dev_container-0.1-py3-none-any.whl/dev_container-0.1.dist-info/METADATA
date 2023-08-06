@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dev-container
+Version: 0.1
+Summary: A small bin tool that will spin up a docker for you. The docker will be picked from your CI tools, and can be used instead of the host system
+Home-page: https://github.com/marcelhollerbach/dev-container
+Author: Marcel Hollerbach
+Author-email: mail@bu5hm4n.de
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+# dev-container Tool
+
+This is a tool which will simply boot up a docker container with the projects CI used docker container.
+Additionally, directories for X11 and wayland forwarding are mounted.
+This way a project can be tested, without risking work and session on the host system.
+
+
