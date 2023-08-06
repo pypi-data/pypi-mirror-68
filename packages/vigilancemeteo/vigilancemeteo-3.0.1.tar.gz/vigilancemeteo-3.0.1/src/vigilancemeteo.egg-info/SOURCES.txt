@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/vigilancemeteo/__init__.py
+src/vigilancemeteo/__version__.py
+src/vigilancemeteo/constants.py
+src/vigilancemeteo/department_weather_alert.py
+src/vigilancemeteo/vigilance_proxy.py
+src/vigilancemeteo.egg-info/PKG-INFO
+src/vigilancemeteo.egg-info/SOURCES.txt
+src/vigilancemeteo.egg-info/dependency_links.txt
+src/vigilancemeteo.egg-info/requires.txt
+src/vigilancemeteo.egg-info/top_level.txt
