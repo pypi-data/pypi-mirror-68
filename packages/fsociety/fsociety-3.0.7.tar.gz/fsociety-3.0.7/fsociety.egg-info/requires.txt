@@ -1,0 +1,6 @@
+requests
+colorama
+
+[dev]
+autopep8
+twine
