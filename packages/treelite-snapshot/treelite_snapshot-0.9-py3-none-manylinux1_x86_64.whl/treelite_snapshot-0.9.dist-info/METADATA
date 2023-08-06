@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: treelite-snapshot
+Version: 0.9
+Summary: treelite: toolbox for decision tree deployment
+Home-page: http://treelite.io
+Author: DMLC
+License: Apache-2.0
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
