@@ -1,0 +1,15 @@
+README.md
+setup.py
+calc2tex/__init__.py
+calc2tex/calc2tex.py
+calc2tex/calc_formula.py
+calc2tex/helper.py
+calc2tex/parse_tex.py
+calc2tex/parse_txt.py
+calc2tex/settings.py
+calc2tex/trigo.py
+calc2tex.egg-info/PKG-INFO
+calc2tex.egg-info/SOURCES.txt
+calc2tex.egg-info/dependency_links.txt
+calc2tex.egg-info/requires.txt
+calc2tex.egg-info/top_level.txt
