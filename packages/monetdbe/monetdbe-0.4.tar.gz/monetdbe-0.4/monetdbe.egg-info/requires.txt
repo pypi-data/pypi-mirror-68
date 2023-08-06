@@ -1,0 +1,11 @@
+cffi>=1.0.0
+
+[full]
+numpy
+pandas
+
+[numpy]
+numpy
+
+[pandas]
+pandas
