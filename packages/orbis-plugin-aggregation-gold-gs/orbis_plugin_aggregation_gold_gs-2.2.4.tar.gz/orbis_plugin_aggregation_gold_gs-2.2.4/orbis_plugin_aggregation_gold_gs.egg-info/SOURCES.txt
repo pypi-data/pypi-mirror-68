@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_aggregation_gold_gs/__init__.py
+orbis_plugin_aggregation_gold_gs/main.py
+orbis_plugin_aggregation_gold_gs.egg-info/PKG-INFO
+orbis_plugin_aggregation_gold_gs.egg-info/SOURCES.txt
+orbis_plugin_aggregation_gold_gs.egg-info/dependency_links.txt
+orbis_plugin_aggregation_gold_gs.egg-info/top_level.txt
