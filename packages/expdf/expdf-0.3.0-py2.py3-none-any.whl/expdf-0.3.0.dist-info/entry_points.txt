@@ -1,0 +1,3 @@
+[console_scripts]
+expdf = expdf.cli:command_line
+
