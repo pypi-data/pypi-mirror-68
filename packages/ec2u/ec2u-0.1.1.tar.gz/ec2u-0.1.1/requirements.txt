@@ -1,0 +1,4 @@
+boto3==1.4.7
+click==7.1.2
+ec2_metadata==2.2.0
+six==1.12
