@@ -1,0 +1,6 @@
+[console_scripts]
+contacts = contacts.cli:main
+
+[gui_scripts]
+contacts_gui = contacts.gui:main
+

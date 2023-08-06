@@ -1,0 +1,10 @@
+contacts/__init__.py,sha256=AAo3rYVuSoL9PMrDaJFCACaZEHrDtvR33nS4VlOB_1w,1907
+contacts/__main__.py,sha256=5WhmLJhm5lPeZ48ofiL_ASIxRjrV9_ZvEv-0FZYASeI,824
+contacts/cli.py,sha256=CY_5TOfoFqXrvcfKKPZ0AaX9WrhSvgoKTBIQ4PJJVSw,6327
+contacts/gui.py,sha256=Q95DcswZMKx2c7THfWHtoA7eIooKBkYvpa__b1Uuzkg,15903
+Contacts-2.0b8.dist-info/LICENSE.txt,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+Contacts-2.0b8.dist-info/METADATA,sha256=ZRmRwLHrEsabgRwCVuxwIgGrEycSjRD8RQ888NWVoXk,1556
+Contacts-2.0b8.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Contacts-2.0b8.dist-info/entry_points.txt,sha256=POEiiPSqN2tbTrCxCyUpFPllBiLCoYCPjM1j8_YaTew,96
+Contacts-2.0b8.dist-info/top_level.txt,sha256=PZlT2XJHfp_uwpY67-MeRxCj49N_DoqyPsx4U17JJ78,9
+Contacts-2.0b8.dist-info/RECORD,,
