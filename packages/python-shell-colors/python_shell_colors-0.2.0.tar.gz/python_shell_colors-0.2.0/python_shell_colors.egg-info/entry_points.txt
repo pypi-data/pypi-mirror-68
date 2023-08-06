@@ -1,0 +1,3 @@
+[console_scripts]
+python_shell_colors = python_shell_colors.cli:main
+
