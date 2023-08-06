@@ -1,0 +1,10 @@
+Aeros/WebServer.py,sha256=nQShd6LE14T7o1g1A7rsAU9qQsUPhsJzJYnNdI6cJQ0,8264
+Aeros/__init__.py,sha256=yClC6WUP6eDv01yKF8I6sVzdX5xKyq-SvKgwsP17Pzs,47
+Aeros/misc.py,sha256=eY04RQM6urkQyP2oLZ4dDMEoM4yPO63qecdNzAGqyDU,99
+Aeros/run.py,sha256=h6MygQauR4fGTWbh8i0g8-LOswLJR45EyZIokFp31O4,1526
+Aeros/threading.py,sha256=istMw5g35zI1V33GFh9rMv1mRmoRePdpM0tGfa-uKgE,930
+Aeros/worker.py,sha256=jCRcm4IudS9xTwPLhysLhJ4KwCvFJAf0Ydgw1OdfKMU,723
+Aeros-0.2.1.dist-info/METADATA,sha256=4RY-sK0beLQr8DRMZoeX_1KAGjlvJzWH_uVfO9z476M,5214
+Aeros-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Aeros-0.2.1.dist-info/top_level.txt,sha256=aKYySNu0QA0s4uu-87GllrBdxF51_-W17hfQgpX6ci0,6
+Aeros-0.2.1.dist-info/RECORD,,
