@@ -1,0 +1,6 @@
+setup.py
+mdj.egg-info/PKG-INFO
+mdj.egg-info/SOURCES.txt
+mdj.egg-info/dependency_links.txt
+mdj.egg-info/not-zip-safe
+mdj.egg-info/top_level.txt
