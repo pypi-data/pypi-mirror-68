@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sanic-babel
+Version: 0.2.0
+Summary: babel support for sanic
+Home-page: https://github.com/lixxu/sanic-babel
+Author: Lix Xu
+Author-email: xuzenglin@gmail.com
+License: BSD
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Sanic (>=0.4.1)
+Requires-Dist: Babel (>=2.3)
+Requires-Dist: Jinja2 (>=2.5)
+
+
+sanic-babel
+-----------
+
+Adds i18n/l10n support to Sanic applications with the help of the
+`Babel`_ library.
+
+Links
+`````
+
+* `documentation <http://pythonhosted.org/sanic-babel/>`_
+
+.. _Babel: http://babel.edgewall.org/
+
+
+
