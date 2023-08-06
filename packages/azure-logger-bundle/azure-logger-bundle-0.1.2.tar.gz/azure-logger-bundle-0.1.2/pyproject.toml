@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "azure-logger-bundle"
+version = "0.1.2"
+description = "Azure Logger bundle for the Pyfony framework"
+readme = "README.md"
+repository = "https://github.com/bricksflow/azure-logger-bundle"
+
+license = "MIT"
+
+authors = [
+    "Jiri Koutny <jiri.koutny@datasentics.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml"]
+
+packages = [
+    { include = "azureloggerbundle", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "~3.7.3"
+opencensus = "0.7.*"
+opencensus-ext-azure = "1.0.*"
+logger-bundle = "^0.5.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "2.4.*"
+pytest = "5.2.*"
+pyfony = "^0.4.0"
