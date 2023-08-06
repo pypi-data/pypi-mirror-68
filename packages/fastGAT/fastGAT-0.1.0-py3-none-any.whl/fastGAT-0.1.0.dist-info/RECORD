@@ -1,0 +1,12 @@
+fastGAT/__init__.py,sha256=tPqGal0O5zDmi1IkYnVNhVPVnqOw-fuFvNjzpa5gTL8,105
+fastGAT/demo.py,sha256=5Ad-nBEB7Z69QbwEt-77cDyLHjkqDvnx-iVfAMOq-5Y,320
+fastGAT/fastGAT.py,sha256=0Xpc--3BJckro8PT2SIRCKojTKbg1NfXwh6Pe0ZstlQ,6055
+fastGAT/layer.py,sha256=b9N-HmgrHfWTNqTvP2gME59x3scE55rw5B9huYk2krY,8782
+fastGAT/model.py,sha256=W8BiM8I9CVxcGKNN_EpcRBzKsW8vPJ22e_J3kowB7hk,2779
+fastGAT/utils.py,sha256=VYQyvJzKOYZlEIqzKyHLTIWfWJ_By4ZEJwCIGZXwOfQ,2595
+fastGAT/visual.py,sha256=7Dj0uft7J683rZxbWTX8cu6gEa1jXwbSezZnP5PJhhY,2096
+fastGAT-0.1.0.dist-info/LICENSE,sha256=GFI5T4qFCQSAxr1DmeOnAZn4OKp5NXgAiyXmuQbdlZ0,1080
+fastGAT-0.1.0.dist-info/METADATA,sha256=7dJUWeMTHoQKSgg2_j_HlcMqBa_Qh2X6Iu4tKNZ6HPQ,1669
+fastGAT-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fastGAT-0.1.0.dist-info/top_level.txt,sha256=I1lCSsziB7XpMJSvvdeNA_AQ1r9L0ArGRLqL4LYk3UM,8
+fastGAT-0.1.0.dist-info/RECORD,,
