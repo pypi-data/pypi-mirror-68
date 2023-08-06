@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: pynqc
+Version: 0.1
+Summary: Wrapper for the nqc executable
+Home-page: https://gitlab.com/solsjo/pynqc
+Author: Oskar Solsjö
+Author-email: oskar.solsjo@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pynqc NQC wrapper
+
+pynqc is a python wrapper for the NQC executable.
+It utilizes the subprocess module for communitcation with NQC.
+The wrapper is not complete, but should be easy to update.
+
+
+## Requirements
+
+The package does not include the NQC executeable it has to be built and
+installed from https://github.com/jverne/nqc/
+
+There is also Dockerfile in this repo which downloads source and a patch to
+enable usb support for nqc.
+
+https://github.com/jverne/nqc/ also provides the firmware needed to be flashed
+onto the RCX device for running progams.
+The Dockerfile in the repo downloads those aswell.
+
+## Layout
+
+pynqc consists of two modules:
+- nqc and the Nqc class
+- raw_functions and the RawFunctions class, enables us to execute op_codes on
+- the rcx from the host.
+  It does so by generating the instruction and calls the Nqc objects exec_raw
+  which essentially executes nqc -Susb:/some/path/to/legotower -raw
+
+## Example usage
+
+```python
+import time
+
+import pynqc
+from pynqc import raw_functions as rf
+
+compilation_flags = ["-DOVERRIDE", f"-DVERSION={1}", f"-DID={189}"]
+
+# An nqc instance requires knowledge of where it can find the lego IR tower
+nqc = pynqc.Nqc(serial_type="usb", device="/dev/usb/legousbtower0")
+
+# Raw functions also requires access to the lego IR tower
+# Therefore the nqc module has utility function which provides
+# an initialized raw_functions object
+
+raw_func = nqc.get_raw_functions()
+
+try:
+    _ = raw_func.is_alive()
+except IOError as err:
+    if err.errno == 255:
+        print(err.strerror)
+else:
+    _ = nqc.flash_firmware("./firm0309.lgo")
+    _ = nqc.flash_and_exec_application("../tests/test.nqc", compilation_flags)
+    time.sleep(1)
+    raw_func.set_motor_state(rf.MOTOR_A, rf.IMMEDIATE, rf.MOTOR_ON)
+    time.sleep(1)
+    raw_func.set_motor_state(rf.MOTOR_A, rf.IMMEDIATE, rf.MOTOR_OFF)
+
+```
+
+# Credit
+
+Kekoa Proudfoot : http://www.mralligator.com/rcx/
+  This site helped a lot when implementing the raw functions from the documented
+  op_codes.
+
+
