@@ -1,0 +1,9 @@
+fintoc/__init__.py,sha256=ve--FbGX6e1lwg_2nEgJdKokoRNtuyYyc5fSUQxTno8,172
+fintoc/client.py,sha256=_NQDbcMETtT3vYbBDp_x-EU4H_AQDPgyhXacC1lMiBo,4076
+fintoc/errors.py,sha256=lgtSfqHMeI6rqiTeB0l7tsKSOf7uPPUOPHQpfV2CX5g,1388
+fintoc/resources.py,sha256=YRU6vdw29aIcqcl4TZyibitS7NQgsN-68iKK-Ou5xj0,6761
+fintoc/utils.py,sha256=RJoQkzKsOWfYV5t2BPhetNFhJDcgYlTOQi0HrEEPEug,1942
+fintoc-0.1.0.dist-info/LICENSE.md,sha256=t7H_pBhewKE51YTIvtp37pzGd2ZJMOes93hjdAsHuis,1492
+fintoc-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+fintoc-0.1.0.dist-info/METADATA,sha256=JiiNjiRzwcdG_59WHDjdyflXGNeQ2MP3oMH3GIXhTtI,3520
+fintoc-0.1.0.dist-info/RECORD,,
