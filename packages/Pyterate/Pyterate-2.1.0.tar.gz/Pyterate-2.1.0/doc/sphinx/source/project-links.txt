@@ -1,0 +1,52 @@
+.. -*- Mode: rst -*-
+
+..
+   |PyterateUrl|
+   |PyterateHomePage|_
+   |PyterateDoc|_
+   |Pyterate@github|_
+   |Pyterate@readthedocs|_
+   |Pyterate@readthedocs-badge|
+   |Pyterate@pypi|_
+
+.. |ohloh| image:: https://www.openhub.net/accounts/230426/widgets/account_tiny.gif
+   :target: https://www.openhub.net/accounts/fabricesalvaire
+   :alt: Fabrice Salvaire's Ohloh profile
+   :height: 15px
+   :width:  80px
+
+.. |PyterateUrl| replace:: https://fabricesalvaire.github.io/Pyterate
+
+.. |PyterateHomePage| replace:: Pyterate Home Page
+.. _PyterateHomePage: https://fabricesalvaire.github.io/Pyterate
+
+.. |Pyterate@readthedocs-badge| image:: https://readthedocs.org/projects/Pyterate/badge/?version=latest
+   :target: http://Pyterate.readthedocs.org/en/latest
+
+.. |Pyterate@github| replace:: https://github.com/FabriceSalvaire/Pyterate
+.. .. _Pyterate@github: https://github.com/FabriceSalvaire/Pyterate
+
+.. |Pyterate@pypi| replace:: https://pypi.python.org/pypi/Pyterate
+.. .. _Pyterate@pypi: https://pypi.python.org/pypi/Pyterate
+
+.. |Build Status| image:: https://travis-ci.org/FabriceSalvaire/Pyterate.svg?branch=master
+   :target: https://travis-ci.org/FabriceSalvaire/Pyterate
+   :alt: Pyterate build status @travis-ci.org
+
+.. |Pypi Version| image:: https://img.shields.io/pypi/v/Pyterate.svg
+   :target: https://pypi.python.org/pypi/Pyterate
+   :alt: Pyterate last version
+
+.. |Pypi License| image:: https://img.shields.io/pypi/l/Pyterate.svg
+   :target: https://pypi.python.org/pypi/Pyterate
+   :alt: Pyterate license
+
+.. |Pypi Python Version| image:: https://img.shields.io/pypi/pyversions/Pyterate.svg
+   :target: https://pypi.python.org/pypi/Pyterate
+   :alt: Pyterate python version
+
+..  coverage test
+..  https://img.shields.io/pypi/status/Django.svg
+..  https://img.shields.io/github/stars/badges/shields.svg?style=social&label=Star
+
+.. End

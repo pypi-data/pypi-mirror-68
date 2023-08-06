@@ -1,0 +1,8 @@
+astunparse
+Jinja2
+jupyter
+jupyter-client
+nbformat
+PyYAML>=3.10
+sphinx
+sphinxcontrib-getthecode>=1.2.1
