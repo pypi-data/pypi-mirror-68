@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://pngimg.com/uploads/coronavirus/coronavirus_PNG46.png"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='style_dashboard.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='nice-select-home.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script defer src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script
+      defer
+      src="{{url_for('static', filename='jquery.nice-select-home.min.js')}}"
+    ></script>
+    <script defer src="{{url_for('static', filename='dashboard.js')}}"></script>
+    <title>Covidindia Server</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('Data')}}">Data</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('state')}}">Data by State</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('demography')}}">Demography</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('rank')}}">Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('analysis')}}">Analysis</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="dashborad-section">
+      <h1>Dashboard(Updated upto {{date_1}})</h1>
+      <div class="main-dashboard">
+        <div class="confirmed-1">
+          <h2>Confirmed cases</h2>
+          <p>{{conf_number}}</p>
+        </div>
+        <div class="Active-1">
+          <h2>Active<br />cases</h2>
+          <p>{{active_number}}</p>
+        </div>
+        <div class="Recovered-1">
+          <h2>Recovery cases</h2>
+          <p>{{recover_number}}</p>
+        </div>
+        <div class="Deceased-1">
+          <h2>Deceased cases</h2>
+          <p>{{death_number}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-section-2">
+      <h1>Important statistics</h1>
+      <div class="statistics id-1">
+        <div class="stat-1">
+          <h2>Highest Confirmed</h2>
+          <p>{{number_high_conf}} in {{state_high_conf}}</p>
+        </div>
+        <div class="stat-2">
+          <h2>Highest Deceased</h2>
+          <p>{{number_high_death}} in {{state_high_death}}</p>
+        </div>
+        <div class="stat-3">
+          <h2>Highest Recovered</h2>
+          <p>{{number_high_recover}} in {{state_high_recover}}</p>
+        </div>
+      </div>
+      <div class="statistics id-2">
+        <div class="stat-1">
+          <h2>Highest Confirmed to Test ratio(F)</h2>
+          <p>{{number_high_conftest}} in {{state_high_conftest}}</p>
+        </div>
+        <div class="stat-2">
+          <h2>Highest Deceased rate</h2>
+          <p>{{number_high_deathrate}} in {{state_high_deathrate}}</p>
+        </div>
+        <div class="stat-3">
+          <h2>Highest Recovery rate</h2>
+          <p>{{number_high_recoverrate}} in {{state_high_recoverrate}}</p>
+        </div>
+      </div>
+      <div class="statistics id-3">
+        <div class="stat-1">
+          <h2>India's Highest Confirmed spike in one day</h2>
+          <p>{{high_occur}} on {{high_occur_date}}</p>
+        </div>
+        <div class="stat-2">
+          <h2>India's Highest Recovery spike in one day</h2>
+          <p>{{high_occur_rec}} on {{high_occur_date_rec}}</p>
+        </div>
+        <div class="stat-3">
+          <h2>India's Highest Deceased spike in one day</h2>
+          <p>{{high_occur_death}} on {{high_occur_death_date}}</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
