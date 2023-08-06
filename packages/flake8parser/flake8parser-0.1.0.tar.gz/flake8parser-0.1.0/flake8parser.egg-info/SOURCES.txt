@@ -1,0 +1,9 @@
+README.rst
+setup.py
+flake8parser/__init__.py
+flake8parser/test_flake8parser.py
+flake8parser.egg-info/PKG-INFO
+flake8parser.egg-info/SOURCES.txt
+flake8parser.egg-info/dependency_links.txt
+flake8parser.egg-info/requires.txt
+flake8parser.egg-info/top_level.txt
