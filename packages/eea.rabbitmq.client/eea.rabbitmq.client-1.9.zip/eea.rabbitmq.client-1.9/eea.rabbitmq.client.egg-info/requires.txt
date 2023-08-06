@@ -1,0 +1,5 @@
+setuptools
+pika<1.0
+
+[test]
+plone.app.testing
