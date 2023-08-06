@@ -1,0 +1,17 @@
+pacifica_cli-0.5.1-py3.8-nspkg.pth,sha256=D3iBWN0sQfyYHlyK1b54AmsNexyR1L2R1mNEdQLAsCo,549
+pacifica/cli/__init__.py,sha256=zwf6xiytdGFA_XSBhYBZkec7UvjC0J1jR0PoKRgydf4,114
+pacifica/cli/__main__.py,sha256=KN2Kn6z95DqstN6YztkIpo9HFAg38lrkmPPLE9qmzjU,6739
+pacifica/cli/_version.py,sha256=DOJ8699nImEiuqPnJ2yfHGR15PEtwTRUBJ1twNr4ML0,322
+pacifica/cli/config_schema.json,sha256=lbhQa_ov4N0XqkDoVETciMQdGN5L4yRi0XJlJ9xchQI,796
+pacifica/cli/configure.py,sha256=dtV7JOBcPBT9x8sFF3u2hsDUnnbdLblTr4HTlTgWh9o,3614
+pacifica/cli/methods.py,sha256=TglHNEyTKqQw3jt3MXkKNMJTd45iDk-bX7CEBeJ78jc,7129
+pacifica/cli/query.py,sha256=IKzTU3Z9WyX6_A823efArBDK_Hy5LGPlJjcu_8sh0J0,6748
+pacifica/cli/upload.py,sha256=FQm2rWQ33p6H2mML2Tg-8OGyNuSJKuW4ednLddDBlbU,9906
+pacifica/cli/utils.py,sha256=JD4F31c2opfFZQxfjwiaeckCiv1W953Gx7W_pgiDbI4,2092
+pacifica_cli-0.5.1.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+pacifica_cli-0.5.1.dist-info/METADATA,sha256=JLMuEPWa_Z0dVP2VA3ukgyqNf7K-BjT1-ldT73kbK68,2333
+pacifica_cli-0.5.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pacifica_cli-0.5.1.dist-info/entry_points.txt,sha256=UwGGHvEjr-GdJ4_VGmJeIwcekaAvoNBgLnn7G325TH0,61
+pacifica_cli-0.5.1.dist-info/namespace_packages.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_cli-0.5.1.dist-info/top_level.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_cli-0.5.1.dist-info/RECORD,,
