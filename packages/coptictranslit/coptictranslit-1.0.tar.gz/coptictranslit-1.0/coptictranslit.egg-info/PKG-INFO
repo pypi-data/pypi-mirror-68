@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: coptictranslit
+Version: 1.0
+Summary: An inital release of a Coptic Transliterator
+Home-page: https://github.com/shehatamichael/coptic-transliteration
+Author: Michael Shehata
+Author-email: shehatamichael4@gmail.com
+License: UNKNOWN
+Description: The vision of this project is to provide an easy, bulk transliteration service between Coptic and Latin script. The primary use case (Coptic --> Latin script) is to allow English speakers who do not read Coptic to follow along with church services by offering transliterated text with accurate and transparent pronunciations. For more information visit out Github page at https://github.com/shehatamichael/coptic-transliteration
+Keywords: Coptic
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

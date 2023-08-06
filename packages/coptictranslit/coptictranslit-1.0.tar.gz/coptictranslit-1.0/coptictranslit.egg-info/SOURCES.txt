@@ -1,0 +1,9 @@
+README.md
+setup.py
+coptictranslit.egg-info/PKG-INFO
+coptictranslit.egg-info/SOURCES.txt
+coptictranslit.egg-info/dependency_links.txt
+coptictranslit.egg-info/requires.txt
+coptictranslit.egg-info/top_level.txt
+translit/__init__.py
+translit/coptictranslit.py
