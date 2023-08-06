@@ -1,0 +1,10 @@
+setup.py
+hjw-distributions/Binomialdistribution.py
+hjw-distributions/Gaussiandistribution.py
+hjw-distributions/Generaldistribution.py
+hjw-distributions/__init__.py
+hjw_distributions.egg-info/PKG-INFO
+hjw_distributions.egg-info/SOURCES.txt
+hjw_distributions.egg-info/dependency_links.txt
+hjw_distributions.egg-info/not-zip-safe
+hjw_distributions.egg-info/top_level.txt
