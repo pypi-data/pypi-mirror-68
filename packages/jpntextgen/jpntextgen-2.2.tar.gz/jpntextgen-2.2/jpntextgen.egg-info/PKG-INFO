@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: jpntextgen
+Version: 2.2
+Summary: The Japanese Text Generator Library use to generate the japanese general text such as name, address
+Home-page: https://github.com/nerophung/jpn-text-gen
+Author: Nero Phung
+Author-email: nerophung.io@gmail.com
+License: MIT
+Download-URL: https://github.com/nerophung/jpn-text-gen/archive/dev-2.2.tar.gz
+Description: UNKNOWN
+Keywords: Japanese,Generator,OCR
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
