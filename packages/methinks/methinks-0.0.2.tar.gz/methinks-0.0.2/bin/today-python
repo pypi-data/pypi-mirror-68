@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+import os
+import sys
+import datetime
+from argparse import ArgumentParser
+
+from methinks import config as conf
+from methinks.db import Entry
+from methinks.api import MethinksAPI
+from methinks.parse import parse_sections
+
+
+if __name__ == "__main__":
+    parser = ArgumentParser(description="today.py script")
+    parser.add_argument("--infile", type=str, required=False,
+                        help="The file to process")
+    parser.add_argument("--config", type=str, required=False,
+                        help="The config file to use")
+    parser.add_argument("--remote", action="store_true",
+                        help="Help text")
+    args = parser.parse_args()
+
+    args.config = args.config or conf.DEFAULT_CONF_PATH
+
+    config = conf.ConfigLoader.from_file(args.config)
+    if args.infile:
+        local_entry = Entry.from_file(args.infile)
+    else:
+        local_entry = Entry.from_config(config)
+
+    if args.remote:
+        api = MethinksAPI(os.environ['METHINKS_HOST'])
+        # Fetch latest entry from remote
+        remote_entry = api.get_latest()
+    else:
+        remote_entry = None
+
+    # If the remote version has been modified more recently
+    # fetch the remote entry
+    if remote_entry:
+        if remote_entry.last_edited > local_entry.last_edited:
+            local_entry = remote_entry
+
+    # If the date we are processing is different, we need to process the input
+    if local_entry.date != datetime.date.today():
+
+        sections = parse_sections(local_entry.text, config.triggers)
+        new_text = ''.join(sections)
+
+        # Update local_entry
+        local_entry.text = new_text
+        local_entry.date = datetime.date.today()
+
+    # If this entry already exists on remote - update it - else create it
+    if remote_entry and remote_entry.date == local_entry.date:
+        # If there have been any changes
+        if remote_entry.hash != local_entry.hash:
+            response = api.update_entry(local_entry)
+            if response is not None:
+                local_entry = response
+    else:
+        if args.remote:
+            response = api.create_entry(local_entry)
+            if response is not None:
+                local_entry = response
+
+    print(local_entry.text, end='')

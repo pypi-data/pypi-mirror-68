@@ -1,0 +1,54 @@
+# ISO dateformat for filenames (as implemented in datetime)
+dateformat: '%Y-%m-%d-%a'
+# Specify what editor to use to edit your daily entry
+editor: vim
+# Below specifies what sections your daily entry will have.
+# Each section will be named using `title` and will be a h1 in markdown (#blah)
+# NOTE: h1 is reserved for this purpose, use h2 .. h6 for subsections:
+#   eg: (##my subsection) or ######my subsub..section 
+#
+# PersistentSection always propagates information from yesterday's entry.
+#   Use for notes you want to have persist until you choose to delete.
+#   Use h2 to h6 for subsections.
+#
+# VolatileSection always drops information from yesterday's entry.
+#   Use for sections to keep in history, but drop tomorrow to avoid clutter
+#   Use h2 to h6 for subsections.
+#    
+# TodosSection propagates incomplete todos to the next day
+#   * [ ] Example incomplete todo
+#   * [x] Example complete todo
+# NOTE: subsections do not apply for Todos.
+sections:
+  - title: Todos
+    handler: methinks.section.TodosSection
+  - title: Meeting points
+    handler: methinks.section.TodosSection
+  - title: Notes
+    handler: methinks.section.PersistentSection
+  - title: Conclusions
+    handler: methinks.section.VolatileSection
+  - title: Resources
+    handler: methinks.section.VolatileSection
+  - title: Papers
+    handler: methinks.section.VolatileSection
+  - title: Quotes
+    handler: methinks.section.VolatileSection
+# Details about remote - not needed for core functionality
+# For this to function you'll need to follow the server installation
+# instructions in README.md.
+# remote:
+#   # NOTE: below must be https - if not, token is sent in cleartext: NOT SECURE
+#   host: 'https://myhost'
+#   token: 'mytoken'
+#   db:
+#     name: methinks
+#     user: methinks
+#     password: 'mypass'
+#     port: 5432
+# Expose below named env variables to bash
+env_variables:
+  METHINKS_EDITOR: editor
+  METHINKS_DATEFORMAT: dateformat
+  METHINKS_HOST: 'remote.host'
+  METHINKS_TOKEN: 'remote.token'
