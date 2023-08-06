@@ -1,0 +1,3 @@
+pairtree>=0.8.1
+dateutils>=0.6.6
+bagit>=1.7.0
