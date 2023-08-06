@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AS-Object_models
+Version: 0.1
+Summary: A Project that captures all of the data manipulation used in apps developed by Analytics Supply LLC.
+Home-page: https://gitlab.com/AnalyticsSupply/as-object-models
+Author: Jason Bowles
+Author-email: jasonbowles@analyticssupply.com
+License: MIT
+Description: # Analytics Supply Object Models
+        
+        Creating this project as a way to make the firestore client code pip installable in other projects
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
