@@ -1,0 +1,10 @@
+pyhcrf/__init__.py,sha256=vHcSpHDxvRkShNYe4JQvW6KCfbVe2X24ErIt0zQEUmE,13729
+pyhcrf/_algorithms.cpython-37m-darwin.so,sha256=IQW9R5LMIBVC5xics3bUEDVsHfpXXobHM6cGgtR7y0A,274212
+pyhcrf/_algorithms.pyx,sha256=LOYK2nbR8UFDcoAy7vkQ_Xkm5Cu4Fg7hd0QooF8pSp0,9778
+pyhcrf/_version.txt,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+pyhcrf/logaddexp.h,sha256=-CuWlIgMqC-bQQcp0LJJA3n5cf1Vx1IR_BBMtz0VRp4,2216
+pyhcrf-0.1.0.dist-info/COPYING.md,sha256=uTzGhlI8QQSpgkfIGO2wfNBN8u9DKDbF5E1sYsWy-lM,1611
+pyhcrf-0.1.0.dist-info/METADATA,sha256=4nHn9BZrioiSOQU971gjRUG1eSSkQtR5c1Qxuz2rs4s,6004
+pyhcrf-0.1.0.dist-info/WHEEL,sha256=rmlMk8wCTC2tU76-T5zuJ94CZXlxNi2cojMvVRV0ySE,111
+pyhcrf-0.1.0.dist-info/top_level.txt,sha256=N5LuNSEuBtgBtZxvYd7--KuWPwlw-68PRw35RLnyWoA,7
+pyhcrf-0.1.0.dist-info/RECORD,,
