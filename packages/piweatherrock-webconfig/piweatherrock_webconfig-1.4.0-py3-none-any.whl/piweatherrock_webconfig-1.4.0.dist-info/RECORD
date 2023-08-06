@@ -1,0 +1,12 @@
+piweatherrock/webconfig/__init__.py,sha256=FbwFOXBM72jmWf3Z6GBPUo0I1vniL-X6ji-Eji946R0,3537
+piweatherrock/webconfig/html/config.html,sha256=LsLqLnl0ykosX6VmEsC5nDuK9MlIoBImTy4ucMR-K54,13493
+piweatherrock/webconfig/html/serialize_script.js,sha256=6-xDtfuABvO731BwpSO4R575vPuPGAsLRZY-qzaayDQ,17282
+piweatherrock/webconfig/html/style.css,sha256=JIPYjPkWK-eoRDMlPlxTPFaJ1ZnInnJViw775bh1G7A,4845
+piweatherrock/webconfig/icons/bg.png,sha256=lxi9DxtdNYTsAReEHqmATUDYqQEokLfiFx3tvMvnEVE,1037893
+piweatherrock/webconfig/icons/256/chancetstorms.png,sha256=4X9qem6wrw3DEr5vXeyRB3EVt0EeKeteDUOwlMXJsl0,3486
+piweatherrock_webconfig-1.4.0.data/scripts/pwr-webconfig,sha256=sWAxW2Q-yO9RfI6mBaw2oc7Whdzk4jynq4rHVAtUWr0,584
+piweatherrock_webconfig-1.4.0.dist-info/LICENSE,sha256=3H9OzUROMuasNNkYXDI5LOrfIgfd9cjTjSCa5yMKb0M,1070
+piweatherrock_webconfig-1.4.0.dist-info/METADATA,sha256=4AiExFPoCMKgVg33f-vN2HUlI-rGUtG1Zsj4n0Gp7wQ,1701
+piweatherrock_webconfig-1.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+piweatherrock_webconfig-1.4.0.dist-info/top_level.txt,sha256=HlbFrEUVDaRcZLuiOrI0NG413_M2R9Qesb3jLdJAYHw,14
+piweatherrock_webconfig-1.4.0.dist-info/RECORD,,
