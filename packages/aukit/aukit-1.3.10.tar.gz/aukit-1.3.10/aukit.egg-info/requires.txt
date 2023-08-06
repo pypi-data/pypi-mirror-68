@@ -1,0 +1,7 @@
+webrtcvad
+pydub
+lws
+scipy
+numpy
+librosa
+pyworld
