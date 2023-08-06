@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: konduit
+Version: 0.1.10
+Summary: konduit: Enterprise Runtime for Machine Learning Models
+Home-page: https://github.com/KonduitAI/konduit-serving
+Author: Max Pumperla, Shams Ul Azeem
+Author-email: max@konduit.ai, shams@konduit.ai
+License: Apache
+Description: konduit: Enterprise Runtime for Machine Learning Models
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: tests
+Provides-Extra: codegen
+Provides-Extra: dev
