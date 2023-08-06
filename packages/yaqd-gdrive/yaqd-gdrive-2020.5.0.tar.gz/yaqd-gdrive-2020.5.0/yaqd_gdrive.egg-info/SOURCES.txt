@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+yaqd_gdrive/VERSION
+yaqd_gdrive/__init__.py
+yaqd_gdrive/__version__.py
+yaqd_gdrive/_gdrive.py
+yaqd_gdrive.egg-info/PKG-INFO
+yaqd_gdrive.egg-info/SOURCES.txt
+yaqd_gdrive.egg-info/dependency_links.txt
+yaqd_gdrive.egg-info/entry_points.txt
+yaqd_gdrive.egg-info/requires.txt
+yaqd_gdrive.egg-info/top_level.txt
