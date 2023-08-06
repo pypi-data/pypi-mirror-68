@@ -1,0 +1,8 @@
+hotpatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hotpatch/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hotpatch/cli/hotpatch_cli.py,sha256=ltgqEsYFy6ZvlYX8eSBV756yETtsWtDrQo65yV-Yd_w,1529
+hotpatch-0.0.1.dist-info/METADATA,sha256=Os1FLVaVA-5tJO2PYIdg-yIHAKeBtSjGkSfPJXAnjWg,266
+hotpatch-0.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+hotpatch-0.0.1.dist-info/entry_points.txt,sha256=nVPSDq3fxWqH27RechNCK4tTOO6l7g4E6MKhmZ8YtdY,61
+hotpatch-0.0.1.dist-info/top_level.txt,sha256=VjVxHrqFAyUkHFiI7WRkzqxeqHqPAWVBy1NNFQcvW7s,9
+hotpatch-0.0.1.dist-info/RECORD,,
