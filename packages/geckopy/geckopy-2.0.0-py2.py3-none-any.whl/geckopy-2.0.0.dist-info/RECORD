@@ -1,0 +1,14 @@
+geckopy/__init__.py,sha256=knZ5qtmSnd2kVyKDM846N7AAvsWjT8iNJvPTNThDCQg,215
+geckopy/data.py,sha256=eHfwercOalbnIl1kBAikinjq-ds_Ody7H0d4wHOv5i0,2100
+geckopy/gecko.py,sha256=gs9NfvAQ8iBDHKwDxIBYn0gvc3q57PS6drflH62yAtg,18226
+geckopy/data_files/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geckopy/data_files/ecYeastGEM_multi-pool.xml,sha256=_9_01tnFnqC4pIoiw-3vhA69C1FJfa9kenHK33PDkMM,6261715
+geckopy/data_files/ecYeastGEM_single-pool.xml,sha256=gTh2ZqmRcsGYENM1tJa-k1-DyzElrhqKld-GxqB0Wio,6379719
+geckopy/data_files/proteins.txt,sha256=x_n_TmexgdyTyG1knluFu_HdKheJpFRMb9YRPC4CJQs,183816
+geckopy/data_files/sanchez-mmol_gdw.csv,sha256=P34mnnWqBBEGAUbhhCMuFEFszurt_xI4mYXoZ0aCr8E,12214
+geckopy-2.0.0.dist-info/AUTHORS.rst,sha256=u7_yMd0u5lri6HHh9K4i2HTW5fMiJl-LiAsSAj-ngw0,150
+geckopy-2.0.0.dist-info/LICENSE,sha256=fqoymJKvWMyNSIvwmI7KcH9tQkrnoqw5fA7FGa0h0yo,1123
+geckopy-2.0.0.dist-info/METADATA,sha256=SOtfbJflgv_eTbFlLHKXAZ08k0PEH6vEpdlgVYTpLOc,10051
+geckopy-2.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+geckopy-2.0.0.dist-info/top_level.txt,sha256=WRMqMr1pVSG8dTp4yoREEtjYB4vUCWPapS4gD4Esyz4,8
+geckopy-2.0.0.dist-info/RECORD,,
