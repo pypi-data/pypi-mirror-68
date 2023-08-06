@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: geosys
+Version: 0.1
+Summary: Geological Systems
+Home-page: https://github.com/ShadowCodeCz/geosys
+Author: ShadowCodeCz
+Author-email: shadow.code.cz@gmail.com
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Project-URL: Source, https://github.com/ShadowCodeCz/geosys
+Project-URL: Tracker, https://github.com/ShadowCodeCz/geosys/issues
+Description: # geosys
+        Geological Systems 
+        
+Keywords: geological systems
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
