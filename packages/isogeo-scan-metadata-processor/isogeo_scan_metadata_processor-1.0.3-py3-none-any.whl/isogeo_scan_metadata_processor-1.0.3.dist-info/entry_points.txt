@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        scan-metadata-processor=scan_metadata_processor.cli:scan_metadata_processor
+    
