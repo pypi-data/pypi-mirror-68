@@ -1,0 +1,2 @@
+include examples/templates/*.html
+include requirements.txt
