@@ -1,0 +1,16 @@
+requests
+numpy
+pandas
+python-dateutil
+six
+logbook
+click
+jsonpickle
+simplejson
+XlsxWriter
+PyYAML
+tabulate
+rqrisk
+h5py
+matplotlib
+xlwt
