@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram HTTP notification script.
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+ExecStart=/usr/bin/python3 -m thns -m -s -l /var/log/nginx/access.log -c "-1234567890123" -k "123456789:1234567890abcdefghijklmnopqrstuvwxyz" -iI 127.0.0.1 ::1 -iH 301 302
+TimeoutStopSec=20
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
