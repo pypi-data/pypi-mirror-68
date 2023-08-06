@@ -1,0 +1,14 @@
+MANIFEST.in
+README.txt
+setup.py
+FoxHustleQR/__init__.py
+FoxHustleQR.egg-info/PKG-INFO
+FoxHustleQR.egg-info/SOURCES.txt
+FoxHustleQR.egg-info/dependency_links.txt
+FoxHustleQR.egg-info/not-zip-safe
+FoxHustleQR.egg-info/requires.txt
+FoxHustleQR.egg-info/top_level.txt
+FoxHustleQR/images/logotype_colored_dark.png
+FoxHustleQR/images/logotype_colored_light.png
+FoxHustleQR/images/logotype_mono_dark.png
+FoxHustleQR/images/logotype_mono_white.png
