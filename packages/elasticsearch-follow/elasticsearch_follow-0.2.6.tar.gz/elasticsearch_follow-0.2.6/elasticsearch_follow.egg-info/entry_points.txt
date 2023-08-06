@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        es_tail=elasticsearch_follow.cli:cli
+    
