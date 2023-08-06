@@ -1,0 +1,10 @@
+vibrance/__init__.py,sha256=Yr_466pmQdEWaMzht55gzAFYr6hd7EwQ9KTV73yI6jQ,84
+vibrance/controller.py,sha256=aAlygOIc-W9RCHqCTei3PkwWhxubZsQleCDIaY3aSLo,1963
+vibrance/interface.py,sha256=whxnMpxqTEtzwPZ-2phSrYAhFNd7O6Da7PWPcicPmVA,860
+vibrance/midi.py,sha256=zGXkQaTZTUDgqqbr1Zgyo8aff0KepVhE2R3Saz7etpQ,1803
+vibrance/relay.py,sha256=SoPvIUxExbVlPgvjp0JB2TZhGr2g-mqnUQg4wnuP_QU,8499
+vibrance-0.0.1.dist-info/LICENSE,sha256=roUS-JilaIU7svooVBG1c3Q3D4RgbPKHZpP6MceyebQ,1072
+vibrance-0.0.1.dist-info/METADATA,sha256=yQso3ooWXYgibEc1jldQqveq180sOG7kvagEFpZTCBo,634
+vibrance-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vibrance-0.0.1.dist-info/top_level.txt,sha256=9Y0W6Yz6dj_qEpzoX-91UwpTJCfBNX7SYVLyQQrJVCo,9
+vibrance-0.0.1.dist-info/RECORD,,
