@@ -1,0 +1,4 @@
+Click
+dataclasses
+setuptools
+pybtex
