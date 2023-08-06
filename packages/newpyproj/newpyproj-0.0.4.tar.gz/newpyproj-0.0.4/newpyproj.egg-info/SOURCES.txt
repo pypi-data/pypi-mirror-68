@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+newpyproj/__init__.py
+newpyproj/__main__.py
+newpyproj/newpyproj.py
+newpyproj/support.py
+newpyproj.egg-info/PKG-INFO
+newpyproj.egg-info/SOURCES.txt
+newpyproj.egg-info/dependency_links.txt
+newpyproj.egg-info/requires.txt
+newpyproj.egg-info/top_level.txt
