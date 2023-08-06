@@ -1,0 +1,13 @@
+russtress/__init__.py,sha256=8oHj4h3CV3VPO_N3bNu2Imr-EIDazSWebrLOmNezGSI,152
+russtress/add_dictionary.sm,sha256=CJJmuQ-GwGiGJlrlsJ9-IX9H9t3p46SmEuvti_hPRvE,15
+russtress/constants.py,sha256=JRTUMv07LmY4eu4A15dYAigs_9krv01OQJ1VH-a1qFM,601
+russtress/model.py,sha256=z38Em_Zd3Pcl1ywdaQObL-qwDlfZBuIKvefTyHsN2Xo,634
+russtress/text_accentAPI.py,sha256=Ktb4X4RNtBlPc7vQ_3epA_qs9XqZ4TOYSKyRkKMfiZo,2831
+russtress/text_model.json,sha256=sJf9xMqRb6_bDjSJFMzwiLfgpDksmh9Km6rP1Lfiwi8,4062
+russtress/tokenizer.py,sha256=NBuEgxF1z9ZLvADVqwmNZK2bxbI7YlEJdccyOorZx_0,1049
+russtress/utils.py,sha256=2_7n8qrljJGwXEyeZS6NgzkKh-vDynygbEGos-1Wyfg,2094
+russtress/weights.96.hdf5,sha256=wzRZhXuGWHBDtoE_rbUpD_OFmyd20fmImMaMGm8WY7A,478880
+russtress-0.1.4.dist-info/METADATA,sha256=2UMtRwJE4fyT4XCfiBPa0hW2BZ118YMAjpAu-ioE8b4,1724
+russtress-0.1.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+russtress-0.1.4.dist-info/top_level.txt,sha256=ui7fI2PvFuuHwXCRl7BrJXHcn9ORrETPnUpS8qVDVmY,10
+russtress-0.1.4.dist-info/RECORD,,
