@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: marketclientpy
+Version: 0.1.1
+Summary: Dowload free financial data
+Home-page: https://github.com/genarionogueira/marketClient
+Author: Genario Nogueira
+Author-email: genarionogueira2@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
