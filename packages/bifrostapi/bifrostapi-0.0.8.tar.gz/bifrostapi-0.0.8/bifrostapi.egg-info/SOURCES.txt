@@ -1,0 +1,8 @@
+README.md
+setup.py
+bifrostapi/__init__.py
+bifrostapi.egg-info/PKG-INFO
+bifrostapi.egg-info/SOURCES.txt
+bifrostapi.egg-info/dependency_links.txt
+bifrostapi.egg-info/requires.txt
+bifrostapi.egg-info/top_level.txt
