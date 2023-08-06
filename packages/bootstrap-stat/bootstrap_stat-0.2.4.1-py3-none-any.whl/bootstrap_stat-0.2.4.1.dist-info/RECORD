@@ -1,0 +1,11 @@
+bootstrap_stat/bootstrap_stat.py,sha256=wrHqp2Db79XGiKfsU8w-qBoExwG-XG5DGnaiXyseTFc,95223
+bootstrap_stat/data/hormone_data.csv,sha256=yoo27uKgL_zNxkdTtSxxvRtNdabZbus1Bcc1Y-kblSw,304
+bootstrap_stat/data/law_school.csv,sha256=BJDNeCwuRgn5tCQOZyt_Ke3vxM2Vtv0UfRN8SKfk3sI,991
+bootstrap_stat/data/patch.csv,sha256=dz_lm_oisf3VbEmAGhwbc-HClz_fHdif4FQjNsD4QS0,189
+bootstrap_stat/data/rainfall.csv,sha256=ErSi4zoBiM3H5NIrWlGfD2kphfBpHPeK5wom_3bpAfc,863
+bootstrap_stat/data/spatial_test.csv,sha256=RomGZLueYBWxbX8hmXm_eK0u4ABRW4mJDAsitpi9CHo,231
+bootstrap_stat/datasets.py,sha256=HBMqbGy--MaHZbszG1x6lsIphhV_EirqBKdwZDqWE2I,4452
+bootstrap_stat-0.2.4.1.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+bootstrap_stat-0.2.4.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+bootstrap_stat-0.2.4.1.dist-info/METADATA,sha256=tCzsVSUrPQDv__DgV6RanYxFZVoc6YGA3TXarFdW2tk,10106
+bootstrap_stat-0.2.4.1.dist-info/RECORD,,
