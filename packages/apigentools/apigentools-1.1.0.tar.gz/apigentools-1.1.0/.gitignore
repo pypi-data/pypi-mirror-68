@@ -1,0 +1,10 @@
+build/
+dist/
+*.egg-info/
+**/*.pyc
+**/*.pyo
+.vscode/
+
+apigentools/version.py
+
+site/

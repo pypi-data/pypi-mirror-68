@@ -1,0 +1,13 @@
+chevron==0.13.1
+click==7.1.1
+jsonpath-ng==1.5.1
+PyYAML==5.1
+packaging==20.3
+pydantic==1.5
+
+[tests]
+flexmock>=0.10.4
+pytest>=5.2.4
+pytest-cov
+pytest-black
+pytest-console-scripts
