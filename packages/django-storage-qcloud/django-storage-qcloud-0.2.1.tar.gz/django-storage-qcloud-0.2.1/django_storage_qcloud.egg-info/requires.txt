@@ -1,0 +1,2 @@
+django
+cos-python-sdk-v5
