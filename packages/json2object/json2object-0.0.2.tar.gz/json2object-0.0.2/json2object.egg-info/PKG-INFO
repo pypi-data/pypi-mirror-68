@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: json2object
+Version: 0.0.2
+Summary: This is a simple package that will parse json to your custom model.
+Home-page: https://github.com/dsun615/json-2-object
+Author: Denna Sun
+Author-email: dennasun615@gmail.com
+License: UNKNOWN
+Description: This is a simple package that will parse json to your custom model. This will allow you to access through the model's attributes. The parser can handle custom object attributes and child attributes.
+        
+        For more details on how to use, please see https://github.com/dsun615/json-to-object/wiki
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
