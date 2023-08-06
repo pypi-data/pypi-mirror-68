@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: aws-jsiisamples.jsii-code-samples
+Version: 1.5.1
+Summary: Code samples that accompany the AWS blog post on jsii
+Home-page: https://github.com/aws-samples/jsii-code-samples#readme
+Author: Hari Pachuveetil <pachuvee@amazon.com>
+License: MIT-0
+Project-URL: Source, https://github.com/aws-samples/jsii-code-samples.git
+Description: # jsii-code-samples [![NPM](https://img.shields.io/npm/v/jsii-code-samples)](https://www.npmjs.com/package/jsii-code-samples) [![PyPI](https://img.shields.io/pypi/v/aws-jsiisamples.jsii-code-samples)](https://pypi.org/project/aws-jsiisamples.jsii-code-samples/) [![Maven](https://img.shields.io/maven-central/v/software.aws.jsiisamples/jsii-code-samples)](https://search.maven.org/artifact/software.aws.jsiisamples/jsii-code-samples) [![NuGet](https://img.shields.io/nuget/v/AWSSamples.Jsii)](https://www.nuget.org/packages/AWSSamples.Jsii/)
+        
+        > An example jsii package authored in TypeScript that gets published as GitHub packages for Node.js, Python, Java and dotnet.
+        
+        ## License
+        
+        This library is licensed under the MIT-0 License. See the LICENSE file.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
