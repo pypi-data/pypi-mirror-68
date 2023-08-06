@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+biorxiv_retriever/__init__.py
+biorxiv_retriever.egg-info/PKG-INFO
+biorxiv_retriever.egg-info/SOURCES.txt
+biorxiv_retriever.egg-info/dependency_links.txt
+biorxiv_retriever.egg-info/requires.txt
+biorxiv_retriever.egg-info/top_level.txt
