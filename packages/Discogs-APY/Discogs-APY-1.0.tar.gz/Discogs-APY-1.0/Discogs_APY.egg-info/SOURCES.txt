@@ -1,0 +1,8 @@
+README.md
+setup.py
+Discogs-APY/Discogs-APY.py
+Discogs-APY/__init__.py
+Discogs_APY.egg-info/PKG-INFO
+Discogs_APY.egg-info/SOURCES.txt
+Discogs_APY.egg-info/dependency_links.txt
+Discogs_APY.egg-info/top_level.txt
