@@ -1,0 +1,9 @@
+setup.py
+turkish_treebanks/__init__.py
+turkish_treebanks/read.py
+turkish_treebanks/twt_pb2.py
+turkish_treebanks.egg-info/PKG-INFO
+turkish_treebanks.egg-info/SOURCES.txt
+turkish_treebanks.egg-info/dependency_links.txt
+turkish_treebanks.egg-info/requires.txt
+turkish_treebanks.egg-info/top_level.txt
