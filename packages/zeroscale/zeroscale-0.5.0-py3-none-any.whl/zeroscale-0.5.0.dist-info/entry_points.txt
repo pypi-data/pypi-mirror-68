@@ -1,0 +1,4 @@
+[console_scripts]
+docker-zeroscale = zeroscale.__docker__:main
+zeroscale = zeroscale.__main__:main
+
