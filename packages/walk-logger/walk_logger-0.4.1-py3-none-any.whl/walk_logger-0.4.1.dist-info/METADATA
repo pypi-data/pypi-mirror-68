@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: walk-logger
+Version: 0.4.1
+Summary: Made Python logger Simple
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: walk-logger,logging,logger,log
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: System :: Logging
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: aiocontextvars (>=0.2.0) ; python_version < "3.7"
+Requires-Dist: colorama (>=0.3.4) ; sys_platform == "win32"
+Requires-Dist: win32-setctime (>=1.0.0) ; sys_platform == "win32"
+Provides-Extra: dev
+Requires-Dist: codecov (>=2.0.15) ; extra == 'dev'
+Requires-Dist: colorama (>=0.3.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.7.7) ; extra == 'dev'
+Requires-Dist: isort (>=4.3.20) ; extra == 'dev'
+Requires-Dist: tox (>=3.9.0) ; extra == 'dev'
+Requires-Dist: tox-travis (>=0.12) ; extra == 'dev'
+Requires-Dist: pytest (>=4.6.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.7.1) ; extra == 'dev'
+Requires-Dist: Sphinx (>=2.2.1) ; extra == 'dev'
+Requires-Dist: sphinx-autobuild (>=0.7.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.4.3) ; extra == 'dev'
+Requires-Dist: black (>=19.3b0) ; (python_version >= "3.6") and extra == 'dev'
+
+UNKNOWN
+
+
