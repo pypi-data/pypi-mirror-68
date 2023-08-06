@@ -1,0 +1,4 @@
+<button class="like" model="{{ target_model }}" id="target_{{ target_object_id }}" style="color: red;">
+    	<i class="like-{{ target_object_id }} fa fa-heart{% if not undo %}-o{% endif %}"></i>
+  		<span class="like-count-{{ target_object_id }}">{{ like_count }}</span>
+</button>
