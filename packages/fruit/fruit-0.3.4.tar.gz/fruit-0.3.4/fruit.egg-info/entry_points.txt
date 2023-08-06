@@ -1,0 +1,3 @@
+[console_scripts]
+fcoll = fruit.fruit:collect
+
