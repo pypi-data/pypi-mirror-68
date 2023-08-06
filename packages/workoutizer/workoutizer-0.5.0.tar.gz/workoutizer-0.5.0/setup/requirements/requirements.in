@@ -1,0 +1,11 @@
+bokeh
+coloredlogs
+django
+django-colorfield
+django-leaflet
+djangorestframework
+fitparse
+geopy
+gpxpy
+pandas
+requests
