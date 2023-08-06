@@ -1,0 +1,13 @@
+.gitignore
+COPYING
+COPYING.LESSER
+README.md
+examples.py
+setup.py
+ipo/__init__.py
+ipo.egg-info/PKG-INFO
+ipo.egg-info/SOURCES.txt
+ipo.egg-info/dependency_links.txt
+ipo.egg-info/top_level.txt
+tools/clean.sh
+tools/release.sh
