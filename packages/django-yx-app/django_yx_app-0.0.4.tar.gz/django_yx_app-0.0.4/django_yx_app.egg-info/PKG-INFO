@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: django-yx-app
+Version: 0.0.4
+Summary: evernote helper app of django
+Home-page: https://github.com/axplus/django_yx_app
+Author: yijie zeng
+Author-email: axplus@163.com
+License: UNKNOWN
+Description: # Local Yinxiang access to Yinxiang server
+        
+        ## Principal
+        
+        
+        
+        This app has the following responsibilities:
+        1. Pull account/tag/note/notebook data from Yinxiang API
+        2. Push changes to Yinxiang API
+        
+        
+        
+        
+        
+        ## How to use it
+        
+        
+        
+        Install from Pypi
+        
+        ```
+        pip install -U django_yx_app
+        ```
+        
+        Modify `settings.py`
+        
+        1. add evernote key settings 
+            ```
+            EVERNOTE_CONSUMER_KEY='axplus****'
+            EVERNOTE_CONSUMER_SECRET='****'
+            EVERNOTE_SERVICE_HOST='app.yinxiang.com' # or 'sandbox.yinxiang.com'
+            ```
+        2. add to `INSTALLED_APPS`
+            ```
+            INSTALLED_APPS=[
+                ...
+                'yx'
+            ]
+            ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
