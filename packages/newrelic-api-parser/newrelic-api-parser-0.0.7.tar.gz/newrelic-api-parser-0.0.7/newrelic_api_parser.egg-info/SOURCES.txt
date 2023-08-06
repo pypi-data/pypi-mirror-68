@@ -1,0 +1,17 @@
+setup.cfg
+setup.py
+NewRelic/__init__.py
+NewRelic/Base/__init__.py
+NewRelic/CustomExceptions/__init__.py
+NewRelic/Insights/__init__.py
+NewRelic/REST/__init__.py
+NewRelic/REST/AlertsEvents/__init__.py
+NewRelic/REST/Applications/__init__.py
+NewRelic/REST/BrowserApplications/__init__.py
+NewRelic/REST/Plugins/__init__.py
+NewRelic/REST/Users/__init__.py
+newrelic_api_parser.egg-info/PKG-INFO
+newrelic_api_parser.egg-info/SOURCES.txt
+newrelic_api_parser.egg-info/dependency_links.txt
+newrelic_api_parser.egg-info/requires.txt
+newrelic_api_parser.egg-info/top_level.txt
