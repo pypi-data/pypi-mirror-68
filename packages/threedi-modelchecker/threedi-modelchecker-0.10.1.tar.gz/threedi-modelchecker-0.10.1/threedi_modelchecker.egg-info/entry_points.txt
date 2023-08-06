@@ -1,0 +1,3 @@
+[console_scripts]
+threedi-modelchecker = threedi_modelchecker.scripts:check_model
+
