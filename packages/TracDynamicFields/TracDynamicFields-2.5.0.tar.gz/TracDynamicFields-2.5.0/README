@@ -1,0 +1,12 @@
+Trac plugin for dynamically changes fields in ticket views based on simple rules.
+
+Key features:
+
+* Hide a field based on another field's value.
+* Default a field's value per user preference.
+* Clear a field's value when another field's value changes.
+* Copy one field's value to another field.
+* Validate a field's value.
+* Set a field's value based on another field's value. 
+
+This plugin requires JavaScript to be enabled.

@@ -1,0 +1,4 @@
+[trac.plugins]
+dynfields.rules = dynfields.rules
+dynfields.web_ui = dynfields.web_ui
+
