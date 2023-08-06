@@ -1,0 +1,10 @@
+taskwatcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskwatcher/control.py,sha256=AWKw0KMRMcwjUPkymAXUuSbkTf1VtTSP3pugGY5HOfA,12476
+taskwatcher/database.py,sha256=bZSoh0G4NfB_yuVBrO_wN0t62OTKzApGY5VriJ3Fq2Q,20649
+taskwatcher/launch.py,sha256=8LL5KlwYaYoZdI6W1E_UIBHDr2KFDvHOTK8yDUfHLwg,13691
+taskwatcher/parse.py,sha256=wQiqJ0N9N-jllvVgu7bmPcOM2SGBRvzNOx8ofIW0rhw,3378
+taskwatcher-1.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+taskwatcher-1.1.dist-info/METADATA,sha256=jC-kuDd1q5VtF6TKHsXW-SOwNYwdb_GOq7Xyfo7sVas,12444
+taskwatcher-1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+taskwatcher-1.1.dist-info/top_level.txt,sha256=SBM-6C6us2z8tSih8a2FeMrn7vUzbDKok24CMcFJgIM,12
+taskwatcher-1.1.dist-info/RECORD,,
