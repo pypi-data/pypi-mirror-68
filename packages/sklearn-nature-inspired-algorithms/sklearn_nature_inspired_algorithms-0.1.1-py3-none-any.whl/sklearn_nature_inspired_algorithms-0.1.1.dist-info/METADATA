@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: sklearn-nature-inspired-algorithms
+Version: 0.1.1
+Summary: Search using nature inspired algorithms over specified parameter values for an sklearn estimator.
+Home-page: https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms
+License: MIT
+Keywords: sklearn,scikit-learn,nature-inspired-algorithms,hyper-parameter-tuning
+Author: Timotej Zatko
+Author-email: timi.zatko@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: NiaPy (==2.0.0rc10)
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: scikit-learn (>=0.22.2,<0.23.0)
+Requires-Dist: toml (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms
+Description-Content-Type: text/markdown
+
+# Nature Inspired Algorithms for scikit-learn
+
+[![CI](https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms/workflows/CI/badge.svg?branch=master)](https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms/actions?query=workflow:CI+branch:master)
+[![PyPI version](https://badge.fury.io/py/sklearn-nature-inspired-algorithms.svg)](https://pypi.org/project/sklearn-nature-inspired-algorithms/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/sklearn-nature-inspired-algorithms)](https://pypi.org/project/sklearn-nature-inspired-algorithms/)
+ 
+Nature inspired algorithms for hyper-parameter tuning in [scikit-learn](https://github.com/scikit-learn/scikit-learn). This package uses algorithms implementation from [NiaPy](https://github.com/NiaOrg/NiaPy). 
+
+## Installation
+
+```shell script
+pip install sklearn-nature-inspired-algorithms
+```
+
+## Usage
+
+The usage is similar to using sklearn's `GridSearchCV`.
+
+```python
+from sklearn_nature_inspired_algorithms.model_selection import NatureInspiredSearchCV
+from sklearn.ensemble import RandomForestClassifier
+
+param_grid = { 
+    'n_estimators': range(20, 100, 20), 
+    'max_depth': range(2, 20, 2),
+    'min_samples_split': range(2, 20, 2), 
+}
+
+clf = RandomForestClassifier(random_state=42)
+
+nia_search = NatureInspiredSearchCV(
+    clf,
+    param_grid,
+    algorithm='fa', # firefly algorithm
+    population_size='25',
+    max_n_gen=100,
+    max_stagnating_gen=5,
+)
+
+nia_search.fit(X_train, y_train)
+```
+
+Jupyter notebooks with full examples are available in [here](examples/notebooks).
+
+### Using custom nature inspired algorithm
+
+If you do not want to use ony of the pre-defined algorithm configurations, you can use any algorithm from the  [NiaPy](https://github.com/NiaOrg/NiaPy) collection.
+This will allow you to have more control of the algorithm behaviour. 
+Refer to their [documentation](https://niapy.readthedocs.io/en/latest/) and [examples](https://github.com/NiaOrg/NiaPy/tree/master/examples) for the usage. 
+
+```python
+from sklearn_nature_inspired_algorithms.model_selection import NatureInspiredSearchCV
+
+from NiaPy.algorithms.basic import GeneticAlgorithm
+
+param_grid = { 
+    'n_estimators': range(20, 100, 20), 
+    'max_depth': range(2, 20, 2),
+    'min_samples_split': range(2, 20, 2), 
+}
+
+algorithm = GeneticAlgorithm()
+algorithm.setParameters(NP=50, Ts=5, Mr=0.25)
+
+nia_search = NatureInspiredSearchCV(
+    clf,
+    param_grid,
+    algorithm=algorithm,
+    max_n_gen=100,
+    max_stagnating_gen=5,
+)
+
+nia_search.fit(X_train, y_train)
+```
+
+## Contributing 
+
+Detailed information on the contribution guidelines are in the [CONTRIBUTING.md](./CONTRIBUTING.md).
