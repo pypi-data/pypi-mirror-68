@@ -1,0 +1,2 @@
+include pymove/_version.py
+include LICENSE
