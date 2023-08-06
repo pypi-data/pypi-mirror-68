@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/docspec_python/__init__.py
+src/docspec_python/__main__.py
+src/docspec_python/parser.py
+src/docspec_python.egg-info/PKG-INFO
+src/docspec_python.egg-info/SOURCES.txt
+src/docspec_python.egg-info/dependency_links.txt
+src/docspec_python.egg-info/entry_points.txt
+src/docspec_python.egg-info/requires.txt
+src/docspec_python.egg-info/top_level.txt
