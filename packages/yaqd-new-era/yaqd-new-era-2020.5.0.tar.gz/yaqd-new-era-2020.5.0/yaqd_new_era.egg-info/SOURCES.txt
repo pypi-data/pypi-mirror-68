@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+yaqd_new_era.egg-info/PKG-INFO
+yaqd_new_era.egg-info/SOURCES.txt
+yaqd_new_era.egg-info/dependency_links.txt
+yaqd_new_era.egg-info/entry_points.txt
+yaqd_new_era.egg-info/not-zip-safe
+yaqd_new_era.egg-info/requires.txt
+yaqd_new_era.egg-info/top_level.txt

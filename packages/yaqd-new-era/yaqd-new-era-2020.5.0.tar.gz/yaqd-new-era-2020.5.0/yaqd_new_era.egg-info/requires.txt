@@ -1,0 +1,6 @@
+pyserial
+yaqd-core>=2020.05.1
+
+[dev]
+black
+pre-commit
