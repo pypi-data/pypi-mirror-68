@@ -1,0 +1,7 @@
+jinja2
+pygments
+rich
+
+[testing]
+pytest
+pytest-cov
