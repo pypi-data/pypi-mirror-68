@@ -1,0 +1,2 @@
+userpath
+argcomplete<2.0,>=1.9.4
