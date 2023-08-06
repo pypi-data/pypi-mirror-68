@@ -1,0 +1,36 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "covid"
+dist-name = "covid-models"
+author = "Fábio Macêdo Mendes"
+author-email = "fabiomacedomendes@gmail.com"
+home-page = "http://github.com/fabiommendes/covid-19"
+classifiers = [ "License :: OSI Approved :: MIT License" ]
+requires = [
+  "Babel~=2.8.0",
+  "click~=7.1.1",
+  "invoke==1.4.1",
+  "matplotlib==3.2.1",
+  "numpy~=1.18.2",
+  "pandas~=1.0.3",
+  "requests~=2.23.0",
+  "seaborn~=0.10.0",
+  "streamlit~=0.57.3",
+  "xlrd~=1.2.0"
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+  "black==19.10b0",
+  "pycodestyle==2.5.0"
+]
+test = [
+  "coverage==5.0.4",
+  "pytest==5.4.1"
+]
+
+[tool.black]
+line-length = 100
