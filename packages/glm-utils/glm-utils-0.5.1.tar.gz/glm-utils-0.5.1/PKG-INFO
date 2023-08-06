@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: glm-utils
+Version: 0.5.1
+Summary: Utilities for fitting GLMs.
+Home-page: https://github.com/postpop/glm_utils
+Author: Jan Clemens, Adrian Palacios, Deniz Yuezak
+Author-email: clemensjan@googlemail.com, adrian@email.com, deniz@email.com
