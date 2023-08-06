@@ -1,0 +1,8 @@
+setup.py
+amazon_selenium/__init__.py
+amazon_selenium/amazon.py
+amazon_selenium.egg-info/PKG-INFO
+amazon_selenium.egg-info/SOURCES.txt
+amazon_selenium.egg-info/dependency_links.txt
+amazon_selenium.egg-info/requires.txt
+amazon_selenium.egg-info/top_level.txt
