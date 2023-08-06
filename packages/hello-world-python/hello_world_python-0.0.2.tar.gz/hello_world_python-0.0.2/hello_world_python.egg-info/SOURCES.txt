@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+hello_world/__init__.py
+hello_world/hello_world.py
+hello_world_python.egg-info/PKG-INFO
+hello_world_python.egg-info/SOURCES.txt
+hello_world_python.egg-info/dependency_links.txt
+hello_world_python.egg-info/requires.txt
+hello_world_python.egg-info/top_level.txt
+tests/__init__.py
+tests/test_hello_world.py

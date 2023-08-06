@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hello-world-python
+Version: 0.0.2
+Summary: Test github actions
+Home-page: https://github.com/garimaarorashuttl/hello-world-python.git
+Author: garimaarora
+Author-email: garimaarora786@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Provides-Extra: dev
