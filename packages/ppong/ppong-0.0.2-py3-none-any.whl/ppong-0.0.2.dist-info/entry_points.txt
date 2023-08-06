@@ -1,0 +1,3 @@
+[console_scripts]
+ppong = ppong.run:parser.dispatch
+
