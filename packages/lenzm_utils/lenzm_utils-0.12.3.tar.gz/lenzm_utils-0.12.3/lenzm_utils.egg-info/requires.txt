@@ -1,0 +1,13 @@
+setuptools
+
+[all]
+Flask>=0.11
+SQLAlchemy
+Flask-SQLAlchemy
+alembic
+click
+wtforms
+collections_extended
+openpyxl
+pytz
+chardet
