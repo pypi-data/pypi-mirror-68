@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+rw_banks/__init__.py
+rw_banks.egg-info/PKG-INFO
+rw_banks.egg-info/SOURCES.txt
+rw_banks.egg-info/dependency_links.txt
+rw_banks.egg-info/not-zip-safe
+rw_banks.egg-info/top_level.txt
+test/__init__.py
