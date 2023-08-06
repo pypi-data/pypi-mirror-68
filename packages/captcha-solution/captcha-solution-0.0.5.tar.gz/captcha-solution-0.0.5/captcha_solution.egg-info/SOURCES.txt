@@ -1,0 +1,16 @@
+README.md
+setup.py
+captcha_solution/__init__.py
+captcha_solution/base_backend.py
+captcha_solution/error.py
+captcha_solution/solver.py
+captcha_solution/util.py
+captcha_solution.egg-info/PKG-INFO
+captcha_solution.egg-info/SOURCES.txt
+captcha_solution.egg-info/dependency_links.txt
+captcha_solution.egg-info/requires.txt
+captcha_solution.egg-info/top_level.txt
+captcha_solution/backend/__init__.py
+captcha_solution/backend/anticaptcha.py
+captcha_solution/backend/rucaptcha.py
+captcha_solution/backend/twocaptcha.py
