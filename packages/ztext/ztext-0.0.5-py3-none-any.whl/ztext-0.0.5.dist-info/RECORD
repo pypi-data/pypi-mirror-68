@@ -1,0 +1,13 @@
+ztext/__init__.py,sha256=9q5PfIzz0RpmvlgD_eS33ckCM2V_gcLdk5lu3BvIUg8,25
+ztext/oldcode.py,sha256=qJ5hOtPzidxPWm-D7IeRjP01ZX701HQz69fY12Q65zU,7307
+ztext/ztext.py,sha256=clzFHCtg1U1x1-dIJ-72Imis4kjjebLRyceDkG5wJQk,3372
+ztext/nlpsteps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ztext/nlpsteps/sentimentSocre.py,sha256=SX4LrG1_8m_OyJmYGs_Z74GJ2CMu49EC2Gm6ugggKGU,165
+ztext/nlpsteps/svo.py,sha256=xHu56TllDbi6HCywiaeJK8_pTYZ16sLL-WLAEAnxc78,3476
+ztext/nlpsteps/text_clean.py,sha256=FDWFIBOcPO23vYJ0A6t_y_MnqQoWH5UQ9mBT0FfF61M,454
+ztext/nlpsteps/topicAnalysis.py,sha256=vFJmh4PrdJx44B2pI_u9yQ7qCA4rG-Us6rpMTOzxNio,3019
+ztext-0.0.5.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ztext-0.0.5.dist-info/METADATA,sha256=Tj8l62JLTiWvBsxVBAqdcd5H4c1RA0phNuhmnCeVZE8,734
+ztext-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ztext-0.0.5.dist-info/top_level.txt,sha256=fTbTc9y20rvONJ3BqrXubs3mf9F-1mQRYPxHnIHDBeE,6
+ztext-0.0.5.dist-info/RECORD,,
