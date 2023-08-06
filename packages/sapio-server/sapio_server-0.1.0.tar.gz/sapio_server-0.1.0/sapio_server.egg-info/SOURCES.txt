@@ -1,0 +1,9 @@
+README.md
+setup.py
+sapio_server.egg-info/PKG-INFO
+sapio_server.egg-info/SOURCES.txt
+sapio_server.egg-info/dependency_links.txt
+sapio_server.egg-info/requires.txt
+sapio_server.egg-info/top_level.txt
+tests/test_server/__init__.py
+tests/test_server/test_ws.py
