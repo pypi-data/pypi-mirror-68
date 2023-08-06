@@ -1,0 +1,4 @@
+[console_scripts]
+PEPPA = PEPPA.PEPPA:ortho
+PEPPA_parser = PEPPA.PEPPA_parser:PEPPA_parser
+
