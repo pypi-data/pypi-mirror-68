@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: CyStack
+Version: 0.1.1
+Summary: Custom Stack & Queue
+Home-page: UNKNOWN
+Author: Robert Sharp
+Author-email: webmaster@sharpdesigndigital.com
+License: Free for non-commercial use
+Description: # CyStack
+        
+        ### Installation
+        `pip install CyStack`
+        
+        ## CyStack: Iterator
+        FILO Data Structure
+        - push: adds a value to the stack
+        - pop: removes and returns the newest value
+        
+        ## CyQueue: Iterator
+        FIFO Data Structure
+        - push: adds a value to the queue
+        - pop: removes and returns the oldest value 
+        
+Keywords: Stack,Queue
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: C++
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
