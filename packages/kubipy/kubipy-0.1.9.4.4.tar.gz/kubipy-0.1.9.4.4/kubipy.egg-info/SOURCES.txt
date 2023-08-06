@@ -1,0 +1,9 @@
+README.md
+setup.py
+kubipy/__init__.py
+kubipy/utils.py
+kubipy.egg-info/PKG-INFO
+kubipy.egg-info/SOURCES.txt
+kubipy.egg-info/dependency_links.txt
+kubipy.egg-info/not-zip-safe
+kubipy.egg-info/top_level.txt
