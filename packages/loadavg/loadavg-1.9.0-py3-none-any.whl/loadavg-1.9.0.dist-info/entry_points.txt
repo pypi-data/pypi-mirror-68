@@ -1,0 +1,3 @@
+[console_scripts]
+loadavg = src.main:loadavg
+
