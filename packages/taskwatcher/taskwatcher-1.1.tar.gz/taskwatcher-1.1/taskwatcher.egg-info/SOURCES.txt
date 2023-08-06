@@ -1,0 +1,11 @@
+README.md
+setup.py
+taskwatcher/__init__.py
+taskwatcher/control.py
+taskwatcher/database.py
+taskwatcher/launch.py
+taskwatcher/parse.py
+taskwatcher.egg-info/PKG-INFO
+taskwatcher.egg-info/SOURCES.txt
+taskwatcher.egg-info/dependency_links.txt
+taskwatcher.egg-info/top_level.txt
