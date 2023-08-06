@@ -1,0 +1,7 @@
+setup.py
+example_package/__init__.py
+example_package/new_plot.py
+example_package_12345.egg-info/PKG-INFO
+example_package_12345.egg-info/SOURCES.txt
+example_package_12345.egg-info/dependency_links.txt
+example_package_12345.egg-info/top_level.txt

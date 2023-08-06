@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: example-package-12345
+Version: 0.2
+Summary: Example package
+Home-page: https://github.com/brunobeltran/example_package
+Author: Bruno Beltran
+Author-email: brunobeltran0@gmail.com
+License: MIT
+Description: Example package
+Keywords: parameter scanning scientific search testing
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
