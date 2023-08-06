@@ -1,0 +1,3 @@
+[console_scripts]
+influx_neptuneapex = influx_neptuneapex.__main__:main
+

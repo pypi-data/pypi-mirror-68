@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: influx-neptuneapex
+Version: 1.0
+Summary: Feed data from a neptune apex into an InfluxDB
+Home-page: https://github.com/garbled1/influx_neptuneapex
+Author: Tim Rightnour
+Author-email: thegarbledone@gmail.com
+License: GPL
+Project-URL: Gitub Repo, https://github.com/garbled1/influx_neptuneapex
+Description: # influx-neptunapex
+        Feed data from a neptune apex into influxdb
+        
+        Simple setup:
+        
+        * install an influxdb
+        * create a database named "apex":
+          influx
+          create database apex
+        * run the influx feeder:
+          influx-neptuneapex --host :my-apex-ip or hostname:
+        
+Platform: UNKNOWN
+Requires-Python: >3.5
+Description-Content-Type: text/markdown
