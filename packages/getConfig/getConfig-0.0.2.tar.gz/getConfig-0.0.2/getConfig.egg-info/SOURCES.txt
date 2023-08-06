@@ -1,0 +1,9 @@
+README.md
+setup.py
+getConfig/__init__.py
+getConfig/example.py
+getConfig/getConfig.py
+getConfig.egg-info/PKG-INFO
+getConfig.egg-info/SOURCES.txt
+getConfig.egg-info/dependency_links.txt
+getConfig.egg-info/top_level.txt
