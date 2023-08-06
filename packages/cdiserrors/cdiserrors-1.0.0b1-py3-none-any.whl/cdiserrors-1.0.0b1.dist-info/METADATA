@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cdiserrors
+Version: 1.0.0b1
+Summary: Gen3 shared exceptions and utilities.
+License: Apache-2.0
+Author: CTDS UChicago
+Author-email: cdis@uchicago.edu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: flask
+Requires-Dist: Flask (>=1.1.2,<2.0.0); extra == "flask"
+Requires-Dist: cdislogging (>=1.0.0,<2.0.0)
