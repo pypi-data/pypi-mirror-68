@@ -1,0 +1,11 @@
+README.md
+setup.py
+pycrtsh/__init__.py
+pycrtsh/api.py
+pycrtsh/cli.py
+pycrtsh.egg-info/PKG-INFO
+pycrtsh.egg-info/SOURCES.txt
+pycrtsh.egg-info/dependency_links.txt
+pycrtsh.egg-info/entry_points.txt
+pycrtsh.egg-info/requires.txt
+pycrtsh.egg-info/top_level.txt
