@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pugna/__init__.py
+pugna.egg-info/PKG-INFO
+pugna.egg-info/SOURCES.txt
+pugna.egg-info/dependency_links.txt
+pugna.egg-info/top_level.txt
