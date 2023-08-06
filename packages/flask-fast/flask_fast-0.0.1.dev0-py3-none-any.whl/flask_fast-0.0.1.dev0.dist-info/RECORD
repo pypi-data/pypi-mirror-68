@@ -1,0 +1,9 @@
+flask_fast/__init__.py,sha256=W6PxYyQU39UujijLitc7baiQKdDmuzFtt1KEqDRfxzI,1502
+flask_fast/api.py,sha256=Q7b0XcLbwweX7ZFVxfo_U5oHo6pWFf6W9mS591QnbR4,6248
+flask_fast/swagger.py,sha256=gPYK68LGcPyuVXTTh2B5NVJk6LaSieSXD9hZbKvxs78,4427
+flask_fast/utils.py,sha256=K0w0L1Qz6-WRodp34BPRtyR1Vi1IV43Ki4S6xmUcPLk,1
+flask_fast-0.0.1.dev0.dist-info/LICENSE,sha256=eSZuThuKNRW8ttx5tvWn_r-VEbdKBEprK95hMuzrE7I,1090
+flask_fast-0.0.1.dev0.dist-info/METADATA,sha256=drBzm--en1oYb7WCBkMsD4wSivK7SSt3DJ5qE0sxBNo,730
+flask_fast-0.0.1.dev0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flask_fast-0.0.1.dev0.dist-info/top_level.txt,sha256=yRsQbXGIqzu7x3263zngoBjC2Ddfp9Mh9P7bGaAfRgA,11
+flask_fast-0.0.1.dev0.dist-info/RECORD,,
