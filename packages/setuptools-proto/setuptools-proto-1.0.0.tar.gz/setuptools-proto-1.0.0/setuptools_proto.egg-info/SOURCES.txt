@@ -1,0 +1,21 @@
+.gitignore
+LICENSE
+Pipfile
+Pipfile.lock
+README.md
+pytest.ini
+setup.cfg
+setup.py
+setuptools_proto.py
+.github/workflows/ci.yml
+setuptools_proto.egg-info/PKG-INFO
+setuptools_proto.egg-info/SOURCES.txt
+setuptools_proto.egg-info/dependency_links.txt
+setuptools_proto.egg-info/entry_points.txt
+setuptools_proto.egg-info/requires.txt
+setuptools_proto.egg-info/top_level.txt
+tests/integration/test_build_proto.py
+tests/proto/service.proto
+tests/proto/echo/echo.proto
+tests/space in name/service.proto
+tests/unit/test_setuptools_proto.py
