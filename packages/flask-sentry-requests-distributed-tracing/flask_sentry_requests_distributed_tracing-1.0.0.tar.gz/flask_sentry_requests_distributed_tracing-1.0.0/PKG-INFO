@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask_sentry_requests_distributed_tracing
+Version: 1.0.0
+Summary: Utilities
+Home-page: https://github.com/shuttl-tech/flask_sentry_requests_distributed_tracing
+Author: Shuttl
+Author-email: sherub.thakur@shuttl.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Provides-Extra: dev

@@ -1,0 +1,13 @@
+requests
+sentry_sdk
+flask
+
+[dev]
+flake8
+
+[test]
+pytest
+pytest-runner
+pytest-cov
+pytest-pep8
+responses
