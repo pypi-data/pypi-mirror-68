@@ -1,0 +1,81 @@
+
+rule bwa_index_ref:
+    input:
+        reference = __bwa_mem_ref__reference
+    output:
+        fai = __bwa_mem_ref__fai
+    params:
+        index = config["bwa_mem_ref"]["index_algorithm"]
+    log:
+        __bwa_index_ref__log
+    shell:
+        """
+        bwa index -a {params.index} {input.reference} 2> {log}
+        samtools faidx {input.reference}
+        """
+
+rule bwa_mem_ref:
+    """Read mapping with BWA-mem
+
+    BWA mem rule aligns single or paired end FASTQ files on a reference genome.
+    This rule is a **dynamic** rule (see `developers` section). This means
+    that it can  be included multiple times with different names in the same
+    pipeline.
+    The reference file is indexed by BWA index and FASTQ files are mapped on it.
+    The sorting is done with sambamba by reading the stdin. Moreover, Sambamba
+    generates automatically the BAM index.
+
+    Required input:
+        - __bwa_mem_ref__fastq: FASTQ files single or paired end.
+        - __bwa_mem_ref__reference: FASTA file of the reference.
+        - __bwa_mem_ref__fai: Index file of the reference.
+
+    Required output:
+        - __bwa_mem_ref__bam: Sorted BAM file.
+
+    Log:
+        - __bwa_mem_ref__log: Log file of BWA mem.
+
+    Required configuration:
+        .. code-block:: yaml
+
+            bwa_mem_ref:
+                index_algorithm: 'is' # BWA index algorithm (is or bwtsw)
+                threads: 4         # Number of threads used by BWA mem.
+                options:           # Any options recognised by BWA mem tool.
+                tmp_directory: '/tmp' # Temporary directory.
+                sambamba_sort: -N  # -N for QC pipeline and "" for variant and denovo.
+
+    Note:
+        When a dynamic rule is included, template variables must be replaced.
+
+    References:
+        - http://bio-bwa.sourceforge.net/
+        - http://lomereiter.github.io/sambamba/docs/sambamba-sort.html
+    """
+    input:
+        fai = __bwa_mem_ref__fai,
+        fastq = __bwa_mem_ref__fastq,
+        reference = __bwa_mem_ref__reference
+    output:
+        bam = __bwa_mem_ref__bam
+    log:
+        __bwa_mem_ref__log
+    params:
+        options = config['bwa_mem_ref']['options'],
+        bwa_exe = 'bwa',
+        tmp = config['bwa_mem_ref']['tmp_directory']
+    threads:
+        int(config['bwa_mem_ref']['threads'])
+    run:
+        # -N is important to sort like in samtools
+        if __pipeline_name__ == "quality_control":
+            sambamba_sort = " -N "
+        else:
+            sambamba_sort = ""
+        shell("""
+        ({params.bwa_exe} mem -t {threads} {params.options}         {input.reference} {input.fastq} |         sambamba view -t {threads} -S -f bam -o /dev/stdout /dev/stdin |         sambamba sort /dev/stdin -o {output.bam} -t {threads}         --tmpdir={params.tmp} """ + sambamba_sort + """ )  2> {log}""")
+
+        # v0.5.1 replace this: samtools view -Sbu - | \ 
+        # sambamba
+    
