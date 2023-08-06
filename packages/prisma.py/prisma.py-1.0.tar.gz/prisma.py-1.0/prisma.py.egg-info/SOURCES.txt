@@ -1,0 +1,6 @@
+README.md
+setup.py
+prisma.py.egg-info/PKG-INFO
+prisma.py.egg-info/SOURCES.txt
+prisma.py.egg-info/dependency_links.txt
+prisma.py.egg-info/top_level.txt
