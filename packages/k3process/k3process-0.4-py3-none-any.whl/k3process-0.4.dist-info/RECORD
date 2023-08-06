@@ -1,0 +1,15 @@
+k3process/__init__.py,sha256=1xDhQ8MtjbVY9b4rHnwMy-xZhU5QKhdmAGyxPIt0J2M,94
+k3process/_version.py,sha256=dDgE4K0XJL3CwLifExx3hENN-ExPAVJyiSkmRWLHdV4,19
+k3process/ipc.py,sha256=AdsGiur6mJSRpMT5CiCk0qfBQXRyy2r6cCEBdZnvz0g,12013
+k3process/processctrl.py,sha256=LjRG_9pzKNVIt5mHm9QTuteYyyUe-WpEoYqzWxI7qMI,3339
+k3process/scheduler.py,sha256=445on3mFpFWuW84CcUB_J0OLam8eVRZHkD-eMLtQ--4,6832
+k3process/rpc/__init__.py,sha256=F6B2HQL2fKfUWTQFbIpxmJ5pNmRszqgkeWiQJR1Yarc,229
+k3process/rpc/rpc_client.py,sha256=3e9YiWqUhKzJauY0VzfTd1JFgmW7w5KvLWW8ANDVLWE,3540
+k3process/rpc/rpc_common.py,sha256=t40-Mz8RwffGgrOtrwAkSYhYBytq5xAt6bisW20Vjco,1588
+k3process/rpc/rpc_server.py,sha256=8StzaiDZbBhsTlVsk2W6xbj5TGwBjJ_v6IU3JfGjs4Q,8300
+k3process-0.4.dist-info/LICENSE,sha256=Bni3y2kbmALu1yDsJBJdEHxd5we5lABJiiIC52HA4bQ,1080
+k3process-0.4.dist-info/METADATA,sha256=Y-0md-6nxTysAdMH93FX0FmK-XSDfzjHbkol83v6e78,244
+k3process-0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+k3process-0.4.dist-info/entry_points.txt,sha256=hECEAkb0wlw4pobF-gDExeQViPeomHzRe59HS1cnmVU,59
+k3process-0.4.dist-info/top_level.txt,sha256=CN3lx8JkvU76W81j2WUqoa4W3j-Q451_iR6fcyI5NGI,10
+k3process-0.4.dist-info/RECORD,,

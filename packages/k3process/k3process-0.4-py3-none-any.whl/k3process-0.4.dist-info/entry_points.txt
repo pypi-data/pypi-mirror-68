@@ -1,0 +1,3 @@
+[console_scripts]
+k3process-cli = k3process.main.cli:main
+

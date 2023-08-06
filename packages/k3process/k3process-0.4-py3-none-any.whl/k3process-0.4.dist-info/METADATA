@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: k3process
+Version: 0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: tblib
+Requires-Dist: pytest
+Requires-Dist: pytest-timeout
+
+UNKNOWN
+
+
