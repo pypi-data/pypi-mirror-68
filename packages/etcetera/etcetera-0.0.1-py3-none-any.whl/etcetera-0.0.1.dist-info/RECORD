@@ -1,0 +1,11 @@
+etcetera/__init__.py,sha256=KuSv0rRqWsMHCxGLgt2riljCFdCcuhLsh9-k0D8AVbc,220
+etcetera/api.py,sha256=DckJ2Ai3FQliPzN_ElBUxbF8JZV8kXsNi6mUPZsYxMY,4895
+etcetera/config.py,sha256=17t761usGdXD7pkKQWVa1z4eTFlmYsDPfzirlLFVUJY,882
+etcetera/dataset.py,sha256=nRDlJzspzcrl5Ht8kDp54q8F9YIROvQUgVo0omxVrZc,2483
+etcetera/engine.py,sha256=p7VEdMHqz848VOI8uMVQrVQtwruTszhyToGYuGvKudo,2878
+etcetera/repo.py,sha256=k02x_7dam4Ke1tgR5AatvOzGTDQ6zCFSOhxjiom-Lv0,527
+etcetera-0.0.1.dist-info/METADATA,sha256=IUCyTMVFOZRnq_DXWKQk7kOt4GKlBEHAm4AsyQecCwU,2832
+etcetera-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+etcetera-0.0.1.dist-info/entry_points.txt,sha256=H1t7r1Qp16_-PUj3gU4LVwr7gScKk-c5jBoaZCuhpcM,39
+etcetera-0.0.1.dist-info/top_level.txt,sha256=5OjPoKr5AI4pl2GoUlf-xXQQg8U95sUy6UMWliSZUpE,9
+etcetera-0.0.1.dist-info/RECORD,,
