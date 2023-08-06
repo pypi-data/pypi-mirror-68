@@ -1,0 +1,7 @@
+tensorflow>=2
+PyQt5>=5.9
+numpy>=1.15
+scikit-image>=0.14
+pillow>=5.2
+Keras>=2.3
+tqdm>=4.40

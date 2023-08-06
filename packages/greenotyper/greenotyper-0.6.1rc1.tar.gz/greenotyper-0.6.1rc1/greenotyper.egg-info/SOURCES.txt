@@ -1,0 +1,15 @@
+README.md
+greenotyper
+setup.py
+greenotyper.egg-info/PKG-INFO
+greenotyper.egg-info/SOURCES.txt
+greenotyper.egg-info/dependency_links.txt
+greenotyper.egg-info/requires.txt
+greenotyper.egg-info/top_level.txt
+greenotyperAPI/GREENOTYPER.py
+greenotyperAPI/__init__.py
+greenotyperAPI/GUI/PipelinePlanner.py
+greenotyperAPI/GUI/PipelineRunner.py
+greenotyperAPI/GUI/__init__.py
+greenotyperAPI/GUI/qrangeslider.py
+icon/icon.png
