@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# (c) 2013, 2014 by Björn Ricks <bjoern.ricks@intevation.de>
+#     2019, 2020 Intevation GmbH
+# Author(s):
+#   * Björn Ricks
+#   * Magnus Schieder
+#
+# This is Free Software licensed under the terms of GPLv3 or later.
+# For details see LICENSE coming with the source of 'getan'.
+
+import codecs
+import locale
+import sys
+
+from datetime import date, datetime, timedelta
+import argparse
+
+from getan.template import render
+from getan.backend import DEFAULT_DATABASE
+
+
+def main():
+    usage='getan-report [options]'
+    parser = argparse.ArgumentParser(prog='getan', usage=usage,
+            description="You can find more information at https://pypi.org/project/getan/")
+
+    parser.add_argument('-d', '--database', metavar="DATABASE_FILE",
+                        help='(default: ~/.getan/'+ DEFAULT_DATABASE + ")")
+    parser.add_argument('-t', '--template',
+                        help="""name of getan template (wochenbericht,
+                                zeiterfassung, zeiterfassung2),
+                                external templates must be stored in
+                                ~/.getan/templates/ to be able to call them.""")
+    parser.add_argument('-u', '--user', help='name of user')
+    parser.add_argument('-p', '--project', help='key (sql pattern) of output project')
+    parser.add_argument('-w', '--week', type=int, help='week of year')
+    parser.add_argument('-y', '--year', type=int, help='year')
+    parser.add_argument('-c', '--lastweek', help='entries of last working week',
+                        action='store_true')
+    parser.add_argument('-m', '--empty',
+                        help='show projects without an entry',
+                        action="store_true")
+    parser.add_argument('--encoding', help='encoding of output')
+
+    args = parser.parse_args()
+
+    if args.lastweek:
+        week = (datetime.now() - timedelta(7)).isocalendar()[1]
+        year = int(date.today().strftime("%Y"))
+    else:
+        year = args.year
+        week = args.week
+
+    template_name = args.template or "wochenbericht"
+
+    if not args.encoding:
+        encoding = locale.getdefaultlocale()[1] or "utf-8"
+
+    sys.stdout = codecs.getwriter(encoding)(sys.stdout.detach())
+
+    user = None
+    if args.user:
+        user = args.user
+
+    print(render(database=args.database, user=user,
+                 template=template_name, year=year, week=week,
+                 project=args.project, empty_projects=args.empty))
+
+
+if __name__ == '__main__':
+    main()
+
+# vim:set ts=4 sw=4 si et sta sts=4 :
