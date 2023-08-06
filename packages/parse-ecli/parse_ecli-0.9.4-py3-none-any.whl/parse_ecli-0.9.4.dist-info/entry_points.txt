@@ -1,0 +1,3 @@
+[console_scripts]
+parse-ecli = parse_ecli.parse_ecli:main_func
+

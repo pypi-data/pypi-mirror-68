@@ -1,0 +1,11 @@
+parse_ecli/__init__.py,sha256=kUX_cvDuFPZtJtujpHp-OjWoDDtGINvcPkCYakX_oLI,51
+parse_ecli/decisions.json,sha256=MvxfTLTserNmQHZ_XFJLLtH7Uby3tMrPC0k0qzf6_ZY,39770
+parse_ecli/gerichte.json,sha256=L224Q2JBex5YP8GZWI6WB52lyRHwqbi1lE8XdTlmIBg,52085
+parse_ecli/parse_ecli.py,sha256=04sn-nDSNQdeOSg3V7WcxbQfmDUAWtho1tvSP3_pCOY,43583
+parse_ecli/pattern.py,sha256=QmgrLp8Bmtrp2BX1FcoirwWdjFvqNgN8EQSOd5ic4To,7768
+parse_ecli-0.9.4.dist-info/LICENSE.md,sha256=JqZIpTLcxgcrNlgmiE4UILPGxZidoVtLp38zZ-kVl7A,1093
+parse_ecli-0.9.4.dist-info/METADATA,sha256=7qLdYiJSTqQonePUpbwN_IUFw0ZWII9aTjhB2TjXmsw,12436
+parse_ecli-0.9.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+parse_ecli-0.9.4.dist-info/entry_points.txt,sha256=yqmLuqUfsS4WN4FyrC0wSFu4zZyZS8MzPhKtOVo8QQo,64
+parse_ecli-0.9.4.dist-info/top_level.txt,sha256=24FISMc3XhvD2IINXQs6zgTq_hv8NlZzAQMX4F69HOw,11
+parse_ecli-0.9.4.dist-info/RECORD,,
