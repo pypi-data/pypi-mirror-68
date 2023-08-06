@@ -1,0 +1,3 @@
+[console_scripts]
+hupdater = healthupdates.updates:main
+
