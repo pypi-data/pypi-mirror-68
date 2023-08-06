@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+fast_impl/__init__.py
+fast_impl/_nbdev.py
+fast_impl/core.py
+fast_impl.egg-info/PKG-INFO
+fast_impl.egg-info/SOURCES.txt
+fast_impl.egg-info/dependency_links.txt
+fast_impl.egg-info/entry_points.txt
+fast_impl.egg-info/not-zip-safe
+fast_impl.egg-info/requires.txt
+fast_impl.egg-info/top_level.txt
