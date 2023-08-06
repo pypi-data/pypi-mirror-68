@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+indexed/__init__.py
+indexed.egg-info/PKG-INFO
+indexed.egg-info/SOURCES.txt
+indexed.egg-info/dependency_links.txt
+indexed.egg-info/top_level.txt
