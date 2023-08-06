@@ -1,0 +1,3 @@
+[console_scripts]
+simple-mailer = simple_mailer.web:run_application
+
