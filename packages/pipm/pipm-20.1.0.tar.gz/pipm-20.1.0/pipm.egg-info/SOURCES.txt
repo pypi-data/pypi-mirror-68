@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+test-requirements.txt
+pipm/__init__.py
+pipm/__main__.py
+pipm/classes.py
+pipm/commands.py
+pipm/file.py
+pipm/file_utils.py
+pipm/operations.py
+pipm/setup_cfg.py
