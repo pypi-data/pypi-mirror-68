@@ -1,0 +1,8 @@
+README.md
+dev-container
+setup.py
+dev_container.egg-info/PKG-INFO
+dev_container.egg-info/SOURCES.txt
+dev_container.egg-info/dependency_links.txt
+dev_container.egg-info/requires.txt
+dev_container.egg-info/top_level.txt
