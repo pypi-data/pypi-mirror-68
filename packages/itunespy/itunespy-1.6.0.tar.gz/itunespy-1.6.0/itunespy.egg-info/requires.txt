@@ -1,0 +1,5 @@
+requests>=2.8
+pycountry>=19.8
+
+[dev]
+mypy
