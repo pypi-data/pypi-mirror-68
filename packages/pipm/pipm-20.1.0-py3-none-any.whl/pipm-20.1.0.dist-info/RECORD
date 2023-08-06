@@ -1,0 +1,14 @@
+pipm/__init__.py,sha256=KkXQG7ZCGPCDRRaiKa-RYcbYpddu_fo3TvsMVzV599k,70
+pipm/__main__.py,sha256=99jJWyKXQCrVnEjzW29ASPWhMkXxsy5CLaqorgysLgo,1268
+pipm/classes.py,sha256=gvGUqDq-XG6j9DU1HZ08KlIiPr8_l0VgM-UFGEcINg8,418
+pipm/commands.py,sha256=kE-hTB-rRznBsqARn41pdIcXvJDVjdzSTnTtgjhdaek,7351
+pipm/file.py,sha256=E5CZLZwIQzcuTDchYNjGY958bVUCSsc7xZrP2qdO0Rs,4836
+pipm/file_utils.py,sha256=rAU9w_ErgNkJ7oWn0Nq2i-LLjymVlAhVqXsAQn5V_7A,3699
+pipm/operations.py,sha256=laFIV7FT3YR_VjWosuG6eZaGq6K6Fvvo8OvhWpVVMhk,2093
+pipm/setup_cfg.py,sha256=d0X3EY70plSRAXPSbt5SU9_lA3MqHHXb5UB59QIU6Ow,4514
+pipm-20.1.0.dist-info/LICENSE,sha256=giof9pKe9nASEKng13ANaRRLRV5zGHvxhWcAEKNPJyI,1096
+pipm-20.1.0.dist-info/METADATA,sha256=5Ai9aZeT4J6chns5oHHBWCjcZTrOfyforFbKNf-Rvdo,1093
+pipm-20.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pipm-20.1.0.dist-info/entry_points.txt,sha256=xATlUcR90Jwanyq1WfAf59CoOu9tvV5fIACKAIEBzFY,45
+pipm-20.1.0.dist-info/top_level.txt,sha256=vzCDTfGdmDx-r-6cQlOwzNAcoeZe4eGeS9ryF5WzdRw,5
+pipm-20.1.0.dist-info/RECORD,,
