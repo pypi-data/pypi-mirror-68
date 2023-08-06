@@ -1,0 +1,29 @@
+# DOUBAO-CONFIG-SDK
+
+豆包配置中心SDK
+
+## 安装
+
+```
+pip3 install doubao-config-sdk
+```
+
+或者
+
+```
+python3 setup.py install
+```
+
+## 示例
+
+```python
+from doubao_config import Client
+
+# 调用类方法直接设置配置到环境变量（环境变量非全局，仅对调用的应用程序有效）
+Client.set_env(<config_host>, <config_username>, <config_password>, <application>, <profile>)
+
+# 实例化配置中心客户端
+client = Client(<config_host>, <config_username>, <config_password>)
+# 获取配置
+client.get_config(<application>, <profile>)
+```
