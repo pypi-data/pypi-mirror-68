@@ -1,0 +1,11 @@
+scikit-learn>=0.20.0
+pandas>=0.17.0
+numpy
+scipy
+joblib
+
+[tests]
+xgboost>=0.4
+pyarrow==0.15.0
+pyspark>=2.4.4
+pytest-spark>=0.4.5
