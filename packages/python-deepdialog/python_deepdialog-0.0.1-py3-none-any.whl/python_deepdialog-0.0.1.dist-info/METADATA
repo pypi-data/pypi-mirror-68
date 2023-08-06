@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: python-deepdialog
+Version: 0.0.1
+Summary: DeepDialog is a lightweight library for deep generative dialogue models.
+Home-page: https://zheng-yanan.github.io/deepdialog/
+Author: Yanan Zheng
+Author-email: zyanan93@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.17.4)
+Requires-Dist: nltk (>=3.4.5)
+Requires-Dist: seaborn (>=0.10.0)
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: sklearn
+Provides-Extra: dev
+Requires-Dist: Sphinx (>=1.7.1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-bibtex (>=0.3.6) ; extra == 'dev'
+Requires-Dist: pep8 ; extra == 'dev'
+Requires-Dist: scipy ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mock ; extra == 'dev'
+Provides-Extra: examples
+Requires-Dist: scipy ; extra == 'examples'
+Requires-Dist: matplotlib ; extra == 'examples'
+Requires-Dist: scikit-image ; extra == 'examples'
+Requires-Dist: progressbar2 ; extra == 'examples'
+
+# DeepDialog
+
+DeepDialog is a lightweight library for deep generative dialogue models.
+
