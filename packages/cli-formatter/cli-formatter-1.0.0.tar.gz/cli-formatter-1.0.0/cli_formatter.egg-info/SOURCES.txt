@@ -1,0 +1,13 @@
+README.md
+setup.py
+cli_formatter/__init__.py
+cli_formatter.egg-info/PKG-INFO
+cli_formatter.egg-info/SOURCES.txt
+cli_formatter.egg-info/dependency_links.txt
+cli_formatter.egg-info/top_level.txt
+cli_formatter/output_formatting/__init__.py
+cli_formatter/output_formatting/output_formatter.py
+cli_formatter/table_builder/__init__.py
+cli_formatter/table_builder/table_builder.py
+cli_formatter/table_builder/table_builder_alternative.py
+cli_formatter/table_builder/table_formatter.py
