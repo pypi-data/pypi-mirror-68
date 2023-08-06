@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: qyt-devnet
+Version: 0.0.3
+Summary: 乾颐堂网络设备自动化封装
+Home-page: https://github.com/collinsctk/DevNet_Huawei
+Author: cq_bomb
+Author-email: collinsctk@qytang.com
+License: GNU General Public License v3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
