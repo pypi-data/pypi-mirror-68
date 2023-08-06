@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: operator-manifest
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/containerbuildsystem/operator-manifest
+License: BSD-3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
