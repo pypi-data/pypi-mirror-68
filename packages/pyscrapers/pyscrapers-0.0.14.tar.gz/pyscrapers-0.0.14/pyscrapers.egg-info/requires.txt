@@ -1,0 +1,5 @@
+browser-cookie3
+lxml
+pylogconf
+pytconf
+requests
