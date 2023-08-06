@@ -1,0 +1,14 @@
+treeshaker/__init__.py,sha256=CcK8pTi0-7KvCiwVm93gvQmRvXcJzr1-wJZzC_uURPc,940
+treeshaker/_version.py,sha256=5pPitc0H9okiXwNVTOXRjQBECZuIxfUEHqngE5dwopI,875
+treeshaker/config.py,sha256=_d8JYX6S1D9ZX5sH37OKcHjLjAp5F1Z5lxfo7idWAkk,4617
+treeshaker/doc_utils.py,sha256=7reCet7SIoXH9cud_KbWOs6zDKkkyE0Nzwi2dLKUS9o,1198
+treeshaker/pypi_names.py,sha256=W_I-aEMV4VgqtbToiAht8uFGHhLPtp_GeEpkT2WDRJg,1187
+treeshaker/pypi_names.txt,sha256=xyOH_Ptz4PKX50ucz_5jeBmPWBSJ_j4GgqhLiHu9SMI,26633
+treeshaker/setup_utils.py,sha256=iTU9IxpQRSYVhLyrFbAGOI6GjIu_JauhXk1f9M_WYfA,897
+treeshaker/treeshaker.py,sha256=nJL6PPVzGts4Qh9QQxHBdUVOuI_7EaN0B7mIl9Bm4Rw,10965
+treeshaker-0.0.3.dist-info/LICENSE,sha256=8k7WFiIcVdyO6roRVvd3Yo1as45yo8f2dAfHtBXAZww,1075
+treeshaker-0.0.3.dist-info/METADATA,sha256=NJKL8MxFdRBDFtDudkL5VSdvHiJHCJKHu1x2JzUEwYg,8780
+treeshaker-0.0.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+treeshaker-0.0.3.dist-info/entry_points.txt,sha256=gpGc-ZgQoDTuYgM4JIFzvUcZpi9ZepliAHFsZ0zQOf4,59
+treeshaker-0.0.3.dist-info/top_level.txt,sha256=ZSBvfKvfcxky7CbuaFJ5sxuI4vccAEMpZoNY3FSAO04,11
+treeshaker-0.0.3.dist-info/RECORD,,
