@@ -1,0 +1,4 @@
+cython
+netCDF4
+numpy
+tqdm
