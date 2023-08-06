@@ -1,0 +1,9 @@
+hlre/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hlre/__main__.py,sha256=ViS1z3m6UKfAPpg9ooY6UJ4UBt_0drRNRxEwVFileSU,66
+hlre/hlre.py,sha256=mDcVfd69DBm_szlp_Awh9fH6buOERvahzfuE-Tv8leo,7398
+hlre/test_hlre.py,sha256=dhOaK9v-1MiaezXTeZMTX5Nuc347jEl68rtFy255fWg,896
+hlre-0.1.0.dist-info/METADATA,sha256=QS3s-QDEsEt1OIUfXQn1vQpTJaFAQZydG-DLDNNuICo,2566
+hlre-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hlre-0.1.0.dist-info/entry_points.txt,sha256=a4CfZXtb85i1PA0yugamrz6qx_ptTjekXGFt162l_fc,41
+hlre-0.1.0.dist-info/top_level.txt,sha256=W6BNzAua6fWZVzrfRSqip7h2DULYGC4-lu0YzRrQiQk,5
+hlre-0.1.0.dist-info/RECORD,,

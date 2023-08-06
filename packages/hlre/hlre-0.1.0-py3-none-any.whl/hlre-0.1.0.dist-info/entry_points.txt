@@ -1,0 +1,3 @@
+[console_scripts]
+hlre = hlre.hlre:main
+
