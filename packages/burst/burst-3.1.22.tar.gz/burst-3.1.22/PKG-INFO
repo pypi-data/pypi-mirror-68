@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: burst
+Version: 3.1.22
+Summary: twisted with master, proxy and worker
+Home-page: https://github.com/dantezhu/burst
+Author: dantezhu
+Author-email: zny2008@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Requires-Python: >=3
