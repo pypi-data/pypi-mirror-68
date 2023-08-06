@@ -1,0 +1,53 @@
+[tool.poetry]
+name = "gitlab-time-report"
+version = "1.0"
+description = "GitLab time reporting made easy."
+authors = [
+  "Johannes Wildermuth <johannes.wildermuth@hsr.ch>",
+  "Fabian Hauser <fabian@fh2.ch>",
+  "Raphael Das Gupta <raphael.das.gupta@hsr.ch>",
+]
+license = "AGPL"
+
+readme = "README.md"
+repository = "https://gitlab.dev.ifs.hsr.ch/ifs/gitlab-time-report/gitlab-time-report"
+documentation = "http://ifs.pages.ifs.hsr.ch/gitlab-time-report/gitlab-time-report/"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-gitlab = "^2.2.0"
+matplotlib = "^3.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.7.9"
+black = "^19.10b0"
+sphinx = "^3.0.3"
+sphinx_rtd_theme = "^0.4.3"
+"sphinxcontrib.spelling" = "^5.0.0"
+toml = "^0.10.0"
+isort = "^4.3.21"
+
+[tool.black]
+target-version = ['py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | \.env
+  | _build
+  | buck-out
+  | build
+  | dist
+  | tests/.*/setup.py
+)/
+'''
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
