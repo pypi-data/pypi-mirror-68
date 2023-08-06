@@ -1,0 +1,5 @@
+pika==1.1.0
+requests==2.23.0
+coloredlogs==14.0
+click==7.1.2
+ni-logging-utils==0.0.3
