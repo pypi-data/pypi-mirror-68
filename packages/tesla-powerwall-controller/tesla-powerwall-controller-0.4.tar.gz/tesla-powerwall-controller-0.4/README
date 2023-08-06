@@ -1,0 +1,23 @@
+# Tesla powerwall controller (Unofficial)
+
+Python wrapper around some of the basic powerwall api calls
+
+
+# Quick start:
+Download from [PyPI](hhttps://pypi.org/project/tesla-powerwall-controller/):
+```bash
+pip install tesla-powerwall-controller
+```
+Usage:
+```python
+from tesla_powerwall_controller import PowerwallController
+
+controller = PowerwallController("192.168.0.100")
+
+controller.get_battery_charge()
+>> "The battery is at 42 percent"
+
+controller.get_grid_power()
+>> "You are exporting 200 watts"
+
+```
