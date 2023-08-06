@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tap-bigquery
+Version: 0.1.4
+Summary: Singer.io tap for extracting data
+Home-page: http://singer.io
+Author: Stitch
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: singer-python (>=5.0.12)
+Requires-Dist: requests
+Requires-Dist: google-cloud-bigquery (==1.16.0)
+Requires-Dist: attrs (==19.3.0)
+
+UNKNOWN
+
+
