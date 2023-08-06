@@ -1,0 +1,10 @@
+setup.py
+eaven_distributions/Binomialdistribution.py
+eaven_distributions/Gaussiandistribution.py
+eaven_distributions/Generaldistribution.py
+eaven_distributions/__init__.py
+eaven_distributions.egg-info/PKG-INFO
+eaven_distributions.egg-info/SOURCES.txt
+eaven_distributions.egg-info/dependency_links.txt
+eaven_distributions.egg-info/not-zip-safe
+eaven_distributions.egg-info/top_level.txt
