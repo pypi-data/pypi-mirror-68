@@ -1,0 +1,3 @@
+[console_scripts]
+flatdata-inspector = flatdata.lib.inspector:main [inspector]
+

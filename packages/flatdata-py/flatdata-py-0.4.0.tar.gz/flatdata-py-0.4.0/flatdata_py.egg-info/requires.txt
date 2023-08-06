@@ -1,0 +1,6 @@
+flatdata-generator
+numpy
+pandas
+
+[inspector]
+IPython
