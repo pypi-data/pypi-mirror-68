@@ -1,0 +1,32 @@
+analysis:
+ stage: build
+ script:
+ # Replace with one of the snakemake commands below
+ - echo "No snakemake build command specified, select/write a command in .gitlab-ci.yml"
+ # For a PBS/TORQUE cluster with singularity uncommet below
+ #- snakemake -w 30 -j 8 --max-jobs-per-second 8 --cluster-config 'scikick/template/cluster.yml' --cluster "qsub -l nodes=1:ppn={cluster.n} -l mem={cluster.mem}gb -l walltime={cluster.time}" --directory "$PWD"
+ # For local execution with singularity uncomment below
+ #- snakemake
+ artifacts:
+  paths:
+  - report/
+  - "*.sh.*" # gets cluster log files
+  when: always # keep artifacts on failure to investigate cluster error logs
+ # Uncomment tag section to assign this job to a runner with "orchestrator" tag only
+ #tags:
+ #  - orchestrator
+
+deploy:
+ stage: deploy
+ script:
+ # Replace this with an appropriate deploy command for your infrastructure
+ - echo "No deployment configured, select/write a command in .gitlab-ci.yml"
+ # To deploy to a server to a unique location for each project + branch
+ # - rsync -avc report/out_html/* <sever address>:/<webroot>/$CI_PROJECT_PATH/$CI_COMMIT_REF_NAME/
+ environment:
+   name: staging/$CI_COMMIT_REF_NAME
+   #url: http://<server address>/$CI_PROJECT_PATH/$CI_COMMIT_REF_NAME
+
+# populates the analysisWebsite submodule and all other submodules before script execution
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
