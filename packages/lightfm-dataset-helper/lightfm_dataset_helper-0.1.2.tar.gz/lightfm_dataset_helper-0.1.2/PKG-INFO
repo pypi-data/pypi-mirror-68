@@ -1,0 +1,52 @@
+Metadata-Version: 1.2
+Name: lightfm_dataset_helper
+Version: 0.1.2
+Summary: A small  helper for  preparing csv files for LightFM fitting
+Home-page: https://github.com/Med-ELOMARI/lightfm_dataset_helper
+Author: Mohamed EL Omari
+Author-email: mohamed.elomari@outlook.com
+License: MIT license
+Description: ======================
+        LightFM Dataset helper
+        ======================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/lightfm_dataset_helper.svg
+                :target: https://pypi.python.org/pypi/lightfm_dataset_helper
+        
+        .. image:: https://travis-ci.com/Med-ELOMARI/LightFM-Dataset-Helper.svg?branch=master
+                :target: https://travis-ci.com/Med-ELOMARI/LightFM-Dataset-Helper
+        
+        .. image:: https://readthedocs.org/projects/lightfm-dataset-helper/badge/?version=latest
+                :target: https://lightfm-dataset-helper.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        A small  helper for  preparing csv files for LightFM fitting
+        
+        
+        * Free software: MIT license
+        * Documentation: https://lightfm-dataset-helper.readthedocs.io.
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-05-14)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: lightfm_dataset_helper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
