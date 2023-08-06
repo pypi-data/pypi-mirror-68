@@ -1,0 +1,9 @@
+vsutillib/log/__init__.py,sha256=CUAK2XqtDj1w_sh_hgkmsxSkTLDU9haTpXcecdczLdY,86
+vsutillib/log/classes/__init__.py,sha256=w6ETxPWdKsLjFc7gOlmB-gT-Aok9XlPqt0qBdvKqG_I,84
+vsutillib/log/classes/logrotatehandler.py,sha256=4BKN43UNr_2PTxtfOx2g-NEF9B-KsrbG14zSfc1upzI,3000
+vsutillib_log-1.5.0.dist-info/AUTHORS,sha256=llm7PvxUuq0L7ZrdDeOz5t7A3v9AlGrlecu0LnCWgDU,38
+vsutillib_log-1.5.0.dist-info/LICENSE.txt,sha256=Nz1_maIKIczSjgEzvm7w645_fL_Q2oI3P5fjMogBsM0,1121
+vsutillib_log-1.5.0.dist-info/METADATA,sha256=cQGWGxVjiC6LgNKOQywxDPcyPcWsVtLGyHWmbwOb8nA,295
+vsutillib_log-1.5.0.dist-info/WHEEL,sha256=SWZulq6g1CZQGXDR2ENi1Gbvady4EX5Xz64_g7XInro,98
+vsutillib_log-1.5.0.dist-info/top_level.txt,sha256=M_5yAwOf6EP-keOFAKDIGNikI6UK2ButYYjCMCyHOBE,10
+vsutillib_log-1.5.0.dist-info/RECORD,,
