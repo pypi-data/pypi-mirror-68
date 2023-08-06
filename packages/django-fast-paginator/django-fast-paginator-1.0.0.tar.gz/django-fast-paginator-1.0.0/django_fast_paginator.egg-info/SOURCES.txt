@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_fast_paginator.egg-info/PKG-INFO
+django_fast_paginator.egg-info/SOURCES.txt
+django_fast_paginator.egg-info/dependency_links.txt
+django_fast_paginator.egg-info/top_level.txt
+fast_pagination/__init__.py
+fast_pagination/helpers.py
+fast_pagination/tests.py
