@@ -1,0 +1,3 @@
+[console_scripts]
+fparser2 = fparser.scripts.fparser2:main
+
