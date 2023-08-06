@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: pyabr
+Version: 0.0.7
+Summary: Pyabr clouding system
+Home-page: https://github.com/manijamali2003/pyabr
+Author: Mani Jamali
+Author-email: manijamali2003@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5
+Requires-Dist: pyqtconsole
+Requires-Dist: wget
+Requires-Dist: gitpython
+
+
+# Pyabr clouding system
+
+In the name of God, the Compassionate, the Merciful
+
+Pyabr &copy; 2020 Mani Jamali. Free Software GNU General Public License v3.0
+
+- Install Pyabr with git source
+- Install Pyabr with PyPI
+- Installaction of Pyabr
+- Run Pyabr shell
+
+## Install Pyabr with git source
+
+- Run `git clone https://github.com/manijamali2003/pyabr`
+
+- Run `cd pyabr && python setup.py`
+
+## Install Pyabr with PyPI
+
+- Run `pip install pyabr`
+
+- Run `python -m pyabr`
+
+## Installaction of Pyabr
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-1.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-1.png)
+
+- After runing setup.py click Next button
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-2.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-2.png)
+
+- Choose non root location for install Pyabr
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-3.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-3.png)
+
+- Fill out the system form
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-4.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-4.png)
+
+- Fill out the account user form then click Finish button
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-5.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-5.png)
+
+- After installing Pyabr, find the installed folder then run **vmnam.pyc** file:
+
+Run `python vmnam.pyc`
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-6.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-6.png)
+
+Welcome to Pyabr; this is a simple boot splash in this clouding system.
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-7.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-7.png)
+
+- Now you can switch your user
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-8.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-8.png)
+
+- After switching the user account, enter your password then click Enter button in keyboard
+
+[![](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-9.png)](https://raw.githubusercontent.com/manijamali2003/pyabr/master/screenshots/pyabr-screenshot-9.png)
+
+This is the default Desktop Enviroment for Pyabr
+
+## Run Pyabr shell
+
+- Before run Pyabr run `python vmnam.pyc login`
+
+or permanetly use no GUI:
+
+- `echo CLI > etc/interface`
+
+- `python vmnam.pyc`
+
+This README.md file created by editor.md with MIT License
+
