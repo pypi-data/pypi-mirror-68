@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: filprofiler
+Version: 0.2.0
+Summary: A memory profiler for data batch processing applications.
+Home-page: https://pythonspeed.com/products/filprofiler/
+Maintainer: Itamar Turner-Trauring
+Maintainer-email: itamar@pythonspeed.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6
+Provides-Extra: dev
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pampy; extra == 'dev'
+Requires-Dist: numpy; extra == 'dev'
+Requires-Dist: scikit-image; extra == 'dev'
+Requires-Dist: cython; extra == 'dev'
+Requires-Dist: black; extra == 'dev'
+
+UNKNOWN
+
+
