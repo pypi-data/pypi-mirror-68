@@ -1,0 +1,3 @@
+[console_scripts]
+bmpr = bmpr.cli:main
+
