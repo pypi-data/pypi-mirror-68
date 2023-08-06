@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django-access-tastypie
+Version: 0.0.3b1
+Summary: Django-Access-Tastypie - the application introducing authorization module for the Tastypie package using Django-Access package
+Home-page: https://github.com/nnseva/django-access-tastypie
+Author: Vsevolod Novikov
+Author-email: nnseva@gmail.com
+License: LGPL
+Keywords: tastypie access django permissions instance-level row-level django-access authority guard dynamic evaluation evaluation-based runtime rights rights-management
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: django (>=1.10)
+Requires-Dist: django-tastypie
+Requires-Dist: django-access
+
+Django-Access-Tastypie
+======================
+
+The application providing an authorization backend for the Tastypie package using Django-Access package.
+
+See details at the home page: https://github.com/nnseva/django-access-tastypie
+
+
