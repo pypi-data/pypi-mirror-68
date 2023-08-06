@@ -1,0 +1,8 @@
+include README.md
+include COPYING
+include stepic.1
+include MANIFEST.in
+include Makefile
+include *.help2man_include
+recursive-include tests *
+recursive-include doc *
