@@ -1,0 +1,34 @@
+image: python:3.8
+
+definitions:
+  services:
+    broker:
+      image: rabbitmq:3
+      environment:
+        RABBITMQ_DEFAULT_USER: guest
+        RABBITMQ_DEFAULT_PASS: guest
+      ports:
+        - 5672:5672
+  steps:
+    - step: &test-and-scan
+        name: Test
+        script:
+          - pip install .[test]
+          - pytest --cov -m "not development" talus
+          - safety check
+        services:
+          - broker
+
+
+pipelines:
+  default:
+    - step: *test-and-scan
+
+  tags:
+    'v*':
+      - step: *test-and-scan
+      - step:
+          script:
+            - python setup.py sdist
+            - pip install twine
+            - twine upload dist/*
