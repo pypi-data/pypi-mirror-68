@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: inaccel-scikit-learn
+Version: 0.22.2.1
+Summary: InAccel scikit-learn-like package
+Home-page: https://docs.inaccel.com
+Author: InAccel
+Author-email: info@inaccel.com
+License: Apache-2.0
+Keywords: InAccel Coral,FPGA,inaccel,scikit-learn
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: coral-api (==1.8)
+Requires-Dist: scikit-learn (==0.22.2.post1)
+
+UNKNOWN
+
+
