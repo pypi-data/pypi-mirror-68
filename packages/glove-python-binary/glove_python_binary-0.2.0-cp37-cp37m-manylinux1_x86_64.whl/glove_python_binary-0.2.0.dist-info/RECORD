@@ -1,0 +1,13 @@
+glove_python_binary.libs/libgomp-3300acd3.so.1.0.0,sha256=wk6lUMisMxGcI6r1jSaoBVNekDfko_qp2SPZPoSnlbw,63024
+glove_python_binary-0.2.0.dist-info/METADATA,sha256=Ah7OZ9UDrpJy6JUmA3CangGsy1pCoZ2nSk-YCYdjf50,580
+glove_python_binary-0.2.0.dist-info/RECORD,,
+glove_python_binary-0.2.0.dist-info/WHEEL,sha256=x_vzcI4ZEGB3mgPWPKzGiYMKKJ7Ixf6JpcM2LwQveJI,109
+glove_python_binary-0.2.0.dist-info/top_level.txt,sha256=37L8VMs0xTR_J8HWIhfuhkwv_VGa5IBT10kXH7mdxjs,6
+glove/__init__.py,sha256=dFl7lgEwPxpDZVSeiS5rpcmg6ohHqLNONiN1jROyUhY,52
+glove/corpus_cython.cpython-37m-x86_64-linux-gnu.so,sha256=X8pWLJb2JqctKdY5IAYnSGzRHxofkS6Tc8w_PZFalhw,1155464
+glove/glove_cython.cpython-37m-x86_64-linux-gnu.so,sha256=YMOUdruGwjnaUsAMwgFVOojqCcUW6pEoREs2QF54Vw4,937624
+glove/glove.py,sha256=g8HvVwgCrtTed9SjMbafO9el8DI1r_nOMjobuimO1Go,10373
+glove/corpus.py,sha256=1jGqH59Tv5bOB5BqegC2205FJmDbaSbsRIoDPDpwqIY,2667
+glove/metrics/accuracy_cython.cpython-37m-x86_64-linux-gnu.so,sha256=jnvGDs6rNohsCEYfT2qGh4bcwkTYE8yRj_TRskei9rw,900752
+glove/metrics/__init__.py,sha256=1fui3XPXWA48MjLKqBGvxfblROKZuSzlCjmgETTzNbs,136
+glove/metrics/accuracy.py,sha256=rz1pbcFSTl-N5ZmEFSKJc6oXSEM0iPaujWNP62l6TzI,3242
