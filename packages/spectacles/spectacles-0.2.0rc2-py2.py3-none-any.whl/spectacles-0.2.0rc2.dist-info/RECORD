@@ -1,0 +1,17 @@
+spectacles/__init__.py,sha256=piwfse-BU36fMSiHS88iT2deO3l53UxmxgsaqFbKGBY,25
+spectacles/cli.py,sha256=ouULPGzUkxpUQGaCtjOoFYUgc-umc8GJSPQKX8xwThI,19756
+spectacles/client.py,sha256=-fTtUh-hAU_g0SJRdDBaT3jUlmYf-W_UKBYoJz3RNlA,24945
+spectacles/exceptions.py,sha256=mbw5jDQqGQyC4fmN4DsYHIkBY_-bQJerjkl-q9bxeUc,3364
+spectacles/logger.py,sha256=xXSRgwA55OgYQsyZ21hM3k2-yW1qhBR7mvRa7aekPf0,1891
+spectacles/lookml.py,sha256=AWKL45P2_KEwmDzaw9H7nZIUE_q4pP_iNY2nrUij4hI,9087
+spectacles/printer.py,sha256=cAW6VoT75Fg3P_nCXC7XrN8SlJfEgg3n3KzNTZdE-O4,3055
+spectacles/runner.py,sha256=2QGjE8IAR0mW-Zsb2A7dLBXtA8haz49dlt28Rq7NezU,6459
+spectacles/tracking.py,sha256=UKC-Zw3ohqgEbuTpc5eaB94oFlHArPYgLZkg1jFZiLo,1268
+spectacles/utils.py,sha256=IHNA5g6_zt-mRDL2miBUG_-_5lRQ7LkMQsy629Poq7U,1791
+spectacles/validators.py,sha256=aNncxaN6PIbn25gJcLjHfoGNa_EYiubTM2b9w2gKiyE,21992
+spectacles-0.2.0rc2.dist-info/LICENSE,sha256=qanLTlEZOwTnTzzTFttmMY0u8qb9tQpHWPdxxP3EypY,1082
+spectacles-0.2.0rc2.dist-info/METADATA,sha256=oR5A-OrUThD_6GK63i-fFApWDcp64UAQ7DxISSVLi8A,3613
+spectacles-0.2.0rc2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+spectacles-0.2.0rc2.dist-info/entry_points.txt,sha256=DzWNg4SDnTdl8A_17-rBfWpylwIw23QuvQ20nkMsD3c,52
+spectacles-0.2.0rc2.dist-info/top_level.txt,sha256=UaM4TBzITzt5_yFtYH8mFNqZlkmpTOgFSwL3ighbIz4,11
+spectacles-0.2.0rc2.dist-info/RECORD,,
