@@ -1,0 +1,6 @@
+[console_scripts]
+preader = preader:main
+
+[gui_scripts]
+pdgui = pdgui:main
+
