@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: sysidentpy
+Version: 0.1.1
+Summary: Open source System Identification library in Python
+Home-page: http://sysidentpy.org
+Maintainer: Wilson Rocha Lacerda Junior
+Maintainer-email: wilsonrljr@outlook.com
+License: new BSD
+Download-URL: https://pypi.org/project/sysidentpy/#files
+Project-URL: Source Code, https://github.com/wilsonrljr/sysidentpy
+Description: Take a look into https://github.com/wilsonrljr/sysidentpy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
