@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+testproject1234/__init__.py
+testproject1234/_version.py
+testproject1234/testmod.py
+testproject1234.egg-info/PKG-INFO
+testproject1234.egg-info/SOURCES.txt
+testproject1234.egg-info/dependency_links.txt
+testproject1234.egg-info/top_level.txt
