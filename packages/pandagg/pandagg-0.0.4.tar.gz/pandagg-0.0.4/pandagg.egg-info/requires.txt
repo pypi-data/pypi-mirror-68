@@ -1,0 +1,12 @@
+future
+lighttree==0.0.4
+elasticsearch<8.0.0,>=7.1.0
+
+[pandas]
+pandas>=0.24.2
+
+[test]
+coverage
+pytest
+mock
+pandas>=0.24.2
