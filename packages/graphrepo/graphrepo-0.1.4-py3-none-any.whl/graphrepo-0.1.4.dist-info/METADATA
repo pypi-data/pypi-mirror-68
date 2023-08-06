@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: graphrepo
+Version: 0.1.4
+Summary: A tool that maps a Github repo to Neo4j and Helps Mining the Repo in the DB
+Home-page: https://github.com/NullConvergence/GraphRepo
+License: Apache License
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: py2neo (==4.2.0)
+Requires-Dist: pydriller (==1.7)
+
+UNKNOWN
+
+
