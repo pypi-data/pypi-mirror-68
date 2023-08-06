@@ -1,0 +1,10 @@
+setup.py
+loadavg.egg-info/PKG-INFO
+loadavg.egg-info/SOURCES.txt
+loadavg.egg-info/dependency_links.txt
+loadavg.egg-info/entry_points.txt
+loadavg.egg-info/not-zip-safe
+loadavg.egg-info/requires.txt
+loadavg.egg-info/top_level.txt
+src/__init__.py
+src/main.py

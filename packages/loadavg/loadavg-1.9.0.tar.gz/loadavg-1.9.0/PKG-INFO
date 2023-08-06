@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: loadavg
+Version: 1.9.0
+Summary: loadaverage.net
+Home-page: UNKNOWN
+License: MIT
+Description: Simple package for check and monitoring server
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
