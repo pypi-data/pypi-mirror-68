@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+EQSN.egg-info/PKG-INFO
+EQSN.egg-info/SOURCES.txt
+EQSN.egg-info/dependency_links.txt
+EQSN.egg-info/requires.txt
+EQSN.egg-info/top_level.txt
+eqsn/__init__.py
+eqsn/gates.py
+eqsn/process_picker.py
+eqsn/qubit_thread.py
+eqsn/shared_dict.py
+eqsn/worker_process.py
