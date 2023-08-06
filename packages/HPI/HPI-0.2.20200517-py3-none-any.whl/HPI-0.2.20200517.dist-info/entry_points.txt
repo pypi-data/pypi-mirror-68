@@ -1,0 +1,3 @@
+[console_scripts]
+hpi = my.__main__:main
+
