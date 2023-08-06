@@ -1,0 +1,5 @@
+[console_scripts]
+roomba-connect = roomba.entry_points:connect
+roomba-discovery = roomba.entry_points:discovery
+roomba-password = roomba.entry_points:password
+
