@@ -1,0 +1,9 @@
+README.md
+setup.py
+./covid19dh/__init__.py
+./covid19dh/cite.py
+./covid19dh/main.py
+covid19dh.egg-info/PKG-INFO
+covid19dh.egg-info/SOURCES.txt
+covid19dh.egg-info/dependency_links.txt
+covid19dh.egg-info/top_level.txt
