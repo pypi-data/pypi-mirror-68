@@ -1,0 +1,72 @@
+Metadata-Version: 1.1
+Name: soapcw
+Version: 0.1.0
+Summary: SOAP is a rapid algorithm to search for continuous sources of gravitational waves, with a wider application to long duration narrowband signals.
+Home-page: https://git.ligo.org/joseph.bayley/soapcw
+Author: Joe Bayley
+Author-email: j.bayley.1@research.gla.ac.uk
+License: MIT license
+Download-URL: https://git.ligo.org/joseph.bayley/soapcw/-/archive/0.1.0/soapcw-0.1.0.tar.gz
+Description: ====
+        soap
+        ====
+        
+        
+        .. image:: https://img.shields.io/pypi/v/soap.svg
+                :target: https://pypi.python.org/pypi/soap
+        
+        .. image:: https://img.shields.io/travis/jcbayley/soap.svg
+                :target: https://travis-ci.org/jcbayley/soap
+        
+        .. image:: https://readthedocs.org/projects/soap-cw/badge/?version=latest
+                :target: https://soap-cw.readthedocs.io
+                :alt: Documentation Status
+        
+        SOAP: Applying the Viterbi algorithm to search for continuous sources
+        of gravitational waves.
+        
+        SOAP is primarily developed to search for continuous sources of
+        gravitational waves, however, has a more general application to search
+        for and long duration weak signal.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://soap-cw.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-04-23)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: soapcw,soap,gravitational waves,pulsars,neutron stars,continuous waves
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
