@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: lbbutils
+Version: 0.0.8
+Summary: lbbutils - Some tools for neural network and image fusion.
+Home-page: https://github.com/littlebaba/lbbutils
+Author: Heng
+Author-email: littlebaba0304@163.com
+License: MIT
+Description: # lbbutils
+        lbbutils - Some tools for neural network and image fusion.
+Keywords: deep-learning multi-focus
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
