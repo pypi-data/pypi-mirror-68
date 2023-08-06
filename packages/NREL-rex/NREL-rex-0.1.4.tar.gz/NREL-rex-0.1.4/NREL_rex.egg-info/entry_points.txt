@@ -1,0 +1,6 @@
+[console_scripts]
+NSRDB = rex.solar_cli:main
+WIND = rex.wind_cli:main
+rechunk = rex.rechunk_h5.rechunk_cli:main
+rex = rex.resource_cli:main
+
