@@ -1,0 +1,15 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_configure.py
+tests/test_utils.py
+tests/test_wso.py
+wso/__init__.py
+wso/configure.py
+wso/utilities.py
+wso/wso.py
+wso.egg-info/PKG-INFO
+wso.egg-info/SOURCES.txt
+wso.egg-info/dependency_links.txt
+wso.egg-info/requires.txt
+wso.egg-info/top_level.txt
