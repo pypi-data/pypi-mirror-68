@@ -1,0 +1,8 @@
+README.md
+setup.py
+paywhirl/__init__.py
+paywhirl/paywhirl.py
+paywhirl.egg-info/PKG-INFO
+paywhirl.egg-info/SOURCES.txt
+paywhirl.egg-info/dependency_links.txt
+paywhirl.egg-info/top_level.txt
