@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyvarco
+Version: 1.0.0
+Summary: Creates all combinations of the variables specified.
+Home-page: https://github.com/FergusonAJ/pyvarco
+Author: Austin Ferguson
+Author-email: ferguson.austin.j@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# bacon
+Python package to easily create all desired combinations of variables
+
+
