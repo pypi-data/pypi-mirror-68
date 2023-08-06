@@ -1,0 +1,7 @@
+README.md
+setup.py
+pinpong.egg-info/PKG-INFO
+pinpong.egg-info/SOURCES.txt
+pinpong.egg-info/dependency_links.txt
+pinpong.egg-info/requires.txt
+pinpong.egg-info/top_level.txt
