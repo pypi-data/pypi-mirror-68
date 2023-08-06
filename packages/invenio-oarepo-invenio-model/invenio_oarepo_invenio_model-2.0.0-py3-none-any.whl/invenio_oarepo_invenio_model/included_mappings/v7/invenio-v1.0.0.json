@@ -1,0 +1,19 @@
+{
+  "InvenioRecord": {
+    "type": "nested",
+    "properties": {
+      "$schema": {
+        "type": "keyword"
+      },
+      "id": {
+        "type": "keyword"
+      },
+      "_created": {
+        "type": "date"
+      },
+      "_updated": {
+        "type": "date"
+      }
+    }
+  }
+}
