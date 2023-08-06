@@ -1,0 +1,7 @@
+nltk
+numpy
+scikit-learn
+
+[dev]
+
+[test]
