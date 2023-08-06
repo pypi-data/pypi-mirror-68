@@ -1,0 +1,11 @@
+pyqtgraph
+numpy>=1.13.0
+scipy
+h5py
+natsort
+mkl_fft
+numba
+scikit-learn
+matplotlib
+rastermap>0.1.0
+scanimage-tiff-reader
