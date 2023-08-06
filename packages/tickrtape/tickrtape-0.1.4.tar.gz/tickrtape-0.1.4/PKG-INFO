@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tickrtape
+Version: 0.1.4
+Summary: 
+Author: Henry Trotter
+Author-email: hbtrotter38@gmail.com
+Requires-Python: >=3,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
