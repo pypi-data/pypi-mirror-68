@@ -1,0 +1,14 @@
+dploy_kickstart/__init__.py,sha256=mMRWeNA3ZsgcELP3fCsiW_BZr8Kil1pxlqGSObeKga8,129
+dploy_kickstart/annotations.py,sha256=OWGONED3jEr_Eys9nBU-hwzLBGlDPIHVsl_ktTj80oM,4098
+dploy_kickstart/cmd.py,sha256=z7fkbkzwBe-uuoPWlt1lokfbXK-GJmAu5OJeuQAjkIs,2954
+dploy_kickstart/deps.py,sha256=cJHsx0V5uw2YzyWiJau7cg2gvlK527op1vpZ8VDRH8o,2164
+dploy_kickstart/errors.py,sha256=u6Q_65FVHgzL2dTQ7pPnlD1LibqsnuwpSX3-xNaX0EA,1269
+dploy_kickstart/openapi.py,sha256=xEULA586fGVm_NMKoUpZWExP29B00vynCfGhcyULfu8,674
+dploy_kickstart/server.py,sha256=YIROjO_ZIcxRJoJOFnJmoEzSF3owkumt1YYKTp691BM,1739
+dploy_kickstart/transformers.py,sha256=5LM_28ZiHyANPlXnPaquuJY5Ojjhqy4YF2IMNx2V3ng,595
+dploy_kickstart/wrapper.py,sha256=cZ9tBHMdOZvnTE4g6A1OGfCQWTQJ0g5lx4OFlz7dcXQ,3855
+dploy_kickstart-0.1.2.dist-info/entry_points.txt,sha256=ygaiqrJ1RLMPWmW7Tp-CRvLek_LCFF_xx9-y2LiVnDw,53
+dploy_kickstart-0.1.2.dist-info/LICENSE,sha256=3gtKv-crGX4eY0O20LjYTaiZnWTJ7c1RlP20C8o-EDg,1064
+dploy_kickstart-0.1.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+dploy_kickstart-0.1.2.dist-info/METADATA,sha256=H6Xhh1hC9yGB69lsXLgF5Jgu0oVxMoYqynMsq33PiFM,3923
+dploy_kickstart-0.1.2.dist-info/RECORD,,
