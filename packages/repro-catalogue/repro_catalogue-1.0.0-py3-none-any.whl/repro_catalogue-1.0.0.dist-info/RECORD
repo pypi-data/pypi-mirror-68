@@ -1,0 +1,13 @@
+catalogue/__init__.py,sha256=ajmIX63qx1PFbpGxhMWDSkW7xpK-vI8uj7YOmKufUxQ,45
+catalogue/catalogue.py,sha256=IA1VkjntW7ao5izK6b5dObFuJLELvsO_trF34JZxW84,11368
+catalogue/compare.py,sha256=SPr4NInXPYpnaz5Ia99U0bjX59SQRnqhtg_IBzJmvao,4118
+catalogue/engage.py,sha256=BLF2FAEuLFNFPsNk9zRC9sF4EX_6-3d-8dP_6EJVhCY,6182
+catalogue/parser.py,sha256=E68AlLts6UJuS3xb-7_ZLhp4Fjs_028llPoYVfYTB7g,5561
+catalogue/utils.py,sha256=2O0nX6S2zUkIvW8BawZdNSAuG89un9USVFFigLbCAEI,1033
+catalogue/version.py,sha256=X2kDOYSu1kF1tqrlFb91F5r6554-AScdLdeOOrw70bI,82
+repro_catalogue-1.0.0.dist-info/LICENSE,sha256=ea36kPVE9kEIq33CaSlWuZF41CXjsneCP76eTh5MqU8,1082
+repro_catalogue-1.0.0.dist-info/METADATA,sha256=YWjs_ZiSULeSo3R3ytcdyIO_nIM1X0ZJrKhEYr6JYQY,18609
+repro_catalogue-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+repro_catalogue-1.0.0.dist-info/entry_points.txt,sha256=GI8PPYkldkx2foiFySsyFLMByVCNKuzV6rP3uDB8TkU,53
+repro_catalogue-1.0.0.dist-info/top_level.txt,sha256=v0FzwHJY8kky7f3duDJVqj0z3dCbBte3Cx1xLPA_qn4,10
+repro_catalogue-1.0.0.dist-info/RECORD,,
