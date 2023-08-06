@@ -1,0 +1,9 @@
+README.md
+setup.py
+test/test.py
+twitch/__init__.py
+twitch/twitch.py
+twitch_MagicaFreak.egg-info/PKG-INFO
+twitch_MagicaFreak.egg-info/SOURCES.txt
+twitch_MagicaFreak.egg-info/dependency_links.txt
+twitch_MagicaFreak.egg-info/top_level.txt
