@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+subset/DICTIONARY_LICENSE
+subset/LICENSE
+subset/__init__.py
+subset/app.py
+subset/dictionary.txt
+subset.egg-info/PKG-INFO
+subset.egg-info/SOURCES.txt
+subset.egg-info/dependency_links.txt
+subset.egg-info/entry_points.txt
+subset.egg-info/not-zip-safe
+subset.egg-info/requires.txt
+subset.egg-info/top_level.txt
