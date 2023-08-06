@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: compose-cms
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/afdaniele/compose-python
+Author: Andrea F. Daniele
+Author-email: afdaniele@ttic.edu
+License: UNKNOWN
+Description: 
+        compose_cms: Python library for communicating with a \compose\ instance
+        =======================================================================
+        
+        
+        \compose\ (http://compose.afdaniele.com) is a CMS (Content Management System) platform written 
+        in PHP that provides functionalities for fast development of web applications on Linux servers.
+        
+        This library provides an easy way of communicating with the REST API on an instance of \compose\.
+        
+        
+Platform: UNKNOWN
