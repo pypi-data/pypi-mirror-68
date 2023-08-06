@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dmatrix2np
+Version: 1.0.2
+Summary: Convert XGBoost's DMatrix to numpy array
+License: GPL-3.0
+Author: Aporia technologies ltd
+Author-email: dev@aporia.com
+Requires-Python: >=3.6.1
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: importlib-metadata (>=1.6.0,<2.0.0)
+Requires-Dist: numpy
