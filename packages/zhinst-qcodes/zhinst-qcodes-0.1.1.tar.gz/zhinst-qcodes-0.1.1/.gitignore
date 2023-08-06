@@ -1,0 +1,7 @@
+*.json
+*.ipynb_checkpoints
+*.pyc
+*.egg-info/
+*/build/
+*/_build/
+*/*/_build/
