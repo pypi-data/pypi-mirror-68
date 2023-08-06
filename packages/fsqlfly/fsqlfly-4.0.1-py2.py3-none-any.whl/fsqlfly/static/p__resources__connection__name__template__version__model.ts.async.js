@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{rVXM:function(n,e,t){"use strict";t.r(e);var o=t("+gtO");e.default=Object(o.a)("version","connection","name","template")}}]);
