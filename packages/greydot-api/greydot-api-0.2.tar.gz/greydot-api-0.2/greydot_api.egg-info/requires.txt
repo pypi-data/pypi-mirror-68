@@ -1,0 +1,6 @@
+lxml
+requests
+
+[docs]
+sphinx
+sphinx-automodapi
