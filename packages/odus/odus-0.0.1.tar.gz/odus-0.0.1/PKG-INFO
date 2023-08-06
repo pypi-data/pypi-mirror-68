@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: odus
+Version: 0.0.1
+Summary: Tools to provide easy access to prepared data to data scientists that can't be asked.
+Home-page: https://github.com/thorwhalen/odus
+Author: Thor Whalen
+Author-email: thorwhalen1@gmail.com
+License: MIT
+Description: # ODUS: Older Drug User Study
+        
+        ODUS contains data and tools to study the drug use of older drug users.
+        
+        More details to come...
+Keywords: data,data access,drug use,markov,bayesian
+Platform: any
+Description-Content-Type: text/markdown
