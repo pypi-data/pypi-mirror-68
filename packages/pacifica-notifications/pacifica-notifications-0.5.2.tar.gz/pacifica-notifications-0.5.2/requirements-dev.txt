@@ -1,0 +1,19 @@
+celery[redis]
+coverage
+cryptography
+mock
+pacifica-metadata
+pacifica-policy
+pbs; sys_platform == 'win32'
+pep257
+pre-commit
+psycopg2
+pylint>2
+pymysql
+pytest
+readthedocs-sphinx-ext
+recommonmark
+redis
+sh; sys_platform != 'win32'
+sphinx
+sphinx-rtd-theme
