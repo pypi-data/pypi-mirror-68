@@ -1,0 +1,14 @@
+README.md
+setup.py
+brainio/__init__.py
+brainio/brainio.py
+brainio/utils.py
+brainio.egg-info/PKG-INFO
+brainio.egg-info/SOURCES.txt
+brainio.egg-info/dependency_links.txt
+brainio.egg-info/not-zip-safe
+brainio.egg-info/requires.txt
+brainio.egg-info/top_level.txt
+tests/__init__.py
+tests/tests/__init__.py
+tests/tests/test_brainio.py
