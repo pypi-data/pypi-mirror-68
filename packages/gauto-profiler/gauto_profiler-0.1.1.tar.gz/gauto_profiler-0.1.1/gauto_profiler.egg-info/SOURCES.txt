@@ -1,0 +1,13 @@
+README.md
+setup.py
+gauto_profiler/__init__.py
+gauto_profiler/base.py
+gauto_profiler/cpu.py
+gauto_profiler/fps.py
+gauto_profiler/mem.py
+gauto_profiler.egg-info/PKG-INFO
+gauto_profiler.egg-info/SOURCES.txt
+gauto_profiler.egg-info/dependency_links.txt
+gauto_profiler.egg-info/top_level.txt
+gauto_profiler/utils/__init__.py
+gauto_profiler/utils/adb_tool.py
