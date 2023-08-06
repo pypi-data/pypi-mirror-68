@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: djangocms-socialshare
+Version: 0.0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Victor Yunenko
+Author-email: victor.yunenko+pypi@pm.me
+License: MIT
+Description: UNKNOWN
+Keywords: django
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django CMS :: 3.7
+Classifier: Programming Language :: Python :: 3.6
