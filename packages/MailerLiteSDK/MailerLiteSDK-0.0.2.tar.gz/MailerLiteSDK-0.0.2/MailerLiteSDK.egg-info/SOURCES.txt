@@ -1,0 +1,10 @@
+README.md
+setup.py
+MailerLiteSDK/__init__.py
+MailerLiteSDK/api.py
+MailerLiteSDK/client.py
+MailerLiteSDK/subscriber.py
+MailerLiteSDK.egg-info/PKG-INFO
+MailerLiteSDK.egg-info/SOURCES.txt
+MailerLiteSDK.egg-info/dependency_links.txt
+MailerLiteSDK.egg-info/top_level.txt
