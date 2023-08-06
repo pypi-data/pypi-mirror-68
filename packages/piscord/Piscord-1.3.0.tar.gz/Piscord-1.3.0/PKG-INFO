@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Piscord
+Version: 1.3.0
+Summary: Piscord is a python framework to communicate with the Discord api.
+Home-page: https://github.com/Astremy/Piscord
+Author: Astremy
+License: UNKNOWN
+Description: <img src="https://github.com/Astremy/Piscord/blob/master/assets/Logo_Piscord.png" width="170" align="right" />
+        
+        # Piscord
+        
+        Piscord is a python framework to communicate with the Discord api.
+        
+        
+        In particular, it simplifies the creation of a bot that interacts with a Web server.
+        It thus allows to do much more easily various things like bot control panels.
+        
+        Thus, in all the examples, Piscord is used with [SAPAS](https://github.com/Astremy/SAPAS).
+        
+        ### Documentation
+        [Piscord Documentation](https://piscord.astremy.com/) (Only in French for the moment)
+        
+        #### How to use it
+        You can install it with pip : pip install Piscord
+        
+        Used Modules :
+        - asyncio
+        - json
+        - aiohttp
+        - threading
+        
+        Author : Astremy
+        
+        Discord : [Piscord](https://discord.gg/U9X7XzP)
+        
+        This project is licensed under the terms of the MIT license : [License](https://github.com/Astremy/Piscord/blob/master/LICENSE)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
