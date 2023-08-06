@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: metashape
+Version: 0.0.1
+Summary: -
+Home-page: https://github.com/podhmo/metashape
+Author: podhmo
+Author-email: ababjam61+github@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typing-inspect
+Requires-Dist: typing-extensions
+Provides-Extra: cli
+Requires-Dist: json2python-models ; extra == 'cli'
+Requires-Dist: dictknife (>=0.13.0) ; extra == 'cli'
+Requires-Dist: prestring (>=0.9.0) ; extra == 'cli'
+Requires-Dist: magicalimport (>=0.9.1) ; extra == 'cli'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: input
+Requires-Dist: json2python-models ; extra == 'input'
+Provides-Extra: output
+Requires-Dist: dictknife (>=0.13.0) ; extra == 'output'
+Requires-Dist: prestring (>=0.9.0) ; extra == 'output'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+# metashape ![Python package](https://github.com/podhmo/metashape/workflows/Python%20package/badge.svg) [![PyPi version](https://img.shields.io/pypi/v/metashape.svg)](https://pypi.python.org/pypi/metashape) [![](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/download/releases/3.7.0/) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://black.readthedocs.io/en/stable/)
+
+:construction: this project is under construction :construction:
+
+## installing
+
+```console
+$ pip install metashape[cli]
+```
+
+
