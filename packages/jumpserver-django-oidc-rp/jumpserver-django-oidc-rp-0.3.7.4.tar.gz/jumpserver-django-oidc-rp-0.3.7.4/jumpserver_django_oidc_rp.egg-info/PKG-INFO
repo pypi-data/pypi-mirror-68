@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: jumpserver-django-oidc-rp
+Version: 0.3.7.4
+Summary: Based on the modified django-oidc-rp adapter JumpServer OpenID Connect Relying Party (RP/Client)
+Home-page: https://github.com/BaiJiangJie/jumpserver-django-oidc-rp
+Author: Bai Jiangjie
+Author-email: jiangjie.bai@fit2cloud.com
+License: MIT
+Description: jumpserver-django-oidc-rp
+        ##############
+        
+        **JumpServer-django-oidc-rp** is based on the modified django-oidc-rp (https://github.com/impak-finance/django-oidc-rp) adapter JumpServer OpenID Connect Relying Party (RP/Client)
+        
+        Main requirements
+        =================
+        
+        Python 3.4+, Django 1.11+.
+        
+        Authors
+        =======
+        Bai Jiangjie <jiangjie.bai@fit2cloud.com>.
+        
+        License
+        =======
+        
+        MIT. See ``LICENSE`` for more details.
+        
+Keywords: jumpserver django openidconnect oidc client rp authentication auth
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
