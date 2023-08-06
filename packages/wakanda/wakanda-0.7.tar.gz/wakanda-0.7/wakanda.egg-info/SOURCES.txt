@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+wakanda/__init__.py
+wakanda/split.csv
+wakanda/wkd.py
+wakanda.egg-info/PKG-INFO
+wakanda.egg-info/SOURCES.txt
+wakanda.egg-info/dependency_links.txt
+wakanda.egg-info/requires.txt
+wakanda.egg-info/top_level.txt
