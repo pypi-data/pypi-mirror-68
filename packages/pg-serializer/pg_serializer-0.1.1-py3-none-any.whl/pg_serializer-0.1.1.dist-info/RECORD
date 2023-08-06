@@ -1,0 +1,9 @@
+pg_serializer/__init__.py,sha256=wyZk-UsoJpUZJ-4uyUj62IxRmLVaeJNs5BKVkIqaW-Y,95
+pg_serializer/expressions.py,sha256=XFwjCwQppsf360_fzSG8i_c6cDSZtN2KXv2C0_OBgTI,493
+pg_serializer/fields.py,sha256=va8Cxcy3t4PYk17YiajILCPRGLFoWr_WpMzbXJweksw,4008
+pg_serializer/serializers.py,sha256=QuxLYglBocXhKM43ZB56baRPkxJ8-lVgzhd-cUuUuws,4310
+pg_serializer/settings.py,sha256=bZAdpWfN0v4GdPBEs5F2KGG8YgdjbMuT6opkmUoO86o,1598
+pg_serializer/utils.py,sha256=Hmol3VLiMkEulvx6dDeehAsrkCvOz6cSrHK9pbTtS1E,1705
+pg_serializer-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pg_serializer-0.1.1.dist-info/METADATA,sha256=DHoy019mY-QhkwgtlGwNS90xD6XCMILQ_J2gCkd3gAc,3991
+pg_serializer-0.1.1.dist-info/RECORD,,
