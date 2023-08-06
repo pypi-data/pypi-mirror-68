@@ -1,0 +1,3 @@
+[console_scripts]
+git-util=git_util.cli:cli
+
