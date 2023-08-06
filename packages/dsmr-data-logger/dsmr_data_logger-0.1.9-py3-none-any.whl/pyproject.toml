@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dsmr-data-logger"
+version = "0.1.9"
+description = "DSMR data logger"
+authors = ["Pascal Prins <pascal.prins@foobar-it.com>"]
+include = ["pyproject.toml"]
+readme = "README.md"
+homepage = "https://github.com/paprins/dsmr"
+repository = "https://github.com/paprins/dsmr"
+
+packages = [
+    { include = "dsmr" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+configparser = "^5.0.0"
+click = "^7.1.2"
+toml = "^0.10.0"
+dsmr_parser = "^0.18"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[tool.poetry.scripts]
+dsmr = "dsmr.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
