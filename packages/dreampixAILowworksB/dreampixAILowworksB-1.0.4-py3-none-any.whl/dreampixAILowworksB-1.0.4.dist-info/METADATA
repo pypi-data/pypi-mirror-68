@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dreampixAILowworksB
+Version: 1.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: xujin.huang@dreampix.cn
+Author-email: xujin.huang@dreampix.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Requires-Dist: numpy (>=1.16.2)
+
+UNKNOWN
+
+

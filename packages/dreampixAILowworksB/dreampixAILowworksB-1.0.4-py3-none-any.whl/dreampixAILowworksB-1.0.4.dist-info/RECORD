@@ -1,0 +1,10 @@
+DreampixAILoworksDetect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DreampixAILoworksDetect/baseline.py,sha256=AIeOQPOuMYkoR1wd-W2CEb2vwnXBr_MwG67eHn1WSfE,4829
+DreampixAILoworksDetect/se_inception.py,sha256=l9568SYvG0ujP9koMibvKSp5J7B47kw04A7wRPRibyA,1409
+DreampixAILoworksDetect/se_module.py,sha256=uxTTFSh6fffHab-Mj55RApdcQ-5qMXynvWi1B5Ea-E8,590
+DreampixAILoworksDetect/se_resnet.py,sha256=dZkQd7ntjhn9eDppLpE1LrPWWX16avpK6HXru0G8Swk,8553
+DreampixAILoworksDetect/works_identificationB.py,sha256=zyjKr1_1nvqNsoWewUs6lQYAVYIQTCob8UTk2eloiws,2868
+dreampixAILowworksB-1.0.4.dist-info/METADATA,sha256=iLfARGxZTwKkRfRLt7f4UgqJbSL9kLFYt4KZGL7571s,425
+dreampixAILowworksB-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dreampixAILowworksB-1.0.4.dist-info/top_level.txt,sha256=YREouzZ4zOymJgEfs_Xn4WFB-4z42q-TYowaCIQSvKs,24
+dreampixAILowworksB-1.0.4.dist-info/RECORD,,
