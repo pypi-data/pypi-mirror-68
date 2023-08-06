@@ -1,0 +1,8 @@
+README.md
+setup.py
+leximited/__init__.py
+leximited/leximited.py
+leximited.egg-info/PKG-INFO
+leximited.egg-info/SOURCES.txt
+leximited.egg-info/dependency_links.txt
+leximited.egg-info/top_level.txt
