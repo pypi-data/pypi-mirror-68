@@ -1,0 +1,4 @@
+[console_scripts]
+ffsubsync = ffsubsync:main
+subsync = ffsubsync:main
+
