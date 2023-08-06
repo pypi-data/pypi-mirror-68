@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: thr
+Version: 0.2
+Summary: Minimal Threema Gateway library
+Home-page: http://github.com/coffeemakr/python-thr
+Author: coffeemakr
+License: Unlicense
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
