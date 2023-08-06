@@ -1,0 +1,7 @@
+README.md
+setup.py
+zText.egg-info/PKG-INFO
+zText.egg-info/SOURCES.txt
+zText.egg-info/dependency_links.txt
+zText.egg-info/requires.txt
+zText.egg-info/top_level.txt
