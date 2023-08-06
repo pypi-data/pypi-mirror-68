@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: robotstxt
+Version: 0.0.2
+Summary: A package to check URLs against a robots.txt file
+Home-page: https://github.com/pypa/sampleproject
+Author: Christopher Evans
+Author-email: chris@chris24.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Robots Text Processor
+
+This is a package to handle processing of robots.txt files.
+
+
+
