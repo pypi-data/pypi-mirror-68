@@ -1,0 +1,9 @@
+watchdog
+pyyaml
+termcolor
+pygments
+setproctitle
+pylru
+
+[test]
+requests
