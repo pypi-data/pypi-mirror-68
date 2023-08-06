@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: mitre-stix
+Version: 0.0.4
+Summary: A Python package that scans mitre signatures from STIX2.0 json log format
+Home-page: https://github.trendmicro.com/henryal/mitre-stix
+Author: Henry Alarcon Jr.
+License: MIT
+Keywords: Cyber threat intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# MITRE STIX
+
+A Python package to get mitre signatures from json logs format of stix2 objects
+
+# Current Status: Beta
+The project is currently in a beta stage, which means that the code and the functionality is changing, but the current main functions are stabilising. I would love to get your feedback to make it a better project.
+
+# Usage
+-----
+
+a Python API that returns object STIX2.0 formatted ready to be added in STIX2.0 content.
+
+``` python
+import mitre_stix.scanrules as ms
+import json
+output = ms.logs(json.loads(json_object))
+```
+
+## Requirements
+
+Python 3+
+
+## Installation
+
+You can install it via PIP:
+
+```
+pip install mitre_stix
+```
+
+Or you can also do the following:
+
+```
+git clone https://github.trendmicro.com/henryal/mitre-stix
+cd mitre-stix
+pip install .
+```
+
+# Author
+* Henry Alarcon Jr.
+
