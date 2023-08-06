@@ -1,0 +1,11 @@
+LICENSE,sha256=9JLIXParr4wwFn2RohKFbe3gp6FKQqJqcuPDGgCRURU,1063
+wagtail_meilisearch/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+wagtail_meilisearch/backend.py,sha256=2eYlzjB16W-vrNrgK3qjmP9m8I5oEwS1CzgPNYEQAvM,19960
+wagtail_meilisearch/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_meilisearch/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_meilisearch/management/commands/meilisearch_status.py,sha256=oUiNpAUfLykCTFfmFdOq4WQ68cvdtEZQ46QSLQq8hwA,2590
+wagtail_meilisearch/settings.py,sha256=4hub8TaMxPv5YOejJeNSkYLvQcw50bTsS780NoW3-1Q,2569
+wagtail_meilisearch-0.1.5.dist-info/LICENSE,sha256=9JLIXParr4wwFn2RohKFbe3gp6FKQqJqcuPDGgCRURU,1063
+wagtail_meilisearch-0.1.5.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+wagtail_meilisearch-0.1.5.dist-info/METADATA,sha256=Pr2jMgJD353xNb_N25NHuxHYmYW4SBPMCJlvqnqEQqY,7675
+wagtail_meilisearch-0.1.5.dist-info/RECORD,,
