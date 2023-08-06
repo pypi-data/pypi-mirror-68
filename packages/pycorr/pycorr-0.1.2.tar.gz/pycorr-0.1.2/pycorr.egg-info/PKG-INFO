@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pycorr
+Version: 0.1.2
+Summary: Python package for calculating correlation amongst categorical variables
+Home-page: https://github.com/MavericksDS/pycorr
+Author: Anurag Kumar Mishra
+Author-email: anuragkm25@outlook.com
+License: UNKNOWN
+Description: # PyCorr
+        Simple package to calculate correlation between variables. Currently provides correlation between nominal variables. Correlation between mixed variables would be added soon.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
