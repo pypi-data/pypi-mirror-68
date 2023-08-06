@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-metrics-binary-classification-metrics
+Version: 2.2.4
+Summary: The binary_classification_metrics metrics plugin for Orbis
+Home-page: https://github.com/orbis-eval/orbis_plugin_metrics_binary_classification_metrics
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+# Binary Classification Metrics Plugin for Orbis
+
+

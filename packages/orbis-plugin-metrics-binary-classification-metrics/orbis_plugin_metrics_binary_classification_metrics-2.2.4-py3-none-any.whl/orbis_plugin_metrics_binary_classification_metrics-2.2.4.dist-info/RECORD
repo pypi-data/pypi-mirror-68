@@ -1,0 +1,10 @@
+orbis_plugin_metrics_binary_classification_metrics/__init__.py,sha256=5fmoP2w-zOZWj2WWOs8K6nSHIQLA42UPhr6iHv8Fbhg,461
+orbis_plugin_metrics_binary_classification_metrics/main.py,sha256=0U_anPxDl7OvygU2Q_tRrzyEl5EknNaC5O9FFTXxBGA,2228
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/confusion_matrices.py,sha256=w-5e5xrDY8PtzxNCcEsUm5c1HEJXOL_9BT2G1s1DOak,452
+tests/test_main.py,sha256=aD0G4C878fJEm-AAUOSOQQlayVQwivCD2UySb1suU84,811
+orbis_plugin_metrics_binary_classification_metrics-2.2.4.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+orbis_plugin_metrics_binary_classification_metrics-2.2.4.dist-info/METADATA,sha256=QDALsVwKWe267mdHRzgi_nWOLwYMjNv6MGTtSAwqi-Q,414
+orbis_plugin_metrics_binary_classification_metrics-2.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+orbis_plugin_metrics_binary_classification_metrics-2.2.4.dist-info/top_level.txt,sha256=XWSayjqrzISTfIaOAwI0C80UzufFXH-AEJYhOxQNTPI,57
+orbis_plugin_metrics_binary_classification_metrics-2.2.4.dist-info/RECORD,,
