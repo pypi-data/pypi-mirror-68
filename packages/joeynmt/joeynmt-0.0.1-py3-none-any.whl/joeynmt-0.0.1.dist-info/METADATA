@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: joeynmt
+Version: 0.0.1
+Summary: Minimalist NMT for educational purposes
+Home-page: https://github.com/joeynmt/joeynmt
+Author: Joost Bastings and Julia Kreutzer
+License: Apache License
+Project-URL: Documentation, http://joeynmt.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/joeynmt/joeynmt
+Project-URL: Tracker, https://github.com/joeynmt/joeynmt/issues
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: future
+Requires-Dist: pillow
+Requires-Dist: numpy (<2.0,>=1.14.5)
+Requires-Dist: setuptools (>=41.0.0)
+Requires-Dist: torch (>=1.1)
+Requires-Dist: tensorflow (>=1.14)
+Requires-Dist: torchtext
+Requires-Dist: sacrebleu (>=1.3.6)
+Requires-Dist: subword-nmt
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: pylint
+Requires-Dist: six (==1.12)
+Requires-Dist: wrapt (==1.11.1)
+
+UNKNOWN
+
+
