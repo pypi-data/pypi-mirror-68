@@ -1,0 +1,7 @@
+arrow
+python-jose
+requests
+Django
+crypto
+python-jwt
+pycryptodome
