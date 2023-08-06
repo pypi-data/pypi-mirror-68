@@ -1,0 +1,70 @@
+Metadata-Version: 1.1
+Name: Nyzostrings
+Version: 0.0.5
+Summary: nyzostrings PIP module for Nyzo cryptocurrency. Handles Conversion to and from nyzostrings.
+Home-page: https://github.com/angainordev/nyzostrings
+Author: EggdraSyl from Bismuth Foundation
+Author-email: dev@eggpool.net
+License: MIT license
+Description: ===========
+        nyzostrings
+        ===========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/nyzostrings.svg
+                :target: https://pypi.python.org/pypi/nyzostrings
+        
+        .. image:: https://img.shields.io/travis/EggPool/nyzostrings.svg
+                :target: https://travis-ci.org/EggPool/nyzostrings
+        
+        .. image:: https://readthedocs.org/projects/nyzostrings/badge/?version=latest
+                :target: https://nyzostrings.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        nyzostrings PIP module for Nyzo cryptocurrency. Handles Conversion to and from nyzostrings.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://nyzostrings.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.5 (2020-05-16)
+        ------------------
+        
+        * Add support for vote transactions
+        
+        0.0.4 (2020-05-10)
+        ------------------
+        
+        * Add `sig_` nyzostrings
+        
+        0.0.3 (2019-11-23)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: nyzostrings
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
