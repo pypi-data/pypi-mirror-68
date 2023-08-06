@@ -1,0 +1,9 @@
+scipy
+numpy
+matplotlib
+sdtfile
+pandas
+tqdm
+h5py
+Pillow
+pooch
