@@ -1,0 +1,5 @@
+[console_scripts]
+dpipe = dpipe.config.base:render_config_resource
+dpipe-build = dpipe.layout.scripts:build
+dpipe-run = dpipe.layout.scripts:run
+

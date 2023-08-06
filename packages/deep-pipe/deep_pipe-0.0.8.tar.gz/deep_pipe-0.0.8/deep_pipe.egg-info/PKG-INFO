@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: deep-pipe
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: https://github.com/neuro-ml/deep_pipe
+License: MIT
+Download-URL: https://github.com/neuro-ml/deep_pipe/v0.0.8.tar.gz
+Description: # Deep pipe
+        
+        A collection of tools for deep learning experiments.
+        
+        
+        ## Installation:
+        Using pip
+        ```bash
+        pip install deep-pipe
+        ```
+        
+        Or from GitHub
+        ```bash
+        git clone https://github.com/neuro-ml/deep_pipe.git
+        cd deep_pipe
+        pip install -e .
+        ```
+        
+        ## Documentation
+        
+        https://deep-pipe.readthedocs.io/en/latest/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
