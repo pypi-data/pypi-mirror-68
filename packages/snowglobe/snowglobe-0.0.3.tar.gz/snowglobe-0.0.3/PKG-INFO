@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: snowglobe
+Version: 0.0.3
+Summary: A python package to manage docker development environments.
+Home-page: https://github.com/mohitudupa/SnowGlobe
+Author: Mohit Udupa
+Author-email: mohitudupa@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
