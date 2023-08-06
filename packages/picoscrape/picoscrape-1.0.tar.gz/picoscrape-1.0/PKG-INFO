@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: picoscrape
+Version: 1.0
+Summary: This library enables the user to easily scrape images from various websites like unsplash, pexels. This library is dependent on selenium and other pre-installed packages.
+Home-page: https://github.com/anuraggupta29/picoscrape
+Author: Anurag Gupta
+Author-email: anuraggupta29@outlook.com
+License: MIT License
+Download-URL: https://github.com/anuraggupta29/picoscrape/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: scrape,image scraper,unsplash scraper,image dataset,unsplash
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
