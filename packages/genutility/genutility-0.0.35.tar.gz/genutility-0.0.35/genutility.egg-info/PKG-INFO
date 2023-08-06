@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: genutility
+Version: 0.0.35
+Summary: A collection of various Python utilities
+Home-page: https://github.com/Dobatymo/genutility
+Author: Dobatymo
+License: UNKNOWN
+Description: # genutility
+        
+        A collection of various Python utilities.
+        
+        Most functionally is supported on Python 2.7+ / Python 3.5+. However some things might only be working on Python 3.6+.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Provides-Extra: concurrency
+Provides-Extra: all
+Provides-Extra: metrics
+Provides-Extra: statistics
+Provides-Extra: sqlite
+Provides-Extra: dict
+Provides-Extra: networkx
+Provides-Extra: config
+Provides-Extra: binary
+Provides-Extra: xsl
+Provides-Extra: mp4
+Provides-Extra: pandas
+Provides-Extra: algorithms
+Provides-Extra: error
+Provides-Extra: toml
+Provides-Extra: powerpoint
+Provides-Extra: csv
+Provides-Extra: tls
+Provides-Extra: string
+Provides-Extra: exceptions
+Provides-Extra: factorial
+Provides-Extra: msgpack
+Provides-Extra: mediainfo
+Provides-Extra: http2
+Provides-Extra: sequence
+Provides-Extra: av
+Provides-Extra: imdb
+Provides-Extra: sql
+Provides-Extra: json
+Provides-Extra: torrent
+Provides-Extra: sort
+Provides-Extra: text
+Provides-Extra: flask
+Provides-Extra: file
+Provides-Extra: multihash
+Provides-Extra: tensorflow
+Provides-Extra: ringlist
+Provides-Extra: latex
+Provides-Extra: twisted
+Provides-Extra: indexing
+Provides-Extra: cv
+Provides-Extra: stdio
+Provides-Extra: datastructures
+Provides-Extra: downloadmanager
+Provides-Extra: twitch
+Provides-Extra: hash
+Provides-Extra: debug
+Provides-Extra: func
+Provides-Extra: pickle
+Provides-Extra: rand
+Provides-Extra: resizing
+Provides-Extra: nltk
+Provides-Extra: os
+Provides-Extra: numba
+Provides-Extra: test
+Provides-Extra: net
+Provides-Extra: typing
+Provides-Extra: profile
+Provides-Extra: pillow
+Provides-Extra: iter
+Provides-Extra: http
+Provides-Extra: constants_physics
+Provides-Extra: torch
+Provides-Extra: cholesky
+Provides-Extra: search
+Provides-Extra: encoder
+Provides-Extra: atomic
+Provides-Extra: set
+Provides-Extra: datetime
+Provides-Extra: filesystem
+Provides-Extra: regression
+Provides-Extra: object
+Provides-Extra: ops
+Provides-Extra: mongo
+Provides-Extra: win32
+Provides-Extra: args
+Provides-Extra: gensim
+Provides-Extra: videofile
+Provides-Extra: scene_change_detection
+Provides-Extra: pdf
+Provides-Extra: lda
+Provides-Extra: constants_video
+Provides-Extra: html
+Provides-Extra: nlp
+Provides-Extra: sudoku
+Provides-Extra: numpy
+Provides-Extra: url
+Provides-Extra: math
+Provides-Extra: image
+Provides-Extra: signal
+Provides-Extra: widgets
+Provides-Extra: aria
+Provides-Extra: scipy
+Provides-Extra: geometry
+Provides-Extra: time
