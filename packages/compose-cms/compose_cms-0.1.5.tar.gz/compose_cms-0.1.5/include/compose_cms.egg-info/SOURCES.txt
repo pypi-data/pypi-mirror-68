@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+dependencies.txt
+setup.cfg
+setup.py
+include/compose_cms/__init__.py
+include/compose_cms/compose.py
+include/compose_cms/exceptions.py
+include/compose_cms/logger.py
+include/compose_cms/proxies.py
+include/compose_cms/utils.py
+include/compose_cms.egg-info/PKG-INFO
+include/compose_cms.egg-info/SOURCES.txt
+include/compose_cms.egg-info/dependency_links.txt
+include/compose_cms.egg-info/requires.txt
+include/compose_cms.egg-info/top_level.txt
