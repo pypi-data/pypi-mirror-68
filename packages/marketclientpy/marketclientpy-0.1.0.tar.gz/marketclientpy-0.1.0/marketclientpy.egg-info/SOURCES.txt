@@ -1,0 +1,9 @@
+README.md
+setup.py
+marketclientpy/__init__.py
+marketclientpy/scrappers.py
+marketclientpy.egg-info/PKG-INFO
+marketclientpy.egg-info/SOURCES.txt
+marketclientpy.egg-info/dependency_links.txt
+marketclientpy.egg-info/requires.txt
+marketclientpy.egg-info/top_level.txt
