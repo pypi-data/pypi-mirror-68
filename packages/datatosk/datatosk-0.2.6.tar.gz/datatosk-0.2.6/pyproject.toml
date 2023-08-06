@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "datatosk"
+version = "0.2.6"
+description = "Python library for fetching data from different sources"
+license = "Apache-2.0"
+authors = ["Miłosz Bednarzak <milosz.bednarzak@bethink.pl>", "Kuba Karmiński <kuba.karminski@bethink.pl>"]
+maintainers = ["Miłosz Bednarzak <milosz.bednarzak@bethink.pl>", "Kuba Karmiński <kuba.karminski@bethink.pl>"]
+readme = "README.md"
+repository = "https://github.com/bethinkpl/datatosk"
+keywords = ["data"]
+include = ["py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sqlalchemy = "^1.3.13"
+pandas = "^1.0.1"
+pandas-gbq = "^0.13.1"
+google-cloud-bigquery = "^1.24.0"
+mysqlclient = "^1.4.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^19.10b0"
+mypy = "^0.761"
+pylint = "^2.4.4"
+rope = "^0.16.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
