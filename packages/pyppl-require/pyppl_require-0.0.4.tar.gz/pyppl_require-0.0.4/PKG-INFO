@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: pyppl-require
+Version: 0.0.4
+Summary: Requirement manager for processes of PyPPL
+Home-page: https://github.com/pwwang/pyppl_require
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: cmdy
+Requires-Dist: pyppl (>=3.0.0,<4.0.0)
+Requires-Dist: pyppl_annotate
+Project-URL: Repository, https://github.com/pwwang/pyppl_require
+Description-Content-Type: text/markdown
+
+# pyppl_require
+
+Requirement manager for [PyPPL](https://github.com/pwwang/PyPPL).
+
+## Installation
+It requires [pyppl_annotate](https://github.com/pwwang/pyppl_annotate).
+```shell
+pip install pyppl_require
+```
+
+## Usage
+```shell
+> pyppl require
+Description:
+  Process requirement manager
+
+Usage:
+  pyppl require <--pipe AUTO> [OPTIONS]
+
+Required options:
+  -p, --pipe <AUTO>     - The pipeline script.
+
+Optional options:
+  --install <AUTO>      - Install the requirements.
+                          You can specify a directory (default: $HOME/bin) to install the \
+                          requirements.
+                          Default: None
+  -h, -H, --help        - Show help message and exit.
+```
+
+To allow your processes to be analyzed, you have to put a section in annotate using `toml` format:
+```python
+pXXX.config.annotate = """
+@requires:
+  [bedtools]
+  validate: "bedtools --version"
+  install: "conda install -c bioconda bedtools"
+  # other annotations
+"""
+```
+
+If you want define those commands using process properties and aggrs:
+```python
+pXXX.config.annotate = """
+@requires:
+  [bedtools]
+  validate: "{{args.bedtools}} --version"
+  install: "conda install -c bioconda bedtools"
+  # other annotations
+"""
+```
+
+Install to a specify directory:
+
+```python
+pXXX.config.annotate = """
+@requires:
+  [bedtools]
+  validate: "{{args.bedtools}} --version"
+  install: "conda install -c bioconda bedtools; ln -s $(which bedtools) {{bindir}}/bedtools"
+  # other annotations
+"""
+```
+
+`{{bindir}}` will be the directory passed to the command line.
+```shell
+pyppl require --pipe <your pipeline> --install </path/to/bin>
+```
+
