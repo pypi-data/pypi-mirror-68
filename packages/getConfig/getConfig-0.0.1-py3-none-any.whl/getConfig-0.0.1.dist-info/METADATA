@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: getConfig
+Version: 0.0.1
+Summary: Python module for reading variables from configuration files like cfg, INI, XML, JSON.
+Home-page: https://github.com/AlexMartin17/getConfig
+Author: Alex-Martin Lakovski
+Author-email: amkl17mz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# getConfig
+Python module for reading variables from config file.
+Useful when you don't want to change the variables directly in your python script or your users to do so.
+<br>
+<br>
+Config files supported:
+<ul>
+<li>Simple ASCII cfg file (which is same as INI file)</li>
+<li>INI</li>
+<li>XML</li>
+<li>JSON</li>
+</ul>
+Config files which are work in progress
+<ul>
+<li>YAML</li>
+</ul>
+
+
