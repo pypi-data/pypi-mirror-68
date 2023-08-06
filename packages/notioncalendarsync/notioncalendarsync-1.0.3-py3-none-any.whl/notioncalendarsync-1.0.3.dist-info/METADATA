@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: notioncalendarsync
+Version: 1.0.3
+Summary: The unofficial Notion API extended with the option to sync your Notion events to Google Calendar.
+Home-page: https://github.com/marcoEDU/Notion-Calendar-Sync
+Author: Marco
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: notion
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+# Notion-Calendar-Sync
+
+The unofficial Notion API extended with the option to sync your Notion events to Google Calendar.
+
+Want to support the development financially? Donations are always welcomed! 
+[Click here to donate on Liberapay](https://liberapay.com/marcoEDU)
+
+[<img src="http://img.shields.io/liberapay/receives/marcoEDU.svg?logo=liberapay">](https://liberapay.com/marcoEDU)
+
+## Installation
+
+```
+pip install notioncalendarsync
+```
+
+## Usage
+
+YOUR NOTION TOKEN:
+
+Obtain the `token_v2` value by inspecting your browser cookies on a logged-in session on Notion.so
+
+```
+from notioncalendarsync import Notion
+
+Notion(token_v2="{{ YOUR NOTION TOKEN }}").add_events_to_google_calendar('{{ NOTION COLLECTION URL }}',timezone='Europe/Berlin')
+```
+
