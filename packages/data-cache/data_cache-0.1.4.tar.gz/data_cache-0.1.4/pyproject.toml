@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "data_cache"
+version = "0.1.4"
+description = "Data Cache"
+authors = ["Statnett Datascience <Datascience.Drift@statnett.no>"]
+
+[tool.poetry.dependencies]
+numpy = "*"
+pandas = "^1.0.0"
+python = "^3.6.1"
+tables = "*"
+h5py = "^2.10.0"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "*"
+black = { version = "*", allow-prereleases = true }
+flake8 = "*"
+ipython = "*"
+isort = "*"
+jedi = "*"
+jupyter = "*"
+mock = "*"
+pre-commit = "*"
+pytest = "*"
+pytest-cov = "*"
+rope = "*"
+yapf = "*"
+pathos = "^0.2.5"
+
+[tool.isort]
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.black]
+line-length = 100
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | profiling
+)/
+'''
+
+[build-system]
+requires = ["poetry>=1.0.5"]
+build-backend = "poetry.masonry.api"
