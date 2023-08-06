@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: MMSICHE
+Version: 1.0.0
+Summary: Library that implements MMSICHE algorithm
+Home-page: https://github.com/abhinavbajpai2012/MMSICHE
+Author: Abhinav Bajpai
+Author-email: abhinavbajpai2012@gmail.com
+License: MIT
+Description: A python class which implements MMSICHE algorithm on image.
+        MMSICHE: Median-Mean based Sub-Image-Clipping Histogram Equalization.
+Keywords: Image Processing - MMSICHE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
