@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qtip-client-cli
+Version: 0.1.1.post10
+Summary: UNKNOWN
+Home-page: https://github.com/4shub/qtip
+Author: Shubham Naik
+Author-email: shub@shub.club
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: requests
+
+UNKNOWN
+
+
