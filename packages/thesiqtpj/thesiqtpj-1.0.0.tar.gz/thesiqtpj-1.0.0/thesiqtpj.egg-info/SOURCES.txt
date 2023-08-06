@@ -1,0 +1,5 @@
+setup.py
+thesiqtpj.egg-info/PKG-INFO
+thesiqtpj.egg-info/SOURCES.txt
+thesiqtpj.egg-info/dependency_links.txt
+thesiqtpj.egg-info/top_level.txt
