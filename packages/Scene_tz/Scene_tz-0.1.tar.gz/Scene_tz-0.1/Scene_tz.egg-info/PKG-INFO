@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: Scene-tz
+Version: 0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Description
+        ===========
+        
+        Проект Scene основная задача которого помочь в графическом балавстве.
+        
+        для рисовании в svg потребуется svgpathtools svgwrite + graphics.py (Simple object oriented graphics library)
+        так же потребуется python3-tk python3-opengl
+        
+        самый последний пример использования https://github.com/thenzen34/vova_magnet
+Platform: UNKNOWN
