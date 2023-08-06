@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vaisasr-python
+Version: 1.0.0
+Summary: Python API client for VAIS ASR
+Home-page: https://github.com/vaisasr/vaisasr-python.git
+Author: VAIS
+Author-email: support@vais.vn
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+Description-Content-Type: text/markdown

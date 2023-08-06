@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.cfg
+setup.py
+vaisasr/__init__.py
+vaisasr/cli.py
+vaisasr/client.py
+vaisasr_python.egg-info/PKG-INFO
+vaisasr_python.egg-info/SOURCES.txt
+vaisasr_python.egg-info/dependency_links.txt
+vaisasr_python.egg-info/entry_points.txt
+vaisasr_python.egg-info/requires.txt
+vaisasr_python.egg-info/top_level.txt
