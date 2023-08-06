@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: python2sky
+Version: 0.1.4
+Summary: skywalking agent for python
+Home-page: https://github.com/alonelaval/python2sky
+Author: huawei
+Author-email: 120huawei@163.com
+License: apache Licence
+Description: apm agent
+Keywords: skywalking,agent,skywalking aget,apm,trace,distributed trace
+Platform: any
