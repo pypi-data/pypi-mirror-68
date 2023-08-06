@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyjags_arviz/__init__.py
+pyjags_arviz.egg-info/PKG-INFO
+pyjags_arviz.egg-info/SOURCES.txt
+pyjags_arviz.egg-info/dependency_links.txt
+pyjags_arviz.egg-info/requires.txt
+pyjags_arviz.egg-info/top_level.txt
