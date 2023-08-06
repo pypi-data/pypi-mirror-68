@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: seislab
+Version: 1.0.0
+Summary: A python toolbox for seismic data i/o and analysis
+Home-page: UNKNOWN
+Author: Cognitive Geo
+Author-email: cognitivegeo.info@gmail.com
+License: UNKNOWN
+Description: # SeisLab
+        
+        
+        SeisLab is a Python toolbox for seismic data i/o and analysis.
+        
+        ### Installation
+        
+        * pip install --upgrade seislab
+        
+        ### Run
+        
+        * Refer to the attached demo
+        
+        ### Developers
+        
+        SeisLab is developed by [Cognitive Geo].
+        
+        ### Support
+        
+        [Contact us] if you have any problem with using SeisLab.
+        
+        ### License
+        GNU Affero General Public License v3 or later (AGPLv3+)
+        
+        [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+        
+        
+           [Cognitive Geo]: <https://www.linkedin.com/in/cognitive-geo-182b27185/>
+           [Contact us]: <https://cognitivegeo.wixsite.com/gaeio/support>
+        
+Keywords: Python,Seismic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
