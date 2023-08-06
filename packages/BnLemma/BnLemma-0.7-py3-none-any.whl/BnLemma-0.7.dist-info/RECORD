@@ -1,0 +1,15 @@
+BnLemma/RootWords.yaml,sha256=3HDFKC2kcrIXB89yf8sAUsvIleQNeK9VOAhDM9UtApE,158971
+BnLemma/SRA.py,sha256=ld3wCL9FUut7_yMqrygi3EcfQZ2ydDd6eJmSKrQAfCs,530
+BnLemma/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BnLemma/edit_distance.py,sha256=iIuGmCYkzPo8zQCX9f6c09LZ0cCMC1h7keHen64Y8IM,781
+BnLemma/iden.yaml,sha256=jFZWoOEmGZcmR8pwW3779g06mzcn9QO6wb8LWafni4M,39
+BnLemma/lemmatization.py,sha256=0DlCQoSyx3dSMZJHS_hah_I9lCOA6SRh9TGetXumMjc,2153
+BnLemma/mapvg.txt,sha256=6M_CYZIUBTqVzG9k_XLX8QezKXA8N6Xg7CwFojfvoMY,18704
+BnLemma/run.py,sha256=Si1V5Nu-uw9wfpaJ3TPcxNVvGMkI-NQ_agys7ONN_rY,313
+BnLemma/trie.py,sha256=RuuxP3AINy8QDY4cbnkjNzw40W9WUu21n-tYkdGdTPA,2817
+BnLemma/word_lemma.py,sha256=E2tKVmmmGqC0mrO9R1Hyrd-MviMUQxA20YrQwVNAU7Q,1120
+BnLemma-0.7.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+BnLemma-0.7.dist-info/METADATA,sha256=c5cbDBKEjAT6E2sirqIbtOrgtbHDm_M92NJbvO0Rw_k,1169
+BnLemma-0.7.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+BnLemma-0.7.dist-info/top_level.txt,sha256=B_mD07SBj3R0xqUkq4YWLKMzUfTsYpkNWtbE2VZRypY,8
+BnLemma-0.7.dist-info/RECORD,,
