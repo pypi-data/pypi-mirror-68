@@ -1,0 +1,10 @@
+pyEVT/EventExchanger.dll,sha256=PEDde7lpdxuU65yAtuozS_-EVOj92AvbR6y68113sv8,14848
+pyEVT/HidSharp.DeviceHelpers.dll,sha256=EpnKEuVHJzytg2bq5oHATK8ZUyeOLZqlYk1kAq7L9iY,7680
+pyEVT/HidSharp.dll,sha256=jFjl-6IqzHUQMt_pfOYz5PikyWCJdJvzFtVSg7NmScI,242608
+pyEVT/__init__.py,sha256=kPUy7kQEv1gBcJ7r3D1FuTET5WPY6LoJ1JZnxgjZHDY,40
+pyEVT/evtexchanger.py,sha256=dd0Dqu0iJtw0IgkTEGtuUV5uev6nFiqCikwHd9l3IIk,748
+pyEVT-0.99.9.dist-info/LICENCE,sha256=yviUpHetktEsoL4WCmrPbqfr7OIO3xJFFkQvSgV2tkk,35820
+pyEVT-0.99.9.dist-info/METADATA,sha256=b6BYBLgTEbLxF73hdtB2G2c0YlERBEWgMQR_e9SPTk0,953
+pyEVT-0.99.9.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyEVT-0.99.9.dist-info/top_level.txt,sha256=uBTIFL63VZvVgh4uaPuTYfFuFwyyIumZk0gAS05KHrI,6
+pyEVT-0.99.9.dist-info/RECORD,,
