@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: magictranslator
+Version: 0.0.1
+Summary: Wrapper library for multiple translation APIs
+Home-page: https://github.com/c-rainbow/magictranslator
+Author: c_rainbow
+Author-email: c.rainbow.678@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Wrapper library of multiple translation APIs.
+
+With this library, you can configure the following:
+(1) For each source language, which translation API to use
+(2) For each source language, which destination language to translate to
+
