@@ -1,0 +1,7 @@
+README.md
+setup.py
+zucked.py
+zucked.egg-info/PKG-INFO
+zucked.egg-info/SOURCES.txt
+zucked.egg-info/dependency_links.txt
+zucked.egg-info/top_level.txt
