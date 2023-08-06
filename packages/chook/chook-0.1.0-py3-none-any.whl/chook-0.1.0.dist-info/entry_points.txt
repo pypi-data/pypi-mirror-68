@@ -1,0 +1,3 @@
+[console_scripts]
+chook = chook.__main__:main
+
