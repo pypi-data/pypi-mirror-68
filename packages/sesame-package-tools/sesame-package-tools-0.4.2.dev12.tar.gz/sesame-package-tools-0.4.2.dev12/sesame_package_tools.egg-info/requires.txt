@@ -1,0 +1,9 @@
+conan>=1.24.1
+conan-package-tools>=0.32.2
+docker>=4.2.0
+vswhere
+psutil
+
+[test]
+pytest>=3.4.1
+pytest-cov>=2.5.1

@@ -1,0 +1,3 @@
+[console_scripts]
+sesame = sesame.sesame:run
+

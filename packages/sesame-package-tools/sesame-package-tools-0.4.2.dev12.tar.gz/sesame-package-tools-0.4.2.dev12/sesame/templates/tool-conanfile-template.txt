@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+import os
+from conans import ConanFile, tools
+
+class {package_name}Conan(ConanFile):
+    name = '{name}'
+    version = '{version}'
+    description = '<Description of {package_name} here>.'
+    url = 'https://github.com/birsoyo/sesame'
+    homepage = 'https://github.com/original_author/original_lib'
+    author = 'Orhun Birsoy <orhunbirsoy@gmail.com>'
+
+    license = '<Indicates License type of the packaged library>'
+
+    settings = {{'os_build': ['Windows', 'Linux', 'Macos'], 'arch_build': ['x86_64']}}
+
+    def build(self):
+        suffix = self._download_suffix()
+        url = f'<url>'
+        tools.get(url, keep_permissions=True)
+        os.rename(f'<extracted_folder_name>', '<a_simple_name>')
+
+    def package(self):
+        self.copy('*', dst='', src='', keep_path=True)
+
+    def package_info(self):
+        self.cpp_info.bindirs.append('.')
+        self.env_info.PATH.append(self.package_folder)
+
+    def _download_suffix(self):
+        suffix = ''
+        if self.settings.os_build == 'Windows':
+            suffix = 'win'
+        elif self.settings.os_build == 'Macos':
+            suffix = 'mac'
+        elif self.settings.os_build == 'Linux':
+            suffix = 'linux'
+        return suffix

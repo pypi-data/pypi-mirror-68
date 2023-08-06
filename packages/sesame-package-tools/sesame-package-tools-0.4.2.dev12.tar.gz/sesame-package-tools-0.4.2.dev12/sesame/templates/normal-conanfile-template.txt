@@ -1,0 +1,104 @@
+# -*- coding: utf-8 -*-
+
+import os
+from conans import ConanFile, CMake, tools
+
+class {package_name}Conan(ConanFile):
+    name = '{name}'
+    version = '{version}'
+    description = '<Description of {package_name} here>.'
+    url = 'https://github.com/birsoyo/sesame'
+    homepage = 'https://github.com/original_author/original_lib'
+    author = 'Orhun Birsoy <orhunbirsoy@gmail.com>'
+
+    license = '<Indicates License type of the packaged library>'
+
+    exports_sources = ['CMakeLists.txt']
+    generators = 'cmake'
+
+    settings = 'os', 'compiler', 'build_type', 'arch'
+
+    source_subfolder = 'source_subfolder'
+    build_subfolder = 'build_subfolder'
+
+    def source(self):
+        source_url = 'https://github.com/libauthor/{name}'
+        tools.get(f'{{source_url}}/archive/v{{self.version}}.tar.gz')
+        extracted_dir = f'{{self.name}}-{{self.version}}'
+
+        #Rename to "source_subfolder" is a convention to simplify later steps
+        os.rename(extracted_dir, self.source_subfolder)
+
+    def build(self):
+        cmake = self._configure_cmake()
+        cmake.build()
+
+    def package(self):
+        cmake = self._configure_cmake()
+        cmake.install()
+        # If the CMakeLists.txt has a proper install method, the steps below may be redundant
+        # If so, you can just remove the lines below
+        include_folder = os.path.join(self.source_subfolder, 'include')
+        self.copy(pattern='*', dst='include', src=include_folder)
+        self.copy(pattern='*.dll', dst='bin', keep_path=False)
+        self.copy(pattern='*.lib', dst='lib', keep_path=False)
+        self.copy(pattern='*.a', dst='lib', keep_path=False)
+        self.copy(pattern='*.so*', dst='lib', keep_path=False)
+        self.copy(pattern='*.dylib', dst='lib', keep_path=False)
+
+    def package_info(self):
+        self.cpp_info.libs = tools.collect_libs(self)
+
+    def _configure_cmake(self):
+        generator, defs = self._setup_cmake()
+
+        defs['BUILD_TESTS'] = False # example
+
+        cmake = CMake(self, generator=generator)
+        cmake.verbose = True
+
+        cmake.configure(defs=defs, build_folder=self.build_subfolder)
+        return cmake
+
+    def _setup_cmake(self):
+      generator = None
+      defs = {{}}
+
+      defs['CMAKE_POSITION_INDEPENDENT_CODE'] = True
+
+      if self.settings.os == 'Android':
+          generator = 'Ninja'
+          abi = {{
+              'armv8'   : 'arm64-v8a',
+              'armv7'   : 'armeabi-v7a',
+              'x86'     : 'x86',
+              'x86_64'  : 'x86_64' }}.get(str(self.settings.arch))
+
+          defs['ANDROID_PLATFORM'] = f'android-{{self.settings.os.api_level}}'
+          defs['ANDROID_ABI'] = abi
+          defs['ANDROID_STL'] = 'c++_static'
+          defs['ANDROID_CPP_FEATURES'] = 'rtti exceptions'
+          defs['ANDROID_ARM_MODE'] = 'arm'
+          defs['ANDROID_ARM_NEON'] = True
+          defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['ndk'].cmake_toolchain_path
+      elif self.settings.os == 'Macos':
+          defs['CMAKE_OSX_DEPLOYMENT_TARGET'] = self.settings.os.version
+      elif self.settings.os == 'iOS':
+          platform_map = {{
+              'x86_64': 'SIMULATOR64',
+              'arm64': 'OS'
+          }}
+          arch = tools.to_apple_arch(self.settings.arch)
+
+          defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['ios'].cmake_toolchain_path
+          defs['IOS_ARCH'] = arch
+          defs['IOS_PLATFORM'] = platform_map[arch]
+          defs['IOS_DEPLOYMENT_TARGET'] = str(self.settings.os.version)
+          defs['ENABLE_VISIBILITY'] = False
+      elif self.settings.os == 'Emscripten':
+          defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['emscripten'].cmake_toolchain_path
+          generator = 'Ninja'
+      elif self.settings.os == 'Windows':
+          defs['CMAKE_SYSTEM_VERSION'] = '10.0'
+
+      return generator,defs

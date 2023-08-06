@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+
+import os
+from conans import ConanFile, CMake, tools, RunEnvironment
+
+class {package_name}TestConan(ConanFile):
+    settings = 'os', 'compiler', 'build_type', 'arch'
+    generators = 'cmake'
+
+    def build(self):
+        cmake = self._configure_cmake()
+        cmake.build()
+
+    def _configure_cmake(self):
+        generator, defs = self._setup_cmake()
+
+        cmake = CMake(self, generator=generator)
+        cmake.verbose = True
+        cmake.configure(defs=defs)
+        return cmake
+
+    def _setup_cmake(self):
+        generator = None
+        defs = {{}}
+
+        defs['CMAKE_POSITION_INDEPENDENT_CODE'] = True
+
+        if self.settings.os == 'Android':
+            generator = 'Ninja'
+            abi = {{
+                'armv8'   : 'arm64-v8a',
+                'armv7'   : 'armeabi-v7a',
+                'x86'     : 'x86',
+                'x86_64'  : 'x86_64' }}.get(str(self.settings.arch))
+
+            defs['ANDROID_PLATFORM'] = f'android-{{self.settings.os.api_level}}'
+            defs['ANDROID_ABI'] = abi
+            defs['ANDROID_STL'] = 'c++_static'
+            defs['ANDROID_CPP_FEATURES'] = 'rtti exceptions'
+            defs['ANDROID_ARM_MODE'] = 'arm'
+            defs['ANDROID_ARM_NEON'] = True
+            defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['ndk'].cmake_toolchain_path
+        elif self.settings.os == 'Macos':
+            defs['CMAKE_OSX_DEPLOYMENT_TARGET'] = self.settings.os.version
+        elif self.settings.os == 'iOS':
+            platform_map = {{
+                'x86_64': 'SIMULATOR64',
+                'arm64': 'OS'
+            }}
+            arch = tools.to_apple_arch(self.settings.arch)
+
+            defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['ios'].cmake_toolchain_path
+            defs['IOS_ARCH'] = arch
+            defs['IOS_PLATFORM'] = platform_map[arch]
+            defs['IOS_DEPLOYMENT_TARGET'] = str(self.settings.os.version)
+            defs['ENABLE_VISIBILITY'] = False
+        elif self.settings.os == 'Emscripten':
+            defs['CMAKE_TOOLCHAIN_FILE'] = self.deps_user_info['emscripten'].cmake_toolchain_path
+            generator = 'Ninja'
+        elif self.settings.os == 'Windows':
+            defs['CMAKE_SYSTEM_VERSION'] = '10.0'
+
+        return generator,defs
+
+    def test(self):
+        if not tools.cross_building(self.settings):
+            with tools.environment_append(RunEnvironment(self).vars), tools.chdir('bin'):
+                self.run(f'.{{os.sep}}test_package')

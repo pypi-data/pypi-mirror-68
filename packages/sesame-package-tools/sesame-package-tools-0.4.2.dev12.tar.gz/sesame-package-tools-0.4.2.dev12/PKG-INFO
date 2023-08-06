@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: sesame-package-tools
+Version: 0.4.2.dev12
+Summary: Sesame Packaging Tools for building Conan recipes
+Home-page: https://github.com/birsoyo/sesame-package-tools
+Author: Orhun Birsoy
+Author-email: orhunbirsoy@gmail.com
+License: MIT
+Description: # Sesame Package Tools
+        
+        ## A modular toolset for creating conan packages
+        
+        This project contains files used by Sesame Package Tools for creating conan packages using bincrafters-package-tools.
+        
+Keywords: conan,C/C++,package,libraries,developer,manager,dependency,tool,c,c++,cpp
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Provides-Extra: test

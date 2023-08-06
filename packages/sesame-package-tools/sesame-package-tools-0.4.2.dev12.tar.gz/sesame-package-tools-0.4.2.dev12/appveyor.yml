@@ -1,0 +1,45 @@
+image: Visual Studio 2017
+
+environment:
+  password:
+    secure: Pguhl7b10hEh5npQDmszjbZLcxwxI0ane8K0oULX7q8=
+
+  matrix:
+    - PYTHON: "C:\\Python36-x64"
+      PYTHON_VERSION: "3.6.6"
+      PYTHON_ARCH: "64"
+
+install:
+  - cmd: 'pip install twine'
+
+build_script:
+  - cmd: >-
+      set PATH=%PYTHON%/Scripts;%PYTHON%;%PATH%
+
+      python setup.py build
+
+      python setup.py sdist
+
+      echo [distutils] > %USERPROFILE%\\.pypirc
+
+      echo index-servers = >> %USERPROFILE%\\.pypirc
+
+      echo     pypi >> %USERPROFILE%\\.pypirc
+
+      echo     pypitest >> %USERPROFILE%\\.pypirc
+
+      echo [pypi] >> %USERPROFILE%\\.pypirc
+
+      echo username: orhun >> %USERPROFILE%\\.pypirc
+
+      echo password: %password% >> %USERPROFILE%\\.pypirc
+
+      echo [pypitest] >> %USERPROFILE%\\.pypirc
+
+      echo repository: https://test.pypi.org/legacy/ >> %USERPROFILE%\\.pypirc
+
+      echo username: orhun >> %USERPROFILE%\\.pypirc
+
+      echo password: %password% >> %USERPROFILE%\\.pypirc
+
+      twine upload -r pypi dist/*
