@@ -1,0 +1,3 @@
+[console_scripts]
+fitterlog-start-server = fitterlog_server_module.start_server:run
+
