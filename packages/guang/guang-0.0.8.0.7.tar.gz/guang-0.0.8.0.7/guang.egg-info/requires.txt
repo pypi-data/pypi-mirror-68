@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+gdown>=3.11
+fire
+psutil
+pretty_errors
+streamlit
+plotly
