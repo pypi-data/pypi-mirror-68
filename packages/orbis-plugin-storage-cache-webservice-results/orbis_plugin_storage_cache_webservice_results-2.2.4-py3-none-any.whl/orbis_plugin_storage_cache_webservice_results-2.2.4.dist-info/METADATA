@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-storage-cache-webservice-results
+Version: 2.2.4
+Summary: The storage plugin to cache webservice results.
+Home-page: https://github.com/orbis-eval/orbis_plugin_storage_cache_webservice_results
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+# Cache Webservice results Storage Plugin for Orbis
+
+
