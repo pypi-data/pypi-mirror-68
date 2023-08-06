@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/ECAgent/Core.py
+src/ECAgent/__init__.py
+src/ECAgent.egg-info/PKG-INFO
+src/ECAgent.egg-info/SOURCES.txt
+src/ECAgent.egg-info/dependency_links.txt
+src/ECAgent.egg-info/top_level.txt
