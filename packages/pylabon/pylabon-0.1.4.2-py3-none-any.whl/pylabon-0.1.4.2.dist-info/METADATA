@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pylabon
+Version: 0.1.4.2
+Summary: To generate markdown-formatted lab reports.
+Home-page: https://github.com/Plastic-Metal/pyLabOn
+Author: Ferdinand Sukhoi
+Author-email: ferdinandsukhoi@outlook.com
+License: MIT
+Keywords: markdown,Plastic-Metal
+Platform: any
+Requires-Dist: pypandoc
+
+Light-weight tool to generate markdown-formatted lab reports. For python.
+
+
