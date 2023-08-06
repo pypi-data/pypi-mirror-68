@@ -1,0 +1,96 @@
+Metadata-Version: 1.2
+Name: kubesplit
+Version: 0.3.1
+Summary: Split multidoc yaml formatted kubernetes descriptors to a set         of single resource files
+Home-page: https://github.com/looztra/kubesplit
+Author: Christophe Furmaniak
+Author-email: christophe.furmaniak@gmail.com
+License: Apache Software License 2.0
+Description: =========
+        kubesplit
+        =========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/kubesplit.svg
+                :target: https://pypi.python.org/pypi/kubesplit
+        
+        .. image:: https://circleci.com/gh/looztra/kubesplit.svg?style=svg
+            :target: https://circleci.com/gh/looztra/kubesplit
+        
+        
+        Split multidoc yaml formatted kubernetes descriptors to a set of single resource files
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://github.com/looztra/kubesplit
+        
+        
+        Features
+        --------
+        
+        - Invalid Kubernetes resources are ignored
+        - Empty resources are ignored
+        - Each resource found in the input is stored in a file with a name reflecting the name of the resource and its _kubernetes_ kind
+        - Cluster-wide resources (namespaces, clusterroles, clusterrolebindings) are stored in the root directory of the output, namespaced resources are stored in a subdirectory named like the namespace
+        - By default, resources are prefixed
+        - By default, quotes are preserved, use `--no-quotes-preserved` to disable quotes unless needed (for boolean and numbers if they were provided in the input as for the moment Kubesplit is not aware of the fact that only kubernetes annotations and environment variables require string)
+        - By default, dash elements in list are pushed inwards, you can disable this behaviour with the `-d`/`--no-dash-inwards` option
+        - Comments are preserved
+        - The output directory will be created if it doesn't exist (if the user running the command as sufficient rights)
+        - You can clean (delete files and directories existing before running `kubesplit`) the output directory with the `-c`/`--clean-output-dir` (**use at your own risks**)
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-06-16)
+        ------------------
+        
+        * First release on PyPI.
+        
+        0.2.0 (2019-06-16)
+        ------------------
+        
+        * Fix yaml formatting application
+        * Allow unprefixed resource files
+        * Support for ReplicaSets order
+        
+        0.3.0 (2020-05-17)
+        ------------------
+        
+        * refactor : use the newly available yamkix module and rely on its configuration and writer helpers that make all the yaml writing options work as expected (some of them were not working)
+            * now kubesplit can also deal with comments!
+        * fix #5 (deal with Lists)
+        * chore(CI): introduce some integration tests
+        
+        0.3.1 (2020-05-17)
+        ------------------
+        
+        * dummy release so that the history is updated on PyPi
+        
+Keywords: kubesplit,kubernetes,yaml,yamkix,resource,single file
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
