@@ -1,0 +1,7 @@
+matplotlib
+Pillow
+opencv-python
+scipy
+numpy
+scikit-image
+keras==2.2.4
