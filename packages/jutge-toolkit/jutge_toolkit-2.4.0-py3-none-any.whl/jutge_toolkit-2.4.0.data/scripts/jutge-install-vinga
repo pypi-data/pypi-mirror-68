@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# This script installs the last version of jutge-vinga.
+
+uname=`uname`
+if [ $uname == "Darwin" ]
+then
+    system=mac
+elif [ $uname == "Linux" ]
+then
+    system=linux
+else
+    echo "system $uname is not supported"
+    exit
+fi
+
+sudo wget -O /usr/local/bin/jutge-vinga https://jpetit.jutge.org/jutge-vinga-$system
+sudo chmod +x /usr/local/bin/jutge-vinga
+sudo chmod +s /usr/local/bin/jutge-vinga
+ls -la /usr/local/bin/jutge-vinga
+
