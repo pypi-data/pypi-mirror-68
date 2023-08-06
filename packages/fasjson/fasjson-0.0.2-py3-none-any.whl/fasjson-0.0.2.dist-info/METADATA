@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: fasjson
+Version: 0.0.2
+Summary: fasjson makes it possible for applications to talk to the fedora account system.
+Home-page: https://github.com/fedora-infra/fasjson
+License: MIT
+Author: Fedora Infrastructure
+Author-email: admin@fedoraproject.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Flask (>=1.1.1,<2.0.0)
+Requires-Dist: dnspython (>=1.16.0,<2.0.0)
+Requires-Dist: flask-healthz (>=0.0.1,<0.0.2)
+Requires-Dist: flask-restx (>=0.2.0,<0.3.0)
+Requires-Dist: gssapi (>=1.6.2,<2.0.0)
+Requires-Dist: python-freeipa (>=1.0.5,<2.0.0)
+Requires-Dist: python-ldap (>=3.2.0,<4.0.0)
+Requires-Dist: requests-kerberos (>=0.12.0,<0.13.0)
+Requires-Dist: typing (>=3.7.4.1,<4.0.0.0)
+Project-URL: Repository, https://github.com/fedora-infra/fasjson
+Description-Content-Type: text/markdown
+
+# Fedora Account System / IPA JSON gateway
+
+## Installation
+
+Install dependencies
+
+```
+dnf install ipa-client httpd mod_auth_gssapi mod_session python3-mod_wsgi python3-poetry
+```
+
+Install WSGI app
+
+```
+poetry config virtualenvs.create false
+poetry install
+cp ansible/roles/fasjson/files/fasjson.wsgi /srv/
+```
+
+Enroll the system as an IPA client
+
+```
+$ ipa-client-install
+```
+
+Get service keytab for HTTPd
+
+```
+ipa service-add HTTP/$(hostname)
+ipa servicedelegationrule-add-member --principals=HTTP/$(hostname) fasjson-delegation
+ipa-getkeytab -p HTTP/$(hostname) -k /var/lib/gssproxy/httpd.keytab
+chown root:root /var/lib/gssproxy/httpd.keytab
+chmod 640 /var/lib/gssproxy/httpd.keytab
+```
+
+Configure GSSProxy for Apache
+
+```
+cp ansible/roles/fasjson/files/config/gssproxy-fasjson.conf /etc/gssproxy/99-fasjson.conf
+systemctl enable gssproxy.service
+systemctl restart gssproxy.service
+```
+
+Configure temporary files
+
+```
+cp ansible/roles/fasjson/files/config/tmpfiles-fasjson.conf /etc/tmpfiles.d/fasjson.conf
+systemd-tmpfiles --create
+```
+
+Tune SELinux Policy
+
+```
+setsebool -P httpd_can_connect_ldap=on
+```
+
+Configure Apache
+
+```
+mkdir mkdir -p /etc/systemd/system/httpd.service.d
+cp ansible/roles/fasjson/files/config/systemd-httpd-service-fasjson.conf /etc/systemd/system/httpd.service.d/fasjson.conf
+cp ansible/roles/fasjson/files/config/httpd-fasjson.conf /etc/httpd/conf.d/fasjson.conf
+systemctl daemon-reload
+systemctl enable httpd.service
+systemctl restart httpd.service
+```
+
+## Usage
+
+```
+$ kinit
+$ curl --negotiate -u : http://$(hostname)/fasjson/v1/groups/
+{"result": [{"name": "test-group", "uri": "http://$(hostname)/fasjson/v1/groups/test-group/"}]}
+$ curl --negotiate -u : http://$(hostname)/fasjson/v1/groups/admins/
+{"result": {"name": "test-group", "uri": "http://fasjson.example.test/fasjson/v1/groups/test-group/"}}
+$ curl --negotiate -u : http://$(hostname)/fasjson/v1/users/admin/
+{"result": {"username": "admin", "surname": "Administrator", "givenname": "", "emails": ["admin@$(domain)"], "ircnicks": null, "locale": "fr_FR", "timezone": null, "gpgkeyids": null, "creation": "2020-04-23T10:16:35", "locked": false, "uri": "http://$(hostname)/fasjson/v1/users/admin/"}}
+$ curl --negotiate -u : http://$(hostname)/fasjson/v1/me/
+{"result": {"dn": "uid=admin,cn=users,cn=accounts,dc=$(domain)", "username": "admin", "uri": "http://$(hostname)/fasjson/v1/users/admin/"}}
+```
+
+## TODO
+
+- documentation
+- HTTPS
+
