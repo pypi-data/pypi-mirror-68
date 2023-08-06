@@ -1,0 +1,10 @@
+tfs/__init__.py,sha256=QvJIrlLUAF2NiI8nA_tNO4d0sElPu1I_Z8Bd63ikCVo,202
+tfs/collection.py,sha256=1YzMLTIy996zH-K0Rxd-v1FZKjFQy4ki0aRAFqIS8JI,9854
+tfs/fixed_dataframe.py,sha256=8gTA65RWfJ345NwewHwZ7IKw5VgIjH1wfyTAr34E_vo,9265
+tfs/handler.py,sha256=bMJUIAvXxEJT_1mPfFLLGhpRxwDNGZX0ANxITuyae9U,13099
+tfs/tools.py,sha256=AYgOUL4Ezz5z5_z9q9H9fYP4an1SU8_t-XHuACVGFxo,3100
+tfs_pandas-1.0.5.dist-info/LICENSE.md,sha256=ibpy8kN5cX7WSTbfTwj52qauXljGnJ3mfifDE4B9nVk,1043
+tfs_pandas-1.0.5.dist-info/METADATA,sha256=WwkERNhp37m68-NMCuSdXg6in_Hb5MfEl5gCjf6eBTs,2917
+tfs_pandas-1.0.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tfs_pandas-1.0.5.dist-info/top_level.txt,sha256=GA7L4S1_r2iaiiuM-mQmE1Gov3fq8e3DaEw8r2PfHqM,4
+tfs_pandas-1.0.5.dist-info/RECORD,,
