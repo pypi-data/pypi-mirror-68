@@ -1,0 +1,3 @@
+[console_scripts]
+clinja=clinja.cli:cli
+

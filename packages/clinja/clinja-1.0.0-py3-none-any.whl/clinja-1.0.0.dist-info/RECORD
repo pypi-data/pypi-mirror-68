@@ -1,0 +1,11 @@
+clinja/__init__.py,sha256=9H9PbPSo9UJF16teTWShoFIcse5bcI24D3CEfcwV7kQ,140
+clinja/cli.py,sha256=SCFMiVksnpYVW_slQrHoaipsb7TtVxwmB-HPw7uU5W4,8787
+clinja/clinja.py,sha256=gKP56BCzH2EHztT8TfWTEaCpT4m8kX5QQFh_k8cersA,5250
+clinja/completions.py,sha256=kutry7C-eL5ieNCfmC6V4RvZkJLSKgqB76-yb7Ydc9c,886
+clinja/settings.py,sha256=mdNsjWLq8Gyu5ryDt5rneDkswRImeGYIv3mF7FORoDI,935
+clinja/utils.py,sha256=-YZ0aHolEPcrjGI3fKJJDt5kJMjKTLyY-08uTF2TqOA,3558
+clinja-1.0.0.dist-info/entry_points.txt,sha256=AE5mwq5o0DW_y0X3fW7wtXc5TCISNEUpSREKrjmkx3w,41
+clinja-1.0.0.dist-info/LICENSE,sha256=LzVEpSY4H-dpeWs66a-4Ksa1NyZ7plEMcGYvkTJVyP4,1068
+clinja-1.0.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+clinja-1.0.0.dist-info/METADATA,sha256=rn4FZc9r-DzJScTRS0HPXRRRTPI9uz57RJ87y2LgTug,7627
+clinja-1.0.0.dist-info/RECORD,,
