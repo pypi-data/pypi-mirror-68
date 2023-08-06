@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sardine
+Version: 0.0.0b2
+Summary: Manage your docker-composes as if they were snipets
+License: MIT
+Author: Javier Luna molina
+Author-email: javierlunamolina@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: GitPython (>=3.1.2,<4.0.0)
