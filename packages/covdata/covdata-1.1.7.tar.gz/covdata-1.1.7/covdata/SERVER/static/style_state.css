@@ -1,0 +1,132 @@
+body {
+  background: #527379;
+  /* background: linear-gradient(to right bottom, #648880, #293f50); */
+  height: 100%;
+}
+.hamburger-menu {
+  height: 15px;
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: chocolate;
+  transition: all 0.8s;
+  box-shadow: 2px 2px 4px rgb(53, 53, 53);
+}
+.nav-bar {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(49, 77, 90);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 20% 10% 0;
+  transition: 0.8s;
+  z-index: 1;
+}
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+.nav-list {
+  text-align: left;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 5px;
+  letter-spacing: 2px;
+}
+.nav-item a:hover {
+  color: palevioletred;
+}
+
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(-7.5px, 6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(45deg);
+}
+
+.change {
+  left: 0;
+}
+.container {
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 6%;
+}
+h1 {
+  clear: both;
+  color: rgb(205, 211, 243);
+  text-shadow: 4px 2px 4px #424141;
+}
+
+#data_show th,
+td p {
+  font: 18px "Segoe UI";
+}
+table {
+  background-color: rgb(192, 197, 193);
+}
+table,
+th,
+td {
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 15px;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+}
+
+h2 {
+  clear: both;
+}
+
+#sheet-content {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+select {
+  border-radius: 5px;
+}
+/* #data_show {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 5%;
+  border-radius: 10px;
+} */
+#main-container {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  border-radius: 7px;
+}
+#data_show {
+  border-radius: 7px;
+  box-shadow: 4px 9px 12px rgb(53, 53, 53);
+}
