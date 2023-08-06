@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: orger
+Version: 0.2.20200519
+Summary: Converts data into org-mode
+Home-page: https://github.com/karlicoss/orger
+Author: Dima Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: atomicwrites
+Provides-Extra: linting
+Requires-Dist: pytest ; extra == 'linting'
+Requires-Dist: mypy ; extra == 'linting'
+Requires-Dist: lxml ; extra == 'linting'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+UNKNOWN
+
+
