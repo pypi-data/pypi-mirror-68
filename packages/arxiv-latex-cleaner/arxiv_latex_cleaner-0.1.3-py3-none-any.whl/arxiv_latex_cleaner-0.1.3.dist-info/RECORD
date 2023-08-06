@@ -1,0 +1,11 @@
+arxiv_latex_cleaner/__init__.py,sha256=NzI9QSERdMBygxFfQmP-6yihEoSqpLkufWvJ93DSdmc,607
+arxiv_latex_cleaner/__main__.py,sha256=q8V9zsQW_uom5FyQJtlxMiB_0E6Q48yn_QgQrkrRezs,2448
+arxiv_latex_cleaner/_version.py,sha256=YRakV8csZM7qEZ7Qq1BkImEihc1gjnVdBiac7fse-gY,631
+arxiv_latex_cleaner/arxiv_latex_cleaner.py,sha256=eJdw4wnvbE2GvtxJJZZV3vSN8wqgLeuhj1yaCD5PJIQ,11903
+arxiv_latex_cleaner/arxiv_latex_cleaner_test.py,sha256=LpY2dm24z-Ufvua5G-qXAd3OqU1gaxiHjdrbTjqrwHk,5925
+arxiv_latex_cleaner-0.1.3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+arxiv_latex_cleaner-0.1.3.dist-info/METADATA,sha256=wp6UyA4k9VsPjVr7C6dxEu8hyFaBhtirX9u4OEmW9W0,4207
+arxiv_latex_cleaner-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+arxiv_latex_cleaner-0.1.3.dist-info/entry_points.txt,sha256=sQobkNiLrNr_ZwhqQs7AVSMhNxbsHF-3eO6meQEHW78,79
+arxiv_latex_cleaner-0.1.3.dist-info/top_level.txt,sha256=Ms9yF4le7uU05_zhI5yZDxetMPRm6OhONlFBuEGdZlY,20
+arxiv_latex_cleaner-0.1.3.dist-info/RECORD,,
