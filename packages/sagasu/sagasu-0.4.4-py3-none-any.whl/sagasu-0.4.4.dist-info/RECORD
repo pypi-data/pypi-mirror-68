@@ -1,0 +1,14 @@
+sagasu/__init__.py,sha256=RsaAmyoQ56RZzIA0QelcujN1hYV-rTbt2hMnC0__Rfk,51
+sagasu/app.py,sha256=c3-rPzhZCAvAasNYfz73UTivu6q_V3GsGafy7FWBjSI,911
+sagasu/config.py,sha256=hH7R-y6FEQQENrHtvgnaIYVEPx-wWnzR70iZVI8kUG8,650
+sagasu/crawler.py,sha256=7ZVOlG_zXI8FRUIyJbjskG1-sFszoaGUAZ5-mILeATQ,7908
+sagasu/engine.py,sha256=MwxfLTJuQZwWOS2wV6Rb9Cm0FIJs-cZaz3xOpM2FZZk,1920
+sagasu/image_captioning.py,sha256=Md-SB1s0Vt73HCD8Q9Z6y4t65TB3KYhb774Bz_3H7dE,3382
+sagasu/indexer.py,sha256=XEMrQ5AkNzy1NSeq3MCvMDowIxGcCmv7RaI7rNd1Pho,2370
+sagasu/model.py,sha256=Q1ROFlloivHLfj7AwIncM2GwAdj5L2ko9t8rmtwAB8M,649
+sagasu/repository.py,sha256=EU5yJEeE3nPybt-yM4Yr2x8f1gG1VDHCUogtRpU1cr4,3043
+sagasu/util.py,sha256=fWYD4MxZ33LntshtENL6UOKToM3P1PU33QjPTJB-46U,272
+sagasu-0.4.4.dist-info/entry_points.txt,sha256=EEsPCmDsHvP5wRGvnhixGJrxWjYNIxvfGdhp624TLr0,41
+sagasu-0.4.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+sagasu-0.4.4.dist-info/METADATA,sha256=jVMzLcIeTltSl4AjCSJGbCyCX-X-h1p2d_ynI4NuPus,740
+sagasu-0.4.4.dist-info/RECORD,,
