@@ -1,0 +1,17 @@
+README.md
+setup.py
+rnaseqc/__init__.py
+rnaseqc/__main__.py
+rnaseqc/aggregate.py
+rnaseqc/create_notebook.py
+rnaseqc/insert_size_intervals.py
+rnaseqc/legacy_exon_remap.py
+rnaseqc/nb_encode.py
+rnaseqc/plot.py
+rnaseqc/report.py
+rnaseqc/run.py
+rnaseqc.egg-info/PKG-INFO
+rnaseqc.egg-info/SOURCES.txt
+rnaseqc.egg-info/dependency_links.txt
+rnaseqc.egg-info/requires.txt
+rnaseqc.egg-info/top_level.txt
