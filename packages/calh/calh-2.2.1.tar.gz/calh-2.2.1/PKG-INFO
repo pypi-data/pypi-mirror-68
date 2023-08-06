@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: calh
+Version: 2.2.1
+Summary: Calendar Heatmap
+Home-page: https://github.com/ricky-lim/calh
+Author: Ricky Lim
+Author-email: rlim.email@gmail.com
+License: Apache Software License 2.0
+Description: ====
+        calh
+        ====
+        
+        
+        .. image:: https://img.shields.io/pypi/v/calh.svg
+                :target: https://pypi.python.org/pypi/calh
+        
+        .. image:: https://img.shields.io/travis/ricky-lim/calh.svg
+                :target: https://travis-ci.com/ricky-lim/calh
+        
+        .. image:: https://readthedocs.org/projects/calh/badge/?version=latest
+                :target: https://calh.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        .. image:: https://img.shields.io/badge/python-3.6-blue.svg
+         :target: https://www.python.org/downloads/release/python-360/
+         :alt: python3.6
+        
+        .. image:: https://img.shields.io/badge/python-3.7-blue.svg
+         :target: https://www.python.org/downloads/release/python-370/
+         :alt: python3.6
+        
+        .. image:: https://pyup.io/repos/github/ricky-lim/calh/shield.svg
+             :target: https://pyup.io/repos/github/ricky-lim/calh/
+             :alt: Updates
+        
+        .. image:: https://mybinder.org/badge_logo.svg
+         :target: https://mybinder.org/v2/gh/ricky-lim/calh/master?filepath=examples%2Fexample.ipynb
+        
+        
+        
+        Calendar Heatmap
+        
+        Inspired by `voila_spotify
+        <https://github.com/voila-gallery/voila-spotify>`_, to create a heatmap for calendar data.
+        
+        The app is available, `at_heroku
+        <http://calh.herokuapp.com>`_.
+        
+        You could also check out the notebook example, `here
+        <https://mybinder.org/v2/gh/ricky-lim/calh/master?filepath=examples%2Fexample.ipynb>`_.
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://calh.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * Filtering calendar
+        * Visualizing calendar
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        2.2.0 (2020-05-13)
+        ------------------
+        
+        * Add UI with voila dashboard
+        
+        2.0.0 (2020-05-06)
+        ------------------
+        
+        * Input parameter refactored into input_data for `Heatmap` class API.
+        
+        1.0.0 (2020-05-05)
+        ------------------
+        
+        * Support calendar filtering
+        * Support calendar visualization as a heatmap
+        
+        0.1.2 (2020-03-06)
+        ------------------
+        
+        * Ensure tox passed
+        
+        0.1.1 (2020-03-06)
+        ------------------
+        
+        * Stop support on python 3.5 due to f-string
+        
+        0.1.0 (2020-03-06)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: calh
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
