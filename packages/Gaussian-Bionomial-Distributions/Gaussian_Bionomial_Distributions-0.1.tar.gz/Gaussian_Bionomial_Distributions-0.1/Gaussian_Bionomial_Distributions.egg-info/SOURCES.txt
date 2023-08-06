@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+Gaussian_Bionomial_Distributions/Binomialdistribution.py
+Gaussian_Bionomial_Distributions/Gaussiandistribution.py
+Gaussian_Bionomial_Distributions/Generaldistribution.py
+Gaussian_Bionomial_Distributions/__init__.py
+Gaussian_Bionomial_Distributions.egg-info/PKG-INFO
+Gaussian_Bionomial_Distributions.egg-info/SOURCES.txt
+Gaussian_Bionomial_Distributions.egg-info/dependency_links.txt
+Gaussian_Bionomial_Distributions.egg-info/not-zip-safe
+Gaussian_Bionomial_Distributions.egg-info/top_level.txt
