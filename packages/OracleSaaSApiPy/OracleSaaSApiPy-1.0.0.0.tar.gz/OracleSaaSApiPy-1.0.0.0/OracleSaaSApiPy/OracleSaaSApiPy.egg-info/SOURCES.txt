@@ -1,0 +1,7 @@
+README.md
+setup.py
+OracleSaaSApiPy/OracleSaaSApiPy.egg-info/PKG-INFO
+OracleSaaSApiPy/OracleSaaSApiPy.egg-info/SOURCES.txt
+OracleSaaSApiPy/OracleSaaSApiPy.egg-info/dependency_links.txt
+OracleSaaSApiPy/OracleSaaSApiPy.egg-info/requires.txt
+OracleSaaSApiPy/OracleSaaSApiPy.egg-info/top_level.txt

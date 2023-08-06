@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: OracleSaaSApiPy
+Version: 1.0.0.0
+Summary: An API wrapper for Oracle SaaS Webservice APIs
+Home-page: https://github.com/pratik-m/OracleERPIntegrationServiceWrapper
+Author: Pratik Munot
+License: UNKNOWN
+Description: An API wrapper for Oracle SaaS Webservice APIs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
