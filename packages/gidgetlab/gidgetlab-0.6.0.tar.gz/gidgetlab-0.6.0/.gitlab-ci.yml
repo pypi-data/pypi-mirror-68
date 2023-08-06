@@ -1,0 +1,47 @@
+stages:
+  - check
+  - test
+  - release
+
+check:
+  stage: check
+  image: python:3.6
+  before_script:
+    - pip install pre-commit
+  script:
+    - pre-commit run --all-files
+
+test-python36:
+  stage: test
+  image: python:3.6
+  before_script:
+    - pip install .[dev]
+  script:
+    - pytest --cov=gidgetlab tests
+
+test-python37:
+  stage: test
+  image: python:3.7
+  before_script:
+    - pip install .[dev]
+  script:
+    - pytest --cov=gidgetlab tests
+
+test-python38:
+  stage: test
+  image: python:3.8
+  before_script:
+    - pip install .[dev]
+  script:
+    - pytest --cov=gidgetlab tests
+
+release-pypi:
+  stage: release
+  image: python:3.7
+  before_script:
+    - pip install twine
+  script:
+    - python setup.py check sdist bdist_wheel
+    - twine upload dist/*
+  only:
+    - tags
