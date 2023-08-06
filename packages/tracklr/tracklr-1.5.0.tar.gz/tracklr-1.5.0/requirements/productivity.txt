@@ -1,0 +1,4 @@
+khal
+khard
+pyfiglet
+vdirsyncer
