@@ -1,0 +1,19 @@
+{% import "rust/structure.jinja2" as structure %}
+{% macro declaration(index) %}
+
+{# multivector index structs #}
+{{ structure.declaration(index) }}
+
+impl flatdata::IndexStruct for {{index.name}} {
+    #[inline]
+    fn range(&self) -> std::ops::Range<usize> {
+        let range = self.range();
+        range.start as usize..range.end as usize
+    }
+
+    #[inline]
+    fn set_index(&mut self, value: usize) {
+        self.set_value(value as u64);
+    }
+}
+{% endmacro %}
