@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zyt
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/oberbichler/Zyt
+Author: Thomas Oberbichler
+Author-email: thomas.oberbichler@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: msvc-runtime; platform_system == "Windows"
+
+UNKNOWN
+
+
