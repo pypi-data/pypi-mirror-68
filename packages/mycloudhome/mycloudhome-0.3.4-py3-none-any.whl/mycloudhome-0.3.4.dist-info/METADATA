@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mycloudhome
+Version: 0.3.4
+Summary: mycloudhome - a CLI tool for wd mycloud home.
+Home-page: UNKNOWN
+Author: Yang Yu
+Author-email: yang.lights@hotmail.com
+License: MIT
+Keywords: WD My Cloud Home,western digital,cli,file management
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: progress
+
+# WD My cCloud Home CLI
+
+
