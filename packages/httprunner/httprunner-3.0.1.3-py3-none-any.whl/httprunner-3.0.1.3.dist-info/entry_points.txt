@@ -1,0 +1,4 @@
+[console_scripts]
+hrun=httprunner.cli:main_hrun_alias
+httprunner=httprunner.cli:main
+
