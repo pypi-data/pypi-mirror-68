@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: deep_t2i
+Version: 0.0.1
+Summary: My Experiments of Text to Image by Deep Learning
+Home-page: https://github.com/cwza/deep_t2i/tree/master/
+Author: cwza
+Author-email: cwz0205a@gmail.com
+License: Apache Software License 2.0
+Description: # Deep t2i
+        > My Experients of text to image
+        
+        
+Keywords: None
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

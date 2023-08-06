@@ -1,0 +1,12 @@
+matplotlib
+pandas
+pillow
+kornia
+transformers
+scikit-learn
+fastcore
+
+[dev]
+gdown
+twine
+nbdev
