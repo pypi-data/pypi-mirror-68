@@ -1,0 +1,13 @@
+wagtail
+
+[cdn]
+azure-mgmt-cdn
+
+[frontdoor]
+azure-mgmt-frontdoor
+
+[testing]
+flake8
+black
+isort
+faker

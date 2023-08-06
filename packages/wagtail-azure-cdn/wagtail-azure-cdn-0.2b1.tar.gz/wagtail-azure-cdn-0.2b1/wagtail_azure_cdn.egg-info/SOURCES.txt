@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+wagtail_azure_cdn/__init__.py
+wagtail_azure_cdn/backends.py
+wagtail_azure_cdn.egg-info/PKG-INFO
+wagtail_azure_cdn.egg-info/SOURCES.txt
+wagtail_azure_cdn.egg-info/dependency_links.txt
+wagtail_azure_cdn.egg-info/requires.txt
+wagtail_azure_cdn.egg-info/top_level.txt
+wagtail_azure_cdn/tests/__init__.py
+wagtail_azure_cdn/tests/settings.py
+wagtail_azure_cdn/tests/test_backends.py
+wagtail_azure_cdn/tests/urls.py
