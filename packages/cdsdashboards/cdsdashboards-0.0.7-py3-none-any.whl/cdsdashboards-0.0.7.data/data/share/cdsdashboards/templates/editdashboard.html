@@ -1,0 +1,77 @@
+{% extends "page.html" %}
+
+{% block main %}
+<div id="main" class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+
+            <h2>
+                {% if dashboard %}
+                Editing dashboard {{ dashboard.urlname }}
+                {% else %}
+                Create new dashboard
+                {% endif %}
+            </h2>
+            
+
+            <form method="post">
+
+                <p><label for="name">Dashboard name:</label></p>
+    
+                <p><input type="text" name="name" value="{{ dashboard_name | escape }}" /></p>
+    
+                {% if errors.name %}
+    
+                <p class="error">{{ errors.name | escape }}</p>
+    
+                {% endif %}
+
+
+                <p><label for="name">Description:</label></p>
+    
+                <p><textarea name="description">{{ dashboard_description | escape }}</textarea></p>
+    
+                {% if errors.description %}
+    
+                <p class="error">{{ errors.description | escape }}</p>
+    
+                {% endif %}
+
+
+
+                <h3>Choose a source server:</h3>
+
+                {% for spawner in spawners %}
+
+                <p>
+                    <input type="radio" name="spawner_name" id="spawner-{{ spawner.name }}" 
+                        value="{{ spawner.name }}"
+                        {% if spawner_name == spawner.name %}checked{% endif %}/>
+                    <label for="spawner-{{ spawner.name }}">{{ spawner.name | default('Default Server', true) | escape }} 
+                        {% if spawner.active %} (ACTIVE) {% endif %}</label>
+                </p>
+
+                {% endfor %}
+
+                {% if errors.spawner %}
+    
+                <p class="error">{{ errors.spawner | escape }}</p>
+    
+                {% endif %}
+               
+                      
+                {% if errors.all %}
+    
+                <p class="error">{{ errors.all | escape }}</p>
+    
+                {% endif %}
+
+                <input type="submit" value="Save" /> or <a href='{{ base_url }}hub/dashboards'>Cancel</a>
+
+                </form>
+
+
+        </div>
+    </div>
+</div>
+{% endblock main %}
