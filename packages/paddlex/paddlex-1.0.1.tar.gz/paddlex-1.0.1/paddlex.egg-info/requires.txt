@@ -1,0 +1,9 @@
+pyyaml
+colorama
+tqdm
+paddleslim==1.0.1
+visualdl>=2.0.0b
+paddlehub>=1.6.2
+
+[:platform_system != "Windows"]
+pycocotools
