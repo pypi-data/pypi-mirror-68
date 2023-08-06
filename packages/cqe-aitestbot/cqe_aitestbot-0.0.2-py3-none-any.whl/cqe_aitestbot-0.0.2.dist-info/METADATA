@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cqe-aitestbot
+Version: 0.0.2
+Summary: Cognitive Quality Engineer - AI Driven Test Automation Designer
+Home-page: https://github.com/cognitiveqe/cqe-aitestbot/
+Author: Sridhar VP
+Author-email: sridharvpmca@gmail.com
+License: MIT
+Keywords: Python AI Driven Test Automation
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: robotframework
+Requires-Dist: robotframework-requests
+Requires-Dist: robotframework-requestspro
+Requires-Dist: progress
+
+AI Test Automation Designer Using Robot Framework.
+
+
