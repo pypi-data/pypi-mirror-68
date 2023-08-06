@@ -1,0 +1,11 @@
+brainio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brainio/brainio.py,sha256=3HAITNaq-YiDWkKrddzlYtsDa_wmVDQdDBtmjM1bxS4,16254
+brainio/utils.py,sha256=0S91yxn06a4LhcZpJm3gQfDpnAg6K2I6PUl5SRgU-Vc,3725
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests/test_brainio.py,sha256=zR8TtgdUXKSxbTK2sGi_InlRXryjsqPFmxE_QM2LAnM,2517
+brainio-0.0.15rc0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+brainio-0.0.15rc0.dist-info/METADATA,sha256=6XDyuDCcOS5wE02x3jmzDQYLPpJb6xGanmyhAIL6698,1160
+brainio-0.0.15rc0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+brainio-0.0.15rc0.dist-info/top_level.txt,sha256=UET0oSIki5w8JquhrAULsD2keFPRx1Ad_jbn7WX87UI,14
+brainio-0.0.15rc0.dist-info/RECORD,,
