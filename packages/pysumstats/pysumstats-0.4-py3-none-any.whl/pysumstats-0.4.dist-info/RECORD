@@ -1,0 +1,14 @@
+pysumstats/__init__.py,sha256=LuJRv5Qd7dNXuSL_nxxnBdbVhnxNaRu5TuwRpxhaTVk,459
+pysumstats/base.py,sha256=YelWH8UmZG-g686nQSEmwR4Uqj37EHgRC2g8_EabD9I,16252
+pysumstats/exceptions.py,sha256=uLgrHqA2lBDtWpN1w4gZobZmukpBxj3yyIICMgY-Ds8,754
+pysumstats/sumstats.py,sha256=e1VOMuhF91W-ac8May3P0yrpZYR8s20Gmw7Wt0B3Pes,60342
+pysumstats/utils.py,sha256=TFHdqHcTJE068Uf1bUv6UQMuQf6p5yLn4bnvkXJwzz8,5954
+pysumstats/plot/__init__.py,sha256=wUDE3WfV8GgJ78rTGdTQesNK57bby9QmtMhxiFj3nXk,375
+pysumstats/plot/manhattan.py,sha256=ctg1FcJBmxVvrLNllVkfkN7dZKNgV4uBi3_58mTm53E,6103
+pysumstats/plot/qcplots.py,sha256=STg0qSDYC-pmKa2689FCsyDPGIAvEsGTNMBjf7LDIiE,16058
+pysumstats/plot/qq.py,sha256=M0F5iMTm7puXasvTPQGHB2kGn_E6giIFzEwn4olfNg0,2331
+pysumstats-0.4.dist-info/LICENSE,sha256=TLgf6ta-qntjv_ZeAeY6d3Kvfrreo2xODHteTtpez1c,1099
+pysumstats-0.4.dist-info/METADATA,sha256=In3JEOmcDkWO8D9_lF5mlsMM7g_UKXZaHlryJN39COE,8841
+pysumstats-0.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pysumstats-0.4.dist-info/top_level.txt,sha256=mvd79WFwmfRb3oLTCjIM3xnucFdQHFCDirrQNKhwMI4,11
+pysumstats-0.4.dist-info/RECORD,,
