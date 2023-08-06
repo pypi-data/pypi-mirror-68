@@ -1,0 +1,16 @@
+pytz
+appdirs
+more-itertools
+
+[:python_version<"3.7"]
+dataclasses
+
+[optional]
+logzero
+cachew
+
+[testing]
+pytest
+pylint
+mypy
+pandas
