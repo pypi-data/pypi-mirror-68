@@ -1,0 +1,11 @@
+expect_exception/__init__.py,sha256=bTuLgYZCPnD5rtfTIL0UvR8UeCx0og97uo73yGNtZjc,279
+expect_exception/_contextmanagers.py,sha256=jNs0EE62v8ajRHp2iaLxwQXSoG-9mBbEjEcqIl9q2nE,2434
+expect_exception/_enums.py,sha256=fCuzM3vUaNGHEKNQe0tOOo6vGOItiViN9Hx0rSL2JhQ,517
+expect_exception/_errors.py,sha256=VOWdtX2adpA98MsQq-nf1FomkwTS9IH0Q3mLtI6Q2MI,616
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/expect_exception_test.py,sha256=7dNbrXFi4v1d8wxFBcvk0wvrc-IVuPLBCpcmTQU3lQ8,4844
+expect_exception-1.0.0.dist-info/LICENSE,sha256=HHk4K-B4cXU5ZkHuc6X6r1toCiZsqPOB6BIAvVdk_ZY,747
+expect_exception-1.0.0.dist-info/METADATA,sha256=7ouu_h9Xofd06B-4jgOx9I_i4v4yfvdToGuQKdAxNFA,3096
+expect_exception-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+expect_exception-1.0.0.dist-info/top_level.txt,sha256=SmASz7yoQEqRxOJk0DjiSDd7WgvwQ2lNjwM0PYlu3_o,23
+expect_exception-1.0.0.dist-info/RECORD,,
