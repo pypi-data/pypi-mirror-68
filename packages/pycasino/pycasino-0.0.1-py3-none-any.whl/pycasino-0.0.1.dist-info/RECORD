@@ -1,0 +1,9 @@
+pycasino/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycasino/deck.py,sha256=qYHs4kxO_IhknYgrTA2_muHrzIhLoF1G5dZIon_CpDY,1171
+pycasino/die.py,sha256=v3H7vEraKu79BWdD77Xz05zdffEAkYao2O7qXmzGNjQ,452
+pycasino-0.0.1.dist-info/LICENSE,sha256=CzBapOooMhyL0k7Y3TOD3WdcxXb0NoeA_h3LKkTahnQ,1512
+pycasino-0.0.1.dist-info/METADATA,sha256=WF1CNgh9ebVKDiBpKiJT9mcf3f5zqokMyTAse3oetT4,2009
+pycasino-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pycasino-0.0.1.dist-info/entry_points.txt,sha256=uKjFjtTiRVNdjCyU9yw3ucWKQqFFnGnFQaYGURXqruw,48
+pycasino-0.0.1.dist-info/top_level.txt,sha256=ksm4ZC4cHQaIUQNGskT0D9njvGT0Xk8FkKE-3uuYvFA,9
+pycasino-0.0.1.dist-info/RECORD,,
