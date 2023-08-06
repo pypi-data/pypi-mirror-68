@@ -1,0 +1,14 @@
+social-watcher/__init__.py,sha256=jj3TLwqJJ_pr3rTrCSuhPMTRFga_UTl6KIYJaaBq0rw,82
+social-watcher/cli.py,sha256=IHNHhoXKlKFlqZioc_j6TtzVB75XE9hqqFAP4xqx788,509
+social-watcher/models.py,sha256=wHnxR2hck5D4uBGdduE62LLipE_PhToKWjIv8V_389g,807
+social-watcher/watcher.py,sha256=CW8CYA5SOhkua0WcVMbrPRmuSu0APIHGNlm2cNw3d0c,6349
+social_watcher/__init__.py,sha256=jj3TLwqJJ_pr3rTrCSuhPMTRFga_UTl6KIYJaaBq0rw,82
+social_watcher/cli.py,sha256=_3AYNXeIgqLUrQkOYVUn-dzAudQu_r1PDRsA7Iw7Jjw,3764
+social_watcher/models.py,sha256=wHnxR2hck5D4uBGdduE62LLipE_PhToKWjIv8V_389g,807
+social_watcher/watcher.py,sha256=5oTgIgPWoqGFXBzSC1kBA4zKG4SXAXrsjqFGcmMyh48,6247
+social_watcher-0.1.0.dist-info/LICENSE,sha256=ti-5_oLQcyyIA_VV_pgJXnWESCw4UklfD4soQvm8sGQ,1074
+social_watcher-0.1.0.dist-info/METADATA,sha256=SOmPlz3FG5hAIZPI9Ik9-YpDuofnAkeCKrvwSkLlSoo,4363
+social_watcher-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+social_watcher-0.1.0.dist-info/entry_points.txt,sha256=4hZIOfEZ2VhrNb6tmqCtWZkfdjvrYgqpe7p31Tgz-lY,60
+social_watcher-0.1.0.dist-info/top_level.txt,sha256=YBeKBajTmzyhDgAcJ2HfSrE6ciHiR4rmPUY4Xy5aH7U,15
+social_watcher-0.1.0.dist-info/RECORD,,
