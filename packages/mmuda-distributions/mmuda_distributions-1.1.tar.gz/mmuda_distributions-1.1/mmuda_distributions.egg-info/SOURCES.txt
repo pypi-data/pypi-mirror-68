@@ -1,0 +1,11 @@
+README.md
+setup.py
+mmuda_distributions/Binomialdistribution.py
+mmuda_distributions/Gaussiandistribution.py
+mmuda_distributions/Generaldistribution.py
+mmuda_distributions/__init__.py
+mmuda_distributions.egg-info/PKG-INFO
+mmuda_distributions.egg-info/SOURCES.txt
+mmuda_distributions.egg-info/dependency_links.txt
+mmuda_distributions.egg-info/not-zip-safe
+mmuda_distributions.egg-info/top_level.txt
