@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}event log{% endblock %}
+
+{% block content %}
+<div style="padding-top: 3rem">
+<table class="table">
+    <thead>
+        <tr class="bg-light">
+            <th scope="col">id</th>
+            <th style="col">time</th>
+            <th scope="col">message</th>
+        </tr>
+    </thead>
+    <tbody id="log">
+    </tbody>
+</table>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+    time_locale = "{{ time_locale }}";
+</script>
+{% endblock %}
+
+{% block script %}
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.5/socket.io.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="{{ url_for('static', filename='js/log.js') }}"> </script>
+{% endblock %}
