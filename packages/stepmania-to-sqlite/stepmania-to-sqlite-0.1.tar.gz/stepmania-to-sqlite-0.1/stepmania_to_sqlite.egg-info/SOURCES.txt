@@ -1,0 +1,11 @@
+README.md
+setup.py
+stepmania_to_sqlite/__init__.py
+stepmania_to_sqlite/cli.py
+stepmania_to_sqlite/utils.py
+stepmania_to_sqlite.egg-info/PKG-INFO
+stepmania_to_sqlite.egg-info/SOURCES.txt
+stepmania_to_sqlite.egg-info/dependency_links.txt
+stepmania_to_sqlite.egg-info/entry_points.txt
+stepmania_to_sqlite.egg-info/requires.txt
+stepmania_to_sqlite.egg-info/top_level.txt

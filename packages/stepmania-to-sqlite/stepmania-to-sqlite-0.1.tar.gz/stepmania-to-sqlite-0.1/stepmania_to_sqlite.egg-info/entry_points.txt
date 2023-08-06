@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        stepmania-to-sqlite=stepmania_to_sqlite.cli:update
+    
