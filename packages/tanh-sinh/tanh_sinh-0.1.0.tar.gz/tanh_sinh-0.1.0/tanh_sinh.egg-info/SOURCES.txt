@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+tanh_sinh/__about__.py
+tanh_sinh/__init__.py
+tanh_sinh/main.py
+tanh_sinh.egg-info/PKG-INFO
+tanh_sinh.egg-info/SOURCES.txt
+tanh_sinh.egg-info/dependency_links.txt
+tanh_sinh.egg-info/requires.txt
+tanh_sinh.egg-info/top_level.txt
+test/test_tanh_sinh.py
