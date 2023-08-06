@@ -1,0 +1,7 @@
+colomoto_jupyter>=0.4.10
+pyparsing
+ipywidgets
+matplotlib
+pandas
+sklearn
+cmaboss==1.0.0b6
