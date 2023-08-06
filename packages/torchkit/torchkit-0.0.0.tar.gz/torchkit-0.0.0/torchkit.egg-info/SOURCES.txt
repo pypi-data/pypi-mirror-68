@@ -1,0 +1,8 @@
+README.md
+setup.py
+kit/__init__.py
+kit/kit.py
+torchkit.egg-info/PKG-INFO
+torchkit.egg-info/SOURCES.txt
+torchkit.egg-info/dependency_links.txt
+torchkit.egg-info/top_level.txt
