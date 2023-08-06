@@ -1,0 +1,8 @@
+dataclasses
+tabulate
+numpy
+matplotlib
+pandas
+sympy
+scipy
+sqlalchemy
