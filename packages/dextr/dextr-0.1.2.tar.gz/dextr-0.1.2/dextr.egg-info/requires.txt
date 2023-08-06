@@ -1,0 +1,8 @@
+numpy
+scipy
+Pillow
+scikit-image
+torch
+torchvision
+
+[testing]
