@@ -1,0 +1,8 @@
+README.md
+setup.py
+AsmaPDF.egg-info/PKG-INFO
+AsmaPDF.egg-info/SOURCES.txt
+AsmaPDF.egg-info/dependency_links.txt
+AsmaPDF.egg-info/top_level.txt
+asmapdf/__init__.py
+asmapdf/pdf2text.py
