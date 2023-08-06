@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: wai.tfutils
+Version: 0.0.3
+Summary: Library with utility functions to reduce amount of code for making predictions with TensorFlow.
+Home-page: https://github.com/waikato-datamining/tensorflow/tree/master/tfutils
+Author: Peter Reutemann and TensorFlow Team
+Author-email: fracpete@waikato.ac.nz
+License: Apache 2.0 License
+Description: Library with utility functions for TensforFlow, to cut down on the amount
+        of code to write for making predictions.
+        
+        
+        Changelog
+        =========
+        
+        0.0.3 (2020-05-13)
+        ------------------
+        
+        - fixed how `wai.tfutils.load_labels` determines maximum number of classes
+        
+        
+        0.0.2 (2020-05-12)
+        ------------------
+        
+        - `wai.tfutils.load_labels` can determine maximum number of classes to use now
+          directly from the label protobuf file (if not provided)
+        
+        
+        0.0.1 (2020-01-22)
+        ------------------
+        
+        - initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3
