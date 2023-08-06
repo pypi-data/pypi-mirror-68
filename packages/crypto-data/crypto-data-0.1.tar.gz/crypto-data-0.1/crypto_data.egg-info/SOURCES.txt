@@ -1,0 +1,14 @@
+README.md
+setup.py
+crypto_data/__init__.py
+crypto_data/get_trades.py
+crypto_data.egg-info/PKG-INFO
+crypto_data.egg-info/SOURCES.txt
+crypto_data.egg-info/dependency_links.txt
+crypto_data.egg-info/entry_points.txt
+crypto_data.egg-info/requires.txt
+crypto_data.egg-info/top_level.txt
+crypto_data/brokers/__init__.py
+crypto_data/brokers/coinbase.py
+crypto_data/utils/__init__.py
+crypto_data/utils/broker.py
