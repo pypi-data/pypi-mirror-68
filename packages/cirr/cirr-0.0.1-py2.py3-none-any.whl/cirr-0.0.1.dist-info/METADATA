@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: cirr
+Version: 0.0.1
+Summary: Add a short description here!
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: LaurenÈ›iu Andronache
+Author-email: laurentiu.andronache@trailung.ro
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+====
+cirr
+====
+
+
+Add a short description here!
+
+
+Description
+===========
+
+A longer description of your project goes here...
+
+
+Note
+====
+
+This project has been set up using PyScaffold 3.2.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
