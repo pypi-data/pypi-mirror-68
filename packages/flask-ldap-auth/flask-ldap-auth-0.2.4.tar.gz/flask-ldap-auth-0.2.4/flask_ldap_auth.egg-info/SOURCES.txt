@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+flask_ldap_auth.py
+setup.cfg
+setup.py
+flask_ldap_auth.egg-info/PKG-INFO
+flask_ldap_auth.egg-info/SOURCES.txt
+flask_ldap_auth.egg-info/dependency_links.txt
+flask_ldap_auth.egg-info/requires.txt
+flask_ldap_auth.egg-info/top_level.txt
