@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sapio-zoo
+Version: 0.1.0
+Summary: Bitcoin Transaction Programming Language
+Home-page: https://github.com/jeremyrubin/sapio
+Author: Jeremy Rubin
+Author-email: j@rubin.io
+License: All rights reserved.
+Requires-Dist: mypy (>=0.770)
+Requires-Dist: mypy-extensions (>=0.4.3)
+Requires-Dist: numpy (>=1.18.0)
+Requires-Dist: typed-ast (>=1.4.0)
+Requires-Dist: typing-extensions (>=3.7.4.2)
+Provides-Extra: server
+Requires-Dist: tornado (>=6.0) ; extra == 'server'
+
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: server
