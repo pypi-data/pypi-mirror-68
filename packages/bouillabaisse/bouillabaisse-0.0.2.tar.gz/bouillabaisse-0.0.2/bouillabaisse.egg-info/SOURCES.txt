@@ -1,0 +1,8 @@
+README.md
+setup.py
+bouillabaisse/__init__.py
+bouillabaisse/recettes.py
+bouillabaisse.egg-info/PKG-INFO
+bouillabaisse.egg-info/SOURCES.txt
+bouillabaisse.egg-info/dependency_links.txt
+bouillabaisse.egg-info/top_level.txt
