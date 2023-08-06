@@ -1,0 +1,12 @@
+cli_formatter/__init__.py,sha256=-ISRXOt2foZ4v1V4mFwJW_KmMWK1penmcdPOQJ3J0Xo,112
+cli_formatter/output_formatting/__init__.py,sha256=_TgfjGRn822z20wR5pOVIiPLcAHaK4CaxgLtK6zAJT4,136
+cli_formatter/output_formatting/output_formatter.py,sha256=N73yYbpFTgLB0axbUHhEMHzzGTbIyg3l3nO3TwawMSo,1822
+cli_formatter/table_builder/__init__.py,sha256=91PmuEZ4IYVvRapK8HjVoCUrXTeZhMtT0MswOszXJxM,170
+cli_formatter/table_builder/table_builder.py,sha256=tV8eGHfcdzOjhCkZeexwYn6gNrmtjPSajjiIf2F2Uxg,2144
+cli_formatter/table_builder/table_builder_alternative.py,sha256=q0mdEtjsRcfwGQHrz9RF9CNlnF2U868SAE9J-OhQmLE,1937
+cli_formatter/table_builder/table_formatter.py,sha256=K3OCK-mZ_2XItQ9Aw8t0ms8hTU2tTRJ7wRUoFbmLTbI,277
+cli_formatter-1.0.0.dist-info/LICENSE,sha256=L8Q76jwtCJy9upSpNhXdnAwZ0tQSLasfWmYUCo8aasQ,1069
+cli_formatter-1.0.0.dist-info/METADATA,sha256=Mkmq_AmPXyh0DF-ehDqxBIHsfwIfAfLN-AgWTbLdzwk,2098
+cli_formatter-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cli_formatter-1.0.0.dist-info/top_level.txt,sha256=ORnOl0Kb1e5-ScoZ5k39wFHqyaKOepY-WsOXiSLOXts,14
+cli_formatter-1.0.0.dist-info/RECORD,,
