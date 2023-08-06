@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: phiskills.grpc
+Version: 0.0.1
+Summary: Phi Skills Generic gRPC API Server
+Home-page: https://github.com/phiskills/grpc-api.py
+Author: Phi Skills
+Author-email: hello@phiskills.com
+License: GNU GPLv3
+Project-URL: Company website, https://phiskills.com
+Project-URL: Documentation, https://github.com/phiskills/grpc-api.py
+Project-URL: Source, https://github.com/phiskills/grpc-api.py
+Description: # Phi Skills Generic gRPC API Server for Python
+        
+        | **Homepage** | [https://phiskills.com][0]        |
+        | ------------ | --------------------------------- | 
+        | **GitHub**   | [https://github.com/phiskills][1] |
+        
+        ## Overview
+        
+        This project contains the Python module to create a generic **gRPC API Server**.
+        
+        ## Installation
+        
+        ```bash
+        pip install phiskills.grpc
+        ```
+        
+        ## Creating the server
+        
+        ```python
+        from phiskills.grpc import Api
+        
+        api = Api('My API')
+        xxx.add_XxxServicer_to_server(XxxServicer(), api.server)
+        api.start()
+        ```
+        For more details, see [gRPC Basics - Python: Creating the server][10].
+        
+        [0]: https://phiskills.com
+        [1]: https://github.com/phiskills
+        [10]: https://www.grpc.io/docs/tutorials/basic/python/#server
+        
+Keywords: Phi Skills gRPC API Server
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8, <4
+Description-Content-Type: text/markdown
