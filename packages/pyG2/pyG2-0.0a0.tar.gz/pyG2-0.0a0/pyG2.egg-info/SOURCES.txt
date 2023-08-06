@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyG2/G2.py
+pyG2/__init__.py
+pyG2.egg-info/PKG-INFO
+pyG2.egg-info/SOURCES.txt
+pyG2.egg-info/dependency_links.txt
+pyG2.egg-info/top_level.txt
