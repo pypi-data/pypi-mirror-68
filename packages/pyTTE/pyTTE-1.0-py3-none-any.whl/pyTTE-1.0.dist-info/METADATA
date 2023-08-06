@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyTTE
+Version: 1.0
+Summary: Package to compute X-ray diffraction curves of bent crystals by numerically solving the 1D Takagi-Taupin equation.
+Home-page: https://github.com/aripekka/pyTTE/
+Author: Ari-Pekka Honkanen
+Author-email: honkanen.ap@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: multiprocess (>=0.70.9)
+Requires-Dist: matplotlib (>=2.2.3)
+
+UNKNOWN
+
+
