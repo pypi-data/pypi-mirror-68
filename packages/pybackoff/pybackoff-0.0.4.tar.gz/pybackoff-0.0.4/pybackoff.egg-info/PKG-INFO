@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pybackoff
+Version: 0.0.4
+Summary: a small c++ optimized implementation of the Stupid Backoff language model for python.
+Home-page: https://github.com/CorbinMoon/pybackoff
+Author: Corbin Moon
+Author-email: clangmoon@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
