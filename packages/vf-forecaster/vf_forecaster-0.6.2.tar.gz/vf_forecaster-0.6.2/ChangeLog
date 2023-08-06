@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+0.6.2
+-----
+
+* minor fix in license for pypi release
+
+0.6.1
+-----
+
+* fix requirements
+* fix requirements
+* fix requirements
+* fix requirements
+* fix requirements
+* delete cmdstanpy requirement
+* delete cmdstanpy requirement
+* add configurations for circleCi
+* add configurations for circleCi
+* Update comments
+* Fix typo in documentation
+* Add first version of auto-optimizer for Holt-Winters model
+* Add HoltWintersOptimizer
+* Initial commit
+* Adding tests for time\_series
+* Add module to split data
+* Initial Project

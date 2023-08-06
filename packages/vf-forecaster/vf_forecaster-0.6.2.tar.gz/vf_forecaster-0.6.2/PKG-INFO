@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: vf_forecaster
+Version: 0.6.2
+Summary: A portable optimized time-series forecasting framework for Python
+Home-page: https://github.com/visualfabriq/forecaster
+Author: Dipanjan Kalithya, Christos Tselas
+Author-email: dkailthya@visualfabriq.com, ctselas@visualfabriq.com
+License: GNU
+Description: # forecaster
+        Optimized time-series forecasting models for Visualfabriq Demand Prediction.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
