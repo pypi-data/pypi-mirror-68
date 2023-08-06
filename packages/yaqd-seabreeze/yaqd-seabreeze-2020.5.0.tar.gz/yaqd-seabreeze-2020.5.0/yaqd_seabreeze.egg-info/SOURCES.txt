@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+yaqd_seabreeze/__init__.py
+yaqd_seabreeze/__version__.py
+yaqd_seabreeze/_seabreeze.py
+yaqd_seabreeze.egg-info/PKG-INFO
+yaqd_seabreeze.egg-info/SOURCES.txt
+yaqd_seabreeze.egg-info/dependency_links.txt
+yaqd_seabreeze.egg-info/entry_points.txt
+yaqd_seabreeze.egg-info/not-zip-safe
+yaqd_seabreeze.egg-info/requires.txt
+yaqd_seabreeze.egg-info/top_level.txt
