@@ -1,0 +1,11 @@
+kwantspectrum/__init__.py,sha256=S1m26Ru9ooh-ooaOyFvXE-Sq1CCwBVhgJeyY_6RxR4Y,500
+kwantspectrum/_kwant_spectrum_version.py,sha256=_6TcUf2PmbeRNp5XOVoNpqUp4KU7E8E09LLePuu3ck8,60
+kwantspectrum/kwant_spectrum.py,sha256=C8FaspE62LagkX7u-_3hlvrB4lLVN_0oqWUakyIfefw,37605
+kwantspectrum/version.py,sha256=3qSS-MptIKzPg6TkMb3P-FJHa5YxB7HwaWcm4Mea1lg,4023
+kwantspectrum/tests/__init__.py,sha256=-aLhwl9tH1aVKTD2BD65Fd8ddxztj3VG4Sv2WruoLFU,43
+kwantspectrum/tests/test_kwant_spectrum.py,sha256=w1WlA_tWW3TpaJXXxcbB104HtE4eUZxumN1rRkWLhr4,15595
+kwantspectrum-0.1.0.dist-info/LICENSE.rst,sha256=MZeyat4akoyd778JOy1l62NxE5sgr3XXjLztAvQaH4A,1489
+kwantspectrum-0.1.0.dist-info/METADATA,sha256=0oz7pEhPX4gRF_WeHVgTD2j4mUg25Hlx_iE7gWqTvrg,5361
+kwantspectrum-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kwantspectrum-0.1.0.dist-info/top_level.txt,sha256=bs0NU_QxZCFHx-D8M2WSoPfprefpbTigt9oNQ1gUSyQ,14
+kwantspectrum-0.1.0.dist-info/RECORD,,

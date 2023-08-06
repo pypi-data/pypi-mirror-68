@@ -1,0 +1,189 @@
+Metadata-Version: 2.1
+Name: kwantspectrum
+Version: 0.1.0
+Summary: Adaptive band structure analyzer for Kwant leads
+Home-page: https://gitlab.kwant-project.org/kwant/kwantspectrum
+Author: T. Kloss, C. W. Groth, X. Waintal, et al.
+Author-email: kloss@itp.uni-frankfurt.de
+License: UNKNOWN
+Keywords: physics kwant bandstructure
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Requires-Dist: kwant (>=1.4)
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-flake8 ; extra == 'test'
+
+About kwantSpectrum
+===================
+
+kwantSpectrum is an extension to `Kwant <http://kwant-project.org/>`__ that
+adaptively analyzes band structures of infinite quasi-1d systems.  The
+bandstructure is approximated to an arbitrary precision by piecewise cubic
+polynomials.  Functionality to deal with special points, intervals, and the
+periodic nature of the spectrum is provided.
+
+
+kwantSpectrum is distributed under the `2-clause BSD license <https://gitlab.kwant-project.org/kwant/kwantspectrum/-/blob/master/LICENSE.rst>`_
+
+Website: https://kwant-project.org/extensions/kwantspectrum
+
+Source code: https://gitlab.kwant-project.org/kwant/kwantspectrum
+
+
+
+Installation
+############
+
+This section covers the installation of kwantSpectrum on a GNU/Linux
+system as Debian and Ubuntu via the command line.
+
+Requirements
+^^^^^^^^^^^^
+
+kwantSpectrum has following non-Python dependency:
+
+- `Kwant <https://kwant-project.org/>`__
+
+Kwant can be installed with the following command::
+
+   sudo apt-add-repository -s ppa:kwant-project/ppa
+   sudo apt-get update
+   sudo apt-get install python3-kwant
+
+kwantSpectrum requires at least Python 3.5. The following packages must
+be installed to build kwantSpectrum:
+
+- `NumPy <https://numpy.org/>`_
+- `SciPy <https://www.scipy.org/>`_
+
+Most packages can be installed from the command line
+by the standard Python package manager `pip <https://pip.pypa.io/en/stable/>`_ via::
+
+    sudo pip3 install numpy scipy
+
+Testing requirements
+--------------------
+The kwantSpectrum test suite requires the following Python packages:
+
+- `pytest <https://docs.pytest.org/en/latest/>`_
+- `pytest-cov <https://pytest-cov.readthedocs.io/en/latest/>`_
+- `pytest-flake8 <https://pypi.org/project/pytest-flake8/>`_
+
+
+The packages can be installed by the standard *pip* command::
+
+    sudo pip3 install pytest pytest-cov pytest-flake8
+
+Documentation requirements
+--------------------------
+Building the documentation requires the following Python packages:
+
+- `matplotlib <https://matplotlib.org/>`_
+- `sphinx <https://www.sphinx-doc.org/en/master/>`_
+- `jupyter-sphinx <https://jupyter-sphinx.readthedocs.io/en/latest/>`_
+
+
+The packages can be installed by the standard *pip* command::
+
+    sudo pip3 install matplotlib sphinx jupyter-sphinx
+
+Building kwantSpectrum
+^^^^^^^^^^^^^^^^^^^^^^
+
+kwantSpectrum can be installed from PyPI with::
+
+    sudo pip3 install kwantspectrum
+
+Alternatively, it can be installed directly from the source code repository::
+
+    sudo pip3 install git+https://gitlab.kwant-project.org/kwant/kwantspectrum.git
+
+For development, kwantSpectrum can be cloned from the official repository with::
+
+    git clone https://gitlab.kwant-project.org/kwant/kwantspectrum.git
+
+Test suite
+----------
+
+Unittests can be run directly in the local source repository from the command line::
+
+    pytest
+
+
+Building the documentation
+--------------------------
+
+The documentation can be build directly in the ``/doc`` folder of the 
+local source repository from the command line::
+
+    make html
+
+The generated html documentation can be browsed
+by opening the file ``doc/build/html/index.html`` with a web browser.
+
+
+Documentation
+#############
+
+Full documentation including a tutorial:
+
+- https://kwant-project.org/extensions/kwantspectrum
+
+Communication
+#############
+
+The kwant-discuss mailing list is the main communication channel for
+questions and discussions around kwantSpectrum. Searching and using the mailing list
+is explained in section
+`mailing list <https://kwant-project.org/community#mailing-list>`_.
+
+- Mailing list: kwant-discuss@kwant-project.org
+
+In addition, the authors can be reached by email, see below.
+
+
+
+Contributing
+############
+
+Contributions and feedback are always welcome. 
+Report bugs and follow development through the project repository.
+Authors can be reached by email
+or a merge request may be opened on the project's website.
+Please make sure that the test suite runs without errors before opening
+a new merge request.
+
+License
+#######
+
+kwantSpectrum is distributed under BSD license, see the file ``LICENSE.rst``
+in the project repository.
+
+
+Authors
+#######
+
+The principle developer of kwantSpectrum is:
+
+* Thomas Kloss (CEA Grenoble), kloss@itp.uni-frankfurt.de
+
+Contributors to the project are:
+
+* Christoph Groth (CEA Grenoble)
+* Xavier Waintal (CEA Grenoble)
+* Benoît Rossignol (CEA Grenoble)
+
+(CEA = Commissariat à l'énergie atomique et aux énergies alternatives)
+
+
