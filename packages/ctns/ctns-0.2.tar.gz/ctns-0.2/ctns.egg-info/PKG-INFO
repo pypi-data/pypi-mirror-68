@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ctns
+Version: 0.2
+Summary: CTNS, Contact Tracing Network Simulator: a tool to simulate contact tracing in a population where a disease is spreading
+Home-page: https://gitlab.com/mistrello96/ctns
+Author: Matteo Mistri, Diego Miglio
+Author-email: matteo.mistri1996@gmail.com
+License: UNKNOWN
+Download-URL: https://pypi.org/project/ctns/
+Description: UNKNOWN
+Platform: UNKNOWN
