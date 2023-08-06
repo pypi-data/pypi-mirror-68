@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: py2asm
+Version: 0.0.1
+Summary: A package for converting python to asm compiled code
+Home-page: https://github.com/SCORPIA-oss/python-to-asm
+Author: py2asm group
+Author-email: xsumagravity@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+![py2nasm](https://storage.googleapis.com/replit/images/1589798461984_ad504d1dfa0cfb79bc9f7b8915cf3911.png)
+
+
+> # **Py2asm**
+> #### *py2asm is a package to convert python code to .so basically compiled assembly code it is simple and fast and install all the packages it needs by itself.*
+
+> #### *Convert to .so code using py2asm*
+``` code
+py2asm path/to/yourfile.py
+```
+
