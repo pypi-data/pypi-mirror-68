@@ -1,0 +1,5 @@
+corgy_accounts
+corgy_erp
+corgy_mdm
+corgy_payroll
+corgy_worksheet
