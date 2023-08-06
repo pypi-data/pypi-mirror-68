@@ -1,0 +1,5 @@
+numpy>=1.15.1
+imagecodecs>=2020.2.18
+
+[all]
+matplotlib>=3.1
