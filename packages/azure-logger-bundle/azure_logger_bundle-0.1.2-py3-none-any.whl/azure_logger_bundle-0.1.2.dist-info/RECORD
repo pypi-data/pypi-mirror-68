@@ -1,0 +1,9 @@
+azureloggerbundle/_config/config.yaml,sha256=fQjtu_FrBJ5cVyNLSxQj3OgfFU_Rn-Z6_ldaIEaMyv4,267
+azureloggerbundle/_config/config_test.yaml,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azureloggerbundle/appInsights/AppInsightsLogHandlerFactory.py,sha256=n83g_1pwLkAp_mJiLyg9WyDYOkSV5KAiCP8SQKuw0iA,525
+azureloggerbundle/appInsights/AzureLogWithExtraHandler.py,sha256=zNskgJMMnSkALD8EngdgCUOkUkb5D-eOsOCKRoE646Y,765
+azureloggerbundle/AzureLoggerBundle.py,sha256=0AWk9ceVdM42jDY94oco_Rv-vPyhorAcpXbjMvGXJXU,83
+azureloggerbundle/AzureLoggerBundleTest.py,sha256=pF0fREYgM6LGU3T1wlUWskbnqM8f5tHaGLQBbXlg7ac,972
+azure_logger_bundle-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+azure_logger_bundle-0.1.2.dist-info/METADATA,sha256=CKiy1q0xqWH5L7MgYv2mphoRVY6J9PVbqRJaP4CZxsc,735
+azure_logger_bundle-0.1.2.dist-info/RECORD,,
