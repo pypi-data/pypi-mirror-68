@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bitmex-tools
+Version: 1.0
+Summary: Bitmex Tools
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: websocket-client (==0.47.0)
+
+## Bitmex Tools
+
+
