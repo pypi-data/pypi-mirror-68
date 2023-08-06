@@ -1,0 +1,7 @@
+pip
+numpy
+tf-nightly
+tfp-nightly
+
+[test]
+pytest
