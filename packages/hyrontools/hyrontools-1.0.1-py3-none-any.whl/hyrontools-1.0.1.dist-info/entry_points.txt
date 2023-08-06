@@ -1,0 +1,3 @@
+[console_scripts]
+hyrontools = hyrontools.__main__:main
+
