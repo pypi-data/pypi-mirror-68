@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: xspfclean
+Version: 0.3
+Summary: Xspf playlist files cleaner
+Home-page: https://github.com/eibrahim995/xspfcleaner
+Author: Ibrahim E.Gad
+Author-email: eibrahim995@yandex.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Common Public License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: python-magic
+
+<p>XSPF Playlist files cleaner</p>
+<p>Removes not found and empty entries from an xspf playlist</p>
+
+<b>Installation:</b>
+
+    pip install xspfclean
+
+<b>Usage:</b>
+
+    xspfclean [-h] playlist
+
+
+
+

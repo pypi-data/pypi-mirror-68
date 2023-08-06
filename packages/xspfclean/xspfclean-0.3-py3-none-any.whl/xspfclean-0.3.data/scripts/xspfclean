@@ -1,0 +1,6 @@
+#!python
+
+from xspfcleaner import XspfCleaner
+
+cleaner = XspfCleaner()
+cleaner.clean_playlist()
