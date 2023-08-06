@@ -1,0 +1,14 @@
+BarcodeFinder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+BarcodeFinder/__main__.py,sha256=6CmuzxWdAbmCzQT5bIaQt7uoRngc_e8zYBaOK8ldugo,117
+BarcodeFinder/cli/__init__.py,sha256=_hyUKkgqmAG2GlIh_5sl1Ggi6OXaRMv2QC_nf5k3MUs,22
+BarcodeFinder/cli/bf.py,sha256=D6EOwQ-006i0m6BceUGdrZCsRrd_wfVLerd0yn1z1G4,84190
+BarcodeFinder/data/animal_orders.csv,sha256=IGF-JEoML0IU1GY_34sWCo9PdWEkB3svVSW7zXR8Q3I,22975
+BarcodeFinder/data/classes.csv,sha256=brOt-b9lVv1OzCM9f2-1Bje2fzS3r2JQOrdny1xcqJQ,6290
+BarcodeFinder/data/kingdoms.csv,sha256=eaesYFCcpgTft1t7R46q9fRgVLe8TfZypxYvy2pPjAc,114
+BarcodeFinder/data/phyla.csv,sha256=Va6rVKU4KVZu7DYoHRueoV4EidQ2Hfu_tSfRRCouDjI,5279
+BarcodeFinder/data/superkingdoms.csv,sha256=uZ6t-XnwyQ1GHA-UYf6VWnZVquH3HUsvISbLE0LdNZU,34
+BarcodeFinder-0.9.47.dist-info/LICENSE,sha256=baEFTu8guJSWIvKsxaicMkP_Oz16qMK7j6XATRURPAA,35181
+BarcodeFinder-0.9.47.dist-info/METADATA,sha256=uvh_rvd1gk2FacB9AeuhVS20HBM0HIgqbk59-1MxiYw,40550
+BarcodeFinder-0.9.47.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+BarcodeFinder-0.9.47.dist-info/top_level.txt,sha256=RvdF9MpzEByLO4TJPE2FHeKu1AOtH-Mf4mZ5yuvEOs4,14
+BarcodeFinder-0.9.47.dist-info/RECORD,,
