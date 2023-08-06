@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+part/__init__.py
+part/atomic.py
+part/dicts.py
+part/sets.py
+part/utils.py
+part/values.py
+py_part.egg-info/PKG-INFO
+py_part.egg-info/SOURCES.txt
+py_part.egg-info/dependency_links.txt
+py_part.egg-info/requires.txt
+py_part.egg-info/top_level.txt
