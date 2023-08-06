@@ -1,0 +1,54 @@
+# Schema validator for the quality_control
+# author: Thomas Cokelaer
+
+type: map
+mapping:
+    "input_directory":
+        type: str
+        required: False
+    "input_readtag":
+        type: str
+        required: False
+    "input_pattern":
+        type: str
+        required: False
+
+
+    "sequana_taxonomy":
+        type: map
+        mapping:
+            "databases":
+                type: any
+                required: True
+            "level":
+                type: str
+                enum: [INFO, DEBUG, ERROR, WARNING, CRITICAL]
+            "confidence":
+                type: float
+                range: { min: 0, max: 1}
+
+    "multiqc":
+        type: map
+        mapping:
+            "options":
+                type: str
+            "indir":
+                type: str
+
+    "dendogram":
+        type: map
+        mapping:
+            "sample_file":
+                type: str
+                required: False
+
+    "summary_plot":
+        type: map
+        mapping:
+            "kind": 
+                type: str
+                enum: [bar, barh]
+            "width": 
+                type: float
+                range: { min: 0, max: 1}
+

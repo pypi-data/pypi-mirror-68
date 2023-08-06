@@ -1,0 +1,188 @@
+"""multitax pipeline
+
+Author: Thomas Cokelaer
+Affiliation: Institut Pasteur @ 2019
+
+This pipeline is part of Sequana software (sequana.readthedocs.io)
+
+snakemake -s multitax.rules --forceall --stats stats.txt --cores 4
+
+
+"""
+import sequana
+from sequana import snaketools as sm
+from sequana import sequana_data
+
+# This must be defined before the include
+configfile: "config.yaml"
+
+# A convenient manager
+manager = sm.PipelineManager("multitax", config)
+manager.setup(globals(), mode="warning")
+
+import matplotlib
+matplotlib.use('Agg')
+
+__taxonomy__input_fastq = manager.getrawdata()
+__taxonomy__output_summary = '{sample}/kraken/kraken.out.summary'
+__taxonomy__output_html = '{sample}/summary.html'
+__taxonomy__output_csv = '{sample}/kraken/kraken.csv'
+
+rule all:
+    input: "outputs/dendogram.png", "multiqc/multiqc_report.html", "rulegraph/rulegraph.svg"
+
+rule sequana_taxonomy:
+    input: __taxonomy__input_fastq
+    output:
+        html   = __taxonomy__output_html,
+        csv    = __taxonomy__output_csv,
+        summary= __taxonomy__output_summary
+    threads: 4
+    run:
+        outdir = output.html.split("/",1)[0]
+        if len(input) == 2:
+            cmd = "sequana_taxonomy --file1 {} --file2 {} ".format(input[0], input[1])
+        elif len(input) == 1:
+            cmd = "sequana_taxonomy --file1 {} ".format(input[0])
+        cmd += " --thread {} --databases".format(threads)
+        for this in config["sequana_taxonomy"]['databases']:
+            if this != "toydb":
+                assert os.path.exists(this), "databases {} does not exits".format(this)
+            cmd += " {} ".format(this)
+        cmd += " --output-directory {} --level {}".format(wildcards.sample, config['sequana_taxonomy']['level'])
+
+        shell(cmd)
+
+
+__summary_plot__output_summary = "outputs/sequana_kraken_summary.json"
+__summary_plot__output_image = "outputs/proportion_kraken.png"
+
+rule summary_plot:
+    input: expand("{sample}/kraken/kraken.csv", sample=sorted(manager.samples))
+    output:
+        image=__summary_plot__output_image,
+        data = __summary_plot__output_summary
+    run:
+        from sequana.kraken import MultiKrakenResults
+        k = MultiKrakenResults(input, sample_names=sorted(manager.samples))
+        k.plot_stacked_hist(output.image, dpi=200, ytick_fontsize=11, 
+            kind=config["summary_plot"]["kind"],
+            width=config["summary_plot"]["width"]
+            )
+        import json
+        with open(output.data, "w") as fout:
+             json.dump(k.get_df().to_dict(), fout, indent=True, sort_keys=True)
+
+__multiqc__input = __summary_plot__output_summary
+__multiqc__output = "multiqc/multiqc_report.html"
+
+rule multiqc:
+    input:  __multiqc__input
+    output: __multiqc__output
+    params:
+        inputdir = config['multiqc']['indir'],
+        outdir="multiqc",
+        config="multiqc_config.yaml",
+        options = config["multiqc"]["options"] 
+    shell:
+        "multiqc {params.inputdir} -o {params.outdir} -c {params.config} {params.options} 2> multiqc/multiqc.log"
+
+
+rule dendogram:
+    input: __summary_plot__output_summary
+    output: "outputs/dendogram.png"
+    params:
+        sample_file=config["dendogram"]["sample_file"]
+    run:
+        data = json.loads(open(input[0], "r").read())
+        import pandas as pd
+        import pylab
+        df = pd.DataFrame(data)
+        if len(manager.samples.keys()) == 1:
+            from sequana import sequana_data
+            data = sequana_data("no_data.png")
+            import shutil
+            shutil.copy(data, output[0])
+            return
+
+        from sequana.viz.heatmap import Heatmap
+        h = Heatmap(df.fillna(0))
+
+        if params.sample_file:
+            df = pd.read_csv(params.sample_file)
+            codes =  pd.Categorical(df.category).codes
+            df['codes'] = codes
+            #for sample, category in zip(df['sample'], df['category']):
+            for sample, category in zip(df['sample'], df['codes']):
+                h.category_column[sample] = category
+        try:
+            h.plot(colorbar_position="top left")
+            pylab.savefig(output[0], dpi=200)
+            with open("outputs/dendogram.info", "w") as fout:
+                fout.write("ok")
+        except:
+            from sequana import sequana_data
+            data = sequana_data("no_data.png")
+            import shutil
+            shutil.copy(data, output[0])
+            with open("outputs/dendogram.info", "w") as fout:
+                fout.write("failed")
+
+
+
+__conda__output = "inputs/requirements.txt"
+include: sm.modules['conda']   # Create requirements.txt(dependencies)
+__rulegraph__input = __snakefile__
+__rulegraph__input = manager.snakefile
+__rulegraph__output = "rulegraph/rulegraph.svg"
+__rulegraph__mapper = {"multiqc": "../multiqc/multiqc_report.html"}
+include: sm.modules['rulegraph']
+
+
+# Those rules takes a couple of seconds so no need for a cluster
+localrules: multiqc, rulegraph, summary_plot, dendogram
+
+
+onsuccess:
+    from sequana.modules_report.summary import SummaryModule
+    from sequana.modules_report.kraken import KrakenModule
+    intro = """<h2>Kraken analysis</h2>
+    <p>Proportion of reads in virus, bacteria, human and unclassified categories:</p>
+    <img style="height:50%;width:50%" src="outputs/proportion_kraken.png"></img><br>"""
+
+
+    data = open("outputs/dendogram.info").readline()
+    print(data)
+    if data == "ok":
+        intro += """<img style="height:50%;width:50%" src="outputs/dendogram.png"></img><br>"""
+
+    intro +="""
+    <h2>multiqc report</h2>
+    <a href="multiqc/multiqc_report.html">multiqc report</a>
+    <h2>Individual taxonomic reports</h2>
+
+    """
+    for sample in sorted(manager.samples):
+        intro += """<a href="{}/summary.html">{}/kraken</a><br>""".format(sample, sample)
+    data = {"inputs":None, "outputs":None, "html":None, 
+            "snakefile": ".sequana/" + manager.name + ".rules",
+            "config": "config.yaml", "stats": "stats.txt", 
+            "rulegraph": __rulegraph__output,
+            "requirements": "inputs/requirements.txt"}
+
+    s = SummaryModule(data, intro=intro)
+
+    #print("Please open the report index.html or {}".format(__multiqc__output))
+    #shell("ln -f -s {} index.html".format(__multiqc__output))
+    shell("chmod -R g+w .")
+
+    from sequana.snaketools import OnSuccessCleaner
+    sc = OnSuccessCleaner()
+    sc.add_makefile()
+    print("Once done, please clean up the directory using\n'make clean'")
+
+    sm.clean_multiqc(__multiqc__output)
+
+
+onerror:
+    print("An error occurred. See message above.")
