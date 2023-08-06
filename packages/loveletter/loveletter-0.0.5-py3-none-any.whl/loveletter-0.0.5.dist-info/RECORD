@@ -1,0 +1,13 @@
+loveletter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loveletter/bot.py,sha256=mdx4Ohb_yUysdVjvKuIv9fyHfRFJ1_kOT6wwKiRX45Y,13763
+loveletter/cards.py,sha256=QKeqPZiEvSXQAjsW3WixsqqztUyKg4o_aKB_5COPrC0,11091
+loveletter/game.py,sha256=QWji1oLxTR5gH9RdXVA31Z0FPTQY-fD7PfacSOY69Ck,12043
+loveletter/users.py,sha256=Is-11sGGUb0uBZGncWGGbRT8AnL7mivn4TKYZYblce0,5282
+loveletter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loveletter/tests/test_bot.py,sha256=0ZNvJ0dRBkv_nZMaInLnVDCII8xR5PAhDoh3LW_GdEQ,5115
+loveletter-0.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+loveletter-0.0.5.dist-info/METADATA,sha256=AZNDC4GRhrl1W3BLuVJ2IGQW1nZU0OuYflL4SoQu8Yw,12551
+loveletter-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+loveletter-0.0.5.dist-info/entry_points.txt,sha256=oT31Tl-TX2AjUDRU9VNI3hZ02Ef1AV-jQl8J1Rb0g98,52
+loveletter-0.0.5.dist-info/top_level.txt,sha256=vdlPUdqUgZQTUW2EtlmSr1-7OpByp3P30TmpT16rUV4,11
+loveletter-0.0.5.dist-info/RECORD,,
