@@ -1,0 +1,17 @@
+fluence/__init__.py,sha256=Lgf9keBX7aG_JEFt6UYSyiFKcm-BYGtmk9ohpQhYpyk,20
+fluence/_nbdev.py,sha256=TNZ6xnp6WbLXh1-UpevN4jh40Kv9sQsVW25RJuxhVRg,899
+fluence/adaptive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluence/adaptive/adaptive_span.py,sha256=02m4E9korI9E7RY7BEy2uZvqC7JhSb-1RsYVeOGjKCI,5105
+fluence/adaptive/entmax.py,sha256=_xbbsyIyZhh5qLrHrlMYwRSV-ebDlcUgz5BtSsoaYPE,5325
+fluence/adaptive/layerdrop.py,sha256=s9bUD0c7RuSBWD-xaG6imc00Mj6yFx_GDu7AhZ8jpwo,1740
+fluence/optimizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fluence/optimizers/lamb.py,sha256=HMjYdteJ8PrEYWBqlbLI65N6wC5Xp6EKO2YGwkutJag,4829
+fluence/optimizers/lookahead.py,sha256=MNzyce7I5zjt5R5xMVadDm7_GxNtr9hVAmLnykbRZQk,3290
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/optimizer.py,sha256=PxKxqlexdPRYTnzrEu5mq6QvVn1cjE7IxwvCHqCN6mk,524
+fluence-0.1.dist-info/LICENSE,sha256=LUUdM2xQg3jOywQjOsksq3htsRvVz__UvajUVwlL1gA,11351
+fluence-0.1.dist-info/METADATA,sha256=bC0Um3f7ykdYHZVULw6-kXPbiXPcjC_Rirv-DTsUbyI,4941
+fluence-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fluence-0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fluence-0.1.dist-info/top_level.txt,sha256=C_EUStoSanfw18MuQZIROsORGAiZCiMHlmXoD8rPY54,14
+fluence-0.1.dist-info/RECORD,,
