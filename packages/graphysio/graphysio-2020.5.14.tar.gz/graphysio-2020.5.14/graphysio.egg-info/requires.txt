@@ -1,0 +1,11 @@
+numpy
+pandas
+pathvalidate
+pint
+PyQt5
+pyqtgraph
+scipy
+sympy
+typing
+pyarrow
+pyedflib
