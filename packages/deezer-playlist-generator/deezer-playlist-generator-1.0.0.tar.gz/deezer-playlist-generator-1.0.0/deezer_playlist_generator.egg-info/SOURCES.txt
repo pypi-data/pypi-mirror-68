@@ -1,0 +1,12 @@
+README.md
+setup.py
+deezer_api/__init__.py
+deezer_api/deezer_api.py
+deezer_api/deezer_auth.py
+deezer_api/deezer_objects.py
+deezer_api/deezer_player.py
+deezer_playlist_generator.egg-info/PKG-INFO
+deezer_playlist_generator.egg-info/SOURCES.txt
+deezer_playlist_generator.egg-info/dependency_links.txt
+deezer_playlist_generator.egg-info/requires.txt
+deezer_playlist_generator.egg-info/top_level.txt
