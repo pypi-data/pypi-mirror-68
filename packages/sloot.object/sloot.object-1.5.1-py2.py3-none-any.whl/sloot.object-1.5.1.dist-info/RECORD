@@ -1,0 +1,11 @@
+sloot.object-1.5.1-nspkg.pth,sha256=F7icEJD6oB00mCwkif7eHCO-ndOWa3MbxX0n_27xm8Q,302
+sloot/object/__init__.py,sha256=tmrj2HZU5swD6LzJQ4QPy21oW5IQLsSUoQ4VPcRt7jA,151
+sloot/object/obj_utils.py,sha256=P6AGIp9l8K2rA86YlLxAzbJLuxxgtBm7aocJTWMiJv8,3842
+sloot.object-1.5.1.dist-info/DESCRIPTION.rst,sha256=Nm43nxHsTZsObzXMj8kBBEnsB7-EL9ev34G2XoGs_ns,2028
+sloot.object-1.5.1.dist-info/METADATA,sha256=spvnC7Cum3LIsgdQfDTFBZ551yc6-tYG1mgyZ8Odpy0,2737
+sloot.object-1.5.1.dist-info/RECORD,,
+sloot.object-1.5.1.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sloot.object-1.5.1.dist-info/metadata.json,sha256=GtCMn2ZaFscKa1TUrsAPwWm8_z_K4sd6i-wDN0boGNk,884
+sloot.object-1.5.1.dist-info/namespace_packages.txt,sha256=W5tlNSHqq_1g9e2zwArrQJvi0msmj5-jJiup3aUV9nY,6
+sloot.object-1.5.1.dist-info/pbr.json,sha256=P0Fo1WiWZMCYUGFVRw1ISwIyuQ1JCs2OKrS-Iq5uGj4,47
+sloot.object-1.5.1.dist-info/top_level.txt,sha256=W5tlNSHqq_1g9e2zwArrQJvi0msmj5-jJiup3aUV9nY,6
