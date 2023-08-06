@@ -1,0 +1,4 @@
+django
+django-taggit
+django-formtools
+six
