@@ -1,0 +1,3 @@
+[console_scripts]
+commute-tube = commute_tube.__main__:main
+
