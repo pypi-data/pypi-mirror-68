@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+COAsT.egg-info/PKG-INFO
+COAsT.egg-info/SOURCES.txt
+COAsT.egg-info/dependency_links.txt
+COAsT.egg-info/requires.txt
+COAsT.egg-info/top_level.txt
+coast/COAsT.py
+coast/DOMAIN.py
+coast/NEMO.py
+coast/TRANSECT.py
+coast/__init__.py
