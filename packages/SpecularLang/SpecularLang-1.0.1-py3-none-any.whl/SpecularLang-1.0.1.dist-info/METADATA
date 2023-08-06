@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: SpecularLang
+Version: 1.0.1
+Summary: Programming language that allows writers to create event-driven, complex character scenes within game engines using Specular.
+Home-page: https://github.com/Bluepuff71/SpecularLang
+Author: Emery Porter
+Author-email: emeryporter99@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: antlr4-python3-runtime
+Requires-Dist: antlr-denter
+
+UNKNOWN
+
+
