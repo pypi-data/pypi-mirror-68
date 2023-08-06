@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jupyterhub-singularityspawner
+Version: 0.0.1
+Summary: Spawns JupyterHub single user servers in Singularity containers
+Home-page: https://github.com/andersy005/jupyterhub-singularityspawner
+Maintainer: Anderson Banihirwe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
