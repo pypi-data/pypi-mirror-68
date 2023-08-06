@@ -1,0 +1,158 @@
+Metadata-Version: 2.1
+Name: psphere
+Version: 0.6.0
+Summary: vSphere SDK for Python
+Home-page: https://github.com/psphere-project/psphere
+Author: Jonathan Kinred
+Author-email: jonathan.kinred@gmail.com
+Maintainer: Thomas Grainger
+Maintainer-email: psphere@graingert.co.uk
+License: UNKNOWN
+Keywords: vsphere,vmware
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: six
+Requires-Dist: suds-community
+Requires-Dist: PyYAML
+
+Sunset Notice
+=============
+
+We strongly recommend that you start your VMware Python journey with the official `VMware pyvmomi`_ library.
+
+psphere was created when no other client was available. It was a privilege to create something that was useful to others.
+
+*"Death is only the end if you assume the story is about you."*
+*― The Nightvale Podcast*
+
+Introduction
+============
+
+psphere is a Python interface for the `VMware vSphere Web Services SDK`_, a 
+powerful API for programatically managing your VMware infrastructure:
+
+* Provision, clone and snapshot virtual machines
+* Query and configure clusters, host systems and datastores
+* Programatically configure ESXi hosts (i.e. for automation)
+
+psphere can be used to create standalone Python scripts or used as a library
+in larger Python applications (e.g. Django).
+
+Usage
+=====
+
+    >>> from psphere.client import Client
+    >>> client = Client("your.esxserver.com", "Administrator", "strongpass")
+    >>> servertime = client.si.CurrentTime()
+    >>> print(servertime)
+    2010-09-04 18:35:12.062575
+    >>> client.logout()
+
+Installation
+============
+
+The latest stable version of psphere can be installed from PyPi:
+
+# pip install -U psphere
+
+
+Community
+=========
+
+Discussion and support can be found on the `psphere Google Group`_.
+
+.. _VMware pyvmomi: https://pypi.org/project/pyvmomi/
+.. _psphere Google Group: https://groups.google.com/group/psphere
+
+.. _VMware vSphere Web Services SDK: http://pubs.vmware.com/vsphere-50/index.jsp?topic=/com.vmware.wssdk.apiref.doc_50/right-pane.html
+
+
+Releasing
+---------
+
+To perform a release, you will need to be an admin for the project on
+GitHub and on PyPI. Contact the maintainers if you need that access.
+
+You will need to have a `~/.pypirc` with your PyPI credentials and
+also the following settings::
+
+    [zest.releaser]
+    create-wheels = yes
+
+To perform a release, run the following::
+
+    python3.7 -m venv ~/.virtualenvs/dist
+    workon dist
+    pip install -U pip setuptools wheel
+    pip install -U tox zest.releaser
+    fullrelease  # follow prompts, use semver ish with versions.
+
+The releaser will handle updating version data on the package and in
+CHANGES.rst along with tagging the repo and uploading to PyPI.
+
+0.6.0 (2020-05-12)
+------------------
+
+- Upgrade setup.py to setup.cfg
+
+
+0.6.0a1 (2019-03-26)
+--------------------
+
+- use maintained suds-community
+
+
+0.6.0a (2019-02-18)
+-------------------
+
+- support HTTPS by passing an ssl.SSLContext
+- use more secure suds-jurko
+- use `except Exception as e` syntax
+- switch to zest.releaser
+
+Version 0.5.2
+-------------
+
+(bugfix release, released on April 5th 2013)
+
+- Add an example showing how to list VMs on a host
+- Add a new example of powering on many VMs at once
+- Fix regression that calls _init_logging() and remove the function for good.
+- Update references from bitbucket to github
+- Merge bitbucket pull request: Pierre-Yves D Fixed error when setting extraOptions on VM creation
+- Merge bitbucket pull request: Saju M 3cbdf636d068 Adding example get_filesize_by_path
+- MANIFEST.in: s/README/README.rst
+- Updated managed objects to include new objects in sphere 5.0
+- When pre-loading objects, don't try and pre-load them when the requested attributed contains an empty list. fixes #7
+- Replace print calls with logging calls. fixes issue 8
+- Remove use of sys.exit and raise exceptions instead. fixes issue 8
+- Use `*args` to pass log strings (efficiency, as log mesages won't be string formatted unless they're actually logged). Remove _init_logging to mak
+- Convert Windows path to WSDL file to URI format
+- Documentation updates
+
+Version 0.5.1
+-------------
+
+(bugfix release, released on August 19th 2011)
+
+Version 0.5.0
+-------------
+
+(major release, released on August 11th 2011)
+
+- The API has completely changed, programs written for 0.1.4 will not work in
+  0.5.0 or later versions.
+- Implements vSphere SDK 4.1
+- All vSphere Managed Object's are implemented including all properties.
+- Object properties are now lazily loaded on first access and cached for
+  5 minutes.
+
+Version 0.1.4
+-------------
+
+Released on July 15th 2011
+
+- Primitive release of psphere for Aeolus Project to package into Fedora.
+
+
