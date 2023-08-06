@@ -1,0 +1,25 @@
+{
+  "id": "k1gaggle/unet-with-se-resnext50-32x4d-encoder-for-stage-2",
+  "title": "UNet with se_resnext50_32x4d encoder for stage-2",
+  "code_file": "main.py",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "gpu"
+  ],
+  "dataset_sources": [
+    "abhishek/siim-png-images",
+    "ivanzhovannik/siim_stage2_png",
+    "mobassir/siimpng",
+    "mobassir/siimtraincsv",
+    "mobassir/siimmy",
+    "mobassir/mysiim"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "siim-acr-pneumothorax-segmentation"
+  ]
+}
