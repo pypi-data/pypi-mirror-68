@@ -1,0 +1,11 @@
+OpaExceptions/OpaExceptions.py,sha256=yciDtTlP_LVoToLINVppHLiVjTwlSl0t5iFxkqXS59E,2723
+OpaExceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opa_client/__init__.py,sha256=qqvfBVRv5gKG0DBgt6eKCU5kh5-Fs7iY-zN2z8or5pU,100
+opa_client/opa.py,sha256=KvQNumCUVShQ_5IbfRZDLAdUJkkxrwJouPDrAdMUdr8,18015
+opa_client/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opa_client/test/test_opa.py,sha256=67URSzWqsgg0AgDKMJ4jvp_GGyC5KqLhjVr81tprKx4,4891
+OPA_python_client-1.2.0.dist-info/LICENCE.md,sha256=2tc0ppbGKv6KXxWc7iFkH6IodmHJmS8LZfzSHsySIc4,1078
+OPA_python_client-1.2.0.dist-info/METADATA,sha256=7vACSJmL66tzTt-FJ3ElaEozHO79WEaTlhxnNd45-n4,5211
+OPA_python_client-1.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+OPA_python_client-1.2.0.dist-info/top_level.txt,sha256=Tt1bN6xKm77l6IDE4jvo-hFnGcq-APPxOFSYaZO5YQo,25
+OPA_python_client-1.2.0.dist-info/RECORD,,
