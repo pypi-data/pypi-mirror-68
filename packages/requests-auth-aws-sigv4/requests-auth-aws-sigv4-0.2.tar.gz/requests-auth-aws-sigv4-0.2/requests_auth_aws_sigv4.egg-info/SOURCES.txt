@@ -1,0 +1,9 @@
+README.md
+setup.py
+requests_auth_aws_sigv4/__init__.py
+requests_auth_aws_sigv4/__main__.py
+requests_auth_aws_sigv4.egg-info/PKG-INFO
+requests_auth_aws_sigv4.egg-info/SOURCES.txt
+requests_auth_aws_sigv4.egg-info/dependency_links.txt
+requests_auth_aws_sigv4.egg-info/requires.txt
+requests_auth_aws_sigv4.egg-info/top_level.txt
