@@ -1,0 +1,4 @@
+[console_scripts]
+nexxT-console = nexxT.core.AppConsole:mainConsole
+nexxT-gui = nexxT.core.AppConsole:mainGui
+
