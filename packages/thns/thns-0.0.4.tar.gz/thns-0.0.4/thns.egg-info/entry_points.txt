@@ -1,0 +1,3 @@
+[console_scripts]
+thns = thns.__main__:main
+
