@@ -1,0 +1,16 @@
+upload_form/__init__.py,sha256=TZkGuMIRSRmUY3XCIs5owt2o60vXyqYMHWIkhx65uYE,22
+upload_form/apps.py,sha256=cgiFjEu3kVJwOW2XGGdRXq7vdKPvVDtVCVnyWdbLNU4,96
+upload_form/forms.py,sha256=MoCtlN9lmbUFfFHK4QopTf1fYBHZEmP9Ih4AD7lLlTM,3134
+upload_form/urls.py,sha256=sdhwHzrlni_CPQHt3lcP9ou5l76a8Po63HJZkLqG3aM,167
+upload_form/views.py,sha256=7SJtRU9xTvdR7aAlQoSCiF8fzkUMS2O1qlI13wibaWQ,1344
+upload_form/locale/it/LC_MESSAGES/django.mo,sha256=OOp5-wVBzgU2P2HxbxJ-v8YActSU2_Mp38he-3uyF08,1111
+upload_form/locale/it/LC_MESSAGES/django.po,sha256=qn1S6ITUqj9KDFBeEsskweAtB8A3MlDizp4FAawr5ro,1781
+upload_form/static/upload_form/upload_form.css,sha256=HILQk6C6K3P9uloVgGjdav9V9fSeugIwcVBZX0s3JPI,1097
+upload_form/static/upload_form/upload_form.js,sha256=eKb7Q6HtCwhmp-tPwjyiY_KpzaVsNWsCHjZEugnsFkA,6484
+upload_form/templates/upload_form/test_view.html,sha256=PoI5S4y9uKBQl6nDOdAI5IoQxAnuqgIizMD-kqEdCN4,647
+upload_form/templates/upload_form/upload_form.html,sha256=UEDzALeVAFIiDXuYrhBKb9Kljv9fZL7NK2w7ppo91-4,2412
+django_upload_form-0.3.1.dist-info/LICENSE,sha256=TGT3uxVt9WY6Np7_eFFcnn_6s1yRbARLzS6A5kutUqQ,1072
+django_upload_form-0.3.1.dist-info/METADATA,sha256=BKnwDIXpvdHiym_Dy05TV9YhLTJ8a3WbSypw_M3yI6I,8956
+django_upload_form-0.3.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_upload_form-0.3.1.dist-info/top_level.txt,sha256=1y_nGR--tEzKVTv_Gl_upVRm3MOGl6WVqVLzP434Pks,12
+django_upload_form-0.3.1.dist-info/RECORD,,

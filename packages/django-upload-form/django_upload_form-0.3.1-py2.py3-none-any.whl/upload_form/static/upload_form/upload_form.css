@@ -1,0 +1,66 @@
+
+
+#umf_drop_area {
+    border: 2px dashed #ccc;
+    border-radius: 20px;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#umf_drop_area.highlight {
+    border-color: #69f;
+    background-color: #666;
+}
+
+
+#umf_drop_area label {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.8em;
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    color: #444;
+    background-color: #999;
+    border-radius: 20px;
+}
+
+#umf_drop_area label i {
+    font-size: 1.5em;
+}
+
+#umf_drop_area .umf_file_list {
+    margin: 0 auto;
+    width: 80%;
+    color: #999;
+    border: 1px solid #999;
+}
+
+#umf_drop_area .umf_file_list th,
+#umf_drop_area .umf_file_list td {
+    border: 1px solid #999;
+    padding: 0 4px;
+}
+
+#umf_drop_area .umf_file_list th {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#umf_drop_area .errorlist {
+    list-style: dash;
+}
+
+#umf_drop_area .errorlist li {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#umf_drop_area .submit button {
+    margin: 10px 0;
+}
