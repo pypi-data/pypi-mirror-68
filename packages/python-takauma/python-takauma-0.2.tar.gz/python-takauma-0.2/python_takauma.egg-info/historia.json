@@ -1,0 +1,38 @@
+[
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "125a77cefed615beab946d179425b495fc7aadac",
+    "versio": "0.2",
+    "kuvaus": "Versio 0.2"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "10abb42f0dd4a6937444931c2bab7965c4be8193",
+    "versio": "0.2",
+    "kuvaus": "Normalisoidaan asennettujen moduulien tiedostopolut `os.path.realpath`-funktion avulla"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "d27193ccfa9a9ddaf1af6cb1c98a66c555529d5f",
+    "versio": "0.1.2",
+    "kuvaus": "Vaihdettu `Distribution._get_version()`-kutsut `.version`-m\u00e4\u00e4reen hakuun"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "fe246819f2854944ffa3ccd93bb1cb53589c0054",
+    "versio": "0.1.1",
+    "kuvaus": "Parannettu virheensietoa"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "1159fb448680826874602cd4f93a1c839ce897fb",
+    "versio": "0.1",
+    "kuvaus": "Versio 0.1"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "106329711fc460fc4eec7c9cbf40d92ca54eb173",
+    "versio": "0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
