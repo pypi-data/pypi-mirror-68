@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: Flickr-Mirror-Ngoc-Dang
+Version: 1.0.3
+Summary: A mirror Flickr photostream tool
+Home-page: https://github.com/intek-training-jsc/flickr-mirroring-Friendlyngoc
+Author: Dang Duc Ngoc
+Author-email: ngoc.dang@f4.intek.edu.vn
+Maintainer: Dang Duc Ngoc
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: astroid (==2.4.1)
+Requires-Dist: certifi (==2020.4.5.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.9)
+Requires-Dist: isort (==4.3.21)
+Requires-Dist: langdetect (==1.0.8)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: pylint (==2.5.2)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: toml (==0.10.0)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: typed-ast (==1.4.1) ; implementation_name == "cpython" and python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: appdirs (==1.4.3) ; extra == 'dev'
+Requires-Dist: attrs (==19.3.0) ; extra == 'dev'
+Requires-Dist: cached-property (==1.5.1) ; extra == 'dev'
+Requires-Dist: cerberus (==1.3.2) ; extra == 'dev'
+Requires-Dist: certifi (==2020.4.5.1) ; extra == 'dev'
+Requires-Dist: chardet (==3.0.4) ; extra == 'dev'
+Requires-Dist: click (==7.1.2) ; extra == 'dev'
+Requires-Dist: colorama (==0.4.3) ; extra == 'dev'
+Requires-Dist: distlib (==0.3.0) ; extra == 'dev'
+Requires-Dist: idna (==2.9) ; extra == 'dev'
+Requires-Dist: orderedmultidict (==1.0.1) ; extra == 'dev'
+Requires-Dist: packaging (==20.3) ; extra == 'dev'
+Requires-Dist: pathspec (==0.8.0) ; extra == 'dev'
+Requires-Dist: pep517 (==0.8.2) ; extra == 'dev'
+Requires-Dist: pip-shims (==0.5.2) ; extra == 'dev'
+Requires-Dist: pipenv-setup (==3.0.1) ; extra == 'dev'
+Requires-Dist: pipfile (==0.0.2) ; extra == 'dev'
+Requires-Dist: plette[validation] (==0.2.3) ; extra == 'dev'
+Requires-Dist: pyparsing (==2.4.7) ; extra == 'dev'
+Requires-Dist: python-dateutil (==2.8.1) ; extra == 'dev'
+Requires-Dist: regex (==2020.5.7) ; extra == 'dev'
+Requires-Dist: requests (==2.23.0) ; extra == 'dev'
+Requires-Dist: requirementslib (==1.5.7) ; extra == 'dev'
+Requires-Dist: six (==1.14.0) ; extra == 'dev'
+Requires-Dist: toml (==0.10.0) ; extra == 'dev'
+Requires-Dist: tomlkit (==0.6.0) ; extra == 'dev'
+Requires-Dist: typing (==3.7.4.1) ; extra == 'dev'
+Requires-Dist: urllib3 (==1.25.9) ; extra == 'dev'
+Requires-Dist: vistir (==0.5.0) ; extra == 'dev'
+Requires-Dist: wheel (==0.34.2) ; extra == 'dev'
+Requires-Dist: zipp (==3.1.0) ; extra == 'dev'
+Requires-Dist: typed-ast (==1.4.1) ; (implementation_name == "cpython" and python_version < "3.8") and extra == 'dev'
+Requires-Dist: importlib-metadata (==1.6.0) ; (python_version < "3.8") and extra == 'dev'
+Requires-Dist: black (==19.10b0) ; (python_version >= "3.6") and extra == 'dev'
+
+# Mirroring Flickr Photostream
+
+## Overview
+
+A command line aims to create a local backup of your Flickr Photostream in your
+computer. Since there might be certain issues related to data lost, you might
+want to have this install to save your data at anytime. It can only mirro images
+with the highest resolution and data (description, comments and title) a json
+file
+
+This command line utilize 2 download methods:
+- First in first out: Download from the last images from the last page
+- Last in first out: Always download from the lastest images
+
+## Usage
+
+Since this is mainly developed in Linux, install in Windows might not work but
+i will be develop later on
+
+An example of install
+```
+# Setup a binary directory to install our Flickr mirroring utility
+$ mkdir -p ~/.local/bin/intek_flickr_mirroring
+$ cd ~/.local/bin/intek_flickr_mirroring
+
+# Setup a Python virtual environment
+$ pipenv shell --three
+Creating a virtualenv for this project...
+Pipfile: /home/intek/.local/bin/intek_flickr_mirroring/Pipfile
+Using /usr/local/bin/python3.7 (3.7.4) to create virtualenv...
+⠦ Creating virtual environment...Using base prefix '/usr/local'
+New python executable in /home/intek/.virtualenvs/intek_flickr_mirroring-wqvphFZ0/bin/python3.7
+Also creating executable in /home/intek/.virtualenvs/intek_flickr_mirroring-wqvphFZ0/bin/python
+Installing setuptools, pip, wheel...done.
+Running virtualenv with interpreter /usr/local/bin/python3.7
+
+✔ Successfully created virtual environment!
+Virtualenv location: /home/intek/.virtualenvs/intek_flickr_mirroring-wqvphFZ0
+Creating a Pipfile for this project...
+Launching subshell in virtual environment...
+ . /home/intek/.virtualenvs/intek_flickr_mirroring-wqvphFZ0/bin/activate
+
+# Install our Flickr mirroring utility
+(intek_flickr_mirroring) $ pipenv install Flickr-Mirror-Ngoc-Dang
+Installing intek-flickr-mirroring...
+Adding intek-flickr-mirroring to Pipfile's [packages]...
+✔ Installation Succeeded
+Pipfile.lock not found, creating...
+Locking [dev-packages] dependencies...
+Locking [packages] dependencies...
+✔ Success!
+Updated Pipfile.lock (96799b)!
+Installing dependencies from Pipfile.lock (96799b)...
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 38/38 — 00:00:56
+
+# Execute our Bash script
+(intek_flickr_mirroring) $ mirror_flickr --help
+usage: mirror_flickr [-h] [--cache-path CACHE PATH]
+                     [--consumer-key CONSUMER KEY]
+                     [--consumer-secret CONSUMER SECRET] [--debug LEVEL]
+                     [--fifo] [--image-only] [--info-level LEVEL]
+                     [--info-only] [--lifo] [--save-api-keys] [--verify-image]
+                     --username USERNAME
+
+Flickr Mirroring
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --cache-path CACHE PATH
+                        specify the absolute path where the images and/or
+                        information of the photos downloaded from Flickr need
+                        to be cached
+  --fifo                specify the First-In First-Out method to mirror the
+                        user's photostream, from the oldest uploaded photo to
+                        the earliest
+  --image-only          specify whether the script must only download photos'
+                        images
+  --info-level LEVEL    specify the level of information of a photo to fetch
+                        (value between 0 and 2)
+  --info-only           specify whether the script must only download photos'
+                        information
+  --lifo                specify the Last-In First-Out method to mirror the
+                        user's photostream, from the earliest uploaded photo
+                        to the lastest (default option)
+  --save-api-keys       specify whether to save the Flickr API keys for
+                        further usage
+  --username USERNAME   username of the account of a user on Flickr to mirror
+                        their photostream
+```
+
+An example of downloading file
+
+```
+# save api key for first time used
+# download with lifo( default is also lifo)
+# select your username or any valid username
+$ mirror_flickr --username manhhai --save-api-keys --lifo
+Enter your Flickr API key:
+Enter your Flickr API secret:
+2020-03-23 08:49:27,630 [INFO] Scanning page 1/1026...
+2020-03-23 08:43:40,648 [INFO] Caching image of photo 6dbf9c52ccec1722e32161cd41d6a290...
+2020-03-23 08:43:41,546 [INFO] Caching image of photo f5275b3940b714fdb083995086ca2b83...
+2020-03-23 08:49:27,660 [INFO] Caching image of photo ee6557cf53ebcfdbd66c617ca9e6c75f...
+2020-03-23 08:49:32,540 [INFO] Caching image of photo 0e35aa2fab6527ebc98cc7a285d2cc12...
+2020-03-23 08:49:33,637 [INFO] Caching image of photo 397d6bc91f7f6642373a5323dea291fb...
+```
+
+## Contact information
+
+- Name: Dang Duc Ngoc
+- Maintainer: Dang Duc Ngoc
+- Email: ngoc.dang@f4.intek.edu.vn
+- Phone: (+84) 90 690 2056
+
+

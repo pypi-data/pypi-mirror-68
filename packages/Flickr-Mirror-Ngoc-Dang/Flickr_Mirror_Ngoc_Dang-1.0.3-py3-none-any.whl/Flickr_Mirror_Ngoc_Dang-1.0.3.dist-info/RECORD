@@ -1,0 +1,12 @@
+mirroring_flickr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mirroring_flickr/__main__.py,sha256=311Lbn9Gibb0HmbgfoeOmTIyOH2v_Fel8qHhs4mau40,714
+mirroring_flickr/cache_strategy.py,sha256=_XwR7PqAkRDKsvLW49M3OWneb3rVQDnwfq4e45sSDs4,214
+mirroring_flickr/constants.py,sha256=Wmy5kWln18OPP47dJh-1Ob56mUciueByyd7CYpAF7lo,6332
+mirroring_flickr/flickr.py,sha256=J1A6ReRMxURO5ZLwR9Wq5XZBJiZCV695L-BCGb2gCRo,38603
+mirroring_flickr/parser.py,sha256=1djPQx7iNvudsbsv01tFKE2cQ1scVuD8dZMx_KTymQI,6624
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/LICENSE,sha256=pMzslLcFkQ5BAv-YR8gVCRuINvcuKh7EEoMvpJctxFA,1095
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/METADATA,sha256=2DCV00PMlwHNOgVKOEds1kH1qEQSXFDp4gqC6OLr5aE,7772
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/entry_points.txt,sha256=leaxS8eOSxKOFgcEiKg5zoZcwHiqxbDcOq37dK5Wv3M,66
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/top_level.txt,sha256=0xs0BWfQ7-Iy6dVRgF5kyn-c0L41f6kKuznUlr3t2tU,17
+Flickr_Mirror_Ngoc_Dang-1.0.3.dist-info/RECORD,,
