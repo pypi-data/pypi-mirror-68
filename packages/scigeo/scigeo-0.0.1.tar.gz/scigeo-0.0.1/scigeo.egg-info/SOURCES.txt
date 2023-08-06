@@ -1,0 +1,6 @@
+setup.py
+scigeo.egg-info/PKG-INFO
+scigeo.egg-info/SOURCES.txt
+scigeo.egg-info/dependency_links.txt
+scigeo.egg-info/requires.txt
+scigeo.egg-info/top_level.txt
