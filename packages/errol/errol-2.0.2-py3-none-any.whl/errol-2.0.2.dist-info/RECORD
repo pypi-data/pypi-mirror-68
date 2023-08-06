@@ -1,0 +1,12 @@
+errol/__init__.py,sha256=y3vctqm-0goByHDMIwVwobJbVUCKIgnxhkTwYyMSgOs,190
+errol/config_parser.py,sha256=A-aKkw6xs0orjTX_Dj9phKjarXJhowOJmpeSFu5UndU,1678
+errol/errol_launcher.py,sha256=vta_ZWxyneOvsyzYqMmrxre_oHCmg-8mCamm4VyffaI,3565
+errol/watcher.py,sha256=7fm5PU6P2fxZN_eDzZUAkV2QrZ34fi3cx4QhN5j14Yo,2721
+errol/xmpp.py,sha256=_4gizUiyKL1o48YUwKzKtY_C34kKcDEwyCBvmqoA0Kg,16328
+errol/data/template.xml,sha256=U2P0IAo8uK6cxqPg7FHJwyDbOfovn0ZMOGlbKOfPUuo,340
+errol-2.0.2.dist-info/LICENCE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+errol-2.0.2.dist-info/METADATA,sha256=7A6eUNXCpcP7yYqQ3j27TmW4GSePbgGLT1bAXOO2RLQ,8259
+errol-2.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+errol-2.0.2.dist-info/entry_points.txt,sha256=fQ3OYZgDVluFBrEITzse_d7QWkprdbOveybc3dd3ir0,57
+errol-2.0.2.dist-info/top_level.txt,sha256=zplflbTm2Gg5ACedtXRgdfyWjmxjWAR8nvk2jEB8450,6
+errol-2.0.2.dist-info/RECORD,,
