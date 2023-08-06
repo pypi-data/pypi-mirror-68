@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fileselector/FileSelector.py
+fileselector/fileselector.py
+fileselector.egg-info/PKG-INFO
+fileselector.egg-info/SOURCES.txt
+fileselector.egg-info/dependency_links.txt
+fileselector.egg-info/requires.txt
+fileselector.egg-info/top_level.txt
