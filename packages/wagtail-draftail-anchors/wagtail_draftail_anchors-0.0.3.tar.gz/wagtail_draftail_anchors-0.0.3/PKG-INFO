@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wagtail_draftail_anchors
+Version: 0.0.3
+Summary: A Draftail extension to add anchor identifiers to rich text
+Home-page: https://github.com/jacobtoppm/wagtail_draftail_anchors
+Author: Jacob Topp-Mugglestone, Quoc Duan
+Author-email: jacobtm@torchbox.com
+License: UNKNOWN
+Description: # Wagtail Draftail Anchors
+        
+        Adds the ability to add and edit anchors in the Draftail rich text editor, as well as automatically adding
+        (slug-form) anchor ids to all headings.
+        
+        ## Installation
+        
+        Add `'wagtail_draftail_anchors'` to `INSTALLED_APPS` below `wagtail.admin`.
+        
+        Add `'anchor-identifier'` to the features of any rich text field where you have overridden the default feature list.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
