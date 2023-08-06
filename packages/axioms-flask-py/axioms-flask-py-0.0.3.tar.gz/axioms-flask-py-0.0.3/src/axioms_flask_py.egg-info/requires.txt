@@ -1,0 +1,6 @@
+pyjwt
+jwcrypto
+python-box
+Flask
+Flask-DotEnv
+six
