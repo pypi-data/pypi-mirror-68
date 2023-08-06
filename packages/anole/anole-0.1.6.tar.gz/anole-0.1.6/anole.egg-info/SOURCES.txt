@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+anole/__init__.py
+anole/error.py
+anole/fake.py
+anole/run.py
+anole/setting.py
+anole/tool.py
+anole.egg-info/PKG-INFO
+anole.egg-info/SOURCES.txt
+anole.egg-info/dependency_links.txt
+anole.egg-info/entry_points.txt
+anole.egg-info/requires.txt
+anole.egg-info/top_level.txt
