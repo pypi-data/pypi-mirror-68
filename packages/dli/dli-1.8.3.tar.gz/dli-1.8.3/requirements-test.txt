@@ -1,0 +1,11 @@
+httpretty
+pytest
+pytest-cov
+pytest-sugar
+moto
+freezegun
+pytest-benchmark>=3.2.2
+pytest-flake8
+pytest-parallel
+selenium==3.141.0
+flake8-requirements
