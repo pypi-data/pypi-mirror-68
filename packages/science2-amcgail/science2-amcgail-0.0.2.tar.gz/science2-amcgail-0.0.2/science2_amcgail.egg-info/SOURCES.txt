@@ -1,0 +1,9 @@
+README.md
+setup.py
+science2/__init__.py
+science2/__main__.py
+science2/lib.py
+science2_amcgail.egg-info/PKG-INFO
+science2_amcgail.egg-info/SOURCES.txt
+science2_amcgail.egg-info/dependency_links.txt
+science2_amcgail.egg-info/top_level.txt
