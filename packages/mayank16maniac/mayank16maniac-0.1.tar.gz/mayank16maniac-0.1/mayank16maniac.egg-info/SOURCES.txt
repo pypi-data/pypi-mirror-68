@@ -1,0 +1,10 @@
+setup.py
+mayank16maniac/Binomialdistribution.py
+mayank16maniac/Gaussiandistribution.py
+mayank16maniac/Generaldistribution.py
+mayank16maniac/__init__.py
+mayank16maniac.egg-info/PKG-INFO
+mayank16maniac.egg-info/SOURCES.txt
+mayank16maniac.egg-info/dependency_links.txt
+mayank16maniac.egg-info/not-zip-safe
+mayank16maniac.egg-info/top_level.txt
