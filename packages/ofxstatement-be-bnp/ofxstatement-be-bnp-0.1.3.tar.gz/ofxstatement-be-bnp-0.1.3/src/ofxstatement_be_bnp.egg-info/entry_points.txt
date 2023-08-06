@@ -1,0 +1,3 @@
+[ofxstatement]
+bnp = ofxstatement.plugins.bnp:bnpPlugin
+
