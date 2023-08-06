@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: inventree
+Version: 0.0.3
+Summary: Python interface for InvenTree inventory management system
+Home-page: https://github.com/inventree/inventree-python/
+Author: Oliver Walters
+Author-email: oliver.henry.walters@gmail.com
+License: MIT
+Description: Python interface for InvenTree inventory management system
+Keywords: bom,bill of materials,stock,inventory,management,barcode
+Platform: UNKNOWN
+Requires-Python: >=3.6
