@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: graphene-prometheus
+Version: 0.1.0
+Summary: Prometheus exporter middleware for the Graphene GraphQL framework.
+Home-page: https://github.com/courtsite/graphene-prometheus
+License: MIT
+Keywords: graphql,graphene,middleware,prometheus,metrics
+Author: Courtsite
+Author-email: tech+os@courtsite.dev
+Maintainer: Ian L.
+Maintainer-email: ian+os@courtsite.dev
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphene (>=2.1.8,<3.0.0)
+Requires-Dist: prometheus_client (>=0.7.1,<0.8.0)
+Project-URL: Repository, https://github.com/courtsite/graphene-prometheus
+Description-Content-Type: text/markdown
+
+# graphene-prometheus
+
+📊 Prometheus exporter middleware for the Graphene GraphQL framework.
+
+_This is still under development. Use at your own risk._
+
+## Usage
+
+Install using `pip install graphene-prometheus` or `poetry add graphene-prometheus`.
+
+### Graphene
+
+```python
+import graphene_prometheus
+
+schema.execute("THE QUERY", middleware=[graphene_prometheus.PrometheusMiddleware()])
+```
+
+See https://docs.graphene-python.org/en/latest/execution/middleware/#middleware for more information.
+
+### Django
+
+In `settings.py`:
+
+```python
+GRAPHENE = {
+    "MIDDLEWARE": ["graphene_prometheus.PrometheusMiddleware"],
+}
+```
+
+See https://docs.graphene-python.org/projects/django/en/latest/settings/#middleware for more information.
+
+### FastAPI / Starlette
+
+Coming soon.
+
