@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: recompy
+Version: 1.0.1
+Summary: A recommender library
+Home-page: https://github.com/canbul/recompy
+Author: Can Bulguoglu, Oguz Kaplan, Onur Boyacı, Emre Yuksel
+Author-email: canbulguoglu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.18.4)
+
+Recompy is a recommendation library which allows users to train and test models easily.
+
+

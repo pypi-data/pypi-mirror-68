@@ -1,0 +1,12 @@
+recompy/FunkSVD.py,sha256=OgeY0pgVjCXj9OwVORsZDblsyH0s5n1IRmTRd0SqvKE,9826
+recompy/Initializer.py,sha256=x_X6HGk8yzVStU1aO7zQBQIA1oOidq9ubGhZuQVWE4E,2063
+recompy/Similarities.py,sha256=Zm9bjtrhx5Xl2QMSJHsYp7Kxfn6LMboiBI4ratOZTvI,3292
+recompy/Test.py,sha256=ld3_XBIFyYN_KsYLoWc2M0q7mQLvMwYRJ29NuOxJ1iI,3130
+recompy/__init__.py,sha256=GgbvjDPAhlepiTyfMwChRaNtpwKO-5E3iM4iu7ZHIxw,284
+recompy/data/movielens100k.csv,sha256=hRrU8u0FG60WrrA7LgUC4cN2Fj6Zvh4FPsc9Ty8mgHw,979190
+recompy/data/ratings_small.csv,sha256=gheVMx_ZdLvnqEFvKn7sK1SKSF3ttHoHNYCwqaigqNI,2438266
+recompy-1.0.1.dist-info/LICENSE,sha256=tAB3xjnRAIsLn4Xef4O_qje-esYHmebUtTTMknoT66Y,1069
+recompy-1.0.1.dist-info/METADATA,sha256=CaiJWe39OkbcLE2wl27EQ_sdBg7ciF8hr3FFK1R7ZdY,593
+recompy-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+recompy-1.0.1.dist-info/top_level.txt,sha256=y3IPio2GgDwkOnMetGGlod0a_oN8LU0YdjEyqr_SGT4,8
+recompy-1.0.1.dist-info/RECORD,,
