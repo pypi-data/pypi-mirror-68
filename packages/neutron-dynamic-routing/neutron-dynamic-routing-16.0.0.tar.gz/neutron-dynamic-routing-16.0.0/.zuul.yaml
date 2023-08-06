@@ -1,0 +1,25 @@
+- job:
+    name: neutron-dynamic-routing-functional
+    parent: neutron-functional
+    vars:
+        project_name: neutron-dynamic-routing-functional
+
+- project:
+    templates:
+      - check-requirements
+      - openstack-cover-jobs-neutron
+      - openstack-lower-constraints-jobs-neutron
+      - openstack-python3-ussuri-jobs-neutron
+      - publish-openstack-docs-pti
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - neutron-dynamic-routing-functional
+        - neutron-tempest-plugin-dynamic-routing
+    gate:
+      jobs:
+        - neutron-dynamic-routing-functional
+        - neutron-tempest-plugin-dynamic-routing
+    periodic:
+      jobs:
+        - legacy-periodic-neutron-dynamic-routing-dsvm-tempest-with-ryu-master-scenario-ipv4
