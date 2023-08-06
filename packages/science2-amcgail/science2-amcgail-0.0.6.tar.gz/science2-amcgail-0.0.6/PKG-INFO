@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: science2-amcgail
+Version: 0.0.6
+Summary: Analyzing the evolution of ideas using citation analysis
+Home-page: https://github.com/amcgail/science2
+Author: Alec McGail
+Author-email: amcgail2@gmail.com
+License: UNKNOWN
+Description: This repository contains 
+          the code and data I used to analyze the deaths of a million citations in Sociology articles.
+        The repository provides code and documentation for producing all analyses and figures in the final paper.
+        
+        # Installation
+        
+        1. Install Python 3.7
+        2. Run `pip install science2-amcgail`
+        
+        # Quick start
+        
+        The following command starts jupyterlab in the base directory of this repository. This is a good place to start.
+        
+        `python -m science2 start`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
