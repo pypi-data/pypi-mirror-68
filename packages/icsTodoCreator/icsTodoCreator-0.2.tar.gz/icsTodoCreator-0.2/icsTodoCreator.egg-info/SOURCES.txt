@@ -1,0 +1,7 @@
+README.md
+setup.py
+icsTodoCreator.egg-info/PKG-INFO
+icsTodoCreator.egg-info/SOURCES.txt
+icsTodoCreator.egg-info/dependency_links.txt
+icsTodoCreator.egg-info/top_level.txt
+ics_creator/__init__.py
