@@ -1,0 +1,3 @@
+[console_scripts]
+sardine=sardine.cli.main:main
+
