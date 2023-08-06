@@ -1,0 +1,402 @@
+#!/usr/local/bin/python3.8
+# Version : v1.2
+
+from loguru import logger
+from mysql_db_backup_faster import Helper
+import datetime
+import subprocess
+import json
+import os
+import inspect
+import configparser
+import sys
+import time
+import threading
+import queue
+import time
+from os import system, name 
+from os import walk
+from optparse import OptionParser
+import shutil
+
+logger.add("/var/log/mysqlbackup/backup_log_{time}.log", format="{time} {level} {message}", backtrace=True, diagnose=True, level="INFO")
+
+q = queue.Queue()
+BACKUP_FOLDER	= "/tmp/dbbackup"
+variable = []
+
+OPT_PATH	=	"/opt/mysqlbackup/"
+SCRIPT_NAME_SPLIT	   = inspect.getfile(inspect.currentframe()).split("/", -1)
+SCRIPT_NAME			 = SCRIPT_NAME_SPLIT[len(SCRIPT_NAME_SPLIT) - 1].split(".")[0]
+
+DOING_SIZE=0
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+# Print iterations progress
+def print_progress(iteration, total, prefix='Progress:', suffix='Complete', decimals=1, bar_length=100):
+	global variable
+	"""
+	Call in a loop to create terminal progress bar
+	@params:
+		iteration   - Required  : 현재 위치 (Int)
+		total	   - Required  : 전체 위치 (Int)
+		prefix	  - Optional  : 전위 문자 (Str)
+		suffix	  - Optional  : 후위 문자 (Str)
+		decimals	- Optional  : 소수점 이하 자리 표시 (Int)
+		bar_length  - Optional  : 프로그레스바 전체 길이 (Int)
+	"""
+
+	str_format = "{0:." + str(decimals) + "f}"
+	current_progress = iteration / float(total)
+	percents = str_format.format(100 * current_progress)
+	filled_length = int(round(bar_length * current_progress))
+	bar = "#" * filled_length + '-' * (bar_length - filled_length)
+
+	time.sleep(1)
+	system('clear') 
+	
+
+	message = "{} |{}| {}{} {}".format(prefix, bar, percents, '%', suffix)
+	# 캐리지 리턴(\r) 문자를 이용해서 출력후 커서를 라인의 처음으로 옮김 
+	sys.stdout.write('\r{}'.format(message))
+
+	print("\n")
+	for i in range(0, len(variable)):
+		status = ""
+
+		if not variable[i]:
+			variable[i] = {"do":"END", "item":""}
+
+
+		if variable[i]["do"] == "END":
+			status = "{}{}{}{}".format(bcolors.OKGREEN, bcolors.BOLD, variable[i]["do"], bcolors.ENDC)
+		else:
+			status = "{}{}{}{}".format(bcolors.WARNING, bcolors.BOLD, variable[i]["do"], bcolors.ENDC)
+
+		print("THREAD {} ({}) : {}".format(str(i), status, variable[i]["item"]))
+
+	# 현재 위치가 전체 위치에 도달하면 개행문자 추가 
+	if iteration == total:
+		sys.stdout.write('\n')
+
+	# 버퍼의 문자를 출력 
+	sys.stdout.flush()
+
+class Configure:
+	option_list =	 {
+						"backup":{
+							"backup_list":[
+								{
+									"list": ["%"],
+									"not_list":[],
+									"use": 1,
+									"database": "test",
+									"name": "test"
+								}
+							],
+							"etc":{
+								"job":5,
+								"compression":{
+									"use":1,
+									"temp_directory":"./backup/",
+									"save_to_location":"./backup/",
+									"file_name_format":"%Y%m%d_test.tar.gz"
+								},
+								"db": {
+									"user": "root",
+									"password": ""
+								}
+							}
+						}
+					}
+
+	def __init__(self):
+		logger.info("config {}.json start".format(SCRIPT_NAME))
+
+	def read_config_file(self):
+		config_location = "{}/{}.json".format(OPT_PATH, SCRIPT_NAME)
+
+		if not os.path.exists(OPT_PATH):
+			os.mkdir(OPT_PATH)
+			
+		print(config_location)
+		if not os.path.exists(config_location):
+			with open(config_location, "w", encoding="utf-8") as outfile:
+				json.dump(self.option_list, outfile, indent="\t")
+
+			logger.info("Please Insert {}.json file".format(SCRIPT_NAME))
+			sys.exit(1)
+		else:
+			with open(config_location) as json_file:
+				json_data = json.load(json_file)
+
+			for key in self.option_list.keys():
+				if not key in json_data:
+					logger.error("cannot find option key {} in {}.json".format(key, SCRIPT_NAME))
+					logger.error("please set option key like {}".format(self.option_list))
+					sys.exit(1)
+
+			return json_data
+
+def sum(config, index):
+	global BACKUP_FOLDER, variable, DOING_SIZE
+	username = config["backup"]["etc"]["db"]["user"]
+	password = config["backup"]["etc"]["db"]["password"]
+	
+
+	while True:
+		item_template = {"do":"END", "item":""}
+
+		item_template["do"] = "DOING"
+
+		if q.qsize() == 0:
+			break
+		
+		try:
+			item = q.get(timeout=3)
+		except:
+			break
+		item_template["item"] = item
+
+		variable[index] = item_template
+
+		if config["exec"] == "backup":
+			'''
+				압축 옵션을 사용할 경우
+			'''
+			if config["backup"]["etc"]["compression"]["use"] :
+				BACKUP_FOLDER = config["backup"]["etc"]["compression"]["temp_directory"]
+								
+			if not os.path.isdir("{}/{}".format(BACKUP_FOLDER, item["folder"])):
+				os.mkdir("{}/{}".format(BACKUP_FOLDER, item["folder"]))
+			
+			logger.info("mysqldump -u{} -p{} {} {} --set-charset --default-character-set={} --lock-tables --extended-insert=FALSE --force --complete-insert --insert-ignore > {}/{}/{}.sql".format(username, password, item["database"], item["name"], item["charset"].split('_')[0], BACKUP_FOLDER, item["folder"], item["name"]))
+			Helper.ExecuteCommand().execute_command("mysqldump -u{} -p{} {} {} --set-charset --default-character-set={} --lock-tables --extended-insert=FALSE --force --complete-insert --insert-ignore > {}/{}/{}.sql".format(username, password, item["database"], item["name"], item["charset"].split('_')[0], BACKUP_FOLDER, item["folder"], item["name"]), True)
+		elif config["exec"] == "restore":
+			Helper.ExecuteCommand().execute_command("mysql -u{} -p{} -D{} --default-character-set={} < {}".format(username, password, item["database"], item["charset"].split('_')[0], item["name"]), False)
+		
+		DOING_SIZE = DOING_SIZE + 1
+		if q.qsize() == 0:
+			variable[index]["do"] = "END"
+			break
+
+class DatabaseInformation(Helper.DBHandler):
+	def __init__(self, config):
+		super().__init__(host="localhost", user=config["backup"]["etc"]["db"]["user"], passwd=config["backup"]["etc"]["db"]["password"], db="mysql")
+		
+		self.table_list = []
+		self.list	 = []
+		self.config = config
+
+	def set_table_list_from_config(self):
+		for backup in self.config["backup"]["backup_list"]:
+			if backup["use"] == 0:
+				continue
+			else:
+				logger.info(backup)
+				self.list.append({"name":backup["name"], "table":backup, "database":backup["database"]})
+
+	
+	def get_restore_table_list(self):
+		global BACKUP_FOLDER
+		for table in self.list:
+			logger.info(table)
+
+			for restore_list in table["table"]["list"]:
+				restore_list = restore_list.replace("%", "*")
+				result = Helper.ExecuteCommand().execute_command("ls {}/{}/{}.sql".format(BACKUP_FOLDER, table["name"], restore_list), False)
+				for file_name in result["out"].decode("euckr").split("\n"):
+					charset = ""
+					if file_name == "":
+						continue
+					result = Helper.ExecuteCommand().execute_command("head -n 30 {} | grep latin1".format(file_name), False)
+					
+					if result["return_code"] == 0:
+						charset="latin1"
+						self.table_list.append({"location":file_name, "charset":"latin1"})
+					else:
+						charset="utf8"
+						self.table_list.append({"location":file_name, "charset":"utf8"})
+
+				
+					q.put({"folder":table["name"], "name":file_name, "charset":charset, "database":table["database"]})
+		
+		return self.table_list
+
+	def get_table_list(self):
+		for table in self.list:
+			table_list_string = ""
+
+			query = """
+						select table_name, TABLE_COLLATION from Information_schema.tables
+							where TABLE_SCHEMA = '{}'
+							and TABLE_TYPE not like 'VIEW'
+							and ({})
+					"""
+			condition = ""
+
+			if len(table["table"]["list"]) == 0 and len(table["table"]["not_list"]) == 0:
+				table["table"]["not_list"].append("")
+
+			for insert in table["table"]["list"]:
+				table_list_string = table_list_string + " {} table_name like '{}'".format(condition, insert)
+				condition = "or"
+
+			for uninsert in table["table"]["not_list"]:
+				if condition == "or":
+					condition = "AND"
+
+				table_list_string = table_list_string + " {} table_name not like '{}'".format(condition, uninsert)
+				condition = "AND"
+
+			query = query.format(table["database"], table_list_string)
+
+			self.execute(query, False)
+
+
+			for value in self.cursor.fetchall():
+				self.table_list.append(value["table_name"])
+				q.put({"folder":table["name"], "name":value["table_name"], "charset":value["TABLE_COLLATION"], "database":table["database"]})
+
+		return self.table_list
+
+class DoSomething:
+	def __init__(self, config):
+		self.config = config
+		self.database_information = DatabaseInformation(self.config)
+		logger.info("DoSomething Start")
+	
+	def get_table_list(self):
+		logger.info("Check Get Table List")
+		self.database_information.set_table_list_from_config()
+
+		'''
+			백업과 복원 분기 작업 필요함
+		'''
+		table_list = self.database_information.get_table_list()
+
+		logger.info("Table Count : {}".format(len(table_list)))
+
+	def get_table_restore_list(self, file_location):
+		Helper.ExecuteCommand().execute_command("rm -rf /tmp/dbbackup/; mkdir /tmp/dbbackup/", True)
+		Helper.ExecuteCommand().execute_command("tar -xvf {} -C /tmp".format(file_location), True)
+		self.database_information.set_table_list_from_config()
+		table_list = self.database_information.get_restore_table_list()
+
+class CompressionClass:
+	file_name = ""
+	def __init__(self, config):
+		self.compression = config["backup"]["etc"]["compression"]
+		
+	def check_compression(self):
+		if self.compression["use"]:
+			logger.info("compression check start")
+			return 1
+		else:
+			logger.info("compression disabled")
+			return 0
+
+	def check_backup_folder(self):
+		if not os.path.isdir(self.compression["temp_directory"]):
+			os.makedirs(self.compression["temp_directory"])
+
+		if not os.path.isdir(self.compression["save_to_location"]):
+			os.makedirs(self.compression["save_to_location"])
+
+		now 			= datetime.datetime.now()
+		self.file_name 	= now.strftime(self.compression["file_name_format"])
+
+	def compression_folder(self):
+		basename = os.path.basename(self.compression["temp_directory"])
+		directory = os.path.dirname(self.compression["temp_directory"])
+
+		logger.info(directory)
+
+		Helper.ExecuteCommand().execute_command("tar -zcvf {} {}".format(
+																				self.file_name,
+																				"backup"
+																				), True)
+def argument_parser():
+	parser = OptionParser()
+	parser.add_option("-b", "--backup", dest="backup", action='store_true')
+	parser.add_option("-r", "--restore", dest="restore")
+	(options, args) = parser.parse_args()
+
+	if options.backup:
+		return {"exec":"backup"}
+	elif options.restore:
+		return {"exec":"restore", "file":options.restore}
+	else:
+		logger.error("Please exec command (-h option)")
+		sys.exit(1)
+
+
+def make_thread_job(config):
+	global variable, DOING_SIZE
+	variable = [0] * config["backup"]["etc"]["job"]
+
+	total = q.qsize()
+	logger.info("TOTAL SIZE : {}".format(total))
+
+	for i in range(0, config["backup"]["etc"]["job"]):
+		t = threading.Thread(target=sum, args=(config, int(i)))
+		t.start()
+
+	while True:
+		if total == 0:
+			print_progress(1, 1)
+			break
+		print_progress(DOING_SIZE, total)
+
+		logger.info("DOING SIZE : {}, TOTAL : {}".format(DOING_SIZE, total))
+
+		if DOING_SIZE >= total:
+			print_progress(DOING_SIZE, total)
+			# Helper.ExecuteCommand().execute_command("rm -rf /tmp/dbbackup/", True)
+
+			break
+
+
+# @Logger.AddLogger()
+def main():
+
+	logger.info('a')
+
+	'''
+		초기 설정 과정 확인
+	'''
+	global variable
+	do 				= argument_parser()
+	config			= Configure().read_config_file()
+	config["exec"]	= do["exec"]
+
+	do_something	= DoSomething(config)
+
+	if 	do["exec"] == "backup":
+		do_something.get_table_list()
+	elif do["exec"] == "restore":
+		logger.info("restore")
+		do_something.get_table_restore_list(do["file"])
+
+	make_thread_job(config)
+	
+
+	if do["exec"] == "backup":
+		compression_class = CompressionClass(config)
+
+		if compression_class.check_compression() :
+			compression_class.check_backup_folder()
+			compression_class.compression_folder()
+
+
+if __name__ == "__main__":	
+	main()

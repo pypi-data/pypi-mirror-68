@@ -1,0 +1,16 @@
+README.md
+setup.py
+mysql_db_backup_faster/Helper.py
+mysql_db_backup_faster/Logger.py
+mysql_db_backup_faster/__init__.py
+mysql_db_backup_faster/version.py
+mysql_db_backup_faster.egg-info/PKG-INFO
+mysql_db_backup_faster.egg-info/SOURCES.txt
+mysql_db_backup_faster.egg-info/dependency_links.txt
+mysql_db_backup_faster.egg-info/entry_points.txt
+mysql_db_backup_faster.egg-info/requires.txt
+mysql_db_backup_faster.egg-info/top_level.txt
+script/mysqlbackup
+tests/__init__.py
+tests/base.py
+tests/test_version.py
