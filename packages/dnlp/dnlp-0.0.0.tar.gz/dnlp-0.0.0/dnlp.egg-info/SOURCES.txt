@@ -1,0 +1,8 @@
+README.md
+setup.py
+dnlp/__init__.py
+dnlp.egg-info/PKG-INFO
+dnlp.egg-info/SOURCES.txt
+dnlp.egg-info/dependency_links.txt
+dnlp.egg-info/requires.txt
+dnlp.egg-info/top_level.txt

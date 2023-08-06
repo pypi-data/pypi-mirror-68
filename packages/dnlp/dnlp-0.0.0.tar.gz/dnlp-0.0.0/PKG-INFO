@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dnlp
+Version: 0.0.0
+Summary: Deep Learning-based NLP
+Home-page: https://github.com/meghdadFar/dnlp
+Author: meghdadFar
+Author-email: meghdad.farahmand@gmail.com
+License: UNKNOWN
+Description: # dnlp
+        Implements deep learning-based functionalities for NLP
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
