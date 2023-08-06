@@ -1,0 +1,14 @@
+numpy>=1.15
+scipy>=1.0
+requests
+tqdm>=4.42.1
+pysam>=0.15.0
+matplotlib>=3.0.0
+
+[docs]
+sphinx>=2.0.0
+sphinx_rtd_theme
+
+[test]
+pytest>=4.0.0
+pytest-cov>=2.8.0

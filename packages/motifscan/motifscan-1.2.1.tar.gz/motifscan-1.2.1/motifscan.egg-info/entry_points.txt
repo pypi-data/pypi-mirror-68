@@ -1,0 +1,3 @@
+[console_scripts]
+motifscan = motifscan.cli.main:main
+
