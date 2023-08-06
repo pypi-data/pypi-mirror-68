@@ -1,0 +1,15 @@
+clabe<1.1.0,>=1.0.0
+requests<2.22.0,>=2.21.0
+pydantic<1.6,>=1.5
+
+[:python_version < "3.7"]
+dataclasses>=0.6
+
+[test]
+pytest
+pytest-vcr
+pytest-cov
+black
+isort[pipfile]
+flake8
+coveralls
