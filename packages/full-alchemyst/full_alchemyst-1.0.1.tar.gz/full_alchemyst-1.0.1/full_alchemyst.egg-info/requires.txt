@@ -1,0 +1,2 @@
+flask_sqlalchemy>=2.4.1
+flask_mongoalchemy>=0.7.2

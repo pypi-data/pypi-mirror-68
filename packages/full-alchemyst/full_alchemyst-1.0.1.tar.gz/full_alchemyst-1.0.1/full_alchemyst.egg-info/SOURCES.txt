@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+full_alchemyst/__init__.py
+full_alchemyst/full_alchemyst.py
+full_alchemyst/showcase.py
+full_alchemyst.egg-info/PKG-INFO
+full_alchemyst.egg-info/SOURCES.txt
+full_alchemyst.egg-info/dependency_links.txt
+full_alchemyst.egg-info/requires.txt
+full_alchemyst.egg-info/top_level.txt
