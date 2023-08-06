@@ -1,0 +1,8 @@
+README.md
+setup.py
+example/__init__.py
+example/script.py
+excel2py_lib.egg-info/PKG-INFO
+excel2py_lib.egg-info/SOURCES.txt
+excel2py_lib.egg-info/dependency_links.txt
+excel2py_lib.egg-info/top_level.txt
