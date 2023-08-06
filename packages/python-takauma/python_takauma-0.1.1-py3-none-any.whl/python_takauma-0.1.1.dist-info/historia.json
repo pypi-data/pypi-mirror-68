@@ -1,0 +1,20 @@
+[
+  {
+    "tyyppi": "muutos",
+    "tunnus": "fe246819f2854944ffa3ccd93bb1cb53589c0054",
+    "versio": "0.1.1",
+    "kuvaus": "Parannettu virheensietoa"
+  },
+  {
+    "tyyppi": "julkaisu",
+    "tunnus": "1159fb448680826874602cd4f93a1c839ce897fb",
+    "versio": "0.1",
+    "kuvaus": "Versio 0.1"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "106329711fc460fc4eec7c9cbf40d92ca54eb173",
+    "versio": "0.1",
+    "kuvaus": "Alustava toteutus"
+  }
+]
