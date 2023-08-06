@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pithy-test
+Version: 0.0.20
+Summary: Simplify interface testing
+Home-page: https://github.com/yuyu1987/pithy-test
+Author: coolfish
+Author-email: hgbaczt@gmail.com
+License: UNKNOWN
+Description: Simplify interface testing
+Keywords: interface,automation,testing,pithy
+Platform: any
