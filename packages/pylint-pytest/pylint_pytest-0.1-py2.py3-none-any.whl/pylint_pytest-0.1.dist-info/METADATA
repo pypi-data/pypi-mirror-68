@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pylint-pytest
+Version: 0.1
+Summary: A Pylint plugin to suppress pytest fixture related false positive warnings.
+Home-page: https://github.com/reverbc/pylint-pytest
+Author: Reverb Chu
+Author-email: pylint-pytest@reverbc.tw
+Maintainer: Reverb Chu
+Maintainer-email: pylint-pytest@reverbc.tw
+License: MIT
+Keywords: pylint,pytest,plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: pylint
+Requires-Dist: pytest (>=4.6)
+
+UNKNOWN
+
+
