@@ -1,0 +1,9 @@
+pandas>=0.23.0
+numpy~=1.14
+scipy~=1.0
+h5py
+natsort
+packaging
+
+[:python_version < "3.8"]
+importlib_metadata>=0.7
