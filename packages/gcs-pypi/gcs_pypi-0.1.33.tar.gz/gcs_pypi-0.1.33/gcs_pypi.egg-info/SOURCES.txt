@@ -1,0 +1,14 @@
+README.rst
+setup.py
+./gcs_pypi/__init__.py
+./gcs_pypi/__main__.py
+./gcs_pypi/exceptions.py
+./gcs_pypi/package.py
+./gcs_pypi/storage.py
+./gcs_pypi/templates/index.html.j2
+gcs_pypi.egg-info/PKG-INFO
+gcs_pypi.egg-info/SOURCES.txt
+gcs_pypi.egg-info/dependency_links.txt
+gcs_pypi.egg-info/entry_points.txt
+gcs_pypi.egg-info/requires.txt
+gcs_pypi.egg-info/top_level.txt
