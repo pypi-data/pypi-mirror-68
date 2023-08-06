@@ -1,0 +1,27 @@
+numpy>=1.13.1
+
+[all]
+pytest>=3.9
+
+[all:python_version >= "3.6"]
+numba>=0.49.0
+pandas>=0.24.0
+numexpr
+autograd
+
+[all:python_version >= "3.6" and sys_platform != "win32"]
+pyarrow>=0.17
+
+[dev]
+
+[dev:python_version >= "3.6"]
+numba>=0.49.0
+pandas>=0.24.0
+numexpr
+autograd
+
+[dev:python_version >= "3.6" and sys_platform != "win32"]
+pyarrow>=0.17
+
+[test]
+pytest>=3.9
