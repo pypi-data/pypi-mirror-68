@@ -1,0 +1,8 @@
+recursive-include officepy/nbextension/static *.*
+include officepy/nbextension/officepy.json
+include officepy/nbserver_extension/officepy.json
+
+# Misc
+include requirements.txt
+include README.md
+include version.py
