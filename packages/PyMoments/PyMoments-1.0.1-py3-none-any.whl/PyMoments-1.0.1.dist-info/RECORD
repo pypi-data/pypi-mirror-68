@@ -1,0 +1,14 @@
+PyMoments/Combinatorics.py,sha256=Ftk5Ipx0-KwMZ8rrYW-bpdCpk92eOCpYSI13M5qvwXA,3190
+PyMoments/DataStructures.py,sha256=YLfOyzOmZz35UJjrGOED8kHuOlDb4zbLRlollCsX5d0,5764
+PyMoments/Moments.py,sha256=Vs81olMqDLQsvDgnFtlCjmmpUqz7AYNRlQc4tUYRFWM,4033
+PyMoments/__init__.py,sha256=MjZXBb2Ejn5D9j-R4AMUzBzY4EuEonjoUc2gGgMaKO8,64
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_combinatorics.py,sha256=1J2lD6IHAGK-NkQsp8WMyF2PNe44jmj8MG2wJoihsms,4919
+tests/test_intPartitionTree.py,sha256=kSytbyUlvppFVj6gaGDUymznYBb1saMm9Oa1lj4KxxE,2116
+tests/test_moments.py,sha256=kYvfLeDj6LPMbVH0Nmwa2Vf4lmO5SV8rAGvGPGG4Yfo,4237
+tests/data/test_10path_data.csv,sha256=tXZCv1VrjnLJjg2nNQP6QKRJdGHMc0TQYUq_o4HmIGI,169869
+tests/data/test_10path_tests.csv,sha256=3BdZdpafk5R5GRE0dHP0bgHQtc5HgWMa6wXcD757Lgw,1152
+PyMoments-1.0.1.dist-info/METADATA,sha256=qFI1Ankcsz0r-nAb9R3-la-7KtT90_7jUEu6BcRVaL8,6000
+PyMoments-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+PyMoments-1.0.1.dist-info/top_level.txt,sha256=nlWlGFqwExMFYPzBYRVcjqW8JDj1cDPw_AhMR88D8HE,16
+PyMoments-1.0.1.dist-info/RECORD,,
