@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: estorch
+Version: 1.0.4
+Summary: Evolution Strategy Library
+Home-page: https://github.com/goktug97/estorch
+Author: Göktuğ Karakaşlı
+Author-email: karakasligk@gmail.com
+License: MIT
+Description: Evolution Strategy Library
+        =======================================================
+        
+        ESTorch is an Evolution Strategy Library build around PyTorch.
+        
+        ## Installation
+        
+        ```bash
+        pip install estorch
+        ```
+        
+        ## Documentation
+        
+        https://estorch.readthedocs.io/
+        
+        ## Usage
+        
+        Please refer to [examples](https://github.com/goktug97/estorch/blob/master/examples)
+        
+        ## License
+        estorch is licensed under the MIT License.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
