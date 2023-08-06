@@ -1,0 +1,15 @@
+.editorconfig
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/mf_algorithms/__init__.py
+src/mf_algorithms/example.py
+src/mf_algorithms/functions.py
+src/mf_algorithms.egg-info/PKG-INFO
+src/mf_algorithms.egg-info/SOURCES.txt
+src/mf_algorithms.egg-info/dependency_links.txt
+src/mf_algorithms.egg-info/not-zip-safe
+src/mf_algorithms.egg-info/requires.txt
+src/mf_algorithms.egg-info/top_level.txt
