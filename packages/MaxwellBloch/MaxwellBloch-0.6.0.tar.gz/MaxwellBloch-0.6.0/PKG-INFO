@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: MaxwellBloch
+Version: 0.6.0
+Summary: A Python package for solving the Maxwell-Bloch equations.
+Home-page: http://github.com/tpogden/maxwellbloch
+Author: Thomas P Ogden
+Author-email: t@ogden.eu
+License: MIT
+Description: MaxwellBloch is a Python package for solving the coupled Maxwell-Bloch equations describing the nonlinear propagation of near-resonant light through thermal atomic vapours.
+Platform: UNKNOWN
