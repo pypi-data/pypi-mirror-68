@@ -1,0 +1,29 @@
+---
+- name: get PowerShell version of the host
+  win_shell: $PSVersionTable.PSVersion.Major
+  changed_when: False
+  register: ps_version
+
+- name: setup and run tests block
+  when: ps_version.stdout | trim | int >= 5
+  block:
+  - name: create temporary directory
+    win_tempfile:
+      state: directory
+      suffix: .test
+    register: remote_tmp_dir
+    notify:
+    - delete temporary directory
+
+  - name: record temporary directory
+    set_fact:
+      remote_tmp_dir: '{{ remote_tmp_dir.path }}'
+
+  - name: update PSGet and PackageManagement for tests
+    include_tasks: install.yml
+
+  - name: setup local PSRepository with test modules
+    include_tasks: repo.yml
+
+  - name: test win_psmodule
+    include_tasks: test.yml

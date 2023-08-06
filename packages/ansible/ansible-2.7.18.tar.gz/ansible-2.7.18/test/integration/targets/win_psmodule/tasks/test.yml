@@ -1,0 +1,120 @@
+---
+- name: install module
+  win_psmodule:
+    name: ansible-test1
+    state: present
+  register: module_setup
+
+- name: test that module is installed
+  win_shell: Import-Module -Name ansible-test1; Get-AnsibleTest1 | ConvertTo-Json
+  register: module_setup_actual
+
+- name: test Powershell Gallery module setup
+  assert:
+    that:
+      - "module_setup is changed"
+      - "module_setup.output == 'Module ansible-test1 installed'"
+      - module_setup_actual.stdout | from_json == {"Name":"ansible-test1","Version":"1.0.0","Repo":"PSRepo 1"}
+
+- name: check idempotency reinstalling module
+  win_psmodule:
+    name: ansible-test1
+    state: present
+  register: module_reinstall
+
+- name: test win_psmodule idempotency
+  assert:
+    that:
+      - "module_reinstall is not changed"
+
+- name: check module install with allow_clobber not active
+  win_psmodule:
+    name: ansible-clobber
+  register: fail_allow_clobber
+  ignore_errors: yes
+
+- name: test allow_clobber has failed
+  assert:
+    that:
+      - "fail_allow_clobber is failed"
+
+- name: check module install with allow_clobber active
+  win_psmodule:
+    name: ansible-clobber
+    allow_clobber: yes
+  register: ok_allow_clobber
+
+- name: get result of install with allow_clobber active
+  win_shell: Import-Module -Name ansible-clobber; Enable-PSTrace | ConvertTo-Json
+  register: ok_allow_clobber_actual
+
+- name: test module install with allow_clobber active
+  assert:
+    that:
+      - "ok_allow_clobber is changed"
+      - ok_allow_clobber_actual.stdout | from_json == {"Name":"ansible-clobber","Version":"1.0.0","Repo":"PSRepo 1"}
+
+- name: check wrong module install attempt
+  win_psmodule:
+    name: fake_module
+    state: present
+  ignore_errors: yes
+  register: module_fail
+
+- name: test module setup fails
+  assert:
+    that:
+      - "module_fail is failed"
+
+- name: check fake custom ps repository registration attempt
+  win_psmodule:
+    name: fake_module
+    repository: Fake repository
+    url: http://my_fake_repo.com/repo/
+  ignore_errors: yes
+  register: repo_fail
+
+- name: test fake custom ps repository registration attempt
+  assert:
+    that:
+      - "repo_fail is failed"
+
+- name: remove installed powershell module
+  win_psmodule:
+    name: ansible-test1
+    state: absent
+  register: module_uninstall
+
+- name: get result of remove installed powershell module
+  win_shell: (Get-Module -ListAvailable -Name ansible-test1 | Measure-Object).Count
+  register: module_uninstall_actual
+
+- name: test powershell module removal
+  assert:
+    that:
+      - "module_uninstall is changed"
+      - "module_uninstall.output == 'Module ansible-test1 removed'"
+      - module_uninstall_actual.stdout | trim | int == 0
+
+- name: check idempotency re-removing module
+  win_psmodule:
+    name: ansible-test1
+    state: absent
+  register: module_uninstall_2
+
+- name: test idempotency
+  assert:
+    that:
+      - "module_uninstall_2 is not changed"
+
+- name: check removing allow_clobber module
+  win_psmodule:
+    name: ansible-clobber
+    state: absent
+  register: module_uninstall_3
+
+- name: test removing allow_clobber module
+  assert:
+    that:
+      - "module_uninstall_2 is not changed"
+      - "module_uninstall_3 is changed"
