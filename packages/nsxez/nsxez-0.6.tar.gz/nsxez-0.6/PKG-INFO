@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nsxez
+Version: 0.6
+Summary: A API abstraction package for NSX-T 3.0 and greater
+Home-page: https://github.com/farsonic/nsxez
+Author: Francois Prowse
+Author-email: nsxez@prowsehouse.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
