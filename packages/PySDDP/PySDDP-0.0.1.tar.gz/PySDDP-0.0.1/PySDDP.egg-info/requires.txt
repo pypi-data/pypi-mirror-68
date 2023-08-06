@@ -1,0 +1,7 @@
+cvxopt
+matplotlib
+numpy
+pandas
+pyswarm
+scipy
+typing
