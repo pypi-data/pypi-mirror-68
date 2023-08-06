@@ -1,0 +1,3 @@
+[console_scripts]
+create-discord-bot = creatediscordbot:main
+
