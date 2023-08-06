@@ -1,0 +1,18 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+recursive-include ./regression_model/*
+
+include regression_model/datasets/test.csv
+include regression_model/trained_models/*.pkl
+include regression_model/VERSION
+include README.md
+include LICENSE
+include WEATHER_OBS_DATA_LICENSE_CC_BY
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
