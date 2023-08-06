@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: kaa-rest-server
+Version: 0.1.3
+Summary: A very simple REST server
+Home-page: https://github.com/elpeix/kaa
+Author: Francesc d'Assís Requesens i Roca
+Author-email: francesc.requesens@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+# Kaa
+A very simple python server framework for REST applications.
+
+## Starting
+
+### Requirements
+
+- pyYaml for OpenApi output
+
+### Install
+
+```bash
+pip install kaa-rest-server
+```
+
+### Main files
+
+#### Definition
+
+Requires file definition.py at the top of the project:
+
+```python
+import logging
+
+
+NAME = 'Simple kaa Server'  # Your project name
+VERSION = 'v1.0'  # Version 
+SERVER = 'app.Server'  # Module and main class
+
+LOG = logging.getLogger()
+DEBUG = True
+ENABLE_CORS = False
+
+```
+
+#### Server file
+
+Requires a simple file to start server (kaa.py)
+
+```python
+import importlib
+
+from kaa.cli import Cli, Server
+
+
+# For WSGI application
+def application(env, start_response):
+    return Server().serve(env, start_response)
+
+
+# For development
+if __name__ == "__main__":
+    cli = Cli()
+    cli.execute()
+
+```
+
+#### Main classes
+
+(file app.py)
+
+This class initializes Kaa for each http request
+
+```python
+from kaa import Kaa, KaaServer
+
+class Server(KaaServer):
+
+    def get_kaa(self, env, start_response) -> Kaa:
+        kaa = Kaa(env, start_response)
+        kaa.register_resources('app', 'AppResources')
+        return kaa
+
+```
+
+This class define your resources
+
+```python
+from kaa import GET, PATH, Resources, Response, Status
+
+
+class AppResources(Resources):
+
+    @GET
+    @PATH('/')
+    def basic_resource(self, **params):
+        return Response(Status.OK).json({
+            'message': 'your response'
+        })
+
+```
+
+
+### Starting server
+```
+$ python kaa.py serve
+```
+
+By default host is 127.0.0.1 and port is 8086
+
+Start with diferent host and port:
+```
+$ python kaa.py serve host:port
+```
+
+
