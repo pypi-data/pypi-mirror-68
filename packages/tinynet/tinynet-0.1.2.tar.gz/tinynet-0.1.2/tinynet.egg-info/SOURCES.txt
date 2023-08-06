@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+tinynet/__init__.py
+tinynet/ffnn.py
+tinynet/rnn.py
+tinynet/rnn1l.py
+tinynet.egg-info/PKG-INFO
+tinynet.egg-info/SOURCES.txt
+tinynet.egg-info/dependency_links.txt
+tinynet.egg-info/requires.txt
+tinynet.egg-info/top_level.txt
