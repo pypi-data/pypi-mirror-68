@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_models.py,sha256=0xZ3R-paKsx2d0olso8-G01qhlulpXj_ahG42irZ2ek,188
+transformersx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersx/configuration.py,sha256=68XFYA_ksCAXmE2at11odlfL0pnVN7mkTxxhvZR3he8,4189
+transformersx/dataprocessor.py,sha256=uO5c4VMKrrGxwYsJR3MyBCFo8JZU0SJxHpevQyIGRlw,519
+transformersx/dataset.py,sha256=3-HklNBZL0zosAAiaa-AN8GAf3jUHk9ygFCKZgrlZo0,5875
+transformersx/down_tasks.py,sha256=8motPa_sCjEpZCPABvda7SGU88NKcABnHyGPDBIB7Vs,887
+transformersx/models.py,sha256=W4agJ7pFDAgPQa6TVC5Xrnyq75Pk84P2LU04uVeKDbU,6231
+transformersx/tasks.py,sha256=Orn9-3CPAKwQ1D91yIGLlcMuhc2mEvlJdG4jKDqZCqM,8435
+ai_transformersx-0.1.11.dist-info/LICENSE.txt,sha256=2L4tF1iFgUDvgVkxv1BVaQTCeChF1pdNU4gwAgnmyys,1061
+ai_transformersx-0.1.11.dist-info/METADATA,sha256=Mftewg3g_78T1oCPxAVws0xlcCpw0kiMNn077hIKEi0,1750
+ai_transformersx-0.1.11.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ai_transformersx-0.1.11.dist-info/top_level.txt,sha256=BD_3DpdR4c0XAQqESbI0gmlnpN5ee5k7aadsO0FtcjQ,20
+ai_transformersx-0.1.11.dist-info/RECORD,,
