@@ -1,0 +1,3 @@
+jinja2
+sortedcontainers
+pyMathBitPrecise>=0.4
