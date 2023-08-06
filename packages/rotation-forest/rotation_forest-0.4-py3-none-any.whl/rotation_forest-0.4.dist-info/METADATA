@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rotation-forest
+Version: 0.4
+Summary: Sklearn style implementation of the Rotation Forest Algorithm
+Home-page: https://github.com/digital-idiot/RotationForest
+Author: Joshua D. Loyal, Abhisek Maiti
+Author-email: mail2abhisek.maiti@gmail.com
+Maintainer: Abhisek Maiti
+Maintainer-email: mail2abhisek.maiti@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+
+doi: 10.1109/TPAMI.2006.211
+
+
