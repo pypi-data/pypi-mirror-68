@@ -1,0 +1,12 @@
+transformersx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformersx/configuration.py,sha256=FaLDcJVA-TFC9O1YQfd38N3mG7p-4avdzO57Tta07io,2986
+transformersx/dataprocessor.py,sha256=uO5c4VMKrrGxwYsJR3MyBCFo8JZU0SJxHpevQyIGRlw,519
+transformersx/dataset.py,sha256=p10RuQCRfLsRFUZcPYGbqL9-UB_QSFvIJ6zMp7qvkhc,5899
+transformersx/down_tasks.py,sha256=8motPa_sCjEpZCPABvda7SGU88NKcABnHyGPDBIB7Vs,887
+transformersx/models.py,sha256=6f6O6940ZZvw8aQ5txOKlo957FIJYLGdzvb2N5CR4Dk,3298
+transformersx/tasks.py,sha256=Zwi4NX8xIyrzevPlG6DnleVY93e22qk-7OqhV-nWEJE,6966
+ai_transformersx-0.1.9.dist-info/LICENSE.txt,sha256=2L4tF1iFgUDvgVkxv1BVaQTCeChF1pdNU4gwAgnmyys,1061
+ai_transformersx-0.1.9.dist-info/METADATA,sha256=BV3aRL_VdGn69MaWkappUynSHpd3ldJ-UphFa6nqcNg,1749
+ai_transformersx-0.1.9.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ai_transformersx-0.1.9.dist-info/top_level.txt,sha256=0rE18FFnyARDmFZHLmBLA_fnkHlpgb8YwouVbYyozPw,14
+ai_transformersx-0.1.9.dist-info/RECORD,,
