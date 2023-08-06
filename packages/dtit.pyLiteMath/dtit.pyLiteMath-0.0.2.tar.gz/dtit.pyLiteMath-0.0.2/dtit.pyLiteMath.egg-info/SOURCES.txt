@@ -1,0 +1,12 @@
+README.md
+setup.py
+dtit.pyLiteMath.egg-info/PKG-INFO
+dtit.pyLiteMath.egg-info/SOURCES.txt
+dtit.pyLiteMath.egg-info/dependency_links.txt
+dtit.pyLiteMath.egg-info/requires.txt
+dtit.pyLiteMath.egg-info/top_level.txt
+dtit/pyLiteMath/__init__.py
+dtit/pyLiteMath/tests/hello.py
+dtit/pyLiteMath/tests/test_fft.py
+dtit/pyLiteMath/tests/test_litemath.py
+dtit/pyLiteMath/tests/test_log.py
