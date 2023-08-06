@@ -1,0 +1,17 @@
+bits/__init__.py,sha256=EtOD91ivU_kXxRA8lopap-Ihis3DvCkFVpiaQIdypM4,89
+bits/appengine/__init__.py,sha256=5IB8Zu5bjfOw2yAQSWwYFDK-H3k0QnxUmHWyLXpoHtU,1348
+bits/appengine/bitsdb.py,sha256=ZP-F09lYx5jwMlZjDntIICbR5PxkeeH-bptv6vaAYv4,19455
+bits/appengine/config.py,sha256=i_w_3yyjqOYnI6wAXkunx_cGWqUokb0lyTa_c8Oc9AU,1789
+bits/appengine/endpoints.py,sha256=ZD96TC04BwG-L2ZeSeZg-_hNeKby--g00fu7moF1PQ0,7848
+bits/appengine/user.py,sha256=b-48USeNBFslcTp6up2Tw6Hq04AZ-d973396ReTAEiI,6372
+bits/appengine/theme/__init__.py,sha256=omVYVeJ495dMYAxPGkVi4hPP6_QbhmZ_Xh3pWCCJl6M,7501
+bits/appengine/theme/templates/footer.html,sha256=zHEKZql6yPn5OiiaGXCgHxZ7jSngXW14e-Y2i5BhViY,1589
+bits/appengine/theme/templates/header.html,sha256=wJYu2jPvVORskOO9M7N5jcagWEHRakkr_xd5HlSksn0,942
+bits/appengine/theme/templates/theme.html,sha256=w1UWHohhWvQyPM4BQPsw4fRIf5CAivKymTSDzVEb858,313
+bits/appengine/theme/templates/topnav.html,sha256=pTf7ne3H8xWoaevk7sVwb-Y2Wy5E8oB7gby5K0lDaLg,1444
+bits/appengine/theme/templates/user.html,sha256=a2BQT8EWR1SQo5EOpMf-k8JluHqePpHWvqNNS3NAe74,947
+bits/appengine/theme/templates/users.html,sha256=LfwZulZy9e7IIXnzCyj91wlZ__lctYbRGJnyyiNKvQg,840
+bits_appengine-1.1.18.dist-info/METADATA,sha256=Oe1Gwj0FCij0558z5bS7zACrDWcX4jRC44eZonYdTVM,446
+bits_appengine-1.1.18.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bits_appengine-1.1.18.dist-info/top_level.txt,sha256=r0CPtEdvhPhtNI1RzFMKlSds-wmUFadHdR_o8lZNEOg,5
+bits_appengine-1.1.18.dist-info/RECORD,,
