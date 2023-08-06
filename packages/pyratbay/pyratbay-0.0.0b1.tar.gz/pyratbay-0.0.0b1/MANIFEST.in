@@ -1,0 +1,12 @@
+include MANIFEST.in
+include CONTRIBUTING.md
+include README.md
+include LICENSE
+include requirements.txt
+include tests/*
+include docs/*
+include docs/figures/*
+include src_c/*
+include src_c/include/*.h
+include .travis.yml
+include .readthedocs.yml

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyratbay
+Version: 0.0.0b1
+Summary: Python Radiative Transfer in a Bayesian Framework.
+Home-page: https://github.com/pcubillos/pyratbay
+Author: Patricio Cubillos
+Author-email: patricio.cubillos@oeaw.ac.at
+License: GNU GPLv2
+Description: ## Pyrat Bay: Python Radiative Transfer in a Bayesian framework
+        > A Forward-modeling and retrieval code to model exoplanet atmospheres and spectra.
+        
+        [![Documentation Status](https://readthedocs.org/projects/pyratbay/badge/?version=latest)](https://pyratbay.readthedocs.io/en/latest/?badge=latest)
+        [![PyPI](https://img.shields.io/pypi/v/pyratbay.svg)](https://pypi.org/project/pyratbay)
+        ![GitHub](https://img.shields.io/github/license/pcubillos/pyratbay.svg?color=blue)
+        
+        Find the full Pyrat Bay documentation at <http://pyratbay.readthedocs.io>.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
