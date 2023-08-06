@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: timeflux-dsp
+Version: 0.2.0
+Summary: Timeflux DSP plugin
+Home-page: https://timeflux.io
+Author: Raphaëlle Bertrand-Lalo
+Author-email: contact@timeflux.io
+License: MIT
+Project-URL: Documentation, http://doc.timeflux.io/projects/timeflux-dsp/
+Project-URL: Source Code, https://github.com/timeflux/timeflux_dsp
+Project-URL: Bug Tracker, https://github.com/timeflux/timeflux_dsp/issues
+Keywords: timeflux,DSP
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: timeflux (>=0.5.3)
+Requires-Dist: neurokit2
+Requires-Dist: mne
+Provides-Extra: dev
+Requires-Dist: pytest (>=5.3) ; extra == 'dev'
+Requires-Dist: sphinx (>=2.2) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.4) ; extra == 'dev'
+Requires-Dist: setuptools-scm ; extra == 'dev'
+Requires-Dist: docinit ; extra == 'dev'
+
+Timeflux DSP plugin
+===================
+
+This plugin provides timeflux nodes and meta-nodes for real time digital signal processing of time series.
+
+Installation
+------------
+
+First, make sure that `Timeflux <https://github.com/timeflux/timeflux>`__ is installed.
+
+You can then install this plugin in the `timeflux` environment:
+
+::
+
+    $ conda activate timeflux
+    $ pip install timeflux_dsp
+
+Modules
+-------
+
+- ``filters``: contains digital filters nodes (FIR, IIR, etc.) and resampling nodes.
+- ``spectral``: contains nodes for spectral analysis.
+- ``peaks``: contains nodes to detect peaks on 1D data, and estimates their characteristics.
+
