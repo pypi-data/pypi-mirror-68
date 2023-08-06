@@ -1,0 +1,10 @@
+README.md
+setup.py
+HyTra.egg-info/PKG-INFO
+HyTra.egg-info/SOURCES.txt
+HyTra.egg-info/dependency_links.txt
+HyTra.egg-info/top_level.txt
+hytra/__init__.py
+hytra/hypergraph.py
+hytra/transversal_tests.py
+hytra/transversals.py
