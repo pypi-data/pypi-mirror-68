@@ -1,0 +1,11 @@
+simulation/__init__.py,sha256=pl3cAoFfT9LLlEY5aERk2g3HdZ7U2juWOJFyNkliI6c,23
+simulation/action.py,sha256=vqDz1evlB5CMzKNikTx031vbjpTSHiy01Wn-q1cBnA0,839
+simulation/avatar_state.py,sha256=CacrZd05xO2ajectRZfs6Lc-CjazDrYUwt9yKqFLnbY,263
+simulation/direction.py,sha256=QVM1OASMez0vH6Ruq00mCZ5FLzuiWGc8WR7BMjpjAuA,625
+simulation/event.py,sha256=0Zhd7UZW1YvkDw3zR8CBaUyfIJja9qLaChc_4hfmRnw,619
+simulation/location.py,sha256=QFbVnS9UQ_kMumh4PMaWblkgDnRb71iQBweja2IeLoE,591
+simulation/world_map.py,sha256=Cugz4OfYc7OsJdLTMDn90olAQRp0pbXdt4MRCRiPey8,2589
+aimmo_avatar_api-0.47.0b5878.dist-info/METADATA,sha256=8Ufvq8_stI5107Klt2b6G1ftu2IDsC0bQmcNeFsdQz0,266
+aimmo_avatar_api-0.47.0b5878.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+aimmo_avatar_api-0.47.0b5878.dist-info/top_level.txt,sha256=PUPYn7yyK-POsWhHkBicRDFZTwfGD5QbusB6k3wS7PU,11
+aimmo_avatar_api-0.47.0b5878.dist-info/RECORD,,
