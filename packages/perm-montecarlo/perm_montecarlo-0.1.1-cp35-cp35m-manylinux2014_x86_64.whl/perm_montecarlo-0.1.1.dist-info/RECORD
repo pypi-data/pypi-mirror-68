@@ -1,0 +1,8 @@
+perm_montecarlo/__init__.py,sha256=A5y9NKgN-ds_fUkxaXy9EyKAYorrzpsanG1p5dE9-VI,32
+perm_montecarlo/_perm_montecarlo.cpython-35m-x86_64-linux-gnu.so,sha256=rc68HJky1MUm_SHxNYvpo1hNW2v18aG7K91zFOFBgYM,479704
+perm_montecarlo/plot/plot.py,sha256=KW066biqRdE_8kI7tb4slms4i7o8EhUaC2XztxmUZi8,1185
+perm_montecarlo/plot/__init__.py,sha256=aRHxsb0-uOXlNikntn6X9J7hmCKpSZ5lrE0FVccKnR4,111
+perm_montecarlo-0.1.1.dist-info/RECORD,,
+perm_montecarlo-0.1.1.dist-info/WHEEL,sha256=z5f5_sz5-tdKKLH0xmONgfup65w8dh0T5j24m948MFU,118
+perm_montecarlo-0.1.1.dist-info/top_level.txt,sha256=AGECPly1TsJ5jt_Go017KX7RYQSCI2Kcoruq2lUUoTU,16
+perm_montecarlo-0.1.1.dist-info/METADATA,sha256=jA5yvlpMF3bMJy6I0EF-tr7bGhwTR_27fgYfFS3kFjQ,1407
