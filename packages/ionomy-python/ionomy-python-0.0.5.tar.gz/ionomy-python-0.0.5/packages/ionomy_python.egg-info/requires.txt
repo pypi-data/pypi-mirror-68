@@ -1,0 +1,8 @@
+Click
+requests
+arrow
+furl
+python-decouple
+pandas
+pandas-ta
+websockets
