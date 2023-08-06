@@ -1,0 +1,8 @@
+MyPipModule
+README.txt
+setup.py
+MyPipModule/__init__.py
+MyPipModule.egg-info/PKG-INFO
+MyPipModule.egg-info/SOURCES.txt
+MyPipModule.egg-info/dependency_links.txt
+MyPipModule.egg-info/top_level.txt
