@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: spiegelib
+Version: 0.0.1
+Summary: Synthesizer Programming with Intelligent Exploration, Generation, and Evaluation Library
+Home-page: https://github.com/spiegelib/spiegelib
+Author: Jordie Shier
+Author-email: jordieshier@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: librosa
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: tensorflow
+Requires-Dist: deap
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-datadir ; extra == 'dev'
+Requires-Dist: pytest-mpl ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# SpiegeLib
+
+Synthesizer Programming with Intelligent Exploration, Generation, and Evaluation Library.
+
+A library for research and development of work related to Automatic Sound Synthesizer Programming. Named after early electronic music pioneer Laurie Spiegel.
+
+See full documention [here](https://spiegelib.github.io/spiegelib/).
+
+Currently in development.
+
+
