@@ -1,0 +1,8 @@
+sasapdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sasapdf/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sasapdf/pdf2text.py,sha256=yXB2S3GiaVaYOwGnkolGIISVjQkD4eOO_1Z8TSDUUZA,37
+sasapdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+sasapdf-1.0.dist-info/METADATA,sha256=bIJwr6Dx_NYRcvB1F_p7f0zuUTMozeS92CitooRQnEo,198
+sasapdf-1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+sasapdf-1.0.dist-info/top_level.txt,sha256=1E83YrfQtDLovc6MPSD1DOVnk1CRtEdk-18OTZOMduQ,8
+sasapdf-1.0.dist-info/RECORD,,
