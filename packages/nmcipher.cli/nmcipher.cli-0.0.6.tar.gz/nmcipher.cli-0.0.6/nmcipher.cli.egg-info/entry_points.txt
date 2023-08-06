@@ -1,0 +1,5 @@
+[console_scripts]
+affine = nmcipher.cli:affine
+caesar = nmcipher.cli:caesar
+transposition = nmcipher.cli:transposition
+

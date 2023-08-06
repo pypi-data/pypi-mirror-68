@@ -1,0 +1,10 @@
+setup.py
+nmcipher.cli.egg-info/PKG-INFO
+nmcipher.cli.egg-info/SOURCES.txt
+nmcipher.cli.egg-info/dependency_links.txt
+nmcipher.cli.egg-info/entry_points.txt
+nmcipher.cli.egg-info/requires.txt
+nmcipher.cli.egg-info/top_level.txt
+nmcipher/cli/__init__.py
+nmcipher/cli/detect_english.py
+nmcipher/cli/parser.py

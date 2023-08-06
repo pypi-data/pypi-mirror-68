@@ -1,0 +1,3 @@
+nmcipher.affine
+nmcipher.caesar
+nmcipher.transposition
