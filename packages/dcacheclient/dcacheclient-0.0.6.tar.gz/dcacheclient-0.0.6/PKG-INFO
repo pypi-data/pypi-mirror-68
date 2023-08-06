@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: dcacheclient
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: https://github.com/neicnordic/dcacheclient
+Author: UNKNOWN
+Author-email: support@dCache.org
+License: UNKNOWN
+Description:     User and administration interaction with dCache  # noqa: E501
+            
+Keywords: dCache,storage
+Platform: UNKNOWN
