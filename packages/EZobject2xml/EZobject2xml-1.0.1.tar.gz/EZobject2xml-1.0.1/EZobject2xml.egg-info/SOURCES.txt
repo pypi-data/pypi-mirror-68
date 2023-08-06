@@ -1,0 +1,8 @@
+README.md
+setup.py
+EZobject2xml/__init__.py
+EZobject2xml/xmltoolMod.py
+EZobject2xml.egg-info/PKG-INFO
+EZobject2xml.egg-info/SOURCES.txt
+EZobject2xml.egg-info/dependency_links.txt
+EZobject2xml.egg-info/top_level.txt
