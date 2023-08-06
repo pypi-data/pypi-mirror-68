@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: labext
+Version: 1.1.0
+Summary: Extra widgets for Jupyter Lab
+Home-page: https://github.com/binh-vu/labext
+Author: Binh Vu
+Author-email: binh@toan2.com
+License: MIT
+Description: # Overview
+        
+        ![Demo](./assets/demo.png)
+        
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown

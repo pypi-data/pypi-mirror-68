@@ -1,0 +1,4 @@
+ipywidgets
+IPython
+jupyter_core
+requests
