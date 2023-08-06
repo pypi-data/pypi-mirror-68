@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "reference": "W. Kob and H. C. Andersen, Phys. Rev. Lett. 73, 1376 (1994)",
+    "potential": [
+	{
+	    "type": "lennard_jones",
+	    "parameters": {"sigma": [[1.0, 0.8], [0.8, 0.88]],
+			   "epsilon": [[1.0, 1.5], [1.5, 0.5]]}
+	}
+    ],
+    "cutoff": [
+	{
+	    "type": "cut_shift",
+	    "paremeters": {"rcut": [[2.5, 2.0], [2.0, 2.2]]}
+	}
+    ]
+}
+
+

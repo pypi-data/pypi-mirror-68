@@ -1,0 +1,39 @@
+{
+    "version": 1,
+    "reference": "J. E. Lennard-Jones, Proc. R. Soc. Lond. A, 106, 463 (1924)",
+    "cutoff": [
+	{
+	    "type": "cut_shift",
+	    "parameters": {"rcut": [[2.5]]}
+	}
+    ],
+    "potential": [
+	{
+	    "type": "lennard_jones",
+	    "parameters": {"epsilon": [[1.0]], "sigma": [[1.0]]}
+	}
+    ],
+    "samples": [
+	{
+	    "path": "samples/lennard_jones/N500_rho0.85_T1.0.xyz",
+	    "format": "xyz",
+	    "species": ["A"],
+	    "potential_energy_per_particle": -2.65774861872754,
+	    "number_of_particles": 500,
+	    "density": 0.85,
+	    "temperature": 1.0,
+	    "state": "fluid"
+	},
+	{
+	    "path": "https://gitlab.info-ufr.univ-montp2.fr/daniele.coslovich/atooms-models/raw/master/atooms/models/samples/lennard_jones/N500_rho0.85_T1.0.xyz",
+	    "format": "xyz",
+	    "species": ["A"],
+	    "potential_energy_per_particle": -2.65774861872754,
+	    "number_of_particles": 500,
+	    "density": 0.85,
+	    "temperature": 1.0,
+	    "state": "fluid"
+	}
+    ]
+}
+

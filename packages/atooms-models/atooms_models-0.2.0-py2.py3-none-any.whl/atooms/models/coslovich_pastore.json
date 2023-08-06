@@ -1,0 +1,34 @@
+{
+    "version": 1,
+    "reference": "D. Coslovich and G. Pastore, J. Phys.: Condens. Matter 21, 285107 (2009)",
+    "potential": [
+	{
+	    "type": "lennard_jones",
+	    "parameters": {"sigma": [[0.0, 1.0],
+				     [1.0, 0.0]],
+			   "epsilon": [[0.0, 1.0],
+				       [1.0, 0.0]]}
+	},
+	{
+	    "type": "inverse_power",
+	    "parameters": {"exponent": 12,
+			   "sigma": [[1.0, 0.0],
+				     [0.0, 1.0]],
+			   "epsilon": [[1.0, 0.0],
+				       [0.0, 1.0]]}
+	}
+    ],
+    "cutoff": [
+	{
+	    "type": "cut_shift",
+	    "parameters": {"rcut": [[0.0, 2.5],
+				    [2.5, 0.0]]}
+	},
+	{
+	    "type": "cut_shift",
+	    "parameters": {"rcut": [[2.5, 0.0],
+				    [0.0, 2.5]]}
+	}
+    ]
+}
+    

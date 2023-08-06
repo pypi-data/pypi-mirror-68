@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: atooms-models
+Version: 0.2.0
+Summary: UNKNOWN
+Home-page: https://gitlab.info-ufr.univ-montp2.fr/daniele.coslovich/atooms/jit
+Author: Daniele Coslovich
+Author-email: daniele.coslovich@umontpellier.fr
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+
+Atooms models
+=============
+
+A database of models for classical molecular dynamics and Monte Carlo simulations
+
+Quick start
+-----------
+
+Show all models in the database
+```python
+from atooms.models import database
+database.show()
+```
+
+Pretty print the full database
+```python
+from pprint import pprint
+pprint(database)
+```
+
+Select the Lennard-Jones one-component system and inspect the parameters
+```python
+model = database["lennard_jones"]
+print(model["potential"])
+print(model["cutoff"])
+```
+
+Now look for a fluid Lennard-Jones sample and get a local copy
+```python
+from atooms.models import copy
+for sample in model["samples"]:
+    if sample["state"] == 'fluid':
+        local_file = copy(sample)	    
+        break
+```
+The `local_file` can then be used to start a simulation or further analysis using `atooms` packages.
+
+Installation
+------------
+Clone the code repository and install from source
+```
+git clone https://gitlab.info-ufr.univ-montp2.fr/daniele.coslovich/atooms-models.git
+cd sample
+make install
+```
+
+(Not available yet) Install atooms-models with pip
+```
+pip install atooms-models
+```
+
+
+Authors
+-------
+Daniele Coslovich: http://www.coulomb.univ-montp2.fr/perso/daniele.coslovich/
+
+
