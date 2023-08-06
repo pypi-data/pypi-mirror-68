@@ -1,0 +1,10 @@
+yaqd-core>=2020.05.1
+psutil
+uptime
+
+[dev]
+black
+pre-commit
+
+[tests]
+yaqc
