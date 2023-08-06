@@ -1,0 +1,3 @@
+[console_scripts]
+devdoc = devdoc.main:main
+

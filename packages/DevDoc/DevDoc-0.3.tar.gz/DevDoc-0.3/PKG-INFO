@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: DevDoc
+Version: 0.3
+Summary: Automatic generation of documentation for Django or python projects.
+Home-page: UNKNOWN
+Author: Caio Teixeira and Samuel Almeida
+Author-email: caio.xd63@hotmail.com
+License: UNKNOWN
+Description: # DevDoc
+        
+        Automate your documentation, and have time to drink some coffee.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
