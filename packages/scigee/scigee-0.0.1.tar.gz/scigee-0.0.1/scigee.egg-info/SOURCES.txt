@@ -1,0 +1,6 @@
+setup.py
+scigee.egg-info/PKG-INFO
+scigee.egg-info/SOURCES.txt
+scigee.egg-info/dependency_links.txt
+scigee.egg-info/requires.txt
+scigee.egg-info/top_level.txt
