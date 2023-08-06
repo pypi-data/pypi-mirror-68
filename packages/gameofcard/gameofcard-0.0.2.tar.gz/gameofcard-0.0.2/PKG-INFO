@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: gameofcard
+Version: 0.0.2
+Summary: Just a humble implementation of different card games.
+Home-page: https://github.com/EPgg92/gameofcard/releases/tag/0.0.2
+Author: EPgg92
+Author-email: poggio.enzo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/EPgg92/gameofcard/archive/0.0.2.tar.gz
+Description: UNKNOWN
+Keywords: card,game
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
