@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: cocinero
+Version: 0.1.3
+Summary: Um utilitário em Python para criar projetos a partir de templates
+Home-page: https://github.com/desk467/cocinero
+License: GPL-3.0-only
+Keywords: devops,automation,boilerplate
+Author: Ricardo Gomes
+Author-email: desk467@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: rich (>=1.1.0,<2.0.0)
+Project-URL: Repository, https://github.com/desk467/cocinero
+Description-Content-Type: text/markdown
+
+# 🍳 cocinero
+
+cocinero é um utilitário escrito em Python para facilitar a geração de projetos novos a partir de boilerplates. Este projeto permite:
+
+- Criar novos projetos a partir de um repositório base
+- Verificar no ambiente do usuário se ele possui todos os requisitos para criar/executar um projeto
+- Executar tarefas pré-definidas em cima dos novos projetos
+
+## Instalação
+
+Para instalar o cocinero, você pode utilizar tanto o pip, quanto o pipx, executando:
+
+```bash
+pip install cocinero
+```
+
+ou ...
+
+```bash
+pipx install cocinero
+```
+
+Para utilizar boilerplates oriundos do GitHub, você também precisa instalar o git.
+
+
+## Como usar
+
+Após instalado, para criar um novo projeto com o cocinero, execute:
+
+```bash
+cocinero cook github.com/des467/webservicepython meu_novo_projeto_incrivel
+```
+
+O comando acima irá:
+- Clonar o repositório template passado
+- Ler o arquivo `cocinero-recipe.yml` na raiz do repositório e a partir daí..
+- .. gerar o seu incrível projeto.
+
+Para ver mais informações sobre como criar `recipes`, [clique aqui](https://github.com/desk467/cocinero/blob/master/docs/RECIPE.md).
+
+## Como contribuir
+
+Veja como contribuir [clicando aqui](https://github.com/desk467/cocinero/blob/master/docs/CONTRIBUTING.md).
+
+## Licença
+
+Este projeto utiliza a licença GPL v3. Para ver mais sobre a licença, [clique aqui](https://github.com/desk467/cocinero/blob/master/LICENSE)
+
