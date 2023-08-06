@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: izitest
+Version: 2.0.3
+Summary: An easy test suite
+Home-page: https://izitest.rtfd.io
+Author: Kenji 'Nhqml' Gaillac
+Author-email: kenji.gaillac@epita.fr
+License: GNU GPLv3
+Project-URL: Source, https://github.com/nhqml/izitest
+Project-URL: Documentation, https://izitest.rtfd.io
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: PyYAML (>=5.3)
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: Jinja2 (>=2.11.1)
+
+izitest - An easy test suite
+============================
+
+.. image:: https://img.shields.io/github/license/nhqml/izitest
+   :target: https://github.com/Nhqml/izitest/blob/master/LICENSE
+
+.. image:: https://img.shields.io/pypi/v/izitest
+   :target: https://pypi.org/project/izitest/
+
+.. image:: https://img.shields.io/pypi/status/izitest
+
+.. image:: https://img.shields.io/readthedocs/izitest
+   :target: https://izitest.rtfd.io
+
+WIP... please be patient.
+
+
