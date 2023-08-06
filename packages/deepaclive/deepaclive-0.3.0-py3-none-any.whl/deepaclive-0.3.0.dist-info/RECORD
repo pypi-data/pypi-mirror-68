@@ -1,0 +1,13 @@
+deepaclive/__init__.py,sha256=fxGvxmdTQp0dUStE7K0UNMMTi4s_NE7a4SiT3kbgp9I,75
+deepaclive/command_line.py,sha256=IXG5_m9NSJy_8qqhJozpMmVeqVBUjj2H9Ova_nhjuAA,9062
+deepaclive/receiver.py,sha256=nO3PNI3ZsPANs_N6WwWvT5JC-tGWu04Orx7iB2dU_2o,11761
+deepaclive/refilter.py,sha256=hF0izHmNink0uP2X4-tiaYVorkvImTetDOjoP7-QZzg,5192
+deepaclive/sender.py,sha256=FHEUmW-eBCupT3uS9N0D6NY8S49YVV2eSWnYNEaqq5E,8484
+deepaclive/sftp_client.py,sha256=lNQFXwsjHM-SuDwdqmNhSPv3bU44zCGDi6LjCcEppbc,2291
+deepaclive/tests.py,sha256=gfngCpuHP70TMizd8AmDewxX3io7cKMZoe36ihwO7A4,5166
+deepaclive-0.3.0.dist-info/LICENSE,sha256=l3zjVrh95ij12XWUCRPR1hIO6pNKK3wb3wolKJWHSoc,1078
+deepaclive-0.3.0.dist-info/METADATA,sha256=jImPXDryZoGhoFQqql9oVjACzYIq7PRasEawPJ6dWVs,3343
+deepaclive-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+deepaclive-0.3.0.dist-info/entry_points.txt,sha256=VVr0m9Ul9_NyLBckP7DDqh76h2SwTQ2wirIgfG6uLA0,62
+deepaclive-0.3.0.dist-info/top_level.txt,sha256=OUIU9AWxu4O2fuus7nEYYEyMyptHuNfgCgSWZe2JuMk,11
+deepaclive-0.3.0.dist-info/RECORD,,
