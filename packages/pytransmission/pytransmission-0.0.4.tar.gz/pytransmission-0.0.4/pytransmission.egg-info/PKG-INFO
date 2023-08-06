@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pytransmission
+Version: 0.0.4
+Summary: A simple Transmission client
+Home-page: https://stash.dchevell.com/projects/HT/repos/pytransmission
+Author: Dave Chevell
+Author-email: chevell@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: requests,transmission
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
