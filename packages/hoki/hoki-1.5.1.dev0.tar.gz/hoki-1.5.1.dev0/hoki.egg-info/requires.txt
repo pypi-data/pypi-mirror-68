@@ -1,0 +1,10 @@
+astropy
+matplotlib
+numpy
+pandas
+pysynphot
+pyyaml
+wheel
+
+[test]
+pytest-astropy
