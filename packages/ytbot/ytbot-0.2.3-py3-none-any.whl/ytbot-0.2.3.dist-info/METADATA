@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ytbot
+Version: 0.2.3
+Summary: A simple yet amazing bot for increasing youtube views and it works!!
+Home-page: https://github.com/adnangif/ytbot
+License: MIT
+Keywords: youtube,bot,view
+Author: Muhammad Fahim
+Author-email: muhammadfahim010@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: pyppeteer2 (>=0.2.2,<0.3.0)
+Requires-Dist: pyppeteer_stealth (>=1.0.0,<2.0.0)
+Project-URL: Repository, https://github.com/adnangif/ytbot
+Description-Content-Type: text/x-rst
+
+
