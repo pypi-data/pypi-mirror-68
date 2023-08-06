@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: fixture-utils
+Version: 0.0.1
+Summary: Easy maintain fixtures
+Home-page: UNKNOWN
+Author: Andrii Kovalov
+Author-email: andy.kovv@gmail.com
+License: UNKNOWN
+Description: # fixture_utils
+        
+        Library for easy maintain fixtures files.
+        
+Keywords: fixture_utils
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
