@@ -1,0 +1,11 @@
+easy_module_attribute_getter/__init__.py,sha256=sfU6d5u2mddPkqJS4FSaC4h2QXjyFxogeLMR4-MorlY,367
+easy_module_attribute_getter/custom_transforms.py,sha256=wUFOpjkt2_HJajUS4NQftwnEVudydGHQUsC1YS3LlVM,498
+easy_module_attribute_getter/easy_module_attribute_getter.py,sha256=xepuLLdOyyFb1ZD5SjcW1pF3Bac1XH3uAznBCOFyipE,2105
+easy_module_attribute_getter/pytorch_getter.py,sha256=TNfoA_HRlfurKiJ9vS23bLbpIN-_U919YFzEvhRtdBY,2944
+easy_module_attribute_getter/utils.py,sha256=FuMCH8k44pDxkXLJXaHDjWesJ66VfLoHsXfQpNSiAos,3156
+easy_module_attribute_getter/yaml_reader.py,sha256=L-zfuJeyJDuYqze43dVT3T7h8Kd0dbnu7sKCa6mxC78,5839
+easy_module_attribute_getter-0.9.37.dist-info/LICENSE,sha256=hIep6uROY85Vu22KRxp_2t7m0fny6SPC8QQuC6mvhfk,1090
+easy_module_attribute_getter-0.9.37.dist-info/METADATA,sha256=_VEEPKEwMP-dF2eXEr8bp8ETQbXLPDFFkFcXD5E5aoE,7841
+easy_module_attribute_getter-0.9.37.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+easy_module_attribute_getter-0.9.37.dist-info/top_level.txt,sha256=DuXR4-zXcxO8edEentKlvlEAIYPIWRdTcvGKhO8P6MU,29
+easy_module_attribute_getter-0.9.37.dist-info/RECORD,,
