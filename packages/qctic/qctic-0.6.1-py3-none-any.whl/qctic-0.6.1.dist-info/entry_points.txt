@@ -1,0 +1,3 @@
+[console_scripts]
+qcticapi = qctic.cli:run_local_server
+
