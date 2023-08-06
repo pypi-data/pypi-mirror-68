@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: twitchAPI
+Version: 1.2
+Summary: A Python 3.7 implementation of the Twitch Helix API and its Webhook
+Home-page: https://github.com/Teekeks/pyTwitchAPI
+Author: Lena "Teekeks" During
+Author-email: info@teawork.de
+License: MIT
+Description: file:README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
