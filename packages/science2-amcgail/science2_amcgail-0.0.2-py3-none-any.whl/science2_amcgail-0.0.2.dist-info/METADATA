@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: science2-amcgail
+Version: 0.0.2
+Summary: Analyzing the evolution of ideas using citation analysis
+Home-page: https://github.com/amcgail/science2
+Author: Alec McGail
+Author-email: amcgail2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# citation-deaths
+This repository contains 
+  the code and data I used to analyze the deaths of a million citations in Sociology articles.
+The repository provides code and documentation for producing all analyses and figures in the final paper.
+
+# Installation
+
+`pip install science2`
+
+
