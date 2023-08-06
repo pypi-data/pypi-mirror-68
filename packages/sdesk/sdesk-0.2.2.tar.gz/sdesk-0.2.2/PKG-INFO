@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: sdesk
+Version: 0.2.2
+Summary: ScienceDesk helper library
+Home-page: https://sciencedesk.net
+Author: ScienceDesk GmbH
+Author-email: github@sciencedesk.net
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Requires-Dist: requests_toolbelt (>=0.9.1,<0.10.0)
+Project-URL: Documentation, https://sciencedesk-helper-library.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/ScienceDesk/sdesk-python
+Description-Content-Type: text/markdown
+
+# ScienceDesk Python helpers
+
+This module provides Python code to help you interact with and extend the
+ScienceDesk platform.
+
+## Modules
+
+- api: helpers to interact with the ScienceDesk API
+- proc: helpers to write ScienceDesk algorithms
+
+
+## Documentation
+You can check the current documentation at [Read The Docs](https://sciencedesk-helper-library.readthedocs.io)
+
