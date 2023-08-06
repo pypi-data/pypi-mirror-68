@@ -1,0 +1,10 @@
+uvw/__init__.py,sha256=7rEpzEZikeoSc2r34pJ9bys3ACmJfXiprbmnFQrclG8,109
+uvw/data_array.py,sha256=iGu5t6mYZ9vjrh4Ya5wksA4BQQSDarkvZewD1dMVScg,1457
+uvw/parallel.py,sha256=dN8zo3_3jRjLoArXCXxYLTW0nXxf9CcGAHT3-8qKTe8,3057
+uvw/vtk_files.py,sha256=tlOk_rPloOY4EBDKU-xVvJCrxUsuNbM7AOIj0EDYsoI,5116
+uvw/writer.py,sha256=gAK2CGGWmSNsPyQwLjJusLaxNjdiJ6tDqm_1atfQ4T0,6525
+uvw-0.2.0.dist-info/LICENSE.md,sha256=u8SaGlXjZDDnT4puAEwkoQOaaJi_BA1lok0QCKIEYVA,1074
+uvw-0.2.0.dist-info/METADATA,sha256=SpI4-8n3ALBJH0s92lP9C6i2mgi7dFepsuMfUna2OCs,6785
+uvw-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+uvw-0.2.0.dist-info/top_level.txt,sha256=KoVeH8_f6j39msx2HLT5ZX_i520KNvRSzmWlST0aRlQ,4
+uvw-0.2.0.dist-info/RECORD,,
