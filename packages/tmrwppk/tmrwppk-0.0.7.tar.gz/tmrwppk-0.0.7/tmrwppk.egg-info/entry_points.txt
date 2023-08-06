@@ -1,0 +1,3 @@
+[console_scripts]
+tmrwppk = tmrwppk.tmrwppk:main
+
