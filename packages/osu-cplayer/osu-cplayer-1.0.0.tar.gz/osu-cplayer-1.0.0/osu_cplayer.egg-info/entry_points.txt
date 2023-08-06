@@ -1,0 +1,3 @@
+[console_scripts]
+osu-cplayer = osu_cplayer.osu_cplayer:main
+
