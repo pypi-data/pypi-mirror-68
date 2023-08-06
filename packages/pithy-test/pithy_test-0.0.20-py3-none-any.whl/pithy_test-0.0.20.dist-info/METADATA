@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pithy-test
+Version: 0.0.20
+Summary: Simplify interface testing
+Home-page: https://github.com/yuyu1987/pithy-test
+Author: coolfish
+Author-email: hgbaczt@gmail.com
+License: UNKNOWN
+Keywords: interface,automation,testing,pithy
+Platform: any
+Requires-Dist: requests
+Requires-Dist: records
+Requires-Dist: objectpath
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Requires-Dist: configobj
+
+Simplify interface testing
+
+
