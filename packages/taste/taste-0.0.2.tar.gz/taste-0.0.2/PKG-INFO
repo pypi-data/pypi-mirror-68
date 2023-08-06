@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: taste
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Peter Badida
+Author-email: keyweeusr@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Jupyter
+Classifier: Framework :: Matplotlib
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: release
