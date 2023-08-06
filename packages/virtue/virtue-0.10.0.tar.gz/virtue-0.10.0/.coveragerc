@@ -1,0 +1,7 @@
+# vim: filetype=dosini:
+[run]
+branch = True
+source = virtue
+# This appears then disappears during test runs
+omit = */virtue/tests/temp/*
+dynamic_context = test_function
