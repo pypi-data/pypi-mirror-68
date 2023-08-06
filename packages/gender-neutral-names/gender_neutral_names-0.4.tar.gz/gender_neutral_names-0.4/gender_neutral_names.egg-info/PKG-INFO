@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gender-neutral-names
+Version: 0.4
+Summary: Faker provider for gender neutral names generator
+Home-page: https://github.com/Padamja/gender_neutral_names
+Author: Padamja
+Author-email: padamja.gupta@gmail.com
+License: MIT
+Download-URL: https://github.com/Padamja/gender_neutral_names/archive/v0.4.tar.gz
+Description: UNKNOWN
+Keywords: faker faker-library faker-provider faker-generator gender-neutral names-generator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2 :: Only
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+gender_neutral_names/__init__.py
+gender_neutral_names/provider.py
+gender_neutral_names.egg-info/PKG-INFO
+gender_neutral_names.egg-info/SOURCES.txt
+gender_neutral_names.egg-info/dependency_links.txt
+gender_neutral_names.egg-info/requires.txt
+gender_neutral_names.egg-info/top_level.txt
+gender_neutral_names.egg-info/zip-safe
