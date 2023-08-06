@@ -1,0 +1,9 @@
+text_preprocessing/__init__.py,sha256=nQw072-hbw0MaFoRESOSt_ZTzgX6Gv_4RxpQ8hmsAMo,575
+text_preprocessing/text_preprocessing.py,sha256=GkqPpSEMBTRW0KS1QQJeWaoaw5tjpJILpXFauR8LN_g,12853
+text_preprocessing/data/custom_substitutions.csv,sha256=X8eIIsl9fyMVJbh_LQy7PZ6IuU0dZXRjJkMvjR-w2JE,3524
+text_preprocessing/data/ignore_spellcheck_words.txt,sha256=CsMntxoa-Ct1Evt4g3uyjwgftBnmGSKnWPo6rRnKfME,892
+text_preprocessing-0.0.4.dist-info/LICENSE,sha256=nFMBhdiQ7u67JkWM6n2aDZB_KzoshS24fhB08OhgQrw,1500
+text_preprocessing-0.0.4.dist-info/METADATA,sha256=SdG1rYUwEmPkFcVirHfaiHlholfY5ed8PtDIDCG_hTw,2833
+text_preprocessing-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+text_preprocessing-0.0.4.dist-info/top_level.txt,sha256=idmfDgaTzEKW0PHdvKXFQqssuTLeArQX5ruS1f_RoUU,19
+text_preprocessing-0.0.4.dist-info/RECORD,,
