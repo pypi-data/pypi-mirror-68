@@ -1,0 +1,3 @@
+[pytest11]
+pytest_pop = pytest_pop.plugin
+
