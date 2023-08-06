@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/GPACalculator.egg-info/PKG-INFO
+src/GPACalculator.egg-info/SOURCES.txt
+src/GPACalculator.egg-info/dependency_links.txt
+src/GPACalculator.egg-info/top_level.txt
