@@ -1,0 +1,10 @@
+README.md
+setup.py
+xmltodict3/__init__.py
+xmltodict3/exceptions.py
+xmltodict3/transformers.py
+xmltodict3/xml_to_dict.py
+xmltodict3.egg-info/PKG-INFO
+xmltodict3.egg-info/SOURCES.txt
+xmltodict3.egg-info/dependency_links.txt
+xmltodict3.egg-info/top_level.txt
