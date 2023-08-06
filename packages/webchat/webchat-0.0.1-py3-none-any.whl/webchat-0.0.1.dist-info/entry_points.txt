@@ -1,0 +1,3 @@
+[console_scripts]
+webchat = webchat.chat:main
+
