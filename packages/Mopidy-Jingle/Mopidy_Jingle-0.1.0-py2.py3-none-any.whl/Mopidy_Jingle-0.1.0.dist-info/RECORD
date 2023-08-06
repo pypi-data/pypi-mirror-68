@@ -1,0 +1,9 @@
+mopidy_jingle/__init__.py,sha256=U8JfN9jIgPvv3zOrrUohqnPnF1xRRUqRT7c7yCGo8yk,665
+mopidy_jingle/backend.py,sha256=4hMCWNO80wdnt54XecuXx02mCc9EBLMewOrGf5Z6_ME,1037
+mopidy_jingle/ext.conf,sha256=AVOQnyQZGsYKfMqb1oeDjNNbhq4fyKQB2HSK8r2fkEU,50
+Mopidy_Jingle-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+Mopidy_Jingle-0.1.0.dist-info/METADATA,sha256=m8YBeP0zVj9fhLMcC_e4wzYwYnE0Im5c56PW6DU01kQ,1419
+Mopidy_Jingle-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+Mopidy_Jingle-0.1.0.dist-info/entry_points.txt,sha256=R7DDNWVNfzfq1ZqvmJxLSFofYSEcu-HDxfOnSjjtHXg,47
+Mopidy_Jingle-0.1.0.dist-info/top_level.txt,sha256=nLy0ECr5pH3yUCEC_l-705rDBBHhKFJSwF2Qy89i80U,14
+Mopidy_Jingle-0.1.0.dist-info/RECORD,,
