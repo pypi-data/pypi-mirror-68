@@ -1,0 +1,25 @@
+---
+######################################################
+#
+# See templates/vars.j2
+#
+openvpn_country: FR
+openvpn_province: Paris
+openvpn_city: Paris
+openvpn_org: Enough
+openvpn_email: contact@enough.community
+openvpn_ou: Enough Community
+#
+######################################################
+#
+# See templates/server.conf.j2
+#
+openvpn_server_conf: |
+  # same as openstack_internal_network_cidr by default
+  push "route 10.30.20.0 255.255.255.0"
+openvpn_server_ip_range: 10.8.0.0 255.255.255.0
+#
+######################################################
+#
+openvpn_local_directory: /tmp/enough-openvpn
+openvpn_overwrite_nftables_conf: yes
