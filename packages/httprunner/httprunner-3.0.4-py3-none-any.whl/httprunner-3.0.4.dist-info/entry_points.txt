@@ -1,0 +1,6 @@
+[console_scripts]
+har2case=httprunner.cli:main_har2case_alias
+hmake=httprunner.cli:main_make_alias
+hrun=httprunner.cli:main_hrun_alias
+httprunner=httprunner.cli:main
+
