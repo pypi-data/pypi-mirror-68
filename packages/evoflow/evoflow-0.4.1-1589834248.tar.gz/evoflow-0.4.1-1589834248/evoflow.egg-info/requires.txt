@@ -1,0 +1,8 @@
+networkx
+numpy
+tqdm
+tabulate
+termcolor
+matplotlib
+plotly
+tensorflow>=2.2.0
