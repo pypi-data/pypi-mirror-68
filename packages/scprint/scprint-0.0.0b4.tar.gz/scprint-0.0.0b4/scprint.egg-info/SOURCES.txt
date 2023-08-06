@@ -1,0 +1,7 @@
+README.md
+scprint.py
+setup.py
+scprint.egg-info/PKG-INFO
+scprint.egg-info/SOURCES.txt
+scprint.egg-info/dependency_links.txt
+scprint.egg-info/top_level.txt
