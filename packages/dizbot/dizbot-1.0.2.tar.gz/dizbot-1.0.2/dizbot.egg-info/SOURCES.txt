@@ -1,0 +1,14 @@
+README.md
+setup.py
+dizbot/__init__.py
+dizbot/dizbot.py
+dizbot/dizbot_config.py
+dizbot/dizbot_generator.py
+dizbot/dizbot_utils.py
+dizbot.egg-info/PKG-INFO
+dizbot.egg-info/SOURCES.txt
+dizbot.egg-info/dependency_links.txt
+dizbot.egg-info/entry_points.txt
+dizbot.egg-info/not-zip-safe
+dizbot.egg-info/requires.txt
+dizbot.egg-info/top_level.txt
