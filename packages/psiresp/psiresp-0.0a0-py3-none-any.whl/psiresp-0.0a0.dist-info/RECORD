@@ -1,0 +1,15 @@
+psiresp/__init__.py,sha256=Zcwz9iva60lykhe-jOwVkA2HxPqf1fa9-SI9K9awWOU,544
+psiresp/_version.py,sha256=H3w78jqCtQPM1BkY-BMwzrKUQjJJDHWqh5j2AobRwFo,18448
+psiresp/configs.py,sha256=3L7qcrQ396HO5cSMv2m1IPt4n4LYe_qFHCnuf0pxZvY,38351
+psiresp/conformer.py,sha256=QOeWcLkpOz8UWzTB8tc37MQn_GhI4NIxHHZneq2Zxws,13570
+psiresp/due.py,sha256=FryrWpIAIsWyI9mZQ910yAH1CrmsGjTiUH1dD4KWrPQ,2023
+psiresp/multiresp.py,sha256=qIH4PHMd4SsGHs47iMQ5bm0GkK4l6l0UsUlGzEobJzU,27815
+psiresp/orientation.py,sha256=BllO-cOiDppzz313d7cAv81mDOtc-oEGkGpJDFdvdsA,14545
+psiresp/resp.py,sha256=SauhHYH9LjtZVQQzG_rqZYhrKOY8e3QnsIX0aC24fD0,32798
+psiresp/resp2.py,sha256=fV_VHU6Y3S9tBmojO2Ciz6fQZLCQYB71wcxZmIJFr_Q,24391
+psiresp/utils.py,sha256=eXe9KuMmUqPAcNkd9lZVKuT863QhttQp_BAjTGBmdi4,9817
+psiresp/vdwradii.py,sha256=idNgbYrlh5saiAKksOhDt2AeFtW8fPhpeZDzHZEPw08,4477
+psiresp-0.0a0.dist-info/LICENSE,sha256=_Er5Qequl5K2H3-NNHNnj8VYDaSmm6e_hMf436Ah9Pk,7371
+psiresp-0.0a0.dist-info/WHEEL,sha256=GLESb-AiO9TFjbXrEA7UrNl4dwWlkXoKZg6N6Vg0OJg,81
+psiresp-0.0a0.dist-info/METADATA,sha256=62AQJylM8fYDsc6rW5CMMZaYLF6hdelV1el-q67cPVs,6421
+psiresp-0.0a0.dist-info/RECORD,,
