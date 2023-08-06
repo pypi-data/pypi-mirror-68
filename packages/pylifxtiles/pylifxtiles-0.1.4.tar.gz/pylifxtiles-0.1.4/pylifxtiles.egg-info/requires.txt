@@ -1,0 +1,12 @@
+requests
+lifxlan
+jupyter
+nose
+matplotlib
+Pillow
+
+[dev]
+check-manifest
+
+[test]
+coverage
