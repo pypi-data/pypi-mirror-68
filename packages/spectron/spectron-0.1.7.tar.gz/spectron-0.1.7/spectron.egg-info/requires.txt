@@ -1,0 +1,4 @@
+black>=19.10b0
+
+[json]
+ujson>=1.35
