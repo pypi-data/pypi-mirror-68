@@ -1,0 +1,3 @@
+[console_scripts]
+s93_test_automation = s93_test_automation.__main__:main
+

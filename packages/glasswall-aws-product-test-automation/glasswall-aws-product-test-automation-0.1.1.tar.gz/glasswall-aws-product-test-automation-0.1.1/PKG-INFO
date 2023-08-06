@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: glasswall-aws-product-test-automation
+Version: 0.1.1
+Summary: A small package for testing Glasswall AWS products
+Home-page: https://github.com/filetrust/aws-product-test-automation
+Author: AngusWR
+Author-email: aroberts@glasswallsolutions.com
+License: UNKNOWN
+Description: ![](https://github.com/filetrust/aws-product-test-automation/workflows/Upload%20Python%20Package/badge.svg)
+        
+        # aws-product-test-automation
+        A small package for testing Glasswall AWS products
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
