@@ -1,0 +1,10 @@
+README.md
+setup.py
+dtit.microFeaturesGenerator.egg-info/PKG-INFO
+dtit.microFeaturesGenerator.egg-info/SOURCES.txt
+dtit.microFeaturesGenerator.egg-info/dependency_links.txt
+dtit.microFeaturesGenerator.egg-info/requires.txt
+dtit.microFeaturesGenerator.egg-info/top_level.txt
+dtit/microFeaturesGenerator/__init__.py
+dtit/microFeaturesGenerator/tests/hello.py
+dtit/microFeaturesGenerator/tests/test.py
