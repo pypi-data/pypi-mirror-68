@@ -1,0 +1,8 @@
+README.md
+setup.py
+cyMStools/__init__.py
+cyMStools/plink2_summary.py
+cyMStools.egg-info/PKG-INFO
+cyMStools.egg-info/SOURCES.txt
+cyMStools.egg-info/dependency_links.txt
+cyMStools.egg-info/top_level.txt
