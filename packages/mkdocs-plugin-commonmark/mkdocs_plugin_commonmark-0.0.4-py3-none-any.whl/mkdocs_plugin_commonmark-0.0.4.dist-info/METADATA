@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mkdocs-plugin-commonmark
+Version: 0.0.4
+Summary: A plugin for MkDocs that monkeypatches to support commonmark via mistletoe.
+Home-page: https://github.com/soxhub/mkdocs-plugin-commonmark
+Author: Rajiv Makhijani
+Author-email: rajiv@auditboard.com
+License: BSD
+Keywords: mkdocs,plugin,commonmark,mistletoe,markdown
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: mkdocs (>=1.1.2)
+Requires-Dist: Markdown (>=3.2.1)
+Requires-Dist: mistletoe (>=0.7.2)
+
+# mkdocs-plugin-commonmark
+
+A plugin for mkdocs that swaps python-markdown for mistletoe to bring CommonMark support to mkdocs. Please note, this plugin monkey-patches mkdocs as there are not plugin hooks for changing the renderer.
+
+The majority of the code to support this plugin comes from the development Andy Pan did to fork mkdocs to add commonmark support. This plugin eliminates the need for a fork, but given that is closely coupled to mkdoc internals, it may break on a subsequent mkdoc release. It has currently been tested with version 1.1.2 of mkdocs.
+
+
+
