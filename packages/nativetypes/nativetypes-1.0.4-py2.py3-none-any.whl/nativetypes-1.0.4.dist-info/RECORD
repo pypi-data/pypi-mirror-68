@@ -1,0 +1,8 @@
+nativetypes/__init__.py,sha256=FE8DeMbS58BkhTa7QLdBcL5c2dQpKja5nel57DDhYJc,466
+nativetypes/native_float.py,sha256=yKKlIE1Ad_xY6iB7fLmLOPoJhaX4v61tfMrp3fWjAao,7994
+nativetypes/native_int.py,sha256=IIMGWAAEEJ2Pr0v2_tNA-mn6aJPH2A_8r2YcBr_ZtsI,9226
+nativetypes-1.0.4.dist-info/LICENSE,sha256=wGLfXLCBG0oFNQ-UnSWNTAEo_v4MaKZyQl-tyPHJlzU,1100
+nativetypes-1.0.4.dist-info/METADATA,sha256=kemmqUTTY-9iRzm5Mh9AlD_rMQo55kC3yEQdHYMIK6M,1108
+nativetypes-1.0.4.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+nativetypes-1.0.4.dist-info/top_level.txt,sha256=9G-uzjF2EkW8_6lWiuLIkQg3n2qcVBBoJ1ybcLDZVlc,12
+nativetypes-1.0.4.dist-info/RECORD,,
