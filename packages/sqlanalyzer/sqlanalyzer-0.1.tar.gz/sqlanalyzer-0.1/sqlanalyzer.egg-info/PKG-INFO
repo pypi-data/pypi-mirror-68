@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: sqlanalyzer
+Version: 0.1
+Summary: A tool to parse and analyze the structure for Postgres sql queries.
+Home-page: https://github.com/mathilda0902/sqlanalyzer
+Author: Vicky Kwan
+Author-email: vickyj.fan2016@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.5
