@@ -1,0 +1,17 @@
+includes:
+- ./defaults.yaml
+
+dataset_config:
+  vqa2:
+    use_images: false
+    use_features: true
+    features:
+      train:
+      - coco/detectron_fix_100/fc6/train_val_2014,coco/resnet152/train_val_2014
+      val:
+      - coco/detectron_fix_100/fc6/train_val_2014,coco/resnet152/train_val_2014
+    annotations:
+      train:
+      - imdb/vqa/imdb_debug.npy
+      val:
+      - imdb/vqa/imdb_debug.npy
