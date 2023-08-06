@@ -1,0 +1,48 @@
+[web.acl.predicate]
+all = web.ext.acl:all
+always = web.ext.acl:always
+any = web.ext.acl:any
+contains = web.ext.acl:ContextContains
+first = web.ext.acl:First
+matches = web.ext.acl:ContextMatch
+never = web.ext.acl:never
+not = web.ext.acl:Not
+
+[web.app]
+static = web.app.static:static
+
+[web.extension]
+acl = web.ext.acl:ACLExtension
+analytics = web.ext.analytics:AnalyticsExtension
+annotation = web.ext.annotation:AnnotationExtension
+assets = web.ext.assets:WebAssetsExtension
+base = web.ext.base:BaseExtension
+cast = web.ext.annotation:AnnotationExtension
+db = web.ext.db:DBExtension
+local = web.ext.local:ThreadLocalExtension
+request = web.ext.base:BaseExtension
+response = web.ext.base:BaseExtension
+threadlocal = web.ext.local:ThreadLocalExtension
+typecast = web.ext.annotation:AnnotationExtension
+
+[web.serialize]
+application/json = web.ext.serialize:json.dumps
+application/x-yaml = yaml:dumps [yaml]
+json = web.ext.serialize:json.dumps
+yaml = yaml:dumps [yaml]
+
+[web.server]
+appengine = web.server.appengine:serve
+bjoern = web.server.bjoern_:serve [bjoern]
+cgiref = web.server.stdlib:cgi
+cherrypy = web.server.cherrypy_:serve [cherrypy]
+diesel = web.server.diesel_:serve [diesel]
+eventlet = web.server.eventlet_:serve [eventlet]
+fcgi = web.server.fcgi:serve [flup]
+gevent = web.server.gevent_:serve [gevent]
+iiscgiref = web.server.stdlib:iiscgi
+paste = paste.httpserver:serve [paste]
+tornado = web.server.tornado_:serve [tornado]
+waitress = web.server.waitress_:serve [waitress]
+wsgiref = web.server.stdlib:simple
+
