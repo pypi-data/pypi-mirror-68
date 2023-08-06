@@ -1,0 +1,9 @@
+README.md
+setup.py
+jutge/util/__init__.py
+jutge_util.egg-info/PKG-INFO
+jutge_util.egg-info/SOURCES.txt
+jutge_util.egg-info/dependency_links.txt
+jutge_util.egg-info/not-zip-safe
+jutge_util.egg-info/requires.txt
+jutge_util.egg-info/top_level.txt
