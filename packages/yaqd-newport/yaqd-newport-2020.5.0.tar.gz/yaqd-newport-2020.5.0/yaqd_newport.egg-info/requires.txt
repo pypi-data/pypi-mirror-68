@@ -1,0 +1,6 @@
+yaqd-core[aserial]>=2020.05.1
+
+[dev]
+black
+pre-commit
+pydocstyle
