@@ -1,0 +1,13 @@
+README.md
+setup.py
+pygarch/__init__.py
+pygarch/exceptions.py
+pygarch/proc.py
+pygarch/spec.py
+pygarch.egg-info/PKG-INFO
+pygarch.egg-info/SOURCES.txt
+pygarch.egg-info/dependency_links.txt
+pygarch.egg-info/requires.txt
+pygarch.egg-info/top_level.txt
+pygarch/lib/fit.R
+pygarch/lib/spec.R

@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pygarch
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://gitlab.corp.vesparum.com/oliver.chambers/pygarch
+Author: Oliver Chambers
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # pygarch
+        
+        python bindings for R package rugarch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
