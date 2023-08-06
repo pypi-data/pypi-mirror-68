@@ -1,0 +1,2 @@
+include klang/music/data/*.csv
+include klang/audio/samples/*.wav
