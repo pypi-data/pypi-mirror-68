@@ -1,0 +1,15 @@
+.editorconfig
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/ssnmf/__init__.py
+src/ssnmf/example.py
+src/ssnmf/ssnmf.py
+src/ssnmf.egg-info/PKG-INFO
+src/ssnmf.egg-info/SOURCES.txt
+src/ssnmf.egg-info/dependency_links.txt
+src/ssnmf.egg-info/not-zip-safe
+src/ssnmf.egg-info/requires.txt
+src/ssnmf.egg-info/top_level.txt
