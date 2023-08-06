@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: pytest-testrail-client
+Version: 0.1.1
+Summary: pytest plugin for Testrail
+Home-page: https://github.com/popescunsergiu/pytest_testrail
+Author: Sergiu Popescu
+Author-email: popescunsergiu@gmail.com
+License: Mozilla Public License 2.0 (MPL 2.0)
+Description: pytest-testrail
+        ===============
+        
+        TODO
+        
+        Resources
+        ---------
+        
+        - TODO
+        
+Keywords: py.test pytest qa
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
