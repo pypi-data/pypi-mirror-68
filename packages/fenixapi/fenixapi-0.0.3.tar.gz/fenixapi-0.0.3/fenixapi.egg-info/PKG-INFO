@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fenixapi
+Version: 0.0.3
+Summary: An API to interface with fenix.tecnico.ulisboa.pt
+Home-page: https://github.com/ArmindoFlores/fenixapi
+Author: Francisco Rodrigues
+Author-email: francisco.rodrigues0908@gmail.com
+License: UNKNOWN
+Description: # fenixapi
+        An API to interface with fenix.tecnico.ulisboa.pt
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

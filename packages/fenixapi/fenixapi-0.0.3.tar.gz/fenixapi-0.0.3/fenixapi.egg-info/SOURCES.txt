@@ -1,0 +1,10 @@
+README.md
+setup.py
+fenix/__init__.py
+fenix/exceptions.py
+fenix/session.py
+fenix/utils.py
+fenixapi.egg-info/PKG-INFO
+fenixapi.egg-info/SOURCES.txt
+fenixapi.egg-info/dependency_links.txt
+fenixapi.egg-info/top_level.txt
