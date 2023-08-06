@@ -1,0 +1,4 @@
+google-cloud-monitoring<1.0.0,>=0.30.0
+opencensus<1.0.0,>=0.7
+requests
+urllib3
