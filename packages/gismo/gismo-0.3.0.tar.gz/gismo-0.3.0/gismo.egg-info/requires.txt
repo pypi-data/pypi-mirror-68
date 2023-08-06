@@ -1,0 +1,7 @@
+scipy
+scikit-learn
+dill
+numpy
+numba
+beautifulsoup4
+lxml
