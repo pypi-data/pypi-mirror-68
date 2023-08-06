@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: elasticapm
+Version: 0
+Summary: Typo-squatting protection for the 'elastic-apm' package
+Home-page: https://github.com/elastic/apm-agent-python
+Author: Elastic
+Author-email: support@elastic.co
+License: BSD License (BSD)
+Description: UNKNOWN
+Platform: UNKNOWN

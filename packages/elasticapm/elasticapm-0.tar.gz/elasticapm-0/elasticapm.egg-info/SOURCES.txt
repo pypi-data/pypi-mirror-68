@@ -1,0 +1,5 @@
+setup.py
+elasticapm.egg-info/PKG-INFO
+elasticapm.egg-info/SOURCES.txt
+elasticapm.egg-info/dependency_links.txt
+elasticapm.egg-info/top_level.txt
