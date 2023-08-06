@@ -1,0 +1,5 @@
+pytest
+requests
+psutil
+memory_profiler
+wheel
