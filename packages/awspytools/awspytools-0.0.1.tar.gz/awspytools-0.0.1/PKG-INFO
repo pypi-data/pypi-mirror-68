@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: awspytools
+Version: 0.0.1
+Summary: A collection of tools to try and make AWS boto3 more pythonic
+Home-page: https://github.com/lockhaty/awspytools
+Author: Yusuff Lockhat
+Author-email: awspytools@homesync.co.za
+License: UNKNOWN
+Description: # DynamoDB Datastore
+        
+        This is a helper python package to assist in future projects
+        
+        To build,
+        
+        ```bash
+            python3 setup.py sdist bdist_wheel
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
