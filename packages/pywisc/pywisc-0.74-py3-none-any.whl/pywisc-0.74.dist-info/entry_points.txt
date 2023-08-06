@@ -1,0 +1,3 @@
+[console_scripts]
+wisc = pywisc.command_line:main
+
