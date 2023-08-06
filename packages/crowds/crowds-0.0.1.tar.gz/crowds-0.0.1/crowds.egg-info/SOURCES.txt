@@ -1,0 +1,14 @@
+README.md
+setup.py
+crowds/__init__.py
+crowds.egg-info/PKG-INFO
+crowds.egg-info/SOURCES.txt
+crowds.egg-info/dependency_links.txt
+crowds.egg-info/requires.txt
+crowds.egg-info/top_level.txt
+crowds/kanonymity/__init__.py
+crowds/kanonymity/generalizations.py
+crowds/kanonymity/information_loss.py
+crowds/kanonymity/lattice.py
+crowds/kanonymity/ola.py
+crowds/kanonymity/utils.py
