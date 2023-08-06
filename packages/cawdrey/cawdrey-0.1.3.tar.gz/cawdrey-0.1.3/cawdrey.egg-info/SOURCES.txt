@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+__pkginfo__.py
+requirements.txt
+setup.py
+cawdrey/__init__.py
+cawdrey/alphadict.py
+cawdrey/base.py
+cawdrey/bdict.py
+cawdrey/frozendict.py
+cawdrey/frozenordereddict.py
+cawdrey/nonelessdict.py
+cawdrey.egg-info/PKG-INFO
+cawdrey.egg-info/SOURCES.txt
+cawdrey.egg-info/dependency_links.txt
+cawdrey.egg-info/requires.txt
+cawdrey.egg-info/top_level.txt
