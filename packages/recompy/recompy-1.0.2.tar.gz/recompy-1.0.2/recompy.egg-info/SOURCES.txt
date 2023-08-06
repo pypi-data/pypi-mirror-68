@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+recompy/FunkSVD.py
+recompy/Initializer.py
+recompy/Similarities.py
+recompy/Test.py
+recompy/__init__.py
+recompy.egg-info/PKG-INFO
+recompy.egg-info/SOURCES.txt
+recompy.egg-info/dependency_links.txt
+recompy.egg-info/requires.txt
+recompy.egg-info/top_level.txt
+recompy/data/movielens100k.csv
+recompy/data/ratings_small.csv
