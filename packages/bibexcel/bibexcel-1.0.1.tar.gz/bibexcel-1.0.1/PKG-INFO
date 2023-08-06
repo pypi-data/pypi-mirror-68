@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bibexcel
+Version: 1.0.1
+Summary: A python executable to get JSON and Excel data from a bibexcel text file
+Home-page: http://github.com/storopoli/bibexcel
+Author: Jose Eduardo Storopoli
+Author-email: thestoropoli@gmail.com
+License: MIT
+Description: # BibExcel Package
+        
+        A python executable to get JSON and Excel data from a bibexcel text file
+        
+        ## Getting Started
+        These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+        
+        ### Prerequisites
+        
+        * This script is intended to be run on Python 3
+        * Install with `pip install bibexcel`
+        * Install `pandas` and `json` packages
+        
+        ## Usage
+        
+        ### Converting a bibexcel text file to JSON/Excel
+        
+        ```python
+        # Convert to a JSON
+        python3 bibexcel -i 'bibexcel.doc' -t 'scopus' -f 'bibexceltojson' -o 'bibexcel.json'
+        
+        # Convert to a Excel
+        python3 bibexcel -i 'bibexcel.doc' -t 'scopus' -f 'jsontoexcel' -o 'bibexcel.xlsx'
+        ```
+        
+        ## Authors
+        
+        * **Jose Eduardo Storopoli** - *Creator and Developer* - [storopoli](https://github.com/storopoli)
+        
+        ## License
+        
+        This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
