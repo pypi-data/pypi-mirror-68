@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: classforge
+Version: 0.8
+Summary: A new python object system
+Home-page: https://classforge.io
+Author: Michael DeHaan
+Author-email: michael@michaeldehaan.net
+License: UNKNOWN
+Description: ClassForge is a new python object system.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
