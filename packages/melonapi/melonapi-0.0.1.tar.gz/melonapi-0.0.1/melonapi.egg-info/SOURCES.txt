@@ -1,0 +1,11 @@
+README.md
+setup.py
+melonapi/__init__.py
+melonapi/melonapi.py
+melonapi/scrapeMelon.py
+melonapi/spotify.py
+melonapi.egg-info/PKG-INFO
+melonapi.egg-info/SOURCES.txt
+melonapi.egg-info/dependency_links.txt
+melonapi.egg-info/requires.txt
+melonapi.egg-info/top_level.txt
