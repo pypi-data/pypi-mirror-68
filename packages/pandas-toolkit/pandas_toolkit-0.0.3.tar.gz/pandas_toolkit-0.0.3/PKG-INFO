@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandas_toolkit
+Version: 0.0.3
+Summary: A collection of pandas accessors to help with common machine learning related functionality.
+Home-page: https://github.com/asmith26/pandas_toolkit.git
+Author: asmith26
+License: Apache-2.0
+Description: # pandas_toolkit
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

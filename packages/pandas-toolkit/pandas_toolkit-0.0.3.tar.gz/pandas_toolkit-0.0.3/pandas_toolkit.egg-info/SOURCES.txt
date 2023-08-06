@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pandas_toolkit/__init__.py
+pandas_toolkit/_version.py
+pandas_toolkit.egg-info/PKG-INFO
+pandas_toolkit.egg-info/SOURCES.txt
+pandas_toolkit.egg-info/dependency_links.txt
+pandas_toolkit.egg-info/requires.txt
+pandas_toolkit.egg-info/top_level.txt
+pandas_toolkit/ml/__init__.py
+pandas_toolkit/ml/tests/__init__.py
+pandas_toolkit/ml/tests/test_ml.py
