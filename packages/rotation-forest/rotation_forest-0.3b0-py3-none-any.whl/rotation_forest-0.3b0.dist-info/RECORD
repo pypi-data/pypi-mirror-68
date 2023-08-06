@@ -1,0 +1,10 @@
+rotation_forest/__init__.py,sha256=4B90_CttfHODG6-w4r8peiivwNyccoItdaFdNZr3dHs,258
+rotation_forest/_exceptions.py,sha256=THxH7JBkJySYCxTSRzjgdhUUlwqrCl-gGTTmeJn0Dak,4332
+rotation_forest/rotation_forest.py,sha256=3q0HAEV9dTtvBCLJiTOKqctoNw7aFQxNn3thnm8OpI0,6011
+rotation_forest/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rotation_forest/tests/test_rotation_forest.py,sha256=smfwa-tMYVL-qtHH2OebYWObZ2Lw2HbMUpeB4Tp0Br0,6178
+rotation_forest-0.3b0.dist-info/LICENSE,sha256=4TYsT05eMvd4r5QmDJuEV0__EbYrXeYLWj8z1jCdNYA,1072
+rotation_forest-0.3b0.dist-info/METADATA,sha256=lNNJD0IQOwZNzv7aZqvepVLqkVLkSZZOmEHeW2daxlg,476
+rotation_forest-0.3b0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+rotation_forest-0.3b0.dist-info/top_level.txt,sha256=h2ayV7EliRSf0-AHodCTaC6l411Wn4PE8y4FOA5o8U4,16
+rotation_forest-0.3b0.dist-info/RECORD,,
