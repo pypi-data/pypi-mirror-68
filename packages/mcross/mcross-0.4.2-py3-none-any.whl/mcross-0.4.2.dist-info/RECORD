@@ -1,0 +1,13 @@
+mcross/__init__.py,sha256=j8QlWoy2awukcZZy_AmUKWfkH_BEg1sfAw3U6dNYzXE,85
+mcross/document.py,sha256=2UOUULkTJSTwC016NMaES19WgSDj3QEPCV9zamm7Pkc,2492
+mcross/gui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcross/gui/controller.py,sha256=kFYyGHl7jT-XMhHDm75-PatZhY6dErHOJdRQjlvtbvg,2722
+mcross/gui/model.py,sha256=0rwGNuFE0FzFfYZXQkHkFczU0nCq89SGmFcRfTdlefU,2213
+mcross/gui/view.py,sha256=yi_TbB0gCDNFZKymR9qOZsz17PXjuifARuR3V8pHssA,7175
+mcross/gui/widgets.py,sha256=Ky9rwNm-T7j8fAScLea0rWkt9Ylmhvd3gSBwpy2Bt6I,598
+mcross/transport.py,sha256=xXlES3ttSGcSBpbob1q5YOZ9Djz0GCk_pdcP5me2U6g,4239
+mcross-0.4.2.dist-info/entry_points.txt,sha256=D-vRn11OQQAsvpPYoVhpiQv01T4bgg_L3p4oBrJycww,37
+mcross-0.4.2.dist-info/LICENSE,sha256=afc7SAG0_EVdX1eBfK6Z3WlUoJyXtZQvXHHgwMlT1k4,1057
+mcross-0.4.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+mcross-0.4.2.dist-info/METADATA,sha256=B-6ADOuhAzgrc7pQC5yOGLvqs8Rnx1svRy2nakqAlGk,362
+mcross-0.4.2.dist-info/RECORD,,
