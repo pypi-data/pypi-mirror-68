@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "django-geo-chile"
+version = "1.0.0"
+description = "Region, Province and Commune populated django models."
+authors = ["Francisco Ceruti <hello@fceruti.com>"]
+maintainers = ["Francisco Ceruti <hello@fceruti.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = "https://github.com/fceruti/django-geo-chile"
+packages = [
+    { include = "geo_chile" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+django = ">=2.2"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.5.2"
+pylint-django = "^2.0.15"
+flake8 = "^3.8.1"
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
