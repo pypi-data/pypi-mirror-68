@@ -1,0 +1,6 @@
+requests
+mock
+responses
+logzero
+xmltodict
+pytest
