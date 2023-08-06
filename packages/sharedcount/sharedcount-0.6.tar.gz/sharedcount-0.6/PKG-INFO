@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: sharedcount
+Version: 0.6
+Summary: UNKNOWN
+Home-page: https://github.com/sharedcount/sharedcount-python-sdk.git
+Author: Sharedcount
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/sharedcount/sharedcount-python-sdk/archive/1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
