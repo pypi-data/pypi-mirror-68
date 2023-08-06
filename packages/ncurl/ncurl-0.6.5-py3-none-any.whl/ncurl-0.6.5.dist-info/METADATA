@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ncurl
+Version: 0.6.5
+Summary: Next generation of curl
+Home-page: UNKNOWN
+Author: bohan
+Author-email: bohanzhang@foxmail.com
+License: MIT License
+Keywords: utils,curl
+Platform: UNKNOWN
+Requires-Dist: Pygments
+Requires-Dist: requests
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
