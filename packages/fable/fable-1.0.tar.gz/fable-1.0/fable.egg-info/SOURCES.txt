@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fable/__init__.py
+fable/config.py
+fable/tex.py
+fable.egg-info/PKG-INFO
+fable.egg-info/SOURCES.txt
+fable.egg-info/dependency_links.txt
+fable.egg-info/requires.txt
+fable.egg-info/top_level.txt

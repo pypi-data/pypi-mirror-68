@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: fable
+Version: 1.0
+Summary: Fable: Tex Editor
+Home-page: https://github.com/yrapop01/fable
+Author: Yuri Rapoport
+Author-email: yuri.rapoport@gmail.com
+License: MIT
+Download-URL: https://github.com/yrapop01/fable/archive/v_10.tar.gz
+Description: UNKNOWN
+Keywords: TEX,NOTEBOOK,LITERATE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
