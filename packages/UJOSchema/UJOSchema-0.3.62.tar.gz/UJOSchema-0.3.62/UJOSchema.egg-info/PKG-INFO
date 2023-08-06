@@ -1,0 +1,374 @@
+Metadata-Version: 2.1
+Name: UJOSchema
+Version: 0.3.62
+Summary: UJO Schema is an easy to read and easyto write language to define UJO data structures
+Home-page: https://www.industrial-devops.org
+Author: Maik Wojcieszak
+Author-email: mw@wobew-systems.com
+License: MIT
+Description: # UJO Schema
+        
+        [![pypi](https://img.shields.io/pypi/v/UJOSchema.svg)](https://pypi.org/project/UJOSchema/) [![license](https://img.shields.io/pypi/l/UJOSchema.svg)](https://pypi.org/project/UJOSchema/)
+        
+        UJO Schema is an easy to read and easy to write language to define UJO data
+        structures. The definition is translated into a documentation and/or compiled into a binary form for fast an reliable checks on data sets.
+        
+        ## Convert UJO Schema to markdown documentation
+        
+        UJO Schema files can be converted into a markdown documentation.
+        
+        __Usage:__
+        
+        ```
+        Usage:
+          python -m UJOSchema (-h | --help)
+          python -m UJOSchema into markdown <source> [-d FOLDER] [-e EXTENSION]
+        
+        Options:
+          -h --help  Show this screen.
+        
+          into markdown <source>
+              convert given SOURCE (file or folder) to markdown
+        
+          -d FOLDER --destination FOLDER
+              destination folder for generated markdown files [default: .]
+        
+          -e EXTENSION --extension EXTENSION
+              if SOURCE is a folder, only process files with the specified extension [default: .ujs]
+        ```
+        
+        __Example:__
+        
+        ```
+        python -m UJOSchema into markdown .\examples\ujs2md -d testoutput
+        ```
+        
+        ## Module Name
+        
+        UJO Schema can be divided into multiple modules. Each module is described in one file. At the
+        beginning of a file the module name is defined. Additionally a documentation section for the
+        particular module can be added.
+        
+        ```python
+        module myModule;
+        ```
+        
+        Adding documentation is done by using the doc keyword.
+        
+        ```python
+        module myModule
+            : doc """This text is a description
+        of my module""";
+        ```
+        
+        ## Types
+        
+        ### Atomic Types
+        
+        Atomic types define the basic data fields in UJO. All data structures are build upon atomic types.
+        
+        | Keyword       | Description               |
+        |---------------|---------------------------|
+        | `int64`       | 64 bit integer            |
+        | `int32`       | 32 bit integer            |
+        | `int16`       | 16 bit integer            |
+        | `int8`        | 8 bit integer             |
+        | `uint64`      | 64 bit unsigned integer   |
+        | `uint32`      | 32 bit unsigned integer   |
+        | `uint16`      | 16 bit unsigned integer   |
+        | `uint8`       | 8 bit unsigned integer    |
+        | `float64`     | double precision float    |
+        | `float32`     | single precision float    |
+        | `float16`     | half precision float      |
+        | `bool`        | boolean (True/False)      |
+        | `date`        | a date with Month:Day:Year|
+        | `time`        | time Hour:Minute:Second   |
+        | `datetime`    | combination of time and date |
+        | `timestamp`   | combination of time and date and millisecond |
+        | `string`      | utf8 string |
+        | `cstring`     | a C string terminated by \x00 |
+        | `binary`      | untyped binary object |
+        
+        ### Variant Type
+        
+        | Keyword       | Description               |
+        |---------------|---------------------------|
+        | `variant`     | All atomic and container types including `null`|          |
+        
+        The variant can hold values of any atomic and container type. The only constraint
+        possible for variant type definitions is to exclude null as a possible value.
+        
+        ## Defining Constraint Types
+        
+        Based on Atomic and Container Types new types can be defined by applying constraint
+        rules on them.
+        
+        Creating a new type based on an existing atomic type without constraints. The new
+        type can contain the same values as the original type.
+        
+        ```python
+        new_type = int64;
+        ```
+        
+        The new type can be documented using `doc`.
+        
+        ```python
+        new_type = int64 : doc "This is my new type"
+        ```
+        
+        Multiple lines can be used for better readability.
+        
+        ```python
+        new_type = int64
+            : doc "This is my new type";
+        ```
+        
+        ## Constraint Rules
+        
+        Constraint Rules are used to define constraints on an atomic type.
+        
+        ### Defining specific values
+        
+        Storypoints are an agile metric containing only specific numbers.
+        
+        ```python
+        StoryPoints = uint16
+            : in (1, 2, 3 ,5, 8, 13, 20, 40, 100 );
+        
+        SciConst = float32
+            : in (3.14, 9.81, 343,2);
+        ```
+        
+        The `in` keyword can also be used to define specific words for a string.
+        
+        ```python
+        CardColor = string
+            : in ("Heart", "Spade", "Diamond", "Club");
+        ```
+        
+        ### Defining value ranges
+        
+        A range includes all values from a lowest value to highest value. If the lowest or highest value is omitted, the minimum or maximum possible value of the chosen atomic type is used. This rule can only be applied to numeric types.
+        
+        ```python
+        # all values from 0 to 10
+        lowRange = uint32
+            : in ( .. 10 );
+        
+        # all values from 10 to 4.294.967.295
+        HiRange = uint32
+            : in ( 10 .. );
+        ```
+        
+        ### Documenting values
+        
+        Values and ranges can be documented using `doc`.
+        
+        ```python
+        CardColor = string
+            : in (
+                "Heart"     : doc "the red heart symbol",
+                "Spade"     : doc "this is black",
+                "Diamond"   : doc "a red symbol",
+                "Club"      : doc "looks like a little tree");
+        ```
+        
+        ### Make a value mandatory
+        
+        Values is UJO can be null by default. If null is not allowed in a dataset the `not null`
+        rule is applied.
+        
+        ```python
+        new_type = int64
+            : not null
+            : doc "This is my new type with no null values allowed";
+        ```
+        
+        If a value is mandatory, a default value can be applied.
+        
+        ```python
+        new_type = int64
+            : not null default 5
+            : doc "This is my new type with no null values allowed, but with an automatic default value of 5";
+        ```
+        
+        ## List Type
+        
+        Lists are a collection of values organized in a fixed sequence.To define a list
+        from any valid type including previously defined custom types the `*` operator is used.
+        
+        ### A list for a specific type
+        
+        A list can be created from any valid type including container types. Here is an example how
+        to create a list of int64 values. Only int64 values and null can be stored.
+        
+        ```python
+        intList = int64*;
+        ```
+        
+        If I want to exclude null values from the list I can apply the relating type rule.
+        
+        ```python
+        intList = int64*
+            : not null;
+        ```
+        
+        A range can be applied as well.
+        
+        ```python
+        intList = int64*
+            : not null
+            : in ( 100 .. 200 );
+        ```
+        
+        A constraint type can be defined first and used in the list definition.
+        
+        ```python
+        # a constraint type
+        MyType = int64
+            : in ( 100 ..200)
+            : not null;
+        
+        # a list of this type
+        intList = MyType*;
+        ```
+        
+        ### Set a length constraint for a list
+        
+        To be sure a list contains a specifc number of elemts, a `length()` constraint
+        can be applied.
+        
+        ```python
+        intList = int64*
+            : length(5);
+        ```
+        
+        The `length(5)` sets the length the list to exactly 5 elements.
+        
+        To set minimum and maximum length, high and low length can be used.
+        
+        Set the maximum length to 10.
+        
+        ```python
+        intList = int64*
+            : length(.. 10);
+        ```
+        
+        Set the minimum length to 10.
+        
+        ```python
+        intList = int64*
+            : length(10 ..);
+        ```
+        
+        Set the min and max length.
+        
+        ```python
+        intList = int64*
+            : length(10 .. 20);
+        ```
+        
+        
+        ### Defining a Record
+        
+        A record is a limited, fixed sequence of
+        values with specific and fixed types.
+        
+        For reference and probably for later conversions into JSON or XML data a
+        name is applied to the data fields in the record.
+        
+        ```python
+        header = [
+            CreationTime   = timestamp,
+            SequenceNumber = int64,
+            Status         = int16,
+            Message        = string,
+            Values         = list
+        ];
+        ```
+        
+        Constraint rules can be applied on each value and the field can be documented.
+        
+        ```python
+        header = [
+            CreationTime = timestamp : doc "Creation time of the message",
+            SequenceNumber = int64 : doc "sequence number to order the messages",
+            Status = int16
+                : in (
+                        0 : doc "Ok",
+                        1 : doc "Warning",
+                        2 : doc "Error",
+                        3 : doc "Critical"
+                    )
+                : not null
+                : doc "Processing status",
+            Message = string : doc "An error message",
+            Values = variant* : doc "a list with some values"
+        ] : doc "This is a record";
+        ```
+        
+        ### Extending a record
+        
+        An already defined record can be extended to contain more fields. The resulting
+        records appends the new fields to the previously defined record part.
+        
+        ```python
+        aMessage = extend header [
+            temperature = float32 : doc "value read from a sensor",
+            FanStatus = bool : doc "True = On, False = Off"
+        ];
+        ```
+        
+        ## Associative array (map)
+        
+        Constraints on Assoziative arrays apply to its values. Keys can be numbers and
+        strings. Values can be any type including containers.
+        
+        To define a map type key type and value type have to be defined.
+        
+        ```python
+        mymap = <string -> variant>;
+        ```
+        
+        Defines a map with string keys and variant values.
+        
+        ## Objects
+        
+        An object is a map of fixed keys to reference values.
+        
+        The following example shows how to define an object.
+        
+        ```python
+        mapType = {
+            3.14          -> variant*,
+            "temperature" -> cstring : doc "another doc string" }
+        } : doc "object defintion";
+        ```
+        
+        ### Extending an object
+        
+        A static map defintion can be extended using the `extend` keyword.
+        
+        ```python
+        extMapType = extend mapType {
+            5      -> vriant*,
+            "test" -> cstring : doc "another doc string" }
+        : doc "extend an object";
+        ```
+        
+        ## Defining variant types
+        
+        The type `variant` is a wildcard for any types available, no matter if atomic, custom or container.
+        Sometimes a data definition requires the flexibility of a variant, but still needs to be limited
+        to a subset of types.
+        
+        ```python
+        numeric = ( int64, int32, int16, float64, float32, float16 )
+            : doc "a type that can contain values of any of the listed types";
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
