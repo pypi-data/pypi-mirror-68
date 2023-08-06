@@ -1,0 +1,3 @@
+[salt.loader]
+cloud_dirs = salt_cloud_module_kamatera.loader:clouds_dirs
+
