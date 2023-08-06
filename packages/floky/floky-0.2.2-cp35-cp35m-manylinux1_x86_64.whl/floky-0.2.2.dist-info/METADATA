@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: floky
+Version: 0.2.2
+Requires-Dist: tqdm~=4.40.0
+Requires-Dist: scipy
+Requires-Dist: numpy
+Author: ritchie46 <ritchie46@gmail.com>
+Author-Email: ritchie46 <ritchie46@gmail.com>
