@@ -1,0 +1,12 @@
+rasterio>=1.1
+mercantile
+pydantic
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+
+[test]
+pytest
+pytest-cov
