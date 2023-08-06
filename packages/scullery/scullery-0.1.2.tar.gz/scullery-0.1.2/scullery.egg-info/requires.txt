@@ -1,0 +1,4 @@
+pyFluidSynth
+pyyaml
+sf2utils
+typeguard
