@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: esayRedis
+Version: 0.1.1
+Summary: esayRedisTest
+Home-page: http://example.com
+Author: q2536807
+Author-email: 616566665@qq.com 
+License: UNKNOWN
+Platform: any
+Requires-Dist: fastapi
+Requires-Dist: redis
+Requires-Dist: starlette
+Requires-Dist: pydantic
+
+esayRedisTest
+
+
