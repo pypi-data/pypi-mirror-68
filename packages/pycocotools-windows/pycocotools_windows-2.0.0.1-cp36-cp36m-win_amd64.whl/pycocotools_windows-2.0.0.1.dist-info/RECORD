@@ -1,0 +1,11 @@
+pycocotools/__init__.py,sha256=0C6R_hJbgubl8GQriX90OQlFBtBvMncbQNABcN646uE,21
+pycocotools/_mask.cp36-win_amd64.pyd,sha256=KUzIHHVbLwQ4bJNyCG7_Ri8SOPOX4WuBaRkZ3e5txXs,161792
+pycocotools/coco.py,sha256=Ybl_GThitI-OTGFDDdFXBHlLRNaK6ChPEvi_vLQg674,18806
+pycocotools/cocoeval.py,sha256=5RSvQBhI1aTMXTUSvZPSwxf5InLG0w8hjg8At7QRBTQ,24143
+pycocotools/mask.py,sha256=TUeI-ZWXHJfFVI8L0ZlB9uwfqvXQ1_tuxIklb_hyxhc,4591
+pycocotools_windows-2.0.0.1.dist-info/DESCRIPTION.rst,sha256=K1jPa3iyL_6N7Pw8IlrJ7jl2YTcfOaKlMu_l8DId_uM,373
+pycocotools_windows-2.0.0.1.dist-info/METADATA,sha256=g1jb1HQR1Lq0XrVxsjdqOs5vIXjlbS2lWX3eoyy9T0I,713
+pycocotools_windows-2.0.0.1.dist-info/RECORD,,
+pycocotools_windows-2.0.0.1.dist-info/WHEEL,sha256=3o6dJ54ci-MtRFdJCPkLCK5G-vO7QSv3lIQ-NrhglGk,106
+pycocotools_windows-2.0.0.1.dist-info/metadata.json,sha256=nS-qWswjfMuoaLbrUJhMA_Haq0ZtzLHoNU8okjYqWzc,448
+pycocotools_windows-2.0.0.1.dist-info/top_level.txt,sha256=kySwJ77O9VF1E0aiCb621tEfHF9AUYDMhf2L7FYJnVM,12
