@@ -1,0 +1,14 @@
+pyscf>=1.7.1
+numpy!=1.16
+scipy
+jupyter
+sphinx
+nbsphinx
+pyberny
+sphinx_rtd_theme
+sphinxcontrib-bibtex
+jupyter_contrib_nbextensions
+pandoc
+docopt
+codecov
+pytest-cov
