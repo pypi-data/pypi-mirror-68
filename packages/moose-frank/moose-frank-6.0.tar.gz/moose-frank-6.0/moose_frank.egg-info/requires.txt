@@ -1,0 +1,6 @@
+django>=1.11
+
+[graphene]
+graphene-django>=2.2
+graphene-file-upload>=1.2
+graphene>=2.1
