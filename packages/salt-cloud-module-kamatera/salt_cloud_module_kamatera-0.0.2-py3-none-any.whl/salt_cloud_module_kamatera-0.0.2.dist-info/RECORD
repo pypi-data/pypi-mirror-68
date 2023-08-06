@@ -1,0 +1,9 @@
+salt_cloud_module_kamatera/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salt_cloud_module_kamatera/loader.py,sha256=lgtR8lSA6c6aZRonVQU4lJh0BgjJfui8Tju6SzlSWoI,128
+salt_cloud_module_kamatera/clouds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salt_cloud_module_kamatera/clouds/kamatera.py,sha256=9fSyWfZlcnjNf4E44p_wkLI9PVOLHdf_EVDXjwdwhJI,22132
+salt_cloud_module_kamatera-0.0.2.dist-info/METADATA,sha256=fznroWLIz6nAM7YJB17bYtsS8k5ftp4im1lxdaB3oKU,5318
+salt_cloud_module_kamatera-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+salt_cloud_module_kamatera-0.0.2.dist-info/entry_points.txt,sha256=iA_VNvZ8ymhBvq8efey9mDlPCKgrNQVpRg4rqEsnKmk,74
+salt_cloud_module_kamatera-0.0.2.dist-info/top_level.txt,sha256=wL2l3UTsUfhgNtrLWUtIH0-xrcyjSVHWmU-sExZyvoE,27
+salt_cloud_module_kamatera-0.0.2.dist-info/RECORD,,
