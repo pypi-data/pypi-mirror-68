@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: salt-bootstrap-ssh
+Version: 1.1.1
+Summary: BBootstrap key based SSH authentication to a Salt Master
+Home-page: https://gitlab.com/davisd50/salt-bootstrap-ssh
+Author: David Davis
+Author-email: davisd50@gmail.com
+License: MIT
+Keywords: salt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: distro
+Requires-Dist: paramiko
+
+# Salt minion SSH bootstrap
+## Example usage
+
+Running from a minion host, this will
+ - Install and activate ssh server, if not already installed
+ - Grant password-less sudo to current user, if not already explicitly named in /etc/sudoers
+ - Add Salt master *your_master* public SSH key to current user's authorized_keys, 
+   if not already existing.  Key will be read via ssh from *your_master*
+   as current user (you will be prompted to provide a password)
+
+```bash
+salt-bootstrap-ssh --all your_master
+```
+
+You can avoid the password prompt by setting an environment variable
+
+```bash
+SALT_BOOTSTRAP_SSH_MASTER_PASSWD=some_password salt-bootstrap-ssh --all your_master
+```
+
+To create a new local Salt ssh minion service account
+ - a_salt_user will be added to local system
+ - a_salt_user will have a randomly generated long complex password
+ - a_salt_user will be added to /etc/sudoers file with NOPASSWD option
+
+```bash 
+salt-bootstrap-ssh --all --user your_user your_master
+```
+
+You can change which account is used to ssh the Master's ssh public key
+
+```bash
+salt-bootstrap-ssh --master-ssh-user your_master_user your_master
+```
+
+## General usage
+
+salt-bootstrap-ssh [-h] [--all] [--install-ssh] [--enable-ssh]
+                          [--user USER] [--create-user] [--grant-sudo]
+                          [--master-ssh-user MASTER_SSH_USER]
+                          [--master-pki-dir MASTER_PKI_DIR]
+                          [--master-ssh-port MASTER_SSH_PORT]
+                          salt_master
+
+Bootstrap key based SSH authentication to a Salt Master
+
+This streamlines the effort to enable a Salt master to use salt-ssh on a minion.
+This script should be run on a minion you would like to control via a named
+Salt master.
+
+You will be prompted for a Salt master SSH password unless the
+SALT_BOOTSTRAP_SSH_MASTER_PASSWD environment variable is set.
+
+Supports recent (systemd based) versions of Ubuntu and Redhat.
+
+
+positional arguments:
+  salt_master           The hostname or IP address of the Salt master to
+                        bootstrap against
+
+
+optional arguments:
+
+  **-h, --help**:            show this help message and exit
+
+  **--all**:                 Shortcut to enable all script options. This infers
+                        --install-ssh, --enable-ssh, --create-user, and
+                        --grant-sudo
+
+  **--install-ssh**:         Install a local ssh server if needed. The will
+                        leverage the local package management system.
+
+  **--enable-ssh**:          Enable local ssh server if needed. The will leverage
+                        the local service manager.
+
+  **--user USER**:           Named user to bootstrap (default: current user).
+
+  **--create-user**:         Create named user if needed. User created will have a
+                        randomly generated large complex password assigned
+                        with /home/{user} home directory and /bin/bash shell
+
+  **--grant-sudo**:          Named user will be added to /etc/sudoers with NOPASSWD
+                        privilege (e.g. the user can leverage sudo without
+                        providing a password
+
+  **--master-ssh-user** *MASTER_SSH_USER*:
+                        The user to authenticate to Salt master with. This
+                        user should either have access to the Salt master PKI
+                        directory, or have sudo capabilities to cat the Salt
+                        master public RSA key (default: current user).
+
+  **--master-ssh-user-no-sudo**:
+                        Do not use sudo if the --master-ssh-user is not
+                        root.By default, it is assumed that --master-ssh-user
+                        can sudo without a password on the Salt master.
+
+
+  **--master-pki-dir** *MASTER_PKI_DIR*:
+                        The base Salt PKI directory on the Salt master. The
+                        master RSA public key will be referenced from here
+                        (default: /etc/salt/pki/master).
+
+  **--master-ssh-port** *MASTER_SSH_PORT*:
+                        The base Salt PKI directory on the Salt master. The
+                        master RSA public key will be referenced from here 
+                        (default: 22).
+
+##HISTORY
+
+1.0.0
+----------
+
+* initial release
+
+1.1.0
+----------
+
+* change method to read master public key from sftp to ssh with cat command
+* add --master-ssh-port option
+
+1.1.1
+----------
+
+* fix issue with HOME/.ssh creation
+
