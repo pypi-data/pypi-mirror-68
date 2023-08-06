@@ -1,0 +1,11 @@
+ipywidgets>=7.5.1
+
+[dev]
+ipywidgets>=7.5.1
+pytest
+pytest-cov
+pylint
+flake8
+bump2version
+autopep8
+mock
