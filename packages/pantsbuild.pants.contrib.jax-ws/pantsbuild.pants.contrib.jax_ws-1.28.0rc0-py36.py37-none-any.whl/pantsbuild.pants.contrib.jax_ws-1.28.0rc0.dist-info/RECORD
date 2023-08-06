@@ -1,0 +1,15 @@
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0-py3.6-nspkg.pth,sha256=JjySLBF/yJbKxcwq2GBNfjIiY3Xfqsn6ehBu4fXcICo=,1694
+pants/contrib/jax_ws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/register.py,sha256=8dqvj2cl2TPShq1QJexY8bw2DVXLM-w1NwLFe9CLTAI,957
+pants/contrib/jax_ws/target_types.py,sha256=Et9gtTyz-rHpaJCQ-nTYARJ4VEdmBeyMLgSjGJvoZzo,699
+pants/contrib/jax_ws/targets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/targets/jax_ws_library.py,sha256=PkdRAg8rZ_M_2hKoKPzqs9CQP8vP0i3GYrPYhePsH_U,1006
+pants/contrib/jax_ws/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/tasks/jax_ws_gen.py,sha256=N2TfhX-PXMRbUhZGZhNr7vs6w_JDbXEBdDZukD5l_v8,3894
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/METADATA,sha256=x6+gkQy2z8b3Utfkm1CgWijoO6Dce//P5Dru5jJXM2s=,18679
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/WHEEL,sha256=l1c8NwvStgjlPY31ePysM6wACe8eVuieRLlDoGEUFrs=,112
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/entry_points.txt,sha256=kHJIpEEUs213hf3mtcYMWJqPqXy7nCd/jOYZQl8/Yrs=,153
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1
+pantsbuild.pants.contrib.jax_ws-1.28.0rc0.dist-info/RECORD,,
