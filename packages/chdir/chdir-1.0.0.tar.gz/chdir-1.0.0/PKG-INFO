@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: chdir
+Version: 1.0.0
+Summary: Tiny library for setting the working directory to the location of a Python script.
+Home-page: https://github.com/CabbageDevelopment/chdir
+Author: Sam McCormack
+Author-email: cabbagedevelopment@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/CabbageDevelopment/chdir
+Description: # chdir
+        
+        `chdir` is a tiny Python library for setting the current working directory to the location of a Python script.
+        
+        ## Why? 
+        
+        When writing Python scripts, you might be tired of doing this:
+        
+        ```python
+        import os
+        
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        ```
+        
+        With `chdir`, you can do this:
+        
+        ```python
+        import chdir
+        
+        chdir.here(__file__)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
