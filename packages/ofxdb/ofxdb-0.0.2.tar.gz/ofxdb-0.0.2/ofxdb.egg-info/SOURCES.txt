@@ -1,0 +1,9 @@
+README.md
+setup.py
+ofxdb/__init__.py
+ofxdb/cfg.py
+ofxdb.egg-info/PKG-INFO
+ofxdb.egg-info/SOURCES.txt
+ofxdb.egg-info/dependency_links.txt
+ofxdb.egg-info/requires.txt
+ofxdb.egg-info/top_level.txt
