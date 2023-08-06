@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: genomeworks
+Version: 0.0.0
+Summary: NVIDIA genomics python libraries and utilities
+Home-page: https://github.com/clara-parabricks/GenomeWorks
+Author: NVIDIA Corporation
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: any
+
+Python libraries and utilities for manipulating genomics data
+
+
