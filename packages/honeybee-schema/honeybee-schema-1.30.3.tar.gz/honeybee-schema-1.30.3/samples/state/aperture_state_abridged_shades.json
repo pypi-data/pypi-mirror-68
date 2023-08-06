@@ -1,0 +1,105 @@
+{
+    "type": "RadianceSubFaceStateAbridged",
+    "modifier": "DiffusingShade",
+    "shades": [
+        {
+            "type": "StateGeometryAbridged",
+            "identifier": "RectangleShade1",
+            "display_name": "RectangleShade1",
+            "geometry": {
+                "type": "Face3D",
+                "boundary": [
+                    [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        2.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        2.0,
+                        2.0,
+                        0.0
+                    ],
+                    [
+                        0.0,
+                        2.0,
+                        0.0
+                    ]
+                ],
+                "plane": {
+                    "type": "Plane",
+                    "n": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "o": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "x": [
+                        1.0,
+                        0.0,
+                        0.0
+                    ]
+                }
+            },
+            "modifier": "ShadeMat"
+        },
+        {
+            "type": "StateGeometryAbridged",
+            "identifier": "RectangleShade2",
+            "display_name": "RectangleShade2",
+            "geometry": {
+                "type": "Face3D",
+                "boundary": [
+                    [
+                        0.0,
+                        0.0,
+                        2.0
+                    ],
+                    [
+                        2.0,
+                        0.0,
+                        0.0
+                    ],
+                    [
+                        2.0,
+                        2.0,
+                        2.0
+                    ],
+                    [
+                        0.0,
+                        2.0,
+                        2.0
+                    ]
+                ],
+                "plane": {
+                    "type": "Plane",
+                    "n": [
+                        0.3333333333333333,
+                        -0.6666666666666666,
+                        0.6666666666666666
+                    ],
+                    "o": [
+                        0.0,
+                        0.0,
+                        2.0
+                    ],
+                    "x": [
+                        -0.8944271909999159,
+                        -0.4472135954999579,
+                        0.0
+                    ]
+                }
+            },
+            "modifier": "ShadeMat"
+        }
+    ],
+    "modifier_direct": "DiffusingShadeDirect"
+}
