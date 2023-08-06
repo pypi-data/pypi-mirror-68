@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_urls.py,sha256=bmSNQCEkVYJaU9JB8ZRqDXt7r5irlEXzuMzZj_aM8PI,20842
+urltitle/__init__.py,sha256=sXwn1IzDJaVp2eLeDRkx96SkBbLqTowypustChVeXDI,82
+urltitle/urltitle.py,sha256=eFF2a6QDu0XBQLjPJcOvcYzQFIqvEE634qiuFT9D2TQ,20453
+urltitle/config/__init__.py,sha256=cSbYTrLILaCibkTVW88JEYiHPb6n4QIrpONbAXX2Vvc,1836
+urltitle/config/overrides.py,sha256=n0iRDd-eFU4bjJKN0a9G6ujkCRhWlk5V8LKgVrosqjk,4876
+urltitle/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+urltitle/util/humanize.py,sha256=jcmurrQESKY5pmaOcu0xhkMzbs55jLzvWPm5LRbK1ys,546
+urltitle/util/json.py,sha256=5Wef_Ycm3aZxvxzLUWaPW_tNp21gyu9yBD3VDaw0Tm8,470
+urltitle/util/math.py,sha256=ky3TXkgcM6j23Q__8Ad7GHe6TKtthk_WBkRObLEwtFk,158
+urltitle/util/pikepdf.py,sha256=vAoSeeAX0KnXqWFirAgGG74oBu8hmxAaD1FVCtsymWI,1229
+urltitle/util/urllib.py,sha256=FAfrwKfOOkyXN_vzojS_V319CH2i-PPrLrUtgIYKy-Y,244
+urltitle-0.2.40.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+urltitle-0.2.40.dist-info/METADATA,sha256=SyvY4dh4Y5yzSo8lG8mY6cL-glGKk7Xac8uxTO9Wf8Y,6587
+urltitle-0.2.40.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+urltitle-0.2.40.dist-info/top_level.txt,sha256=eZIdP_gkYBNBTlbg55_BeGrB418V5xdxXxv6zN7pU1M,15
+urltitle-0.2.40.dist-info/RECORD,,
