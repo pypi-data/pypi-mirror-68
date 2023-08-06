@@ -1,0 +1,7 @@
+astropy
+numpy
+astroquery
+matplotlib
+scipy
+photutils
+optimalgrouping
