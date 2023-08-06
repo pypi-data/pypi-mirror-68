@@ -1,0 +1,5 @@
+django_hellwebprice_events
+pip
+pkg_resources
+setuptools
+wheel

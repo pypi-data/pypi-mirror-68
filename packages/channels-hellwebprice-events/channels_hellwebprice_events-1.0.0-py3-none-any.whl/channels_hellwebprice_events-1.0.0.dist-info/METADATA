@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: channels-hellwebprice-events
+Version: 1.0.0
+Summary: Events on django channels
+Home-page: https://github.com/hellwebprice/django_hellwebprice_events
+Author: HellWebPrice
+Author-email: hellwebprice@gmail.com
+License: MIT
+Platform: UNKNOWN
+
+Long description
+
+
