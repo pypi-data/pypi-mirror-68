@@ -1,0 +1,11 @@
+gauto_profiler/__init__.py,sha256=r2x4KE4DOxkzV78089VBhkMtqTguw9WkvZC-LC_bAUQ,475
+gauto_profiler/base.py,sha256=0xBgpXbxZZR7GlZ43f0CYasqkyuSaPXQkryHZFewgf8,4671
+gauto_profiler/cpu.py,sha256=aKc49aYWFzNi8LbOHh8RtMy9VOu_2H-N_BDAL6VjYhw,1719
+gauto_profiler/fps.py,sha256=4oxajSDdMF9xRt-yHdO8Scw7hpRB0WBpx24YwWoYa3A,1672
+gauto_profiler/mem.py,sha256=6gafGxgwVHt7Yg7JgCFPO_YDTFWtpXA9zldjN2C0jtc,1392
+gauto_profiler/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gauto_profiler/utils/adb_tool.py,sha256=pZvFfEoIsO6agALWEQQ0QXwxZ8dRBbKg8fFglgg3-DE,1171
+gauto_profiler-0.1.1.dist-info/METADATA,sha256=26pfCzcfMemFXmCFldD7fqgNj8p2Mey-I0FaP2JrDug,1489
+gauto_profiler-0.1.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+gauto_profiler-0.1.1.dist-info/top_level.txt,sha256=_uXmvdoDgJnDGfRqvDKILR31xHLdI5YH_W2tSbI4PAg,15
+gauto_profiler-0.1.1.dist-info/RECORD,,
