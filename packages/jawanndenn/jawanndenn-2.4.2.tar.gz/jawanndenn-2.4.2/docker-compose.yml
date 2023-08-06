@@ -1,0 +1,70 @@
+# Copyright (C) 2018 Sebastian Pipping <sebastian@pipping.org>
+# Licensed under GNU Affero GPL v3 or later
+
+version: "3"
+
+networks:
+  ssl-reverse-proxy:
+    external: yes
+
+services:
+  postgres:
+    image: postgres:11.6  # due to postgresql-client version 11.6 in Alpine 3.10
+    volumes:
+      - ~/.jawanndenn-docker-pgdata/:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${JAWANNDENN_POSTGRES_USER:?}
+      POSTGRES_PASSWORD: ${JAWANNDENN_POSTGRES_PASSWORD:?}
+      POSTGRES_DB: ${JAWANNDENN_POSTGRES_NAME:?}
+    logging:
+      driver: 'none'
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - DAC_READ_SEARCH
+      - FOWNER
+      - SETGID
+      - SETUID
+    restart: unless-stopped
+
+  redis:
+    image: redis:5-alpine
+    volumes:
+      - ~/.jawanndenn-docker-redis/:/data
+    logging:
+      driver: 'none'
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+
+  jawanndenn:
+    depends_on:
+      - postgres
+      - redis
+    build: .
+    ports:
+      - 127.0.0.1:54080:54080
+    networks:
+      - default
+      - ssl-reverse-proxy
+    environment:
+      JAWANNDENN_DEBUG: ${JAWANNDENN_DEBUG}
+      JAWANNDENN_MAX_POLLS: ${JAWANNDENN_MAX_POLLS:-1000}
+      JAWANNDENN_POSTGRES_HOST: postgres
+      JAWANNDENN_POSTGRES_PORT: 5432
+      JAWANNDENN_POSTGRES_NAME: ${JAWANNDENN_POSTGRES_NAME:?}
+      JAWANNDENN_POSTGRES_USER: ${JAWANNDENN_POSTGRES_USER:?}
+      JAWANNDENN_POSTGRES_PASSWORD: ${JAWANNDENN_POSTGRES_PASSWORD:?}
+      JAWANNDENN_REDIS_HOST: redis
+      JAWANNDENN_REDIS_PORT: 6379
+      JAWANNDENN_SECRET_KEY: ${JAWANNDENN_SECRET_KEY:?}
+      JAWANNDENN_SENTRY_DSN: ${JAWANNDENN_SENTRY_DSN}
+    user: 1001:1001
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+    tty: true
