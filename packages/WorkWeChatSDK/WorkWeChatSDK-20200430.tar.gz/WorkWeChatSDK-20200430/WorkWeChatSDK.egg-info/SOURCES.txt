@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+WorkWeChatSDK.egg-info/PKG-INFO
+WorkWeChatSDK.egg-info/SOURCES.txt
+WorkWeChatSDK.egg-info/dependency_links.txt
+WorkWeChatSDK.egg-info/top_level.txt
+examples/create_a_custom_group_and_push_msg.py
+examples/get_employee_list_by_depart.py
+examples/get_message_statistics.py
+examples/push_msg_via_bot.py
+examples/send_application_message.py
+examples/update_taskcard.py
+work_wechat/__init__.py

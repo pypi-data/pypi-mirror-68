@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: WorkWeChatSDK
+Version: 20200430
+Summary: A non-official WorkWeChat SDK in Pythonic Python.
+Home-page: https://github.com/tonytony2020/WorkWeChatSDK
+Author: Tony Pang
+Author-email: tonypangtonypang@gmail.com
+License: The MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires: requests
+Requires-Python: >=3.5
