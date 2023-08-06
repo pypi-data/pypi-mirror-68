@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: dbpedia-api
+Version: 0.0.1
+Summary: DBpedia
+Home-page: https://pypi.org/project/dbpedia-api/
+Author: OpenAPI Generator community
+Author-email: team@openapitools.org
+License: UNKNOWN
+Description:     This is the API of the DBpedia Ontology  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,DBpedia
+Platform: UNKNOWN
