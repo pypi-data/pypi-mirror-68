@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: reinstate-revert-revert
+Version: 0.1.1
+Summary: pre-commit plugin to improve default commit messages when reverting reverts
+Home-page: https://github.com/erikogan/reinstate-revert-revert
+License: MPL-2.0
+Keywords: precommit,pre-commit,revert
+Author: Erik Ogan
+Author-email: erik@ogan.net
+Maintainer: Erik Ogan
+Maintainer-email: erik@ogan.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: dulwich (>=0.19.16,<0.20.0)
+Project-URL: Repository, https://github.com/erikogan/reinstate-revert-revert
+Project-URL: issues, https://github.com/erikogan/reinstate-revert-revert/issues
+Description-Content-Type: text/markdown
+
+
