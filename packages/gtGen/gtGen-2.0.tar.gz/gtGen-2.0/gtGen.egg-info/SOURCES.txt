@@ -1,0 +1,8 @@
+README.md
+gtGen
+setup.py
+gtGen.egg-info/PKG-INFO
+gtGen.egg-info/SOURCES.txt
+gtGen.egg-info/dependency_links.txt
+gtGen.egg-info/requires.txt
+gtGen.egg-info/top_level.txt

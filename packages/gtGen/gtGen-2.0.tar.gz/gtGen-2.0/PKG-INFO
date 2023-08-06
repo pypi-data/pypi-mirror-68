@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gtGen
+Version: 2.0
+Summary: GT_Generator Application
+Home-page: UNKNOWN
+Author: Aravind Krishnan.B
+Author-email: aravindk797@gmail.com
+License: UNKNOWN
+Description: 
+        GT GENERATOR APP
+        Preparing Ground Truth.
+        
+        
+        Dependencies
+        -------------
+        python 3
+        sudo apt-get install python3.5-dev
+        sudo apt-get install python3-tk
+        
+        sudo apt-get install python3-pil python3-pil.imagetk
+        sudo apt-get install python3-tk
+        pip3 install python-Levenshtein
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
