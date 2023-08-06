@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: guacapy
+Version: 0.9.6
+Summary: REST API client for Guacamole
+Home-page: https://github.com/pschmitt/guacapy
+Author: Philipp Schmitt
+Author-email: philipp@schmitt.co
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: simplejson
+
+UNKNOWN
+
+
