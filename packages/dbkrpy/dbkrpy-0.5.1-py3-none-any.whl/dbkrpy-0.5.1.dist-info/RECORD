@@ -1,0 +1,16 @@
+dbkrpy/__init__.py,sha256=PJBhJ5tuxy966j3CloiOCOlDNg7mvkc5Xu7lb834cmU,210
+dbkrpy/dbkrapiurl.py,sha256=V16NDslhxfYiZmAJ9Jwmdy6D9v2Zd641lmj_1r1yrwo,288
+dbkrpy/dbkrcategories.py,sha256=oS5hi_CvsaOUBoHlGEAst7P_icLDKUXy2Sj2rieoLZ8,1044
+dbkrpy/dbkrgetbyid.py,sha256=jVNvW3YGKmOtomV4m6GffKCCZUKx-KsTBhNHVcw_YUs,4065
+dbkrpy/dbkrpage.py,sha256=zxnVbErm8Wflmg_Tv-6qvSuEFoZPXA142d4ez5r0N5s,1015
+dbkrpy/dbkrseach.py,sha256=Za54i1vAwjJSwMKFMC9PgRUXBFKJ9kvsNn0BtoYwh4Y,1039
+dbkrpy/dbkrsort.py,sha256=OadFCmCHslNjn1W8unHowEUFudOgZihvMT6t02FPSoc,1436
+dbkrpy/dbkrupdateguilds.py,sha256=TyndUJx267GghTUwGsWqg621SxZnX_4VPBq1wGLjvNY,2840
+dbkrpy/dbkrvote.py,sha256=-TuGDYxiyo3JVnjN15lS1A5T2s106kgeDLN6k0DdiX8,738
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_requests.py,sha256=pIYjNsgRXVaiM3xCnimWGDvKs-UnPx5UM4BcK7d80-Y,957
+dbkrpy-0.5.1.dist-info/LICENSE,sha256=GIJMbffhHIfv4nx0ls2Uot7zU-EwvSXD0osbkyG9Aus,1088
+dbkrpy-0.5.1.dist-info/METADATA,sha256=nMzA27kO0NglZBxOgbrtKO-y5kfdv55q0ez9YY7JiRo,7155
+dbkrpy-0.5.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+dbkrpy-0.5.1.dist-info/top_level.txt,sha256=pp20JTYJNhBEBNVhpgUtNaHYYYAyJuJ2_-m9D81hXT8,12
+dbkrpy-0.5.1.dist-info/RECORD,,
