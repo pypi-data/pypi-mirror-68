@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="cp1252" />
+    <title>Random Data</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="prev" title="Pie Chart" href="pie-chart.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="pie-chart.html" title="Pie Chart"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Educational 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="random-data">
+<h1>Random Data</h1>
+<p>Generate random data sample.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>None</p></li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><p>Data: randomly generated data</p></li>
+</ul>
+<p><strong>Random Data</strong> allows creating random data sets, where variables correspond to the selected distributions. The user can specify the number of rows (samples) and the number of variables for each distribution. Distributions from the Scipy’s <a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/stats.html" target="_blank">stats</a> module are used.</p>
+<p><img alt="../_images/Random-Data1-stamped.png" src="../_images/Random-Data1-stamped.png" /></p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.norm.html#scipy.stats.norm" target="_blank">Normal</a>: A normal continuous random variable. Set the number of variables, the mean and the variance.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bernoulli.html#scipy.stats.bernoulli" target="_blank">Bernoulli</a>: A Bernoulli discrete random variable. Set the number of variables and the probability mass function.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html#scipy.stats.binom" target="_blank">Binomial</a>: A binomial discrete random variable. Set the number of variables, the number of trials and probability of success.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.uniform.html#scipy.stats.uniform" target="_blank">Uniform</a>: A uniform continuous random variable. Set the number of variables and the lower and upper bound of the distribution.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.randint.html#scipy.stats.randint" target="_blank">Discrete uniform</a>: A uniform discrete random variable. Set the number of variables and the number of values per variable.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multinomial.html#scipy.stats.multinomial" target="_blank">Multinomial</a>: A multinomial random variable. Set the probabilities and the number of trials. The probabilities should sum to one. The number of probabilities corresponds to the final number of variables generated.</p></li>
+<li><p><em>Add more variables…</em> enables selecting new distributions from the list and with that adding additional variables. Distributions can be removed by pressing an X in the top left corner of each distribution.</p></li>
+<li><p>Define the sample size (i.e. number of rows, default 1000) and press <em>Generate</em> to output the data set.</p></li>
+</ol>
+<p><img alt="../_images/Random-Data2-stamped.png" src="../_images/Random-Data2-stamped.png" /></p>
+<ol class="simple">
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.hypergeom.html#scipy.stats.hypergeom" target="_blank">Hypergeometric</a>: A hypergeometric discrete random variable. Set the number of variables, number of objects, positives and trials.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.nbinom.html#scipy.stats.nbinom" target="_blank">Negative binomial</a>: A negative binomial discrete random variable. Set the number of variables, number of successes and the probability of a success.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.poisson.html#scipy.stats.poisson" target="_blank">Poisson</a>: A Poisson discrete random variable. Set the number of variables and the event rate (expected number of occurrences).</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.expon.html#scipy.stats.expon" target="_blank">Exponential</a>: An exponential continuous random variable. Set the number of variables.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.gamma.html#scipy.stats.gamma" target="_blank">Gamma</a>: A gamma continuous random variable. Set the number of variables, the shape and scale. The larger the scale parameter, the more spread out the distribution.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html#scipy.stats.t" target="_blank">Student’s t</a>: A Student’s t continuous random variable. Set the number of variables and the degrees of freedom.</p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.multivariate_normal.html#scipy.stats.multivariate_normal" target="_blank">Bivariate normal</a>: A multivariate normal random variable where the number of variables is fixed to 2. The number of variables is set to two and cannot be changed. Set the mean and variance of each variable and the covariance matrix of the distribution.</p></li>
+</ol>
+<div class="section" id="example">
+<h2>Example</h2>
+<p>We normaly wouldn’t create a data set with so many different distributions but rather, for instance, a set of normally distributed variables and perhaps a binary variable, which we will use as the target variable. In this example, we use the default settings, which generate 10 normally distributed variables and a single binomial variable.</p>
+<p>We observe the generated data in a <strong>Data Table</strong> and in <strong>Distributions</strong>.</p>
+<p><img alt="../_images/Random-Data-Example.png" src="../_images/Random-Data-Example.png" /></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="pie-chart.html" title="Pie Chart"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Educational 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Biolab.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>
