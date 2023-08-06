@@ -1,0 +1,7 @@
+README.md
+setup.py
+msim_metrics.egg-info/PKG-INFO
+msim_metrics.egg-info/SOURCES.txt
+msim_metrics.egg-info/dependency_links.txt
+msim_metrics.egg-info/top_level.txt
+msim_metrics.egg-info/zip-safe
