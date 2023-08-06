@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: pipm
+Version: 20.0.0
+Summary: Wrapper around pip commands to auto-update requirements file
+Home-page: https://github.com/jnoortheen/pipm
+Author: noortheen
+Author-email: jnoortheen@gmail.com
+License: MIT
+Description: Checkout the README https://github.com/jnoortheen/pipm
+Keywords: easy_install distutils setuptools egg virtualenv requirements
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*
