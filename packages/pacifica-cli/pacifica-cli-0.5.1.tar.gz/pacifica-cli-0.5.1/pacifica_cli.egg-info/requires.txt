@@ -1,0 +1,5 @@
+jsonschema
+pacifica-downloader>=0.4.1
+pacifica-namespace
+pacifica-uploader>=0.3.1
+pager
