@@ -1,0 +1,7 @@
+README.rst
+setup.py
+bin/lalsi
+lalsi.egg-info/PKG-INFO
+lalsi.egg-info/SOURCES.txt
+lalsi.egg-info/dependency_links.txt
+lalsi.egg-info/top_level.txt
