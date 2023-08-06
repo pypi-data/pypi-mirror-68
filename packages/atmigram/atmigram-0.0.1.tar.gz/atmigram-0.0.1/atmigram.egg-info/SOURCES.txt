@@ -1,0 +1,7 @@
+README.md
+setup.py
+atmigram/__init__.py
+atmigram.egg-info/PKG-INFO
+atmigram.egg-info/SOURCES.txt
+atmigram.egg-info/dependency_links.txt
+atmigram.egg-info/top_level.txt
