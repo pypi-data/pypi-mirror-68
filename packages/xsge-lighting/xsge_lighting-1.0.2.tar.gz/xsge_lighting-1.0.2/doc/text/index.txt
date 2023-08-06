@@ -1,0 +1,71 @@
+xSGE Lighting Library
+*********************
+
+
+Contents
+^^^^^^^^
+
+* xSGE Lighting Library
+
+  * xsge_lighting Functions
+
+xSGE is a collection of extensions for the SGE licensed under the GNU
+General Public License.  They are designed to give additional features
+to free/libre software games which aren't necessary, but are nice to
+have.
+
+xSGE extensions are not dependent on any particular SGE
+implementation. They should work with any implementation that follows
+the specification.
+
+This extension provides a simple interface for lighting.
+
+
+xsge_lighting Functions
+=======================
+
+xsge_lighting.project_light(x, y, sprite, image=0)
+
+   Add a light to the current frame.  This must be called every frame
+   "xsge_lighting.project_darkness()" is called to maintain the
+   respective light.  This function should be called *before*
+   "xsge_lighting.project_darkness()".
+
+   Arguments:
+
+   * "x" -- The horizontal location of the light relative to the
+     room.
+
+   * "y" -- The vertical location of the light relative to the room.
+
+   * "sprite" -- The sprite to use as the light.  Black pixels are
+     ignored, and all other colors make the appropriate pixel
+
+   * "image" -- The frame of the sprite to use, where "0" is the
+     first frame.
+
+xsge_lighting.clear_lights()
+
+   Remove all lights that have been projected by
+   "xsge_lighting.project_light()".
+
+xsge_lighting.project_darkness(z=100000, ambient_light=None, buffer=0)
+
+   This function must be called every frame to maintain darkness.
+
+   Arguments:
+
+   * "z" -- The Z-axis position of the darkness in the room.
+     Anything with a higher Z-axis value will not be affected.
+
+   * "ambient_light" -- A "sge.gfx.Color" object indicating the
+     color that should be applied as lighting to the entirety of the
+     darkness.  Set to "None" for no ambient lighting.
+
+   * "buffer" -- An extra portion of the room, in addition to what
+     is covered by the room's views, to cover with darkness.  This can
+     be used to prevent situations where movement of a view at the
+     wrong time causes part of the view to not be properly covered in
+     darkness.  To ensure maximum efficiency, this should be the
+     smallest number possible, i.e. the maximum amount of view
+     movement that can happen in a single frame.

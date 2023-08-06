@@ -1,0 +1,61 @@
+This file has been dedicated to the public domain, to the extent
+possible under applicable law, via CC0. See
+http://creativecommons.org/publicdomain/zero/1.0/ for more
+information. This file is offered as-is, without any warranty.
+
+========================================================================
+
+1.0.2
+------------------------------------------------------------------------
+
+Misc changes:
+* Removed Python 2 support.
+
+
+1.0.1
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated and simplified the readme.
+
+
+1.0
+------------------------------------------------------------------------
+
+Unchanged compared to version 0.9.1.
+
+
+0.9.1
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated to SGE 0.23.
+
+
+0.9
+------------------------------------------------------------------------
+
+Additions:
++ xsge_lighting.clear_lights
+
+Misc changes:
+* project_darkness now takes an "ambient_light" argument.
+* project_darkness now takes a "buffer" argument indicating an extra
+  area around the views to cover in darkness, to work around problems
+  with the darkness not covering the entire view due to view movement.
+
+Bugfixes:
+- References to "xsge.lighting" remaining in the documentation
+
+
+0.8
+------------------------------------------------------------------------
+
+Misc changes:
+* Renamed from xsge.lighting to xsge_lighting.
+
+
+0.6
+------------------------------------------------------------------------
+
+First release.
