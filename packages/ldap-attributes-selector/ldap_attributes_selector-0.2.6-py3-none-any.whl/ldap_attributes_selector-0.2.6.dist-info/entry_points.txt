@@ -1,0 +1,3 @@
+[console_scripts]
+ldap-attributes-selector = ldap_attributes_selector.ldap_attributes_selector:main
+
