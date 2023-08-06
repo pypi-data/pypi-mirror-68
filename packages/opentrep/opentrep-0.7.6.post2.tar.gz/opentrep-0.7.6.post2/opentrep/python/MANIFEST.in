@@ -1,0 +1,5 @@
+include ez_setup.py
+include pyopentrep.py
+prune dist
+prune build
+include __init__.py
