@@ -1,0 +1,6 @@
+[console_scripts]
+e3smlab = e3smlab.__main__:main
+
+[microapp.projects]
+e3smlab = e3smlab
+
