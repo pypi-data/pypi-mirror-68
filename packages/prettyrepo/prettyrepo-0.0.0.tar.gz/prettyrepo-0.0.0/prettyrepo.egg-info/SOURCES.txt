@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+prettyrepo.egg-info/PKG-INFO
+prettyrepo.egg-info/SOURCES.txt
+prettyrepo.egg-info/dependency_links.txt
+prettyrepo.egg-info/top_level.txt
