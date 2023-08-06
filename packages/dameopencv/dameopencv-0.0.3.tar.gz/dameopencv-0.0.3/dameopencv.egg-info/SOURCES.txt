@@ -1,0 +1,11 @@
+setup.py
+dameopencv/detectcorner.py
+dameopencv.egg-info/PKG-INFO
+dameopencv.egg-info/SOURCES.txt
+dameopencv.egg-info/dependency_links.txt
+dameopencv.egg-info/entry_points.txt
+dameopencv.egg-info/not-zip-safe
+dameopencv.egg-info/requires.txt
+dameopencv.egg-info/top_level.txt
+dameopencv/tests/addition-substraction.py
+dameopencv/tests/test_basics.py
