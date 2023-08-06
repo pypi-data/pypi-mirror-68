@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/aspecto_ot_auto_instrumentation.egg-info/PKG-INFO
+src/aspecto_ot_auto_instrumentation.egg-info/SOURCES.txt
+src/aspecto_ot_auto_instrumentation.egg-info/dependency_links.txt
+src/aspecto_ot_auto_instrumentation.egg-info/requires.txt
+src/aspecto_ot_auto_instrumentation.egg-info/top_level.txt
+src/opentelemetry/aspecto/__init__.py
+src/opentelemetry/aspecto/batch_processor.py
+src/opentelemetry/aspecto/config_service.py
+src/opentelemetry/aspecto/privacy_engine.py
+src/opentelemetry/aspecto/utils.py
+src/opentelemetry/aspecto/version.py
+src/opentelemetry/aspecto/ext/flask.py
