@@ -1,0 +1,212 @@
+# GearUp
+
+Have you ever had a moment, when the code is ready, you are eager to launch it,
+you want to know if your new and shiny method works or not, just to realize you need to write
+100+ lines of `argparse` or `click`?
+
+Gear up and get ready to go! 
+
+## Quick (and only) intro
+
+Assume your project contains `main.py` script with the following functions: 
+
+```python
+def train(method : str, dataset : str, alpha : float):
+  <do stuff>
+
+def test(method : str, dataset : str):
+  <do testing>
+```
+
+Just add:
+
+```python
+from gearup import gearup
+
+if __name__ == '__main__':
+  gearup(train, test)()
+```
+
+and you are ready to go!
+
+```bash
+> python main.py train method=resnet dataset=mnist alpha=0.01
+> python main.py test method=resnet dataset=mnist
+```
+
+## Installation
+
+As usual:
+```bash
+pip install gearup
+```
+or
+```bash
+pip install git+https://gitlab.com/craynn/gearup.git
+```
+
+## How it works
+
+`gearup`, applied to a function, reads signature of the function
+and infers types of its arguments from the annotations:
+
+```python
+def f(x: int, y: int):
+  return x + y
+```
+
+Annotations here can be any callable of type `str -> A`,
+that raises either `ValueError` or `TypeError` when its argument is not a proper
+representation of any instance of type `A`.
+
+When gear-uped function is called without arguments it reads `sys.argv`,
+alternatively, it can be called with a list of strings:
+
+```python
+gearup(f)(['1', '2']) ### result = 3
+gearup(f)() ### read from console arguments
+```
+
+Then, gear-uped function parses arguments using the following rules:
+- if `=` symbol is present in the argument: `k=v`, value `v` is assigned
+  to the argument `k` and added to `kwargs`;
+- otherwise, the argument is treated as a positional one and appended to `args`.
+
+After that the underlying function is called: `f(*args, **kwargs)`,
+converting arguments in their respective types beforehand...
+
+Yes, no flags, no aliases, just launch script like
+a python function (with Haskell style)...
+
+```bash
+> python main.py 1 y=2
+```
+
+As a bonus, `gearup.apply(f, *args, **kwargs)` provides a Python-friendly way to do the same thing, which
+is useful when your script contains multiple methods with non-identical sets of parameters.
+
+```python
+import gearup
+
+def method1(x: int, y: int): return x + y
+def method2(x: int, z: float): return x / z
+
+def main(method: gearup.choice(method1, method2), x: int, **kwargs):
+  gearup.apply(method, x, **kwargs)
+
+if __name__ == '__main__':
+  gearup.gearup(main)()
+``` 
+ 
+
+### Commands
+
+Sometimes you need to pack several functions into one script:
+
+```python
+gearup(train, test)()
+### or
+gearup(train=train, test=test)()
+### or
+gearup(train, test=test)()
+```
+
+```bash
+> python main.py train <arguments for train>
+> python main.py test <arguments for test>
+```
+
+More precisely, if supplied with more than one argument or at least one keyword argument,
+`gearup` consumes the first CLI argument and
+switches between provided functions.
+
+Bonus: it is recursive!
+
+```python
+def train(...): pass
+def test_fast(...): pass
+def test_slow(...): pass
+
+gearup(
+  train,
+  test=dict(
+    fast=test_fast,
+    slow=test_slow
+  )
+)()
+```
+
+```bash
+> python main.py train method=resnet alpha=0.1
+> python main.py test slow method=resnet
+```
+
+Note: when a non-keyword argument is passed to `gearup`,
+it reads `__name__` attribute of this argument. For example, `gearup(f1, f2)` is equivalent to
+`gearup(f1=f1, f2=f2)`.
+
+## Misc.
+
+### Flags
+
+As `bool` type behaves strangely in Python (e.g., `bool('False') == True`),
+annotation `bool` is automatically replaced by `gearup.common.boolean`,
+that parses strings that represent boolean values properly.
+
+### Help
+
+Just add `--help`:
+
+```
+> python examples/main.py --help
+Available commands:
+train -> (method: {nonlogreg, logreg}, power: [-2, 5), alpha: float)   Trains method with alpha.
+test -> slow -> (method: {nonlogreg, logreg})   Tests method...
+        fast -> (method: {nonlogreg, logreg, inception})   Undocumented test function.
+```
+
+`--help` also works with commands:
+
+```
+> python examples/main.py test --help
+Available commands:
+slow -> (method: {logreg, nonlogreg})   Tests method...
+fast -> (method: {logreg, inception, nonlogreg})   Undocumented test function.
+```
+
+```
+> python examples/main.py test slow --help
+
+  Tests method...
+
+  A long
+  several lines
+  long
+  description.
+  
+(method: {nonlogreg, logreg})
+```
+
+### Non-standard types
+
+`gearup` also defines several non-standard types:
+- `choice(x_1, x_2, ..., x_n, k_1=v_1, k_2=v_2, ..., k_m=v_m)` --- only accepts arguments from the provided set;
+    for a keyword argument `k=v`, `k` is used to retrieve the value `v`, 
+    for a positional argument `x` `x.__name__` as the key, and `str(x)` if `__name__` attribute is absent;
+    works nicely with functions, e.g. `choice(function1, function2)`.
+    Don't use with numbers as a single number has multiple string representations, e.g.,
+    `choice(1, 2, 3)` does not accept string `''01'`, use `interval` instead.
+- `member[module]` --- similar to choice, but retrieves elements from `module.__all__` or
+  `dir(object)` if `__all__` is not defined. For example, given a module `utils`,
+  `member[utilss]` allows to switch between functions defined in the module.
+- `either[type_1, type_2, ..., type_n]` --- tries to convert supplied value to one of the provided types;
+  note, that `type_i` has priority over `type_j` if `i < j`, thus, e.g., `either[float, int]`
+  is equivalent to `float` as any string representing `int` is also a valid `float`.
+- `interval[a:b]` --- half-open interval `a <= x < b`, type (int or float) is inferred from types of `a` and `b`;
+  also a more complete constructor exists: `interval(start, stop, left=True, right=False, cast=None)`.
+- `a < number`, `a <= number`, `number < b`, `number <= b` - an alternative syntax for constructing intervals,
+  intervals can also be combined via `&`, e.g., `(a < number) & (number < b)`
+  (note, that parenthesis are required as almost every operator has higher priority than comparison operators).
+  Unfortunately,   Python does not support overloading chained comparisons,
+  thus, a nice `a < number < b` syntax is not available,
+  however, `(a < number) < b` works fine. 
