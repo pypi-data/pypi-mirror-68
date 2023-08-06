@@ -1,0 +1,4 @@
+urwid
+requests
+appdirs
+wheel
