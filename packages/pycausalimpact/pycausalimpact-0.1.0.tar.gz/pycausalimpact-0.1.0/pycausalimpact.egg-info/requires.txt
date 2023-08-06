@@ -1,0 +1,15 @@
+numpy
+scipy
+statsmodels>=0.11.0
+matplotlib>=2.2.3
+jinja2>=2.10
+
+[docs]
+ipython
+jupyter
+
+[testing]
+pytest
+pytest-cov
+mock
+tox
