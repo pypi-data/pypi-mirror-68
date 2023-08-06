@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+openpost/__init__.py
+openpost.egg-info/PKG-INFO
+openpost.egg-info/SOURCES.txt
+openpost.egg-info/dependency_links.txt
+openpost.egg-info/not-zip-safe
+openpost.egg-info/top_level.txt
+test/test_openpost.py
+test/test_openpost_cli.py
