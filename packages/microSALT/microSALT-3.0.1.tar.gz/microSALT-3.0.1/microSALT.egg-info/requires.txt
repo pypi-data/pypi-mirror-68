@@ -1,0 +1,9 @@
+biopython
+bs4
+click==7.0
+flask
+flask_sqlalchemy
+pymysql
+pyyaml
+sqlalchemy
+genologics

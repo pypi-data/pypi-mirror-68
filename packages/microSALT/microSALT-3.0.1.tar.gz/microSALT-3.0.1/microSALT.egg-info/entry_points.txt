@@ -1,0 +1,3 @@
+[console_scripts]
+microSALT = microSALT.cli:root
+
