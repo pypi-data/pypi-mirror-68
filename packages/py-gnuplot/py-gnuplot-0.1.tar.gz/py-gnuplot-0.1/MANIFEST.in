@@ -1,0 +1,2 @@
+include CHANGELOG.txt LICENSE.txt MANIFEST.in
+recursive-include examples *.py *.dat
