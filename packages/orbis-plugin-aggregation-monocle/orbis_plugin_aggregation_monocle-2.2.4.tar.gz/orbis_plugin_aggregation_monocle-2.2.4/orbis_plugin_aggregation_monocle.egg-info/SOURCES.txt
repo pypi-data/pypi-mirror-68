@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_aggregation_monocle/__init__.py
+orbis_plugin_aggregation_monocle/main.py
+orbis_plugin_aggregation_monocle.egg-info/PKG-INFO
+orbis_plugin_aggregation_monocle.egg-info/SOURCES.txt
+orbis_plugin_aggregation_monocle.egg-info/dependency_links.txt
+orbis_plugin_aggregation_monocle.egg-info/top_level.txt
