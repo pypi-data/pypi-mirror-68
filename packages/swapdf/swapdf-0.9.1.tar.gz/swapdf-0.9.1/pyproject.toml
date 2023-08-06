@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "swapdf"
+dist-name = "swapdf"
+description-file = "README.md"
+keywords = "pdf scanner feeder two-sided one-sided order sort pages"
+author = "Carlo Alessandro Verre"
+author-email = "carlo.alessandro.verre@gmail.com"
+classifiers = ["Programming Language :: Python :: 3",
+               "Programming Language :: Python :: 3.7",
+               "Development Status :: 5 - Production/Stable",
+               "Environment :: Console",
+               "Intended Audience :: End Users/Desktop",
+               "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+               "Operating System :: POSIX :: Linux",]
+requires-python = ">=3.7"
+requires = ["pdfrw"]
+
+[tool.flit.scripts]
+swapdf = "swapdf.__main__:main"
+

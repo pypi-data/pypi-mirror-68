@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: swapdf
+Version: 0.9.1
+Summary: Sort pdf pages after scan of a two-sided sheet pack through a one-sided feeder.
+Home-page: None
+Author: Carlo Alessandro Verre
+Author-email: carlo.alessandro.verre@gmail.com
