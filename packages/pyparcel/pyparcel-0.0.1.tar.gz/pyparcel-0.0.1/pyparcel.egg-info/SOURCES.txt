@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyParcel/__init__.py
+PyParcel/api.py
+pyparcel.egg-info/PKG-INFO
+pyparcel.egg-info/SOURCES.txt
+pyparcel.egg-info/dependency_links.txt
+pyparcel.egg-info/top_level.txt
