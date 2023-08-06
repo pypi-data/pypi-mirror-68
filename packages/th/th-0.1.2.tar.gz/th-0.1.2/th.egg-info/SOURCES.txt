@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+th/__init__.py
+th/_error.py
+th/_path_holder.py
+th/_path_holder_proxy.py
+th/_version.py
+th.egg-info/PKG-INFO
+th.egg-info/SOURCES.txt
+th.egg-info/dependency_links.txt
+th.egg-info/requires.txt
+th.egg-info/top_level.txt
