@@ -1,0 +1,15 @@
+dsbuilder/__init__.py,sha256=AbzIeKBm1hba3lP9ao9WkoecUi3RcgRZx37WB8DHaVU,60
+dsbuilder/dataset_util.py,sha256=3tXJ_riDb-R11aJxsdfpW5T79kOs9jHpw9T2v078Ks8,6822
+dsbuilder/dswriter.py,sha256=E6bBTUnGMF7eXvtUs7Q7ZYEnnIWS3zOofZePvoLJA1s,2886
+dsbuilder/template_util.py,sha256=Iql7lHXA8wySN5DP9Hs9fpu45GXh6qbFjCxjV1cEJhM,4780
+dsbuilder/version.py,sha256=_WwXXIvvSFFpmIVfRdifGjoEyhL9XG7WvJsK6UmlzFg,20
+dsbuilder/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsbuilder/tests/test_dataset_util.py,sha256=ZnMlHm13AmCWHha3AwRHicT9vWREZBYvofAJvG4ojrA,11188
+dsbuilder/tests/test_dswriter.py,sha256=WKMqbViznNFFk5lcINSgakIZX_Gkpo-Juco7V7iVwFw,758
+dsbuilder/tests/test_template_util.py,sha256=pwo-xCFBuKK2fMIGCeaSdcu4VVi_hBz8oV4sqjPJeeU,10526
+dsbuilder-0.0.dist-info/LICENSE,sha256=7DBVNV9ZKWfR6j4MSf8omemDxsc2YwdzJaNlaDTa92c,1067
+dsbuilder-0.0.dist-info/METADATA,sha256=en_gZK6WC4nKdwAHgHPsjXOiyh1CyYnBkDfdHo9rkV8,1089
+dsbuilder-0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dsbuilder-0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+dsbuilder-0.0.dist-info/top_level.txt,sha256=JRZ6Se7rgF4ko0iln6EdjqHJdroQarobFdp1ibIWHXs,10
+dsbuilder-0.0.dist-info/RECORD,,
