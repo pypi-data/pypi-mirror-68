@@ -1,0 +1,8 @@
+atomicwrites
+
+[linting]
+pytest
+mypy
+
+[testing]
+pytest
