@@ -1,0 +1,8 @@
+README.md
+setup.py
+mtna_rds.egg-info/PKG-INFO
+mtna_rds.egg-info/SOURCES.txt
+mtna_rds.egg-info/dependency_links.txt
+mtna_rds.egg-info/top_level.txt
+rds/__init__.py
+rds/dataproduct.py
