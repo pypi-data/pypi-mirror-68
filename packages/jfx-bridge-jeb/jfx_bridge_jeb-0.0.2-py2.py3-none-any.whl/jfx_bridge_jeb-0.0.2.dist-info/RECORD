@@ -1,0 +1,13 @@
+jfx_bridge_jeb/__init__.py,sha256=edz1ut0q8QKw1-MlDpeJH6aHTI-SI8CPmu30ZLjZLUA,38
+jfx_bridge_jeb/install_server.py,sha256=29X9T9LfyRLhLoHfh7Aorv4_K3QcCgXVNzSteaTJOJ0,2018
+jfx_bridge_jeb/jfx_bridge_jeb.py,sha256=TlVV3TuPgeAMxVggc2yMhqP6ACx6lHT90p-ESRW6W4Q,1516
+jfx_bridge_jeb/test_jfx_bridge_jeb.py,sha256=GMJFDtaCXDBnUrrZ9xYkSEFSZKPJbyXRMcNqJNRl2wI,1358
+jfx_bridge_jeb/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jfx_bridge_jeb/server/jfx_bridge_jeb_port.py,sha256=ZtAqGbfuSSz-A8HjBjx_QWLP2zzbN-qkpXdd-M6qohA,28
+jfx_bridge_jeb/server/jfx_bridge_jeb_server.py,sha256=UnGOLo0I7VHn2rA1XPQth5MVyXIxGQdqbaE-n5xyz3U,7228
+jfx_bridge_jeb/server/jfx_bridge_jeb_server_shutdown.py,sha256=pEYgh56GmVN1kdGd2R3J5cOvQ3H-xK1Hk33jgLtxXgM,428
+jfx_bridge_jeb-0.0.2.dist-info/LICENSE,sha256=MVho8aolVH_P38-wAeooJgO5cZgV-pzoiwokqI_M4L4,1067
+jfx_bridge_jeb-0.0.2.dist-info/METADATA,sha256=iIZmveTTJOioKpC9AkoMDJAq4XzPdGDlBg4BVqcfiPc,5206
+jfx_bridge_jeb-0.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+jfx_bridge_jeb-0.0.2.dist-info/top_level.txt,sha256=yMPtcJ-tJN8P-R1qDSRHlxIApuC9Ool2S6NwMBB_i2w,15
+jfx_bridge_jeb-0.0.2.dist-info/RECORD,,
