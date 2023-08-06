@@ -1,0 +1,3 @@
+[console_scripts]
+redis_tasks = redis_tasks.cli:main
+
