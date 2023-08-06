@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+default.nix
+requirements.txt
+setup.py
+counterpartner.egg-info/PKG-INFO
+counterpartner.egg-info/SOURCES.txt
+counterpartner.egg-info/dependency_links.txt
+counterpartner.egg-info/top_level.txt
+src/counterpartner/__init__.py
+src/counterpartner/counterpartner.py
+src/counterpartner/match.py
