@@ -1,0 +1,9 @@
+README.md
+setup.py
+chainsaw/__init__.py
+chainsaw/chainsaw.py
+git_chainsaw.egg-info/PKG-INFO
+git_chainsaw.egg-info/SOURCES.txt
+git_chainsaw.egg-info/dependency_links.txt
+git_chainsaw.egg-info/entry_points.txt
+git_chainsaw.egg-info/top_level.txt
