@@ -1,0 +1,11 @@
+triogram/__init__.py,sha256=ee1YBmVNAmzdf77kbvfFBUB4Uy_1mO6f3WFKeGSpp2U,387
+triogram/api.py,sha256=i8sqQtDoOgO-BRsDn4fxBwo6GZmHXni_evVt_PXpLa0,1178
+triogram/bot.py,sha256=5ZHVPrpv6QZp3m7Mytu6YDXhV5vAos7uK77cj9pvVaI,1408
+triogram/errors.py,sha256=RLzViL3iah7FDuKj5bKOunNBVACc1gGJeyCu4P65WSE,142
+triogram/fanout.py,sha256=rUCJphzO89Gf6bJhAhRRri-Uksgfan_B3Z7ImthviJk,1331
+triogram/http.py,sha256=rZyEMseF81J6v_fuLQKZMp9G13z1D5Ka7pWvW_uozVE,591
+triogram/updater.py,sha256=LU7U7HGPe7XI7BqaUm3DL5aa7nwDz5gSaZ4Dm4c9Vpc,1183
+triogram-0.4.0.dist-info/METADATA,sha256=C9GQL5V0VIubNqUJtx8JWPLyJYD2COYyPNx7zb98ft8,354
+triogram-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+triogram-0.4.0.dist-info/top_level.txt,sha256=xLOB3DJr-rWSPqJJzXrY2nzad611N1j-A-OQ_CZpuLc,9
+triogram-0.4.0.dist-info/RECORD,,

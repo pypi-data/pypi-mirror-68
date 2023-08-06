@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: triogram
+Version: 0.4.0
+Summary: Async Telegram Bot API built with httpx and trio
+Home-page: https://github.com/rnovatorov/triogram
+Author: Roman Novatorov
+Author-email: roman.novatorov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: attrs
+Requires-Dist: httpx (==0.12.*)
+Requires-Dist: trio (==0.14.*)
+
+UNKNOWN
+
+
