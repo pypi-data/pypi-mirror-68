@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Quick start &#8212; Blockchain Exchange Python API 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/custom.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/js/clipboard.min.js"></script>
+    <script src="_static/js/copybutton.js"></script>
+    <script src="_static/js/toggle_navbar.js"></script>
+    <script src="_static/js/toggle_header_rst_container.js"></script>
+    <link rel="shortcut icon" href="_static/bc-favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api/index.html" />
+    <link rel="prev" title="Blockchain Exchange Python API" href="index.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="api/index.html" title="API Reference"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Blockchain Exchange Python API"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Blockchain Exchange Python API 0.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar"><a href="
+    index.html" class="text-logo">Blockchain Exchange Python API 0.1.0 documentation</a>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>
+      <a href="https://github.com/ilya-bc/blockchain-exchange-api"><i class="fab fa-github fa-lg"></i> Fork me on GitHub</a>
+    </h2>
+  </div>
+</div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#prerequisites-for-trading">Prerequisites for trading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#start-interacting-with-blockchain-exchange">Start interacting with Blockchain Exchange</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generated_sphinx_gallery/index.html">Gallery of examples</a></li>
+</ul>
+
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Quick start</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="quick-start">
+<h1>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#installation" id="id1">Installation</a></p></li>
+<li><p><a class="reference internal" href="#prerequisites-for-trading" id="id2">Prerequisites for trading</a></p></li>
+<li><p><a class="reference internal" href="#start-interacting-with-blockchain-exchange" id="id3">Start interacting with Blockchain Exchange</a></p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2><a class="toc-backref" href="#id1">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>Get source code</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:ilya-bc/blockchain-exchange-api.git
+<span class="nb">cd</span> blockchain-exchange-api
+</pre></div>
+</div>
+</li>
+<li><p>Install package. Since there are hundred ways to do that, a standardised way for this project is with <code class="docutils literal notranslate"><span class="pre">Makefile</span></code>. It will create virtual environment with <a class="reference external" href="https://github.com/pypa/pipenv">pipenv</a> and will use <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">3.7</span></code> as its interpreter</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># For general use</span>
+make install
+
+<span class="c1"># For development</span>
+make install-dev
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="prerequisites-for-trading">
+<h2><a class="toc-backref" href="#id2">Prerequisites for trading</a><a class="headerlink" href="#prerequisites-for-trading" title="Permalink to this headline">¶</a></h2>
+<p>Actual trading and accessing balance of your account <a class="reference external" href="https://exchange.blockchain.com/api/#authenticated-channels">requires authentication</a> with an API key. In order to get one:</p>
+<ul class="simple">
+<li><p>You should have an account at <a class="reference external" href="https://exchange.blockchain.com">blockchain.com | exchange</a></p></li>
+<li><p>Create API key <a class="reference external" href="https://exchange.blockchain.com/settings/api">here</a> and store information. Note, you can have setup key with permissions <code class="docutils literal notranslate"><span class="pre">view</span></code> and <code class="docutils literal notranslate"><span class="pre">view</span> <span class="pre">&amp;</span> <span class="pre">trade</span></code>.</p></li>
+<li><p>You should receive an email asking you to activate API key.</p></li>
+<li><p>Setup the following environment variable</p></li>
+</ul>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">BLOCKCHAIN_API_SECRET</span><span class="o">=</span><span class="s2">&quot;__ENTER_YOUR_API_SECRET_HERE__&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you use <code class="docutils literal notranslate"><span class="pre">pipenv</span></code> then you can just put it into <code class="docutils literal notranslate"><span class="pre">.env</span></code> file (ignored by git) at the root of the cloned directory.</p>
+</div>
+</div>
+<div class="section" id="start-interacting-with-blockchain-exchange">
+<h2><a class="toc-backref" href="#id3">Start interacting with Blockchain Exchange</a><a class="headerlink" href="#start-interacting-with-blockchain-exchange" title="Permalink to this headline">¶</a></h2>
+<p>All API is available though a websocket client:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">blockchain_exchange.client</span> <span class="kn">import</span> <span class="n">BlockchainWebsocketClient</span>
+
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">BlockchainWebsocketClient</span><span class="p">()</span>
+<span class="n">client</span><span class="o">.</span><span class="n">subscribe_to_heartbeat</span><span class="p">()</span>
+<span class="n">client</span><span class="o">.</span><span class="n">subscribe_to_orderbook_l2</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="https://ilya-bc.github.io/blockchain-exchange-api-docs/stable/index.html">API reference</a> and <a class="reference external" href="https://ilya-bc.github.io/blockchain-exchange-api-docs/stable/generated_sphinx_gallery/index.html">gallery of examples</a> for more info.</p>
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="index.html" title="previous chapter (use the left arrow)">Blockchain Exchange Python API</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="api/index.html" title="next chapter (use the right arrow)">API Reference</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="api/index.html" title="API Reference"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Blockchain Exchange Python API"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Blockchain Exchange Python API 0.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2020 - 2020, Ilya Kisil. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
