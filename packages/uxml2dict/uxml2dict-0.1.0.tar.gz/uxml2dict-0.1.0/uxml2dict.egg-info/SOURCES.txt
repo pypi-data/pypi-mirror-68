@@ -1,0 +1,9 @@
+README.md
+setup.py
+uxml2dict/__init__.py
+uxml2dict.egg-info/PKG-INFO
+uxml2dict.egg-info/SOURCES.txt
+uxml2dict.egg-info/dependency_links.txt
+uxml2dict.egg-info/entry_points.txt
+uxml2dict.egg-info/requires.txt
+uxml2dict.egg-info/top_level.txt
