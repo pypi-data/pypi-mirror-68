@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+power_profiler/__init__.py
+power_profiler/__main__.py
+power_profiler/power_profiler.py
+power_profiler.egg-info/PKG-INFO
+power_profiler.egg-info/SOURCES.txt
+power_profiler.egg-info/dependency_links.txt
+power_profiler.egg-info/entry_points.txt
+power_profiler.egg-info/requires.txt
+power_profiler.egg-info/top_level.txt
+power_profiler.egg-info/zip-safe
