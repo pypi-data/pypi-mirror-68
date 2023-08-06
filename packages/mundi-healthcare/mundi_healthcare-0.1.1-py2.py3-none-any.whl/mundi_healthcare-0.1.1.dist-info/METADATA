@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mundi-healthcare
+Version: 0.1.1
+Summary: A Mundi plugin with healthcare statistics.
+Home-page: https://github.com/pydemic/mundi-healthcare
+License: UNKNOWN
+Author: Fábio Macêdo Mendes
+Author-email: fabiomacedomendes@gmail.com
+Description-Content-Type: text/x-rst
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: mundi
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: twine ; extra == "dev"
+Requires-Dist: pycountry ; extra == "dev"
+Requires-Dist: coverage~=5.0 ; extra == "dev"
+Requires-Dist: pytest~=5.0 ; extra == "dev"
+Requires-Dist: bump2version ; extra == "dev"
+Provides-Extra: dev
+
+================
+Mundi Healthcare
+================
+
+The mundi-healthcare plugin provides statistics about healthcare capacity and basic indicators
+for many regions in the world. Currently, this preview only provides statistics for Brazil.
+
+
+Usage
+=====
+
+Install it using ``pip install mundi-healthcare`` or your method of choice. Now, you can just import
+it and load the desired information. Mundi exposes collections of entries as dataframes,
+which can be manipulated as usual
+
+>>> import mundi_healthcare, mundi
+>>> df = mundi.countries()
+>>> df.mundi["hospital_capacity"]
+...
+
