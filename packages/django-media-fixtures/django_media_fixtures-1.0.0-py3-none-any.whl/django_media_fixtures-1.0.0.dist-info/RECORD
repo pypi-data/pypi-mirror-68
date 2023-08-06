@@ -1,0 +1,17 @@
+django_media_fixtures/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+django_media_fixtures/finders.py,sha256=0u6LULlNaMYttjqHtTyTvyUZAfB73dRjos1Zli3iynE,6918
+django_media_fixtures/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_media_fixtures/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_media_fixtures/management/commands/collectmedia.py,sha256=AU7DtnztSPEYPct_BzdsUvfXQbT4RUpzohYBEIx5VzI,13963
+django_media_fixtures/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_media_fixtures/tests/settings.py,sha256=CjT_P-axOR6eYj-M5LfzakUamXN67dz5Yigvh5jGYVY,2581
+django_media_fixtures/tests/testapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_media_fixtures/tests/testapp/apps.py,sha256=QBd-dBZNB8mbSRGyPRjHSji80SHAVWhSbixBm2sP62w,159
+django_media_fixtures/tests/testapp/models.py,sha256=PqoFUsn1WYCflrsK08p9K8IVPtkk42PknHYYQzjsOu8,308
+django_media_fixtures/tests/testapp/tests.py,sha256=40A2wSMvjWDhiQlmdv8eFLJAv7_Did75ku-dktfqHrA,3452
+django_media_fixtures-1.0.0.dist-info/LICENSE,sha256=VjzjYn3HeoKbZMOwGT12mR-zxWhn2RQ5Bx9_Bq5zpJ0,1079
+django_media_fixtures-1.0.0.dist-info/METADATA,sha256=JYIXXOZlAKCM2oR3WEgCnybcoGQP7xxvN5wDJCTG8MU,4593
+django_media_fixtures-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_media_fixtures-1.0.0.dist-info/entry_points.txt,sha256=lexK7RzT1xMyCvalZCkEXUV_pXjWKxyNU2NGRfSYmuo,40
+django_media_fixtures-1.0.0.dist-info/top_level.txt,sha256=cd3S-zqwVN_1mN3kGdTN4fXWOEUStVZoFVx3W6rlF28,22
+django_media_fixtures-1.0.0.dist-info/RECORD,,
