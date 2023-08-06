@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: tief
+Version: 0.1.9.1
+Summary: TIEF.ai is an AI library for research and study purpose. This library is very easy to use. If you found some lack of performance or some issues, just tell me. I ll upgrade it as soon as possible.
+Home-page: https://github.com/tafaquh/tief
+Author: M Tafaquh Fiddin Al Islami
+Author-email: tafaquh.fiddinal@gmail.com
+License: MIT
+Download-URL: https://github.com/tafaquh/tief/archive/0.1.9.1.tar.gz
+Description: UNKNOWN
+Keywords: AI,Machine Learning,TIEF,Library
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
