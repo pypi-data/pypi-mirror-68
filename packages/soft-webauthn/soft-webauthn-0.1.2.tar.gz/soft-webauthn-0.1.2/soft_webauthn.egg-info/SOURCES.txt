@@ -1,0 +1,8 @@
+README.md
+setup.py
+soft_webauthn.py
+soft_webauthn.egg-info/PKG-INFO
+soft_webauthn.egg-info/SOURCES.txt
+soft_webauthn.egg-info/dependency_links.txt
+soft_webauthn.egg-info/requires.txt
+soft_webauthn.egg-info/top_level.txt
