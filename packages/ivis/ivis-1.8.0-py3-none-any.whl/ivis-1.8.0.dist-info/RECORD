@@ -1,0 +1,15 @@
+ivis/__init__.py,sha256=Mra1zIElVMcZZ3j6PCVMrpKsUaGKhvoS1UTtsmi2z-4,67
+ivis/ivis.py,sha256=eusKpSYWAQeYU3p_l9yPNDW46-o7_KBrmiLeiD2SYpQ,18838
+ivis/version.py,sha256=aY9--E-HykjoYqIG170TfP5BViRzlH9Ds7Oyb_h2udQ,18
+ivis/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ivis/data/knn.py,sha256=OdhprRnJ0rTfIFCCQnZBmYafssuJ7nU2fZMsjE7PcK8,5569
+ivis/data/triplet_generators.py,sha256=kZOIkAbGDa11Eg2CI3_i8Cds1Tui-4sE2lydU07o6Is,15764
+ivis/nn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ivis/nn/callbacks.py,sha256=-4B6dHNWQiqgA9CufRLL-pJ5dng8d-xzBFwcPm7N3oI,10774
+ivis/nn/losses.py,sha256=FlElwT_a7ZHJd0qdLGIK-wDQOc8fOdHnNJvVn6vgpGs,8289
+ivis/nn/network.py,sha256=Fx3GxVKQEN_D6cn3bXRg-fZ-EmsijSiXs39aFpE7ZKI,3265
+ivis-1.8.0.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+ivis-1.8.0.dist-info/METADATA,sha256=uBUYL9JMs5hguJpUS0MHkY9LFPyaA8FFfp-z3siKXis,4416
+ivis-1.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ivis-1.8.0.dist-info/top_level.txt,sha256=5udsCq8_vV_ZuH5m4YZI5Lsjc5EAKN_nFPllv8FJShc,5
+ivis-1.8.0.dist-info/RECORD,,
