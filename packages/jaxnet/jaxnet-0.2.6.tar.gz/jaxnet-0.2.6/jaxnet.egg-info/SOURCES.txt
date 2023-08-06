@@ -1,0 +1,11 @@
+README.md
+setup.py
+jaxnet/__init__.py
+jaxnet/core.py
+jaxnet/modules.py
+jaxnet/optimizers.py
+jaxnet.egg-info/PKG-INFO
+jaxnet.egg-info/SOURCES.txt
+jaxnet.egg-info/dependency_links.txt
+jaxnet.egg-info/requires.txt
+jaxnet.egg-info/top_level.txt
