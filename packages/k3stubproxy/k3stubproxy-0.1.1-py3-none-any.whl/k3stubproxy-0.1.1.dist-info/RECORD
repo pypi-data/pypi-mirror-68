@@ -1,0 +1,17 @@
+k3stubproxy/__init__.py,sha256=tx7a2OrZCv36I0BQmowJHRxTBCJGgk_KrNanlrUqSy4,144
+k3stubproxy/_version.py,sha256=8oAxKUG747GUokmxjkrWejyJa5yPNEsoJDlXxoedxTw,21
+k3stubproxy/client.py,sha256=_U8xBHbvg5Zy-Qqddb7lhYvOx7q4yivS3MMgHVUb5pc,3991
+k3stubproxy/server.py,sha256=mjoastGE51AbswBefn87D_50XRttivn0HYI2HxGb_ts,3730
+k3stubproxy/stub_generator.py,sha256=DgENuAMhzR54KBxAmnR7vg3wzN2HHgxXzd3dr5GZB7U,6085
+k3stubproxy/stub_target_generator.py,sha256=qK4D07i1KCZmixcPcKCHgmzNkRa3IG9r--E9vr6Gl78,1222
+k3stubproxy/c_stub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+k3stubproxy/main/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+k3stubproxy/main/dump_function_definition.py,sha256=dtMJcWZ4BX_WZEvA4wz9a10U4aTyTuK0twwzMrKlmyc,1666
+k3stubproxy/main/stub_target_generator.py,sha256=H1pJTSRrj3gLPcWu8AwOE9zHGd23atmS1zzE7ZeGXDk,1139
+k3stubproxy/main/stubgenerator.py,sha256=lQ7U1UHATk9axFJjP6X5QpGtNDtuO836puN4ZYaVFxQ,2317
+k3stubproxy-0.1.1.dist-info/LICENSE,sha256=F47xEwg2HsVwg0Bu8jikigEFW5PrSNRsoJLGGP6nNoE,1080
+k3stubproxy-0.1.1.dist-info/METADATA,sha256=PlA_QY7M8QK271kCCHIle8ll6wc3hjkXNB0Zk4H1X3s,3517
+k3stubproxy-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+k3stubproxy-0.1.1.dist-info/entry_points.txt,sha256=zKVuSOiyorMBzAdRU7UZaCwI2x0QrkyoQi4gm-JNoWc,256
+k3stubproxy-0.1.1.dist-info/top_level.txt,sha256=Lv94tYKJsc7iVAI9A9bwUPgGidp4uz_ify2J0-ftTaM,12
+k3stubproxy-0.1.1.dist-info/RECORD,,
