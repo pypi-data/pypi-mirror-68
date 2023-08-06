@@ -1,0 +1,9 @@
+anyio
+asyncwebsockets
+attrs
+distkv>=0.18
+docopt
+passlib
+pyyaml
+simplejson
+transitions
