@@ -1,0 +1,11 @@
+
+[docs]
+Sphinx>=1.5.1
+
+[tests]
+oarepo[tests]~=3.1.1
+flask-taxonomies>=6.6.8
+
+[tests-es7]
+oarepo[tests-es7]~=3.1.1
+flask-taxonomies>=6.6.8
