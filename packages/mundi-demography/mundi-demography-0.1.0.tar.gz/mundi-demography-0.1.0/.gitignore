@@ -1,0 +1,23 @@
+.idea
+__pycache__
+.coverage
+dist/
+notebooks/.ipynb_checkpoints/
+Untitled.ipynb
+cache
+
+# docker-compose
+docker-compose*
+
+# vscode
+.devcontainer*
+.vscode
+
+# gettext
+*.mo
+htmlcov/
+tmp
+_tmp
+.ipynb_checkpoints
+db-yearly
+db-yearly*
