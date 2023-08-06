@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pydaves
+Version: 1.1.3
+Summary: Personal utils package for my Python projects
+Home-page: https://github.com/davidemiani/pydaves
+Author: Davide Miani
+Author-email: davide.miani2@gmail.com
+License: UNKNOWN
+Description: # pydaves
+        Personal utils package for my Python projects.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
