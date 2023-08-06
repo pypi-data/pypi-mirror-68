@@ -1,0 +1,12 @@
+crowds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crowds/kanonymity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crowds/kanonymity/generalizations.py,sha256=qHWgwNOBoFKFBZAelnX-zStoyRLUZnxddLPWEnsRvqk,1031
+crowds/kanonymity/information_loss.py,sha256=vK0Ft8QK3A1AbSZ241x2DdjID58yc5TKiKazLlNw8dg,1643
+crowds/kanonymity/lattice.py,sha256=lQdAACvcRtWALW4zALcX9NB-wW_URUnowFUJkRKuyB0,5724
+crowds/kanonymity/ola.py,sha256=G_cWTSGxbYW5HBNiUoOerNZvZscScfZiG-xduobo70k,4550
+crowds/kanonymity/utils.py,sha256=o1v8vQoqfw4tkEAX2cKvc5L5lIm068RET2MG3ZL0qe8,1048
+crowds-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+crowds-0.0.1.dist-info/METADATA,sha256=RL8SpnTOwe0eiis0Zpj-LX3YxFty14gqzdoOYpna24I,2694
+crowds-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+crowds-0.0.1.dist-info/top_level.txt,sha256=QlcYSHLyW3wdrI2hXTgSB9rGfOueowuWZOBLv5zacbI,7
+crowds-0.0.1.dist-info/RECORD,,
