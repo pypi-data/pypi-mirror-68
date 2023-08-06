@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+src/convoke/__init__.py
+src/convoke/_version.py
+src/convoke.egg-info/PKG-INFO
+src/convoke.egg-info/SOURCES.txt
+src/convoke.egg-info/dependency_links.txt
+src/convoke.egg-info/requires.txt
+src/convoke.egg-info/top_level.txt
