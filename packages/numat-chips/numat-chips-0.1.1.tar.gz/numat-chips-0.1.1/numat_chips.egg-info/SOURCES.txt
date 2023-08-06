@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+chips/__init__.py
+chips/smbus.py
+chips/spi.py
+numat_chips.egg-info/PKG-INFO
+numat_chips.egg-info/SOURCES.txt
+numat_chips.egg-info/dependency_links.txt
+numat_chips.egg-info/entry_points.txt
+numat_chips.egg-info/requires.txt
+numat_chips.egg-info/top_level.txt
