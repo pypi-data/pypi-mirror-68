@@ -1,0 +1,10 @@
+README.md
+setup.py
+torrent_tracker_scraper/_init_.py
+torrent_tracker_scraper/example.py
+torrent_tracker_scraper/scraper.py
+torrent_tracker_scraper.egg-info/PKG-INFO
+torrent_tracker_scraper.egg-info/SOURCES.txt
+torrent_tracker_scraper.egg-info/dependency_links.txt
+torrent_tracker_scraper.egg-info/requires.txt
+torrent_tracker_scraper.egg-info/top_level.txt
