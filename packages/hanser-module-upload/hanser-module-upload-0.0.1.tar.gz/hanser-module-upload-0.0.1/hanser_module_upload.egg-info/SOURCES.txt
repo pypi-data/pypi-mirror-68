@@ -1,0 +1,8 @@
+README.md
+setup.py
+hanser/__init__.py
+hanser/calc.py
+hanser_module_upload.egg-info/PKG-INFO
+hanser_module_upload.egg-info/SOURCES.txt
+hanser_module_upload.egg-info/dependency_links.txt
+hanser_module_upload.egg-info/top_level.txt
