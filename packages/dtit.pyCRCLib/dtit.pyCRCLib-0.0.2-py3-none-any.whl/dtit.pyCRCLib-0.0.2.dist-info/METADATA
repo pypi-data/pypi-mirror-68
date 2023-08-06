@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dtit.pyCRCLib
+Version: 0.0.2
+Summary: This is DTIT CRC library.
+Home-page: https://github.com/datatellittech/dtit_packages
+Author: sunboss_uw
+Author-email: dev@datatellit.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.14.0)
+
+# CRC Library
+
+## Introduction
+This is DTIT CRC library, supporting ModBus and NB-IoT CRC16 for now.
+
+### Install
+pip install dtit.pyCRCLib
+
+### Check
+Execute
+
+   python dtit\pyCRCLib\tests\hello.py
+
+should echo with "dtit.pyCRCLib"
+
+### Usage
+Please refer to examples in tests directory.
+
+### Error Report
+Please email to dev@datatellit.com
+
+
