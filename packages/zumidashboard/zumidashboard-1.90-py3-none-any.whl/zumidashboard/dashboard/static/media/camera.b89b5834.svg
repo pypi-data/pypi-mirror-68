@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icon/image/photo_camera_24px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Dashboard-Launch-Version-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cam-Stream" transform="translate(-944.000000, -324.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M964,338 C960.686292,338 958,340.686292 958,344 C958,347.313708 960.686292,350 964,350 C967.313708,350 970,347.313708 970,344 C970,340.686292 967.313708,338 964,338 Z M980,328 L973.66,328 L971.18,325.3 C970.44,324.48 969.36,324 968.24,324 L959.76,324 C958.64,324 957.56,324.48 956.8,325.3 L954.34,328 L948,328 C945.8,328 944,329.8 944,332 L944,356 C944,358.2 945.8,360 948,360 L980,360 C982.2,360 984,358.2 984,356 L984,332 C984,329.8 982.2,328 980,328 Z M964,354 C958.48,354 954,349.52 954,344 C954,338.48 958.48,334 964,334 C969.52,334 974,338.48 974,344 C974,349.52 969.52,354 964,354 Z" id="icon/image/photo_camera_24px"></path>
+        </g>
+    </g>
+</svg>
