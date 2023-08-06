@@ -1,0 +1,17 @@
+kubesplit/__init__.py,sha256=uBEgLWuA8M9kDaQWeBV8pT5NuXfWxjREigOfjYtX4hU,172
+kubesplit/__main__.py,sha256=R8a0LPqUp5B3f0J5gBrlI7IsD_WnIvSEhw17huyJMoo,221
+kubesplit/args.py,sha256=nc-7YG89Ks3Yme-tI_EYlsmV4xlClOb4oCXHAMGHGtQ,2144
+kubesplit/config.py,sha256=55Wtq9XJVh3-AOlXi53Y-Mi-I1F0AMez8UylInBMinQ,3217
+kubesplit/convert.py,sha256=JpKjnwxoJ6_G5Y28pfRiNT5jTNZGfW2rrv26Uw05BlE,5364
+kubesplit/helpers.py,sha256=BL1hoY88-XEZzA1dXnlW0XnsGoF5CsDjaBlM_zzgjjU,249
+kubesplit/k8s_descriptor.py,sha256=wT--VDbtZwf7Y2NyrcOQDZGA-uaUp16N4wVE9OIVKxM,2961
+kubesplit/kubesplit.py,sha256=OXaetlum-8xE13UdoVhVfcCPSrVzF1bZgvTM3v6S2X0,1714
+kubesplit/namespaces.py,sha256=7eHNVs7JetuhaI2QmwGqIsW4fonqSxOPvVW-d4J5mXY,809
+kubesplit/output.py,sha256=2bD2Yt-Br_GBAK2SnHPfcrt9Wvy7Bo4yijyQHEc2yt4,1539
+kubesplit-0.3.0.dist-info/AUTHORS.rst,sha256=4KDdsODhZgj55K0SPUxlvmJU-EHbkAOV5ePItSJpVT4,176
+kubesplit-0.3.0.dist-info/LICENSE,sha256=zgm5H1D9mkQP9DwYkeP7HsXPGwqHJA0zvqpFbhjWezU,591
+kubesplit-0.3.0.dist-info/METADATA,sha256=KQ9Gx7swZ-VoFReIt8LAymvJGx5PLBRlKfLePshZkuA,3294
+kubesplit-0.3.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+kubesplit-0.3.0.dist-info/entry_points.txt,sha256=8PglDVIZNjK7wieIA7Jl1q2hWLt6wikTUFcjkaHNwY4,55
+kubesplit-0.3.0.dist-info/top_level.txt,sha256=fTydn2SvlzZB6eR8n1Rgpnj38C1GXJDnIxJJrv0353g,10
+kubesplit-0.3.0.dist-info/RECORD,,
