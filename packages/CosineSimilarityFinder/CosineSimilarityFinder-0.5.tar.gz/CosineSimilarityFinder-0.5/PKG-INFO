@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: CosineSimilarityFinder
+Version: 0.5
+Summary: FINDS COSINE SIMILARITY BETWEEN TWO TEXTS
+Home-page: https://github.com/kottilukkalarun/CosineSimilary
+Author: ARUN KESAVAN KOTTILUKKAL
+Author-email: arunkottilukkal@outlook.in
+License: MIT
+Download-URL: https://github.com/kottilukkalarun/CosineSimilary/archive/v_05.tar.gz
+Description: UNKNOWN
+Keywords: COSINE SIMILARITY,TEXT SIMILARITY,STRING SIMILARITY
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
