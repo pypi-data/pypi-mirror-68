@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+examples/example.toml
+src/pedigree/__init__.py
+src/pedigree/main.py
+src/pedigree/pedigree_lib.py
+src/pedigree.egg-info/PKG-INFO
+src/pedigree.egg-info/SOURCES.txt
+src/pedigree.egg-info/dependency_links.txt
+src/pedigree.egg-info/entry_points.txt
+src/pedigree.egg-info/not-zip-safe
+src/pedigree.egg-info/requires.txt
+src/pedigree.egg-info/top_level.txt
+src/pedigree/tests/__init__.py
+src/pedigree/tests/test_pedigree_lib.py
