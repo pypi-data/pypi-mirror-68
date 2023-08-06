@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mpris-fakeplayer
+Version: 0.0.2
+Summary: Fake mpris player for activating bluez avrcp volume control.
+Home-page: https://gitlab.com/hxss/mpris-fakeplayer
+Author: hxss
+Author-email: hxss@ya.ru
+License: UNKNOWN
+Description: # MprisFakePlayer
+        
+        Runs fake mpris player with `Playing` status. Can be usefull for activating `avrcp` volume controls on headphones like `Powerbeats Pro` when using non-mpris media player.
+        
+Keywords: mpris,avrcp,bluez
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
