@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: c64tools
+Version: 0.4
+Summary: Python helper for dealing with Commodore c64 graphics
+Home-page: https://github.com/dkrajzew/c64tools
+Author: dkrajzew
+Author-email: d.krajzewicz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7, <3
+Description-Content-Type: text/markdown
+
+# c64tools
+A set of Python tools for coding the c64 (Commodore c64) - mainly graphics.
+
+You may find more information at http://www.krajzewicz.de/blog/c64-python-helper.php
+
+Let me know if you need any further information or advice.
+
+
