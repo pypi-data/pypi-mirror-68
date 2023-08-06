@@ -1,0 +1,18 @@
+BASELINE DIRECTORY: C:\Users\mjaquier\OneDrive - Philip Morris International\Dev\AI_Directories\Project VERY NICE\Parameters\Baseline
+DIRECTORY: C:\Users\mjaquier\OneDrive - Philip Morris International\Dev\AI_Directories\Project VERY NICE
+WAVE LENGTHS:
+-
+-
+-
+-
+GRADIENTS:
+- 10
+ISOTHERMS:
+- 190
+- 220
+- 350
+TECHNIQUES:
+  STA: true
+  IR: true
+  GC: false
+  MS: true
