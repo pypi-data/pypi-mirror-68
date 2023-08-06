@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+ml_proj_init/__init__.py
+ml_proj_init/main.py
+ml_proj_init.egg-info/PKG-INFO
+ml_proj_init.egg-info/SOURCES.txt
+ml_proj_init.egg-info/dependency_links.txt
+ml_proj_init.egg-info/entry_points.txt
+ml_proj_init.egg-info/top_level.txt
