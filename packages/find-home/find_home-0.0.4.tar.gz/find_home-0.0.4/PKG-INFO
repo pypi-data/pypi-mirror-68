@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: find_home
+Version: 0.0.4
+Summary: I just wanna find home...
+Home-page: https://pypi.org/project/find_home/
+Author: Vladimir Starostin
+Author-email: vladimir.starostin@uni-tuebingen.de
+License: MIT
+Description: UNKNOWN
+Keywords: parser
+Platform: UNKNOWN
+Requires-Python: >=3.7.*

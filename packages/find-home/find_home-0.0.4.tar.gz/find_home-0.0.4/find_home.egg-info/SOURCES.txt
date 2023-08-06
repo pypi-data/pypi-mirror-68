@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+find_home/__init__.py
+find_home/config.py
+find_home/config_cmd.py
+find_home/logging.json
+find_home/main.py
+find_home/parser.py
+find_home/send_messages.py
+find_home.egg-info/PKG-INFO
+find_home.egg-info/SOURCES.txt
+find_home.egg-info/dependency_links.txt
+find_home.egg-info/requires.txt
+find_home.egg-info/top_level.txt
+tests/__init__.py
+tests/fixures.py
