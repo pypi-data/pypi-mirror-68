@@ -1,0 +1,9 @@
+README.md
+setup.py
+convexity_check/__init__.py
+convexity_check/checker.py
+convexity_check.egg-info/PKG-INFO
+convexity_check.egg-info/SOURCES.txt
+convexity_check.egg-info/dependency_links.txt
+convexity_check.egg-info/requires.txt
+convexity_check.egg-info/top_level.txt
