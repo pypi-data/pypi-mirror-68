@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: python-unittest-cogent
+Version: 1.0.1
+Summary: Python unittest runner and result generator in three different formats json, xml, html
+Home-page: https://github.com/harshittrivedi78/python-unittest-cogent
+Author: Harshit
+Author-email: harshittrivedi78@gmail.com
+License: UNKNOWN
+Keywords: python unittest html-result cogent python-unittest unittest-result-generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: dicttoxml (==1.7.4)
+Requires-Dist: jinja2
+
+## python-unittest-cogent
+A custom tests runner which gives output in three different formats (xml, json and html).
+
+### Quickstart
+Installation:
+```shell
+pip install python-unittest-cogent
+```
+Usage: In example.py
+```python
+import cogent
+from cogent.tests import TestCase
+
+class TestClassOne(TestCase):
+    def test1(self):
+        expected_number = 90
+        actual_number = 90
+        print('Test output foe test case 1')
+        self.assertEqual(expected_number, actual_number)
+
+if __name__ == "__main__":
+    cogent.main()
+```
+
+### To change the settings:
+You can change the different-different settings like - 
+```python
+PROJECT_NAME = "Test Report"
+APPLICATION_NAME = "Test APP"
+APP_VERSION = "App Version 5.3"
+PLATFORM = "Linux/Ubuntu 14.04"
+
+HTML_TEST_REPORT_FILENAME = "Report.html"
+XML_TEST_REPORT_FILENAME = "Report.xml"
+JSON_TEST_REPORT_FILENAME = "Report.json"
+
+DEFAULT_CONVERTER = "HTML" 
+```
+In example.py
+```python
+import cogent
+from cogent.tests import TestCase
+from cogent import settings
+
+settings.DEFAULT_CONVERTER = "XML"
+
+class TestClassOne(TestCase):
+    def test1(self):
+        expected_number = 90
+        actual_number = 90
+        print('Test output foe test case 1')
+        self.assertEqual(expected_number, actual_number)
+
+if __name__ == "__main__":
+    cogent.main.settings = settings
+    cogent.main()
+```
+
+In case any queries you can contact me on my email - harshittrivedi78@gmail.com
+
+
