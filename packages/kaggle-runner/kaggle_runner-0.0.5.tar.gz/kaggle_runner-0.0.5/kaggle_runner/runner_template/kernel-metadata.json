@@ -1,0 +1,21 @@
+{
+  "id": "k1gaggle/jigsaw-multilingual-toxicity-eda-models",
+  "id_no": 9350196,
+  "title": "Jigsaw Multilingual Toxicity : EDA + Models \ud83e\udd2c",
+  "code_file": "jigsaw-multilingual-toxicity-eda-models.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "keywords": [
+    "tpu"
+  ],
+  "dataset_sources": [
+    "k1gaggle/jigsaw-multilingula-toxicity-token-encoded"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "jigsaw-multilingual-toxic-comment-classification"
+  ]
+}
