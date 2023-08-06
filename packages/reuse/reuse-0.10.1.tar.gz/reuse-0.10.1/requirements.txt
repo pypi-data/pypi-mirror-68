@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2017 Free Software Foundation Europe e.V. <https://fsfe.org>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+python-debian==0.1.36
+requests==2.22.0
+license-expression==1.2
+boolean.py==3.7
+Jinja2==2.10.3
+binaryornot==0.4.4
+
+setuptools==41.6.0
+setuptools-scm==3.3.3
