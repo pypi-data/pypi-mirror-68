@@ -1,0 +1,12 @@
+brunns/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+brunns/builder/__init__.py,sha256=CfipzCjNVtZX0ZFZMRTKvg5SuLAwD0RB0ARcfvbNcWE,107
+brunns/builder/base.py,sha256=JOUw9DuDORZ_7po8mox5djVLN3-DJNDY2ZJzt2aSSKU,3329
+brunns/builder/datetime.py,sha256=1q9nT7veIHUWZ9UURb0YCt75caZi1joouPCfMG6KqqI,304
+brunns/builder/email.py,sha256=IfcxStR1a1yUNIl6-87WDHeV5HmOoeJVr-dxv-r7iOU,896
+brunns/builder/file.py,sha256=BECBBzlmMSg_Y_Czmh9Onbbhz6lYsC6ht03FGx_HAfs,233
+brunns/builder/internet.py,sha256=Q63NatejWKQltY6-qOPtwYyYv58Krk6NfHJ15bBkfek,779
+brunns_builder-0.5.0.dist-info/LICENSE,sha256=02_iaJwH_BogXPFGwv4d8OsT7YuO9qiWZbLjeCiPJlw,1071
+brunns_builder-0.5.0.dist-info/METADATA,sha256=ASTVb4ViBsf-1OA0mx5bcIFgyadCXBRh3PBV47UxNAI,4580
+brunns_builder-0.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+brunns_builder-0.5.0.dist-info/top_level.txt,sha256=OLZTtgTPn0cu7bKGqMOFdMJDdl7KIQUnNqr9GS3Kgho,7
+brunns_builder-0.5.0.dist-info/RECORD,,
