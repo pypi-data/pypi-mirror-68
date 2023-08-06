@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_inlines_actions.egg-info/PKG-INFO
+django_inlines_actions.egg-info/SOURCES.txt
+django_inlines_actions.egg-info/dependency_links.txt
+django_inlines_actions.egg-info/top_level.txt
+inlines_actions/__init__.py
+inlines_actions/mixins.py
+inlines_actions/views.py
