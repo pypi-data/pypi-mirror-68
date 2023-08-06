@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: pci
+Version: 0.2.3
+Summary: PCI group estimate
+Home-page: https://testpypi.python.org/pypi/pci
+Author: zhongj
+Author-email: zhong_jie@foxmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.23.4)
+Requires-Dist: numpy (>=1.16.3)
+Requires-Dist: folium (==0.10.1)
+Requires-Dist: geopy (==1.20.0)
+
+pci@Version: 0.2.3
+-----------------------------------------------------------------------
+
+Introduction
+-----------------------------------------------------------------------
+	[1] 评估PCI group;
+	[2] 地理化呈现评估结果
+	[3] 提供测距/自定义矢量图层等基本功能
+
+
+Package Install
+-----------------------------------------------------------------------
+	python_requires=">=3.5"
+
+Import File Format
+-----------------------------------------------------------------------
+	导入文件要求：
+	    [1] csv格式文件;
+	    [2] 至少包括以下几个列名的列：'enodebid','cellid','pci', 'longitude', 'latitude', 'city', 'cellname'.
+
+	其他要求：
+	    [1] 经纬度：请遵循经纬度的有效范围输入有效值，但程序中暂时没有加以限制;
+	    [2] PCI组：请遵循PCI组号的有效范围0至167的整数，但程序中暂时没有加以限制.
+
+
+Example Usage
+-----------------------------------------------------------------------
+以下提供两种用法
+
+.. code:: python
+
+	from pci import *
+	pci() / main() / init()
+
+.. code:: python
+
+	import pci
+	pci.pci() / pci.main() / pci.init()
+
+Help Document
+-----------------------------------------------------------------------
+
+.. code:: python
+
+	import pci
+	help(pci)
+
+
+LICENSE
+--------
+See LICENSE.txt file.
+
+
+
+
