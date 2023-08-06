@@ -1,0 +1,11 @@
+README.rst
+setup.py
+firstdemolpackage/__init__.py
+firstdemolpackage/jisuan.py
+firstdemolpackage/math.py
+firstdemolpackage.egg-info/PKG-INFO
+firstdemolpackage.egg-info/SOURCES.txt
+firstdemolpackage.egg-info/dependency_links.txt
+firstdemolpackage.egg-info/requires.txt
+firstdemolpackage.egg-info/top_level.txt
+test/test01.py

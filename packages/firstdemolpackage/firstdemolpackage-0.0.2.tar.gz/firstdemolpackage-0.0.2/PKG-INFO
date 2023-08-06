@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: firstdemolpackage
+Version: 0.0.2
+Summary: 打包测试
+Home-page: http://www.baidu.com
+Author: ken
+Author-email: xiaomishaona@126.com
+Maintainer: ken
+Maintainer-email: xiaomishaona@126.com
+License: BSD License
+Description: # Example Package
+        
+        This is a simple example package. You can use
+        [test](https://www.sina.com)
+        to write your content.
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
