@@ -1,0 +1,3 @@
+[console_scripts]
+mongocat = mongocat.cli:main
+
