@@ -1,0 +1,12 @@
+wolfram_model_version.py,sha256=HO-DSev7sbcHOVY55avXNgcPag15BHYyblkY1zyIQ8Q,733
+wolfram_model/__init__.py,sha256=ULn3SeM7bt4nNFc77uDs-smnmHNup0fNo2Qybb2ivkE,31
+wolfram_model/_wolfram_model.cp37-win_amd64.pyd,sha256=_h6D8AO7UVO3tpFLydobrCBfvjHEx6r-HttGOezO8Fc,277504
+wolfram_model/vis/__init__.py,sha256=QRJE6NFuMcjF7620Fl2hKJvikpl-CzC_KUc4cFRlVfQ,61
+wolfram_model/vis/fixture.py,sha256=vJzOc9SdTfM8IPxAZfFQzrZSSOlJMsRjBW8RCpjWlQs,997
+wolfram_model/vis/vis.py,sha256=1rLqheDLMtWrR07U7co3fGN8NQsPUR56bLqxAOuzd8w,324
+wolfram_model/vis/networkx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wolfram_model/vis/networkx/vis.py,sha256=TZPKxLwHNYIoomSNrisOcZ7LleFvkDSpo_Gg_8H_xuI,994
+wolfram_model-0.3.0.3.dist-info/METADATA,sha256=Fzvjaid7fDqJsB5Yk0Op675RUqnY4uvCoM8tvyf03W8,1672
+wolfram_model-0.3.0.3.dist-info/WHEEL,sha256=dj7C82leyj46hMTGwdTgzb6fyHY9S7WeF8pNacSt6QA,112
+wolfram_model-0.3.0.3.dist-info/top_level.txt,sha256=Mj4Qwoih21DI7WSKOh4BCxmscRhXRdhdKJjCtzsf4rs,36
+wolfram_model-0.3.0.3.dist-info/RECORD,,
