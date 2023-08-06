@@ -1,0 +1,10 @@
+README.md
+setup.py
+dbt_accelerator/__init__.py
+dbt_accelerator.egg-info/PKG-INFO
+dbt_accelerator.egg-info/SOURCES.txt
+dbt_accelerator.egg-info/dependency_links.txt
+dbt_accelerator.egg-info/requires.txt
+dbt_accelerator.egg-info/top_level.txt
+dbt_accelerator/schema_md_generator/__init__.py
+dbt_accelerator/schema_md_generator/create.py
