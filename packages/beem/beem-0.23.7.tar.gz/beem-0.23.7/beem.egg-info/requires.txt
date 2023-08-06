@@ -1,0 +1,17 @@
+future
+ecdsa
+requests
+websocket-client
+appdirs
+Events
+scrypt
+pylibscrypt
+pycryptodomex
+pytz
+Click
+click_shell
+prettytable
+pyyaml
+diff_match_patch
+asn1
+enum34
