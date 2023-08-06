@@ -1,0 +1,4 @@
+fake_useragent
+bs4
+pandas
+numpy
