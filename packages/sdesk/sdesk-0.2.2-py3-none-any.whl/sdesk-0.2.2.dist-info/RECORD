@@ -1,0 +1,11 @@
+sdesk/__init__.py,sha256=ifd8AoVHRGxC8bJDg2nv_vsOFyEynmKNLmf43BZ9FCQ,420
+sdesk/api/__init__.py,sha256=TAlsjr7a6Z5-Glr871UhFzkMEoD19n_t29xS9CEAoMg,32
+sdesk/api/auth.py,sha256=x581r0dhK58FDwRAvZEUBrl3o0rYt_0OPJ1sIwv7Bxw,298
+sdesk/api/client.py,sha256=RwFJ7uKzGFfLV8SGgZ4A2MgbDkfHECOo_QPVwMQSRc4,8040
+sdesk/api/resources.py,sha256=P_sD2M_E8w3XoOpuYVyKyjz66op9yBOzLpzWnsXk5n8,1872
+sdesk/proc/io.py,sha256=cxWxnVcVL7qaa5oF3M5DWreXyttEm0kO-9DWlseEt7s,2338
+sdesk/proc/sdesk_file.py,sha256=uePP9siNWt7MkZyWhyybeXKTQWiTZDaw7db155pGDIo,396
+sdesk-0.2.2.dist-info/entry_points.txt,sha256=S8d3_QxJoOoL0fAv5MR6IHN2SNHlKpy7GgBDtK7jwzY,45
+sdesk-0.2.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+sdesk-0.2.2.dist-info/METADATA,sha256=Kv2zV4wM3ub4y1FYStg7fTW2QUt1y2Snw1ufsWXNBmM,1243
+sdesk-0.2.2.dist-info/RECORD,,
