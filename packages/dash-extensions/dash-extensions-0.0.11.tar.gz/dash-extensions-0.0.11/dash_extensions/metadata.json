@@ -1,0 +1,44 @@
+{
+  "src/lib/components/Download.react.js": {
+    "description": "The Download component opens a download dialog when the data property (dict of filename, content, and type) changes.",
+    "displayName": "Download",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "data": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "filename": {
+              "name": "string",
+              "required": true
+            },
+            "content": {
+              "name": "any",
+              "required": true
+            },
+            "type": {
+              "name": "string",
+              "required": true
+            }
+          }
+        },
+        "required": false,
+        "description": "When set, a download is invoked using a Blob."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
