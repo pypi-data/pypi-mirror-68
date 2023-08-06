@@ -1,0 +1,9 @@
+update_dotdee/__init__.py,sha256=t5y2AJqXzswdf3ydEgAfCaPQsbhUiKamSS9VlWwcMw0,20142
+update_dotdee/cli.py,sha256=ZVeuZJ8cxF2rac9m-FvbxPnteif5p9GTNmiu6KrzYM4,3417
+update_dotdee/tests.py,sha256=KO2FRFT0W_WIn3Ar13XgMv80WhGMCMHztiWpMlGJTWU,10838
+update_dotdee-6.0.dist-info/LICENSE.txt,sha256=C-9P-xhVtlVwME8gGMbUTkurl71d-HFuzXgAAU1xcmc,1056
+update_dotdee-6.0.dist-info/METADATA,sha256=fOA4VmKrsd8-JlWcnfyzUgInEcU2bpy-Ia8ZWouz8DM,9105
+update_dotdee-6.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+update_dotdee-6.0.dist-info/entry_points.txt,sha256=D-B5_AAzP5RaOYeYJuOcYHJ7_nRCxSj7-4e-bPY71fk,58
+update_dotdee-6.0.dist-info/top_level.txt,sha256=aa0ePYXhzVMkcJlkmVMkrirXCohQxpTGgVD-oMrM4Es,14
+update_dotdee-6.0.dist-info/RECORD,,
