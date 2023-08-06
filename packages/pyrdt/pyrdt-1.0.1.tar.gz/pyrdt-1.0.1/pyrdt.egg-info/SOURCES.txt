@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyrdt/__init__.py
+pyrdt/atom.py
+pyrdt/combo.py
+pyrdt/math.py
+pyrdt/stat.py
+pyrdt.egg-info/PKG-INFO
+pyrdt.egg-info/SOURCES.txt
+pyrdt.egg-info/dependency_links.txt
+pyrdt.egg-info/requires.txt
+pyrdt.egg-info/top_level.txt
