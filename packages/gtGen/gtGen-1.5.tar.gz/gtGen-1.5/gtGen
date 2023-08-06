@@ -1,0 +1,1060 @@
+#!/usr/bin/python3
+import os
+import sys
+import subprocess
+import time
+import math
+import json
+import collections 
+import Levenshtein
+
+'''
+GT GENERATOR APP
+Preparing OCR, SR Ground Truth from extracted images
+
+Dependencies
+-------------
+python 3
+sudo apt-get install python3-pil python3-pil.imagetk
+sudo apt-get install python3-tk
+pip3 install python-Levenshtein
+'''
+
+from tkinter import * 
+from tkinter.ttk import *
+from tkinter import filedialog
+from tkinter import messagebox 
+from tkinter.filedialog import askopenfile 
+import tkinter as tk
+
+from PIL import Image
+from PIL import ImageTk
+DEBUG_MODE = 0
+
+if(len(sys.argv) >= 2):
+	if(sys.argv[1] == '-d'):
+		DEBUG_MODE = 1
+		print ("DEBUG MODE")
+
+
+screen_width = '1366'
+screen_height = '768'
+
+img_folder_selected = ''
+GT_folder_selected = ''
+
+currentGTfile = ''
+
+imgList = []
+existingGTs = []
+
+globalImgCtr = 0
+folderFinishedFlag = False
+preparedGTCount = 0
+previousOCR = ''
+prevTrackID = ''
+totalCharacterCount = 1
+displayID = 0
+
+analyticalSummaryFile = './analyticalSummaryFile.json'
+
+LBL_FLDR_check = False
+IMG_FLDR_check = False
+
+imgRotationToggle = False
+
+#Deque with 5 bank buffer for storing previous OCR encounters(used in batch L2 calculation)
+fiveBankedDeque = collections.deque(maxlen=5) 
+
+#Save existing GT's
+existingGTs = []
+
+#ANALYSIS DATA
+# Current model x Human
+# Character wise error for current model will be calculated based
+# on Human input
+
+# A B C D E F G H I J K L M N P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9
+wrongCount = [0]*35
+totalCountPerChar = [0]*35
+
+wrongPredictSequence = ['']*35
+wrongPredictionDict = [0]*35
+
+wrongPredictionDict[0] = { 	  'wrongCount' : wrongCount[0] ,
+						'wrongPredictSequence' : wrongPredictSequence[0],
+						'totalCountPerChar' : totalCountPerChar[0] }
+wrongPredictionDict[1] = { 	  'wrongCount' : wrongCount[1] ,
+						'wrongPredictSequence' : wrongPredictSequence[1] ,
+						'totalCountPerChar' : totalCountPerChar[1]}
+wrongPredictionDict[2] = { 	  'wrongCount' : wrongCount[2] ,
+						'wrongPredictSequence' : wrongPredictSequence[2] ,
+						'totalCountPerChar' : totalCountPerChar[2]}
+wrongPredictionDict[3] = { 	  'wrongCount' : wrongCount[3] ,
+						'wrongPredictSequence' : wrongPredictSequence[3] ,
+						'totalCountPerChar' : totalCountPerChar[3]}
+wrongPredictionDict[4] = { 	  'wrongCount' : wrongCount[4] ,
+						'wrongPredictSequence' : wrongPredictSequence[4] ,
+						'totalCountPerChar' : totalCountPerChar[4]}
+wrongPredictionDict[5] = { 	  'wrongCount' : wrongCount[5] ,
+						'wrongPredictSequence' : wrongPredictSequence[5] ,
+						'totalCountPerChar' : totalCountPerChar[5]}
+wrongPredictionDict[6] = { 	  'wrongCount' : wrongCount[6] ,
+						'wrongPredictSequence' : wrongPredictSequence[6] ,
+						'totalCountPerChar' : totalCountPerChar[6]}
+wrongPredictionDict[7] = { 	  'wrongCount' : wrongCount[7] ,
+						'wrongPredictSequence' : wrongPredictSequence[7] ,
+						'totalCountPerChar' : totalCountPerChar[7]}
+wrongPredictionDict[8] = { 	  'wrongCount' : wrongCount[8] ,
+						'wrongPredictSequence' : wrongPredictSequence[8] ,
+						'totalCountPerChar' : totalCountPerChar[8]}
+wrongPredictionDict[9] = { 	  'wrongCount' : wrongCount[9] ,
+						'wrongPredictSequence' : wrongPredictSequence[9] ,
+						'totalCountPerChar' : totalCountPerChar[9]}
+wrongPredictionDict[10] = { 	  'wrongCount' : wrongCount[10] ,
+						'wrongPredictSequence' : wrongPredictSequence[10] ,
+						'totalCountPerChar' : totalCountPerChar[10]}
+wrongPredictionDict[11] = { 	  'wrongCount' : wrongCount[11] ,
+						'wrongPredictSequence' : wrongPredictSequence[11] ,
+						'totalCountPerChar' : totalCountPerChar[11]}
+wrongPredictionDict[12] = { 	  'wrongCount' : wrongCount[12] ,
+						'wrongPredictSequence' : wrongPredictSequence[12] ,
+						'totalCountPerChar' : totalCountPerChar[12]}
+wrongPredictionDict[13] = { 	  'wrongCount' : wrongCount[13] ,
+						'wrongPredictSequence' : wrongPredictSequence[13] ,
+						'totalCountPerChar' : totalCountPerChar[13]}
+wrongPredictionDict[14] = { 	  'wrongCount' : wrongCount[14] ,
+						'wrongPredictSequence' : wrongPredictSequence[14] ,
+						'totalCountPerChar' : totalCountPerChar[14]}
+wrongPredictionDict[15] = { 	  'wrongCount' : wrongCount[15] ,
+						'wrongPredictSequence' : wrongPredictSequence[15] ,
+						'totalCountPerChar' : totalCountPerChar[15]}
+wrongPredictionDict[16] = { 	  'wrongCount' : wrongCount[16] ,
+						'wrongPredictSequence' : wrongPredictSequence[16] ,
+						'totalCountPerChar' : totalCountPerChar[16]}
+wrongPredictionDict[17] = { 	  'wrongCount' : wrongCount[17] ,
+						'wrongPredictSequence' : wrongPredictSequence[17] ,
+						'totalCountPerChar' : totalCountPerChar[17]}
+wrongPredictionDict[18] = { 	  'wrongCount' : wrongCount[18] ,
+						'wrongPredictSequence' : wrongPredictSequence[18] ,
+						'totalCountPerChar' : totalCountPerChar[18]}
+wrongPredictionDict[19] = { 	  'wrongCount' : wrongCount[19] ,
+						'wrongPredictSequence' : wrongPredictSequence[19] ,
+						'totalCountPerChar' : totalCountPerChar[19]}
+wrongPredictionDict[20] = { 	  'wrongCount' : wrongCount[20] ,
+						'wrongPredictSequence' : wrongPredictSequence[20] ,
+						'totalCountPerChar' : totalCountPerChar[20]}
+wrongPredictionDict[21] = { 	  'wrongCount' : wrongCount[21] ,
+						'wrongPredictSequence' : wrongPredictSequence[21] ,
+						'totalCountPerChar' : totalCountPerChar[21]}
+wrongPredictionDict[22] = { 	  'wrongCount' : wrongCount[22] ,
+						'wrongPredictSequence' : wrongPredictSequence[22] ,
+						'totalCountPerChar' : totalCountPerChar[22]}
+wrongPredictionDict[23] = { 	  'wrongCount' : wrongCount[23] ,
+						'wrongPredictSequence' : wrongPredictSequence[23] ,
+						'totalCountPerChar' : totalCountPerChar[23]}
+wrongPredictionDict[24] = { 	  'wrongCount' : wrongCount[24] ,
+						'wrongPredictSequence' : wrongPredictSequence[24] ,
+						'totalCountPerChar' : totalCountPerChar[24]}
+wrongPredictionDict[25] = { 	  'wrongCount' : wrongCount[25] ,
+						'wrongPredictSequence' : wrongPredictSequence[25] ,
+						'totalCountPerChar' : totalCountPerChar[25]}
+wrongPredictionDict[26] = { 	  'wrongCount' : wrongCount[26] ,
+						'wrongPredictSequence' : wrongPredictSequence[26] ,
+						'totalCountPerChar' : totalCountPerChar[26]}
+wrongPredictionDict[27] = { 	  'wrongCount' : wrongCount[27] ,
+						'wrongPredictSequence' : wrongPredictSequence[27] ,
+						'totalCountPerChar' : totalCountPerChar[27]}
+wrongPredictionDict[28] = { 	  'wrongCount' : wrongCount[28] ,
+						'wrongPredictSequence' : wrongPredictSequence[28] ,
+						'totalCountPerChar' : totalCountPerChar[28]}
+wrongPredictionDict[29] = { 	  'wrongCount' : wrongCount[29] ,
+						'wrongPredictSequence' : wrongPredictSequence[29] ,
+						'totalCountPerChar' : totalCountPerChar[29]}
+wrongPredictionDict[30] = { 	  'wrongCount' : wrongCount[30] ,
+						'wrongPredictSequence' : wrongPredictSequence[30] ,
+						'totalCountPerChar' : totalCountPerChar[30]}
+wrongPredictionDict[31] = { 	  'wrongCount' : wrongCount[31] ,
+						'wrongPredictSequence' : wrongPredictSequence[31] ,
+						'totalCountPerChar' : totalCountPerChar[31]}
+wrongPredictionDict[32] = { 	  'wrongCount' : wrongCount[32] ,
+						'wrongPredictSequence' : wrongPredictSequence[32] ,
+						'totalCountPerChar' : totalCountPerChar[32]}
+wrongPredictionDict[33] = { 	  'wrongCount' : wrongCount[33] ,
+						'wrongPredictSequence' : wrongPredictSequence[33],
+						'totalCountPerChar' : totalCountPerChar[33] }
+wrongPredictionDict[34] = { 	  'wrongCount' : wrongCount[34] ,
+						'wrongPredictSequence' : wrongPredictSequence[34] ,
+						'totalCountPerChar' : totalCountPerChar[34]}
+
+
+currModelAnalysis = {'A' : wrongPredictionDict[0], \
+					 'B' : wrongPredictionDict[1], \
+					 'C' : wrongPredictionDict[2], \
+					 'D' : wrongPredictionDict[3], \
+					 'E' : wrongPredictionDict[4], \
+					 'F' : wrongPredictionDict[5], \
+					 'G' : wrongPredictionDict[6], \
+					 'H' : wrongPredictionDict[7], \
+					 'I' : wrongPredictionDict[8], \
+					 'J' : wrongPredictionDict[9], \
+					 'K' : wrongPredictionDict[10], \
+					 'L' : wrongPredictionDict[11], \
+					 'M' : wrongPredictionDict[12], \
+					 'N' : wrongPredictionDict[13], \
+					 'P' : wrongPredictionDict[14], \
+					 'Q' : wrongPredictionDict[15], \
+					 'R' : wrongPredictionDict[16], \
+					 'S' : wrongPredictionDict[17], \
+					 'T' : wrongPredictionDict[18], \
+					 'U' : wrongPredictionDict[19], \
+					 'V' : wrongPredictionDict[20], \
+					 'W' : wrongPredictionDict[21], \
+					 'X' : wrongPredictionDict[22], \
+					 'Y' : wrongPredictionDict[23], \
+					 'Z' : wrongPredictionDict[24], \
+					 '0' : wrongPredictionDict[25], \
+					 '1' : wrongPredictionDict[26], \
+					 '2' : wrongPredictionDict[27], \
+					 '3' : wrongPredictionDict[28], \
+					 '4' : wrongPredictionDict[29], \
+					 '5' : wrongPredictionDict[30], \
+					 '6' : wrongPredictionDict[31], \
+					 '7' : wrongPredictionDict[32], \
+					 '8' : wrongPredictionDict[33], \
+					 '9' : wrongPredictionDict[34]  }
+
+def showWaitAnim():
+	imageFile = os.path.join('./hourGlass.png')
+	img = Image.open(imageFile)
+	img = img.resize((32,40), Image.ANTIALIAS)
+	print ("showing anim")
+	photoImg =  ImageTk.PhotoImage(img)
+	waitAnim.configure(image=photoImg)
+	waitAnim.image = photoImg
+	#waitAnim.grid(row=2,column=2)
+
+def hideWaitAnim():
+	print ('hide img')
+	waitAnim.configure(image='')
+	waitAnim.image = ''
+
+def goToImageNumber():
+	global globalImgCtr, displayID
+
+	if (len(str(goToInput.get())) != 0):
+		imgNo = goToInput.get()
+		globalImgCtr = int(imgNo)
+		displayID = globalImgCtr-1
+		goToInput.delete(0, 'end')
+
+		print ("Jumped to globalImgCtr " + str(globalImgCtr))
+		print ("Jumped to displayID  " + str(displayID))
+
+def loadRefImgs():
+	refImgCtr = 1 #Max = 5
+	refImgList = []
+	if(os.path.isdir('./reference_types')):
+		for img in os.listdir('./reference_types'):
+			refImgList.append(img)
+
+		if(len(refImgList) == 0):
+			stateTypeOne.set("Put Ref image in\n./reference_types/\n<STATE>_<TYPE>.png")
+		else:
+
+			refImgList.sort()
+
+			for imgName in refImgList:
+				imageFile = os.path.join('./reference_types', imgName)
+				img = Image.open(imageFile)
+				img = img.resize((90,40), Image.ANTIALIAS)
+				photoImg =  ImageTk.PhotoImage(img)
+				stateType = ''
+				stateType = imgName.split('_')[1].split('.')[0]
+
+				if(refImgCtr == 1):
+					refOne.configure(image=photoImg)
+					refOne.image = photoImg
+					stateTypeOne.set(stateType)
+
+				elif(refImgCtr == 2):
+					refTwo.configure(image=photoImg)
+					refTwo.image = photoImg
+					stateTypeTwo.set(stateType)
+
+				elif(refImgCtr == 3):	
+					refThree.configure(image=photoImg)
+					refThree.image = photoImg
+					stateTypeThree.set(stateType)
+
+				elif(refImgCtr == 4):
+					refFour.configure(image=photoImg) 
+					refFour.image = photoImg
+					stateTypeFour.set(stateType)
+
+				elif(refImgCtr == 5):
+					refFive.configure(image=photoImg)
+					refFive.image = photoImg
+					stateTypeFive.set(stateType)
+
+				refImgCtr += 1
+	else:
+		stateTypeOne.set("Put State Ref image in\n./reference_types/\n<STATE>_<TYPE>.png")
+
+def openCurrentGTFile():
+	#Open current GT file using default system editor
+	global currentGTfile
+	if(os.path.isfile(currentGTfile)):
+		try:
+			#open gt file
+			proc_1 = subprocess.check_call('xdg-open '+ str(currentGTfile),shell=True)
+		except:
+			messagebox.showinfo("Error", "Exception reading current GT file !!")
+
+def toggle():
+	global imgRotationToggle
+	'''
+	use
+	rotateToggle_btn.config('text')[-1]
+	to get the present state of the toggle button
+	'''
+	if rotateToggle_btn.config('text')[-1] == 'Rotation ON':
+		rotateToggle_btn.config(text='Rotation OFF')
+		imgRotationToggle = False
+	else:
+		rotateToggle_btn.config(text='Rotation ON')
+		imgRotationToggle = True
+
+		
+def dumpAnalyticsDictToJson():
+	global analyticalSummaryFile, currModelAnalysis
+
+	jsonoBJ = json.dumps(currModelAnalysis)
+	analyticsFileObj = open(analyticalSummaryFile, 'w+')
+	analyticsFileObj.write(jsonoBJ)
+	analyticsFileObj.close()
+
+
+
+def readAnalyticsDictFromJson():
+	global analyticalSummaryFile, currModelAnalysis
+
+	if( os.path.isfile(analyticalSummaryFile)):
+		analyticsFileObj = open(analyticalSummaryFile, 'r')
+		currModelAnalysis = json.load(analyticsFileObj) 
+		analyticsFileObj.close()
+		return True
+	else:
+		return False
+
+def modelAnalysisReportSummary():
+	global currModelAnalysis
+
+	for charKey in currModelAnalysis:
+		print ('\n')
+		falsePositive = 0
+		totalCharCnt = 0
+		print ('Class : ' + charKey)
+
+		for entity in currModelAnalysis[charKey]:
+			if(entity == 'wrongCount'):
+				print ('\twrongCount : ' + str(currModelAnalysis[charKey][entity]))
+				#falsePositive = currModelAnalysis[charKey][entity]
+			elif(entity == 'wrongPredictSequence'):
+				print ('\twrongPredictSequence : ' + str(currModelAnalysis[charKey][entity]))
+				pass
+			elif(entity == 'totalCountPerChar'):
+				print ('\ttotalCountPerChar : ' + str(currModelAnalysis[charKey][entity]))
+				#totalCharCnt = currModelAnalysis[charKey][entity]
+
+		if not(totalCharCnt == 0):
+			print ('Character : ' + charKey + ' :  Precision : ' + str(1 - (falsePositive/totalCharCnt)))
+
+
+
+def countGTsInFolder():
+	global GT_folder_selected
+	noOfGt = 0
+
+	for file in os.listdir(GT_folder_selected):
+		
+		fileObj = open(os.path.join(GT_folder_selected, file), 'r')
+		gtLines = fileObj.readlines()
+		noOfGt += len(gtLines)
+		fileObj.close()
+	print ("Total Unique GT in selected GT folder: " + str(noOfGt))
+	gtCountVar.set(str(noOfGt))
+'''
+def checkExistingGT_Levenstein(videoName, ocrString, l2DistanceThresh):
+	
+	retVal = True
+
+	for gtFile in os.listdir(GT_folder_selected):
+		fileObj = open(os.path.join(GT_folder_selected, gtFile), 'r')
+		tempGts = fileObj.readlines()
+
+		for gt in tempGts:
+			existingGTs.append(gt)
+
+		fileObj.close()
+			
+	for gt in existingGTs:
+		curOcrGt = gt.split('-')[0].strip()
+		ocrString = ocrString.strip()
+
+		# print ('cur ' + str(curOcrGt))
+		# print ('cur ' + str(ocrString))
+
+		lDiatance = Levenshtein.distance(curOcrGt, ocrString)
+		if(lDiatance <= l2DistanceThresh):
+			#similar - skip this image
+			retVal = False
+
+		else:
+			#marginal change - show this image
+			retVal = True
+
+	return retVal
+'''
+def check_batch_LevensteinMatch(curOcrString, l2DistanceThresh):
+	# initializing deque 
+	global fiveBankedDeque
+
+	retVal = False
+	# print ("\tPI batch list " + str(batchOCR_list))
+	# print ('\tcurOcrString ' + str(curOcrString))
+	
+	for elem in fiveBankedDeque:
+		lDiatance = Levenshtein.distance(curOcrString, elem)
+		# print ('elem ' + str(elem))
+	
+		if(lDiatance <= l2DistanceThresh):
+			#similar - skip this image
+		#	print ("\tL2 match found")
+			retVal = True
+
+
+
+	fiveBankedDeque.append(curOcrString)
+
+	return retVal
+
+def readExistingGTs():
+	global existingGTs, GT_folder_selected
+	print ('read existing')
+	for gtFile in os.listdir(GT_folder_selected):
+		fileObj = open(os.path.join(GT_folder_selected, gtFile), 'r')
+		tempGts = fileObj.readlines()
+
+		for gt in tempGts:
+			existingGTs.append(gt)
+
+		fileObj.close()
+			
+
+def new_checkExistingGT_(videoName, ocrString):
+	global existingGTs
+
+	for gt in existingGTs:
+		curOcrGt = gt.split('-')[0].strip()
+		ocrString = ocrString.strip()
+
+		if(curOcrGt == ocrString):
+			return False
+
+	return True
+
+
+
+def new_skipIfSimilarOCR(ENTRY_STATUS):
+	global previousOCR, img_folder_selected, prevTrackID, displayID
+	global imgList, globalImgCtr
+	
+	retVal = False
+	matchFound = False
+
+	while(globalImgCtr < len(imgList)):
+		curTrackId = imgList[globalImgCtr].split('-')[0]
+
+		currentOCR = imgList[globalImgCtr].split('.')[0].split('_')[1]
+
+		print ("\n\tCurrent plate : " + str( imgList[globalImgCtr]))
+		
+		print ("\tcurTrackId " + str(curTrackId))
+		print ("\tprevTrackID " + str(prevTrackID))
+		print ("\tcurrentOCR " + str(currentOCR))
+		print ("\tpreviousOCR " + str(previousOCR))
+		
+		plateSimilarityIndex = Levenshtein.distance(previousOCR, currentOCR)
+		if((prevTrackID.strip() != curTrackId.strip()) or (plateSimilarityIndex >= 2)):
+			#Criteria 1: HIGH : skip if there in previosly created
+			videoName = img_folder_selected.split('/')[-1]
+			updateFlag = new_checkExistingGT_(videoName, str(currentOCR))
+			if not(updateFlag):
+				print ("Existing GT.. " + str(imgList[globalImgCtr]))
+				previousOCR = currentOCR
+				prevTrackID = curTrackId
+				globalImgCtr += 1
+			else:
+				#new GT exit loop
+
+				#Criteria 2: LOW :check if similar to immediate previous plate
+				lDiatance = Levenshtein.distance(previousOCR, currentOCR)
+				if(lDiatance <= 2):
+					#similar - skip this image
+					print ("Skip : Immediate L2 " + str(imgList[globalImgCtr]))
+					previousOCR = currentOCR
+					prevTrackID = curTrackId
+					globalImgCtr += 1
+
+				else:
+					#TBD Criteria 3: batch Lenenshtein check
+					batch_l2match = check_batch_LevensteinMatch(currentOCR, l2DistanceThresh=2)
+					if(batch_l2match):
+						#similar - skip this image
+						print ("Skip : Batch L2 " + str(imgList[globalImgCtr]))
+						previousOCR = currentOCR
+						prevTrackID = curTrackId
+						globalImgCtr += 1
+					else:	
+						#Show image
+						displayID = globalImgCtr
+						globalImgCtr += 1
+						previousOCR = currentOCR
+						prevTrackID = curTrackId
+						#print ("Going to display")
+						break
+		else:
+			previousOCR = currentOCR
+			prevTrackID = curTrackId
+			print ("Skip : Track ID")
+			globalImgCtr += 1
+
+
+	return 0
+
+def convertTimeToMinutes(hours, minutes):
+	timeElapsedMinutes = hours*60 + minutes
+	return timeElapsedMinutes
+
+
+def pointToLargestImageinCluster():
+	global imgList, globalImgCtr
+	#find track ID of pointed images
+	if(globalImgCtr < len(imgList)):
+		curTrackId = imgList[globalImgCtr].split('-')[0]
+		#print ('Cur ID ' + curTrackId)
+	#search for all images with the track ID and create fileName list
+	#iterate fileName list and create filesize list
+	#sort filesize list
+	#sort fileName list
+	#get the original pointer index of largest image
+	#globalImgCtr + relative index
+
+	
+def keydown(e):
+	global img_folder_selected, imgList, globalImgCtr, folderFinishedFlag, coldStartFlag, imgRotationToggle, displayID, prevTrackID,previousOCR
+	global fiveBankedDeque
+
+	batchOCR_list = []
+
+	if(str(e.keysym) == "Left"):
+		#print ("Left")
+		if(len(str(e1.get())) == 0) and ((len(str(e2.get())) == 0)):
+			globalImgCtr -= 1
+			displayID = globalImgCtr-1
+			prevTrackID = imgList[globalImgCtr-1].split('-')[0]
+			previousOCR = imgList[globalImgCtr-1].split('.')[0].split('_')[1]
+			print ("prevTrackID : " + str(prevTrackID))
+			print ("previousOCR : " + str(previousOCR))
+
+			if(len(fiveBankedDeque) != 0):
+				print ("\nbefore : " + str(fiveBankedDeque))
+				fiveBankedDeque.pop()
+				print ("after : " + str(fiveBankedDeque))
+
+			e1.delete(0, 'end')
+			e2.delete(0, 'end')
+
+	elif(str(e.keysym) == "Right"):
+		#print ("Right")
+		if(len(str(e1.get())) == 0) and ((len(str(e2.get())) == 0)):
+			globalImgCtr += 1
+			displayID = globalImgCtr-1
+
+			e1.delete(0, 'end')
+			e2.delete(0, 'end')
+			e1.focus()
+
+	elif(str(e.keysym) == "Up"):
+		#print ("Up")
+		pass
+
+	elif(str(e.keysym) == "Down"):		
+		#print ("Down")
+		pass
+
+	elif(str(e.keysym) == "Return") or (str(e.keysym) == 'KP_Enter'):
+		#print ("Return")
+		if(LBL_FLDR_check) and (IMG_FLDR_check):
+
+			if(globalImgCtr < len(imgList)):
+
+				#Check GOTO img field
+				goToImageNumber()
+
+				#Check GT fields
+				if(len(str(e1.get())) != 0) and ((len(str(e2.get())) != 0)):
+					submitData(str(e1.get()), str(e2.get()), imgList[globalImgCtr])
+
+					#point to next group first image (Levenshtein distn. based)
+					new_skipIfSimilarOCR(ENTRY_STATUS=1)
+
+				elif(len(str(e1.get())) == 0) and ((len(str(e2.get())) == 0)):
+					#Start WAIT animation
+					#point to next group first image (Levenshtein distn. based)
+					new_skipIfSimilarOCR(ENTRY_STATUS=0)
+					#Stop WAIT animation
+
+				else:
+					print ("Enter all GTs !!")
+					messagebox.showinfo("Warning", "Partial Data detected !!")
+			else:
+					folderFinishedFlag = True
+
+			#pointToLargestImageinCluster()
+			#find track ID of pointed images
+			#search for all images with the track ID and create fileName list
+			#iterate fileName list and create filesize list
+			#sort filesize list
+			#sort fileName list
+			#get the original pointer index of largest image
+			#globalImgCtr + relative index
+
+		
+			e1.delete(0, 'end')
+			e2.delete(0, 'end')
+			e1.focus()
+
+	
+
+	if not (folderFinishedFlag):
+		if not (GT_folder_selected == ''):
+			if(len(imgList) != 0):
+				if(displayID <= len(imgList)):
+					#print ("@ Image : " + str(imgList[displayID]))
+
+					var.set("Processed Imgs : " + str(displayID)+'/'+str(len(imgList)))
+
+					nameVar.set("Prediction : " + str(imgList[displayID]).split('.')[0])
+					imageFile = os.path.join(img_folder_selected, imgList[displayID])
+					img = Image.open(imageFile)
+					img = img.resize((600,300), Image.ANTIALIAS)
+
+					#Rotate 180' if image rotation enabled
+					if(imgRotationToggle):
+						img = img.rotate(180, Image.NEAREST, expand = 1) 
+					photoImg =  ImageTk.PhotoImage(img)
+					w2.configure(image=photoImg)
+					w2.image = photoImg
+
+				#Current thumbnail
+					#Rotate 180' if image rotation enabled
+					img = img.resize((120,60), Image.ANTIALIAS)
+					photoImg =  ImageTk.PhotoImage(img)
+
+					wspaceTwo.configure(image=photoImg)
+					try:
+						wspaceTwo.image = photoImg
+					except:
+						pass
+
+
+				#Left thumbnail
+					imageFile = os.path.join(img_folder_selected, imgList[displayID-1])
+					img = Image.open(imageFile)
+					img = img.resize((90,40), Image.ANTIALIAS)
+
+					#Rotate 180' if image rotation enabled
+					if(imgRotationToggle):
+						img = img.rotate(180, Image.NEAREST, expand = 1) 
+					photoImg =  ImageTk.PhotoImage(img)
+
+					wspaceOne.configure(image=photoImg)
+					try:
+						wspaceOne.image = photoImg
+					except:
+						pass
+
+
+				#Right thumbnail
+					if(displayID+1 < len(imgList)):
+						imageFile = os.path.join(img_folder_selected, imgList[displayID+1])
+						img = Image.open(imageFile)
+						img = img.resize((90,40), Image.ANTIALIAS)
+
+						#Rotate 180' if image rotation enabled
+						if(imgRotationToggle):
+							img = img.rotate(180, Image.NEAREST, expand = 1) 
+						photoImg =  ImageTk.PhotoImage(img)
+
+						wspaceThree.configure(image=photoImg)
+						try:
+							wspaceThree.image = photoImg
+						except:
+							pass
+					else:
+						pass
+
+				else:
+					
+					folderFinishedFlag = True
+			else:
+				print ("Specifiy Image folder !")
+				messagebox.showinfo("Warning", "Specifiy Image folder to read from !")
+		else:
+			print ("Specify GT saving folder !")
+			messagebox.showinfo("Warning", "Specify GT saving folder !")
+	else:
+		messagebox.showinfo("Warning", "Finished the images folder !")
+		w2.configure(image='')
+		w2.image = ''
+
+		wspaceOne.configure(image='')
+		wspaceOne.image = ''
+
+		wspaceTwo.configure(image='')
+		wspaceTwo.image = ''
+
+		wspaceThree.configure(image='')
+		wspaceThree.image = ''
+
+
+
+def submitData(ocr_data, sr_data, currentImgName):
+	global img_folder_selected
+	global GT_folder_selected
+	global preparedGTCount
+	global totalCharacterCount
+	global currentGTfile
+	global existingGTs
+
+	print ("\nSubmitting data.")
+	'''
+	print ("img_folder_selected : " + str(img_folder_selected))
+	print ("GT_folder_selected : " + str(GT_folder_selected))
+	'''
+	predictedOCR = currentImgName.split('.')[0].split('_')[1]
+
+
+	#Model analysis data retreival if not rotated Img
+	if not(imgRotationToggle):
+		#equal string lengths - to catch false positive predictions
+		if(len(predictedOCR) == len(ocr_data)):
+			for itr in range(0,len(ocr_data)):
+				#TBD change this while implementing TN condition
+				#print ("db : " + str(currModelAnalysis[ocr_data[itr]]['totalCountPerChar']))
+				try:
+					currModelAnalysis[ocr_data[itr]]['totalCountPerChar'] += 1
+				except:
+					pass
+				if not(ocr_data[itr] == predictedOCR[itr]):
+					# print ('wrong detection ')
+					# print ('ocr_data[itr] '+ ocr_data[itr])
+					# print ('predictedOCR[itr] '+ predictedOCR[itr])
+					try:
+						currModelAnalysis[ocr_data[itr]]['wrongCount'] += 1
+						currModelAnalysis[ocr_data[itr]]['wrongPredictSequence'] += str(predictedOCR[itr])
+					except:
+						pass
+		#unequal string lengths - to catch true negative predictions
+		else:
+			pass	#TBD
+
+	videoName = img_folder_selected.split('/')[-1]
+	if not( os.path.isdir(os.path.join(GT_folder_selected))):
+		print ("GT saving Folder does NOT exists..\n Kindly create")
+		messagebox.showinfo("Warning", "GT saving Folder does NOT exists..\n Kindly create one.")
+	else:
+
+		#check GT already exists
+		updateFlag = new_checkExistingGT_(videoName, str(ocr_data))
+
+		if(updateFlag):
+			try:
+				currentGTfile = os.path.join(GT_folder_selected, videoName+'.txt')
+				gtFileObj = open(currentGTfile, 'a+')	
+				gtFileObj.write(ocr_data + ' - ' + sr_data+'\n')
+				gtFileObj.close()
+				existingGTs.append(ocr_data)
+
+			except:
+				messagebox.showinfo("Error", "Trouble reading GT file...")
+
+			preparedGTCount += 1
+		else:
+			messagebox.showinfo("Warning", "Existing GT...")
+def sortTrackID(elem):
+	return int(elem.split('-')[0])
+
+def openFOlderImg():
+	print ("Opening Img folder")
+	global img_folder_selected, imgList, IMG_FLDR_check, folderFinishedFlag, globalImgCtr, DEBUG_MODE
+	folderFinishedFlag = False
+	globalImgCtr = -1
+	if(DEBUG_MODE==1):
+		img_folder_selected = '/home/akb/1_workSpace/1_WFH/tria/large/'
+	else:
+		img_folder_selected = filedialog.askdirectory()
+	imgList = os.listdir(img_folder_selected)
+	imgList.sort(key=sortTrackID)
+	IMG_FLDR_check = True
+	imgFldrVar.set(str(img_folder_selected.split('/')[-1]))
+	#messagebox.showinfo("Info", "Images folder : " + str(img_folder_selected))
+
+
+def openFOlderGT():
+	print ("Opening GT folder")
+	global GT_folder_selected, LBL_FLDR_check, DEBUG_MODE
+	if(DEBUG_MODE==1):
+		GT_folder_selected = '/home/akb/1_workSpace/1_WFH/tria/trialGT/'
+	else:
+		GT_folder_selected = filedialog.askdirectory()
+	LBL_FLDR_check = True
+	gtLblFldr.set(str(GT_folder_selected.split('/')[-1]))
+	readExistingGTs()
+
+	#messagebox.showinfo("Info", "GT saving folder : " + str(GT_folder_selected))
+
+def showSummary():
+	global globalImgCtr, preparedGTCount
+	e = int(time.time() - initialTick)
+	minutesElapsed = convertTimeToMinutes((e // 3600), (e % 3600 // 60))
+
+	if(minutesElapsed != 0):
+		messagebox.showinfo("Summary", "\nNo of images processed : " + str(globalImgCtr) + "\nUnique GTs prepared : " + str(preparedGTCount) + '\nGT preperation time : {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60) + "\nGT preperation velocity: " + str(math.floor(preparedGTCount/minutesElapsed)) + str(" GT/min"))
+	else:
+		messagebox.showinfo("Summary", "\nNo of images processed : " + str(globalImgCtr) + "\nUnique GTs prepared : " + str(preparedGTCount) + '\nGT preperation time : {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60) + "\nGT preperation velocity: " + str("NA,Work more than a minute.") )
+
+
+def showHelp():
+	messagebox.showinfo("Controls", "\nEnter : Next cluster image "\
+	+ "\nTab : Switch LPR/SR" \
+	+ '\n------------------------' \
+	+ "\n-> : Same cluster image"\
+	+ '\n<- : Previous image'\
+	+ '\n------------------------' \
+	+ '\nProcess summary  : Current session specifics'\
+	+ '\nCumulative GT count : GTs in select GT folder'\
+	+ '\nRotation ON/OFF : Invert images'\
+	+ '\nVerify GT : Open current GT'\
+	+ '\n------------------------' \
+	+ '\nOpen Imgs : Imgs foldr' \
+	+ '\nOpen GT : GT save foldr' \
+	+ '\n------------------------' \
+	+ '\nByproduct files created' \
+	+ '\n------------------------' \
+	+ '\n./last_session_summary.txt' \
+	+ '\n./analyticalSummaryFile.json' )
+
+
+root = Tk(className=' GT Generator') 
+root.geometry(str(screen_width+'x'+screen_height))
+
+analFileRead = readAnalyticsDictFromJson()
+
+root.bind("<KeyPress>", keydown)
+
+var = StringVar()
+nameVar = StringVar()
+gtCountVar = StringVar()
+
+imgFldrVar = StringVar()
+gtLblFldr = StringVar()
+stateTypeOne = StringVar()
+stateTypeTwo = StringVar()
+stateTypeThree = StringVar()
+stateTypeFour = StringVar()
+stateTypeFive = StringVar()
+
+
+#Directory selection panel
+folderFrame = Frame(root, borderwidth=2)
+b1 = Button(folderFrame, text = 'Open Images', command=openFOlderImg,  pad=(10, 10))
+b2 = Button(folderFrame, text = 'Open GT', command=openFOlderGT)
+imgFldrLbl = Label(folderFrame, textvariable=imgFldrVar)
+gtLblFldrLbl = Label(folderFrame, textvariable=gtLblFldr)
+
+#Control panel
+controlPanelOne = Frame(root, borderwidth=2)
+countGTButton= Button(controlPanelOne, text = 'Cumulative GT count', command=countGTsInFolder)
+totalGTCount = Label(controlPanelOne, textvariable=gtCountVar)
+
+controlPanelTwo = Frame(root, borderwidth=2)
+rotateToggle_btn = Button(controlPanelTwo, text="Rotation OFF", width=12, command=toggle)
+txtEd = Button(controlPanelTwo, text="Verify GT file", command=openCurrentGTFile)
+b3 = Button(controlPanelTwo, text = '* PROCESS SUMMARY *', command=showSummary)
+helpBut = Button(controlPanelTwo, text = 'Help', command=showHelp)
+
+
+#Image panel
+imagePanel = Frame(root, borderwidth=2)
+w2 = Label(imagePanel, text='Press Enter to Start.. ') 
+
+frameThumbnail = Frame(root, borderwidth=2)
+wspaceOne = Label(frameThumbnail, text='\t\t')
+wspaceTwo = Label(frameThumbnail, text='\t\t')
+wspaceThree = Label(frameThumbnail, text='\t\t')
+waitAnim = Label(frameThumbnail)
+
+#Metadata panel
+metaDataFrame = Frame(root, borderwidth=2)
+nameVarWid = Label(metaDataFrame, textvariable=nameVar)
+w5 = Label(metaDataFrame, textvariable=var)
+goToFrame = Frame(metaDataFrame, borderwidth=2)
+gToLbl = Label(goToFrame, text='Go To')
+goToInput = Entry(goToFrame )
+GoBut = Button(goToFrame, text='Go', command=goToImageNumber)
+
+#Input panel
+inputFrame = Frame(root, borderwidth=2)
+w3 = Label(inputFrame, text='\tLicense Plate Reader Ground Truth ')
+w4 = Label(inputFrame, text='\tState Recognizer Ground Truth ')
+e1 = Entry(inputFrame) 
+e2 = Entry(inputFrame) 
+
+#Reference panel
+refPanel = Frame(root, borderwidth=2)
+loadRef = Button(refPanel, text='Load Ref Imgs', command=loadRefImgs)
+refOne = Label(refPanel)
+oneType = Label(refPanel, textvariable=stateTypeOne)
+
+refTwo = Label(refPanel)
+twoType = Label(refPanel, textvariable=stateTypeTwo)
+
+refThree = Label(refPanel)
+threeType = Label(refPanel, textvariable=stateTypeThree)
+
+refFour = Label(refPanel)
+fourType = Label(refPanel, textvariable=stateTypeFour)
+
+refFive = Label(refPanel) 
+fivetype = Label(refPanel, textvariable=stateTypeFive)
+
+#********* APP LAYOUR DESIGN ********************#
+#Control pane. alignment
+controlPanelOne.grid(row=1,column=3)
+countGTButton.grid(row=1,column=1)
+totalGTCount.grid(row=2,column=1)
+
+controlPanelTwo.grid(row=1,column=2)
+rotateToggle_btn.grid(row=1,column=1)
+txtEd.grid(row=1,column=2)
+b3.grid(row=1,column=3)
+helpBut.grid(row=1,column=4)
+
+
+#Directory mgmnt panel alignment
+folderFrame.grid(row=1, column=1)
+b1.grid(row=1,column=1)
+b2.grid(row=1,column=2)
+imgFldrLbl.grid(row=2,column=1)
+gtLblFldrLbl.grid(row=2,column=2)
+
+#Metadata panel alignment
+metaDataFrame.grid(row=3, column=1)
+nameVarWid.grid(row=1,column=1)
+w5.grid(row=2,column=1)
+goToFrame.grid(row=6,column=1,sticky=tk.S)
+gToLbl.grid(row=1,column=1,sticky=tk.S)
+goToInput.grid(row=1,column=2,sticky=tk.S)
+#GoBut.grid(row=2,column=2)
+
+#Main image panel alignment
+imagePanel.grid(row=3,column=2,sticky=tk.N+tk.S+tk.W+tk.E)
+w2.grid(row=1,column=1,sticky=tk.N+tk.S+tk.W+tk.E)
+
+#Thumbnail panel alignment
+frameThumbnail.grid(row=4, column=2)
+wspaceOne.grid(row=1,column=1, sticky=E)
+wspaceTwo.grid(row=1,column=2)
+wspaceThree.grid(row=1,column=3, sticky=W)
+
+waitAnim.grid(row=2,column=2)
+#input alignment
+inputFrame.grid(row=5, column=2)
+w3.grid(row=1,column=1, sticky=tk.N+tk.S+tk.W+tk.E)
+w4.grid(row=2,column=1, sticky=tk.N+tk.S+tk.W+tk.E)
+e1.grid(row=1,column=2)
+e2.grid(row=2,column=2)
+
+#Reference panel alignment
+refPanel.grid(row=3,column=3)
+loadRef.grid(row=1,column=1)
+refOne.grid(row=2,column=1)
+oneType.grid(row=3,column=1)
+refTwo.grid(row=4,column=1)
+twoType.grid(row=5,column=1)
+refThree.grid(row=6,column=1)
+threeType.grid(row=7,column=1)
+refFour.grid(row=8,column=1)
+fourType.grid(row=9,column=1)
+refFive.grid(row=10,column=1)
+fivetype.grid(row=11,column=1)
+
+initialTick = time.time()
+root.mainloop() 
+
+finalTick = time.time()
+e = int(finalTick - initialTick)
+
+
+print ('totalCharacterCount : '+str(totalCharacterCount))
+print ('Character-Wise error accuracy')
+
+for charKey in currModelAnalysis:
+	print ('\n')
+	falsePositive = 0
+	totalCharCnt = 0
+
+	for entity in currModelAnalysis[charKey]:
+		#print ('entity : ' + entity)
+		if(entity == 'wrongCount'):
+			#print ('wrongCount : ' + str(currModelAnalysis[charKey][entity]))
+			falsePositive = currModelAnalysis[charKey][entity]
+		elif(entity == 'wrongPredictSequence'):
+			#print ('wrongPredictSequence : ' + str(currModelAnalysis[charKey][entity]))
+			pass
+		elif(entity == 'totalCountPerChar'):
+			#print ('totalCountPerChar : ' + str(currModelAnalysis[charKey][entity]))
+			totalCharCnt = currModelAnalysis[charKey][entity]
+
+	if not(totalCharCnt == 0):
+		print ('Character : ' + charKey + ' :  Precision : ' + str(1 - (falsePositive/totalCharCnt)))
+
+
+dumpAnalyticsDictToJson()
+
+
+print ("********\nLast Session Summary ******")
+print ("Folder Name : " + str(img_folder_selected.split('/')[-1]))
+print ("No of images processed : " + str(globalImgCtr))
+print ("Unique GTs prepared : " + str(preparedGTCount))
+print('GT preperation time : {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
+minutesElapsed = convertTimeToMinutes((e // 3600), (e % 3600 // 60))
+
+print ('Analysis report dump file : ./analyticalSummaryFile.json')
+modelAnalysisReportSummary()
+
+
+if(minutesElapsed != 0):
+	fileObj = open('./last_session_summary.txt', 'w+')
+	fileObj.write("\n********Last Session Summary ******")
+	fileObj.write("\nFolder Name : " + str(img_folder_selected.split('/')[-1]))
+	fileObj.write("\nNo of images processed : " + str(globalImgCtr))
+	fileObj.write("\nUnique GTs prepared : " + str(preparedGTCount))
+	fileObj.write('\nGT preperation time : {:02d}:{:02d}:{:02d}'.format(e // 3600, (e % 3600 // 60), e % 60))
+	fileObj.write("\nGT preperation velocity: " + str(math.floor(preparedGTCount/minutesElapsed)) + str(" GT/min"))
+	fileObj.close()
+	print ("GT preperation velocity: " + str(math.floor(preparedGTCount/minutesElapsed)) + str(" GT/min"))
+
