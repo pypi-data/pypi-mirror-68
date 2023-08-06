@@ -1,0 +1,365 @@
+
+/**********************************************
+ ANSI2HTML
+**********************************************/
+{{ get_ansi_styles(dark_bg=False)|join|safe }}
+
+
+{% filter css_minify %}
+
+/**********************************************
+ BASE
+**********************************************/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen {
+    body {
+        background-color: #f8f8f8;
+        color: #222222;
+    }
+}
+
+pre {
+    background-color: #f3f3f3;
+    font-size: 80%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 0.7rem;
+    margin: 0.7rem 0;
+    border: 1px solid #c7c7c7;
+    border-radius: 4px;
+}
+
+@media only screen {
+    .container {
+        margin: 1rem 2%;
+    }
+}
+
+.badge {
+    font-size: 85%;
+    text-align: center;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+@media only screen {
+    .box {
+        background-color: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 2px #afafaf;
+    }
+
+    .badge {
+        background-color: #78909C;
+        color: white;
+        border: 0;
+    }
+
+    {% for category, (bg, fg) in colors.items() %}
+    .status.{{ category }} {
+        background-color: {{ bg }} !important;
+        color: {{ fg }} !important;
+    }
+    {% endfor %}
+}
+
+details {
+    display: block;
+}
+
+details > summary {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+details > summary:focus {
+    outline: 0;
+}
+
+details > summary:hover {
+    background-color: #ECEFF1;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.title::before {
+    content: " ";
+    background-image: url("{{ 'html1/icons/arrow.svg'|asset }}");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 0.7em;
+    height: 0.7em;
+    display: inline-block;
+    justify-self: end;
+    /* transform: rotate(0deg); */
+    transition: transform ease-out 0.2s;
+}
+
+details[open] > summary > ::before {
+    transform: rotate(90deg);
+}
+
+.content {
+    padding: 0.4rem;
+    margin-bottom: 0.7rem;
+}
+
+
+/**********************************************
+ HEADER
+**********************************************/
+
+header {
+    background-color: #455A64;
+    color: white;
+    padding: 0.7rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 0.7rem 0;
+}
+
+/**********************************************
+ SUMMARY
+**********************************************/
+
+#summary {
+    background-color: #ECEFF1;
+}
+
+@media only screen and (min-width: 1024px) {
+    #summary > .container {
+        display: grid;
+        grid-template-columns: auto minmax(15rem, 23rem);
+        grid-gap: 1rem;
+        align-items: start;
+        /* justify-content: start; */
+    }
+}
+
+.metadata th, .metadata td {
+    padding: 0.2rem;
+    vertical-align: top;
+    text-align: left;
+}
+
+.metadata th {
+    font-weight: bold;
+    padding-right: 0.7rem;
+}
+
+.metadata td {
+    word-break: break-all;
+}
+
+.graph {
+    display: grid;
+    grid-template-columns: minmax(100px, 250px) auto;
+    grid-gap: 0.7rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph svg {
+    width: 100%;
+    height: auto;
+}
+
+.graph svg text {
+    font-size: 10px;
+    fill: #333333;
+}
+
+.legend {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.3rem;
+    align-items: center;
+}
+
+
+/**********************************************
+ WARNINGS
+**********************************************/
+
+#warnings > .container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.7rem;
+    align-items: start;
+}
+
+
+/**********************************************
+ TESTS
+**********************************************/
+
+.file-title {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    grid-gap: 0.7rem;
+    align-items: center;
+}
+
+@media only print {
+    .file > .title {
+        border-bottom: 1px solid gray;
+    }
+}
+
+.fspath {
+    margin: 0;
+    font-size: 1.1em;
+    word-break: break-all;
+}
+
+.counts {
+    white-space: nowrap;
+}
+
+.counts > span {
+    display: inline-block;
+    margin-right: 0.3em;
+}
+
+.test > summary {
+    border-radius: 0;
+}
+
+.test:not(:last-child) {
+    border-bottom: 1px solid #dddddd;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.test-title {
+    display: grid;
+    grid-template-columns: auto 5em 1fr auto;
+    grid-gap: 0.7rem;
+    align-items: center;
+    /* justify-content: start; */
+}
+
+.duration {
+    display: none;
+    font-size: 85%;
+    font-weight: normal;
+    color: #707070;
+}
+
+@media only screen and (min-width: 500px) {
+    .duration {
+        display: inline-block;
+    }
+}
+
+.test-name {
+    font-size: 1em;
+    margin: 0;
+    word-break: break-all;
+}
+
+.documentation p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.marker {
+    display: block;
+    color: #5e5e5e;
+    margin: 0 0.2rem 0.2rem 0;
+}
+
+.fixturename {
+    margin: 0 0.2rem 0.2rem 0;
+}
+
+
+/**********************************************
+ TEST PHASES
+**********************************************/
+
+.test-phases {
+    border-left: 1px solid #b1b1b1;
+    margin-left: 0.7rem;
+}
+
+.phase {
+    position: relative;
+    padding-left: 0.7rem;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.phase .status {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    margin-top: -0.2em;
+    padding: 0;
+    transform: translateX(-50%);
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+    border-radius: 500%;
+    border: 2px solid white;
+    background-color: #cccccc;
+}
+
+.phase-name {
+    /* margin-left: 1rem; */
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 1em 0 0 0;
+    padding: 0;
+}
+
+
+/**********************************************
+ FOOTER
+**********************************************/
+
+footer {
+    font-size: 85%;
+    font-style: italic;
+    color: #999999;
+    text-align: right;
+}
+
+{% endfilter %}

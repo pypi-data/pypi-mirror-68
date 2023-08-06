@@ -1,0 +1,107 @@
+{% set ns = namespace(used_sections=[]) %}
+{% for test in tests %}
+  <details class="test {{ test.status.category }}">
+    <summary>
+      <div class="title test-title">
+        {% block test_title scoped %}
+        <div class="status badge {{ test.status.category }} {{ test.status.style|join(' ') }}">{{ test.status.word }}</div>
+        <h3 class="test-name">{% block test_name scoped %}{{ test.item.name }}{% endblock %}</h3>
+        <div class="duration">{{ test.phases|sum('report.duration')|timedelta }}</div>
+        {% endblock %}
+      </div>
+    </summary>
+    <div class="content">
+      {% block test_content scoped %}
+      {% if test.item.function.__doc__ %}
+        <div class="documentation">
+          {{ test.item.function.__doc__|cleandoc|rst|safe }}
+        </div>
+      {% endif %}
+      <table class="metadata">
+        {% block test_metadata scoped %}
+        <tr>
+          <th>Started</th>
+          <td>{{ test.phases|map(attribute='call.start')|first|strftime('%Y-%m-%d %H:%M:%S') }}</td>
+        </tr>
+        <tr>
+          <th>Ended</th>
+          <td>{{ test.phases|map(attribute='call.stop')|list|last|strftime('%Y-%m-%d %H:%M:%S') }}</td>
+        </tr>
+        <tr>
+          <th>Duration</th>
+          <td>{{ test.phases|sum(attribute='report.duration')|timedelta }}</td>
+        </tr>
+        {% set markers = test.item.iter_markers()|rejectattr('name', '==', 'parametrize')|list %}
+        {% if markers %}
+          <tr>
+            <th>Markers</th>
+            <td>
+              {% for marker in markers %}
+                <div class="marker">
+                  <span class="marker-name badge">{{ marker.name }}</span>
+                  <span class="marker-args">
+                    {% for value in marker.args %}
+                      {{ value|repr }}
+                    {% endfor %}
+
+                    {% for key, value in marker.kwargs.items() %}
+                      {{ key }}={{ value|repr }}
+                    {% endfor %}
+                  </span>
+                </div>
+              {% endfor %}
+            </td>
+          </tr>
+        {% endif %}
+        {% if test.item.fixturenames %}
+          <tr>
+            <th>Fixtures</th>
+            <td>
+              {% for fixturename in test.item.fixturenames if not fixturename.startswith('_') %}
+                <span class="badge fixturename">
+                  {{ fixturename }}
+                </span>
+              {% endfor %}
+            </td>
+          </tr>
+        {% endif %}
+        {% endblock %}
+      </table>
+      {% for phase in test.phases if phase.call.excinfo %}
+        <div class="repr">
+          <pre>{{ phase.call.excinfo.getrepr(style='short', chain=False) }}</pre>
+        </div>
+      {% endfor %}
+      <div class="test-phases">
+        {% for phase in test.phases %}
+          {% set sections = phase.report.sections|rejectattr(1, 'in', ns.used_sections)|list %}
+          <details class="phase {{ phase.report.when }} {{ phase.status.category }}">
+            <summary>
+              <div class="title">
+                {% if phase.status.category %}
+                  <div class="status {{ phase.status.style|join(' ') }} {{ phase.status.category }}"></div>
+                {% endif %}
+                <h4 class="phase-name">{{ phase.report.when|title }}</h4>
+              </div>
+            </summary>
+            <div class="content">
+              {% if phase.report.longrepr %}
+                <div class="repr">
+                  <pre>{{ phase.report.longreprtext }}</pre>
+                </div>
+              {% endif %}
+              {% for section, content in sections %}
+                {% set ns.used_sections = ns.used_sections + [content] %}
+                <div class="section">
+                  <h5 class="section-title">{{ section }}</h5>
+                  <pre><samp>{{ content|escape|replace('\r\n', '\n')|ansi|safe }}</samp></pre>
+                </div>
+              {% endfor %}
+            </div>
+          </details>
+        {% endfor %}
+        </div>
+      {% endblock %}
+    </div>
+  </details>
+{% endfor %}
