@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: PyMapKit
+Version: 0.1
+Summary: A packages for rendering maps.
+Home-page: https://github.com/BenKnisley/PyMapKit
+Author: Ben Knisley
+Author-email: benknisley@gmail.com
+License: MIT
+Description: ...
+Keywords: GIS map PyMapKit MapEngine
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
