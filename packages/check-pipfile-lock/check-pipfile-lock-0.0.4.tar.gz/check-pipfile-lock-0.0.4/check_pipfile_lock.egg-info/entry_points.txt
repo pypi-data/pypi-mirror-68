@@ -1,0 +1,3 @@
+[console_scripts]
+check-pipfile-lock = check_pipfile_lock:main
+
