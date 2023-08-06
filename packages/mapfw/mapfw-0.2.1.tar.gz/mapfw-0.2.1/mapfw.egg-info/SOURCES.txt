@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+mapfw/__init__.py
+mapfw/mapfwbenchmarker.py
+mapfw/problem.py
+mapfw.egg-info/PKG-INFO
+mapfw.egg-info/SOURCES.txt
+mapfw.egg-info/dependency_links.txt
+mapfw.egg-info/not-zip-safe
+mapfw.egg-info/requires.txt
+mapfw.egg-info/top_level.txt
