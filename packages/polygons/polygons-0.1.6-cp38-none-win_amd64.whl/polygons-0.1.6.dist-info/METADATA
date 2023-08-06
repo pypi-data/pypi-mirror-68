@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: polygons
+Version: 0.1.6
+Classifier: Programming Language :: Python
+Summary: Fast points-in-polygon test and distances to polygons.
+Author: Radovan Bast <bast@users.noreply.github.com>
+Author-Email: Radovan Bast <bast@users.noreply.github.com>
+License: GPL-3.0-only
+Requires-Python: >=3.6
