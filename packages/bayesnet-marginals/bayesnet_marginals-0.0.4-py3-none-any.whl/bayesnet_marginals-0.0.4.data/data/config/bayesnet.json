@@ -1,0 +1,6 @@
+{
+  "use-opencl": false,
+  "opencl": {
+    "platform": 0
+  }
+}
