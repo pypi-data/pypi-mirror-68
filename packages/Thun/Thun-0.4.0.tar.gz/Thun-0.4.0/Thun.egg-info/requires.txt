@@ -1,0 +1,7 @@
+dulwich
+future
+
+[build-docs]
+sphinx
+ipython
+nbconvert
