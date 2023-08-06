@@ -1,0 +1,6 @@
+setuptools
+persistent
+
+[test]
+ZODB[test]
+zope.app.folder

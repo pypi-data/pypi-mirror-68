@@ -1,0 +1,15 @@
+=======
+Changes
+=======
+
+0.2 (2020-05-14)
+================
+
+- Make Python-3 compatible
+
+- Add support for PyPy and PyPy3.
+
+0.1 (2007-05-09)
+================
+
+- Was never released to PyPI
