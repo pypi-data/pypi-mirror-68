@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: phone-gen
+Version: 1.0.0b2
+Summary: Phone number generator for libphonenumber
+Home-page: https://github.com/tolstislon/phone-gen
+Author: tolstislon
+Author-email: tolstislon@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Communications :: Telephony
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Phone Gen
+
+[![Build Status](https://travis-ci.com/tolstislon/phone_gen.svg?branch=master)](https://travis-ci.com/tolstislon/phone_gen)
+[![codecov](https://codecov.io/gh/tolstislon/phone-gen/branch/master/graph/badge.svg)](https://codecov.io/gh/tolstislon/phone-gen)
+
+
+Phone number generator for [Google's libphonenumber library](https://github.com/google/libphonenumber)
+
+
+Install
+----
+
+```bash
+pip install phone-gen
+```
+
+Example
+----
+```python
+from phone_gen import PhoneNumber
+
+phone_number = PhoneNumber('GB')
+
+# Get full phone number
+number = phone_number.get_number()
+print(number)  # +442908124840
+
+# Get country code
+country_code = phone_number.get_code()
+print(country_code)  # 44
+
+# Phone number without country code
+number = phone_number.get_number(full=False)
+print(number)  # 183782623
+```
+
+
+Contributing
+----
+Contributions are very welcome.
+

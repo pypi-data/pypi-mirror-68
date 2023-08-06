@@ -1,0 +1,9 @@
+phone_gen/__init__.py,sha256=KVsT7qrqd666oj35dQNIITDmONtVt6MeqZ_P-JYZtnw,203
+phone_gen/__version__.py,sha256=aoKjUBN19LnB3tUwrduhaFciBq9WPvYtU6QszH7hizM,118
+phone_gen/generator.py,sha256=Jd8S1C3veSJC8mWTz_F3T4YfaNOJaMkNnPSuyFl-DcU,8670
+phone_gen/patterns.py,sha256=VaBEItOejOwTXyXZfyOLhthX8fzE8D1pCZn_9GDR3G4,55289
+phone_gen-1.0.0b2.dist-info/LICENSE,sha256=rIUWZBoK2vPxnSn6Gm25N4HK7E9aKf97fMlmimBBioM,1067
+phone_gen-1.0.0b2.dist-info/METADATA,sha256=7YT2TAea1LH_9UDYnqMUtVZOh_DvA5pgpj03DjxPGPU,1842
+phone_gen-1.0.0b2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+phone_gen-1.0.0b2.dist-info/top_level.txt,sha256=cX_kXxByWyh_ur7NKWya4UviV7vSqkVhZrJrFi4637s,10
+phone_gen-1.0.0b2.dist-info/RECORD,,
