@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: science-concierge
+Version: 0.1
+Summary: A small example package
+Home-page: https://github.com/Megatron8010/science_concierge
+Author: Titipat Achakulvisut, Daniel Acuna, Tulakan Ruangrong
+Author-email: titipat.a@u.northwestern.edu
+License: Creative Common 4.0
+Download-URL: https://github.com/Megatron8010/science_concierge/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: recommendation system,Latent Semantic Analysis
+Platform: UNKNOWN

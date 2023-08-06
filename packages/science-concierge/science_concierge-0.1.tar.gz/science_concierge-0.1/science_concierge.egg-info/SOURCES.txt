@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+science_concierge/__init__.py
+science_concierge/downloader.py
+science_concierge/preprocess.py
+science_concierge/recommend.py
+science_concierge/science_concierge.py
+science_concierge/vectorizer.py
+science_concierge.egg-info/PKG-INFO
+science_concierge.egg-info/SOURCES.txt
+science_concierge.egg-info/dependency_links.txt
+science_concierge.egg-info/requires.txt
+science_concierge.egg-info/top_level.txt
