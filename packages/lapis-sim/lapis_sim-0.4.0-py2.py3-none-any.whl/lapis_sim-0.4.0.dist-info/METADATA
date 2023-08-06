@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: lapis-sim
+Version: 0.4.0
+Summary: Lapis is an adaptable, performant, and interactive scheduling (Lapis) simulator
+Home-page: https://github.com/MatterMiners/lapis
+License: UNKNOWN
+Keywords: htcondor simulation python cobald tardis opportunistic scheduling scheduler
+Author: Eileen Kuehn, Max Fischer
+Author-email: mainekuehn@gmail.com
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Office/Business :: Scheduling
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cobald
+Requires-Dist: usim == 0.4
+Requires-Dist: click
+Requires-Dist: pre-commit; extra == "dev"
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Requires-Dist: sphinxcontrib-contentui; extra == "doc"
+Requires-Dist: sphinx-click; extra == "doc"
+Requires-Dist: change-log; extra == "doc"
+Requires-Dist: pytest >=4.3.0; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Requires-Dist: flake8-bugbear; extra == "test"
+Requires-Dist: black; extra == "test" and ( implementation_name=='cpython')
+Project-URL: Documentation, https://lapis-sim.readthedocs.io/en/latest/
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
+
+===============================================================================
+Lapis is an adaptable, performant, and interactive scheduling (Lapis) simulator
+===============================================================================
+
+The ``lapis`` library provides a framework and runtime for simulating the scheduling and usage of opportunistic
+and static resources.
+
+Command Line Interface
+----------------------
+
+Currently the library provides a simple command line interface that allows three modes of operation:
+
+* static provisioning of resources,
+* dynamic provisioning of resources, and
+* hybrid provisioning of resources.
+
+In the most simple case you can apply a given workload, e.g. downloaded from the parallel workload archive to a
+static resource configuration:
+
+
+.. code:: bash
+
+    python3 simulate.py --log-file - static --job-file <path-to-workload> swf --pool-file <path-to-pool-definition> htcondor
+
+The output of simulation is given to stdout. You have further options you can explore via
+
+.. code:: bash
+
+    python3 simulate.py --help
+
+and more specifically for the different operation modes with
+
+.. code:: bash
+
+    python3 simulate.py static --help
+
