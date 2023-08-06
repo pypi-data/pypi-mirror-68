@@ -1,0 +1,17 @@
+BUILD.md
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/axioms_flask/__init__.py
+src/axioms_flask/decorators.py
+src/axioms_flask/error.py
+src/axioms_flask/methodview.py
+src/axioms_flask/token.py
+src/axioms_flask_py.egg-info/PKG-INFO
+src/axioms_flask_py.egg-info/SOURCES.txt
+src/axioms_flask_py.egg-info/dependency_links.txt
+src/axioms_flask_py.egg-info/requires.txt
+src/axioms_flask_py.egg-info/top_level.txt
