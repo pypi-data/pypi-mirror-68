@@ -1,0 +1,16 @@
+certifi==2020.4.5.1
+chardet==3.0.4
+fastapi==0.54.1
+h11==0.9.0
+h2==3.2.0
+hpack==3.0.0
+hstspreload==2020.5.5
+httpx==0.12.1
+hyperframe==5.2.0
+idna==2.9
+pydantic==1.5.1
+rfc3986==1.4.0
+sniffio==1.1.0
+starlette==0.13.2
+typing-extensions==3.7.4.2
+urllib3==1.25.9
