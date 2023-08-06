@@ -1,0 +1,5 @@
+# include README.md file
+include *.md
+
+# include LICENSE file
+include LICENCE
