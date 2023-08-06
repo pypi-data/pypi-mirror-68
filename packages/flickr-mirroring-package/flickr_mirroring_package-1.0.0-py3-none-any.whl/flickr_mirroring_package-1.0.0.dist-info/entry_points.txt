@@ -1,0 +1,3 @@
+[console_scripts]
+mirror_flickr = flickr_api_pkg.__main__:main
+
