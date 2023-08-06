@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dffml-operations-deploy
+Version: 0.0.1
+Summary: DFFML operations deploy
+Home-page: https://github.com/aghinsa/dffml-operations-deploy
+Author: Aghin Shah Alin
+Author-email: aghinsa@gmail.com
+Maintainer: Aghin Shah Alin
+Maintainer-email: aghinsa@gmail.com
+License: MIT
+Description: # DFFML deploy Operations
+        
+        * Contains operations to [re]deploy docker containers.
+        * The containers are redployed according to the image-tag.
+        
+        ## License
+        
+        DFFML deploy is distributed under the [MIT License](LICENSE).
+        
+Keywords: dffml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown

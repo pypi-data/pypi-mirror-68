@@ -1,0 +1,10 @@
+[dffml.operation]
+check_if_default_branch = dffml_operations_deploy.operations:check_if_default_branch
+docker_build_image = dffml_operations_deploy.operations:docker_build_image
+get_image_tag = dffml_operations_deploy.operations:get_image_tag
+get_running_containers = dffml_operations_deploy.operations:get_running_containers
+get_status_running_containers = dffml_operations_deploy.operations:get_status_running_containers
+get_url_from_payload = dffml_operations_deploy.operations:get_url_from_payload
+parse_docker_commands = dffml_operations_deploy.operations:parse_docker_commands
+restart_running_containers = dffml_operations_deploy.operations:restart_running_containers
+
