@@ -1,0 +1,15 @@
+LICENCE
+MANIFEST.in
+README
+setup.py
+pgn_read/__init__.py
+pgn_read.egg-info/PKG-INFO
+pgn_read.egg-info/SOURCES.txt
+pgn_read.egg-info/dependency_links.txt
+pgn_read.egg-info/top_level.txt
+pgn_read/core/__init__.py
+pgn_read/core/constants.py
+pgn_read/core/parser.py
+pgn_read/core/test/__init__.py
+pgn_read/core/test/constants_test.py
+pgn_read/core/test/parser_test.py
