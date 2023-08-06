@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: falcon-caching
+Version: 0.3.1
+Summary: Falcon-Caching - a caching module for the Falcon web framework
+Home-page: https://github.com/zoltan-fedor/falcon-caching
+Author: Zoltan Fedor
+Author-email: zoltan.1.fedor@gmail.com
