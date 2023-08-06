@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-mcp9600 = yaqd_microchip._mcp9600:MCP9600.main
+
