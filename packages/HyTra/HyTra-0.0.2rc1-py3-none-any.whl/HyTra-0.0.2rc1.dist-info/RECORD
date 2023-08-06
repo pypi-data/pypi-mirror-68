@@ -1,0 +1,9 @@
+hytra/__init__.py,sha256=mNzQpzR35VAc6tkqxwMALANVupyVr8zm7ec0ZTLdvY0,55
+hytra/hypergraph.py,sha256=JvZ0KhObz09Ts3c2_EJvhd8mUUmt1rypbUtECuWWEqE,2817
+hytra/transversal_tests.py,sha256=Hjo_-EnJD1-or3JoL705p-g0L0NLhChvOaug7i4DhFw,878
+hytra/transversals.py,sha256=9gpjZDdZuVkPprXbIITLgqtdDfkAaA_75fdQj7FylaI,2208
+HyTra-0.0.2rc1.dist-info/LICENSE,sha256=H5HLT1gRHODVj5h4eCZcb6scFlT346gMgxkeh9bZSwk,1063
+HyTra-0.0.2rc1.dist-info/METADATA,sha256=-9Lb14oQHv7AWGJhoQ8ENMIB4wwm8BsWMgb3Sax_Mc8,1730
+HyTra-0.0.2rc1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+HyTra-0.0.2rc1.dist-info/top_level.txt,sha256=Ch8z_7Ti8GUM857H6eq8hEoy6KYKKpebC4wO3oUdqdY,6
+HyTra-0.0.2rc1.dist-info/RECORD,,
