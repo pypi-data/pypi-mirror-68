@@ -1,0 +1,12 @@
+xfem/__init__.py,sha256=rZaImmNSFpJTVeUwckWy8TGwsDQyhmCWLQfaGog8BgU,17658
+xfem/cutmg.py,sha256=B-5vR9jq6kDgQT9cZKHI7fPakaZSetGGUALyl7MnGgY,15741
+xfem/lset_spacetime.py,sha256=sNIxNxSUNLuFm2X5i42NupwiZ00SqXXVbvUG72RuZFE,10004
+xfem/lsetcurv.py,sha256=ckDuB792SrVGuTmCaHJlNL__GMRBZyZ2TQnTuBEezt0,8169
+xfem/mlset.py,sha256=TgFSHwAyKGMwHRv219I1ChT0OcTNqFt_0fd8i1XKYDs,18302
+xfem/ngsxfem_py.so,sha256=rZIu3wwC3Z_mogJFy2XZEfVdFBWb3pp35EruUMfrtBk,5234260
+xfem/utils.py,sha256=SjSKrUfxtgWo1LHxE-b09CVABlHF5WWz5b6bOwO2ofI,1517
+xfem-1.3.dev3.dist-info/LICENSE,sha256=6or154nLLU6bELzjh0mCreFjt0m2v72zLi3yHE0QbeE,7650
+xfem-1.3.dev3.dist-info/METADATA,sha256=OBqr6UisrjWlnYw1EvhZrFAcTY7tilEjZVW0XMmmvdA,607
+xfem-1.3.dev3.dist-info/WHEEL,sha256=d1FXElTc2O1aD-DA111TtqEjjjICRp-GfmLEJcA56oY,111
+xfem-1.3.dev3.dist-info/top_level.txt,sha256=S_d4dVST_NB16yBbOtfhdRiCwKcjyZVxNSZu3MJOwH0,16
+xfem-1.3.dev3.dist-info/RECORD,,
