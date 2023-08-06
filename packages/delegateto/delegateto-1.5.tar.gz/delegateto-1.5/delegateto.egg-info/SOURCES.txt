@@ -1,0 +1,7 @@
+README.md
+delegateto.py
+setup.py
+delegateto.egg-info/PKG-INFO
+delegateto.egg-info/SOURCES.txt
+delegateto.egg-info/dependency_links.txt
+delegateto.egg-info/top_level.txt
