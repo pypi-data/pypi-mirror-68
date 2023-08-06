@@ -1,0 +1,3 @@
+[console_scripts]
+meld_all = meldutils.__main__:main
+

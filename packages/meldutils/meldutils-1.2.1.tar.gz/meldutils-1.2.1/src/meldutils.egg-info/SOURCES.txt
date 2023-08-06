@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/meldutils/__init__.py
+src/meldutils/__main__.py
+src/meldutils/base.py
+src/meldutils.egg-info/PKG-INFO
+src/meldutils.egg-info/SOURCES.txt
+src/meldutils.egg-info/dependency_links.txt
+src/meldutils.egg-info/entry_points.txt
+src/meldutils.egg-info/requires.txt
+src/meldutils.egg-info/top_level.txt
