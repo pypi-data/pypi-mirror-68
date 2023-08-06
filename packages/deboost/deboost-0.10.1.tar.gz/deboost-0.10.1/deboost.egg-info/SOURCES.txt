@@ -1,0 +1,8 @@
+README.md
+setup.py
+deboost/__init__.py
+deboost/deboost.py
+deboost.egg-info/PKG-INFO
+deboost.egg-info/SOURCES.txt
+deboost.egg-info/dependency_links.txt
+deboost.egg-info/top_level.txt
