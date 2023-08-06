@@ -1,0 +1,48 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2.1
+jobs:
+  build_and_test:
+    docker:
+      - image: 'ubuntu:bionic'
+    steps:
+      - run:
+          name: installations
+          command: apt-get -qq update; apt-get install -y ca-certificates wget build-essential git python-pip
+      - run:
+          name: Redis_5_upgrade
+          command: cd ..; git clone https://github.com/antirez/redis.git; cd ./redis; git fetch; git checkout 6.0.1; make; make install
+      - run:
+          name: download_RedisGears
+          command: cd ..; wget http://redismodules.s3.amazonaws.com/redisgears/snapshots/redisgears.linux-bionic-x64.master.zip; apt-get install -y unzip; unzip redisgears.linux-bionic-x64.master.zip
+      - run:
+          name: download_RedisGears_deps
+          command: cd ..; wget http://redismodules.s3.amazonaws.com/redisgears/snapshots/redisgears-dependencies.linux-bionic-x64.master.tgz; mkdir -p /var/opt/redislabs/modules/rg/; cd /var/opt/redislabs/modules/rg/; tar -xvf /root/redisgears-dependencies.linux-bionic-x64.master.tgz
+      - checkout
+      - run:
+          name: install_redisgears_py_to_RedisGears_virtual_env
+          command: /var/opt/redislabs/modules/rg/python3_99.99.99/bin/python3 setup.py install
+      - run:
+          name: install RLTest
+          command: /var/opt/redislabs/modules/rg/python3_99.99.99/bin/python3 -m pip install git+https://github.com/Grokzen/redis-py-cluster.git@master git+https://github.com/RedisLabsModules/RLTest.git
+      - run:
+          name: run_tests
+          command: /var/opt/redislabs/modules/rg/python3_99.99.99/bin/python3 -m RLTest --module ../redisgears.so
+
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build_and_test
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build_and_test  
