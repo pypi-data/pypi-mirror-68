@@ -1,0 +1,2 @@
+nr.databind.core<0.1.0,>=0.0.13
+nr.databind.json<0.1.0,>=0.0.9
