@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: icepy
+Version: 0.0.1
+Summary: automated simulation tool for IDA ICE 4.8
+Home-page: https://github.com/chenglongfu11/icepy
+Author: Clong
+Author-email: fuc369702700@gmail.com
+License: MIT Licence
+Description: automated simulation tool for IDA ICE 4.8
+Keywords: pip,pathtool,timetool,magetool,mage
+Platform: any
