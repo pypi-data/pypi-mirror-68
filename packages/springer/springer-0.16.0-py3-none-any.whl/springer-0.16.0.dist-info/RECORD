@@ -1,0 +1,11 @@
+springer/__init__.py,sha256=tgYO57NC6bkNczKbnzfj3coZIITQrcFjNoVf_wJamZg,140
+springer/__main__.py,sha256=6SCFNZhWwku4cKWpEnVB41QHfUftwi9QEFBtIJxpA0Y,14404
+springer/__version__.py,sha256=3Msc5baw88UJubVj5AVFB8tExkT2OFIsNWe2leaoHhc,23
+springer/catalog.py,sha256=yo4FmX0S89dYcx3jv7HodOGlqlkebr2IjwkqnoqM0fU,20425
+springer/constants.py,sha256=FHnTrpKV2puZLxkLSdoI8yqd1MYH2Lv76htt7_KF8ts,856
+springer/urls.py,sha256=s94e6rPpSXxbJIrebOptG_5re-F5U3eibq9CtkNmsqc,1140
+springer-0.16.0.dist-info/entry_points.txt,sha256=IMCgSAUL6O33_vk78TnId7AK1Lf1nb6EuYjGN7uJ5W4,50
+springer-0.16.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+springer-0.16.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+springer-0.16.0.dist-info/METADATA,sha256=b9sJmAbaWqLiRmT21fZ8jt2t5C1FiJ_ds9ZvSd_AnJc,9552
+springer-0.16.0.dist-info/RECORD,,
