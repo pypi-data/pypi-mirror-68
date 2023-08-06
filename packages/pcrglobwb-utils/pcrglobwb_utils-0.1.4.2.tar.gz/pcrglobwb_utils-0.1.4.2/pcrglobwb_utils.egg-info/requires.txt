@@ -1,0 +1,6 @@
+Click>=7.0
+xarray>=0.15.0
+pandas>=0.25.1
+rasterio>=1.0.21
+spotpy>=1.5.8
+numpy>=1.16.5

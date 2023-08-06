@@ -1,0 +1,3 @@
+[console_scripts]
+pcrglobwb_utils = pcrglobwb_utils.cli:main
+
