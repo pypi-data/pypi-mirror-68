@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dl-selection
+Version: 0.0.2
+Summary: Feature selection for deep learning models.
+Home-page: https://github.com/icc2115/dl-selection/
+Author: Ian Covert
+Author-email: icovert@cs.washington.edu
+License: UNKNOWN
+Description: 
+                The **dl-selection** package contains tools for performing feature 
+                selection with deep learning models. It currently has three mechanisms 
+                for selecting features, each of which relies on a stochastic relaxation 
+                of the feature selection problem. See the 
+                [GitHub page](https://github.com/icc2115/dl-selection/) for more 
+                details.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
