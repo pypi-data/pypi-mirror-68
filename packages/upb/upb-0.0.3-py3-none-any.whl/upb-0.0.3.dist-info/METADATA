@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: upb
+Version: 0.0.3
+Summary: Library for interacting with UPB Devices.
+Home-page: https://github.com/jameshilliard/upb
+Author: James Hilliard
+Author-email: james.hilliard1@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: pyserial-asyncio (>=0.4.0)
+
+UNKNOWN
+
+

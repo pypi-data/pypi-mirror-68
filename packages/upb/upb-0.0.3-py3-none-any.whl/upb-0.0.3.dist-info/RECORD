@@ -1,0 +1,14 @@
+upb/__init__.py,sha256=gnyk13yllFQudwbMFNvUVaNexAMg79vDO9Fhf2ueDQw,42
+upb/client.py,sha256=bOr1wDwUIHeg2UBhYbxQqUQ8Tk31-doDN8s7xmANqyY,4945
+upb/const.py,sha256=1ZHLA-33p50pI7H6rX4l9XhyYS8xQyMZGj2n-aP8AxU,9291
+upb/device.py,sha256=TeLh3O83Sk7f1v0cm7VHlqMMkax6ZhpIqG3El3q6c6Q,2785
+upb/memory.py,sha256=VEsylpvbbVLkAUWBUjcgwe17HT8KrqKtl6YSmZpDGZE,12434
+upb/protocol.py,sha256=eh89d5p0XKCQcVjTXxziH39CRHRsh1GdqdAFR3HrhUA,11346
+upb/register.py,sha256=2VWnoNn6NFAstpzkBpeutLJirfzcI1F8FmLxisCPKGc,24119
+upb/util.py,sha256=8-9YhFsi80d7VFMz-zGAj3Evy5_cZ9wTnV5CIGBsshY,1540
+upb/tools/dumpreg.py,sha256=9fmXaqAqtYwEwfGhcLbvEjDctzzajNZWYrBUoOha_CM,1185
+upb-0.0.3.dist-info/LICENSE,sha256=PcvGFYqCts28UoT3J6FCR5ZA7PJhDVKC1UNkUMQkrQw,1071
+upb-0.0.3.dist-info/METADATA,sha256=EyDubxy3xwxYYr1zh-t_lVggF56MG_upioF3-eehc2U,316
+upb-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+upb-0.0.3.dist-info/top_level.txt,sha256=CFqaeK5KT5Bw3AO2dVW2jrMSy65z62cBhqCFTNTBrq8,4
+upb-0.0.3.dist-info/RECORD,,
