@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: power-profiler
+Version: 0.1.0
+Summary: A power profiling tool
+Home-page: https://github.com/makerdiary/power-profiler
+Author: Yihui Xiong
+Author-email: yihui.xiong@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial
+
+Power Profiler
+==============
+
+A power profiling utility for Makerdiary nRF52840 M.2 Developer Kit.
+
+![](https://github.com/makerdiary/power-profiler/raw/master/preview.png)
+
+
