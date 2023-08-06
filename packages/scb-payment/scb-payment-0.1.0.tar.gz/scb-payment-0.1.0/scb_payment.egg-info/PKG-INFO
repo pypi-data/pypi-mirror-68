@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: scb-payment
+Version: 0.1.0
+Summary: A Python library for SCB Payment API
+Home-page: https://github.com/sang-sakarin/scb-payment
+Author: sang_sakarin
+Author-email: sang_sakarin@outlook.com
+License: sang_sakarin
+Description: # SCB Payment Python
+        
+        A Python library for [SCB Payment](https://developer.scb/) API - SCB Python
+        
+        
+        | Name                                                        | Description               |
+        | ------------------------------------------------------------|---------------------------|
+        | [qrcode_payment.md (*Only Sandbox)](qrcode_payment.md)      | QR Code Payment           |
+        
+Keywords: scb scb-python scb-python-sdk scb-payment scb-payment-python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
