@@ -1,0 +1,13 @@
+pip>=9.0.0
+setuptools>=34.0.0
+numpy
+pytest
+pytest-cov
+pytest-regtest
+flake8
+pylint
+sphinx
+coverage
+cython
+-i https://cosmo-pypi.phys.ethz.ch/simple
+sphinx-pynpoint-theme
