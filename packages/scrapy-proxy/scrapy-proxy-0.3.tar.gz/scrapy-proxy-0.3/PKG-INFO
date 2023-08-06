@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: scrapy-proxy
+Version: 0.3
+Summary: Scrapy Proxy: 从redis 中随机获取代理
+Home-page: https://github.com/apuyuseng/scrapy-proxy
+Author: apuyuseng
+Author-email: apuyuseng@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
