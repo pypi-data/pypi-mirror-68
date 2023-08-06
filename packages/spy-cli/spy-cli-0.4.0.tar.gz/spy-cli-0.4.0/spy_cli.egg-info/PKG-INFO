@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: spy-cli
+Version: 0.4.0
+Summary: stream processing Python CLI
+Home-page: https://github.com/edk0/spy/
+Author: Ed Kellett
+Author-email: e@kellett.im
+License: UNKNOWN
+Project-URL: Documentation, https://spy.readthedocs.io/
+Description: [![Build Status](https://travis-ci.org/edk0/spy.svg?branch=master)](https://travis-ci.org/edk0/spy)
+        [![Coverage Status](https://coveralls.io/repos/github/edk0/spy/badge.svg?branch=master)](https://coveralls.io/github/edk0/spy?branch=master)
+        
+        # spy: a Python CLI
+        
+        ```
+        pip install spy-cli
+        ```
+        
+        `spy` stands for “<b>s</b>tream <b>py</b>thon”. It's a CLI for python that
+        chains fragments of code together. It's inspired by
+        [pyped](https://github.com/ksamuel/Pyped) and
+        [pythonpy](https://github.com/Russell91/pythonpy).
+        
+        I built spy primarily because I wanted a more pure interface than either of the
+        above offer; I'd like to think I succeeded, but I'm sure it can be improved
+        upon, so please let me know if you see a way to make it nicer.
+        
+        spy is compatible with, and thoroughly tested on, Python 3.5 and newer.
+        
+        **The docs, including introduction, are available
+        [on ReadTheDocs](https://spy.readthedocs.org/en/stable/).**
+        
+        If you have any suggestions or feedback or anything, I'll probably be in `#spy`
+        on `irc.freenode.net`.
+        
+        # Example ([more here](https://spy.readthedocs.org/en/stable/examples.html))
+        
+        ```console
+        $ spy -l -f 'len(pipe) == 4' < /usr/share/dict/words
+        Aani
+        Aaru
+        abac
+        abas
+        Abba
+        Abby
+        abed
+        Abel
+        abet
+        abey
+        …
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Provides-Extra: test
