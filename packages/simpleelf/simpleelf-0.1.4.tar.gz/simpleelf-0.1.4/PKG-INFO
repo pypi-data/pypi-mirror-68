@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simpleelf
+Version: 0.1.4
+Summary: Simple ELF parser and builder
+Home-page: https://github.com/doronz88/simpleelf
+Author: DoronZ
+Author-email: doron88@gmail.com
+Requires-Python: >=2.7,<4.0
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: construct (>=2.10.54,<3.0.0)
+Requires-Dist: pytest (>=4.6.10,<5.0.0)
+Project-URL: Documentation, https://github.com/doronz88/simpleelf
+Project-URL: Repository, https://github.com/doronz88/simpleelf
