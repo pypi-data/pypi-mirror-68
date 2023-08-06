@@ -1,0 +1,16 @@
+dnnpy/__init__.py,sha256=P1QxWQQvIObevRfTFXeHN0_Tek2Eg8vSilu_sYf3CXA,14319
+dnnpy/activations.py,sha256=4dIirNiEn3nivQR3BUI6R93q86AoMFNwogwvNxWUFpk,9183
+dnnpy/data.py,sha256=9TeOMU7jhrCmCH6s7h7Rs_9zPu-Ow09Rb1n3uQyRApg,11847
+dnnpy/fun_utils.py,sha256=AV_riW4_jdn85rMBopT_z6nSZNm-FsfG8EyijsyGs9I,1298
+dnnpy/im2col.py,sha256=e5XbzOS8xLrGN1F_P1v9jniD5ZOjLHYJprmj-EOyj70,2224
+dnnpy/layers.py,sha256=TJ8-WjpWn9pBaxAhR5_12meS2nwz3ZHnB4v1Fgb8Ctk,13916
+dnnpy/loss_functions.py,sha256=KAw9WvSeYuCthUNZHFwHpZhZIIIAVQLldYtuGXhRs8Q,6975
+dnnpy/metrics.py,sha256=QeARYrQlgMeIHGSTNhsk_HQL9NucstSUF_xBzYhqqCo,820
+dnnpy/optimizers.py,sha256=YSwa01SwvRsc_gYL4pppQoxx5RUyBITfFXZHM5RzJFw,6730
+dnnpy/train.py,sha256=wjesRGA6wWoN63r0jwEIvIDsuQ9pQqt5ad4qMt6nXtk,4412
+dnnpy/utils.py,sha256=Wm6dAtQiPvCEnhFQEuRUKhdFq_tT7KVqgWrXkpz2lsA,3981
+dnnpy-0.0.1.dist-info/LICENCE,sha256=BW3kfTuUJqQvgGwLiDX38LwFWI-oIpbsbfHMfA4h21k,1093
+dnnpy-0.0.1.dist-info/METADATA,sha256=B_ss-08Mg5xDjjW2EHRzCmhN6q_wlomiMD_Xqz6404w,1545
+dnnpy-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+dnnpy-0.0.1.dist-info/top_level.txt,sha256=p8PK-XdZC25QgxXoyLjX8DBnOmYwUZ8D5j7Ill1uo8k,6
+dnnpy-0.0.1.dist-info/RECORD,,
