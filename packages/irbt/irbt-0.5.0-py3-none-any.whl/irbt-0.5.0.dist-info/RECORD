@@ -1,0 +1,16 @@
+irbt/__init__.py,sha256=pi55Bk8d-aZbR3Dl5JnA-Ge-z9GxfUId5q_qYwO3m38,330
+irbt/cloud.py,sha256=R_lFAMyKd3lMof0wqI9yrnxADQTEpSweb7VcllgP90Q,8790
+irbt/logger.py,sha256=fCh0hOlJC8LleF1gR1j6RLr8oUwBmLiJfWpVKPTM6Fw,732
+irbt/parse_command_line.py,sha256=p5br31QfdSVsENhxIPoBzPsEozUbPCwzkriM34DLPtY,4193
+irbt/robot.py,sha256=z9zKHn1KifZBlQvLJi5cJaP5rlVVbtjx87ARA-mjF0o,11412
+irbt-0.5.0.data/scripts/irbt-cli.py,sha256=Ll2DtV2Q3sXA6WF0WjI-FnRgMs_KgEgMtymbnIn42UM,3065
+tests/__init__.py,sha256=mo7NOuhYyXfm7xMql-HfboqMduR3uHGh54W0t0-_rCE,50
+tests/cloud_mock.py,sha256=Q-Mn2I2sZo-ApjMmCKlTETb9iCecZ4w47JILGEYCDzE,13599
+tests/conftest.py,sha256=PnEAId9_cVT4AdO1TLJRAmn2GaoyM4wIpabPwOEuECk,742
+tests/test_cloud.py,sha256=6bnV1FHqBgIGJVpwO09LLn9GRH7Er-UywP_soqF873g,321
+tests/test_robot.py,sha256=wlb7ilA4mdkZXQDdgguJ7XX0_6--DKU6ZCDH7dHRdZo,10932
+irbt-0.5.0.dist-info/LICENSE,sha256=SM-Z4-fXkx6mdkRtaqJ9lKvpcfirbovSYoCddSPSos8,1063
+irbt-0.5.0.dist-info/METADATA,sha256=XhlnfXykypBxyT6NUZMKMG_LoJpKUoRwHv5wlszs8Ek,3117
+irbt-0.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+irbt-0.5.0.dist-info/top_level.txt,sha256=cN6mwdfeNXCCAdVzCziZuCIId4aVZoHlExtPW2ksrV0,11
+irbt-0.5.0.dist-info/RECORD,,
