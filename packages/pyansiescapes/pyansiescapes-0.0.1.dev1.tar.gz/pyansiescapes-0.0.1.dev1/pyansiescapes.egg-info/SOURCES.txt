@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+pyansiescapes.egg-info/PKG-INFO
+pyansiescapes.egg-info/SOURCES.txt
+pyansiescapes.egg-info/dependency_links.txt
+pyansiescapes.egg-info/top_level.txt
