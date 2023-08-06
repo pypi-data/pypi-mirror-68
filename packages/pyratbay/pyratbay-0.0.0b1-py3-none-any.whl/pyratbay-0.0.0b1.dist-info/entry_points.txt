@@ -1,0 +1,3 @@
+[console_scripts]
+pbay = pyratbay.__main__:main
+
