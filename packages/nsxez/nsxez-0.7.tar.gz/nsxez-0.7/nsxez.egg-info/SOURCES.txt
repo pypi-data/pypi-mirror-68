@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+nsxez/__init__.py
+nsxez/operations.py
+nsxez.egg-info/PKG-INFO
+nsxez.egg-info/SOURCES.txt
+nsxez.egg-info/dependency_links.txt
+nsxez.egg-info/requires.txt
+nsxez.egg-info/top_level.txt
