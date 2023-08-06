@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pytest-helpers
+Version: 0.1.0
+Summary: pytest helpers
+Home-page: https://github.com/const-shi/pytest_helpers
+Author: const-shi
+Author-email: UNKNOWN
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
