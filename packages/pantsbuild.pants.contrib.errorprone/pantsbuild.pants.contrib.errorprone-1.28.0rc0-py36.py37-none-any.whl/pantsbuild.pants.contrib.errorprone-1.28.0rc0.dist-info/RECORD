@@ -1,0 +1,12 @@
+pantsbuild.pants.contrib.errorprone-1.28.0rc0-py3.6-nspkg.pth,sha256=JjySLBF/yJbKxcwq2GBNfjIiY3Xfqsn6ehBu4fXcICo=,1694
+pants/contrib/errorprone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/errorprone/register.py,sha256=Ly_doWHJ-xN_mr8oEoyvFCjye0Xkz856xd9mPtywKGs,544
+pants/contrib/errorprone/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/errorprone/tasks/errorprone.py,sha256=f3UZoEkwMvv8inK1I7hclw3RIDwgLPaOniTrLvyUvPM,8259
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/METADATA,sha256=qyw3FN9ey1a1wlzpHUt7SilvGsT/dQpXO4WvYSP3GRI=,18688
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/WHEEL,sha256=l1c8NwvStgjlPY31ePysM6wACe8eVuieRLlDoGEUFrs=,112
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/entry_points.txt,sha256=HKIitiBRoNIY2cw0e+92JZn1qZH/0U/EJ+58wbJ1bBQ=,87
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1
+pantsbuild.pants.contrib.errorprone-1.28.0rc0.dist-info/RECORD,,
