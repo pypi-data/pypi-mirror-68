@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+EPRsimGUI/EPRsimGUI.py
+EPRsimGUI/Figure_handler.py
+EPRsimGUI/PSE_Design.py
+EPRsimGUI/Signals_slots.py
+EPRsimGUI/SimGUI_Design.py
+EPRsimGUI/SimGUI_functions.py
+EPRsimGUI/Warning_Diag1.py
+EPRsimGUI.egg-info/PKG-INFO
+EPRsimGUI.egg-info/SOURCES.txt
+EPRsimGUI.egg-info/dependency_links.txt
+EPRsimGUI.egg-info/entry_points.txt
+EPRsimGUI.egg-info/requires.txt
+EPRsimGUI.egg-info/top_level.txt

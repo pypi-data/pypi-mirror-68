@@ -1,0 +1,7 @@
+[gui_scripts]
+EPRsimGUI = EPRsimGUI.EPRsimGUI:run
+EPRsimgui = EPRsimGUI.EPRsimGUI:run
+eprsimgui = EPRsimGUI.EPRsimGUI:run
+simGUI = EPRsimGUI.EPRsimGUI:run
+simgui = EPRsimGUI.EPRsimGUI:run
+
