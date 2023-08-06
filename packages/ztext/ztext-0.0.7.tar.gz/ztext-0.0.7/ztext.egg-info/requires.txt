@@ -1,0 +1,10 @@
+IPython
+bokeh
+pandas
+xlrd
+gensim
+spacy
+textacy
+textblob
+pyvis
+pyLDAvis
