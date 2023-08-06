@@ -1,0 +1,15 @@
+PyViCare/PyViCare.py,sha256=7YQZS4MJZ1uHWN5jeVXUQs2xceZsspRuGtKWNbGo6zA,137
+PyViCare/PyViCareCachedService.py,sha256=Va4rl21T72bYPQgwqg0JfXYAvHoHOuWgFA2uHNkJBhs,1181
+PyViCare/PyViCareDevice.py,sha256=gWWIecYbxenCdPI0o2-GOHACcsCfN0GQ_kTMqm8YfFI,13233
+PyViCare/PyViCareGateway.py,sha256=2j9OTV190PD0uQrCElCAmD_GhM9llUSmAL7xEndWeEA,47
+PyViCare/PyViCareGazBoiler.py,sha256=vJB-rvEwDPyr6lqcP3uTKpdz9c7pbQDktObVll-CxDo,4954
+PyViCare/PyViCareHeatPump.py,sha256=FU2OYbnXtg0OP1eKuqaTE4Cm3l5TVUVzdmBrL8P6KwY,1455
+PyViCare/PyViCareInstallation.py,sha256=Y1SwC5FTE0QNgz0bkO9ijiIwTw8ogHFoAwSNVrGmqfU,56
+PyViCare/PyViCareOilBoiler.py,sha256=3ddKFK5HNERkACftApp43uiGes_g7EIB0D4nCQF4ktY,1123
+PyViCare/PyViCareService.py,sha256=zxj514SKa2pC9zZyH37QbOz3NwoojY4Z-Jasors1YKM,8806
+PyViCare/__init__.py,sha256=D9pvhTj2Hi8fBxKSBRxNm0AORzXkFXqUA5GrOaGE68w,128
+PyViCare-0.2.0.dist-info/LICENSE,sha256=KD6mzCmXoacNoASeCa35MXu2DKG1Enm2UZa4OmnhmWs,11323
+PyViCare-0.2.0.dist-info/METADATA,sha256=J8JrVSjO2R9Er5QAbDoGTH9KKGoza7RMuCw53tIdRM0,3526
+PyViCare-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PyViCare-0.2.0.dist-info/top_level.txt,sha256=cVLTtWnaOJ9IYoLqKC6ylQpm5ZvkYBIMWglC77dg-1k,9
+PyViCare-0.2.0.dist-info/RECORD,,
