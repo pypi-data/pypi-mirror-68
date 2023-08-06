@@ -1,0 +1,3 @@
+[console_scripts]
+score_data = scorify.score_data:main
+
