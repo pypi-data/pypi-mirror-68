@@ -1,0 +1,11 @@
+README.md
+setup.py
+chess_graph/__init__.py
+chess_graph/chart.py
+chess_graph/find_opening.py
+chess_graph/new_parser.py
+chess_graph.egg-info/PKG-INFO
+chess_graph.egg-info/SOURCES.txt
+chess_graph.egg-info/dependency_links.txt
+chess_graph.egg-info/top_level.txt
+chess_graph/elo_reading/openings_sheet.csv
