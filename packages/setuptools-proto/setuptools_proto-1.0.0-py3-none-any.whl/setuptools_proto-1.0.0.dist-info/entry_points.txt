@@ -1,0 +1,9 @@
+[distutils.commands]
+build_proto = setuptools_proto:ProtoBuild
+
+[distutils.setup_keywords]
+proto_modules = setuptools_proto:proto_modules
+
+[setuptools.cmd_deps]
+proto_py_dep = build_py:build_proto
+
