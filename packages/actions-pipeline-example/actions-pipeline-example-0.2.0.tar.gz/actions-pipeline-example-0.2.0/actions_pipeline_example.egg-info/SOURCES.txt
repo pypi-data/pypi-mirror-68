@@ -1,0 +1,9 @@
+README.md
+setup.py
+actions_pipeline_example.egg-info/PKG-INFO
+actions_pipeline_example.egg-info/SOURCES.txt
+actions_pipeline_example.egg-info/dependency_links.txt
+actions_pipeline_example.egg-info/entry_points.txt
+actions_pipeline_example.egg-info/top_level.txt
+hello/__init__.py
+hello/app.py
