@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: spikefeatures
+Version: 0.1.1
+Summary: Python toolkit for computing extracellular waveforms features
+Home-page: https://github.com/SpikeInterface/spikefeatures
+Author: Alessio Buccino, Thijs Ruikes
+Author-email: alessiop.buccino@gmail.com
+License: UNKNOWN
+Description: # SpikeFeatures
+        Feature extraction library for extracellular waveforms. 
+        
+        The base code (and portions of the README images/description) was ported from: https://github.com/AllenInstitute/ecephys_spike_sorting/tree/master/ecephys_spike_sorting/modules/mean_waveforms
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
