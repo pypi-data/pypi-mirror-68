@@ -1,0 +1,4 @@
+[pynq.notebooks]
+0-introduction = pynq_fccm_2020.notebooks.introduction
+FCCM-Lab = pynq_fccm_2020.notebooks.labs
+
