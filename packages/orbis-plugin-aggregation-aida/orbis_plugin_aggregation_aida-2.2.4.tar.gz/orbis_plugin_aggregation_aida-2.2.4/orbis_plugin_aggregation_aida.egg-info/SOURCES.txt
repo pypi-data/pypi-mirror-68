@@ -1,0 +1,9 @@
+README.md
+setup.py
+orbis_plugin_aggregation_aida/__init__.py
+orbis_plugin_aggregation_aida/main.py
+orbis_plugin_aggregation_aida.egg-info/PKG-INFO
+orbis_plugin_aggregation_aida.egg-info/SOURCES.txt
+orbis_plugin_aggregation_aida.egg-info/dependency_links.txt
+orbis_plugin_aggregation_aida.egg-info/requires.txt
+orbis_plugin_aggregation_aida.egg-info/top_level.txt
