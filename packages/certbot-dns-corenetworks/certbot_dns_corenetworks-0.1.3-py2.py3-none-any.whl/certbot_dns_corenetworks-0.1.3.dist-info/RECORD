@@ -1,0 +1,10 @@
+certbot_dns_corenetworks/__init__.py,sha256=7ASG6m3Enemsvoy4hlc2PyAsIDMoCRKiK1nfKW07iy0,289
+certbot_dns_corenetworks/dns_corenetworks.py,sha256=OYeRxcxfmv7are-p7vVj4EJRzNUPEs9tdJnhlowjzRk,8750
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/dns_corenetwork_test.py,sha256=l0GdUtc3BGJRjAEHSEpN1qjlqqEr5qTPqRdgvM0jR1E,3068
+certbot_dns_corenetworks-0.1.3.dist-info/LICENSE,sha256=xx-n67yw5oaKhRKWfEVvKF6Y8PNPgLBdKj3HFwZMFww,1122
+certbot_dns_corenetworks-0.1.3.dist-info/METADATA,sha256=Et-RpgwdkAiYJDIrb5LlX4lX563d3OFk-VCLPCsvA3k,3935
+certbot_dns_corenetworks-0.1.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+certbot_dns_corenetworks-0.1.3.dist-info/entry_points.txt,sha256=zKW0NdJ5tXixgzAGzOQpvNNIRGVRoZvjBJpC63VtTxY,94
+certbot_dns_corenetworks-0.1.3.dist-info/top_level.txt,sha256=RUoIUs7j1R87nZJvQxYcmm8jAA77lCD4H6gnvLGwxnY,31
+certbot_dns_corenetworks-0.1.3.dist-info/RECORD,,
