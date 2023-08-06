@@ -1,0 +1,8 @@
+zcore/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zcore/file_tools.py,sha256=LUw9LZyjDzasHrASkjU5mHdf3mSJNWZl1ho5hPxUipk,478
+zcore/json2excel_tools.py,sha256=4nSbHFTqd3vfebc1PehqwdeyQj5omHIa12oYAbasZ9A,3044
+zcore/log.py,sha256=fJHTwY8AEmvc7BZRE6j5HzrHAyAvysAMzu8fN-jo8H0,2264
+zcore-0.0.3.dist-info/METADATA,sha256=175VHICtiZ75VYuCKiyw3NiSjPAZXXaTa0e7LyapLpc,367
+zcore-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+zcore-0.0.3.dist-info/top_level.txt,sha256=EIzl5ppgsIzWhoNRppEBkx6j7zIpiB1cuayybH5QsM0,6
+zcore-0.0.3.dist-info/RECORD,,
