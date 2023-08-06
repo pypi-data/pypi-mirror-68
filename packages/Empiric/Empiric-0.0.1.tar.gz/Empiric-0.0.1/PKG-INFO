@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: Empiric
+Version: 0.0.1
+Summary: Empiric, the flexible framework for conducting empirical experiments
+Home-page: https://github.com/mocnik-science/empiric
+Author: Franz-Benjamin Mocnik
+Author-email: mail@mocnik-science.net
+License: GPL-3
+Description: UNKNOWN
+Keywords: empirical experiment,map,framework,testing,psychology,cognition
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6

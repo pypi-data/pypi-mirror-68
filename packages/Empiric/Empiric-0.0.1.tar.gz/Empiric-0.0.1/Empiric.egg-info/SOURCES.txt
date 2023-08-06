@@ -1,0 +1,28 @@
+README.md
+setup.cfg
+setup.py
+Empiric/Experiment.py
+Empiric/Mode.py
+Empiric/Register.py
+Empiric/Statistics.py
+Empiric/__info__.py
+Empiric/__init__.py
+Empiric.egg-info/PKG-INFO
+Empiric.egg-info/PKG-INFO 2
+Empiric.egg-info/SOURCES 2.txt
+Empiric.egg-info/SOURCES.txt
+Empiric.egg-info/dependency_links 2.txt
+Empiric.egg-info/dependency_links.txt
+Empiric.egg-info/requires 2.txt
+Empiric.egg-info/requires.txt
+Empiric.egg-info/top_level 2.txt
+Empiric.egg-info/top_level.txt
+Empiric/internal/AccessCodes.py
+Empiric/internal/Authenticate.py
+Empiric/internal/GeneralSettings.py
+Empiric/internal/ManuscriptMemory.py
+Empiric/internal/Print.py
+Empiric/internal/Statistics.py
+Empiric/internal/StatisticsTools.py
+Empiric/internal/Step.py
+Empiric/internal/__init__.py
