@@ -1,0 +1,9 @@
+README.md
+setup.py
+async_cleverbot/__init__.py
+async_cleverbot/cleverbot.py
+async_cleverbot.egg-info/PKG-INFO
+async_cleverbot.egg-info/SOURCES.txt
+async_cleverbot.egg-info/dependency_links.txt
+async_cleverbot.egg-info/requires.txt
+async_cleverbot.egg-info/top_level.txt
