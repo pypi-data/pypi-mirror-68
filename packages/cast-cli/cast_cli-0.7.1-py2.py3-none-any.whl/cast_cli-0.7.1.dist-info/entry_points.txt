@@ -1,0 +1,3 @@
+[console_scripts]
+cast = cast_cli._cli:main
+
