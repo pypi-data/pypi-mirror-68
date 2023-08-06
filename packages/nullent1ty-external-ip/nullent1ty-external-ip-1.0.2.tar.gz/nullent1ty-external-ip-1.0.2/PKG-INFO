@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: nullent1ty-external-ip
+Version: 1.0.2
+Summary: Retrieve your external IPv4 address.
+Home-page: https://github.com/NullEnt1ty/external-ip
+Author: Dominique Mattern
+Author-email: dominique@mattern.dev
+License: MIT
+Description: # External IP
+        
+        Retrieve your external IPv4 address.
+        
+        ## Setup
+        
+        ```
+        git clone git@github.com:NullEnt1ty/external-ip.git
+        cd external-ip
+        ./create-venv.sh
+        ```
+        
+        ## Usage
+        
+        ```
+        bin/get_external_ip
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
