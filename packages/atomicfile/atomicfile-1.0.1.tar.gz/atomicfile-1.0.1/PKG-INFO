@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: atomicfile
+Version: 1.0.1
+Summary: Writeable file object that atomically updates a file.
+Home-page: http://github.com/sashka/atomicfile-py
+Author: Alexander Saltanov
+Author-email: asd@mokote.com
+License: MIT
+Description: AtomicFile
+        ==========
+        
+        .. image:: https://travis-ci.org/sashka/atomicfile.svg?branch=master
+                :target: https://travis-ci.org/sashka/atomicfile
+        
+        
+        Writeable file object that atomically updates a file.
+        
+        All writes will go to a temporary file. Call ``close()`` explicitly when you are done writing, and AtomicFile will rename the temporary copy to the original name, making the changes visible. If the object is destroyed without being closed, all your writes are discarded.
+        
+        AtomicFile is friendly to ``with`` statement. ::
+        
+            from atomicfile import AtomicFile
+        
+            with AtomicFile("panic.txt", "w") as f:
+                f.write(json.dumps(big_data_array_100MB, sort_keys=True, indent=4))
+        
+        
+        Install
+        -------
+        To install AtomicFile, simply: ::
+        
+            pip install atomicfile
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
