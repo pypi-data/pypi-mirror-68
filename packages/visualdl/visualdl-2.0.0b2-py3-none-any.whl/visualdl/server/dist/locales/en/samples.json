@@ -1,0 +1,10 @@
+{
+    "image": "image",
+    "audio": "audio",
+    "text": "text",
+    "show-actual-size": "Show Actual Image Size",
+    "step": "Step",
+    "download-image": "Download $t(image)",
+    "brightness": "Brightness",
+    "contrast": "Contrast"
+}
