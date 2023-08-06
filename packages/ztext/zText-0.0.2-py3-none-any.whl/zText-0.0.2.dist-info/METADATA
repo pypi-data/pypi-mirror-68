@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: zText
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Zack Dai
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: IPython
+Requires-Dist: bokeh
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: gensim
+Requires-Dist: spacy
+Requires-Dist: textacy
+Requires-Dist: textblob
+Requires-Dist: pyvis
+Requires-Dist: pyLDAvis
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+
+zText is a NLP tool for easy analysis documents
+
+
