@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "terramare"
+version = "0.3.5"
+description = "Automatically deserialize complex objects from simple Python types"
+authors = ["Tom W <796618-tomwatson1024@users.noreply.gitlab.com>"]
+readme = "README.md"
+repository = "https://gitlab.com/tomwatson1024/terramare"
+documentation = "https://tomwatson1024.gitlab.io/terramare"
+license = "MIT"
+include = ["CHANGELOG.md", "docs/emoji.png"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+attrs = "^19.1"
+typing-extensions = "^3.7"
+
+# Test requirements
+coverage = { version = "^4.5", optional = true }
+pytest = { version = "^4.0", optional = true }
+"ruamel.yaml" = { version = "^0.16.5", optional = true}
+toml = { version = "^0.10.0", optional = true }
+
+[tool.poetry.dev-dependencies]
+black = "^19.3b0"
+coverage = "^4.5"
+flake8 = "^3.6"
+mypy = "^0.740"
+pydocstyle = "^4.0"
+pylint = "^2.2"
+sphinx = "^2.2"
+sphinx-rtd-theme = "^0.4.3"
+toml = "^0.10.0"
+tox = "^3.14"
+
+[tool.poetry.extras]
+test = ["coverage", "pytest", "ruamel.yaml", "toml"]
+
+[build-system]
+requires = ["poetry~=1.0.2"]
+build-backend = "poetry.masonry.api"
