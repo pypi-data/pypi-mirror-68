@@ -1,0 +1,3 @@
+[console_scripts]
+uptime-reporting = UptimeReporting.__main__:main
+
