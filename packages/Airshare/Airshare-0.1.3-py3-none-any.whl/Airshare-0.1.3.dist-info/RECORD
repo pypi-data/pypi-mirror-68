@@ -1,0 +1,16 @@
+airshare/__init__.py,sha256=XI5lp9rSkHmO70do6DCHrF-1mnlDwEPOE_PbfpIzyvw,106
+airshare/cli.py,sha256=Yf_72NT2-8HizSgY0pURPVrvF_G-UbZyHnmFWRw_s9o,2700
+airshare/exception.py,sha256=m7m4mdhN0lxe-KzjoJyWHa9qqocDMHjkPYtl-Vy8CeY,1925
+airshare/qrcode.py,sha256=r4OUznwuA5NwheCRvSAkC-zm9Uc4TOImnpfIoB3lX5A,25376
+airshare/receiver.py,sha256=_-kwubnTP9G5r-okyFMkZUpJfFheII8VykDKA4UH7ys,7778
+airshare/sender.py,sha256=mgpkxydugZ3XWr8bCVo6k1_BXFwjHNYqdGMYmURWIJE,9561
+airshare/utils.py,sha256=4489SwXaYDdXh404AtVGrJ61ZTnj5vPTMsegg9z4y4E,5707
+airshare/static/download.html,sha256=jIwRVsZZZWlCjbZWVjjl7HuACdPUZMZosPY8TGdLQuU,17079
+airshare/static/text.html,sha256=Zu9bNJAy6fcpx81LROqgnjcRDIAtlH1PE3T3fyqLOpk,5800
+airshare/static/upload.html,sha256=SKQxECRWRJmholjcWc2VQbo6wgWT5RG6n2yTIihMr_g,57813
+Airshare-0.1.3.dist-info/LICENSE.md,sha256=HAF7Ma52Uk0QW6qJMb6-YrycV62rz9Dp07dzedq5X88,1183
+Airshare-0.1.3.dist-info/METADATA,sha256=7covZ94m5ssPpq7bukDUJD9F2ZiqocCLzaE419acEXc,4853
+Airshare-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Airshare-0.1.3.dist-info/entry_points.txt,sha256=1Yb7tbVsOn69VNtWUEspqh-i9r_3FkHydpiLpbyx2cE,48
+Airshare-0.1.3.dist-info/top_level.txt,sha256=8eDrGc-38OwRqCn7BSJE15T41YK46otfReKP2r0dkjQ,9
+Airshare-0.1.3.dist-info/RECORD,,
