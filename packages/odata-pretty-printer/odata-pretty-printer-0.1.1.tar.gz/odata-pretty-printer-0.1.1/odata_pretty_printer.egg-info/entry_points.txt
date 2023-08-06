@@ -1,0 +1,3 @@
+[console_scripts]
+odata-printer = odata_pretty_printer.command_line:command_line
+
