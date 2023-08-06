@@ -1,0 +1,6 @@
+click
+requests
+sqlite-utils~=1.11
+
+[test]
+pytest

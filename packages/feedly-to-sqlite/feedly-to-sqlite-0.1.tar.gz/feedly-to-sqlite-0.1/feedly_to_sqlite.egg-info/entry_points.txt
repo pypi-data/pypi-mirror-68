@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        feedly-to-sqlite=feedly_to_sqlite.cli:cli
+    

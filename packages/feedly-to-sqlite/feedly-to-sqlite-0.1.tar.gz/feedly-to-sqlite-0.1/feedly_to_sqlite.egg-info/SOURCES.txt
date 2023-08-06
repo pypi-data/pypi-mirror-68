@@ -1,0 +1,11 @@
+README.md
+setup.py
+feedly_to_sqlite/__init__.py
+feedly_to_sqlite/cli.py
+feedly_to_sqlite/utils.py
+feedly_to_sqlite.egg-info/PKG-INFO
+feedly_to_sqlite.egg-info/SOURCES.txt
+feedly_to_sqlite.egg-info/dependency_links.txt
+feedly_to_sqlite.egg-info/entry_points.txt
+feedly_to_sqlite.egg-info/requires.txt
+feedly_to_sqlite.egg-info/top_level.txt
