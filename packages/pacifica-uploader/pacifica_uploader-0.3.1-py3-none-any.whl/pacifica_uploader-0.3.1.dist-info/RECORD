@@ -1,0 +1,17 @@
+pacifica_uploader-0.3.1-py3.8-nspkg.pth,sha256=D3iBWN0sQfyYHlyK1b54AmsNexyR1L2R1mNEdQLAsCo,549
+pacifica/uploader/__init__.py,sha256=qivvVsBI0K8PiPjOKjTYB9nmkL3uflYGwtjgPhKc4YY,282
+pacifica/uploader/uploader.py,sha256=SeZKzXFS8Hng-wWO9G-tdafBA-Qk8Oi82hGN7y8WLTs,2936
+pacifica/uploader/bundler/__init__.py,sha256=xczHNfEuAySccqUf4H5svetz1ygZhNeV1dDIJ5890y4,360
+pacifica/uploader/bundler/bundler.py,sha256=Bt7VzLxYgz0J6vKgpaaoOtNz0ucKs97EYRKYZr2-FQ0,6363
+pacifica/uploader/common/__init__.py,sha256=2emr6D5hAWJwkxZUFlViAXauScYra4DCaZWfC7qFQdI,1051
+pacifica/uploader/metadata/__init__.py,sha256=W5rOIzI_RK4b3yc-M5DNm3FlHtnqXriXhy-D6qH7oPo,611
+pacifica/uploader/metadata/metadata.py,sha256=kiX6OayXaJikZUPMhse64pwo6gr7tozD2XEXhfeEn4M,8175
+pacifica/uploader/metadata/metaupdate.py,sha256=0LP3nCNVMjJHI0SN51rq_Sc8BkVU--axHnIs_JNt0Rs,3047
+pacifica/uploader/metadata/mjson.py,sha256=yMXtIJCpv3DwBoaNi7xZWlzt8xNCvuXICIYykWIjNX8,1893
+pacifica/uploader/metadata/policyquery.py,sha256=fXzTTNO6ZTbAtpxBiXRukmf_0ez9ZchZqgY840uraf0,6356
+pacifica_uploader-0.3.1.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+pacifica_uploader-0.3.1.dist-info/METADATA,sha256=viebXYaVtebOQzfDpkayfZcFZUdPdpfMbKoc9sW8D7k,1719
+pacifica_uploader-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pacifica_uploader-0.3.1.dist-info/namespace_packages.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_uploader-0.3.1.dist-info/top_level.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_uploader-0.3.1.dist-info/RECORD,,
