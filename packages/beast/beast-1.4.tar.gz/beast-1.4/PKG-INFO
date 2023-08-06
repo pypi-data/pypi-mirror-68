@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: beast
+Version: 1.4
+Summary: Bayesian Extinction and Stellar Tool
+Home-page: http://beast.readthedocs.io/
+Author: Karl Gordon and BEAST Team
+Author-email: kgordon@stsci.edu
+License: BSD 3-Clause
+Description: Fitting for photometric SEDs of dust extinguished stars
+Platform: UNKNOWN
