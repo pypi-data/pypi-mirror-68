@@ -1,0 +1,14 @@
+discord/ext/alternatives/__init__.py,sha256=o26EwYq1uKMnOlaBZT_A5wZotcSglpFMCgDeqQB-iic,65
+discord/ext/alternatives/asset_converter.py,sha256=9vx5Bb_0H6HstGTLGa1M8alJW-Xfb2opck43XrJpCd4,2050
+discord/ext/alternatives/bot_send_help.py,sha256=xYStdFt7ZErXoxvmnVq90UDDh10PJj7gqmgH8gx3Xrk,575
+discord/ext/alternatives/int_map.py,sha256=wuVsMGxUAqtn9Ni544dbfPl_ys7jRXVNfH-BEUVTo8M,747
+discord/ext/alternatives/message_eq.py,sha256=DDa48kv7EZFfsjif15AeqgLnwx1ydWscJmS7Ap8Mmqo,314
+discord/ext/alternatives/silent_delete.py,sha256=R8a-X24dkV6G5dJwXKKI_ypvJqVz2-F3WMlSre7zArM,423
+discord/ext/alternatives/specific_error_handler.py,sha256=EHgFef6gSKj-WlnfON8ts267MKjALJqZ06GaZCvR_BU,1804
+discord/ext/alternatives/subcommand_error.py,sha256=OH0hN15H7uKBTuLJ-hEsm5igUW5kdwUW5aoqsifgoFE,1610
+discord/ext/alternatives/webhook_channel.py,sha256=0bqRRnSgpX2JxF2FH1J1vHjAylEVEWiRAXeOeNoexEc,3706
+discord_ext_alternatives-2020.5.12.dist-info/LICENSE,sha256=X_fXYcGs1sdvbsc7AXTPNlYhewkT67MjWMPGDg7P5AA,1064
+discord_ext_alternatives-2020.5.12.dist-info/METADATA,sha256=jL5xQd8WVoOuDCL1SBpmEz4ronBhdAFXyZFCWRqPqAk,2378
+discord_ext_alternatives-2020.5.12.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+discord_ext_alternatives-2020.5.12.dist-info/top_level.txt,sha256=OIoPoMbPVWUFKLTVj57FhB3DaZsa8qpJVrFlZFnia_s,25
+discord_ext_alternatives-2020.5.12.dist-info/RECORD,,
