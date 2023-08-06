@@ -1,0 +1,3 @@
+[console_scripts]
+findme = findme._cli:main
+
