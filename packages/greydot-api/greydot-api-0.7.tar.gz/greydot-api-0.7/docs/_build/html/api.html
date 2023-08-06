@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>GreyDot Package &#8212; greydot-api 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to greydot-api’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="greydot-package">
+<h1>GreyDot Package<a class="headerlink" href="#greydot-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-greydot.sms">
+<span id="greydot-sms-module"></span><h2>greydot.sms module<a class="headerlink" href="#module-greydot.sms" title="Permalink to this headline">¶</a></h2>
+<p>Use the API to send an sms to a number. If you enable notify by email, you will receive an email every time the url is called with your APP Key.</p>
+<p>URL :
+<a class="reference external" href="https://greydotapi.me/?par1=[Number-to-SMS]&amp;par2=[url-encoded-text-message]&amp;k=[APP-Key]&amp;do=[FID">https://greydotapi.me/?par1=[Number-to-SMS]&amp;par2=[url-encoded-text-message]&amp;k=[APP-Key]&amp;do=[FID</a>]</p>
+<p>[<strong>Number to SMS</strong>] Number that will receive the sms message or list of numbers each separated by an e</p>
+<p>[<strong>url encoded text message</strong>] Text to be sent to number in url encoded form</p>
+<p>[<strong>APP Key</strong>] Your APP Key</p>
+<p>[<strong>FID</strong>] The function ID for Send sms is 11</p>
+<p>Bulk Example url :
+<a class="reference external" href="https://greydotapi.me/?par1=0820000000e0820000001e0820000002&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11">https://greydotapi.me/?par1=0820000000e0820000001e0820000002&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11</a></p>
+<p>Example url :
+<a class="reference external" href="https://greydotapi.me/?par1=0820000000&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11">https://greydotapi.me/?par1=0820000000&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11</a></p>
+<p>Example reply :</p>
+<blockquote>
+<div><p>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;</p>
+<p>&lt;query&gt;</p>
+<p>&lt;query_result&gt;</p>
+<p>&lt;status&gt;Success&lt;/status&gt;</p>
+<p>&lt;status&gt;Send_SMS&lt;/status&gt;</p>
+<p>&lt;to&gt;27110000000&lt;/to&gt;</p>
+<p>&lt;sms_id&gt;000&lt;/sms_id&gt;</p>
+<p>&lt;/query_result&gt;</p>
+<p>&lt;query_status&gt;DONE&lt;/query_status&gt;</p>
+<p>&lt;query_code&gt;D0011&lt;/query_code&gt;</p>
+<p>&lt;/query&gt;</p>
+</div></blockquote>
+<dl class="function">
+<dt id="greydot.sms.parse_xml_response">
+<code class="sig-prename descclassname">greydot.sms.</code><code class="sig-name descname">parse_xml_response</code><span class="sig-paren">(</span><em class="sig-param">response</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/greydot/sms.html#parse_xml_response"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#greydot.sms.parse_xml_response" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Args</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- `response`: String of raw xml response returned
+</pre></div>
+</div>
+<p><strong>Returns</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>{</dt><dd><p>‘result_status’:”Success”,
+‘to’:’27110000000’,
+‘sms_id’:’0001’,
+‘query_status’:’DONE’,
+‘query_code’:’D0011’</p>
+</dd>
+</dl>
+<p>}</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="greydot.sms.send_sms">
+<code class="sig-prename descclassname">greydot.sms.</code><code class="sig-name descname">send_sms</code><span class="sig-paren">(</span><em class="sig-param">recipients=[]</em>, <em class="sig-param">message='Test Message'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/greydot/sms.html#send_sms"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#greydot.sms.send_sms" title="Permalink to this definition">¶</a></dt>
+<dd><p><strong>Args</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- `recipients`: Number that will receive the sms message or list of numbers
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>message</cite>: Text to be sent to number</p></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>{</dt><dd><p>‘result_status’:”Success”,
+‘to’:’27110000000’,
+‘sms_id’:’0001’,
+‘query_status’:’DONE’,
+‘query_code’:’D0011’</p>
+</dd>
+</dl>
+<p>}</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-greydot.airtime">
+<span id="greydot-airtime-module"></span><h2>greydot.airtime module<a class="headerlink" href="#module-greydot.airtime" title="Permalink to this headline">¶</a></h2>
+<p>This function allows you to query your Airtime balance. If you enable notify by email, you will receive an email every time the url is called with your APP Key.</p>
+<p>URL :
+<a class="reference external" href="https://greydotapi.me/?k=[APP">https://greydotapi.me/?k=[APP</a> Key]&amp;do=[FID]</p>
+<p>[<strong>APP Key</strong>] Your APP Key</p>
+<p>[<strong>FID</strong>]The function ID for Airtime balance is 5</p>
+<p>Example url :
+<a class="reference external" href="https://greydotapi.me/?k=abcdefghijklmnopqrst&amp;do=5">https://greydotapi.me/?k=abcdefghijklmnopqrst&amp;do=5</a></p>
+<p>Example reply :</p>
+<blockquote>
+<div><p>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;</p>
+<p>&lt;query&gt;</p>
+<p>&lt;query_result&gt;</p>
+<p>&lt;status&gt;Success&lt;/status&gt;</p>
+<p>&lt;function&gt;Airtime balance&lt;/function&gt;</p>
+<p>&lt;amount&gt;20.00&lt;/amount&gt;</p>
+<p>&lt;/query_result&gt;</p>
+<p>&lt;query_status&gt;DONE&lt;/query_status&gt;</p>
+<p>&lt;query_code&gt;D0005&lt;/query_code&gt;</p>
+<p>&lt;/query&gt;</p>
+</div></blockquote>
+</div>
+<div class="section" id="module-greydot.wallet">
+<span id="greydot-wallet-module"></span><h2>greydot.wallet module<a class="headerlink" href="#module-greydot.wallet" title="Permalink to this headline">¶</a></h2>
+<p>This function allows you to query your Wallet balance. If you enable notify by email, you will receive an email every time the url is called with your APP Key.</p>
+<p>URL :
+<a class="reference external" href="https://greydotapi.me/?k=[APP">https://greydotapi.me/?k=[APP</a> Key]&amp;do=[FID]</p>
+<p>[<strong>APP Key</strong>] Your APP Key</p>
+<p>[<strong>FID</strong>]The function ID for Wallet balance is 2</p>
+<p>Example url :
+<a class="reference external" href="https://greydotapi.me/?k=abcdefghijklmnopqrst&amp;do=2">https://greydotapi.me/?k=abcdefghijklmnopqrst&amp;do=2</a></p>
+<p>Example reply :</p>
+<blockquote>
+<div><p>&lt;?xml version=”1.0” encoding=”utf-8” ?&gt;</p>
+<p>&lt;query&gt;</p>
+<p>&lt;query_result&gt;</p>
+<p>&lt;status&gt;Success&lt;/status&gt;</p>
+<p>&lt;function&gt;Digit balance&lt;/function&gt;</p>
+<p>&lt;amount&gt;10.00&lt;/amount&gt;</p>
+<p>&lt;/query_result&gt;</p>
+<p>&lt;query_status&gt;DONE&lt;/query_status&gt;</p>
+<p>&lt;query_code&gt;D0003&lt;/query_code&gt;</p>
+</div></blockquote>
+</div>
+<div class="section" id="module-greydot">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-greydot" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">greydot-api</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-greydot.sms">greydot.sms module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-greydot.airtime">greydot.airtime module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-greydot.wallet">greydot.wallet module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-greydot">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to greydot-api’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Tralah M Brian.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

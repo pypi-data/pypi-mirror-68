@@ -1,0 +1,7 @@
+lxml
+requests
+xmltodict
+
+[docs]
+sphinx
+sphinx-automodapi
