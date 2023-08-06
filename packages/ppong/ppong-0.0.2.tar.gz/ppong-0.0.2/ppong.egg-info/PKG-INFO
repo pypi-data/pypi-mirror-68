@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ppong
+Version: 0.0.2
+Summary: ppong project
+Home-page: https://github.com/rraadd88/ppong
+Author: Rohan Dandage
+Author-email: rohanadandage@gmail.com
+License: General Public License v. 3
+Download-URL: https://github.com/rraadd88/ppong/archive/master.zip
+Description: https://github.com/rraadd88/ppong
+Platform: Tested on Ubuntu 16.04 64bit
