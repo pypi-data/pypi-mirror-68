@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    moduleknife = moduleknife.commands.moduleknife:main
+    modulegraph = moduleknife.commands.modulegraph:main
