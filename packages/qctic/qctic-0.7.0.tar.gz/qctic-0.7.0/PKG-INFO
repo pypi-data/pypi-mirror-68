@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: qctic
+Version: 0.7.0
+Summary: Qiskit provider to interact with the CTIC Erwin quantum simulator platform
+Home-page: https://bitbucket.org/fundacionctic/erwin-qiskit
+Author: Andres Garcia Mangas
+Author-email: andres.garcia@fundacionctic.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: quantum simulator qiskit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Provides-Extra: dev
