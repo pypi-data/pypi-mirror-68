@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: deeplabcutcore
+Version: 0.0b1
+Summary: Headless DeepLabCut
+Home-page: https://github.com/deeplabcutcore/deeplabcutcorecore
+Author: A. & M.W. Mathis Labs
+Author-email: alexander@deeplabcut.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: click
+Requires-Dist: easydict
+Requires-Dist: h5py (~=2.7)
+Requires-Dist: intel-openmp
+Requires-Dist: imgaug
+Requires-Dist: ipython
+Requires-Dist: ipython-genutils
+Requires-Dist: matplotlib (==3.0.3)
+Requires-Dist: moviepy (<=1.0.1)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: opencv-python (~=3.4)
+Requires-Dist: pandas
+Requires-Dist: patsy
+Requires-Dist: python-dateutil
+Requires-Dist: pyyaml (>=5.1)
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml (~=0.15)
+Requires-Dist: setuptools
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: statsmodels
+Requires-Dist: tables
+Requires-Dist: tensorpack (>=0.9.7.1)
+Requires-Dist: tqdm
+Requires-Dist: wheel
+
+# DeepLabCut-core
+
+Core functionalities of DeepLabCut, excluding all GUI functions. Test version.
+
+Currently up to date with [DeepLabCut v2.1.8.1](https://github.com/AlexEMG/DeepLabCut/tree/v2.1.8.1).
+
+Install:
+``` pip git+https://github.com/DeepLabCut/DeepLabCut-core ```
+
+Check out documentation at [DeepLabCut's main gitub page](https://github.com/AlexEMG/DeepLabCut/blob/master/docs/UseOverviewGuide.md).
+
+
