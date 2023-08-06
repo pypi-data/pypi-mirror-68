@@ -1,0 +1,9 @@
+setup.py
+lxpy/__init__.py
+lxpy/lxdate.py
+lxpy/lxml_check.py
+lxpy/lxrequests.py
+lxpy.egg-info/PKG-INFO
+lxpy.egg-info/SOURCES.txt
+lxpy.egg-info/dependency_links.txt
+lxpy.egg-info/top_level.txt
