@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: is-url
+Version: 0.1.1
+Summary: 
+Author: Eyal Levin
+Author-email: eyalev@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.2,<8.0.0)
