@@ -1,0 +1,3 @@
+[console_scripts]
+hashdate=hashdate.cli:cli
+

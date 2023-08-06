@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: hashdate
+Version: 1.0.1
+Summary: Datetime to fixed hash. Shortable for lower precision
+Home-page: https://github.com/sloev/hashdate
+License: MIT
+Keywords: hash,datetime,prefix
+Author: sloev
+Author-email: johanned.valbjorn@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Project-URL: Repository, https://github.com/sloev/hashdate
+Description-Content-Type: text/markdown
+
+![hashdate](https://github.com/sloev/hashdate/blob/master/assets/logo.png)
+
+# HashDate 
+
+[![Latest Version](https://img.shields.io/pypi/v/hashdate.svg)](https://pypi.python.org/pypi/hashdate) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Turns Python datetimes (or iso dates with `cli`) into hashes.
+
+The hashes support shortening to reduce precision, so a prefix of a hash will be the same datetime rounded to the given hashlength.
+
+## Cli usage
+
+Check out the demo:
+```bash
+$ hashdate demo
+``` 
+
+Its full of colors:
+
+[![asciicast](https://asciinema.org/a/kKaOD68BJXa11WA1ghW7vjqii.svg)](https://asciinema.org/a/kKaOD68BJXa11WA1ghW7vjqii)
+
+Turn your iso date into a hash:
+
+```bash
+$ hashdate date2hash 2020-05-13T22:30:47.136450
+hash: UCABCBDCCDAEHBDGEFA
+```
+
+Then if you only take the first 11 chars you get a datetime with less precision:
+
+```bash
+$ hashdate hash2date UCABCBDCCDA
+datetime: 2020-05-13T22:30:00
+```
+
+you can also secify to use emojis for charset if you want to:
+
+```bash
+$ hashdate date2hash 2020-05-13T22:30:47.136450 -c emoji
+hash: 🌹🐲🌼🥕🐲🥕🌲🐲🐲🌲🌼🍇🐐🥕🌲🌴🍇🐂🌼
+```
+
+and back again:
+
+```bash
+$ hash2date 🌹🐲🌼🥕🐲🥕🌲🐲🐲🌲🌼🍇🐐🥕🌲🌴🍇🐂🌼 -c emoji
+datetime: 2020-05-13T22:30:47.136450
+```
+
+## Module usage
+
+```python
+import datetime
+from hashdate import datetime_to_hash, hash_to_datetime
+
+now = datetime.datetime.now()
+hash = datetime_to_hash(now)
+dt = hash_to_datetime(hash)
+assert now == dt
+```
+
+### Advanced
+
+Use emojis:
+
+```python
+import datetime
+from hashdate import datetime_to_hash, hash_to_datetime
+
+now = datetime.datetime.now()
+hash = datetime_to_hash(now, charset='emoji')
+dt = hash_to_datetime(hash, charset='emoji')
+assert now == dt
+```
+
+Register more charsets:
+
+```python
+import datetime
+from hashdate import register_charset, datetime_to_hash, hash_to_datetime
+
+charset = "🌼🥕🐲🌲🍇🐂🌴🐐🍉🌺🍊🐽🍆🦎🍟🌱🐫🐍🐃🍍🌹🍕☘🌿🥓🐪🌷🏵🔥🐷🌳🌶🥒🐊🐗🐏🌵🌻🌽🐢🍋🍈💮🎃🌊🥔🌰🍀🍃💧💐🍂🐮🌸🐄🍄🍁🍞🥜🐑🥀🌭🐸🐖"
+
+register_charset('my_emojis', charset)
+
+now = datetime.datetime.now()
+hash = datetime_to_hash(now, charset='my_emojis')
+dt = hash_to_datetime(hash, charset='my_emojis')
+assert now == dt
+```
+
