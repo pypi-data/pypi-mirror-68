@@ -1,0 +1,3 @@
+[console_scripts]
+bashplot = bashplot.bashplot:command_line_runner
+
