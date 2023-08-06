@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Mopidy_Jingle.egg-info/PKG-INFO
+Mopidy_Jingle.egg-info/SOURCES.txt
+Mopidy_Jingle.egg-info/dependency_links.txt
+Mopidy_Jingle.egg-info/entry_points.txt
+Mopidy_Jingle.egg-info/not-zip-safe
+Mopidy_Jingle.egg-info/requires.txt
+Mopidy_Jingle.egg-info/top_level.txt
+mopidy_jingle/__init__.py
+mopidy_jingle/backend.py
+mopidy_jingle/ext.conf
