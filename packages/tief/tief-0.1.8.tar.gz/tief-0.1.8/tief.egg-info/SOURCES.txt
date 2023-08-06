@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tief/__init__.py
+tief.egg-info/PKG-INFO
+tief.egg-info/SOURCES.txt
+tief.egg-info/dependency_links.txt
+tief.egg-info/requires.txt
+tief.egg-info/top_level.txt
+tief/association/__init__.py
+tief/association/apriori.py
+tief/association/association_rule.py
