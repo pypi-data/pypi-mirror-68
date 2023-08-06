@@ -1,0 +1,15 @@
+README.md
+setup.py
+Piscord/API_Elements.py
+Piscord/Errors.py
+Piscord/Events.py
+Piscord/Gateway.py
+Piscord/OAuth.py
+Piscord/Permission.py
+Piscord/Piscord.py
+Piscord/Voice.py
+Piscord/__init__.py
+Piscord.egg-info/PKG-INFO
+Piscord.egg-info/SOURCES.txt
+Piscord.egg-info/dependency_links.txt
+Piscord.egg-info/top_level.txt
