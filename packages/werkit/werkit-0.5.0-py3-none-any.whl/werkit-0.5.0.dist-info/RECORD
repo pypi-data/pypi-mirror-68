@@ -1,0 +1,15 @@
+werkit/__init__.py,sha256=Q41tlcbFWx0DpHUJhXzVX-6vUCuAzwkj0bQFhz-RB88,70
+werkit/format_time.py,sha256=yViJXktwJmwjd5Hh4O0BxOdIrv-2Us67cBzeDFCkp3A,197
+werkit/manager.py,sha256=Km2rJ39sJAWtk3cdNVopoT5RiGACW3_LRf6_HSXXpmg,1630
+werkit/package_version.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+werkit/test_manager.py,sha256=xsdBJ9fwYVGu1vomjBsLsSawYAgAksweuYky4JKaXU8,1155
+werkit/parallel/__init__.py,sha256=xybrW2IQvhUhCWoqvYnoAy4cyvMV-k-wqF0oZoZdW3E,189
+werkit/parallel/cloud_manager.py,sha256=dtdgKxFZugp6bizxOS9gifJrpHTaZd7S4YHTwrjs-ng,3259
+werkit/parallel/invoke.py,sha256=OZoDV1FKmxGj6_rIsesJta-QQLN3D3FUs2xUVoTHHxw,4302
+werkit/parallel/test_invoke.py,sha256=UJZenVoU7d3-D80bR7F0VNYDn7rlDnSHehFFTPDOa4w,1925
+werkit/parallel/testing.py,sha256=hTn0BqLgocInrPKCW7lktVpO3rmjv8D3A_RR_3OoODY,109
+werkit-0.5.0.dist-info/LICENSE,sha256=W9Y02sJeo3A63gDmgPYfSKBwAyASnIP7BruXGR4hVbE,1071
+werkit-0.5.0.dist-info/METADATA,sha256=BvsXJINvSOHNLt-s8-diHhTSOce2PAlQHGinxnttMUQ,5224
+werkit-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+werkit-0.5.0.dist-info/top_level.txt,sha256=7EECQXi2Z1gzDeMyPEPv0SCYWskGNjkW6zZMbetPCpc,7
+werkit-0.5.0.dist-info/RECORD,,
