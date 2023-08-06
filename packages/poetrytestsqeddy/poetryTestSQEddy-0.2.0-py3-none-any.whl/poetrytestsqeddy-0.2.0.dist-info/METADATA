@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: poetrytestsqeddy
+Version: 0.2.0
+Summary: 
+Author: Eddy Ferrara Jr.
+Author-email: you@example.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
