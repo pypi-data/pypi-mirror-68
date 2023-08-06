@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+OktaJWT.egg-info/PKG-INFO
+OktaJWT.egg-info/SOURCES.txt
+OktaJWT.egg-info/dependency_links.txt
+OktaJWT.egg-info/entry_points.txt
+OktaJWT.egg-info/requires.txt
+OktaJWT.egg-info/top_level.txt
+jwt/__init__.py
+jwt/__main__.py
+jwt/__version__.py
+jwt/exceptions.py
+jwt/http.py
+jwt/jwt_api.py
