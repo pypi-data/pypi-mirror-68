@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: aspecto-ot-auto-instrumentation
+Version: 0.1b0
+Summary: Aspecto Auto Instrumentation for OpenTelemetry
+Home-page: https://app.aspecto.io
+Author: Aspecto
+Author-email: nir@aspecto.io
+License: Apache-2.0
+Description: # Aspecto OpenTelemetry Auto Instrumentation
+        [![Build Status](https://badge.fury.io/py/aspecto-ot-auto-instrumentation.svg)](https://pypi.org/project/aspecto-ot-auto-instrumentation/) 
+        
+        This library does all the magic.
+        
+        ## Installation
+            pip install aspecto-ot-auto-instrumentation
+        
+        
+        ## Usage
+        ```python
+        from opentelemetry.aspecto import AspectoInstrumentor
+        
+        AspectoInstrumentor(
+            service_name="demo-flask",
+            aspecto_auth="your-aspecto-token",
+            env="development" 
+        ).instrument()
+        ```
+        
+        `AspectoInstrumentor` params:  
+        * **service_name** - mandatory, the name of the service you're instrumenting
+        * **aspecto_auth** - your token that was obtained from [aspecto website](https://app.aspecto.io/app/integration).  
+        Alternatively, your can pass it as `ASPECTO_AUTH` env param, or place an `aspecto.json` file at the project root, containing an object with `token` key.
+        * **env** - optional, if none provided we will use `empty`.
+        
+        
+        
+        ## References
+        
+        * [Aspecto](https://app.aspecto.io)
+        * [OpenTelemetry Project](https://opentelemetry.io/)
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
