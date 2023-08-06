@@ -1,0 +1,26 @@
+version: 1
+formatters:
+  default:
+    format: "%(asctime)s %(levelname)-8s %(name)-15s %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+  simple:
+    format: "%(name)s - %(levelname)s - %(message)s"
+handlers:
+  general:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: default
+    filename: logs/bot.log
+    when: "midnight"
+  discord:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: default
+    filename: logs/discord.log
+    when: "midnight"
+loggers:
+  discord:
+    level: WARN
+    handlers: [discord]
+    propagate: no
+root:
+  level: WARN
+  handlers: [general]
