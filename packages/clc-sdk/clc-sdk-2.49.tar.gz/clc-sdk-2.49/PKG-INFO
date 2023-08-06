@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: clc-sdk
+Version: 2.49
+Summary: CenturyLink Cloud SDK and CLI
+Home-page: https://github.com/CenturyLinkCloud/clc-python-sdk
+Author: CenturyLink Cloud
+Author-email: ecosystem@centurylink.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: C,e,n,t,u,r,y,L,i,n,k, ,C,l,o,u,d, ,S,D,K, ,C,L,I
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
