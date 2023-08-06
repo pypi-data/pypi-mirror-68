@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+pyimport/__init__.py
+pyimport/exceptions.py
+pyimport/get_resource.py
+pyimport/path_guards.py
+pyimport.egg-info/PKG-INFO
+pyimport.egg-info/SOURCES.txt
+pyimport.egg-info/dependency_links.txt
+pyimport.egg-info/top_level.txt
