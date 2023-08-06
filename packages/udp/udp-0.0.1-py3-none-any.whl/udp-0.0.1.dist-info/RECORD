@@ -1,0 +1,8 @@
+udp/__init__.py,sha256=ggz_KnnUTtDyAtD1rdXhIaqFBBK6Ac1PO9Ehuuo2YLU,1734
+udp/data.py,sha256=-8jMmLuJDvIMW9-FAQb4s5sMB8tyr_Llf8sX6-MvAYg,6843
+udp/peer.py,sha256=NiwtPPt5xWsh5P217nGH4XNR579AjFx1ktRUOTzojx4,2408
+udp/protocol.py,sha256=0E2_xYWF07j8Nf35rd57W2SgrOpaduFLb_l7s0rgAy4,14352
+udp-0.0.1.dist-info/METADATA,sha256=NR-qzxpbKbLXjdUPhhxgluMuIi3V6tLA5kXu_3TolZo,419
+udp-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+udp-0.0.1.dist-info/top_level.txt,sha256=yFUB6ASUbIR0DLyv7VcdbYGwBmgKs_Q2E22Lmezvi80,4
+udp-0.0.1.dist-info/RECORD,,
