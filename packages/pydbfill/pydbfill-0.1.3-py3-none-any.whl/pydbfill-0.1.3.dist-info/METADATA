@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pydbfill
+Version: 0.1.3
+Summary: 
+Author: Oren Mazor
+Author-email: oren.mazor@protonmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: faker (>=4.1.0,<5.0.0)
+Requires-Dist: pymysql (>=0.9.3,<0.10.0)
+Requires-Dist: pytest (>=5.4.2,<6.0.0)
