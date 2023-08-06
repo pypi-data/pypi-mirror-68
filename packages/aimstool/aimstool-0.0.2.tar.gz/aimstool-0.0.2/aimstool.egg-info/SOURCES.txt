@@ -1,0 +1,14 @@
+README.md
+setup.py
+aimstool/__init__.py
+aimstool/build_csv.py
+aimstool/freeform.py
+aimstool/ical.py
+aimstool/main.py
+aimstool/roster.py
+aimstool.egg-info/PKG-INFO
+aimstool.egg-info/SOURCES.txt
+aimstool.egg-info/dependency_links.txt
+aimstool.egg-info/entry_points.txt
+aimstool.egg-info/requires.txt
+aimstool.egg-info/top_level.txt
