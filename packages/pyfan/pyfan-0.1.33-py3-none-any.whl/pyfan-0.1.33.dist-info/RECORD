@@ -1,0 +1,16 @@
+pyfan/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+pyfan/pkgtest/smop/fs_pkgtest_smop.Rmd,sha256=hRwumBVk6hS1dE6jdabF51yZ_0vsYtGWnsMZsFIFejA,2132
+pyfan/pkgtest/smop/simple.m,sha256=ZXYhMJVn2Z9GVMK5AmMgAYr-ZltpuVgA7JnnSYVKmqI,23
+pyfan/pkgtest/smop/simple.py,sha256=6w_86I4whxw7WikEUeBJF4c6wrzIkM_U0gGONNaAGOk,114
+pyfan/pkgtest/smop/solver.m,sha256=vGOJ8YDHXgfR3oIJ7X_72nfIEJ3apzvBY8Wxz2FwNdk,1314
+pyfan/pkgtest/smop/solver.py,sha256=i7RHd2mGfT-YwXiLBuw_8hxdSGlYuwi7B6iP4srnBEw,1817
+pyfan/util/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+pyfan/util/pdf/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+pyfan/util/pdf/pdfgen.py,sha256=-2WUWZ7uXAFoIKAmHypXcPeCCvDc2x33pXVV4Jz_wx4,3784
+pyfan/util/rmd/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+pyfan/util/rmd/bookdownparse.py,sha256=d2iWJiceq_y4EBV3ohT0g6x9S2oSGM48jwI59W9BE8M,3928
+pyfan/util/rmd/mattexmd.py,sha256=m2PrVm1QlLSFS0RNLVg0hMCdY9pxAB4GqQAV8Ic6tT4,3249
+pyfan/util/rmd/rmdparse.py,sha256=oGNBJyPqs5NL0r1wn8v72LPpOVPYBrIEKCPKxVBxv-U,5355
+pyfan-0.1.33.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pyfan-0.1.33.dist-info/METADATA,sha256=xWkQSNw_XW9ZMzyLUSNs0JBpccMXwa09C0zzYeU_YE4,379
+pyfan-0.1.33.dist-info/RECORD,,
