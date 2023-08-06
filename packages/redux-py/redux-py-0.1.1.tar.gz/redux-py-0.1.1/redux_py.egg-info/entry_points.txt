@@ -1,0 +1,3 @@
+[console_scripts]
+reduxpy = redux.__main__:main
+
