@@ -1,0 +1,6 @@
+[console_scripts]
+amnes = amnes.__main__:main
+amnes-controller = amnes.cli.controller:command
+amnes-ctl = amnes.cli.ctl:command
+amnes-worker = amnes.cli.worker:command
+

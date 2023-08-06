@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: amnes
+Version: 20.5.1
+Summary: Adaptive Meta-Framework for Network Experiment Studies.
+Home-page: https://amnes.gitlab.io/amnes/
+Author: AMNES Project
+License: UNKNOWN
+Project-URL: Documentation, https://amnes.gitlab.io/amnes/
+Project-URL: GitLab.com Source, https://gitlab.com/amnes/amnes/
+Project-URL: Issue Tracker, https://gitlab.com/amnes/amnes/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8,<4
+Description-Content-Type: text/markdown
+Requires-Dist: peewee (<4,>=3.13)
+Requires-Dist: click (<8,>=7.0)
+Requires-Dist: pyyaml (<6,>=5.3)
+Requires-Dist: pyro5 (<6,>=5.8)
+Provides-Extra: dev
+Requires-Dist: pipenv-setup (<4,>=3) ; extra == 'dev'
+Requires-Dist: ptvsd (<5,>=4.3) ; extra == 'dev'
+Requires-Dist: pytest (<6,>=5.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (<3,>=2.8) ; extra == 'dev'
+Requires-Dist: mypy (>=0.761) ; extra == 'dev'
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+Requires-Dist: isort (<5,>=4.3) ; extra == 'dev'
+Requires-Dist: pylint (<3,>=2.4) ; extra == 'dev'
+Requires-Dist: flake8 (<3.8,>=3.7) ; extra == 'dev'
+Requires-Dist: flake8-bugbear (<21,>=20.*) ; extra == 'dev'
+Requires-Dist: pep8-naming (<1,>=0.10) ; extra == 'dev'
+Requires-Dist: flake8-docstrings (<2,>=1.5) ; extra == 'dev'
+Requires-Dist: dlint (<1,>=0.10) ; extra == 'dev'
+Requires-Dist: darglint (<2,>=1.2) ; extra == 'dev'
+Requires-Dist: pdoc3 (<0.9,>=0.8) ; extra == 'dev'
+Requires-Dist: mkdocs (<2,>=1.1) ; extra == 'dev'
+Requires-Dist: mkdocs-material (<5.1,>=5.0.*) ; extra == 'dev'
+Requires-Dist: mkdocs-minify-plugin (<1,>=0.3.0) ; extra == 'dev'
+Requires-Dist: pyroma (<3,>=2.6) ; extra == 'dev'
+
+# Adaptive Meta-Framework for Network Experiment Studies (AMNES)
+
+AMNES is a highly modular tool that aims to simplify the execution of reproducible
+network experiments of all kinds.
+With its easy configurability, the possibility to develop comprehensive extensions and
+the connectivity to different storage backends, this framework helps you to spend less
+time on testbed configuration and more time on your network research.
+
+---
+
+_For Usage and Development Guide consult [AMNES Documentation](https://amnes.gitlab.io/amnes/)._
+
+
