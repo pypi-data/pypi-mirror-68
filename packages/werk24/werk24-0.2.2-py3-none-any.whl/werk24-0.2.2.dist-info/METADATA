@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: werk24
+Version: 0.2.2
+Summary: Werk24 Client to read PDF- and Image-based Technical Drawings / Engineering Drawings
+Home-page: https://www.werk24.biz
+Author: W24 Service GmbH
+Author-email: info@werk24.biz
+License: Business Source License 1.1
+Project-URL: Documentation, https://werk24.github.io/docs/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.7.4
+Requires-Dist: aioboto3 (>=6.4.1)
+Requires-Dist: pydantic (>=1.4)
+Requires-Dist: python-dotenv (>=0.10.1)
+Requires-Dist: websockets (>=8.1)
+
+UNKNOWN
+
+
