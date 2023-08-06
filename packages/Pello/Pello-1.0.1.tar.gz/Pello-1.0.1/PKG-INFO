@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Pello
+Version: 1.0.1
+Summary: An example Python Hello World package
+Home-page: https://github.com/hrnciar/pello
+Author: Tomáš Hrnčiar
+Author-email: tomas.hrnciar@me.com
+License: CC0
+Description: 
+         ## Pello
+         Pello is example package that will be used as a part of Fedora Python Packaging Guidelines. Only thing that this package do, is printing Hello World! to command line. 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

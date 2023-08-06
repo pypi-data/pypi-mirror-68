@@ -1,0 +1,3 @@
+[console_scripts]
+pello_greeting = pello.pello_greeting:greeting
+
