@@ -1,0 +1,10 @@
+mfn_sdk/__init__.py,sha256=ZLugI_Na6V9uXy9RBbKsdZq4PqMEFkH0INtL0ynQIQM,704
+mfn_sdk/deprecated.py,sha256=GFgRj3ZcrsY6mHYS27R1C62hzzu2IFXC_bPwv6xyKQk,1147
+mfn_sdk/function.py,sha256=LBJ4Jse7fkxESQA53GCE8TIMIM-Akw7hCfHwfu5w_OI,7761
+mfn_sdk/mfnclient.py,sha256=IAY1ttRz1onH_QisfhzExisOessgnNIODuBph_gPpGc,21674
+mfn_sdk/workflow.py,sha256=tNRQhOzDWlAMm9Ejohe6QM2Ta5z-C3RTRdPa5fk9XgI,14732
+mfn_sdk-0.8.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mfn_sdk-0.8.0.dist-info/METADATA,sha256=HtE9wOouttdCxpASbkpSJpXTGCpchuPLmabbV1gGjAU,6346
+mfn_sdk-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mfn_sdk-0.8.0.dist-info/top_level.txt,sha256=MbMahnC6y9RjRP7IvUI94WpsqP7r_4wpQ8ks1vxZs2g,8
+mfn_sdk-0.8.0.dist-info/RECORD,,
