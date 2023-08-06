@@ -1,0 +1,12 @@
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/etc/fleetspeak-server/configurator.config,sha256=Umh4mNjvZ579hvu9UZuKTsCmy0zaN-7UoUWrrY1WXCg,5039
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/etc/fleetspeak-server/server.services.config,sha256=Xw-8sDfJuJ-vK3CC9NADyJYo87ndHN4Bgf4Sbw9u93Y,670
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/lib/systemd/system/fleetspeak-server.service,sha256=oT9NY_utHh0c-NQ3bWck87eAwFqCJ_VC-EDR84y6h4o,470
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/usr/bin/fleetspeak-admin,sha256=6h9ta8ps0jrhPoyMds3-Ch_rdkqEq0_XItqB7OZ1-uA,9758392
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/usr/bin/fleetspeak-config,sha256=_7kKe2knr9LUgptrHJKO2tys2-5lEvmCgHg0Mlm0GCo,4306232
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/usr/bin/fleetspeak-server,sha256=0wUd_oO-1gfJc_L620ANWBKLulN3pJa5eTz9Vm6nk4Q,11075640
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/usr/share/doc/fleetspeak-server/changelog.gz,sha256=gdDfr2MesFXU-Tgk058osZ40WtE8cAq1uLOg7FSK710,183
+fleetspeak_server_bin-0.1.7.3.data/data/fleetspeak-server-bin/usr/share/doc/fleetspeak-server/copyright,sha256=9f4DTrapa6xiVqlZS5WL491emgcYZ3vnJOKHxSC9nWI,257
+fleetspeak_server_bin-0.1.7.3.dist-info/METADATA,sha256=HByb9C-gQlaxJbYpKgdrtWG1lIX53_KOZMXgvViQOnY,187
+fleetspeak_server_bin-0.1.7.3.dist-info/WHEEL,sha256=61gl0tAtmnwQeekOzOg_Ed82TSh7P2oyJe2LzHh4UVo,145
+fleetspeak_server_bin-0.1.7.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fleetspeak_server_bin-0.1.7.3.dist-info/RECORD,,
