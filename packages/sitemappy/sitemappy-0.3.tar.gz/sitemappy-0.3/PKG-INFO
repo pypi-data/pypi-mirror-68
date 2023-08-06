@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sitemappy
+Version: 0.3
+Summary: A package for the generation and analyis of sitemaps
+Home-page: https://github.com/Jack-Tilley/sitemappy
+Author: Jack Tilley
+Author-email: tilley.e.jack@gmail.com
+License: MIT
+Download-URL: https://github.com/Jack-Tilley/sitemappy/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: python3,webscrape,sitemap,network
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
