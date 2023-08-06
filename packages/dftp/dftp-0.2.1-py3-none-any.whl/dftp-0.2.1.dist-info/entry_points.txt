@@ -1,0 +1,3 @@
+[console_scripts]
+dftp = dftp.app:main
+
