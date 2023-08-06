@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: expm
+Version: 0.1.2
+Summary: Faster matrix exponentials in Python
+Home-page: https://github.com/theJollySin/expm
+Author: John Stilley
+License: GPLv3
+Description: Trying to improve performance for matrix exponentials in Python.
+Keywords: mathematics algorithms algorithm
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Natural Language :: English
+Requires-Python: >=3.5, <3.8
+Description-Content-Type: text/markdown
