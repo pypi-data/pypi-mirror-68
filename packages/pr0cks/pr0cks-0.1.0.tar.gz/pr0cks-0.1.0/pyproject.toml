@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "pr0cks"
+version = "0.1.0"
+description = "Transparent proxy in python"
+authors = [
+"Nicolas VERDIER <contact@n1nj4.eu>",
+"LoveIsGrief <loveisgrief@tuta.io>"
+]
+license = "GPL-3.0-or-later"
+
+readme = "README.md"
+
+keywords = [
+    "transparent proxy",
+    "linux",
+    "iptables",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX",
+    "Topic :: System :: Networking",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: Internet :: Proxy Servers",
+]
+homepage = "https://gitlab.com/NamingThingsIsHard/net/pr0cks/pr0cks"
+repository = "https://gitlab.com/NamingThingsIsHard/net/pr0cks/pr0cks"
+[tool.poetry.urls]
+"Bug Tracker" = "https://gitlab.com/NamingThingsIsHard/net/pr0cks/pr0cks"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pr0cks-extension = "^0.1.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.5.0"
+asynctest = "^0.13.0"
+
+[tool.poetry.plugins."pr0cks.cli"]
+# Other extensions can add their commands here
+
+[tool.poetry.scripts]
+pr0cks = 'pr0cks.console:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
