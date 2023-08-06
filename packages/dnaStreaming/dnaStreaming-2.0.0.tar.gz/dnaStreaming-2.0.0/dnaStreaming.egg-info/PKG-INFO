@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: dnaStreaming
+Version: 2.0.0
+Summary: Dow Jones DNA Streaming Project
+Home-page: https://github.com/dowjones/dj-dna-streams-python
+Author: Chris Flesche
+Author-email: chris.flesche@dowjones.com
+License: MIT
+Download-URL: https://github.com/dowjones/dj-dna-streams-python/archive/release-2.0.0.tar.gz
+Description: UNKNOWN
+Keywords: DOWJONES,FACTIVA,STREAMS
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
