@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cartotool-cartotool-dev
+Version: 1.0.5
+Summary: Cartotool
+Home-page: https://cartotool.com
+Author: Cartotool
+Author-email: info@cartotool.com
+License: MIT License
+Keywords: OpenAPI,OpenAPI-Generator,Cartotool
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+Cartotool api project for using the cartotool.com application with Python scripts  # noqa: E501
+
+
