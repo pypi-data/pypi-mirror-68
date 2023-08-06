@@ -1,0 +1,17 @@
+CHANGELOG.md
+COPYING.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyhcrf/__init__.py
+pyhcrf/_algorithms.pyx
+pyhcrf/_version.txt
+pyhcrf/logaddexp.h
+pyhcrf.egg-info/PKG-INFO
+pyhcrf.egg-info/SOURCES.txt
+pyhcrf.egg-info/dependency_links.txt
+pyhcrf.egg-info/not-zip-safe
+pyhcrf.egg-info/requires.txt
+pyhcrf.egg-info/top_level.txt
