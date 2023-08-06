@@ -1,0 +1,10 @@
+numpy>=1.17.4
+pandas>=0.25.0
+matplotlib==3.1.2
+matrixprofile-ts==0.0.8
+
+[dev]
+check-manifest
+
+[test]
+coverage
