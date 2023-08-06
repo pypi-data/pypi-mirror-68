@@ -1,0 +1,46 @@
+<p style="text-align: justify">
+  {{ t["overview_write_up"] }}
+<br>
+<br>
+<div class="row">
+<div class="col-md-6">
+<h4>Risk Summary</h4>
+<table class="table table-striped w-auto table-sm" style="border-radius: 10px">
+<thead>
+  <tr>
+    <th>Risk</th>
+    <th>Instances</th>
+    <th><a href="#definition-impact">Impact</a></th>
+  </tr>
+</thead>
+<tbody>
+  {% if t["policies_with_privilege_escalation"] > 0 %}
+  <tr>
+    <td><a href="#definition-privilege-escalation">Privilege Escalation</a></td>
+    <td style="background-color: #F18E73">{{ t["policies_with_privilege_escalation"] }}</td>
+    <td style="background-color: #F18E73">Critical</td>
+  </tr>
+  {% endif %}
+  {% if t["policies_with_permissions_management"] > 0 %}
+  <tr>
+    <td><a href="#definition-resource-exposure">Resource Exposure</a></td>
+    <td style="background-color: #FFB660">{{ t["policies_with_permissions_management"] }}</td>
+    <td style="background-color: #FFB660">High</td>
+  </tr>
+  {% endif %}
+  <tr>
+    <td><a href="#definition-infrastructure-modification">Infrastructure Modification</a></td>
+    <td style="background-color: #FFB660">{{ t["results"]|length }}</td>
+    <td style="background-color: #FFB660">High</td>
+  </tr>
+  {% if t["policies_with_data_leak_potential"] > 0 %}
+    <tr>
+    <td><a href="#definition-data-exfiltration">Data Exfiltration</a></td>
+    <td style="background-color: #FFE295;">{{ t["policies_with_data_leak_potential"] }}</td>
+    <td style="background-color: #FFE295;">Medium</td>
+  </tr>
+  {% endif %}
+  </tbody>
+</table>
+</div>
+</div>
