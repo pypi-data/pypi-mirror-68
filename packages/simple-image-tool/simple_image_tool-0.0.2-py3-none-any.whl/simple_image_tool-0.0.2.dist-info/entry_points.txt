@@ -1,0 +1,3 @@
+[console_scripts]
+simple-image-tool=simple_image_tool:main
+
