@@ -1,0 +1,14 @@
+aws_sso/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_sso/__main__.py,sha256=eGhSKYPyxTRUS-a8f1dWYS2kSfoLKXupxllqlhTGjTQ,2479
+aws_sso/credentials.py,sha256=f3dwqtkOfHgNvvUdSaZsiTKG6UZ0ReEyJA7IFpbm3M4,2311
+aws_sso/file_handler.py,sha256=g1fEuifH4Lma52PX6KwtkutGcQ5AfVn7RAMTmbEppaA,1675
+aws_sso/helper.py,sha256=amE8lCoecf6y0rEr2_w9uxC2Hrtut_h8nuCurBG9R9Q,1070
+aws_sso/sso_util.py,sha256=ARmHXLiYBSTPnhANSNBTSIL7-gYdFZiaY7BEIkEScHs,2485
+tests/__init__.py,sha256=AGY3rdaVHzE_clb3mgVYGalnNsU9IkUyyOGmILwdK5Y,109
+tests/credentials_test.py,sha256=lYsXrlm8ezoZtjeMSMziqD7CGrGj3UyP0Qh8j6yJ00I,7023
+tests/file_handler_test.py,sha256=E-0W_36DUKurICovilySHP7CN505-CSS5v8l0U15veM,1971
+aws_sso_credential_provider-0.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aws_sso_credential_provider-0.0.5.dist-info/METADATA,sha256=puaShirkNjrj8-TvwEBkNTseiSXcOamFD-FwQ18VN8g,3092
+aws_sso_credential_provider-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aws_sso_credential_provider-0.0.5.dist-info/top_level.txt,sha256=NUcBs74JfkQz09QnYtDcw3cDUZi-BPZeBTDb42Spo9U,14
+aws_sso_credential_provider-0.0.5.dist-info/RECORD,,
