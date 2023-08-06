@@ -1,0 +1,13 @@
+qurpc/__init__.py,sha256=-g1rY3ubXwoXPMjTOLiB9vA54sW5jiCKzRONAgy5UYc,170
+qurpc/_version.py,sha256=Xybt2skBZamGMNlLuOX1IG-h4uIxqUDGAO8MIGWrJac,22
+qurpc/client.py,sha256=QBe3hrAZFWT2e7gc7snS0gyWndR2p66wmpb5I0wTvCo,4227
+qurpc/exceptions.py,sha256=daJiDvKcC7KsHUwEgsTxSrcn-xSMzFISTzKfaDbffZY,2597
+qurpc/rpc.py,sha256=Kt04kqGDPYyMT5hqy-NfXjQFyHur1xu5GFtfOtDGeOo,11529
+qurpc/serialize.py,sha256=0qy3VNCjy-SbshSEPqvYi_wNM3QHhjSeYVQHWEYovf0,3234
+qurpc/server.py,sha256=T7LmzoZIRQfTbjbtuT2S6VhiqBV7_nZtp3901TlDXpo,3633
+qurpc/utils.py,sha256=0DC4RNtNYXy9H_pbeUDgDU6Mqyjpk8JFzebLXPR7q-M,716
+QuLab_RPC-2.1.0.dist-info/LICENSE,sha256=G7TmOLSeDSTm-jhAuIj2BwW6vlbhbv4hWCszX30y3-c,1065
+QuLab_RPC-2.1.0.dist-info/METADATA,sha256=sQYnR0S_hGcHjLFtyp3fEREgN0kgjH9JzhGvFI0QINA,3263
+QuLab_RPC-2.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+QuLab_RPC-2.1.0.dist-info/top_level.txt,sha256=qmt0CRrTIJFXQq8ABcpuPSqSs1n5a_GtXk8mx0JStss,6
+QuLab_RPC-2.1.0.dist-info/RECORD,,
