@@ -1,0 +1,13 @@
+global-exclude *.py[cod]
+global-exclude *.coverage
+
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+include VERSION
+
+recursive-include tests *.py
+
+recursive-exclude * __pycache__
+recursive-exclude * *.DS_Store
