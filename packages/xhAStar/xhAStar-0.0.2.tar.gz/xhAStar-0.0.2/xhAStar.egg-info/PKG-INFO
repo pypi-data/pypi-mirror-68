@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: xhAStar
+Version: 0.0.2
+Summary: A*搜索算法
+Home-page: https://github.com/XHPyPI/AStar
+Author: lamborghini1993
+Author-email: 1323242382@qq.com
+License: UNKNOWN
+Description: - A*寻路算法 `pip install xhAStar`
+        
+        # 使用方法
+        
+        ```python3
+        import astar
+        w, h = 6, 3
+        start, goal = (0, 0), (3, 2)
+        walls = [(2, 1), (3, 1), (4, 1)]
+        obj = astar.AStar(w, h, start, goal, walls, astar.MANHATTAN)
+        print(obj.result)
+        ```
+        
+        AStar参数说明:
+        
+        - w (int): 长
+        - h (int): 宽
+        - start (Tuple[int, int]): 起始点
+        - goal (Tuple[int, int]): 终点
+        - walls (List[Tuple[int, int]]): 墙壁坐标列表
+        - type (int, optional): 寻路类型. 默认为曼哈顿寻路 MANHATTAN.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
