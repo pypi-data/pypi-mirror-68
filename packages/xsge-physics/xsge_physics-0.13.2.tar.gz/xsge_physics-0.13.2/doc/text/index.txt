@@ -1,0 +1,832 @@
+xSGE Physics Framework
+**********************
+
+
+Contents
+^^^^^^^^
+
+* xSGE Physics Framework
+
+  * xsge_physics Classes
+
+    * xsge_physics.Collider
+
+      * xsge_physics.Collider Methods
+
+      * xsge_physics.Collider Event Methods
+
+    * xsge_physics.Wall
+
+    * xsge_physics.SolidLeft
+
+      * xsge_physics.SolidLeft Event Methods
+
+    * xsge_physics.SolidRight
+
+      * xsge_physics.SolidRight Event Methods
+
+    * xsge_physics.SolidTop
+
+      * xsge_physics.SolidTop Event Methods
+
+    * xsge_physics.SolidBottom
+
+      * xsge_physics.SolidBottom Event Methods
+
+    * xsge_physics.Solid
+
+      * xsge_physics.Solid Event Methods
+
+    * xsge_physics.Slope
+
+    * xsge_physics.SlopeTopLeft
+
+      * xsge_physics.SlopeTopLeft Methods
+
+      * xsge_physics.SlopeTopLeft Event Methods
+
+    * xsge_physics.SlopeTopRight
+
+      * xsge_physics.SlopeTopRight Methods
+
+      * xsge_physics.SlopeTopRight Event Methods
+
+    * xsge_physics.SlopeBottomLeft
+
+      * xsge_physics.SlopeBottomLeft Methods
+
+      * xsge_physics.SlopeBottomLeft Event Methods
+
+    * xsge_physics.SlopeBottomRight
+
+      * xsge_physics.SlopeBottomRight Methods
+
+      * xsge_physics.SlopeBottomRight Event Methods
+
+    * xsge_physics.MobileWall
+
+      * xsge_physics.MobileWall methods
+
+    * xsge_physics.MobileColliderWall
+
+xSGE is a collection of extensions for the SGE licensed under the GNU
+General Public License.  They are designed to give additional features
+to free/libre software games which aren't necessary, but are nice to
+have.
+
+xSGE extensions are not dependent on any particular SGE
+implementation. They should work with any implementation that follows
+the specification.
+
+This extension provides an easy-to-use framework for collision
+physics. This is especially useful for platformers, though it can also
+be useful for other types of games.
+
+Note: This collision system supports plain rectangle-based collision
+  detection ONLY.  Attempting to use precise or ellipse collision
+  detection will not work as you expect, and may often not even work
+  at all.  This is because implementing support for such mask-based
+  collision detection would be guaranteed to be slow, unreliable, and
+  needlessly complicated; it's not worth it.If you must use precise
+  collision detection, consider doing so with a separate object that
+  follows the appropriate "Collider" object.
+
+
+xsge_physics Classes
+====================
+
+
+xsge_physics.Collider
+---------------------
+
+class xsge_physics.Collider(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Class for objects which have physics interactions.
+
+   Note: This class depends on use of "Collider.move_x()" and
+     "Collider.move_y()" to handle physics interactions.
+     "event_update_position()" uses these methods, so speed attributes
+     will work properly, but changing "x" and "y" manually will not
+     cause any physics to occur.
+
+   nonstick_left
+
+   nonstick_right
+
+   nonstick_top
+
+   nonstick_bottom
+
+      These attributes are used by certain wall classes to exclude the
+      object from "sticking" to the wall.  See the documentation for
+      the wall classes for more information.
+
+      Default value: "False"
+
+   slope_acceleration
+
+      The factor by which the collider accelerates on slopes.  This is
+      multiplied by the "slope_xacceleration" and
+      "slope_yacceleration" values of any slopes the collider is
+      touching and added to the use of "xacceleration" and
+      "yacceleration" by "event_update_position()".
+
+      Default value: "0"
+
+
+xsge_physics.Collider Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Collider.move_x(move, absolute=False, do_events=True, exclude_events=())
+
+   Move the object horizontally, handling physics.
+
+   Arguments:
+
+   * "move" -- The amount to add to "x".
+
+   * "absolute" -- If set to "True", the distance moved horizontally
+     is absolute, i.e. will not be reduced as a result of vertical
+     movement caused by slopes.  Otherwise, any vertical movement
+     caused by slopes will result in a reduction of horizontal
+     movement.
+
+   * "do_events" -- Whether or not physics collision events should
+     be executed when appropriate.
+
+   * "exclude_events" -- A set, list, or tuple of wall objects which
+     should not cause collision events to be executed if collided
+     with.
+
+Collider.move_y(move, absolute=False, do_events=True, exclude_events=())
+
+   Move the object vertically, handling physics.
+
+   Arguments:
+
+   * "move" -- The amount to add to "y".
+
+   * "absolute" -- If set to "True", the distance moved vertically
+     is absolute, i.e. will not be reduced as a result of horizontal
+     movement caused by slopes.  Otherwise, any horizontal movement
+     caused by slopes will result in a reduction of vertical movement.
+
+   * "do_events" -- Whether or not physics collision events should
+     be executed when appropriate.
+
+   * "exclude_events" -- A set, list, or tuple of wall objects which
+     should not cause collision events to be executed if collided
+     with.
+
+Collider.get_left_touching_wall()
+
+   Return a list of "SolidRight" objects whose right sides are
+   touching the left side of this object.
+
+Collider.get_right_touching_wall()
+
+   Return a list of "SolidLeft" objects whose left sides are touching
+   the right side of this object.
+
+Collider.get_top_touching_wall()
+
+   Return a list of "SolidTop" objects whose top sides are touching
+   the bottom side of this object.
+
+Collider.get_bottom_touching_wall()
+
+   Return a list of "SolidBottom" objects whose bottom sides are
+   touching the top side of this object.
+
+Collider.get_left_touching_slope()
+
+   Return a list of "SlopeTopRight" and "SlopeBottomRight" objects
+   whose right sides are touching the left side of this object.
+
+Collider.get_right_touching_slope()
+
+   Return a list of "SlopeTopLeft" and "SlopeBottomLeft" objects whose
+   left sides are touching the right side of this object.
+
+Collider.get_top_touching_slope()
+
+   Return a list of "SlopeBottomLeft" and "SlopeBottomRight" objects
+   whose bottom sides are touching the top side of this object.
+
+Collider.get_bottom_touching_slope()
+
+   Return a list of "SlopeTopLeft" and "SlopeTopRight" objects whose
+   top sides are touching the bottom side of this object.
+
+
+xsge_physics.Collider Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Collider.event_physics_collision_left(other, move_loss)
+
+   Called when the left side of the collider collides with a wall or
+   slope in the sense of the physics system, rather than in the sense
+   of SGE collision detection.
+
+   Arguments:
+
+   * "move_loss" -- The amount of movement that was prevented by the
+     collision in pixels.  For example, if the object would have moved
+     6 pixels, but only moved 2 pixels as a result of this collision,
+     this value will be "4".  This can be used to undo such a
+     reduction in movement.
+
+   See the documentation for "sge.dsp.Object.event_collision()" for
+   more information.
+
+Collider.event_physics_collision_right(other, move_loss)
+
+   Called when the right side of the collider collides with a wall or
+   slope in the sense of the physics system, rather than in the sense
+   of SGE collision detection.  See the documentation for
+   "xsge_physics.Collider.event_physics_collision_left()" for more
+   information.
+
+Collider.event_physics_collision_top(other, move_loss)
+
+   Called when the top side of the collider collides with a wall or
+   slope in the sense of the physics system, rather than in the sense
+   of SGE collision detection.  See the documentation for
+   "xsge_physics.Collider.event_physics_collision_left()" for more
+   information.
+
+Collider.event_physics_collision_bottom(other, move_loss)
+
+   Called when the bottom side of the collider collides with a wall or
+   slope in the sense of the physics system, rather than in the sense
+   of SGE collision detection.  See the documentation for
+   "xsge_physics.Collider.event_physics_collision_left()" for more
+   information.
+
+
+xsge_physics.Wall
+-----------------
+
+class xsge_physics.Wall(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Base class for all wall objects that "Collider" objects interact
+   with in some way.  It is functionally identical to its parent
+   class, "sge.dsp.Object".
+
+
+xsge_physics.SolidLeft
+----------------------
+
+class xsge_physics.SolidLeft(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Class for walls which stop movement of "Collider" objects from the
+   top.
+
+
+xsge_physics.SolidLeft Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SolidLeft.event_physics_collision_left(other, move_loss)
+
+   Called when the left side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SolidRight
+-----------------------
+
+class xsge_physics.SolidRight(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Class for walls which stop movement of "Collider" objects from the
+   right.
+
+
+xsge_physics.SolidRight Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SolidRight.event_physics_collision_right(other, move_loss)
+
+   Called when the right side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SolidTop
+---------------------
+
+class xsge_physics.SolidTop(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Class for walls which stop movement of "Collider" objects from the
+   top.
+
+
+xsge_physics.SolidTop Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SolidTop.event_physics_collision_top(other, move_loss)
+
+   Called when the top side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SolidBottom
+------------------------
+
+class xsge_physics.SolidBottom(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Class for walls which stop movement of "Collider" objects from the
+   bottom.
+
+
+xsge_physics.SolidBottom Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SolidBottom.event_physics_collision_bottom(other, move_loss)
+
+   Called when the bottom side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.Solid
+------------------
+
+class xsge_physics.Solid(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Inherits "SolidLeft", "SolidRight", "SolidTop", and "SolidBottom".
+   Meant to be a convenient parent class for walls that should stop
+   movement in all directions.
+
+
+xsge_physics.Solid Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Solid.event_physics_collision_left(other, move_loss)
+
+   Called when the left side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+Solid.event_physics_collision_right(other, move_loss)
+
+   Called when the right side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+Solid.event_physics_collision_top(other, move_loss)
+
+   Called when the top side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+Solid.event_physics_collision_bottom(other, move_loss)
+
+   Called when the bottom side of the wall collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.Slope
+------------------
+
+class xsge_physics.Slope(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   Base class for all slopes.
+
+   slope_xacceleration
+
+      Indicates the amount of horizontal acceleration to apply to any
+      collider which is touching the slope.  It is multiplied by the
+      affected colliders' "slope_acceleration" values and added to
+      their use of "xacceleration" in "event_update_position()".
+
+      Default value: "0"
+
+   slope_yacceleration
+
+      Indicates the amount of vertical acceleration to apply to any
+      collider which is touching the slope.  It is multiplied by the
+      affected colliders' "slope_acceleration" values and added to
+      their use of "yacceleration" in "event_update_position()".
+
+      Default value: "0"
+
+
+xsge_physics.SlopeTopLeft
+-------------------------
+
+class xsge_physics.SlopeTopLeft(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for slopes which point in some direction upwards and
+   to the left.
+
+   Slopes of this type go from the bottom-left corner to the top-right
+   corner of the bounding box.
+
+   xsticky_top
+
+      If set to "True", a collider that moves to the left while
+      touching the top side of the slope will attempt to keep touching
+      the top side of the slope by moving downward, unless the
+      collider's "nonstick_bottom" value is "True".
+
+      Default value: "False"
+
+   ysticky_left
+
+      If set to "True", a collider that moves upward while touching
+      the left side of the slope will attempt to keep touching the
+      left side of the slope by moving to the right, unless the
+      collider's "nonstick_right" value is "True".
+
+      Default value: "False"
+
+   slope_xacceleration
+
+      See the documentation for "Slope.slope_xacceleration".
+
+   slope_yacceleration
+
+      See the documentation for "Slope.slope_yacceleration".
+
+
+xsge_physics.SlopeTopLeft Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeTopLeft.get_slope_x(y)
+
+   Get the corresponding x coordinate of a given y coordinate for the
+   slope.
+
+SlopeTopLeft.get_slope_y(x)
+
+   Get the corresponding y coordinate of a given x coordinate for the
+   slope.
+
+
+xsge_physics.SlopeTopLeft Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeTopLeft.event_physics_collision_left(other, move_loss)
+
+   Called when the left side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+SlopeTopLeft.event_physics_collision_top(other, move_loss)
+
+   Called when the top side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SlopeTopRight
+--------------------------
+
+class xsge_physics.SlopeTopRight(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for slopes which point in some direction upwards and
+   to the right.
+
+   Slopes of this type go from the top-left corner to the bottom-right
+   corner of the bounding box.
+
+   xsticky_top
+
+      If set to "True", a collider that moves to the right while
+      touching the top side of the slope will attempt to keep touching
+      the top side of the slope by moving downward, unless the
+      collider's "nonstick_bottom" value is "True".
+
+      Default value: "False"
+
+   ysticky_right
+
+      If set to "True", a collider that moves upward while touching
+      the right side of the slope will attempt to keep touching the
+      right side of the slope by moving to the left, unless the
+      collider's "nonstick_left" value is "True".
+
+      Default value: "False"
+
+   slope_xacceleration
+
+      See the documentation for "Slope.slope_xacceleration".
+
+   slope_yacceleration
+
+      See the documentation for "Slope.slope_yacceleration".
+
+
+xsge_physics.SlopeTopRight Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeTopRight.get_slope_x(y)
+
+   Get the corresponding x coordinate of a given y coordinate for the
+   slope.
+
+SlopeTopRight.get_slope_y(x)
+
+   Get the corresponding y coordinate of a given x coordinate for the
+   slope.
+
+
+xsge_physics.SlopeTopRight Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeTopRight.event_physics_collision_right(other, move_loss)
+
+   Called when the right side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+SlopeTopRight.event_physics_collision_top(other, move_loss)
+
+   Called when the top side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SlopeBottomLeft
+----------------------------
+
+class xsge_physics.SlopeBottomLeft(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for slopes which point in some direction upwards and
+   to the left.
+
+   Slopes of this type go from the top-left corner to the bottom-right
+   corner of the bounding box.
+
+   xsticky_bottom
+
+      If set to "True", a collider that moves to the left while
+      touching the bottom side of the slope will attempt to keep
+      touching the bottom side of the slope by moving upward, unless
+      the collider's "nonstick_top" value is "True".
+
+      Default value: "False"
+
+   ysticky_left
+
+      If set to "True", a collider that moves downward while touching
+      the left side of the slope will attempt to keep touching the
+      left side of the slope by moving to the right, unless the
+      collider's "nonstick_right" value is "True".
+
+      Default value: "False"
+
+   slope_xacceleration
+
+      See the documentation for "Slope.slope_xacceleration".
+
+   slope_yacceleration
+
+      See the documentation for "Slope.slope_yacceleration".
+
+
+xsge_physics.SlopeBottomLeft Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeBottomLeft.get_slope_x(y)
+
+   Get the corresponding x coordinate of a given y coordinate for the
+   slope.
+
+SlopeBottomLeft.get_slope_y(x)
+
+   Get the corresponding y coordinate of a given x coordinate for the
+   slope.
+
+
+xsge_physics.SlopeBottomLeft Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeBottomLeft.event_physics_collision_left(other, move_loss)
+
+   Called when the left side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+SlopeBottomLeft.event_physics_collision_bottom(other, move_loss)
+
+   Called when the bottom side of the slope collides with a collider
+   in the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.SlopeBottomRight
+-----------------------------
+
+class xsge_physics.SlopeBottomRight(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for slopes which point in some direction upwards and
+   to the right.
+
+   Slopes of this type go from the bottom-left corner to the top-right
+   corner of the bounding box.
+
+   xsticky_bottom
+
+      If set to "True", a collider that moves to the right while
+      touching the bottom side of the slope will attempt to keep
+      touching the bottom side of the slope by moving upward, unless
+      the collider's "nonstick_top" value is "True".
+
+      Default value: "False"
+
+   ysticky_right
+
+      If set to "True", a collider that moves downward while touching
+      the right side of the slope will attempt to keep touching the
+      right side of the slope by moving to the right, unless the
+      collider's "nonstick_left" value is "True".
+
+      Default value: "False"
+
+   slope_xacceleration
+
+      See the documentation for "Slope.slope_xacceleration".
+
+   slope_yacceleration
+
+      See the documentation for "Slope.slope_yacceleration".
+
+
+xsge_physics.SlopeBottomRight Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeBottomRight.get_slope_x(y)
+
+   Get the corresponding x coordinate of a given y coordinate for the
+   slope.
+
+SlopeBottomRight.get_slope_y(x)
+
+   Get the corresponding y coordinate of a given x coordinate for the
+   slope.
+
+
+xsge_physics.SlopeBottomRight Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SlopeBottomRight.event_physics_collision_right(other, move_loss)
+
+   Called when the right side of the slope collides with a collider in
+   the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+SlopeBottomRight.event_physics_collision_bottom(other, move_loss)
+
+   Called when the bottom side of the slope collides with a collider
+   in the sense of the physics system, rather than in the sense of SGE
+   collision detection.  See the documentation for
+   "sge.dsp.Object.event_collision()" for more information.
+
+
+xsge_physics.MobileWall
+-----------------------
+
+class xsge_physics.MobileWall(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for walls and slopes that can move.  When an object
+   of this class moves, it "pushes" any appropriate colliders, as a
+   real wall might be expected to do.
+
+   Note: For classes derived from this class to be useful, they also
+     need to inherit one or more of the other wall classes.  Objects
+     of this class that are not also objects of other classes will
+     naturally not collide.
+
+   Note: This class depends on use of "MobileWall.move_x()" and
+     "MobileWall.move_y()" to handle physics interactions.
+     "event_update_position()" uses these methods, so speed attributes
+     will work properly, but changing "x" and "y" manually will not
+     cause any physics to occur.
+
+   push_left
+
+      If set to "True", the wall will push any colliders collided with
+      as a result of the wall's movement to the left. Otherwise, the
+      wall will pass through such colliders.
+
+      Default value: "True"
+
+   push_right
+
+      If set to "True", the wall will push any colliders collided with
+      as a result of the wall's movement to the right. Otherwise, the
+      wall will pass through such colliders.
+
+      Default value: "True"
+
+   push_up
+
+      If set to "True", the wall will push any colliders collided with
+      as a result of the wall's movement upwards. Otherwise, the wall
+      will pass through such colliders.
+
+      Default value: "True"
+
+   push_down
+
+      If set to "True", the wall will push any colliders collided with
+      as a result of the wall's movement downwards. Otherwise, the
+      wall will pass through such colliders.
+
+      Default value: "True"
+
+   sticky_left
+
+      If set to "True", any colliders touching the left side of the
+      wall will move along with it, regardless of the direction of
+      movement, with the exception of colliders whose "nonstick_right"
+      values are "True".
+
+      Default value: "False"
+
+   sticky_right
+
+      If set to "True", any colliders touching the right side of the
+      wall will move along with it, regardless of the direction of
+      movement, with the exception of colliders whose "nonstick_left"
+      values are "True".
+
+      Default value: "False"
+
+   sticky_top
+
+      If set to "True", any colliders touching the top side of the
+      wall will move along with it, regardless of the direction of
+      movement, with the exception of colliders whose
+      "nonstick_bottom" values are "True".
+
+      Default value: "False"
+
+   sticky_bottom
+
+      If set to "True", any colliders touching the bottom side of the
+      wall will move along with it, regardless of the direction of
+      movement, with the exception of colliders whose "nonstick_top"
+      values are "True".
+
+      Default value: "False"
+
+
+xsge_physics.MobileWall methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MobileWall.get_stuck_colliders()
+
+   Return a list of "Collider" objects which are "stuck" to this wall
+   (i.e. will move along with the wall regardless of direction).
+
+MobileWall.move_x(move)
+
+   Move the wall horizontally, handling physics.
+
+   Arguments:
+
+   * "move" -- The amount to add to "x".
+
+MobileWall.move_y(move)
+
+   Move the wall vertically, handling physics.
+
+   Arguments:
+
+   * "move" -- The amount to add to "y".
+
+
+xsge_physics.MobileColliderWall
+-------------------------------
+
+class xsge_physics.MobileColliderWall(x, y, z=0, sprite=None, visible=True, active=True, checks_collisions=True, tangible=True, bbox_x=None, bbox_y=None, bbox_width=None, bbox_height=None, regulate_origin=False, collision_ellipse=False, collision_precise=False, xvelocity=0, yvelocity=0, xacceleration=0, yacceleration=0, xdeceleration=0, ydeceleration=0, image_index=0, image_origin_x=None, image_origin_y=None, image_fps=None, image_xscale=1, image_yscale=1, image_rotation=0, image_alpha=255, image_blend=None, image_blend_mode=None)
+
+   A parent class for mobile walls that are also colliders.  See the
+   documentation for "xsge_physics.Collider" and
+   "xsge_physics.MobileWall" for more information.
+
+   Note: Due to the way movement is implemented in this class, it is
+     not safe to move this object during its collision events.  Doing
+     so may cause colliders that should be stuck to this object to
+     become un-stuck, or cause this object to pass through colliders
+     it should be pushing.

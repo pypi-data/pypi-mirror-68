@@ -1,0 +1,161 @@
+This file has been dedicated to the public domain, to the extent
+possible under applicable law, via CC0. See
+http://creativecommons.org/publicdomain/zero/1.0/ for more
+information. This file is offered as-is, without any warranty.
+
+========================================================================
+
+0.13.2
+------------------------------------------------------------------------
+
+Misc changes:
+* Removed Python 2 support.
+* Modified the platformer example to use ulvl instead of xsge_tmx.
+
+
+0.13.1
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated and simplified the readme.
+
+
+0.13
+------------------------------------------------------------------------
+
+Additions:
++ xsge_physics.Collider.slope_acceleration
++ xsge_physics.Slope.slope_xacceleration
++ xsge_physics.Slope.slope_yacceleration
+
+Bugfixes:
+- Lack of documentation for get_slope_x and get_slope_y
+
+
+0.12
+------------------------------------------------------------------------
+
+Additions:
++ xsge_physics.Wall
++ xsge_physics.Slope
+
+
+0.11
+------------------------------------------------------------------------
+
+Additions:
++ xsge_physics.MobileWall.push_left
++ xsge_physics.MobileWall.push_right
++ xsge_physics.MobileWall.push_up
++ xsge_physics.MobileWall.push_down
++ xsge_physics.Collider.nonstick_left
++ xsge_physics.Collider.nonstick_right
++ xsge_physics.Collider.nonstick_top
++ xsge_physics.Collider.nonstick_bottom
+
+Misc changes:
+* Updated to SGE 0.23.
+
+
+0.10
+------------------------------------------------------------------------
+
+Misc changes:
+* Collider.move_x and Collider.move_y now take a "do_events" argument
+  controlling whether or not physics collision events should be
+  executed.
+* Collider.move_x and Collider.move_y now take an "exclude_events"
+  argument specifying certain walls that should not trigger physics
+  collision events.
+* Physics collision events are no longer called due to slopes you were
+  already logically on (i.e. you were on a wall or slope corresponding
+  with the direction being moved in already).
+
+Bugfixes:
+- Failure to properly stick to slopes when moving down
+- Failure to move past the top of slopes
+
+
+0.9
+------------------------------------------------------------------------
+
+Additions:
++ xsge_physics.MobileColliderWall
+
+Misc changes:
+* Wall collision events now have the move_loss attribute. This doesn't
+  actually do anything (0 is always passed to it), but it prevents these
+  events from conflicting with an attempt to inherit from both Collider
+  and a wall class at the same time.
+* Now takes advantage of object areas to avoid checking unnecessary
+  objects for the purpose of slope sticking.
+
+Bugfixes:
+- Incorrect number of arguments passed to Collider collision events by MobileWall
+- Incorrect "sticky" horizontal movement
+- Documentation for get_slope_x and get_slope_y being switched
+
+
+0.8.1
+------------------------------------------------------------------------
+
+Bugfixes:
+- References to "xsge.physics" remaining in the documentation
+
+
+0.8
+------------------------------------------------------------------------
+
+Misc changes:
+* Renamed from xsge.physics to xsge_physics.
+
+
+0.7
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated docstrings to stop referencing old directional collision events.
+* xsge.physics collision methods now have a "move_loss" attribute,
+  indicating how much movement was lost as a result of the collision.
+  (Only applies to Collider objects; MobileWall objects don't lose
+  movement as a result of collision, so they don't have the new attribute.)
+
+
+0.6
+------------------------------------------------------------------------
+
+Misc changes:
+* Methods checking whether a collider is touching walls now return a
+  list of such walls, rather than just returning True or False.  Less
+  efficient, but more useful.
+
+
+0.5
+------------------------------------------------------------------------
+
+Additions:
++ xsge.physics.MobileWall
+
+Misc changes:
+* "xsticky" and "ysticky" class attributes of slopes renamed to be more
+  specific and prevent name conflicts.
+* xsge.physics collision events are now special "event_physics_collision"
+  events, rather than just being the regular SGE collision events.
+* Slope collisions now happen before wall collisions (preventing some
+  bad behavior).
+* Objects now move along slopes at the speed that they should, rather
+  than maintaining the same x or y velocity (and therefore zipping at
+  high speed through slopes), by default.
+
+Bugfixes:
+- Incorrect behavior with slope stickiness (prevented it from doing its
+  job and caused other side effects)
+- Collision events in xsge.physics occurring with walls that were *behind*
+  the wall that was collided with
+- Getting stuck to slopes without actually touching them
+
+
+0.4
+------------------------------------------------------------------------
+
+First release.

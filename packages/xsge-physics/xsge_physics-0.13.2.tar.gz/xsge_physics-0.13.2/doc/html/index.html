@@ -1,0 +1,1051 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>xSGE Physics Framework &#8212; xSGE Physics Framework 0.13.2 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="xsge-physics-framework">
+<h1><a class="toc-backref" href="#id1">xSGE Physics Framework</a><a class="headerlink" href="#xsge-physics-framework" title="Permalink to this headline">¶</a></h1>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#xsge-physics-framework" id="id1">xSGE Physics Framework</a><ul>
+<li><a class="reference internal" href="#xsge-physics-classes" id="id2">xsge_physics Classes</a><ul>
+<li><a class="reference internal" href="#xsge-physics-collider" id="id3">xsge_physics.Collider</a><ul>
+<li><a class="reference internal" href="#xsge-physics-collider-methods" id="id4">xsge_physics.Collider Methods</a></li>
+<li><a class="reference internal" href="#xsge-physics-collider-event-methods" id="id5">xsge_physics.Collider Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-wall" id="id6">xsge_physics.Wall</a></li>
+<li><a class="reference internal" href="#xsge-physics-solidleft" id="id7">xsge_physics.SolidLeft</a><ul>
+<li><a class="reference internal" href="#xsge-physics-solidleft-event-methods" id="id8">xsge_physics.SolidLeft Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-solidright" id="id9">xsge_physics.SolidRight</a><ul>
+<li><a class="reference internal" href="#xsge-physics-solidright-event-methods" id="id10">xsge_physics.SolidRight Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-solidtop" id="id11">xsge_physics.SolidTop</a><ul>
+<li><a class="reference internal" href="#xsge-physics-solidtop-event-methods" id="id12">xsge_physics.SolidTop Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-solidbottom" id="id13">xsge_physics.SolidBottom</a><ul>
+<li><a class="reference internal" href="#xsge-physics-solidbottom-event-methods" id="id14">xsge_physics.SolidBottom Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-solid" id="id15">xsge_physics.Solid</a><ul>
+<li><a class="reference internal" href="#xsge-physics-solid-event-methods" id="id16">xsge_physics.Solid Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-slope" id="id17">xsge_physics.Slope</a></li>
+<li><a class="reference internal" href="#xsge-physics-slopetopleft" id="id18">xsge_physics.SlopeTopLeft</a><ul>
+<li><a class="reference internal" href="#xsge-physics-slopetopleft-methods" id="id19">xsge_physics.SlopeTopLeft Methods</a></li>
+<li><a class="reference internal" href="#xsge-physics-slopetopleft-event-methods" id="id20">xsge_physics.SlopeTopLeft Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-slopetopright" id="id21">xsge_physics.SlopeTopRight</a><ul>
+<li><a class="reference internal" href="#xsge-physics-slopetopright-methods" id="id22">xsge_physics.SlopeTopRight Methods</a></li>
+<li><a class="reference internal" href="#xsge-physics-slopetopright-event-methods" id="id23">xsge_physics.SlopeTopRight Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-slopebottomleft" id="id24">xsge_physics.SlopeBottomLeft</a><ul>
+<li><a class="reference internal" href="#xsge-physics-slopebottomleft-methods" id="id25">xsge_physics.SlopeBottomLeft Methods</a></li>
+<li><a class="reference internal" href="#xsge-physics-slopebottomleft-event-methods" id="id26">xsge_physics.SlopeBottomLeft Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-slopebottomright" id="id27">xsge_physics.SlopeBottomRight</a><ul>
+<li><a class="reference internal" href="#xsge-physics-slopebottomright-methods" id="id28">xsge_physics.SlopeBottomRight Methods</a></li>
+<li><a class="reference internal" href="#xsge-physics-slopebottomright-event-methods" id="id29">xsge_physics.SlopeBottomRight Event Methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-mobilewall" id="id30">xsge_physics.MobileWall</a><ul>
+<li><a class="reference internal" href="#xsge-physics-mobilewall-methods" id="id31">xsge_physics.MobileWall methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#xsge-physics-mobilecolliderwall" id="id32">xsge_physics.MobileColliderWall</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<span class="target" id="module-xsge_physics"></span><p>xSGE is a collection of extensions for the SGE licensed under the GNU
+General Public License.  They are designed to give additional features
+to free/libre software games which aren't necessary, but are nice to
+have.</p>
+<p>xSGE extensions are not dependent on any particular SGE implementation.
+They should work with any implementation that follows the specification.</p>
+<p>This extension provides an easy-to-use framework for collision physics.
+This is especially useful for platformers, though it can also be useful
+for other types of games.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>This collision system supports plain rectangle-based collision
+detection ONLY.  Attempting to use precise or ellipse collision
+detection will not work as you expect, and may often not even work at
+all.  This is because implementing support for such mask-based
+collision detection would be guaranteed to be slow, unreliable, and
+needlessly complicated; it's not worth it.</p>
+<p class="last">If you must use precise collision detection, consider doing so with
+a separate object that follows the appropriate <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a>
+object.</p>
+</div>
+<div class="section" id="xsge-physics-classes">
+<h2><a class="toc-backref" href="#id2">xsge_physics Classes</a><a class="headerlink" href="#xsge-physics-classes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="xsge-physics-collider">
+<h3><a class="toc-backref" href="#id3">xsge_physics.Collider</a><a class="headerlink" href="#xsge-physics-collider" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.Collider">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">Collider</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for objects which have physics interactions.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This class depends on use of <a class="reference internal" href="#xsge_physics.Collider.move_x" title="xsge_physics.Collider.move_x"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Collider.move_x()</span></code></a> and
+<a class="reference internal" href="#xsge_physics.Collider.move_y" title="xsge_physics.Collider.move_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Collider.move_y()</span></code></a> to handle physics interactions.
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">event_update_position()</span></code> uses these methods, so speed
+attributes will work properly, but changing <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">y</span></code> manually will not cause any physics to occur.</p>
+</div>
+<dl class="attribute">
+<dt id="xsge_physics.Collider.nonstick_left">
+<code class="descname">nonstick_left</code><a class="headerlink" href="#xsge_physics.Collider.nonstick_left" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.Collider.nonstick_right">
+<code class="descname">nonstick_right</code><a class="headerlink" href="#xsge_physics.Collider.nonstick_right" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.Collider.nonstick_top">
+<code class="descname">nonstick_top</code><a class="headerlink" href="#xsge_physics.Collider.nonstick_top" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.Collider.nonstick_bottom">
+<code class="descname">nonstick_bottom</code><a class="headerlink" href="#xsge_physics.Collider.nonstick_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>These attributes are used by certain wall classes to exclude the
+object from &quot;sticking&quot; to the wall.  See the documentation for
+the wall classes for more information.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.Collider.slope_acceleration">
+<code class="descname">slope_acceleration</code><a class="headerlink" href="#xsge_physics.Collider.slope_acceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>The factor by which the collider accelerates on slopes.  This is
+multiplied by the <code class="xref py py-attr docutils literal notranslate"><span class="pre">slope_xacceleration</span></code> and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">slope_yacceleration</span></code> values of any slopes the collider is
+touching and added to the use of <code class="xref py py-attr docutils literal notranslate"><span class="pre">xacceleration</span></code> and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">yacceleration</span></code> by <code class="xref py py-meth docutils literal notranslate"><span class="pre">event_update_position()</span></code>.</p>
+<p>Default value: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-collider-methods">
+<h4><a class="toc-backref" href="#id4">xsge_physics.Collider Methods</a><a class="headerlink" href="#xsge-physics-collider-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.Collider.move_x">
+<code class="descclassname">Collider.</code><code class="descname">move_x</code><span class="sig-paren">(</span><em>move</em>, <em>absolute=False</em>, <em>do_events=True</em>, <em>exclude_events=()</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.move_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the object horizontally, handling physics.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">move</span></code> -- The amount to add to <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">absolute</span></code> -- If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the distance moved
+horizontally is absolute, i.e. will not be reduced as a result
+of vertical movement caused by slopes.  Otherwise, any
+vertical movement caused by slopes will result in a reduction
+of horizontal movement.</li>
+<li><code class="docutils literal notranslate"><span class="pre">do_events</span></code> -- Whether or not physics collision events
+should be executed when appropriate.</li>
+<li><code class="docutils literal notranslate"><span class="pre">exclude_events</span></code> -- A set, list, or tuple of wall objects
+which should not cause collision events to be executed if
+collided with.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.move_y">
+<code class="descclassname">Collider.</code><code class="descname">move_y</code><span class="sig-paren">(</span><em>move</em>, <em>absolute=False</em>, <em>do_events=True</em>, <em>exclude_events=()</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.move_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the object vertically, handling physics.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">move</span></code> -- The amount to add to <code class="xref py py-attr docutils literal notranslate"><span class="pre">y</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">absolute</span></code> -- If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the distance moved
+vertically is absolute, i.e. will not be reduced as a result
+of horizontal movement caused by slopes.  Otherwise, any
+horizontal movement caused by slopes will result in a
+reduction of vertical movement.</li>
+<li><code class="docutils literal notranslate"><span class="pre">do_events</span></code> -- Whether or not physics collision events
+should be executed when appropriate.</li>
+<li><code class="docutils literal notranslate"><span class="pre">exclude_events</span></code> -- A set, list, or tuple of wall objects
+which should not cause collision events to be executed if
+collided with.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_left_touching_wall">
+<code class="descclassname">Collider.</code><code class="descname">get_left_touching_wall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_left_touching_wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SolidRight" title="xsge_physics.SolidRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidRight</span></code></a> objects whose right sides
+are touching the left side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_right_touching_wall">
+<code class="descclassname">Collider.</code><code class="descname">get_right_touching_wall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_right_touching_wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SolidLeft" title="xsge_physics.SolidLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidLeft</span></code></a> objects whose left sides are
+touching the right side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_top_touching_wall">
+<code class="descclassname">Collider.</code><code class="descname">get_top_touching_wall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_top_touching_wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SolidTop" title="xsge_physics.SolidTop"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidTop</span></code></a> objects whose top sides are
+touching the bottom side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_bottom_touching_wall">
+<code class="descclassname">Collider.</code><code class="descname">get_bottom_touching_wall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_bottom_touching_wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SolidBottom" title="xsge_physics.SolidBottom"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidBottom</span></code></a> objects whose bottom sides
+are touching the top side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_left_touching_slope">
+<code class="descclassname">Collider.</code><code class="descname">get_left_touching_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_left_touching_slope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SlopeTopRight" title="xsge_physics.SlopeTopRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeTopRight</span></code></a> and
+<a class="reference internal" href="#xsge_physics.SlopeBottomRight" title="xsge_physics.SlopeBottomRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeBottomRight</span></code></a> objects whose right sides are touching
+the left side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_right_touching_slope">
+<code class="descclassname">Collider.</code><code class="descname">get_right_touching_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_right_touching_slope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SlopeTopLeft" title="xsge_physics.SlopeTopLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeTopLeft</span></code></a> and
+<a class="reference internal" href="#xsge_physics.SlopeBottomLeft" title="xsge_physics.SlopeBottomLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeBottomLeft</span></code></a> objects whose left sides are touching
+the right side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_top_touching_slope">
+<code class="descclassname">Collider.</code><code class="descname">get_top_touching_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_top_touching_slope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SlopeBottomLeft" title="xsge_physics.SlopeBottomLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeBottomLeft</span></code></a> and
+<a class="reference internal" href="#xsge_physics.SlopeBottomRight" title="xsge_physics.SlopeBottomRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeBottomRight</span></code></a> objects whose bottom sides are
+touching the top side of this object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.get_bottom_touching_slope">
+<code class="descclassname">Collider.</code><code class="descname">get_bottom_touching_slope</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.get_bottom_touching_slope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.SlopeTopLeft" title="xsge_physics.SlopeTopLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeTopLeft</span></code></a> and
+<a class="reference internal" href="#xsge_physics.SlopeTopRight" title="xsge_physics.SlopeTopRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SlopeTopRight</span></code></a> objects whose top sides are touching the
+bottom side of this object.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-collider-event-methods">
+<h4><a class="toc-backref" href="#id5">xsge_physics.Collider Event Methods</a><a class="headerlink" href="#xsge-physics-collider-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.Collider.event_physics_collision_left">
+<code class="descclassname">Collider.</code><code class="descname">event_physics_collision_left</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.event_physics_collision_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the left side of the collider collides with a wall
+or slope in the sense of the physics system, rather than in the
+sense of SGE collision detection.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">move_loss</span></code> -- The amount of movement that was prevented by
+the collision in pixels.  For example, if the object would
+have moved 6 pixels, but only moved 2 pixels as a result of
+this collision, this value will be <code class="docutils literal notranslate"><span class="pre">4</span></code>.  This can be used to
+undo such a reduction in movement.</li>
+</ul>
+<p>See the documentation for <code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code>
+for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.event_physics_collision_right">
+<code class="descclassname">Collider.</code><code class="descname">event_physics_collision_right</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.event_physics_collision_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the right side of the collider collides with a wall
+or slope in the sense of the physics system, rather than in the
+sense of SGE collision detection.  See the documentation for
+<a class="reference internal" href="#xsge_physics.Collider.event_physics_collision_left" title="xsge_physics.Collider.event_physics_collision_left"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xsge_physics.Collider.event_physics_collision_left()</span></code></a> for
+more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.event_physics_collision_top">
+<code class="descclassname">Collider.</code><code class="descname">event_physics_collision_top</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.event_physics_collision_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the top side of the collider collides with a wall or
+slope in the sense of the physics system, rather than in the
+sense of SGE collision detection.  See the documentation for
+<a class="reference internal" href="#xsge_physics.Collider.event_physics_collision_left" title="xsge_physics.Collider.event_physics_collision_left"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xsge_physics.Collider.event_physics_collision_left()</span></code></a> for
+more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Collider.event_physics_collision_bottom">
+<code class="descclassname">Collider.</code><code class="descname">event_physics_collision_bottom</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Collider.event_physics_collision_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the bottom side of the collider collides with a wall
+or slope in the sense of the physics system, rather than in the
+sense of SGE collision detection.  See the documentation for
+<a class="reference internal" href="#xsge_physics.Collider.event_physics_collision_left" title="xsge_physics.Collider.event_physics_collision_left"><code class="xref py py-meth docutils literal notranslate"><span class="pre">xsge_physics.Collider.event_physics_collision_left()</span></code></a> for
+more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-wall">
+<h3><a class="toc-backref" href="#id6">xsge_physics.Wall</a><a class="headerlink" href="#xsge-physics-wall" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.Wall">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">Wall</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all wall objects that <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects
+interact with in some way.  It is functionally identical to its
+parent class, <code class="xref py py-class docutils literal notranslate"><span class="pre">sge.dsp.Object</span></code>.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-solidleft">
+<h3><a class="toc-backref" href="#id7">xsge_physics.SolidLeft</a><a class="headerlink" href="#xsge-physics-solidleft" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SolidLeft">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SolidLeft</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for walls which stop movement of <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects
+from the top.</p>
+</dd></dl>
+
+<div class="section" id="xsge-physics-solidleft-event-methods">
+<h4><a class="toc-backref" href="#id8">xsge_physics.SolidLeft Event Methods</a><a class="headerlink" href="#xsge-physics-solidleft-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SolidLeft.event_physics_collision_left">
+<code class="descclassname">SolidLeft.</code><code class="descname">event_physics_collision_left</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidLeft.event_physics_collision_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the left side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-solidright">
+<h3><a class="toc-backref" href="#id9">xsge_physics.SolidRight</a><a class="headerlink" href="#xsge-physics-solidright" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SolidRight">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SolidRight</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidRight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for walls which stop movement of <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects
+from the right.</p>
+</dd></dl>
+
+<div class="section" id="xsge-physics-solidright-event-methods">
+<h4><a class="toc-backref" href="#id10">xsge_physics.SolidRight Event Methods</a><a class="headerlink" href="#xsge-physics-solidright-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SolidRight.event_physics_collision_right">
+<code class="descclassname">SolidRight.</code><code class="descname">event_physics_collision_right</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidRight.event_physics_collision_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the right side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-solidtop">
+<h3><a class="toc-backref" href="#id11">xsge_physics.SolidTop</a><a class="headerlink" href="#xsge-physics-solidtop" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SolidTop">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SolidTop</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidTop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for walls which stop movement of <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects
+from the top.</p>
+</dd></dl>
+
+<div class="section" id="xsge-physics-solidtop-event-methods">
+<h4><a class="toc-backref" href="#id12">xsge_physics.SolidTop Event Methods</a><a class="headerlink" href="#xsge-physics-solidtop-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SolidTop.event_physics_collision_top">
+<code class="descclassname">SolidTop.</code><code class="descname">event_physics_collision_top</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidTop.event_physics_collision_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the top side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-solidbottom">
+<h3><a class="toc-backref" href="#id13">xsge_physics.SolidBottom</a><a class="headerlink" href="#xsge-physics-solidbottom" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SolidBottom">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SolidBottom</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidBottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class for walls which stop movement of <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects
+from the bottom.</p>
+</dd></dl>
+
+<div class="section" id="xsge-physics-solidbottom-event-methods">
+<h4><a class="toc-backref" href="#id14">xsge_physics.SolidBottom Event Methods</a><a class="headerlink" href="#xsge-physics-solidbottom-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SolidBottom.event_physics_collision_bottom">
+<code class="descclassname">SolidBottom.</code><code class="descname">event_physics_collision_bottom</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SolidBottom.event_physics_collision_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the bottom side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-solid">
+<h3><a class="toc-backref" href="#id15">xsge_physics.Solid</a><a class="headerlink" href="#xsge-physics-solid" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.Solid">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">Solid</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Solid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inherits <a class="reference internal" href="#xsge_physics.SolidLeft" title="xsge_physics.SolidLeft"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidLeft</span></code></a>, <a class="reference internal" href="#xsge_physics.SolidRight" title="xsge_physics.SolidRight"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidRight</span></code></a>, <a class="reference internal" href="#xsge_physics.SolidTop" title="xsge_physics.SolidTop"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidTop</span></code></a>,
+and <a class="reference internal" href="#xsge_physics.SolidBottom" title="xsge_physics.SolidBottom"><code class="xref py py-class docutils literal notranslate"><span class="pre">SolidBottom</span></code></a>.  Meant to be a convenient parent class for
+walls that should stop movement in all directions.</p>
+</dd></dl>
+
+<div class="section" id="xsge-physics-solid-event-methods">
+<h4><a class="toc-backref" href="#id16">xsge_physics.Solid Event Methods</a><a class="headerlink" href="#xsge-physics-solid-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.Solid.event_physics_collision_left">
+<code class="descclassname">Solid.</code><code class="descname">event_physics_collision_left</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Solid.event_physics_collision_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the left side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Solid.event_physics_collision_right">
+<code class="descclassname">Solid.</code><code class="descname">event_physics_collision_right</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Solid.event_physics_collision_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the right side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Solid.event_physics_collision_top">
+<code class="descclassname">Solid.</code><code class="descname">event_physics_collision_top</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Solid.event_physics_collision_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the top side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.Solid.event_physics_collision_bottom">
+<code class="descclassname">Solid.</code><code class="descname">event_physics_collision_bottom</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Solid.event_physics_collision_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the bottom side of the wall collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-slope">
+<h3><a class="toc-backref" href="#id17">xsge_physics.Slope</a><a class="headerlink" href="#xsge-physics-slope" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.Slope">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">Slope</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.Slope" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for all slopes.</p>
+<dl class="attribute">
+<dt id="xsge_physics.Slope.slope_xacceleration">
+<code class="descname">slope_xacceleration</code><a class="headerlink" href="#xsge_physics.Slope.slope_xacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the amount of horizontal acceleration to apply to any
+collider which is touching the slope.  It is multiplied by the
+affected colliders' <code class="xref py py-attr docutils literal notranslate"><span class="pre">slope_acceleration</span></code> values and added
+to their use of <code class="xref py py-attr docutils literal notranslate"><span class="pre">xacceleration</span></code> in
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">event_update_position()</span></code>.</p>
+<p>Default value: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.Slope.slope_yacceleration">
+<code class="descname">slope_yacceleration</code><a class="headerlink" href="#xsge_physics.Slope.slope_yacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indicates the amount of vertical acceleration to apply to any
+collider which is touching the slope.  It is multiplied by the
+affected colliders' <code class="xref py py-attr docutils literal notranslate"><span class="pre">slope_acceleration</span></code> values and added
+to their use of <code class="xref py py-attr docutils literal notranslate"><span class="pre">yacceleration</span></code> in
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">event_update_position()</span></code>.</p>
+<p>Default value: <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-slopetopleft">
+<h3><a class="toc-backref" href="#id18">xsge_physics.SlopeTopLeft</a><a class="headerlink" href="#xsge-physics-slopetopleft" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SlopeTopLeft">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SlopeTopLeft</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for slopes which point in some direction upwards and
+to the left.</p>
+<p>Slopes of this type go from the bottom-left corner to the top-right
+corner of the bounding box.</p>
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopLeft.xsticky_top">
+<code class="descname">xsticky_top</code><a class="headerlink" href="#xsge_physics.SlopeTopLeft.xsticky_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves to the left while
+touching the top side of the slope will attempt to keep touching
+the top side of the slope by moving downward, unless the
+collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_bottom</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopLeft.ysticky_left">
+<code class="descname">ysticky_left</code><a class="headerlink" href="#xsge_physics.SlopeTopLeft.ysticky_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves upward while
+touching the left side of the slope will attempt to keep touching
+the left side of the slope by moving to the right, unless the
+collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_right</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopLeft.slope_xacceleration">
+<code class="descname">slope_xacceleration</code><a class="headerlink" href="#xsge_physics.SlopeTopLeft.slope_xacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_xacceleration" title="xsge_physics.Slope.slope_xacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_xacceleration</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopLeft.slope_yacceleration">
+<code class="descname">slope_yacceleration</code><a class="headerlink" href="#xsge_physics.SlopeTopLeft.slope_yacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_yacceleration" title="xsge_physics.Slope.slope_yacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_yacceleration</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-slopetopleft-methods">
+<h4><a class="toc-backref" href="#id19">xsge_physics.SlopeTopLeft Methods</a><a class="headerlink" href="#xsge-physics-slopetopleft-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeTopLeft.get_slope_x">
+<code class="descclassname">SlopeTopLeft.</code><code class="descname">get_slope_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopLeft.get_slope_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding x coordinate of a given y coordinate for
+the slope.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeTopLeft.get_slope_y">
+<code class="descclassname">SlopeTopLeft.</code><code class="descname">get_slope_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopLeft.get_slope_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding y coordinate of a given x coordinate for
+the slope.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-slopetopleft-event-methods">
+<h4><a class="toc-backref" href="#id20">xsge_physics.SlopeTopLeft Event Methods</a><a class="headerlink" href="#xsge-physics-slopetopleft-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeTopLeft.event_physics_collision_left">
+<code class="descclassname">SlopeTopLeft.</code><code class="descname">event_physics_collision_left</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopLeft.event_physics_collision_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the left side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeTopLeft.event_physics_collision_top">
+<code class="descclassname">SlopeTopLeft.</code><code class="descname">event_physics_collision_top</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopLeft.event_physics_collision_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the top side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-slopetopright">
+<h3><a class="toc-backref" href="#id21">xsge_physics.SlopeTopRight</a><a class="headerlink" href="#xsge-physics-slopetopright" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SlopeTopRight">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SlopeTopRight</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopRight" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for slopes which point in some direction upwards and
+to the right.</p>
+<p>Slopes of this type go from the top-left corner to the bottom-right
+corner of the bounding box.</p>
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopRight.xsticky_top">
+<code class="descname">xsticky_top</code><a class="headerlink" href="#xsge_physics.SlopeTopRight.xsticky_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves to the right while
+touching the top side of the slope will attempt to keep touching
+the top side of the slope by moving downward, unless the
+collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_bottom</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopRight.ysticky_right">
+<code class="descname">ysticky_right</code><a class="headerlink" href="#xsge_physics.SlopeTopRight.ysticky_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves upward while
+touching the right side of the slope will attempt to keep
+touching the right side of the slope by moving to the left,
+unless the collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_left</span></code> value is
+<code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopRight.slope_xacceleration">
+<code class="descname">slope_xacceleration</code><a class="headerlink" href="#xsge_physics.SlopeTopRight.slope_xacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_xacceleration" title="xsge_physics.Slope.slope_xacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_xacceleration</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeTopRight.slope_yacceleration">
+<code class="descname">slope_yacceleration</code><a class="headerlink" href="#xsge_physics.SlopeTopRight.slope_yacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_yacceleration" title="xsge_physics.Slope.slope_yacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_yacceleration</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-slopetopright-methods">
+<h4><a class="toc-backref" href="#id22">xsge_physics.SlopeTopRight Methods</a><a class="headerlink" href="#xsge-physics-slopetopright-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeTopRight.get_slope_x">
+<code class="descclassname">SlopeTopRight.</code><code class="descname">get_slope_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopRight.get_slope_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding x coordinate of a given y coordinate for
+the slope.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeTopRight.get_slope_y">
+<code class="descclassname">SlopeTopRight.</code><code class="descname">get_slope_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopRight.get_slope_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding y coordinate of a given x coordinate for
+the slope.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-slopetopright-event-methods">
+<h4><a class="toc-backref" href="#id23">xsge_physics.SlopeTopRight Event Methods</a><a class="headerlink" href="#xsge-physics-slopetopright-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeTopRight.event_physics_collision_right">
+<code class="descclassname">SlopeTopRight.</code><code class="descname">event_physics_collision_right</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopRight.event_physics_collision_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the right side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeTopRight.event_physics_collision_top">
+<code class="descclassname">SlopeTopRight.</code><code class="descname">event_physics_collision_top</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeTopRight.event_physics_collision_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the top side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-slopebottomleft">
+<h3><a class="toc-backref" href="#id24">xsge_physics.SlopeBottomLeft</a><a class="headerlink" href="#xsge-physics-slopebottomleft" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SlopeBottomLeft">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SlopeBottomLeft</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomLeft" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for slopes which point in some direction upwards and
+to the left.</p>
+<p>Slopes of this type go from the top-left corner to the bottom-right
+corner of the bounding box.</p>
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomLeft.xsticky_bottom">
+<code class="descname">xsticky_bottom</code><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.xsticky_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves to the left while
+touching the bottom side of the slope will attempt to keep
+touching the bottom side of the slope by moving upward, unless
+the collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_top</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomLeft.ysticky_left">
+<code class="descname">ysticky_left</code><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.ysticky_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves downward while
+touching the left side of the slope will attempt to keep touching
+the left side of the slope by moving to the right, unless the
+collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_right</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomLeft.slope_xacceleration">
+<code class="descname">slope_xacceleration</code><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.slope_xacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_xacceleration" title="xsge_physics.Slope.slope_xacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_xacceleration</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomLeft.slope_yacceleration">
+<code class="descname">slope_yacceleration</code><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.slope_yacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_yacceleration" title="xsge_physics.Slope.slope_yacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_yacceleration</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-slopebottomleft-methods">
+<h4><a class="toc-backref" href="#id25">xsge_physics.SlopeBottomLeft Methods</a><a class="headerlink" href="#xsge-physics-slopebottomleft-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomLeft.get_slope_x">
+<code class="descclassname">SlopeBottomLeft.</code><code class="descname">get_slope_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.get_slope_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding x coordinate of a given y coordinate for
+the slope.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomLeft.get_slope_y">
+<code class="descclassname">SlopeBottomLeft.</code><code class="descname">get_slope_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.get_slope_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding y coordinate of a given x coordinate for
+the slope.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-slopebottomleft-event-methods">
+<h4><a class="toc-backref" href="#id26">xsge_physics.SlopeBottomLeft Event Methods</a><a class="headerlink" href="#xsge-physics-slopebottomleft-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomLeft.event_physics_collision_left">
+<code class="descclassname">SlopeBottomLeft.</code><code class="descname">event_physics_collision_left</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.event_physics_collision_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the left side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomLeft.event_physics_collision_bottom">
+<code class="descclassname">SlopeBottomLeft.</code><code class="descname">event_physics_collision_bottom</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomLeft.event_physics_collision_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the bottom side of the slope collides with a
+collider in the sense of the physics system, rather than in the
+sense of SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-slopebottomright">
+<h3><a class="toc-backref" href="#id27">xsge_physics.SlopeBottomRight</a><a class="headerlink" href="#xsge-physics-slopebottomright" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.SlopeBottomRight">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">SlopeBottomRight</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomRight" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for slopes which point in some direction upwards and
+to the right.</p>
+<p>Slopes of this type go from the bottom-left corner to the top-right
+corner of the bounding box.</p>
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomRight.xsticky_bottom">
+<code class="descname">xsticky_bottom</code><a class="headerlink" href="#xsge_physics.SlopeBottomRight.xsticky_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves to the right while
+touching the bottom side of the slope will attempt to keep
+touching the bottom side of the slope by moving upward, unless
+the collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_top</span></code> value is <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomRight.ysticky_right">
+<code class="descname">ysticky_right</code><a class="headerlink" href="#xsge_physics.SlopeBottomRight.ysticky_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, a collider that moves downward while
+touching the right side of the slope will attempt to keep
+touching the right side of the slope by moving to the right,
+unless the collider's <code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_left</span></code> value is
+<code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomRight.slope_xacceleration">
+<code class="descname">slope_xacceleration</code><a class="headerlink" href="#xsge_physics.SlopeBottomRight.slope_xacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_xacceleration" title="xsge_physics.Slope.slope_xacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_xacceleration</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.SlopeBottomRight.slope_yacceleration">
+<code class="descname">slope_yacceleration</code><a class="headerlink" href="#xsge_physics.SlopeBottomRight.slope_yacceleration" title="Permalink to this definition">¶</a></dt>
+<dd><p>See the documentation for <a class="reference internal" href="#xsge_physics.Slope.slope_yacceleration" title="xsge_physics.Slope.slope_yacceleration"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Slope.slope_yacceleration</span></code></a>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-slopebottomright-methods">
+<h4><a class="toc-backref" href="#id28">xsge_physics.SlopeBottomRight Methods</a><a class="headerlink" href="#xsge-physics-slopebottomright-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomRight.get_slope_x">
+<code class="descclassname">SlopeBottomRight.</code><code class="descname">get_slope_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomRight.get_slope_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding x coordinate of a given y coordinate for
+the slope.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomRight.get_slope_y">
+<code class="descclassname">SlopeBottomRight.</code><code class="descname">get_slope_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomRight.get_slope_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the corresponding y coordinate of a given x coordinate for
+the slope.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="xsge-physics-slopebottomright-event-methods">
+<h4><a class="toc-backref" href="#id29">xsge_physics.SlopeBottomRight Event Methods</a><a class="headerlink" href="#xsge-physics-slopebottomright-event-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomRight.event_physics_collision_right">
+<code class="descclassname">SlopeBottomRight.</code><code class="descname">event_physics_collision_right</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomRight.event_physics_collision_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the right side of the slope collides with a collider
+in the sense of the physics system, rather than in the sense of
+SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.SlopeBottomRight.event_physics_collision_bottom">
+<code class="descclassname">SlopeBottomRight.</code><code class="descname">event_physics_collision_bottom</code><span class="sig-paren">(</span><em>other</em>, <em>move_loss</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.SlopeBottomRight.event_physics_collision_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Called when the bottom side of the slope collides with a
+collider in the sense of the physics system, rather than in the
+sense of SGE collision detection.  See the documentation for
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">sge.dsp.Object.event_collision()</span></code> for more information.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-mobilewall">
+<h3><a class="toc-backref" href="#id30">xsge_physics.MobileWall</a><a class="headerlink" href="#xsge-physics-mobilewall" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.MobileWall">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">MobileWall</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.MobileWall" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for walls and slopes that can move.  When an object
+of this class moves, it &quot;pushes&quot; any appropriate colliders, as a
+real wall might be expected to do.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For classes derived from this class to be useful, they also need
+to inherit one or more of the other wall classes.  Objects of
+this class that are not also objects of other classes will
+naturally not collide.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This class depends on use of <a class="reference internal" href="#xsge_physics.MobileWall.move_x" title="xsge_physics.MobileWall.move_x"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MobileWall.move_x()</span></code></a> and
+<a class="reference internal" href="#xsge_physics.MobileWall.move_y" title="xsge_physics.MobileWall.move_y"><code class="xref py py-meth docutils literal notranslate"><span class="pre">MobileWall.move_y()</span></code></a> to handle physics interactions.
+<code class="xref py py-meth docutils literal notranslate"><span class="pre">event_update_position()</span></code> uses these methods, so speed
+attributes will work properly, but changing <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> and
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">y</span></code> manually will not cause any physics to occur.</p>
+</div>
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.push_left">
+<code class="descname">push_left</code><a class="headerlink" href="#xsge_physics.MobileWall.push_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the wall will push any colliders
+collided with as a result of the wall's movement to the left.
+Otherwise, the wall will pass through such colliders.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.push_right">
+<code class="descname">push_right</code><a class="headerlink" href="#xsge_physics.MobileWall.push_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the wall will push any colliders
+collided with as a result of the wall's movement to the right.
+Otherwise, the wall will pass through such colliders.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.push_up">
+<code class="descname">push_up</code><a class="headerlink" href="#xsge_physics.MobileWall.push_up" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the wall will push any colliders
+collided with as a result of the wall's movement upwards.
+Otherwise, the wall will pass through such colliders.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.push_down">
+<code class="descname">push_down</code><a class="headerlink" href="#xsge_physics.MobileWall.push_down" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, the wall will push any colliders
+collided with as a result of the wall's movement downwards.
+Otherwise, the wall will pass through such colliders.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.sticky_left">
+<code class="descname">sticky_left</code><a class="headerlink" href="#xsge_physics.MobileWall.sticky_left" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, any colliders touching the left side of
+the wall will move along with it, regardless of the direction of
+movement, with the exception of colliders whose
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_right</span></code> values are <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.sticky_right">
+<code class="descname">sticky_right</code><a class="headerlink" href="#xsge_physics.MobileWall.sticky_right" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, any colliders touching the right side of
+the wall will move along with it, regardless of the direction of
+movement, with the exception of colliders whose
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_left</span></code> values are <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.sticky_top">
+<code class="descname">sticky_top</code><a class="headerlink" href="#xsge_physics.MobileWall.sticky_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, any colliders touching the top side of
+the wall will move along with it, regardless of the direction of
+movement, with the exception of colliders whose
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_bottom</span></code> values are <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="xsge_physics.MobileWall.sticky_bottom">
+<code class="descname">sticky_bottom</code><a class="headerlink" href="#xsge_physics.MobileWall.sticky_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>If set to <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>, any colliders touching the bottom side
+of the wall will move along with it, regardless of the direction
+of movement, with the exception of colliders whose
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">nonstick_top</span></code> values are <code class="xref py py-const docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>Default value: <code class="xref py py-const docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="section" id="xsge-physics-mobilewall-methods">
+<h4><a class="toc-backref" href="#id31">xsge_physics.MobileWall methods</a><a class="headerlink" href="#xsge-physics-mobilewall-methods" title="Permalink to this headline">¶</a></h4>
+<dl class="method">
+<dt id="xsge_physics.MobileWall.get_stuck_colliders">
+<code class="descclassname">MobileWall.</code><code class="descname">get_stuck_colliders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.MobileWall.get_stuck_colliders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">Collider</span></code></a> objects which are &quot;stuck&quot; to
+this wall (i.e. will move along with the wall regardless of
+direction).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.MobileWall.move_x">
+<code class="descclassname">MobileWall.</code><code class="descname">move_x</code><span class="sig-paren">(</span><em>move</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.MobileWall.move_x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the wall horizontally, handling physics.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">move</span></code> -- The amount to add to <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code>.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="xsge_physics.MobileWall.move_y">
+<code class="descclassname">MobileWall.</code><code class="descname">move_y</code><span class="sig-paren">(</span><em>move</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.MobileWall.move_y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the wall vertically, handling physics.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">move</span></code> -- The amount to add to <code class="xref py py-attr docutils literal notranslate"><span class="pre">y</span></code>.</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="xsge-physics-mobilecolliderwall">
+<h3><a class="toc-backref" href="#id32">xsge_physics.MobileColliderWall</a><a class="headerlink" href="#xsge-physics-mobilecolliderwall" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="xsge_physics.MobileColliderWall">
+<em class="property">class </em><code class="descclassname">xsge_physics.</code><code class="descname">MobileColliderWall</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>z=0</em>, <em>sprite=None</em>, <em>visible=True</em>, <em>active=True</em>, <em>checks_collisions=True</em>, <em>tangible=True</em>, <em>bbox_x=None</em>, <em>bbox_y=None</em>, <em>bbox_width=None</em>, <em>bbox_height=None</em>, <em>regulate_origin=False</em>, <em>collision_ellipse=False</em>, <em>collision_precise=False</em>, <em>xvelocity=0</em>, <em>yvelocity=0</em>, <em>xacceleration=0</em>, <em>yacceleration=0</em>, <em>xdeceleration=0</em>, <em>ydeceleration=0</em>, <em>image_index=0</em>, <em>image_origin_x=None</em>, <em>image_origin_y=None</em>, <em>image_fps=None</em>, <em>image_xscale=1</em>, <em>image_yscale=1</em>, <em>image_rotation=0</em>, <em>image_alpha=255</em>, <em>image_blend=None</em>, <em>image_blend_mode=None</em><span class="sig-paren">)</span><a class="headerlink" href="#xsge_physics.MobileColliderWall" title="Permalink to this definition">¶</a></dt>
+<dd><p>A parent class for mobile walls that are also colliders.  See the
+documentation for <a class="reference internal" href="#xsge_physics.Collider" title="xsge_physics.Collider"><code class="xref py py-class docutils literal notranslate"><span class="pre">xsge_physics.Collider</span></code></a> and
+<a class="reference internal" href="#xsge_physics.MobileWall" title="xsge_physics.MobileWall"><code class="xref py py-class docutils literal notranslate"><span class="pre">xsge_physics.MobileWall</span></code></a> for more information.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Due to the way movement is implemented in this class, it is not
+safe to move this object during its collision events.  Doing so
+may cause colliders that should be stuck to this object to become
+un-stuck, or cause this object to pass through colliders it
+should be pushing.</p>
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/xsge_logo_alpha_black.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="#">xSGE Physics Framework</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
