@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+scpi/__init__.py
+scpi_protocol.egg-info/PKG-INFO
+scpi_protocol.egg-info/SOURCES.txt
+scpi_protocol.egg-info/dependency_links.txt
+scpi_protocol.egg-info/requires.txt
+scpi_protocol.egg-info/top_level.txt
+scpi_protocol.egg-info/zip-safe

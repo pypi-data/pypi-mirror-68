@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: scpi-protocol
+Version: 0.2.0
+Summary: Sans I/O SCPI protocol parser
+Home-page: https://gitlab.com/tiagocoutinho/scpi-protocol/
+Author: Jose Tiago Macara Coutinho
+Author-email: coutinhotiago@gmail.com
+License: GPLv3+
+Description: # scpi-protocol
+        
+        ![Pypi version][pypi]
+        
+        Sans I/O python SCPI parser library.
+        
+        ## Installation
+        
+        From within your favourite python environment:
+        
+        ```console
+        pip install scpi-protocol
+        ```
+        
+        [pypi]: https://img.shields.io/pypi/pyversions/scpi-protocol.svg
+        
+        
+Keywords: SCPI,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
