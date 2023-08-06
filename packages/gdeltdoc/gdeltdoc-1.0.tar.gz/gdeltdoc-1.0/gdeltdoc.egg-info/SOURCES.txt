@@ -1,0 +1,13 @@
+README.md
+setup.py
+gdeltdoc/__init__.py
+gdeltdoc/api_client.py
+gdeltdoc/errors.py
+gdeltdoc/filters.py
+gdeltdoc.egg-info/PKG-INFO
+gdeltdoc.egg-info/SOURCES.txt
+gdeltdoc.egg-info/dependency_links.txt
+gdeltdoc.egg-info/top_level.txt
+gdeltdoc/test/__init__.py
+gdeltdoc/test/test_client.py
+gdeltdoc/test/test_filters.py
