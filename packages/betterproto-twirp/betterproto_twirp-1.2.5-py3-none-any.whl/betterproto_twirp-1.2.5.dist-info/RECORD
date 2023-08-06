@@ -1,0 +1,11 @@
+betterproto/__init__.py,sha256=ZfRPKnDgnU1YsiRCyPqLJxkzwnqAEG90XIPuAuJlsUU,37513
+betterproto/casing.py,sha256=LNdM-U8DBmFSEc-BFhxsXaKolCoP0vFS2A9zgsAkETM,799
+betterproto/init_copy.py,sha256=Z8br85yB6r7TSNkc__MEUe7FL0MrV2ne8B1FZ-fmHHk,36746
+betterproto/plugin.py,sha256=Y2cgtlrjR7rRu0B5IhRHbolihScBIZ5Jn0vodo2yM_s,17090
+betterproto/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+betterproto/templates/template.py,sha256=CMGgCqiWtVCnbwrPqlMlFwbglqKBZva4NMyp_fh1n18,2618
+betterproto_twirp-1.2.5.dist-info/METADATA,sha256=emaGdB7ewyzeuDLdoUJHNa0zvxF_qGHgVDYALKH0e9U,1268
+betterproto_twirp-1.2.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+betterproto_twirp-1.2.5.dist-info/entry_points.txt,sha256=9l0LBr136XJ1pH9i8CgYXCsAQlAhaU1Jib-ymh5SEfc,75
+betterproto_twirp-1.2.5.dist-info/top_level.txt,sha256=_H72mtj5MPshEdra8mpr89N2ljNKuX6-f01wOrNA2_o,12
+betterproto_twirp-1.2.5.dist-info/RECORD,,
