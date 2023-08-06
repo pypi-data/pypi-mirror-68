@@ -1,0 +1,16 @@
+MANIFEST.in
+ipymonaco.json
+setup.cfg
+setup.py
+ipymonaco/__init__.py
+ipymonaco/_version.py
+ipymonaco/example.py
+ipymonaco.egg-info/PKG-INFO
+ipymonaco.egg-info/SOURCES.txt
+ipymonaco.egg-info/dependency_links.txt
+ipymonaco.egg-info/not-zip-safe
+ipymonaco.egg-info/requires.txt
+ipymonaco.egg-info/top_level.txt
+ipymonaco/static/extension.js
+ipymonaco/static/index.js
+ipymonaco/static/index.js.map
