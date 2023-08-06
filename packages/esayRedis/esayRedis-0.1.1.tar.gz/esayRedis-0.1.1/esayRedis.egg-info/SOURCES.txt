@@ -1,0 +1,8 @@
+README.md
+setup.py
+esayRedis/__init__.py
+esayRedis.egg-info/PKG-INFO
+esayRedis.egg-info/SOURCES.txt
+esayRedis.egg-info/dependency_links.txt
+esayRedis.egg-info/requires.txt
+esayRedis.egg-info/top_level.txt
