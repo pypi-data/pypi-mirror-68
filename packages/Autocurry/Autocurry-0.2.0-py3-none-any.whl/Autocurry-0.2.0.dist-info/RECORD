@@ -1,0 +1,8 @@
+autocurry/__init__.py,sha256=lRmROFVVURtoCMH22Hefl2oaYBhEK_AsTGeyAr715s0,886
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_autocurry.py,sha256=uLm4gRN4qcTaX6Y5kkMcmRVfT_3lfEfsbxgxsOT736g,1645
+Autocurry-0.2.0.dist-info/LICENSE,sha256=2UPZM-GK4pZ7phf-GaLUg822dmW73y_FEXzAER0woWs,1492
+Autocurry-0.2.0.dist-info/METADATA,sha256=6ZHVlfw4WS-bV26RGqnN7wV1PigrYjwb9sKW2Q6DxsE,899
+Autocurry-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Autocurry-0.2.0.dist-info/top_level.txt,sha256=m8vTHMvc8Qu8QNwyuSeGz2lzHZS9Tj36WbayrWWBTwg,16
+Autocurry-0.2.0.dist-info/RECORD,,
