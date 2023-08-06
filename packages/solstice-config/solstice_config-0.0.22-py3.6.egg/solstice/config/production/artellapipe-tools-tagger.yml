@@ -1,0 +1,22 @@
+# Base Configuration file for artellapipe-tools-namemanager in Solstice
+
+# Defines icon of the tool
+icon: tagger
+
+# URL to tool documentation web page
+help_url: https://solstice-short-film.github.io/solstice-docs/pipeline
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
+
+# Specify extra modules to find editors in. Usueful to specify project specific editors
+extra_editors_modules:
+   - solstice.tagger.editors
+
+# List of all editors that should be enabled
+available_editors:
+  - Name
+  - Description
+  - Type
+  - Proxy/High
+  - Shaders

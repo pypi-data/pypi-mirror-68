@@ -1,0 +1,11 @@
+# Base Configuration for Artella Shaders in Solstice
+
+# Defines list of paths where shaders can be found
+paths:
+  - "Scripts/PIPELINE/__working__/ShadersLibrary"
+
+# Defines the file type used in Solstice to define shaders
+file_type: "shader"
+
+# Defines the file type used in Solstice to define asset shaders
+path_file_type: "shaders"

@@ -1,0 +1,38 @@
+# Base Configuration file for artellapipe-libs-drive for Solstice
+
+# Defines credentials dictionary info for Drive
+credentials:
+  type: "service_account"
+  project_id: "solstice-short-film"
+  private_key_id: "234008d773c3321f7c0507fe9e907be72cbea7e2"
+  private_key: "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDjWTxD6vQnxQjW\n7yQ+BxtROWqFqCEBrWbyGJ0lPpJEyTdw+CW0sTYn6bfL4FQ2ySXWVeZwsUwEiyBP\n4aw3rp1POBb+gd1dJUNSJRhn16mmqEorh4XVzqRYWKhjLII2G3dF9qqKbDHeCXDO\nJbYnoRkWyGKkzWlHNMXMjCQNPwNbVNBJPZ8lrSmzSPwUYSNko0aQCSXB0l+/PPTE\n6+4QRUF7uGbMmQbJhQsyXuhCKoAn24MMMg2NeJV5h6CaNZ2Zk8icyZ0yVQZ2vYrU\nrWFFcJr2pK4crzYVx9HPKBdK41tEX6LUay929y80GPKxJU/Fx3+o4YXDhYx3KODl\noCZetn6hAgMBAAECggEAKVBujLMWMmHydMiZb/IvqyeBbY97jAf8ZLNHX1zLDNf6\nDLvzci4f9snYniKCe0A7cYNDsKfvdgXoVcvfVXEUYjCBsTddSE98t+FI2ZoN2NzN\nObLTheKa5/kYhIkykm2UU7D7FdOKjlxt1PBydSon2oWIs4UmhAuZhE3VQVj5na9o\npbAPPs0cYJUGCmfNg1cjDL8uP92f6Tx7Asnjqi8JOMKCTmXTBmtrA3QRd354xgTN\nftR9n9pPvKwno2WBhK6rxJRR8w1l6ph3qhzPoEVBufo+KwIzVWd9sllFcceN2uhk\nvd8WdVTWxqiMgu48xoLEIs1ZzcpNH95+s11AfHDN7wKBgQD/VLXPjbeAsWaR449A\n2c1muqbtIe4zFVag9tLGVwbouv1FxhFIjcNOT6a/aEYEAYk+2+Wf5Gy25JN0zsbw\nUq5Tr6WaYH0qbeKaWqAJFIy6pzG1oM8fpXlOLGG63ZWh8FCgyyQfzOMY1lF5qYwL\nv7bTCJDi+FWXXLphJkWJcHucQwKBgQDj8cDOudxrsr2GpvZSS0fruRc5Qfg8CTD8\nidz1SzF707pdT72tRK26HY+3tWJCgoZAttw+nvSkRprv0j5IHYY2JLybR2TyDosU\nBIw825aGYQ313eW7zQf0BzlHtws0EXMb6TtGS/nLzzbkCNGOz89K8w/eK/1kJ+Kd\nrBLVClF9SwKBgFV1VdDdHvEM70afAoBzJaNfj6VIuQASAUeotQ07bY2RoFmtHHXL\nNPZOBIKF9QE8PmJymR12B8kDIjNzTfR7x+ssm+Har6n202RUNsIzRZLniOTAqPJv\noPVAN4mixoVH+MSImVOncM8MVILC86OvDBMAB/Zfpc4edCc19wo0QrsfAoGBAKaq\nyo6dKYT50UhWZj7v2muKD2gHS2kiU1Yju5MDYvAmdNrrhkXdtKUkHkR19J2q8Fz7\nF3kWIszG71yxPmbeZ5bJL7rd7fprFdgSJzQMXzhsWJfQory5gro0WfaM6T0uERt0\nYqnYvZH/NiRwKkGgwvILXSvWwFTuMO2WtsJc5A6XAoGARZ//4ocFRYkILABMY3Re\nrAO0khFX5R7axvPEY0Nm8mI+g5a+5PD1aG/rTRclhyYj8fMaHAeAyAa0APzfektN\nrS6hHBLKRbe+ucwxgfzvInmiRQwGhfYtrXMaLaLINxegyCgqd6E7dZna7bc3BnvA\nMr6j34MJr8Czq+Si7cbpjd4=\n-----END PRIVATE KEY-----\n"
+  client_email: "solstice-user@solstice-short-film.iam.gserviceaccount.com"
+  client_id: "106365246687636454047"
+  auth_uri: "https://accounts.google.com/o/oauth2/auth"
+  token_uri: "https://oauth2.googleapis.com/token"
+  auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+  client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/solstice-user%40solstice-short-film.iam.gserviceaccount.com"
+
+# Defines the name of the spreadsheets that contains all the tracking information
+spreadsheets:
+  - SOLSTICE | Shot Production V2
+
+scope:
+  - https://spreadsheets.google.com/feeds
+  - https://www.googleapis.com/auth/drive
+
+assets_worksheet_name: Assets
+sequences_worksheet_name: Sequences
+shots_worksheet_name: Shots
+
+# Defines the worksheets used in the project
+worksheets:
+  Assets:
+    fields_row: 1                 # Row in Sheet that includes the fields
+    unique_field: ID              # Defines field that contains unique identifier for the asset
+  Sequences:
+    fields_row: 1
+    unique_field: ID
+  Shots:
+    fields_row: 1
+    unique_field: ID

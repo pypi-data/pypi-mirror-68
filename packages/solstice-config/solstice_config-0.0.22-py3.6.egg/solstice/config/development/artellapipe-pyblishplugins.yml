@@ -1,0 +1,13 @@
+# Base Configuration for Pyblish Plugins for Solstice
+
+      pyblish_modules:
+        - artellapipe.libs.pyblish
+
+      plugins:
+        # Validators
+        ValidateStudentLicense:
+          hosts: ['maya']
+          must_pass: True
+        CollectComment:
+          hosts: ['maya']
+          must_pass: True

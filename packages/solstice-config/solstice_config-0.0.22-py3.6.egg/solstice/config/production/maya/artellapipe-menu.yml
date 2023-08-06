@@ -1,0 +1,98 @@
+# Base Configuration for add extra menus into ArtellaPipe DCC Menu for Solstice in Maya
+
+menus:
+    - menu:
+      - label: General
+        type: menu
+        children:
+            - id: solstice-commands-setproject
+              command: "import artellapipe; artellapipe.project.update_project()"
+              type: command
+              language: python
+              tags: ['solstice', 'project']
+              ui:
+                label: "Project Setup"
+                icon: 'setproject'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-commands-cleanstudentlicense
+              command: "from tpDcc.dccs.maya.core import helpers; helpers.clean_student_line()"
+              type: command
+              language: python
+              tags: ['solstice', 'maya', 'clean', 'student', 'license']
+              ui:
+                label: "Clean Student License"
+                icon: 'student'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-clean-scene
+              command: "from tpDcc.dccs.maya.core import scene; scene.clean_scene()"
+              type: command
+              language: python
+              tags: ['solstice', 'clean', 'scene']
+              ui:
+                label: "Clean Scene"
+                icon: 'cleanscene'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-commands-save
+              command: "import artellapipe; artellapipe.project.save_scene(notify=True)"
+              type: command
+              language: python
+              tags: ['solstice', 'save']
+              ui:
+                label: "Save Scene"
+                icon: 'savescene'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-commands-lockfile
+              command: "import artellapipe; artellapipe.FilesMgr().lock_file(notify=True)"
+              type: command
+              language: python
+              tags: ['solstice', 'lock', 'file']
+              ui:
+                label: "Lock File"
+                icon: 'lock_file'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-commands-unlockfile
+              command: "import artellapipe; artellapipe.FilesMgr().unlock_file(notify=True)"
+              type: command
+              language: python
+              tags: ['solstice', 'unlock', 'file']
+              ui:
+                label: "Unlock File"
+                icon: 'unlock_file'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+            - id: solstice-commands-uploadversion
+              command: "import artellapipe; artellapipe.FilesMgr().upload_working_version(notify=True)"
+              type: command
+              language: python
+              tags: ['solstice', 'upload', 'version', 'file']
+              ui:
+                label: "Upload File"
+                icon: 'upload_wip'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False
+      - label: Layout
+        type: menu
+        children:
+            - id: solstice-commands-camerasequencer
+              command: "from tpDcc.dccs.maya.core import sequencer; sequencer.open_camera_sequencer_window()"
+              type: command
+              language: python
+              tags: ['solstice', 'camera', 'sequencer']
+              ui:
+                label: "Camera Sequencer"
+                icon: 'sequencer'
+                is_checkable: False
+                is_checked: False
+                load_on_startup: False

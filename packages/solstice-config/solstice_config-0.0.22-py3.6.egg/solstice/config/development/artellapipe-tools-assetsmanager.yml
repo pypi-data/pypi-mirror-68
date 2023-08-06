@@ -1,0 +1,11 @@
+# Base Configuration file for artellapipe-tools-assetsmanager in Solstice
+
+# Defines icon of the tool
+icon: assetsmanager
+
+# URL to tool documentation web page
+help_url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/assetsmanager/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True
+

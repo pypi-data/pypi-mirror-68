@@ -1,0 +1,61 @@
+# Base Configuration file for artellapipe-tools-modelchecker for Solstice
+
+# Defines icon of the tool
+icon: modelchecker
+
+# URL to tool documentation web page
+help_url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/modelchecker/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
+
+pyblish_plugins:
+  CollectGeometry: {}
+  ValidateStudentLicense:
+    optional: True
+  ValidateDisplayLayers:
+    optional: True
+  ValidateNoShadersInScene:
+    optional: True
+  ValidateCleanUnknownNodes:
+    optional: True
+  ValidateCleanUnusedPlugins:
+    optional: True
+  ValidateHardEdges:
+    optional: True
+  ValidateLamina:
+    optional: True
+  ValidateNGons:
+    optional: True
+  ValidateNonManifoldEdges:
+    optional: True
+  ValidateOpenEdges:
+    optional: True
+#  ValidatePoles:
+#    optional: True
+  ValidateStarLike:
+    optional: True
+  ValidateTriangles:
+    optional: True
+  ValidateNormals:
+    optional: True
+  ValidateZeroAreaFaces:
+    optional: True
+  ValidateZeroLengthEdges:
+    optional: True
+  ValidateCleanHistory:
+    optional: True
+  ValidateGeometryDisplayLayers:
+    optional: True
+  ValidateGeometrySmoothPreview:
+    optional: True
+  ValidateEmptyGroups:
+    optional: True
+  ValidateGeometryShaders:
+    optional: True
+  ValidateParentGeometry:
+    optional: True
+  ValidateUncenteredPivots:
+    optional: True
+  ValidateUnfrozenTransforms:
+    optional: True

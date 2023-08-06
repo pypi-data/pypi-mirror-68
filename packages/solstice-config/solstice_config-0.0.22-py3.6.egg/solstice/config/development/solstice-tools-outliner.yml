@@ -1,0 +1,33 @@
+# Base Configuration file for solstice-tools-outliner
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False
+
+# Defines the outliners that should be added
+outliners:
+  props:
+    name: Props
+    class: solstice.tools.outliner.outliners.prop.SolsticePropsOutliner
+    categories:
+      - Prop
+  characters:
+    name: Characters
+    class: solstice.tools.outliner.outliners.character.SolsticeCharactersOutliner
+    categories:
+      - Character
+  cameras:
+    name: Cameras
+    class: solstice.tools.outliner.outliners.camera.SolsticeCamerasOutliner
+    categories:
+      - Camera
+  lights:
+    name: Lights
+    class: solstice.tools.outliner.outliners.light.SolsticeLightsOutliner
+    categories:
+      - Light Rig
+  fx:
+    name: Fx
+    class: solstice.tools.outliner.outliners.fx.SoslticeFxOutilner
+    categories:
+      - Cloth
+      - Groom

@@ -1,0 +1,11 @@
+pytest
+pytest-cov
+coveralls
+artellapipe-config
+tpDcc-libs-python
+
+[dev]
+wheel
+
+[test]
+pytest

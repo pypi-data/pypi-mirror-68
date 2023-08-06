@@ -1,0 +1,9 @@
+# Base Configuration for Artella Shots for Solstice
+
+# Defines dictionary of shots types used by the project
+types:
+  Shot:
+    class: solstice.core.shot.SolsticeShot
+    files:
+      - shot_layout
+      - shot_layout_anim

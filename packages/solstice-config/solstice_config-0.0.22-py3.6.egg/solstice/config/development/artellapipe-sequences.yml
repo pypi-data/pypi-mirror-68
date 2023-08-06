@@ -1,0 +1,8 @@
+# Base Configuration for Artella Sequences for Solstice
+
+# Defines dictionary of shots types used by the project
+types:
+  Shot:
+    class: solstice.core.sequence.SolsticeSequence
+    files:
+      - master

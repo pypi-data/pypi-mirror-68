@@ -1,0 +1,5 @@
+# Base Configuration for Artella Playblasts in Solstice
+
+# Defines path where Playblast presets are located
+presets_paths:
+  - "Assets/Scripts/PIPELINE/__working__/PlayblastPresets"

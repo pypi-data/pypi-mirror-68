@@ -1,0 +1,10 @@
+# Base Configuration file for artellapipe-tools-breakdown in Solstice
+
+# Defines icon of the tool
+icon: breakdown
+
+# URL to tool documentation web page
+url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/breakdown/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True

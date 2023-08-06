@@ -1,0 +1,32 @@
+# Base Configuration file for artellapipe-tools-assetspublisher for Solstice
+
+# Defines icon of the tool
+#icon: artella
+
+publishers:
+  - Modeling:
+      templates:
+        - model
+      plugins:
+        - CollectComment
+        - ValidateStudentLicense
+  - Shading:
+      templates:
+        - shading
+      plugins:
+        - CollectComment
+  - Textures:
+      templates:
+        - textures
+      plugins:
+        - CollectComment
+  - Rigging:
+      templates:
+        - rigging
+      plugins:
+        - CollectComment
+  - Grooming:
+      templates:
+        - groom
+      plugins:
+        - CollectComment
