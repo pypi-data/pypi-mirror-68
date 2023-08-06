@@ -1,0 +1,6 @@
+azure-storage==0.36.0
+numpy
+docopt
+tqdm
+SetSimilaritySearch
+sentencepiece
