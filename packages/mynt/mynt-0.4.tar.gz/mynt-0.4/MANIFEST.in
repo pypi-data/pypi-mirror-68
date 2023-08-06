@@ -1,0 +1,4 @@
+include LICENSE NEWS.md README.md
+graft docs
+graft mynt/themes
+

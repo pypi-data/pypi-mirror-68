@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: mynt
+Version: 0.4
+Summary: A static site generator.
+Home-page: https://mynt.uhnomoli.com/
+Author: Andrew Fricke
+Author-email: andrew@uhnomoli.com
+License: BSD
+Project-URL: Documentation, https://mynt.uhnomoli.com/docs/quickstart/
+Project-URL: Source, https://github.com/Anomareh/mynt
+Description: # mynt
+        
+        _Another static site generator?_
+        
+        With the ever growing population of static site generators, all filling a certain need, I've yet to find one that allows the generation of anything but the simplest of blogs.
+        
+        That's where mynt comes in, being designed to give you all the features of a CMS with none of the often rigid implementations of those features.
+        
+        
+        ### Install
+        
+        From PyPI:
+        
+            $ pip install mynt
+        
+        Latest trunk:
+        
+            $ pip install git+https://github.com/Anomareh/mynt.git
+        
+        
+        ### Getting started
+        
+        After installing mynt head on over and give the [quickstart][quickstart] page and [docs][docs] a read.
+        
+        
+        ### Dependencies
+        
+        + [Hoep][hoep]
+        + [Jinja2][jinja]
+        + [Pygments][pygments]
+        + [PyYAML][pyyaml]
+        + [watchdog][watchdog]
+        
+        #### Optional
+        
+        + [Docutils][docutils] _(reST)_
+        
+        
+        ### Support
+        
+        If you run into any issues or have any questions, either open an [issue][issues] or hop in #mynt on irc.freenode.net.
+        
+        
+        [docs]: https://mynt.uhnomoli.com/
+        [docutils]: https://docutils.sourceforge.net/
+        [hoep]: https://github.com/Anomareh/Hoep
+        [issues]: https://github.com/Anomareh/mynt/issues
+        [jinja]: https://jinja.palletsprojects.com/
+        [pygments]: https://pygments.org/
+        [pyyaml]: https://pyyaml.org/
+        [quickstart]: https://mynt.uhnomoli.com/docs/quickstart/
+        [watchdog]: https://github.com/gorakhargosh/watchdog
+        
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: reST
