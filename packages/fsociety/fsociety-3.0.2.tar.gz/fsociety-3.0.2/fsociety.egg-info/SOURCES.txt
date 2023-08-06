@@ -1,0 +1,8 @@
+README.md
+setup.py
+fsociety.egg-info/PKG-INFO
+fsociety.egg-info/SOURCES.txt
+fsociety.egg-info/dependency_links.txt
+fsociety.egg-info/entry_points.txt
+fsociety.egg-info/requires.txt
+fsociety.egg-info/top_level.txt
