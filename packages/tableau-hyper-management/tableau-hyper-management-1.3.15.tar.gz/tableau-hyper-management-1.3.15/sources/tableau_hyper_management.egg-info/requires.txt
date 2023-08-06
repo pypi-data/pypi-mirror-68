@@ -1,0 +1,10 @@
+Babel<3,>=2.8.0
+cffi<2,>=1.13.2
+codetiming<2,>=1.1
+numpy<2,>=1.17.4
+pandas<1,>=0.25.3
+tableauhyperapi
+tableauserverclient
+xlrd<2,>=1
+xlsxwriter<2,>=1
+wheel<1.0,>=0.34.2
