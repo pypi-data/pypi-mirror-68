@@ -1,0 +1,9 @@
+README.rst
+setup.py
+base_emoji.egg-info/PKG-INFO
+base_emoji.egg-info/SOURCES.txt
+base_emoji.egg-info/dependency_links.txt
+base_emoji.egg-info/entry_points.txt
+base_emoji.egg-info/top_level.txt
+baseemoji/__init__.py
+baseemoji/__main__.py
