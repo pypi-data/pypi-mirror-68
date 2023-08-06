@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: simple-image-tool
+Version: 0.0.1
+Summary: A simple command line tool to upload new image or view existing images on s3
+Home-page: https://github.com/sjmyuan/simple-image-tool
+License: Apache-2.0
+Author: Jiaming Shang
+Author-email: shangjiaming.yuan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: Pillow (>=7.1.2,<8.0.0)
+Requires-Dist: boto3 (>=1.13.11,<2.0.0)
+Requires-Dist: flask (>=1.1.2,<2.0.0)
+Project-URL: Repository, https://github.com/sjmyuan/simple-image-tool
