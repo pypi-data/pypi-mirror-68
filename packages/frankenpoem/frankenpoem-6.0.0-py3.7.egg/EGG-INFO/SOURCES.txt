@@ -1,0 +1,9 @@
+README.md
+setup.py
+frankenpoem/__init__.py
+frankenpoem/data.pkl.compress
+frankenpoem.egg-info/PKG-INFO
+frankenpoem.egg-info/SOURCES.txt
+frankenpoem.egg-info/dependency_links.txt
+frankenpoem.egg-info/requires.txt
+frankenpoem.egg-info/top_level.txt
