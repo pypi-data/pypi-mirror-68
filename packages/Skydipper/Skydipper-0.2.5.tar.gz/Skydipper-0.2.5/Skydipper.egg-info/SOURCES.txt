@@ -1,0 +1,17 @@
+README.md
+setup.py
+Skydipper/Skydipper.py
+Skydipper/__init__.py
+Skydipper/collection.py
+Skydipper/dataset.py
+Skydipper/geometry.py
+Skydipper/image.py
+Skydipper/imageCollection.py
+Skydipper/layer.py
+Skydipper/user.py
+Skydipper/utils.py
+Skydipper.egg-info/PKG-INFO
+Skydipper.egg-info/SOURCES.txt
+Skydipper.egg-info/dependency_links.txt
+Skydipper.egg-info/requires.txt
+Skydipper.egg-info/top_level.txt
