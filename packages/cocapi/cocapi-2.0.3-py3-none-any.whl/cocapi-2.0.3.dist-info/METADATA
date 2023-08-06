@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cocapi
+Version: 2.0.3
+Summary: A python wrapper around clash of clans api
+Home-page: https://github.com/tonybenoy/cocapi
+Author: Tony Benoy
+Author-email: me@tonybenoy.com
+License: UNKNOWN
+Keywords: Clash of Clans SuperCell API COC
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+
+A python wrapper around clash of clans api with support for filters
+
+
