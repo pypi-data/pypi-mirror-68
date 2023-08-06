@@ -1,0 +1,411 @@
+.. note::
+    :class: sphx-glr-download-link-note
+
+    Click :ref:`here <sphx_glr_download_auto_examples_plot_dataset_example.py>` to download the full example code
+.. rst-class:: sphx-glr-example-title
+
+.. _sphx_glr_auto_examples_plot_dataset_example.py:
+
+MOABB Dataset Example
+========================
+
+In this example, we show how to fetch and prepare a MOABB dataset for usage
+with Braindecode.
+
+
+.. code-block:: default
+
+
+    # Authors: Lukas Gemein <l.gemein@gmail.com>
+    #          Hubert Banville <hubert.jbanville@gmail.com>
+    #          Simon Brandt <simonbrandt@protonmail.com>
+    #
+    # License: BSD (3-clause)
+
+    from collections import OrderedDict
+
+    import matplotlib.pyplot as plt
+    from IPython.display import display
+
+    from braindecode.datasets import MOABBDataset
+    from braindecode.datautil.windowers import \
+        create_windows_from_events, create_fixed_length_windows
+    from braindecode.datautil.preprocess import preprocess, MNEPreproc
+
+
+
+
+
+
+
+
+First, we create a dataset based on BCIC IV 2a fetched with MOABB,
+
+
+.. code-block:: default
+
+    ds = MOABBDataset(dataset_name="BNCI2014001", subject_ids=[1])
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+    /home/schirrmr/braindecode/code/moabb/moabb/datasets/bnci.py:535: DeprecationWarning: Passing montage to create_info is deprecated and will be removed in 0.21, use raw.set_montage (or epochs.set_montage, etc.) instead
+      ch_names=ch_names, ch_types=ch_types, sfreq=sfreq, montage=montage)
+
+
+
+
+ds has a pandas DataFrame with additional description of its internal datasets
+
+
+.. code-block:: default
+
+    display(ds.description)
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+        subject    session    run
+    0         1  session_T  run_0
+    1         1  session_T  run_1
+    2         1  session_T  run_2
+    3         1  session_T  run_3
+    4         1  session_T  run_4
+    5         1  session_T  run_5
+    6         1  session_E  run_0
+    7         1  session_E  run_1
+    8         1  session_E  run_2
+    9         1  session_E  run_3
+    10        1  session_E  run_4
+    11        1  session_E  run_5
+
+
+
+
+We can iterate through ds which yields one time point of a continuous signal x,
+and a target y (which can be None if targets are not defined for the entire
+continuous signal).
+
+
+.. code-block:: default
+
+    for x, y in ds:
+        print(x.shape, y)
+        break
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    (26, 1) None
+
+
+
+
+We can apply preprocessing transforms that are defined in mne and work
+in-place, such as resampling, bandpass filtering, or electrode selection.
+
+
+.. code-block:: default
+
+    transforms = [
+        MNEPreproc("pick_types", eeg=True, meg=False, stim=True),
+        MNEPreproc("resample", sfreq=100),
+    ]
+    print(ds.datasets[0].raw.info["sfreq"])
+    preprocess(ds, transforms)
+    print(ds.datasets[0].raw.info["sfreq"])
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    250.0
+    100.0
+
+
+
+
+We can easily split ds based on a criteria applied to the description
+DataFrame:
+
+
+.. code-block:: default
+
+    subsets = ds.split("session")
+    print({subset_name: len(subset) for subset_name, subset in subsets.items()})
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    {'session_E': 232164, 'session_T': 232164}
+
+
+
+
+Next, we use a windower to extract events from the dataset based on events:
+
+
+.. code-block:: default
+
+    windows_ds = create_windows_from_events(
+        ds, trial_start_offset_samples=0, trial_stop_offset_samples=100,
+        window_size_samples=400, window_stride_samples=100,
+        drop_last_window=False)
+
+
+
+
+
+
+
+
+We can iterate through the windows_ds which yields a window x,
+a target y, and window_ind (which itself contains `i_window_in_trial`,
+`i_start_in_trial`, and `i_stop_in_trial`, which are required for combining
+window predictions in the scorer).
+
+
+.. code-block:: default
+
+    for x, y, window_ind in windows_ds:
+        print(x.shape, y, window_ind)
+        break
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    (23, 400) 3 [0, 300, 700]
+
+
+
+
+We visually inspect the windows:
+
+
+.. code-block:: default
+
+    max_i = 2
+    fig, ax_arr = plt.subplots(1, max_i + 1, figsize=((max_i + 1) * 7, 5),
+                               sharex=True, sharey=True)
+    for i, (x, y, window_ind) in enumerate(windows_ds):
+        ax_arr[i].plot(x.T)
+        ax_arr[i].set_ylim(-0.0002, 0.0002)
+        ax_arr[i].set_title(f"label={y}")
+        if i == max_i:
+            break
+
+
+
+
+.. image:: /auto_examples/images/sphx_glr_plot_dataset_example_001.png
+    :class: sphx-glr-single-img
+
+
+
+
+
+Alternatively, we can create evenly spaced ("sliding") windows using a
+different windower.
+
+
+.. code-block:: default
+
+    sliding_windows_ds = create_fixed_length_windows(
+        ds, start_offset_samples=0, stop_offset_samples=0,
+        window_size_samples=1200, window_stride_samples=1000,
+        drop_last_window=False)
+
+    print(len(sliding_windows_ds))
+    for x, y, window_ind in sliding_windows_ds:
+        print(x.shape, y, window_ind)
+        break
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    468
+    (23, 1200) -1 [0, 0, 1200]
+
+
+
+
+Transforms can also be applied on windows in the same way as shown
+above on continuous data:
+
+
+.. code-block:: default
+
+
+    def crop_windows(windows, start_offset_samples, stop_offset_samples):
+        fs = windows.info["sfreq"]
+        windows.crop(tmin=start_offset_samples / fs, tmax=stop_offset_samples / fs,
+                     include_tmax=False)
+
+    epochs_transform_list = [
+        MNEPreproc("pick_types", eeg=True, meg=False, stim=False),
+        MNEPreproc(crop_windows, start_offset_samples=100, stop_offset_samples=900),
+    ]
+
+    print(windows_ds.datasets[0].windows.info["ch_names"],
+          len(windows_ds.datasets[0].windows.times))
+    preprocess(windows_ds, epochs_transform_list)
+    print(windows_ds.datasets[0].windows.info["ch_names"],
+          len(windows_ds.datasets[0].windows.times))
+
+    max_i = 2
+    fig, ax_arr = plt.subplots(1, max_i+1, figsize=((max_i+1)*7, 5),
+                               sharex=True, sharey=True)
+    for i, (x, y, window_ind) in enumerate(windows_ds):
+        ax_arr[i].plot(x.T)
+        ax_arr[i].set_ylim(-0.0002, 0.0002)
+        ax_arr[i].set_title(f"label={y}")
+        if i == max_i:
+            break
+
+
+
+
+.. image:: /auto_examples/images/sphx_glr_plot_dataset_example_002.png
+    :class: sphx-glr-single-img
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    ['Fz', 'FC3', 'FC1', 'FCz', 'FC2', 'FC4', 'C5', 'C3', 'C1', 'Cz', 'C2', 'C4', 'C6', 'CP3', 'CP1', 'CPz', 'CP2', 'CP4', 'P1', 'Pz', 'P2', 'POz', 'stim'] 400
+    ['Fz', 'FC3', 'FC1', 'FCz', 'FC2', 'FC4', 'C5', 'C3', 'C1', 'Cz', 'C2', 'C4', 'C6', 'CP3', 'CP1', 'CPz', 'CP2', 'CP4', 'P1', 'Pz', 'P2', 'POz'] 299
+
+
+
+
+Again, we can easily split windows_ds based on some criteria in the
+description DataFrame:
+
+
+.. code-block:: default
+
+    subsets = windows_ds.split("session")
+    print({subset_name: len(subset) for subset_name, subset in subsets.items()})
+
+
+
+
+
+.. rst-class:: sphx-glr-script-out
+
+ Out:
+
+ .. code-block:: none
+
+    {'session_E': 576, 'session_T': 576}
+
+
+
+
+
+.. rst-class:: sphx-glr-timing
+
+   **Total running time of the script:** ( 0 minutes  9.507 seconds)
+
+**Estimated memory usage:**  414 MB
+
+
+.. _sphx_glr_download_auto_examples_plot_dataset_example.py:
+
+
+.. only :: html
+
+ .. container:: sphx-glr-footer
+    :class: sphx-glr-footer-example
+
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Python source code: plot_dataset_example.py <plot_dataset_example.py>`
+
+
+
+  .. container:: sphx-glr-download
+
+     :download:`Download Jupyter notebook: plot_dataset_example.ipynb <plot_dataset_example.ipynb>`
+
+
+.. only:: html
+
+ .. rst-class:: sphx-glr-signature
+
+    `Gallery generated by Sphinx-Gallery <https://sphinx-gallery.github.io>`_
