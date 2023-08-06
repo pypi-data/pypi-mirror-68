@@ -1,0 +1,5 @@
+instabot>=0.78
+codecov
+coverage
+pytest
+pytest-cov
