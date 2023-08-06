@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyPowerDNS/__init__.py
+PyPowerDNS/api.py
+PyPowerDNS/exceptions.py
+PyPowerDNS/objects.py
+PyPowerDNS.egg-info/PKG-INFO
+PyPowerDNS.egg-info/SOURCES.txt
+PyPowerDNS.egg-info/dependency_links.txt
+PyPowerDNS.egg-info/requires.txt
+PyPowerDNS.egg-info/top_level.txt
