@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: arc-tools
+Version: 0.2.4
+Summary: Simple cli arc helper
+Home-page: https://github.com/Reglament989/Compressor
+Author: Reglament989
+Author-email: officialreglament989@protonmail.ch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8

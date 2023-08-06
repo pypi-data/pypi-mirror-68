@@ -1,0 +1,11 @@
+setup.py
+arc_tools/__init__.py
+arc_tools/__main__.py
+arc_tools/main.py
+arc_tools/makearchive.py
+arc_tools/unarchivate.py
+arc_tools/utils.py
+arc_tools.egg-info/PKG-INFO
+arc_tools.egg-info/SOURCES.txt
+arc_tools.egg-info/dependency_links.txt
+arc_tools.egg-info/top_level.txt
