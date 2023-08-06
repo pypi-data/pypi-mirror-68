@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "chatstats"
+version = "0.1.5"
+description = "python sdk for chat-stats.ru"
+authors = ["Bogdan <evstrat.bg@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+flake8-import-order = "^0.18.1"
+flake8-bugbear = "^20.1.4"
+flake8 = "^3.8.1"
+flake8-eradicate = "^0.3.0"
+flake8-builtins = "^1.5.3"
+flake8-comprehensions = "^3.2.2"
+flake8-broken-line = "^0.2.0"
+flake8-print = "^3.1.4"
+pep8-naming = "^0.10.0"
+flake8-unused-arguments = "^0.0.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
