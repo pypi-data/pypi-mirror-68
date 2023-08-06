@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/azbacklog.egg-info/PKG-INFO
+src/azbacklog.egg-info/SOURCES.txt
+src/azbacklog.egg-info/dependency_links.txt
+src/azbacklog.egg-info/requires.txt
+src/azbacklog.egg-info/top_level.txt
+src/scripts/main.py

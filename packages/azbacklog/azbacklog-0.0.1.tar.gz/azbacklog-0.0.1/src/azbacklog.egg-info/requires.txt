@@ -1,0 +1,7 @@
+pygithub
+
+[dev]
+pyfakefs
+pytest
+coverage
+mock
