@@ -1,0 +1,16 @@
+adaptive
+dill
+ipyparallel
+mpi4py
+numpy
+pandas
+psutil
+pyzmq
+structlog
+tinydb
+toolz
+tqdm
+pyzmq
+
+[all]
+dask_mpi
