@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_sesame.egg-info/PKG-INFO
+django_sesame.egg-info/SOURCES.txt
+django_sesame.egg-info/dependency_links.txt
+django_sesame.egg-info/top_level.txt
+sesame/__init__.py
+sesame/backends.py
+sesame/middleware.py
+sesame/packers.py
+sesame/utils.py
