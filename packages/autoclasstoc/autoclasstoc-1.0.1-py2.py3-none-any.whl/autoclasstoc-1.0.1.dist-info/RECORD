@@ -1,0 +1,11 @@
+autoclasstoc/__init__.py,sha256=xpj2owSlnxq3WZYJEV2MZzxQgRxLjU4i15Tng_BDn0Y,199
+autoclasstoc/errors.py,sha256=CMAL57QV8iC3NPrOR1CtxEINJze4WLsDZGwLVs1SZZU,206
+autoclasstoc/nodes.py,sha256=JpmP6wRRyJkXU2R3lVV7O7_vZlIcvNR01r5n7JXYHwY,1667
+autoclasstoc/plugin.py,sha256=2S3ydMQEDjYgMtIIclKqcBOUydJoXvguwbqh5VGlnGA,2139
+autoclasstoc/sections.py,sha256=OaC0NwxBTT3lzId8lkkaxkQwsY6m0ZLA0Fvd5RH2k2Y,8678
+autoclasstoc/utils.py,sha256=ZBNOCXNGpg7IT6oBnVvedehe70I4kWfKHzJjliefznA,5514
+autoclasstoc/_static/autoclasstoc.css,sha256=IIYaXdhEg9IA5ov7pjud-SSXyrVSa4gcQBDsabiGdPk,196
+autoclasstoc-1.0.1.dist-info/LICENSE.txt,sha256=hV5oaBI3HIjUi61UYZf8laH_cqtaEsuXV60GtWt5Cog,1079
+autoclasstoc-1.0.1.dist-info/WHEEL,sha256=4vGQWMHJO3SOyvYcLHqr380W2n90FCfzkrP_YY3xjq8,99
+autoclasstoc-1.0.1.dist-info/METADATA,sha256=FIYXAWxvCKQ_p5-f1W7P_S8zg0FKxGTcdEsBRzSqiUM,2934
+autoclasstoc-1.0.1.dist-info/RECORD,,
