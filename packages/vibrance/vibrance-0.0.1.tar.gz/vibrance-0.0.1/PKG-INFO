@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vibrance
+Version: 0.0.1
+Summary: Crowd-based concert lighting system
+Home-page: https://github.com/Breq16/vibrance
+Author: Wesley Chalmers
+Author-email: wesleyjchalmers@gmail.com
+License: UNKNOWN
+Description: # Vibrance
+        
+        ## Crowd-based lighting system.
+        
+        Vibrance turns the audience's phones into tiny spotlights operating in unison.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
