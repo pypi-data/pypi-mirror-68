@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: AAmiles
+Version: 0.1.0
+Summary: Check changes in the miles required to obtain a ticket from the AA web page
+Home-page: https://github.com/bOrionis/AAmiles
+Author: Aldebaran bO
+Author-email: 19.beta.Orionis@gmail.com
+License: MIT
+Download-URL: https://github.com/bOrionis/getDataAA/archive/getDataAA-0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: Miles,airplane tickets,Aerolineas Argentinas
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
