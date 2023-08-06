@@ -1,0 +1,15 @@
+esig-0.7.1.dist-info/RECORD,,
+esig-0.7.1.dist-info/WHEEL,sha256=CKrsQRZNKddeqWkqlP4DoIBo-Lb-ExiV2oTN8bWPh84,109
+esig-0.7.1.dist-info/top_level.txt,sha256=F1eEcl8RqWaqM2uiFckw6psL2BknGzFQS44-WMtHetA,5
+esig-0.7.1.dist-info/METADATA,sha256=OqSDwXOyWru-qjzJlIZywENcq0I2kzPO32MJwvOnYK0,1045
+esig/VERSION,sha256=kCMRx7s4-hZY_0A972FY7nN4_p1uLihPocOHNcMb0ws,6
+esig/ERROR_MESSAGE,sha256=Fr6GlocmZORg4GKbTbVLkKzlviONxYy7FzHYG7id_rk,883
+esig/__init__.py,sha256=xJjzGz7BRTybz0ITLR_Rd8JbWn9siGV_fWvH8cdCgv8,1804
+esig/install_helpers.py,sha256=RcMOfOOUPPJmKOQNATHbxz5o3CgtL_0i4NRXbIY8UtI,36173
+esig/tosig.so,sha256=5g1Lg5-TVv8x5VzT4UFlapdH34JxlGiiFslbCdm-FR4,56842208
+esig/.libs/libboost_system-mt-17b0dd51.so.1.48.0,sha256=dQp0GvzN5H4vzXmiBCAXKkq6iy-E8X5VEWycYevVOYg,14208
+esig/.libs/libboost_thread-mt-747bcb10.so.1.48.0,sha256=Gi4jlDV19s9TeDrxcJRrMcXcmCR3jbnjT9VXWmPZB6A,132304
+esig/tests/esigtests.py,sha256=IauwONg4H_Am3onPYZ3dVzK8vfx8wcQluWI8gz-uZ98,9579
+esig/tests/auxiliaryfunct.py,sha256=8D14rojbjRMBApDnT3PMg3cmjirAVZGMsww_Zom6h8c,17207
+esig/tests/__init__.py,sha256=ZQILJXAaBz2gKQWVlpAnpf3dOzWNvhZ35RM3-0xBT8Y,951
+esig/tests/test_package.py,sha256=1LTVMzV6NYf_k3Qb0VvS3fjFwnJkRfauj27U3QL3DSI,3712
