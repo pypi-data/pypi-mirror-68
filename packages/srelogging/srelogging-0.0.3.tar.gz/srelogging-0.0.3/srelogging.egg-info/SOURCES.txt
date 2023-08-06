@@ -1,0 +1,8 @@
+README.md
+setup.py
+srelogging.py
+srelogging.egg-info/PKG-INFO
+srelogging.egg-info/SOURCES.txt
+srelogging.egg-info/dependency_links.txt
+srelogging.egg-info/requires.txt
+srelogging.egg-info/top_level.txt
