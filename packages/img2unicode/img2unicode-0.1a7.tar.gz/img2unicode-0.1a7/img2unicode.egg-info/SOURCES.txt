@@ -1,0 +1,18 @@
+README.md
+setup.py
+bin/imgcat
+bin/termview
+img2unicode/Ubuntu Mono.npz
+img2unicode/__init__.py
+img2unicode/dual.py
+img2unicode/gamma.py
+img2unicode/renderer.py
+img2unicode/templates.py
+img2unicode/unicodeit.py
+img2unicode/utils.py
+img2unicode.egg-info/PKG-INFO
+img2unicode.egg-info/SOURCES.txt
+img2unicode.egg-info/dependency_links.txt
+img2unicode.egg-info/not-zip-safe
+img2unicode.egg-info/requires.txt
+img2unicode.egg-info/top_level.txt
