@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=1FdED-AOIe8PuBxoUOijuyxn_cYbtio1nFmubsFS80I,299
+LICENSE.txt,sha256=uMBa_GIQfrTKOt5qSy6geDf2tVoSJz7TuL9AMZ6FvQM,578
+README.md,sha256=odw7seeUnlksQIrEJHLhLU4oudpGVNMDrHjhCpgOW28,1972
+typeddfs/__init__.py,sha256=1ezRV0PbtWP_8mrvj_-aY14OMczeZgB9ncBm-nr5qiQ,671
+typeddfs/example.csv,sha256=7Bb4DOkFhUj9yR9xDxIpOe6Qb78TqS3soZ9ueOqqprc,24
+typeddfs/example.py,sha256=gOYSj1WGMJtlHDggM4_PQ9mgk7guNc3x8aECWz5_34U,545
+typeddfs/typed_dfs.py,sha256=gOKEsgPY-EH9nLrHrlQtaqDozuJ64Pj74pnfIHKpZ5U,18095
+typeddfs-0.1.0.dist-info/LICENSE.txt,sha256=uMBa_GIQfrTKOt5qSy6geDf2tVoSJz7TuL9AMZ6FvQM,578
+typeddfs-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+typeddfs-0.1.0.dist-info/METADATA,sha256=E9D82Fdw1RR69UwKrsOd8w0ompjt9hAX-7871bJjtWo,3580
+typeddfs-0.1.0.dist-info/RECORD,,

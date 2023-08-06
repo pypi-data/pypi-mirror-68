@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: typeddfs
+Version: 0.1.0
+Summary: Pandas DataFrame subclasses that enforce structure and can self-organize.
+Home-page: https://github.com/kokellab/typed-dfs
+License: Apache-2.0
+Keywords: pandas,typing,columns,structured
+Author: Douglas Myers-Turnbull
+Maintainer: dmyersturnbull
+Requires-Python: >=3.7,<4
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: importlib-metadata (>=1.6,<2.0)
+Requires-Dist: natsort (>=7.0,<8.0)
+Requires-Dist: numpy (>=1.18,<2.0)
+Requires-Dist: pandas (>=1.0,<2.0)
+Requires-Dist: tomlkit (>=0.6.0,<0.7.0)
+Requires-Dist: typer (>=0.2,<0.3)
+Project-URL: Documentation, https://typed-dfs.readthedocs.io
+Project-URL: Repository, https://github.com/kokellab/typed-dfs
+Project-URL: ci, https://github.com/kokellab/typeddfs/actions
+Project-URL: download, https://pypi.org/project/typeddfs/
+Project-URL: issues, https://github.com/kokellab/typeddfs/issues
+Project-URL: source, https://github.com/kokellab/typeddfs
+Description-Content-Type: text/markdown
+
+# Typed DataFrames
+
+[![Build status](https://img.shields.io/pypi/status/typed-dfs)](https://pypi.org/project/typed-dfs/)
+[![Latest version on PyPi](https://badge.fury.io/py/typed-dfs.svg)](https://pypi.org/project/typed-dfs/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/typed-dfs.svg)](https://pypi.org/project/typed-dfs/)
+[![Documentation status](https://readthedocs.org/projects/typed-dfs/badge/?version=latest&style=flat-square)](https://readthedocs.org/projects/typed-dfs)
+[![Build & test](https://github.com/kokellab/typed-dfs/workflows/Build%20&%20test/badge.svg)](https://github.com/kokellab/typed-dfs/actions)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+Pandas DataFrame subclasses that enforce structure and can self-organize.
+Because your functions can’t exactly accept _any_  DataFrame.
+[See the docs](https://typed-dfs.readthedocs.io/en/stable/) for more information.
+
+Simple example for a CSV like this:
+
+| key   | value  | note |
+| ----- | ------ | ---- |
+| abc   | 123    | ?    |
+
+
+```python
+from typing import Sequence
+from typeddfs import SimpleFrame, OrganizingFrame
+
+class KeyValue(OrganizingFrame):
+
+    @classmethod
+    def required_index_names(cls) -> Sequence[str]:
+        return ['key']
+
+    @classmethod
+    def required_columns(cls) -> Sequence[str]:
+        return ['value']
+
+    @classmethod
+    def reserved_columns(cls) -> Sequence[str]:
+        return ['note']
+
+# will self-organizing and use 'key' as the index
+df = KeyValue.read_csv('example.csv')
+print(df.index.names, list(df.columns))  # ['key'], ['value', 'note']
+```
+
+[New issues](https://github.com/kokellab/typed-dfs/issues) and pull requests are welcome.
+Please refer to the [contributing guide](https://github.com/kokellab/typed-dfs/blob/master/CONTRIBUTING.md).
+Generated with [Tyrannosaurus](https://github.com/dmyersturnbull/tyrannosaurus): `tyrannosaurus new typed-dfs`.
+
+
+
