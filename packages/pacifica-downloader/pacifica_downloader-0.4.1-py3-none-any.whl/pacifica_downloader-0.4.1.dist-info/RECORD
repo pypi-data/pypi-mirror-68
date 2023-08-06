@@ -1,0 +1,13 @@
+pacifica_downloader-0.4.1-py3.8-nspkg.pth,sha256=D3iBWN0sQfyYHlyK1b54AmsNexyR1L2R1mNEdQLAsCo,549
+pacifica/downloader/__init__.py,sha256=XBYqclggez6ef0153Fqo6KrDVdHde4paBf4hEJz6HaY,343
+pacifica/downloader/cartapi.py,sha256=6V-vkT1kMzYDWMVKZ4d_9XtxEyoE1RVLy1CPFxiX3QY,3826
+pacifica/downloader/cloudevent.py,sha256=SNtYDgsst7yOzzzKi5p11U6H6RLSUYRk-86LXXh1Dt8,1043
+pacifica/downloader/downloader.py,sha256=JG8X8pzP8SIpx3YBgZIOrH3_SFmjYmFPaX5XQaDa10U,2544
+pacifica/downloader/policy.py,sha256=nd-NyFSdGOJAkN-kxo7qStHXSsL2KOphlAPqaD3ePLE,992
+pacifica/downloader/common/__init__.py,sha256=BqboDBwLFFgYee87mnVjILVXknYVH0upPuHC76gLbSA,1053
+pacifica_downloader-0.4.1.dist-info/LICENSE,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+pacifica_downloader-0.4.1.dist-info/METADATA,sha256=NS6aTp-ABxDr2pajC3MA_LIc51ljQZMYZnLzCFOr3zY,1263
+pacifica_downloader-0.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pacifica_downloader-0.4.1.dist-info/namespace_packages.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_downloader-0.4.1.dist-info/top_level.txt,sha256=97BgCdNVxU-31S58qvZcRI0NGHH7Zk4ZBB-KSTnEIpk,9
+pacifica_downloader-0.4.1.dist-info/RECORD,,
