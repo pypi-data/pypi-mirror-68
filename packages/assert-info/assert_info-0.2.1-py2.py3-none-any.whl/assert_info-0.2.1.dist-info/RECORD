@@ -1,0 +1,8 @@
+assert_info/__init__.py,sha256=nsT1QUdDTO7M4eknQpfDm_mLeuiGAssnjPuHC9MrnXY,50
+assert_info/__main__.py,sha256=m8XTqSK4C3AWhnjHZTSuzq2C_uWXX-wDabFqoPDnMWY,1060
+assert_info/assert_token.py,sha256=iY_4U6eTF7-6-nVMevYv-zAuoShgBjDuo-law5mrr8I,6914
+assert_info/assertions.py,sha256=MZvn8pPTXR2P9Y3SFfT6bb6sPNMiZwrRCaBkzmailto,1586
+assert_info-0.2.1.dist-info/entry_points.txt,sha256=1vnOlqs2P2yBYvHwSTQ7CAxlNNoBawsnEMH14wkF6wU,48
+assert_info-0.2.1.dist-info/WHEEL,sha256=kvwuEKnRH6O8i0OndiTtSFFMuXs9x3oJYWvW5x4ISEE,87
+assert_info-0.2.1.dist-info/METADATA,sha256=6oIqL9sSqRTrpQ-a-sQyQaiS3D8Rsgi_7iuqJfdX2OY,1814
+assert_info-0.2.1.dist-info/RECORD,,
