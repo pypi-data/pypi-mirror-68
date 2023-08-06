@@ -1,0 +1,10 @@
+README.md
+setup.py
+epsound/__init__.py
+epsound/wavplayer.py
+epsound.egg-info/PKG-INFO
+epsound.egg-info/SOURCES.txt
+epsound.egg-info/dependency_links.txt
+epsound.egg-info/not-zip-safe
+epsound.egg-info/requires.txt
+epsound.egg-info/top_level.txt
