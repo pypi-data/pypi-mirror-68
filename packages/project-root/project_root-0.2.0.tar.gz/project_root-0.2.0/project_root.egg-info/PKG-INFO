@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: project-root
+Version: 0.2.0
+Summary: run your code for any nested module
+Home-page: https://github.com/yontilevin/project_root
+Author: Yonti Levin
+Author-email: therealyontilevin@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
