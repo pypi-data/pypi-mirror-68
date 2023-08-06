@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: plone\n"
+"POT-Creation-Date: 2020-05-07 19:08+0000\n"
+"PO-Revision-Date: 2013-05-23 16:38+0100\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: eu <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"X-Poedit-Language: Basque\n"
+
+#. Default: "Document Viewer Convert"
+msgid "Document Viewer Convert"
+msgstr "Dokumentu bisorera bihurtu"
+
+#. Default: "Document Viewer Settings"
+msgid "Document Viewer Settings"
+msgstr "Dokumentu bisorearen ezarpenak"
+
+#: ../browser/templates/async-monitor.pt:29
+msgid "Monitor Document Viewer Async Jobs"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:60
+msgid "Remove"
+msgstr ""
+
+#: ../browser/templates/group-view.pt:43
+msgid "Search..."
+msgstr ""
+
+#: ../browser/templates/group-view.pt:67
+msgid "View"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:33
+msgid "You have ${jobs} jobs yet to finish."
+msgstr ""
+
+#: ../browser/templates/group-view.pt:46
+msgid "clear search"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:42
+msgid "last access"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:41
+msgid "object"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:43
+msgid "running time"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:40
+msgid "status"
+msgstr ""
+
+#: ../browser/templates/async-monitor.pt:39
+msgid "user"
+msgstr ""
