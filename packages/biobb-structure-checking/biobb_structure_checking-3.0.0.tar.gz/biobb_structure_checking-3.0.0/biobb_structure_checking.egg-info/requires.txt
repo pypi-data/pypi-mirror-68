@@ -1,0 +1,4 @@
+biobb_structure_manager==3.0.0
+modeller==9.23
+psutil
+biopython==1.76
