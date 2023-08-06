@@ -1,0 +1,10 @@
+messi/__init__.py,sha256=ZgpfOLWpOZEzaUWgZMrdeGJDCsC5W3pX1pHMkdJA-3k,1847
+messi/__main__.py,sha256=bsLOczAEG6CWP_4RF5dOdAxHZfxRwosHd0eJseAr638,59
+messi/version.py,sha256=2eiWQI55fd-roDdkt4Hvl9WzrTJ4xQo33VzFud6D03U,22
+messi/c_source/__init__.py,sha256=lgAJMIdlA_nlI3JVQLo2zns2_2w6ZhJtj7G49CRmrDQ,13484
+messi-0.4.0.dist-info/LICENSE,sha256=fWni4NSkaAeLRi61QGjiKz1sqmIlKibFdhKsMLk5TIM,1080
+messi-0.4.0.dist-info/METADATA,sha256=lRs0TQoP_-YNc5H-vgf_DjeAVKMCD4aiXXjsezZyTSE,7834
+messi-0.4.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+messi-0.4.0.dist-info/entry_points.txt,sha256=In5HpOCvlrAJZ0bd7Q7NV6lBu5U71u7EIjQo_RxG9rc,47
+messi-0.4.0.dist-info/top_level.txt,sha256=_dVgiLFt8TmRBV5DuJ7coTjQSgvr4zDTLBG8UUyc__w,6
+messi-0.4.0.dist-info/RECORD,,
