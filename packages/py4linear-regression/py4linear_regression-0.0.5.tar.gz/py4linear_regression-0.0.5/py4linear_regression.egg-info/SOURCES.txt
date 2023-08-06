@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+py4linear_regression/__init__.py
+py4linear_regression/regression.py
+py4linear_regression.egg-info/PKG-INFO
+py4linear_regression.egg-info/SOURCES.txt
+py4linear_regression.egg-info/dependency_links.txt
+py4linear_regression.egg-info/requires.txt
+py4linear_regression.egg-info/top_level.txt
