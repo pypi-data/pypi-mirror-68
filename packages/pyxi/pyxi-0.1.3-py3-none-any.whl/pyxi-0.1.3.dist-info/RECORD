@@ -1,0 +1,13 @@
+pyxi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxi/animation.py,sha256=ETvzMnH9MTCJQDW_TIN1Cm6_xl4WvU-KCsiD8Gi4We4,1201
+pyxi/canvas.py,sha256=0UAmyoWxw_WK2VKI7ynVCEFWLefBE4HnvzQM9lEo4nA,1301
+pyxi/image.py,sha256=yoUfU7AgMsF3U21C3bg8oLulBRDuKyOb0c8qqIeqmf4,4855
+pyxi/layer.py,sha256=gOv58R0M-dYiZvfJcgAH0TuFHJBf7VWx-3KvvX-h_V4,1476
+pyxi/palette.py,sha256=y0pvXHgAYcBLNWLcxB9VxA6YYcnqa28NdSPMifsyhBQ,993
+pyxi/tile_ref.py,sha256=dp1ftGuYf1MTPfUFnVpmM0lOoHwQv0dBoqkOnYJ-4nc,838
+pyxi/tileset.py,sha256=jd6n99_Sep175Wy9D4oXchPhri8yKDeGNBRpWh_PKhE,1097
+pyxi-0.1.3.dist-info/LICENSE.md,sha256=rE1DVug1C_v7QGLJ8a7QZQ0fiuqyUmv005RPlZW1Mgo,1071
+pyxi-0.1.3.dist-info/METADATA,sha256=_0l285e0zZZ1IquXn9IGWizD4JmZpwau9rFzc8v0T_U,1696
+pyxi-0.1.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyxi-0.1.3.dist-info/top_level.txt,sha256=K4v_0NRO0uK_b_vLBd8zQLLyf2_NgPXBa7jlnwROla0,5
+pyxi-0.1.3.dist-info/RECORD,,
