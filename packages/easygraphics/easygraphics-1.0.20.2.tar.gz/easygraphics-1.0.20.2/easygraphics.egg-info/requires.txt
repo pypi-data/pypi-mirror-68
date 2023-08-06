@@ -1,0 +1,4 @@
+PyQt5
+pygame
+qimage2ndarray
+apng
