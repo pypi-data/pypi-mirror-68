@@ -1,0 +1,10 @@
+README.md
+setup.py
+fds/__init__.py
+fds/list.py
+fds/queue.py
+fds/stack.py
+py_fds.egg-info/PKG-INFO
+py_fds.egg-info/SOURCES.txt
+py_fds.egg-info/dependency_links.txt
+py_fds.egg-info/top_level.txt
