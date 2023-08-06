@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+salesfly/__init__.py
+salesfly/errors.py
+salesfly/geoip_api.py
+salesfly/mail_api.py
+salesfly/multipart.py
+salesfly/pdf_api.py
+salesfly/rest.py
+salesfly/usage_api.py
+salesfly/version.py
+salesfly.egg-info/PKG-INFO
+salesfly.egg-info/SOURCES.txt
+salesfly.egg-info/dependency_links.txt
+salesfly.egg-info/requires.txt
+salesfly.egg-info/top_level.txt
