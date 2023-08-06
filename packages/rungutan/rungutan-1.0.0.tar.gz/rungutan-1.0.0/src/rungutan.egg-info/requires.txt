@@ -1,0 +1,7 @@
+numpy
+simplejson
+requests
+sentry-sdk
+
+[test]
+coverage
