@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: lektor-simplemde
+Version: 0.5
+Summary: Plugin integrating SimpleMDE into Lektor admin
+Home-page: UNKNOWN
+Author: Anton Patrushev
+Author-email: ap@spherical.pm
+Maintainer: spherical.pm
+Maintainer-email: support@spherical.pm
+License: MIT
+Keywords: Lektor admin plugin simplemde wysiwyg markdown editor
+Platform: UNKNOWN
+Classifier: Framework :: Lektor
+Classifier: Environment :: Plugins
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: spherical-dev[dev] (<0.1,>0.0.2) ; extra == 'dev'
+
+# What is this?
+
+This is a plugin for [Lektor](https://github.com/lektor/lektor/) integrates the [SimpleMDE](https://github.com/sparksuite/simplemde-markdown-editor) visual markdown editor. It attaches SimpleMDE to all fields of type **markdown** according to the model
+
+# Installation
+Install the plugin from pypi with one of the [standard ways](https://www.getlektor.com/docs/plugins/). No settings are required.
+
+# Known issues
+
+Currently, the editor is also shown for **text** fields i.e. it is shown for all fields that render as a <textarea> in the admin interface.
+
+# License
+The plugin is distributed under the [MIT license](https://opensource.org/licenses/MIT)
+
+# Support
+If you have problems or suggestions, submit them via issues here or use [Spherical support form](https://www.spherical.pm/about/#contacts)
+
+
+
