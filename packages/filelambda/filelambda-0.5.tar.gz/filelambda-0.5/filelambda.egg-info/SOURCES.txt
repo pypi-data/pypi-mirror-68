@@ -1,0 +1,11 @@
+README.md
+setup.py
+filelambda/__init__.py
+filelambda/files.py
+filelambda.egg-info/PKG-INFO
+filelambda.egg-info/SOURCES.txt
+filelambda.egg-info/dependency_links.txt
+filelambda.egg-info/not-zip-safe
+filelambda.egg-info/requires.txt
+filelambda.egg-info/top_level.txt
+test/test_files.py

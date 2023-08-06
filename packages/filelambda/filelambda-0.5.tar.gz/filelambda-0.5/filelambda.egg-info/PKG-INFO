@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: filelambda
+Version: 0.5
+Summary: Functions for working with files in Python
+Home-page: http://github.com/davidvhill/filelambda
+Author: David V. Hill
+Author-email: davehill75@gmail.com
+License: MIT
+Description: # filelambda
+        An (impure) functional Python file library.
+        
+        ## Why?
+        Functions are good. :snail:
+        
+        ## Reference
+        
+        | Function         | Description                          |
+        | ---------------- | ------------------------------------ |
+        | files.read       | read a text file                     |
+        | files.readb      | read a binary file                   |
+        | files.readlines  | read lines of a text file            |
+        | files.readlinesb | read lines of a binary file          |
+        | files.write      | write a text file                    |
+        | files.writeb     | write a binary file                  |
+        | files.append     | append to a text file                |
+        | files.appendb    | append to a binary file              |
+        | files.delete     | delete a file                        |
+        | files.exists     | check if a file exists               |
+        | files.mkdirs     | create parent directories for a file |
+        
+        ## Contributing
+        Rebase off latest master, send a pull request.
+        
+        
+        
+Keywords: python files functional
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
