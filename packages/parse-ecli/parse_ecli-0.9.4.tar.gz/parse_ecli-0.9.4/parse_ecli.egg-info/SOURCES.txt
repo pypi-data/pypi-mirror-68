@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+parse_ecli/__init__.py
+parse_ecli/decisions.json
+parse_ecli/gerichte.json
+parse_ecli/parse_ecli.py
+parse_ecli/pattern.py
+parse_ecli.egg-info/PKG-INFO
+parse_ecli.egg-info/SOURCES.txt
+parse_ecli.egg-info/dependency_links.txt
+parse_ecli.egg-info/entry_points.txt
+parse_ecli.egg-info/not-zip-safe
+parse_ecli.egg-info/top_level.txt
