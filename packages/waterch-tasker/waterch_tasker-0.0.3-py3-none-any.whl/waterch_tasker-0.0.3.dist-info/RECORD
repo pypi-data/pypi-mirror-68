@@ -1,0 +1,17 @@
+waterch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+waterch/tasker/__init__.py,sha256=3mlG8PlvLo49FG9B_w6Iy7-Iybdw6EVenwEWSRzwsi4,368
+waterch/tasker/__main__.py,sha256=AOnxLRoeEAKvZ5WENnrKYFzzZUBhYHwCks9JVpHuReM,83
+waterch/tasker/_typedef.py,sha256=r6-b7tBOO3BoHhNCfpKxPiwUMECY4TPBvD6EneWW7SQ,418
+waterch/tasker/launcher.py,sha256=n8UwShxYXYlJbCSw1Texs7v4JaR0tmg5ozMFid6FIZo,7507
+waterch/tasker/mixin.py,sha256=hJTrUcPhFUSOhCU_Ki797okiARMhi_0F-b1OIs59dCM,3086
+waterch/tasker/storage.py,sha256=4M-nQzttNHZJ3JZqFUWbfj95Znhh1gJJPYvF3NVI9LQ,1681
+waterch/tasker/utils.py,sha256=rHEpnNO5t0HH7dWGTsRUaJ3hR2ZTaE7SnE9wPF2hMqE,566
+waterch/tasker/tasks/__init__.py,sha256=Sw0kDbx-avKEX_hWJz46rPQ5ID3Y_FNyukOWqkIiZVE,122
+waterch/tasker/tasks/_base.py,sha256=ZZ_Yw9ry05hsJIC9JLMuuvnCa1BRr8P-2w76Oa9B7XM,775
+waterch/tasker/tasks/utils.py,sha256=rdvF1LDP0PNmOPFXcEF3fyyJFxW6NXPNZ5rjZKjHzrI,1381
+waterch_tasker-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+waterch_tasker-0.0.3.dist-info/METADATA,sha256=IeKw8khX-jjWyMeYcS2Fz1L2MUE3vFpjQL78lDf2Zcg,1235
+waterch_tasker-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+waterch_tasker-0.0.3.dist-info/entry_points.txt,sha256=WsyU4y2LnaUXCiCVjOs6q8D4bzxk-q8Z35i1jeeyZC4,58
+waterch_tasker-0.0.3.dist-info/top_level.txt,sha256=6jM0-7t0Lbo6KrZpH-efmEW7bqWjQvrkJC1DRl4lzPg,8
+waterch_tasker-0.0.3.dist-info/RECORD,,
