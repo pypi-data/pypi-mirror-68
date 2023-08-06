@@ -1,0 +1,12 @@
+README.md
+gv.json
+setup.py
+GammaViewer/__init__.py
+GammaViewer/gamma_viewer.py
+GammaViewer/static/extension.js
+gamma_viewer.egg-info/PKG-INFO
+gamma_viewer.egg-info/SOURCES.txt
+gamma_viewer.egg-info/dependency_links.txt
+gamma_viewer.egg-info/not-zip-safe
+gamma_viewer.egg-info/requires.txt
+gamma_viewer.egg-info/top_level.txt

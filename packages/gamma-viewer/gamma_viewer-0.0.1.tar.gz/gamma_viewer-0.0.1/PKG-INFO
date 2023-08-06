@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gamma_viewer
+Version: 0.0.1
+Summary: Interactive Translator UI for the Jupyter notebook, using React.
+Home-page: https://github.com/ranking-agent/gamma-viewer
+Author: CoVar
+License: MIT
+Description: 
+        Gamma Viewer
+        ======
+        Jupyter Notebook javascript extension for viewing Translator Standard messages in an analytic UI.
+        Installation
+        ============
+        .. code-block:: bash
+            pip install gamma_viewer
+            jupyter nbextension enable --py GammaViewer
+        Usage
+        =====
+        .. code-block:: python
+            from GammaViewer import GammaViewer
+            from IPython.display import display
+            import json
+        
+            with open('translator_standard_message.json', 'r') as f:
+                res = json.load(f)
+        
+            view = GammaViewer(props={"data":res})
+            display(view)
+        
+Keywords: ipython,jupyter,widgets,Translator,plotting,react
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Description-Content-Type: text/markdown
