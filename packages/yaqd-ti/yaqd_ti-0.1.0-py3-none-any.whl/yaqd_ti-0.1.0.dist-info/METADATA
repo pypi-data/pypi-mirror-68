@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: yaqd-ti
+Version: 0.1.0
+Summary: yaq daemons for interfacing with Texas Instruments integrated circuits
+Home-page: https://gitlab.com/yaq/yaqd-ti
+Author: yaq Developers
+Author-email: blaise@untzag.com
+License: GNU Lesser General Public License v3 (LGPL)
+Keywords: yaqd-ti
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: yaqd-core
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+# yaqd-ti
+
+[![PyPI](https://img.shields.io/pypi/v/yaqd-ti)](https://pypi.org/project/yaqd-ti)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-ti)](https://anaconda.org/conda-forge/yaqd-ti)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+
+yaq daemons for interfacing with Texas Instruments integrated circuits
+
+This package contains the following daemon(s):
+
+- https://yaq.fyi/daemons/ads1115
+
