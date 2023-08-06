@@ -1,0 +1,8 @@
+README.md
+setup.py
+ufmetadata/__init__.py
+ufmetadata/assets.py
+ufmetadata.egg-info/PKG-INFO
+ufmetadata.egg-info/SOURCES.txt
+ufmetadata.egg-info/dependency_links.txt
+ufmetadata.egg-info/top_level.txt
