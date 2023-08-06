@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cima.goes
+Version: 1.1b82
+Summary: GOES-16 File Processing
+Home-page: https://github.com/garciafido/cima-goes
+Author: Fido Garcia
+Author-email: garciafido@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: psutil (==5.7.0)
+Requires-Dist: netCDF4 (==1.5.3)
+Requires-Dist: google-cloud-storage (==1.28.1)
+Requires-Dist: aioftp (==0.16.0)
+Requires-Dist: aiofiles (==0.5.0)
+Requires-Dist: pyproj (==2.6.1.post1)
+
+UNKNOWN
+
+
