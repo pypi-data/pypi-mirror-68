@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: damenltk
+Version: 0.0.26
+Summary: Learning about Natural Language Tool Kit (NLTK) from tests
+Home-page: http://github.com/davidam/damenltk
+Author: David Arroyo Menéndez
+Author-email: davidam@gnu.org
+License: GPLv3
+Description: long_description
+Keywords: nlp nltk
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
