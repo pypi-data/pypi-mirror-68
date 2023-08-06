@@ -1,0 +1,15 @@
+README.md
+setup.py
+ztext/__init__.py
+ztext/oldcode.py
+ztext/ztext.py
+ztext.egg-info/PKG-INFO
+ztext.egg-info/SOURCES.txt
+ztext.egg-info/dependency_links.txt
+ztext.egg-info/requires.txt
+ztext.egg-info/top_level.txt
+ztext/nlpsteps/__init__.py
+ztext/nlpsteps/sentimentSocre.py
+ztext/nlpsteps/svo.py
+ztext/nlpsteps/text_clean.py
+ztext/nlpsteps/topicAnalysis.py

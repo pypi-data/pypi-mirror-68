@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ztext
+Version: 0.0.5
+Summary: An easy to use NLP tool
+Home-page: https://github.com/ZackAnalysis/ztext
+Author: Zack Dai
+Author-email: zdai@brocku.ca
+License: UNKNOWN
+Description: # ztext
+        
+        ## install
+        `pip3 install https://github.com/ZackAnalysis/ztext.git`
+        
+        a nlp tool
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
