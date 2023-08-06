@@ -1,0 +1,12 @@
+README.md
+setup.py
+xpprint/__init__.py
+xpprint/cli.py
+xpprint/xpprint.py
+xpprint.egg-info/PKG-INFO
+xpprint.egg-info/SOURCES.txt
+xpprint.egg-info/dependency_links.txt
+xpprint.egg-info/entry_points.txt
+xpprint.egg-info/not-zip-safe
+xpprint.egg-info/requires.txt
+xpprint.egg-info/top_level.txt

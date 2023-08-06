@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: xpprint
+Version: 0.1.4
+Summary: pretty-print of html
+Home-page: https://github.com/milucp/xpprint
+Author: milucp
+License: Apache Software License 2.0
+Description: UNKNOWN
+Keywords: xpprint
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
