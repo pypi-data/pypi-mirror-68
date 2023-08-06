@@ -1,0 +1,30 @@
+MANIFEST.in
+README.md
+setup.py
+knowknow/__init__.py
+knowknow/__main__.py
+knowknow/creating variables/web of science cooccurrences.ipynb
+knowknow/creating variables/.ipynb_checkpoints/web of science cooccurrences-checkpoint.ipynb
+knowknow/figures/SB-best years.png
+knowknow/figures/SB-time lag.png
+knowknow/figures/auth.agedist.png
+knowknow/figures/auth.prop dead by cohort.png
+knowknow/figures/aysum_example_authordeath.png
+knowknow/figures/cdeath_logreg_Age.png
+knowknow/figures/cdeath_logreg_Cohort.png
+knowknow/figures/cdeath_logreg_Year.png
+knowknow/figures/cit.agedist.png
+knowknow/figures/cit.prop dead by cohort.png
+knowknow/figures/compauth.age.year.png
+knowknow/figures/compcit.age.year.png
+knowknow/figures/cysum_example_authordeath.png
+knowknow/figures/cysum_example_citationdeath.png
+knowknow/figures/log-log citation degree distribution.png
+knowknow/figures/prop dead by cohort.png
+knowknow/figures/summary_docs_founding.png
+knowknow/figures/totalauth.age.year.png
+knowknow/figures/totalcit.age.year.png
+knowknow_amcgail.egg-info/PKG-INFO
+knowknow_amcgail.egg-info/SOURCES.txt
+knowknow_amcgail.egg-info/dependency_links.txt
+knowknow_amcgail.egg-info/top_level.txt
