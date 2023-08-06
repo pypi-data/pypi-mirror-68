@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_classproperty/__init__.py
+simple_classproperty/classproperty_decorator.py
+simple_classproperty/classproperty_meta.py
+simple_classproperty.egg-info/PKG-INFO
+simple_classproperty.egg-info/SOURCES.txt
+simple_classproperty.egg-info/dependency_links.txt
+simple_classproperty.egg-info/top_level.txt
