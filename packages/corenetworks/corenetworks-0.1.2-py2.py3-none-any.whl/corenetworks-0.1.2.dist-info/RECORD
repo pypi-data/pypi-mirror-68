@@ -1,0 +1,14 @@
+corenetworks/__init__.py,sha256=XwC4wfsfFlTrvurxqyom_A-57Z7m9Q8bc7rRaDnVUXo,319
+corenetworks/authenticators.py,sha256=BOUuc_mOTf95WuAXTCxNT5U2r9vnHKmp-RpPx77Slis,2198
+corenetworks/client.py,sha256=fCi7k7zQHrkAXDjKSwVP-UNjTuGBvFeosPKBLEC6EYQ,11747
+corenetworks/exceptions.py,sha256=6jRnzLu6_jEIq2H8EjTvzuox3W-3UcZqj88wj19oFL8,584
+corenetworks/test/fixtures/__init__.py,sha256=_kigE792au1C9ztP_LT5h0vRnNRXnxPR_XMytk-QcCw,28
+corenetworks/test/fixtures/callback.py,sha256=B-4tJOMGN4ManoAFHJ1Z__Tt7tKZ6j0wC0TzN22Cfiw,1048
+corenetworks/test/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+corenetworks/test/unit/test_authenticators.py,sha256=anxvIOQVbSOhj1xu7f_YfuXurW-P4avSNcNUpdQVhno,602
+corenetworks/test/unit/test_client.py,sha256=yYBzKCoovto9EVEK3b0jJWnfv4BL-JmZiptmr9caR_c,5851
+corenetworks-0.1.2.dist-info/LICENSE,sha256=xx-n67yw5oaKhRKWfEVvKF6Y8PNPgLBdKj3HFwZMFww,1122
+corenetworks-0.1.2.dist-info/METADATA,sha256=makkMJ13LVilC7otyDhd80aPRsfsGrLpn9fnOW6CErs,2257
+corenetworks-0.1.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+corenetworks-0.1.2.dist-info/top_level.txt,sha256=fv1EFJvpPO7OCC5-0tPrTM3XpsGLAW-YbagdkW4WcDE,13
+corenetworks-0.1.2.dist-info/RECORD,,
