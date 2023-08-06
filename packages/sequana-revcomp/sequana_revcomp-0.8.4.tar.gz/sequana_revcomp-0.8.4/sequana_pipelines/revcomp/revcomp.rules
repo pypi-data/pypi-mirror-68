@@ -1,0 +1,43 @@
+"""reverse complement sequana pipeline
+
+Affiliation: Institut Pasteur @ 2019-2020
+
+This pipeline is part of Sequana software (sequana.readthedocs.io)
+
+"""
+from sequana import snaketools as sm
+
+
+# This must be defined before the include
+configfile: "config.yaml"
+
+
+# A convenient manager
+#
+def sample_func(filename):
+    import os
+    filename = os.path.basename(filename)
+    filename = filename.split(".", 1)[0]
+    return filename
+
+
+manager = sm.PipelineManagerGeneric("revcomp", config, sample_func)
+
+rule pipeline:
+    input: expand('rc/{sample}.fastq.gz', sample=list(manager.samples.keys()))
+
+
+## Revcomp rule
+__revcomp__input = manager.getrawdata()
+__revcomp__logs = temp("logs/{sample}.logs")
+__revcomp__output = "rc/{sample}.fastq.gz"
+include: sm.modules['revcomp_rule']
+
+
+onsuccess:
+    from sequana import logger
+    logger.level = "INFO"
+    manager.teardown(extra_dirs_to_remove=['logs'])
+
+onerror:
+    print("An error occurred. See message above.")
