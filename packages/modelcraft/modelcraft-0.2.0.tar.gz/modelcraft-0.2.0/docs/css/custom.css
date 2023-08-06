@@ -1,0 +1,21 @@
+body {
+  margin: 3em auto;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+code {
+  overflow-x: auto;
+}
+
+.logo {
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  width: 20rem;
+}
