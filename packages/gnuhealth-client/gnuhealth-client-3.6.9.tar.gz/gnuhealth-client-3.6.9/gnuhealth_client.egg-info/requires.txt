@@ -1,0 +1,6 @@
+PyGObject
+pycairo
+python-dateutil
+
+[calendar]
+GooCalendar>=0.5
