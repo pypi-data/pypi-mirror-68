@@ -1,0 +1,3 @@
+[console_scripts]
+view-zmx=otk.rt2.cli:view_zmx
+
