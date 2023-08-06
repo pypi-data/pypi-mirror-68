@@ -1,0 +1,8 @@
+README.md
+setup.py
+FileTransfer/FileTransfer.py
+FileTransfer/__init__.py
+FileTransfer_LQR471814.egg-info/PKG-INFO
+FileTransfer_LQR471814.egg-info/SOURCES.txt
+FileTransfer_LQR471814.egg-info/dependency_links.txt
+FileTransfer_LQR471814.egg-info/top_level.txt
