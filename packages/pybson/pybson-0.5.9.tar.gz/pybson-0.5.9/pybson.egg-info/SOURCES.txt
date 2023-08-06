@@ -1,0 +1,13 @@
+README.rst
+setup.py
+pybson/__init__.py
+pybson/codec.py
+pybson/network.py
+pybson/objectid.py
+pybson/py3compat.py
+pybson/tz_util.py
+pybson.egg-info/PKG-INFO
+pybson.egg-info/SOURCES.txt
+pybson.egg-info/dependency_links.txt
+pybson.egg-info/requires.txt
+pybson.egg-info/top_level.txt
