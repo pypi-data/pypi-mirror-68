@@ -1,0 +1,5 @@
+matplotlib
+nose
+numpy
+python-libsbml
+scipy
