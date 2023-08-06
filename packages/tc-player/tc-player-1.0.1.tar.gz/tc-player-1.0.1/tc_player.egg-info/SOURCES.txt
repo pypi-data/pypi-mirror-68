@@ -1,0 +1,9 @@
+README.rst
+setup.py
+scripts/tc
+tc/__init__.py
+tc_player.egg-info/PKG-INFO
+tc_player.egg-info/SOURCES.txt
+tc_player.egg-info/dependency_links.txt
+tc_player.egg-info/requires.txt
+tc_player.egg-info/top_level.txt
