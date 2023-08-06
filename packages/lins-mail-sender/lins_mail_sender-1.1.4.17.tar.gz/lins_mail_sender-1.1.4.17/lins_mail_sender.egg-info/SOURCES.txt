@@ -1,0 +1,8 @@
+README.md
+setup.py
+lins_mail_sender/__init__.py
+lins_mail_sender/lins_mail.py
+lins_mail_sender.egg-info/PKG-INFO
+lins_mail_sender.egg-info/SOURCES.txt
+lins_mail_sender.egg-info/dependency_links.txt
+lins_mail_sender.egg-info/top_level.txt
