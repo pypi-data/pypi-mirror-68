@@ -1,0 +1,65 @@
+Metadata-Version: 1.1
+Name: qpsolvers
+Version: 1.3
+Summary: Quadratic Programming solvers for Python with a unified API
+Home-page: https://github.com/stephane-caron/qpsolvers
+Author: Stéphane Caron
+Author-email: stephane.caron@normalesup.org
+License: LGPL
+Description: This module provides a single function ``solve_qp(P, q, G, h, A, b, lb, ub,
+        solver=X)`` with a *solver* keyword argument to select the backend solver. The
+        quadratic program it solves is, in standard form:
+        
+            .. figure:: https://latex.codecogs.com/gif.latex?%5Cbegin%7Bequation%7D%20%5Cbegin%7Baligned%7D%20%7B%5Ccolor%7BBlack%7D%20%5Cunderset%7Bx%7D%7B%5Ctextrm%7Bminimize%7D%7D%20%5Cquad%7D%20%26%20%7B%5Ccolor%7BBlack%7D%20%5Cfrac%7B1%7D%7B2%7D%20x%5ET%20P%20x%20&plus;%20q%5ET%20x%7D%20%5C%5C%20%7B%5Ccolor%7BBlack%7D%20%5Ctextrm%7Bsubject%20to%7D%20%5Cquad%7D%20%26%20%7B%5Ccolor%7BBlack%7D%20Gx%20%5Cleq%20h%7D%20%5C%5C%20%26%20%7B%5Ccolor%7BBlack%7D%20Ax%20%3D%20b%7D%20%5C%5C%20%26%20%7B%5Ccolor%7BBlack%7D%20%5Cmathit%7Blb%7D%20%5Cleq%20x%20%5Cleq%20%5Cmathit%7Bub%7D%7D%20%5Cend%7Baligned%7D%20%5Cend%7Bequation%7D
+        
+        where vector inequalities are taken coordinate by coordinate.
+        
+        Solvers
+        -------
+        
+        The list of supported solvers currently includes:
+        
+        - Dense solvers:
+            - `CVXOPT <http://cvxopt.org/>`_
+            - `qpOASES <https://projects.coin-or.org/qpOASES>`_
+            - `quadprog <https://pypi.python.org/pypi/quadprog>`_
+        - Sparse solvers:
+            - `ECOS <https://web.stanford.edu/~boyd/papers/ecos.html>`_
+            - `Gurobi <https://www.gurobi.com/>`_
+            - `MOSEK <https://mosek.com/>`_
+            - `OSQP <https://github.com/oxfordcontrol/osqp>`_
+        
+        Example
+        -------
+        
+        To solve a quadratic program, simply build the matrices that define it and call
+        the ``solve_qp`` function:
+        
+        .. code:: python
+        
+            from numpy import array, dot
+            from qpsolvers import solve_qp
+        
+            M = array([[1., 2., 0.], [-8., 3., 2.], [0., 1., 1.]])
+            P = dot(M.T, M)  # quick way to build a symmetric matrix
+            q = dot(array([3., 2., 3.]), M).reshape((3,))
+            G = array([[1., 2., 1.], [2., 0., 1.], [-1., 2., -1.]])
+            h = array([3., 2., -2.]).reshape((3,))
+            A = array([1., 1., 1.])
+            b = array([1.])
+        
+            print "QP solution:", solve_qp(P, q, G, h, A, b)
+        
+        This example outputs the solution ``[0.30769231, -0.69230769,  1.38461538]``.
+        
+Keywords: qp,quadratic programming,solver
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
