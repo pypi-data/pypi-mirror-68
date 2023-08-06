@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charSet="utf-8"/><title>VisualDL</title><link rel="shortcut icon" href="/app/favicon.ico"/><meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no,shrink-to-fit=no"/><meta name="description" content="A platform to visualize the deep learning process and result."/><meta name="keywords" content="visualdl,paddlepaddle,visualization,deep learning"/><meta name="author" content="PeterPanZH &lt;littlepanzh@gmail.com&gt; (https://github.com/PeterPanZH)"/><meta name="next-head-count" content="7"/><link rel="preload" href="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/pages/_app.js" as="script"/><link rel="preload" href="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/pages/index.js" as="script"/><link rel="preload" href="/app/_next/static/runtime/webpack-1383dd5b43e66c91eba3.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/framework.eb23ff06184ceee71586.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/a29ae703.feaf6e1ffb23af153342.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/commons.f48e8ff57e1490852bd6.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/35d3bea75d6849ac776008838336efd8c8b0e750.2c81dfd1ec97a073a11f.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/e760d99ec0ee7f8fb0192c9b08ad0171fbf530ad.a77f68a59ec4e369ac1c.js" as="script"/><link rel="preload" href="/app/_next/static/chunks/d7696dd152aee8686709fb2debeb4f93d58fd07e.4d13e898664a267b4253.js" as="script"/><link rel="preload" href="/app/_next/static/runtime/main-0bf04a70616fb4169f46.js" as="script"/><style data-styled="" data-styled-version="5.1.0">.kGrjcQ{display:inline-block;color:currentColor;opacity:0.29;}/*!sc*/
+.kuveRk{display:inline-block;color:currentColor;opacity:1;}/*!sc*/
+data-styled.g2[id="Language__Item-sflo7u-0"]{content:"kGrjcQ,kuveRk,"}/*!sc*/
+.llANVx{display:inline-block;margin:0 0.35714285714285715rem;height:1em;width:1px;background-color:currentColor;}/*!sc*/
+data-styled.g3[id="Language__Divider-sflo7u-1"]{content:"llANVx,"}/*!sc*/
+.cHrhnW{background-color:#1527C2;color:#FFF;height:100%;width:100%;padding:0 1.4285714285714286rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;}/*!sc*/
+.cHrhnW > .left{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.cHrhnW > .right{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:-1.4285714285714286rem;}/*!sc*/
+data-styled.g4[id="Navbar__Nav-sc-1wmheaz-0"]{content:"cHrhnW,"}/*!sc*/
+.gdyapR{font-size:1.4285714285714286rem;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';font-weight:600;margin-right:2.857142857142857rem;}/*!sc*/
+.gdyapR > img{height:2.2142857142857144rem;width:7rem;vertical-align:middle;margin-right:0.5714285714285714rem;}/*!sc*/
+.gdyapR > span{vertical-align:middle;}/*!sc*/
+data-styled.g5[id="Navbar__Logo-sc-1wmheaz-1"]{content:"gdyapR,"}/*!sc*/
+.imhNcA{padding:0 1.4285714285714286rem;height:100%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-color:#1527C2;cursor:pointer;-webkit-transition:background-color 75ms ease-in;transition:background-color 75ms ease-in;}/*!sc*/
+.imhNcA:hover{background-color:#172cd9;}/*!sc*/
+.imhNcA > .nav-text{padding:0.7142857142857143rem 0 0.5rem;border-bottom-width:0.21428571428571427rem;border-bottom-style:solid;border-bottom-color:transparent;-webkit-transition:border-bottom 75ms ease-in;transition:border-bottom 75ms ease-in;text-transform:uppercase;}/*!sc*/
+data-styled.g6[id="Navbar__NavItem-sc-1wmheaz-2"]{content:"imhNcA,"}/*!sc*/
+.gHjJJW{padding-top:4.285714285714286rem;}/*!sc*/
+data-styled.g7[id="Layout__Main-sc-1rjjfjj-0"]{content:"gHjJJW,"}/*!sc*/
+.JEvrL{z-index:10000;height:4.285714285714286rem;width:100%;top:0;right:0;left:0;position:fixed;}/*!sc*/
+data-styled.g8[id="Layout__Header-sc-1rjjfjj-1"]{content:"JEvrL,"}/*!sc*/
+@font-face{font-family:vdl-icon;src:url("/app/style/fonts/vdl-icon.ttf"),url("/app/style/fonts/vdl-icon.woff"),url("/app/style/fonts/vdl-icon.svg");font-style:normal;font-weight:normal;font-display:block;}/*!sc*/
+html{line-height:1.15;-webkit-text-size-adjust:100%;text-size-adjust:100%;}/*!sc*/
+body{margin:0;}/*!sc*/
+h1{font-size:2em;margin:0.67em 0;}/*!sc*/
+hr{box-sizing:content-box;height:0;overflow:visible;}/*!sc*/
+pre{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+a{background-color:transparent;}/*!sc*/
+abbr[title]{border-bottom:none;-webkit-text-decoration:underline;text-decoration:underline;}/*!sc*/
+b,strong{font-weight:bolder;}/*!sc*/
+code,kbd,samp{font-family:monospace,monospace;font-size:1em;}/*!sc*/
+small{font-size:80%;}/*!sc*/
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}/*!sc*/
+sub{bottom:-0.25em;}/*!sc*/
+sup{top:-0.5em;}/*!sc*/
+img{border-style:none;}/*!sc*/
+button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}/*!sc*/
+button,input{overflow:visible;}/*!sc*/
+button,select{text-transform:none;}/*!sc*/
+button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}/*!sc*/
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}/*!sc*/
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}/*!sc*/
+fieldset{padding:0.35em 0.625em 0.75em;}/*!sc*/
+legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}/*!sc*/
+progress{vertical-align:baseline;}/*!sc*/
+textarea{overflow:auto;}/*!sc*/
+[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}/*!sc*/
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}/*!sc*/
+[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}/*!sc*/
+[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}/*!sc*/
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}/*!sc*/
+details{display:block;}/*!sc*/
+summary{display:list-item;}/*!sc*/
+template{display:none;}/*!sc*/
+[hidden]{display:none;}/*!sc*/
+abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}/*!sc*/
+.vdl-icon{font-family:'vdl-icon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}/*!sc*/
+.icon-refresh:before{content:'\e90c';}/*!sc*/
+.icon-restore-size:before{content:'\e90d';}/*!sc*/
+.icon-minimize:before{content:'\e90e';}/*!sc*/
+.icon-log-axis:before{content:'\e90f';}/*!sc*/
+.icon-maximize:before{content:'\e910';}/*!sc*/
+.icon-chevron-down:before{content:'\e90a';}/*!sc*/
+.icon-reduction:before{content:'\e900';}/*!sc*/
+.icon-dimension:before{content:'\e901';}/*!sc*/
+.icon-revert:before{content:'\e902';}/*!sc*/
+.icon-download:before{content:'\e903';}/*!sc*/
+.icon-text:before{content:'\e904';}/*!sc*/
+.icon-audio:before{content:'\e905';}/*!sc*/
+.icon-scalar:before{content:'\e906';}/*!sc*/
+.icon-histogram:before{content:'\e907';}/*!sc*/
+.icon-search:before{content:'\e908';}/*!sc*/
+.icon-image:before{content:'\e909';}/*!sc*/
+.icon-check-mark:before{content:'\e90b';}/*!sc*/
+html{font-size:14px;font-family:'Merriweather Sans',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}/*!sc*/
+html,body{height:100%;background-color:#F4F4F4;color:#333;}/*!sc*/
+a{-webkit-text-decoration:none;text-decoration:none;color:inherit;}/*!sc*/
+a:visited{color:currentColor;}/*!sc*/
+*{box-sizing:border-box;}/*!sc*/
+#nprogress{pointer-events:none;}/*!sc*/
+#nprogress .bar{background:#FFF;z-index:99999;top:0;left:0;position:fixed;height:2px;width:100%;}/*!sc*/
+#nprogress .peg{display:block;right:0;position:absolute;height:100%;width:7.142857142857143rem;box-shadow:0 0 rem(10) #FFF,0 0 0.35714285714285715rem #FFF;opacity:1;-webkit-transform:rotate(3deg) translate(0px,-0.2857142857142857rem);-ms-transform:rotate(3deg) translate(0px,-0.2857142857142857rem);transform:rotate(3deg) translate(0px,-0.2857142857142857rem);}/*!sc*/
+#nprogress .spinner{display:block;z-index:99999;top:20px;right:20px;position:fixed;}/*!sc*/
+#nprogress .spinner-icon{height:calc(2.142857142857143rem - 10px);width:calc(2.142857142857143rem - 10px);box-sizing:border-box;border:solid 2px transparent;border-top-color:#FFF;border-left-color:#FFF;border-radius:50%;-webkit-animation:fEWCgj 400ms linear infinite;animation:fEWCgj 400ms linear infinite;}/*!sc*/
+.nprogress-custom-parent{overflow:hidden;position:relative;}/*!sc*/
+.nprogress-custom-parent #nprogress .spinner,.nprogress-custom-parent #nprogress .bar{position:absolute;}/*!sc*/
+data-styled.g9[id="sc-global-cBWRhl1"]{content:"sc-global-cBWRhl1,"}/*!sc*/
+@-webkit-keyframes fEWCgj{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}/*!sc*/
+@keyframes fEWCgj{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}/*!sc*/
+data-styled.g10[id="sc-keyframes-fEWCgj"]{content:"fEWCgj,"}/*!sc*/
+</style></head><body><div id="__next"><main class="Layout__Main-sc-1rjjfjj-0 gHjJJW"><header class="Layout__Header-sc-1rjjfjj-1 JEvrL"><nav class="Navbar__Nav-sc-1wmheaz-0 cHrhnW"><div class="left"><a href="/app/index" class="Navbar__Logo-sc-1wmheaz-1 gdyapR"><img alt="PaddlePaddle" src="/app/images/logo.svg"/><span>VisualDL</span></a><a href="/app/scalars" class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><span class="nav-text">Scalars</span></a><a href="/app/samples" class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><span class="nav-text">Samples</span></a><a href="/app/graphs" class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><span class="nav-text">Graphs</span></a><a href="/app/high-dimensional" class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><span class="nav-text">High Dimensional</span></a></div><div class="right"><a class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><span class="Language__Item-sflo7u-0 kGrjcQ">中</span><span class="Language__Divider-sflo7u-1 llANVx"></span><span class="Language__Item-sflo7u-0 kuveRk">En</span></a><a class="Navbar__NavItem-sc-1wmheaz-2 imhNcA"><i class="vdl-icon icon-refresh "></i></a></div></nav></header></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"initialI18nStore":{"en":{"common":{"scalars":"Scalars","samples":"Samples","graphs":"Graphs","high-dimensional":"High Dimensional","search":"Search","search-tags":"Search tags in RegExp","search-result":"Search Result","search-empty":"Nothing found. Please try again with another word. \u003c1/\u003eOr you can \u003c3\u003esee all charts\u003c/3\u003e.","unselected-empty":"Nothing selected. \u003c1/\u003ePlease select display data from right side.","empty":"Empty","select":"Please Select","select-all":"Select All","runs":"Runs","select-runs":"Select Runs","search-runs":"Search runs","running":"Running","stopped":"Stopped","run":"Run","stop":"Stop","start-realtime-refresh":"Start realtime refresh","stop-realtime-refresh":"Stop realtime refresh","loading":"Loading","error":"Error occurred","previous-page":"Prev Page","next-page":"Next Page","total-page":"{{count}} page, jump to","total-page_plural":"{{count}} pages, jump to","confirm":"Confirm"}}},"initialLanguage":"en","i18nServerInstance":null,"pageProps":{"namespacesRequired":["common"]}},"page":"/","query":{},"buildId":"Uhb60uCgnxPJQ6Eu6V6fw","assetPrefix":"/app","runtimeConfig":{},"nextExport":true,"isFallback":false,"gip":true,"appGip":true}</script><script nomodule="" src="/app/_next/static/runtime/polyfills-77d65d429d416d0520dd.js"></script><script async="" data-next-page="/_app" src="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/pages/_app.js"></script><script async="" data-next-page="/" src="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/pages/index.js"></script><script src="/app/_next/static/runtime/webpack-1383dd5b43e66c91eba3.js" async=""></script><script src="/app/_next/static/chunks/framework.eb23ff06184ceee71586.js" async=""></script><script src="/app/_next/static/chunks/a29ae703.feaf6e1ffb23af153342.js" async=""></script><script src="/app/_next/static/chunks/commons.f48e8ff57e1490852bd6.js" async=""></script><script src="/app/_next/static/chunks/35d3bea75d6849ac776008838336efd8c8b0e750.2c81dfd1ec97a073a11f.js" async=""></script><script src="/app/_next/static/chunks/e760d99ec0ee7f8fb0192c9b08ad0171fbf530ad.a77f68a59ec4e369ac1c.js" async=""></script><script src="/app/_next/static/chunks/d7696dd152aee8686709fb2debeb4f93d58fd07e.4d13e898664a267b4253.js" async=""></script><script src="/app/_next/static/runtime/main-0bf04a70616fb4169f46.js" async=""></script><script src="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/_buildManifest.js" async=""></script><script src="/app/_next/static/Uhb60uCgnxPJQ6Eu6V6fw/_ssgManifest.js" async=""></script></body></html>
