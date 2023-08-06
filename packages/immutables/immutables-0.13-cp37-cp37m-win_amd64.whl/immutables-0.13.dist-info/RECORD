@@ -1,0 +1,13 @@
+immutables/__init__.py,sha256=tdnUJ7OpGLazEbJDkDoXKtlQ7Yr1VWcd4FXhgroAq1Q,230
+immutables/_map.c,sha256=ml9zWx0ZKHlMRf93PUiV39uOXInefxd_QivBd2E6-FU,112163
+immutables/_map.cp37-win_amd64.pyd,sha256=J1UIB9y3VtvLWvKOwglY6Nn1nG2PC8P3lPgGaKNjGXI,43520
+immutables/_map.h,sha256=yZlfpozFFvqwAd6LRFOMsXXPIQP101nIcqUXNj0k5JA,2626
+immutables/_map.pyi,sha256=7oDesrojiR7Wf2T8zWAJ5eunI56ZLnadbHPH-xtbf6c,3157
+immutables/_version.py,sha256=Y31X3zmKIGHOGsYY8cJTjoJHBaF1kq9j7LUVzs2WGns,587
+immutables/map.py,sha256=y_5zw1ng2qAq1Llg_WFB0kliAqKrZETESysugm1cqkk,24230
+immutables/py.typed,sha256=2Ox0AU4FNnXJ0T5LyWKc_BbJXopWJJUFe8o2V7Zhvjc,9
+immutables-0.13.dist-info/LICENSE,sha256=bwMg--eyrDklMA3RO0Lna3wMb2o5nYxqh98iVdhzBzs,11604
+immutables-0.13.dist-info/METADATA,sha256=ELqtDPMGP55Kf_hIyTgCG6nMZdDM-oZHXjFsodYHYR8,3913
+immutables-0.13.dist-info/WHEEL,sha256=g8eocn77V_iXxq9laUIPSuxdwRHlhOsH3tLpu1uKUvQ,106
+immutables-0.13.dist-info/top_level.txt,sha256=0k-CFLiMEiRCfK3Ay3nyfS12m_56e82y15MuVxt364c,11
+immutables-0.13.dist-info/RECORD,,
