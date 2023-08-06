@@ -1,0 +1,9 @@
+AutoPilot/Board.py,sha256=Dz8WTd3E-GhtCRfhMNQD7x6v-fTO8P3nyPHFfpEo4TQ,99
+AutoPilot/__init__.py,sha256=oj6Nsl4z_kEUpNezTdlB5jiUlp2vKB6P78RJFapN0Dw,80
+tests/__init__.py,sha256=u9FhP8mCUDQWGymQI2I6Hf49O4GX1e85BN0mNVtEeuY,34
+tests/test_board.py,sha256=hbfRmQXdwHM2g1uL-2efhhNWdIvtjhD8-lVeO1fgB2U,161
+PiAutoPilot-0.0.1.dist-info/LICENSE,sha256=wI9otpJkjy7TU_xMJaXh3eRFfGeNmLh_6sD7aZw8l5c,1069
+PiAutoPilot-0.0.1.dist-info/METADATA,sha256=m0xI_XXv_1fMtrjN16-P2TP6-j-X1D9XzhspDsDLsYQ,1730
+PiAutoPilot-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PiAutoPilot-0.0.1.dist-info/top_level.txt,sha256=mgNjUFsayCMyuXtIaJvCORPmGSQNZBRDuIhDlObPvO8,16
+PiAutoPilot-0.0.1.dist-info/RECORD,,
