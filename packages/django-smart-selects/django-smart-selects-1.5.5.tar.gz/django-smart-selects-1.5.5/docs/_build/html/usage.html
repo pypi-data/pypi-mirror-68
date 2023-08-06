@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. Chained Selects &mdash; django-smart-selects 1.5.4 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="2. Settings" href="settings.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> django-smart-selects
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">2. Settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Chained Selects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#chainedforeignkey-options">ChainedForeignKey options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#chained-field-required">chained_field (required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chained-model-field-required">chained_model_field (required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show-all-optional">show_all (optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#auto-choose-optional">auto_choose (optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sort-optional">sort (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#chained-manytomany-selects">4. Chained ManyToMany Selects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-chained-fields-in-the-admin">Using chained fields in the admin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chainedmanytomanyfield-options">ChainedManyToManyField options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">chained_field</span></code> (required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> (required)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">auto_choose</span></code> (optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#horizontal-optional"><code class="docutils literal notranslate"><span class="pre">horizontal</span></code> (optional)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#grouped-selects">5. Grouped Selects</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">django-smart-selects</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li><span class="section-number">3. </span>Chained Selects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/usage.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="chained-selects">
+<h1><span class="section-number">3. </span>Chained Selects<a class="headerlink" href="#chained-selects" title="Permalink to this headline">¶</a></h1>
+<p>Given the following model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Continent</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Country</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Country</span><span class="p">)</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Area</span><span class="p">)</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">street</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once you select a continent, if you want only the countries on that continent to be available, you can use a <code class="docutils literal notranslate"><span class="pre">ChainedForeignKey</span></code> on the <code class="docutils literal notranslate"><span class="pre">Location</span></code> model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">smart_selects.db_fields</span> <span class="kn">import</span> <span class="n">ChainedForeignKey</span>
+
+<span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="n">ChainedForeignKey</span><span class="p">(</span>
+        <span class="n">Country</span><span class="p">,</span>
+        <span class="n">chained_field</span><span class="o">=</span><span class="s2">&quot;continent&quot;</span><span class="p">,</span>
+        <span class="n">chained_model_field</span><span class="o">=</span><span class="s2">&quot;continent&quot;</span><span class="p">,</span>
+        <span class="n">show_all</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">auto_choose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">sort</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Area</span><span class="p">)</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">street</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="chainedforeignkey-options">
+<h2>ChainedForeignKey options<a class="headerlink" href="#chainedforeignkey-options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="chained-field-required">
+<h3>chained_field (required)<a class="headerlink" href="#chained-field-required" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">chained_field</span></code> indicates the field on the same model that should be chained to. In the <code class="docutils literal notranslate"><span class="pre">Continent</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code>, <code class="docutils literal notranslate"><span class="pre">Location</span></code> example, <code class="docutils literal notranslate"><span class="pre">chained_field</span></code> is the name of the field <code class="docutils literal notranslate"><span class="pre">continent</span></code> in model <code class="docutils literal notranslate"><span class="pre">Location</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">)</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="chained-model-field-required">
+<h3>chained_model_field (required)<a class="headerlink" href="#chained-model-field-required" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> indicates the field of the chained model that corresponds to the model linked to by the <code class="docutils literal notranslate"><span class="pre">chained_field</span></code>. In the <code class="docutils literal notranslate"><span class="pre">Continent</span></code>, <code class="docutils literal notranslate"><span class="pre">Country</span></code>, <code class="docutils literal notranslate"><span class="pre">Location</span></code> example, <code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> is the name of field <code class="docutils literal notranslate"><span class="pre">continent</span></code> in Model <code class="docutils literal notranslate"><span class="pre">Country</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Country</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="show-all-optional">
+<h3>show_all (optional)<a class="headerlink" href="#show-all-optional" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">show_all</span></code> indicates if only the filtered results should be shown or if you also want to display the other results further down.</p>
+</div>
+<div class="section" id="auto-choose-optional">
+<h3>auto_choose (optional)<a class="headerlink" href="#auto-choose-optional" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">auto_choose</span></code> indicates if auto select the choice when there is only one available choice.</p>
+</div>
+<div class="section" id="sort-optional">
+<h3>sort (optional)<a class="headerlink" href="#sort-optional" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">sort</span></code> indicates if the result set should be sorted lexicographically or not. Disable if you want to use the <code class="docutils literal notranslate"><span class="pre">Model.ordering</span></code> option. Defaults to <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="chained-manytomany-selects">
+<h1><span class="section-number">4. </span>Chained ManyToMany Selects<a class="headerlink" href="#chained-manytomany-selects" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">ChainedManyToManyField</span></code> works as you would expect:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">smart_selects.db_fields</span> <span class="kn">import</span> <span class="n">ChainedManyToManyField</span>
+
+<span class="k">class</span> <span class="nc">Publication</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Writer</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">publications</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ManyToManyField</span><span class="p">(</span><span class="s1">&#39;Publication&#39;</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">)</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">ChainedManyToManyField</span><span class="p">(</span>
+        <span class="n">Writer</span><span class="p">,</span>
+        <span class="n">chained_field</span><span class="o">=</span><span class="s2">&quot;publication&quot;</span><span class="p">,</span>
+        <span class="n">chained_model_field</span><span class="o">=</span><span class="s2">&quot;publications&quot;</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="using-chained-fields-in-the-admin">
+<h2>Using chained fields in the admin<a class="headerlink" href="#using-chained-fields-in-the-admin" title="Permalink to this headline">¶</a></h2>
+<p>Do <strong>not</strong> specify the field in the <code class="docutils literal notranslate"><span class="pre">ModelAdmin</span></code> <code class="docutils literal notranslate"><span class="pre">filter_horizontal</span></code> list. Instead, simply pass <code class="docutils literal notranslate"><span class="pre">horizontal=True</span></code> to the <code class="docutils literal notranslate"><span class="pre">ChainedManyToManyField</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">smart_selects.db_fields</span> <span class="kn">import</span> <span class="n">ChainedManyToManyField</span>
+
+<span class="k">class</span> <span class="nc">Publication</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Writer</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">publications</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ManyToManyField</span><span class="p">(</span><span class="s1">&#39;Publication&#39;</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">)</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">ChainedManyToManyField</span><span class="p">(</span>
+        <span class="n">Writer</span><span class="p">,</span>
+        <span class="n">horizontal</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">verbose_name</span><span class="o">=</span><span class="s1">&#39;writer&#39;</span><span class="p">,</span>
+        <span class="n">chained_field</span><span class="o">=</span><span class="s2">&quot;publication&quot;</span><span class="p">,</span>
+        <span class="n">chained_model_field</span><span class="o">=</span><span class="s2">&quot;publications&quot;</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="chainedmanytomanyfield-options">
+<h2>ChainedManyToManyField options<a class="headerlink" href="#chainedmanytomanyfield-options" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><code class="docutils literal notranslate"><span class="pre">chained_field</span></code> (required)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">chained_field</span></code> indicates the field on the same model that should be chained to. In the <code class="docutils literal notranslate"><span class="pre">Publication</span></code>, <code class="docutils literal notranslate"><span class="pre">Writer</span></code>, <code class="docutils literal notranslate"><span class="pre">Book</span></code> example, <code class="docutils literal notranslate"><span class="pre">chained_field</span></code> is the name of the field <code class="docutils literal notranslate"><span class="pre">publication</span></code> in model <code class="docutils literal notranslate"><span class="pre">Book</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Book</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">publication</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Publication</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h3><code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> (required)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> indicates the field of the chained model that corresponds to the model linked to by the <code class="docutils literal notranslate"><span class="pre">chained_field</span></code>. In the <code class="docutils literal notranslate"><span class="pre">Publication</span></code>, <code class="docutils literal notranslate"><span class="pre">Writer</span></code>, <code class="docutils literal notranslate"><span class="pre">Book</span></code> example, <code class="docutils literal notranslate"><span class="pre">chained_model_field</span></code> is the name of field <code class="docutils literal notranslate"><span class="pre">publications</span></code> in <code class="docutils literal notranslate"><span class="pre">Writer</span></code> model.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Writer</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">publications</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ManyToManyField</span><span class="p">(</span><span class="s1">&#39;Publication&#39;</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h3><code class="docutils literal notranslate"><span class="pre">auto_choose</span></code> (optional)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">auto_choose</span></code> indicates if auto select the choice when there is only one available choice.</p>
+</div>
+<div class="section" id="horizontal-optional">
+<h3><code class="docutils literal notranslate"><span class="pre">horizontal</span></code> (optional)<a class="headerlink" href="#horizontal-optional" title="Permalink to this headline">¶</a></h3>
+<p>This option will mixin Django’s <code class="docutils literal notranslate"><span class="pre">FilteredSelectMultiple</span></code> to work in the Django admin as you expect</p>
+</div>
+</div>
+</div>
+<div class="section" id="grouped-selects">
+<h1><span class="section-number">5. </span>Grouped Selects<a class="headerlink" href="#grouped-selects" title="Permalink to this headline">¶</a></h1>
+<p>If you have the following model:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Country</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Country</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>And you want to group countries by their continent in the HTML select list, you can use a <code class="docutils literal notranslate"><span class="pre">GroupedForeignKey</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">smart_selects.db_fields</span> <span class="kn">import</span> <span class="n">GroupedForeignKey</span>
+
+<span class="k">class</span> <span class="nc">Location</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">continent</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Continent</span><span class="p">)</span>
+    <span class="n">country</span> <span class="o">=</span> <span class="n">GroupedForeignKey</span><span class="p">(</span><span class="n">Country</span><span class="p">,</span> <span class="s2">&quot;continent&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="settings.html" class="btn btn-neutral float-left" title="2. Settings" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jazzband
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
