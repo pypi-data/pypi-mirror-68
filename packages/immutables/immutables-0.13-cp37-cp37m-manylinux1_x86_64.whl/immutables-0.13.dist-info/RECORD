@@ -1,0 +1,13 @@
+immutables-0.13.dist-info/METADATA,sha256=ELqtDPMGP55Kf_hIyTgCG6nMZdDM-oZHXjFsodYHYR8,3913
+immutables-0.13.dist-info/top_level.txt,sha256=0k-CFLiMEiRCfK3Ay3nyfS12m_56e82y15MuVxt364c,11
+immutables-0.13.dist-info/WHEEL,sha256=x_vzcI4ZEGB3mgPWPKzGiYMKKJ7Ixf6JpcM2LwQveJI,109
+immutables-0.13.dist-info/LICENSE,sha256=sh5IyTNvcT9B8EpZBBYULy6MKGiJaYCx5Kp0JcwmC3U,11401
+immutables-0.13.dist-info/RECORD,,
+immutables/_map.pyi,sha256=Pd0izjfqbsjmm1ENMeG5ZswHLZu2s6_KH6l5EK2poPk,3061
+immutables/_version.py,sha256=Vvg2U8Q-toD7uhWyLvxZTNkjcRadkZPMHhUP-eEYWzY,574
+immutables/_map.h,sha256=ImGQF-nLnOxjbNEVu7c6yU3K2uY0uRp7jjijn5IExEg,2519
+immutables/map.py,sha256=yrKOk0ZnPFNjY7Z18xw6nfu0QGL7XZPOg5tY1UGf4S8,23385
+immutables/__init__.py,sha256=BpRciMN1l6Hhl0xVCvGWgImlTDjaLWJTOn9saUgr7Sw,217
+immutables/_map.c,sha256=8kaVEhGwoH-n9WWTFgsGjqDgzJJJ4LfbpHwrakLaZmU,107979
+immutables/_map.cpython-37m-x86_64-linux-gnu.so,sha256=W-RfzhoBwrQMCBUIHbmbWeMaVjP1l_ufJPUylie0UIw,194912
+immutables/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
