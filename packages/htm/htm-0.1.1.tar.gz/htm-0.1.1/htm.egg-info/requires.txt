@@ -1,0 +1,7 @@
+tagged
+
+[docs]
+Sphinx
+sphinx_rtd_theme
+sybil
+hyperpython
