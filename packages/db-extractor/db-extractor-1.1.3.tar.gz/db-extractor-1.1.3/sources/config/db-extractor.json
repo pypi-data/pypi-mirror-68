@@ -1,0 +1,34 @@
+{
+    "input_options": {
+        "extractor": {
+            "s": {
+                "default_value"         : "",
+                "option_description"    : "Configuration file name with source systems is %s",
+                "option_long"           : "input-source-system-file",
+                "option_required"       : true,
+                "option_sample_value"   : "input-source-system-file-name"
+            },
+            "c": {
+                "default_value"         : "",
+                "option_description"    : "Configuration file name with credentials is %s",
+                "option_long"           : "input-credentials-file",
+                "option_required"       : true,
+                "option_sample_value"   : "input-credentials-file-name"
+            },
+            "e": {
+                "default_value"         : "",
+                "option_description"    : "Configuration file name with extracting sequence(es) is %s",
+                "option_long"           : "input-extracting-sequence-file",
+                "option_required"       : true,
+                "option_sample_value"   : "input-extracting-sequence-file-name"
+            },
+            "l": {
+                "default_value"         : "None",
+                "option_description"    : "Output log file name is %s",
+                "option_long"           : "output-log-file",
+                "option_required"       : false,
+                "option_sample_value"   : "output-log-file-name"
+            }
+        }
+    }
+}

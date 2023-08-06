@@ -1,0 +1,37 @@
+{
+    "Systems": {
+        "Oracle": {
+            "MySQL": {
+                "Server": {
+                    "Your Company Server Group Name": {
+                        "Local": {
+                            "FriendlyName": "Local Oracle MySQL",
+                            "ServerName":   "localhost",
+                            "ServerPort":   "3306"
+                        }
+                    }
+                }
+            }
+        },
+        "SAP": {
+            "HANA": {
+                "Server": {
+                    "Your Company Server Group Name": {
+                        "Development": {
+                            "FriendlyName": "SAP HANA Development",
+                            "ServerName":   "hanadev",
+                            "ServerPort":   "30015",
+                            "SystemId":     "ddd"
+                        },
+                        "Production": {
+                            "FriendlyName": "SAP HANA Production",
+                            "ServerName":   "hanaprod",
+                            "ServerPort":   "30015",
+                            "SystemId":     "ppp"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
