@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pytorch-pfn-extras
+Version: 0.2.0
+Summary: Supplementary components to accelerate research and development in PyTorch.
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
