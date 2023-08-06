@@ -1,0 +1,8 @@
+numpy
+dask
+zarr
+s3fs
+requests
+toolz
+vispy
+pluggy
