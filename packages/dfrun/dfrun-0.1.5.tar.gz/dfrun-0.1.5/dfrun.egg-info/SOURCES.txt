@@ -1,0 +1,9 @@
+README.md
+setup.py
+dfrun/__init__.py
+dfrun/__main__.py
+dfrun.egg-info/PKG-INFO
+dfrun.egg-info/SOURCES.txt
+dfrun.egg-info/dependency_links.txt
+dfrun.egg-info/entry_points.txt
+dfrun.egg-info/top_level.txt
