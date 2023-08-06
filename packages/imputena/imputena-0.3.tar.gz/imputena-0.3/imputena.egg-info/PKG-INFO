@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: imputena
+Version: 0.3
+Summary: Package that allows both automated and customized treatment of missing values in datasets using Python.
+Home-page: http://github.com/macarro/imputena
+Author: Miguel Macarro
+Author-email: migmackle@alum.us.es
+License: MIT
+Description: 
+        This package allows both automated and customized treatment of missing
+        values in datasets using Python. The treatments that are implemented in this
+        package are:
+        
+        * Listwise deletion
+        * Pairwise deletion
+        * Dropping variables
+        * Random sample imputation
+        * Random hot-deck imputation
+        * LOCF
+        * NOCB
+        * Most frequent substitution
+        * Mean and median substitution
+        * Constant value imputation
+        * Random value imputation
+        * Interpolation
+        * Interpolation with seasonal adjustment
+        * Linear regression imputation
+        * Stochastic regression imputation
+        * Logistic regression imputation
+        * K-nearest neighbors imputation
+        * Sequential regression multiple imputation
+        * Multiple imputation by chained equations
+        
+        All these treatments can be applied to whole datasets or parts of them and
+         allow for extensive customization. The package can also recommend a
+          treatment for a given dataset, inform about the treatments that are
+           applicable to it, and automatically apply the best treatment.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Financial and Insurance Industry
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
