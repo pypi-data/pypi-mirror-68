@@ -1,0 +1,5 @@
+google-auth-oauthlib<1.0.0,>=0.3.0
+google-api-core<2.0.0,>=1.14.0
+googleapis-common-protos<2.0.0,>=1.5.8
+grpcio<2.0.0,>=1.25.0
+PyYAML<6.0,>=5.1
