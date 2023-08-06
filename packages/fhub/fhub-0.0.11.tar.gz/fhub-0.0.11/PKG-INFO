@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: fhub
+Version: 0.0.11
+Summary: Python client for Finnhub API 
+Home-page: https://github.com/paduel/fhub
+Author: Paduel
+Author-email: paduel@gmail.com
+License: Apache 2.0
+Description: ====
+        Fhub
+        ====
+        Python client for Finnhub API
+        =============================
+        .. image:: https://img.shields.io/pypi/pyversions/fhub?color=g
+            :target: https://pypi.org/project/fhub/
+            :alt: Python version
+        .. image:: https://img.shields.io/pypi/v/fhub?color=blue
+            :target: https://pypi.org/project/fhub/
+            :alt: PyPi version
+        .. image:: https://img.shields.io/github/license/paduel/fhub?color=orange
+            :target: https://pypi.org/project/fhub/
+            :alt: License Apache 2.0
+        .. image:: https://img.shields.io/pypi/status/fhub?color=purple
+            :target: https://pypi.org/project/fhub/
+            :alt: Status
+        .. image:: https://img.shields.io/badge/contributions-welcome-yellowgreen
+            :target: https://pypi.org/project/fhub/
+            :alt: contributions welcome
+        
+        \
+        A pythonic way to use the Finnhub data API.
+        
+        This package is still in a very early stage of development, so it is still incomplete and may contain bugs. It should only be used to test its functionality.
+        \
+        
+        Installation
+        ~~~~~~~~~~~~
+        
+        
+         .. code:: bash
+        
+           pip install fhub
+        
+        
+        Quick start
+        ~~~~~~~~~~~
+        
+        You need a Finnhub API Key, you can get free one, at https://finnhub.io.  For some data a premium account is necessary.
+        
+        .. code:: python
+        
+            from fhub import Session
+            hub = Session("your_finnhub_api_key_here")
+            
+            # Download prices time serie of Tesla.
+            tsla = hub.candle('TSLA')
+           
+            # Download prices for several tickers from a date.
+            data = hub.candle(['AMZN', 'NFLX', 'DIS'], start="2018-01-01")
+        
+            # Download prices and bollinger bands indicator for several tickers.
+            data = hub.indicator(['AAPL', 'MSFT'], start='2019-01-01', indicator='bbands',
+                             indicator_fields={'timeperiod': 10})
+        
+        
+        Real-time subscription via Finnhub's websocket is easy using fhub, even using custom functions for each tick received.
+        
+        .. code:: python
+        
+            from fhub import Subscription
+            from time import sleep
+        
+            def price_monitor(ticker):
+                # Callback function receive a ticker object
+                # calculate the average of the last 30 ticks using the ticker history
+                average = ticker.history.price.tail(30).mean().round(2)
+                # display the price and the calculated average
+                print (f'{ticker.symbol}. Price: {ticker.price} Average(30) : {average}')
+                # show a message if price is over its average
+                if ticker.price > average:
+                    print(f'{ticker.symbol} is over its average price')
+                return
+        
+            # Create a subscription and connect
+            subs = Subscription("your_finnhub_api_key_here")
+            # A list of the symbols to which to subscribe is passed
+            # Created function  is assigned as a callback when a new tick is received
+            subs.connect(["BINANCE:BTCUSDT", "IC MARKETS:1", "AAPL"],
+                         on_tick=price_monitor
+                        )
+        
+            # Subscription is maintained for 20 seconds and then closed.
+            for f in range(20):
+                sleep(1)
+            subs.close()
+        
+        
+        See more examples of use at quick_start_ notebook
+        
+        .. _quick_start: https://github.com/paduel/fhub/blob/master/examples/quick_start.ipynb
+        
+        
+        Documentation
+        ~~~~~~~~~~~~~
+        
+        Official documentation of the API REST of Finnhub:
+        
+        https://finnhub.io/docs/api
+        
+        Most of the functions available in the REST API have been implemented.
+            
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
