@@ -1,0 +1,15 @@
+animated_memory-0.2.5.data/data/scripts/scraper.py,sha256=839tn-WRXjQqxdXklakD7s1tyYvuM5UlCfQs7CgJWls,3113
+animated_memory-0.2.5.data/data/scripts/train.py,sha256=iSfzxQo6i-HhvD2CA7RyUxBWEamOGQGnM8ZhbM5IFEc,2959
+animated_memory-0.2.5.data/data/sql/schema.sql,sha256=VwGiunhYyk_d7sa0qzAhkKFL9hHCwz3TJfBE_u8qmHM,639
+animated_memory-0.2.5.data/data/static/style.css,sha256=xUcq0yIYDjgm9dMyjeQFkRWfzDzOuMUoUr_gc8KzT1g,1211
+animated_memory-0.2.5.data/data/templates/layout.mako,sha256=CgVku5xR5xcgo_OYNC1zIPvDpY6hiuim88vM0BjAQ7U,582
+animated_memory-0.2.5.data/data/templates/list.mako,sha256=RBbFAHJsnIJMReCs1Ev7PNnBZf56CV-1Z3iUYoC2uBk,1150
+animated_memory-0.2.5.data/data/templates/new.mako,sha256=ZHVEmX0w8fwtIw3bSAdQ2NN5Xb79TFLxIronZg4ZN4s,790
+animated_memory-0.2.5.data/data/templates/read.mako,sha256=DP__Om_5EY6muyaehppOZOH3cA4XOKedCkdQihyo5YI,751
+animated_memory-0.2.5.data/data/templates/settings.mako,sha256=NVcvq4wvPHPCM21ONL1DjFTwutEzt9intyHWWKwyhKM,885
+animated_memory-0.2.5.data/scripts/animated-memory,sha256=-4ZD56pww05W2zVHyV4JtUbutAbo7S-n2bqmFGpNcCQ,9034
+animated_memory-0.2.5.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+animated_memory-0.2.5.dist-info/METADATA,sha256=b8ibtNBCD0qXL_9yxto_imM2APQCY3wJPjrWmQ56uJg,1038
+animated_memory-0.2.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+animated_memory-0.2.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+animated_memory-0.2.5.dist-info/RECORD,,
