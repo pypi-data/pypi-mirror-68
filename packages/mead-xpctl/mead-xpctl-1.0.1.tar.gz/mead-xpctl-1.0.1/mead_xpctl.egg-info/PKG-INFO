@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mead-xpctl
+Version: 1.0.1
+Summary: Experiment Control and Tracking
+Home-page: https://www.github.com/mead-ml/xpctl
+Author: mead-ml
+Author-email: mead.baseline@gmail.com
+License: Apache 2.0
+Description: ## XPCTL
+        
+        `xpctl` is a command-line interface to track experimental results and provide access to a global leaderboard. After running an experiment, the results and the logs are committed to a database. Several commands are provided to show the best experimental results under various constraints.
+        
+        `xpctl` was developed as the primary backend for experiment storage for [mead-baseline](https://github.com/dpressel/mead-baseline/).
+        
+        ### Prerequisite
+        
+        `xpctl` requires a database to be installed locally or an accessible server. We currently support:  [mongodb](https://docs.mongodb.com/) and [postgresql](https://www.postgresql.org/)), but the base classes can be extended to support other databases. Create a database called `reporting_db` in your db instance.
+        
+         
+        ### Installation
+        
+        -  [Install the server](https://github.com/mead-ml/xpctl/blob/master/orchestration/README.md)
+        -  Install the client
+          - `pip install mead-xpctl`
+          - or locally with `pip install -e .`
+        
+        ### [Documentation](https://github.com/mead-ml/xpctl/blob/master/docs/main.md)
+        
+Keywords: experiment control,tracking
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: mongo
+Provides-Extra: sql

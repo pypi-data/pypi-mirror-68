@@ -1,0 +1,3 @@
+[console_scripts]
+xpctl = xpctl.cli:cli
+
