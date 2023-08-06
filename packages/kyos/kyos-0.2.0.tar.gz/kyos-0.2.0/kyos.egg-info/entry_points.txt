@@ -1,0 +1,3 @@
+[console_scripts]
+kyos = kyos.cli:main
+

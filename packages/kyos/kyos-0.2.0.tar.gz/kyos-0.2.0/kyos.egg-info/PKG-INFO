@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: kyos
+Version: 0.2.0
+Summary: Tools for haploid variant calling with Deep Neural Networks.
+Home-page: https://github.com/CFSAN-Biostatistics/kyos
+Author: Nathan Xue
+Author-email: xue.nathanv1.0@gmail.com
+License: BSD
+Description: ===============================
+        Kyos
+        ===============================
+        
+        
+        .. Image showing the PyPI version badge - links to PyPI
+        .. image:: https://img.shields.io/pypi/v/kyos.svg
+                :target: https://pypi.python.org/pypi/kyos
+        
+        .. Image showing the Travis Continuous Integration test status, commented out for now
+        .. .. image:: https://img.shields.io/travis/CFSAN-Biostatistics/kyos.svg
+        ..        :target: https://travis-ci.org/CFSAN-Biostatistics/kyos
+        
+        
+        
+        Tools for haploid variant calling with Deep Neural Networks.
+        
+        Kyos was developed by the United States Food
+        and Drug Administration, Center for Food Safety and Applied Nutrition.
+        
+        * Free software
+        * Documentation: https://kyos.readthedocs.io
+        * Source Code: https://github.com/CFSAN-Biostatistics/kyos
+        * PyPI Distribution: https://pypi.python.org/pypi/kyos
+        
+        
+        Features
+        --------
+        
+        * Extract features from a BAM file
+        * Train and Test a neural network
+        
+        
+        Citing Kyos
+        --------------------------------------
+        
+        To cite Kyos, please reference the Kyos GitHub repository:
+        
+            https://github.com/CFSAN-Biostatistics/kyos
+        
+        
+        License
+        -------
+        
+        See the LICENSE file included in the Kyos distribution.
+        
+        
+        
+        
+        
+        History
+        =======
+        
+        0.2.0 (2020-05-13)
+        ---------------------
+        * Changes for Tensorflow 2.
+        
+        0.1.0 (2018-12-07)
+        ---------------------
+        * Initial version.
+        
+Keywords: bioinformatics,NGS,kyos
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
