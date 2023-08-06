@@ -1,0 +1,53 @@
+Metadata-Version: 1.2
+Name: xontrib-enhancd
+Version: 0.1.0
+Summary: b4b4r07/enhancd for xonsh
+Home-page: https://github.com/sun-yryr/xontrib-enhancd
+Author: sun-yryr
+Author-email: taittide@gmail.com
+License: MIT
+Description: xontrib-enhancd
+        ===============================
+        
+        [b4b4r07/enhancd](https://github.com/b4b4r07/enhancd) for xonsh
+        
+        Installation
+        ------------
+        
+        To install use pip:
+        
+            $ xpip install xontrib-enhancd
+        
+        
+        Or clone the repo:
+        
+            $ pip install git+https://github.com/sun-yryr/enhancd
+        
+        Usage
+        -----
+        
+        in xonsh
+        
+            $ xontrib load enhancd
+        
+        Contributing
+        ------------
+        
+        [sun-yryr](https://twitter.com/taittide)
+        
+        Credits
+        ---------
+        
+        This package was created with cookiecutter_ and the xontrib_ template.
+        
+        .. _cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _xontrib: https://github.com/xonsh/xontrib-cookiecutter
+        
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
