@@ -1,0 +1,9 @@
+README.md
+setup.py
+dNote.egg-info/PKG-INFO
+dNote.egg-info/SOURCES.txt
+dNote.egg-info/dependency_links.txt
+dNote.egg-info/entry_points.txt
+dNote.egg-info/not-zip-safe
+dNote.egg-info/requires.txt
+dNote.egg-info/top_level.txt

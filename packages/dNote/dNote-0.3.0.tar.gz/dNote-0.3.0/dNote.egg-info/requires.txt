@@ -1,0 +1,13 @@
+boto3>=1.13
+click>=7.1
+configurator[yaml]>=2.0
+dateparser>=0.7
+nltk>=3.5
+
+[dev]
+coveralls>=2.0
+mkdocs>=1.1
+pip-tools>=5.1
+pytest>=5.4
+pytest-cov>=2.8
+pytest-flake8>=1.0
