@@ -1,0 +1,7 @@
+README.md
+setup.py
+autobuy.egg-info/PKG-INFO
+autobuy.egg-info/SOURCES.txt
+autobuy.egg-info/dependency_links.txt
+autobuy.egg-info/requires.txt
+autobuy.egg-info/top_level.txt
