@@ -1,0 +1,8 @@
+README.md
+setup.py
+daepdf/__init__.py
+daepdf/pdf2txt.py
+daepdf.egg-info/PKG-INFO
+daepdf.egg-info/SOURCES.txt
+daepdf.egg-info/dependency_links.txt
+daepdf.egg-info/top_level.txt
