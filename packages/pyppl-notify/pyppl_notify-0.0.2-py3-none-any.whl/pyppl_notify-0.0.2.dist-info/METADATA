@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyppl-notify
+Version: 0.0.2
+Summary: Email notification for PyPPL
+Home-page: https://github.com/pwwang/pyppl_notify
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyppl (>=3.0.0,<4.0.0)
+Project-URL: Repository, https://github.com/pwwang/pyppl_notify
+Description-Content-Type: text/markdown
+
+# pyppl_notify
+Email notification for PyPPL
+
