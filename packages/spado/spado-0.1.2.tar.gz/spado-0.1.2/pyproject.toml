@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "spado"
+version = "0.1.2"
+description = "Client simplifying and abstracting common operations for digital ocean spaces."
+authors = ["Alex Pedersen <me@alexpdr.dev>"]
+readme = "README.md"
+[tool.poetry.dependencies]
+python = "^3.8"
+boto3 = "^1.13.8"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.1"
+black = "^19.10b0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
