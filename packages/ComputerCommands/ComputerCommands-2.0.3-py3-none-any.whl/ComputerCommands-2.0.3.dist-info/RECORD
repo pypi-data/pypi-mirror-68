@@ -1,0 +1,9 @@
+ComputerCommands/__init__.py,sha256=P17qvDLpFUdHkBOJQvFipfUYVZyg5h6JMUpVzqliYR0,61
+ComputerCommands/commands.py,sha256=wfnLUD3Evr7MnMTzXzjliBrL546xAhzpnGF-tNWqqcc,1405
+src/__init__.py,sha256=r7qx5oXtWNd5LoJXcVsk80X33aZp9HsKopmjMcw6fsE,15
+src/commands.py,sha256=wfnLUD3Evr7MnMTzXzjliBrL546xAhzpnGF-tNWqqcc,1405
+ComputerCommands-2.0.3.dist-info/LICENSE,sha256=3VJoySDO7JzCVAwBF_bfkD6kFsMthjgeIBTY6qigHbA,1091
+ComputerCommands-2.0.3.dist-info/METADATA,sha256=BHL4_vswsAvNXJzX7pz_Mya8ZohJcV_OoCBtGZbRufE,971
+ComputerCommands-2.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ComputerCommands-2.0.3.dist-info/top_level.txt,sha256=5R4UOisDrGVFZzIMma9l0vAlfwz33Q8AwaCY0u0vsR8,17
+ComputerCommands-2.0.3.dist-info/RECORD,,

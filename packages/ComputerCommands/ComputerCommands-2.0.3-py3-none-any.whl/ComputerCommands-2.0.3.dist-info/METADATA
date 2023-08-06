@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ComputerCommands
+Version: 2.0.3
+Summary: A Python package for running commands on any operating system.
+Home-page: https://github.com/Malacai4/ComputerCommands
+Author: Malacai Hiebert
+Author-email: malacaihiebert@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# ComputerCommands
+
+This is a package used to run computer commands using python
+in any operating system.
+
+## Installation
+
+Run this command to install:
+```python
+pip install ComputerCommands
+```
+
+## Usage
+
+```python
+import ComputerCommands
+
+# Shutdown
+ComputerCommands.shutdown()
+
+# Reboot
+ComputerCommands.reboot()
+
+# Sleep
+ComputerCommands.sleep()
+
+# Logout
+ComputerCommands.logout()
+
+# Get computer IP address
+ComputerCommands.ip_address()
+```
+
