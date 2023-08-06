@@ -1,0 +1,17 @@
+dead_simple_framework/__init__.py,sha256=1jPMIDuGueG3vxtFyHZiOLzar83upA_61aAnZ6It8ew,241
+dead_simple_framework/encoder.py,sha256=ahl5qrekyIGlrd5ZoeJLa5jo1IraRyyaVUoXQ_AKQps,327
+dead_simple_framework/main.py,sha256=6LxlEnhnIJrpKmvImbNm9OigFCW7cYBKvikvxjk8fWI,1112
+dead_simple_framework/router.py,sha256=uBSykHUdeuPENb4L5SEIJ3iON8VyG1pC1Sy5skeQ_4E,1406
+dead_simple_framework/sample.py,sha256=t-q7TqDr9QkExohpiPGkjv0MXUOLM0jjIl0z6GVG7Vk,222
+dead_simple_framework/api/__init__.py,sha256=0ukeQUsf06F6BSNOST-SGu1IIHWtvesIBX4t_o2QdNI,21
+dead_simple_framework/api/errors.py,sha256=MRhz3nZX6DmR1Oe1IT-3Oz27asZcWSqpN2yzuU5Y8YE,229
+dead_simple_framework/api/main.py,sha256=OK-UY7VZ_9F-s990LunVWH_-tq7DC1GtmY_06EFIJRk,7670
+dead_simple_framework/api/utils.py,sha256=OxNbdFTAUNrOUsyth0XrNu7AqCNd6h3-J-xVoNc2ugw,5436
+dead_simple_framework/database/__init__.py,sha256=0JhgzjVUjlQsCFPho5yF6LoPBD4Wy3_f4jR1_IqZqCY,26
+dead_simple_framework/database/main.py,sha256=7xVXUth6j2UKGG1cW02V-qt3AeJiUFi6oSsSRjERr-E,1862
+dead_simple_framework/tasks/__init__.py,sha256=j8fpv4Iv_SKNNGV67lGm0_JbjTP92PBMNzRH8jgIfJo,30
+dead_simple_framework/tasks/main.py,sha256=zsTMckeHCwxz_VCzH1pt6Zj4pF5faAnFjSTbPUToYNA,4894
+dead_simple_framework-0.1.0.dist-info/METADATA,sha256=u8F4KkX4_nd0fiw3M75dJ9njXlDcdUHXAHp-0A8US8Q,2994
+dead_simple_framework-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dead_simple_framework-0.1.0.dist-info/top_level.txt,sha256=4qORUneXsXZfRuHjzK6iChyosPONNf383LUaJz5gyVE,22
+dead_simple_framework-0.1.0.dist-info/RECORD,,
