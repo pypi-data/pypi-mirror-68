@@ -1,0 +1,3 @@
+[console_scripts]
+noct=noct.cli:cmd
+
