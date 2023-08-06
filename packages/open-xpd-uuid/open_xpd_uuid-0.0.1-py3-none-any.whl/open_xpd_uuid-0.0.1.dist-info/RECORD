@@ -1,0 +1,12 @@
+cqd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cqd/open_xpd_uuid/__init__.py,sha256=VEEHqhkV9KNVWaPPGib0wcogZfgYNQfl46StfzD10EU,2443
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_encode_decode.py,sha256=CMMwBeQo2c_M3kiLNxBYh9LRo3eTIrSSjPK9LOHZssc,221
+tests/test_generate.py,sha256=cfxfKGj8-_p5QlnqrTx0ChplOj4IfQeeooDscyugEJw,433
+tests/test_sanitize.py,sha256=iRr9pi5oL_p0DaVTawN5BOSBSBkAfFcfFyE2BTc5NAQ,629
+tests/test_validate.py,sha256=3R3l8I9taaHgLHDxzYvNfeWMyfOHi6zFre2jWzV8LFA,544
+open_xpd_uuid-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+open_xpd_uuid-0.0.1.dist-info/METADATA,sha256=BjQYZ-fZQRtQ7yhIeZG8vFU3T5hP40oy2kHRKtaPGuQ,2936
+open_xpd_uuid-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+open_xpd_uuid-0.0.1.dist-info/top_level.txt,sha256=L087Elqf0xCjfpGm44rmP3kbqmir-h5L-NLacBgEeI0,10
+open_xpd_uuid-0.0.1.dist-info/RECORD,,
