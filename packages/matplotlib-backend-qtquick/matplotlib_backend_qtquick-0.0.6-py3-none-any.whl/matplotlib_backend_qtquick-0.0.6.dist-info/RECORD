@@ -1,0 +1,11 @@
+matplotlib_backend_qtquick/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matplotlib_backend_qtquick/backend_qtquick.py,sha256=fkoU53kYWAWuE-W1Gr6CmPduHtMuqktlcSBWEBzkFBI,18989
+matplotlib_backend_qtquick/backend_qtquickagg.py,sha256=D8-P4gHt55vhihXjLN1DoJ-Un7PcWOc62K1MfCdAycI,4209
+matplotlib_backend_qtquick/qt_compat.py,sha256=V6rQMO5lnGgui6FUO40ST_eZ4IA5A-yJ4wVqSiPkrWg,7183
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/testBackend.py,sha256=afnwtmpJE40Za8_HqF11qGO9hm6UOJ34UhEnKQFG5TY,2051
+matplotlib_backend_qtquick-0.0.6.dist-info/LICENSE,sha256=wtM0YzppGROX2LyVtioeQvxkxaZ84Oxh02mSzZt3vhM,1169
+matplotlib_backend_qtquick-0.0.6.dist-info/METADATA,sha256=YQJDYvge0vKmq0zZPY8EtAnSFwfkooTJ5DDdVb0tOUg,3400
+matplotlib_backend_qtquick-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+matplotlib_backend_qtquick-0.0.6.dist-info/top_level.txt,sha256=vuvAsNj-SMVfH9dnWgcVYx-n_hQpIqBzPt49WVqIZe8,33
+matplotlib_backend_qtquick-0.0.6.dist-info/RECORD,,
