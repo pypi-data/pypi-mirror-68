@@ -1,0 +1,10 @@
+mbtr/__init__.py,sha256=lOWrA1NE-TqULPORmz9aieyAaWsfs9O3zkm3BkK_u7k,399
+mbtr/_splash.py,sha256=9Hw5qpAHN88o9lyuDrmupPmEHlEwgto1beJY-Gc1T9k,173
+mbtr/losses.py,sha256=FkU1BJCKcypocH8oDZxq3_B1bOiFm7jkb1DTxKNaW9M,22962
+mbtr/mbtr.py,sha256=jPFEaQAzbVVAwo5A780o46hOdQS685E57DPOcW5BDDU,26730
+mbtr/utils.py,sha256=msfdpHCCa6mdSWr24f0v1W9TWj4OKC0JsN85-yf4iTg,2071
+mbtr-0.1.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+mbtr-0.1.0.dist-info/METADATA,sha256=iiWV4Q5FQF34dJ-O5L5S17C0LnZ66831wiT3Rs25gQ0,2909
+mbtr-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mbtr-0.1.0.dist-info/top_level.txt,sha256=NiOL6R1bP9hQ78jj8wA2toYCCAFlY0B0lSCM29QWc3o,5
+mbtr-0.1.0.dist-info/RECORD,,
