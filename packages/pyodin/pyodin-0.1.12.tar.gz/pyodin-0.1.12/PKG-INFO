@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyodin
+Version: 0.1.12
+Summary: A python package for gathering information in odin jobs
+Home-page: https://gitlab.computing.dcu.ie/mcdermj7/2020-ca400-urbanam2-mcdermj7
+Author: James McDermott
+Author-email: james.mcdermott7@mail.dcu.ue
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
