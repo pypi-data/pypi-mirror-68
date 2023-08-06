@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+inventree/__init__.py
+inventree/api.py
+inventree/base.py
+inventree/build.py
+inventree/company.py
+inventree/part.py
+inventree/stock.py
+inventree.egg-info/PKG-INFO
+inventree.egg-info/SOURCES.txt
+inventree.egg-info/dependency_links.txt
+inventree.egg-info/top_level.txt
