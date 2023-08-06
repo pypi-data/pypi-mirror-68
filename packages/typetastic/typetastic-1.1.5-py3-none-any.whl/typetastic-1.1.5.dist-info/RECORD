@@ -1,0 +1,11 @@
+typetastic/__init__.py,sha256=imxGv8SGbm0CUrAJAbxt3opQfo14kAKfknUH3PsKMX0,241
+typetastic/bot_handlers.py,sha256=4yFMaKDPB9846zjfakc-_LUa1M8613XKL2RyuoWDCxM,6465
+typetastic/handler_data.py,sha256=5kHI1E0gzhZu3TDqZr9ODsMY8ofV2_khd__N2ef_3Ls,1388
+typetastic/robot.py,sha256=D8lUf8W5pfoXu7_qSBfrdEYOxK2wTrqytK-U578XADY,8733
+typetastic/session_config.py,sha256=2-MCaIxSWkpwzMA1aSQBIqOKxnLqhTj7koX4R2zDebU,1077
+typetastic/text_colors.py,sha256=C_uGMOr6sdTd-ZSMZeqhwW42Pl3YFUWRwXo38bdF14E,865
+typetastic-1.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+typetastic-1.1.5.dist-info/METADATA,sha256=DFtwSBjhP_XtTl0xxz0zsOeosQJ2XKRVfjKXsG5jFD8,7046
+typetastic-1.1.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+typetastic-1.1.5.dist-info/top_level.txt,sha256=YArl8kC32NbIxc3sFBavru8HntGM4ZdDV-R7Wi4aovA,11
+typetastic-1.1.5.dist-info/RECORD,,
