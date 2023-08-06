@@ -1,0 +1,4 @@
+# Report for {{ fqdn }}
+
+
+{% include 'report/full.tty' %}
