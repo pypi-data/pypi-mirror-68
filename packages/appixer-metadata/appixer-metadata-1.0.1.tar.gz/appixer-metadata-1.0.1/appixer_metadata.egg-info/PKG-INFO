@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: appixer-metadata
+Version: 1.0.1
+Summary: Audio metadata manipulation.
+Home-page: https://gitlab.com/appixer/metadata
+Author: Joshua Avalon
+Author-email: git@avalon.sh
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: audio,metadata
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
