@@ -1,0 +1,13 @@
+indexed_gzip/__init__.py,sha256=uGE4jm6uX-RJ7jllzwL2HJ65D91c5w1I8oAO_MmpTxM,407
+indexed_gzip/indexed_gzip.cp38-win_amd64.pyd,sha256=6p_4rFXnXCUIOuOC5WpCdfjwagwTiaku6zE9U-VplPI,221696
+indexed_gzip/tests/__init__.py,sha256=BW-60SoFkTMUubcLUeNM72NJBkJLBSy3uQyXBXrouUE,5208
+indexed_gzip/tests/benchmark.py,sha256=z-qTFC2IjAci7odA9MRbe_NHP3yJDyXusos5k0hrB0k,4405
+indexed_gzip/tests/ctest_indexed_gzip.cp38-win_amd64.pyd,sha256=Mz9OJ2uLbHICKW5jzXnjiePYCR-Zsw8uX3P21XiSuHg,510976
+indexed_gzip/tests/test_indexed_gzip.py,sha256=GST35m4CxDT8m03fhcNATpw82r6M-DmwTvTle_V2meE,4563
+indexed_gzip/tests/test_indexed_gzip_threading.py,sha256=pVio7it6_DUmk8Zv_zi6pxZ93eweZUYihfoh0H5ZJ0Q,2196
+indexed_gzip/tests/test_zran.py,sha256=DgrsLC_3f-YoxHogtL3HmnTDQkUR8FswyzRgJyQwun8,2620
+indexed_gzip-1.2.0.dist-info/LICENSE,sha256=mYatn_d17QmVq4DIPEjYIk_h_3HXnrJasBuUKysRoYc,937
+indexed_gzip-1.2.0.dist-info/METADATA,sha256=btuMil1XJqMjivK7QUIV3rXnGBtxAfkBNNo5X47Tks0,8875
+indexed_gzip-1.2.0.dist-info/WHEEL,sha256=-ODc2a2AO_YJ5T46NOquHfWjRM7bQvlt-f3zRaLBjL4,105
+indexed_gzip-1.2.0.dist-info/top_level.txt,sha256=lk5ZVPlCbcmiAtxiJdu7SWX1NUWgdJNxLy48WhZnmAk,13
+indexed_gzip-1.2.0.dist-info/RECORD,,
