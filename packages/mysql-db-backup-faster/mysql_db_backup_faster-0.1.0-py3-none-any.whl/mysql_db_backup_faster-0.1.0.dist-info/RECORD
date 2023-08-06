@@ -1,0 +1,13 @@
+mysql_db_backup_faster/Helper.py,sha256=ygB4SdaZI3FEa2qchVVK39u7_PzVbo4eK6zwK9H5LR0,1485
+mysql_db_backup_faster/Logger.py,sha256=zae5kYoZLwrBczPKcVxiH9gFZa-V-eDMwkRx9-uAXuw,376
+mysql_db_backup_faster/__init__.py,sha256=pTuQEO_UmsR8kSHvNTzsk5bZ10XQfC-cj4wVALHLHh8,347
+mysql_db_backup_faster/version.py,sha256=tHgqrRkiPte5t1BBbnLVFZ7UYP6mMk8Jqhu_DVmEsy8,314
+mysql_db_backup_faster-0.1.0.data/scripts/mysqlbackup,sha256=QwPpAVw6ifIuDF2HshB32B8ivOWd-1uN1rzWUZ3SeGw,11897
+tests/__init__.py,sha256=mE2dpaMiTWP3k_AF56CEbX-VpF9LB65DIefMxeXCugc,283
+tests/base.py,sha256=wcQsAzEic9Tg9z8_k4i4pJmhIXEYKp61pkjc3UlqoFA,375
+tests/test_version.py,sha256=91tsfmTrQwRdRBQp9Biy74SZq81ac4QM1FgNtVCL0nc,510
+mysql_db_backup_faster-0.1.0.dist-info/METADATA,sha256=lblH0ay6LbuTHrZ5AcwRZaZM2GD14jXBEBuHo5Kg3Ls,1126
+mysql_db_backup_faster-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mysql_db_backup_faster-0.1.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mysql_db_backup_faster-0.1.0.dist-info/top_level.txt,sha256=qN2Sa7uF-ibJrnqPiJFgYC7fjBxj-CkKcrQpwfJVZ5c,29
+mysql_db_backup_faster-0.1.0.dist-info/RECORD,,

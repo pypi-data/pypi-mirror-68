@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: mysql-db-backup-faster
+Version: 0.1.0
+Summary: an incredible python package
+Home-page: https://github.com/heynemann/generator-python-package
+Author: gwangil
+Author-email: pki054@naver.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Operating System :: OS Independent
+Requires-Dist: loguru
+Requires-Dist: mysqlclient
+Provides-Extra: tests
+Requires-Dist: mock ; extra == 'tests'
+Requires-Dist: nose ; extra == 'tests'
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: yanc ; extra == 'tests'
+Requires-Dist: preggy ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+Requires-Dist: ipdb ; extra == 'tests'
+Requires-Dist: coveralls ; extra == 'tests'
+Requires-Dist: sphinx ; extra == 'tests'
+
+
+an incredible python package
+
+
