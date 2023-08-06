@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/ComputerCommands.egg-info/PKG-INFO
+src/ComputerCommands.egg-info/SOURCES.txt
+src/ComputerCommands.egg-info/dependency_links.txt
+src/ComputerCommands.egg-info/top_level.txt
