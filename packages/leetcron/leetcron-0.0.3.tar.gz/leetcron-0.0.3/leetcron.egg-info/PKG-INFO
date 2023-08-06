@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: leetcron
+Version: 0.0.3
+Summary: Sets up cron job that pushes Leetcode submissions to a Github repository
+Home-page: https://github.com/JING1201/leetcron
+Author: jlionwg
+License: MIT
+Description: # leetcron
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
