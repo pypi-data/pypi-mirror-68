@@ -1,0 +1,13 @@
+rainbowpy/__init__.py,sha256=hMY3hvuJHZ8IoZFVv6TB0Ao_LxrGmU4x9yAetRbVssI,219
+rainbowpy/_version.py,sha256=kC-fIH89WHErH6xn-m39lG3kvt65uFMEJ2-3EWQBsk4,497
+rainbowpy/colormap.py,sha256=_szxfBMVR2UQvbE6menDn7AvZUZ9owck8Xv12bvaTsw,1395
+rainbowpy/coolors.py,sha256=f8C9XF9sLwNO-smuOHnAunQF3a7IEwueF61sxN2sGK4,31
+rainbowpy/file_utils.py,sha256=9XXPx6KBB7KHUWrq1PEQMHdOq0OslH0Lr_VhqXMLFV8,2364
+rainbowpy/generate_maps_from_config.py,sha256=Cxi-ydR0Xx2Snn06rNSs73J2TXdblLzlE7HX53_WHXQ,697
+rainbowpy/data/custom_maps.yml,sha256=IfcxQnXSmLBuXFr_DwhXUQ0eNqgG-xv_U0SZObdAoLA,376
+rainbowpy/data/test,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rainbowpy-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+rainbowpy-0.4.0.dist-info/METADATA,sha256=z2FzM0BfEBzN0BahGWDdM8yXWXHo7_2gpHiWJBLQoAo,3167
+rainbowpy-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+rainbowpy-0.4.0.dist-info/top_level.txt,sha256=OFDhaDpVDxt9Eb46gPoFDA8QhedmLem9VnRBMklGBfY,10
+rainbowpy-0.4.0.dist-info/RECORD,,
