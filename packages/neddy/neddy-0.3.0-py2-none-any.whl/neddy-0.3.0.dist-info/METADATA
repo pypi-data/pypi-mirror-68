@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: neddy
+Version: 0.3.0
+Summary: query the Nasa Extra-Galactic (NED) database via the command-line and programmatically
+Home-page: https://github.com/thespacedoctor/neddy
+Author: David Young
+Author-email: davidrobertyoung@gmail.com
+License: MIT
+Download-URL: https://github.com/thespacedoctor/neddy/archive/v0.3.0.zip
+Keywords: ned, query, astronomy, conesearch
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: neddy
+Requires-Dist: fundamentals
+Requires-Dist: astrocalc
+Requires-Dist: eventlet
+Requires-Dist: numpy
+
+# neddy
+
+<!-- INFO BADGES -->  
+
+[![](https://img.shields.io/pypi/pyversions/neddy)](https://pypi.org/project/neddy/)  
+[![](https://img.shields.io/pypi/v/neddy)](https://pypi.org/project/neddy/)  
+[![](https://img.shields.io/github/license/thespacedoctor/neddy)](https://github.com/thespacedoctor/neddy)  
+[![](https://img.shields.io/pypi/dm/neddy)](https://pypi.org/project/neddy/)  
+
+<!-- STATUS BADGES -->  
+
+[![](http://167.99.90.204:8080/buildStatus/icon?job=neddy%2Fmaster&subject=build%20master)](http://167.99.90.204:8080/blue/organizations/jenkins/neddy/activity?branch=master)  
+[![](http://167.99.90.204:8080/buildStatus/icon?job=neddy%2Fdevelop&subject=build%20dev)](http://167.99.90.204:8080/blue/organizations/jenkins/neddy/activity?branch=develop)  
+[![](https://cdn.jsdelivr.net/gh/thespacedoctor/neddy@master/coverage.svg)](https://raw.githack.com/thespacedoctor/neddy/master/htmlcov/index.html)  
+[![](https://readthedocs.org/projects/neddy/badge/?version=master)](https://neddy.readthedocs.io/en/master/)  
+[![](https://img.shields.io/github/issues/thespacedoctor/neddy/type:%20bug?label=bug%20issues)](https://github.com/thespacedoctor/neddy/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+bug%22+)  
+
+*query the Nasa Extra-Galactic (NED) database via the command-line and programmatically*.
+
+Documentation for neddy is hosted by [Read the Docs](https://neddy.readthedocs.io/en/master/) (
+[development version](https://neddy.readthedocs.io/en/develop/) and [master version](https://neddy.readthedocs.io/en/master/)). The code lives on [github](https://github.com/thespacedoctor/neddy). Please report any issues you find [here](https://github.com/thespacedoctor/neddy/issues).
+
+## Features
+
+* 
+
+
+
+
+
