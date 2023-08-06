@@ -1,0 +1,9 @@
+sqvid/__init__.py,sha256=ZBxJ7uTt5Lkh1FnTO22Oo-W8_ebig8JhfHWmm7KL7E8,114
+sqvid/console.py,sha256=tQJqCZMwADiT0K65HM7t6RpNmj9lbtfdgpPLHCzgCX0,1129
+sqvid/executor.py,sha256=xgM9uCu4BqDj3aB3b91uygUOaEfVmDYyYP7xS1FnyBU,4027
+sqvid/validators.py,sha256=qITHp4bPfP9-BSYZ1gOnivj3slM5UcUVz3yFN8cC88w,3081
+sqvid-0.1.8.dist-info/entry_points.txt,sha256=3jevoJQ-JoB7qGeoRsB560lpajPI17cuBL4w7U4lJhY,43
+sqvid-0.1.8.dist-info/LICENSE,sha256=Gd8yJEDFRhYpAPipwGIDRqYF3fxy_0dfS4CZVDw2UJM,10824
+sqvid-0.1.8.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+sqvid-0.1.8.dist-info/METADATA,sha256=QJDL0OjA-R8vj_V2YvNQ4s0otlrSRlTNvOCv_IK3Hlc,8984
+sqvid-0.1.8.dist-info/RECORD,,
