@@ -1,0 +1,9 @@
+setup.py
+pytransmission/__init__.py
+pytransmission/py.typed
+pytransmission/transmission.py
+pytransmission.egg-info/PKG-INFO
+pytransmission.egg-info/SOURCES.txt
+pytransmission.egg-info/dependency_links.txt
+pytransmission.egg-info/requires.txt
+pytransmission.egg-info/top_level.txt
