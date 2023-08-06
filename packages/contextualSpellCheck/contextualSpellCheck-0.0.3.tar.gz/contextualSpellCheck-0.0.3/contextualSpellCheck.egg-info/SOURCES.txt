@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+contextualSpellCheck/__init__.py
+contextualSpellCheck/contextualSpellCheck.py
+contextualSpellCheck.egg-info/PKG-INFO
+contextualSpellCheck.egg-info/SOURCES.txt
+contextualSpellCheck.egg-info/dependency_links.txt
+contextualSpellCheck.egg-info/top_level.txt
+contextualSpellCheck/data/.DS_Store
+contextualSpellCheck/data/vocab.txt
+contextualSpellCheck/tests/__init__.py
+contextualSpellCheck/tests/test_contextualSpellCheck.py
