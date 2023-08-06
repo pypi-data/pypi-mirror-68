@@ -1,0 +1,5 @@
+vcap==0.1.3
+
+[tests]
+pytest
+mock
