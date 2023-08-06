@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+json_encoders/AllRefJSONEncoder.py
+json_encoders/RefJSONEncoder.py
+json_encoders/SimpleJSONEncoder.py
+json_encoders/__init__.py
+json_encoders/_constants.py
+json_encoders/utils.py
+json_encoders.egg-info/PKG-INFO
+json_encoders.egg-info/SOURCES.txt
+json_encoders.egg-info/dependency_links.txt
+json_encoders.egg-info/top_level.txt
