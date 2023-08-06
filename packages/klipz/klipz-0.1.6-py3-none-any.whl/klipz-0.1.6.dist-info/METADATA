@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: klipz
+Version: 0.1.6
+Summary: Clipboard manager using curses
+Home-page: https://github.com/ropg/klipz
+Author: Rop Gonggrijp
+License: MIT
+Project-URL: Documentation, https://github.com/ropg/klipz/README.md
+Project-URL: Source, https://github.com/ropg/klipz
+Project-URL: Tracker, https://github.com/ropg/klipz/issues
+Keywords: copy,paste,clipboard
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: pyperclip
+
+UNKNOWN
+
+
