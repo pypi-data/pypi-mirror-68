@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: e3smlab
+Version: 0.1.9
+Summary: E3SM Analysis Utilities
+Home-page: UNKNOWN
+Author: Youngsung Kim
+Author-email: youngsung.kim.act2@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/grnydawn/e3smlab/issues
+Project-URL: Source, https://github.com/grnydawn/e3smlab
+Keywords: e3smlab
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: meteolab (>=0.1.5)
+Requires-Dist: gunzip
+Requires-Dist: nmlread
+Requires-Dist: dict2json
+Requires-Dist: uxml2dict
+
+Tools for Analysis of E3SM project
+
+
