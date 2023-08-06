@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: fivecentplots
+Version: 0.3.1
+Summary: Wrapper for python plotting across packages with easier syntax
+Home-page: https://github.com/endangeredoxen/fivecentplots
+Author: Steve Nicholes
+Author-email: endangeredoxen@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/endangeredoxen/fivecentplots/archive/v0.3.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: Wrapper for python plotting across packages with easier syntax
+Keywords: data,plotting
+Platform: UNKNOWN
