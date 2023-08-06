@@ -1,0 +1,3 @@
+[console_scripts]
+runnow = runnow.runnow:main
+
