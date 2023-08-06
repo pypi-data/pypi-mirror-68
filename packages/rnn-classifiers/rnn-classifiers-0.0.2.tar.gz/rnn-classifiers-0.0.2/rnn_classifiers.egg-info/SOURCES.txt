@@ -1,0 +1,8 @@
+README.md
+setup.py
+rnn_classifier/__init__.py
+rnn_classifier/model.py
+rnn_classifiers.egg-info/PKG-INFO
+rnn_classifiers.egg-info/SOURCES.txt
+rnn_classifiers.egg-info/dependency_links.txt
+rnn_classifiers.egg-info/top_level.txt
