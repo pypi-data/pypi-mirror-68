@@ -1,0 +1,17 @@
+README.md
+animated-memory
+schema.sql
+scraper.py
+setup.py
+train.py
+animated_memory.egg-info/PKG-INFO
+animated_memory.egg-info/SOURCES.txt
+animated_memory.egg-info/dependency_links.txt
+animated_memory.egg-info/requires.txt
+animated_memory.egg-info/top_level.txt
+static/style.css
+templates/layout.mako
+templates/list.mako
+templates/new.mako
+templates/read.mako
+templates/settings.mako
