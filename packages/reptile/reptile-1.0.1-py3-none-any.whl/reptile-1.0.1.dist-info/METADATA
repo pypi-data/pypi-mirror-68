@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: reptile
+Version: 1.0.1
+Summary: Reptile is a command-line interface for Python. Specifically, Reptile helps with producing interactive REPL-like software.
+Home-page: https://github.com/alessandrosp/reptile
+Author: Alessandro
+License: UNKNOWN
+Keywords: prompt-toolkit,cli,command-line,commandline,command-line-interface,python-inquiry,inquirer,reptile,REPL,prompt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: prompt-toolkit (>=3.0.5)
+Requires-Dist: pygments (>=2.6.1)
+
+UNKNOWN
+
+
