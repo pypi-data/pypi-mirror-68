@@ -1,0 +1,3 @@
+[console_scripts]
+githubpullrequests = githubpullrequests.__init__:main
+

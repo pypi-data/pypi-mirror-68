@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+source/githubpullrequests/__init__.py
+source/githubpullrequests.egg-info/PKG-INFO
+source/githubpullrequests.egg-info/SOURCES.txt
+source/githubpullrequests.egg-info/dependency_links.txt
+source/githubpullrequests.egg-info/entry_points.txt
+source/githubpullrequests.egg-info/requires.txt
+source/githubpullrequests.egg-info/top_level.txt
