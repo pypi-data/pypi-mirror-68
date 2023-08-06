@@ -1,0 +1,11 @@
+aiohttp<=3.6.2
+
+[aio]
+aiohttp<=3.6.2
+
+[all]
+aiohttp<=3.6.2
+httpx>=0.12.0
+
+[httpx]
+httpx>=0.12.0
