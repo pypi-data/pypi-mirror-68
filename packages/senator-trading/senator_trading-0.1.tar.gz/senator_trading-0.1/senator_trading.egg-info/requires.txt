@@ -1,0 +1,6 @@
+pandas
+numpy
+datetime
+requests
+progress_printer
+matplotlib
