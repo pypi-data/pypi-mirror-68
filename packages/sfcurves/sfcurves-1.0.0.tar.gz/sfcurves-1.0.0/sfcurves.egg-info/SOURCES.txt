@@ -1,0 +1,9 @@
+README.md
+setup.py
+sfcurves/__init__.py
+sfcurves/hilbert.py
+sfcurves/outline.py
+sfcurves.egg-info/PKG-INFO
+sfcurves.egg-info/SOURCES.txt
+sfcurves.egg-info/dependency_links.txt
+sfcurves.egg-info/top_level.txt
