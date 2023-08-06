@@ -1,0 +1,16 @@
+Django<3.1,>=2.1
+django-filer>=1.7
+django-ipware
+django-fsm
+django-fsm-admin
+djangorestframework<4,>=3.9
+django-rest-auth
+django-angular
+Django-Select2
+django-rest-auth
+django-admin-sortable2
+django-formtools
+django_polymorphic
+django-post_office
+django-cms>=3.7
+djangocms-cascade>=1.3
