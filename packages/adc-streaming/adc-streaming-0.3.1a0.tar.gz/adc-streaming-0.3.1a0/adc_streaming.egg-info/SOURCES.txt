@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+adc/__init__.py
+adc/auth.py
+adc/kafka.py
+adc/streaming.py
+adc_streaming.egg-info/PKG-INFO
+adc_streaming.egg-info/SOURCES.txt
+adc_streaming.egg-info/dependency_links.txt
+adc_streaming.egg-info/not-zip-safe
+adc_streaming.egg-info/requires.txt
+adc_streaming.egg-info/top_level.txt
