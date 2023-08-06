@@ -1,0 +1,10 @@
+[console_scripts]
+not-grep = not_grep:cli
+
+[not_grep.checker]
+exclude = not_grep.checkers:exclude
+include = not_grep.checkers:include
+output-test = not_grep.checkers:output_test
+prefix = not_grep.checkers:prefix
+suffix = not_grep.checkers:suffix
+
