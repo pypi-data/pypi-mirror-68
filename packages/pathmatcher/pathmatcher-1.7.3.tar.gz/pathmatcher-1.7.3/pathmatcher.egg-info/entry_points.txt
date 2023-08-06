@@ -1,0 +1,4 @@
+[console_scripts]
+pathmatcher = pathmatcher.pathmatcher:main
+reorientation_registration_helper = pathmatcher.reorientation_registration_helper:main
+

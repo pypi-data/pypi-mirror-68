@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pathmatcher/__init__.py
+pathmatcher/_version.py
+pathmatcher/pathmatcher.py
+pathmatcher/reorientation_registration_helper.py
+pathmatcher/tee.py
+pathmatcher.egg-info/PKG-INFO
+pathmatcher.egg-info/SOURCES.txt
+pathmatcher.egg-info/dependency_links.txt
+pathmatcher.egg-info/entry_points.txt
+pathmatcher.egg-info/requires.txt
+pathmatcher.egg-info/top_level.txt
