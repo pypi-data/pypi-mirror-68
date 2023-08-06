@@ -1,0 +1,17 @@
+LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+apologies/__init__.py,sha256=MbcfcbWrGZXnfu4CSXP2C3Bl3oH2-5oGDMoqRtfcwss,29
+apologies/cli.py,sha256=r59KYa1ZpzCw9qJ7oCxwnOzMSV2AqHkDBaMZyyYZRf8,4230
+apologies/demo.py,sha256=WcpE5unvI2A3bZH7sHyRPJ8feLpUAp37iqd0K-m6KhI,5011
+apologies/engine.py,sha256=vHDHLM5jVlFFUMHmIxbAm7Nt-ercWcN2dz87og5wYmw,9168
+apologies/game.py,sha256=tdT6-wEm37ItZyhmZht27REeqAlVXdOCAVqd7E00GpA,18548
+apologies/py.typed,sha256=wtKydEbX34OO8qvY4jxCcR0Z0aVEceqXQMH5u0XfynI,69
+apologies/render.py,sha256=BNWtUGOnQje0lQcHE51HTLf-N3mAp_C_5cS5kNuFlBY,10358
+apologies/reward.py,sha256=TpY6MdyRb1MuRWhGtv3ULBv3g2kn9rger2icwqbFi2k,4268
+apologies/rules.py,sha256=avZZOhhxxFzM0PKZqAAmTov1DW1p3KugdBKwSoK4dhA,24849
+apologies/simulation.py,sha256=tCAHZatHfAhtI22FuOTjOyzZGHSJXqqfmvdB3m4-5t8,7735
+apologies/source.py,sha256=9azL6EP_e6Jhzgnc5BpAzgv5nKhLaNBk8Nu5AOAMl5U,5092
+apologies/util.py,sha256=u58aUop2De3cQPl9ySTUKVDAFgB_VAoCpEr4MfCN6Lk,1826
+apologies-0.1.16.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+apologies-0.1.16.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+apologies-0.1.16.dist-info/METADATA,sha256=tZ5BYcUia2ydOMYqSUdKNu7L8OLihHfxk1sodpnLkcA,1803
+apologies-0.1.16.dist-info/RECORD,,
