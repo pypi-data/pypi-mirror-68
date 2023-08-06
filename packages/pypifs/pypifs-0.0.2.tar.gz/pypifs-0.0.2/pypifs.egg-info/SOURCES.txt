@@ -1,0 +1,15 @@
+CHANGELOG.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pypifs/__init__.py
+pypifs/_version.py
+pypifs/opener.py
+pypifs.egg-info/PKG-INFO
+pypifs.egg-info/SOURCES.txt
+pypifs.egg-info/dependency_links.txt
+pypifs.egg-info/entry_points.txt
+pypifs.egg-info/not-zip-safe
+pypifs.egg-info/requires.txt
+pypifs.egg-info/top_level.txt
