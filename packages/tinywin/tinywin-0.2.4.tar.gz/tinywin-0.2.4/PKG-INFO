@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tinywin
+Version: 0.2.4
+Summary: A tiny Curses window management library.
+Home-page: https://github.com/knicholson32/tinywin/
+Author: Keenan Nicholson
+Author-email: 
+License: UNKNOWN
+Description: # tinywin
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/knicholson32/tinywin/master/images/tinywin.png" width="400">
+          <h4 align="center">A tiny Curses window library</h4>
+        </p>
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Environment :: Console :: Curses
+Description-Content-Type: text/markdown
