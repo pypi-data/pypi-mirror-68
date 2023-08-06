@@ -1,0 +1,13 @@
+future
+PyNaCl>=1.3.0
+ruamel.yaml
+rcsb.utils.io>=0.62
+
+[:python_version < "3.0"]
+configparser
+
+[dev]
+check-manifest
+
+[test]
+coverage
