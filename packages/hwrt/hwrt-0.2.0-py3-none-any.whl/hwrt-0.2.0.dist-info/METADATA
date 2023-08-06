@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: hwrt
+Version: 0.2.0
+Summary: Handwriting Recognition Tools
+Home-page: https://github.com/MartinThoma/hwrt
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT
+Download-URL: https://github.com/MartinThoma/hwrt
+Keywords: HWRT,recognition,handwriting,on-line
+Platform: Linux
+Platform: MacOS X
+Platform: Windows
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >= 3.0
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: dropbox
+Requires-Dist: Flask
+Requires-Dist: flask-bootstrap
+Requires-Dist: gevent
+Requires-Dist: gunicorn
+Requires-Dist: h5py
+Requires-Dist: keras
+Requires-Dist: natsort
+Requires-Dist: nntoolkit
+Requires-Dist: Pillow
+Requires-Dist: pymysql
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: six
+Provides-Extra: all
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-flake8 ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-flake8 ; extra == 'tests'
+Provides-Extra: visualization
+Requires-Dist: matplotlib ; extra == 'visualization'
+
+[![Build Status](https://travis-ci.org/MartinThoma/hwrt.svg?branch=master)](https://travis-ci.org/MartinThoma/hwrt)
+[![Coverage Status](https://img.shields.io/coveralls/MartinThoma/hwrt.svg)](https://coveralls.io/r/MartinThoma/hwrt?branch=master)
+[![Documentation Status](http://img.shields.io/badge/docs-latest-brightgreen.svg)](http://pythonhosted.org/hwrt)
+[![Code Health](https://landscape.io/github/MartinThoma/hwrt/master/landscape.svg)](https://landscape.io/github/MartinThoma/hwrt/master)
+
+
+## Handwriting Recognition Toolkit
+
+A toolkit for handwriting recognition (HWR). Especially on-line HWR. It
+was developed for the bachelor's thesis of Martin Thoma.
+
+### Version history
+
+* 0.1 First uploads
+
+### Documentation
+
+The documentation is available at https://pythonhosted.org/hwrt
+
+
