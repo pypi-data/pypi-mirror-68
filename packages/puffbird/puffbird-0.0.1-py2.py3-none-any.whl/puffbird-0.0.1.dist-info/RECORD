@@ -1,0 +1,11 @@
+puffbird/__init__.py,sha256=Rq6Ojt1MCjO2_InF5G0K0IF1KXIU684SoGJGzX8P-NE,292
+puffbird/callables.py,sha256=SkoMHkvk_X5KcnCZKPMdWyO8INCguqMpawtHuuGHANo,1585
+puffbird/err.py,sha256=0P83j0gE3oxAb8LltIW55_3EEKN5p9uZY4R3FFnk4pw,100
+puffbird/frame.py,sha256=_Fld_FuSfQ90cK5-KWFiDyhVslBGYPF5wlozJ_NeGgE,48626
+puffbird/shortcuts.py,sha256=9GvVNup7kPSDj9gNlXisleL02UXSnZnw3tYomJ3mcwo,5926
+puffbird/utils.py,sha256=jb1e3oGhYikJMI-7lCu22dlbur0RJYKuSFhc4PHVgtc,359
+puffbird-0.0.1.dist-info/LICENSE,sha256=f3UkX7eA_K8oLaELKO4ZFEr27_CG3h_Fk-ARmTFDJt0,1077
+puffbird-0.0.1.dist-info/METADATA,sha256=ugmr3ZZHvberdzG_pP_wqv4oJ-oMyZTXA7HjllFNAv4,720
+puffbird-0.0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+puffbird-0.0.1.dist-info/top_level.txt,sha256=_8tvWKfUq1j2kqYj_9_zXIDpmk0VDVG7KSxGr97OWTs,9
+puffbird-0.0.1.dist-info/RECORD,,
