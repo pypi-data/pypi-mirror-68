@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pyansiescapes
+Version: 0.0.1.dev0
+Summary: Python package for quick and readable console manipulation using ANSI Escapes Sequences
+Home-page: https://github.com/tillhainbach/pyansiescapes
+Author: Till Hainbach
+Author-email: Till.Hainbach@posteo.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+PyANSIEscapes - Console Manipulation using ANSI Escapes Sequences
+=========================================================================
+
+This package provides human readable functions for adding ANSI escapes sequences to your python console outputs.
+It's loosy based on [ansiescapes](https://github.com/kodie/ansiescapes), however offers more convenience functions
+for formatting Rich Text.
+
+Installation
+-----------
+```zsh
+pip install pyansiescapes
+```
+
+Usage
+------------
+```python
+import pyansiescapes.commands as ansi
+
+# Print blue text on white background:
+print(ansi.format("Hello ANSI!", color = 'blue', background = 'white'))
+
+```
+
+API-Reference
+--------------
+The documentation is hosted on [readthedocs.io](https://pyansiescapes.readthedocs.io/en/latest/)
+
+You can also access the docs using `help(ansi)` in a python REPL.
+
+License
+--------------
+
+This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+
