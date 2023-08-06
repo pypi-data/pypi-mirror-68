@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+dkredis/__init__.py
+dkredis/dkredis.py
+dkredis/rediscache.py
+dkredis.egg-info/PKG-INFO
+dkredis.egg-info/SOURCES.txt
+dkredis.egg-info/dependency_links.txt
+dkredis.egg-info/not-zip-safe
+dkredis.egg-info/requires.txt
+dkredis.egg-info/top_level.txt
