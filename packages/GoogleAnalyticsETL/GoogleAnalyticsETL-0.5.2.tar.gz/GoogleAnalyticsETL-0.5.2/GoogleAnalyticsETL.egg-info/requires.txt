@@ -1,0 +1,6 @@
+sqlalchemy
+pandas
+google-api-python-client
+dateutil
+queue
+threading
