@@ -1,0 +1,6 @@
+iminuit
+numpy
+numdifftools
+scipy
+uncertainties
+pytest-runner
