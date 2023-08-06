@@ -1,0 +1,9 @@
+README.rst
+allowedsites.py
+setup.py
+django_dynamic_allowedsites.egg-info/PKG-INFO
+django_dynamic_allowedsites.egg-info/SOURCES.txt
+django_dynamic_allowedsites.egg-info/dependency_links.txt
+django_dynamic_allowedsites.egg-info/not-zip-safe
+django_dynamic_allowedsites.egg-info/requires.txt
+django_dynamic_allowedsites.egg-info/top_level.txt
