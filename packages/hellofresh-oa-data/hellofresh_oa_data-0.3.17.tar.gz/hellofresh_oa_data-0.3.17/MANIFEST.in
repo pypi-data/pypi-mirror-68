@@ -1,0 +1,9 @@
+exclude credentials.json
+exclude token.pickle
+exclude service_account.json
+exclude test_delete.py
+exclude test.py
+exclude test_module.py
+exclude dockerfile
+exclude docker-compose.yaml
+include config.yml
