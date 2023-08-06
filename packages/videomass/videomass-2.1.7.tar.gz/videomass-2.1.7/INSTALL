@@ -1,0 +1,58 @@
+Videomass Installation Instructions and buildings
+
+BASE DEPENDENCIES
+-----------------
+
+    Required:
+        - Python >=3.7
+        - wxPython4 (Phoenix)
+        - PyPubSub
+        - pip (On Windows and MacOS it is included with Python3.7)
+        - FFmpeg (with ffplay and ffprobe) >=4.1.4
+        - youtube-dl
+
+    Optionals:
+        - mpv (media player) for playing URLs
+
+Videomass can be run without installing by un-tarring the source package and
+executing the "launcher" script inside the un-tarred directory.
+
+    python3 launcher
+
+Videomass can also be run from the Python3 console:
+
+    >>> from videomass3 import Videomass3
+    >>> Videomass3.main()
+
+#--------------------------------------------------------------------------#
+Installing with pip tool: [Linux/Macintosh/Unix/Windows]
+
+    python3 -m pip install videomass
+
+Upgrading with pip tool: [Linux/Macintosh/Unix/Windows]
+
+    python3 -m pip install -U videomass
+
+- To uninstall:
+
+    python3 -m pip uninstall videomass
+
+Please, Visit the Wiki page for more info:
+
+
+https://github.com/jeanslack/Videomass/wiki/Installing-from-PyPi-with-Python-pip
+#--------------------------------------------------------------------------#
+
+Build as wheel: [Linux/Macintosh/Unix/Windows]
+
+python3 setup.py sdist bdist_wheel
+
+Please, Visit the Wiki page for more info:
+
+https://github.com/jeanslack/Videomass/wiki/Make-pure-Python-wheels
+
+#--------------------------------------------------------------------------#
+
+
+
+

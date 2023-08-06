@@ -1,0 +1,2 @@
+PyPubSub>=4.0.0
+youtube_dl
