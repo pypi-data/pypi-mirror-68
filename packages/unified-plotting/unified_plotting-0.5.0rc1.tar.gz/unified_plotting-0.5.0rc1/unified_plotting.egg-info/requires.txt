@@ -1,0 +1,9 @@
+matplotlib<4,>=3.1
+plotly!=4.7.0,<5,>=4.5
+setuptools>=40.0
+numpy<2,>=1.17.4
+scipy<2,>=1.4
+psutil<6,>=5.4.5
+requests<3,>=2
+flask<2,>=1.1
+waitress<2,>=1.4
