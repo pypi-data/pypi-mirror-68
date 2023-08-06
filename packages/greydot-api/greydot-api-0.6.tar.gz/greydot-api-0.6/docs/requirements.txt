@@ -1,0 +1,3 @@
+lxml
+xmltodict
+sphinx_rtd_theme
