@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: Flask-Python-Arango
+Version: 0.0.2
+Summary: Python ArangoDB support for Flask applications
+Home-page: https://github.com/zvfvrv/flask-python-arango
+Author: Francesco Lombardo
+Author-email: franclombardo@gmail.com
+License: Apache-2.0
+Download-URL: https://github.com/zvfvrv/flask-python-arango/tags
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Flask (>=0.12)
+Requires-Dist: python-arango (>=5.4.0)
+Requires-Dist: six
+
+Flask-Python-Arango
+===================
+
+**Flask-Python-Arango** is a `python-arango`_ support for Flask applications using ArangoDB_
+
+Installation
+------------
+
+To install a stable version from PyPi_:
+
+.. code-block:: bash
+
+    ~$ pip install Flask-Python-Arango
+
+
+To install the latest version directly from GitHub_:
+
+.. code-block:: bash
+
+    ~$ pip install -e git+git@github.com:zvfvrv/flask-python-arango.git@master#egg=flask-python-arango
+
+A Simple Example 
+----------------
+
+.. code-block:: python
+
+    from flask import Flask, render_template
+    from flask_python_arango import FlaskArango
+
+    app = Flask(__name__)
+    app.config['ARANGODB_HOST'] = 'http://localhost:8529'
+    app.config['ARANGODB_DB'] = 'test'
+    app.config['ARANGODB_USERNAME'] = 'root'
+    app.config['ARANGODB_PSW'] = '12345678'
+
+    ArangoDB = FlaskArango(app)
+
+    @app.route('/')
+    def home_page():
+        # Execute an AQL query and iterate through the result cursor.
+        cursor = ArangoDB.connection.aql.execute('FOR doc IN nodes RETURN doc')
+        devices = [document for document in cursor]
+        return render_template('index.html', devices=devices)
+
+
+Contributing
+------------
+
+Please create an issue on GitHub_.
+
+Links
+-----
+
+* `python-arango`_
+* Flask Documentation: https://flask.palletsprojects.com/
+* ArangoDB_
+
+
+.. _`GitHub`: https://github.com/zvfvrv/flask-python-arango
+.. _ArangoDB: https://www.arangodb.com
+.. _`python-arango`: https://github.com/joowani/python-arango/releases
+.. _PyPi: https://pypi.org/project/flask-python-arango/
+
+
