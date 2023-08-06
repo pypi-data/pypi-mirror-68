@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: oss-utils-cli
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://oss.rutgers.edu
+Author: Rutgers Open System Solutions
+Author-email: oss@oss.rutgers.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Description-Content-Type: text/plain
+Requires-Dist: click (==7.1.1)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+
+Various util functions for Rutgers EAS-MaCS
+
+
