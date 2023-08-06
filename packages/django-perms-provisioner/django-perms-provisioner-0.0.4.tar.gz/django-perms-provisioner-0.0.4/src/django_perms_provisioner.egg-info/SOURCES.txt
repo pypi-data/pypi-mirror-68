@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+src/django_perms_provisioner/__init__.py
+src/django_perms_provisioner.egg-info/PKG-INFO
+src/django_perms_provisioner.egg-info/SOURCES.txt
+src/django_perms_provisioner.egg-info/dependency_links.txt
+src/django_perms_provisioner.egg-info/not-zip-safe
+src/django_perms_provisioner.egg-info/requires.txt
+src/django_perms_provisioner.egg-info/top_level.txt
+src/django_perms_provisioner/management/__init__.py
+src/django_perms_provisioner/management/schemas.py
+src/django_perms_provisioner/management/commands/__init__.py
+src/django_perms_provisioner/management/commands/dumpperms.py
+src/django_perms_provisioner/management/commands/loadperms.py
