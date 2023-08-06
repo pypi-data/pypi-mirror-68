@@ -1,0 +1,16 @@
+transient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transient/__main__.py,sha256=EwgrZujcMN1I6axkdOyOETWL-l1wZ1KyfhUc9hT9_gw,30
+transient/cli.py,sha256=-jq23ARHxZehgwkkjz5fV83j94mRxN2VTR5d-iY7ngQ,2286
+transient/image.py,sha256=fVDh7GPZdD6wdLgJ3Iw92wKJp98SCrQh-MnM2sCjU-0,6260
+transient/qemu.py,sha256=6Ws5AHTzJYRCq7vO_rrGlciP3wPDZ9XtDFAijf7bTaw,2292
+transient/ssh.py,sha256=iYn7UoN44PKNL_iYbGsQqG1rl_63dBYrIEQzbzlYVNk,2284
+transient/transient.py,sha256=pKeyUvjYWDVds632rVCWrlaCMlP-fZAcdUSrOK2Mq-M,2309
+transient/vagrant_keys/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transient/vagrant_keys/vagrant,sha256=yVhCvyIdZ6haJnlroT-1iVGYW__AHzmfoNEzuJ-gilI,1675
+transient/vagrant_keys/vagrant.pub,sha256=mqkpIXLJFYIeKby_X_QtSUD1nWoUgVPHatY49fTGzYs,409
+transient-0.1.dist-info/LICENSE,sha256=nMCuR3NYDjbNA5l7JmPfwKA7eerPKHaBzQTSdYK-glU,1077
+transient-0.1.dist-info/METADATA,sha256=Yych7L13ayrCL6IXlZw9oG8dwC4cNiGLLaGzyGZsMSI,2527
+transient-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transient-0.1.dist-info/entry_points.txt,sha256=kPFhOsUN3taCEfrvKgDMV_v-0lOAbcQS8ZV1uIv1izU,50
+transient-0.1.dist-info/top_level.txt,sha256=3J4mFfM6oBXGjzc6GgD26aFrr0-PCUmL5E7nOmsOHis,10
+transient-0.1.dist-info/RECORD,,
