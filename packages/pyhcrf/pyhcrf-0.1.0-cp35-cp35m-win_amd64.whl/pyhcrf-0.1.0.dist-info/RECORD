@@ -1,0 +1,11 @@
+pyhcrf/__init__.py,sha256=vHcSpHDxvRkShNYe4JQvW6KCfbVe2X24ErIt0zQEUmE,13729
+pyhcrf/_algorithms.c,sha256=4bhJylyaplyh2ULQiIND5AynfgIedOVmVsqbk1Xj9wI,1259951
+pyhcrf/_algorithms.cp35-win_amd64.pyd,sha256=3m7GYT2PmPxadrd3JzarqdsDKubZm11L_TgbwfGHQhg,212480
+pyhcrf/_algorithms.pyx,sha256=LOYK2nbR8UFDcoAy7vkQ_Xkm5Cu4Fg7hd0QooF8pSp0,9778
+pyhcrf/_version.txt,sha256=6d2FB_S_DG9CRY5BrqgzrQvT9hJycjNe7pv01YVB7Wc,6
+pyhcrf/logaddexp.h,sha256=-CuWlIgMqC-bQQcp0LJJA3n5cf1Vx1IR_BBMtz0VRp4,2216
+pyhcrf-0.1.0.dist-info/COPYING.md,sha256=uTzGhlI8QQSpgkfIGO2wfNBN8u9DKDbF5E1sYsWy-lM,1611
+pyhcrf-0.1.0.dist-info/METADATA,sha256=ObsO29t6CRyWhpc_jFbOpxEPA99BTitIbTTYq2EgdbI,6004
+pyhcrf-0.1.0.dist-info/WHEEL,sha256=lAhx1E7vuMdfB15XOB_cxzoqY_rMvOvDnKwTbnMf6lo,106
+pyhcrf-0.1.0.dist-info/top_level.txt,sha256=N5LuNSEuBtgBtZxvYd7--KuWPwlw-68PRw35RLnyWoA,7
+pyhcrf-0.1.0.dist-info/RECORD,,
