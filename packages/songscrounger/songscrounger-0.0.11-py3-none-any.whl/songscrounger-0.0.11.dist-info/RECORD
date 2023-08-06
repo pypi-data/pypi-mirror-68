@@ -1,0 +1,14 @@
+song_scrounger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+song_scrounger/document_parser.py,sha256=xeigsvN0u78K-tPEhO5lipcn52rdq2U-SbzvQ-VIeBQ,975
+song_scrounger/song_scrounger.py,sha256=h-fAp72eGaNE5x2tr9VZORV8-ftqTzT73dqs5W8NGes,2109
+song_scrounger/spotify_client.py,sha256=ZYEOe3k_sFbsBsl4r0GsYoybQ_x5jHqmwbffxONLCRg,3130
+song_scrounger/util.py,sha256=0p63PwACJdftEvuFm8O6E1V6kBAy4xMaAXmDp1dkBHQ,840
+songscrounger-0.0.11.dist-info/METADATA,sha256=x8Ss5DZ8Sv_ip-Nltq87V22YkwseABKny2gwLpetaBw,3843
+songscrounger-0.0.11.dist-info/RECORD,,
+songscrounger-0.0.11.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+songscrounger-0.0.11.dist-info/top_level.txt,sha256=qdMcQdIQWXTwCCcrfBGTf9rOnq9Ulwrrq6X3pdLh83o,21
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_document_parser.py,sha256=L2mJqIzKeFLTnXdRRkZgjd1aTFdHGGQUZD0Yh_sf5C8,1929
+tests/test_song_scrounger.py,sha256=kTWVLU_VKC1ddsA4rcrtx4HGKTAliFupCZZKXLKxRog,2736
+tests/test_spotify_client.py,sha256=LVFj2SzFX1Ir8bVDerkaQ8gTOojy_qU_Oi9b3MLvee8,1776
+tests/test_util.py,sha256=v5SjK-uYl3u3Ul3CRjAez9WyyvEEEpVVTQtHolM3Ng4,628
