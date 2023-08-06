@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-ne1000 = yaqd_new_era._ne1000:NE1000.main
+
