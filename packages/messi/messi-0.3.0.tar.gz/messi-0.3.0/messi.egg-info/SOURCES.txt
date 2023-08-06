@@ -1,0 +1,12 @@
+README.rst
+setup.py
+messi/__init__.py
+messi/__main__.py
+messi/version.py
+messi.egg-info/PKG-INFO
+messi.egg-info/SOURCES.txt
+messi.egg-info/dependency_links.txt
+messi.egg-info/entry_points.txt
+messi.egg-info/requires.txt
+messi.egg-info/top_level.txt
+messi/c_source/__init__.py
