@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+import_me/__init__.py
+import_me/columns.py
+import_me/exceptions.py
+import_me/processors.py
+import_me.egg-info/PKG-INFO
+import_me.egg-info/SOURCES.txt
+import_me.egg-info/dependency_links.txt
+import_me.egg-info/not-zip-safe
+import_me.egg-info/requires.txt
+import_me.egg-info/top_level.txt
+import_me/parsers/__init__.py
+import_me/parsers/base.py
+import_me/parsers/csv.py
+import_me/parsers/xlsx.py
