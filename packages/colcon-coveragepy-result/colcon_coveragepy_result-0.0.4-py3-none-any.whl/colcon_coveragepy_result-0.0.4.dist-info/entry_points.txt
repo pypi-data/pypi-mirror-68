@@ -1,0 +1,3 @@
+[colcon_core.verb]
+coveragepy-result = colcon_coveragepy_result.verb.coveragepy_result:CoveragePyResultVerb
+
