@@ -1,0 +1,3 @@
+[console_scripts]
+pr0cks=pr0cks.console:main
+

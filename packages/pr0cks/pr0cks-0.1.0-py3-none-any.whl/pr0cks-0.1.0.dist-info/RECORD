@@ -1,0 +1,9 @@
+pr0cks/__init__.py,sha256=q6QXHgkg-3QzkD7apdt40vKm1vXn_T3dgNjCj-21ZYg,659
+pr0cks/console.py,sha256=yruvViX8Jhavx4xwoZI97uyfJzCXjj3q9uvsj3pUhGc,5505
+pr0cks/server.py,sha256=O7snIVHsQjbHMAcxsyHpgSGDxVjfvhjwaCBS0yeOn0k,4096
+pr0cks/socks.py,sha256=wgCXdUabG2L8n0slGo6_xG3lVh2j4mu70bJPNHPLEVs,16527
+pr0cks-0.1.0.dist-info/entry_points.txt,sha256=VtOOsjMhTuC1p5OmPfNh1vawln-d-OXOOhc-xNs-9DM,46
+pr0cks-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pr0cks-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pr0cks-0.1.0.dist-info/METADATA,sha256=4ZWtTZUC1UfkoMnOKCDH5IU-s7uRtXiPee8_Rqg6muE,3672
+pr0cks-0.1.0.dist-info/RECORD,,
