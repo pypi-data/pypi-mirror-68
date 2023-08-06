@@ -1,0 +1,3 @@
+[console_scripts]
+cloudgaze = cloudgaze_cli.__main__:cli
+
