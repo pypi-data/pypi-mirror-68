@@ -1,0 +1,16 @@
+setup.py
+xadmind3/__init__.py
+xadmind3/adminx.py
+xadmind3/apps.py
+xadmind3/filters.py
+xadmind3/forms.py
+xadmind3/layout.py
+xadmind3/models.py
+xadmind3/sites.py
+xadmind3/util.py
+xadmind3/vendors.py
+xadmind3/widgets.py
+xadmind3.egg-info/PKG-INFO
+xadmind3.egg-info/SOURCES.txt
+xadmind3.egg-info/dependency_links.txt
+xadmind3.egg-info/top_level.txt
