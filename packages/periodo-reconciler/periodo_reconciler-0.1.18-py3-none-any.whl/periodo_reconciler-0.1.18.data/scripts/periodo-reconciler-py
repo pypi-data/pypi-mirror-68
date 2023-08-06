@@ -1,0 +1,68 @@
+#!python
+
+from periodo_reconciler import (
+    RProperty,
+    RQuery,
+    PeriodoReconciler,
+    CsvReconciler,
+    non_none_values
+)
+
+import click
+
+
+@click.command()
+@click.argument('input', type=click.File('r'))
+@click.argument('output', type=click.File('w'))
+@click.option('--query', required=True,
+              help='column of query')
+@click.option('--start', default=None,
+              help='column of start')
+@click.option('--stop', default=None,
+              help='column of stop')
+@click.option('--location', default=None,
+              help='column of location')
+@click.option('--ignored_queries', default='',
+              help='comma-separated string of queries to ignore')
+@click.option('--transpose-query/--no-transpose-query', default=False,
+              help='transpose comma-separated terms in query column')
+@click.option('--match_column_prefix', default='',
+              help='optional prefix for match related columns')
+@click.option('--match_top_candidate/--no-match_top_candidate', default=True,
+              help='accept top reconciliation candidate as match')
+@click.option('--match_summary_output', default=None,
+              type=click.File('w'),
+              help='optional CSV output for a summary of the matches')
+def reconcile(input, output, query, start, stop, location,
+              ignored_queries, transpose_query,
+              match_column_prefix, match_top_candidate,
+              match_summary_output):
+    """
+    This script reconciles the INPUT csv file
+    to produce the OUTPUT csv file.
+    """
+
+    p_recon = PeriodoReconciler(host='localhost:8142')
+
+    kw = non_none_values({
+        'query': query,
+        'start': start,
+        'stop': stop,
+        'location': location,
+        'ignored_queries': ignored_queries,
+        'transpose_query': transpose_query,
+        'match_column_prefix': match_column_prefix,
+        'match_top_candidate': match_top_candidate
+    })
+
+    c_recon = CsvReconciler(input, p_recon, **kw)
+    matches = list(c_recon.matches())
+
+    c_recon.to_csv(output, matches)
+
+    if match_summary_output is not None:
+        c_recon.match_summary_to_csv(match_summary_output)
+
+
+if __name__ == '__main__':
+    reconcile()
