@@ -1,0 +1,8 @@
+pubproxpy/__init__.py,sha256=2M_BVNSqcv_iJKCzDIr6TZ7Y-VHItjrWVUkCpSfXGvI,94
+pubproxpy/_singleton.py,sha256=S9by22-G5prPnn9ooBIzoOfSwWqVq43SFNwWVby0HXM,269
+pubproxpy/errors.py,sha256=v6h3Ack2eRNqZpo0mrv4aNKj6RO0oDRX_MUFuV-UM2s,2573
+pubproxpy/fetcher.py,sha256=vacESZGrJHc0prGgDnDvQRdBhXOoJ_Gs5AwwLW0lZbE,7928
+pubproxpy-1.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pubproxpy-1.1.5.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pubproxpy-1.1.5.dist-info/METADATA,sha256=MvYwKmzrDuHVTY-qeZcrq_QqXbGLnBS-dWXz_M9UiwI,6194
+pubproxpy-1.1.5.dist-info/RECORD,,
