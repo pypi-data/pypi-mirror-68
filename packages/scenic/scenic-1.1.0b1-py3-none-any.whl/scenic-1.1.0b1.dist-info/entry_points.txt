@@ -1,0 +1,3 @@
+[pygments.lexers]
+scenic=scenic.syntax.pygment:ScenicLexer
+
