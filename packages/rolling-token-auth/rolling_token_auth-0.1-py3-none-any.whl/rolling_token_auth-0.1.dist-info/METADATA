@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rolling-token-auth
+Version: 0.1
+Summary: Rolling Token verification & generator
+Home-page: https://github.com/alexeichhorn/python-rolling-token-auth
+Author: Alexander Eichhorn
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=2.9.0)
+
+# Rolling Token Authentication
+
+
