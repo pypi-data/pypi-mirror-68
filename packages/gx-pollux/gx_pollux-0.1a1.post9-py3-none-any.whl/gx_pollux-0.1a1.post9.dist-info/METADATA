@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gx-pollux
+Version: 0.1a1.post9
+Summary: pollux is the β Geminorum
+Home-page: UNKNOWN
+Author: gawainx
+Author-email: liangyi@bupt.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+
+# pollux
+Pollux is β Geminorum
+
+
