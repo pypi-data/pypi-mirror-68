@@ -1,0 +1,10 @@
+setup.py
+skgb_probability/Binomialdistribution.py
+skgb_probability/Gaussiandistribution.py
+skgb_probability/Generaldistribution.py
+skgb_probability/__init__.py
+skgb_probability.egg-info/PKG-INFO
+skgb_probability.egg-info/SOURCES.txt
+skgb_probability.egg-info/dependency_links.txt
+skgb_probability.egg-info/not-zip-safe
+skgb_probability.egg-info/top_level.txt
