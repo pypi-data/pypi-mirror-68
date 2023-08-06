@@ -1,0 +1,2 @@
+gnuhealth==3.6.4
+gnuhealth_services==3.6.4
