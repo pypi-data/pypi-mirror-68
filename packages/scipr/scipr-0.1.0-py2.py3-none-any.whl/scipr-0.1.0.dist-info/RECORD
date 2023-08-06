@@ -1,0 +1,14 @@
+scipr/__init__.py,sha256=lZ-gwZFrVrfHJi0YSUaMD43DKowDjShUrRrdMyFA6d8,167
+scipr/matching.py,sha256=Tn7CtBHzZRKszECJ2BoGp0HTphl_unBPHxKr6PVxgBM,7657
+scipr/scipr.py,sha256=OEQO9Ocm_GhQUJg8QCw3CkhkHaQs4dDBrcBlBKpsdbM,3799
+scipr/transform/__init__.py,sha256=uhA5tcdKYwEqpVbns23QMIQpttNI4YN8-qoJ0XxTP18,194
+scipr/transform/affine.py,sha256=Vn7fONGCi0169fkEyhORHVhCseQ0VlsD_3DHNeei-vw,2907
+scipr/transform/autoencoder.py,sha256=E9l3bMyZqXavodb5VcwxrMsb_GzHnHqz4RFNWv4QXTM,7414
+scipr/transform/base.py,sha256=hvkWKqOJ2pgB-JqBxY4brKQihOHnujNy37J4yLCnjg8,4181
+scipr/transform/rigid.py,sha256=XD3RckjKeVCQQrkecnf27uuRX2LRlDJgZQfF7SUP56E,1438
+scipr-0.1.0.dist-info/AUTHORS.rst,sha256=PZKhurxf7x_v8xg3MeVelCPA35KC2RfrfEgtB9f_n5A,153
+scipr-0.1.0.dist-info/LICENSE,sha256=5UL1zfdGcQQb4IOr4iM_nxmA-69kZB7dbMpftaDUOA0,1504
+scipr-0.1.0.dist-info/METADATA,sha256=ZyQQMFGKe7QrkydgyVBUVBM18QXcMh-thzeIuZ6dLTU,1678
+scipr-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+scipr-0.1.0.dist-info/top_level.txt,sha256=TtRQDFpSYzmt1b_-xjt_iFq8WS8oLn0-p6CapKjm9rU,6
+scipr-0.1.0.dist-info/RECORD,,
