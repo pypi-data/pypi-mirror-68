@@ -1,0 +1,3 @@
+requests
+chessterm-sdk
+python-socketio[client]
