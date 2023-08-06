@@ -1,0 +1,3 @@
+[console_scripts]
+ds-util = ds_util.sample_command:main
+
