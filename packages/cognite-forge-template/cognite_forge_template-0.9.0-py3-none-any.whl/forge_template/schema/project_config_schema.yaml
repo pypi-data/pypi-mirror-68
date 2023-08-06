@@ -1,0 +1,28 @@
+project:
+  type: dict
+  required: True
+  schema:
+    host:
+      type: string
+      empty: False
+      required: True
+      meta: 
+        prompt: "CDF hosting location"
+        help: "The hosting location must be a valid CDF cluster URL (for instance \"https://api.cognitedata.com\")"
+      regex: "https:\/\/[a-zA-Z0-9][a-zA-Z0-9-]+[.]cognitedata[.]com$"
+
+    project:
+      type: string
+      empty: False
+      required: True
+      meta:
+        prompt: "CDF project name (for instance \"akerbp\" or \"publicdata\")"
+
+    api_key: 
+      type: string
+      empty: False
+      required: True
+      meta:
+        prompt: "Valid API key for the project with suffient read/write access rights"
+
+
