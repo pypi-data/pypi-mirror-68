@@ -1,0 +1,3 @@
+[console_scripts]
+terminal-s = terminal_s.terminal:main
+
