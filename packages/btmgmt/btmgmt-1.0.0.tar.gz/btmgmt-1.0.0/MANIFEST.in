@@ -1,0 +1,23 @@
+# Header files required for the btmgmt library:
+# (everything else is discarded during the build]
+
+include src/bluez/tools/btmgmt.c
+
+include src/bluez/lib/bluetooth.h
+include src/bluez/lib/hci_lib.h
+include src/bluez/lib/hci.h
+include src/bluez/lib/mgmt.h
+include src/bluez/lib/sdp_lib.h
+include src/bluez/lib/sdp.h
+include src/bluez/lib/uuid.h
+
+include src/bluez/src/uuid-helper.h
+include src/bluez/src/shared/io.h
+include src/bluez/src/shared/log.h
+include src/bluez/src/shared/mainloop-notify.h
+include src/bluez/src/shared/mainloop.h
+include src/bluez/src/shared/mgmt.h
+include src/bluez/src/shared/queue.h
+include src/bluez/src/shared/shell.h
+include src/bluez/src/shared/timeout.h
+include src/bluez/src/shared/util.h
