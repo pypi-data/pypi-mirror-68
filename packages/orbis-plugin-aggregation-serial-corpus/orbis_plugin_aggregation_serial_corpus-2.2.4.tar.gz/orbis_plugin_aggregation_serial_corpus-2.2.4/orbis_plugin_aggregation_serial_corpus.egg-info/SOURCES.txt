@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_aggregation_serial_corpus/__init__.py
+orbis_plugin_aggregation_serial_corpus/main.py
+orbis_plugin_aggregation_serial_corpus.egg-info/PKG-INFO
+orbis_plugin_aggregation_serial_corpus.egg-info/SOURCES.txt
+orbis_plugin_aggregation_serial_corpus.egg-info/dependency_links.txt
+orbis_plugin_aggregation_serial_corpus.egg-info/top_level.txt
