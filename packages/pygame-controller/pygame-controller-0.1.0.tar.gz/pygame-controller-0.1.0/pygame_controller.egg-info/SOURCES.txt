@@ -1,0 +1,8 @@
+README.md
+setup.py
+pygame_controller.egg-info/PKG-INFO
+pygame_controller.egg-info/SOURCES.txt
+pygame_controller.egg-info/dependency_links.txt
+pygame_controller.egg-info/requires.txt
+pygame_controller.egg-info/top_level.txt
+pygamecontroller/__init__.py
