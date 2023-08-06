@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+AutoPilot/Board.py
+AutoPilot/__init__.py
+PiAutoPilot.egg-info/PKG-INFO
+PiAutoPilot.egg-info/SOURCES.txt
+PiAutoPilot.egg-info/dependency_links.txt
+PiAutoPilot.egg-info/top_level.txt
+tests/__init__.py
+tests/test_board.py
