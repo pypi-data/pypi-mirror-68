@@ -1,0 +1,7 @@
+
+[test]
+pytest
+pytest-cov
+pytest-pycodestyle
+pytest-pep8
+pytest-flake8
