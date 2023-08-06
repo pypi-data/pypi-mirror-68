@@ -1,0 +1,14 @@
+README.rst
+setup.py
+pyfaup/__init__.py
+pyfaup/__version__.py
+pyfaup/bind.py
+pyfaup/faup.py
+pyfaup/functions.py
+pyfaup/mozilla.tlds
+pyfaup.egg-info/PKG-INFO
+pyfaup.egg-info/SOURCES.txt
+pyfaup.egg-info/dependency_links.txt
+pyfaup.egg-info/top_level.txt
+pyfaup/Darwin/x86_64/libfaupl.dylib
+pyfaup/Linux/x86_64/libfaupl.so
