@@ -1,0 +1,14 @@
+CHANGES.rst
+DESCRIPTION.rst
+MANIFEST.in
+README.md
+setup.py
+src/wai.tfutils.egg-info/PKG-INFO
+src/wai.tfutils.egg-info/SOURCES.txt
+src/wai.tfutils.egg-info/dependency_links.txt
+src/wai.tfutils.egg-info/namespace_packages.txt
+src/wai.tfutils.egg-info/requires.txt
+src/wai.tfutils.egg-info/top_level.txt
+src/wai/tfutils/__init__.py
+src/wai/tfutils/_graph.py
+src/wai/tfutils/_inference.py
