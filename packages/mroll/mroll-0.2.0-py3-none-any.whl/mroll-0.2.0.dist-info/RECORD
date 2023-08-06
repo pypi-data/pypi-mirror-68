@@ -1,0 +1,12 @@
+mroll/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+mroll/commands.py,sha256=ZIoKpTz_e4aoAzH9VaJLlsrR6ZmNKZGuFsgjFzImnKs,7832
+mroll/config.py,sha256=2UOfFBYod1L61fkvAxI14X6EmYj975X8sanTCNUx2wU,756
+mroll/migration.py,sha256=ANh6ZKwJ_uU9SN31Fwa8wuwSR7U_bk3uyD4Wh6lqHgo,5028
+mroll/templates/env.py,sha256=E-3bFlHtLMW4KmDI3SFT9lhNVSiHmAfG4evM7Cetgn8,2808
+mroll/templates/mroll.ini,sha256=ZQ6jdowtTw4ahtIC8zTtPGOaAFM_FbQurmdi1dLPXVM,102
+mroll/templates/revision_template.txt,sha256=Zmap-ha2s4PLArxm5BpmayXpNJcX3R6J1q1Xholvxa4,47
+mroll-0.2.0.dist-info/entry_points.txt,sha256=hMKRgZ39nuPqsGr0-Ah4YbROE_uG4UngL_S1eG1zAGs,44
+mroll-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+mroll-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+mroll-0.2.0.dist-info/METADATA,sha256=7TAmqt1ax7_C9fdBud7bCgXV0geW9JBr0VNPMUGsS1g,5556
+mroll-0.2.0.dist-info/RECORD,,
