@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastrouge
+Version: 0.0.1
+Summary: A rouge tool written in Python
+Home-page: https://github.com/fastnlp/fastSum
+Author: FudanNLP
+License: Apache License
+Description: # fastrouge
+        
+        A rouge tool written in Python. It will be released in 4 months.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

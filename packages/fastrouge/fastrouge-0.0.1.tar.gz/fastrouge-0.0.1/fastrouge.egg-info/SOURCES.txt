@@ -1,0 +1,8 @@
+README.md
+setup.py
+fastrouge/__init__.py
+fastrouge.egg-info/PKG-INFO
+fastrouge.egg-info/SOURCES.txt
+fastrouge.egg-info/dependency_links.txt
+fastrouge.egg-info/requires.txt
+fastrouge.egg-info/top_level.txt
