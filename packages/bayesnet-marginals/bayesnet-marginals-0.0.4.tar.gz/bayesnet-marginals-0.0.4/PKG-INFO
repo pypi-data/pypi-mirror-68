@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bayesnet-marginals
+Version: 0.0.4
+Summary: A Python package to repeatedly obtain the marginal distributions of a Bayesian network using exact inference.
+Home-page: https://gitlab.inria.fr/cobcom/cimem/bayesnet
+Author: Samuel Deslauriers-Gauthier
+Author-email: sam.deslauriers@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: scripts
+Provides-Extra: gpu-acceleration

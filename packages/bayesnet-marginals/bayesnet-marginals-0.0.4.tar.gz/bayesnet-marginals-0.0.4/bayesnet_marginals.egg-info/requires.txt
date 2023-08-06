@@ -1,0 +1,8 @@
+numpy
+recursive-abc
+
+[gpu-acceleration]
+pyopencl
+
+[scripts]
+matplotlib
