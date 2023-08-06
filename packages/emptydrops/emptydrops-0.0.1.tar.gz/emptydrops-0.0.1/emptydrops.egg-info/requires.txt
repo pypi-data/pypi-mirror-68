@@ -1,0 +1,5 @@
+h5py
+jason
+lz4
+pandas
+scipy
