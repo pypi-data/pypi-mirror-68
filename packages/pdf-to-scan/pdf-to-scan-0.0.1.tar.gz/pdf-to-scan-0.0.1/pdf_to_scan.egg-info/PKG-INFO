@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pdf-to-scan
+Version: 0.0.1
+Summary: A small script to make your pdfs seem handscanned
+Home-page: https://github.com/apurvmishra99/pdf-to-scan
+Author: Apurv Mishra
+Author-email: me@apurvmishra.com
+License: UNKNOWN
+Description: # PDFtoScan
+        
+        PDFtoScan uses the idea implemented in [baicunko's](https://github.com/baicunko/scanyourpdf) website to make your PDFs look like they were scanned in a CLI-based app.
+        
+        ## Installation
+        
+        ```console
+        $ pip install pdf-to-scan
+        ```
+        
+        ## Dependencies
+        
+        The script requires `ghostscript` and `imagemagick` to run. 
+        These can be installed using,
+        
+        ### For Ubuntu
+        ```console 
+        $ sudo apt-get install imagemagick
+        $ sudo apt-get install ghostscript
+        ```
+        
+        ### For macOS
+        ```console 
+        $ brew install imagemagick
+        $ brew install ghostscript
+        ```
+        
+        PDF support in ImageMagick might be disabled be default on your os/distro. To fix this, comment out this line in `/etc/ImageMagick-6/policy.xml`
+        
+        `<policy domain="coder" rights="none" pattern="PDF" />`
+        
+        Using `<!-- --->`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

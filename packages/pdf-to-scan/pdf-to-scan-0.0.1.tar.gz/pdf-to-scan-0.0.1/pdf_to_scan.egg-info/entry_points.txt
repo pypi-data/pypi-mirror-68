@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pdf-to-scan=pdf_to_scan.make_pdfs_look_scanned:convert
+    

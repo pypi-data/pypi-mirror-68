@@ -1,0 +1,10 @@
+README.md
+setup.py
+pdf_to_scan/__init__.py
+pdf_to_scan/make_pdfs_look_scanned.py
+pdf_to_scan.egg-info/PKG-INFO
+pdf_to_scan.egg-info/SOURCES.txt
+pdf_to_scan.egg-info/dependency_links.txt
+pdf_to_scan.egg-info/entry_points.txt
+pdf_to_scan.egg-info/requires.txt
+pdf_to_scan.egg-info/top_level.txt
