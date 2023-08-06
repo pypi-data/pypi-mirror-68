@@ -1,0 +1,17 @@
+sesame/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sesame/backends.py,sha256=7gWDdrPeNm1nPM8szIO7gWa0Oh1FGnHoWUjJPQ6W8xQ,5400
+sesame/middleware.py,sha256=xxn2J1FcnSLcgkP-pltKMaof61ZOWnHCX_aBTssHR1E,3192
+sesame/packers.py,sha256=AbPdxnIPZZwHQL_WekZ9GXn0btY4r2lEEdPZJHlDanA,3494
+sesame/test_backends.py,sha256=ig7AGiKtFEtnKDeXg1SwfTBZgoC6bfPSu2trYTSrzeg,8671
+sesame/test_middleware.py,sha256=kdWKIgRlFGjm-t_uDv_zXZlFU1C_1mpD8jXe1jEd6lg,7336
+sesame/test_packers.py,sha256=cuO2oZ0dfSuLeMLThZnoRcOwckqgzqjH3YzYihATrBA,2651
+sesame/test_settings.py,sha256=uZOgGhsgXx1ezjMQ9afGSKYgj5K90PDAzRe3dfFuccU,1024
+sesame/test_signals.py,sha256=hZB0doTiJp5OXrmtdviCy9ZsoKVIpPV_aBuFr64uVzk,803
+sesame/test_urls.py,sha256=TV62cYIXGiWDzxQpRuFAqQuyfQWjWUR-yL61eYInw4Y,509
+sesame/test_utils.py,sha256=Sokn1IrBvLaEtwL5mIGTW3V0JJrEyqCC9GyuAQ1T03I,2686
+sesame/utils.py,sha256=DWedSqMw3qUWRVaOmI2BVVxfHGpCFGoxfo4XiKGZv7I,1242
+django_sesame-1.8.dist-info/LICENSE,sha256=6gpuhzQT4sr_WqEDeTZRci2rEnqUuHX7rja1c3TAd_A,1540
+django_sesame-1.8.dist-info/METADATA,sha256=LmBWdhSRAdJOBMAXIRCfO0gdpf1snKc-wPaSIXOBzvk,15466
+django_sesame-1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_sesame-1.8.dist-info/top_level.txt,sha256=kxrjUk9dzxA7TFDq9ttewU9eIJw-xE8UFB9NytIL7tc,7
+django_sesame-1.8.dist-info/RECORD,,
