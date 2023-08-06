@@ -1,0 +1,10 @@
+arc_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arc_tools/__main__.py,sha256=DJxZu6AsFfn0-KQW73BT1bxNsIry80G8cFAmN897dWE,63
+arc_tools/main.py,sha256=h_UPXbhT4PKdgl3hWZFzeVj_ZeSyUCSzW70yr_wbn94,4219
+arc_tools/makearchive.py,sha256=cen886T3scUt2Jsjbb8atc0jEM-x5uMOUGc_DRc7sZQ,2285
+arc_tools/unarchivate.py,sha256=XjBw9nA-UbM8PtG-yxR83dGTEucwZJVdVQkBfZpwuFE,1012
+arc_tools/utils.py,sha256=i8ef4paSW8_OQ328q1zt8PZ0wmcEufe3ZtzSHr1cC70,5215
+arc_tools-0.2.1.dist-info/METADATA,sha256=J9wYiJf0Mf2Twc1-tPX1GZXeBxyMGmnVTEyR8g4LNwo,277
+arc_tools-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+arc_tools-0.2.1.dist-info/top_level.txt,sha256=SnmxqftXflOk5Au4mJy6_Vh2H5Z1OldKaL5dXAkk2-k,10
+arc_tools-0.2.1.dist-info/RECORD,,
