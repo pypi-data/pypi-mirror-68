@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyrdmdl/__init__.py
+pyrdmdl/glm.py
+pyrdmdl/lm.py
+pyrdmdl/pca.py
+pyrdmdl.egg-info/PKG-INFO
+pyrdmdl.egg-info/SOURCES.txt
+pyrdmdl.egg-info/dependency_links.txt
+pyrdmdl.egg-info/requires.txt
+pyrdmdl.egg-info/top_level.txt
