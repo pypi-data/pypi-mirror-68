@@ -1,0 +1,102 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PyWebIO</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon_open_32.png" id="favicon32">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon_open_16.png" id="favicon16">
+    <link rel="stylesheet" href="css/mditor.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/codemirror.min.css">
+    <link rel="stylesheet" href="codemirror/base16-light.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="container no-fix-height">
+    <div tabindex="1" class="mditor preview">
+        <div class="head">
+            <ul class="toolbar">
+                <span id="title">PyWebIO</span>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="viewer">
+                <div class="markdown-body" id="markdown-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="input-container">
+
+    </div>
+</div>
+
+<footer class="footer">
+    Powered by <a href="https://github.com/wang0618/PyWebIO" target="_blank">PyWebIO</a>
+</footer>
+
+<script src="js/mustache.min.js"></script>  <!--template system-->
+<script src="js/codemirror.min.js"></script>  <!--code textarea editor-->
+<script src="codemirror/matchbrackets.js"></script>  <!--codemirror plugin-->
+<script src="codemirror/python.js"></script> <!--codemirror python language support-->
+<script src="codemirror/loadmode.js"></script> <!--codemirror plugin: auto load mode-->
+<script src="codemirror/active-line.js"></script> <!--codemirror plugin: auto load mode-->
+<script src="js/mditor.min.js"></script>  <!-- markdown support-->
+<script src="js/FileSaver.min.js"></script>  <!-- saving files on the client-side -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>  <!-- tooltip engine -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bs-custom-file-input.min.js"></script> <!-- bootstrap custom file input-->
+
+<script src="js/pywebio.min.js"></script>
+
+<script src="js/require.min.js"></script> <!-- JS module loader -->
+<script>
+
+    require.config({
+        paths: {
+            'plotly': "https://cdn.jsdelivr.net/npm/plotly.js@1.53.0/dist/plotly.min", // 'https://cdn.plot.ly/plotly-latest.min'
+            "bokeh": "https://cdn.jsdelivr.net/npm/@bokeh/bokehjs@2.0.2/build/js/bokeh.min",
+            "bokeh-widgets": "https://cdn.jsdelivr.net/npm/@bokeh/bokehjs@2.0.2/build/js/bokeh-widgets.min",
+            "bokeh-tables": "https://cdn.jsdelivr.net/npm/@bokeh/bokehjs@2.0.2/build/js/bokeh-tables.min",
+            "bokeh-gl": "https://cdn.jsdelivr.net/npm/@bokeh/bokehjs@2.0.2/build/js/bokeh-gl.min",
+        },
+        shim: {
+            'bokeh': {
+                exports: 'Bokeh'
+            },
+            'bokeh-widgets': {
+                exports: '_',
+                deps:['bokeh'],
+            },
+            'bokeh-tables': {
+                exports: '_',
+                deps:['bokeh'],
+            },
+            'bokeh-gl': {
+                exports: '_',
+                deps:['bokeh'],
+            },
+        }
+    });
+
+
+    $(function () {
+        // https://www.npmjs.com/package/bs-custom-file-input
+        bsCustomFileInput.init()
+    });
+
+    const urlparams = new URLSearchParams(window.location.search);
+    let config = {
+        debug: urlparams.get('_pywebio_debug'),
+        outputAnimation: !urlparams.get('_pywebio_disable_animate'),
+    };
+    WebIO.startWebIOClient($('#markdown-body'), $('#input-container'), config);
+
+</script>
+
+
+</body>
+</html>
