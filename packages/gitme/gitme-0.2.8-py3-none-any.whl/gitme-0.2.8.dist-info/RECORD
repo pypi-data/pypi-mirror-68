@@ -1,0 +1,15 @@
+gitme/__init__.py,sha256=QS1piWKz3Mys2vOiR2kTlrqfdbiwJYEfhOlgbh73Sg8,22
+gitme/entrypoint.py,sha256=6r3CT2O9R8VNgEmX1mHD98G8nB10ZeHeUTV0jx9pkcQ,2325
+gitme/git_controller.py,sha256=oSBIPaBL4OGDuHYw8ClwWsBTPBLsy85zexTdzoRtWFI,2957
+gitme/gitlab_controller.py,sha256=VxvpeXB93miV6FLa9tid9WdyDRqOMJAM0lX_68cgQd8,6256
+gitme/log.py,sha256=z4popgWvLK6mREQx77HU__AUCUWzqsiOKct20Ue7ejU,627
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/git_command.py,sha256=l6KE5xXM2XEqDOnfcr_KSK5BTBvoWEpDM8CBEKVMuL8,1845
+tests/test_git_controller.py,sha256=L7TIpADApPBzhNNCqrze_qm0APvNg5AYctYrdWB1dRU,3766
+tests/test_gitlab_controller.py,sha256=x21BC68_jxyZgGhIpIz9wOtGaWmLYAWJUWEKOEKEkeA,2947
+tests/test_run_command.py,sha256=bFwtzyq6TA-pv3KbbsEVa5wcwv0m6j1TXid0c677gRY,626
+gitme-0.2.8.dist-info/METADATA,sha256=d6Cus4i9SARqQabB2-AVtaRODNmj1HPat-dK5RhONt0,2338
+gitme-0.2.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gitme-0.2.8.dist-info/entry_points.txt,sha256=9SHUdYu2fM1MBUqqp1HFqOAaewv4m5OKUIngbLOiBtU,49
+gitme-0.2.8.dist-info/top_level.txt,sha256=w1HCfEtCa6fg85zFGkU6WCrKdbzdFyIZiaimR8iAQC4,12
+gitme-0.2.8.dist-info/RECORD,,
