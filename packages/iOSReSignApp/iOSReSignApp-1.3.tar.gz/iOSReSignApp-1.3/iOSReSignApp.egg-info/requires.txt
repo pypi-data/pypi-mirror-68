@@ -1,0 +1,2 @@
+PyMobileProvision~=1.1
+iOSAppInfoParser~=1.0
