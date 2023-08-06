@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: MouseClient
+Version: 0.3
+Summary: Client program for micro mouse simulation
+Home-page: https://www.osumoi-stdio.com/maze/
+Author: Takaomi Konishi
+Author-email: takaomikonishi0626@gmail.com
+License: MIT
+Keywords: micromouse simulation client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: requests (>=2.22.0)
+
+UNKNOWN
+
+
