@@ -1,0 +1,9 @@
+README.md
+setup.py
+wikipit.py
+wikipit.egg-info/PKG-INFO
+wikipit.egg-info/SOURCES.txt
+wikipit.egg-info/dependency_links.txt
+wikipit.egg-info/entry_points.txt
+wikipit.egg-info/requires.txt
+wikipit.egg-info/top_level.txt
