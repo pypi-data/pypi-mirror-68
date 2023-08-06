@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: os_android_google_play_translations_maker
+Version: 1.01
+Summary: This script will create a json files suitable to upload to Google Play as a new/updated translation for an apk
+Home-page: https://github.com/osfunapps/os_android_google_play_translations_maker-py
+Author: Oz Shabat
+Author-email: osapps@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: translations,android,google_play,tools,utils,edit,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
