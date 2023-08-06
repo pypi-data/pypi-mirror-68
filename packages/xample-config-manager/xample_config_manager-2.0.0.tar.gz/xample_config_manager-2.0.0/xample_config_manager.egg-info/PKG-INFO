@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: xample-config-manager
+Version: 2.0.0
+Summary: The configuration manager
+Home-page: UNKNOWN
+Author: Stephane Poss
+Author-email: stephane@xample.ch
+License: Other::Proprietary
+Description: =====================
+        Configuration Manager
+        =====================
+        
+        Helps with the django project configuration.
+        
+        :author: Stephane Poss
+        :date: July 18th, 2016
+        
+        
+Keywords: catalog
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7

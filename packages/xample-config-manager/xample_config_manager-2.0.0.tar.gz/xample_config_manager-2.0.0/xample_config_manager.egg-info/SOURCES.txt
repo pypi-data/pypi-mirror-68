@@ -1,0 +1,17 @@
+AUTHORS
+ChangeLog
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+config_manager/__init__.py
+config_manager/exceptions.py
+config_manager/utils.py
+tests/__init__.py
+tests/test.py
+xample_config_manager.egg-info/PKG-INFO
+xample_config_manager.egg-info/SOURCES.txt
+xample_config_manager.egg-info/dependency_links.txt
+xample_config_manager.egg-info/not-zip-safe
+xample_config_manager.egg-info/pbr.json
+xample_config_manager.egg-info/top_level.txt

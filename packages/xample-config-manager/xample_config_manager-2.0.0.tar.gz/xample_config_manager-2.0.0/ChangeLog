@@ -1,0 +1,18 @@
+CHANGES
+=======
+
+2.0.0
+-----
+
+* Update for python 3
+
+1.1.0
+-----
+
+* Add possibility to have the settings in the home directory of the user
+
+1.0.0
+-----
+
+* bug fixes + tests
+* First version
