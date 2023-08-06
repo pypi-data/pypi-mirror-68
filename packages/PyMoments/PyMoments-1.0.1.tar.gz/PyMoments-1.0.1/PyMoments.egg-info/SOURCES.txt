@@ -1,0 +1,17 @@
+README.md
+setup.py
+PyMoments/Combinatorics.py
+PyMoments/DataStructures.py
+PyMoments/Moments.py
+PyMoments/__init__.py
+PyMoments.egg-info/PKG-INFO
+PyMoments.egg-info/SOURCES.txt
+PyMoments.egg-info/dependency_links.txt
+PyMoments.egg-info/requires.txt
+PyMoments.egg-info/top_level.txt
+tests/__init__.py
+tests/test_combinatorics.py
+tests/test_intPartitionTree.py
+tests/test_moments.py
+tests/data/test_10path_data.csv
+tests/data/test_10path_tests.csv
