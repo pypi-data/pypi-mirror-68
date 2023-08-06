@@ -1,0 +1,16 @@
+sclblpy/__init__.py,sha256=uAKpInpVbiuYsb9WFiXvt8KqPgzhg4r3-Swq3EqMbl8,583
+sclblpy/__main__.py,sha256=7Xi-rag4YG03xs8fl3MZcNBf_ZxZOGoY8HbKQxaxPAs,255
+sclblpy/_bundle.py,sha256=Dtk9ev_bl0QdNC-k-UkI1YuwjhGxNzx4HvWIO297LrY,3389
+sclblpy/_globals.py,sha256=vcLUq-gq1IjAqeIjH3SzLlX3SY3mn6jC41_Ssynw9qg,1348
+sclblpy/_jwt.py,sha256=FNXzPVcwGKsAj00QFPDHrQuYJ7MVXuM4Ki8jKZY9JsE,10615
+sclblpy/_utils.py,sha256=xK5bH_rOfXBvvKI7S1nafex_S9IKZR0yPALE5wu4rg8,8141
+sclblpy/appdirs.py,sha256=l6HAuTntRkM_YzNZB8fbpx1znS8B3ya25C3fEHPIQyQ,25017
+sclblpy/errors.py,sha256=HJCynu_N-Z8Hvh5lNQ8cuuU0kZStXlQuThHVtIFazJk,721
+sclblpy/main.py,sha256=1nDXDfnzFD6naw5_7dYLaN5m0mcXrZw7Ishpmx8Bu28,31338
+sclblpy/supported_models.json,sha256=NczFBvBkefD6shKdwZ5MxNtIPFhND-t8yGFM_1QI-3I,1238
+sclblpy/version.py,sha256=tIErXXCU8XJhXooOcQRdn3EqbTpRU41jw5Wes4PL-uo,60
+sclblpy-0.1.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+sclblpy-0.1.3.dist-info/METADATA,sha256=EwQef6lwgxv-8LCmVwfWlwk2u-wNkqoK30YeqEpe3EA,10555
+sclblpy-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sclblpy-0.1.3.dist-info/top_level.txt,sha256=L2CTCwQE2O88WPUiypVBA6JxQKUSdEiKP5ikPF2mkZQ,8
+sclblpy-0.1.3.dist-info/RECORD,,
