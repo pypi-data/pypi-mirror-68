@@ -1,0 +1,10 @@
+README.md
+glueetl
+setup.py
+glue_etl/__init__.py
+glue_etl/glue.py
+glueetl.egg-info/PKG-INFO
+glueetl.egg-info/SOURCES.txt
+glueetl.egg-info/dependency_links.txt
+glueetl.egg-info/requires.txt
+glueetl.egg-info/top_level.txt
