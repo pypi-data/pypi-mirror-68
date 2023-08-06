@@ -1,0 +1,65 @@
+CHANGES
+=======
+
+* #1: Workaround - mix stdout with stderr on subprocess level, so the order will be OK, but stderr would not be able to be separated (compromise)
+* Fixed not pushing image
+
+v0.3.1
+------
+
+* Add good practices section
+* Add docs
+* #1: Mark test as skipped for now
+* Add 300 rounds of test\_sh\_captures\_output\_in\_correct\_order, because of the test specifics - timing
+* Travis improvements
+* Travis improvements
+* Travis: Debug
+* Travis: Debug
+* YAML: Add package importing feature
+* Add useful tip
+* Argument parsing: Refactor exception type
+* Argument parsing: Add environment variables list to --help
+* TaskUtilities: Fix output capturing
+* Docker: Fix implementation of allowed meta
+* Fighting with IO/Subprocess
+* Fix output in invalid order stderr/stdout
+* Refactor: Put infrastructural things out of interface
+* Fix: Not flushing output immediately
+* Add --no-ui switch and make RKD\_DEPTH >=1 to turn on --no-ui (RKD\_DEPTH >= 1 means RKD-in-RKD - a call to rkd in already executing rkd task)
+* Fix incorrectly propagating RKD\_PATH to inner calls - RKD in RKD (example: calling rkd in a bash script in YAML)
+* Bump version
+* Added mention about YAML syntax in the docs
+* Correct releases link
+
+v0.3
+----
+
+* Added badge, quick start instruction
+* Travis CI: Corrected typo
+* Add building on next Python versions
+* Correct method signature to match interface
+* Python: Add missing handling of arguments Tests: Increase tests coverage IO and sh(): Correct capturing of stdout/stderr, able to capture into StringIO()
+* Refactor to make testable: RiotKitDoApplication
+* Refactor to make testable: RiotKitDoApplication
+* Increased coverage of tasks parsing in YAML parser
+* Increased coverage of tasks parsing in YAML parser
+* WIP correct unit tests after recent change in constructor
+* WIP introduce makefile.yaml syntax - add RKD\_PATH to the example
+* WIP introduce makefile.yaml syntax
+* WIP
+* Add copy\_internal\_dependencies()
+* Add jinja2 dependency - RKD will strongly rely on this dependency
+* BaseShellCommandWithArgumentParsingTask: Remove not necessary stacktrace
+* Add \`BaseShellCommandWithArgumentParsingTask\`
+* Add \`BaseShellCommandWithArgumentParsingTask\`
+* Add makefile path as Python path
+
+v0.2
+----
+
+* Set default log level to info
+* Update docs
+* Update docs
+* Add :rkd:create-structure
+* Add authors note
+* Add rule
