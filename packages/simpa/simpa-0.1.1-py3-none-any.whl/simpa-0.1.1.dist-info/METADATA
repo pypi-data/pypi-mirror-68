@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: simpa
+Version: 0.1.1
+Summary: Simulation and Image Processing for Photoacoustic Imaging
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pynrrd
+Requires-Dist: scikit-image
+Requires-Dist: torch
+Requires-Dist: xmltodict
+Requires-Dist: h5py
+Requires-Dist: pandas
+Requires-Dist: batchgenerators
+Requires-Dist: sphinx
+Requires-Dist: rst2pdf
+Requires-Dist: m2r
+
+The Simulation and Image Processing for Photoacoustic Imaging toolkit.
+
+
