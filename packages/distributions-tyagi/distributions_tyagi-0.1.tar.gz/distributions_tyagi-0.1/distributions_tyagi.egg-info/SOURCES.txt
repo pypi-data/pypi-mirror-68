@@ -1,0 +1,10 @@
+setup.py
+distributions_tyagi/Binomialdistribution.py
+distributions_tyagi/Gaussiandistribution.py
+distributions_tyagi/Generaldistribution.py
+distributions_tyagi/__init__.py
+distributions_tyagi.egg-info/PKG-INFO
+distributions_tyagi.egg-info/SOURCES.txt
+distributions_tyagi.egg-info/dependency_links.txt
+distributions_tyagi.egg-info/not-zip-safe
+distributions_tyagi.egg-info/top_level.txt
