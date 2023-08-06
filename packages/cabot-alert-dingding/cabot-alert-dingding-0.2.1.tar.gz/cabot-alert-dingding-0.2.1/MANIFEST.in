@@ -1,0 +1,12 @@
+-- cabot-alert-dingding-0.2.1
+  -- cabot-alert-dingding
+      -- migrations
+         -- __init__.py
+         -- 0001_initial.py
+      -- __init__.py
+      -- models.py
+  -- README.md
+  -- PKG-INFO
+  -- setup.cfg
+  -- setup.py
+  -- requirements.txt
