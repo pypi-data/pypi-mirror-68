@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+systemd_watchdog.py
+systemd_watchdog.egg-info/PKG-INFO
+systemd_watchdog.egg-info/SOURCES.txt
+systemd_watchdog.egg-info/dependency_links.txt
+systemd_watchdog.egg-info/top_level.txt
