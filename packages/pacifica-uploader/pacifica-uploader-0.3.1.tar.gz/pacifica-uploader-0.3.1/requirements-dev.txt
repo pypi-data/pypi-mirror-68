@@ -1,0 +1,15 @@
+coverage
+pacifica-archiveinterface
+pacifica-ingest
+pacifica-metadata
+pacifica-policy
+pacifica-uniqueid
+pep257
+pre-commit
+pylint
+pytest
+radon
+readthedocs-sphinx-ext
+recommonmark
+sphinx
+sphinx-rtd-theme
