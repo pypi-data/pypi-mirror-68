@@ -1,0 +1,7 @@
+setup.py
+src/tg_tools.py
+src/tg_tools.egg-info/PKG-INFO
+src/tg_tools.egg-info/SOURCES.txt
+src/tg_tools.egg-info/dependency_links.txt
+src/tg_tools.egg-info/requires.txt
+src/tg_tools.egg-info/top_level.txt
