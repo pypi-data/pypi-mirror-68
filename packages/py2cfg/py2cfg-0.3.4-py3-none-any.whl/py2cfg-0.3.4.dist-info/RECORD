@@ -1,0 +1,9 @@
+py2cfg/__init__.py,sha256=U4xlgo3ckPl8_Ic1Oows0xAhpfdgzsLA7iRcg89-V_E,68
+py2cfg/_runner.py,sha256=kGqQViTziSWuiWEj887cwG_SRjGKxH7gQDzZujt2kCQ,1103
+py2cfg/builder.py,sha256=jkcdfkWX0h9rHWJKBxgFBdKIGy6ns7shJqwNpw2kCUs,16589
+py2cfg/model.py,sha256=6RLiyy1L8HRcpgHobh2ihUZ2V5w8MPKNE5ND8vKcRcE,13845
+py2cfg-0.3.4.dist-info/entry_points.txt,sha256=htJXRaibTRNwAZnn7d3-aL6O6ElxOgE4_6Iuq8I1KMY,46
+py2cfg-0.3.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py2cfg-0.3.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+py2cfg-0.3.4.dist-info/METADATA,sha256=nrNtAKWQxMMyTY9mN9NNlHxUWbsQm6nyPJSZIswAcqw,4170
+py2cfg-0.3.4.dist-info/RECORD,,
