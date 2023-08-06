@@ -1,0 +1,5 @@
+botox-di==1.5.0
+dataclass-factory==2.8.1
+
+[:python_version < "3.7"]
+dataclasses
