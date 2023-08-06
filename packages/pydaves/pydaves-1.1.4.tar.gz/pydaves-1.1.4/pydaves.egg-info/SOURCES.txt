@@ -1,0 +1,13 @@
+README.md
+setup.py
+pydaves/__init__.py
+pydaves/utils.py
+pydaves.egg-info/PKG-INFO
+pydaves.egg-info/SOURCES.txt
+pydaves.egg-info/dependency_links.txt
+pydaves.egg-info/top_level.txt
+pydaves/torchsystem/__init__.py
+pydaves/torchsystem/torchloaders.py
+pydaves/torchsystem/torchmodels.py
+pydaves/torchsystem/torchsystem.py
+pydaves/torchsystem/torchutils.py
