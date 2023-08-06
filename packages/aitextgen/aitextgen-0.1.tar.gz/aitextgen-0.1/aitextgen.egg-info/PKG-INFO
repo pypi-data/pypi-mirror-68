@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aitextgen
+Version: 0.1
+Summary: A robust Python tool for text-based AI training and generation using GPT-2.
+Home-page: https://github.com/minimaxir/aitextgen
+Author: Max Woolf
+Author-email: max@minimaxir.com
+License: MIT
+Description: 
+        A robust Python tool for text-based AI training and generation using GPT-2.
+        
+Keywords: gpt-2,gpt2,text generation,ai
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
