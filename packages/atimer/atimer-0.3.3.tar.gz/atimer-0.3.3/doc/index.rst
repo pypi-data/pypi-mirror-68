@@ -1,0 +1,42 @@
+Asynchronous Timer Library
+==========================
+
+The `atimer` library implements asynchronous timer Python coroutine
+based on POSIX timers. The coroutine can be used with Python `asyncio
+<https://docs.python.org/3/library/asyncio.html>`_ module API.
+
+The main features are
+
+- expires at regular intervals
+- tracks number of expirations if a long running task causes overrun
+- starts synchronized with system clock at the edge of an interval
+- measures time while system is suspended
+
+The library is tested with default `asyncio` event loop and its drop-in
+replacement `uvloop <https://github.com/MagicStack/uvloop>`_.  Use of
+`uvloop` increases timer accuracy.
+
+Requirements
+
+- Python 3.7
+- Cython 0.29
+
+The `atimer` library is licensed under terms of GPL license, version 3, see
+`COPYING <https://www.gnu.org/licenses/gpl-3.0.en.html>`_ file for details.
+
+.. note:: The library is implemented on top of
+   `timerfd <http://man7.org/linux/man-pages/man2/timerfd_create.2.html>`_
+   Linux kernel interface and uses `CLOCK_BOOTTIME` clock by default.
+
+Table of Contents
+-----------------
+
+.. toctree::
+   timer
+   api
+   changelog
+
+* :ref:`genindex`
+* :ref:`search`
+
+.. vim: sw=4:et:ai

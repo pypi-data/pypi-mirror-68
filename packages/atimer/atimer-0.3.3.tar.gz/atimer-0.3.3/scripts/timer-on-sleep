@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+#
+# atimer - timer library for asyncio
+#
+# Copyright (C) 2016-2019 by Artur Wroblewski <wrobell@riseup.net>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+"""
+Script to demonstrate behaviour of timer on a machine, which is suspended.
+"""
+
+import asyncio
+import time
+import uvloop
+
+import atimer
+    
+async def start(timer):
+    timer.start()
+    while True:
+        num_exp = await timer
+        print(
+            '{:.6f} {:.6f}: number of expirations {}'
+            .format(time.time(), time.monotonic(), num_exp)
+        )
+
+timer = atimer.Timer(1)
+
+uvloop.install()
+try:
+    asyncio.run(start(timer))
+finally:
+    timer.close()
+
+# vim: sw=4:et:ai
