@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: trompy
+Version: 0.11.2
+Summary: A collection of tools for data analysis and plotting that originated in the McCutcheon Lab (UiT, Tromso)
+Home-page: https://github.com/mccutcheonlab
+Author: James E McCutcheon
+Author-email: j.mccutcheon@uit.no
+License: MIT
+Download-URL: https://github.com/mccutcheonlab/trompy/archive/v0.11.2-alpha.tar.gz
+Description: # trompy
+         Collection of tools for plotting and data analysis from McCutcheon Lab in Tromsø
+        
+Keywords: neuroscience,behavior
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
