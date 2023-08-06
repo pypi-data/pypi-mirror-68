@@ -1,0 +1,3 @@
+[gui_scripts]
+vimiv = vimiv.startup:main
+
