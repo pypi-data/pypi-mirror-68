@@ -1,0 +1,15 @@
+README.rst
+setup.py
+django_taggit_bulk.egg-info/PKG-INFO
+django_taggit_bulk.egg-info/SOURCES.txt
+django_taggit_bulk.egg-info/dependency_links.txt
+django_taggit_bulk.egg-info/not-zip-safe
+django_taggit_bulk.egg-info/requires.txt
+django_taggit_bulk.egg-info/top_level.txt
+taggit_bulk/__init__.py
+taggit_bulk/actions.py
+taggit_bulk/forms.py
+taggit_bulk/settings.py
+taggit_bulk/urls.py
+taggit_bulk/version.py
+taggit_bulk/views.py
