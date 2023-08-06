@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: arxiv-latex-cleaner
+Version: 0.1.1
+Summary: Cleans the LaTeX code of your paper to submit to arXiv.
+Home-page: https://github.com/google-research/arxiv-latex-cleaner
+Author: Google Research Authors
+Author-email: jponttuset@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Science/Research
+Requires-Dist: absl-py
+Requires-Dist: Pillow
+
+UNKNOWN
+
+
