@@ -1,0 +1,10 @@
+README.md
+setup.py
+dtit.pyCRCLib.egg-info/PKG-INFO
+dtit.pyCRCLib.egg-info/SOURCES.txt
+dtit.pyCRCLib.egg-info/dependency_links.txt
+dtit.pyCRCLib.egg-info/requires.txt
+dtit.pyCRCLib.egg-info/top_level.txt
+dtit/pyCRCLib/__init__.py
+dtit/pyCRCLib/tests/hello.py
+dtit/pyCRCLib/tests/test_dtit_crc.py
