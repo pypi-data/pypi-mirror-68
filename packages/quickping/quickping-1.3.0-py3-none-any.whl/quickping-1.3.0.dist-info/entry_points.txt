@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        quickping=cli.cLI:cLI
+    
