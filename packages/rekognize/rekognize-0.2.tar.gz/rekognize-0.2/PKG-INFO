@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: rekognize
+Version: 0.2
+Summary: Rekognize Python Twitter API client
+Home-page: https://github.com/rekognize/rekognize-api-client/
+Author: Onur Mat
+Author-email: onur@rekognize.io
+License: MIT
+Download-URL: https://github.com/rekognize/rekognize-api-client/archive/master.zip
+Description: UNKNOWN
+Keywords: rekognize twitter api client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

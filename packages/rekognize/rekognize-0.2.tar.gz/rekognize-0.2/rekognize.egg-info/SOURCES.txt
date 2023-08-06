@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+rekognize/__init__.py
+rekognize/twitter.py
+rekognize.egg-info/PKG-INFO
+rekognize.egg-info/SOURCES.txt
+rekognize.egg-info/dependency_links.txt
+rekognize.egg-info/not-zip-safe
+rekognize.egg-info/requires.txt
+rekognize.egg-info/top_level.txt
