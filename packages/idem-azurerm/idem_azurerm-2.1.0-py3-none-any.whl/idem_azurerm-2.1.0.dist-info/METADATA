@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: idem-azurerm
+Version: 2.1.0
+Summary: Idem language provider for Azure
+Home-page: https://github.com/eitrtechnologies/idem-azurerm
+Author: EITR Technologies, LLC
+Author-email: devops@eitr.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: acct (==1.2)
+Requires-Dist: azure-common (==1.1.23)
+Requires-Dist: azure-core (==1.3.0)
+Requires-Dist: azure-identity (==1.3.0)
+Requires-Dist: azure-keyvault-keys (==4.0.0)
+Requires-Dist: azure-mgmt-authorization (==0.50.0)
+Requires-Dist: azure-mgmt-compute (==4.6.2)
+Requires-Dist: azure-mgmt-dns (==2.1.0)
+Requires-Dist: azure-mgmt-keyvault (==1.1.0)
+Requires-Dist: azure-mgmt-loganalytics (==0.2.0)
+Requires-Dist: azure-mgmt-managementgroups (==0.1.0)
+Requires-Dist: azure-mgmt-monitor (==0.5.2)
+Requires-Dist: azure-mgmt-network (==2.7.0)
+Requires-Dist: azure-mgmt-rdbms (==1.9.0)
+Requires-Dist: azure-mgmt-redis (==5.0.0)
+Requires-Dist: azure-mgmt-resource (==2.2.0)
+Requires-Dist: azure-mgmt-storage (==2.0.0)
+Requires-Dist: azure-mgmt-web (==0.35.0)
+Requires-Dist: idem (==7)
+Requires-Dist: msrest (==0.6.10)
+Requires-Dist: msrestazure (==0.6.2)
+Requires-Dist: pop-config (==6)
+Requires-Dist: pop (==13)
+Requires-Dist: takara (==1.2)
+
+# Microsoft Azure Cloud Provider for Idem
+
+Azure is a cloud service offered by Microsoft that provides virtual machines, SQL services, media services, and more.
+Azure Resource Manager is the next generation of the Azure portal and API. This provider is a [POP](https://gitlab.com/saltstack/pop/pop) 
+plugin and an extension of [Idem](https://gitlab.com/saltstack/pop/idem), allowing Idem users to leverage Microsoft 
+Azure Resource Manager functionality to enforce the state of cloud infrastructure, applications, configurations, and 
+more. 
+
+## INSTALLATION
+The azurerm idem provider can be installed via pip:
+`pip install idem-azurerm`
+
+## INSTALLATION FOR DEVELOPMENT
+1. Clone the `idem_provider_azurerm` repository and install with pip:
+`pip install -r requirements.txt`
+2. Run `pip install -e <path to provider>` from your project's root directory
+
+You are now fully set up to begin developing additional functionality for this provider.
+
+## EXECUTION
+After installation the Azure Resource Manager Idem Provider execution and state modules will be accessible to the hub.
+
+The provider authenticates with a service principal, so all state and execution modules require that a dictionary 
+populated with the data shown below be passed to them.
+```
+{% set profile = {
+    'client_id': '<YOUR CLIENT ID>',
+    'secret': '<YOUR SECRET>',
+    'subscription_id': '<YOUR SUBSCRIPTION ID>',
+    'tenant': '<YOUR TENANT>' } %}
+```
+The following example uses an azurerm state module to ensure the existence of a resource group.
+```
+Resource group exists:
+  azurerm.resource.group.present:
+    - name: idem
+    - location: eastus
+    - tags:
+        organization: EITR Technologies
+    - connection_auth: {{ profile }}
+```
+
+
