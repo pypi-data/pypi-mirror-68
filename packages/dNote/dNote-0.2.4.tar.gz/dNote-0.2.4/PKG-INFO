@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: dNote
+Version: 0.2.4
+Summary: Simple CLI utility for managing notes with AWS
+Home-page: https://github.com/yetisir/dnote
+Author: M. Yetisir
+Author-email: yetisir@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
