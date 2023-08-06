@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+WPTParser/__init__.py
+WPTParser/Fetch/__init__.py
+WPTParser/JSONParser/__init__.py
+wpt_parser.egg-info/PKG-INFO
+wpt_parser.egg-info/SOURCES.txt
+wpt_parser.egg-info/dependency_links.txt
+wpt_parser.egg-info/requires.txt
+wpt_parser.egg-info/top_level.txt
