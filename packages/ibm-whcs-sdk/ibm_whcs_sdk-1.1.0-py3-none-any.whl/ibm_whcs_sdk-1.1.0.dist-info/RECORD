@@ -1,0 +1,13 @@
+ibm_whcs_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ibm_whcs_sdk/common.py,sha256=-L5SZMtQTn6dN18emIqaZ4p-tuUK5dfGX_oDp3OJs30,1551
+ibm_whcs_sdk/version.py,sha256=kHBiBVMJUl0nbnNalB3FzI4hpnzmPgJvvBM4QzQB5mk,42
+ibm_whcs_sdk/annotator_for_clinical_data/__init__.py,sha256=2bQ3wTBoz9wPLf1N6lf7A4sbiPNPjsLKVB5TwVGQGlU,3312
+ibm_whcs_sdk/annotator_for_clinical_data/annotator_for_clinical_data_v1.py,sha256=sOIiVQGW7aGFlDf0yo1KebhSruIdjcV9dSBwB00cW-M,277652
+ibm_whcs_sdk/insights_for_medical_literature/__init__.py,sha256=Jo4FoNgAycgiXK1ToalsW42gRjBMSiYsuocE43DEi-8,4807
+ibm_whcs_sdk/insights_for_medical_literature/insights_for_medical_literature_v1.py,sha256=f9aMvLC5xOFNcrddts6t5cbrEVdPD95C-oF1H4Ftd9s,308261
+ibm_whcs_sdk-1.1.0.dist-info/LICENSE.md,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+ibm_whcs_sdk-1.1.0.dist-info/METADATA,sha256=RgBvkSB3UPWIYLM8HWeilQG0BcTYUPG0_Df-jPdEfXE,2928
+ibm_whcs_sdk-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ibm_whcs_sdk-1.1.0.dist-info/top_level.txt,sha256=dk5tDeXnnMsMjiB5B_ndHQCOR9BF32MLxIhrq6VypOM,13
+ibm_whcs_sdk-1.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ibm_whcs_sdk-1.1.0.dist-info/RECORD,,
