@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}{{model}}{% endblock %}
+{% block body %}
+<div id="header_grid" class="ui grid">
+    <div class="sixteen column row">
+        <div class="ten wide column">
+<h1>{{model}}</h1></div>
+        <div class="six wide column right aligned content">
+{% include 'file_upload.html' %}
+        </div>
+    </div>
+    <div class="ui divider"></div>
+</div>
+<div id="grid" class="ui grid">
+    <div class="sixteen column row" id="row_filters">
+    </div>
+</div>
+{% include 'data_table.html' %}
+
+<!-- delete modal -->
+{% set modal_url = model.lower() + '/delete_all/' %}
+{% include 'delete_modal.html' %}
+<!-- end of modal -->
+{% for cat, msg in get_flashed_messages(with_categories=true) %}
+      <div class="ui {{ cat }} message"><p>{{ msg }}</p></div>
+      {% endfor %}
+    <button id="add" class="ui right floated small green labeled icon button" type="button">
+        <i class="user icon"></i>
+        <a style="color:#fff;" href="{{url_prefix}}/{{model.lower()}}/add">Add {{model}}</a>
+    </button>
+
+    <button id="delete_all" class="ui left floated small red inverted labeled icon button" type="button">
+    <i class="trash icon"></i>Delete all {{model}}</button>
+<script>
+$(document).ready( function () {
+    $('#models_table').DataTable({
+    dom: 'Blfrtip',
+
+    buttons: [
+        {
+            extend: 'csvHtml5',
+            text: 'Export to csv',
+            filename: '{{model}}',
+            exportOptions: {
+                modifier: {
+                    search: 'none'
+                },
+
+                 columns: 'th:not(:last-child)'
+            }
+        }
+    ],
+initComplete: function () {
+    $('.buttons-csv').attr('id', 'buttons-csv')
+    $('#models_table_length').attr('class', 'dataTables_length twelve wide column')
+    $('#models_table_filter').attr('class','dataTables_filter ui form right aligned content four wide column')
+     $("#grid").appendTo("#models_table_wrapper");
+     $('#grid').insertBefore('#models_table');
+    $('#buttons-csv').attr('class','ui right floated five wide small green labeled icon button')
+    $('#buttons-csv').html('<i class="download icon"></i>Export to CSV')
+
+    $('#buttons-csv').insertBefore('#add');
+    $("#models_table_length").appendTo("#row_filters");
+    $("#models_table_filter").appendTo("#row_filters");
+    $('#grid_footer').insertAfter('#models_table');
+
+    $('#models_table_info').appendTo("#grid_footer_row");
+    $('<br>').appendTo("#grid_footer_row");
+    $('#models_table_paginate').appendTo("#grid_footer_row");
+    $('<br>').insertBefore("#models_table")
+}
+} );
+} );
+
+$(function(){
+	$("#delete_all").click(function(){
+		$(".ui.basic.modal").modal('show');
+	});
+	$(".ui.basic.modal").modal({
+		closable: true
+	});
+});
+</script>
+
+{% endblock %}
