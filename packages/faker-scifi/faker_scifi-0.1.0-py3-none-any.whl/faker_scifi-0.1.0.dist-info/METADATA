@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: faker-scifi
+Version: 0.1.0
+Summary: Faker provider for science fiction technobabble.
+Home-page: https://github.com/scummchild/faker_scifi
+Author: Garison Spaeth
+Author-email: greesha@gmail.com
+License: MIT
+Download-URL: https://github.com/scummchild/faker_scifi/archive/v0.1.0.zip
+Requires-Dist: Faker
+
+# faker_scifi
+
+
