@@ -1,0 +1,233 @@
+[com]:
+    des     : COMMON_CFG1         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x40400        
+    count   : 32             
+
+    des     : COMMON_CFG2           
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x40980        
+    count   : 80             
+
+    des     : WRM_CFG           
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x47000        
+    count   : 256             
+
+    des     : NRX           
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4c000        
+    count   : 8             
+
+    des     : NTX           
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x46100        
+    count   : 4             
+
+    des     : WRM_DP_WBUF           
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0,0x47204  
+    count   : 8             
+
+    des     : WRM_DP_RX           
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0100,0x47204       
+    count   : 4             
+
+    des     : WRM_DP_RINF           
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0200,0x47204        
+    count   : 8             
+
+    des     : WRM_DP_PRO         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0300,0x47204
+    count   : 16             
+
+    des     : WRM_DP_TX         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0400,0x47204        
+    count   : 12             
+
+    des     : WRM_DP_SID         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x0500,0x47204
+    count   : 1             
+
+    des     : WRM_RIP         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x010000,0x47204        
+    count   : 4             
+
+    des     : WRM_STA_PRO         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x020000,0x47204     
+    count   : 8
+
+    des     : WRM_STA_OTH         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x020100,0x47204     
+    count   : 8
+
+    des     : WRM_STA_FTL         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x020200,0x47204     
+    count   : 8
+
+    des     : WRM_RET         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x030000,0x47204     
+    count   : 2 
+
+    des     : WRM_DDM         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x040000,0x47204     
+    count   : 2 
+
+    des     : WRM_FLUSH         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x47200,0x050000,0x47204     
+    count   : 1 
+
+    des     : ECC_ENC         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0xc0000     
+    count   : 1 
+
+    des     : NCS CH0         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4d440     
+    count   : 4 
+
+    des     : NCS CH_4         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4d480     
+    count   : 4 
+
+    des     : NCS CH_8         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4d4C0     
+    count   : 4 
+
+    des     : NCS CH_C         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4d500     
+    count   : 4 
+
+    des     : ECC_ENC         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0xc0008     
+    count   : 4 
+
+    des     : NCS CH0         
+    owner   : rongsheng wang    
+    date    : indirect_read          
+    addr    : 0x4d440,0x0,0xc000c     
+    count   : 16 
+
+    des     : GC         
+    owner   : rongsheng wang    
+    date    : read          
+    addr    : 0x4fc00     
+    count   : 8 
+
+[var]:
+
+    nrx_nvc2nsc_cnt = reg(0x4c004)[15:0]
+    ntx_nsc2nvc_cnt = (reg(0x46108)[31:16] + reg(0x46108)[31:0]) & 0xffff
+    nrx_header_crc_err_cnt = reg(0x4c008)[7:0]
+    nrx_data_crc_err_cnt = reg(0x4c008)[15:8]
+    nrx_ppa_out_of_range_cnt = reg(0x4c01c)[7:0]
+    nrx_lba_out_of_range_cnt = reg(0x4c01c)[15:8]
+    #WRM
+    reg(0x47200) = 0x0
+    wrm_host_short_frm_err = reg(0x47204)[24:24]
+    wrm_host_long_frm_err = reg(0x47204)[25:25]
+    reg(0x47200) = 0x4
+    wrm_host_frm_cnt = reg(0x47204)[15:0]
+    wrm_ecpu_frm_cnt = reg(0x47204)[31:16]
+    reg(0x47200) = 0x030001
+    wrm_ret_frm_cnt = reg(0x47204)[31:16]
+    reg(0x47200) = 0x0101
+    wrm_ep_err = reg(0x47204)[31:16]
+    reg(0x47200) = 0x0403
+    wrm_tx_ncs_cnt = reg(0x47204)[31:0]
+    reg(0x47200) = 0x020001
+    wrm_sta_ncs_cnt = reg(0x47204)[31:0]
+    reg(0x47200) = 0x0500
+    wrm_dp_sid_left = reg(0x47204)[15:0] 
+    reg(0x47200) = 0x0400
+    wrm_ecc_enc_frm_cnt = reg(0x47204)[23:16] 
+    wrm_ecc_enc_eop_cnt = reg(0x47204)[31:24] 
+    reg(0x47200) = 0x020202
+    wrm_ftl_req_cnt = reg(0x47204)[15:0]
+    wrm_ftl_ack_cnt = reg(0x47204)[31:16]
+    reg(0x47200) = 0x020002
+    wrm_prg_fail_cnt = reg(0x47204)[15:0]
+    reg(0x47200) = 0x020000
+    wrm_flash_timeout_cnt = reg(0x47204)[31:24]
+    #NCS
+    #ncs_ch = 0
+    ncs_ch_state = reg(0x4d44c)[11:8]
+    #ncs_ch = 4
+    ncs_ch_state = reg(0x4d48c)[11:8]
+    #ncs_ch = 8
+    ncs_ch_state = reg(0x4d4cc)[11:8]
+    #ncs_ch = 0xc
+    ncs_ch_state = reg(0x4d50c)[11:8]
+
+[exp]:
+
+    nrx_nvc2nsc_cnt != ntx_nsc2nvc_cnt {"NRX","NSC LOST PACKET."} {"NRX","INFO: NVC send == NSC return."}
+    nrx_header_crc_err_cnt != 0 {"NRX","NRX Frame HEADER_CRC_ERROR counter."}
+    nrx_data_crc_err_cnt != 0 {"NRX","NRX Frame DATA_CRC_ERROR counter."}
+    nrx_ppa_out_of_range_cnt != 0 {"NRX","NRX Frame PPA_OUT_OF_RANGE counter."}
+    nrx_lba_out_of_range_cnt != 0 {"NRX","NRX Frame LBA_OUT_OF_RANGE counter."}
+    wrm_host_short_frm_err != 0 {"WRM","HOST SHORT FRAME ERROR."}
+    wrm_host_long_frm_err != 0 {"WRM","HOST LONG FRAME ERROR."}
+    (wrm_host_frm_cnt + wrm_ecpu_frm_cnt) != wrm_ret_frm_cnt {"WRM","WRITE FRAME LOST."}
+    wrm_ep_err != 0 {"WRM","PPA address OUT OF ORDER."}
+    wrm_tx_ncs_cnt != wrm_sta_ncs_cnt {"WRM","WRM <-> NCS command counter MIS-MATCH."}
+    wrm_dp_sid_left != 0x9072 {"WRM","Share memory NOT EMPTY."}
+    wrm_ecc_enc_frm_cnt != wrm_ecc_enc_eop_cnt {"WRM","WRM <-> ECC_ENC data counter MIS-MATCH."}
+    wrm_ftl_req_cnt != wrm_ftl_ack_cnt {"WRM","WRM <-> FTL command lost."}
+    wrm_prg_fail_cnt != 0 {"WRM","Program Fail counter, "}
+    wrm_flash_timeout_cnt != 0 {"WRM","FLASH TIMEOUT."}
+    ncs_ch_state != 1 {"NCS","NCS STATE NOT IDLE, Error channel is 0"}
+    ncs_ch_state != 1 {"NCS","NCS STATE NOT IDLE, Error channel is 4"}
+    ncs_ch_state != 1 {"NCS","NCS STATE NOT IDLE, Error channel is 8"}
+    ncs_ch_state != 1 {"NCS","NCS STATE NOT IDLE, Error channel is c"}
+    
+
+
+
+
+
+
+
+
+

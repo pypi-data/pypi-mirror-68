@@ -1,0 +1,3 @@
+[console_scripts]
+cnex_dfx = cnex_dfx.run:main
+

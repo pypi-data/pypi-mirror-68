@@ -1,0 +1,478 @@
+[com]:
+    des     : NVS_CMD           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0x58c0,0xb058       
+    count   : 2,1   
+
+    des     : NVS_RES           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0x5940       
+    count   : 6 
+
+    des     : NHW           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0x8880       
+    count   : 4 
+
+    des     : NDP           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0x6840       
+    count   : 4 
+
+    des     : OFD           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xd6840       
+    count   : 4 
+
+    des     : NFF           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0x7840       
+    count   : 8 
+
+    des     : NVT           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xd0180       
+    count   : 3 
+
+    des     : NVR           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xd1184       
+    count   : 3 
+
+    des     : NFP           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xa184       
+    count   : 3 
+
+    des     : NCR0           
+    owner   : tao wang     
+    date    : write and read           
+    addr    : 0x9800       
+    count   : 4 
+
+    des     : NCR1           
+    owner   : tao wang     
+    date    : write and read          
+    addr    : 0x9800       
+    count   : 5 
+
+    des     : NCR2           
+    owner   : tao wang     
+    date    : write and read          
+    addr    : 0x9800       
+    count   : 3 
+
+    des     : DPH0           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xb04c       
+    count   : 5 
+
+    des     : DPH1           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xb1c0       
+    count   : 5 
+
+    des     : DPH2           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xb200       
+    count   : 5 
+
+    des     : DPH3           
+    owner   : jianwen liu     
+    date    : read          
+    addr    : 0xb040       
+    count   : 2 
+
+    des     : PAP0           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x2a000       
+    count   : 8 
+
+    des     : PAP1           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x2a040       
+    count   : 9 
+
+    des     : PAP2           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x2a080       
+    count   : 8 
+
+    des     : PAP3           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x2a0c0       
+    count   : 48 
+
+    des     : CQP           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0x200a8       
+    count   : 2 
+
+    des     : NBC0           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0xa0800       
+    count   : 4
+
+    des     : NBC1           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0xa0880       
+    count   : 4
+
+    des     : NBC2           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0xa0900       
+    count   : 4
+
+    des     : NBC3           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0xa0980       
+    count   : 4
+
+    des     : NBC4           
+    owner   : xinhong lan     
+    date    : read          
+    addr    : 0xa0b00       
+    count   : 40
+
+    des     : DB           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x1000       
+    count   : 8
+
+    des     : SQM0           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x16000       
+    count   : 4
+
+    des     : SQM1           
+    owner   : fu shen     
+    date    : read          
+    addr    : 0x16800       
+    count   : 4
+
+[var]:
+    #NVS_CMD
+    nvs0_spa_sop = reg(0x58c0)[31:16]
+    nvs0_spa_eop = reg(0x58c0)[15:0]
+    nvs0_nhw_sop = reg(0x58c4)[31:16]
+    nvs0_nhw_eop = reg(0x58c4)[15:0]
+    nvs0_return_sop = reg(0xb058)[31:16]
+    nvs0_return_eop = reg(0xb058)[15:0]
+
+    #NVS_RES
+    nvs1_frd_cqptr_thld    = reg(0x5940)[31:16]
+    nvs1_frd_cqptr         = reg(0x5940)[15:0]
+    nvs1_fwr_cqptr_thld    = reg(0x5944)[31:16]
+    nvs1_fwr_cqptr         = reg(0x5944)[15:0]
+    nvs1_slow_cqptr_thld   = reg(0x5948)[31:16]
+    nvs1_slow_cqptr        = reg(0x5948)[15:0]
+    nvs1_frd_cmdtag_thld   = reg(0x594c)[31:16]
+    nvs1_frd_cmdtag        = reg(0x594c)[15:0]
+    nvs1_fwr_cmdtag_thld   = reg(0x5950)[31:16]
+    nvs1_fwr_cmdtag        = reg(0x5950)[15:0]
+    nvs1_slow_cmdtag_thld  = reg(0x5954)[31:16]
+    nvs1_slow_cmdtag       = reg(0x5954)[15:0]
+
+    #NHW
+    sqm2nhw_sop_cnt = reg(0x8880)[31:16]
+    sqm2nhw_eop_cnt = reg(0x8880)[15:0]
+    nhw2spa_sop_cnt = reg(0x8884)[31:16]
+    nhw2spa_eop_cnt = reg(0x8884)[15:0]
+    nhw2nvs_sop_cnt = reg(0x8888)[31:16]
+    nhw2nvs_eop_cnt = reg(0x8888)[15:0]
+    nhw_st_cur      = reg(0x888c)[1:0]
+
+    #NDP
+    ndp_addr_dr2ndp_sop = reg(0x6840)[31:16]
+    ndp_addr_dr2ndp_eop = reg(0x6840)[15:0]
+    ndp_dr2ndp_sop      = reg(0x6844)[31:16]
+    ndp_dr2ndp_eop      = reg(0x6844)[15:0]
+    ndp_addr_drfndp_sop = reg(0x6848)[31:16]
+    ndp_addr_drfndp_eop = reg(0x6848)[15:0]
+    ndp_drfndp_sop      = reg(0x684c)[31:16]
+    ndp_drfndp_eop      = reg(0x684c)[15:0]
+
+    #OFD
+    ofd_dcmr_re2_ofd_sop  = reg(0xd6840)[31:16]
+    ofd_dcmr_re2_ofd_eop  = reg(0xd6840)[15:0]
+    ofd_cmr_re2_ofd_sop   = reg(0xd6844)[31:16]
+    ofd_cmr_re2_ofd_eop   = reg(0xd6844)[15:0]
+    ofd_dcmr_rerf_ofd_sop = reg(0xd6848)[31:16]
+    ofd_dcmr_rerf_ofd_eop = reg(0xd6848)[15:0]
+    ofd_cmr_rerf_ofd_sop  = reg(0xd684c)[31:16]
+    ofd_cmr_rerf_ofd_eop  = reg(0xd684c)[15:0]
+
+    #NFF
+    nvs2nff_hdr_sop_cnt     = reg(0x7840)[31:16]
+    nvs2nff_hdr_eop_cnt     = reg(0x7840)[15:0]
+    cmp_dcp_nff_hdr_sop_cnt = reg(0x7844)[31:16]
+    cmp_dcp_nff_hdr_eop_cnt = reg(0x7844)[15:0]
+    ndp2nff_pld_sop_cnt     = reg(0x7848)[31:16]
+    ndp2nff_pld_eop_cnt     = reg(0x7848)[15:0]
+    nff2nvt_hdr_sop_cnt     = reg(0x784c)[31:16]
+    nff2nvt_hdr_eop_cnt     = reg(0x784c)[15:0]
+    dcp2nff_pld_sop_cnt     = reg(0x7850)[31:16]
+    dcp2nff_pld_eop_cnt     = reg(0x7850)[15:0]
+    pad2nff_pld_sop_cnt     = reg(0x7854)[31:16]
+    pad2nff_pld_eop_cnt     = reg(0x7854)[15:0]
+    nff2npc_pld_sop_cnt     = reg(0x7858)[31:16]
+    nff2npc_pld_eop_cnt     = reg(0x7858)[15:0]
+    cmp2nff_pld_sop_cnt     = reg(0x785c)[31:16]
+    cmp2nff_pld_eop_cnt     = reg(0x785c)[15:0]
+    nvs2nff_hdr_reg         = reg(0x7840)[31:0]
+    cmp_dcp_nff_hdr_reg     = reg(0x7844)[31:0]
+    nff2nvt_hdr_reg         = reg(0x784c)[31:0]
+    nff2npc_pld_reg         = reg(0x7858)[31:0]
+
+    #NVT
+    nff2nvt_hdr_sop_cnt = reg(0xd0180)[7:0]
+    nff2nvt_hdr_eop_cnt = reg(0xd0180)[15:8]
+    npc2nvt_pld_sop_cnt = reg(0xd0180)[23:16]
+    npc2nvt_pld_eop_cnt = reg(0xd0180)[31:24]
+    nvc2nbc_oe_sop_cnt  = reg(0xd0188)[7:0]
+    nvc2nbc_oe_eop_cnt  = reg(0xd0188)[15:8]
+
+    #NVR
+    nbc2nvc_oe_sop_cnt  = reg(0xd1184)[31:16]
+    nbc2nvc_oe_eop_cnt  = reg(0xd1184)[15:0]
+    nvr2npc_pld_sop_cnt = reg(0xd1188)[31:16]
+    nvr2npc_pld_eop_cnt = reg(0xd1188)[15:0]
+    nvr2nfp_hdr_sop_cnt = reg(0xd118c)[31:16]
+    nvr2nfp_hdr_eop_cnt = reg(0xd118c)[15:0]
+    nbc2nvc_oe_reg      = reg(0xd1184)[31:0]
+    nvr2npc_pld_reg     = reg(0xd1188)[31:0]
+    nvr2nfp_hdr_reg     = reg(0xd118c)[31:0]
+
+    #NFP
+    npc2nfp_pld_sop_cnt = reg(0xa184)[31:16]
+    npc2nfp_pld_eop_cnt = reg(0xa184)[15:0]
+    nvr2nfp_hdr_sop_cnt = reg(0xa188)[31:16]
+    nvr2nfp_hdr_eop_cnt = reg(0xa188)[15:0]
+    nfp2ncr_oe_sop_cnt  = reg(0xa18c)[31:16]
+    nfp2ncr_oe_eop_cnt  = reg(0xa18c)[15:0]
+    npc2nfp_pld_reg     = reg(0xa184)[31:0]
+    nvr2nfp_hdr_reg     = reg(0xa188)[31:0]
+    nfp2ncr_oe_reg      = reg(0xa18c)[31:0]
+
+    #NCR0
+    reg(0x9108) = 0
+    rx_nvr_frm_sop_cnt = reg(0x9800)[7:0]
+    rx_nvr_frm_eop_cnt = reg(0x9800)[15:8]
+    rx_fc_frm_cnt      = reg(0x9800)[23:16]
+    tx_spb_frm_sop_cnt = reg(0x9804)[7:0]
+    tx_spb_frm_eop_cnt = reg(0x9804)[15:8]
+    rx_spb_frm_sop_cnt = reg(0x9804)[23:16]
+    rx_spb_frm_eop_cnt = reg(0x9804)[31:24]
+    rx_invld_frm_cnt   = reg(0x9808)[31:24]
+    rx_nvr_cmd_tag_sum = reg(0x980c)[13:0]
+
+    #NCR1
+    reg(0x9108) = 3
+    rlsd_frm_cnt      = reg(0x9800)[7:0]
+    rlsd_cmd_Cnt      = reg(0x9800)[15:8]
+    tx_cqp_frm_cnt    = reg(0x9800)[23:16]
+    tx_cqp_cqe_cnt    = reg(0x9800)[31:24]
+    rx_short_frm_cnt  = reg(0x9804)[7:0]
+    rx_long_frm_cnt   = reg(0x9804)[15:8]
+    rx_wr_ilg_frm_cnt = reg(0x9804)[23:16]
+    ncr_hdr_state     = reg(0x9808)[3:0]
+    ncr_prp_state     = reg(0x9808)[5:4]
+    ncr_split_state   = reg(0x9808)[9:8]
+    cqp_last_data_cnt = reg(0x980c)[15:0]
+    cqe_inc_data_cnt  = reg(0x980c)[31:16]
+    cqp_fake_cmd_cnt  = reg(0x9810)[15:0]
+
+    #NCR2
+    reg(0x9108) = 4
+    nvs_cfg_frm_cnt       = reg(0x9800)[7:0]
+    nvs_cfg_cmd_first_cnt = reg(0x9800)[15:8]
+    nvs_cfg_cmd_last_cnt  = reg(0x9800)[23:16]
+    rx_nvs_cmd_tag_sum    = reg(0x9808)[13:0]
+
+    #DPH0
+    dph_tx_pap_eop_cnt  = reg(0xb04c)[15:0]
+    dph_tx_pap_sop_cnt  = reg(0xb04c)[31:16]
+    dph_tx_dds_eop_cnt  = reg(0xb050)[15:0]
+    dph_tx_dds_sop_cnt  = reg(0xb050)[31:16]
+    dph_tx_dda_eop_cnt  = reg(0xb054)[15:0]
+    dph_tx_dda_sop_cnt  = reg(0xb054)[31:16]
+    dph_tx_dat_cmd_cnt  = reg(0xb058)[31:16]
+    dph_tx_cqe_cmd_cnt  = reg(0xb058)[15:0]
+    dph_tx_int_cmd_cnt  = reg(0xb04c)[31:16]
+    dph_tx_err_cmd_cnt  = reg(0xb04c)[15:0]
+
+    #DPH1
+    dph_rx0_pap_eop_cnt = reg(0xb1c0)[15:0]
+    dph_rx0_pap_sop_cnt = reg(0xb1c0)[31:16]
+    dph_rx0_dds_eop_cnt = reg(0xb1c4)[15:0]
+    dph_rx0_dds_sop_cnt = reg(0xb1c4)[31:16]
+    dph_rx0_dda_eop_cnt = reg(0xb1c8)[15:0]
+    dph_rx0_dda_sop_cnt = reg(0xb1c8)[31:16]
+    dph_rx0_dds_cmd_cnt = reg(0xb1cc)[15:0]
+    dph_rx0_pap_cmd_cnt = reg(0xb1cc)[31:16]
+    dph_rx0_dda_cmd_cnt = reg(0xb1d0)[15:0]
+    dph_rx0_err_cmd_cnt = reg(0xb1d0)[31:16]
+
+    #DPH2
+    dph_rx1_pap_eop_cnt = reg(0xb200)[15:0]
+    dph_rx1_pap_sop_cnt = reg(0xb200)[31:16]
+    dph_rx1_dds_eop_cnt = reg(0xb204)[15:0]
+    dph_rx1_dds_sop_cnt = reg(0xb204)[31:16]
+    dph_rx1_dda_eop_cnt = reg(0xb208)[15:0]
+    dph_rx1_dda_sop_cnt = reg(0xb208)[31:16]
+    dph_rx1_dds_cmd_cnt = reg(0xb20c)[15:0]
+    dph_rx1_pap_cmd_cnt = reg(0xb20c)[31:16]
+    dph_rx1_dda_cmd_cnt = reg(0xb210)[15:0]
+    dph_rx1_err_cmd_cnt = reg(0xb210)[31:16]
+
+    #DPH3
+    dph_tx_fc_status = reg(0xb040)[31:16]
+
+    #PAP0
+    #PAP1
+    #PAP2
+    #PAP3
+    user2pap_rd2_cmd_cnt = reg(0x2a0d4)[31:17]
+    pap2user_rd2_cmd_cnt = reg(0x2a0d4)[15:0]
+    pap2user_rd0_cmd_cnt = reg(0x2a0d8)[31:16]
+    pap2user_rd1_cmd_cnt = reg(0x2a0d8)[15:0]
+    pap_time_out_cnt     = reg(0x2a0e8)[31:0]
+    user2pap_rd0_cmd_cnt = reg(0x2a118)[31:17]
+    user2pap_rd1_cmd_cnt = reg(0x2a118)[16:1]
+    pap_send_data_len    = reg(0x2a150)[31:0]
+    user_send_data_len   = reg(0x2a154)[31:0]
+
+    #CQP
+    ncr2cqp_cmd_cnt = reg(0x200a8)[31:0]
+    cqp2dph_cqe_cnt = reg(0x200ac)[31:0]
+
+    #NBC0
+    rx0 = reg(0xa0808)[31:0]
+    #NBC1
+    tx0 = reg(0xa0880)[31:0]
+    #NBC2
+    rx2 = reg(0xa0908)[31:0]
+    #NBC3
+    tx2 = reg(0xa0980)[31:0]
+    #NBC4
+    rx1 = reg(0xa0b08)[31:0]
+    tx1 = reg(0xa0b80)[31:0]
+
+    #DB
+    #SQM0
+    sq_admin_sq_fetch_cnt = reg(0x16000)[31:0]
+    sq1_fetch_cnt = reg(0x16004)[31:0]
+    sq2_fetch_cnt = reg(0x16008)[31:0]
+    #SQM1
+    sq_admin_cq_cpld_cnt = reg(0x16800)[31:0]
+    sq1_cpld_cnt = reg(0x16804)[31:0]
+    sq2_cpld_cnt = reg(0x16808)[31:0]
+
+[exp]:
+    nvs0_spa_eop + nvs0_nhw_eop != nvs0_return_eop + 1 {"NVS_CMD","there are some no-returned commands or there are some other command that will not return CQE"}
+    nvs1_frd_cqptr != 0 {"NVS_RES","there are some read command not returned"}
+    nvs1_fwr_cqptr != 0 {"NVS_RES","there are some write command not returned"}
+    nvs1_slow_cqptr != 0 {"NVS_RES","there are some admin command or FW-IO command not returned"}
+    nvs1_frd_cmdtag != 0 {"NVS_RES","there are some read frame tag not released"}
+    nvs1_fwr_cmdtag != 0 {"NVS_RES","there are some write frame tag not released"}
+    nvs1_slow_cmdtag != 0 {"NVS_RES","there are some admin command or FW-IO frame tag not released"}
+    nhw2nvs_eop_cnt + nhw2spa_eop_cnt != sqm2nhw_eop_cnt {"NHW","please check the coherency mode or check whether NVS is hang"}
+    nhw_st_cur != 0 {"NHW","NHW_PARSE ST is not IDLE!!!"}
+    ndp_addr_dr2ndp_eop != ndp_dr2ndp_eop {"NDP", "there are some address request not returned from DPH"}
+    ndp_dr2ndp_eop != ndp_drfndp_eop {"NDP", "there are some data request not returned from DPH"}
+    ndp_addr_dr2ndp_sop != ndp_addr_dr2ndp_eop {"NDP", "sop and eop is not equal,please check the FSM status of NDP"}
+    ndp_dr2ndp_sop != ndp_dr2ndp_eop {"NDP", "sop and eop is not equal,please check the FSM status of NDP"}
+    ndp_addr_drfndp_sop != ndp_addr_drfndp_eop {"NDP", "sop and eop is not equal,please check the FSM status of NDP"}
+    ndp_drfndp_sop != ndp_drfndp_eop {"NDP", "sop and eop is not equal,please check the FSM status of NDP"}
+    ofd_dcmr_re2_ofd_eop != ofd_dcmr_rerf_ofd_eop {"OFD", "there are some decompress data request not returned from DPH"}
+    ofd_cmr_re2_ofd_eop != ofd_cmr_rerf_ofd_eop {"OFD", "there are some compress data request not returned from DPH"}
+    ofd_dcmr_re2_ofd_sop != ofd_dcmr_re2_ofd_eop {"OFD", "sop and eop is not equal,please check the FSM status of OFD"}
+    ofd_cmr_re2_ofd_sop != ofd_cmr_re2_ofd_eop {"OFD", "sop and eop is not equal,please check the FSM status of OFD"}
+    ofd_dcmr_rerf_ofd_sop != ofd_dcmr_rerf_ofd_eop {"OFD", "sop and eop is not equal,please check the FSM status of OFD"}
+    ofd_cmr_rerf_ofd_sop != ofd_cmr_rerf_ofd_sop {"OFD", "sop and eop is not equal,please check the FSM status of OFD"}
+    sqm2nhw_sop_cnt != sqm2nhw_eop_cnt {"NHW","sqm2nhw sop cnt != sqm2nhw eop cnt"}
+    nhw2spa_sop_cnt != nhw2spa_eop_cnt {"NHW","nhw2spa sop cnt != nhw2spa eop cnt"}
+    nhw2nvs_sop_cnt != nhw2nvs_eop_cnt {"NHW","nhw2nvs sop cnt != nhw2nvs eop cnt"}
+    nhw_st_cur != 0 {"NHW","NHW_PARSE ST is not IDLE!!!"}
+    nvs2nff_hdr_sop_cnt != nvs2nff_hdr_eop_cnt {"NFF", "nvs2nff hdr sop cnt != nvs2nff hdr eop cnt"}
+    cmp_dcp_nff_hdr_sop_cnt != cmp_dcp_nff_hdr_eop_cnt {"NFF", "cmp/dcp2nff hdr sop cnt != cmp/dcp2nff hdr eop cnt"}
+    ndp2nff_pld_sop_cnt != ndp2nff_pld_eop_cnt {"NFF", "ndp2nff pld sop cnt != ndp2nff pld eop cnt"}
+    nff2nvt_hdr_sop_cnt != nff2nvt_hdr_eop_cnt {"NFF", "nff2nvt hdr sop cnt != nff2nvt hdr eop cnt"}
+    dcp2nff_pld_sop_cnt != dcp2nff_pld_eop_cnt {"NFF", "dcp2nff pld cnt != dcp2nff pld cnt"}
+    pad2nff_pld_sop_cnt != pad2nff_pld_eop_cnt {"NFF", "Write zero payload is not finished!!!"}
+    nff2npc_pld_sop_cnt != nff2npc_pld_eop_cnt {"NFF", "nff2npc pld cnt != nff2npc pld cnt"}
+    cmp2nff_pld_sop_cnt != cmp2nff_pld_eop_cnt {"NFF", "cmp2nff pld cnt != cmp2nff pld cnt"}
+    nvs2nff_hdr_reg + cmp_dcp_nff_hdr_reg != nff2npc_pld_reg {"NFF", "01:input frame don't match with output frame"}
+    nvs2nff_hdr_reg + cmp_dcp_nff_hdr_reg != nff2nvt_hdr_reg {"NFF", "02:input frame don't match with output frame"}
+    nff2nvt_hdr_sop_cnt != nff2nvt_hdr_sop_cnt {"NVT", "nff2nvt hdr sop cnt != nff2nvt hdr eop cnt"}
+    npc2nvt_pld_sop_cnt != npc2nvt_pld_eop_cnt {"NVT", "npc2nvt pld sop cnt != npc2nvt pld eop cnt"}
+    nff2nvt_hdr_sop_cnt != npc2nvt_pld_sop_cnt {"NVT", "input frame NVMoE hdr don't match with input NVMoE tail"}
+    nvc2nbc_oe_sop_cnt != nvc2nbc_oe_eop_cnt {"NVT", "nvc2nbc oe sop cnt != nvc2nbc oe eop cnt"}
+    nbc2nvc_oe_sop_cnt != nbc2nvc_oe_eop_cnt {"NVR", "nbc2nvc oe sop cnt != nbc2nvc oe eop cnt"}
+    nvr2npc_pld_sop_cnt != nvr2npc_pld_eop_cnt {"NVR", "nvr2npc pld sop cnt != nvr2npc pld eop cnt"}
+    nvr2nfp_hdr_sop_cnt != nvr2nfp_hdr_eop_cnt {"NVR", "nvr2nfp hdr sop cnt != nvr2nfp hdr eop cnt"}
+    nbc2nvc_oe_reg != nvr2npc_pld_reg {"NVR", "01:input frame don't match with output frame"}
+    nbc2nvc_oe_reg != nvr2nfp_hdr_reg {"NVR", "02:input frame don't match with output frame"}
+    npc2nfp_pld_sop_cnt != npc2nfp_pld_eop_cnt {"NFP", "npc2nfp pld sop cnt != npc2nfp pld eop cnt"}
+    nvr2nfp_hdr_sop_cnt != nvr2nfp_hdr_eop_cnt {"NFP", "nvr2nfp hdr sop cnt != nvr2nfp hdr eop cnt"}
+    nfp2ncr_oe_sop_cnt != nfp2ncr_oe_eop_cnt {"NFP", "nfp2ncr oe sop cnt != nfp2ncr oe eop cnt"}
+    npc2nfp_pld_reg != nvr2nfp_hdr_reg {"NFP", "01:input frame don't match with output frame"}
+    npc2nfp_pld_reg != nfp2ncr_oe_reg {"NFP", "02:input frame don't match with output frame"}
+    if rx_nvr_frm_sop_cnt < rx_fc_frm_cnt:
+        rx_nvr_frm_sop_cnt + 0x100 - rx_fc_frm_cnt - tx_spb_frm_sop_cnt + rx_spb_frm_sop_cnt != rlsd_frm_cnt {"NCR", "NCR received invalid frame number does not match with released frame number."}
+    else:
+        rx_nvr_frm_sop_cnt - rx_fc_frm_cnt - tx_spb_frm_sop_cnt + rx_spb_frm_sop_cnt != rlsd_frm_cnt {"NCR", "NCR received invalid frame number does not match with released frame number."}
+    nvs_cfg_frm_cnt != rlsd_frm_cnt {"NCR", "NVS configured frame number does not match with released frame number."}
+    nvs_cfg_cmd_first_cnt != tx_cqp_cqe_cnt + 1 {"NCR", "NVS configured command number does not match with CQE number sending to CQP."}
+    nvs_cfg_frm_cnt != tx_cqp_frm_cnt {"NCR", "NVS configured frame number does not match with frame number sending to CQP."}
+    rx_nvr_cmd_tag_sum != rx_nvs_cmd_tag_sum {"NCR", "Receive d Command tag from NVS and NVR are not the matching."}
+    cqe_inc_data_cnt != cqp_last_data_cnt + cqp_fake_cmd_cnt {"NCR", "NCR keep order error"}
+    rx_invld_frm_cnt != 0 {"NCR", "NCR received invalid frames."}
+    rx_short_frm_cnt != 0 {"NCR", "NCR received short frames."}
+    rx_long_frm_cnt != 0 {"NCR", "NCR received long frames."}
+    rx_wr_ilg_frm_cnt != 0 {"NCR", "NCR received write frames with data."}
+    rx_nvr_frm_sop_cnt != rx_nvr_frm_eop_cnt {"NCR", "Frames received from NVR, the sop and eop does not match."}
+    rx_spb_frm_sop_cnt != rx_spb_frm_eop_cnt {"NCR", "Frames received from SPB, the sop and eop does not match."}
+    tx_spb_frm_sop_cnt != tx_spb_frm_eop_cnt {"NCR", "Frames sending to SPB, the sop and eop does not match."}
+    nvs_cfg_cmd_first_cnt != nvs_cfg_cmd_last_cnt {"NCR", "Commands from NVS, the last flag and first flag does not match."}
+    ((dph_tx_pap_sop_cnt + dph_tx_dds_sop_cnt + dph_tx_dda_sop_cnt)&0xffff) != ((dph_tx_dat_cmd_cnt + dph_tx_cqe_cmd_cnt)&0xffff) {"DPH", "DPH TX number of command and data does not match."}
+    dph_rx0_pap_sop_cnt != dph_rx0_pap_cmd_cnt {"DPH1", "DPH RX0 PAP command and data not match"}
+    dph_rx0_dds_sop_cnt != dph_rx0_dds_cmd_cnt {"DPH1", "DPH RX0 DDS command and data not match"}
+    dph_rx0_dda_sop_cnt != dph_rx0_dda_cmd_cnt {"DPH1", "DPH RX0 DDA command and data not match"}
+    dph_rx1_pap_sop_cnt != dph_rx1_pap_cmd_cnt {"DPH2", "DPH RX1 PAP command and data not match"}
+    dph_rx1_dds_sop_cnt != dph_rx1_dds_cmd_cnt {"DPH2", "DPH RX1 DDS command and data not match"}
+    dph_rx1_dda_sop_cnt != dph_rx1_dda_cmd_cnt {"DPH2", "DPH RX1 DDA command and data not match"}
+    dph_tx_fc_status != 0 {"DPH3", "DPH TX flow control error."}
+    user2pap_rd2_cmd_cnt != pap2user_rd2_cmd_cnt {"PAP", "pap user2 rd command not returned!!!"}
+    user2pap_rd1_cmd_cnt != (pap2user_rd1_cmd_cnt & 0x7fff) {"PAP", "pap user1 rd command not returned!!!"}
+    user2pap_rd0_cmd_cnt != (pap2user_rd0_cmd_cnt & 0x7fff) {"PAP", "pap user0 rd command not returned!!!"}
+    pap_time_out_cnt != 0 {"PAP", "pap read time out!!!"}
+    pap_send_data_len != user_send_data_len {"PAP", "pap send len not match user!!!"}
+    sq_admin_sq_fetch_cnt != sq_admin_cq_cpld_cnt {"SQM","admin cqe not returned!!!"}
+    sq1_fetch_cnt != sq1_cpld_cnt {"SQM","sq1 not returned!!!"}
+    sq2_fetch_cnt != sq2_cpld_cnt {"SQM","sq2 not returned!!!"}
+    ((rx0+rx1+rx2) & 0xffffffff)!= ((tx0+tx1+tx2) & 0xffffffff) {"NBC","NBC TX != RX"}
+    ncr2cqp_cmd_cnt != cqp2dph_cqe_cnt {"CQP","CQE NOT ALL SEND!"}

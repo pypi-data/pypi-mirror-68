@@ -1,0 +1,66 @@
+[com]:
+    des     : ERRORCODE
+    owner   : liangmin huang
+    date    : read
+    addr    : 0x9704
+    count   : 25
+
+    des     : DDR_DERR_CNT_AXI0
+    owner   : liangmin huang
+    date    : read
+    addr    : 0x481ac
+    count   : 1
+
+    des     : DDR_DERR_CNT_AXI1
+    owner   : liangmin huang
+    date    : read
+    addr    : 0x481bc
+    count   : 1
+
+    des     : DDR_DERR_CNT_AXI2
+    owner   : liangmin huang
+    date    : read
+    addr    : 0x481cc
+    count   : 1
+
+[var]:
+    ecc_high_bit_error                  = reg(0x9704)[31:0]
+    ecc_unco_but_recover_by_raid        = reg(0x9708)[31:0]
+    nand_timeout_but_recover_by_raid    = reg(0x970c)[31:0]
+    ftl_invalid                         = reg(0x9710)[31:0]
+    single_bit_ecc_of_dram              = reg(0x9714)[31:0]
+    miss_ppa_command_in_write_ppa       = reg(0x9718)[31:0]
+    write_uncorrectable                 = reg(0x971c)[31:0]
+    ecc_error_in_ftl                    = reg(0x9720)[31:0]
+    read_lba_out_range                  = reg(0x9724)[31:0]
+    read_lba_with_missmatch_metadata    = reg(0x9728)[31:0]
+    read_lba_no_raid                    = reg(0x972c)[31:0]
+    crc_error_and_unrecovered           = reg(0x9730)[31:0]
+    invalid_command_code                = reg(0x9734)[31:0]
+    write_with_no_space                 = reg(0x9738)[31:0]
+    crc_error_at_data_receiver          = reg(0x973c)[31:0]
+    crc_error_at_data_buf_read          = reg(0x9740)[31:0]
+    crc_error_write_from_ddr            = reg(0x9744)[31:0]
+    crc_error_from_ddr                  = reg(0x9748)[31:0]
+    crc_error_nvmeoe_interface          = reg(0x974c)[31:0]
+    dma_write_error                     = reg(0x9750)[31:0]
+    cpu_access_illegal_addr             = reg(0x9754)[31:0]
+    frame_size_mismatch_length          = reg(0x9758)[31:0]
+    write_ppa_error_due_to_page_dropped = reg(0x975c)[31:0]
+    erase_failed                        = reg(0x9760)[31:0]
+    write_ppa_program_failed            = reg(0x9764)[31:0]
+    read_load_xor_id_error              = reg(0x9768)[31:0]
+    ecc_error_read_ppa_cmd              = reg(0x976c)[31:0]
+    seq_timeout                         = reg(0x9770)[31:0]
+    erased_page                         = reg(0x9774)[31:0]
+    raid_ppa_not_in_bmi                 = reg(0x9778)[31:0]
+    data_length_error                   = reg(0x977c)[31:0]
+    pi_check_error                      = reg(0x9780)[31:0]
+    firmware_spa_error                  = reg(0x9784)[31:0]
+    nvme_controller_error               = reg(0x9788)[31:0]
+    general_failure                     = reg(0x978c)[31:0]
+    ddr_derr_cnt_axi0                   = reg(0x481ac)[31:0]
+    ddr_derr_cnt_axi1                   = reg(0x481bc)[31:0]
+    ddr_derr_cnt_axi2                   = reg(0x481cc)[31:0]
+
+[exp]:
