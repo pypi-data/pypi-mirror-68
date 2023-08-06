@@ -1,0 +1,11 @@
+tabel
+numpy
+pyyaml
+pillow
+scipy
+scikit-learn
+pomegranate==0.12.2
+matplotlib
+pandas
+h5py
+yapsy
