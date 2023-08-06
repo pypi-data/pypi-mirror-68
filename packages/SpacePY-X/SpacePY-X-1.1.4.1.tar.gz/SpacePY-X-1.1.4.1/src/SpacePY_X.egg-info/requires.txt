@@ -1,0 +1,4 @@
+cachepy
+beautifulsoup4
+tinydb
+requests
