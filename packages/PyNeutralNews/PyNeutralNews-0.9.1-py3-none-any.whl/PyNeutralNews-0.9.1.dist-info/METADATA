@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PyNeutralNews
+Version: 0.9.1
+Summary: Neutral News client for api communication https://neutralnews.fr
+Home-page: UNKNOWN
+Author: Jonas Bouaziz
+Author-email: UNKNOWN
+License: copyright: Neutral News
+Platform: UNKNOWN
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: dnspython (==1.16.0)
+Requires-Dist: email-validator (==1.0.5)
+Requires-Dist: idna (==2.9)
+Requires-Dist: lazy (==1.4)
+Requires-Dist: pydantic (==1.4)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: urllib3 (==1.25.8)
+Requires-Dist: PyJWT (==1.7.1)
+
+UNKNOWN
+
+
