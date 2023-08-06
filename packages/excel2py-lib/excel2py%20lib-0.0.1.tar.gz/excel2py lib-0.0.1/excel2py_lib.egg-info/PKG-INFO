@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: excel2py-lib
+Version: 0.0.1
+Summary: A group of excel2py modules
+Home-page: https://github.com/mmsesay/lib
+Author: Muhammad Sesay
+Author-email: muhammadsesay8@gmail.com
+License: UNKNOWN
+Description: # lib
+        It comprises of the excel to py files
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
