@@ -1,0 +1,32 @@
+{% extends "machina/board_base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'ashley/css/main.css' %}"/>
+{% endblock css %}
+
+{% block body %}
+{% block header %}
+{% endblock header %}
+<div class="my-0 px-2 container-fluid" id="main_container">
+  <div class="row">
+    <div class="col-12">
+      {% block breadcrumb %}{% include "partials/breadcrumb.html" %}{% endblock breadcrumb %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <br />
+      {% block messages %}{% include "partials/messages.html" %}{% endblock messages %}
+    </div>
+  </div>
+  {% block content %}
+  {% endblock content %}
+</div>
+{% endblock body %}
+
+{% block js %}
+{{ block.super }}
+<script src="{% static 'ashley/js/ashley.js' %}" type="text/javascript" charset="utf-8"></script>
+{% endblock js %}

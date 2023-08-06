@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: ashley
+Version: 1.0.0b2
+Summary: A self-hosted discussion forum for learning
+Home-page: https://github.com/openfun/ashley
+Author: Open FUN (France Universite Numerique)
+Author-email: fun.dev@fun-mooc.fr
+License: MIT
+Keywords: Django,forum,Open edX,message board,discussion
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=3.0.0)
+Requires-Dist: django-haystack (==3.0b1)
+Requires-Dist: django-machina (==1.1)
+Requires-Dist: draftjs-exporter
+Requires-Dist: oauthlib (>=3.0.0)
+Provides-Extra: ci
+Requires-Dist: twine (==2.0.0) ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: bandit (==1.6.2) ; extra == 'dev'
+Requires-Dist: black (==19.10b0) ; extra == 'dev'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'dev'
+Requires-Dist: ipdb (==0.12.2) ; extra == 'dev'
+Requires-Dist: ipython (==7.9.0) ; extra == 'dev'
+Requires-Dist: isort (==4.3.21) ; extra == 'dev'
+Requires-Dist: mypy (==0.761) ; extra == 'dev'
+Requires-Dist: pyfakefs (==3.7.1) ; extra == 'dev'
+Requires-Dist: pylint-django (==2.0.13) ; extra == 'dev'
+Requires-Dist: pylint (==2.4.4) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'dev'
+Requires-Dist: pytest-django (==3.8.0) ; extra == 'dev'
+Requires-Dist: pytest (==5.3.5) ; extra == 'dev'
+Provides-Extra: sandbox
+Requires-Dist: django-configurations (==2.2) ; extra == 'sandbox'
+Requires-Dist: dockerflow (==2019.10.0) ; extra == 'sandbox'
+Requires-Dist: factory-boy (==2.12.0) ; extra == 'sandbox'
+Requires-Dist: psycopg2-binary (==2.8.4) ; extra == 'sandbox'
+Requires-Dist: gunicorn (==20.0.4) ; extra == 'sandbox'
+
+# Ashley, a self-hosted discussion forum for learning
+
+## Overview
+
+`Ashley` is a forum designed to be integrated into `Learning Management Systems` (LMS).
+
+It is a multi-tenant service intended to be operated independently. It can be integrated to any LMS (like [Open edX](https://open.edx.org) or [Moodle](https://moodle.org)), thanks to the [LTI](https://en.wikipedia.org/wiki/Learning_Tools_Interoperability) standard.
+
+`Ashley` is built on top of [Django-machina](https://github.com/ellmetha/django-machina/), a powerful forum engine for `Django`.
+
+## Quick preview
+
+Here is an example integration of Ashley in `Open edX`:
+
+![demo](docs/demo.gif)
+
+
+## Contributing
+
+This project is intended to be community-driven, so please, do not hesitate to
+get in touch if you have any question related to our implementation or design
+decisions.
+
+We try to raise our code quality standards and expect contributors to follow
+the recommandations from our
+[handbook](https://openfun.gitbooks.io/handbook/content).
+
+## License
+
+This work is released under the MIT License (see [LICENSE](./LICENSE)).
+
+
