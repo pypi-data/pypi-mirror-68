@@ -1,0 +1,71 @@
+.widget{
+    display:flex;
+    flex-direction:column;
+    background: #fefefe;
+
+    width:calc(100% - 3px);
+    height:calc(100% - 3px);
+    overflow:hidden;
+
+    padding:0px;
+    border-radius:2.5px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.14), 0 0px 2px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+}
+
+.vis {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.libvismod{
+    display:contents
+}
+.wrapper{
+    display:contents
+}
+
+.container{
+    flex-grow:100;
+    height: 5%; //Just some arbitrary value seems to work
+}
+
+.container.graph{
+    max-height: calc(100% - 32px);
+    min-height: calc(100% - 32px);
+}
+
+.title{
+    margin:4px;
+    padding: 4px;
+    border-bottom:1px solid #eee;
+}
+
+.title{
+    margin:4px;
+    padding: 4px;
+    border-bottom:1px solid #eee;
+}
+
+.frame {
+    margin:0;
+}
+
+@scale: 0.85;
+.jupyter {
+    width: calc(100%/@scale);
+    height: calc(100%/@scale);
+    border: 0;
+
+    -ms-transform: scale(@scale);
+    -moz-transform: scale(@scale);
+    -o-transform: scale(@scale);
+    -webkit-transform: scale(@scale);
+    transform: scale(@scale);
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
