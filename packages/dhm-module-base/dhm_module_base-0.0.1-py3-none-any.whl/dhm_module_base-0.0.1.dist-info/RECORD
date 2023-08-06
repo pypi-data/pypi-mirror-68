@@ -1,0 +1,12 @@
+dhm_module_base/__init__.py,sha256=WFVjcsHB4jB6GYZVpmRWNF1d4uu3jSgpRPjCwmL5lEQ,401
+dhm_module_base/cli.py,sha256=r5ubrP4WefOt6cqvFpbvAb0ng9j3UR7lXjINUuD9Ois,1447
+dhm_module_base/helpers.py,sha256=DabQfonZLtXAaQo_ummOH227LWTV8CfIrcww7geS0g8,1957
+dhm_module_base/options.py,sha256=lR9s4JjrA1F-zWZtR7-xDwzXcoktGSThXrT7Dhbt1rE,528
+dhm_module_base/settings.py,sha256=3hsfL7U8rAYqK8QVTGzTEyACrnJVdGCNsz8PbeunGJ0,2361
+dhm_module_base/configs/dummy.ini,sha256=bO5o2IypDzNSjxD4PtL4s1CI-r0KNKe3Eo_qSGZ7t7I,498
+dhm_module_base-0.0.1.dist-info/LICENSE,sha256=e-p1p13dUZ9pQKc1nWByeZ2IHUGf-rEnOTTOZaFBui4,1072
+dhm_module_base-0.0.1.dist-info/METADATA,sha256=i8lmQjMa5UfU7taYNC7ugX-9RHOQR49o8KO9_wkrY-w,8174
+dhm_module_base-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dhm_module_base-0.0.1.dist-info/entry_points.txt,sha256=51-xF6q_48iAKIfs0bpuMTCy-XMUywFwMHF5mXFSXA8,71
+dhm_module_base-0.0.1.dist-info/top_level.txt,sha256=GcwnH1R-fGml-UWGopcb2k1CoVfJOUC32VzQGozR4y0,16
+dhm_module_base-0.0.1.dist-info/RECORD,,
