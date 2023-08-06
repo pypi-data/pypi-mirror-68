@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: celery-local-exporter
+Version: 1.0
+Summary: A Prometheus exporter that lives inside your Celery process.
+Home-page: UNKNOWN
+License: Apache License 2.0
+Description: # Celery-Local-Exporter
+        
+        A Prometheus metrics exporter for Celery which lives directly in the celery processes. Unlike other Celery exporters, this does not require use of the events system or a result backend.
+        
+        ## Quick Start
+        
+        To install:
+        
+        ```
+        pip install celery-local-exporter
+        ```
+        
+        To set up the exporter, in your celeryconfig.py or other settings file:
+        
+        ```
+        from celery_exporter import CeleryExporter
+        CeleryExporter.install()
+        ```
+        
+        The `prefork` concurrency pool is not supported at this time, I recommend using `-P threads`.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
+Provides-Extra: tests

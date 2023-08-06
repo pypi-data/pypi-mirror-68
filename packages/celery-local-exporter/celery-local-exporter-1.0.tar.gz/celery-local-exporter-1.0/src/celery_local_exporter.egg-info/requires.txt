@@ -1,0 +1,10 @@
+celery
+prometheus_client
+
+[dev]
+pytest
+requests
+
+[tests]
+pytest
+requests
