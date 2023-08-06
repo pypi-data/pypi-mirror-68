@@ -1,0 +1,13 @@
+LICENCE
+MANIFEST.in
+README.md
+setup.py
+getfilelistpy/__init__.py
+getfilelistpy/getfilelist.py
+getfilelistpy.egg-info/PKG-INFO
+getfilelistpy.egg-info/SOURCES.txt
+getfilelistpy.egg-info/dependency_links.txt
+getfilelistpy.egg-info/requires.txt
+getfilelistpy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_getfilelist.py
