@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gameofcard
+Version: 0.0.4.3
+Summary: Just a humble implementation of different card games.
+Home-page: https://github.com/EPgg92/gameofcard/archive/0.0.4.3
+Author: EPgg92
+Author-email: poggio.enzo@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/EPgg92/gameofcard/archive/0.0.4.3.tar.gz
+Description: # gameofcard
+        On the continent of Westeros, King Robert Baratheon governs the Kingdom
+        of the Seven Crowns ...
+        
+        No, no, no. It's just a humble implementation of different card games.
+        
+        ## Actualy 0.0.4
+        
+        For now only a simple ___briscola___ game is implemented.
+        
+        The next game implemented will be ___Hearts___
+        
+        ## Wanna Try ?
+        ```
+        python3 -m gameofcard
+        ```
+        
+Keywords: card game briscola
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

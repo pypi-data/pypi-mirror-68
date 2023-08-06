@@ -1,0 +1,17 @@
+README.md
+README.rst
+setup.cfg
+setup.py
+gameofcard/__init__.py
+gameofcard/__main__.py
+gameofcard.egg-info/PKG-INFO
+gameofcard.egg-info/SOURCES.txt
+gameofcard.egg-info/dependency_links.txt
+gameofcard.egg-info/top_level.txt
+gameofcard/gameobject/__init__.py
+gameofcard/gameobject/card.py
+gameofcard/gameobject/deck.py
+gameofcard/gameobject/game.py
+gameofcard/gameobject/interactive.py
+gameofcard/gameobject/player.py
+gameofcard/gameobject/playervector.py
