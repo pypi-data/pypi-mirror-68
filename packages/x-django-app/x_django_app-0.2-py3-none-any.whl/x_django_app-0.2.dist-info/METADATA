@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: x-django-app
+Version: 0.2
+Summary: A Python package to get weather reports for any location.
+Home-page: https://github.com/XecusM/x-django-app
+Author: Mohamed Aboel-fotouh
+Author-email: abo.elfotouh@live.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: django
+Requires-Dist: langdetect
+
+# x-django-app
+
+django application for all my custom stuff
+
+The application content of on search view and several tags
+
+Add "x_django_app" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'x_django_app',
+    ]
+
+To use XListView for search and sort options
+
+    from x_django_app.views import XListView
+
+To use x_tags in your templates
+
+  {% load x_tags %}
+
+To use pagination template on your templates
+
+  {% include 'x_django_app/_pagination.html' %}
+
+
