@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyComBat/__init__.py
+pyComBat/utils.py
+pyComBat_test.egg-info/PKG-INFO
+pyComBat_test.egg-info/SOURCES.txt
+pyComBat_test.egg-info/dependency_links.txt
+pyComBat_test.egg-info/top_level.txt
