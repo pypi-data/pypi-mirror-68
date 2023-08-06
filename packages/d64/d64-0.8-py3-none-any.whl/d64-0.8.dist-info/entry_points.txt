@@ -1,0 +1,3 @@
+[console_scripts]
+d64-fsck = d64.scripts.d64_fsck:main
+
