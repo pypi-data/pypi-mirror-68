@@ -1,0 +1,3 @@
+[console_scripts]
+chatwolf = chatwolf.__main__:main
+
