@@ -1,0 +1,25 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "mspyteams"
+author = "Sander Teunissen"
+author-email = "no_mail@nomail.com"
+home-page = "https://github.com/sander76/mspyteams"
+requires-python = ">=3.6"
+description-file = "README.md"
+classifiers = ["License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8"]
+
+[tool.flit.metadata.requires-extra]
+aiohttp = ["aiohttp"]
+test = ["pytest","pytest-asyncio","pytest-aiohttp"]
+dev = ["aiohttp","pytest-cov","pylint","coverage[toml]>=5.0.3","pre-commit"]
+
+[tool.coverage.run]
+branch = true
+
