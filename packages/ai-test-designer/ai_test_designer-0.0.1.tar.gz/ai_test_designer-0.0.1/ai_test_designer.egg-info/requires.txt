@@ -1,0 +1,7 @@
+pandas
+numpy
+requests
+robotframework
+robotframework-requests
+robotframework-requestspro
+progress
