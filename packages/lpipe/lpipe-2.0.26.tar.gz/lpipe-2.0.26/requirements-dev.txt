@@ -1,0 +1,12 @@
+advbumpversion
+codecov
+isort
+moto
+pipenv
+pytest
+pytest-cov
+pytest-localstack
+pytest-xdist
+recommonmark
+sphinx
+wheel

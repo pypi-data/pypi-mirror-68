@@ -1,0 +1,7 @@
+backoff
+boto3
+python-dateutil
+python-decouple
+requests
+sentry-sdk
+structlog
