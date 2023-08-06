@@ -1,0 +1,15 @@
+README.md
+setup.py
+catalogue/__init__.py
+catalogue/catalogue.py
+catalogue/compare.py
+catalogue/engage.py
+catalogue/parser.py
+catalogue/utils.py
+catalogue/version.py
+repro_catalogue.egg-info/PKG-INFO
+repro_catalogue.egg-info/SOURCES.txt
+repro_catalogue.egg-info/dependency_links.txt
+repro_catalogue.egg-info/entry_points.txt
+repro_catalogue.egg-info/requires.txt
+repro_catalogue.egg-info/top_level.txt

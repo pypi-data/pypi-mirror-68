@@ -1,0 +1,3 @@
+[console_scripts]
+catalogue = catalogue.parser:main
+
