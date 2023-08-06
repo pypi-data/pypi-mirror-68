@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: maliarov
+Version: 0.2.3
+Summary: Routine automation
+Home-page: https://github.com/tlmy/webscraping
+Author: Anatolii Maliarov
+Author-email: tly.mov@gmail.com
+License: UNKNOWN
+Description: # Automation
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
