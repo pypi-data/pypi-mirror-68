@@ -1,0 +1,12 @@
+README.md
+setup.py
+salt_cloud_module_kamatera/__init__.py
+salt_cloud_module_kamatera/loader.py
+salt_cloud_module_kamatera.egg-info/PKG-INFO
+salt_cloud_module_kamatera.egg-info/SOURCES.txt
+salt_cloud_module_kamatera.egg-info/dependency_links.txt
+salt_cloud_module_kamatera.egg-info/entry_points.txt
+salt_cloud_module_kamatera.egg-info/requires.txt
+salt_cloud_module_kamatera.egg-info/top_level.txt
+salt_cloud_module_kamatera/clouds/__init__.py
+salt_cloud_module_kamatera/clouds/kamatera.py
