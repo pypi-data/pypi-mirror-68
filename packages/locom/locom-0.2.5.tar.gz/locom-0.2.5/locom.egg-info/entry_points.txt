@@ -1,0 +1,3 @@
+[console_scripts]
+locom = locom:main
+
