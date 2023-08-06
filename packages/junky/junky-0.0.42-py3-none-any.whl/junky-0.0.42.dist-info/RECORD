@@ -1,0 +1,12 @@
+junky/__init__.py,sha256=sJT2SKDzSMHnqLSSOQxTEcectcBqDtRNytxGdl_hZfg,371
+junky/_version.py,sha256=H6e1A1NTcUsW0QRwlQbe769nhKlOZlfB3MNYkRFe5bk,23
+junky/autotrain.py,sha256=WWYEBylT_4jP8isf0YPuKiAY2j0HIF4DPRHm6EXwIko,21519
+junky/junky.py,sha256=vJAWIAHMz88XdUizTdmDWG6_9ubi3RxT7lRwZrCG9Gg,63144
+junky/layers.py,sha256=FiOAyVe316Nk763KsD_oeUZDvhZacpQsQvjv_nNfO94,44884
+junky/plotter.py,sha256=KdhRl4jF5HcqH-2smRxbPT5bBqAeAi79xnvVs8pSSK4,6570
+junky/utils.py,sha256=VKc1PdI9YKhLDo2I7eJq-VzKFwE1483hWSXOMlXcB1c,4921
+junky-0.0.42.dist-info/LICENSE,sha256=GifoT0c9Le1zUJVjZAka4Gx-zMiTKpZOSitIhz__1uk,1547
+junky-0.0.42.dist-info/METADATA,sha256=R1iS7Ue1MS3MYR6ulJko4MnNp312a5G7r-F-vL50GCU,2580
+junky-0.0.42.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+junky-0.0.42.dist-info/top_level.txt,sha256=myUgnPp3Sia6GoRXRGDBv_r-Kn_KXYAKOYFl59R8o78,6
+junky-0.0.42.dist-info/RECORD,,
