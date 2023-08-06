@@ -1,0 +1,6 @@
+cfscrape
+requests
+bs4
+lxml
+click
+six
