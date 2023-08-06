@@ -1,0 +1,16 @@
+gitme/__init__.py,sha256=JYwb-C-8s4xwnUp2y3_Hp7caBJyciFJh6lKJs_WcehM,23
+gitme/command_controller.py,sha256=LqIuRsBlKQ6x0qz79MXWTpH3zRlgvDtfO0aMWI3cQ7M,322
+gitme/entrypoint.py,sha256=zeaN5ukguqmyH4vou6-iBaJBtIRw2Tzbne0fD1oY8c8,2328
+gitme/git_controller.py,sha256=er6Gt_wsj-C9nL0MMyNFNiYlgBijZeP35ateegmpR7Q,3813
+gitme/gitlab_controller.py,sha256=gNKPs7_Er9sYnlkM1ddgiSabj_HV8XTsVuF9tAq5yLU,6196
+gitme/log.py,sha256=z4popgWvLK6mREQx77HU__AUCUWzqsiOKct20Ue7ejU,627
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/git_command.py,sha256=ylme1mgf-qppb0MF6Hqdmo6uV3eRyqcDNbkHvn_m-U0,2138
+tests/test_git_controller.py,sha256=b2K4tSW5F1Uvn8ufpRwQ30MIH0XqahB5EfWDj-S9t_A,4450
+tests/test_gitlab_controller.py,sha256=GSejGWSxNTXVnD-UBhm6LmS9zKyeIwTBVHPl3pU5G0k,2987
+tests/test_run_command.py,sha256=TDcVjB0BE-irYP4ifAChDbYTHVTCMCZUhJDV7Fz5wjg,625
+gitme-0.2.10.dist-info/METADATA,sha256=nIc4OTJTSfoPiHulzzUE-f6JEc83y1qzBdi_7dsywJg,2339
+gitme-0.2.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gitme-0.2.10.dist-info/entry_points.txt,sha256=9SHUdYu2fM1MBUqqp1HFqOAaewv4m5OKUIngbLOiBtU,49
+gitme-0.2.10.dist-info/top_level.txt,sha256=w1HCfEtCa6fg85zFGkU6WCrKdbzdFyIZiaimR8iAQC4,12
+gitme-0.2.10.dist-info/RECORD,,
