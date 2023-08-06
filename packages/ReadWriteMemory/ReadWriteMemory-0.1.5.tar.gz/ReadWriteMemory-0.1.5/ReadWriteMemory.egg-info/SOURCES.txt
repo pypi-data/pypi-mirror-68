@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+ReadWriteMemory/__init__.py
+ReadWriteMemory.egg-info/PKG-INFO
+ReadWriteMemory.egg-info/SOURCES.txt
+ReadWriteMemory.egg-info/dependency_links.txt
+ReadWriteMemory.egg-info/top_level.txt
+tests/testing_script.py
