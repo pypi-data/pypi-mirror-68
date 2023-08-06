@@ -1,0 +1,10 @@
+README.rst
+setup.py
+bin/mfa-aws
+config/mfa-config
+mfa_aws.egg-info/PKG-INFO
+mfa_aws.egg-info/SOURCES.txt
+mfa_aws.egg-info/dependency_links.txt
+mfa_aws.egg-info/not-zip-safe
+mfa_aws.egg-info/requires.txt
+mfa_aws.egg-info/top_level.txt
