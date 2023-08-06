@@ -1,0 +1,3 @@
+[console_script]
+icepy = icepy2.modeleditor
+
