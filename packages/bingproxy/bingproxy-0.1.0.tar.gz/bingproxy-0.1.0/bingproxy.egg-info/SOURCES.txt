@@ -1,0 +1,6 @@
+README.md
+setup.py
+bingproxy.egg-info/PKG-INFO
+bingproxy.egg-info/SOURCES.txt
+bingproxy.egg-info/dependency_links.txt
+bingproxy.egg-info/top_level.txt
