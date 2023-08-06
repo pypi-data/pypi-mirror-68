@@ -1,0 +1,10 @@
+django-picklefield
+psycopg2
+
+[django]
+django-threadlocals
+django-ipware
+
+[example]
+django<3.0,>=2.0
+crudlfap>=0.7.1
