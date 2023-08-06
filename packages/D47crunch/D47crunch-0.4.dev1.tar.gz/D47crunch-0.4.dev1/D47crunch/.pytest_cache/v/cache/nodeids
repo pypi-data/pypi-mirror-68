@@ -1,0 +1,16 @@
+[
+  "tests/test_D47crunch.py::test_smart_type",
+  "test/test_D47crunch.py::test_smart_type",
+  "test/test_D47crunch.py::test_correlated_sum",
+  "test/test_D47crunch.py::test_make_csv",
+  "test/test_D47crunch.py::test_pf",
+  "tests/test_D47crunch.py::test_correlated_sum",
+  "tests/test_D47crunch.py::test_make_csv",
+  "tests/test_D47crunch.py::test_pf",
+  "tests/test_D47crunch.py::test_fCO2eq",
+  "tests/test_D47crunch.py::test_pretty_table",
+  "tests/test_D47crunch.py::test_transpose_table",
+  "tests/test_D47crunch.py::test_w_avg",
+  "tests/test_D47crunch.py::test_D47data_init",
+  "tests/test_D47crunch.py::test_D47data_standardize"
+]
