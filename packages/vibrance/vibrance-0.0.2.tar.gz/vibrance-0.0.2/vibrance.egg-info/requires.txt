@@ -1,0 +1,6 @@
+
+[midi]
+mido
+
+[relay]
+websockify
