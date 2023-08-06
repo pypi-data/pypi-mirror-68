@@ -1,0 +1,11 @@
+[console_scripts]
+lima = Lima.toolbox.cli:main
+
+[lima.cli.camera]
+Basler = Lima.toolbox.camera.basler:basler [basler]
+Eiger = Lima.toolbox.camera.eiger:eiger [eiger]
+
+[lima.cli.camera.scan]
+Basler = Lima.toolbox.camera.basler:scan [basler]
+Eiger = Lima.toolbox.camera.eiger:scan [eiger]
+
