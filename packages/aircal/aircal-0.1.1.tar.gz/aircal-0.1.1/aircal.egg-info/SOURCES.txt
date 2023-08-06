@@ -1,0 +1,11 @@
+README.md
+setup.py
+aircal/__init__.py
+aircal/events.py
+aircal/export.py
+aircal.egg-info/PKG-INFO
+aircal.egg-info/SOURCES.txt
+aircal.egg-info/dependency_links.txt
+aircal.egg-info/not-zip-safe
+aircal.egg-info/requires.txt
+aircal.egg-info/top_level.txt
