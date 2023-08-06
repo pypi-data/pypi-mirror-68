@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vinvelivaanilai
+Version: 0.0.2
+Summary: Vinvelivaanilai
+Home-page: https://gitlab.com/adithyav1511/vinvelivaanilai
+Author: Adithya Venkateswaran
+Author-email: adithyav1511@gmail.com
+License: LGPLv3
+Keywords: space weather, indices
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3
+Requires-Dist: pandas
+
+UNKNOWN
+
+
