@@ -1,0 +1,7 @@
+README.md
+setup.py
+persona/__init__.py
+persona.egg-info/PKG-INFO
+persona.egg-info/SOURCES.txt
+persona.egg-info/dependency_links.txt
+persona.egg-info/top_level.txt
