@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://pngimg.com/uploads/coronavirus/coronavirus_PNG46.png"
+    />
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='nice-select-home.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script defer src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script
+      defer
+      src="{{url_for('static', filename='jquery.nice-select-home.min.js')}}"
+    ></script>
+    <script defer src="{{url_for('static', filename='main.js')}}"></script>
+    <title>Covidindia Server</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="hamburger-menu">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('Data')}}">Data</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('state')}}">Data by State</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('demography')}}">Demography</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('rank')}}">Ranking</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for('analysis')}}">Analysis</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="popDownload" id="divToHide">
+      <div class="beforeClick">
+        <div class="confirm">
+          Download Confirmed Data
+        </div>
+        <div class="Recover">
+          Download Recovered Data
+        </div>
+        <div class="Death">
+          Download Deceased Data
+        </div>
+        <span class="cross-1">&#9747;</span>
+      </div>
+      <div class="afterClick id-1">
+        <div class="json">
+          <a href="{{url_for('download_file',filename='Confirmed')}}" download
+            >Download as json</a
+          >
+        </div>
+        <div class="csv">
+          <a
+            href="{{url_for('download_file_csv',filename='Confirmed')}}"
+            download
+            >Download as csv</a
+          >
+        </div>
+        <span class="cross">&#9747;</span>
+      </div>
+      <div class="afterClick id-2">
+        <div class="json">
+          <a href="{{url_for('download_file',filename='Recovered')}}" download
+            >Download as json</a
+          >
+        </div>
+        <div class="csv">
+          <a
+            href="{{url_for('download_file_csv',filename='Recovered')}}"
+            download
+            >Download as csv</a
+          >
+        </div>
+        <span class="cross">&#9747;</span>
+      </div>
+      <div class="afterClick id-3">
+        <div class="json">
+          <a href="{{url_for('download_file',filename='Death')}}" download
+            >Download as json</a
+          >
+        </div>
+        <div class="csv">
+          <a href="{{url_for('download_file_csv',filename='Death')}}" download
+            >Download as csv</a
+          >
+        </div>
+        <span class="cross">&#9747;</span>
+      </div>
+    </div>
+    <span class="download_des">Click Here to download the data </span>
+    <div class="download">
+      Download Data
+    </div>
+    <div class="option-selector">
+      <h1>Shows the collected Data</h1>
+      <!-- <label for="sheet-content" id="sheet">Choose an option:</label> -->
+
+      <select id="sheet-content">
+        <option value="total confirmed">Total Confirmed</option>
+        <option value="total recovered">Total Recovered</option>
+        <option value="total deceased">Total Death</option>
+      </select>
+    </div>
+
+    <div id="main-container">
+      <div id="data_show"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+body {
+  background: #527379;
+  /* background: linear-gradient(to right bottom, #648880, #293f50); */
+  height: 100%;
+}
+.hamburger-menu {
+  height: 15px;
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: chocolate;
+  transition: all 0.8s;
+  box-shadow: 2px 2px 4px rgb(53, 53, 53);
+}
+.nav-bar {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(49, 77, 90);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 20% 10% 0;
+  transition: 0.8s;
+  z-index: 1;
+}
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+.nav-list {
+  text-align: left;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 5px;
+  letter-spacing: 2px;
+}
+.nav-item a:hover {
+  color: palevioletred;
+}
+
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(-7.5px, 6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(45deg);
+}
+
+.change {
+  left: 0;
+}
+table {
+  background-color: rgb(192, 197, 193);
+}
+#data_show th,
+td p {
+  font: 18px "Segoe UI";
+}
+table,
+th,
+td {
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 15px;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+}
+
+h2 {
+  clear: both;
+}
+
+#sheet-content {
+  border-radius: 5px;
+}
+
+.btn {
+  border-radius: 5px;
+}
+select {
+  border-radius: 5px;
+}
+input {
+  border-radius: 2px;
+  padding: 0.0000003px;
+  height: 22px;
+  border: none;
+  border-bottom: 1px solid antiquewhite;
+  text-align: center;
+  background: transparent;
+  color: white;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+#dis-span select {
+  margin-right: 4px;
+}
+div.ui-datepicker {
+  font-size: 30%;
+}
+
+#main-container {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  border-radius: 7px;
+}
+p {
+  color: hotpink;
+}
+#data_show {
+  border-radius: 7px;
+  box-shadow: 4px 9px 12px rgb(53, 53, 53);
+}
+/* li.active {
+  border-bottom: 1.9px solid blue;
+  background-color: rgb(124, 153, 131);
+  border-radius: 5px;
+} */
+.option-selector {
+  text-align: center;
+}
+h1 {
+  clear: both;
+  color: rgb(205, 211, 243);
+  text-shadow: 4px 2px 4px #424141;
+}
+.option-selector {
+  margin-top: 3%;
+}
