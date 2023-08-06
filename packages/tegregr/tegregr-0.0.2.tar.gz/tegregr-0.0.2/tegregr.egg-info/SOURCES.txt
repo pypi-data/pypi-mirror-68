@@ -1,0 +1,6 @@
+README.md
+setup.py
+tegregr.egg-info/PKG-INFO
+tegregr.egg-info/SOURCES.txt
+tegregr.egg-info/dependency_links.txt
+tegregr.egg-info/top_level.txt
