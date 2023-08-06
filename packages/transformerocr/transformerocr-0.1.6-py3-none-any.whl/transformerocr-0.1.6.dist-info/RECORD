@@ -1,0 +1,17 @@
+transformerocr/__init__.py,sha256=0J32mACRDlEHEUuryoec58HFDoszT_y1Er7esvBbncU,54
+transformerocr/predict.py,sha256=j3ocaPhVY6XGaDNp761vpYggX1z0JfBWe5fByhy13W8,585
+transformerocr/config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformerocr/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformerocr/model/transformer.py,sha256=LecMxasr6_JQNEp8tVU329k2EMuA_rF5iUok4cE7DSs,2761
+transformerocr/model/transformerocr.py,sha256=k2ukKXjOMDG-uuSFj-MrudTdik-ZU_fgdvIaQ7FK87U,1120
+transformerocr/model/vgg.py,sha256=S2uwuMH250ZR0QJ3sUTt4HJrSuwU-OrBfsMGNW4zs2g,853
+transformerocr/model/vocab.py,sha256=m1I9-EF5LxpZv-kLpJD5p6aNvCAxPySMPEZB0hAbfPE,652
+transformerocr/tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transformerocr/tool/detector.py,sha256=lZwxTth9XCxkPvYQA2IRjBETy13J-wT_53yGXwVwbGU,605
+transformerocr/tool/translate.py,sha256=HN4qwcdo1KSj57_kRvYi-jTFeePbgkHHTG76u-fY5hY,1675
+transformerocr/tool/utils.py,sha256=HQigyvxWfdcrqkKcZsggWI0t67PM6pbF2YrOhX7iLwc,180
+transformerocr-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+transformerocr-0.1.6.dist-info/METADATA,sha256=e6-8Blv86GYPKZKo1K7FVrP81SrWkn-f1hc4ay8jDbw,552
+transformerocr-0.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transformerocr-0.1.6.dist-info/top_level.txt,sha256=BnDm-_G2tpIAq8NlShl9DMAsfIvlpxFkwmSXdBbZfvA,15
+transformerocr-0.1.6.dist-info/RECORD,,
