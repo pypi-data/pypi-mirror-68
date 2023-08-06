@@ -1,0 +1,4 @@
+pyuv==1.4.0
+pyzmq==19.0.0
+protobuf==3.11.3
+opencv-python==4.2.0.34
