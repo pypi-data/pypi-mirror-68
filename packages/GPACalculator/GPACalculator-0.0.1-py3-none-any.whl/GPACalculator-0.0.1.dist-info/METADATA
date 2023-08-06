@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: GPACalculator
+Version: 0.0.1
+Summary: Calculator for GPA
+Home-page: https://github.com/s-callahan/GPACalculator
+Author: s-callahan
+Author-email: callasha000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# GPA Calculator
+
+This program will calculate GPA. This is just a simple program made to test making a pip package.
+
