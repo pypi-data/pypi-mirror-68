@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: Manteia
+Version: 0.0.15
+Summary: deep learning,NLP,classification,text,bert,distilbert,albert,xlnet,roberta,gpt2,torch,pytorch,active learning,augmentation,data
+Home-page: https://pypi.org/project/Manteia/
+Author: Yves Mercadier
+Author-email: manteia.ym001@gmail.com
+License: UNKNOWN
+Project-URL: Pypi, https://pypi.org/project/Manteia/
+Project-URL: Documentation, https://manteia.readthedocs.io/en/latest/index.html
+Project-URL: Source Code, https://github.com/ym001/Manteia
+Description: Manteia - proclaim the good word
+        ================================================================
+        
+        Designing your neural network to natural language processing. Deep learning has been used extensively in natural language processing (NLP) because
+        it is well suited for learning the complex underlying structure of a sentence and semantic proximity of various words.
+        Data cleaning, construction model (Bert, Roberta, Distilbert, XLNet, Albert, GPT, GPT2),
+        quality measurement training and finally visualization of your results on several dataset ( 20newsgroups, SST-2, PubMed_20k_RCT, DBPedia, Amazon Review Full, Amazon Review Polarity)..
+        
+        
+        You can install it with pip :
+        
+             __pip install Manteia__
+        
+        Example of use Classification :
+        
+        
+        	from Manteia.Classification import Classification
+        	documents=['a text','text b']  
+        	labels=['a','b']'  
+        	Classification(model_name ='roberta',documents,labels,process=True)
+        
+        
+        Example of use Generation :
+        
+        
+        	from Manteia.Generation import Generation
+        	Generation(seed='What do you do if a bird shits on your car?')
+        	If you're a car owner, you're supposed to be able to call the police and have them take the bird off the car.
+        
+        [Documentation](https://manteia.readthedocs.io/en/latest/#)
+        [Pypi](https://pypi.org/project/Manteia/)
+        [Source](https://github.com/ym001/Manteia)
+        
+        This code is licensed under MIT.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
