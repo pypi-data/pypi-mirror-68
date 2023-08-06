@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: MJOLNIRGui
+Version: 0.0.6
+Summary: Neutron Scattering software suite.
+Home-page: https://github.com/jakob-lass/MJOLNIR-Gui
+Author: Jakob Lass and Henrik Jacobsen
+Author-email: lass.jakob@gmail.com
+License: MPL-2.0
+Description: # MJOLNIR-GUI
+        This is a graphical interface for MJOLNIR: https://github.com/Jakob-Lass/MJOLNIR/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.4,<=3.7
