@@ -1,0 +1,13 @@
+tap_postgres/__init__.py,sha256=z2u2E3zL5dJktcFG-w2hFjLLse42P1puqAmlhPvE6SE,35527
+tap_postgres/db.py,sha256=InJQSDZ7KSJvERtcL2LPiC0zC4XaF1ofcdEUiJfXWhs,8572
+tap_postgres/sync_strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tap_postgres/sync_strategies/common.py,sha256=afdXilO6o1Nt4QmGlACd71WWG-ZV8qWC53BYD730AWM,1250
+tap_postgres/sync_strategies/full_table.py,sha256=egqD4XggifuMuZkxpDyI0oVsT2LxN76bKG7BwOD0WmA,8188
+tap_postgres/sync_strategies/incremental.py,sha256=K1CInyny-7tZdMwlOBTMyilOX3kgPEgkSPK5Lg_VfAc,6425
+tap_postgres/sync_strategies/logical_replication.py,sha256=DGU7d0xaXCdS9Tef_KfcQ-A4Byx2EGTRCCyZcrp1jEQ,25518
+pipelinewise_tap_postgres-1.6.2.dist-info/LICENSE,sha256=xNuDgLmykYhajKZueHKWS9ZgnCFZ47hzbPCyI5-hs9c,32393
+pipelinewise_tap_postgres-1.6.2.dist-info/METADATA,sha256=691jpg61tKLGsn7PWnZqMguXKZSWQdpluAeG03i5mdU,2618
+pipelinewise_tap_postgres-1.6.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pipelinewise_tap_postgres-1.6.2.dist-info/entry_points.txt,sha256=5qLa7TrA8IQvL0PKPEAxgctVufWCKyQIEFh2HW_Gbok,76
+pipelinewise_tap_postgres-1.6.2.dist-info/top_level.txt,sha256=bpw9bOL_B4hbQU71LwCAKfjh-779LGEC7UO6559O8Vg,13
+pipelinewise_tap_postgres-1.6.2.dist-info/RECORD,,
