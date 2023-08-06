@@ -1,0 +1,8 @@
+setup.py
+epidemic_dynamics/__init__.py
+epidemic_dynamics/sir_model.py
+epidemic_dynamics.egg-info/PKG-INFO
+epidemic_dynamics.egg-info/SOURCES.txt
+epidemic_dynamics.egg-info/dependency_links.txt
+epidemic_dynamics.egg-info/not-zip-safe
+epidemic_dynamics.egg-info/top_level.txt
