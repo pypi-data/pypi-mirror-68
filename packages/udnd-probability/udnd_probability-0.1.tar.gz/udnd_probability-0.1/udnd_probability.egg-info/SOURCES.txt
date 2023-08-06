@@ -1,0 +1,11 @@
+README.md
+setup.py
+udnd_probability/Basedistribution.py
+udnd_probability/Binomialdistribution.py
+udnd_probability/Gaussiandistribution.py
+udnd_probability/__init__.py
+udnd_probability.egg-info/PKG-INFO
+udnd_probability.egg-info/SOURCES.txt
+udnd_probability.egg-info/dependency_links.txt
+udnd_probability.egg-info/not-zip-safe
+udnd_probability.egg-info/top_level.txt
