@@ -1,0 +1,10 @@
+storpool.spopenstack-3.0.0-nspkg.pth,sha256=jd7qVjbSP1aWknS5pg_3mxEeXUD0Gx6azLD_DBp7vbA,549
+storpool/spopenstack/__init__.py,sha256=2v0m_b_Ifgyt0nK_cH4xwlJ04QeUYgXkRzPCT4ci4Qs,663
+storpool/spopenstack/spattachdb.py,sha256=eZ430hvIugjMTtQAzFUtvOVbkqpfVyr7B4JFWPtlZMY,7915
+storpool/spopenstack/splocked.py,sha256=Gjsa3p3RQGHwxTzFD5YvQbmNqSRUoDrzfOZ_hmmp6gE,4070
+storpool.spopenstack-3.0.0.dist-info/METADATA,sha256=Kyxs8goNpnqSvnwNfH834esTGc0BvuHeZconLX_0raI,351
+storpool.spopenstack-3.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+storpool.spopenstack-3.0.0.dist-info/namespace_packages.txt,sha256=Mb6rOVp3v0ehOqEheZ5uA-Efs0svED9iB3Mn-fgGtSs,9
+storpool.spopenstack-3.0.0.dist-info/top_level.txt,sha256=Mb6rOVp3v0ehOqEheZ5uA-Efs0svED9iB3Mn-fgGtSs,9
+storpool.spopenstack-3.0.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+storpool.spopenstack-3.0.0.dist-info/RECORD,,
