@@ -1,0 +1,38 @@
+dataset_config:
+  masked_mmimdb:
+    data_dir: ${env.data_dir}
+    depth_first: false
+    fast_read: false
+    use_images: false
+    use_features: true
+    features:
+      train:
+      - datasets/mmimdb/features/lmdbs/mmimdb.lmdb
+      val:
+      - datasets/mmimdb/features/lmdbs/mmimdb.lmdb
+      test:
+      - datasets/mmimdb/features/lmdbs/mmimdb.lmdb
+    annotations:
+      train:
+      - datasets/mmimdb/imdbs/train.jsonl
+      val:
+      - datasets/mmimdb/imdbs/dev.jsonl
+      test:
+      - datasets/mmimdb/imdbs/test.jsonl
+    max_features: 100
+    use_image_feature_masks: false
+    processors:
+      masked_token_processor:
+        type: masked_token
+        params:
+          tokenizer_config:
+            type: bert-base-uncased
+            params:
+              do_lower_case: true
+          mask_probability: 0.15
+          max_seq_length: 256
+    return_features_info: false
+    # Return OCR information
+    use_ocr: false
+    # Return spatial information of OCR tokens if present
+    use_ocr_info: false
