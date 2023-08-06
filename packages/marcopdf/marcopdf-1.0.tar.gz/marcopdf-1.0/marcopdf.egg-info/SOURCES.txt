@@ -1,0 +1,9 @@
+README.md
+setup.py
+marcopdf/__init__.py
+marcopdf/pdf2image.py
+marcopdf/pdf2text.py
+marcopdf.egg-info/PKG-INFO
+marcopdf.egg-info/SOURCES.txt
+marcopdf.egg-info/dependency_links.txt
+marcopdf.egg-info/top_level.txt
