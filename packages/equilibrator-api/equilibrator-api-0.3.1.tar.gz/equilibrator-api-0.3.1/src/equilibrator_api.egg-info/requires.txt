@@ -1,0 +1,4 @@
+matplotlib>=3.0.0
+pyparsing>=2.4.7
+equilibrator-cache==0.3.1
+component-contribution==0.3.1
