@@ -1,0 +1,4 @@
+requests
+mpyq
+pytz
+sc2_simulator
