@@ -1,0 +1,12 @@
+client/__init__.py,sha256=QFZa6QXCq7dd_c4pF_6oa4IdZFDv5P0FLIiMEi4V-sU,19
+client/api.py,sha256=3Nkr6RdW-8LUr0yioJLbYKXj-kxnwzGVz1fTbpJBHsg,2563
+client/config.py,sha256=_0Y-J09J2rSbrsAbRsd6qQN80ujqiq8e20QgUh3xZUw,2202
+client/console.py,sha256=HwottrEUK0_jBiqYX57lsWVJJUvbBJLDgX8JIirSBXM,6873
+client/signals.py,sha256=4RPlGiA5jrspfePAhKTaThGJmlBcH0G4-NXwet625UQ,280
+client/utils.py,sha256=Fg6riyoA8Ef4Fw54H1rmdrMuhmQyyWPOAf7uWtwJlmY,1815
+matillioncli-1.0.3.dist-info/LICENSE,sha256=s13GeT65PpnSaUg6277seJHCckO4fCyf4KrlBD7O908,1055
+matillioncli-1.0.3.dist-info/METADATA,sha256=ezRPiwM9PeGSk8SnkPfAwapCEv7qTEFo6KbukKgoLxI,1531
+matillioncli-1.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+matillioncli-1.0.3.dist-info/entry_points.txt,sha256=lxBelSz_KDHRSyV2tJakwz8h4LYZ6HO12Y8_u77h3PE,54
+matillioncli-1.0.3.dist-info/top_level.txt,sha256=DJiuN0ty6vOMYewH87cxtQ0LWVaJpE0bZ1Blm0e3RCE,7
+matillioncli-1.0.3.dist-info/RECORD,,
