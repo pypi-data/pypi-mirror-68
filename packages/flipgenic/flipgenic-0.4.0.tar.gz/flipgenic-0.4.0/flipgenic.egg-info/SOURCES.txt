@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+flipgenic/__init__.py
+flipgenic/db_models.py
+flipgenic/response.py
+flipgenic/train.py
+flipgenic/vector.py
+flipgenic.egg-info/PKG-INFO
+flipgenic.egg-info/SOURCES.txt
+flipgenic.egg-info/dependency_links.txt
+flipgenic.egg-info/requires.txt
+flipgenic.egg-info/top_level.txt
