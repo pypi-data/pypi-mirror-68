@@ -1,0 +1,13 @@
+wandb_allennlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wandb_allennlp/__main__.py,sha256=uOaRFniRk4cDRnEImO7jDE-eNyZjWsTqv_AttAgexXE,320
+wandb_allennlp/allennlp_translator.py,sha256=MYpitDnZVfZFbBoxsa12_6MJUnS5-In4iVNkBsjOQ8k,3558
+wandb_allennlp/commandline.py,sha256=mji3vm2xziF1LwOM6Ll_pBYdYszQ46vjTf-v-dQtOlY,3519
+wandb_allennlp/training/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wandb_allennlp/training/callbacks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wandb_allennlp/training/callbacks/log_to_wandb.py,sha256=gcNGAPm1pUwUrQ2H0WNl8dlk-oDi82dIiCFc8sMfjUo,2710
+wandb_allennlp-0.1.0.dist-info/LICENSE,sha256=aoFiL-y_EYeGqIqSGFHZFnrJ-r_-nMv8etkaYgq5AhQ,1065
+wandb_allennlp-0.1.0.dist-info/METADATA,sha256=yootvDLY_9WyH07p_Ym4yMuBgyzuskQ1oh-RuKxaF6o,3708
+wandb_allennlp-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wandb_allennlp-0.1.0.dist-info/entry_points.txt,sha256=L8mYGs2X9d9oJeXIw_PD9y5lDcgngNTjSRbAc26SiAA,64
+wandb_allennlp-0.1.0.dist-info/top_level.txt,sha256=vA_b0kEnxBYXGdUHg3aF2IeYmkK3PqFKn8s7R6GEB5c,15
+wandb_allennlp-0.1.0.dist-info/RECORD,,
