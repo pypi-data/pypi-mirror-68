@@ -1,0 +1,16 @@
+pandas
+numpy
+emoji
+nltk
+pprint
+gensim
+spacy
+tsm
+sklearn
+MulticoreTSNE
+hdbscan
+seaborn
+matplot
+networkx
+stop_words
+tqdm
