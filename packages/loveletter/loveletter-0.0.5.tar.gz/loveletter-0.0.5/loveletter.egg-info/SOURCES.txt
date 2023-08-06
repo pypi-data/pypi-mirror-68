@@ -1,0 +1,14 @@
+README.md
+setup.py
+loveletter/__init__.py
+loveletter/bot.py
+loveletter/cards.py
+loveletter/game.py
+loveletter/users.py
+loveletter.egg-info/PKG-INFO
+loveletter.egg-info/SOURCES.txt
+loveletter.egg-info/dependency_links.txt
+loveletter.egg-info/entry_points.txt
+loveletter.egg-info/top_level.txt
+loveletter/tests/__init__.py
+loveletter/tests/test_bot.py
