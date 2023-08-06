@@ -1,0 +1,15 @@
+AUTHORS.rst
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+pytest_envvars/__init__.py
+pytest_envvars/django_utils.py
+pytest_envvars.egg-info/PKG-INFO
+pytest_envvars.egg-info/SOURCES.txt
+pytest_envvars.egg-info/dependency_links.txt
+pytest_envvars.egg-info/entry_points.txt
+pytest_envvars.egg-info/requires.txt
+pytest_envvars.egg-info/top_level.txt
