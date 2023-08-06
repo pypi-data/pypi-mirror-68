@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: pwseqdist
+Version: 0.1.0
+Summary: Efficiently computes distances between protein sequences
+Home-page: https://github.com/agartland/pwseqdist
+Author: Andrew Fiore-Gartland
+Author-email: agartlan@fredhutch.org
+Maintainer: Andrew Fiore-Gartland
+Maintainer-email: agartlan@fredhutch.org
+License: MIT
+Description: A small package that efficiently computes distances between protein sequences. Can accommodate similarity matrices, sequences of different lengths and custom metrics.
+Platform: UNKNOWN
