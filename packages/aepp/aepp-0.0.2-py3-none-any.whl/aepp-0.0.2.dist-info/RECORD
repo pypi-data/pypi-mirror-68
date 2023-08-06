@@ -1,0 +1,13 @@
+aepp/__init__.py,sha256=K29aMGK2oif5PrjebhsXf_dtkZNQo937HKRjYSZH458,5956
+aepp/adobe_platform.py,sha256=bHqqXQ0NrVPLRxLVyPBzYuTZ4cl05iplrqYSpO8giRU,10376
+aepp/adobeio_auth.py,sha256=GenbDzQs4Bk0n8PWPAC72IL1hhQRI9HvmM4azMaWuek,2759
+aepp/catalog.py,sha256=YE3U1KBpCpXmyxAfYI5RBUJNLYTXB_GgILupRV7p3pg,17671
+aepp/config.py,sha256=vZhry4NVGyXkJ9Do_8-I5nDxfVm_m4VbgsivGQymHXI,787
+aepp/dule.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aepp/queryservice.py,sha256=fO3kPrNr64nHbFye-s65mmBx7cQZdVwT8RoP6x6OFDk,11668
+aepp/schema.py,sha256=ZoqUwu2XCxiFtp2PB4Q7UrFst7tHMisJO9FdXPACD2E,17028
+aepp-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+aepp-0.0.2.dist-info/METADATA,sha256=caDd00zXwEuksXDvhnx4gVBNB2kwEVWMAubXrxjN4M4,2182
+aepp-0.0.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+aepp-0.0.2.dist-info/top_level.txt,sha256=dtZJI8SzhWVgZRl68PHKZX_fD6amvDiFR-lqD9FSJvE,5
+aepp-0.0.2.dist-info/RECORD,,
