@@ -1,0 +1,3 @@
+[console_scripts]
+ipyhealth = ipyhealth.cli:main
+
