@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "ytbot"
+version = "0.2.6"
+description = "A simple yet amazing bot for increasing youtube views and it works!!"
+authors = ["Muhammad Fahim <muhammadfahim010@gmail.com>"]
+license = "MIT"
+readme = 'README.rst'
+repository = "https://github.com/adnangif/ytbot"
+homepage = "https://github.com/adnangif/ytbot"
+keywords = ['youtube','bot','view']
+
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyppeteer_stealth = "^1.0.0"
+asyncio = "^3.4.3"
+pyppeteer2 = "^0.2.2"
+click = "^7.1.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+ytbot = 'ytbot:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
