@@ -1,0 +1,54 @@
+- project:
+    templates:
+      - check-requirements
+      - openstack-lower-constraints-jobs
+      - openstack-python3-ussuri-jobs
+      - publish-openstack-docs-pti
+      - release-notes-jobs-python3
+    check:
+      jobs:
+        - openstack-tox-pylint
+        - freezer-agent-tempest
+        - freezer-scheduler-tempest
+    gate:
+      queue: freezer
+      jobs:
+        - openstack-tox-pylint
+        - freezer-agent-tempest
+        - freezer-scheduler-tempest
+
+- job:
+    name: freezer-legacy-dsvm-base
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/freezer/run.yaml
+    post-run: playbooks/legacy/freezer/post.yaml
+    timeout: 7800
+    required-projects:
+      - openstack/devstack-gate
+      - openstack/freezer
+      - openstack/freezer-api
+      - openstack/freezer-web-ui
+      - openstack/python-freezerclient
+      - openstack/freezer-tempest-plugin
+
+- job:
+    name: freezer-ubuntu
+    parent: freezer-legacy-dsvm-base
+
+- job:
+    name: freezer-centos-7
+    parent: freezer-legacy-dsvm-base
+    nodeset: centos-7
+
+- job:
+    name: freezer-opensuse-15
+    parent: freezer-legacy-dsvm-base
+    nodeset: opensuse-15
+
+- job:
+    name: freezer-scheduler-tempest
+    parent: freezer-tempest-scheduler
+
+- job:
+    name: freezer-agent-tempest
+    parent: freezer-tempest-agent
