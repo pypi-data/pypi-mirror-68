@@ -1,0 +1,11 @@
+subset/DICTIONARY_LICENSE,sha256=KDMmpCLinFEOK6aAVRjEGM48Ne0frcPuyD0tpPbFoFU,11758
+subset/LICENSE,sha256=MOJoJ7Oq7SGhcXNKuilJ4pXhxl0O_UhwZ_1HTJgnVIk,1054
+subset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+subset/app.py,sha256=XlyuxIZFuz7fUYgEl1iP6PLpGavTVwqtqn25-rsX5t4,15580
+subset/dictionary.txt,sha256=KLECNk07W2RVmHkg_lmUbsqKTEhur6MRIf2TkT9k1yE,1310273
+subset-0.1.0.data/scripts/subset,sha256=TvzZFUCZWjs_QH6jwRHc0dXP4JvWaJLPBLHtt9jMZoQ,45
+subset-0.1.0.dist-info/LICENSE,sha256=MOJoJ7Oq7SGhcXNKuilJ4pXhxl0O_UhwZ_1HTJgnVIk,1054
+subset-0.1.0.dist-info/METADATA,sha256=LsztAza1VH9_8o5mUzND9YkcuwCRKhEau32cnVuF1w0,3125
+subset-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+subset-0.1.0.dist-info/top_level.txt,sha256=1LixMmE0EtSAKkwQKQ4EBptgkEDtLOkX09_d399ovGc,7
+subset-0.1.0.dist-info/RECORD,,
