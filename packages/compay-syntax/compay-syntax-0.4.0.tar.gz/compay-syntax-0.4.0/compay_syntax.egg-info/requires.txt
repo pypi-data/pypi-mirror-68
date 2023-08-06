@@ -1,0 +1,9 @@
+numpy
+openslide-python
+matplotlib
+jupyter-client
+jupyter-core
+Pillow
+typeguard
+pandas
+scikit-image
