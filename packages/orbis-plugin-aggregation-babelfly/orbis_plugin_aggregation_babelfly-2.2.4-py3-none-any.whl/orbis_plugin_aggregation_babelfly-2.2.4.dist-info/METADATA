@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-aggregation-babelfly
+Version: 2.2.4
+Summary: The Babelfly aggregation plugin for Orbis
+Home-page: https://github.com/orbis-eval/orbis_plugin_aggregation_babelfly
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.20.0)
+
+# Babelfly Aggregation Plugin for Orbis
+
+Please set the environment variable BABELNET_API_KEY with your own Babelnet API key.
+
+
