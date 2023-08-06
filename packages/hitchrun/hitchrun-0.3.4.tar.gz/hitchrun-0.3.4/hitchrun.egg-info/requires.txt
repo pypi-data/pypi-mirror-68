@@ -1,0 +1,8 @@
+argcomplete>=0.8.1
+click
+colorama
+commandlib
+path.py
+pip-tools>=5.1.2
+pip>=20.1.1
+prettystack>=0.2.6
