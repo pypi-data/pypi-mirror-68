@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    >
+
+    <xs:element name="container" type="containerType"/>
+    <xs:complexType name="containerType">
+        <xs:sequence>
+            <xs:element name="decimal01" type="xs:decimal"/>
+            <xs:element name="decimal02" type="xs:decimal"/>
+            <xs:element name="decimal03" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
