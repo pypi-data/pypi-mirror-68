@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: bifrostapi
+Version: 0.0.7
+Summary: Datahandling functions for bifrost dashboard
+Home-page: https://github.com/ssi-dk/bifrostapi
+Author: Martin Basterrechea
+Author-email: mbas@ssi.dk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
