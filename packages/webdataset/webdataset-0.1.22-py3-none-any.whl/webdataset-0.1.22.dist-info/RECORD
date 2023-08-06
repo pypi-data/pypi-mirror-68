@@ -1,0 +1,13 @@
+webdataset/__init__.py,sha256=BPJ6E7tZ91z6nPLMUyV3NYnYkMG2ZYCTmqQcWolkxKU,507
+webdataset/autodecode.py,sha256=BINTLMZgU5Aa_eS2MjN6aokPOFc14CuhEjGorUUFrqo,6837
+webdataset/checks.py,sha256=uXsv2XWkuPuhxTgF-JwWCyDVIKq9OIEANnLdJq1Aqdw,1388
+webdataset/dataset.py,sha256=uW212BkC40Y_vwg5-9oGn-8y0Jra2WKWtwyxoMSYkmk,11528
+webdataset/filters.py,sha256=miHNq1VEJqbmbnpRcUvwe5UrnEXYqCNPCEpLOGjzspA,8472
+webdataset/gopen.py,sha256=Vi65cjr5UqcWTWtDxWPFtYqEOxsQ9VeX6F3exo5xDS0,5292
+webdataset/tenbin.py,sha256=gXMkXNem_kZIoV_e4PioWMJ-_uVJ3Cl3MbEs2HrW5Gk,9786
+webdataset/writer.py,sha256=K6lODsm7izQckSh5bBpvkGkM5z5ofNHgG3xzKrwUnm0,10181
+webdataset-0.1.22.dist-info/LICENSE,sha256=q15UoQRENJPkNeduYNy7a5UEXhpCvMDYpmL6ABrQpRg,1485
+webdataset-0.1.22.dist-info/METADATA,sha256=gzn6jUb_9BNSiQPdtSi_xbS8pWywiNtLBWAIa76W8ww,14160
+webdataset-0.1.22.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+webdataset-0.1.22.dist-info/top_level.txt,sha256=XXo5bhdYuSlXM4vz1J208ndLLNGJB6SirkrvD9Us5fI,11
+webdataset-0.1.22.dist-info/RECORD,,
