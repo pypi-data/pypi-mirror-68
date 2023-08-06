@@ -1,0 +1,114 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-05-18 11:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Preferred-Encodings: utf-8 latin1\n"
+
+#: ./ftw/noticeboard/content/configure.zcml:14
+msgid "Adds effective date and expiration date fields to Notices"
+msgstr ""
+
+#: ./ftw/noticeboard/content/configure.zcml:14
+msgid "Date range for Notices"
+msgstr ""
+
+#: ./ftw/noticeboard/profiles/default/types/ftw.noticeboard.Notice.xml
+msgid "Notice"
+msgstr ""
+
+#: ./ftw/noticeboard/profiles/default/types/ftw.noticeboard.NoticeBoard.xml
+msgid "NoticeBoard"
+msgstr ""
+
+#: ./ftw/noticeboard/profiles/default/types/ftw.noticeboard.NoticeCategory.xml
+msgid "NoticeCategory"
+msgstr ""
+
+#: ./ftw/noticeboard/profiles/default/types/ftw.noticeboard.NoticeImage.xml
+msgid "NoticeImage"
+msgstr ""
+
+#: ./ftw/noticeboard/browser/templates/conditions.pt:9
+msgid "Terms and conditions for \"${title}\""
+msgstr ""
+
+#. Default: "Please accept the <a target=\"_blank\" href=\"./terms-and-conditions\">terms and conditions</a>"
+#: ./ftw/noticeboard/content/notice.py:50
+msgid "description_accept_conditions"
+msgstr ""
+
+#. Default: "Those conditions needs to be accepted for posting in this category"
+#: ./ftw/noticeboard/content/category.py:20
+msgid "description_conditions"
+msgstr ""
+
+#. Default: "You need to accept the terms and conditions"
+#: ./ftw/noticeboard/content/notice.py:68
+msgid "error_not_accepted"
+msgstr ""
+
+#: ./ftw/noticeboard/configure.zcml:23
+msgid "ftw.noticeboard default"
+msgstr ""
+
+#: ./ftw/noticeboard/configure.zcml:31
+msgid "ftw.noticeboard:uninstall"
+msgstr ""
+
+#. Default: "Terms and Conditions"
+#: ./ftw/noticeboard/content/notice.py:49
+msgid "label_accept_conditions"
+msgstr ""
+
+#. Default: "Add new Notice to this categroy"
+#: ./ftw/noticeboard/browser/templates/noticeboard.pt:64
+msgid "label_add_new_notice"
+msgstr ""
+
+#. Default: "Terms and Conditions"
+#: ./ftw/noticeboard/content/category.py:19
+msgid "label_conditions"
+msgstr ""
+
+#. Default: "Contact"
+#: ./ftw/noticeboard/browser/templates/notice.pt:39
+msgid "label_contact"
+msgstr ""
+
+#. Default: "E-Mail"
+#: ./ftw/noticeboard/content/notice.py:36
+msgid "label_email"
+msgstr ""
+
+#. Default: "Image"
+#: ./ftw/noticeboard/content/image.py:20
+msgid "label_image"
+msgstr ""
+
+#. Default: "My Notices"
+#: ./ftw/noticeboard/browser/noticeboard.py:65
+#: ./ftw/noticeboard/browser/templates/noticeboard.pt:45
+msgid "label_my_notices"
+msgstr ""
+
+#. Default: "Price"
+#: ./ftw/noticeboard/browser/templates/notice.pt:35
+#: ./ftw/noticeboard/content/notice.py:31
+msgid "label_price"
+msgstr ""
+
+#. Default: "Text"
+#: ./ftw/noticeboard/content/notice.py:42
+msgid "label_text"
+msgstr ""
+
