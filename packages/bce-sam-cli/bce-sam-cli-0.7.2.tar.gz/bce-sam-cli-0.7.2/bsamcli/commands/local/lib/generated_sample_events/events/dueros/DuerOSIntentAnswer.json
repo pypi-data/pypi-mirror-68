@@ -1,0 +1,85 @@
+{
+    "version": "2.0",
+    "session": {
+        "new": false,
+        "sessionId": "{{session_id}}",
+        "attributes": {}
+    },
+    "context": {
+        "System": {
+            "user": {
+                "userId": "user_id_123",
+                "accessToken": "a408ae546bf943e3be1b5194"
+            },
+            "application": {
+                "applicationId": "{{application_id}}"
+            },
+            "device": {
+                "deviceId": "device_id_123",
+                "supportedInterfaces": {
+                    "VoiceInput": {},
+                    "VoiceOutput": {},
+                    "AudioPlayer": {},
+                    "VideoPlayer": {
+                        "preferedVideoCodec": [
+                            "H.264",
+                            "H.265"
+                        ],
+                        "preferedAudioCodec": [
+                            "MP3"
+                        ],
+                        "preferedBitrate": "480P",
+                        "preferedWidth": 854,
+                        "preferedHeight": 480
+                    },
+                    "Display": {}
+                }
+            }
+        },
+        "AudioPlayer": {
+            "token": "164182b6954cb7a94a30b",
+            "offsetInMilliSeconds": 300,
+            "playerActivity": "PLAYING"
+        },
+        "VideoPlayer": {
+            "token": "164182b6954cb7a94a30b",
+            "error": {
+                "type": "MEDIA_ERROR_INVALID_REQUEST",
+                "message": "invalid request"
+            },
+            "offsetInMilliseconds": 500,
+            "playerActivity": "PLAYING"
+        }
+    },
+    "request": {
+        "type": "IntentRequest",
+        "requestId": "{{request_id}}",
+        "timestamp": "1499169543",
+        "query": {
+            "type": "TEXT",
+            "original": "帮我查一下个税"
+        },
+        "intents": [
+            {
+                "name": "personal_income_tax.inquiry",
+                "confirmationStatus": "NONE",
+                "slots": {
+                    "compute_type": {
+                        "name": "compute_type",
+                        "values": [
+                            "个税"
+                        ],
+                        "confirmationStatus": "NONE"
+                    },
+                    "inquiry": {
+                        "name": "inquiry",
+                        "values": [
+                            "查一下"
+                        ],
+                        "confirmationStatus": "NONE"
+                    }
+                }
+            }
+        ]
+    }
+}

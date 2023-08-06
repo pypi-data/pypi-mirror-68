@@ -1,0 +1,8 @@
+include LICENSE
+include requirements/base.txt
+include requirements/dev.txt
+recursive-include bsamcli/local/init/templates *
+recursive-include bsamcli/lib *.json
+recursive-include bsamcli/commands/local/lib/generated_sample_events *.json
+prune tests
+

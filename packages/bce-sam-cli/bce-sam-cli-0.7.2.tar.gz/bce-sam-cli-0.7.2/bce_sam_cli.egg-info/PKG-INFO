@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: bce-sam-cli
+Version: 0.7.2
+Summary: BCE SAM CLI is a CLI tool for local development and testing of Serverless applications
+Home-page: https://github.com/bcelabs/bce-sam-cli
+Author: Baidu Cloud Engine
+Author-email: faas-rd@baidu.com
+License: Apache License 2.0
+Description: # BCE SAM CLI
+        
+        BSAM CLI是一个基于 BCE SAM 规范的命令行工具，它提供了本地开发环境，能够帮助您在本地进行函数的开发、测试和执行。
+        
+        -  [x] 支持的 CFC 运行时
+           
+           -  [x] ``nodejs10``
+           -  [x] ``nodejs12``   
+           -  [x] ``python2``
+           -  [x] ``python3``
+           -  [x] ``php7``
+           -  [x] ``lua5.3``
+           -  [x] ``powershell6.2``
+           -  [x] ``java8``
+           -  [x] ``go``
+           -  [x] ``dotnetcore2.2``
+        
+        -  使用 ``bsam init`` 初始化函数目录
+        -  使用 ``bsam local`` 执行、Debug 函数
+        
+Keywords: BCE SAM CLI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
