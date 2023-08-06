@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: # Job name is derived from experiment
+spec:
+  template:
+    spec:
+      containers:
+      - name: orchestrate
+        image: # Image name is provided by user
+        env:
+          - name: POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          # Other environment variables will be added as needed
+        resources:
+          # Resources are provided by the user in resources_per_model
+          # We also use this field ot configure GPUs
+      dnsPolicy: "None"
+      dnsConfig:
+        nameservers:
+          - 8.8.8.8
+          - 8.8.4.4
+      restartPolicy: Never
+  backoffLimit: 4
+  parallelism: # parallelism is determined by parallel_bandwidth
