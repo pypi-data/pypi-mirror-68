@@ -1,0 +1,47 @@
+dataset_config:
+  conceptual_captions:
+    data_dir: ${env.data_dir}
+    depth_first: false
+    fast_read: false
+    use_images: false
+    use_features: true
+    features:
+      train:
+      - datasets/cc/features/lmdbs/cc_train.lmdb
+      val:
+      - datasets/cc/features/lmdbs/cc_val.lmdb
+      test:
+      - datasets/cc/features/lmdbs/cc_val.lmdb
+    annotations:
+      train:
+      - datasets/cc/imdbs/train_all.npy
+      val:
+      - datasets/cc/imdbs/val.npy
+      test:
+      - datasets/cc/imdbs/val.npy
+    max_features: 100
+    processors:
+      text_processor:
+        type: vocab
+        params:
+          max_length: 20
+          vocab:
+            type: intersected
+            embedding_name: glove.6B.300d
+            vocab_file: vocabs/vocabulary_conceptual_captioning_thresh5.txt
+          preprocessor:
+            type: simple_sentence
+            params: {}
+      caption_processor:
+        type: caption
+        params:
+          vocab:
+            type: intersected
+            embedding_name: glove.6B.300d
+            vocab_file: vocabs/vocabulary_conceptual_captioning_thresh5.txt
+    min_captions_per_img: 1
+    return_features_info: false
+    # Return OCR information
+    use_ocr: false
+    # Return spatial information of OCR tokens if present
+    use_ocr_info: false
