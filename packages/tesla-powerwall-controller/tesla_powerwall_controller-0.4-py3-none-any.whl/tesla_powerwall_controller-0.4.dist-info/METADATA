@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: tesla-powerwall-controller
+Version: 0.4
+Summary: Python controller for reading tesla powerwall status
+Home-page: https://github.com/samtherussell/tesla-powerwall-controller
+Author: samtherussell
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Tesla powerwall controller (Unofficial)
+
+Python wrapper around some of the basic powerwall api calls
+
+
+# Quick start:
+Download from [PyPI](hhttps://pypi.org/project/tesla-powerwall-controller/):
+```bash
+pip install tesla-powerwall-controller
+```
+Usage:
+```python
+from tesla_powerwall_controller import PowerwallController
+
+controller = PowerwallController("192.168.0.100")
+
+controller.get_battery_charge()
+>> "The battery is at 42 percent"
+
+controller.get_grid_power()
+>> "You are exporting 200 watts"
+
+```
+
