@@ -1,0 +1,34 @@
+graft docs
+graft src
+graft ci
+graft tests
+
+include .bumpversion.cfg
+include .coveragerc
+include .cookiecutterrc
+include .editorconfig
+
+include AUTHORS.rst
+include CHANGELOG.rst
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+
+include tox.ini .travis.yml .appveyor.yml .readthedocs.yml .pre-commit-config.yaml
+
+global-exclude *.py[cod] __pycache__/* *.so *.dylib
+
+# added by check_manifest.py
+recursive-include src *.py
+
+# added by check_manifest.py
+include Dockerfile
+
+# added by check_manifest.py
+include *.md
+
+# added by check_manifest.py
+recursive-include examples *.pem
+
+# added by check_manifest.py
+include *.txt
