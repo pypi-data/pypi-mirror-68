@@ -1,0 +1,17 @@
+cysgp4/__init__.py,sha256=xmv5sRTQIgh6yFKnXMhn1eAp0U8n0h7fCQSlRF_nVUQ,185
+cysgp4/cysgp4.cp36-win_amd64.pyd,sha256=6PfJTx8J7FZlMEOg-Kzi4rMdmbZzfOGCey1IZKeyRho,392192
+cysgp4/helpers.py,sha256=5hz5t42VHHd0YfK6MYGAsS9DzSQCQwBtLRhNfDTgoMk,8132
+cysgp4/init_testrunner.py,sha256=LbTvqoQrE4WnlhAg_33W6IeELiAr1IgcX8-eES379YQ,464
+cysgp4/utils.cp36-win_amd64.pyd,sha256=jOG3N8cOHO7n-0cXdRdyHcvqhA_OLKmiFzkYv_kr5fs,98304
+cysgp4/version.py,sha256=c2xA3_fvyXMRJ2vf9KxaLcUSgfvIYa88qmK7H8cyZTU,305
+cysgp4/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cysgp4/tests/conftest.py,sha256=egohdMQ_AduRqNjb2dtwiVxiZhCk011PRLCsD4fVvS8,484
+cysgp4/tests/test_cysgp4.py,sha256=BAxddi8KmNhhJlEwJIskEXT2kyz19348wEMKJJjAVFM,23383
+cysgp4/tests/test_utils.py,sha256=-Sy4YqWAYpmw84Bw71UZ07q-gGrFcU9bgTl_C1AK7LE,2229
+cysgp4/tests/data/science.txt,sha256=njj70I9nvrgV0NBOT-nUlmC13Wh2BPHiSAs6wmY67-o,11088
+cysgp4-0.3.3.dist-info/COPYING.Apache2,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+cysgp4-0.3.3.dist-info/COPYING.GPLv3.txt,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+cysgp4-0.3.3.dist-info/METADATA,sha256=MRzqgB0OQati5PzSti0-YTWWTv9hrwlCgRA28Bs5omE,9328
+cysgp4-0.3.3.dist-info/WHEEL,sha256=Mp7cNSJkwOccBZaxEtyYhlze1HXRCLLX3tIlVLTix2E,106
+cysgp4-0.3.3.dist-info/top_level.txt,sha256=bCXwR0QSPGtiqHYXbRPdD4z-UfVzWLR-0VGNzQIqjvM,7
+cysgp4-0.3.3.dist-info/RECORD,,
