@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: django-media-app
+Version: 0.5.2
+Summary: A Django app to handle media files.
+Home-page: https://github.com/shawara/django-media-app
+Author: Mahmoud Shawara
+Author-email: me.shawara@gmail.com
+License: BSD-3-Clause  # Example license
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django (>=2.2)
+Requires-Dist: django-appconf (>=0.6.0)
+Requires-Dist: Pillow (>=6.0.0)
+Requires-Dist: djangorestframework (>=3.9)
+Requires-Dist: python-magic (==0.4.15)
+
+==========
+Media App
+==========
+
+Media app is a Django app to make it easy for dealing with files (images,videos,docs and others),
+Detailed documentation is in the "docs" directory.
+
+Quick start
+-----------
+
+1. Add "media_app" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'media_app',
+    ]
+
+
+2. Run ``python manage.py migrate`` to create the media models.
+
+
+
+
+
