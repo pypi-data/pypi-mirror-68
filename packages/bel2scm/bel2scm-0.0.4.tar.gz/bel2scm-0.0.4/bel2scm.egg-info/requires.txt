@@ -1,0 +1,7 @@
+numpy
+torch
+pyro-ppl
+networkx
+scipy
+json
+pybel
