@@ -1,0 +1,12 @@
+plute/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+plute/base.py,sha256=33syZzczFl-iPO7c3jSB8MN-_X_TnRUPz_7oyXfC8Tw,707
+plute/text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plute/text/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plute/text/features/regex.py,sha256=xY-H0wlVH1sM7GRFBVPMrNk-N7dqgOSp1tupRirdsag,1093
+plute/text/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plute/text/utils/utterances.py,sha256=o6UYRp8tXyz3v6kbIbQKPD3So4w6h_WpPJ5q46HjDUE,2673
+plute/types.py,sha256=G7y1JeH5KOP9clRl7oWteiNSZPMCH4F6NAGNz8Vom9I,297
+plute-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+plute-0.0.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+plute-0.0.1.dist-info/METADATA,sha256=L7BaP1r3Icb675Z5xlN8XNgBAPD33800rAzPsJuWVL0,296
+plute-0.0.1.dist-info/RECORD,,
