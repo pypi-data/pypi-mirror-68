@@ -1,0 +1,7 @@
+-r common.txt
+-r screenvis.txt
+pylint
+pylint-django
+mypy
+typing-extensions
+django-stubs
