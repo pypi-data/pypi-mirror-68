@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        assembler=assembler.cli:main
+    
