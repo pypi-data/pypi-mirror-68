@@ -1,0 +1,2 @@
+apache-airflow~=1.10
+grpcio>=1.15.0
