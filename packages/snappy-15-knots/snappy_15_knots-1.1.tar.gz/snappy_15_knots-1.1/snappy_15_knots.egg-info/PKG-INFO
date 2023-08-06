@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: snappy-15-knots
+Version: 1.1
+Summary: Database of snappy manifolds
+Home-page: https://bitbucket.org/t3m/snappy_extra_knots
+Author: Marc Culler and Nathan M. Dunfield and Mattias Goerner and Malik Obeidin
+Author-email: snappy-help@computop.org
+License: GPLv2+
+Description: \ 
+        This package provides a database of 15 crossing knots and 14 crossing
+        links for use with the spherogram and snappy packages.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Mathematics
