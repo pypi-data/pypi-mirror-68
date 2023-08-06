@@ -1,0 +1,10 @@
+*.py[co]
+*.sw[po]
+*~
+*.log
+*.mo
+
+/docs/_build/
+/.tox
+/.coverage
+/appi.egg-info

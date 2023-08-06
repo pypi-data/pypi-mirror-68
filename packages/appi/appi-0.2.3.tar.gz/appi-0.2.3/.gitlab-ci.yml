@@ -1,0 +1,45 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq python3-dev python3-pip
+  - python3 --version
+  - pip3 install tox
+
+stages:
+  - build
+  - test
+  - qa
+
+build:
+  stage: build
+  script:
+    - TOXENV=packaging
+
+docs:
+  stage: build
+  script:
+    - TOXENV=docs
+
+test_py35:
+  stage: test
+  script:
+    - TOXENV=py35 tox
+
+# test_py36:
+#   stage: test
+#   script:
+#     - TOXENV=py36 tox
+# 
+# test_py37:
+#   stage: test
+#   script:
+#     - TOXENV=py37 tox
+
+coverage:
+  stage: qa
+  script:
+    - TOXENV=coverage tox
+  coverage: '/TOTAL.+ ([0-9]{1,3}%)/'
+
+pep8:
+  stage: qa
+  script:
+    - TOXENV=pep8
