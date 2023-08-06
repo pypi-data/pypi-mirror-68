@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: envyconfig
+Version: 0.4.0
+Summary: YAML reader with ENV interpolation.
+Home-page: https://github.com/geirem/envyconfig
+Author: https://github.com/geirem
+Author-email: geiremb@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/geirem/envyconfig/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/geirem/envyconfig/
+Description: # pyconfig
+        Python package for YAML config files.  Reads a specified YAML file, and returns the corresponding dict structure.
+        
+        Builds on the PyYAML package, with the following additions:
+        * Environment variables can be specified as config values.
+        * GCP Secrets can be specified as config values.
+        * Nested YAML structures can be flattened to get a simple key / value dict.
+        * Default values can be specified, for instance from the command line.
+        
+        
+        ## Basic Usage
+        ```python
+        >>> import envyconfig
+        >>> config = envyconfig.load('config.yaml')
+        >>> print(config)
+        {'foo': {'bar': 'baz'}}
+        ```
+        
+        ### Sample config file.
+        ```yaml
+        foo:
+           # Loads "bar" from secret "my-secret" in the "my-project" GCP project.  Defaults to "otherwise".
+           bar: ${gs:/my-project/my-secret:otherwise}
+           # Loads "baz" from the environment variable "ENVVAR".  Defaults to "something_else".
+           baz: ${env:ENVVAR:something_else}
+        ```
+        
+        
+        ## Usage Details
+        ### Interpolation keys.
+        You indicate the values you want interpolated by one of the configured engines through a wrapper
+        `${<method>:<key>:<default>}`, such as `${env:MY_VAR:my_default}`.  The currently supported engines are
+        * environment (`os.environ`) variables (key: `env`), and
+        * Google Secret Manager (key: `gs`).
+        The engines are lazy-loaded, so unless you request interpolation by one of them, the configuration is not loaded.
+        This is useful for advanced engines (presently `gs`), that rely on external libraries and configuration.
+        
+        As the method, key and default values are separated by a `:`, this character is not allowed in the method or
+        key names.  It is allowed in default values, though.  So `$(env:REDIRECT_PAGE:https://localhost/}` is legal syntax.
+        
+        ### Environment variables
+        Environment variables behave like you expect them to.
+        
+        ### Google Secret Manager
+        This engine requires the optional dependency (or separate installation of) `googlesecrets`
+        (ie. `pip install envyconfig[googlesecrets]`), and a pointer to your GCP key (`GOOGLE_APPLICATION_CREDENTIALS`) with
+        the appropriate credentials.
+        
+        #### Credits and further documentation
+        * [GCP Python Secret Manager](https://github.com/googleapis/python-secret-manager)
+        * [PyYAML](https://pyyaml.org)
+        * [EnvyConfig](https://github.com/geirem/envyconfig/)
+        
+Keywords: configtools development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: googlesecrets
