@@ -1,0 +1,10 @@
+timeflux_example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeflux_example/nodes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timeflux_example/nodes/arithmetic.py,sha256=L4c5w-eUBVWvravwYWw70d15QyyOj0JA8z8RFiN2a30,1960
+timeflux_example/nodes/dynamic.py,sha256=bPCITU_dxnGPmPZoA9QQ1OrVkV5tZAl0mhPfONcy4Sw,1875
+timeflux_example/nodes/sinus.py,sha256=rldH_Rd4Rmdr6DEwtzsEeFFOkXYCmMWnM71440quhHc,1260
+timeflux_example-0.1.0.dist-info/LICENSE,sha256=gn-97na5XTY9OI0kIlc-xNyqa2GUs7-c8Ob4Elw1Ivw,1092
+timeflux_example-0.1.0.dist-info/METADATA,sha256=nX2tM_BhynLfLXAmvbVzD-yZ7FOkBWW3u61uK4g02Yg,1509
+timeflux_example-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+timeflux_example-0.1.0.dist-info/top_level.txt,sha256=QpoAykkbuD---WmVzZThj0a8_T_xGe0uvG1P1sxUnXM,17
+timeflux_example-0.1.0.dist-info/RECORD,,
