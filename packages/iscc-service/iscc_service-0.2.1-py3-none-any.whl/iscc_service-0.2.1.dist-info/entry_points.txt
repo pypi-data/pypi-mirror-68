@@ -1,0 +1,3 @@
+[console_scripts]
+isccservice=iscc_service.main:run_server
+
