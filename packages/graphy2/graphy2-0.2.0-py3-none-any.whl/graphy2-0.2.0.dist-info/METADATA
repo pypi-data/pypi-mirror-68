@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: graphy2
+Version: 0.2.0
+Summary: graphy2: cross platform compatible graphs and tables
+Home-page: UNKNOWN
+Author: Samuel Baker, Nina Di Cara, Oliwia Michalak
+Author-email: samuelbaker.researcher@gmail.com
+Maintainer: Samuel Baker, Nina Di Cara, Oliwia Michalak
+Maintainer-email: samuelbaker.researcher@gmail.com
+License: MIT
+Download-URL: https://github.com/samuelbaker93/graphy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Requires-Dist: seaborn (>=0.10.1)
+Requires-Dist: pandas (>=1.0.3)
+Requires-Dist: matplotlib (>=3.2.1)
+Requires-Dist: cycler (>=0.10.0)
+Requires-Dist: kiwisolver (>=1.2.0)
+Requires-Dist: pyparsing (>=2.4.7)
+Requires-Dist: python-dateutil (>=2.8.1)
+Requires-Dist: pytz (>=2020.1)
+
+
+graphy2 is designed to try and insure that a given table or graph standard can be constructed 
+from any given statistical or python platform. It is built on top of many external libraries listed below and acts as 
+an API for these libraries. The core libraries graphy2 is currently using are:
+
+ Seaborn:       <https://github.com/mwaskom/seaborn>
+ Pandas:        <https://github.com/pandas-dev/pandas>
+ matplotlib:    <https://github.com/pandas-dev/pandas>
+
+ graphy2 can be called within python but graphy2 also comes with a wrapper for R, Stata and SPSS so that individuals can 
+ still use the program from the software/code type they prefer. It is designed to be as simple as possible, with most
+ commands being pushed to a single line. graphy2 also contains a list of styles for well used graphs/tables that should
+ reflect the standards expected from certain journals.
+
+
