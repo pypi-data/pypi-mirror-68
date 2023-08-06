@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pybackoff.egg-info/PKG-INFO
+pybackoff.egg-info/SOURCES.txt
+pybackoff.egg-info/dependency_links.txt
+pybackoff.egg-info/not-zip-safe
+pybackoff.egg-info/top_level.txt
+src/pybackoff.cc
