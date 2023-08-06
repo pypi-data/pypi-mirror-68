@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: soc
+Version: 0.0.1
+Summary: A lightweight websocket micro framework
+Home-page: https://github.com/Julian-Nash/soc
+Author: Julian Nash
+Author-email: julianjamesnash@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Julian-Nash/soc
+Project-URL: Documentation, https://github.com/Julian-Nash/soc
+Project-URL: Source Code, https://github.com/Julian-Nash/soc
+Description: ## Soc - A Python websocket micro-framework
+        
+        > Work in progress
+        
+        ```py3
+        from soc import Soc, jsonify
+        
+        
+        def create_app() -> Soc:
+        
+            app: Soc = Soc()
+        
+            @app.route("/foo")
+            def foo(request):
+                return jsonify({"hello": "world"})
+        
+            return app
+        
+        
+        if __name__ == "__main__":
+            app: Soc = create_app()
+            app.run(host="localhost", port=8765)
+        ```
+Keywords: websocket micro framework
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

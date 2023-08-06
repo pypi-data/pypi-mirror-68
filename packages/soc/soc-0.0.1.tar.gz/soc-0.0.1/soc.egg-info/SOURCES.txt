@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+soc/__init__.py
+soc/helpers.py
+soc/request.py
+soc/soc.py
+soc/socket_view.py
+soc.egg-info/PKG-INFO
+soc.egg-info/SOURCES.txt
+soc.egg-info/dependency_links.txt
+soc.egg-info/requires.txt
+soc.egg-info/top_level.txt
+tests/__init__.py
+tests/test_soq.py
