@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="Orange3 Textable Prototypes documentation, Redditor widget" name="description" />
+<meta content="Orange3, Textable, Prototypes, documentation, Redditor, widget" name="keywords" />
+
+    <title>Redditor &#8212; Orange3 Textable Prototypes 0.14 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.14',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="CHILDES" href="CHILDES.html" />
+    <link rel="prev" title="18th Century Poetry" href="18th_century_poetry.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="CHILDES.html" title="CHILDES"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="18th_century_poetry.html" title="18th Century Poetry"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Textable Prototypes 0.14 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="redditor">
+<span id="id1"></span><h1>Redditor<a class="headerlink" href="#redditor" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/redditor_fig1.png"><img alt="First look at Redditor widget" class="align-center" src="../_images/redditor_fig1.png" style="width: 200px; height: 100px;" /></a>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<p>Loris Rimaz, Olivia Edelman, Nahuel Degonda</p>
+</div>
+<div class="section" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>Inputs: None</p>
+<p>Outputs:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">Segmentation</span></code></p>
+<p>Segmentation with segments for each post and comment in imported corpora</p>
+</li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This widget is designed to scrap one or more different types of content from Reddit, data is retrieved from
+<cite>&lt;https://www.reddit.com/&gt;</cite>.
+The widget outputs at least one segmentation with the the title and content of a post or subreddit, with the possibility to include or exclude comments and images.
+Segments in this segmentation have a number of annotations :</p>
+<table border="1" class="colwidths-given docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">KEY</th>
+<th class="head">EXAMPLE VALUE</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Author</td>
+<td><em>cosmicnebula257</em></td>
+</tr>
+<tr class="row-odd"><td>Id</td>
+<td><em>bp1ze4</em></td>
+</tr>
+<tr class="row-even"><td>Parent</td>
+<td><em>bp1ze4</em></td>
+</tr>
+<tr class="row-odd"><td>Parent_type</td>
+<td><em>0</em></td>
+</tr>
+<tr class="row-even"><td>Posted_Unix</td>
+<td><em>1557946951.0</em></td>
+</tr>
+<tr class="row-odd"><td>Posted_at</td>
+<td><em>2009-5-15  19:02:31</em></td>
+</tr>
+<tr class="row-even"><td>Score</td>
+<td><em>1</em></td>
+</tr>
+<tr class="row-odd"><td>Title</td>
+<td><em>Random invites while AFK in the menu</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Redditor</strong> widget lets the user select one or more posts or subreddits
+from the Reddit website`&lt;<a class="reference external" href="https://www.reddit.com/">https://www.reddit.com/</a>&gt;`.</p>
+<p>The <strong>Subreddit</strong> mode allows the user to scrap the data of an entire subreddit. Users can sort the subreddits by:</p>
+<ul class="simple">
+<li><em>Hot</em></li>
+<li><em>New</em></li>
+<li><em>Controversial</em></li>
+<li><em>Top</em></li>
+<li><em>Rising</em></li>
+</ul>
+<p>Users can also choose the amount of posts they want to upload to the widget.</p>
+<div class="figure align-center" id="subreddit-fig2">
+<a class="reference internal image-reference" href="../_images/subreddit_fig2.png"><img alt="../_images/subreddit_fig2.png" src="../_images/subreddit_fig2.png" style="width: 440.0px; height: 565.0px;" /></a>
+</div>
+<p>The <strong>Full Text</strong> mode allows the user to upload/scrap from all of Reddit and not just specifically from a subreddit or a url.
+The <strong>Full Text</strong> mode has three filters.</p>
+<ol class="arabic simple">
+<li>The <strong>Sort by</strong> filter : <em>Relevance</em>, <em>Top</em>, <em>New</em>, <em>Comments</em>.</li>
+<li>The <strong>Time</strong> filter : <em>All</em>, <em>Past day</em>, <em>Past hour</em>, <em>Past month</em>, <em>Past hour</em>.</li>
+<li>The <strong>Amount of posts</strong> filter, just like in the <strong>Subreddit</strong> mode.</li>
+</ol>
+<div class="figure align-center" id="fulltext-fig3">
+<a class="reference internal image-reference" href="../_images/fullText_fig3.png"><img alt="../_images/fullText_fig3.png" src="../_images/fullText_fig3.png" style="width: 100.0px; height: 50.0px;" /></a>
+</div>
+<p>The <strong>URL</strong> mode allows the user to search data by directly using the URL of a post or subreddit.</p>
+<div class="figure align-center" id="url-fig4">
+<a class="reference internal image-reference" href="../_images/url_fig4.png"><img alt="../_images/url_fig4.png" src="../_images/url_fig4.png" style="width: 100.0px; height: 50.0px;" /></a>
+</div>
+<p>The widget also has options available for all three modes.</p>
+<p>The <strong>Include Images</strong> option allows the user to choose wether or not he wants to include the images of certain posts and/or subreddits.</p>
+<p>The <strong>Include Comments</strong> option allows the user to choose wether or not he wants to include comments in his output.</p>
+<div class="figure align-center" id="include-fig5">
+<a class="reference internal image-reference" href="../_images/include_fig5.png"><img alt="../_images/include_fig5.png" src="../_images/include_fig5.png" style="width: 100.0px; height: 50.0px;" /></a>
+</div>
+<p>The <strong>Add Request</strong> button allows users to add multiple posts and/or subreddits to the basket in the <strong>Selection</strong> box. To select multiple files use the <strong>Selection</strong> box to add them to the basket.</p>
+<p>The <strong>Send</strong> button is used to send data to output.</p>
+<p>When the widget gets closed and re-opened, the content of it is saved. To delete this saved content, the user has to reset the widget settings.</p>
+</div>
+<div class="section" id="messages">
+<h2>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="information">
+<h3>Information<a class="headerlink" href="#information" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>&lt;n&gt; segments sent to output.</em></dt>
+<dd>This confirms that the widget has operated properly.</dd>
+</dl>
+</div>
+<div class="section" id="warnings">
+<h3>Warnings<a class="headerlink" href="#warnings" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>Settings were changed, please click &#8216;Send&#8217; when ready.</em></dt>
+<dd>Settings have changed but the <strong>Send automatically</strong> checkbox
+has not been selected, so the user is prompted to click the <strong>Send</strong>
+button (or equivalently check the box) in order for computation and data
+emission to proceed.</dd>
+<dt><em>The post found only contains images. Try to include images or comments.</em></dt>
+<dd>The widget instance is unable to emit image to output because the user hasn’t checked the box for images</dd>
+<dt><em>Please fill in the input box.</em></dt>
+<dd>The widget instance is unable to emit data to output because the user hasn’t filled in the input box.</dd>
+</dl>
+</div>
+<div class="section" id="errors">
+<h3>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>Error in redirect, please make sure the subreddit name is correct.</em></dt>
+<dd>An error has prevented the widget to download the data from Reddit, most likely because of a misspelling.</dd>
+<dt><em>Subreddit not found.</em></dt>
+<dd>An error has prevented the widget to download the data from Reddit, the subreddit was not found, might not exist, might be a user mistake.</dd>
+<dt><em>No match for URL.</em></dt>
+<dd>An error has prevented the widget to download the data from Reddit, the URL was not found, might not exist, might be a user mistake.</dd>
+<dt><em>URL not found.</em></dt>
+<dd>An error has prevented the widget to download the data from Reddit, the input was not in URL format.</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Redditor</a><ul>
+<li><a class="reference internal" href="#authors">Authors</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#interface">Interface</a></li>
+<li><a class="reference internal" href="#messages">Messages</a><ul>
+<li><a class="reference internal" href="#information">Information</a></li>
+<li><a class="reference internal" href="#warnings">Warnings</a></li>
+<li><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="18th_century_poetry.html"
+                        title="previous chapter">18th Century Poetry</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="CHILDES.html"
+                        title="next chapter">CHILDES</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/redditor.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="CHILDES.html" title="CHILDES"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="18th_century_poetry.html" title="18th Century Poetry"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Textable Prototypes 0.14 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, University of Lausanne.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>

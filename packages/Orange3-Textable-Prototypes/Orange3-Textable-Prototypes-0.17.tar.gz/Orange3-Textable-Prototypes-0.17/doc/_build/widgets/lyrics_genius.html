@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="Orange3 Textable Prototypes documentation, Lyrics Genius widget" name="description" />
+<meta content="Orange3, Textable, Prototypes, documentation, Lyrics, Genius, widget" name="keywords" />
+
+    <title>Lyrics Genius &#8212; Orange3 Textable Prototypes 0.14 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.14',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Movie Transcripts" href="movie_transcripts.html" />
+    <link rel="prev" title="Orange Textable Prototypes documentation" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="movie_transcripts.html" title="Movie Transcripts"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Orange Textable Prototypes documentation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Textable Prototypes 0.14 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="lyrics-genius">
+<span id="id1"></span><h1>Lyrics Genius<a class="headerlink" href="#lyrics-genius" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/LyricsGenius.png" src="../_images/LyricsGenius.png" />
+<p>Make a corpus with songs lyrics.</p>
+<div class="section" id="author">
+<h2>Author<a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h2>
+<p>Cyrille Gay-Crosier, Rafael Bruni Baschino, Basile Maillard</p>
+</div>
+<div class="section" id="signals">
+<h2>Signals<a class="headerlink" href="#signals" title="Permalink to this headline">¶</a></h2>
+<p>Input: None</p>
+<p>Outputs:</p>
+<ul>
+<li><p class="first"><code class="docutils literal"><span class="pre">Text</span> <span class="pre">data</span></code></p>
+<blockquote>
+<div><p>A segmentation with the lyrics of the selected songs.</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This widget is designed to import one or more songs lyrics in Orange Canvas.
+The lyrics are retrieved from <a class="reference external" href="https://genius.com/">https://genius.com/</a>. The output is a
+segmentation containing a segment for each imported songs.
+Each segment has 4 annotations with keys <em>artist</em>,
+<em>artist_id</em>, <em>path</em>, <em>title</em>.</p>
+<div class="section" id="interface">
+<h3>Interface<a class="headerlink" href="#interface" title="Permalink to this headline">¶</a></h3>
+<div class="figure align-center" id="id2">
+<span id="lyricsgenius-fig1"></span><a class="reference internal image-reference" href="../_images/LyricsGenius_Search.png"><img alt="Interface of the Lyrics Genius widget" src="../_images/LyricsGenius_Search.png" style="width: 569.0px; height: 694.0px;" /></a>
+<p class="caption"><span class="caption-text">Figure 1: <strong>Lyrics Genius</strong> widget interface.</span></p>
+</div>
+<p>The <strong>Lyrics Genius</strong> widget simply lets the user make a search on the
+<a class="reference external" href="https://genius.com/">Genius</a> website.</p>
+<p>The <strong>Create my corpus</strong> section allows the user to add or remove songs from
+the search results.</p>
+<p>The <strong>My titles</strong> section is the user &#8220;basket&#8221;. He can add or remove songs from
+his corpus with the section <strong>Create my corpus</strong>.</p>
+<p>The <strong>Send</strong> button triggers the emission of a segmentation to the output
+connection(s). When selected, the <strong>Send automatically</strong> checkbox
+disables the button and the widget attempts to automatically emit a
+segmentation at every modification of its interface.</p>
+</div>
+</div>
+<div class="section" id="messages">
+<h2>Messages<a class="headerlink" href="#messages" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="information">
+<h3>Information<a class="headerlink" href="#information" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>&lt;n&gt; segments sent to output (&lt;m&gt; characters).</em></dt>
+<dd>This confirms that the widget has operated properly.</dd>
+</dl>
+</div>
+<div class="section" id="warnings">
+<h3>Warnings<a class="headerlink" href="#warnings" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>Settings were changed, please click &#8216;Send&#8217; when ready.</em></dt>
+<dd>Settings have changed but the <strong>Send automatically</strong> checkbox
+has not been selected, so the user is prompted to click the <strong>Send</strong>
+button (or equivalently check the box) in order for computation and data
+emission to proceed.</dd>
+<dt><em>You didn&#8217;t search anything</em></dt>
+<dd>The user want to make a search with no text in the query box.</dd>
+<dt><em>Your corpus is empty, please add some songs first</em></dt>
+<dd>The corpus is empty, so the user have to add some songs before sending.</dd>
+</dl>
+</div>
+<div class="section" id="errors">
+<h3>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><em>Couldn&#8217;t download data from Genius website.</em></dt>
+<dd>An error has prevented the widget to download the data from the
+Genius website (most likely related to a connection problem).</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Lyrics Genius</a><ul>
+<li><a class="reference internal" href="#author">Author</a></li>
+<li><a class="reference internal" href="#signals">Signals</a></li>
+<li><a class="reference internal" href="#description">Description</a><ul>
+<li><a class="reference internal" href="#interface">Interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#messages">Messages</a><ul>
+<li><a class="reference internal" href="#information">Information</a></li>
+<li><a class="reference internal" href="#warnings">Warnings</a></li>
+<li><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../index.html"
+                        title="previous chapter">Orange Textable Prototypes documentation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="movie_transcripts.html"
+                        title="next chapter">Movie Transcripts</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/widgets/lyrics_genius.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="movie_transcripts.html" title="Movie Transcripts"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Orange Textable Prototypes documentation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Textable Prototypes 0.14 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016-2018, University of Lausanne.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.5.3.
+    </div>
+  </body>
+</html>
