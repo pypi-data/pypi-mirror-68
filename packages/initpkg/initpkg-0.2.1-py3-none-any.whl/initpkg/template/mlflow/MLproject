@@ -1,0 +1,26 @@
+name: Hackathon Project
+
+conda_env: Conda_env.yaml
+# Can have a docker_env instead of a conda_env, e.g.
+# docker_env:
+#    image:  mlflow-docker-example
+
+entry_points:
+  main:
+    parameters:
+      data_file: path
+      regularization: {type: float, default: 0.1}
+    command: "python train/train.py -r {regularization} {data_file}"
+  validate:
+    parameters:
+      data_file: path
+    command: "python validate.py {data_file}"
+  validatemodel:
+    parameters:
+      modelpkl: path
+    command: "python validate/validate.py {modelpkl}"  
+  serve:
+    parameters:
+      input: string
+    command: "python serve/serve.py {input}"    
+    
