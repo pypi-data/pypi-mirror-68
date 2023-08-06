@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: stan2tfp
+Version: 0.1.1
+Summary: a lightweight interface to the TensorFlow Probability backend of the Stan compiler.
+Home-page: https://github.com/adamhaber/stan2tfp
+Author: Adam Haber
+Author-email: adamhaber@gmail.com
+License: BSD 3-clause "New" or "Revised License"
+Keywords: stan,tfp,bayesian models
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: numpy
+Requires-Dist: tf-nightly
+Requires-Dist: tfp-nightly
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# Stan2tfp
+
+![](https://github.com/adamhaber/stan2tfp/workflows/CI/badge.svg)
+
+The new [Stan compiler](https://github.com/stan-dev/stanc3) features a TensorFlow Probability backend, transpiling Stan programs to python code. 
+
+stan2tfp is a lightweight interface wrapper around this functionality, allowing users to:
+
+* call the compiler (emitting TFP code)
+* run the code (creating a model object in the current namespace)
+* sample the model (using TFP's NUTS)
+
+... without leaving the notebook or their favorite IDE.
+
+The new compiler and the TFP backend are under active development. Currently only a small subset of Stan's functionality is supported. For a list of supported distributions, see [here](https://github.com/adamhaber/stan2tfp/blob/master/distributions.md).
+
+## Install
+
+stan2tfp is a pure-Python package which can be installed from PyPI
+
+```
+pip install stan2tfp
+```
+
+This will also install TensorFlow and TensorFlow Probability (both in nightly version; needed for XLA compilation of the model). 
+
+stan2tfp provides the function `download_stan2tfp_compiler` which downloads a pre-compiled binary of the compiler. By default it installs the latest version into the same directory as the package itself. A different path or a different version of the compiler can be specified.
+
+## "Hello world"
+
+For a simple end-to-end example of using stan2tfp, see [here](https://github.com/adamhaber/stan2tfp/blob/master/examples/eight%20schools%20example.ipynb).
+
+
+
