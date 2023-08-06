@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+commonmark = mkdocs_plugin_commonmark:CommonMark
+
