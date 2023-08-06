@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: pseutopy
+Version: 1.2.9
+Summary: PseuToPy is a package that transpiles pseudocode into its equivalent Python code
+Home-page: https://github.com/PseuToPy/PseuToPy
+Author: Patrick Wang
+Author-email: patrick.wang@pseutopy.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/PseuToPy/PseuToPy/issues
+Project-URL: Source, https://github.com/PseuToPy/PseuToPy/tree/feat/refactor
+Keywords: pseudocode natural-language transpiler python
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: astor (>=0.8.0)
+Requires-Dist: textX (>=2.0.1)
+Provides-Extra: test
+Requires-Dist: pytest (>=5.2.1) ; extra == 'test'
+
+PseuToPy
+========
+
+General description
+-------------------
+
+PseuToPy is a Python library which defines a grammar for a
+pseudocode-based pseudocode. With this grammar, PseuToPy is then able to
+take instructions written in pseudocode and converts it into the
+equivalent Python instructions.
+
+PseuToPy is designed for educational purposes. In that sense, PseuToPy
+is suited to anyone embarking in the journey of learning Python
+programming by offering a relaxed syntax and a grammar that very much
+resembles the grammar of a natural language.
+
+This repository is a rebuild of 
+`this one <https://github.com/PatWg/PseuToPy>`__, with a new grammar file that
+is taken from the Python 3.8 grammar definition.
+
+The development is still on-going to catch up with the aforementioned
+repository. But once this new project reaches (or surpasses) the state of the
+former project, I will migrate the old project's code into this repository
+here, so as to keep the names of the inital contributors.
+
+
