@@ -1,0 +1,2 @@
+include CHANGELOG.md  COPYING Pipfile  Pipfile.lock  README.md  setup.py docs/ospd-openvas.8
+recursive-include tests *.py
