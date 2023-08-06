@@ -1,0 +1,14 @@
+README.md
+setup.py
+fastSum/__init__.py
+fastSum.egg-info/PKG-INFO
+fastSum.egg-info/SOURCES.txt
+fastSum.egg-info/dependency_links.txt
+fastSum.egg-info/requires.txt
+fastSum.egg-info/top_level.txt
+fastsum/__init__.py
+fastsum.egg-info/PKG-INFO
+fastsum.egg-info/SOURCES.txt
+fastsum.egg-info/dependency_links.txt
+fastsum.egg-info/requires.txt
+fastsum.egg-info/top_level.txt

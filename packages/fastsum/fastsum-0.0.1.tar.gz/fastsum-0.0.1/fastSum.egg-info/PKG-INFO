@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fastsum
+Version: 0.0.1
+Summary: fastNLP for summarization
+Home-page: https://github.com/fastnlp/fastsum
+Author: FudanNLP
+License: Apache License
+Description: # fastSum
+        
+        Use fastNLP to deal with summarization tasks. It will be released in 2 months.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
