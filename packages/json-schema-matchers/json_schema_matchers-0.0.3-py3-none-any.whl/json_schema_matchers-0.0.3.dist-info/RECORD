@@ -1,0 +1,8 @@
+matchers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matchers/common_matcher.py,sha256=7PqqTq8orF9VnnK9lHLclm5I3WaD8ZsNylT1NqpcZOU,1128
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_schema_matchers-0.0.3.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+json_schema_matchers-0.0.3.dist-info/METADATA,sha256=LzvMyyn94If1AfFAa3HbGvbQUTvvIRQ11YxEuCl9dTU,2731
+json_schema_matchers-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+json_schema_matchers-0.0.3.dist-info/top_level.txt,sha256=bYRuTSF-aDhfAJI6Gzkxzt-v925yNZNUUKrzMa_-HU0,15
+json_schema_matchers-0.0.3.dist-info/RECORD,,
