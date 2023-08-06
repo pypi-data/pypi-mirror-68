@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ems-compliance-checks-pkg-MarkoDS
+Version: 0.0.2
+Summary: Package that hold logic for compliance checks
+Home-page: https://github.com/acdcorp/clarity_ems_compliance_checks
+Author: Marko Kauzlarić
+Author-email: marko@discoveryspecialists.com
+License: UNKNOWN
+Description: # clarity_ems_compliance_checks
+        Python package that holds Clarity business logic for EMS compliance checks
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
