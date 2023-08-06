@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+jsondate3/__init__.py
+jsondate3_aware.egg-info/PKG-INFO
+jsondate3_aware.egg-info/SOURCES.txt
+jsondate3_aware.egg-info/dependency_links.txt
+jsondate3_aware.egg-info/not-zip-safe
+jsondate3_aware.egg-info/requires.txt
+jsondate3_aware.egg-info/top_level.txt
+tests/__init__.py
+tests/test_jsondate.py
