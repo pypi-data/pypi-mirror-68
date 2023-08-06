@@ -1,0 +1,9 @@
+pandas
+snowflake-connector-python
+sqlparse
+fcache
+ipython
+
+[testing]
+pytest
+pytest-cov
