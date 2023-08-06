@@ -1,0 +1,6 @@
+include *.h *.hpp *.cpp
+include *.md
+include *.py
+include LICENSE
+include README.rst
+include requirements.txt
