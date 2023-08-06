@@ -1,0 +1,9 @@
+requests
+Pillow
+geetools
+
+[dev]
+
+[docs]
+
+[testing]
