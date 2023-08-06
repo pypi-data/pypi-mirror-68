@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: engagevoice-sdk-wrapper
+Version: 0.5.8.dev0
+Summary: RingCentral Engage Voice SDK Wrapper for Python
+Home-page: http://engage.ringcentral.com
+Author: Phong Vu
+Author-email: phong.vu@ringcentral.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: RingCentral,Engage Voice,Contact Center
+Platform: UNKNOWN

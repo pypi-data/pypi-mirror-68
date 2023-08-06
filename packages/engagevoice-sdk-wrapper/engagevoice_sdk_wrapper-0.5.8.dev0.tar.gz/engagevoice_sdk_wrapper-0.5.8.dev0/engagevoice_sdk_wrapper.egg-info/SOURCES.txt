@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+engagevoice/__init__.py
+engagevoice/sdk_wrapper.py
+engagevoice_sdk_wrapper.egg-info/PKG-INFO
+engagevoice_sdk_wrapper.egg-info/SOURCES.txt
+engagevoice_sdk_wrapper.egg-info/dependency_links.txt
+engagevoice_sdk_wrapper.egg-info/entry_points.txt
+engagevoice_sdk_wrapper.egg-info/requires.txt
+engagevoice_sdk_wrapper.egg-info/top_level.txt
+engagevoice_sdk_wrapper.egg-info/zip-safe
