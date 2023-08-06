@@ -1,0 +1,12 @@
+gcs_pypi/__init__.py,sha256=nOsrd3RnXQzbYGUF8_RcuiLvTCEGpn0cqH3HX8dHNmw,45
+gcs_pypi/__main__.py,sha256=tlemkagfCMcDpD3kBaEQn0EGvOaGuypQxbrBE_WgJdI,2019
+gcs_pypi/exceptions.py,sha256=4gwaUTJeByaz9j1R319AAd9cxVtkAUTN0xa-Pz6FIS0,40
+gcs_pypi/package.py,sha256=PnkrYPIuA0an-hcrWMYAlhZEVkvPTmsx2MiFIJ16izo,4636
+gcs_pypi/storage.py,sha256=86ORbbQZ17QP_xcF9KVWEc-hsXN2UVg7KJRBNEJ_4iQ,1959
+gcs_pypi/templates/index.html.j2,sha256=kGP5zI9WFTB8w7Bh8qMCZqxRkZ183KpBYIThRd9Hejk,305
+gcs_pypi-0.1.24.dist-info/LICENSE,sha256=0svWqleMWVydffjmgo3Hnpa0iE3kkikfzuHdUKDpE64,1080
+gcs_pypi-0.1.24.dist-info/METADATA,sha256=OOG9XO22UIdUnnvDxPf5sivTmmTQhHqhGMTlr7yRUyo,4247
+gcs_pypi-0.1.24.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gcs_pypi-0.1.24.dist-info/entry_points.txt,sha256=6xF9z4_bT5cHvmgbE61nqcwwaZQ2YXQZTHyHhVCWQ9o,53
+gcs_pypi-0.1.24.dist-info/top_level.txt,sha256=pZNPHOEFVs9EXHnyMLWmvIKQMVfVuKCem2Ohj_kpgE4,9
+gcs_pypi-0.1.24.dist-info/RECORD,,
