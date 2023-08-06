@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: explorerscript
+Version: 0.0.2a1
+Summary: ExplorerScript and SSBScript: Script languages for decompiled SSB (Pokémon Mystery Dungeon Explorers of Sky)
+Home-page: https://github.com/SkyTemple/ExplorerScript/
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: python-igraph (>=0.8.0)
+Requires-Dist: antlr4-python3-runtime (>=4.8)
+
+ExplorerScript
+==============
+
+|build| |pypi-version| |pypi-downloads| |pypi-license| |pypi-pyversions| |discord|
+
+.. |build| image:: https://jenkins.riptide.parakoopa.de/buildStatus/icon?job=ExplorerScript%2Fmaster
+    :target: https://jenkins.riptide.parakoopa.de/blue/organizations/jenkins/ExplorerScript/activity
+    :alt: Build Status
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/explorerscript
+    :target: https://pypi.org/project/explorerscript/
+    :alt: Version
+
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/explorerscript
+    :target: https://pypi.org/project/explorerscript/
+    :alt: Downloads
+
+.. |pypi-license| image:: https://img.shields.io/pypi/l/explorerscript
+    :alt: License (GPLv3)
+
+.. |pypi-pyversions| image:: https://img.shields.io/pypi/pyversions/explorerscript
+    :alt: Supported Python versions
+
+.. |discord| image:: https://img.shields.io/discord/710190644152369162?label=Discord
+    :target: https://discord.gg/4e3X36f
+    :alt: Discord
+
+A programming language + compiler/decompiler for creating scripts for Pokémon Mystery
+Dungeon Explorers of Sky.
+
+Documentation can be found in the docs directory.
+
