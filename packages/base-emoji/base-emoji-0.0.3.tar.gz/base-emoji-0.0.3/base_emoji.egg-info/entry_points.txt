@@ -1,0 +1,3 @@
+[console_scripts]
+baseemoji = baseemoji.__main__:main
+
