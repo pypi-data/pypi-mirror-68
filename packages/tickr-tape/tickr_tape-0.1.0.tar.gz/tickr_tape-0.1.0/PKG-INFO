@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tickr-tape
+Version: 0.1.0
+Summary: 
+Author: Henry Trotter
+Author-email: hbtrotter38@gmail.com
+Requires-Python: >=2.7,<3.0
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
