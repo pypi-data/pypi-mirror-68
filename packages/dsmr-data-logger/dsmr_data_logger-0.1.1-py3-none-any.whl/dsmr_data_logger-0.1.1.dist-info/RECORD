@@ -1,0 +1,12 @@
+dsmr/__init__.py,sha256=MrY4HnvGt9z1aNrsTDxwAz1oHvyEk4t_C0JYzoIxDdU,1097
+dsmr/cli.py,sha256=PY1xcgR1nH5xjmT8PqoQhBpvCYFnFAy_H-x6WtYhQzo,332
+dsmr/datalogger.py,sha256=tUNOJtYgm65Z7Nf5BE2R_IUeLtkGVFOZqci4MFod3M8,274
+dsmr/dsmr/__init__.py,sha256=-G9BH5Ro8chqvsz_jCv-uEewiJa6WWy8jN-zS1SayeE,6683
+dsmr/plugins/__init__.py,sha256=pj3dX1DQqYPMYMFPKHkT5okaBn7AxtEs8_8MASCyLZY,492
+dsmr/plugins/pvoutput.py,sha256=PKMp_pi7CJxLi3umzfh3TqG89CaROqFJECaRKEKqQUE,2451
+pyproject.toml,sha256=Rkpklwh_gMzCtINrfR2Xj2roXa_Ulz__chEqwA3tuzs,629
+dsmr_data_logger-0.1.1.dist-info/entry_points.txt,sha256=xqB_mss2Mt11tay_VKYVRvnw4G1cmJCJ29rEJe1Yr1E,38
+dsmr_data_logger-0.1.1.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+dsmr_data_logger-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+dsmr_data_logger-0.1.1.dist-info/METADATA,sha256=vTooZair3-VcrLmJMs6YkhON6qovQwUiCPhjBPCfalQ,646
+dsmr_data_logger-0.1.1.dist-info/RECORD,,
