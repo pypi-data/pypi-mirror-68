@@ -1,0 +1,7 @@
+requests_oauthlib
+requests
+
+[dev]
+pytest>=3.7
+check-manifest
+twine

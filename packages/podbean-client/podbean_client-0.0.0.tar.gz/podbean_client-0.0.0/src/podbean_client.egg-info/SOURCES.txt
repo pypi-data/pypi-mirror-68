@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test_podbean_client.py
+tox.ini
+src/podbean_client.py
+src/podbean_client.egg-info/PKG-INFO
+src/podbean_client.egg-info/SOURCES.txt
+src/podbean_client.egg-info/dependency_links.txt
+src/podbean_client.egg-info/requires.txt
+src/podbean_client.egg-info/top_level.txt
