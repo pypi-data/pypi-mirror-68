@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: workingtime
+Version: 0.1.0
+Summary: # TODO description
+Home-page: https://workingtime.readthedocs.io
+Maintainer: Pablo Manso
+Maintainer-email: 92manso@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6, <4
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: pandas
+
+UNKNOWN
+
+
