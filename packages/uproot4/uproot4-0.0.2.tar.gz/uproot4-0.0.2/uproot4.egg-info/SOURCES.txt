@@ -1,0 +1,8 @@
+README.md
+setup.py
+uproot4/__init__.py
+uproot4.egg-info/PKG-INFO
+uproot4.egg-info/SOURCES.txt
+uproot4.egg-info/dependency_links.txt
+uproot4.egg-info/requires.txt
+uproot4.egg-info/top_level.txt
