@@ -1,0 +1,2 @@
+include versioneer.py
+include testproject1234/_version.py
