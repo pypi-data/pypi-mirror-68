@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dsPyLib
+Version: 0.0.28
+Summary: A common python library for DS.
+Home-page: https://github.com/dragonsun7/dsPyLib
+Author: Dragon Sun
+Author-email: dragonsun7@163.com
+License: MIT
+Description: # Python common library for DS(dsPyLib)
+        
+        This is a simple example package. You can use
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+        to write your content.
+Keywords: dsPyLib
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
