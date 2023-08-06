@@ -1,0 +1,22 @@
+#translation_file
+minute-Time = minute
+second-Time = second
+squareMetrePerSecond-Time = metre ** 2 / second
+a-m-2 = ampere / metre ** 2
+g-cm-3 = gram / centimetre ** 3
+j-g = joule / gram
+j-gk = joule / gram / Kelvin
+kj-m-2 = kilojoule / metre ** 2
+kv-mm = kilovolt / millimetre
+m-2-g = metre ** 2 / gram
+m-2-gram = metre ** 2 / gram
+m-2g = metre ** 2 / gram
+mm-2-s = millimetre ** 2 / second
+mol-m-3 = mole / metre ** 3
+ohm-cm = ohm * centimetre
+ohm-meter = ohm * metre
+omega-cm = ohm centimetre
+s-cm = siemens / centimetre
+s-m = siemens / metre
+w-m-k = watts / metre / Kelvin
+w-mk = watts / metre / Kelvin
