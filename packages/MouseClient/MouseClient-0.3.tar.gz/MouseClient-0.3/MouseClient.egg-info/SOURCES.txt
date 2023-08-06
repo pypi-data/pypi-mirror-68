@@ -1,0 +1,7 @@
+setup.py
+MazeSimulator/MouseClient.py
+MouseClient.egg-info/PKG-INFO
+MouseClient.egg-info/SOURCES.txt
+MouseClient.egg-info/dependency_links.txt
+MouseClient.egg-info/requires.txt
+MouseClient.egg-info/top_level.txt
