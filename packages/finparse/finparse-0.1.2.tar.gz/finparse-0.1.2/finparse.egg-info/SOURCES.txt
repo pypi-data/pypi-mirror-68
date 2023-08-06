@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+Makefile
+Pipfile
+README.md
+pytest.ini
+setup.py
+.github/workflows/pytest.yml
+finparse/__init__.py
+finparse.egg-info/PKG-INFO
+finparse.egg-info/SOURCES.txt
+finparse.egg-info/dependency_links.txt
+finparse.egg-info/top_level.txt
+tests/__init__.py
+tests/example.csv
+tests/finparse_test.py
