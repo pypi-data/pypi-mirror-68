@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.1.2.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF42</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-05-10T14:39:16.0442333+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Concepts>
+      <structure:ConceptScheme id="CS_ENERGY_BALANCE_UNDATA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">Energy Balance Concept Scheme</common:Name>
+        <structure:Concept id="COMMODITY" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).COMMODITY">
+          <common:Name xml:lang="en">Commodity</common:Name>
+        </structure:Concept>
+        <structure:Concept id="TRANSACTIONS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).TRANSACTIONS">
+          <common:Name xml:lang="en">Transactions</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).UNIT">
+          <common:Name xml:lang="en">Unit</common:Name>
+        </structure:Concept>
+        <structure:Concept id="REFAREA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).REFAREA">
+          <common:Name xml:lang="en">Reference Area</common:Name>
+        </structure:Concept>
+        <structure:Concept id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).TIME_PERIOD">
+          <common:Name xml:lang="en">Time Period</common:Name>
+        </structure:Concept>
+        <structure:Concept id="OBSERVATION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).OBSERVATION">
+          <common:Name xml:lang="en">Observation</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MULTIPLIER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).UNIT_MULTIPLIER">
+          <common:Name xml:lang="en">Unit Multiplier</common:Name>
+        </structure:Concept>
+        <structure:Concept id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).FOOTNOTES">
+          <common:Name xml:lang="en">Footnotes</common:Name>
+        </structure:Concept>
+        <structure:Concept id="ESTIMATE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_ENERGY_BALANCE_UNDATA(1.0).ESTIMATE">
+          <common:Name xml:lang="en">Estimate</common:Name>
+        </structure:Concept>
+      </structure:ConceptScheme>
+      <structure:ConceptScheme id="CS_UNDATA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=UNSD:CS_UNDATA(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">UNData Core Concept Scheme</common:Name>
+        <common:Description xml:lang="en">Core UNData cross-domain concepts</common:Description>
+        <structure:Concept id="DATASET_NAME" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).DATASET_NAME">
+          <common:Name xml:lang="en">Dataset Name</common:Name>
+        </structure:Concept>
+        <structure:Concept id="DATASET_SOURCE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).DATASET_SOURCE">
+          <common:Name xml:lang="en">Dataset Source</common:Name>
+        </structure:Concept>
+        <structure:Concept id="DATASET_DESC" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).DATASET_DESC">
+          <common:Name xml:lang="en">Dataset Description</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNDATA_LASTUPDATE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).UNDATA_LASTUPDATE">
+          <common:Name xml:lang="en">UNData Last Update</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNDATA_NEXTUPDATE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).UNDATA_NEXTUPDATE">
+          <common:Name xml:lang="en">UNData Next Update</common:Name>
+        </structure:Concept>
+        <structure:Concept id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).INDICATOR">
+          <common:Name xml:lang="en">Indicator</common:Name>
+        </structure:Concept>
+        <structure:Concept id="METADATA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).METADATA">
+          <common:Name xml:lang="en">Metadata</common:Name>
+        </structure:Concept>
+        <structure:Concept id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).FREQ">
+          <common:Name xml:lang="en">Frequency</common:Name>
+          <common:Description xml:lang="en">The time interval at which observations occur over a given time period.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="UNIT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).UNIT">
+          <common:Name xml:lang="en">Unit</common:Name>
+        </structure:Concept>
+        <structure:Concept id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).UNIT_MULT">
+          <common:Name xml:lang="en">Unit Multiplier</common:Name>
+        </structure:Concept>
+        <structure:Concept id="AGE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).AGE">
+          <common:Name xml:lang="en">Age</common:Name>
+        </structure:Concept>
+        <structure:Concept id="SEX" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).SEX">
+          <common:Name xml:lang="en">Sex</common:Name>
+        </structure:Concept>
+        <structure:Concept id="LOCATION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).LOCATION">
+          <common:Name xml:lang="en">Location</common:Name>
+        </structure:Concept>
+        <structure:Concept id="REF_AREA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).REF_AREA">
+          <common:Name xml:lang="en">Reference Area</common:Name>
+        </structure:Concept>
+        <structure:Concept id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).TIME_PERIOD">
+          <common:Name xml:lang="en">Time Period</common:Name>
+          <common:Description xml:lang="en">Reference date - or date range - the observed value refers to (usually different from the dates of data production or dissemination). For MDG data exchange it is usually expressed as a four-digit year (e.g.: 1995) so, if the observation refers to a period of time (range), details about such period should be specified in the attribute TIME_DETAIL</common:Description>
+        </structure:Concept>
+        <structure:Concept id="TIME_SPAN" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).TIME_SPAN">
+          <common:Name xml:lang="en">Time Span</common:Name>
+          <common:Description xml:lang="en">Specifies time range for series describing multiple year intervals.</common:Description>
+        </structure:Concept>
+        <structure:Concept id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).OBS_VALUE">
+          <common:Name xml:lang="en">Observation Value</common:Name>
+        </structure:Concept>
+        <structure:Concept id="FOOTNOTES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_UNDATA(1.0).FOOTNOTES">
+          <common:Name xml:lang="en">Footnotes</common:Name>
+          <common:Description xml:lang="en">Additional information on specific aspects of each observation, such as how the observation was computed/estimated or details that could affect the comparability of this data point with others in a time series.</common:Description>
+        </structure:Concept>
+      </structure:ConceptScheme>
+      <structure:ConceptScheme id="CS_WPP_UNDATA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=UNSD:CS_WPP_UNDATA(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">WPP Concept Scheme</common:Name>
+        <common:Description xml:lang="en">World Population Prospects Concept Scheme</common:Description>
+        <structure:Concept id="SCENARIO" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=UNSD:CS_WPP_UNDATA(1.0).SCENARIO">
+          <common:Name xml:lang="en">Scenario</common:Name>
+          <common:Description xml:lang="en">Projection scenarios in the context of population cohort-component population projections are based on a specific set of assumptions about future trends in respect to each demographic component (i.e., fertility, mortality, international net migration).</common:Description>
+        </structure:Concept>
+      </structure:ConceptScheme>
+    </structure:Concepts>
+  </message:Structures>
+</message:Structure>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v5.2.3-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF383</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T08:39:45.3027491-04:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Dataflows xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Dataflow id="DF_WITS_Tariff_TRAINS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_Tariff_TRAINS(1.1)" agencyID="WBG_WITS" version="1.1" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS - UNCTAD TRAINS Tariff Data</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Data flow to access WITS - UNCTAD TRAINS Preferential and most-favored-nation (MFN) tariff rates</Description>
+        <Structure>
+          <Ref id="TARIFF_TRAINS" version="1.1" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Development" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Development(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Devlopment</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Development indicators such as GDP, GNI per capita, Trade Balance, Trade and Services trade as percentage of GPD is available from WDI</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Tariff" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Tariff(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Tariff</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Tariff information like number of trade agreements, simple and weighted average tariff, duty free imports value and duty free goods share in percentage are available</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Trade" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Trade(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Trade</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Trade data such as total exports, number or products exported, exporting and importing partner countries and exported and imported product groups are available</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+    </Dataflows>
+  </Structures>
+</Structure>

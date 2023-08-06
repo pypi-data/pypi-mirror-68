@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v5.2.3-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF382</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T08:39:44.6620993-04:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Concepts xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <ConceptScheme id="MEASURE_CONCEPTS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=WBG_WITS:MEASURE_CONCEPTS(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Measure Concept</Name>
+      </ConceptScheme>
+      <ConceptScheme id="TARIFF_CONCEPTS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=WBG_WITS:TARIFF_CONCEPTS(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Tariff Concept</Name>
+        <Concept id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).FREQ">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Freq</Name>
+        </Concept>
+        <Concept id="DATASOURCE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).DATASOURCE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DataSource</Name>
+        </Concept>
+        <Concept id="NOMENCODE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).NOMENCODE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">NomenCode</Name>
+        </Concept>
+        <Concept id="REPORTER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).REPORTER">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Reporter_ISO_N</Name>
+        </Concept>
+        <Concept id="PARTNER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).PARTNER">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Partner</Name>
+        </Concept>
+        <Concept id="EXCLUDEDFROM" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).EXCLUDEDFROM">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">ExcludedFrom</Name>
+        </Concept>
+        <Concept id="YEAR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).YEAR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Year</Name>
+        </Concept>
+        <Concept id="PRODUCTCODE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).PRODUCTCODE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">ProductCode</Name>
+        </Concept>
+        <Concept id="TARIFFTYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).TARIFFTYPE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">TariffType</Name>
+        </Concept>
+        <Concept id="DATATYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).DATATYPE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DataType</Name>
+        </Concept>
+        <Concept id="SUM_OF_RATES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).SUM_OF_RATES">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sum_Of_Rates</Name>
+        </Concept>
+        <Concept id="MIN_RATE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).MIN_RATE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Min_Rate</Name>
+        </Concept>
+        <Concept id="MAX_RATE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).MAX_RATE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Max_Rate</Name>
+        </Concept>
+        <Concept id="TOTALNOOFLINES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).TOTALNOOFLINES">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">TotalNoOfLines</Name>
+        </Concept>
+        <Concept id="NBR_PREF_LINES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).NBR_PREF_LINES">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Nbr_Pref_Lines</Name>
+        </Concept>
+        <Concept id="NBR_MFN_LINES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).NBR_MFN_LINES">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Nbr_MFN_Lines</Name>
+        </Concept>
+        <Concept id="NBR_NA_LINES" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).NBR_NA_LINES">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Nbr_NA_Lines</Name>
+        </Concept>
+        <Concept id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).OBS_VALUE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Observation Status</Name>
+        </Concept>
+        <Concept id="OBS_VALUE_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TARIFF_CONCEPTS(1.0).OBS_VALUE_MEASURE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">OBS_VALUE_MEASURE</Name>
+        </Concept>
+      </ConceptScheme>
+      <ConceptScheme id="TRADESTATS_CONCEPTS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=WBG_WITS:TRADESTATS_CONCEPTS(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Country Trade Statistics Concept</Name>
+        <Concept id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).FREQ">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Freq</Name>
+        </Concept>
+        <Concept id="DATASOURCE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).DATASOURCE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DataSource</Name>
+        </Concept>
+        <Concept id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).INDICATOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Indicator</Name>
+        </Concept>
+        <Concept id="REPORTER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).REPORTER">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Reporter</Name>
+        </Concept>
+        <Concept id="PARTNER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).PARTNER">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Partner</Name>
+        </Concept>
+        <Concept id="YEAR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).YEAR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Year</Name>
+        </Concept>
+        <Concept id="PRODUCTCODE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).PRODUCTCODE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">ProductCode</Name>
+        </Concept>
+        <Concept id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=WBG_WITS:TRADESTATS_CONCEPTS(1.0).OBS_VALUE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Observation Status</Name>
+        </Concept>
+      </ConceptScheme>
+    </Concepts>
+  </Structures>
+</Structure>

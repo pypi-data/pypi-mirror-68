@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <mes:Header>
+    <mes:ID>IDREF1145</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2020-05-10T12:36:31.178Z</mes:Prepared>
+    <mes:Sender id="Unknown"/>
+    <mes:Receiver id="Unknown"/>
+  </mes:Header>
+  <mes:Structures/>
+</mes:Structure>
