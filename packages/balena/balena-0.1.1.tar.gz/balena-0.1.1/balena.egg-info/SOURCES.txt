@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+balena/__init__.py
+balena/balenactl.py
+balena.egg-info/PKG-INFO
+balena.egg-info/SOURCES.txt
+balena.egg-info/dependency_links.txt
+balena.egg-info/requires.txt
+balena.egg-info/top_level.txt
