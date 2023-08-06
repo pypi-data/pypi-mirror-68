@@ -1,0 +1,15 @@
+dataframe_image/__init__.py,sha256=7o-iBOPo5UBGNTj57Mqkc9Rve2Vu2SvkP5ktR-88y1o,90
+dataframe_image/_command_line.py,sha256=RKp-ust-ogSBBwOpo45ENJOMdVCFXsargtJsQeyDOjg,4769
+dataframe_image/_convert.py,sha256=_I_5JQf9jxl3a1GoPvAI_hd1US-klSSVnNlGgPBlHPU,12061
+dataframe_image/_exporters.py,sha256=ywQl9QEEmFUeTTx13Buv7-6_5nSM5VtYBHLyOp7bndE,1100
+dataframe_image/_preprocessors.py,sha256=h7TkIuycc_sI3PKCMIIpPlWCceFAKZmPZ9z8HNktDCQ,6013
+dataframe_image/_screenshot.py,sha256=GamZz3e8Cwu7ghsgVUhku8ZuLmAyvGPqwRRXJiTGqtg,7708
+dataframe_image/css/style.css,sha256=suAm3UVQcSQr93ei1dPQtfbIlVcn7O8KqEqo4mXVESE,720
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_convert.py,sha256=STrLt4_utLBM3EQdDzg529nlCSO5NsNmKcPUUu--cUA,947
+dataframe_image-0.0.8.dist-info/LICENSE,sha256=aYEO07IDvIhcN20TczGub9YGntTYRVSNDLBWN5WSUi0,1063
+dataframe_image-0.0.8.dist-info/METADATA,sha256=YSJICV8XhsQQkvBP_tQWB6F-Iw0LDrXKk8chKQjlhXI,4526
+dataframe_image-0.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dataframe_image-0.0.8.dist-info/entry_points.txt,sha256=N_V2xolegHYz-UXwT8aIxrFqSP0G8cZKdYpALAW_v4M,173
+dataframe_image-0.0.8.dist-info/top_level.txt,sha256=i3qHHfFtqaYlt3NBPGiPAHXS8xu5Yq7MO3Le3ZAoSis,22
+dataframe_image-0.0.8.dist-info/RECORD,,
