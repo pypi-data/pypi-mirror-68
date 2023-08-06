@@ -1,0 +1,7 @@
+ar_wordcloud/__init__.py,sha256=ol1gg9pfyvblevZJUDYFovqHtdJR50WXLEuN-12GKoU,218
+ar_wordcloud/_fonts.py,sha256=jMHCR_GaaXErEokQAqCHgwjUFmdO3_sXFTRUAv4Zilg,1775
+ar_wordcloud/ar_wordcloud.py,sha256=7H0EROXcxDzUiPWRVFctVEA_pYvSHXURgtBnsTg6eQk,2216
+ar_wordcloud/stopwords,sha256=isjmJisYSytx1hPvlsClhqOC5eXFHOXUKxI3klJDXMg,1895
+ar_wordcloud-0.0.1.dist-info/WHEEL,sha256=GLESb-AiO9TFjbXrEA7UrNl4dwWlkXoKZg6N6Vg0OJg,81
+ar_wordcloud-0.0.1.dist-info/METADATA,sha256=yKM9FTITYEPQladwYV43Qo2ApSg2LZTL8nGOUvEti-c,1829
+ar_wordcloud-0.0.1.dist-info/RECORD,,
