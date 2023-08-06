@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: salt-cloud-module-kamatera
+Version: 0.0.1
+Summary: SaltStack Cloud module for managing Kamatera compute resources
+Home-page: https://github.com/Kamatera/salt-cloud-module-kamatera
+Author: Kamatera
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: salt (>=2019.2.0)
+
+UNKNOWN
+
+
