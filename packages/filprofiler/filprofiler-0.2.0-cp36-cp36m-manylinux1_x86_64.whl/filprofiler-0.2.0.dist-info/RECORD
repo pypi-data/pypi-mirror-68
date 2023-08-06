@@ -1,0 +1,12 @@
+filprofiler-0.2.0.dist-info/METADATA,sha256=b7q1EarKD6tJcUeaY0MS_Ik7CVUDQ-bB_2RM916cvJI,1065
+filprofiler-0.2.0.dist-info/entry_points.txt,sha256=ggJotTuKCbvkr7nzoUoN9HCinYwwWq64bzyeC0cvtKQ,61
+filprofiler-0.2.0.dist-info/WHEEL,sha256=aXC_cd9CeetuThjmdBSF0BGV3JFM02bvu2ichUE56E0,138
+filprofiler-0.2.0.dist-info/RECORD,,
+filprofiler-0.2.0.dist-info/top_level.txt,sha256=Kufa9lGdRhM9UmvhljeoinW2edJOmvqEp2m8SjlewuA,12
+filprofiler/_filpreload.cpython-36m-x86_64-linux-gnu.so,sha256=zrMnh8hfq2KnoeADBBl4JXTzDM_CvCUbP9JnD2jsHzE,1350272
+filprofiler/_version.py,sha256=z0_f3qh06J54uiTVyMcIdxGifpehNFTOsVLXmOmWrZk,116
+filprofiler/_tracer.py,sha256=MFROiLvPYxRsQWuWZsBQWz4AcJweRaRNr5zK1NLNjrc,5036
+filprofiler/licenses.txt,sha256=dKEYNJbpkulyyEo5CZNZn16LRySHQLWK6IMRKUtER0s,337813
+filprofiler/_script.py,sha256=tRSiwW_iSPbsFkK1Maa90jirLxmhkGTjCq84ZhBVn9c,5185
+filprofiler/_utils.py,sha256=9uvDkGH4hlAWoG9XJ7Qlx2Z4e7bjbdiGiF8DHyNaD9o,179
+filprofiler/__init__.py,sha256=fAb7xg840d5M3F-ECCaDrLfIV_M0iOb23mofS-rcVxk,165
