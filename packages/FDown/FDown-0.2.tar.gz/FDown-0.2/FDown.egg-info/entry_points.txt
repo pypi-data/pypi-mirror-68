@@ -1,0 +1,3 @@
+[console_scripts]
+fdown = fdown.__main__:client
+
