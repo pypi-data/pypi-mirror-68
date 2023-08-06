@@ -1,0 +1,10 @@
+gbqschema_converter/__init__.py,sha256=tJQJppnmIaAABwxkEhfYSrk9Hr3ngVIHh4V1UhFhcr4,384
+gbqschema_converter/__main__.py,sha256=BHlvr3jOe5_quAYrJDK1iPvCr8Cz5FGGXVqSXeR7edo,2515
+gbqschema_converter/gbqschema_to_jsonschema.py,sha256=SGaRo9TPCfrC4vTJ0-I7TCRvgHYPqByL3d2Pa8bRNaU,6227
+gbqschema_converter/jsonschema_to_gbqschema.py,sha256=NfyXGxLKY0VQMKwmWmLq_jywmQiEhSf1vLak6WKYqwM,4694
+gbqschema_converter-1.2.1.dist-info/LICENSE,sha256=6uKvATPWwDCZg_DRgFAmFwD0yPAZ72RhybDQZJbH7pI,1069
+gbqschema_converter-1.2.1.dist-info/METADATA,sha256=TPWbOrD_Qv4zVmcS8i07s2p4dr6NDe_bHNc6tYpuw6o,11593
+gbqschema_converter-1.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gbqschema_converter-1.2.1.dist-info/entry_points.txt,sha256=-1zGs82IJePJtj0NmUEh3_dGiZxOwT3TfSCBjx_hk8A,123
+gbqschema_converter-1.2.1.dist-info/top_level.txt,sha256=JQAqarerySHaGDWzVqgI-Ts-LhQXP21lG1u8AgCHFW8,20
+gbqschema_converter-1.2.1.dist-info/RECORD,,
