@@ -1,0 +1,8 @@
+[console_scripts]
+bardCameraCalibration = sksurgerybard.ui.bard_camera_calibration_command_line:main
+bardGrabVideoImages = sksurgerybard.ui.bard_grab_video_images_command_line:main
+bardPivotCalibration = sksurgerycalibration.ui.pivot_calibration_command_line:main
+bardReadPointers = sksurgerybard.ui.bard_read_load_pointers_command_line:main
+bardReadRef = sksurgerybard.ui.bard_read_load_world_points_command_line:main
+sksurgerybard = sksurgerybard.ui.sksurgerybard_command_line:main
+
