@@ -1,0 +1,12 @@
+eml_parser/__init__.py,sha256=V_PeHTwfe-HF30kX9YaO5l6rkPsLErFWBA1k0PJbgEQ,278
+eml_parser/decode.py,sha256=rR8D6W4Yr-yZ3JDksKC3U9Nl9XkNdCTMZLB7jPAbdyk,8206
+eml_parser/eml_parser.py,sha256=aKwRQrdU3k8TD0xPoe1OMpLu9ilYny5kjkv4xGzmx7w,45423
+eml_parser/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eml_parser/regex.py,sha256=QepxoYJ4CC9WJ6fvez5NNLOlu_xT15H1wLBI29RJdGA,3525
+eml_parser/routing.py,sha256=kbwuDu7ZhTE-Axu9_RUfNWe-7B2Tj05EPq-x0O0ZfLY,6194
+eml_parser/tools.py,sha256=gyS57HlnoPf-7ywiasIwl01hwMQdYqhy1Yyynot9x58,4847
+eml_parser-1.14.0.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+eml_parser-1.14.0.dist-info/METADATA,sha256=i19wFEHVtirhzkY8V7jNLSXk3YyEgQz3UwXxKuVM6x8,5115
+eml_parser-1.14.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+eml_parser-1.14.0.dist-info/top_level.txt,sha256=dzynB55DisCaGvpo7p3RcTjbKaaUQ9OzNRJQur-rsaI,11
+eml_parser-1.14.0.dist-info/RECORD,,
