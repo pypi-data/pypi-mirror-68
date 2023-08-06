@@ -1,0 +1,7 @@
+sqlalchemy<4,>=1.3
+ngt<2,>=1
+spacy<3,>=2
+mathparse<1
+
+[docs]
+Sphinx<4,>=3

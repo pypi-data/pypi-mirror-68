@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: flipgenic
+Version: 0.5.0
+Summary: High-speed conversational dialogue engine
+Home-page: https://github.com/AlphaMycelium/flipgenic
+Author: Daniel Thwaites
+Author-email: danthwaites30@btinternet.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/AlphaMycelium/flipgenic/issues
+Project-URL: Source, https://github.com/AlphaMycelium/flipgenic
+Description: <p align="center">
+          <img
+            src="images/header.png"
+            alt="Flipgenic: High-speed conversational dialogue engine"
+          />
+        </p>
+        
+        ---
+        
+        [![Maintainability](https://api.codeclimate.com/v1/badges/07fceb32b49fc9aa5efe/maintainability)](https://codeclimate.com/github/AlphaMycelium/flipgenic/maintainability)
+        
+        ## What is it?
+        
+        Flipgenic is a Python package which helps you in creating chatbots which
+        respond using a database of known conversations. It learns how to talk based on
+        messages it receives, or messages from a dataset which are pre-trained into it.
+        
+        ## How do I use it?
+        
+        Here is a very basic example:
+        
+        ```python
+        # python -m pip install flipgenic
+        # python -m spacy download en_core_web_md
+        
+        from flipgenic import Responder
+        
+        # Create and connect to database
+        # This can take a while to load the spaCy models
+        responder = Responder('/path/to/data/folder/')
+        
+        # Initialize the database with a single response
+        responder.learn_response('Hello', 'Hi!')
+        
+        response = None
+        while True:
+            text = input('> ')
+        
+            if response:
+                # Learn the input as a response to the previous output
+                responder.learn_response(response, text)
+        
+            # Generate a response
+            response, distance = responder.get_response(text)
+            print(response, f'({distance})')
+        ```
+        
+        **For more, see [ReadTheDocs](https://flipgenic.readthedocs.io/en/latest/quickstart.html).**
+        
+        ## How does it work?
+        
+        Input messages (well, a 300-dimensional
+        [vector representation](https://spacy.io/api/token#vector) of them) are stored
+        along with any learned responses to that text. If someone inputs the first
+        message again, the stored response will be found and re-used.
+        
+        Input messages are converted to a 300-dimensional vector using
+        [SpaCy](https://spacy.io/api/token#vector). Then, this vector is used to
+        query the closest match from an [NGT](https://github.com/yahoojapan/NGT)
+        index containing the vectors of previously-learned messages. Each object ID
+        from the index corresponds to one or more known responses, stored in a
+        basic SQLite database. The most common response is selected, or one at random
+        if there is no mode.
+        
+Keywords: conversation dialogue engine chat chatbot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Provides-Extra: docs
