@@ -1,0 +1,3 @@
+[console_scripts]
+github-automation = github_automation.cli.main:main
+
