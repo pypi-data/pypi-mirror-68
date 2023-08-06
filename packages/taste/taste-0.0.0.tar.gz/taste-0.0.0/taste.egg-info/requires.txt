@@ -1,0 +1,5 @@
+ensure
+
+[release]
+setuptools
+twine
