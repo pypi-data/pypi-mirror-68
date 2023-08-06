@@ -1,0 +1,15 @@
+README.md
+setup.py
+http_pycurl/__init__.py
+http_pycurl/api.py
+http_pycurl/exceptions.py
+http_pycurl/models.py
+http_pycurl/sessions.py
+http_pycurl/structures.py
+http_pycurl/utils.py
+http_pycurl.egg-info/PKG-INFO
+http_pycurl.egg-info/SOURCES.txt
+http_pycurl.egg-info/dependency_links.txt
+http_pycurl.egg-info/requires.txt
+http_pycurl.egg-info/top_level.txt
+tests/test_http.py
