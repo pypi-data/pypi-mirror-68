@@ -1,0 +1,15 @@
+EPRsimGUI/EPRsimGUI.py,sha256=CoZ-g9h44iZelWvjTxRXwOPxhHrC651n3ByF1szRTaM,6055
+EPRsimGUI/Figure_handler.py,sha256=fMTxhuvGeM8md8ebTe3FDV8u2--ET4ZJgzs6lPNvv-c,5245
+EPRsimGUI/Logo_EPRsim.ico,sha256=alxRvTgTLlaLIvZsDN4jdAdAeOFq8Kz4hVzuyyZ-scc,142890
+EPRsimGUI/Logo_EPRsim.png,sha256=zIcHvWArnwlOzjfMNbqz01JkQgvWrk3NfyzBXHpnozw,7389
+EPRsimGUI/PSE_Design.py,sha256=tZtojU03rHaVu0uHd8dtyoHn1O4fxbG3uFEAPp-ZLyc,39660
+EPRsimGUI/Signals_slots.py,sha256=2rdu5AFZDhJIHHV6j14aQcVEdyrTzj5RAfYF6NFApi8,1598
+EPRsimGUI/SimGUI_Design.py,sha256=7E2X_5M70G2qOcSgkpplfsabRvkVvpoIQZoT5FP6ZOI,129706
+EPRsimGUI/SimGUI_functions.py,sha256=O2C_P7RCCySyixHbp534EOfsa9udnCZZNRowRhFRM3U,26090
+EPRsimGUI/Warning_Diag1.py,sha256=U4fYi5NRNKtMQayEgXYJzL8EMO_Gwv8y1WmrWG67Lok,1948
+EPRsimGUI-0.0.4.dev0.dist-info/LICENSE.txt,sha256=v7URVYiYonFQBS2hFHOuG9_AH6I2GRplOH1Wza_gXRI,35233
+EPRsimGUI-0.0.4.dev0.dist-info/METADATA,sha256=-ZcMKxOadOZBpLcn-8uro6cySBYfosd6TN6yFNeauDE,4449
+EPRsimGUI-0.0.4.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+EPRsimGUI-0.0.4.dev0.dist-info/entry_points.txt,sha256=HeYMFFdNxvecfoxmPHWejcn4gIhU-L3aFVXYbthuIZ0,189
+EPRsimGUI-0.0.4.dev0.dist-info/top_level.txt,sha256=CKzYbxrkkblzKZUn7rYDi_KIdDW1Hxxuo3gqk7DXpo8,10
+EPRsimGUI-0.0.4.dev0.dist-info/RECORD,,
