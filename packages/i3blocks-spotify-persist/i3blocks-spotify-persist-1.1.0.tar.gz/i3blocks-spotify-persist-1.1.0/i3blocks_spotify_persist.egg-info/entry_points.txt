@@ -1,0 +1,3 @@
+[console_scripts]
+i3blocks-spotify-persist = i3blocks_spotify_persist:_main
+
