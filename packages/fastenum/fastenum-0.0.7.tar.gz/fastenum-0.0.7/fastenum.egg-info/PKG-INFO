@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: fastenum
+Version: 0.0.7
+Summary: Faster drop-in replacement of Python's enum
+Home-page: https://github.com/qntln/fastenum
+Author: Quantlane
+Author-email: code@quantlane.com
+License: Apache 2.0
+Description: fastenum
+        ========
+        
+        Faster drop-in replacement of Python's `enum <https://docs.python.org/3/library/enum.html>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5

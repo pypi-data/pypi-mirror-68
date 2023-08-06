@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+version.txt
+fastenum/__init__.py
+fastenum/fastenum.py
+fastenum/mypy_plugin.py
+fastenum.egg-info/PKG-INFO
+fastenum.egg-info/SOURCES.txt
+fastenum.egg-info/dependency_links.txt
+fastenum.egg-info/top_level.txt
