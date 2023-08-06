@@ -1,0 +1,10 @@
+msql/__init__.py,sha256=oXsY3_aFnsZ7VwLg5UGpCO479ujJicAv574qci46s3I,161
+msql/connection.py,sha256=9xya-Psvexl2U7-NwnYR-6GZpciE5GDFHsuium2I0_o,1804
+msql/cursor.py,sha256=VlPFjqpzunzSsKRbWQk_BMPMQlbzU-9Hub97mXHVCu0,509
+msql/database.py,sha256=SGeqcRwjnzGSV4KQkF6mjimH-ZdNn8n8ksMUTuZNr5E,1174
+msql/migration_tool.py,sha256=4NqVr3CY2Iz9UdMmlF5LqbnkHS3LVzXWofI5kD3WuxE,3028
+msql/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msql-1.1.1.dist-info/METADATA,sha256=8zmXHdW7Ifnt2kehT6tcRPej2dgf0xlVjyay7TTKXhc,511
+msql-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+msql-1.1.1.dist-info/top_level.txt,sha256=6oMc0DVfXajZNuB0hB7V3O-9Erreu3Rs0OhuVbx1_Qc,5
+msql-1.1.1.dist-info/RECORD,,
