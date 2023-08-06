@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+New folder/__init__.py
+New folder/main.py
+New folder/wordpress.py
+automateWordPressPost/__init__.py
+automateWordPressPost/main.py
+automateWordPressPost/wordpress.py
+automateWordPressPost.egg-info/PKG-INFO
+automateWordPressPost.egg-info/SOURCES.txt
+automateWordPressPost.egg-info/dependency_links.txt
+automateWordPressPost.egg-info/requires.txt
+automateWordPressPost.egg-info/top_level.txt
