@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: data-cache
+Version: 0.1.4
+Summary: Data Cache
+Author: Statnett Datascience
+Author-email: Datascience.Drift@statnett.no
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: h5py (>=2.10.0,<3.0.0)
+Requires-Dist: numpy
+Requires-Dist: pandas (>=1.0.0,<2.0.0)
+Requires-Dist: tables
