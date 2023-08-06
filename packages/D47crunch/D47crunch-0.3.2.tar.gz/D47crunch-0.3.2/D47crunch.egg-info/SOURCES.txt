@@ -1,0 +1,8 @@
+README.md
+D47crunch/__init__.py
+D47crunch/setup.py
+D47crunch.egg-info/PKG-INFO
+D47crunch.egg-info/SOURCES.txt
+D47crunch.egg-info/dependency_links.txt
+D47crunch.egg-info/requires.txt
+D47crunch.egg-info/top_level.txt
