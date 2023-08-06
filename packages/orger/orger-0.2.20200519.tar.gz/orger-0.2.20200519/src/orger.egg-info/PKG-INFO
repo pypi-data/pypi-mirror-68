@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: orger
+Version: 0.2.20200519
+Summary: Converts data into org-mode
+Home-page: https://github.com/karlicoss/orger
+Author: Dima Gerasimov
+Author-email: karlicoss@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: testing
+Provides-Extra: linting
