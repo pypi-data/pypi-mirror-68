@@ -1,0 +1,97 @@
+CHANGES
+=======
+
+* Correct duplicating /url in part of url
+* Add initial Boat CI version
+* Add badges
+* Added travis badge
+* Correct links in documentation
+* Update docs
+* Update docs
+* Correct errors
+* Fix
+* Add missing return
+* Update docs
+* Separate into 3 modules
+* Fixed typo
+* Bump version
+* Add travis integration
+* Clean up the structure - split to two packages
+* Move ARM integration to rkt\_armutils
+* Added :docker:generate-readme
+* Migrate :docker:extract-envs-from-dockerfile
+* Migrate docker-tag-exists
+* Migrate github tools
+* Started migration to RKD
+* Add Makefile instruction
+
+v2.2.0
+------
+
+* Correct previous commit
+* Corrected syntax error
+* Corrected syntax error
+* Added FORCE\_INSTALL parameter to the any.sh
+* Updated docs
+* Added new installer
+* Added PostgreSQL support
+
+v2.1.0
+------
+
+* Added "find-closest-github-release"
+* Added recipes
+* Added footer
+
+v2.0.0
+------
+
+* Removed duplicated docs section
+* Added docs
+* docker-hub-tag-exists is now renamed to docker-tag-exists
+* Added docs for upcoming release
+* Added static bins for ARM
+* Added travis utils for ARM builds
+* Added a possibility to pick a version of utils on travis
+
+v1.2.3
+------
+
+* Added retry for the github API call
+
+v1.2.2
+------
+
+* Fix in the docs
+
+v1.2.1
+------
+
+* Bugfixes to the escaping and error reporting
+
+v1.2.0
+------
+
+* Added docker-generate-readme
+
+v1.1.0
+------
+
+* Added \`--verbose\`
+* Added support for \`--max-versions\` and \`--dont-rebuild\`
+* Added tool "for-each-github-release"
+
+v1.0.3
+------
+
+* Added comment character stripping in extract-envs-from-dockerfile
+
+v1.0.2
+------
+
+* Added env-to-json tool
+
+v1.0.1
+------
+
+* Added export
