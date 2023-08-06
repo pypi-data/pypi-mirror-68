@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: react-render-client
+Version: 1.3.1
+Summary: Render and bundle React components from a Django application
+Home-page: https://github.com/mic159/react-render
+Author: Michael Cooper
+Author-email: mic159@gmail.com
+License: MIT
+Download-URL: https://github.com/mic159/react-render/tarball/1.3.1
+Description: Documentation at https://github.com/mic159/react-render
+Keywords: react,reactjs,django,isomorphic,templates
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
