@@ -1,0 +1,8 @@
+APP_NAME = 'Index Generator'
+APP_VERSION = '0.3.0'
+APP_URL = 'https://github.com/index-generator-project/index-generator'
+PACKAGE_NAME = 'index-generator'
+LICENSE = 'MIT'
+AUTHOR = 'Index Generator Project'
+EMAIL = ''
+DESCRIPTION = 'Yet another index generator.'
