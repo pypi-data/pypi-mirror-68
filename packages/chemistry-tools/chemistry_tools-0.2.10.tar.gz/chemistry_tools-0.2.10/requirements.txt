@@ -1,0 +1,6 @@
+numpy>=1.16.0
+pandas>=0.24.0
+appdirs>=1.4.3
+quantities >= 0.12.4
+requests>=2.21.0
+requests-cache>=0.5.0
