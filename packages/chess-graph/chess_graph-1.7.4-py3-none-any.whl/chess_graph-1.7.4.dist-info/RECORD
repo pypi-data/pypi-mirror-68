@@ -1,0 +1,17 @@
+chess_graph/__init__.py,sha256=niKt5-6ZVPlNw_iYzxRkCUa51tBLa6NOzDgz1riaKZ0,431
+chess_graph/chart.py,sha256=pr-wuqkdm8iY_cQ0hKFy_fdsTRff9sZJArTYOzICUvM,10233
+chess_graph/chess_scrape.py,sha256=oVCOV08-b8yn6SKKqZNIHsBRgQCd0rHOQcngWTT8cMQ,1508
+chess_graph/find_opening.py,sha256=kwPfF8SZq2O9Q4x913hicf09c-vGOmIE4VSWr36vVdg,797
+chess_graph/game_parser.py,sha256=UE3z0Clabxrv7MKepaqAUW_B_5c040XtZCGOMKRZQZg,1760
+chess_graph/new_parser.py,sha256=QsL-TVXNuFMwW5Arfs7eO23YcnIdm8nxxZwafDiyEGg,2699
+chess_graph/elo_reading/openings_sheet.csv,sha256=xwjYhVbQhawvnj15auZTiVtXYfgMdzBLngLuLSKFNdU,176896
+chessgr/__init__.py,sha256=Nqwy0aPou28u4k69qn9ocamW1GIAr6URHoEuxEbSFCg,247
+chessgr/chart.py,sha256=BdiUds79pgqZWZ9Opc268wbRknrL6SwlYg7trLmQy04,8799
+chessgr/chess_scrape.py,sha256=oVCOV08-b8yn6SKKqZNIHsBRgQCd0rHOQcngWTT8cMQ,1508
+chessgr/find_opening.py,sha256=-lCUV71EBk2A382olUzt-nvoYYq0QG5wnnmxEAe3un4,688
+chessgr/game_parser.py,sha256=5M-swD4qD3QXLENScRkj2K08ysH5JUjYOdBGXYkwBOk,1673
+chess_graph-1.7.4.dist-info/LICENSE,sha256=heyegGKuZHsBC7PVfqTodbCt3wqjFSpIrU6yDk1y3i4,1070
+chess_graph-1.7.4.dist-info/METADATA,sha256=huG5pqtp50F7n0xjqoCrBH9Yh_L5TXjbW-vPm_Q1wz8,9035
+chess_graph-1.7.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+chess_graph-1.7.4.dist-info/top_level.txt,sha256=xZ91NW5oaa_OEUg5GwFOnyTZhWJEMZhEbWqHJn7fTZk,12
+chess_graph-1.7.4.dist-info/RECORD,,
