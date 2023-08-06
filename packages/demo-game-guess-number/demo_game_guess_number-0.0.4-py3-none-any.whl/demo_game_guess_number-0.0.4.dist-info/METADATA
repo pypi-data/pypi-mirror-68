@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: demo-game-guess-number
+Version: 0.0.4
+Summary: 小游戏演示——猜数字
+Home-page: https://github.com/program-in-chinese/study/
+Author: 无名
+Author-email: nobodxbodon.github@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+猜 0-100 中的一个数字：
+```
+$ 猜数字
+我想了个 100 之内的数，猜猜是几？
+请猜吧: 50
+太大了!
+请猜吧: 20
+太大了!
+请猜吧: 5
+太大了!
+请猜吧: 2
+中了!
+```
+
+
