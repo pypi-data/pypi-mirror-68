@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pwseqdist
+Version: 0.1.0
+Summary: Efficiently computes distances between protein sequences
+Home-page: https://github.com/agartland/pwseqdist
+Author: Andrew Fiore-Gartland
+Author-email: agartlan@fredhutch.org
+Maintainer: Andrew Fiore-Gartland
+Maintainer-email: agartlan@fredhutch.org
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16.4)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: parasail (>=1.1.17)
+Requires-Dist: parmap (>=1.5.2)
+Requires-Dist: pytest (>=5.0.0)
+Requires-Dist: scipy (>=1.2.1)
+
+A small package that efficiently computes distances between protein sequences. Can accommodate similarity matrices, sequences of different lengths and custom metrics.
+
+
