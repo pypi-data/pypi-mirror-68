@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: germansentiment
+Version: 1.0.0
+Summary: A python package for german language stentiment classification.
+Home-page: https://github.com/oliverguhr/german-sentiment-lib
+Author: Oliver Guhr
+Author-email: oliver.guhr@htw-dresden.de
+License: UNKNOWN
+Description: # German Sentiment Classification with Bert
+        
+        ## Usage
+        
+        ## Details
+        
+        Model, Process, Dataset
+        
+        ## Performance
+        | file                       | F1 micro Score |
+        | :------------------------- | -------------: |
+        | holidaycheck               |         0.9568 |
+        | scare                      |         0.9418 |
+        | filmstarts                 |         0.9021 |
+        | germeval                   |         0.7536 |
+        | PotTS                      |         0.6780 |
+        | emotions                   |         0.9649 |
+        | sb10k                      |         0.7376 |
+        | leipzig-deu-wikipedia-2016 |         0.9967 |
+        | all                        |         0.9639 |
+        
+        
+        ## Cite
+        
+        
+        
+        Twitter: @oliverguhr
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
