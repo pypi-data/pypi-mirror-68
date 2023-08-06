@@ -1,0 +1,16 @@
+metaproj/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+metaproj/context.py,sha256=nwUkW68CPpmV8luxIygQ3u-JyEpH-RwlgzD7_-oe2oM,781
+metaproj/cppgen.py,sha256=fbxtdj_aM3eIVr3yrAjYFO2wXXyB0_h9c6j2qVQAgOw,1414
+metaproj/igen.py,sha256=AOV3Geu-Uln7rqO3hGsTB3bMJhj1_vnmD0McSJarSUY,336
+metaproj/pygen.py,sha256=hOKISZz3uwc_Jx5YhdbgZ6hhly0_XqCm-6-7tOONEFM,2940
+metaproj/vimdepgen.py,sha256=YtNnwsE7f7hf--83mXXKisYKdHa-4vNBI3WdzH2txAY,299
+metaproj/vimgen.py,sha256=S4jgIC_HQ6FsHJ-DiLdKax9LY9eLviYAgohca0_LCNU,7678
+metaproj/scripts/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+metaproj/scripts/entry_points.py,sha256=R9K6pK0ZLJ36BpijrMtuxalrwlCo2yPKHaCQmiZSXfk,1124
+metaproj-0.3.dist-info/LICENSE.txt,sha256=voVcniUfVWsYLkgn7OYEtdWkiPgHQly9wVEBYPWEdek,25
+metaproj-0.3.dist-info/METADATA,sha256=PYjN2JJ0M6avZ-2_Z_7emgAL1tVdsWr6qlgVCO6hkys,184
+metaproj-0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+metaproj-0.3.dist-info/entry_points.txt,sha256=RLx7XSqbCgcUX5r3ijC4T710q4PocDOASIEabiXUACA,177
+metaproj-0.3.dist-info/top_level.txt,sha256=vcD6Wa3_hcP1yBXdkXtaGa2rf8z4KIPYGnuF29PlKQc,9
+metaproj-0.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+metaproj-0.3.dist-info/RECORD,,

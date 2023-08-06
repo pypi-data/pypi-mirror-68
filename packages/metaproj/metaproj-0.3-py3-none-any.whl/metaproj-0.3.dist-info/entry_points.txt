@@ -1,0 +1,5 @@
+[console_scripts]
+init-proj = metaproj.scripts.entry_points:pyproj
+vim-conf = metaproj.scripts.entry_points:vimconf
+vim-conf-prepare = metaproj.scripts.entry_points:vimprepare
+
