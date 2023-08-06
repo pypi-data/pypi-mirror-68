@@ -1,0 +1,14 @@
+README.md
+setup.py
+pybitrix24/__init__.py
+pybitrix24/bitrix24.py
+pybitrix24/exceptions.py
+pybitrix24/requester.py
+pybitrix24.egg-info/PKG-INFO
+pybitrix24.egg-info/SOURCES.txt
+pybitrix24.egg-info/dependency_links.txt
+pybitrix24.egg-info/top_level.txt
+tests/__init__.py
+tests/automation.py
+tests/test_e2e.py
+tests/test_unit.py
