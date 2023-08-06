@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: wang_ds_toolbox
+Version: 0.1.1
+Summary: This is a collection of data science functions that I have found extremely useful across a wide variety of use cases. This is mostly a library just for me, but feel free to use it if you want. This is a library that handles tabular data mostly. This specific version takes a lot of deprecated functions from fastai0.7 and mainly pulls from their random forest lessons. I will be continuously adding to this lib as I learn more data science things
+Home-page: https://github.com/user/alswang18
+Author: Alec Wang
+Author-email: alswang18.programming@gmail.com
+License: MIT
+Download-URL: https://github.com/alswang18/wang_ds_toolbox/archive/v_0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: Data Science,Random Forests,Visualizations
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
