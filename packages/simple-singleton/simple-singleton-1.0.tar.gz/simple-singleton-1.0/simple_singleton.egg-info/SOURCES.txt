@@ -1,0 +1,9 @@
+README.md
+setup.py
+simple_singleton/__init__.py
+simple_singleton/singleton.py
+simple_singleton/singleton_args.py
+simple_singleton.egg-info/PKG-INFO
+simple_singleton.egg-info/SOURCES.txt
+simple_singleton.egg-info/dependency_links.txt
+simple_singleton.egg-info/top_level.txt
