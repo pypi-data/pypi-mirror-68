@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: recommendx
+Version: 0.1
+Summary: Recommendation system with observed attributes and time-varying coefficients
+Home-page: https://github.com/adrennhoff/recommendx
+Author: Adam Rennhoff
+Author-email: Adam.Rennhoff@mtsu.edu
+License: bsd-3-clause
+Keywords: machine learning,recommendation system,SVD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
