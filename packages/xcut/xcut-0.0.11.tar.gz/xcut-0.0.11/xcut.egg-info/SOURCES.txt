@@ -1,0 +1,8 @@
+README.md
+setup.py
+xcut
+xcut.egg-info/PKG-INFO
+xcut.egg-info/SOURCES.txt
+xcut.egg-info/dependency_links.txt
+xcut.egg-info/requires.txt
+xcut.egg-info/top_level.txt
