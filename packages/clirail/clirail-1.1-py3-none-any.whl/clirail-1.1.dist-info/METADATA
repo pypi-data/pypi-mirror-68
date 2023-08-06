@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: clirail
+Version: 1.1
+Summary: Command line application for the iRail API
+Home-page: https://framagit.org/Midgard/clirail/
+Author: Midgard
+License: UNKNOWN
+Project-URL: Bug Tracker, https://framagit.org/Midgard/clirail/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Dutch
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+# clirail
+
+Command line application for the iRail API
+
+iRail provides an API for Belgian trains.
+
+## Installation
+```
+pip install --user --upgrade clirail
+```
+
+Then make sure the installed executable will be found. On UNIX-like systems, this means checking that `~/.local/bin/` is [in your PATH](https://opensource.com/article/17/6/set-path-linux).
+
+## Usage
+|Command                                       |Function                                       |
+|----------------------------------------------|-----------------------------------------------|
+|clirail <station> ['' <moment>]               |Liveboard (list of trains departing in station)|
+|clirail <from_station> <to_station> [<moment>]|Route planning                                 |
+|clirail                                       |Analyse current timeliness in a few stations   |
+
+Omit the `<moment>` for ASAP departures.
+
+Give either the name or the telegraphic code. Names are matched fuzzily and intuitively. You can
+learn telegraphic codes by looking at a liveboard in clirail.
+
+## Licenses
+* clirail code is released under GNU GPLv3+.
+* xdg is released under ISC.
+
+## Known issues
+* If `<moment>` is just a time, it will be considered as today, even though in some cases it would
+  make more sense to consider it as tomorrow (e.g. at 11 PM planning a route with departure at 7 AM).
+
+## Development
+To create a virtualenv and install the dependencies in it:
+```
+tools/create_venv.py
+```
+
+Activate the virtualenv with `source venv/bin/activate`. Then run `bin/clirail` to run the program.
+
+Important: make sure the virtualenv is activated each time you run, otherwise your global `clirail`
+installation may be used.
+
+If you introduce dependencies, list them in `setup.py` under `install_requires`, and run
+`tools/update_requirements.sh`.
+
+
