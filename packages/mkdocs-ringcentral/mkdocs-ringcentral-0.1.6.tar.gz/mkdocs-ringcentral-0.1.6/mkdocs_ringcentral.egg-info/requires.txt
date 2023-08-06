@@ -1,0 +1,2 @@
+mkdocs>=1.1
+mkdocs-moonstone>=0.1.15
