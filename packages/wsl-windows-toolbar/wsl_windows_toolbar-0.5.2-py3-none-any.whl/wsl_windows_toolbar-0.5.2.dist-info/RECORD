@@ -1,0 +1,10 @@
+wsl_windows_toolbar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wsl_windows_toolbar/wsl-windows-toolbar-template.bat.j2,sha256=dspErF72X-N3xNdfGMlHb_XV3izrxZG9P0TkW90YCTM,63
+wsl_windows_toolbar/wsl-windows-toolbar-template.sh.j2,sha256=-MU37BVdMkxrbhE4qJmF_aYQc2eSPoi4JHGNXaUzOWs,77
+wsl_windows_toolbar/wsl_windows_toolbar.py,sha256=jZNb2O5L23d-UJ3hXv7Bzj8OZu929_avbl5VKuMLn7o,18084
+wsl_windows_toolbar-0.5.2.dist-info/LICENSE,sha256=iY5s7SamckYvfLn9NsBVXrh7aDqzp5R9k_-2oY_MjCc,1066
+wsl_windows_toolbar-0.5.2.dist-info/METADATA,sha256=WoeWacZYMS9bnpyrt0RaZVstJTpbGL-8iME-MBQA4zc,9052
+wsl_windows_toolbar-0.5.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wsl_windows_toolbar-0.5.2.dist-info/entry_points.txt,sha256=45w1Qsi27fT2FeeT-m169ZhKD-qL4Zk4J_WPbyxzBig,85
+wsl_windows_toolbar-0.5.2.dist-info/top_level.txt,sha256=SMWUBuBCRWXqzbwzFCukzJ4bbpnnQ3QuaQP5mr0EFv4,20
+wsl_windows_toolbar-0.5.2.dist-info/RECORD,,
