@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: amnes
+Version: 20.5.1
+Summary: Adaptive Meta-Framework for Network Experiment Studies.
+Home-page: https://amnes.gitlab.io/amnes/
+Author: AMNES Project
+License: UNKNOWN
+Project-URL: Documentation, https://amnes.gitlab.io/amnes/
+Project-URL: GitLab.com Source, https://gitlab.com/amnes/amnes/
+Project-URL: Issue Tracker, https://gitlab.com/amnes/amnes/issues
+Description: # Adaptive Meta-Framework for Network Experiment Studies (AMNES)
+        
+        AMNES is a highly modular tool that aims to simplify the execution of reproducible
+        network experiments of all kinds.
+        With its easy configurability, the possibility to develop comprehensive extensions and
+        the connectivity to different storage backends, this framework helps you to spend less
+        time on testbed configuration and more time on your network research.
+        
+        ---
+        
+        _For Usage and Development Guide consult [AMNES Documentation](https://amnes.gitlab.io/amnes/)._
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8,<4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
