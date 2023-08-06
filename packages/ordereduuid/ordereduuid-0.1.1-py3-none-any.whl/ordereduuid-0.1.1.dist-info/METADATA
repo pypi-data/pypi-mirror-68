@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ordereduuid
+Version: 0.1.1
+Summary: Create time-ordered UUIDs ideal for database keys
+Home-page: https://gitlab.com/abbot-ellis/ordered-uuid.git
+Author: Jaron Powser
+Author-email: jpowser@abbotellis.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+# Ordered UUID
+Generates UUIDs ordered by time and which subclass uuid.UUID from the Python standard library.
+
+
