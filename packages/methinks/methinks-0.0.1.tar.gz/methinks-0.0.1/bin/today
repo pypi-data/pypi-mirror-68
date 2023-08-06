@@ -1,0 +1,52 @@
+#!/bin/bash
+# Assumes this is run from the directory you have diary entries in.
+
+# Source environment variables from python config file
+source <(methinks-env)
+
+# If we find the host environment variable set, assume host is setup
+# and we want to communicate and pull changes where possible
+if [[ $METHINKS_HOST ]]
+then
+	REMOTE_ARG="--remote"
+fi
+
+MEMORY=30
+
+function find_last_entry {
+	# Find the first entry before the current one
+	for i in $(seq 0 $MEMORY)
+	do
+		prev_fname=$(date --date="$i day ago" +"$METHINKS_DATEFORMAT.md")
+		if [ -f $prev_fname ]
+		then
+			if [ $i -eq 0 ]
+			then
+				printf "Loading today's entry that already exists.\n"
+			else
+				printf "Previous entry was %d day(s) ago.\n" $i
+			fi
+			PREV_FOUND=$prev_fname
+			break
+		fi
+	done
+}
+
+FNAME=`date +"$METHINKS_DATEFORMAT.md"`
+
+find_last_entry
+# If the variable is set from the function
+if [[ $PREV_FOUND ]]
+then
+	CONTENT=$(today-python --infile $PREV_FOUND $REMOTE_ARG)
+else
+	CONTENT=$(today-python $REMOTE_ARG)
+fi
+if [ $? -eq 0 ]
+then
+	echo "$CONTENT" > $FNAME
+	printf "Entry created: %s\n" $FNAME
+	$METHINKS_EDITOR $FNAME
+	CONTENT=$(today-python --infile $FNAME $REMOTE_ARG)
+	echo "$CONTENT" > $FNAME
+fi
