@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pencilcase
+Version: 0.0.1
+Summary: A little box of Python tools.
+Home-page: UNKNOWN
+Author: Chelsea Voss
+Author-email: csvoss@csvoss.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: prompt-toolkit
+
+UNKNOWN
+
+
