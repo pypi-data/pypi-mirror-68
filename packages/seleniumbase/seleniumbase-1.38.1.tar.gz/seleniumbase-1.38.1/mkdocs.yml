@@ -1,0 +1,51 @@
+site_name: SeleniumBase
+repo_url: https://github.com/seleniumbase/SeleniumBase/
+edit_uri: ""
+site_dir: "site"
+docs_dir: "docs"
+markdown_extensions:
+  - codehilite
+  - toc:
+      permalink: true
+theme:
+  name: material
+  logo: https://seleniumbase.io/img/logo3a.png
+  favicon: img/favicon.ico
+plugins:
+  - search
+  - mkdocs-simple-hooks:
+      hooks:
+        on_pre_build: docs.prepare:main
+nav:
+  - Home Page: README.md
+  - Features: help_docs/features_list.md
+  - CMD Options: help_docs/customizing_test_runs.md
+  - Examples: examples/ReadMe.md
+  - Translations: help_docs/translations.md
+  - Reports: examples/example_logs/ReadMe.md
+  - API Reference: help_docs/method_summary.md
+  - Mobile Testing: help_docs/mobile_testing.md
+  - Console Scripts: seleniumbase/console_scripts/ReadMe.md
+  - Site Tours: examples/tour_examples/ReadMe.md
+  - How it Works: help_docs/how_it_works.md
+  - Install Python, pip, git: help_docs/install_python_pip_git.md
+  - Virtualenv Instructions: help_docs/virtualenv_instructions.md
+  - Install SeleniumBase: help_docs/install.md
+  - WebDriver Installation: help_docs/webdriver_installation.md
+  - Verifying WebDriver: help_docs/verify_webdriver.md
+  - Recorder and Exporting: seleniumbase/utilities/selenium_ide/ReadMe.md
+  - MasterQA: examples/master_qa/ReadMe.md
+  - Visual Testing: examples/visual_testing/ReadMe.md
+  - GitHub CI: integrations/github/workflows/ReadMe.md
+  - Happy Customers: help_docs/happy_customers.md
+  - MySQL installation: help_docs/mysql_installation.md
+  - Safari Driver Tips: help_docs/using_safari_driver.md
+  - Hidden Files on macOS: help_docs/hidden_files_info.md
+  - Jenkins on Azure: integrations/azure/jenkins/ReadMe.md
+  - Jenkins on Google Cloud: integrations/google_cloud/ReadMe.md
+  - Katalon Integration: integrations/katalon/ReadMe.md
+  - Common Decorators: seleniumbase/common/ReadMe.md
+  - Selenium Grid: seleniumbase/utilities/selenium_grid/ReadMe.md
+  - Docker Help: integrations/docker/ReadMe.md
+  - Master QA: seleniumbase/masterqa/ReadMe.md
+  - Help Docs: help_docs/ReadMe.md
