@@ -1,0 +1,13 @@
+README.rst
+setup.py
+src/ofxstatement/__init__.py
+src/ofxstatement/plugins/__init__.py
+src/ofxstatement/plugins/bnp.py
+src/ofxstatement_be_bnp.egg-info/PKG-INFO
+src/ofxstatement_be_bnp.egg-info/SOURCES.txt
+src/ofxstatement_be_bnp.egg-info/dependency_links.txt
+src/ofxstatement_be_bnp.egg-info/entry_points.txt
+src/ofxstatement_be_bnp.egg-info/namespace_packages.txt
+src/ofxstatement_be_bnp.egg-info/requires.txt
+src/ofxstatement_be_bnp.egg-info/top_level.txt
+src/ofxstatement_be_bnp.egg-info/zip-safe
