@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: smtp4dev
+Version: 0.1.2
+Summary: Provides access to emails caught by the SMTP4dev development server
+Author: Guillaume Pasquet
+Author-email: guillaume.pasquet@plentific.com
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# SMTP4DEV
+
+An abstraction library to access the messages captured by an
+[SMTP4dev](https://github.com/rnwood/smtp4dev/) instance.
+
+
+## Installation
+
+Install with pip:
+
+```
+pip install smtp4dev
+```
+
+## Usage
+
+Example usage:
+
+```py
+from smtp4dev import Smtp4Dev
+client = Smtp4Dev('http://localhost:8080')
+messages = client.list_messages()
+email = client.get_message(next(messages))
+print(email)
+"[From: romeo@email.com To: juliet@email.com Subject: Meeting Friday night]"
+```
+
