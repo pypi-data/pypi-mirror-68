@@ -1,0 +1,18 @@
+[flask.commands]
+references = oarepo_references.cli:references
+
+[invenio_base.api_apps]
+oarepo_references = oarepo_references.ext:OARepoReferences
+
+[invenio_base.apps]
+oarepo_references = oarepo_references:OARepoReferences
+
+[invenio_db.alembic]
+oarepo_references = oarepo_references:alembic
+
+[invenio_db.models]
+oarepo_references = oarepo_references.models
+
+[invenio_i18n.translations]
+messages = oarepo_references
+
