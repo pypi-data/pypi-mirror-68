@@ -1,0 +1,12 @@
+# daily或product环境下增量更新$pip install -r upgrade_requirements.txt -i https://pypi.douban.com/simple
+# [未开始] 生产环境2020-04-19之后应新增或调整的依赖
+cython==3.0a4
+setuptools==46.1.3
+wheel>=0.34.2
+torch==1.5.0
+torchvision>=0.6.0
+ray==0.8.5
+redis==3.0.1
+redis-py-cluster==2.0.0
+# 附录！
+#完成状态有：[未开始]、[已完成升级]

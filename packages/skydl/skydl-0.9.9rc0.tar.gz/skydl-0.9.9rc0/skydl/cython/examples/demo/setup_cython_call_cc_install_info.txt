@@ -1,0 +1,4 @@
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/cython/cython_adapter/setup_cython_call_cc.py
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/cython/cython_adapter/__pycache__/setup_cython_call_cc.cpython-36.pyc
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/skydlcython.cpython-36m-darwin.so
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/skydlcython-0.0.1-py3.6.egg-info
