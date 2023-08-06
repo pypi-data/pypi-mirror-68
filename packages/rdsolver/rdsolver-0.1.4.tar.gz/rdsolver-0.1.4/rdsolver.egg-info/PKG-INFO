@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rdsolver
+Version: 0.1.4
+Summary: Solver for 2D reaction-diffusion systems.
+Home-page: https://github.com/justinbois/rdsolver
+Author: Justin Bois
+Author-email: bois@caltech.edu
+License: MIT license
+Description: UNKNOWN
+Keywords: rdsolver
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
