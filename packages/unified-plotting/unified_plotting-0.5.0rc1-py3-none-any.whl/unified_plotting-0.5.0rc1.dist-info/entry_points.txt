@@ -1,0 +1,3 @@
+[console_scripts]
+unified_plotting = unified_plotting.ui.gui:main
+
