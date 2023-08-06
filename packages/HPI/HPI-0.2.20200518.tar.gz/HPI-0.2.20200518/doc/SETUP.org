@@ -1,0 +1,289 @@
+# TODO  FAQ??
+Please don't be shy and raise issues if something in the instructions is unclear.
+You'd be really helping me, I want to make the setup as straightforward as possible!
+
+# update with org-make-toc
+* TOC
+:PROPERTIES:
+:TOC:      :include all
+:END:
+
+:CONTENTS:
+- [[#toc][TOC]]
+- [[#few-notes][Few notes]]
+- [[#setting-up-the-main-package][Setting up the main package]]
+  - [[#option-1-install-from-pip][option 1: install from PIP]]
+  - [[#option-2-local-install][option 2: local install]]
+  - [[#option-3-use-without-installing][option 3: use without installing]]
+- [[#optional-packages][Optional packages]]
+- [[#setting-up-the-modules][Setting up the modules]]
+  - [[#private-configuration-myconfig][private configuration (my.config)]]
+  - [[#module-dependencies][module dependencies]]
+- [[#usage-examples][Usage examples]]
+  - [[#end-to-end-roam-research-setup][End-to-end Roam Research setup]]
+  - [[#polar][Polar]]
+  - [[#google-takeout][Google Takeout]]
+  - [[#kobo-reader][Kobo reader]]
+  - [[#orger][Orger]]
+    - [[#orger--polar][Orger + Polar]]
+  - [[#demopy][demo.py]]
+:END:
+
+
+* Few notes
+I understand people may not super familiar with Python, PIP or generally unix, so here are some useful notes:
+
+- only python3 is supported, and more specifically, ~python >= 3.6~.
+- I'm using ~pip3~ command, but on your system you might only have ~pip~.
+
+  If your ~pip --version~ says python 3, feel free to use ~pip~.
+
+- similarly, I'm using =python3= in the documentation, but if your =python --version= says python3, it's okay to use =python=
+
+- when you are using ~pip install~, [[https://stackoverflow.com/a/42989020/706389][always pass]] =--user=, and *never install third party packages with sudo* (unless you know what you are doing)
+- throughout the guide I'm assuming the user config directory is =~/.config=, but it's *different on Mac/Windows*.
+
+  See [[https://github.com/ActiveState/appdirs/blob/3fe6a83776843a46f20c2e5587afcffe05e03b39/appdirs.py#L187-L190][this]] if you're not sure what's your user config dir.
+
+* Setting up the main package
+This is a *required step*
+
+You can choose one of the following options:
+
+** option 1: install from [[https://pypi.org/project/HPI][PIP]]
+This is the *easiest way*:
+
+: pip3 install --user HPI
+
+** option 2: local install
+This is convenient if you're planning to add new modules or change the existing ones.
+
+1. Clone the repository: =git clone git@github.com:karlicoss/HPI.git /path/to/hpi=
+2. Go into the project directory: =cd /path/to/hpi=
+2. Run  ~pip3 install --user -e .~
+
+   This will install the package in 'editable mode'.
+   It will basically be a link to =/path/to/hpi=, which means any changes in the cloned repo will be immediately reflected without need to reinstall anything.
+
+   It's *extremely* convenient for developing and debugging.
+  
+** option 3: use without installing
+This is less convenient, but gives you more control.
+
+1. Clone the repository: =git clone git@github.com:karlicoss/HPI.git /path/to/hpi=
+2. Go into the project directory: =cd /path/to/hpi=
+3. Install the dependencies: ~python3 setup.py --dependencies-only~
+4. Use =with_my= script to get access to ~my.~ modules.
+
+   For example:
+
+   : /path/to/hpi/with_my python3 -c 'from my.pinboard import bookmarks; print(list(bookmarks()))'
+
+   It's also convenient to put a symlink to =with_my= somewhere in your system path so you can run it from anywhere, or add an alias in your bashrc:
+
+   : alias with_my='/path/to/hpi/with_my'
+
+   After that, you can wrap your command in =with_my= to give it access to ~my.~ modules, e.g. see [[#usage-examples][examples]].
+
+The benefit of this way is that you get a bit more control, explicitly allowing your scripts to use your data.
+
+* Optional packages
+You can also install some opional packages
+
+: pip3 install 'HPI[optional]'
+
+They aren't necessary, but improve your experience. At the moment these are:
+
+- [[https://github.com/karlicoss/cachew][cachew]]: automatic caching library, which can greatly speedup data access
+- [[https://github.com/metachris/logzero][logzero]]: a nice logging library, supporting colors
+
+* Setting up modules
+This is an *optional step* as few modules work without extra setup.
+But it depends on the specific module.
+
+See [[file:MODULES.org][MODULES]] to read documentation on specific modules that interest you.
+
+You might also find interesting to read [[file:CONFIGURING.org][CONFIGURING]], where I'm
+elaborating on some technical rationales behind the current configuration system.
+
+** private configuration (=my.config=)
+# TODO write about dynamic configuration
+# TODO add a command to edit config?? e.g. HPI config edit
+# HPI doctor?
+If you're not planning to use private configuration (some modules don't need it) you can skip straight to the next step. Still, I'd recommend you to read anyway.
+
+The configuration contains paths to the data on your disks, links to external repositories, etc.
+The config is simply a *python package* (named =my.config=), expected to be in =~/.config/my=.
+
+Since it's a Python package, generally it's very *flexible* and there are many ways to set it up.
+
+- *The simplest and the very minimum* you need is =~/.config/my/my/config.py=. For example:
+
+  #+begin_src python
+  import pytz # yes, you can use any Python stuff in the config
+
+  class emfit:
+      export_path = '/data/exports/emfit'
+      tz = pytz.timezone('Europe/London')
+      excluded_sids = []
+      cache_path  = '/tmp/emfit.cache'
+
+  class instapaper:
+      export_path = '/data/exports/instapaper'
+
+  class roamresearch:
+      export_path = '/data/exports/roamresearch'
+      username    = 'karlicoss'
+
+  #+end_src
+
+  To find out which attributes you need to specify:
+
+  - check in [[file:MODULES.org][MODULES]]
+  - if there is nothing there, the easiest is perhaps to skim through the code of the module and to search for =config.= uses.
+   
+    For example, if you search for =config.= in [[file:../my/emfit/__init__.py][emfit module]], you'll see that it's using =export_path=, =tz=, =excluded_sids= and =cache_path=.
+
+  - or you can just try running them and fill in the attributes Python complains about!
+
+- Another example is in [[file:example_config][example_config]]:
+
+  #+begin_src bash :exports results :results output
+    for x in $(find example_config/ | grep -v -E 'mypy_cache|.git|__pycache__|scignore'); do
+      if   [[ -L "$x" ]]; then
+        echo "symlink | $x -> $(readlink $x)"
+      elif [[ -d "$x" ]]; then
+        echo "dir     | $x"
+      else
+        echo "file    | $x"
+        (echo "---"; cat "$x"; echo "---" ) | sed 's/^/          /'
+      fi
+    done
+  #+end_src
+
+  #+RESULTS:
+  #+begin_example
+  dir     | example_config/
+  dir     | example_config/my
+  dir     | example_config/my/config
+  file    | example_config/my/config/__init__.py
+            ---
+            """
+            Feel free to remove this if you don't need it/add your own custom settings and use them
+            """
+
+            class hypothesis:
+                # expects outputs from https://github.com/karlicoss/hypexport
+                # (it's just the standard Hypothes.is export format)
+                export_path = '/path/to/hypothesis/data'
+            ---
+  dir     | example_config/my/config/repos
+  symlink | example_config/my/config/repos/hypexport -> /tmp/my_demo/hypothesis_repo
+  #+end_example
+
+As you can see, generally you specify fixed paths (e.g. to your backups directory) in ~__init__.py~.
+Feel free to add other files as well though to organize better, it's a real Python package after all!
+
+Some things (e.g. links to external packages like [[https://github.com/karlicoss/hypexport][hypexport]]) are specified as *ordinary symlinks* in ~repos~ directory.
+That way you get easy imports (e.g. =import my.config.repos.hypexport.model=) and proper IDE integration.
+
+- my own config layout is a bit more complicated:
+
+  #+begin_src python :exports results :results output
+  from pathlib import Path
+  home = Path("~").expanduser()
+  pp = home / '.config/my/my/config'
+  for p in sorted(pp.rglob('*')):
+    if '__pycache__' in p.parts:
+      continue
+    ps = str(p).replace(str(home), '~')
+    print(ps)
+  #+end_src
+
+  #+RESULTS:
+  #+begin_example
+  ~/.config/my/my/config/__init__.py
+  ~/.config/my/my/config/locations.py
+  ~/.config/my/my/config/repos
+  ~/.config/my/my/config/repos/endoexport
+  ~/.config/my/my/config/repos/fbmessengerexport
+  ~/.config/my/my/config/repos/kobuddy
+  ~/.config/my/my/config/repos/monzoexport
+  ~/.config/my/my/config/repos/pockexport
+  ~/.config/my/my/config/repos/rexport
+  #+end_example
+
+# TODO link to post about exports?
+** module dependencies
+Dependencies are different for specific modules you're planning to use, so it's hard to specify.
+
+Generally you can just try using the module and then install missing packages via ~pip3 install --user~, should be fairly straightforward.
+
+* Usage examples
+If you run your script with ~with_my~ wrapper, you'd have ~my~ in ~PYTHONPATH~ which gives you access to your data from within the script.
+
+** End-to-end Roam Research setup
+In [[https://beepb00p.xyz/myinfra-roam.html#export][this]] post you can trace all steps starting from exporting your data to integrating with HPI package.
+
+If you want to set up a new data source, it could be a good learning reference.
+
+** Polar
+Polar doesn't require any setup as it accesses the highlights on your filesystem (should be in =~/.polar=).
+
+You can try if it works with:
+
+: python3 -c 'import my.reading.polar as polar; print(polar.get_entries())'
+
+** Google Takeout
+If you have zip Google Takeout archives, you can use HPI to access it:
+
+- prepare the config =~/.config/my/my/config.py=
+
+  #+begin_src python
+  class google:
+      # you can pass the directory, a glob, or a single zip file
+      takeout_path = '/data/takeouts/*.zip'
+  #+end_src
+
+- use it:
+
+  #+begin_src
+  $ python3 -c 'import my.media.youtube as yt; print(yt.get_watched()[-1])'
+  Watched(url='https://www.youtube.com/watch?v=p0t0J_ERzHM', title='Monster magnet meets monster magnet...', when=datetime.datetime(2020, 1, 22, 20, 34, tzinfo=<UTC>))
+  #+end_src
+
+
+** Kobo reader
+Kobo provider allows you to access the books you've read along with the highlights and notes.
+It uses exports provided by [[https://github.com/karlicoss/kobuddy][kobuddy]] package.
+
+- prepare the config
+
+  1. Point  =ln -sfT /path/to/kobuddy ~/.config/my/my/config/repos/kobuddy=
+  2. Add kobo config to =~/.config/my/my/config/__init__.py=
+    #+begin_src python
+    class kobo:
+        export_dir = 'path/to/kobo/exports'
+    #+end_src
+
+After that you should be able to use it:
+
+#+begin_src bash
+  python3 -c 'import my.books.kobo as kobo; print(kobo.get_highlights())'
+#+end_src
+
+** Orger
+# TODO include this from orger docs??
+
+You can use [[https://github.com/karlicoss/orger][orger]] to get Org-mode representations of your data.
+
+Some examples (assuming you've [[https://github.com/karlicoss/orger#installing][installed]] Orger):
+
+*** Orger + [[https://github.com/burtonator/polar-bookshelf][Polar]]
+
+This will convert Polar highlights into org-mode:
+
+: orger/modules/polar.py --to polar.org
+
+** =demo.py=
+read/run [[../demo.py][demo.py]] for a full demonstration of setting up Hypothesis (it uses public annotations data from Github)
