@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dkh-pixel
+Version: 1.0.3
+Summary: Библиотека для создания пиксельной графики в Python. Использует Tkinter.
+Home-page: https://github.com/dkh-gh/pixel_python
+Author: Дмитрий Холостов
+Author-email: dkh@ro.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Тестовый пакет
+
+Включает в себя игру Астероид 1.0.
+Ссылка на GitHub:
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+
+Проект создавался для обучения программированию.
+
+
