@@ -1,0 +1,401 @@
+Universal Level Formats documentation
+*************************************
+
+
+Contents
+^^^^^^^^
+
+* Universal Level Formats documentation
+
+  * Level Format Classes
+
+    * ulvl.JSL
+
+      * ulvl.JSL Methods
+
+    * ulvl.ASCL
+
+      * ulvl.ASCL Methods
+
+    * ulvl.ULX
+
+      * ulvl.ULX Methods
+
+    * ulvl.TMX
+
+      * ulvl.TMX Methods
+
+  * Helper Classes
+
+  * Indices and tables
+
+This library reads and writes universal level formats.  These level
+formats are generic enough to be used by any 2-D game.  Their purpose
+is to unify level editing under a simple, universal format.
+
+
+Level Format Classes
+====================
+
+These classes load and save levels for their respective formats.
+"ulvl.JSL" is generally the recommended format, but alternatives are
+offered as well.
+
+
+ulvl.JSL
+--------
+
+class ulvl.JSL
+
+   This class loads, stores, and saves JavaScript Level (JSL) files.
+   This format is based on JSON and generally has one of the following
+   extensions: ".jsl", ".json".
+
+   A JSL file contains a top-level object with the following keys:
+
+   * ""meta"": A value of any type indicating the layer's meta
+     variable.
+
+   * ""objects"": An object with the level's object types as keys
+     and arrays as values.  The array lists the meta variables of all
+     objects of the respective type ("null" for objects with no meta
+     variable defined).
+
+   * ""layers"": An array of objects indicating tile layers, with
+     each of these objects containing the following keys:
+
+     * ""type"": A value of any type indicating the type of the
+       layer.
+
+     * ""columns"": An integer indicating the number of columns in
+       the tile layer.
+
+     * ""tiles"": A zlib-compressed, base64-encoded string encoding
+       the tile IDs as data.
+
+     * ""meta"": A value of any type indicating the layer's meta
+       variable.
+
+   meta
+
+      Meta variable for the level as a whole.  Can be any value.
+
+   objects
+
+      A list of "LevelObject" objects representing objects of the
+      level.
+
+   layers
+
+      A list oj "TileLayer" objects representing the tile layers of
+      the level.
+
+
+ulvl.JSL Methods
+~~~~~~~~~~~~~~~~
+
+classmethod JSL.load(f)
+
+   Load the indicated file and return a "JSL" object.
+
+JSL.save(f)
+
+   Save the object to the indicated file.
+
+
+ulvl.ASCL
+---------
+
+class ulvl.ASCL
+
+   This class loads, stores, and saves ASCII Level (ASCL) files.  This
+   format is based on a grid of plain text characters and generally
+   has one of the following extensions: ".ascl", ".asc", ".txt".
+
+   An ASCL file contains two main components: the meta variable
+   definitions and the level object grid.
+
+   Meta variables are defined simply at the top of the file: each line
+   indicates the value of a different meta variable, always a string.
+   Any number of meta variables can be defined.
+
+   Everything after the first blank line in the ASCL file is
+   considered to be part of the tile layer.  Here, ASCII characters
+   are used to represent the tiles found in "tiles".
+
+   meta
+
+      A list of the level's meta variables.
+
+      Note: The meta variables can be any value, but when the ASCL
+        is saved, all meta variables will be automatically converted
+        to strings.
+
+   layer
+
+      A "TileLayer" object indicating the tiles of the level.
+
+      Note: Due to the nature of the format, the layer type and meta
+        variable of the layer are ignored and not preserved when
+        saving.
+
+
+ulvl.ASCL Methods
+~~~~~~~~~~~~~~~~~
+
+classmethod ASCL.load(f)
+
+   Load the indicated file and return an "ASCL" object.
+
+ASCL.save(f)
+
+   Save the object to the indicated file.
+
+
+ulvl.ULX
+--------
+
+class ulvl.ULX
+
+   This class loads, stores, and saves Universal Level XML (ULX)
+   files. This format is based on XML and generally has one of the
+   following extensions: ".ulx", ".xml".
+
+   A ULX file contains a root tree with the name "level" containing
+   the following children:
+
+   * "meta": Contains one element for each of the level's meta
+     variables.  Each element's tag indicates the name of the meta
+     variable, while its text indicates the value.
+
+   * "objects": Contains "object" elements.  Each "object" element
+     has the following attributes:
+
+     * ""type"": The object's type.
+
+     * ""meta"": The object's meta variable.
+
+   * "layers": Contains "layer" elements.  Each "layer" element
+     contains text indicating the layer's tiles as zlib-compressed
+     base64-encoded text, and the following attributes:
+
+     * ""type"": The layer's type.
+
+     * ""columns"": The number of columns in the tile layer.
+
+     * ""meta"": The layer's meta variable.
+
+   Note: Types and meta variables of all kinds can be any value, but
+     due to the nature of XML, all types and meta variables are
+     converted to strings when the ULX is saved. A value of "None"
+     leads to the ULX omitting the meta variable.
+
+   meta
+
+      A dictionary of all of the level's meta variables.
+
+   objects
+
+      A list of objects in the level as "LevelObject" objects.
+
+   layers
+
+      A list oj "TileLayer" objects representing the tile layers of
+      the level.
+
+
+ulvl.ULX Methods
+~~~~~~~~~~~~~~~~
+
+classmethod ULX.load(f)
+
+   Load the indicated file and return a "ULX" object.
+
+ULX.save(fname)
+
+   Save the object to the indicated file name.
+
+
+ulvl.TMX
+--------
+
+class ulvl.TMX
+
+   A class for reading (but not writing) TMX files created by the
+   Tiled Map Editor in a generic manner.
+
+   Only map meta-data, basic tile layers (but not group layers or
+   image layers), and object groups are captured.  Captured meta-data
+   is converted to numeric form whenever it is supposed to be.  All
+   other values are left as strings.
+
+   Saving in this format is not supported due to its complexity.
+
+   See the TMX format specification for more information on the format
+   itself:
+
+   https://doc.mapeditor.org/en/stable/reference/tmx-map-format/
+
+   meta
+
+      A dictionary of level meta variables obtained from the TMX.  The
+      following meta variables are captured if available:
+
+      * "orientation" (from the <map> tag)
+
+      * "dictionary" (from the <map> tag)
+
+      * "width" (from the <map> tag)
+
+      * "height" (from the <map> tag)
+
+      * "tilewidth" (from the <map> tag)
+
+      * "tileheight" (from the <map> tag)
+
+      * "backgroundcolor" (from the <map> tag)
+
+      * All custom map properties
+
+   objects
+
+      A list of objects in the level as "LevelObject" objects.  These
+      are taken from the TMX object tags. Layering of objects is not
+      preserved.  Each "LevelObject" object's type becomes, in order
+      of preference: the name of the TMX object, the type of the TMX
+      object, or the name of the TMX object group. Each "LevelObject"
+      object's meta variable is set as a dictionary of values obtained
+      from the TMX.  The following meta variables are captured if
+      available:
+
+      * "color" (from the <objectgroup> tag)
+
+      * "opacity" (from the <objectgroup> tag)
+
+      * "offsetx" (from the <objectgroup> tag)
+
+      * "offsety" (from the <objectgroup> tag)
+
+      * "x" (from the <object> tag)
+
+      * "y" (from the <object> tag)
+
+      * "width" (from the <object> tag)
+
+      * "height" (from the <object> tag)
+
+      * "rotation" (from the <object> tag)
+
+      * "gid" (from the <object> tag)
+
+      * "visible" (from the <object> tag)
+
+      * All custom object properties
+
+      Note: Remember that a tile object's origin is in the bottom-
+        center, unlike shape-based objects whose origin is in the top-
+        left. You can find out if an object is a tile object by
+        checking the respective level object's "meta["gid"]" after
+        loading.  If this value is not "None", the object is a tile
+        object.
+
+   layers
+
+      A list oj "TileLayer" objects representing the tile layers of
+      the level.  These are taken from the TMX layer tags.  Tile
+      flipping and rotation are not supported; attempts to flip or
+      rotate tiles will simply be interpreted as completely different
+      tiles.
+
+      Tile IDs are also localized so that a tile ID of 1 is the first
+      tile of the tileset, 2 is the second, and so on. For means of
+      simplification and consistency, only one tileset can be used per
+      layer and all tile global IDs will be localized based on the
+      tile IDs contained within.
+
+      Each "TileLayer" object's type becomes the name of the TMX
+      layer.  Each "TileLayer" object's meta variable is set as a
+      dictionary of values obtained from the TMX.  The following meta
+      variables are captured if available:
+
+      * "width" (from the <layer> tag)
+
+      * "height" (from the <layer> tag)
+
+      * "opacity" (from the <layer> tag)
+
+      * "visible" (from the <layer> tag)
+
+      * "offsetx" (from the <layer> tag)
+
+      * "offsety" (from the <layer> tag)
+
+      * All custom layer properties
+
+
+ulvl.TMX Methods
+~~~~~~~~~~~~~~~~
+
+classmethod TMX.load(f)
+
+   Load the indicated file and return a "TMX" object.
+
+
+Helper Classes
+==============
+
+These classes are helpers used by the level format classes to store
+data.
+
+class ulvl.TileLayer(type_, columns, tiles, meta=None)
+
+   A layer of tiles.  Tiles are simple position-based objects with no
+   special individual options, generally useful for large numbers of
+   basic objects.
+
+   type
+
+      The type of tile layer this is. Can be any arbitrary value.
+
+   columns
+
+      The number of columns in each tile row.
+
+   tiles
+
+      A list of integers indicating the tiles of the layer.  A value
+      of "0" indicates no tile.  Any higher value indicates the tile
+      ID of the tile.  Tile IDs are arbitrary; you decide what each
+      tile ID means for the game.
+
+   meta
+
+      Meta variable for the tile layer as a whole.  Can be any value.
+      Set to "None" for no value.
+
+class ulvl.LevelObject(type_, meta=None)
+
+   A generic level object.  Level objects are similar to tiles, but
+   positioning is arbitrary and they can have meta information
+   assigned to them.
+
+   type
+
+      The type of object this is.  Can be any arbitrary value.
+
+   meta
+
+      Meta variable of the object.  The meaning of this value is
+      completely arbitrary; use it for any variations (position, size,
+      etc) level objects have, in whatever way is most appropriate for
+      the game.  Set to "None" for no value.
+
+
+Indices and tables
+==================
+
+* Index
+
+* Module Index
+
+* Search Page
