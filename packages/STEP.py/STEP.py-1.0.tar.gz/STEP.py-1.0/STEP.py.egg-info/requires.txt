@@ -1,0 +1,11 @@
+argcomplete
+xlrd
+xlwt
+pyxb
+suds-py3
+xmltodict
+Baubles
+Perdy
+Spanners
+Argumental
+GoldenChild
