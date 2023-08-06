@@ -1,0 +1,329 @@
+body {
+  background: #527379;
+  /* background: linear-gradient(to right bottom, #648880, #293f50); */
+  height: 100%;
+}
+.hamburger-menu {
+  height: 15px;
+  width: 30px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: chocolate;
+  transition: all 0.8s;
+  box-shadow: 2px 2px 4px rgb(53, 53, 53);
+}
+.nav-bar {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(49, 77, 90);
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0 20% 10% 0;
+  transition: 0.8s;
+  z-index: 1;
+}
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+.nav-list {
+  text-align: left;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 5px;
+  letter-spacing: 2px;
+}
+.nav-item a:hover {
+  color: palevioletred;
+}
+
+.change .line-1 {
+  transform: rotateZ(-45deg) translate(-7.5px, 6px);
+}
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(45deg);
+}
+
+.change {
+  left: 0;
+}
+
+.option-selector {
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  height: 150px;
+}
+#data_show th,
+td p {
+  font: 16px "Segoe UI";
+}
+table {
+  background-color: rgb(139, 112, 105);
+  color: white;
+}
+table,
+th,
+td {
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 15px;
+  text-align: center;
+}
+th {
+  font-weight: bold;
+}
+
+h1 {
+  clear: both;
+  color: rgb(205, 211, 243);
+  text-shadow: 4px 2px 4px #424141;
+}
+
+#sheet-content {
+  border-radius: 3px;
+  border: none;
+  border-bottom: 1px solid red;
+  background: transparent;
+  width: 203px;
+  font-size: 14px;
+  margin: 6px 17px;
+  cursor: pointer;
+}
+
+/* .nice-select {
+  border-bottom: 1px solid red;
+  background: transparent;
+  height: 25px;
+} */
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+}
+#main-container {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  border-radius: 7px;
+}
+#data_show {
+  border-radius: 7px;
+  box-shadow: 4px 9px 12px rgb(53, 53, 53);
+}
+.afterClick {
+  display: none;
+  height: 0px;
+  transition: height 0.8s ease-in-out;
+}
+/* .afterClick::after {
+  content: "\2613";
+
+} */
+.popDownload {
+  position: fixed;
+  height: 0px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  border-radius: 5px;
+  opacity: 0;
+  transition: height 0.8s ease-in-out;
+}
+.beforeClick {
+  height: 0px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: antiquewhite;
+  border-radius: 5px;
+  opacity: 0;
+  transition: height 0.8s ease-in-out;
+}
+
+.popAfter {
+  height: 150px;
+  opacity: 1;
+}
+.beforeClick div {
+  height: 0px;
+  width: fit-content;
+  background-color: blueviolet;
+  margin: 3px auto;
+  border-radius: 5px;
+  padding: 3px;
+  opacity: 0;
+  /* transition-delay: 3s; */
+  transition: height 0.8s 0.5s, opacity 0.8s 0.5s;
+  cursor: pointer;
+}
+.afterClick div {
+  height: 0px;
+  width: fit-content;
+  background-color: blueviolet;
+  margin: 3px auto;
+  border-radius: 5px;
+  padding: 3px;
+  opacity: 0;
+  /* transition-delay: 3s; */
+  transition: height 0.8s 0.5s, opacity 0.8s 0.5s;
+  cursor: pointer;
+}
+.afterClick div a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+}
+.afterClick div a:hover {
+  border-bottom: 1px solid white;
+}
+.afterClick span {
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.beforeClick span {
+  opacity: 0;
+  margin-top: 5px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: opacity 0.3s 0.8s;
+}
+.afterClick span:hover {
+  color: chocolate;
+}
+.beforeClick span:hover {
+  color: chocolate;
+}
+.id1 {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: antiquewhite;
+  /* border-radius: 5px; */
+  opacity: 1;
+}
+.id1 div {
+  height: 20px;
+  opacity: 1;
+}
+.id2 {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: antiquewhite;
+  /* border-radius: 5px; */
+  opacity: 1;
+}
+.id2 div {
+  height: 20px;
+  opacity: 1;
+}
+.id3 {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  background-color: antiquewhite;
+  /* border-radius: 5px; */
+  opacity: 1;
+}
+.id3 div {
+  height: 20px;
+  opacity: 1;
+}
+
+/* .popDownload div a {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+} */
+.beforeClick div:hover {
+  color: white;
+}
+.popAfter .beforeClick {
+  height: 150px;
+  opacity: 1;
+}
+.popAfter .beforeClick div {
+  height: 20px;
+  opacity: 1;
+}
+.popAfter .beforeClick span {
+  /* height: 20px; */
+  opacity: 1;
+}
+.download {
+  position: absolute;
+  top: 210px;
+  right: 100px;
+  height: 24px;
+  width: fit-content;
+  background: #aaa5af;
+  text-align: center;
+  padding: 2px;
+  justify-content: center;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #424141;
+  box-shadow: 2px 5px 5px rgb(53, 53, 53);
+}
+.download:hover {
+  background: #6a686d;
+  color: #e4dcdc;
+}
+.download_des {
+  position: absolute;
+  top: 212px;
+  right: 240px;
+  color: rgb(255, 57, 57);
+  font-size: 20px;
+}
