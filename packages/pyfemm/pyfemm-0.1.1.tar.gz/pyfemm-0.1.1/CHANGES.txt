@@ -1,0 +1,4 @@
+v0.1, 17Mar2018 -- Initial release.
+v0.1.1 11May2020 -- Bug fix update.
+1) Fixed errors in the implemenation of ci_smartmesh, mi_smartmesh, ei_smartmesh, and hi_smartmesh functions
+2) Fixed error in mo_showcontourplot
