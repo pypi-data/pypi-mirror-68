@@ -1,0 +1,6 @@
+
+[googlesecrets]
+google-cloud-secret-manager
+
+[test]
+pytest
