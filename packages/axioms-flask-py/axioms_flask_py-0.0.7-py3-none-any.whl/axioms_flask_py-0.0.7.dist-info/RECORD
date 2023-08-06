@@ -1,0 +1,11 @@
+axioms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axioms_flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+axioms_flask/decorators.py,sha256=CewdNz3ze2xN3th3qT67077b91xR7M3KFACC57hgS_c,4084
+axioms_flask/error.py,sha256=BA2k5t_NdeQ2r2MzyGWU_WTUgEnEwtuBGrDMbE5JoO4,190
+axioms_flask/methodview.py,sha256=6Ht_pZHTqfyYiVa_TO0WLI7Vm3kJMVbYOr3OxB3odaw,844
+axioms_flask/token.py,sha256=ThfzfzXe05FJjaApgswgjxNCihe8nH2VAkWwtDGgZwc,3883
+axioms_flask_py-0.0.7.dist-info/LICENSE.txt,sha256=gU1tzi4FQyXksv6BgJ3hmu8Tz3ZvqcVQKHtpc3A9fSA,1062
+axioms_flask_py-0.0.7.dist-info/METADATA,sha256=2r9f08kfzyFqPm4RLI2TfK6EQCeGpdXOLIdGnAfFw-U,5088
+axioms_flask_py-0.0.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+axioms_flask_py-0.0.7.dist-info/top_level.txt,sha256=B2-ByJG7NrnxEnErNhyCmDQFmcpj3TkDTkG7fMAsMcA,13
+axioms_flask_py-0.0.7.dist-info/RECORD,,
