@@ -1,0 +1,9 @@
+README.md
+setup.py
+krispdf/__init__.py
+krispdf/pdf2image.py
+krispdf/pdf2text.py
+krispdf.egg-info/PKG-INFO
+krispdf.egg-info/SOURCES.txt
+krispdf.egg-info/dependency_links.txt
+krispdf.egg-info/top_level.txt
