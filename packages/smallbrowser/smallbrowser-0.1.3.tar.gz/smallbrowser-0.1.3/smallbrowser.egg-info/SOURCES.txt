@@ -1,0 +1,8 @@
+README.md
+setup.py
+smallbrowser/__init__.py
+smallbrowser.egg-info/PKG-INFO
+smallbrowser.egg-info/SOURCES.txt
+smallbrowser.egg-info/dependency_links.txt
+smallbrowser.egg-info/requires.txt
+smallbrowser.egg-info/top_level.txt
