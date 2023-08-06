@@ -1,0 +1,3 @@
+[console_scripts]
+my-script=squarespace_commerce.Squarespace:main
+
