@@ -1,0 +1,17 @@
+_seidel.cpython-36m-x86_64-linux-gnu.so,sha256=KADySNLGHG0XOddAcGMDtZaprCsbLkGRFSVfa4whnAE,7527232
+seidel/x_node.py,sha256=SNuzZe2SkM98JFWLvXHA_wVzx-aBjbsP5Psvwh4-cHQ,1744
+seidel/trapezoidal_map.py,sha256=qp_huReiRuP2z0R7wpxGzCteSg-xskg7EQ_yiwOSy9o,8715
+seidel/y_node.py,sha256=3WF-4cPj3VaHTo_MeVmsXS-naeQtrff0BlxflJaP7hY,2522
+seidel/trapezoid.py,sha256=Nkn6W_VB0vNxlczUtBLJqp_z8-svHHSSJ3SasFB24tI,2425
+seidel/bounding_box.py,sha256=3TkK-DTVjKz54dS-uQEv5oEK7tKpdVORhYMlrhpO6GQ,1259
+seidel/node.py,sha256=l_G5vPgtNouK0hkKv8plZMSf66DiFPWaonDPOibnsp8,1517
+seidel/hints.py,sha256=Ulv1rZ_hbkwoE3lCQzxA6QWjYQXK-KPUB232WmFY1So,44
+seidel/point.py,sha256=GS73X7RMfaFLZhZp9EUHeMqvh6Gz3c1sBFUx58Bh4QY,967
+seidel/edge.py,sha256=zS4EjK4mF19F503nC6Ld6koaeZSll7I16FMnUK5dtaU,1095
+seidel/__init__.py,sha256=nYRy63l7xuDbiMKab9T3_iVUpKrwAElIvAzSB7me54A,100
+seidel/leaf.py,sha256=-37P7k4fqstmHfCjd-mKz3-qWCyrN-0MDFK5RmGYxkQ,846
+seidel-0.0.2a0.dist-info/top_level.txt,sha256=5LaKca7Zx91-UdIZq8BZS8mxrBZAgYbaq1G1N7znK4I,15
+seidel-0.0.2a0.dist-info/RECORD,,
+seidel-0.0.2a0.dist-info/METADATA,sha256=0729xcF2pJ2UbhXw22ZBwif3UXKZYu_TUsbdsHGZ9Ic,3850
+seidel-0.0.2a0.dist-info/LICENSE,sha256=-W_qNLRoZO2-AnwtGfKupruYTfLtIk39IeMqidpeVOU,1069
+seidel-0.0.2a0.dist-info/WHEEL,sha256=kRpTOiUzoWO2GDfCevceK0ME-mjr5hdBNCWO78h60mA,112
