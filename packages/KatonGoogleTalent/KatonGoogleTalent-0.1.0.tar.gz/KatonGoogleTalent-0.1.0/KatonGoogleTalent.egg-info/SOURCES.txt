@@ -1,0 +1,9 @@
+MANIFEST.in
+readme.md
+setup.cfg
+setup.py
+KatonGoogleTalent.egg-info/PKG-INFO
+KatonGoogleTalent.egg-info/SOURCES.txt
+KatonGoogleTalent.egg-info/dependency_links.txt
+KatonGoogleTalent.egg-info/requires.txt
+KatonGoogleTalent.egg-info/top_level.txt
