@@ -1,0 +1,4 @@
+dufte
+importlib_metadata
+matplotlib
+pyyaml
