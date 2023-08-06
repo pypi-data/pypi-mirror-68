@@ -1,0 +1,11 @@
+numpy
+
+[all]
+pytest
+flake8
+scikit-hep-testdata
+
+[test]
+pytest
+flake8
+scikit-hep-testdata
