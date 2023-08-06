@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: states3
+Version: 0.3.4
+Summary: state machine for python classes
+Home-page: https://github.com/gemerden/statemachine
+Author: Lars van Gemerden
+Author-email: gemerden@gmail.com
+License: MIT License
+Description: see <https://github.com/gemerden/statemachine>
+Keywords: statemachine states transitions nested multi-state callbacks condition contextmanager performance easy-to-use low-memory
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
