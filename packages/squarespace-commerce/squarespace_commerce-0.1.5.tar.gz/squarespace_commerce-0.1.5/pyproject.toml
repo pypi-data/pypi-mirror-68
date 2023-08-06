@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "squarespace_commerce"
+version = "0.1.5"
+description = "Pythonic access to the Squarespace Commerce API"
+authors = ["Casey Dierking <casey@dierking.dev>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://https://github.com/caseydierking/squarespace-commerce-python"
+keywords = ["Squarespace",
+            "Commerce",
+            "Orders",
+            "Inventory",
+            "Transactions"]
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.23.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+ss = "squarespace_commerce.Squarespace:main"
+
+[build-system]
+-requires = ["poetry-core>=1.0.0a5"]
+-build-backend = "poetry.core.masonry.api"
+
