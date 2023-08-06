@@ -1,0 +1,24 @@
+certifi==2019.9.11
+chardet==3.0.4
+gitdb2==2.0.6
+gitpython==3.0.5
+idna==2.8
+python-gnupg==0.4.6
+requests==2.22.0
+smmap2==2.0.5
+toml==0.10.0
+urllib3==1.25.6
+
+[dev]
+pyinstaller>=3.6
+pytest
+pytest-cov
+pytest-gitignore
+mypy
+flake8>=3.3.0
+pep8-naming>=0.4.1
+flake8-quotes>=0.8.1
+flake8-import-order>=0.9.0
+
+[dev:platform_system == "Windows"]
+pypiwin32>=223
