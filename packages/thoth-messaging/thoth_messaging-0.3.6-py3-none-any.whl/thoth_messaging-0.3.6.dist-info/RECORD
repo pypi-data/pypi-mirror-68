@@ -1,0 +1,15 @@
+thoth/messaging/__init__.py,sha256=qFLdIet_i2fXK45lizBXVMQtrddtPbdvxpzD1IpDmts,1153
+thoth/messaging/advise_justification.py,sha256=A8iFS8BNEW-dqhW_ppQQ03oFg9ZfKmnkUF7Rq6YvBHg,1640
+thoth/messaging/hash_mismatch.py,sha256=6gqo57hIy9WoEgXvl5LnTaH_1i-eDhKYrKLhl90XotQ,1681
+thoth/messaging/message_base.py,sha256=1GKB9gSGZyol7BLCj8Quar-iED5wYn8Rna4DgkhfgVk,2331
+thoth/messaging/message_factory.py,sha256=0PQfkzgc4WSWJTb7D1OOpfupukQZAocwD3HXWnJTKiQ,1833
+thoth/messaging/missing_package.py,sha256=dkbHogZcAxASE0SzdRBKsslMfekpkYGNhCsILqENAnE,1558
+thoth/messaging/missing_version.py,sha256=O9EylPnDe7G6zwAOJ3tESRlv5psDlawmVvAPfsxvpm4,1604
+thoth/messaging/package_releases.py,sha256=mkPUju1ZGwOTyg1ymhQk9wEVrvy-8D8JoCH2oiMNZt4,1590
+thoth/messaging/unresolved_package.py,sha256=Pe9kTM0_Y9BEgzrHtUoOSRYh8-lfee8CFW4srSnWKXs,1783
+thoth_messaging-0.3.6.dist-info/DESCRIPTION.rst,sha256=wnCQCi6-WuLdvjmAiyn7bTyNCTNCBTZouk5Aw2sohIc,858
+thoth_messaging-0.3.6.dist-info/METADATA,sha256=4eNmNnUuh8g0Q_A7gsUSJR9dpoM4TylXa-_Zm_1ncZ4,1152
+thoth_messaging-0.3.6.dist-info/RECORD,,
+thoth_messaging-0.3.6.dist-info/WHEEL,sha256=dXGL5yz26tu5uNsUy9EBoBYhrvMYqmFH9Vm82OQUT-8,95
+thoth_messaging-0.3.6.dist-info/metadata.json,sha256=MJVJ5OjZd0dqnAyKVzm9AYTy6WijSJLhm5IlLMk1kSI,581
+thoth_messaging-0.3.6.dist-info/top_level.txt,sha256=c8JaaYuJlrd-trXiXD9l4fSkVuHvV1zFYn_x4Ij-0I0,6
