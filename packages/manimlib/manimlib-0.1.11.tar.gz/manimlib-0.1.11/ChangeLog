@@ -1,0 +1,280 @@
+CHANGES
+=======
+
+0.1.11
+------
+
+* Remove sanim directory
+* Added DocStrings for all methods in Container, Scene, GraphScene, MovingCameraScene, SceneFileWriter, ThreeDScene, SpecialThreeDScene, ZoomedScene, VectorScene, and LinearTransformationScene. (#1040)
+* Code() in file Code\_mobject.py to display code with color highlighted added Paragraph() and "exact\_spaces" parameter to Text()  (#1036)
+* Fixed ffmpeg 'Impossible to Open' and 'Protocol not found'  (#1057)
+* Remove versions from requirements.txt
+* Fix space characters problem of Text (#1035)
+* Fix three bugs(shaders/stroke/size) of Text Class (text\_mobject.py)  (#1030)
+* Performance improvement for most scenes (#974)
+* Fix Text wrong display (#889)
+* Revise config again (#987)
+* Display help if no input file is specified
+* Remove livestreaming option
+* Update README.md
+* Re-add documentation link
+* Remove dead documentation link
+* Typo in super() 77acc99
+* Rename number\_line\_config to axis\_config
+* Temporarily adding input\_file\_path to SceneFileWrite config.  Not sure why this isn't there already, or if there are problems with setting a default, but it fixed a weird bug that had arisen
+* Playing wiht logo
+* Editing old name animations
+* Change referenced directory of 3b1b content in LICENSE and README
+* Small tweaks to old videos when revisiting their animations
+* Preliminary end to Bayes project
+* Change ShowSubmobjectsOneByOne defaults
+* Support UTF8 tex
+* Change from old\_projects to from from\_3b1b.old
+* Rename 3b1b\_projects to from\_3b1b
+* Pulled bayes.py into a folder for more bayes projects
+* Preliminary end to bayes, part 1
+* Change patron end screen
+* Fix print\_family
+* Bayes scenes up to GlimpseOfNextVideo
+* Add error message for ApplyFunction
+* Scenes up to IntroduceLynda
+* Forgot to propagate kwargs in Underline
+* Halfway through CreateFormulaFromDiagram
+* Up to WhenDoesBayesApply in bayes
+* Changed modification for tex mobjects that begin with a newline, which involved eliminating alignment when a TexMobject creates many SingleStringTexMobject to figure out how to divvy itself up
+* Added Underline
+* Change default color and bubble creation for teacher student scenes
+* First couple scenes of bayes
+* Added a small fix to the issue of Tex inputs starting with a new line
+* Remove Mobject.print\_family, as that is now in utils.debug
+* Added a couple helpful debugging functions
+* Typo fix
+* Reorganized files for 3b1b videos into a 3b1b\_projects folder
+* Fixed old snow scene
+* Fixed old confetti scene
+* TODO stub
+* Typo fix to moduli
+* Documentation typo in constants.rst, fixes issue #814
+* #803 docs typo mistake
+* Moved hyperdarts to old\_projects
+* End of hyperdarts project
+* Animations for hyperdarts up to 7:00
+* Explicitly check for None, rather than truthiness, for Axes.get\_coordinate\_labels
+* Finished triangle moduli space scene
+* Changed patron name ordering
+* Fix simple typo: installtion -> installation
+* Retire spirals project
+* Small changes to the ffmpeg args when writing video files
+* Standardize README.md
+* Small thumbnail change
+* End of Prime Spiral video
+* Changed patreon end screen
+* Add default stroke width for the svg mobjects
+* Many more scenes from the prime spirals video
+* Still being dumb
+* Added AddTextWordByWord, but it's not yet working, presumably because of some bug in Succession
+* A few filler scenes for spirals project
+* Have AnimationGroup initialize its runtime before begin is called.  This way it can be composed
+* Spiral animations Up to ExplainRays
+* Tiny clean to spacing
+* Spiral animations up to Label44Spirals
+* Added PGroup
+* latex can't recognize path seperator \\ in windows
+* Animations for the introduction of the prime spiral video
+* Added support for changing and interpolating stroke\_width on PMobjects
+* Added ShowSubmobjectsOneByOne
+* Begining of spirals video, which is my newfound distraction
+* Small modifications to some old name animations
+* Small updates to hyperdarts scenes
+* Closes: #720
+* Small tweak to patron scroll
+* More hyperdarts scenes
+* Don't add sound while skipping animations
+* Set basic functionality to show the hyperdarts game
+* Changed EOC1 Thumbnail
+* Tweaks to Fourier behavior
+* Retiring windmill project
+* End of windmill project
+* Change way to remove sound\_file\_path
+* Update some Text Mobject changes
+* Update some Text Mobject changes
+* Only install pyreadline on Windows
+* New Text Mobject
+* new Text mobject
+* Update requirements.txt to include pyreadline
+* fixed manim
+* new Text mobject
+* Update requirements.txt
+* Animations for windmill up to early draft publish
+* conda env bug fix- ffmpeg from conda
+* conda environment bug fix with pyreadline package, closes #662
+* Further windmill animation, to the end of the problem solution
+* TryOutSimplestExamples for windmill
+* Up to IntroduceWindmill scene
+* Fix tqdm display problem in windows
+* Add a feature #650
+* Beginning of windmill project
+* tweaking some diffyq content
+* Remove borken save\_as\_gif lines
+* Update extract\_scene.py
+* Solution of text rendering problem (#628)
+* Updated macOS installation
+* remove redundant empty line
+* Arch Linux installation section
+* Arch LInux installation guild
+* update numpy and scipy versions
+* DOC: update documentation link in readme
+* Removed the joke
+* Added one more sentence
+* Added code formatting
+* Filled out making\_a\_scene overview
+
+0.1.10
+------
+
+* remove extraneous newline
+* update documentation link again
+
+0.1.9
+-----
+
+* udpate documentation link
+
+0.1.8
+-----
+
+* allow pycairo>=1.18.0 for windows
+* Beginning diffyq part 5
+* Final animations for Fourier montage video
+* Bug fix
+* Moved VIDEO\_DIR initializations to after MEDIA\_DIR
+* Final animations for Fourier video
+* Changed endscreen default columns
+* Added LIGHT\_PINK
+* Latest scenes for Fourier series video
+* NumberLine.default\_numbers\_to\_display was not showing topmost number it should have
+* Changed Arrow default
+* Latest scenes for Fourier series, up to SimpleComplexExponentExample
+* Fixed bug with Bubble
+* Line.put\_start\_and\_end\_on should return self
+* Added p2n and n2p abreviations for ComplexPlane
+
+v0.1.7
+------
+
+* add video\_output\_dir flag
+* Up to ShowInfiniteSum in diffyq part 4 animations
+* Fixed(?) eye-tracking for PiCreatureScene
+* Latest changes for animations of video 4 of diffyq series
+* Parametric surface should remember what function created it
+* Change ode -> diffyq in imports
+* Rename ode folder to diffyq
+* Changed ode folder to be named diffyq, since many of these are pde videos
+* Some of the first scenes for diffyq part4
+* Allow Bubble to flip over any axis, which was unnecessarily restricted before
+* Added Line.set\_length
+* frame\_center was getting double-added, messing up MovingCameraScene
+* Beginning chapter 4 animations
+* Change Fourier scene to center on vectors, not circles
+* Update tex\_file\_writing.py
+* Travis CI: The sudo tag is now deprecated
+* Final animations for diffyq chapter 3
+* update windows docs
+* Nearly the final animations for diffyq part 3
+* Latest animations for diffyq part 3
+* interpolate\_mobject should return self
+* Added TangentLine
+* Fix wording
+* Update tutorial description
+* Add a docker diagram to README.md
+* Change docker-compose to reflect README.md changes
+* Change docker instructions on README.md
+* Update link to Todd Zimmerman tutorial
+* Mention VMobject for geometry
+* Update assets with medium preset
+* Fix wording
+* Use monospace for asset annotation
+* Discrete case scenes for diffyq part 3
+* New scenes for diffyq part3
+* Bug fix for the case when the media\_dir has spaces
+* Change output folder heirarchy back to grouping files of similar types, rather grouping them as parts of the same scene
+* Default color of Vector should be white
+* Change default media output directory to from 'video' to 'videos'
+* Latest scenes for diffyq part 3
+* For some reason stage\_scenes still has a hardcoded input directory..
+* Make sure set\_opacity changes background stroke as well
+* Added TracedPath
+* Added int\_func to SHowIncreasingSubsets
+* Minor edit
+* Fix docker install instruction
+* Update README.md
+* Add documentation for the coordinate system
+* Documentation for TipableVMobject
+* Simple wording change
+* Update docker install link
+* fix broken link due to misnamed file
+* Minor changes
+* Update mac install doc to include manim
+* Rewrite learning\_by\_example.py
+* updated Compose file and update docker section of README.md
+* Apply link fix from master
+* Merging mac install doc from jarwin/patch-3
+* Update learning\_by\_example.rst
+* fix documentation links
+* update documentation
+* make media, tex, and video directories configurable via flags
+* Add animation documentation and asset folder
+* reorganize media file tree
+* Scenes up to AnalyzeSineCurve for diffyq part 3
+* remove repeated latex package
+* install less latex
+* update dockerfile, add flag for high quality rendering (#573)
+* Add documentation for constants.py (#572)
+* remove typographically incorrect punctuation from documentation headings (#567)
+* add option -i to save as gif (#529)
+* install pycairo conditionally based on platform identifier (#571)
+* Correction of a bad alt description (#566)
+* Remove duplicate usepackage (#554)
+* New scenes for diffyq part 3
+* Moving the frame\_center of camera was not working.  This fixes it, but I suspect there is a need for a deeper fix where everything is handled in transform\_points\_pre\_display properly for the various camera classes
+* add information to docs (#563)
+* add master\_doc to conf.py
+* Animations up to the preview for the breakdown into sine curves for diffyq chapter 3
+* Add Windows installation documentation
+
+v0.1.5
+------
+
+* Add social badges README
+* Update docs badge
+* test pr on docs
+* change docs to upstream
+* rebase onto upstream
+* make build script executable
+* refactor and test doc deployment
+* third attempt at deploying docs
+* second attempt at deploying docs
+* first attempt at deploying docs
+* Add installation documentation for ubuntu
+* Beginning heat equation solution animations
+* Added simple midpoint function
+* Formatting correction
+* Added c2p and p2c abbreviations to Axes
+* Update pycairo requirement
+* clean up docs
+* Fixed typo in the docs about page (#553)
+* add docs
+* Removed duplicate name\_animations.py
+* Change big\_ol\_pile\_of\_imports to manimlib.imports
+* Improved the "Using manim" section in the README
+* Mentioned -r argument in example\_scenes comment
+* Fixed typo in class name in example\_scenes.py
+
+v0.1.4
+------
+
+* Logo (#537)
+* copy docs
+* Update tex\_template.tex
+* update pypi credentials
+* Remove shortcuts.py, restored imports.py
