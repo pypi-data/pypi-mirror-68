@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: philoseismos
+Version: 0.0.30a0
+Summary: Engineering seismologist's toolbox
+Home-page: https://github.com/iod-ine/philoseismos
+Author: Ivan Dubrovin
+Author-email: io.dubrovin@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+
+# philoseismos: engineering seismologist's toolbox.
+
+
+<p align="center">
+  <i>
+    The Classical Greeks had a love for wisdom —  <br>
+    It came down to us as <b>philo·sophia</b>.  <br>
+    And I have a passion for the seismic method —  <br>
+    Let this be an ode to <b>philo·seismos</b>.  <br>
+    O how sweet it is —  <br>
+    Listening to the echos from the earth. <br>
+  </i>
+</p>
+<p align="right">
+  Öz Yilmaz <br>
+  Seismic Data Analysis
+ </p>
+
+ ## Features
+ * Working with SEG-Y files
+ * Dispersion image calculation from seismograms (phase-shift method)
+ * Dispersion curve calculation for Rayleigh waves for horizontally layered media
+
+
