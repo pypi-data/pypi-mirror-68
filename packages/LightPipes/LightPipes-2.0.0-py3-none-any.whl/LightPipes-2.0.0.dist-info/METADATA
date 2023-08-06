@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: LightPipes
+Version: 2.0.0
+Summary: LightPipes for Python optical toolbox
+Home-page: https://github.com/opticspy/lightpipes
+Author: Fred van Goor
+Author-email: Fred511949@gmail.com
+License: BSD-3-Clause
+Download-URL: https://github.com/opticspy/lightpipes/releases
+Platform: windows
+Platform: linux
+Platform: Mac OSX
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: pyFFTW
+Requires-Dist: scipy
+
+UNKNOWN
+
+
