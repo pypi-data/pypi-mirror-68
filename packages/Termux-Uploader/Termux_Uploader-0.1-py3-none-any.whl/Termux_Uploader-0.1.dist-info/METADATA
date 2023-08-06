@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: Termux-Uploader
+Version: 0.1
+Summary: Uploaded tool for Termux
+Home-page: https://github.com/Bhai4You/Termux-Uploader
+Author: Parixit Sutariya
+Author-email: parixit1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<!--
+https://pypi.org/project/termux-uploader/
+https://pypi.org/project/termux-uploader/
+-->
+
+[![](https://img.shields.io/pypi/pyversions/readme-generator.svg?longCache=True)](https://pypi.org/project/readme-generator/)
+
+#### Installation
+```bash
+$ pip install termux-uploader
+```
+
+#### Features
++   **`upload`**, **Upload anything Using Termux**
+
+
+#### Menu Options :
+```
+$ upload
+
+Enter File Name : demo.txt (name with extension)
+
+Created by Parixit Sutariya
+Github : github.com/Bhai4You
+Youtube : youtube.com/BullAnonymous
+
+```
+
+
+<p align="center">
+    <a href="https://pypi.org/project/termux-uploader/">Termux Uploader Tool</a>
+</p>
+
+
