@@ -1,0 +1,11 @@
+sentiment_analysis_csci_e89/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentiment_analysis_csci_e89/data_cleaning.py,sha256=LP2peqiR8UO1h0kmzxsk3GSTbr46EdF10wiwpa7a0WU,17764
+sentiment_analysis_csci_e89/modeling.py,sha256=ZdXoHuGBEcgisylUz6_kixxqkO6C1UtndzyUX-B3sTI,62879
+sentiment_analysis_csci_e89/pre_processing.py,sha256=Eyi1uj7sfAQrNROocreiXf_lXBkw9zWTMNy0coTkOVo,23781
+sentiment_analysis_csci_e89/predict_newdata.py,sha256=gigPI9GiFX7Zv2pto_lbtAmv_d2gKTAZNZ3bzfvNW4Y,9978
+sentiment_analysis_csci_e89/pretrained_embeddings.py,sha256=ErZTx9b3VLi6B5akAOrblyJzIgqvsJLsJdCzQJBgXyY,8458
+sentiment_analysis_csci_e89-0.0.1.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+sentiment_analysis_csci_e89-0.0.1.dist-info/METADATA,sha256=-NVdY491z-2-SaI_4C6pd_bYvEDkZ8LpXup0WsSnMSo,3274
+sentiment_analysis_csci_e89-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+sentiment_analysis_csci_e89-0.0.1.dist-info/top_level.txt,sha256=T3jb7wvYYM9a5am-4MCsKxQxyJ41t4WQqaUeCLAmatA,28
+sentiment_analysis_csci_e89-0.0.1.dist-info/RECORD,,

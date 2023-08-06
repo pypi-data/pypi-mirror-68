@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: sentiment-analysis-csci-e89
+Version: 0.0.1
+Summary: Package for end to end setiment analysis using Neural Architectures
+Home-page: https://github.com/stefano10p/sentiment_analysis_csci_e89
+Author: Stefano Parravano
+Author-email: stefanoparravano10@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: Implementation
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: keras (==2.3.1)
+Requires-Dist: pandas-confusion (==0.0.6)
+Requires-Dist: pandas-ml (==0.6.1)
+Requires-Dist: tensorflow (==2.0.0)
+Requires-Dist: tensorflow-estimator (==2.0.1)
+
+# sentiment_analysys_csci_e89
+
+This package was designed to enable its users to perform end to end sentiment analysis with state of the art techniques.  
+The api assumes a common data model that is described in great detail in the
+documentation. In short, the modules expect tabular datasets with the following fields for training data:
+ 1. text_id    
+ 2. text    
+ 3. label    
+
+ and the folling fields for live test data:  
+ 1. text_id    
+ 2. text    
+
+The api contains 5 main modules:    
+ 1. data_cleaning: A class that was written to support a number of popular machine learning datasets. It cleans the raw data and
+ structures it in a way that the other modules can use.  
+ 2. pre_processing : A class that provides a number of high level functions to perform sophisticated data transformations and cleaning.    This class is responsible for preparing the raw text data for our Neural architectures.    
+ 3. modeling : A class that provides a number of methods each dedicated to training a certain type of architecture. Refer to the documentation for the eaxact specification of each of the architectures provided.  
+ 4. pretrained_embeddings : A class that provides methods to prepare well known and popular word embeddings (GloVe adn word2vec) in a format that our netoworks can work with. We require that the user download the raw data from the appropriate sources.Once again, details are included in the documentation.  
+ 5. predict_newdata: A class that provides methods to use our trained networks to make prediction on live data. live data as I define it here can be thought of test data that is processed and prepared outside of the original efforts that processed the data our model was trained and validated against.  
+
+ A number of different neural architectures are provided with easy to call methods, thereby allowing you to train sophisticated models with no more than a few lines of code.Some of the architectures implement transfer learning and require that certain files be downloaded
+ locally.  
+
+ Please refer to the documentation anf the tutorial script  
+
+ ## Installation  
+ Run the following to install:  
+
+ ```python
+ pip install setiment_analysis_csci_e89
+ ```
+
+
