@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+json5/__init__.py
+json5/dumper.py
+json5/loader.py
+json5/model.py
+json5/parser.py
+json5/style.py
+json5/tokenizer.py
+json_five.egg-info/PKG-INFO
+json_five.egg-info/SOURCES.txt
+json_five.egg-info/dependency_links.txt
+json_five.egg-info/top_level.txt
