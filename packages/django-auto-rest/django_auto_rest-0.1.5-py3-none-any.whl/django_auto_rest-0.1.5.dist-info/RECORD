@@ -1,0 +1,15 @@
+auto_rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_rest/apps.py,sha256=dnYaetv8nBkIxsFeuaAxiTleqXeJyZYCNq1jVa6M3Iw,97
+auto_rest/urls.py,sha256=IXRRoinTAqqPHV1McJXZlZh_Zn6VS1dTbWlbF0M1LeY,231
+auto_rest/views.py,sha256=qpuS_pd889VIUvvpqiLFLq7sCqrw2IHFfhFDnXjfug0,2864
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/apps.py,sha256=Dpb3WvtMTjj4j7Fc3xzNKgeSoVot_VoBJruopN-r5rE,90
+tests/models.py,sha256=QqLAKRgn23a5FxXjnYwlFySmMhST-KvHmCbRaNa96UU,371
+tests/settings.py,sha256=KESVr4P1iFyKxrCwfQmHyhv6PxhExWU5lKLr6VYBhm4,664
+tests/tests.py,sha256=H1EFC6ALhdYHKdvMfXvOzsaMpjlsXievYwJhbf0eNnE,4475
+tests/urls.py,sha256=CfsVofgBWLn1d5ZYwYtnqjjHnZTyhe0WeYxFn5GxH5I,103
+django_auto_rest-0.1.5.dist-info/LICENSE,sha256=k49Yga8CP889JJaHlOpGFzr_be2nqMoep2chYeIDctk,1091
+django_auto_rest-0.1.5.dist-info/METADATA,sha256=LPChjJtn8_aV-8EZPMfoDYyvZ1jlzJaQHTCuXZ_FbBw,4757
+django_auto_rest-0.1.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_auto_rest-0.1.5.dist-info/top_level.txt,sha256=oGc7M_-Zynyp0zbDkg7gKbBtGyPfbexP2hSvExCSbWU,16
+django_auto_rest-0.1.5.dist-info/RECORD,,
