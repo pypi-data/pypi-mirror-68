@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            prodigyteams=prodigyteams.main:cli
+        
