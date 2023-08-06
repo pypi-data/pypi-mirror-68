@@ -1,0 +1,164 @@
+{% extends "wafer/base.html" %}
+{% load i18n %}
+{% load debconf %}
+{% block title %}{% trans "Schedule" %} - {{ WAFER_CONFERENCE_NAME }}{% endblock %}
+{% block content %}
+  <div class="row">
+    {% if tracks %}
+      <div class="col-lg-2 track-list">
+        <h1>
+          {% trans "Tracks" %}
+        </h1>
+        <table>
+          {% for track in tracks %}
+            {% if track.name != 'Other' %}
+              <tr style="background: {% debconf_track_color track %};">
+                <td class="{{ track.css_class }}">{{ track.name }}</td>
+              </tr>
+            {% endif %}
+          {% endfor %}
+          <tr><td class="meal">Meal</td></tr>
+        </table>
+      </div>
+    {% endif %}
+  <div class="col-lg-10">
+  <section class="wafer wafer-schedule">
+    <div class="form-row timezone float-right d-print-none">
+      <div class="form-group col-md-3">
+        <label for="timezone">Time Zone:</label>
+      </div>
+      <div class="form-group col-md-9">
+        <select name="timezone" id="timezone" class="form-control form-control-sm">
+          <option value="{{TIME_ZONE}}">DebConf Time</option>
+        </select>
+      </div>
+    </div>
+    <h1>
+      {% trans "Schedule" %}
+    </h1>
+    {% if user.is_authenticated and user.is_staff %}
+      <div>
+        <a class="btn btn-secondary"
+           href="{% url 'admin:schedule_editor' %}">
+          Edit schedule
+        </a>
+      </div>
+    {% endif %}
+    <div class="wafer_schedule">
+      {% if not schedule_days %}
+        {# Schedule is incomplete / invalid, so show nothing #}
+        {% blocktrans %}
+          <p>The final schedule has not been published yet.</p>
+        {% endblocktrans %}
+      {% else %}
+        {% if next_day or prev_day %}
+          <div class="clearfix d-print-none">
+            {% url 'wafer_full_schedule' as schedule_url %}
+            {% if prev_day %}
+              <a href="{{ schedule_url }}?day={{ prev_day }}"
+                 class="float-left btn btn-secondary btn-lg">{% trans "Previous Day" %}</a>
+            {% endif %}
+            {% if next_day %}
+              <a href="{{ schedule_url }}?day={{ next_day }}"
+                 class="float-right btn btn-secondary btn-lg">{% trans "Next Day" %}</a>
+            {% endif %}
+          </div>
+        {% endif %}
+        {% for schedule_day in schedule_days %}
+          <table cellspacing=1 cellpadding=0>
+            {# We assume that the admin has created a valid timetable #}
+            <tr>
+              <td colspan="{{ schedule_day.venues|length|add:1 }}" class="title">
+                <a href="?day={{ schedule_day.day.date.isoformat }}">
+                  {{ schedule_day.day.date|date:"l (d b)" }}
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <th>{% trans "Time" %}</th>
+              {% for venue in schedule_day.venues %}
+                <th><a href="{{ venue.get_absolute_url }}">{{ venue.name }}</a></th>
+              {% endfor %}
+            </tr>
+            {% for row in schedule_day.rows %}
+              <tr>
+                <td class="scheduleslot"
+                    data-start="{{ row.slot.get_start_datetime.isoformat }}"
+                    data-end="{{ row.slot.get_end_datetime.isoformat }}">
+                {% if row.slot.get_duration.hours or row.slot.get_duration.minutes > 15 %}
+                  {{ row.slot.get_start_time|time:"H:i" }} - {{ row.slot.end_time|time:"H:i" }}
+                {% endif %}
+                </td>
+                {% for item in row.get_sorted_items %}
+                  {% if item.item == "unavailable" %}
+                    {# Venue isn't available, so we add an empty table element with the 'unavailable' class #}
+                    <td colspan="{{ item.colspan }}" rowspan="{{ item.rowspan }}" class="unavailable"></td>
+                  {% else %}
+                    {# Add item details #}
+                    <td colspan="{{ item.colspan }}" rowspan="{{ item.rowspan }}"
+                        {% if item.item.talk %}style="background: {% debconf_track_color item.item.talk.track %};"{% endif %}
+                        class="{{ item.item.get_css_classes|join:' ' }}">
+                      {% include "wafer.schedule/schedule_item.html" with item=item.item %}
+                    </td>
+                  {% endif %}
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          </table>
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+  </div>
+  </div>
+{% endblock %}
+{% block extra_foot %}
+  <script type="text/javascript">
+    var dc_tz = '{{TIME_ZONE}}';
+
+    function displayInTimezone(tz) {
+      sessionStorage.setItem('local_timezone', tz);
+      $('.scheduleslot').each(function() {
+        var start_dc = moment.tz(this.dataset.start, dc_tz);
+        var end_dc = moment.tz(this.dataset.end, dc_tz);
+        var start_local = start_dc.clone().tz(tz);
+        var end_local = end_dc.clone().tz(tz);
+        if (this.innerHTML.search('\\w') !== -1) {
+          if (tz == dc_tz) {
+            this.innerHTML = start_dc.format('HH:mm') + ' - '
+                             + end_dc.format('HH:mm');
+          } else {
+            this.innerHTML =
+              '<div class="local_time">'
+              + '<span class="zone">Your Time:</span> '
+              + start_local.format('HH:mm') + ' - ' + end_local.format('HH:mm')
+              + '</div><div class="dc_time">'
+              + '<span class="zone">DC Time:</span> '
+              + start_dc.format('HH:mm') + ' - ' + end_dc.format('HH:mm')
+              + '</div>';
+          }
+        }
+      });
+    }
+
+    var local_tz = sessionStorage.getItem('local_timezone');
+    if (local_tz == null) {
+      local_tz = moment.tz.guess();
+    }
+    displayInTimezone(local_tz);
+
+    var selector = $('#timezone');
+    moment.tz.names().forEach(function(tz) {
+      selected = '';
+      if (local_tz == tz && dc_tz != tz) {
+        selected = 'selected';
+      }
+      selector.append(
+        '<option value="' + tz + '" ' + selected + '>' + tz + '</option>');
+    });
+
+    selector.on('change', function(ev) {
+      displayInTimezone(ev.target.value);
+    });
+  </script>
+{% endblock %}
