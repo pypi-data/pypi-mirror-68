@@ -1,0 +1,2 @@
+gnuhealth_calendar==3.6.4
+gnuhealth_inpatient==3.6.4
