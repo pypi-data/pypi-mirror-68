@@ -1,0 +1,14 @@
+README.md
+setup.py
+snoozingmail/__init__.py
+snoozingmail/snoozin.py
+snoozingmail.egg-info/PKG-INFO
+snoozingmail.egg-info/SOURCES.txt
+snoozingmail.egg-info/dependency_links.txt
+snoozingmail.egg-info/requires.txt
+snoozingmail.egg-info/top_level.txt
+snoozingmail/gmail/__init__.py
+snoozingmail/gmail/creds.py
+snoozingmail/gmail/modify.py
+snoozingmail/gmail/read.py
+snoozingmail/gmail/send.py
