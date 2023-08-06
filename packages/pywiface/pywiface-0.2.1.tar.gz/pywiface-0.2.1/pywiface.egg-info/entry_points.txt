@@ -1,0 +1,3 @@
+[console_scripts]
+pywiface = pywiface.cli:main
+
