@@ -1,0 +1,8 @@
+assemblyline_service_client/VERSION,sha256=l3uGUnhyhqqOBR-s-E0z6GTkzrgd-1ACTdAIWzpRdqI,13
+assemblyline_service_client/__init__.py,sha256=aaEgKa-Fh_e2fRDD7NmSxljaOcZfm5wXMgoZ_e44pew,8321
+assemblyline_service_client/task_handler.py,sha256=jpC_su4uXngJx-RownOOWLqBgQJvoTRAIvb05evZqoU,19168
+assemblyline_service_client-4.0.0.dev109.dist-info/LICENCE.md,sha256=NSkYo9EH8h5oOkzg4VhjAHF4339MqPP2cQ8msTPgl-c,1396
+assemblyline_service_client-4.0.0.dev109.dist-info/METADATA,sha256=3_kbxDHgnkeywOq6_SJ1HYFaYsPcvsApa2hMStvy3N4,1361
+assemblyline_service_client-4.0.0.dev109.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+assemblyline_service_client-4.0.0.dev109.dist-info/top_level.txt,sha256=clNWHvn8nw0kR15l5TASxWxIQvKGKe5Pso3kVPMiJv0,28
+assemblyline_service_client-4.0.0.dev109.dist-info/RECORD,,
