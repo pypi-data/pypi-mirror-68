@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: objpersist
+Version: 0.0.6
+Summary: Save (and restore) complicated classes to (and from) a file
+Home-page: https://github.com/fergalm/persist
+Author: Fergal Mullally
+Author-email: fergal.mullally@gmail.com
+License: UNKNOWN
+Description: Save (and restore) complicated classes to (and from) a file. See the README for more details.
+Platform: UNKNOWN
+Requires-Python: >=3.6

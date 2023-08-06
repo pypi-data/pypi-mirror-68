@@ -1,0 +1,12 @@
+README.md
+setup.py
+objpersist.egg-info/PKG-INFO
+objpersist.egg-info/SOURCES.txt
+objpersist.egg-info/dependency_links.txt
+objpersist.egg-info/top_level.txt
+persist/__init__.py
+persist/frozendict.py
+persist/funcs.py
+persist/handler.py
+persist/persist.py
+persist/specials.py
