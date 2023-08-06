@@ -1,0 +1,16 @@
+README.md
+setup.py
+robotslacker_sqlcli.egg-info/PKG-INFO
+robotslacker_sqlcli.egg-info/SOURCES.txt
+robotslacker_sqlcli.egg-info/dependency_links.txt
+robotslacker_sqlcli.egg-info/entry_points.txt
+robotslacker_sqlcli.egg-info/not-zip-safe
+robotslacker_sqlcli.egg-info/requires.txt
+robotslacker_sqlcli.egg-info/top_level.txt
+sqlcli/__init__.py
+sqlcli/commandanalyze.py
+sqlcli/main.py
+sqlcli/sqlcliexception.py
+sqlcli/sqlexecute.py
+sqlcli/sqlinternal.py
+sqlcli/sqlparse.py
