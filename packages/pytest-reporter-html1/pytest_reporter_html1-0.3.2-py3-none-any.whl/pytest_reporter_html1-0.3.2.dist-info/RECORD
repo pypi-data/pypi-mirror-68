@@ -1,0 +1,14 @@
+pytest_reporter_html1/__init__.py,sha256=w_iQOy6WKiIr43yaBIG33ehY62V4GSYShB8Z6m3yp9o,282
+pytest_reporter_html1/plugin.py,sha256=ywkH9hSAGE7aP48eieSUkFJV6H_hc1bs8KAOSaOUZ64,4194
+pytest_reporter_html1/templates/html1/base.html,sha256=c2Hg7M68qwnQ2a3E9GxcPusnXvYyW1GHet_1bqGp2Zc,863
+pytest_reporter_html1/templates/html1/chart.svg,sha256=auS_qexA24GBD2Fs323DrkxWy6jmx_N1YT3mwWiq9TU,829
+pytest_reporter_html1/templates/html1/index.html,sha256=DLFOsGtxKAElE3TobffpZVl7DkysLpfE6CzMpvqr5pE,3166
+pytest_reporter_html1/templates/html1/module.html,sha256=XSP9o4H56uIzb8fi8XVLRPOXhq_5WcSi6WbUFDAJYOE,4077
+pytest_reporter_html1/templates/html1/style.css,sha256=pX1AvV64U580kHfhm5jJubLxS-iEARfKKR-cqXseSG8,6110
+pytest_reporter_html1/templates/html1/icons/arrow.svg,sha256=ItrH0NFrZBc5BMxYTqXUUf3p5J0yrQ2-gReRGXafqR0,237
+pytest_reporter_html1-0.3.2.dist-info/LICENSE,sha256=9UEk_CYqFfXf04Jsh6AIBXmPa3-rS--7h67Kqu996Bo,1086
+pytest_reporter_html1-0.3.2.dist-info/METADATA,sha256=pNnSGWSGLnRPRnKka1P6zpuzPWFFZdGgDzm-6UL8saE,4019
+pytest_reporter_html1-0.3.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytest_reporter_html1-0.3.2.dist-info/entry_points.txt,sha256=v_WJ2FYHJPkQKq5HstEkNT6_BKQ9uq59KbOfR3f8hg8,58
+pytest_reporter_html1-0.3.2.dist-info/top_level.txt,sha256=4CQLmwWKwl_EtcVK8kNNFMl2r9c0oaEorouWcDs3_5I,22
+pytest_reporter_html1-0.3.2.dist-info/RECORD,,
