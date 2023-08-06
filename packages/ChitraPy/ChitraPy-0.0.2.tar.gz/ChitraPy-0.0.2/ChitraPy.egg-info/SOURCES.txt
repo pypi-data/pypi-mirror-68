@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ChitraPy/__init__.py
+ChitraPy/filters.py
+ChitraPy/helpers.py
+ChitraPy.egg-info/PKG-INFO
+ChitraPy.egg-info/SOURCES.txt
+ChitraPy.egg-info/dependency_links.txt
+ChitraPy.egg-info/requires.txt
+ChitraPy.egg-info/top_level.txt
+ChitraPy.egg-info/zip-safe
+tests/__init__.py
+tests/tests.py
