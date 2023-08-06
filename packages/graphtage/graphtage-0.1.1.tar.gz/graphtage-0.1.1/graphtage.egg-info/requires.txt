@@ -1,0 +1,12 @@
+colorama
+intervaltree
+PyYAML
+scipy>=1.4.0
+tqdm
+typing_extensions>=3.6.5
+
+[dev]
+flake8
+Sphinx
+pytest
+sphinx_rtd_theme==0.4.3
