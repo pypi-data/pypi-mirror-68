@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyDEER/__init__.py
+pyDEER/awg.py
+pyDEER/elexsys.py
+pyDEER/tikreg.py
+pyDEER.egg-info/PKG-INFO
+pyDEER.egg-info/SOURCES.txt
+pyDEER.egg-info/dependency_links.txt
+pyDEER.egg-info/requires.txt
+pyDEER.egg-info/top_level.txt
