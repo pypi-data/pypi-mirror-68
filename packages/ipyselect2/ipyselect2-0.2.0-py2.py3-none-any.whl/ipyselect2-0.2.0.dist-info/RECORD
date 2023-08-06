@@ -1,0 +1,15 @@
+ipyselect2/__init__.py,sha256=vtkSr6uPklK_wRvz6FENHVDKGpP84dTKvDx5IsqE74k,256
+ipyselect2/_version.py,sha256=PacTz3qlB3k1G_iwAtkqAyvm-wYh93U2qjgLWX15M3g,104
+ipyselect2/select2.py,sha256=O3bgNlxgATH6UyRmrVbmGF0jqfFzOlo-fBF9ZcYXPAA,912
+ipyselect2/static/extension.js,sha256=ht29KcXLN-n0tlxDwRxmVbqWh9Yab7eAyCysauzNAZM,1201
+ipyselect2/static/index.js,sha256=GFKPMPiz89c69_IJLWt_Ep880SDhrSmDwI8yQFW6yQE,257101
+ipyselect2/static/index.js.map,sha256=kl0v7CkNgihgT1KXmVg-iq-xg2g0A_sHuDYomcZ2G70,1445360
+ipyselect2-0.2.0.data/data/etc/jupyter/nbconfig/notebook.d/ipyselect2.json,sha256=fqFKCXA2ViGdRINaQZWkm7pEyC-yNkl0Txbyj2-8KKs,64
+ipyselect2-0.2.0.data/data/share/jupyter/nbextensions/ipyselect2/extension.js,sha256=ht29KcXLN-n0tlxDwRxmVbqWh9Yab7eAyCysauzNAZM,1201
+ipyselect2-0.2.0.data/data/share/jupyter/nbextensions/ipyselect2/index.js,sha256=GFKPMPiz89c69_IJLWt_Ep880SDhrSmDwI8yQFW6yQE,257101
+ipyselect2-0.2.0.data/data/share/jupyter/nbextensions/ipyselect2/index.js.map,sha256=kl0v7CkNgihgT1KXmVg-iq-xg2g0A_sHuDYomcZ2G70,1445360
+ipyselect2-0.2.0.dist-info/LICENSE,sha256=72T6Ra4urtG-b3v6bDbr9GGRt6HmS1fJHx_k9vRV9rE,1075
+ipyselect2-0.2.0.dist-info/METADATA,sha256=zDyffvCw3Uejmo0Xm3Q_nf5Dq-erV28uUPY8IH6TTug,2453
+ipyselect2-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ipyselect2-0.2.0.dist-info/top_level.txt,sha256=uIMDzgEMwuONjRgX_bgcSmnmV5APe0l8rDJ-UKO9sA8,11
+ipyselect2-0.2.0.dist-info/RECORD,,
