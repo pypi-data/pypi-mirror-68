@@ -1,0 +1,4 @@
+include artellapipe/tools/assetslibrary/__logging__.ini
+recursive-include artellapipe/tools/assetslibrary/resources/* *.*
+include versioneer.py
+include artellapipe/tools/assetslibrary/_version.py
