@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: workoutizer
+Version: 0.4.1
+Summary: Browser-based Sport Workout Organizer to analyze your Activities locally
+Home-page: https://gitlab.com/fgebhart/workoutizer
+Author: Fabian Gebhart
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: asgiref (==3.2.7)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: bokeh (==1.4.0)
+Requires-Dist: certifi (==2020.4.5.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: coloredlogs (==14.0)
+Requires-Dist: django-colorfield (==0.3.0)
+Requires-Dist: django-leaflet (==0.26.0)
+Requires-Dist: django (==3.0.3)
+Requires-Dist: djangorestframework (==3.11.0)
+Requires-Dist: fitparse (==1.1.0)
+Requires-Dist: geographiclib (==1.50)
+Requires-Dist: geopy (==1.21.0)
+Requires-Dist: gpxpy (==1.4.0)
+Requires-Dist: humanfriendly (==8.1)
+Requires-Dist: idna (==2.9)
+Requires-Dist: importlib-metadata (==1.6.0)
+Requires-Dist: jinja2 (==2.10.3)
+Requires-Dist: markupsafe (==1.1.1)
+Requires-Dist: more-itertools (==8.2.0)
+Requires-Dist: numpy (==1.18.0)
+Requires-Dist: packaging (==19.2)
+Requires-Dist: pandas (==1.0.3)
+Requires-Dist: pillow (==6.1.0)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pyparsing (==2.4.2)
+Requires-Dist: pytest-django (==3.9.0)
+Requires-Dist: pytest (==5.4.1)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytz (==2019.2)
+Requires-Dist: pyyaml (==5.1.2)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: sqlparse (==0.3.0)
+Requires-Dist: tornado (==6.0.3)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: wcwidth (==0.1.9)
+Requires-Dist: zipp (==3.1.0)
+
+# Workoutizer
+
+The Workoutizer is a simple web application for organizing your workouts and sports activities. It is designed to work
+locally on any system running Python. Track your activities to get an overview of your overall training, similar to
+platforms like [strava](https://www.strava.com/) or [garmin connect](https://connect.garmin.com/) - but without
+uploading all your sensitive health data to some 3rd party cloud.
+
+## Getting Started
+
+To run the application, just clone the repo, navigate into the root of the repo and run
+
+```bash
+docker-compose up
+```
+and then open your browser at [http://0.0.0.0:8001/](http://0.0.0.0:8001/).
+
+
+## Gallery 
+
+It comes bundled with some initial dummy activity data:
+
+ Dashboard             |  Sport Page
+:-------------------------:|:-------------------------:
+![](https://i.imgur.com/gSYgVSJ.png)  |  ![](https://i.imgur.com/6fwcEZX.png)
+
+ Activity Page 1/2             |  Activity Page 2/2
+:-------------------------:|:-------------------------:
+![](https://i.imgur.com/tzJZh4M.png)  |  ![](https://i.imgur.com/CJ1SKEn.png)
+
+## Thanks
+
+Thanks to the authors of projects I integrated into workoutizer:
+* [leaflet-elevation](https://github.com/Raruto/leaflet-elevation) by [Raruto](https://github.com/Raruto)
+* [django-colorfield](https://github.com/fabiocaccamo/django-colorfield) by [Fabio Caccamo](https://github.com/fabiocaccamo)
+* [python-fitparse](https://github.com/dtcooper/python-fitparse) by [dtcooper](https://github.com/dtcooper)
+* [leaflet-color-markers](https://github.com/pointhi/leaflet-color-markers) by [pointhi](https://github.com/pointhi)
+* [Font Awesome Icons](https://fontawesome.com/)
+
+Enjoy!
+
