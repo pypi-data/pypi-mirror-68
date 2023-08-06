@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+werkit/__init__.py
+werkit/format_time.py
+werkit/manager.py
+werkit/package_version.py
+werkit.egg-info/PKG-INFO
+werkit.egg-info/SOURCES.txt
+werkit.egg-info/dependency_links.txt
+werkit.egg-info/top_level.txt
+werkit/parallel/__init__.py
+werkit/parallel/cloud_manager.py
+werkit/parallel/invoke.py
+werkit/parallel/testing.py
