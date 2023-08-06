@@ -1,0 +1,6 @@
+tensorflow
+tensorflow_hub
+numpy
+pandas
+matplotlib
+seaborn
