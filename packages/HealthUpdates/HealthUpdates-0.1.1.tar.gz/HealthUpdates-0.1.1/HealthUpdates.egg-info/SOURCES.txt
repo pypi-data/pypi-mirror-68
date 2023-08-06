@@ -1,0 +1,15 @@
+CHANGES.txt
+CovidDailyUpdate.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+HealthUpdates.egg-info/PKG-INFO
+HealthUpdates.egg-info/SOURCES.txt
+HealthUpdates.egg-info/dependency_links.txt
+HealthUpdates.egg-info/entry_points.txt
+HealthUpdates.egg-info/top_level.txt
+healthupdates/__init__.py
+healthupdates/updates.py
+healthupdates/test/__init__.py
+healthupdates/test/test_updater.py
