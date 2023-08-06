@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: image-encoder
+Version: 0.0.6
+Summary: A simple way to encode and decode images for REST calls
+Home-page: https://github.com/jagath-jaikumar/image-encoder
+Author: Jagath Jai Kumar
+Author-email: jagath.jaikumar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (>=6.2.0)
+
+# Image encoder for http
+
+## Functions
+
+Encode: Takes in a filepath to a jpg, returns a string representation of base64 encoded bytes
+
+Decdode: Takes a string representation of base64 encoded bytes and returns PIL image
+
+
