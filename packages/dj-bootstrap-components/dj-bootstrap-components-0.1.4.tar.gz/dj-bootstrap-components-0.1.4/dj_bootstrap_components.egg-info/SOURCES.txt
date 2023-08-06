@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+bootstrap_components/__init__.py
+dj_bootstrap_components.egg-info/PKG-INFO
+dj_bootstrap_components.egg-info/SOURCES.txt
+dj_bootstrap_components.egg-info/dependency_links.txt
+dj_bootstrap_components.egg-info/top_level.txt
+docs/temp.txt
