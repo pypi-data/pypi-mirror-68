@@ -1,0 +1,11 @@
+etna_panza-1.1.0.data/scripts/panza_executor.py,sha256=53XGIRJ623xXqRkYs2wdROoedFaRCEkxs2pPzAmKMx4,2677
+panza/__init__.py,sha256=orYQiNlR5b7bSFCrxOj1MvP0eBYTkhyEaljx-aQKdo0,1806
+panza/_utils.py,sha256=7RytGPJTtS--AyHWD0b4RsTY7AOlFdej-Wq0GzYH1Cg,247
+panza/build/__init__.py,sha256=0-IvB--iqTfGxPbybOBoRGLlIPQpKhtwh_57RmrtvqA,2697
+panza/config/__init__.py,sha256=X9eZ04xlmsbeNTaBiuYqOrvVRnpG5s__Lw08HGbTM78,440
+panza/jobs/__init__.py,sha256=bCfyCwYswJsxFol7N8JlIo9_Ejue4KrkwypSNftrzPI,11646
+panza/jobs/docker.py,sha256=8ni4L7m-znAFiBSJvBToGVRxjAg7Mwy-NzpszRyKRWM,3155
+etna_panza-1.1.0.dist-info/METADATA,sha256=_UC2Njzwz_o7WG8vjiAxeJ9Yr21YJ0hw1-2ckfL9Vps,606
+etna_panza-1.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+etna_panza-1.1.0.dist-info/top_level.txt,sha256=i6tBAQxNirqKHWm1Bjd7-JcsoOomBsk1IJZGrz-xgRA,6
+etna_panza-1.1.0.dist-info/RECORD,,
