@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyavanza
+Version: 0.2.0
+Summary: A Python wrapper around the Avanza mobile API
+Home-page: https://github.com/claha/pyavanza
+Author: Claes Hallstrom
+Author-email: hallstrom.claes@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: aiohttp (>=3.6.1)
+
+UNKNOWN
+
+
