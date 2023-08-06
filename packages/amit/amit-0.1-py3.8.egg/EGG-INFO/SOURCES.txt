@@ -1,0 +1,14 @@
+setup.py
+amit/__init__.py
+amit/__main__.py
+amit/domain.py
+amit/host.py
+amit/interactive.py
+amit/manager.py
+amit/service.py
+amit.egg-info/PKG-INFO
+amit.egg-info/SOURCES.txt
+amit.egg-info/dependency_links.txt
+amit.egg-info/not-zip-safe
+amit.egg-info/top_level.txt
+bin/amit
