@@ -1,0 +1,194 @@
+Metadata-Version: 2.1
+Name: shtuka
+Version: 0.2.0
+Summary: Neat and tidy configs gadget with methods on steroids 🔥
+Home-page: https://github.com/stasbel/shtuka
+Author: Stanislav Beliaev
+Author-email: stasbelyaev96@gmail.com
+License: MIT
+Download-URL: https://github.com/stasbel/shtuka
+Project-URL: Source Code, https://github.com/stasbel/shtuka
+Project-URL: Bug Tracker, https://github.com/stasbel/shtuka/issues
+Description: <!--suppress HtmlDeprecatedAttribute -->
+        <div align="center">
+        
+        ![logo-small-2](https://user-images.githubusercontent.com/12044462/79633316-7c6e7280-8119-11ea-9728-00eda61d9a7c.png)
+        
+        # shtuka
+        
+        **(russian: "a thing"): Neat and tidy configs gadget with methods on
+         steroids 🔥**
+         
+         [![PyPI](https://img.shields.io/pypi/v/shtuka)](https://pypi.org/project/shtuka)
+         [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/shtuka)](https://pypi.org/project/shtuka)
+         [![Build Status](https://travis-ci.com/stasbel/shtuka.svg?token=1jgzjXXmtWmYE3GLcvgS&branch=master)](https://travis-ci.com/stasbel/shtuka)
+         [![Codacy Badge](https://api.codacy.com/project/badge/Grade/875042b1fade4bf1b5e50dab533eb33f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stasbel/shtuka&amp;utm_campaign=Badge_Grade)
+         [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/875042b1fade4bf1b5e50dab533eb33f)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stasbel/shtuka&amp;utm_campaign=Badge_Coverage)
+         [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+         [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](.pre-commit-config.yaml)
+         [![PyPI - License](https://img.shields.io/pypi/l/shtuka)](LICENSE)
+         
+         </div>
+         
+        ---
+        
+        ## Getting Started
+        
+        `pip install shtuka` (py3.6+)
+        
+        ### TL;DR
+        
+        ```python
+        """Basic stuff"""  # flake8: noqa
+        import torch
+        import shtuka
+        
+        @shtuka.mark('data', alias='D')  # W/o explicit key - __name__ will be used.
+        def get_data(part, source='mnist', image_size=28):
+            pass
+        
+        class CustomResNet(torch.nn.Module):
+            def __init__(self, input_size, num_classes=3, dropout: float = 0):
+                """Docstring/inline type hinting helps correct parsing for cli."""
+                super().__init__()
+            
+            def fit(self, data, lr):
+                pass
+        
+            def test(self, data, metrics):
+                pass
+        
+        # Outside marking with alias.
+        CustomResNet = shtuka.mark.model(CustomResNet)
+        CustomResNet.test = shtuka.mark.T(CustomResNet.test)
+        
+        def main(cfg):
+            # 'shtuka' automatically propagate cfg.data kwargs to calls.
+            train_data, eval_data = get_data('train'), get_data('eval')
+            # But you can also add additional kwarg to override it.
+            model = CustomResNet(
+                # `x_` unwraps shtuka. Passing wrapped one also working for marked obj.
+                input_size=cfg.data.image_size.x_,
+                # `f_` is finalizing operator and outputs lambda result.
+                num_classes=cfg.data.source.f_(lambda x: 10 if x == 'mnist' else 2),
+            )
+        
+            # Valid lr format could be: string, float, incorrect or missing.
+            model.fit(train_data, lr=cfg.optim.lr.coerce_(float) | 1e-3)
+            # `fs_` applies lambda to composite structure.
+            result = model.test(
+                data=eval_data,
+                metrics=cfg.test.metrics.fs_(','.join),
+            )
+        
+            # Multi-dot set doesn't fail w/o 'stats' key. It creates dict on-the-fly.
+            cfg.stats.num_weights = model.num_weights
+            # Save full instances specification.
+            cfg.eval, cfg.model = shtuka.describe(get_data), shtuka.describe(model)
+        
+            if cfg.log.save_result:  # If 'save_results' exists and is True.
+                print(cfg.log.msg_file.f_('read'))  # There are many such funcs.
+                torch.save(
+                    {cfg.frozen_(): result},  # `cfg.frozen_()` is immutable.
+                    # '/' chooses right value is 'save_path' is missing.
+                    cfg.log.save_path / '/data/result.pth',
+                )
+        
+        if __name__ == '__main__':
+            # 'validate' checks collision with methods 
+            # (like 'f_' as a config key and as a method).
+            shtuka.run(main, validate=True)
+        ```
+        
+        `base.yaml`:
+        
+        ```yaml
+        optim:
+            lr: '4e-3'
+        
+        T:
+            metrics:
+                - acc
+                - recall
+        ```
+        
+        CLI Run:
+        
+        ```bash
+        python train.py -c base.yaml D.image_size=24 T.metrics.0=f1
+        ```
+        
+        ### Features
+        
+        <details>
+        <summary>First Feature</summary>
+        <p>
+        
+        ```python
+        """Non-basic stuff"""
+        import shtuka
+        cfg = shtuka.cook({'kek': {'mem': 0}})
+        assert cfg.kek.mem0.miss_
+        ```
+        
+        </p>
+        </details>
+        
+        <details>
+        <summary>Second Feature</summary>
+        <p>
+        
+        ```python
+        """Non-basic stuff"""
+        import shtuka
+        cfg = shtuka.cook({'kek': {'mem': 0}})
+        assert cfg.kek.mem0.miss_
+        ```
+        
+        </p>
+        </details>
+        
+        ## Development & Contributing
+        
+        Pick an issue, branch out from master, file a PR and comply with tox.
+        
+        ### Format/Lint/Test/Tox
+        
+        ```bash
+        pip install -e '.[dev]'  
+        make format  # => lint/test or just flt.  
+        make [clean] tox
+        ```
+        
+        ### Git/Release
+        
+        Don't forget to update [changelog](CHANGELOG.md) and create
+        [GitHub release](https://github.com/stasbel/shtuka/releases) manually. 
+        
+        ```bash
+        make setup-pre-commit
+        make release VERSION='?.?.?'
+        ```
+        
+        ## License
+        
+        `shtuka` is MIT licensed, as could be found in the [LICENSE](LICENSE) file.
+        
+Keywords: yaml,json,config,tool,dict
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: format
+Provides-Extra: lint
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: all
