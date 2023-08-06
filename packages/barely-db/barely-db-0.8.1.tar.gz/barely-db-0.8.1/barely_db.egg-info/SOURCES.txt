@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+barely_db/__init__.py
+barely_db/configs.py
+barely_db/examples.py
+barely_db/file_management.py
+barely_db/legacy.py
+barely_db/parser.py
+barely_db/tools.py
+barely_db.egg-info/PKG-INFO
+barely_db.egg-info/SOURCES.txt
+barely_db.egg-info/dependency_links.txt
+barely_db.egg-info/requires.txt
+barely_db.egg-info/top_level.txt
