@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bel2scm
+Version: 0.0.3
+Summary: A package for creating causal graphs in pyro
+Home-page: https://github.com/COVID-19-Causal-Reasoning/bel2scm
+Author: Craig Bakker
+Author-email: craig.bakker@pnnl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: pyro-ppl
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: json
+Requires-Dist: pybel
+
+# Example Package
+
+This package is for creating causal graphs in Pyro.
+
