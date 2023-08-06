@@ -1,0 +1,10 @@
+healthupdates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+healthupdates/updates.py,sha256=ZA7_JtRRl7VA9yZx0Aq5hcWOraxvkY_yGZZgn3nMCoY,1905
+healthupdates/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+healthupdates/test/test_updater.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HealthUpdates-0.1.2.dist-info/LICENSE.txt,sha256=ak69Jl0jcbl2x_ogUcQ8AMbpJb2A82R8COO68TDz7x0,15071
+HealthUpdates-0.1.2.dist-info/METADATA,sha256=vfGLREuYwjyL1zAfxk3tm0k-F32RiNCYz7dQOR93yU8,858
+HealthUpdates-0.1.2.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+HealthUpdates-0.1.2.dist-info/entry_points.txt,sha256=ltgOfRbeGsTjMelUgZl96kGagp2Pc7WOofjU_-bk42c,57
+HealthUpdates-0.1.2.dist-info/top_level.txt,sha256=qi3B5mz5GAYQEHklEDgWf5hk5zDbzWubWEmPv8CR3cI,14
+HealthUpdates-0.1.2.dist-info/RECORD,,

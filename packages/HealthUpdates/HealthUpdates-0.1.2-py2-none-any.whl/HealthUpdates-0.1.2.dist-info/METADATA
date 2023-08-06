@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: HealthUpdates
+Version: 0.1.2
+Summary: Python script that retrieves COVID-19 data from an API
+Home-page: UNKNOWN
+Author: Timothy Clark
+Author-email: timothy@rzerotracing.com
+License: Creative Commons Attribuion-Noncommercial-Share Alike license
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+
+# Health Updates
+
+This is a python script that checks an API for COVID-19 case numbers for Mississippi and the US and outputs those numbers in the CovidDailyUpdate.txt as two paragraphs.
+
+This command line script can be installed with '`pip install HealthUpdates`'. (For Windows users you may need to add the install location to your PATH.)
+
+This script can be called with '`hupdates`' and will print the output to the CovidDailyUpdate.txt file.
+
+
