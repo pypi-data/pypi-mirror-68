@@ -1,0 +1,9 @@
+{% extends "fsm_admin/change_form.html" %}
+{% load static shop_tags %}
+
+{% block after_related_objects %}
+	{{ block.super }}
+	{% for parcel_label_url in parcel_label_urls %}
+	<iframe class="shop-parcel-label" name="parcel_label_{{ forloop.counter }}" src="{% url 'admin:print_shipping_label' %}?url={{ parcel_label_url|urlencode }}"></iframe>
+	{% endfor %}
+{% endblock %}
