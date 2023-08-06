@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+"""
+..
+  Copyright 2020 The University of Sydney
+
+  This module is the entry point for ncbi-taxonomist
+.. moduleauthor:: Jan P Buchmann <jan.buchmann@sydney.edu.au>
+"""
+
+
+import os
+import sys
+import json
+import logging
+import argparse
+
+
+import ncbi_taxonomist.utils
+import ncbi_taxonomist.collect.collector
+import ncbi_taxonomist.args
+import ncbi_taxonomist.ncbitaxonomist
+
+logger = logging.getLogger('ncbi-taxonomist')
+logger.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+ch.setFormatter(logging.Formatter('%(asctime)s::%(levelname)s::%(name)s::%(message)s'))
+logger.addHandler(ch)
+
+
+def main():
+  args = ncbi_taxonomist.args.parse(os.path.basename(__file__))
+  nt = ncbi_taxonomist.ncbitaxonomist.NcbiTaxonomist(args.database)
+
+  if args.command == 'collect':
+    collector = ncbi_taxonomist.collect.collector.Collector(args.database)
+    collector.collect(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                      names=ncbi_taxonomist.utils.parse_names(args.names))
+    return 0
+
+  if args.command == 'map':
+    if (args.taxids is None) and (args.names is None) and (args.accessions is None):
+      sys.exit("Error: require names or taxids or accessions. See -h.")
+    if not args.database:
+      args.remote = True
+    #logger.info(ncbi_taxonomist.ncbitaxonomist.options.summary(args))
+    if args.accessions is not None:
+      nt.map_accessions(ncbi_taxonomist.utils.parse_names(args.accessions),
+                        entrezdb=args.entrezdb,
+                        remote=args.remote)
+    nt.map_taxa(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                names=ncbi_taxonomist.utils.parse_names(args.names),
+                remote=args.remote)
+    return 0
+
+  if args.command == 'import':
+    if not args.database:
+      sys.exit("Error: require path to database")
+    nt.import_to_db(args.filter)
+    return 0
+
+  if args.command == 'resolve':
+    if not args.database:
+      args.remote = True
+    if (args.database is None) and (args.remote is False) and (args.mapping is False):
+      sys.exit("Error: no taxonomy source. Require path to local database, --remote flag or mapping result from STDIN.")
+    #logger.info(ncbi_taxonomist.ncbitaxonomist.options.summary(args))
+    if args.mapping:
+      nt.resolve_accession_map(remote=args.remote)
+    else:
+      nt.resolve(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                 names=ncbi_taxonomist.utils.parse_names(args.names),
+                 remote=args.remote)
+    return 0
+
+  if args.command == 'subtree':
+    nt.get_subtree(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                   names=ncbi_taxonomist.utils.parse_names(args.names),
+                   rank=args.rank, upper_rank=args.hrank, lower_rank=args.lrank,
+                   remote=args.remote)
+    return 0
+
+  if args.command == 'group':
+    if args.database is None:
+      sys.exit("The group command requires an existing taxonomist database. Abort")
+    groupmgr = nt.groupmanager()
+
+    if args.list:
+      groupmgr.list_groups()
+      return 0
+    if args.add and args.rm:
+      # move from rm to add
+      pass
+      return 0
+    if args.add:
+      groupmgr.add(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                   names=ncbi_taxonomist.utils.parse_names(args.names),
+                   groupname=args.add)
+      return 0
+    if args.rm:
+      groupmgr.remove(taxids=ncbi_taxonomist.utils.parse_taxids(args.taxids),
+                      names=ncbi_taxonomist.utils.parse_names(args.names),
+                      groupname=args.rm)
+      return 0
+
+    if args.get is not None:
+      if not args.get:
+        args.get = None
+      groupmgr.retrieve_groups(groupnames=ncbi_taxonomist.utils.parse_names(args.get))
+      return 0
+    return 0
+
+if __name__ == '__main__':
+  main()
+
+  #print("Resource usage: {}".format(resource.getrusage(resource.RUSAGE_SELF)), file=sys.stderr)
+  ##### Important ######
+  # Closing Stderr and Stdoutif no pipe is read in next step to prevent Errno 32 :
+  # Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='UTF-8'>
+  # BrokenPipeError: [Errno 32] Broken pipe
+  sys.stderr.close()
+  sys.stdout.close()
