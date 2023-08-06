@@ -1,0 +1,258 @@
+xSGE Particles
+**************
+
+
+Contents
+^^^^^^^^
+
+* xSGE Particles
+
+  * xsge_particle Classes
+
+    * xsge_particle.Emitter
+
+      * xsge_particle.Emitter Methods
+
+      * xsge_particle.Emitter Event Methods
+
+    * xsge_particle.Particle
+
+      * xsge_particle.Particle Methods
+
+    * xsge_particle.AnimationParticle
+
+    * xsge_particle.TimedParticle
+
+      * xsge_particle.TimedParticle Methods
+
+    * xsge_particle.BubbleParticle
+
+      * xsge_particle.BubbleParticle Methods
+
+    * xsge_particle.AnimationBubbleParticle
+
+    * xsge_particle.TimedBubbleParticle
+
+xSGE is a collection of extensions for the SGE licensed under the GNU
+General Public License.  They are designed to give additional features
+to free/libre software games which aren't necessary, but are nice to
+have.
+
+xSGE extensions are not dependent on any particular SGE
+implementation. They should work with any implementation that follows
+the specification.
+
+This extension provides particle effects for the SGE.
+
+
+xsge_particle Classes
+=====================
+
+
+xsge_particle.Emitter
+---------------------
+
+class xsge_particle.Emitter(x, y, z=0, interval=1, chance=1, particle_cls=<class 'xsge_particle.Particle'>, particle_args=None, particle_kwargs=None, particle_lambda_args=None, particle_lambda_kwargs=None, tangible=False, **kwargs)
+
+   Class for object emitters.  These are "sge.dsp.Object" objects
+   which create other "sge.dsp.Object" objects of a specified class at
+   a specified interval.
+
+   To randomize the way particles are created, extend
+   "event_create_particle()" in a derived class.
+
+   Note: An alarm with the name ""__emitter"" in "event_alarm()" is
+     used to control the timing.  It is initially set by
+     "event_create()".
+
+   interval
+
+      The number of frames to wait in between the creation of each
+      particle (adjusted for delta timing).
+
+   chance
+
+      The chance (out of 1) of a particle actually being created at
+      each iteration.  This can be used to make particle generation
+      uneven.
+
+   particle_cls
+
+      The class to use for the particles created.  Any class derived
+      from "sge.dsp.Object" will work.
+
+   particle_args
+
+      The ordered arguments to pass to created particles' constructor
+      methods.  If set to "None", an empty list is used.
+
+   particle_kwargs
+
+      The keyword arguments to pass to created particles' constructor
+      methods.  If set to "None", an empty dictionary is used.
+
+   particle_lambda_args
+
+      A list of functions which, when a particle is about to be
+      created, are called and have the returned values passed to the
+      particle's constructor method instead of the corresponding index
+      of "particle_args".  This emitter is passed to each of these
+      functions as the first argument.
+
+      Values in the list set to "None" are ignored.  If this list is
+      longer than "particle_args", any arguments not set by either of
+      these lists are set to "None".
+
+      If set to "None", an empty list is used.
+
+   particle_lambda_kwargs
+
+      A dictionary of functions which, when a particle is about to be
+      created, are called and have the returned values passed to the
+      particle's constructor method instead of the corresponding key
+      of "particle_kwargs".  This emitter is passed to each of these
+      functions as the first argument.
+
+      If set to "None", an empty dictionary is used.
+
+
+xsge_particle.Emitter Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Emitter.__init__(x, y, z=0, interval=1, chance=1, particle_cls=<class 'xsge_particle.Particle'>, particle_args=None, particle_kwargs=None, particle_lambda_args=None, particle_lambda_kwargs=None, tangible=False, **kwargs)
+
+   Arguments set the respective initial attributes of the object. See
+   the documentation for "Emitter" for more information.
+
+   "x", "y", "z", "tangible", and all arguments passed to "kwargs" are
+   passed as the corresponding arguments to the constructor method of
+   "sge.dsp.Object".
+
+
+xsge_particle.Emitter Event Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Emitter.event_create_particle(particle)
+
+   Called immediately after the emitter creates a particle.
+
+   Arguments:
+
+   * "particle" -- The particle object just created.
+
+
+xsge_particle.Particle
+----------------------
+
+class xsge_particle.Particle(x, y, z=0, tangible=False, **kwargs)
+
+   Base class for particles.  It is identical to "sge.dsp.Object",
+   except that it is intangible by default.
+
+
+xsge_particle.Particle Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Particle.__init__(x, y, z=0, tangible=False, **kwargs)
+
+   "x", "y", "z", "tangible", and all arguments passed to "kwargs" are
+   passed as the corresponding arguments to the constructor method of
+   the parent class.
+
+
+xsge_particle.AnimationParticle
+-------------------------------
+
+class xsge_particle.AnimationParticle(x, y, z=0, tangible=False, **kwargs)
+
+   Class for particle objects which animate once and are then
+   destroyed.  It is otherwise identical to "Particle".
+
+   Note: "event_animation_end()" is used to control the destruction.
+
+
+xsge_particle.TimedParticle
+---------------------------
+
+class xsge_particle.TimedParticle(x, y, z=0, life=None, tangible=False, **kwargs)
+
+   Class for particle objects which are destroyed after a designated
+   amount of time.  It is otherwise identical to "Particle".
+
+   Note: An alarm with the name ""__life"" in "event_alarm()" is
+     used to control the timing.  It is initially set by
+     "event_create()".
+
+   life
+
+      The number of frames (adjusted for delta timing) after which the
+      particle is destroyed.  Setting this attribute resets the
+      ""__life"" alarm to the given value.  Set to "None" to disable
+      timed destruction.
+
+
+xsge_particle.TimedParticle Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TimedParticle.__init__(x, y, z=0, life=None, tangible=False, **kwargs)
+
+   Arguments set the respective initial attributes of the object. See
+   the documentation for "TimedParticle" for more information.
+
+   "x", "y", "z", "tangible", and all arguments passed to "kwargs" are
+   passed as the corresponding arguments to the constructor method of
+   the parent class.
+
+
+xsge_particle.BubbleParticle
+----------------------------
+
+class xsge_particle.BubbleParticle(x, y, z=0, turn_factor=1, min_angle=180, max_angle=0, tangible=False, **kwargs)
+
+   Class for particle objects which randomly change their move
+   directions.
+
+   Note: "event_step()" is used to control this behavior.
+     "move_direction" is manipulated.
+
+   turn_factor
+
+      The largest amount of rotation possible.
+
+   min_angle
+
+      The lowest possible angle permitted.
+
+   max_angle
+
+      The highest possible angle permitted.
+
+
+xsge_particle.BubbleParticle Methods
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+BubbleParticle.__init__(x, y, z=0, turn_factor=1, min_angle=180, max_angle=0, tangible=False, **kwargs)
+
+   Arguments set the respective initial attributes of the object. See
+   the documentation for "TimedParticle" for more information.
+
+   "x", "y", "z", "tangible", and all arguments passed to "kwargs" are
+   passed as the corresponding arguments to the constructor method of
+   the parent class.
+
+
+xsge_particle.AnimationBubbleParticle
+-------------------------------------
+
+class xsge_particle.AnimationBubbleParticle(x, y, z=0, turn_factor=1, min_angle=180, max_angle=0, tangible=False, **kwargs)
+
+   Inherits the features of both "AnimationParticle" and
+   "BubbleParticle".
+
+
+xsge_particle.TimedBubbleParticle
+---------------------------------
+
+class xsge_particle.TimedBubbleParticle(x, y, z=0, life=None, tangible=False, **kwargs)
+
+   Inherits the features of both "TimedParticle" and "BubbleParticle".
