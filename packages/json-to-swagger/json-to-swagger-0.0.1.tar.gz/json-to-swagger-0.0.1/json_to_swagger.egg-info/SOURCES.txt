@@ -1,0 +1,7 @@
+setup.py
+json_to_swagger/__init__.py
+json_to_swagger/converter.py
+json_to_swagger.egg-info/PKG-INFO
+json_to_swagger.egg-info/SOURCES.txt
+json_to_swagger.egg-info/dependency_links.txt
+json_to_swagger.egg-info/top_level.txt
