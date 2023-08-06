@@ -1,0 +1,10 @@
+flasgger
+flask
+humanfriendly
+numpy
+pandas
+pandasql
+pyparsing
+schematics
+scikit-image
+wrapt
