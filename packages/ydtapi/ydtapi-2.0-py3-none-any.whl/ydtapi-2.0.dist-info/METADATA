@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: ydtapi
+Version: 2.0
+Summary: Youdao translate API for python
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: none
+Platform: posix
+Requires-Dist: requests
+
+YDTAPI - Youdao Translate API
+=============================
+
+This is a translate API that was made with requests.post, hashlib, and
+random
+
+The module use 有道翻译 to translate
+
+It's not open source, so there's no licenses.
+
+Run it with a simple line of code in terminal:
+
+::
+
+
+::
+
+    python -m tapi
+
+
+
+
+
+It will print out the result of translation
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Or you can use it like this:
+
+::
+
+
+::
+
+    xxxxxxxxxx
+
+
+
+::
+
+    from tapi import mainAPI
+
+
+
+::
+
+    mainAPI('Hello', fr='AUTO', to='AUTO')
+
+
+
+
+
+It will return a dict with type(EN2ZH? ZH2ES?......), result, smart
+result(With the meaning of words)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+Author: UNKNOWN
+
