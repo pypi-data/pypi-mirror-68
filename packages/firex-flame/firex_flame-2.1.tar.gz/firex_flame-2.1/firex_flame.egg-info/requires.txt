@@ -1,0 +1,13 @@
+Flask==1.0.2
+Flask-AutoIndex==0.6.4
+Werkzeug==0.16.1
+python-socketio==4.1.0
+python-engineio==3.10.0
+firexapp
+firex_flame_ui<0.26
+requests
+beautifulsoup4
+importlib_resources
+paramiko
+gevent-websocket
+gevent
