@@ -1,0 +1,19 @@
+#!/usr/bin/python
+import pytube
+import os
+import sys
+from time import sleep
+import pythondl as pdl
+
+video = input('Video URL: ')
+title = pdl.gettitle(video)
+abort = input(f'Are you sure you want to download "{title}"? [Y/n]').upper()
+if abort != "" or "Y" or "YES":
+    print('Exiting...')
+    sys.exit()
+else:
+    print(f"Download path: {os.getcwd()} (Ctrl+C to abort)")
+    sleep(4)
+    print('Downloading...')
+    path = ""
+    pytube.YouTube(video).streams.first().download(path)

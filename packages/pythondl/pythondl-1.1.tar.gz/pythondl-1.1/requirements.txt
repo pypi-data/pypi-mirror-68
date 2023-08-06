@@ -1,0 +1,4 @@
+beautifulsoup4==4.9.1
+bs4==0.0.1
+pytube3==9.6.4
+requests==2.22.0

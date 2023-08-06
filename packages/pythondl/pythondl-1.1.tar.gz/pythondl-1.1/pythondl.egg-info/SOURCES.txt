@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+install.sh
+requirements.txt
+setup.py
+pythondl/__init__.py
+pythondl.egg-info/PKG-INFO
+pythondl.egg-info/SOURCES.txt
+pythondl.egg-info/dependency_links.txt
+pythondl.egg-info/requires.txt
+pythondl.egg-info/top_level.txt
+scripts/pydownloader
