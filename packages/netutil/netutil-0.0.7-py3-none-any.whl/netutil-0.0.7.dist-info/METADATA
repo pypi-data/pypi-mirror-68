@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: netutil
+Version: 0.0.7
+Summary: Simplified way to get networking port status
+Home-page: https://github.com/cjerrington/netutils
+Author: Clayton Errington
+Author-email: me@claytonerrington.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# netutil
+
+Python module to check the status of ports for local and websites. 
+
+# Install
+```shell
+pip install netutil
+```
+
+# Usage
+```python 
+import netutil
+google = netutils.PortCheck("google.com", 443)
+print(google.isOpen())
+```
+
+For extra help I've added in variables to find the hostname and local IP address. 
+- To get hostname: netutils.host_name
+- To get Local IP: netutils.host_ip
+
