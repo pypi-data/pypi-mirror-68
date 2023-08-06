@@ -1,0 +1,11 @@
+reader/__init__.py,sha256=Ooxc925GNIHIHnNkYjt-wQoLONg6dwesl4x9DKmHGmk,726
+reader/__main__.py,sha256=d8cAcmTUsAfKFJjXNz-bUM_NIZ-dS91Pm_whiAwrU5Q,1704
+reader/config.cfg,sha256=mmDu8PWYPcPNww5Jwu-1el2Az26g1hFjMYJR3K3Su5I,47
+reader/feed.py,sha256=1Z0TO19_pkGjZY7Xm0AES4UzegthboNB-3tzSfo8MS8,1661
+reader/viewer.py,sha256=zb80jVLbmkfQvEhcXDjvWkOwalP03hUom3NkTqkAyzE,533
+realpython_reader_Wilbury_01-1.0.0.dist-info/LICENSE,sha256=ipI2NmxyJorqEAs2d4YHZ2MDLJh6nb-h3sfpiuDj7lU,1089
+realpython_reader_Wilbury_01-1.0.0.dist-info/METADATA,sha256=M2MMGBTc5FIMM6GKSdrlsUdGmduGfIl5nu00AAMrvFA,3572
+realpython_reader_Wilbury_01-1.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+realpython_reader_Wilbury_01-1.0.0.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+realpython_reader_Wilbury_01-1.0.0.dist-info/top_level.txt,sha256=zVRv6FulXZWKf9Gycz9vjxul5OCZ3fCq2Attdwsu7Z4,7
+realpython_reader_Wilbury_01-1.0.0.dist-info/RECORD,,
