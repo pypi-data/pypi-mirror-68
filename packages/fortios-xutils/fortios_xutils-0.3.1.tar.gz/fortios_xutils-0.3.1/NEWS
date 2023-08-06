@@ -1,0 +1,21 @@
+* Wed May 20 2020 ssato - 0.3.1
+- change: export some globals
+- enhancement: add API docs
+
+* Sun May 17 2020 ssato - 0.3.0
+- change: export APIs
+- fix: add missing test cases
+
+* Sat May 16 2020 ssato - 0.2.0
+- add and define library APIs
+- fix: add missing test cases
+
+* Tue May 12 2020 ssato - 0.1.2
+- fix: correct the version
+
+* Tue May 12 2020 ssato - 0.1.1
+- fix: correct the copr URL
+- fix: correct the date of 0.1.0 release
+
+* Tue May 12 2020 ssato - 0.1.0
+- initial release

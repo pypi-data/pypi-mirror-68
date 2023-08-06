@@ -1,0 +1,69 @@
+%global pkgname fortios_xutils
+%global desc \
+Very experimental miscellaneous and extra utilities for fortios.
+
+%bcond_with tests
+
+Name:           python-%{pkgname}
+Version:        @VERSION@
+Release:        1%{?dist}
+Summary:        Very experimental miscellaneous and extra utilities for fortios
+License:        MIT
+URL:            https://github.com/ssato/fortios-xutils
+Source0:        %{url}/archive/RELEASE_%{version}.tar.gz
+BuildArch:      noarch
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-devel
+%if %{with tests}
+BuildRequires:  python3-tox
+BuildRequires:  python3-coveralls
+BuildRequires:  python3-flake8
+BuildRequires:  python3-nose
+BuildRequires:  python3-pycodestyle
+BuildRequires:  python3-pylint
+%endif
+
+%description    %{desc}
+
+%package -n python3-%{pkgname}
+Summary:        %{summary}
+Requires:       python3-click
+Requires:       python3-jmespath
+Requires:       python3-netaddr
+Requires:       python3-networkx
+Requires:       python3-pandas
+Requires:       python3-pyyaml
+# It's available from https://copr.fedorainfracloud.org/coprs/ssato/python-anyconfig/
+Requires:       python3-anyconfig
+Requires:       python3-anyconfig-fortios-backend
+%{?python_provide:%python_provide python3-%{pkgname}}
+
+%description -n python3-%{pkgname} %{desc}
+
+%prep
+%autosetup -n %{pkgname}-%{version}
+
+%build
+%py3_build
+
+%install
+%py3_install
+
+%if %{with tests}
+%check
+tox -e py$(python -c "import sys; sys.stdout.write(sys.version[:3].replace('.', ''))")
+%endif
+
+%files -n python3-%{pkgname}
+%doc README.rst NEWS
+%license LICENSE.MIT
+%{python3_sitelib}/*
+%{_bindir}/*
+
+%changelog
+* Sun May 17 2020 Satoru SATOH <satoru.satoh@gmail.com> - 0.3.0-1
+- New upstream
+- Add some runtime and test time dependencies
+
+* Sat May  2 2020 Satoru SATOH <satoru.satoh@gmail.com> - 0.1.0-1
+- Initial packaging
