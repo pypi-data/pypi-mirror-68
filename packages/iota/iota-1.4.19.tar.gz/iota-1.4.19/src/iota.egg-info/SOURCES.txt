@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/iota/__init__.py
+src/iota.egg-info/PKG-INFO
+src/iota.egg-info/SOURCES.txt
+src/iota.egg-info/dependency_links.txt
+src/iota.egg-info/entry_points.txt
+src/iota.egg-info/requires.txt
+src/iota.egg-info/top_level.txt
