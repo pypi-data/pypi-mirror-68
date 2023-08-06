@@ -1,0 +1,8 @@
+README.md
+setup.py
+gspoty/__init__.py
+gspoty/__main__.py
+gspoty.egg-info/PKG-INFO
+gspoty.egg-info/SOURCES.txt
+gspoty.egg-info/dependency_links.txt
+gspoty.egg-info/top_level.txt
