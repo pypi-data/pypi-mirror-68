@@ -1,0 +1,3 @@
+[console_scripts]
+deepac-live = deepaclive.command_line:main
+
