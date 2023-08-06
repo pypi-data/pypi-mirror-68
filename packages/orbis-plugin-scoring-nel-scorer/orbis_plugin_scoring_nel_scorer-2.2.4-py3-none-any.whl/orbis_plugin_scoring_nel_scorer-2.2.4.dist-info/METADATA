@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-scoring-nel-scorer
+Version: 2.2.4
+Summary: The nel_scorer scoring plugin for Orbis
+Home-page: https://github.com/orbis-eval/orbis_plugin_scoring_nel_scorer
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+# NEL Scorer Plugin for Orbis
+
+

@@ -1,0 +1,10 @@
+orbis_plugin_scoring_nel_scorer/__init__.py,sha256=lyFoGfKmZRLke8FkYDRwdLdyWfB0qrWndwerojoOnKI,404
+orbis_plugin_scoring_nel_scorer/conditions.py,sha256=MF91QClf1MyQhlj5GmWj6H15SA1xNRbJ9mkdRup2rLk,776
+orbis_plugin_scoring_nel_scorer/main.py,sha256=0TzhCiBsoyLTgA59mH5ErwNFUmkM6_nzus-lbr0jxOs,8229
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_main.py,sha256=MCO1zJnHnGfSDXYpGymSGBhBYj8ZU257nqmvzrSlJ6U,1512
+orbis_plugin_scoring_nel_scorer-2.2.4.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+orbis_plugin_scoring_nel_scorer-2.2.4.dist-info/METADATA,sha256=zQYb8yp7fD6AtyjkIpqe560BcAExVmVvK1Bcnr3p3I4,338
+orbis_plugin_scoring_nel_scorer-2.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+orbis_plugin_scoring_nel_scorer-2.2.4.dist-info/top_level.txt,sha256=UEICuFgOrV3DzCR_B3UoTpTevfpUWlgvnqf2hjRFEDk,38
+orbis_plugin_scoring_nel_scorer-2.2.4.dist-info/RECORD,,
