@@ -1,0 +1,13 @@
+numpy
+pandas
+boto3
+scikit-learn
+spacy==2.2.1
+nervaluate
+twine
+
+[deep-learning]
+tensorflow
+torch
+transformers<=2.0.0
+spacy-transformers
