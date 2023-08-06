@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: lsf-runner
+Version: 0.0.5
+Summary: A package to run experiments on lsf or linux clusters.
+Home-page: https://github.com/sebascuri/runner
+Author: Sebastian Curi
+Author-email: sebascuri@gmail.com
+License: MIT
+Description: # Runner
+        
+        Runner is a package for running experiments, particular at a IBM LSF cluster. 
+        It provides a runner that can run locally on CPUs or GPUs, or on an IBM LSF cluster.
+        
+        This package will change often as it is under development. 
+        ## Installation  
+        ```bash
+        pip install -U git+https://github.com/sebascuri/runner
+        ```
+        Or clone and install 
+        ```bash
+        git clone https://github.com/sebascuri/runner.git
+        cd runner 
+        pip install -e .[test]
+        ```
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
