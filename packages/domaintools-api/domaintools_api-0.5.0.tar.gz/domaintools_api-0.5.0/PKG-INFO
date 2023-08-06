@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: domaintools_api
+Version: 0.5.0
+Summary: DomainTools' Official Python API
+Home-page: https://github.com/domaintools/python_api
+Author: DomainTools
+Author-email: timothy@domaintools.com
+License: MIT
+Description: UNKNOWN
+Keywords: Python,Python3
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
