@@ -1,0 +1,10 @@
+{
+    "PolyModulusDegree": 8192,
+    "CoeffModulus": [
+        60,
+        40,
+        40,
+        60
+    ],
+    "InitialScale": 1099511627776
+}
