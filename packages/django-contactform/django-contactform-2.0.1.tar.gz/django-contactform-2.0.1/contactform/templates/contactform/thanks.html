@@ -1,0 +1,18 @@
+{% extends "contactform/base.html" %}
+{% load i18n %}
+
+{% block content %}
+  <h1>{% trans "Thanks for your message" %}</h1>
+
+  {% if messages %}
+  <ul class="messages">
+    {% for message in messages %}
+      {% if "contactform" in message.tags %}
+        <li{% if message.level_tag %} class="{{ message.level_tag }}"{% endif %}>
+          {{ message }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endblock %}

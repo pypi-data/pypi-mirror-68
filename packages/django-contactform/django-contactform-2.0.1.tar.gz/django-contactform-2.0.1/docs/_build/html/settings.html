@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Settings &#8212; django-contactform 2.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Templates" href="templates.html" />
+    <link rel="prev" title="Installation" href="install.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="settings">
+<h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p>Following settings are available to customize the form</p>
+<div class="section" id="contactform-recipients">
+<h2>CONTACTFORM_RECIPIENTS<a class="headerlink" href="#contactform-recipients" title="Permalink to this headline">¶</a></h2>
+<p>Required. A list of recipients to send the message posted using the form.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CONTACTFORM_RECIPIENTS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;me@example.com&#39;</span><span class="p">,</span> <span class="s1">&#39;somebody@example.com&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="contactform-subject">
+<h2>CONTACTFORM_SUBJECT<a class="headerlink" href="#contactform-subject" title="Permalink to this headline">¶</a></h2>
+<p>Default: ‘New message’</p>
+<p>The subject of the email you’ll receive when the form is posted</p>
+</div>
+<div class="section" id="contactform-msg-template">
+<h2>CONTACTFORM_MSG_TEMPLATE<a class="headerlink" href="#contactform-msg-template" title="Permalink to this headline">¶</a></h2>
+<p>Default: ‘contactform/message.txt’</p>
+<p>The template used to render the email sent.</p>
+<p>The following entries will be used as the template’s context for rendering:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">site</span></code>: The current [Site](<a class="reference external" href="https://docs.djangoproject.com/en/3.0/ref/contrib/sites/">https://docs.djangoproject.com/en/3.0/ref/contrib/sites/</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">email</span></code>: the email field of the form</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">phone</span></code>: the phone field of the form</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">comment</span></code>: the comment field of the form</p></li>
+</ul>
+</div>
+<div class="section" id="contactform-frontend-framework">
+<h2>CONTACTFORM_FRONTEND_FRAMEWORK<a class="headerlink" href="#contactform-frontend-framework" title="Permalink to this headline">¶</a></h2>
+<p>Default: None</p>
+<p>The front-end framework to use to render the form. Available values are</p>
+<ul class="simple">
+<li><p>bootstrap</p></li>
+<li><p>uikit</p></li>
+<li><p>None</p></li>
+</ul>
+<p>If <code class="docutils literal notranslate"><span class="pre">None</span></code> the form will be rendered using Django stantart <code class="docutils literal notranslate"><span class="pre">form.as_p</span></code></p>
+<p>If <code class="docutils literal notranslate"><span class="pre">bootstrap</span></code> or <code class="docutils literal notranslate"><span class="pre">uikit</span></code> django-widget-tweaks is required to manage css classes of input fields <a class="reference external" href="https://pypi.org/project/django-widget-tweaks/">https://pypi.org/project/django-widget-tweaks/</a></p>
+</div>
+<div class="section" id="contactform-use-thanks-page">
+<h2>CONTACTFORM_USE_THANKS_PAGE<a class="headerlink" href="#contactform-use-thanks-page" title="Permalink to this headline">¶</a></h2>
+<p>Default: True</p>
+<p>Display a confirmation page when the form is submited</p>
+</div>
+<div class="section" id="contactform-display-form-title">
+<h2>CONTACTFORM_DISPLAY_FORM_TITLE<a class="headerlink" href="#contactform-display-form-title" title="Permalink to this headline">¶</a></h2>
+<p>Default: True</p>
+<p>Display a title before the form.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">django-contactform</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Install</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-recipients">CONTACTFORM_RECIPIENTS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-subject">CONTACTFORM_SUBJECT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-msg-template">CONTACTFORM_MSG_TEMPLATE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-frontend-framework">CONTACTFORM_FRONTEND_FRAMEWORK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-use-thanks-page">CONTACTFORM_USE_THANKS_PAGE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contactform-display-form-title">CONTACTFORM_DISPLAY_FORM_TITLE</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="templates.html">Templates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="templatetags.html">Template Tags</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="install.html" title="previous chapter">Installation</a></li>
+      <li>Next: <a href="templates.html" title="next chapter">Templates</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Guillaume Luchet.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/settings.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

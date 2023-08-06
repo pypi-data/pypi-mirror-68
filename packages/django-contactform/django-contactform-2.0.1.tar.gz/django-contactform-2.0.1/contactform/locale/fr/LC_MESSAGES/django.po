@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-05 23:20+0200\n"
+"PO-Revision-Date: 2020-05-05 23:21+0200\n"
+"Last-Translator: Guillaume Luchet <guillaume@geelweb.org>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: contactform/forms.py:6 contactform/templates/contactform/message.txt:4
+msgid "Email"
+msgstr "Courriel"
+
+#: contactform/forms.py:9
+msgid "Your email address"
+msgstr "Votre adresse de courriel"
+
+#: contactform/forms.py:14 contactform/templates/contactform/message.txt:5
+msgid "Phone"
+msgstr "Téléphone"
+
+#: contactform/forms.py:17
+msgid "+33..."
+msgstr "+33..."
+
+#: contactform/forms.py:22 contactform/templates/contactform/message.txt:7
+msgid "Comment"
+msgstr "Message"
+
+#: contactform/forms.py:25
+msgid "Your message"
+msgstr "Votre message"
+
+#: contactform/templates/contactform/base.html:4
+#: contactform/templates/contactform/form.html:4
+#: contactform/templates/contactform/form_bootstrap.html:10
+#: contactform/templates/contactform/form_uikit.html:10
+msgid "Contact us"
+msgstr "Nous contacter"
+
+#: contactform/templates/contactform/form.html:10
+#: contactform/templates/contactform/form_bootstrap.html:57
+#: contactform/templates/contactform/form_uikit.html:49
+msgid "Submit"
+msgstr "Envoyer"
+
+#: contactform/templates/contactform/form_bootstrap.html:15
+#: contactform/templates/contactform/form_uikit.html:14
+msgid "The form has errors"
+msgstr "Le formulaire contient des erreurs"
+
+#: contactform/templates/contactform/message.txt:2
+#, python-format
+msgid "New message from %(site)s"
+msgstr "Nouveau message du site %(site)s"
+
+#: contactform/templates/contactform/thanks.html:5
+msgid "Thanks for your message"
+msgstr "Merci pour votre message"
+
+#: contactform/views.py:31
+msgid "New message"
+msgstr "Nouveau message"
+
+#: contactform/views.py:40
+msgid "Your message has been sent."
+msgstr "Votre message a été envoyé."
