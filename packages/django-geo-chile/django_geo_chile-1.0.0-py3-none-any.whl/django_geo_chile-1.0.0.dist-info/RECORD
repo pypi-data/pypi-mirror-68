@@ -1,0 +1,12 @@
+geo_chile/__init__.py,sha256=1BE0yxCQr3fj7EvRVr3uugrI_pskBYw3-JU4-HtjUqY,53
+geo_chile/admin.py,sha256=IImDEHVQYP3R1rHghwW5kewGZRNQ3E23mtJSxaLHfxE,614
+geo_chile/apps.py,sha256=fws4LBAWzfVQqSE2pzPEYX9XX4Oyyu5Bs4RNkpnjI4o,154
+geo_chile/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_chile/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_chile/management/commands/load_geo_chile_data.py,sha256=OlepdCd3JE6BLUJ4C-csRdr8--G-pAViWVlxk9q_umE,2624
+geo_chile/migrations/0001_initial.py,sha256=ouHJvoqqjGsZvaiW2kqtlvY-aQBWpajbn6tiCgG0srs,2114
+geo_chile/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_chile/models.py,sha256=C7igOXcfGht0N4FlYIXHahsL6aSwLtoyMkiM5IJullo,1343
+django_geo_chile-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+django_geo_chile-1.0.0.dist-info/METADATA,sha256=xYKiLIcEeQ1E8W8E5_gNWOwJ9DxDr_8ViWWVgboEWQc,791
+django_geo_chile-1.0.0.dist-info/RECORD,,
