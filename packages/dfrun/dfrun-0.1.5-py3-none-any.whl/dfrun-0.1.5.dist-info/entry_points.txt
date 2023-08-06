@@ -1,0 +1,3 @@
+[console_scripts]
+dfrun = dfrun.__main__:main
+
