@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+test_requirements.txt
+version.txt
+ahttptemplate/__init__.py
+ahttptemplate.egg-info/PKG-INFO
+ahttptemplate.egg-info/SOURCES.txt
+ahttptemplate.egg-info/dependency_links.txt
+ahttptemplate.egg-info/requires.txt
+ahttptemplate.egg-info/top_level.txt
