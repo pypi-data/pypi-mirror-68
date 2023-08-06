@@ -1,0 +1,8 @@
+README.md
+setup.py
+readi/__init__.py
+readi/core.py
+readi.egg-info/PKG-INFO
+readi.egg-info/SOURCES.txt
+readi.egg-info/dependency_links.txt
+readi.egg-info/top_level.txt
