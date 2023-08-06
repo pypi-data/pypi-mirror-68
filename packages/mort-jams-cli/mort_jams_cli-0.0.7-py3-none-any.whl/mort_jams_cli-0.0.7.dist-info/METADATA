@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mort-jams-cli
+Version: 0.0.7
+Summary: Smaet Ygiderp
+Home-page: https://prodi.gy
+Author: Ianois Olpxe
+Author-email: contact@explosion.ai
+License: All rights reserved
+Platform: UNKNOWN
+Requires-Dist: typer (==0.1.0)
+Requires-Dist: requests (~=2.23.0)
+Requires-Dist: colorama (==0.4.3)
+Requires-Dist: shellingham (<=2.0.0,>=1.3.1)
+Requires-Dist: wasabi (==0.6.0)
+
+UNKNOWN
+
+
