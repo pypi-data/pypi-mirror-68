@@ -1,0 +1,15 @@
+ghdl/__init__.hy,sha256=h1NiXbTLOjFz_vABRN1aeRP6o9sqvaZKL_yk2-hLyl0,75
+ghdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghdl/config.hy,sha256=7lwwj-vvRBRihrNjpuYAhNU8xp0o4CRfJ1toH3lzctk,1332
+ghdl/local.hy,sha256=uL67XfMvm_SfczOwbsUNqTRaIO2G3NSLNmkomTVa6kg,1663
+ghdl/main.hy,sha256=VRX_CJBb2xz6rpZErAAKFRRWWfHO6ZxFlFcATMNa69s,3251
+ghdl/remote.hy,sha256=DqI8-clgnqqD0sDr0SW3C8Q6_seXPAsYXWc4LxAdtXk,934
+ghdl/schema.hy,sha256=zLyfCfe7qaq92tTDd9aplDIBUY-qif1LpVqLQ91i6jY,667
+ghdl/utils.hy,sha256=_R-S3f8fMGP_FKpq1P90sMBCwlPadzeZOuo8hstsRzg,803
+ghdl-0.2.0.data/scripts/ghdl,sha256=WfCwgK-KKofJY81ggdc-GfRa2bv37bF6avfna_Z0OkI,614
+ghdl-0.2.0.data/scripts/ghdl-delete-repo,sha256=b2X42MFFmvvJ6ldLAHyrcCkI5LB40Tuefbc3FMAtu54,92
+ghdl-0.2.0.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+ghdl-0.2.0.dist-info/METADATA,sha256=gF21aDNT1pDyQCB7Khe-Ib7sERNgqxtpCnXrL_hv5qI,497
+ghdl-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ghdl-0.2.0.dist-info/top_level.txt,sha256=SQzk56oLwp9nK3FgsTZRR9-tCPZokrFKwA-1TWOPPwQ,5
+ghdl-0.2.0.dist-info/RECORD,,
