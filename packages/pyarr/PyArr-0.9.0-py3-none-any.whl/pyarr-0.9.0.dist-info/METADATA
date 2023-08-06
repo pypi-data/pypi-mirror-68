@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pyarr
+Version: 0.9.0
+Summary: A Sonarr and Radarr API Wrapper
+Home-page: https://github.com/totaldebug/PyArr
+License: MIT
+Keywords: sonarr,radarr,api,wrapper
+Author: Steven Marks
+Author-email: marksie1988@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.21.0,<3.0.0)
+Project-URL: Documentation, https://docs.totaldebug.uk/PyArr
+Project-URL: Repository, https://github.com/totaldebug/PyArr
