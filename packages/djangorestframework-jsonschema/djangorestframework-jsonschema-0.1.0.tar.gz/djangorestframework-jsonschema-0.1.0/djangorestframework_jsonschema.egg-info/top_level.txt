@@ -1,0 +1,3 @@
+jsonschema2dj
+jsonschema2dj/management
+jsonschema2dj/management/commands
