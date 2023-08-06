@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyowapi/__init__.py
+pyowapi.egg-info/PKG-INFO
+pyowapi.egg-info/SOURCES.txt
+pyowapi.egg-info/dependency_links.txt
+pyowapi.egg-info/requires.txt
+pyowapi.egg-info/top_level.txt
+pyowapi/tests/__init__.py
+pyowapi/tests/test_api.py
