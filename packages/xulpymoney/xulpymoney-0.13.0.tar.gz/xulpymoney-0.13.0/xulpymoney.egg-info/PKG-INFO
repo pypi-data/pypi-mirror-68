@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xulpymoney
+Version: 0.13.0
+Summary: Home and financial accounting system
+Home-page: https://github.com/Turulomio/xulpymoney
+Author: Turulomio
+Author-email: turulomio@yahoo.es
+License: GPL-3
+Description: Project web page is in https://github.com/turulomio/xulpymoney/
+Keywords: financial home accounting system
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Office/Business :: Financial :: Accounting
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
