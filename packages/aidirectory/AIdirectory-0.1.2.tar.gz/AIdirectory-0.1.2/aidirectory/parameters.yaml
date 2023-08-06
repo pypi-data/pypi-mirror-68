@@ -1,0 +1,24 @@
+DIRECTORY: C:\Users\mjaquier\PycharmProjects\AIdirectory\tests
+GRADIENTS:
+- 20
+- 10
+- 5
+-
+ISOTHERMS:
+- 190
+- 220
+- 350
+-
+PROJECT: VERY NICE
+TECHNIQUES:
+  GC: false
+  IR: true
+  MS: true
+  STA: true
+  TG: false
+TOPICS:
+- WOW WHAT A TOPIC
+- VERY GOOD CHOICE
+- NICE
+- WELL DONE
+-
