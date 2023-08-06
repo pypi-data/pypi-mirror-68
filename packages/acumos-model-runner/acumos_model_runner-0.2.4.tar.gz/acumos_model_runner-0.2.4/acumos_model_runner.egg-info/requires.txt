@@ -1,0 +1,8 @@
+acumos>=0.9.4
+lark-parser<0.8
+connexion[swagger-ui]~=2.6
+gunicorn
+pyyaml
+jinja2
+protobuf
+flask-cors
