@@ -1,0 +1,7 @@
+numpy
+scipy
+h5py
+
+[geomopt]
+pyberny>=0.6.2
+geometric
