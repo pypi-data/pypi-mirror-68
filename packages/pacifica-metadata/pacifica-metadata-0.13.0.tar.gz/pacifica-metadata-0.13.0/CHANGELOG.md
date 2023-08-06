@@ -1,0 +1,85 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+- Endpoints for querying for status of data
+- Endpoints for querying for reporting of data
+
+## [0.13.0] - 2020-05-10
+### Changed
+- Pull #271 and #275 Add Transaction Reporting API by [@kauberry](https://github.com/kauberry)
+- Pull #278 Project Lookup Refinement by [@dmlb2000](https://github.com/dmlb2000)
+- Pull #281 Update Packaging (pip>=20) by [@dmlb2000](https://github.com/dmlb2000)
+- Pull #280 Default Filter Soft Deletes by [@kauberry](https://github.com/kauberry)
+
+## [0.12.4] - 2019-12-30
+### Changed
+- Pull #265 Add support for Python 3.7 and 3.8 by [@dmlb2000](https://github.com/dmlb2000)
+- Pull #266 Update PyLint to 2.0+ by [@dmlb2000](https://github.com/dmlb2000)
+- Pull #265 Remove Python 2.7 support by [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.12.3] - 2019-11-13
+### Changed
+- Fix #262 Add OrderedDict hashlist creation by [@kauberry](https://github.com/kauberry)
+
+## [0.12.2] - 2019-10-31
+### Changed
+- Fix #258 Add more handling of hashlist creation by [@kauberry](https://github.com/kauberry)
+
+## [0.12.1] - 2019-08-21
+### Changed
+- Fix #251 regression spelling error by [@dmlb2000](https://github.com/dmlb2000)
+- Pull #253 refactor unit testing by [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.12.0] - 2019-08-12
+### Changed
+- Fix #247 and #246 spelling error and email lowercase [@dmlb2000](https://github.com/dmlb2000)
+- Unlock psycopg2 dependency [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.11.1] - 2019-07-10
+### Changed
+- QuickFix #244 Missed column renames by [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.11.0] - 2019-07-10
+### Changed
+- Fix #240 Add Dataset model and relationships by [@dmlb2000](https://github.com/dmlb2000)
+- Fix #238 Rename UserGroup column by [@dmlb2000](https://github.com/dmlb2000)
+- Fix #236 Add Hashlist column operations by [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.10.3] - 2019-06-05
+### Changed
+- Fix #233 Loosen where clause for users by [@kauberry](https://github.com/kauberry)
+- Fix #231 Update Docs by [@dmlb2000](https://github.com/dmlb2000)
+
+## [0.10.2] - 2019-05-30
+### Changed
+- Fix #223 Add Nice Status Url by [@dmlb2000](https://github.com/dmlb2000)
+- Fix #225 Add UUID check for JSON serialization [@dmlb2000](https://github.com/dmlb2000)
+- Fix user lookup clause in user queries endpoint [@kauberry](https://github.com/kauberry)
+
+## [0.10.1] - 2019-05-18
+### Added
+- Metadata model
+  - Dublin Core additions
+  - Files grouped by transactions
+  - Instruments, Analytical Tools, Projects and Users
+  - Arbitrary Relationships between above objects
+  - Arbitrary Key Value Pairs for Files and Transactions
+- Extended REST API for introspection of objects
+- Endpoints for Uploading Metadata
+- Notifications for changes in the system
+  - Object update/create/delete
+  - Ingest event
+  - DOI related events
+- Metadata Model Upgrade Process
+- ReadtheDocs supported Sphinx docs
+- REST API for sending and recieving data
+  - PUT - Create an Object
+  - POST - Update an Object
+  - GET - Get an Object
+  - DELETE - Delete an Object
+
+### Changed

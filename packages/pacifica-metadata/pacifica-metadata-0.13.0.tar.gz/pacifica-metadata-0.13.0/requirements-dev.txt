@@ -1,0 +1,14 @@
+coverage
+httpretty
+mock
+pbs; sys_platform == 'win32'
+pep257
+pre-commit
+pylint>2
+pytest
+radon
+readthedocs-sphinx-ext
+recommonmark
+sh; sys_platform != 'win32'
+sphinx
+sphinx-rtd-theme
