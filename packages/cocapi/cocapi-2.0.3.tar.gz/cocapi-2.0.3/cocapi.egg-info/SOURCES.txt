@@ -1,0 +1,9 @@
+README.md
+setup.py
+cocapi/__init__.py
+cocapi/cocapi.py
+cocapi.egg-info/PKG-INFO
+cocapi.egg-info/SOURCES.txt
+cocapi.egg-info/dependency_links.txt
+cocapi.egg-info/requires.txt
+cocapi.egg-info/top_level.txt
