@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: tg_tools
+Version: 0.0.7
+Summary: Standard toolset for development in TestGilde projects currently to simplify Config and MongoDB handling within docker container.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
