@@ -1,0 +1,4 @@
+pychrome
+anvil-uplink==0.3.30
+progressbar2
+wheel
