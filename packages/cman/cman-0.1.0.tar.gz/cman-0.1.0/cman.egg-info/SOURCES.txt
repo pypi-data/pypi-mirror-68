@@ -1,0 +1,9 @@
+README.md
+cman.py
+setup.py
+cman.egg-info/PKG-INFO
+cman.egg-info/SOURCES.txt
+cman.egg-info/dependency_links.txt
+cman.egg-info/entry_points.txt
+cman.egg-info/requires.txt
+cman.egg-info/top_level.txt

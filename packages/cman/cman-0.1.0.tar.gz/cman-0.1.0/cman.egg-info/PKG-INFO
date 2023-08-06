@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: cman
+Version: 0.1.0
+Summary: Container manager
+Home-page: https://github.com/MatthewScholefield/cman
+Maintainer: Matthew D. Scholefield
+Maintainer-email: matthew331199@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: cman
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
