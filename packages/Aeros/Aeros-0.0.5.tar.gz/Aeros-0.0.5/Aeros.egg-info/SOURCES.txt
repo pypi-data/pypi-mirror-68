@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Aeros/WebServer.py
+Aeros/__init__.py
+Aeros/misc.py
+Aeros.egg-info/PKG-INFO
+Aeros.egg-info/SOURCES.txt
+Aeros.egg-info/dependency_links.txt
+Aeros.egg-info/requires.txt
+Aeros.egg-info/top_level.txt
