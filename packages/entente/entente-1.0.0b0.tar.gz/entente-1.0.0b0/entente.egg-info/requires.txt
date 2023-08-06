@@ -1,0 +1,13 @@
+numpy
+scipy
+cached_property
+lacecore[obj]==0.3.0
+meshlab-pickedpoints==1.0.0b0
+click<8.0,>=7.0
+tqdm
+polliwog==1.0.0b9
+pyyaml>=5.1
+tri-again<0.2,>=0.1.1
+
+[landmarker]
+proximity<0.2,>=0.1.0
