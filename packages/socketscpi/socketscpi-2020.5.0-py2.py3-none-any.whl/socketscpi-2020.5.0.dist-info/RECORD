@@ -1,0 +1,12 @@
+socketscpi/__init__.py,sha256=86ZBTZuLhw2PROmzvdR9aYxfV5PJwxuWXEaJ6tbNHkA,157
+socketscpi/socketscpi.py,sha256=GiO495Nsp01ADCsE9QTzUZWHi8c7PiY1L0spmHpq100,10182
+socketscpi/test_m8190.py,sha256=UG1CBTvIzjih4p61eW6lWSY-hJh6AoAcI82kT-_Z2Xg,3200
+socketscpi/test_mxg.py,sha256=xs6hASlKhSsPvD7E83BgHBzI3IB-xhg9Aaa4uWGtjLg,3196
+socketscpi/test_vsa.py,sha256=B1kWgZ402xzHwg4b6NM0tH8GFBfZ079kqAvQY1G_Aw0,3453
+socketscpi-2020.5.0.dist-info/AUTHORS.rst,sha256=nSv2nFWXVec0lqWKO87rw6ToeoGlCouHyD32mAimY44,179
+socketscpi-2020.5.0.dist-info/LICENSE,sha256=flViesj1ytfZrgni6AWhHubKoC3yioSQGT5aUyNPk80,1744
+socketscpi-2020.5.0.dist-info/METADATA,sha256=cj5OPoVOX2yuvwmmejXqJrbLxQuL50EXzfGIduriNLU,2933
+socketscpi-2020.5.0.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+socketscpi-2020.5.0.dist-info/entry_points.txt,sha256=h0s2gyPvu6CB57uMJw-jmiwzAPslQWIiaRaQ7wC-EZQ,52
+socketscpi-2020.5.0.dist-info/top_level.txt,sha256=N7Jh2hm8RfFryeqvXi-0l5D_-uIC79EZsc4y_ruZCQw,11
+socketscpi-2020.5.0.dist-info/RECORD,,
