@@ -1,0 +1,11 @@
+TorchSUL/DataReader.py,sha256=nWIVjEL1noiMjHij4YiguMtvO8UWvkG519rhH9On6tU,3217
+TorchSUL/Layers.py,sha256=oIT6J5U97x3ehj3rXiGpwPsaCq1tHQ16mXV-hB4CFmU,18970
+TorchSUL/Model.py,sha256=gKwP6-1s_GNyYp8CKpkBLny3In8OU3IXl6kCCb69FBY,13004
+TorchSUL/__init__.py,sha256=4mS60DIjmXzbB4mGdhfJwZQPNpnkR-C4U_du1lOnwkA,194
+TorchSUL/sul_tool.py,sha256=L6X0B0KkZTmp30uCIFGgLJPVvv45D0-WEP6sJ8qVP3o,1552
+TorchSUL/sulio.py,sha256=SaPGNNvC8CcjzkqZfeGLKEgKs4-3pXkWPkryjd4odUw,6184
+TorchSUL-0.1.17.dist-info/LICENSE,sha256=LePmAshGr50WX6kRPxzMEob_N1eYO2eGJfDQ9ELNido,496
+TorchSUL-0.1.17.dist-info/METADATA,sha256=iNj12b59HewVBPfaxXHS4WaF_uIjrwwstPkTV3BxWY4,2756
+TorchSUL-0.1.17.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+TorchSUL-0.1.17.dist-info/top_level.txt,sha256=zGVxXkUD9zntqWU4eiqZGjoDCacIUvjJRJLzygS7F6U,9
+TorchSUL-0.1.17.dist-info/RECORD,,
