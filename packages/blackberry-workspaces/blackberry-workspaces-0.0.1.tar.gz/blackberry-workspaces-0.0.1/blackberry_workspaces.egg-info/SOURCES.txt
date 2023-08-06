@@ -1,0 +1,8 @@
+README.md
+setup.py
+blackberry_workspaces.egg-info/PKG-INFO
+blackberry_workspaces.egg-info/SOURCES.txt
+blackberry_workspaces.egg-info/dependency_links.txt
+blackberry_workspaces.egg-info/top_level.txt
+workspaces/_init_.py
+workspaces/workspaces.py
