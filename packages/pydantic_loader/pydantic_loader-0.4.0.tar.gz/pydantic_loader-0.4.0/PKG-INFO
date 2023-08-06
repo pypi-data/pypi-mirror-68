@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pydantic_loader
+Version: 0.4.0
+Summary: pydantic loader module.
+Home-page: https://github.com/sander76/pyconfig
+Author: Sander Teunissen
+Author-email: no_mail@nomail.com

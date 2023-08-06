@@ -1,0 +1,6 @@
+pytest
+pytest-mock
+pre-commit
+flit
+pydantic==0.32
+pylint
