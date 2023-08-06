@@ -1,0 +1,2 @@
+exclude README.md
+include OUtils/configurations/configurationSchema.json

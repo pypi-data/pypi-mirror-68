@@ -1,0 +1,119 @@
+{
+  "type": "object",
+  "properties": {
+    "kafka": {
+      "type": "object",
+      "required": [
+        "base_properties",
+        "nodes",
+        "configuration_files"
+      ],
+      "properties": {
+        "base_properties": {
+          "type": "object",
+          "required": [
+            "security.protocol",
+            "sasl.mechanism",
+            "sasl.username",
+            "sasl.password",
+            "ssl.ca.location"
+          ]
+        },
+        "nodes": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "host",
+              "ports"
+            ],
+            "properties": {
+              "host": {
+                "type": "string"
+              },
+              "ports": {
+                "type": "object",
+                "required": [
+                  "kafka",
+                  "jmx"
+                ],
+                "properties": {
+                  "kafka": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "exclusiveMaximum": 65536
+                  },
+                  "jmx": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "exclusiveMaximum": 65536
+                  }
+                }
+              }
+            }
+          }
+        },
+        "configuration_files": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "file_path",
+              "whitelisted_patterns"
+            ],
+            "properties": {
+              "file_path": {
+                "type": "string"
+              },
+              "whitelisted_patterns": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "checks": {
+          "type": "object",
+          "required": [
+            "heartbeat"
+          ],
+          "properties": {
+            "heartbeat": {
+              "type": "object",
+              "required": [
+                "topic_pattern",
+                "timeout_assignment",
+                "timeout_consumption",
+                "log_files_path"
+              ],
+              "properties": {
+                "topic_pattern": {
+                  "type": "string"
+                },
+                "timeout_assignment": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "exclusiveMaximum": 60
+                },
+                "timeout_consumption": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "exclusiveMaximum": 60
+                },
+                "log_files_path": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

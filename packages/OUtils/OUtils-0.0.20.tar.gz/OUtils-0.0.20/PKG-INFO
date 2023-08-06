@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: OUtils
+Version: 0.0.20
+Summary: Operation Utilities - Python3 package containing common scripts for managing or monitoring various services.
+Home-page: UNKNOWN
+Author: Schups
+Author-email: schups@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7

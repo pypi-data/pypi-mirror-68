@@ -1,0 +1,3 @@
+jsonschema
+jmxquery
+confluent_kafka
