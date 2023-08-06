@@ -1,0 +1,5 @@
+polib
+six
+path.py>=7.0
+Django
+pyYaml
