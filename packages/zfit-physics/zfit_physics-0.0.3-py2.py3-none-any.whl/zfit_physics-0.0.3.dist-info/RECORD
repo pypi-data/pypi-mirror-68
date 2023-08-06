@@ -1,0 +1,14 @@
+zfit_physics/__init__.py,sha256=aSL-OCOnTDenRd-t9hskIcJG1I14U6eKop_iHdIBjQI,629
+zfit_physics/pdf.py,sha256=l-Pe5F_0OHcvLuVkfMIMyo_xTT4aKnnMJw3G3kAV0Gw,35
+zfit_physics/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zfit_physics/models/pdf_argus.py,sha256=TD_29fJtOmeLwXp_kt1E3zWKahgSl5qbuZy491eoapo,7496
+zfit_physics/models/pdf_conv.py,sha256=mghqOaM2bj3E4I1ViMIfHH6Qjr9Lgr9BmSXOPLRoozM,5072
+zfit_physics/models/pdf_example.py,sha256=poT-1-kWHUd4y7U6snCbbxKCJsUvkxgYxncQbn6fVZU,256
+zfit_physics/models/pdf_kde.py,sha256=rk_JH7IXiShnTMjlkgBs1qbFIpuahgLf0QTGb8c5Lz4,2998
+zfit_physics/unstable/__init__.py,sha256=-0UKgEwky5AAV_UNGSRdKhYbrkAjUHZIO4Lj0z-ITPE,17
+zfit_physics/unstable/pdf.py,sha256=813cVSS0d3KBY2A7ptV15atuT-Rf3qbsZ771_NB9jmY,91
+zfit_physics-0.0.3.dist-info/LICENSE,sha256=L7SsGI-y63Pd6hkT5Jd6DApgIU7luiI_G7Rm7zUGijk,1504
+zfit_physics-0.0.3.dist-info/METADATA,sha256=Bvk2atMOmWPiE71PyskeBSvyu8SQFvQM1-DCZmap52Q,2757
+zfit_physics-0.0.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+zfit_physics-0.0.3.dist-info/top_level.txt,sha256=5UJHDXBMXSoF4LbMljnoyIu32pqATrMgSDYOb4vutEE,13
+zfit_physics-0.0.3.dist-info/RECORD,,
