@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyIFS/InfFS.py
+PyIFS/__init__.py
+PyIFS.egg-info/PKG-INFO
+PyIFS.egg-info/SOURCES.txt
+PyIFS.egg-info/dependency_links.txt
+PyIFS.egg-info/requires.txt
+PyIFS.egg-info/top_level.txt
