@@ -1,0 +1,7 @@
+setuptools
+click>=7.1.2
+requests>=2.23.0
+Jinja2>=2.11.2
+pillow>=7.1.2
+super_mario>=0.0.1
+colored>=1.4.2

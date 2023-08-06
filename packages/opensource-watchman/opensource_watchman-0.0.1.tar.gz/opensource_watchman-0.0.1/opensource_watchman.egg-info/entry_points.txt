@@ -1,0 +1,3 @@
+[console_scripts]
+opensource_watchman = opensource_watchman.run:main
+

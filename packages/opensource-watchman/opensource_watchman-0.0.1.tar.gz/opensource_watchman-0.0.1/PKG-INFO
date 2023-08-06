@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: opensource_watchman
+Version: 0.0.1
+Summary: Opensource repos validator.
+Home-page: https://github.com/Melevir/opensource_watchman
+Author: Ilya Lebedev
+Author-email: melevir@gmail.com
+License: MIT
+Description: # opensource_watchman
+        
+        [![Build Status](https://travis-ci.org/Melevir/opensource_watchman.svg?branch=master)](https://travis-ci.org/Melevir/opensource_watchman)
+        [![Maintainability](https://api.codeclimate.com/v1/badges/56b0ffab734dad488a41/maintainability)](https://codeclimate.com/github/Melevir/opensource_watchman/maintainability)
+        [![Test Coverage](https://api.codeclimate.com/v1/badges/56b0ffab734dad488a41/test_coverage)](https://codeclimate.com/github/Melevir/opensource_watchman/test_coverage)
+        
+        Opensource repos validator.
+        
+        WIP
+        
+Keywords: plugins
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
