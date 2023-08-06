@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+colorama
+
+[dev]
+check-manifestpytest
+coverage
+tox
