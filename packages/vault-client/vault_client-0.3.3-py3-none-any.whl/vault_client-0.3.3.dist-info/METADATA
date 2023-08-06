@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: vault-client
+Version: 0.3.3
+Summary: This library implements wrapper for vault
+Home-page: https://github.com/Flesspro/vault-client
+Author: Sergey Urvanov
+Author-email: s.urvanov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: loguru
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: hvac (==0.10.0)
+Requires-Dist: idna (==2.9)
+Requires-Dist: pyhcl (==0.4.0)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: urllib3 (==1.25.8)
+Requires-Dist: python-dotenv (==0.12.0)
+
+# vault-client
+
+
+Клиент предназанчен для унифицированного доступа к переменным  окружения размещённым в конфигурационном
+файле (или переменных окружения) или в хранилище Vault, в зависимости от параметров инициализации.
+
+## Установка клиента
+
+> pip install vault-client
+
+## Интерфейс клиента
+
+### Инициализация клиента:
+
+> client = VaultClient(environ="LOCAL")
+
+При таком способе инициализации источником данных является файл ***.deploy/.envs/local.env***.
+
+При отсутствии параметра ***environ*** 
+> client = VaultClient()
+
+или ***environ=None*** 
+
+> client = VaultClient(environ=None)
+
+Данные получаются из Vault, параметры сервера Vault должны быть заданы в переменных окружения. 
+
+Для получения параметров из хранилища Vault в переменных окружения задаются следующие данные;
+- адрес хоста и порт Vault (*host*, *port*);
+- токен доступа к Vault (*token*);
+- точка монтирования (*mount_point*);
+- стадия разработки (PROD, STAGE, DEV и т.д.) (*environ*)
+
+Перечисленные параметры должны быть установлены в переменных окружения:
+
+* VAULT_TOKEN
+* VAULT_PORT
+* VAULT_HOST
+* VAULT_MOUNT_POINT 
+* VAULT_ENV
+
+
+**Внимание:** при записи параметров в Vault, наименование параметра должно указываться строчными символами. 
+
+### Пример структуры данных в файле local.env или в Vault
+
+    STORAGE_HOST=127.0.0.1
+    STORAGE_PORT=50001
+    PARSER_HOST=127.0.0.2
+    PARSER_PORT=50002
+
+Данные определяется таким образом:
+
+  <Сервис>_<Параметр> - при размещении данных в файле local.env;
+
+  <Сервис>/STAGE/<Параметр> - при  размещении данных в Vault; 
+
+#### Пример получения параметра
+
+>client = VaultClient(environ="LOCAL")
+>
+>result = client.get("storage", "host")
+
+При иницализации клиента с параметром ***environ = LOCAL***, значение параметра будет получаться из переменной
+окружения **STORAGE_HOST**, в случае отсутствия - ***result = None***.
+
+Иницализация клиента с параметром ***VAULT_ENV*** отличном от ***LOCAL*** (например: ***PROD***), значение параметра 
+будет запрашиваться из Vault по пути: ***test_client/STORAGE/PROD/host*** (при VAULT_MOUNT_POINT = test_client),
+в случае отсутствия - ***result = None***.
+
+
+Создано при поддержке fless.pro
+
+
+

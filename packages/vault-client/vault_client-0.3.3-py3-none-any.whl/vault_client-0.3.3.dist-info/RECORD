@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=cjoyMBenhsnm3SwrFa_pKX2-5tsS6BSFnA1QR8EyQZw,970
+tests/test_vault_client.py,sha256=k4u5_AN6cubIUZRm0-IJPpwHX9b1LbTyhA4ltxoPtoE,2483
+vault_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vault_client/client.py,sha256=HRTzdAn88R1lNJmnr0fknELXW_bd55LoEC_Np8z7nVI,2526
+vault_client-0.3.3.dist-info/METADATA,sha256=gRWjtbITFAvkwvzwWzvaXoNL8DG0luaGYAHy8MBr4Oo,3933
+vault_client-0.3.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vault_client-0.3.3.dist-info/top_level.txt,sha256=bnm2EkvYUv5Q_49HA-Ycb9wxceyoMi-A0TiHG6wfibg,19
+vault_client-0.3.3.dist-info/RECORD,,
