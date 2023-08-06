@@ -1,0 +1,16 @@
+watson_transformer/__init__.py,sha256=utEYpPzhz3lntFIdFFsqlvvRtadRePsrt4fgdGnZ-0s,159
+watson_transformer/flat_column_transformer.py,sha256=axOkcTTo1zSfDfSGUTosveqFj_q1sn6v808yCq9R04k,2211
+watson_transformer/watson_service_transformer.py,sha256=4MMUFXl-wOihPWpLBGMCsDkkaWxOhU1jJBsIlHKdrpg,3693
+watson_transformer/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watson_transformer/contrib/nlu_response.py,sha256=_xhJEDCeyVkvq_WnpZoXf_RQrl8P-rmaiABmuJEiEUw,2132
+watson_transformer/contrib/readers.py,sha256=QuR_MNvkms0SduJ2cs8F0eJbdLOcgRGX9aMCl5akr7U,1240
+watson_transformer/contrib/return_type.py,sha256=rOnvbHi2jZt9HfJYQXPwQCeyTAL3a0sorV6lUdK6evg,1623
+watson_transformer/contrib/stt_response.py,sha256=IyfbfCze3QTqrnjcbICoe4n04F6vymjsvhjRKj1-KH0,419
+watson_transformer/service/__init__.py,sha256=bYEzcu4PJoDvjDMHEI8DQing2Do5Tzj_yDv3epenOyo,93
+watson_transformer/service/nlu.py,sha256=ioIc2pzhzxBnoyeg42F8lLEE5QFMCtfA0ArJgKXTTS8,1795
+watson_transformer/service/stt.py,sha256=ktykGbACKOk9elJHsv-gdOQ9XCgYReZ-NuB5apc2dTI,1775
+watson_transformer-0.0.7.dist-info/METADATA,sha256=5UV9cPFiSsqbk2Mos8k642yMo7fN8-S4sJat61yJE8c,1338
+watson_transformer-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+watson_transformer-0.0.7.dist-info/top_level.txt,sha256=vvDAgvrhAWBWACm5AM9epcXTdRcofd0oDovhMqf7AhM,19
+watson_transformer-0.0.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+watson_transformer-0.0.7.dist-info/RECORD,,
