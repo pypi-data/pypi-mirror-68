@@ -1,0 +1,3 @@
+include det.ini
+include cmu_us_eey.flitevox
+recursive-include data *

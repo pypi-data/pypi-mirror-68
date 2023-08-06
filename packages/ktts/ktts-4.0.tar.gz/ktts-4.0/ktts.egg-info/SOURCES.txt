@@ -1,0 +1,12 @@
+MANIFEST.in
+cmu_us_eey.flitevox
+det.ini
+ktts.py
+setup.cfg
+setup.py
+ktts.egg-info/PKG-INFO
+ktts.egg-info/SOURCES.txt
+ktts.egg-info/dependency_links.txt
+ktts.egg-info/entry_points.txt
+ktts.egg-info/requires.txt
+ktts.egg-info/top_level.txt

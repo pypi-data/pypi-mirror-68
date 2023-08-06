@@ -1,0 +1,2 @@
+configparser
+html2text

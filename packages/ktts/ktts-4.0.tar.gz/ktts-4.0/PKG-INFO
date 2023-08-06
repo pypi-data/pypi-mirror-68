@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ktts
+Version: 4.0
+Summary: tts for python
+Home-page: https://github.com/Jeyadevanjd/ktts/releases/
+Author: Jeyadevan
+Author-email: leejack17356@gmail.com
+License: MIT
+Description: To use ktts install it using pip3 install ktts and run 'from ktts import say' after that type 'say('yourcommand')' in your python Compiler
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
