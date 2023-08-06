@@ -1,0 +1,17 @@
+README.md
+setup.py
+bin/irbt-cli.py
+irbt/__init__.py
+irbt/cloud.py
+irbt/logger.py
+irbt/parse_command_line.py
+irbt/robot.py
+irbt.egg-info/PKG-INFO
+irbt.egg-info/SOURCES.txt
+irbt.egg-info/dependency_links.txt
+irbt.egg-info/top_level.txt
+tests/__init__.py
+tests/cloud_mock.py
+tests/conftest.py
+tests/test_cloud.py
+tests/test_robot.py
