@@ -1,0 +1,13 @@
+walter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+walter/config.py,sha256=Qjl78TckmeKpKumASpqS7McpiNIdG7yZeJ4EsByj-UE,5273
+walter/config_test.py,sha256=B6qeGva5DnVszuecdO-u5xKwmDeOmf--A6RhsDmOazU,1448
+walter/na.py,sha256=469Xb3k-EH2KPAjDk4u1BP8onJuilr7RzVmRHOcgf0s,5239
+walter/na_test.py,sha256=rME5cgkQN9bQUtz8Qfh-K2N5x65mhEtY1rCGXcLQKsc,4371
+walter/source_list.py,sha256=lnLwXVq-rRw9IUe-qJmn5pCnaApVJiXbTRUWGErmyy8,3388
+walter/source_list_test.py,sha256=5_TeHJr-aUN3ybgJ8e5_hWbSTOieN0o_-8nMiP1NFPQ,3134
+walter/sources.py,sha256=U0VoWpjqOnwOFoyrOnuM3T8AiDA6RN9WAY4Zj-YE_xU,4820
+walter/sources_test.py,sha256=m6S0RbPOFahqjQb3PZbxGsIxMBVVzDUJMgNGOa9Z0XY,785
+walter-1.1.dist-info/LICENSE,sha256=3IUAWUngR5Nl14KNk44Oy-RpkAdu6QFm9MbwYsUV7K4,15830
+walter-1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+walter-1.1.dist-info/METADATA,sha256=MThaIaX6R158yP1eGGQ0HgQhnTpICzq2_wNMEu8AweY,3051
+walter-1.1.dist-info/RECORD,,
