@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: scratchml
+Version: 0.3.6
+Summary: A python package with implementations of Machine Learning algorithms from scratch.
+Home-page: https://github.com/shreeviknesh/ScratchML
+Author: Shreeviknesh Sankaran
+Author-email: shreeviknesh@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ScratchML
+A python package with implementations of Machine Learning algorithms from scratch.
+
+Contents
+----
+- [Algorithms Implemented](#algorithms-implemented)
+- [Installing](#installing)
+
+Algorithms Implemented:
+----
+### Regression:
+1. *Simple Linear Regression* (`scratchml.regression.SimpleLinearRegression`)
+2. *Multiple Linear Regression* (`scratchml.regression.MultipleLinearRegression`)
+
+### Classification:
+1. *Logistic Regression* (`scratchml.classification.LogisticRegression`)
+2. *Support Vector Machine* (`scratchml.classification.SVM`)
+3. *K-Nearest Neighbors* (`scratchml.classification.KNN`)
+
+### Clustering:
+1. *KMeans Clustering* (`scratchml.clustering.KMeans`)
+1. *KMedoids Clustering* (`scratchml.clustering.KMedoids`)
+
+Installing:
+----
+The project is available as a package on PyPI - [ScratchML](https://pypi.org/project/scratchml/)
+
+To install it using pip:
+`pip install scratchml`
+
+
