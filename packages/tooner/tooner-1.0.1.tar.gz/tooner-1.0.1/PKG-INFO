@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tooner
+Version: 1.0.1
+Summary: An easier way to manage and launch sessions for Toontown Rewritten.
+License: GPL-3.0-or-later
+Author: Jake Brehm
+Author-email: mail@jakebrehm.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests (>=2.23.0,<3.0.0)
