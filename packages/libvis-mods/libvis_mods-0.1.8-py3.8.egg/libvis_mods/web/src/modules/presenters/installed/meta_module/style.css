@@ -1,0 +1,10 @@
+.meta_module-presenter{
+    height: 100%;
+    width: 100%;
+}
+
+.submod{
+    border: 1px solid blue;
+    padding: 1em;
+    height: 200px;
+}
