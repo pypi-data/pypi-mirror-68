@@ -1,0 +1,3 @@
+[console_scripts]
+py-trees-demo-viewer = py_trees_js.viewer.viewer:main
+
