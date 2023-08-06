@@ -1,0 +1,13 @@
+clirail/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clirail/clirail_main.py,sha256=wv19-RE9mzYiZfV0bB7IaLKTqUN0y31oVr1-VwhyQe0,6324
+clirail/config.py,sha256=Cow9cypLUhq4r8oDu2J-pEDMkTyU1Xa9FLuO8mcOR7Y,72
+clirail/data.py,sha256=PflZV3jiv5VniMgsZ2QjiahAoY5vS18TxaIlv_XO56o,26154
+clirail/messages.py,sha256=IYpluFhcprWKXmLpByul6OyPLz60Nt7uioyaZlVwK_E,2257
+clirail/printing.py,sha256=DXZSfouAzgtaS2NQPQEzSIB5LIt9nX3v-OgMyfJJkQ8,7146
+clirail/xdg.py,sha256=i-D9zjRSXmjRjcPfgpehZyVRva5Ljfq20Otu574eDw4,3763
+clirail-1.0.data/scripts/clirail,sha256=5EgOsR8MZOPUEv5Cb6qoh-lsyjH9cXT3IKH0Gw7pd4U,80
+clirail-1.0.dist-info/LICENSE,sha256=6Nnh-48UBKyZhHr5nTUNqxzCM4T96Thg3YgPJADg1Rw,34476
+clirail-1.0.dist-info/METADATA,sha256=Bkbno9iw26-wPGLhIjAAlcEeHLPWb23DhZbvlOI-MAQ,2138
+clirail-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+clirail-1.0.dist-info/top_level.txt,sha256=dGxGef3I8WfAYOxh6KBHqBOaXJ_NPd7mP2h6sHiqk-U,8
+clirail-1.0.dist-info/RECORD,,
