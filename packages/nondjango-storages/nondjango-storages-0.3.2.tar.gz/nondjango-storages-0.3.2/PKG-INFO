@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: nondjango-storages
+Version: 0.3.2
+Summary: nondjango-storages - Because the API is great but dependency on Django is not.
+Home-page: https://github.com/alanjds/nondjango-storages/
+Author: Alan Justino da Silva
+Author-email: alan.justino@yahoo.com.br
