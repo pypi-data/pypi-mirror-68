@@ -1,0 +1,17 @@
+README.md
+setup.py
+gamebook/__init__.py
+gamebook/game_input.py
+gamebook/game_manager.py
+gamebook/helpers.py
+gamebook/nextscene.py
+gamebook/option.py
+gamebook/output.py
+gamebook/scene.py
+gamebook/terminal_input.py
+gamebook/terminal_output.py
+gamebook/trait.py
+gamebook_maker.egg-info/PKG-INFO
+gamebook_maker.egg-info/SOURCES.txt
+gamebook_maker.egg-info/dependency_links.txt
+gamebook_maker.egg-info/top_level.txt
