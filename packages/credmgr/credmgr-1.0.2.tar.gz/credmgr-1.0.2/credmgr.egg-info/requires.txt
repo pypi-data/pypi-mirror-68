@@ -1,0 +1,17 @@
+setuptools
+python-dateutil
+requests
+praw
+prawcore
+requests_toolbelt
+
+[test]
+coverage
+pytest
+betamax
+betamax_serializers
+sphinx
+pytest-mock
+pytest-xdist
+pytest-cov
+mock
