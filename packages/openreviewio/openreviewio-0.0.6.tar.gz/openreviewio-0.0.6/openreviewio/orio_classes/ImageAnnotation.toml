@@ -1,0 +1,6 @@
+type = "Content"
+
+[parameters]
+image = "Image"
+frame = "Integer"
+duration = "Integer"
