@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: telesync
+Version: 0.0.1
+Summary: Python driver for H2O Q / Telesync Realtime Apps
+Home-page: https://h2o.ai
+Author: Prithvi Prabhu
+Author-email: prithvi@h2o.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Topic :: Database
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Communications :: Chat
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: websockets
+
+# telesync
+
+Python driver for H2O Q / Telesync realtime apps
+
+
+
+
+
