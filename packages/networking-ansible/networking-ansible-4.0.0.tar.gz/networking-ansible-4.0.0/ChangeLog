@@ -1,0 +1,141 @@
+CHANGES
+=======
+
+4.0.0
+-----
+
+* Minor trunk doc updates
+* Add trunk driver
+* Move to python3
+* Fix testing issues
+* removing the api. Its deprecated and the move to network runner is completed
+* Prevent parallel updates per switch
+* Add non-multinode job
+* Improving unit tests assertions
+
+3.0.0
+-----
+
+* replacing networking-ansible.api with network-runner
+* updates to upstream CI
+* Doc updates
+* Remove explicit ovs installation in devenv
+* adding trunk port configuration
+* Add vqfx development environment
+* tempest: Don't quote tempest plugins
+* Fix sphinx requirements
+* removing unused playbooks
+* fixing eos ansible role
+* Move source repo reference to opendev
+* Adding quotes for junos retries and delays
+* Set PUBLIC\_BRIDGE for subnode
+* OpenDev Migration Patch
+* adding debtcollector messages deprecating the API
+* Replace openstack.org git:// URLs with https://
+* Add logger and deprecation notice for api
+* Adding retries and delay to all junos commands
+* Use ansible\_ssh\_pass instead of ansible\_pass
+* fix spelling (neturon -> neutron)
+* fix rst formatting
+* Make the tempest job voting
+* Run end-to-end tempest with networking-ansible
+* Add rtd\_webhook\_id
+* Add jobs from project-config
+* Ensure all switch\_mac refs are upper()
+* adding dellos10 support to the abstraction role
+* Adding network\_cli connection type for nxos accessports
+* Add Trunk support to Junos ansible provider
+* Remove LLI check if not needed
+* tempest: Disable Nova in devstack
+* Adding API Trunk stub
+* Update home-page
+* Rename port variable it's reserved
+* adding a features matrix to the docs
+* api docs update and vlan\_name handling
+* renaming ansible role variables
+* Delete port conf on junos before conf access port
+* converting junos to network\_cli
+* Remove ML2 references in the the ansible role
+* Increment versioning with pbr instruction
+* Change openstack-dev to openstack-discuss
+* modify debug msg
+* junos: Retry call to the switch if DB was locked
+* devstack: Make some actions less error prone
+* Updating configuration parameters
+* Add a mac parameter to populate mac\_map for introspection
+* Detaching the API from OpenStack Dependencies
+* Treat manage\_vlans as a bool
+* Adding cumulus support to the openstack-ml2 role
+* Commenting out netconf conditional for Ansible bug
+* Updating the eos role
+* Updating failure handling
+* Updating naming conventions and documenting a Python API
+* Populating user doc's content, cleaning up other things
+* Updating docs for Rocky Release
+* Adding docs regarding provider support
+* ut: Test port operations
+* ut: Add create/delete tests using Neutron API
+* Improve logging in bind\_port method
+* First round of docs updates, more to come
+* Get rid of dependency on ML2 plugin BaseTestCase
+
+1.0.1
+-----
+
+* Update license in the base test module
+* Move segmentation\_id and segmentation\_name defaults
+* unittests: Unify test class names
+* followup: Fix order in assertEqual
+* unittests: Mock warning messages from Neutron quota code
+* Move unittests to unit directory
+* Replacing unit test TODOs with assertions
+* adding unit\_tests for manage\_vlans config option
+
+1.0.0
+-----
+
+* Untag openvswitch port when deleted
+* Don't use localhost as switch name
+* Adding manage\_vlans switch config
+* Disable swift, glance, metering and cinder
+* Add noop role for openvswitch/create\_network
+* Revert "Don't enable unused services in tempest test"
+* Network should not be created when switch config fails
+* devstack: Don't compile ansible-runner from source
+* tempest: Update list of files that should not trigger test
+* Update neutron-lib requirement to Rocky
+* Don't enable unused services in tempest test
+* Don't use devel branch of Ansible
+* Make our "tempest" test voting
+* adding more unit test coverage
+* Fetch ansible-runner from ansible project
+* Improve tempest test
+* Add workarounds for ansible
+* Pass pexpect\_use\_poll=False to ansible-runner
+* Add devstack plugin that configures openvswitch
+* fix tox python3 overrides
+* Remove python2 pin for cover
+* Use vars when including tasks
+* Add test against OVS
+* Remove trunk\_driver module
+* hacking: Enable checks that are disabled by default
+* Use neutron 13.0.0.0b1
+* Improve code style
+* Fix typos and text formatting here and there
+* Add entry\_point for mechanism\_driver
+* Add data\_files to setup.cfg
+* Fix imports to comply with OpenStack hacking rules
+* Initial Unit tests
+* Updating the mech driver to use the ansible roles
+* Adding Ansible Roles to abstract ML2 hooks out to ansible networking
+* adding port-bind
+* Updating requirements.txt
+* PEP8 and other fixes
+* Random pep8 fixes
+* Updates to doc: storyboard, ansible configs
+* Adding port postcommit hooks
+* Adding create and delete network postcommit hooks
+* Adding configuration file handling
+* First pass at updating installation docs
+* Initial ML2 Skeleton
+* Initial Cookiecutter Commit

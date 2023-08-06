@@ -1,0 +1,7 @@
+ansible-runner>=1.0.5
+debtcollector>=1.21.0
+network-runner>=0.1.7
+neutron>=13.0.0.0b1
+neutron-lib>=1.18.0
+pbr>=2.0
+tooz>=1.28.0
