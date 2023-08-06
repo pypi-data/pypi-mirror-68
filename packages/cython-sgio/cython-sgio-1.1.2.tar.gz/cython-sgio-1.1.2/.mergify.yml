@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2020 The cython-sgio Authors
+#
+# SPDX-License-Identifier: MIT
+
+pull_request_rules:
+  - name: Automatic merge on approval
+    conditions:
+      - "#approved-reviews-by>=1"
+      - "status-success=Travis CI - Pull Request"
+    actions:
+      merge:
+        method: rebase
