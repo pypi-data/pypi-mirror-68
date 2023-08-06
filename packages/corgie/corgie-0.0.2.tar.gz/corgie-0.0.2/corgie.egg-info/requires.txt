@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+six
+mazepa
+click
+click-option-group
+procspec
+modelhouse
