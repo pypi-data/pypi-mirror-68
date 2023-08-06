@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: hnlp
+Version: 0.1
+Summary: Humanly Deeplearning NLP.
+Home-page: https://github.com/hscspring/pnlp
+Author: Yam
+Author-email: haoshaochun@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pnlp
+Requires-Dist: transformers
+Requires-Dist: torch
+Requires-Dist: torchtext
+
+# hnlp
+Humanly DeepLearning NLP, on top of Transformers.
+
+
+
+
+
+
+
+## Test
+
+```bash
+$ python -m pytest
+```
+
+
+
