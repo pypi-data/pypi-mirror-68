@@ -1,0 +1,3 @@
+[console_scripts]
+snowmobile = snowmobile.__main__:main
+
