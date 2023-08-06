@@ -1,0 +1,8 @@
+decorators
+
+[tornado]
+tornado
+
+[websockets]
+websocket-client
+gevent
