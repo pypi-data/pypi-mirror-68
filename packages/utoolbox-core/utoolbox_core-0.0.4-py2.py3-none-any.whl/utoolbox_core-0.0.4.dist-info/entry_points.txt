@@ -1,0 +1,3 @@
+[console_scripts]
+mm2bdv = utoolbox.cli.converter.mm2bdv:main
+
