@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: cso-ansible-sdk
+Version: 0.0.2
+Summary: CSO SDK for Ansible
+Home-page: https://github.com/packetferret/cso_ansible_sdk/
+Author: Calvin Remsburg
+Author-email: packetferret@gmail.com
+License: Apache Software License
+Download-URL: https://github.com/packetferret/cso_ansible_sdk/archive/v0.0.2.tar.gz
+Description: CSO SDK for Ansible
+Platform: UNKNOWN
