@@ -1,0 +1,6 @@
+
+[spamfilter]
+TracSpamFilter>=0.2
+
+[tags]
+TracTags>=0.6
