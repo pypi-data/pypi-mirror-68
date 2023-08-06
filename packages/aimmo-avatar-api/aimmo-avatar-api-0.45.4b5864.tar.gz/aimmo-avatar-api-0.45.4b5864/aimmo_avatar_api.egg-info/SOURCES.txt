@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+aimmo_avatar_api.egg-info/PKG-INFO
+aimmo_avatar_api.egg-info/SOURCES.txt
+aimmo_avatar_api.egg-info/dependency_links.txt
+aimmo_avatar_api.egg-info/top_level.txt
+simulation/__init__.py
+simulation/action.py
+simulation/avatar_state.py
+simulation/direction.py
+simulation/event.py
+simulation/location.py
+simulation/world_map.py
