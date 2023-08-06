@@ -1,0 +1,3 @@
+[console_scripts]
+mamotif = mamotif.cli.main:main
+
