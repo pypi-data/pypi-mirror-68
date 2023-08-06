@@ -1,0 +1,343 @@
+{
+  "src/lib/components/KeyedFileBrowser.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "KeyedFileBrowser",
+    "methods": [
+      {
+        "name": "setFiles",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "files",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleCreateFolder",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "key",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleCreateFiles",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "files",
+            "type": null
+          },
+          {
+            "name": "prefix",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleRenameFolder",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "oldKey",
+            "type": null
+          },
+          {
+            "name": "newKey",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleRenameFile",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "oldKey",
+            "type": null
+          },
+          {
+            "name": "newKey",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleDeleteFolder",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "folderKey",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleDeleteFile",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "fileKey",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handleSelectFile",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "file",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handlePreviewOpen",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "file",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "handlePreviewClose",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "file",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "files": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": ""
+      },
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change."
+      },
+      "actions": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showActionBar": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "canFilter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "noFilesMessage": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'No files.'",
+          "computed": false
+        }
+      },
+      "nestChildren": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "renderStyle": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'list'",
+              "computed": false
+            },
+            {
+              "value": "'table'",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "'table'",
+          "computed": false
+        }
+      },
+      "startOpen": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "headerRendererProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "filterRendererProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "fileRendererProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "folderRendererProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "detailRendererProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "selectedFile": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "key": {
+              "name": "string",
+              "required": false
+            },
+            "size": {
+              "name": "number",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "openFile": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "key": {
+              "name": "string",
+              "required": false
+            },
+            "size": {
+              "name": "number",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}
