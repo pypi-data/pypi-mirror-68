@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: kogpt2-transformers
+Version: 0.1.0
+Summary: Transformers library for KoGPT2
+Home-page: https://github.com/taeminlee/KoGPT2-Transformers
+Author: Taemin Lee
+Author-email: persuade@gmail.com
+License: Apache-2.0
+Keywords: kogpt2 pytorch transformers
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.1.0)
+Requires-Dist: transformers (>=2.2.2)
+
+# KoGPT2-Transformers
+
+
+
+
