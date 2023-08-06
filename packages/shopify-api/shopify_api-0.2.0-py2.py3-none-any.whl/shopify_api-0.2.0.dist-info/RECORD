@@ -1,0 +1,11 @@
+shopify/__init__.py,sha256=bsd6CcIMU4_rvQzX0gN6XOsoDd9YkRPWcswFAYELC04,1536
+shopify/base.py,sha256=4rWcal_GYn7l4NVztpyXUT2ONwMGtD83lrhCgYX9XpI,8756
+shopify/cart.py,sha256=5fDkdRv5YxMDCRStcTkwr3hJeNZ9yMXVBkOEFSrdpmM,2440
+shopify/order.py,sha256=AZZS9csCEm4-T8oBrOaQrPF4jDtgrCd12Eux3ouyO7Q,2701
+shopify/product.py,sha256=lpoiWln_M1eIQXPs3ZSQUFFr699KkmG4CEsvOyKTTPg,3641
+shopify/smart_collection.py,sha256=of7YzenD9F8b8d2AdtAjxfqLKzC3fZzRAGANJ4g27wQ,2706
+shopify/webhook.py,sha256=QnWOS3GIFZivIOvHepP6dr1nN8mfg97bc3hyA1-NrYE,2189
+shopify_api-0.2.0.dist-info/METADATA,sha256=Doo1oEbGq-Axevsy3uwBN3IF5B7tP59f1VQGSy-ce9w,1021
+shopify_api-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+shopify_api-0.2.0.dist-info/top_level.txt,sha256=QzBm7XrheP8UyMoVWMPlv1izeGa0yQef067FY9eCxUI,8
+shopify_api-0.2.0.dist-info/RECORD,,
