@@ -1,0 +1,15 @@
+bask/__init__.py,sha256=v_pEuD5vm9isOxpG1SEj_bSrTd7SetI-831_PhI2uLo,354
+bask/_version.py,sha256=kvTCH6ejduf8Frl1QEFPA18j-hlr1wmggqS35VXb0X0,18446
+bask/acquisition.py,sha256=LIdu7Y1OitsHHudJeh1UU_OvZRs2IYHeSphydOMUQjE,10239
+bask/bayesgpr.py,sha256=eXfvZEzjJQP4JMJjU-JP50QxFCLrY6kvol2j9Hq_3lY,15471
+bask/cli.py,sha256=0RujrfSvaZ4baLYaNi-iBA2hpV3OXHjPzGpauLO3RIE,390
+bask/optimizer.py,sha256=VPwrNHWOrI4PBi38gkGnUOLZLz0liV1jP6QImzrhtm0,10406
+bask/searchcv.py,sha256=7a8bsAR-yYK2GPL5NRWO4g4pnY8Q5FrngdQG7CEXA6A,18158
+bask/utils.py,sha256=sbUh7Z4E6hi3-MGdaHw9a7URG8Wh8NOQLQJ8UoINk0A,6527
+bask-0.4.1.dist-info/AUTHORS.rst,sha256=KSOmejbNLz5qJ2oN0zfogFbhxts0UyK7NJkJYcmG1VQ,164
+bask-0.4.1.dist-info/LICENSE,sha256=Knex1r8GciObrnhw2sIINayfbYbKVBfJlRC-ussIKcQ,592
+bask-0.4.1.dist-info/METADATA,sha256=yB_S_7uAQ1JmMhxnrrUwo01Q8W2QERnPU-FTVjG91Zo,4692
+bask-0.4.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+bask-0.4.1.dist-info/entry_points.txt,sha256=l5JO8SL4X3eAVMkBbbqan-_42FQfp1_8PUYFTvLNcj0,40
+bask-0.4.1.dist-info/top_level.txt,sha256=9Cwg5XacICb-u3W5J2AaIoqjMPBHXkkDyaD3MPIuJkw,5
+bask-0.4.1.dist-info/RECORD,,
