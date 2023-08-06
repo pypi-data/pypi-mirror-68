@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: polaris-ml
+Version: 0.9.3
+Summary: Polaris
+Home-page: https://gitlab.com/crespum/polaris
+Author: 
+Author-email: 
+License: LGPLv3
+Keywords: telemetry, satellite, machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: kaitaistruct
+Requires-Dist: glouton (==0.7.0)
+Requires-Dist: click
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: scikit-learn (==0.22.2)
+Requires-Dist: xgboost (==1.0.2)
+Requires-Dist: satnogs-decoders
+Requires-Dist: fets
+Requires-Dist: mlflow
+Requires-Dist: mergedeep
+
+UNKNOWN
+
+
