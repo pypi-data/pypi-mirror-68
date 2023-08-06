@@ -1,0 +1,11 @@
+django_perms_provisioner/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+django_perms_provisioner/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_perms_provisioner/management/schemas.py,sha256=sHS5LyXq7iR_NpyEVIGby45PNQ2zR1M6JbbGRa05WgE,782
+django_perms_provisioner/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_perms_provisioner/management/commands/dumpperms.py,sha256=aswSHjElYW-roufVMfKyjIiMFaIPZaelIWjUMAMg0-s,2571
+django_perms_provisioner/management/commands/loadperms.py,sha256=8jTwe5NomSkjn0gYWBdNu0FgtypGS5oxCowe8RvLvzo,6380
+django_perms_provisioner-0.0.4.dist-info/LICENSE,sha256=mqG6rp0X0F8o_UZUt2RREDwYhnlTrj88Oy7GKe4h4bM,1079
+django_perms_provisioner-0.0.4.dist-info/METADATA,sha256=DMdFdcybg_jLWYriFwYp_Y5oy4JT3odzjyx0g-Y8mIc,3719
+django_perms_provisioner-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+django_perms_provisioner-0.0.4.dist-info/top_level.txt,sha256=UseoX8VbLR8RpjiUsaSC7lk7THJZVG1YWt5nQbd1YHY,25
+django_perms_provisioner-0.0.4.dist-info/RECORD,,
