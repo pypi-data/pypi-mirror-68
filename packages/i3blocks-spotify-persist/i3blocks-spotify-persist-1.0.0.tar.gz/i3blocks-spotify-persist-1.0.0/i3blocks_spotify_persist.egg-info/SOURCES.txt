@@ -1,0 +1,12 @@
+LICENSE
+README.md
+i3blocks_spotify_persist.py
+setup.cfg
+setup.py
+i3blocks_spotify_persist.egg-info/PKG-INFO
+i3blocks_spotify_persist.egg-info/SOURCES.txt
+i3blocks_spotify_persist.egg-info/dependency_links.txt
+i3blocks_spotify_persist.egg-info/entry_points.txt
+i3blocks_spotify_persist.egg-info/requires.txt
+i3blocks_spotify_persist.egg-info/top_level.txt
+i3blocks_spotify_persist.egg-info/zip-safe
