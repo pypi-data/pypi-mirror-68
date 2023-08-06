@@ -1,0 +1,10 @@
+README.md
+setup.py
+difftorch/__init__.py
+difftorch/difftorch.py
+difftorch/util.py
+difftorch.egg-info/PKG-INFO
+difftorch.egg-info/SOURCES.txt
+difftorch.egg-info/dependency_links.txt
+difftorch.egg-info/requires.txt
+difftorch.egg-info/top_level.txt
