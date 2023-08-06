@@ -1,0 +1,5 @@
+Django
+edx-drf-extensions
+six
+django-crum
+django-model-utils
