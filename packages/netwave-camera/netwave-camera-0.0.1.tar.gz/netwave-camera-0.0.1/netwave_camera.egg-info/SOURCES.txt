@@ -1,0 +1,10 @@
+README.md
+setup.py
+netwave/__init__.py
+netwave/__main__.py
+netwave_camera.egg-info/PKG-INFO
+netwave_camera.egg-info/SOURCES.txt
+netwave_camera.egg-info/dependency_links.txt
+netwave_camera.egg-info/entry_points.txt
+netwave_camera.egg-info/requires.txt
+netwave_camera.egg-info/top_level.txt
