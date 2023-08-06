@@ -1,0 +1,19 @@
+define(["require", "exports", "./app", "./experiments_view", "./experiment_view", "./run_view", "./diff_view", "./tag_view", "./table/table_view"], function (require, exports, app_1, experiments_view_1, experiment_view_1, run_view_1, diff_view_1, tag_view_1, table_view_1) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    new experiments_view_1.ExperimentsHandler();
+    new experiment_view_1.ExperimentHandler();
+    new run_view_1.RunHandler();
+    new diff_view_1.DiffHandler();
+    new tag_view_1.TagHandler();
+    new table_view_1.TableHandler();
+    if (document.readyState === 'complete' ||
+        document.readyState === 'interactive') {
+        app_1.ROUTER.start(null, false);
+    }
+    else {
+        document.addEventListener('DOMContentLoaded', () => {
+            app_1.ROUTER.start(null, false);
+        });
+    }
+});
