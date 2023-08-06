@@ -1,0 +1,9 @@
+README.md
+setup.py
+slack_notifications.py
+slack_notifications.egg-info/PKG-INFO
+slack_notifications.egg-info/SOURCES.txt
+slack_notifications.egg-info/dependency_links.txt
+slack_notifications.egg-info/not-zip-safe
+slack_notifications.egg-info/requires.txt
+slack_notifications.egg-info/top_level.txt
