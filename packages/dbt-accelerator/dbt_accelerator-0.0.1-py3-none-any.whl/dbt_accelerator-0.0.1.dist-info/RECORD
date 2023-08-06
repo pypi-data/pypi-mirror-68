@@ -1,0 +1,8 @@
+dbt_accelerator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_accelerator/schema_md_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbt_accelerator/schema_md_generator/create.py,sha256=s1fj6FbShhomyblLzi3Tn5wm84zzgjfFnzC_kQDTDoc,10478
+dbt_accelerator-0.0.1.dist-info/LICENSE,sha256=0FXGd9Lg8bRCvJzsqy25EZzuBQu4l6nyUyJYDEgRlk8,1086
+dbt_accelerator-0.0.1.dist-info/METADATA,sha256=Ng1CEt-Z5Mjtb-IxrgMrvg1s8XQGT13-aXZapN5oPlc,1358
+dbt_accelerator-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+dbt_accelerator-0.0.1.dist-info/top_level.txt,sha256=1ywC3Dh2eYrUOjZvYg6zGiCBptuQ5TT_KQwyC0LN3fI,16
+dbt_accelerator-0.0.1.dist-info/RECORD,,
