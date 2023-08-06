@@ -1,0 +1,13 @@
+quiz_bots/app.py,sha256=h2GvirdCf7IQB_OtaRE69wUrc14va4MJFgqYIoBj1bM,1013
+quiz_bots/bots_helpers.py,sha256=hoK8IuHJeKMwk8WHHOttnD7IuElXWGwEVklOYqd5VRQ,1774
+quiz_bots/quiz.py,sha256=Kd0zpjlZHJemwjJ4W_9Fm02waKYN11o0ZoeS3CEbDA4,2390
+quiz_bots/quiz_helpers.py,sha256=fwhbfMPF3u6Pcg-drsD8mQK14ReRzGGjjo6iJhQO8L0,336
+quiz_bots/redis_utils.py,sha256=hs0pHCOMKQmzMs6hmldX23eRcNzEb99lLGFgkvEpr9w,1983
+quiz_bots/settings.py,sha256=gReP5iYBUgS18NKWhqoct64PO7j3VkF_L26qSysOWpE,208
+quiz_bots/tg_bot.py,sha256=DUwx_TMTxb925BtlzB554vx5aFwaA7bEVvPuFIv_Lsg,6036
+quiz_bots/vk_bot.py,sha256=glfY81A0NvTr8nfUZk0XNMGcFueQLsHXnGffHen4DH0,5232
+quiz_bots-0.1.6.dist-info/entry_points.txt,sha256=TbvNA5SHn-kEoDUmXRqmH5cK4EZ96RcOfdsLwmja4iw,48
+quiz_bots-0.1.6.dist-info/LICENSE,sha256=TmkH8MkMauX3hWDtpf2MJDC2SzG8MRtU8i8F-c8kBek,1072
+quiz_bots-0.1.6.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+quiz_bots-0.1.6.dist-info/METADATA,sha256=FyeTzVgOaWMinOvkkw-5Bx3fu3DrBMOP3O1gPxYasgI,3055
+quiz_bots-0.1.6.dist-info/RECORD,,
