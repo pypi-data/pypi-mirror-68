@@ -1,0 +1,6 @@
+
+[bert_client]
+bert-serving-client==1.10.0
+
+[bert_embedded]
+bert-experimental==1.0.4
