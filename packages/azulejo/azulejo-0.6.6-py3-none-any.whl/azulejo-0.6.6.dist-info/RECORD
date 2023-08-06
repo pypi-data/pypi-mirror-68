@@ -1,0 +1,12 @@
+azulejo/__init__.py,sha256=sLkv_YO6J0ZED0Ws4fbl9rrGfwFnv5YS81egXkL1PwY,2387
+azulejo/analysis.py,sha256=U-YEzHzt16r2XG5_G4BY0hSzFnKZ53S1WSP7eavL32U,10803
+azulejo/bin/azulejo_tool,sha256=LP3sSUdrYp_KHH301s0GRKmkhEt9AOUrN7now99og8Q,15091
+azulejo/common.py,sha256=i7lyMWFGdcaHJjP-zY5WFt47hjSnA00tt_Sxb_CEDFY,609
+azulejo/core.py,sha256=7VwkAhdWutM-qHQ-YV-WfaQxSJzPtxgiRy6qURjgBG4,28517
+azulejo/protein.py,sha256=2oGDRBZ9hLC6g2zQsIipeuRs98KKB_c3i2ql_37O0gY,4721
+azulejo/synteny.py,sha256=yMZY75fLbtn_41ZjhRST5x3uHyTNeyt0Gh01GgCH9wM,22722
+azulejo-0.6.6.dist-info/entry_points.txt,sha256=trU92RGebMompwzCnUbXsefcFy6Z99sa1o1X18HTQDQ,39
+azulejo-0.6.6.dist-info/LICENSE,sha256=xTINIOqo-1eGwuQsVoEmr_K-alftIXm0q3Ffo7mp08U,1544
+azulejo-0.6.6.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+azulejo-0.6.6.dist-info/METADATA,sha256=xYp2DznyoywRbw7aXs3AjU-LkfnuXgPmfc1e3WjQwFY,8155
+azulejo-0.6.6.dist-info/RECORD,,
