@@ -1,0 +1,10 @@
+numpy
+requests
+flask
+scikit-learn
+jsonlines
+pconf
+tokenizer_tools
+tf_summary_reader
+tensorflow<2.0.0,>=1.15.0
+nlp_utils
