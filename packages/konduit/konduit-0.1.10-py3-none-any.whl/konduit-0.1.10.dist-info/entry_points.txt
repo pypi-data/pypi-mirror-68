@@ -1,0 +1,4 @@
+[console_scripts]
+konduit = cli:cli
+konduit-init = cli_init:init
+
