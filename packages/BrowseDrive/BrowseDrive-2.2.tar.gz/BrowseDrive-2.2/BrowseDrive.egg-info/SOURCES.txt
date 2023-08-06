@@ -1,0 +1,9 @@
+README.md
+setup.py
+BrowseDrive/__init__.py
+BrowseDrive/driverdownloader.py
+BrowseDrive.egg-info/PKG-INFO
+BrowseDrive.egg-info/SOURCES.txt
+BrowseDrive.egg-info/dependency_links.txt
+BrowseDrive.egg-info/requires.txt
+BrowseDrive.egg-info/top_level.txt
