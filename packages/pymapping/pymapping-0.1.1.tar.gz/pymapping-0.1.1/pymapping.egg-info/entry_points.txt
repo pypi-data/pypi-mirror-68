@@ -1,0 +1,3 @@
+[console_scripts]
+pymapping = pymapping.cli:main
+
