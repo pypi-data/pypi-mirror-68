@@ -1,0 +1,13 @@
+README.md
+setup.py
+ddpaper/__init__.py
+ddpaper/data.py
+ddpaper/draftdata.py
+ddpaper/filters.py
+ddpaper/generate.py
+ddpaper/render.py
+linked_data_latex.egg-info/PKG-INFO
+linked_data_latex.egg-info/SOURCES.txt
+linked_data_latex.egg-info/dependency_links.txt
+linked_data_latex.egg-info/entry_points.txt
+linked_data_latex.egg-info/top_level.txt
