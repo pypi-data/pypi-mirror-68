@@ -1,0 +1,16 @@
+strix/__init__.py,sha256=F0Y_J3s0098BHlteSs-VBH7NyU77gOmUysNMhwC_PnY,107
+strix/base_functions.py,sha256=6KmMvGxYv-CI65LWb8EyLAdIDSuZhi1FzUm3XSY-FUs,2799
+strix/file_actions.py,sha256=l2K0ki4Shpv-lY3t9u-lSQ7jDAlMlQ3J0_mImVLOxi0,2963
+strix/gca.py,sha256=RYz-hyhmugaiZWkakPNLmfmtTh-yJ6xKcH_F8UO3wO8,6588
+strix/value_validation.py,sha256=v5nNua1HF-2WIiiIE3fQl9DQzQsxq2_PX8JBvfn8udk,979
+strix/file_formats/__init__.py,sha256=K_BW1-JQnHwud8lpm7DCbD5ZTBp7NXlTOlqsbQBtChM,127
+strix/file_formats/csv.py,sha256=F1j3sl8QZEWgBUY9i0nvaNBfpi9DpTJSvlxwB1OKsY8,6337
+strix/file_formats/egf.py,sha256=YmKRi85NSb5gY1CTsXaz5rWLX54SY7lQqVwiposPTWI,10227
+strix/file_formats/geo_json.py,sha256=ltchNQnZje550n_yXNYvKks2IXl3IViJXjiJlz6pQto,2742
+strix/file_formats/kml_base.py,sha256=rzNL0e8E9ePm_H_9X9dFeKKf_FSAU-YV_-rF9X5NGb0,19087
+strix/file_formats/kml_gca.py,sha256=ykySpJweQ9LcabAafeltURvUk7SxxhwVtMr1c14j5t8,4107
+strix-0.6.0.dist-info/LICENSE,sha256=QAnNtEB8HNmbJpWiauQ5FgoGgID9B4sWlrzTb0Wso4w,1062
+strix-0.6.0.dist-info/METADATA,sha256=vUF_vZyhSfKLYTBVx-51rZ-VOg55e7MelxZllMb3nak,641
+strix-0.6.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+strix-0.6.0.dist-info/top_level.txt,sha256=1lSQq9GaQBIM3Fori2YgwVELezQQE38ng_NnkLMAwDU,6
+strix-0.6.0.dist-info/RECORD,,
