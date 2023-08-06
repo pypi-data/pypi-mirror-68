@@ -1,0 +1,3 @@
+[console_scripts]
+digsec = digsec.scripts:main
+
