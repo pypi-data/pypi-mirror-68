@@ -1,0 +1,11 @@
+pyocd>=0.14
+mbed_ls>=1.7.10
+pyserial>=3.4
+xmodem
+future
+pexpect
+click>=7.0
+pyelftools
+pyyaml
+globster
+enum34
