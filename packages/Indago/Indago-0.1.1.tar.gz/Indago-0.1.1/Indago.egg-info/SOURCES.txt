@@ -1,0 +1,15 @@
+setup.py
+Indago.egg-info/PKG-INFO
+Indago.egg-info/SOURCES.txt
+Indago.egg-info/dependency_links.txt
+Indago.egg-info/top_level.txt
+indago/__init__.py
+indago/abca.py
+indago/fwa.py
+indago/legacy_pso.py
+indago/optimizer.py
+indago/pso.py
+indago/ssa.py
+indago/benchmarks/__init__.py
+indago/benchmarks/_cec.py
+indago/benchmarks/_shortest_path.py
