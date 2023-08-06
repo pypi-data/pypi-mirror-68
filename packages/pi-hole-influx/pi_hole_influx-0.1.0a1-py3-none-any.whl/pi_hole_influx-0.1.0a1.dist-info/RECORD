@@ -1,0 +1,8 @@
+default.toml,sha256=GDOC4MtLSAeaz27_5wL9GBmFqgCvSZsxu-qSREEEsM4,319
+pi_hole_influx/__init__.py,sha256=1tYEDqgG_cByk1FwrpTKxbVM9T4tQwhPUCYgfzpJjKw,4716
+pi_hole_influx/__main__.py,sha256=4zR4aBLJSJnoTr0Ad3DK8_UYXAlyPMOKaBpbe6CLBQs,40
+pi_hole_influx-0.1.0a1.dist-info/entry_points.txt,sha256=4Q-ate2N04nvqAOeGOCS8cxvADYRreAdXO7XCbTMqj4,54
+pi_hole_influx-0.1.0a1.dist-info/LICENSE,sha256=nyjJ1ldhXXE9bd-R3Y6d78CTF5KjewX1EgOb43Zjbww,575
+pi_hole_influx-0.1.0a1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pi_hole_influx-0.1.0a1.dist-info/METADATA,sha256=0BVHkhhrbay37UMgfC5NrdMi8W4HaOd11PCF7ZGQ9kA,6720
+pi_hole_influx-0.1.0a1.dist-info/RECORD,,

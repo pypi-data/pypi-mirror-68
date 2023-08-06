@@ -1,0 +1,3 @@
+[console_scripts]
+pi-hole-influx=pi_hole_influx:main
+
