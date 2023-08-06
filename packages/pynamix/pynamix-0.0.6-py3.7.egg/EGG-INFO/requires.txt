@@ -1,0 +1,10 @@
+numpy
+matplotlib
+imageio
+scipy
+ipykernel
+ipywidgets
+sphinx
+nbsphinx
+pandoc
+pre-commit
