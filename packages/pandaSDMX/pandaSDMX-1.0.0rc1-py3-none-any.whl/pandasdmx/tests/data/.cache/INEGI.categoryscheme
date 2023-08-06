@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.8.0-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF1</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T07:36:36.9426911-05:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Dataflows xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Dataflow id="DF_IMTS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_IMTS(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">International Merchandise Trade Statistics Dataflow</Name>
+        <Structure>
+          <Ref id="IMTS" version="1.1" agencyID="UN" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_INFRA_ANNUAL_LABOUR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_INFRA_ANNUAL_LABOUR(3.1)" agencyID="INEGI" version="3.1" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Infra-annual Labour</Name>
+        <Structure>
+          <Ref id="INFRA_ANNUAL_LABOUR" version="3.1" agencyID="OECD" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_SDG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_SDG(1.0)" agencyID="INEGI" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDG Dataflow</Name>
+        <Structure>
+          <Ref id="SDG" version="0.1" agencyID="UNSD" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_STES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_STES(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Short Term Economic Statistics</Name>
+        <Structure>
+          <Ref id="STES" version="2.8" agencyID="INEGI" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+    </Dataflows>
+    <CategorySchemes xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <CategoryScheme id="C_DGI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=INEGI:C_DGI(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Categoría Dirección General Investigación</Name>
+        <Category id="C_01" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=INEGI:C_DGI(1.0).C_01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Category 01</Name>
+        </Category>
+        <Category id="C_02" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=INEGI:C_DGI(1.0).C_02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Category 02</Name>
+        </Category>
+        <Category id="C_03" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=INEGI:C_DGI(1.0).C_03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Category 03</Name>
+        </Category>
+        <Category id="C_04" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=INEGI:C_DGI(1.0).C_04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Category 04</Name>
+        </Category>
+      </CategoryScheme>
+    </CategorySchemes>
+    <Categorisations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Categorisation id="DF_IMTS@INEGI@10@C_DGI@10@C_03" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=INEGI:DF_IMTS@INEGI@10@C_DGI@10@C_03(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_IMTS@INEGI@10@C_DGI@10@C_03</Name>
+        <Source>
+          <Ref id="DF_IMTS" version="1.0" agencyID="INEGI" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="C_03" maintainableParentID="C_DGI" maintainableParentVersion="1.0" agencyID="INEGI" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="DF_SDG@INEGI@10@C_DGI@10@C_02" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=INEGI:DF_SDG@INEGI@10@C_DGI@10@C_02(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_SDG@INEGI@10@C_DGI@10@C_02</Name>
+        <Source>
+          <Ref id="DF_SDG" version="1.0" agencyID="INEGI" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="C_02" maintainableParentID="C_DGI" maintainableParentVersion="1.0" agencyID="INEGI" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="DF_STES@INEGI@10@C_DGI@10@C_01" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=INEGI:DF_STES@INEGI@10@C_DGI@10@C_01(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_STES@INEGI@10@C_DGI@10@C_01</Name>
+        <Source>
+          <Ref id="DF_STES" version="1.0" agencyID="INEGI" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="C_01" maintainableParentID="C_DGI" maintainableParentVersion="1.0" agencyID="INEGI" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="INFRA_ANNUAL_LABOUR@OECD@31@C_DGI@10@C_01" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=INEGI:INFRA_ANNUAL_LABOUR@OECD@31@C_DGI@10@C_01(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">1</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">INFRA_ANNUAL_LABOUR@OECD@31@C_DGI@10@C_01</Name>
+        <Source>
+          <Ref id="DF_INFRA_ANNUAL_LABOUR" version="3.1" agencyID="INEGI" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="C_01" maintainableParentID="C_DGI" maintainableParentVersion="1.0" agencyID="INEGI" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+    </Categorisations>
+  </Structures>
+</Structure>

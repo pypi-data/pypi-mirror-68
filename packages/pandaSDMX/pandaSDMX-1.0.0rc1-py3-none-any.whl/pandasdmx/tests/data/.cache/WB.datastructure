@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v5.2.3-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF384</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T08:39:45.8184041-04:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <DataStructures xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <DataStructure id="TARIFF_TRAINS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=WBG_WITS:TARIFF_TRAINS(1.1)" agencyID="WBG_WITS" version="1.1" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Tariff data</Name>
+        <DataStructureComponents>
+          <DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=WBG_WITS:TARIFF_TRAINS(1.1).DimensionDescriptor">
+            <Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TARIFF_TRAINS(1.1).FREQ" position="1">
+              <ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_FREQ_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="REPORTER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TARIFF_TRAINS(1.1).REPORTER" position="2">
+              <ConceptIdentity>
+                <Ref id="REPORTER" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_COUNTRY_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="PARTNER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TARIFF_TRAINS(1.1).PARTNER" position="3">
+              <ConceptIdentity>
+                <Ref id="PARTNER" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_COUNTRY_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=WBG_WITS:TARIFF_TRAINS(1.1).TIME_PERIOD" position="4">
+              <ConceptIdentity>
+                <Ref id="YEAR" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <TextFormat textType="ObservationalTimePeriod" />
+              </LocalRepresentation>
+            </TimeDimension>
+            <Dimension id="PRODUCTCODE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TARIFF_TRAINS(1.1).PRODUCTCODE" position="5">
+              <ConceptIdentity>
+                <Ref id="PRODUCTCODE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_PRODUCTCODE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="DATATYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TARIFF_TRAINS(1.1).DATATYPE" position="6">
+              <ConceptIdentity>
+                <Ref id="DATATYPE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_DATATYPE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+          </DimensionList>
+          <AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=WBG_WITS:TARIFF_TRAINS(1.1).AttributeDescriptor">
+            <Attribute id="DATASOURCE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).DATASOURCE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="DATASOURCE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_DATASOURCE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+              <AttributeRelationship>
+                <None />
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="NOMENCODE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).NOMENCODE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="NOMENCODE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_NOMENCODE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="EXCLUDEDFROM" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).EXCLUDEDFROM" assignmentStatus="Conditional">
+              <ConceptIdentity>
+                <Ref id="EXCLUDEDFROM" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_COUNTRY_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="TARIFFTYPE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).TARIFFTYPE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="TARIFFTYPE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TARIFFTYPE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="SUM_OF_RATES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).SUM_OF_RATES" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="SUM_OF_RATES" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="MIN_RATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).MIN_RATE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="MIN_RATE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="MAX_RATE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).MAX_RATE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="MAX_RATE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="TOTALNOOFLINES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).TOTALNOOFLINES" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="TOTALNOOFLINES" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="NBR_PREF_LINES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).NBR_PREF_LINES" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="NBR_PREF_LINES" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="NBR_MFN_LINES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).NBR_MFN_LINES" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="NBR_MFN_LINES" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="NBR_NA_LINES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).NBR_NA_LINES" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="NBR_NA_LINES" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+            <Attribute id="OBS_VALUE_MEASURE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TARIFF_TRAINS(1.1).OBS_VALUE_MEASURE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="OBS_VALUE_MEASURE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+          </AttributeList>
+          <MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=WBG_WITS:TARIFF_TRAINS(1.1).MeasureDescriptor">
+            <PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=WBG_WITS:TARIFF_TRAINS(1.1).OBS_VALUE">
+              <ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="TARIFF_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+            </PrimaryMeasure>
+          </MeasureList>
+        </DataStructureComponents>
+      </DataStructure>
+      <DataStructure id="TRADESTATS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=WBG_WITS:TRADESTATS(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Country Trade Statistics</Name>
+        <DataStructureComponents>
+          <DimensionList id="DimensionDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DimensionDescriptor=WBG_WITS:TRADESTATS(1.0).DimensionDescriptor">
+            <Dimension id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TRADESTATS(1.0).FREQ" position="1">
+              <ConceptIdentity>
+                <Ref id="FREQ" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_FREQ_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="REPORTER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TRADESTATS(1.0).REPORTER" position="2">
+              <ConceptIdentity>
+                <Ref id="REPORTER" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_COUNTRY_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="PARTNER" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TRADESTATS(1.0).PARTNER" position="3">
+              <ConceptIdentity>
+                <Ref id="PARTNER" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_COUNTRY_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <TimeDimension id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.datastructure.TimeDimension=WBG_WITS:TRADESTATS(1.0).TIME_PERIOD" position="4">
+              <ConceptIdentity>
+                <Ref id="YEAR" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <TextFormat textType="ObservationalTimePeriod" />
+              </LocalRepresentation>
+            </TimeDimension>
+            <Dimension id="PRODUCTCODE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TRADESTATS(1.0).PRODUCTCODE" position="5">
+              <ConceptIdentity>
+                <Ref id="PRODUCTCODE" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_PRODUCTCODE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+            <Dimension id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dimension=WBG_WITS:TRADESTATS(1.0).INDICATOR" position="6">
+              <ConceptIdentity>
+                <Ref id="INDICATOR" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_INDICATOR_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+            </Dimension>
+          </DimensionList>
+          <AttributeList id="AttributeDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.AttributeDescriptor=WBG_WITS:TRADESTATS(1.0).AttributeDescriptor">
+            <Attribute id="DATASOURCE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.DataAttribute=WBG_WITS:TRADESTATS(1.0).DATASOURCE" assignmentStatus="Mandatory">
+              <ConceptIdentity>
+                <Ref id="DATASOURCE" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+              <LocalRepresentation>
+                <Enumeration>
+                  <Ref id="CL_TS_DATASOURCE_WITS" version="1.0" agencyID="WBG_WITS" package="codelist" class="Codelist" xmlns="" />
+                </Enumeration>
+              </LocalRepresentation>
+              <AttributeRelationship>
+                <PrimaryMeasure>
+                  <Ref id="OBS_VALUE" xmlns="" />
+                </PrimaryMeasure>
+              </AttributeRelationship>
+            </Attribute>
+          </AttributeList>
+          <MeasureList id="MeasureDescriptor" urn="urn:sdmx:org.sdmx.infomodel.datastructure.MeasureDescriptor=WBG_WITS:TRADESTATS(1.0).MeasureDescriptor">
+            <PrimaryMeasure id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.PrimaryMeasure=WBG_WITS:TRADESTATS(1.0).OBS_VALUE">
+              <ConceptIdentity>
+                <Ref id="OBS_VALUE" maintainableParentID="TRADESTATS_CONCEPTS" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="conceptscheme" class="Concept" xmlns="" />
+              </ConceptIdentity>
+            </PrimaryMeasure>
+          </MeasureList>
+        </DataStructureComponents>
+      </DataStructure>
+    </DataStructures>
+  </Structures>
+</Structure>

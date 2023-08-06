@@ -1,0 +1,1651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <mes:Header>
+    <mes:ID>IDREF1143</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2020-05-10T12:36:30.264Z</mes:Prepared>
+    <mes:Sender id="Unknown"/>
+    <mes:Receiver id="Unknown"/>
+  </mes:Header>
+  <mes:Structures>
+    <str:Concepts>
+      <str:ConceptScheme id="CS_CLASSIF_TYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=ILO:CS_CLASSIF_TYPE(1.0)" agencyID="ILO" version="1.0" isFinal="true">
+        <com:Name xml:lang="en">Classifications</com:Name>
+        <str:Concept id="CLASSIF_SEX" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_SEX">
+          <com:Name xml:lang="en">Sex</com:Name>
+          <com:Name xml:lang="es">Sexo</com:Name>
+          <com:Name xml:lang="fr">Sexe</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SEX" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_AGE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_AGE">
+          <com:Name xml:lang="en">Age</com:Name>
+          <com:Name xml:lang="es">Edad</com:Name>
+          <com:Name xml:lang="fr">Age</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_AGE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_EDU" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_EDU">
+          <com:Name xml:lang="en">Education</com:Name>
+          <com:Name xml:lang="es">Educación</com:Name>
+          <com:Name xml:lang="fr">Education</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_EDU" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_GEO" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_GEO">
+          <com:Name xml:lang="en">Area type</com:Name>
+          <com:Name xml:lang="es">Tipo de área</com:Name>
+          <com:Name xml:lang="fr">Type de zone</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_GEO" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_STE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_STE">
+          <com:Name xml:lang="en">Status in employment</com:Name>
+          <com:Name xml:lang="es">Situación en el empleo</com:Name>
+          <com:Name xml:lang="fr">Situation dans la profession</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_STE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_ECO" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_ECO">
+          <com:Name xml:lang="en">Economic activity</com:Name>
+          <com:Name xml:lang="es">Actividad económica</com:Name>
+          <com:Name xml:lang="fr">Activité économique</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_ECO" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_OCU" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_OCU">
+          <com:Name xml:lang="en">Occupation</com:Name>
+          <com:Name xml:lang="es">Ocupación</com:Name>
+          <com:Name xml:lang="fr">Profession</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_OCU" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_INS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_INS">
+          <com:Name xml:lang="en">Sector</com:Name>
+          <com:Name xml:lang="es">Sector</com:Name>
+          <com:Name xml:lang="fr">Secteur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_INS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_HOW" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_HOW">
+          <com:Name xml:lang="en">Hour bands</com:Name>
+          <com:Name xml:lang="es">Tramos de horas</com:Name>
+          <com:Name xml:lang="fr">Tranches horaires</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_HOW" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_DUR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_DUR">
+          <com:Name xml:lang="en">Duration</com:Name>
+          <com:Name xml:lang="es">Duración</com:Name>
+          <com:Name xml:lang="fr">Durée</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_DUR" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CAT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CAT">
+          <com:Name xml:lang="en">Category of unemployed</com:Name>
+          <com:Name xml:lang="es">Categoría de desempleado</com:Name>
+          <com:Name xml:lang="fr">Catégorie de chômeur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CAT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_QTL" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_QTL">
+          <com:Name xml:lang="en">Quantile</com:Name>
+          <com:Name xml:lang="es">Cuantil</com:Name>
+          <com:Name xml:lang="fr">Quantile</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_QTL" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_INJ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_INJ">
+          <com:Name xml:lang="en">Occupational injuries</com:Name>
+          <com:Name xml:lang="es">Lesiones Profesionales</com:Name>
+          <com:Name xml:lang="fr">Lésions professionnelles</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_INJ" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_COI" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_COI">
+          <com:Name xml:lang="en">COICOP</com:Name>
+          <com:Name xml:lang="es">CCIF</com:Name>
+          <com:Name xml:lang="fr">COICOP</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_COI" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_NOC" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_NOC">
+          <com:Name xml:lang="en">No classification</com:Name>
+          <com:Name xml:lang="es">Sin clasificación</com:Name>
+          <com:Name xml:lang="fr">Pas de classification</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOC" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_LMS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_LMS">
+          <com:Name xml:lang="en">Labour market status</com:Name>
+          <com:Name xml:lang="es">Situación en el mercado de trabajo</com:Name>
+          <com:Name xml:lang="fr">Situation sur le marché du travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_LMS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_STU" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_STU">
+          <com:Name xml:lang="en">Educational attendance</com:Name>
+          <com:Name xml:lang="es">Asistencia educativa</com:Name>
+          <com:Name xml:lang="fr">Fréquentation scolaire</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_STU" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_JOB" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_JOB">
+          <com:Name xml:lang="en">Job</com:Name>
+          <com:Name xml:lang="es">Trabajo</com:Name>
+          <com:Name xml:lang="fr">Travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_JOB" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_SOC" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_SOC">
+          <com:Name xml:lang="en">Benefits schemes</com:Name>
+          <com:Name xml:lang="es">Typo de los prestaciones</com:Name>
+          <com:Name xml:lang="fr">Type de prestations</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SOC" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_MIG" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_MIG">
+          <com:Name xml:lang="en">Migrant status</com:Name>
+          <com:Name xml:lang="es">Situación de migrante</com:Name>
+          <com:Name xml:lang="fr">Statut de migrant</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_MIG" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_COU" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_COU">
+          <com:Name xml:lang="en">Country</com:Name>
+          <com:Name xml:lang="es">País</com:Name>
+          <com:Name xml:lang="fr">Pays</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_COU" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_EXP" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_EXP">
+          <com:Name xml:lang="en">Expenditure</com:Name>
+          <com:Name xml:lang="es">Gastos</com:Name>
+          <com:Name xml:lang="fr">Dépenses</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_EXP" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_IFL" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_IFL">
+          <com:Name xml:lang="en">Informal / formal economy</com:Name>
+          <com:Name xml:lang="es">Economía informal / formal</com:Name>
+          <com:Name xml:lang="fr">Economie informelle / formelle</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_IFL" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_GOV" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_GOV">
+          <com:Name xml:lang="en">Gov't level</com:Name>
+          <com:Name xml:lang="es">Nivel del gobierno</com:Name>
+          <com:Name xml:lang="fr">Niveau de gouv.</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_GOV" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_DSB" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_DSB">
+          <com:Name xml:lang="en">Disability status</com:Name>
+          <com:Name xml:lang="es">Situación en términos de discapacidad</com:Name>
+          <com:Name xml:lang="fr">Situation en termes d’handicap</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_DSB" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CLA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CLA">
+          <com:Name xml:lang="en">Class</com:Name>
+          <com:Name xml:lang="es">Clase</com:Name>
+          <com:Name xml:lang="fr">Classe</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CLA" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CUR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CUR">
+          <com:Name xml:lang="en">Currency</com:Name>
+          <com:Name xml:lang="es">Divisa</com:Name>
+          <com:Name xml:lang="fr">Devise</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CUR" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_MTS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_MTS">
+          <com:Name xml:lang="en">Marital status</com:Name>
+          <com:Name xml:lang="es">Estado civil</com:Name>
+          <com:Name xml:lang="fr">Etat civil</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_MTS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_EC2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_EC2">
+          <com:Name xml:lang="en">Economic activity, 2 digit level</com:Name>
+          <com:Name xml:lang="es">Actividad económica, a nivel de 2 dígitos</com:Name>
+          <com:Name xml:lang="fr">Activité économique,  au niveau 2</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_EC2" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_OC2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_OC2">
+          <com:Name xml:lang="en">Occupation, 2 digit level</com:Name>
+          <com:Name xml:lang="es">Ocupación, a nivel de 2 dígitos</com:Name>
+          <com:Name xml:lang="fr">Profession,  au niveau 2</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_OC2" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CDS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CDS">
+          <com:Name xml:lang="en">Country of destination</com:Name>
+          <com:Name xml:lang="es">País de destino</com:Name>
+          <com:Name xml:lang="fr">Pays de destination</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CDS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CPR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CPR">
+          <com:Name xml:lang="en">Country of previous residence</com:Name>
+          <com:Name xml:lang="es">País de residencia anterior</com:Name>
+          <com:Name xml:lang="fr">Pays de résidence précédente</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CPR" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CRS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CRS">
+          <com:Name xml:lang="en">Country of residence</com:Name>
+          <com:Name xml:lang="es">País de residencia</com:Name>
+          <com:Name xml:lang="fr">Pays de résidence</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CRS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CBR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CBR">
+          <com:Name xml:lang="en">Place of birth</com:Name>
+          <com:Name xml:lang="es">Lugar de nacimiento</com:Name>
+          <com:Name xml:lang="fr">Lieu de naissance</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CBR" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CCT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CCT">
+          <com:Name xml:lang="en">Citizenship</com:Name>
+          <com:Name xml:lang="es">Ciudadania</com:Name>
+          <com:Name xml:lang="fr">Citoyenneté</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CCT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_MJH" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_MJH">
+          <com:Name xml:lang="en">Multiple job holders</com:Name>
+          <com:Name xml:lang="es">Múltiples titulares de empleo</com:Name>
+          <com:Name xml:lang="fr">Titulaires de plusieurs emplois</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_MJH" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_TRA" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_TRA">
+          <com:Name xml:lang="en">Transition to work</com:Name>
+          <com:Name xml:lang="es">Transición al trabajo</com:Name>
+          <com:Name xml:lang="fr">Transition vers l'emploi</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_TRA" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_VOL" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_VOL">
+          <com:Name xml:lang="en">Volunteer work</com:Name>
+          <com:Name xml:lang="es">Trabajo voluntario</com:Name>
+          <com:Name xml:lang="fr">Travail bénévole</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_VOL" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_HHT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_HHT">
+          <com:Name xml:lang="en">Household type</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_HHT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="CLASSIF_CHL" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_CLASSIF_TYPE(1.0).CLASSIF_CHL">
+          <com:Name xml:lang="en">Children</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CHL" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+      </str:ConceptScheme>
+      <str:ConceptScheme id="CS_DISSEM" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=ILO:CS_DISSEM(1.0)" agencyID="ILO" version="1.0" isFinal="true">
+        <com:Name xml:lang="en">DISSEM Concepts</com:Name>
+        <str:Concept id="INDICATOR" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).INDICATOR">
+          <com:Name xml:lang="en">Indicator</com:Name>
+          <com:Name xml:lang="es">Indicador</com:Name>
+          <com:Name xml:lang="fr">Indicateur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_INDICATOR" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="DECIMAL_POSITION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).DECIMAL_POSITION">
+          <com:Name xml:lang="en">Decimal Position</com:Name>
+          <com:Name xml:lang="es">Posiciones decimales</com:Name>
+          <com:Name xml:lang="fr">Positions décimales</com:Name>
+        </str:Concept>
+        <str:Concept id="INDICATOR_SORT_ORDER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).INDICATOR_SORT_ORDER">
+          <com:Name xml:lang="en">Indicator Sort Order</com:Name>
+          <com:Name xml:lang="es">Orden del indicador</com:Name>
+          <com:Name xml:lang="fr">Ordre de tri de lindicateur</com:Name>
+        </str:Concept>
+        <str:Concept id="INDICATOR_DESCRIPTION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).INDICATOR_DESCRIPTION">
+          <com:Name xml:lang="en">Indicator Description</com:Name>
+          <com:Name xml:lang="es">Descripción del indicador</com:Name>
+          <com:Name xml:lang="fr">Description de lindicateur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_INDICATOR_DESCRIPTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SOURCE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SOURCE">
+          <com:Name xml:lang="en">Source</com:Name>
+          <com:Name xml:lang="es">Fuente</com:Name>
+          <com:Name xml:lang="fr">Source</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SOURCE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SOURCE_DESCRIPTION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SOURCE_DESCRIPTION">
+          <com:Name xml:lang="en">Source Description</com:Name>
+          <com:Name xml:lang="es">Descripción de la fuente</com:Name>
+          <com:Name xml:lang="fr">Description de la source</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SOURCE_DESCRIPTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SOURCE_SORT_ORDER" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SOURCE_SORT_ORDER">
+          <com:Name xml:lang="en">Source Sort Order</com:Name>
+          <com:Name xml:lang="es">Orden de la fuente</com:Name>
+          <com:Name xml:lang="fr">Ordre de tri de la source</com:Name>
+        </str:Concept>
+        <str:Concept id="R_VAR_COMPLEMENT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).R_VAR_COMPLEMENT">
+          <com:Name xml:lang="en">Represented Variable Complement</com:Name>
+          <com:Name xml:lang="es">Complemento de Variable representada</com:Name>
+          <com:Name xml:lang="fr">Complement de variable representŽe</com:Name>
+        </str:Concept>
+        <str:Concept id="SUBJECT1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT1">
+          <com:Name xml:lang="en">Subject #1</com:Name>
+          <com:Name xml:lang="es">Tema #1</com:Name>
+          <com:Name xml:lang="fr">Thème #1</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SUBJECT_SORT_ORDER1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_SORT_ORDER1">
+          <com:Name xml:lang="en">Subject Sort Order #1</com:Name>
+          <com:Name xml:lang="es">Orden del tema #1</com:Name>
+          <com:Name xml:lang="fr">Ordre de tri du thème #1</com:Name>
+        </str:Concept>
+        <str:Concept id="SUBJECT_DESCRIPTION1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_DESCRIPTION1">
+          <com:Name xml:lang="en">Subject Description #1</com:Name>
+          <com:Name xml:lang="es">Descripción del tema #1</com:Name>
+          <com:Name xml:lang="fr">Description du thème #1</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT_DESCRIPTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SUBJECT2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT2">
+          <com:Name xml:lang="en">Subject #2</com:Name>
+          <com:Name xml:lang="es">Tema #2</com:Name>
+          <com:Name xml:lang="fr">Thème #2</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SUBJECT_SORT_ORDER2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_SORT_ORDER2">
+          <com:Name xml:lang="en">Subject Sort Order #2</com:Name>
+          <com:Name xml:lang="es">Orden del tema #2</com:Name>
+          <com:Name xml:lang="fr">Ordre de tri du thème #2</com:Name>
+        </str:Concept>
+        <str:Concept id="SUBJECT_DESCRIPTION2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_DESCRIPTION2">
+          <com:Name xml:lang="en">Subject Description #2</com:Name>
+          <com:Name xml:lang="es">Descripción del tema #2</com:Name>
+          <com:Name xml:lang="fr">Description du thème #2</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT_DESCRIPTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SUBJECT3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT3">
+          <com:Name xml:lang="en">Subject #3</com:Name>
+          <com:Name xml:lang="es">Tema #3</com:Name>
+          <com:Name xml:lang="fr">Thème #3</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="SUBJECT_SORT_ORDER3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_SORT_ORDER3">
+          <com:Name xml:lang="en">Subject Sort Order #3</com:Name>
+          <com:Name xml:lang="es">Orden del tema #3</com:Name>
+          <com:Name xml:lang="fr">Ordre de tri du thème #3</com:Name>
+        </str:Concept>
+        <str:Concept id="SUBJECT_DESCRIPTION3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_DISSEM(1.0).SUBJECT_DESCRIPTION3">
+          <com:Name xml:lang="en">Subject Description #3</com:Name>
+          <com:Name xml:lang="es">Descripción del tema #3</com:Name>
+          <com:Name xml:lang="fr">Description du thème #3</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SUBJECT_DESCRIPTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+      </str:ConceptScheme>
+      <str:ConceptScheme id="CS_ILOSTAT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=ILO:CS_ILOSTAT(1.0)" agencyID="ILO" version="1.0" isFinal="true">
+        <com:Name xml:lang="en">ILOSTAT Concepts</com:Name>
+        <str:Concept id="COLLECTION" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).COLLECTION">
+          <com:Name xml:lang="en">Data collection</com:Name>
+          <com:Name xml:lang="es">Colección de Datos</com:Name>
+          <com:Name xml:lang="fr">Collectes de données</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_COLLECTION" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="COUNTRY" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).COUNTRY">
+          <com:Name xml:lang="en">Country</com:Name>
+          <com:Name xml:lang="es">País</com:Name>
+          <com:Name xml:lang="fr">Pays</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_COUNTRY" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="FREE_TEXT_NOTE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).FREE_TEXT_NOTE">
+          <com:Name xml:lang="en">Free text note; should be used when a note cannot be coded or in the case of multiple values for one note type</com:Name>
+          <com:Name xml:lang="es">Nota libre: debe ser usada cuando no es posible codificar una nota o en caso de múltiples valores para un tipo de nota</com:Name>
+          <com:Name xml:lang="fr">Note libre: À utiliser lorsque la note ne peut pas être codée ou lorsquil y a plusieurs valeurs pour un même type de notes</com:Name>
+        </str:Concept>
+        <str:Concept id="FREQ" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).FREQ">
+          <com:Name xml:lang="en">Frequency</com:Name>
+          <com:Name xml:lang="es">Frecuencia</com:Name>
+          <com:Name xml:lang="fr">Fréquence</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_FREQ" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OBS_VALUE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).OBS_VALUE">
+          <com:Name xml:lang="en">Observation value</com:Name>
+          <com:Name xml:lang="es">Valor observado</com:Name>
+          <com:Name xml:lang="fr">Valeur observée</com:Name>
+        </str:Concept>
+        <str:Concept id="TIME_PERIOD" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).TIME_PERIOD">
+          <com:Name xml:lang="en">Time period</com:Name>
+          <com:Name xml:lang="es">Período</com:Name>
+          <com:Name xml:lang="fr">Période de temps</com:Name>
+        </str:Concept>
+        <str:Concept id="SURVEY" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).SURVEY">
+          <com:Name xml:lang="en">Survey</com:Name>
+          <com:Name xml:lang="es">Encuesta</com:Name>
+          <com:Name xml:lang="fr">Enquête</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_SURVEY" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="VALUE_STATUS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).VALUE_STATUS">
+          <com:Name xml:lang="en">Value status</com:Name>
+          <com:Name xml:lang="es">Estado del valor</com:Name>
+          <com:Name xml:lang="fr">État de la valeur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_VALUE_STATUS" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="UNIT_MEAS_TYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).UNIT_MEAS_TYPE">
+          <com:Name xml:lang="en">Unit of measure type</com:Name>
+          <com:Name xml:lang="es">Tipo de unidad de medida</com:Name>
+          <com:Name xml:lang="fr">Type dunité de mesure</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_UNIT_MEASURE_TYPE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="UNIT_MEAS" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).UNIT_MEAS">
+          <com:Name xml:lang="en">Unit of measure</com:Name>
+          <com:Name xml:lang="es">Unidad de medida</com:Name>
+          <com:Name xml:lang="fr">Unité de mesure</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_UNIT_MEASURE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="UNIT_MULT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).UNIT_MULT">
+          <com:Name xml:lang="en">Unit multiplier</com:Name>
+          <com:Name xml:lang="es">Multiplicador</com:Name>
+          <com:Name xml:lang="fr">Multiplicateur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_UNIT_MULT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="REPRESENTED_VARIABLE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).REPRESENTED_VARIABLE">
+          <com:Name xml:lang="en">Represented Variable</com:Name>
+          <com:Name xml:lang="es">Variable representada</com:Name>
+          <com:Name xml:lang="fr">Variable representée</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_REPRESENTED_VARIABLE" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="TIME_FORMAT" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_ILOSTAT(1.0).TIME_FORMAT">
+          <com:Name xml:lang="en">Time format</com:Name>
+          <com:Name xml:lang="es">Formato de Tiempo</com:Name>
+          <com:Name xml:lang="fr">Format utilisé</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_TIME_FORMAT" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+      </str:ConceptScheme>
+      <str:ConceptScheme id="CS_NOTE_TYPE" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.ConceptScheme=ILO:CS_NOTE_TYPE(1.0)" agencyID="ILO" version="1.0" isFinal="true">
+        <com:Name xml:lang="en">Note types</com:Name>
+        <str:Concept id="MET_T28" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T28">
+          <com:Name xml:lang="en">Base year for indexes</com:Name>
+          <com:Name xml:lang="es">Año base para los índices</com:Name>
+          <com:Name xml:lang="fr">Année de base pour les indices</com:Name>
+        </str:Concept>
+        <str:Concept id="MET_T29" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T29">
+          <com:Name xml:lang="en">Base year for weights</com:Name>
+          <com:Name xml:lang="es">Año base para las ponderaciones</com:Name>
+          <com:Name xml:lang="fr">Année de base pour les poids</com:Name>
+        </str:Concept>
+        <str:Concept id="MET_T30" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T30">
+          <com:Name xml:lang="en">Local currency</com:Name>
+          <com:Name xml:lang="es">Moneda local</com:Name>
+          <com:Name xml:lang="fr">Monnaie locale</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_CURRENCY" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T31" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T31">
+          <com:Name xml:lang="en">Trade union membership coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de la sindicalización</com:Name>
+          <com:Name xml:lang="fr">Couverture de l'affiliation syndicale</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T31" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T32" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T32">
+          <com:Name xml:lang="en">Collective bargaining coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de las negociaciones colectivas</com:Name>
+          <com:Name xml:lang="fr">Couverture des négociations collectives</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T32" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I9" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I9">
+          <com:Name xml:lang="en">Unit</com:Name>
+          <com:Name xml:lang="es">Unidad</com:Name>
+          <com:Name xml:lang="fr">Unité</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I9" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S11" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S11">
+          <com:Name xml:lang="en">Temporary change in source</com:Name>
+          <com:Name xml:lang="es">Cambio Temporal en la fuente</com:Name>
+          <com:Name xml:lang="fr">Changement temporaire de la source</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S11" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T34" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T34">
+          <com:Name xml:lang="en">Components of earnings/wages</com:Name>
+          <com:Name xml:lang="es">Componentes de las ganancias/los salarios</com:Name>
+          <com:Name xml:lang="fr">Composantes des gains/salaires</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T34" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C7" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C7">
+          <com:Name xml:lang="en">Nonstandard duration of unemployment</com:Name>
+          <com:Name xml:lang="es">Duración del desempleo no estándar</com:Name>
+          <com:Name xml:lang="fr">Durée du chômage non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C7" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I11" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I11">
+          <com:Name xml:lang="en">Break in series</com:Name>
+          <com:Name xml:lang="es">Ruptura en la serie</com:Name>
+          <com:Name xml:lang="fr">Rupture de série</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I11" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I13" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I13">
+          <com:Name xml:lang="en">Remarks</com:Name>
+          <com:Name xml:lang="es">Observaciones</com:Name>
+          <com:Name xml:lang="fr">Remarques</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I13" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T33" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T33">
+          <com:Name xml:lang="en">Working time concept</com:Name>
+          <com:Name xml:lang="es">Concepto de tiempo de trabajo</com:Name>
+          <com:Name xml:lang="fr">Notion de temps de travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T33" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I12" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I12">
+          <com:Name xml:lang="en">Frequency</com:Name>
+          <com:Name xml:lang="es">Frecuencia</com:Name>
+          <com:Name xml:lang="fr">Fréquence</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I12" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C1">
+          <com:Name xml:lang="en">Nonstandard COICOP classification</com:Name>
+          <com:Name xml:lang="es">Clasificación CCIF no estándar</com:Name>
+          <com:Name xml:lang="fr">Classification COICOP non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C1" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C4" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C4">
+          <com:Name xml:lang="en">Nonstandard occupation</com:Name>
+          <com:Name xml:lang="es">Ocupación no estándar</com:Name>
+          <com:Name xml:lang="fr">Profession non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C4" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C6" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C6">
+          <com:Name xml:lang="en">Nonstandard age group</com:Name>
+          <com:Name xml:lang="es">Grupo de edad no estándar</com:Name>
+          <com:Name xml:lang="fr">Groupe d'âge non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C6" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C2">
+          <com:Name xml:lang="en">Nonstandard status in employment group</com:Name>
+          <com:Name xml:lang="es">Grupo situación en el empleo no estándar</com:Name>
+          <com:Name xml:lang="fr">Groupe de la situation dans la profession non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C2" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C3">
+          <com:Name xml:lang="en">Nonstandard education level</com:Name>
+          <com:Name xml:lang="es">Nivel de educación no estándar</com:Name>
+          <com:Name xml:lang="fr">Niveau de l'éducation non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C3" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C5" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C5">
+          <com:Name xml:lang="en">Nonstandard economic activity</com:Name>
+          <com:Name xml:lang="es">Actividad económica no estándar</com:Name>
+          <com:Name xml:lang="fr">Activité économique non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C5" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S3">
+          <com:Name xml:lang="en">Data reference period</com:Name>
+          <com:Name xml:lang="es">Período de referencia de los datos</com:Name>
+          <com:Name xml:lang="fr">Période de référence des données</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S3" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S4" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S4">
+          <com:Name xml:lang="en">Geographical coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura geográfica</com:Name>
+          <com:Name xml:lang="fr">Couverture géographique</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S4" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S5" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S5">
+          <com:Name xml:lang="en">Population coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de la población</com:Name>
+          <com:Name xml:lang="fr">Couverture de la population</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S5" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S6" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S6">
+          <com:Name xml:lang="en">Establishment size coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de tamaño de los establecimientos</com:Name>
+          <com:Name xml:lang="fr">Couverture des tailles des établissements</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S6" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S7" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S7">
+          <com:Name xml:lang="en">Institutional sector coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de sectores institucionales</com:Name>
+          <com:Name xml:lang="fr">Couverture des secteurs institutionnels</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S7" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S8" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S8">
+          <com:Name xml:lang="en">Economic activity coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de las actividades económicas</com:Name>
+          <com:Name xml:lang="fr">Couverture des activités économiques</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S8" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S9" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S9">
+          <com:Name xml:lang="en">Reference group coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura del grupo de referencia</com:Name>
+          <com:Name xml:lang="fr">Couverture du groupe de référence</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S9" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S10" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S10">
+          <com:Name xml:lang="en">System of national accounts</com:Name>
+          <com:Name xml:lang="es">Sistema de cuentas nacionales</com:Name>
+          <com:Name xml:lang="fr">Système de comptabilité nationale</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S10" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T2">
+          <com:Name xml:lang="en">Age coverage - minimum age</com:Name>
+          <com:Name xml:lang="es">Cobertura de edad - edad mínima</com:Name>
+          <com:Name xml:lang="fr">Couverture d'âge - âge minimum</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T2" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T3">
+          <com:Name xml:lang="en">Age coverage - maximum age</com:Name>
+          <com:Name xml:lang="es">Cobertura de edad - edad máxima</com:Name>
+          <com:Name xml:lang="fr">Couverture d'âge - âge maximum</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T3" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T4" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T4">
+          <com:Name xml:lang="en">Threshold used to define time-related underemployment</com:Name>
+          <com:Name xml:lang="es">Límite utilizado para definir el subempleo por insuficiencia de horas</com:Name>
+          <com:Name xml:lang="fr">Seuil utilisé pour définir le sous-emploi lié à la durée du travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T4" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T5" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T5">
+          <com:Name xml:lang="en">Unemployment definition</com:Name>
+          <com:Name xml:lang="es">Definición de la desocupación</com:Name>
+          <com:Name xml:lang="fr">Définition du chômage</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T5" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T6" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T6">
+          <com:Name xml:lang="en">Labour cost concept</com:Name>
+          <com:Name xml:lang="es">Concepto del costo de la mano de obra</com:Name>
+          <com:Name xml:lang="fr">Concept de coût de la main-d'oeuvre</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T6" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T7" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T7">
+          <com:Name xml:lang="en">Time unit</com:Name>
+          <com:Name xml:lang="es">Unidad de tiempo</com:Name>
+          <com:Name xml:lang="fr">Unité de temps</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T7" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T8" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T8">
+          <com:Name xml:lang="en">Central tendency measure</com:Name>
+          <com:Name xml:lang="es">Medida de tendencia central</com:Name>
+          <com:Name xml:lang="fr">Mesure de tendance centrale</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T8" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T9" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T9">
+          <com:Name xml:lang="en">Value type</com:Name>
+          <com:Name xml:lang="es">Tipo de valor</com:Name>
+          <com:Name xml:lang="fr">Type de valeur</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T9" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T10" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T10">
+          <com:Name xml:lang="en">Accounting concept</com:Name>
+          <com:Name xml:lang="es">Concepto contable</com:Name>
+          <com:Name xml:lang="fr">Concept comptable</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T10" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T11" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T11">
+          <com:Name xml:lang="en">Job coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de los empleos</com:Name>
+          <com:Name xml:lang="fr">Couverture des emplois</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T11" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T12" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T12">
+          <com:Name xml:lang="en">Working time arrangement coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura del ordenamiento del tiempo de trabajo</com:Name>
+          <com:Name xml:lang="fr">Couverture des accords sur le temps de travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T12" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T13" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T13">
+          <com:Name xml:lang="en">Coverage of occupational injuries</com:Name>
+          <com:Name xml:lang="es">Cobertura de lesiones profesionales</com:Name>
+          <com:Name xml:lang="fr">Couverture des lésions professionnelles</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T13" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T14" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T14">
+          <com:Name xml:lang="en">Type of cases of occupational injuries</com:Name>
+          <com:Name xml:lang="es">Tipo de casos de lesiones profesionales</com:Name>
+          <com:Name xml:lang="fr">Type de cas des lésions professionnelles</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T14" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T16" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T16">
+          <com:Name xml:lang="en">Labour dispute actions coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura de las acciones de los conflictos de trabajo</com:Name>
+          <com:Name xml:lang="fr">Couverture des actions liées aux conflits du travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T16" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T17" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T17">
+          <com:Name xml:lang="en">Lower limit on coverage of strikes and lockouts</com:Name>
+          <com:Name xml:lang="es">Límite inferior de cobertura de huelgas y cierres patronales</com:Name>
+          <com:Name xml:lang="fr">Seuil inférieur pour la couverture des grèves et lock-outs</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T17" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T18" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T18">
+          <com:Name xml:lang="en">Poverty threshold reporting unit</com:Name>
+          <com:Name xml:lang="es">Unidad de reporte del umbral de pobreza</com:Name>
+          <com:Name xml:lang="fr">Unité de rapport du seuil de pauvreté</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T18" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T19" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T19">
+          <com:Name xml:lang="en">Income distribution measurement unit</com:Name>
+          <com:Name xml:lang="es">Unidad de medida de la distribución del ingreso</com:Name>
+          <com:Name xml:lang="fr">Unité de mesure de la distribution du revenu</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T19" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T20" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T20">
+          <com:Name xml:lang="en">Poverty line method</com:Name>
+          <com:Name xml:lang="es">Método de línea de pobreza</com:Name>
+          <com:Name xml:lang="fr">Méthode utilisée pour le seuil de pauvreté</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T20" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T21" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T21">
+          <com:Name xml:lang="en">Income (or expenditure) components</com:Name>
+          <com:Name xml:lang="es">Componentes del ingreso (o del gasto)</com:Name>
+          <com:Name xml:lang="fr">Composants du revenu (ou des dépenses)</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T21" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T22" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T22">
+          <com:Name xml:lang="en">Absolute vs. Relative value of income distribution</com:Name>
+          <com:Name xml:lang="es">Distribución del ingreso en valor absoluto o relativo</com:Name>
+          <com:Name xml:lang="fr">Valeur absolue ou relative de la distribution du revenu</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T22" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T23" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T23">
+          <com:Name xml:lang="en">Reference period of trade union membership</com:Name>
+          <com:Name xml:lang="es">Período de referencia para afiliaciones a sindicatos</com:Name>
+          <com:Name xml:lang="fr">Période de référence pour l'adhésion aux syndicats</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T23" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T24" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T24">
+          <com:Name xml:lang="en">Reference period of collective bargaining coverage</com:Name>
+          <com:Name xml:lang="es">Período de referencia para la cobertura de la negociación colectiva</com:Name>
+          <com:Name xml:lang="fr">Période de référence pour la couverture des négociations collectives</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T24" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T25" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T25">
+          <com:Name xml:lang="en">Measure of output</com:Name>
+          <com:Name xml:lang="es">Medida del producto</com:Name>
+          <com:Name xml:lang="fr">Mesure de la production</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T25" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T26" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T26">
+          <com:Name xml:lang="en">Type of prices</com:Name>
+          <com:Name xml:lang="es">Tipo de precios</com:Name>
+          <com:Name xml:lang="fr">Type de prix</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T26" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T27" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T27">
+          <com:Name xml:lang="en">Employment income components</com:Name>
+          <com:Name xml:lang="es">Componentes del ingreso del empleo</com:Name>
+          <com:Name xml:lang="fr">Composants du revenu de l'emploi</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T27" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I4" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I4">
+          <com:Name xml:lang="en">Type of rate</com:Name>
+          <com:Name xml:lang="es">Tipo de tasa</com:Name>
+          <com:Name xml:lang="fr">Type de taux</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I4" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I5" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I5">
+          <com:Name xml:lang="en">Time unit for measuring time lost</com:Name>
+          <com:Name xml:lang="es">Unidad de tiempo para medir el tiempo perdido</com:Name>
+          <com:Name xml:lang="fr">Unité de temps pour mesurer le temps perdu</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I5" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I7" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I7">
+          <com:Name xml:lang="en">Workers involved</com:Name>
+          <com:Name xml:lang="es">Trabajadores implicados</com:Name>
+          <com:Name xml:lang="fr">Travailleurs impliqués</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I7" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S1">
+          <com:Name xml:lang="en">Survey name (without year)</com:Name>
+          <com:Name xml:lang="es">Nombre de la encuesta (sin año)</com:Name>
+          <com:Name xml:lang="fr">Nom de l'enquête (sans l'année)</com:Name>
+        </str:Concept>
+        <str:Concept id="MET_I1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I1">
+          <com:Name xml:lang="en">Time period for occurrence of death</com:Name>
+          <com:Name xml:lang="es">Período de tiempo para las muertes acaecidas</com:Name>
+          <com:Name xml:lang="fr">Période de temps pour la survenue de la mort</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I1" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I2" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I2">
+          <com:Name xml:lang="en">Minimum period of absence from work</com:Name>
+          <com:Name xml:lang="es">Período mínimo de ausencia del trabajo</com:Name>
+          <com:Name xml:lang="fr">Durée minimale d'absence du travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I2" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I3" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I3">
+          <com:Name xml:lang="en">Definition of permanent incapacity</com:Name>
+          <com:Name xml:lang="es">Definición de incapacidad permanente</com:Name>
+          <com:Name xml:lang="fr">Définition d'incapacité permanente</com:Name>
+        </str:Concept>
+        <str:Concept id="MET_I6" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I6">
+          <com:Name xml:lang="en">Type of severity rate for strikes and lockouts</com:Name>
+          <com:Name xml:lang="es">Tipo de tasa de severidad de huelgas y cierres patronales</com:Name>
+          <com:Name xml:lang="fr">Type de taux de gravité des grèves et lock-outs</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I6" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C9" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C9">
+          <com:Name xml:lang="en">Adjustments</com:Name>
+          <com:Name xml:lang="es">Ajustes</com:Name>
+          <com:Name xml:lang="fr">Ajustements</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C9" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C10" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C10">
+          <com:Name xml:lang="en">Type of primary source</com:Name>
+          <com:Name xml:lang="es">Tipo de fuente primaria</com:Name>
+          <com:Name xml:lang="fr">Type de source primaire</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C10" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C12" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C12">
+          <com:Name xml:lang="en">Rural / urban areas coverage definition</com:Name>
+          <com:Name xml:lang="es">zonas rurales / urbanas cobertura definición</com:Name>
+          <com:Name xml:lang="fr">Couverture des zones rurales / urbaines définition</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C12" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_R1" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_R1">
+          <com:Name xml:lang="en">Repository</com:Name>
+          <com:Name xml:lang="es">Repositorio</com:Name>
+          <com:Name xml:lang="fr">Repositoire</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_R1" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C8" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C8">
+          <com:Name xml:lang="en">Nonstandard hours band</com:Name>
+          <com:Name xml:lang="es">Banda de horas no estándar</com:Name>
+          <com:Name xml:lang="fr">Bande des heures non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C8" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C11" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C11">
+          <com:Name xml:lang="en">Data quality</com:Name>
+          <com:Name xml:lang="es">Calidad de los datos</com:Name>
+          <com:Name xml:lang="fr">Qualité des données</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C11" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S13" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S13">
+          <com:Name xml:lang="en">Name &amp; email of contact person</com:Name>
+          <com:Name xml:lang="es">Nombre y correo electrónico de la persona de contacto</com:Name>
+          <com:Name xml:lang="fr">Nom et courriel de la personne de contact</com:Name>
+        </str:Concept>
+        <str:Concept id="MET_T35" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T35">
+          <com:Name xml:lang="en">Time-related underemployment concept</com:Name>
+          <com:Name xml:lang="es">Concepto del subempleo por insuficiencia de horas</com:Name>
+          <com:Name xml:lang="fr">Concept du sous-emploi lié à la durée du travail</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T35" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T36" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T36">
+          <com:Name xml:lang="en">Definition of migrants</com:Name>
+          <com:Name xml:lang="es">Definición de los migrantes</com:Name>
+          <com:Name xml:lang="fr">Définition des migrants</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T36" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I8" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I8">
+          <com:Name xml:lang="en">Criteria used to define rural/urban areas</com:Name>
+          <com:Name xml:lang="es">Criterios para definir las zonas rurales/urbanas</com:Name>
+          <com:Name xml:lang="fr">Critères pour définir les zones rurales/ubaines</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I8" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T37" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T37">
+          <com:Name xml:lang="en">Socio-economic vulnerability</com:Name>
+          <com:Name xml:lang="es">Vulnerabilidad socio- económica</com:Name>
+          <com:Name xml:lang="fr">Vulnérabilité socio -économique</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T37" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T38" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T38">
+          <com:Name xml:lang="en">Informal employment definition</com:Name>
+          <com:Name xml:lang="es">Definición del empleo informal</com:Name>
+          <com:Name xml:lang="fr">Définition de l'emploi informel</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T38" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I10" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I10">
+          <com:Name xml:lang="en">Part-time threshold</com:Name>
+          <com:Name xml:lang="es">Límite utilizado para el tiempo parcial</com:Name>
+          <com:Name xml:lang="fr">Seuil utilisé pour le temps partiel</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I10" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I16" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I16">
+          <com:Name xml:lang="en">Source of funding of parental leave cash benefits</com:Name>
+          <com:Name xml:lang="es">Fuente de financiación de las prestaciones monetarias de permiso parental</com:Name>
+          <com:Name xml:lang="fr">Source de financement des prestations en espèces de congé parental</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I16" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I18" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I18">
+          <com:Name xml:lang="en">Nursing/childcare facilities at workplace (or childcare reimbursement)</com:Name>
+          <com:Name xml:lang="es">Instalaciones para la lactancia o guardería en el lugar de trabajo (o reembolso por el cuidado de niños)</com:Name>
+          <com:Name xml:lang="fr">Installations pour l'allaitement maternel ou garde d'enfants au lieu de travail (ou le remboursement de garde d'enfants)</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I18" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I14" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I14">
+          <com:Name xml:lang="en">Source of funding of maternity leave cash benefits</com:Name>
+          <com:Name xml:lang="es">Fuente de financiación de las prestaciones monetarias de permiso de maternidad</com:Name>
+          <com:Name xml:lang="fr">Source de financement des prestations en espèces de congé de maternité</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I14" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I15" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I15">
+          <com:Name xml:lang="en">Source of funding of paternity leave cash benefits</com:Name>
+          <com:Name xml:lang="es">Fuente de financiación de las prestaciones monetarias de permiso de paternidad</com:Name>
+          <com:Name xml:lang="fr">Source de financement des prestations en espèces de congé de paternité</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I15" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I17" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I17">
+          <com:Name xml:lang="en">Entitlement to paid nursing breaks</com:Name>
+          <com:Name xml:lang="es">Derecho a las interrupciones para la lactancia pagados</com:Name>
+          <com:Name xml:lang="fr">Droit aux pauses d'allaitement rémunérées</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I17" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I19" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I19">
+          <com:Name xml:lang="en">Type of minimum wage</com:Name>
+          <com:Name xml:lang="es">Tipo de salario mínimo</com:Name>
+          <com:Name xml:lang="fr">Type de salaire minimum</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I19" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I22" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I22">
+          <com:Name xml:lang="en">Economic units in the informal sector</com:Name>
+          <com:Name xml:lang="es">Unidades económicas en el sector informal</com:Name>
+          <com:Name xml:lang="fr">Unités économiques dans le secteur informel</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I22" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I20" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I20">
+          <com:Name xml:lang="en">Informal employees</com:Name>
+          <com:Name xml:lang="es">Asalariados informales</com:Name>
+          <com:Name xml:lang="fr">Salariés informels</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I20" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I21" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I21">
+          <com:Name xml:lang="en">Workers in informal employment</com:Name>
+          <com:Name xml:lang="es">Trabajadores en el empleo informal</com:Name>
+          <com:Name xml:lang="fr">Travailleurs dans l'emploi informel</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I21" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C13" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C13">
+          <com:Name xml:lang="en">Nonstandard sector</com:Name>
+          <com:Name xml:lang="es">Sector no estándar</com:Name>
+          <com:Name xml:lang="fr">Secteur non standard</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C13" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I26" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I26">
+          <com:Name xml:lang="en">Minimum duration of disability</com:Name>
+          <com:Name xml:lang="es">Duración mínima de la discapacidad</com:Name>
+          <com:Name xml:lang="fr">Durée minimale de l'handicap</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I26" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I24" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I24">
+          <com:Name xml:lang="en">Type of difficulties</com:Name>
+          <com:Name xml:lang="es">Tipo de dificultades</com:Name>
+          <com:Name xml:lang="fr">Type de difficultés</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I24" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I25" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I25">
+          <com:Name xml:lang="en">Level of difficulties</com:Name>
+          <com:Name xml:lang="es">Nivel de dificultades</com:Name>
+          <com:Name xml:lang="fr">Niveau de difficultés</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I25" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_T39" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_T39">
+          <com:Name xml:lang="en">Criteria used to define persons with disability</com:Name>
+          <com:Name xml:lang="es">Criterios utilizados para definir las personas con discapacidad</com:Name>
+          <com:Name xml:lang="fr">Critères utilisés pour définir les personnes handicapées</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_T39" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I27" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I27">
+          <com:Name xml:lang="en">Coverage of temporary employees</com:Name>
+          <com:Name xml:lang="es">Cobertura de asalariados temporarios</com:Name>
+          <com:Name xml:lang="fr">Couverture des salariés temporaires</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I27" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I23" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I23">
+          <com:Name xml:lang="en">Public sector coverage</com:Name>
+          <com:Name xml:lang="es">Cobertura del sector público</com:Name>
+          <com:Name xml:lang="fr">Couverture du secteur public</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I23" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S14" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S14">
+          <com:Name xml:lang="en">Employment definition</com:Name>
+          <com:Name xml:lang="es">Definición de empleo</com:Name>
+          <com:Name xml:lang="fr">Définition de l'emploi</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S14" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C94" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C94">
+          <com:Name xml:lang="en">ThirdCountryTotalization</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C94" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C95" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C95">
+          <com:Name xml:lang="en">PostedWorkers-InitialPeriod</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C95" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C96" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C96">
+          <com:Name xml:lang="en">PostedWorkers-MaxPeriod</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C96" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C97" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C97">
+          <com:Name xml:lang="en">SelfEmployed-InitialPeriod</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C97" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C98" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C98">
+          <com:Name xml:lang="en">SelfEmployed-MaxPeriod</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C98" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S16" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S16">
+          <com:Name xml:lang="en">Reference period for measuring volunteer work</com:Name>
+          <com:Name xml:lang="es">Periodo de referencia para medir el trabajo voluntario</com:Name>
+          <com:Name xml:lang="fr">Période de référence pour mesurer le travail bénévole</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S16" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_S15" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_S15">
+          <com:Name xml:lang="en">Data collection period</com:Name>
+          <com:Name xml:lang="es">Período de recogida de datos</com:Name>
+          <com:Name xml:lang="fr">Période de collecte des données</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_S15" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="MET_I33" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).MET_I33">
+          <com:Name xml:lang="en">ILO calculation</com:Name>
+          <com:Name xml:lang="es">Cálculo de la OIT</com:Name>
+          <com:Name xml:lang="fr">Calcul du BIT</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_I33" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C90" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C90">
+          <com:Name xml:lang="en">Months for temporary</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C90" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C92" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C92">
+          <com:Name xml:lang="en">Date of entry into force</com:Name>
+          <com:Name xml:lang="es">...</com:Name>
+          <com:Name xml:lang="fr">...</com:Name>
+          <str:CoreRepresentation>
+            <str:Enumeration>
+              <Ref id="CL_NOTE_C92" version="1.0" agencyID="ILO" package="codelist" class="Codelist"/>
+            </str:Enumeration>
+          </str:CoreRepresentation>
+        </str:Concept>
+        <str:Concept id="OVN_C91" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C91">
+          <com:Name xml:lang="en">Agreement ID</com:Name>
+        </str:Concept>
+        <str:Concept id="OVN_C93" urn="urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ILO:CS_NOTE_TYPE(1.0).OVN_C93">
+          <com:Name xml:lang="en">Document link</com:Name>
+        </str:Concept>
+      </str:ConceptScheme>
+    </str:Concepts>
+  </mes:Structures>
+</mes:Structure>

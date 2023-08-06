@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v5.2.3-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF380</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T08:39:17.8485207-04:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Dataflows xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Dataflow id="DF_WITS_Tariff_TRAINS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_Tariff_TRAINS(1.1)" agencyID="WBG_WITS" version="1.1" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS - UNCTAD TRAINS Tariff Data</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Data flow to access WITS - UNCTAD TRAINS Preferential and most-favored-nation (MFN) tariff rates</Description>
+        <Structure>
+          <Ref id="TARIFF_TRAINS" version="1.1" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Development" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Development(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Devlopment</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Development indicators such as GDP, GNI per capita, Trade Balance, Trade and Services trade as percentage of GPD is available from WDI</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Tariff" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Tariff(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Tariff</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Tariff information like number of trade agreements, simple and weighted average tariff, duty free imports value and duty free goods share in percentage are available</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_WITS_TradeStats_Trade" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WBG_WITS:DF_WITS_TradeStats_Trade(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS TradeStats Trade</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Trade data such as total exports, number or products exported, exporting and importing partner countries and exported and imported product groups are available</Description>
+        <Structure>
+          <Ref id="TRADESTATS" version="1.0" agencyID="WBG_WITS" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+    </Dataflows>
+    <CategorySchemes xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <CategoryScheme id="WITS_Data" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=WBG_WITS:WITS_Data(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="true">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">2</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS Tariff and Trade Data</Name>
+        <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS provides access to international merchandise trade, tariff and non-tariff measures (NTM)  data. Country profile section provides countries exports, imports and tariff statistics along with relevant development data.</Description>
+        <Category id="WITS_Tariff" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=WBG_WITS:WITS_Data(1.0).WITS_Tariff">
+          <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+            <Annotation>
+              <AnnotationType>CategoryScheme_node_order</AnnotationType>
+              <AnnotationText xml:lang="en">1</AnnotationText>
+            </Annotation>
+          </Annotations>
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS Tariff Data</Name>
+          <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Provides access to tariff data available through WITS Website</Description>
+        </Category>
+        <Category id="WITS_TradeStats" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=WBG_WITS:WITS_Data(1.0).WITS_TradeStats">
+          <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+            <Annotation>
+              <AnnotationType>CategoryScheme_node_order</AnnotationType>
+              <AnnotationText xml:lang="en">1</AnnotationText>
+            </Annotation>
+          </Annotations>
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">WITS Trade Statistics</Name>
+          <Description xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Country Trade Statistics</Description>
+        </Category>
+      </CategoryScheme>
+    </CategorySchemes>
+    <Categorisations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Categorisation id="6834A4B0DFEDF99DBD1AE1EECB928AACDE6D3478" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=WBG_WITS:6834A4B0DFEDF99DBD1AE1EECB928AACDE6D3478(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_WITS_Tariff_TRAINS@WBG_WITS@11@WITS_Data@10@WITS_Tariff</Name>
+        <Source>
+          <Ref id="DF_WITS_Tariff_TRAINS" version="1.1" agencyID="WBG_WITS" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="WITS_Tariff" maintainableParentID="WITS_Data" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="6D32FE70BD5879A59A5EF85CC7A9A2FD9BFAD3E4" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=WBG_WITS:6D32FE70BD5879A59A5EF85CC7A9A2FD9BFAD3E4(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_WITS_TradeStats_Trade@WBG_WITS@10@WITS_Data@10@WITS_TradeStats</Name>
+        <Source>
+          <Ref id="DF_WITS_TradeStats_Trade" version="1.0" agencyID="WBG_WITS" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="WITS_TradeStats" maintainableParentID="WITS_Data" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="97F1A4B924A2F3BECBD03CDEFF47DBB4F32E2CC2" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=WBG_WITS:97F1A4B924A2F3BECBD03CDEFF47DBB4F32E2CC2(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_WITS_TradeStats_Development@WBG_WITS@10@WITS_Data@10@WITS_TradeStats</Name>
+        <Source>
+          <Ref id="DF_WITS_TradeStats_Development" version="1.0" agencyID="WBG_WITS" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="WITS_TradeStats" maintainableParentID="WITS_Data" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+      <Categorisation id="A5720FF67FD25A130B474AB9FD589BE04BDB57B1" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=WBG_WITS:A5720FF67FD25A130B474AB9FD589BE04BDB57B1(1.0)" agencyID="WBG_WITS" version="1.0" isFinal="false">
+        <Annotations xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+          <Annotation>
+            <AnnotationType>CategoryScheme_node_order</AnnotationType>
+            <AnnotationText xml:lang="en">0</AnnotationText>
+          </Annotation>
+        </Annotations>
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">DF_WITS_TradeStats_Tariff@WBG_WITS@10@WITS_Data@10@WITS_TradeStats</Name>
+        <Source>
+          <Ref id="DF_WITS_TradeStats_Tariff" version="1.0" agencyID="WBG_WITS" package="datastructure" class="Dataflow" xmlns="" />
+        </Source>
+        <Target>
+          <Ref id="WITS_TradeStats" maintainableParentID="WITS_Data" maintainableParentVersion="1.0" agencyID="WBG_WITS" package="categoryscheme" class="Category" xmlns="" />
+        </Target>
+      </Categorisation>
+    </Categorisations>
+  </Structures>
+</Structure>

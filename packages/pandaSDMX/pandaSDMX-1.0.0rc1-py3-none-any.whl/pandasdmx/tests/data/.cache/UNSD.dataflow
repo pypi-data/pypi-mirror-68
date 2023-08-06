@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.1.2.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF43</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-05-10T14:39:16.4981812+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="DF_SDG_GLB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_SDG_GLB(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Global SDG Monitoring Data</common:Name>
+        <structure:Structure>
+          <Ref id="SDG" version="1.0" agencyID="IAEG-SDGs" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_COUNTRYDATA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_COUNTRYDATA(1.4)" agencyID="UNSD" version="1.4" isFinal="true">
+        <common:Name xml:lang="en">SDMX-CountryData</common:Name>
+        <structure:Structure>
+          <Ref id="CountryData" version="1.4" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_SEEA_SUPPLY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_SUPPLY(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SEEA SUPPLY DATA</common:Name>
+        <structure:Structure>
+          <Ref id="SEEANRG" version="1.0" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_SEEA_USE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_USE(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SEEA USE DATA</common:Name>
+        <structure:Structure>
+          <Ref id="SEEANRG" version="1.0" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNData_EnergyBalance" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_EnergyBalance(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Energy Balance DataFlow</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_ENERGY_BALANCE_UNDATA" version="1.0" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNData_UNFCC" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_UNFCC(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SDMX_GHG_UNDATA</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_GHG_UNDATA" version="1.0" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+  </message:Structures>
+</message:Structure>

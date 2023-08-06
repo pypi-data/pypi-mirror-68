@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v7.1.2.0-->
+<message:Structure xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:structure="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <message:Header>
+    <message:ID>IDREF40</message:ID>
+    <message:Test>false</message:Test>
+    <message:Prepared>2020-05-10T14:39:12.8304161+02:00</message:Prepared>
+    <message:Sender id="Unknown" />
+    <message:Receiver id="Unknown" />
+  </message:Header>
+  <message:Structures>
+    <structure:Dataflows>
+      <structure:Dataflow id="NASEC_IDCFINA_A" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_A(1.9)" agencyID="ESTAT" version="1.9" isFinal="true">
+        <common:Name xml:lang="en">Annual financial accounts</common:Name>
+        <structure:Structure>
+          <Ref id="NA_SEC" version="1.9" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="NASEC_IDCFINA_Q" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCFINA_Q(1.9)" agencyID="ESTAT" version="1.9" isFinal="true">
+        <common:Name xml:lang="en">Quarterly financial accounts</common:Name>
+        <structure:Structure>
+          <Ref id="NA_SEC" version="1.9" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="NASEC_IDCNFSA_A" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_A(1.9)" agencyID="ESTAT" version="1.9" isFinal="true">
+        <common:Name xml:lang="en">Annual non-financial accounts</common:Name>
+        <structure:Structure>
+          <Ref id="NA_SEC" version="1.9" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="NASEC_IDCNFSA_Q" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NASEC_IDCNFSA_Q(1.9)" agencyID="ESTAT" version="1.9" isFinal="true">
+        <common:Name xml:lang="en">Quarterly non-financial accounts</common:Name>
+        <structure:Structure>
+          <Ref id="NA_SEC" version="1.9" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="NA_MAIN" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=ESTAT:NA_MAIN(1.9)" agencyID="ESTAT" version="1.9" isFinal="true">
+        <common:Name xml:lang="en">NA Main Aggregates</common:Name>
+        <structure:Structure>
+          <Ref id="NA_MAIN" version="1.9" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_MDG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=IAEG:DF_UNDATA_MDG(1.2)" agencyID="IAEG" version="1.2" isFinal="true">
+        <common:Name xml:lang="en">SDMX-MDGs</common:Name>
+        <structure:Structure>
+          <Ref id="MDG" version="1.2" agencyID="IAEG" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNData_UIS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UIS:DF_UNData_UIS(1.1)" agencyID="UIS" version="1.1" isFinal="true">
+        <common:Name xml:lang="en">SDMX_UIS_UNData</common:Name>
+        <structure:Structure>
+          <Ref id="UIS_UNData" version="1.1" agencyID="UIS" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_SDG_GLB" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_SDG_GLB(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Global SDG Monitoring Data</common:Name>
+        <structure:Structure>
+          <Ref id="SDG" version="1.0" agencyID="IAEG-SDGs" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_COUNTRYDATA" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_COUNTRYDATA(1.4)" agencyID="UNSD" version="1.4" isFinal="true">
+        <common:Name xml:lang="en">SDMX-CountryData</common:Name>
+        <structure:Structure>
+          <Ref id="CountryData" version="1.4" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_SEEA_SUPPLY" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_SUPPLY(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SEEA SUPPLY DATA</common:Name>
+        <structure:Structure>
+          <Ref id="SEEANRG" version="1.0" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_SEEA_USE" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNDATA_SEEA_USE(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SEEA USE DATA</common:Name>
+        <structure:Structure>
+          <Ref id="SEEANRG" version="1.0" agencyID="ESTAT" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNData_EnergyBalance" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_EnergyBalance(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Name xml:lang="en">Energy Balance DataFlow</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_ENERGY_BALANCE_UNDATA" version="1.0" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNData_UNFCC" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=UNSD:DF_UNData_UNFCC(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">SDMX_GHG_UNDATA</common:Name>
+        <structure:Structure>
+          <Ref id="DSD_GHG_UNDATA" version="1.0" agencyID="UNSD" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+      <structure:Dataflow id="DF_UNDATA_WDI" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=WB:DF_UNDATA_WDI(1.0)" agencyID="WB" version="1.0" isFinal="true">
+        <common:Name xml:lang="en">WB World Development Indicators</common:Name>
+        <structure:Structure>
+          <Ref id="WDI" version="1.0" agencyID="WB" package="datastructure" class="DataStructure" />
+        </structure:Structure>
+      </structure:Dataflow>
+    </structure:Dataflows>
+    <structure:CategorySchemes>
+      <structure:CategoryScheme id="UNdata_Categories" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.CategoryScheme=UNSD:UNdata_Categories(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">UNdata Category Scheme</common:Name>
+        <structure:Category id="CRIME" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).CRIME">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Crime</common:Name>
+        </structure:Category>
+        <structure:Category id="EDUCATION" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).EDUCATION">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Education</common:Name>
+        </structure:Category>
+        <structure:Category id="ENERGY" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).ENERGY">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Energy</common:Name>
+        </structure:Category>
+        <structure:Category id="ENVIRONMENT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).ENVIRONMENT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Environment</common:Name>
+        </structure:Category>
+        <structure:Category id="FINANCE" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).FINANCE">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Finance</common:Name>
+        </structure:Category>
+        <structure:Category id="FOOD" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).FOOD">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Food and Agriculture</common:Name>
+        </structure:Category>
+        <structure:Category id="GENDER" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).GENDER">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Gender</common:Name>
+        </structure:Category>
+        <structure:Category id="HEALTH" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).HEALTH">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Health</common:Name>
+        </structure:Category>
+        <structure:Category id="HIV" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).HIV">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">HIV/AIDS</common:Name>
+        </structure:Category>
+        <structure:Category id="DEVELOPMENT_INDICATORS" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).DEVELOPMENT_INDICATORS">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Development Indicators</common:Name>
+        </structure:Category>
+        <structure:Category id="INDUSTRY" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).INDUSTRY">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Industry</common:Name>
+        </structure:Category>
+        <structure:Category id="ICT" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).ICT">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Information and Communication Technology</common:Name>
+        </structure:Category>
+        <structure:Category id="LABOUR" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).LABOUR">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Labour</common:Name>
+        </structure:Category>
+        <structure:Category id="NATIONAL_ACCOUNTS" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).NATIONAL_ACCOUNTS">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">National Accounts</common:Name>
+        </structure:Category>
+        <structure:Category id="ODA" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).ODA">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Official Development Assistance</common:Name>
+        </structure:Category>
+        <structure:Category id="POPULATION" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).POPULATION">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Population</common:Name>
+        </structure:Category>
+        <structure:Category id="REFUGEES" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).REFUGEES">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Refugees</common:Name>
+        </structure:Category>
+        <structure:Category id="TOURISM" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).TOURISM">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Tourism</common:Name>
+        </structure:Category>
+        <structure:Category id="TRADE" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).TRADE">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Trade</common:Name>
+        </structure:Category>
+        <structure:Category id="Environmental_Accounting" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Category=UNSD:UNdata_Categories(1.0).Environmental_Accounting">
+          <common:Name xml:lang="en">Environmental Accounts</common:Name>
+        </structure:Category>
+      </structure:CategoryScheme>
+    </structure:CategorySchemes>
+    <structure:Categorisations>
+      <structure:Categorisation id="0EA2206C2115061F7C2EF4F6D9E58EA07F002A5A" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:0EA2206C2115061F7C2EF4F6D9E58EA07F002A5A(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNData_EnergyBalance@UNSD@10@UNdata_Categories@10@ENERGY</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNData_EnergyBalance" version="1.0" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="ENERGY" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="3830A0CE4486FA5E71943BB215C1BA96C0EB46F8" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:3830A0CE4486FA5E71943BB215C1BA96C0EB46F8(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">NASEC_IDCNFSA_A@ESTAT@19@UNdata_Categories@10@NATIONAL_ACCOUNTS</common:Name>
+        <structure:Source>
+          <Ref id="NASEC_IDCNFSA_A" version="1.9" agencyID="ESTAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="64E95A0E6555674F64A982D736AFAD3A0AC116A4" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:64E95A0E6555674F64A982D736AFAD3A0AC116A4(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">4</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">NA_MAIN@ESTAT@19@UNdata_Categories@10@NATIONAL_ACCOUNTS</common:Name>
+        <structure:Source>
+          <Ref id="NA_MAIN" version="1.9" agencyID="ESTAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="6B2D7AFD54F22D0FEF8899123C136BA31C65E9AE" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:6B2D7AFD54F22D0FEF8899123C136BA31C65E9AE(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">NASEC_IDCFINA_Q@ESTAT@19@UNdata_Categories@10@NATIONAL_ACCOUNTS</common:Name>
+        <structure:Source>
+          <Ref id="NASEC_IDCFINA_Q" version="1.9" agencyID="ESTAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="97A8272E8DFA123BE48224E2F7DCFCCF16FFDEF5" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:97A8272E8DFA123BE48224E2F7DCFCCF16FFDEF5(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">NASEC_IDCNFSA_Q@ESTAT@19@UNdata_Categories@10@NATIONAL_ACCOUNTS</common:Name>
+        <structure:Source>
+          <Ref id="NASEC_IDCNFSA_Q" version="1.9" agencyID="ESTAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="9AC40DE92DFA01C1D372D0E97C0CB9078978AA00" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:9AC40DE92DFA01C1D372D0E97C0CB9078978AA00(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNDATA_SEEA_USE@UNSD@10@UNdata_Categories@10@Environmental_Accounting</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNDATA_SEEA_USE" version="1.0" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="Environmental_Accounting" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="C110C1129AD05670EEA6684F9098BE768B1D1497" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:C110C1129AD05670EEA6684F9098BE768B1D1497(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">NASEC_IDCFINA_A@ESTAT@19@UNdata_Categories@10@NATIONAL_ACCOUNTS</common:Name>
+        <structure:Source>
+          <Ref id="NASEC_IDCFINA_A" version="1.9" agencyID="ESTAT" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="NATIONAL_ACCOUNTS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="C81583328812B3519E38D0BD0F67DB9D01D7778A" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:C81583328812B3519E38D0BD0F67DB9D01D7778A(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">5</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_SDG_GLB@UNSD@10@UNdata_Categories@10@DEVELOPMENT_INDICATORS</common:Name>
+        <structure:Source>
+          <Ref id="DF_SDG_GLB" version="1.0" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="DEVELOPMENT_INDICATORS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="DF_UNDATA_COUNTRYDATA@UNSD@14@UNdata_Categories@10" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:DF_UNDATA_COUNTRYDATA@UNSD@14@UNdata_Categories@10(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNDATA_COUNTRYDATA@UNSD@14@UNdata_Categories@10</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNDATA_COUNTRYDATA" version="1.4" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="DEVELOPMENT_INDICATORS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="DF_UNDATA_MDG@IAEG@12@UNdata_Categories@10@DEVELOP" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:DF_UNDATA_MDG@IAEG@12@UNdata_Categories@10@DEVELOP(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">2</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNDATA_MDG@IAEG@12@UNdata_Categories@10@DEVELOP</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNDATA_MDG" version="1.2" agencyID="IAEG" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="DEVELOPMENT_INDICATORS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="DF_UNDATA_WDI@WB@10@UNdata_Categories@10@DEVELOPME" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:DF_UNDATA_WDI@WB@10@UNdata_Categories@10@DEVELOPME(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">5</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNDATA_WDI@WB@10@UNdata_Categories@10@DEVELOPME</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNDATA_WDI" version="1.0" agencyID="WB" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="DEVELOPMENT_INDICATORS" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="DF_UNData_UIS@UIS@11@UNdata_Categories@10@EDUCATIO" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:DF_UNData_UIS@UIS@11@UNdata_Categories@10@EDUCATIO(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">2</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNData_UIS@UIS@11@UNdata_Categories@10@EDUCATIO</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNData_UIS" version="1.1" agencyID="UIS" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="EDUCATION" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="DF_UNData_UNFCC@ESTAT@10@UNdata_Categories@10@ENVI" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:DF_UNData_UNFCC@ESTAT@10@UNdata_Categories@10@ENVI(1.0)" agencyID="UNSD" version="1.0" isFinal="true">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">3</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNData_UNFCC@ESTAT@10@UNdata_Categories@10@ENVI</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNData_UNFCC" version="1.0" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="ENVIRONMENT" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+      <structure:Categorisation id="EC7FD93057BE5E36C3EA4B729A6274D05DAA2887" urn="urn:sdmx:org.sdmx.infomodel.categoryscheme.Categorisation=UNSD:EC7FD93057BE5E36C3EA4B729A6274D05DAA2887(1.0)" agencyID="UNSD" version="1.0" isFinal="false">
+        <common:Annotations>
+          <common:Annotation>
+            <common:AnnotationType>CategoryScheme_node_order</common:AnnotationType>
+            <common:AnnotationText xml:lang="en">0</common:AnnotationText>
+          </common:Annotation>
+        </common:Annotations>
+        <common:Name xml:lang="en">DF_UNDATA_SEEA_SUPPLY@UNSD@10@UNdata_Categories@10@Environmental_Accounting</common:Name>
+        <structure:Source>
+          <Ref id="DF_UNDATA_SEEA_SUPPLY" version="1.0" agencyID="UNSD" package="datastructure" class="Dataflow" />
+        </structure:Source>
+        <structure:Target>
+          <Ref id="Environmental_Accounting" maintainableParentID="UNdata_Categories" maintainableParentVersion="1.0" agencyID="UNSD" package="categoryscheme" class="Category" />
+        </structure:Target>
+      </structure:Categorisation>
+    </structure:Categorisations>
+  </message:Structures>
+</message:Structure>

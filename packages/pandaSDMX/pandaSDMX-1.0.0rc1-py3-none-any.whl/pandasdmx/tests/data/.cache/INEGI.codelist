@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.8.0-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF1</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T07:36:42.767528-05:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Codelists xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Codelist id="CL_ADJUSTMENT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=INEGI:CL_ADJUSTMENT(1.0)" agencyID="INEGI" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Seasonal adjustment</Name>
+        <Code id="NSA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_ADJUSTMENT(1.0).NSA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Not seasonally adjusted</Name>
+        </Code>
+        <Code id="SA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_ADJUSTMENT(1.0).SA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Seasonally adjusted</Name>
+        </Code>
+        <Code id="W" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_ADJUSTMENT(1.0).W">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Working day adjusted, not seasonally adjusted</Name>
+        </Code>
+      </Codelist>
+      <Codelist id="CL_SUBJECT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=INEGI:CL_SUBJECT(2.2)" agencyID="INEGI" version="2.2" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Subjects</Name>
+        <Code id="BPBLIN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPBLIN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Balance on income</Name>
+        </Code>
+        <Code id="BPBLSE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPBLSE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Balance on services</Name>
+        </Code>
+        <Code id="BPBLTD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPBLTD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Balance on goods</Name>
+        </Code>
+        <Code id="BPBLTF01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPBLTF01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Balance on current transfers</Name>
+        </Code>
+        <Code id="BPBLTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPBLTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Current Account</Name>
+        </Code>
+        <Code id="BPCATC01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCATC01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Capital account, credit</Name>
+        </Code>
+        <Code id="BPCATD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCATD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Capital account, debit</Name>
+        </Code>
+        <Code id="BPCATT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCATT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Capital Balance</Name>
+        </Code>
+        <Code id="BPCFTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCFTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Capital and financial balance</Name>
+        </Code>
+        <Code id="BPCRIN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCRIN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Income, credit</Name>
+        </Code>
+        <Code id="BPCRSE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCRSE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Services, credit</Name>
+        </Code>
+        <Code id="BPCRTD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCRTD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Goods, exports</Name>
+        </Code>
+        <Code id="BPCRTF01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPCRTF01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Transfers, credit</Name>
+        </Code>
+        <Code id="BPDBIN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPDBIN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Income, debit</Name>
+        </Code>
+        <Code id="BPDBSE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPDBSE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Services, debit</Name>
+        </Code>
+        <Code id="BPDBTD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPDBTD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Goods, imports</Name>
+        </Code>
+        <Code id="BPDBTF01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPDBTF01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Transfers, debit</Name>
+        </Code>
+        <Code id="BPEOTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPEOTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Net Errors and Omissions</Name>
+        </Code>
+        <Code id="BPFADI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFADI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Direct investment, net</Name>
+        </Code>
+        <Code id="BPFADI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFADI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Direct investment abroad</Name>
+        </Code>
+        <Code id="BPFADI03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFADI03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Direct investment in reporting economy</Name>
+        </Code>
+        <Code id="BPFAFD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAFD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Financial derivatives, net</Name>
+        </Code>
+        <Code id="BPFAFD02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAFD02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Financial derivatives, assets</Name>
+        </Code>
+        <Code id="BPFAOI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAOI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Other investment, net</Name>
+        </Code>
+        <Code id="BPFAOI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAOI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Other investment, assets</Name>
+        </Code>
+        <Code id="BPFAOI03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAOI03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Other investment, liabilities</Name>
+        </Code>
+        <Code id="BPFAOI05" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAOI05">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Other investment, assets incl. reserves</Name>
+        </Code>
+        <Code id="BPFAPI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAPI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Portfolio investment, assets</Name>
+        </Code>
+        <Code id="BPFAPI03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAPI03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Portfolio investment, liabilities</Name>
+        </Code>
+        <Code id="BPFAPI10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFAPI10">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Portfolio investment, net</Name>
+        </Code>
+        <Code id="BPFARA02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFARA02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Reserve assets</Name>
+        </Code>
+        <Code id="BPFATT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BPFATT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Financial Balance</Name>
+        </Code>
+        <Code id="BSBUCT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSBUCT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Business situation: present</Name>
+        </Code>
+        <Code id="BSBUFT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSBUFT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Business situation: future</Name>
+        </Code>
+        <Code id="BSCICP01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSCICP01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Confidence indicator</Name>
+        </Code>
+        <Code id="BSCURT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSCURT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Rate of capacity utilisation</Name>
+        </Code>
+        <Code id="BSEMFT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSEMFT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Employment: future tendency</Name>
+        </Code>
+        <Code id="BSFGLV01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSFGLV01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Finished goods stocks: level</Name>
+        </Code>
+        <Code id="BSFGTE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSFGTE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Finished goods stocks: tendency</Name>
+        </Code>
+        <Code id="BSOBLV01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSOBLV01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Order books: level</Name>
+        </Code>
+        <Code id="BSOBTE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSOBTE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Order books: tendency</Name>
+        </Code>
+        <Code id="BSOITE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSOITE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Orders inflow/Demand: tendency</Name>
+        </Code>
+        <Code id="BSPRFT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSPRFT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Production: future tendency</Name>
+        </Code>
+        <Code id="BSPRTE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSPRTE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Production: tendency</Name>
+        </Code>
+        <Code id="BSSPFT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSSPFT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Selling prices: future tendency</Name>
+        </Code>
+        <Code id="BSXRLV01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).BSXRLV01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Manufacturing - Exports order books: level</Name>
+        </Code>
+        <Code id="CP010000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP010000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Food and non-alcoholic beverages</Name>
+        </Code>
+        <Code id="CP020000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP020000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Alcoholic beverages, tobacco and narcotics</Name>
+        </Code>
+        <Code id="CP020100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP020100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Alcoholic beverages</Name>
+        </Code>
+        <Code id="CP030000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP030000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Clothing and footwear</Name>
+        </Code>
+        <Code id="CP040000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Housing, water, electricity, gas and other fuels</Name>
+        </Code>
+        <Code id="CP040100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Actual rentals for housing</Name>
+        </Code>
+        <Code id="CP040200" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040200">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Imputed rentals for housing</Name>
+        </Code>
+        <Code id="CP040300" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040300">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Maintenance &amp; repairs of the dwellings</Name>
+        </Code>
+        <Code id="CP040400" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040400">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Water supply and miscellaneous services relating to the dwelling</Name>
+        </Code>
+        <Code id="CP040500" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040500">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Electricity, gas and other fuels</Name>
+        </Code>
+        <Code id="CP040501" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040501">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Electricity</Name>
+        </Code>
+        <Code id="CP040503" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP040503">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Liquid fuel</Name>
+        </Code>
+        <Code id="CP050000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP050000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Furnishings, household equipment and  routine household maintenance</Name>
+        </Code>
+        <Code id="CP060000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP060000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Health</Name>
+        </Code>
+        <Code id="CP070000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP070000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Transport</Name>
+        </Code>
+        <Code id="CP070202" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP070202">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Fuels and lubricants for personal transport equipment</Name>
+        </Code>
+        <Code id="CP080000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP080000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Communication</Name>
+        </Code>
+        <Code id="CP090000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP090000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Recreation and culture</Name>
+        </Code>
+        <Code id="CP100000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP100000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Education</Name>
+        </Code>
+        <Code id="CP110000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP110000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Restaurants and hotels</Name>
+        </Code>
+        <Code id="CP110101" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP110101">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Restaurants and hotels/Restaurant, café and the like</Name>
+        </Code>
+        <Code id="CP120000" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CP120000">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Miscellaneous goods and services</Name>
+        </Code>
+        <Code id="CPALCY01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPALCY01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices Index - All items - City</Name>
+        </Code>
+        <Code id="CPALNC01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPALNC01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices Index – National Core Inflation</Name>
+        </Code>
+        <Code id="CPALTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPALTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - All Items</Name>
+        </Code>
+        <Code id="CPALWE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPALWE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - All items, Wage earn. cler.</Name>
+        </Code>
+        <Code id="CPGREN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGREN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Energy</Name>
+        </Code>
+        <Code id="CPGRFR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRFR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Food and non-Alcoholic beverages Including restaurant</Name>
+        </Code>
+        <Code id="CPGRGO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRGO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Goods</Name>
+        </Code>
+        <Code id="CPGRHO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRHO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Housing</Name>
+        </Code>
+        <Code id="CPGRHO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRHO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Housing  excluding imputed rentals for housing/Total</Name>
+        </Code>
+        <Code id="CPGRLE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRLE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - All Items excluding Food and Energy</Name>
+        </Code>
+        <Code id="CPGRLH01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRLH01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Services less Housing</Name>
+        </Code>
+        <Code id="CPGRLH02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRLH02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Services less Housing (housing excluding imputed rentals for housing)</Name>
+        </Code>
+        <Code id="CPGRSE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CPGRSE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices - Services</Name>
+        </Code>
+        <Code id="CSINFT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).CSINFT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer - Prices: future tendency</Name>
+        </Code>
+        <Code id="EMECSAST" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).EMECSAST">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Short term employment</Name>
+        </Code>
+        <Code id="HOHWIS03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).HOHWIS03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly hours worked: industry and services</Name>
+        </Code>
+        <Code id="HOHWMN02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).HOHWMN02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Weekly hours worked: manufacturing</Name>
+        </Code>
+        <Code id="HOHWMN03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).HOHWMN03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly hours worked: manufacturing</Name>
+        </Code>
+        <Code id="HOHWPR02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).HOHWPR02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Weekly hours worked: private sector</Name>
+        </Code>
+        <Code id="HOOVMN02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).HOOVMN02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Weekly overtime hours: manufacturing</Name>
+        </Code>
+        <Code id="IR3TCD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IR3TCD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yield 91-day CDs</Name>
+        </Code>
+        <Code id="IR3TCP01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IR3TCP01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Rate 3-month prime corporate paper</Name>
+        </Code>
+        <Code id="IR3TED01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IR3TED01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDR Reserve assets</Name>
+        </Code>
+        <Code id="IR3TIB01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IR3TIB01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">3 Month Interbank Rate</Name>
+        </Code>
+        <Code id="IRLOHO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRLOHO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yield 5-year housing bonds</Name>
+        </Code>
+        <Code id="IRLONG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRLONG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yield Moody's AAA corporate bonds</Name>
+        </Code>
+        <Code id="IRLTCT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRLTCT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yield &gt;2-year government bonds</Name>
+        </Code>
+        <Code id="IRLTLT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRLTLT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">10 Year Government Bonds</Name>
+        </Code>
+        <Code id="IRSTCB01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRSTCB01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Central bank rate</Name>
+        </Code>
+        <Code id="IRSTCI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRSTCI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Overnight Interbank Rate</Name>
+        </Code>
+        <Code id="IRSTFR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRSTFR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Federal funds rate</Name>
+        </Code>
+        <Code id="IRSTPI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).IRSTPI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Prime rate</Name>
+        </Code>
+        <Code id="LCCOMM01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCCOMM01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Labour cost: mining &amp; manufacturing - Final figures</Name>
+        </Code>
+        <Code id="LCCOPR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCCOPR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Labour cost: private sector - Final figures</Name>
+        </Code>
+        <Code id="LCEAIN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAIN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly earnings: industry excl. construction</Name>
+        </Code>
+        <Code id="LCEAMM01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAMM01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly earnings: mining &amp; manufacturing</Name>
+        </Code>
+        <Code id="LCEAMN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAMN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly Earnings (manufacturing)</Name>
+        </Code>
+        <Code id="LCEAMN03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAMN03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly earnings: manufacturing</Name>
+        </Code>
+        <Code id="LCEAMN04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAMN04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Real monthly earnings: manufacturing</Name>
+        </Code>
+        <Code id="LCEAMN06" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAMN06">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Wages and salaries: manufacturing</Name>
+        </Code>
+        <Code id="LCEAPR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAPR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly earnings: private sector</Name>
+        </Code>
+        <Code id="LCEAPR03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEAPR03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly earnings: private sector</Name>
+        </Code>
+        <Code id="LCEATT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEATT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly earnings: all activities</Name>
+        </Code>
+        <Code id="LCEATT03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEATT03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly earnings: all activities</Name>
+        </Code>
+        <Code id="LCEATT04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCEATT04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Real monthly earnings: all activities</Name>
+        </Code>
+        <Code id="LCLCGV01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCGV01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment cost index: government</Name>
+        </Code>
+        <Code id="LCLCMM01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCMM01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Labour cost: mining &amp; manufacturing - Preliminary figures</Name>
+        </Code>
+        <Code id="LCLCMN08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCMN08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly compensation: manufacturing</Name>
+        </Code>
+        <Code id="LCLCPR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCPR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Labour cost: private sector - Preliminary figures</Name>
+        </Code>
+        <Code id="LCLCPR08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCPR08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly compensation: private sector</Name>
+        </Code>
+        <Code id="LCLCTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCLCTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment cost index: all activities</Name>
+        </Code>
+        <Code id="LCULMN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCULMN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unit labour cost: manufacturing</Name>
+        </Code>
+        <Code id="LCWRMN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCWRMN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly wage rate: manufacturing</Name>
+        </Code>
+        <Code id="LCWRPR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LCWRPR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Hourly wage rate: private sector</Name>
+        </Code>
+        <Code id="LMJVTTUV" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LMJVTTUV">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Job vacancies: unfilled</Name>
+        </Code>
+        <Code id="LMUNRL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LMUNRL">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment level: registered</Name>
+        </Code>
+        <Code id="LMUNRR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LMUNRR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment rate: registered</Name>
+        </Code>
+        <Code id="LOCOBEOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOBEOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment: Future tendency (CBRT)</Name>
+        </Code>
+        <Code id="LOCOBFOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOBFOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Finished goods stocks: level (CBRT)</Name>
+        </Code>
+        <Code id="LOCOBOOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOBOOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">New ord. domestic mkt: tendency (CBRT)</Name>
+        </Code>
+        <Code id="LOCOODOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOODOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Net new orders - durable goods</Name>
+        </Code>
+        <Code id="LOCOPQOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOPQOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of copper</Name>
+        </Code>
+        <Code id="LOCOSTOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOSTOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Discounted treasury auction interest rate</Name>
+        </Code>
+        <Code id="LOCOTAOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOTAOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total Departures Of Israelis</Name>
+        </Code>
+        <Code id="LOCOTXOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOTXOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Prospects for exports (CBRT)</Name>
+        </Code>
+        <Code id="MABMM201" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).MABMM201">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monetary aggregate M2</Name>
+        </Code>
+        <Code id="MABMM301" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).MABMM301">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monetary aggregate M3</Name>
+        </Code>
+        <Code id="MANMM101" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).MANMM101">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monetary aggregate M1</Name>
+        </Code>
+        <Code id="MASDTT03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).MASDTT03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Savings deposits, real persons</Name>
+        </Code>
+        <Code id="NAGICE02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).NAGICE02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Personal cons. exp. less food less energy</Name>
+        </Code>
+        <Code id="NANIPI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).NANIPI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Disposable personal income</Name>
+        </Code>
+        <Code id="NANIPI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).NANIPI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Personal income</Name>
+        </Code>
+        <Code id="ODCNNO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ODCNNO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">New orders for total construction</Name>
+        </Code>
+        <Code id="ODCNPI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ODCNPI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Permits issued for buildings</Name>
+        </Code>
+        <Code id="ODCNPI03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ODCNPI03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Permits issued for dwellings</Name>
+        </Code>
+        <Code id="ODMNTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ODMNTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Orders for total manufactured goods (Volume)</Name>
+        </Code>
+        <Code id="ODMNTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ODMNTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Orders for total manufactured goods (Value)</Name>
+        </Code>
+        <Code id="OPCNRE01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).OPCNRE01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Prices of materials for new dwellings (Materials)</Name>
+        </Code>
+        <Code id="OPCNTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).OPCNTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Cost of construction price index</Name>
+        </Code>
+        <Code id="PIEAEN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAEN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Energy</Name>
+        </Code>
+        <Code id="PIEAEN02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAEN02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Energy</Name>
+        </Code>
+        <Code id="PIEAFD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAFD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Manufacture of foods products</Name>
+        </Code>
+        <Code id="PIEAFD02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAFD02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Manufacture of food products</Name>
+        </Code>
+        <Code id="PIEAMI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAMI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Mining and quarrying activities</Name>
+        </Code>
+        <Code id="PIEAMI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAMI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Mining and quarrying activities</Name>
+        </Code>
+        <Code id="PIEAMP01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAMP01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Manufacturing</Name>
+        </Code>
+        <Code id="PIEAMP02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAMP02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Manufacturing</Name>
+        </Code>
+        <Code id="PIEARP01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEARP01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Refined petroleum products</Name>
+        </Code>
+        <Code id="PIEATI01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEATI01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Industrial activities</Name>
+        </Code>
+        <Code id="PIEATI02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEATI02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Industrial activities</Name>
+        </Code>
+        <Code id="PISPFG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPFG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Finished goods</Name>
+        </Code>
+        <Code id="PISPFG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPFG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Finished goods</Name>
+        </Code>
+        <Code id="PISPIG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPIG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Intermediate goods</Name>
+        </Code>
+        <Code id="PISPIG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPIG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Intermediate goods</Name>
+        </Code>
+        <Code id="PISPPR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPPR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Primacy products</Name>
+        </Code>
+        <Code id="PISPPR02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PISPPR02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Primacy products</Name>
+        </Code>
+        <Code id="PITGCD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGCD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Durable consumer goods</Name>
+        </Code>
+        <Code id="PITGCD02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGCD02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Durable consumer goods</Name>
+        </Code>
+        <Code id="PITGCG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGCG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Consumer goods</Name>
+        </Code>
+        <Code id="PITGCG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGCG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Consumer goods</Name>
+        </Code>
+        <Code id="PITGIG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGIG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Intermediate goods</Name>
+        </Code>
+        <Code id="PITGIG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGIG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Intermediate goods</Name>
+        </Code>
+        <Code id="PITGND01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGND01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Non Durable consumer goods</Name>
+        </Code>
+        <Code id="PITGND02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGND02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Non Durable consumer goods</Name>
+        </Code>
+        <Code id="PITGVG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGVG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Investment goods</Name>
+        </Code>
+        <Code id="PITGVG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PITGVG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Investments goods</Name>
+        </Code>
+        <Code id="PRCNBD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRCNBD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of buildings</Name>
+        </Code>
+        <Code id="PRCNDW01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRCNDW01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of dwellings</Name>
+        </Code>
+        <Code id="PRCNTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRCNTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total construction</Name>
+        </Code>
+        <Code id="PREND401" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PREND401">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production and distribution of electricity, gas, steam and air conditioning supply</Name>
+        </Code>
+        <Code id="PRENEL01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRENEL01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of electricity</Name>
+        </Code>
+        <Code id="PRENTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRENTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total energy</Name>
+        </Code>
+        <Code id="PRINTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRINTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total industry</Name>
+        </Code>
+        <Code id="PRINTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRINTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total industry including construction</Name>
+        </Code>
+        <Code id="PRMITO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMITO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production in total mining</Name>
+        </Code>
+        <Code id="PRMNCG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNCG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total manufactured consumer goods</Name>
+        </Code>
+        <Code id="PRMNCG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNCG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of manufactured durable consumer goods</Name>
+        </Code>
+        <Code id="PRMNCG03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNCG03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of manufactured non-durable consumer goods</Name>
+        </Code>
+        <Code id="PRMNIG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNIG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total manufactured intermediate goods</Name>
+        </Code>
+        <Code id="PRMNTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production in total manufacturing</Name>
+        </Code>
+        <Code id="PRMNTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production in total manufacturing and mining</Name>
+        </Code>
+        <Code id="PRMNVG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PRMNVG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Production of total manufactured investment goods</Name>
+        </Code>
+        <Code id="SLMNCD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured durable consumer goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNCD02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCD02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured durable consumer goods (Value)</Name>
+        </Code>
+        <Code id="SLMNCN01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCN01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured non-durable consumer goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNCN02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCN02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured non-durable consumer goods (Value)</Name>
+        </Code>
+        <Code id="SLMNCT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of total manufactured consumer goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNCT02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNCT02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of total manufactured consumer goods (Value)</Name>
+        </Code>
+        <Code id="SLMNIG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNIG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured intermediate goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNIG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNIG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured intermediate goods (Value)</Name>
+        </Code>
+        <Code id="SLMNTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of total manufactured goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of total manufactured goods (Value)</Name>
+        </Code>
+        <Code id="SLMNVG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNVG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured investment goods (Volume)</Name>
+        </Code>
+        <Code id="SLMNVG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLMNVG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Sales of manufactured intermediate goods (Value)</Name>
+        </Code>
+        <Code id="SLRTCR01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLRTCR01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total motor vehicles registrations</Name>
+        </Code>
+        <Code id="SLRTCR03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLRTCR03">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Passenger car registrations</Name>
+        </Code>
+        <Code id="SLRTTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLRTTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total retail trade (Volume)</Name>
+        </Code>
+        <Code id="SLRTTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLRTTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total retail trade (Value)</Name>
+        </Code>
+        <Code id="SLWHTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLWHTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total wholesale trade (Volume)</Name>
+        </Code>
+        <Code id="SLWHTO02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SLWHTO02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Total wholesale trade (Value)</Name>
+        </Code>
+        <Code id="SPASTT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).SPASTT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">All Share</Name>
+        </Code>
+        <Code id="STMNCG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).STMNCG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Stocks of manufactured consumer goods (Volume)</Name>
+        </Code>
+        <Code id="STMNIG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).STMNIG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Stocks of manufactured intermediate goods (Volume)</Name>
+        </Code>
+        <Code id="STMNIS01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).STMNIS01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Ratio of inventories to shipments</Name>
+        </Code>
+        <Code id="STMNTO01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).STMNTO01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Stocks of total manufactured goods (Volume)</Name>
+        </Code>
+        <Code id="STMNVG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).STMNVG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Stocks of manufactured investment goods (Volume)</Name>
+        </Code>
+        <Code id="ULQCAE02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Manufacturing (D)</Name>
+        </Code>
+        <Code id="ULQCAE04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Construction (F)</Name>
+        </Code>
+        <Code id="ULQCAE09" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE09">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Mining and quarrying (C)</Name>
+        </Code>
+        <Code id="ULQCAE10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE10">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Electricity, gas and water supply (E)</Name>
+        </Code>
+        <Code id="ULQCAE13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE13">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Wholesale and retail trade (G)</Name>
+        </Code>
+        <Code id="ULQCAE14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE14">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Hotels and restaurants (H)</Name>
+        </Code>
+        <Code id="ULQCAE15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE15">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Transport and storage</Name>
+        </Code>
+        <Code id="ULQCAE16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE16">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Communication</Name>
+        </Code>
+        <Code id="ULQCAE18" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE18">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Financial intermediation (J)</Name>
+        </Code>
+        <Code id="ULQCAE19" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE19">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Real estate, renting and business activities (K)</Name>
+        </Code>
+        <Code id="ULQCAE20" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE20">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Real estate &amp; renting &amp; leasing</Name>
+        </Code>
+        <Code id="ULQCAE21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCAE21">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Average earnings - Business services</Name>
+        </Code>
+        <Code id="ULQCCE08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCCE08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Personal Income and Its Disposition - Private industries</Name>
+        </Code>
+        <Code id="ULQCEM09" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM09">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Mining and quarrying (C)</Name>
+        </Code>
+        <Code id="ULQCEM10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM10">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Electricity, gas and water supply (E)</Name>
+        </Code>
+        <Code id="ULQCEM13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM13">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Wholesale and retail trade (G)</Name>
+        </Code>
+        <Code id="ULQCEM14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM14">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Hotels and restaurants (H)</Name>
+        </Code>
+        <Code id="ULQCEM15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM15">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Transport and storage</Name>
+        </Code>
+        <Code id="ULQCEM16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM16">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Communication</Name>
+        </Code>
+        <Code id="ULQCEM18" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM18">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Financial intermediation (J)</Name>
+        </Code>
+        <Code id="ULQCEM20" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM20">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Real estate &amp; renting &amp; leasing</Name>
+        </Code>
+        <Code id="ULQCEM21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEM21">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Business activities</Name>
+        </Code>
+        <Code id="ULQCEY02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Manufacturing (D)</Name>
+        </Code>
+        <Code id="ULQCEY04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Construction (F)</Name>
+        </Code>
+        <Code id="ULQCEY09" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY09">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Construction (F)</Name>
+        </Code>
+        <Code id="ULQCEY10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY10">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Electricity, gas and water supply (E)</Name>
+        </Code>
+        <Code id="ULQCEY15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY15">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Transport and storage</Name>
+        </Code>
+        <Code id="ULQCEY16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY16">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Communication</Name>
+        </Code>
+        <Code id="ULQCEY18" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY18">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Financial intermediation (J)</Name>
+        </Code>
+        <Code id="ULQCEY19" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY19">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Real estate, renting and business activities (K)</Name>
+        </Code>
+        <Code id="ULQCEY20" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY20">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Wholesale trade (G)</Name>
+        </Code>
+        <Code id="ULQCEY21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCEY21">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees - Retail trade (G)</Name>
+        </Code>
+        <Code id="ULQCWS01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Total</Name>
+        </Code>
+        <Code id="ULQCWS02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Manufacturing (D)</Name>
+        </Code>
+        <Code id="ULQCWS04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Construction (F)</Name>
+        </Code>
+        <Code id="ULQCWS06" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS06">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Financial and business services (J_K)</Name>
+        </Code>
+        <Code id="ULQCWS09" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS09">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Mining and quarrying (C)</Name>
+        </Code>
+        <Code id="ULQCWS10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS10">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Electricity, gas and water supply (E)</Name>
+        </Code>
+        <Code id="ULQCWS11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS11">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Retail trade</Name>
+        </Code>
+        <Code id="ULQCWS12" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS12">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Wholesale trade</Name>
+        </Code>
+        <Code id="ULQCWS13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS13">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Wholesale and retail trade (G)</Name>
+        </Code>
+        <Code id="ULQCWS15" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS15">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Transport and storage</Name>
+        </Code>
+        <Code id="ULQCWS16" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS16">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Communication</Name>
+        </Code>
+        <Code id="ULQCWS22" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS22">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross wages &amp; salaries - Electricity, gas, water, and waste services</Name>
+        </Code>
+        <Code id="ULQCWS23" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS23">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Accommodation and food services</Name>
+        </Code>
+        <Code id="ULQCWS24" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS24">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Transport, postal, and  warehousing</Name>
+        </Code>
+        <Code id="ULQCWS25" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS25">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Information, media, and telecommunications</Name>
+        </Code>
+        <Code id="ULQCWS26" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS26">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Financial and insurance services</Name>
+        </Code>
+        <Code id="ULQCWS27" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS27">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Rental, hiring, and real estate services</Name>
+        </Code>
+        <Code id="ULQCWS28" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQCWS28">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gross Wages and Salaries - Professional, scientific, technical, admin &amp; support services</Name>
+        </Code>
+        <Code id="ULQVVA08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).ULQVVA08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Real Gross Value Added by Sector - Business nonfarm</Name>
+        </Code>
+        <Code id="UNUCIU01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).UNUCIU01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Insured unemployed</Name>
+        </Code>
+        <Code id="WPIATT01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).WPIATT01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Wholesale Prices - Total</Name>
+        </Code>
+        <Code id="WSCNDW01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).WSCNDW01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Work started for dwellings</Name>
+        </Code>
+        <Code id="XFORSD01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XFORSD01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDR Reserve assets</Name>
+        </Code>
+        <Code id="XFORUS01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XFORUS01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Reserve assets</Name>
+        </Code>
+        <Code id="XTEXVA01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTEXVA01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Exports</Name>
+        </Code>
+        <Code id="XTEXVA04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTEXVA04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Exports f.o.b. to EU countries</Name>
+        </Code>
+        <Code id="XTEXVA08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTEXVA08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Exports: Mineral fuels, lubricants and related materials</Name>
+        </Code>
+        <Code id="XTIMVA01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTIMVA01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Imports</Name>
+        </Code>
+        <Code id="XTIMVA04" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTIMVA04">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Imports f.o.b. from EU countries</Name>
+        </Code>
+        <Code id="XTIMVA08" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).XTIMVA08">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Import c.i.f. of intermediate goods</Name>
+        </Code>
+        <Code id="LOCOBDOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOBDOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">CLI Manufacturing - Demand: future tendency</Name>
+        </Code>
+        <Code id="LOCOBXOR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LOCOBXOR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">CLI Manufacturing - Export orders inflow: tendency</Name>
+        </Code>
+        <Code id="PIEAEG01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAEG01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Total PPI Electricity, gas &amp; water supply</Name>
+        </Code>
+        <Code id="PIEAEG02" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).PIEAEG02">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Producer Prices - Domestic PPI Electricity, gas &amp; water supply</Name>
+        </Code>
+        <Code id="LFAC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFAC">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Active population (labour force)</Name>
+        </Code>
+        <Code id="LFEAAG" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEAAG">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, agriculture</Name>
+        </Code>
+        <Code id="LFEACN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEACN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, construction</Name>
+        </Code>
+        <Code id="LFEAIC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEAIC">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, industry, including construction</Name>
+        </Code>
+        <Code id="LFEAIN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEAIN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, industry, excluding construction</Name>
+        </Code>
+        <Code id="LFEAMN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEAMN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, manufacturing</Name>
+        </Code>
+        <Code id="LFEASE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEASE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, services</Name>
+        </Code>
+        <Code id="LFEM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFEM">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment</Name>
+        </Code>
+        <Code id="LFETFT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFETFT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, full time</Name>
+        </Code>
+        <Code id="LFETPT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFETPT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment, part time</Name>
+        </Code>
+        <Code id="LFESEE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFESEE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employees, total</Name>
+        </Code>
+        <Code id="LFIN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFIN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Inactive population</Name>
+        </Code>
+        <Code id="LFPO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFPO">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Population</Name>
+        </Code>
+        <Code id="LFUN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFUN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment:level</Name>
+        </Code>
+        <Code id="LFUTLT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFUTLT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment, long term</Name>
+        </Code>
+        <Code id="LFUTST" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFUTST">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment, short term</Name>
+        </Code>
+        <Code id="LFWA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LFWA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Population, working age</Name>
+        </Code>
+        <Code id="LRAC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRAC">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Activity rate</Name>
+        </Code>
+        <Code id="LREM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LREM">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment rate</Name>
+        </Code>
+        <Code id="LREP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LREP">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Employment to population rate</Name>
+        </Code>
+        <Code id="LRIN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRIN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Inactivity rate</Name>
+        </Code>
+        <Code id="LRUN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRUN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment:rate</Name>
+        </Code>
+        <Code id="LRUP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRUP">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment to population rate</Name>
+        </Code>
+        <Code id="OPCNSH01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).OPCNSH01">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Consumer Prices – Services</Name>
+        </Code>
+        <Code id="LMUNRLTT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LMUNRLTT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment level: registered (all persons)</Name>
+        </Code>
+        <Code id="LRUNTTTT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRUNTTTT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment:rate, all persons (ages 15 and over)</Name>
+        </Code>
+        <Code id="LRUNTTMA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRUNTTMA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment:rate, males (ages 15 and over)</Name>
+        </Code>
+        <Code id="LRUNTTFE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_SUBJECT(2.2).LRUNTTFE">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unemployment:rate, females (ages 15 and over)</Name>
+        </Code>
+      </Codelist>
+      <Codelist id="CL_UNIT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=INEGI:CL_UNIT(1.6)" agencyID="INEGI" version="1.6" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Unit code list</Name>
+        <Code id="BPA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).BPA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Barrels per day</Name>
+        </Code>
+        <Code id="BPM" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).BPM">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Barrels per month</Name>
+        </Code>
+        <Code id="JB" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).JB">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Jobs</Name>
+        </Code>
+        <Code id="N100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).N100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Normal=100</Name>
+        </Code>
+        <Code id="N50" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).N50">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Normal=50</Name>
+        </Code>
+        <Code id="RT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).RT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Ratio</Name>
+        </Code>
+        <Code id="RTT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).RTT">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Ratio to trend</Name>
+        </Code>
+        <Code id="PC" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).PC">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Percent</Name>
+        </Code>
+        <Code id="TNS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).TNS">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Tonnes</Name>
+        </Code>
+        <Code id="GWH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).GWH">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Gigawatt hour</Name>
+        </Code>
+        <Code id="M2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).M2">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Metres squared</Name>
+        </Code>
+        <Code id="DEC2014100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).DEC2014100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">December 2014=100</Name>
+        </Code>
+        <Code id="2014100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2014100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2014=100</Name>
+        </Code>
+        <Code id="2012100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2012100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2012=100</Name>
+        </Code>
+        <Code id="2011100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2011100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2011=100</Name>
+        </Code>
+        <Code id="2010100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2010100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2010=100</Name>
+        </Code>
+        <Code id="2008100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2008100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2008=100</Name>
+        </Code>
+        <Code id="DEC2008100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).DEC2008100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">December 2008=100</Name>
+        </Code>
+        <Code id="2006100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2006100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2006=100</Name>
+        </Code>
+        <Code id="2005100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2005100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2005=100</Name>
+        </Code>
+        <Code id="2000100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2000100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2000=100</Name>
+        </Code>
+        <Code id="1995100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).1995100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">1995=100</Name>
+        </Code>
+        <Code id="PCPA" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).PCPA">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Percent per annum</Name>
+        </Code>
+        <Code id="PR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).PR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Persons</Name>
+        </Code>
+        <Code id="AUD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).AUD">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Australian Dollar</Name>
+        </Code>
+        <Code id="BRL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).BRL">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Brazilian Real</Name>
+        </Code>
+        <Code id="CAD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).CAD">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Canadian Dollar</Name>
+        </Code>
+        <Code id="CHF" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).CHF">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Swiss Franc</Name>
+        </Code>
+        <Code id="CLP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).CLP">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Chilean Peso</Name>
+        </Code>
+        <Code id="CNY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).CNY">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yuan Renminbi</Name>
+        </Code>
+        <Code id="CZK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).CZK">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Czech Koruna</Name>
+        </Code>
+        <Code id="DKK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).DKK">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Danish Krone</Name>
+        </Code>
+        <Code id="EUR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).EUR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Euro</Name>
+        </Code>
+        <Code id="GBP" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).GBP">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Pound Sterling</Name>
+        </Code>
+        <Code id="HUF" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).HUF">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Forint</Name>
+        </Code>
+        <Code id="IDR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).IDR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Rupiah</Name>
+        </Code>
+        <Code id="ILS" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).ILS">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">New Israeli Sheqel</Name>
+        </Code>
+        <Code id="INR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).INR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Indian Rupee</Name>
+        </Code>
+        <Code id="ISK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).ISK">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Iceland Krona</Name>
+        </Code>
+        <Code id="JPY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).JPY">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Yen</Name>
+        </Code>
+        <Code id="KRW" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).KRW">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Won</Name>
+        </Code>
+        <Code id="MXN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).MXN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Mexican Peso</Name>
+        </Code>
+        <Code id="NOK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).NOK">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Norwegian Krone</Name>
+        </Code>
+        <Code id="NZD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).NZD">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">New Zealand Dollar</Name>
+        </Code>
+        <Code id="PLN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).PLN">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Zloty</Name>
+        </Code>
+        <Code id="RUB" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).RUB">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Russian Ruble</Name>
+        </Code>
+        <Code id="SEK" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).SEK">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Swedish Krona</Name>
+        </Code>
+        <Code id="TRY" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).TRY">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Turkish Lira</Name>
+        </Code>
+        <Code id="USD" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).USD">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">US Dollar</Name>
+        </Code>
+        <Code id="ZAR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).ZAR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Rand</Name>
+        </Code>
+        <Code id="RG" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).RG">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Registrations</Name>
+        </Code>
+        <Code id="MH" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).MH">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Monthly hours</Name>
+        </Code>
+        <Code id="DW" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).DW">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Dwellings</Name>
+        </Code>
+        <Code id="PCB" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).PCB">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Percent balance</Name>
+        </Code>
+        <Code id="SDR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).SDR">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDR Reserve assets</Name>
+        </Code>
+        <Code id="2013100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2013100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2013=100</Name>
+        </Code>
+        <Code id="2001100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2001100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2001=100</Name>
+        </Code>
+        <Code id="JUL2019100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).JUL2019100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">July 2019=100</Name>
+        </Code>
+        <Code id="JUN2015100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).JUN2015100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">June 2015=100</Name>
+        </Code>
+        <Code id="2FDEC2010100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2FDEC2010100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2nd half of December 2010=100</Name>
+        </Code>
+        <Code id="2FJUL2018100" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=INEGI:CL_UNIT(1.6).2FJUL2018100">
+          <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">2nd half of July 2018=100</Name>
+        </Code>
+      </Codelist>
+    </Codelists>
+  </Structures>
+</Structure>

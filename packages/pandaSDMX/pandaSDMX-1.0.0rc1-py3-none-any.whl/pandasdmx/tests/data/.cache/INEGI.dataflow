@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--NSI Web Service v6.8.0-->
+<Structure xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF2</ID>
+    <Test>false</Test>
+    <Prepared>2020-05-10T07:36:50.8733125-05:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Structures>
+    <Dataflows xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure">
+      <Dataflow id="DF_IMTS" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_IMTS(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">International Merchandise Trade Statistics Dataflow</Name>
+        <Structure>
+          <Ref id="IMTS" version="1.1" agencyID="UN" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_INFRA_ANNUAL_LABOUR" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_INFRA_ANNUAL_LABOUR(3.1)" agencyID="INEGI" version="3.1" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Infra-annual Labour</Name>
+        <Structure>
+          <Ref id="INFRA_ANNUAL_LABOUR" version="3.1" agencyID="OECD" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_SDG" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_SDG(1.0)" agencyID="INEGI" version="1.0" isFinal="true">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">SDG Dataflow</Name>
+        <Structure>
+          <Ref id="SDG" version="0.1" agencyID="UNSD" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+      <Dataflow id="DF_STES" urn="urn:sdmx:org.sdmx.infomodel.datastructure.Dataflow=INEGI:DF_STES(1.0)" agencyID="INEGI" version="1.0" isFinal="false">
+        <Name xml:lang="en" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">Short Term Economic Statistics</Name>
+        <Structure>
+          <Ref id="STES" version="2.8" agencyID="INEGI" package="datastructure" class="DataStructure" xmlns="" />
+        </Structure>
+      </Dataflow>
+    </Dataflows>
+  </Structures>
+</Structure>

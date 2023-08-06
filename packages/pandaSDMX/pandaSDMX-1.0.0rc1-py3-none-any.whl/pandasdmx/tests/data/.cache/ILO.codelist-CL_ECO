@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <mes:Header>
+    <mes:ID>IDREF1146</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2020-05-10T12:36:31.314Z</mes:Prepared>
+    <mes:Sender id="Unknown"/>
+    <mes:Receiver id="Unknown"/>
+  </mes:Header>
+  <mes:Structures>
+    <str:Codelists>
+      <str:Codelist id="CL_ECO" urn="urn:sdmx:org.sdmx.infomodel.codelist.Codelist=ILO:CL_ECO(1.0)" agencyID="ILO" version="1.0" isFinal="true">
+        <com:Name xml:lang="es">Actividad económica</com:Name>
+        <com:Name xml:lang="en">Economic activity</com:Name>
+        <com:Name xml:lang="fr">Activité économique</com:Name>
+        <com:Description xml:lang="es"><![CDATA[<p>Este tipo de clasificaci&oacute;n hace referencia a la actividad principal del establecimiento en el que la persona trabaj&oacute; durante el per&iacute;odo de referencia, o a la del &uacute;ltimo establecimiento en que trabaj&oacute; en el caso de los desocupados. La rama de actividad econ&oacute;mica de una persona no depende de las tareas o funciones espec&iacute;ficas de su empleo, sino de las caracter&iacute;sticas de la unidad econ&oacute;mica en que trabaja. Los temas desagregados por actividad econ&oacute;mica se presentan utilizando la versi&oacute;n m&aacute;s reciente disponible de la Clasificaci&oacute;n Industrial Internacional Uniforme de todas las actividades econ&oacute;micas (CIIU). Puede que los datos hayan sido reclasificados a partir de la clasificaci&oacute;n industrial nacional, que quiz&aacute; no sea estrictamente comparable con la CIIU.</p>]]></com:Description>
+        <com:Description xml:lang="en">&lt;p>This type of classification refers to the main activity of the establishment in which a person worked during the reference period, or last worked if unemployed. The branch of economic activity of a person does not depend on the specific duties or functions of the person&amp;rsquo;s job, but on the characteristics of the economic unit in which this person works. Topics disaggregated by economic activity are provided according to the latest version of the International Standard Industrial Classification of All Economic Activities (ISIC) available for that year. Data may have been regrouped from the national industrial classification, which may not be strictly compatible with ISIC.&lt;/p></com:Description>
+        <com:Description xml:lang="fr"><![CDATA[<p>Ce type de classification fait r&eacute;f&eacute;rence &agrave; l&#39;activit&eacute; principale de l&#39;&eacute;tablissement dans lequel la personne a travaill&eacute; pendant la p&eacute;riode de r&eacute;f&eacute;rence, ou a travaill&eacute; en dernier si la personne est au ch&ocirc;mage. La branche d&#39;activit&eacute; &eacute;conomique d&#39;une personne ne d&eacute;pend pas des t&acirc;ches ou des fonctions sp&eacute;cifiques du travail de la personne, mais des caract&eacute;ristiques de l&#39;entit&eacute; &eacute;conomique dans laquelle cette personne travaille. Les donn&eacute;es ventil&eacute;es par activit&eacute; &eacute;conomique sont pr&eacute;sent&eacute;es conform&eacute;ment &agrave; la version plus r&eacute;cente de la Classification internationale type des industries (CITI) disponible. Les donn&eacute;es peuvent avoir &eacute;t&eacute; reclass&eacute;es &agrave; partir de classifications industrielles nationales, qui peuvent ne pas &ecirc;tre strictement comparables &agrave; la CITI.</p>]]></com:Description>
+        <str:Code id="ECO_ISIC2_6" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_6">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13670</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">6. Wholesale and Retail Trade and Restaurants and Hotels</com:Name>
+          <com:Name xml:lang="es">6. Comercio al por mayor y al por menor y restaurantes y hoteles</com:Name>
+          <com:Name xml:lang="fr">6. Commerce de gros et de détail; restaurants et hôtels</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_7" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_7">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13680</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">7. Transport, Storage and Communication</com:Name>
+          <com:Name xml:lang="es">7. Transportes, almacenamiento y comunicaciones</com:Name>
+          <com:Name xml:lang="fr">7. Transports, entrepôts et communications</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_8" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_8">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13690</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">8. Financing, Insurance, Real Estate and Business Services</com:Name>
+          <com:Name xml:lang="es">8. Establecimientos financieros, seguros, bienes inmuebles y servicios prestados a las empresas</com:Name>
+          <com:Name xml:lang="fr">8. Banques, assurances, affaires immobilières et services fournis aux entreprises</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_9" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_9">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13700</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">9. Community, Social and Personal Services</com:Name>
+          <com:Name xml:lang="es">9. Servicios comunales, sociales y personales</com:Name>
+          <com:Name xml:lang="fr">9. Services fournis à la collectivité, services sociaux et services personnels</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_2" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_2">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13620</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">2. Mining and Quarrying</com:Name>
+          <com:Name xml:lang="es">2. Explotación de minas y canteras</com:Name>
+          <com:Name xml:lang="fr">2. Industries extractives</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_3" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_3">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13640</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">3. Manufacturing</com:Name>
+          <com:Name xml:lang="es">3. Industrias manufactureras</com:Name>
+          <com:Name xml:lang="fr">3. Industries manufacturières</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_4" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_4">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13650</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">4. Electricity, Gas and Water</com:Name>
+          <com:Name xml:lang="es">4. Electricidad, gas y agua</com:Name>
+          <com:Name xml:lang="fr">4. Electricité, gaz et eau</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13600</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_5" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_5">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13660</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">5. Construction</com:Name>
+          <com:Name xml:lang="es">5. Construcción</com:Name>
+          <com:Name xml:lang="fr">5. Bâtiment et travaux publics</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_0" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_0">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13710</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">0. Activities not Adequately Defined</com:Name>
+          <com:Name xml:lang="es">0. Actividades no bien especificadas</com:Name>
+          <com:Name xml:lang="fr">0. Activités mal désignées</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC2_1" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC2_1">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13610</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">1. Agriculture, Hunting, Forestry and Fishing</com:Name>
+          <com:Name xml:lang="es">1. Agricultura, caza, silvicultura y pesca</com:Name>
+          <com:Name xml:lang="fr">1. Agriculture, chasse, sylviculture et pêche</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_H" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_H">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13090</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">H. Hotels and restaurants</com:Name>
+          <com:Name xml:lang="es">H. Hoteles y restaurantes</com:Name>
+          <com:Name xml:lang="fr">H. Hôtels et restaurants</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_G" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_G">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13080</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">G. Wholesale and retail trade; repair of motor vehicles, motorcycles and personal and household goods</com:Name>
+          <com:Name xml:lang="es">G. Comercio al por mayor y al por menor; reparación de vehículos automotores, motocicletas, efectos personales y enseres domésticos</com:Name>
+          <com:Name xml:lang="fr">G. Commerce de gros et de détail; réparation de véhicules automobiles, de motocycles et de biens personnels et domestiques</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12910</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_F" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_F">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13040</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">F. Construction</com:Name>
+          <com:Name xml:lang="es">F. Construcción</com:Name>
+          <com:Name xml:lang="fr">F. Construction</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_E" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_E">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13030</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">E. Electricity, gas and water supply</com:Name>
+          <com:Name xml:lang="es">E. Suministro de electricidad, gas y agua</com:Name>
+          <com:Name xml:lang="fr">E. Production et distribution d'électricité, de gaz et d'eau</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_D" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_D">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12970</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">D. Manufacturing</com:Name>
+          <com:Name xml:lang="es">D. Industrias manufactureras</com:Name>
+          <com:Name xml:lang="fr">D. Activités de fabrication</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_C" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_C">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12960</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">C. Mining and quarrying</com:Name>
+          <com:Name xml:lang="es">C. Explotación de minas y canteras</com:Name>
+          <com:Name xml:lang="fr">C. Activités extractives</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_B" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_B">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12940</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">B. Fishing</com:Name>
+          <com:Name xml:lang="es">B. Pesca</com:Name>
+          <com:Name xml:lang="fr">B. Pêche</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_A" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_A">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12920</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">A. Agriculture, hunting and forestry</com:Name>
+          <com:Name xml:lang="es">A. Agricultura, ganadería, caza y silvicultura</com:Name>
+          <com:Name xml:lang="fr">A. Agriculture, chasse et sylviculture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_O" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_O">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13240</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">O. Other community, social and personal service activities</com:Name>
+          <com:Name xml:lang="es">O. Otras actividades de servicios comunitarios, sociales y personales</com:Name>
+          <com:Name xml:lang="fr">O. Autres activités de services collectifs, sociaux et personnels</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_P" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_P">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13250</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">P. Activities of private households as employers and undifferentiated production activities of private households</com:Name>
+          <com:Name xml:lang="es">P. Hogares privados con servicio doméstico</com:Name>
+          <com:Name xml:lang="fr">P. Ménages privés employant du personnel domestique</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_M" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_M">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13210</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">M. Education</com:Name>
+          <com:Name xml:lang="es">M. Enseñanza</com:Name>
+          <com:Name xml:lang="fr">M. Education</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_N" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_N">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13220</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">N. Health and social work</com:Name>
+          <com:Name xml:lang="es">N. Servicios sociales y de salud</com:Name>
+          <com:Name xml:lang="fr">N. Santé et action sociale</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_K" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_K">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13180</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">K. Real estate, renting and business activities</com:Name>
+          <com:Name xml:lang="es">K. Actividades inmobiliarias, empresariales y de alquiler</com:Name>
+          <com:Name xml:lang="fr">K. Immobilier, locations et activités de services aux entreprises</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_L" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_L">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13200</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">L. Public administration and defence; compulsory social security</com:Name>
+          <com:Name xml:lang="es">L. Administración pública y defensa; planes de seguridad social de afiliación obligatoria</com:Name>
+          <com:Name xml:lang="fr">L. Administration publique et défense; sécurité sociale obligatoire</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_I" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_I">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13110</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">I. Transport, storage and communications</com:Name>
+          <com:Name xml:lang="es">I. Transporte, almacenamiento y comunicaciones</com:Name>
+          <com:Name xml:lang="fr">I. Transports, entreposage et communications</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_J" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_J">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13140</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">J. Financial intermediation</com:Name>
+          <com:Name xml:lang="es">J. Intermediación financiera</com:Name>
+          <com:Name xml:lang="fr">J. Intermédiation financière</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_X" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_X">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13270</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">X. Not elsewhere classified</com:Name>
+          <com:Name xml:lang="es">X. No clasificados en otra parte</com:Name>
+          <com:Name xml:lang="fr">X. Non classés ailleurs</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC3_Q" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC3_Q">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13260</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Q. Extraterritorial organizations and bodies</com:Name>
+          <com:Name xml:lang="es">Q. Organizaciones y órganos extraterritoriales</com:Name>
+          <com:Name xml:lang="fr">Q. Organisations et organismes extraterritoriaux</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_R" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_R">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12860</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">R. Arts, entertainment and recreation</com:Name>
+          <com:Name xml:lang="es">R. Actividades artísticas, de entretenimiento y recreativas</com:Name>
+          <com:Name xml:lang="fr">R. Arts, spectacles et loisirs</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_E_36" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_E_36">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12620</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">36 - Water collection, treatment and supply</com:Name>
+          <com:Name xml:lang="es">36 - Captación, tratamiento y distribución de agua</com:Name>
+          <com:Name xml:lang="fr">36 - Collecte et traitement des eaux, distribution d'eau</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_S" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_S">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12870</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">S. Other service activities</com:Name>
+          <com:Name xml:lang="es">S. Otras actividades de servicios</com:Name>
+          <com:Name xml:lang="fr">S. Autres activités de services</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_P" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_P">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12830</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">P. Education</com:Name>
+          <com:Name xml:lang="es">P. Enseñanza</com:Name>
+          <com:Name xml:lang="fr">P. Éducation</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_Q" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_Q">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12840</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Q. Human health and social work activities</com:Name>
+          <com:Name xml:lang="es">Q. Actividades de atención de la salud humana y de asistencia social</com:Name>
+          <com:Name xml:lang="fr">Q. Santé et et activités d'action sociale</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_T" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_T">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12880</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">T. Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use</com:Name>
+          <com:Name xml:lang="es">T. Actividades de los hogares como empleadores; actividades no diferenciadas de los hogares como productores de bienes y servicios para uso propio</com:Name>
+          <com:Name xml:lang="fr">T. Activités des ménages privés employant du personnel domestique; activités non différenciées de production de biens et de services des ménages privés pour usage propre</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_21" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_21">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12580</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">21 - Manufacture of basic pharmaceutical products and pharmaceutical preparations.</com:Name>
+          <com:Name xml:lang="es">21 - Fabricación de productos farmacéuticos, sustancias químicas medicinales y productos botánicos de uso farmacéutico</com:Name>
+          <com:Name xml:lang="fr">21 - Fabrication de préparations pharmaceutiques, de produits chimiques à usage médicinal et de produits d'herboristerie</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_U" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_U">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12890</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">U. Activities of extraterritorial organizations and bodies</com:Name>
+          <com:Name xml:lang="es">U. Actividades de organizaciones y órganos extraterritoriales</com:Name>
+          <com:Name xml:lang="fr">U. Activités des organisations et organismes extra-territoriaux</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_J" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_J">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12730</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">J. Information and communication</com:Name>
+          <com:Name xml:lang="es">J. Información y comunicaciones</com:Name>
+          <com:Name xml:lang="fr">J. Information et communication</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_K" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_K">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12750</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">K. Financial and insurance activities</com:Name>
+          <com:Name xml:lang="es">K. Actividades financieras y de seguros</com:Name>
+          <com:Name xml:lang="fr">K. Activités financières et d'assurances</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_H" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_H">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12680</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">H. Transportation and storage</com:Name>
+          <com:Name xml:lang="es">H. Transporte y almacenamiento</com:Name>
+          <com:Name xml:lang="fr">H. Transport et entreposage</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_I" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_I">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12700</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">I. Accommodation and food service activities</com:Name>
+          <com:Name xml:lang="es">I. Actividades de alojamiento y de servicio de comidas</com:Name>
+          <com:Name xml:lang="fr">I. Activités d'hébergement et de restauration</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_N" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_N">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12800</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">N. Administrative and support service activities</com:Name>
+          <com:Name xml:lang="es">N. Actividades de servicios administrativos y de apoyo</com:Name>
+          <com:Name xml:lang="fr">N. Activités de services administratifs et d'appui</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_O" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_O">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12820</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">O. Public administration and defence; compulsory social security</com:Name>
+          <com:Name xml:lang="es">O. Administración pública y defensa; planes de seguridad social de afiliación obligatoria</com:Name>
+          <com:Name xml:lang="fr">O. Administration publique et défense; sécurité sociale obligatoire</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_J_61" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_J_61">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12740</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">61 - Telecommunications</com:Name>
+          <com:Name xml:lang="es">61 - Telecomunicaciones</com:Name>
+          <com:Name xml:lang="fr">61 - Télécommunications</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_L" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_L">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12780</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">L. Real estate activities</com:Name>
+          <com:Name xml:lang="es">L. Actividades inmobiliarias</com:Name>
+          <com:Name xml:lang="fr">L. Activités immobilières</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_M" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_M">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12790</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">M. Professional, scientific and technical activities</com:Name>
+          <com:Name xml:lang="es">M. Actividades profesionales, científicas y técnicas</com:Name>
+          <com:Name xml:lang="fr">M. Activités professionnelles, scientifiques et techniques</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12530</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">C. Manufacturing</com:Name>
+          <com:Name xml:lang="es">C. Industrias manufactureras</com:Name>
+          <com:Name xml:lang="fr">C. Activités de fabrication</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_B" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_B">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12510</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">B. Mining and quarrying</com:Name>
+          <com:Name xml:lang="es">B. Explotación de minas y canteras</com:Name>
+          <com:Name xml:lang="fr">B. Activités extractives</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_Q_86" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_Q_86">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12850</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">86 - Human health activities</com:Name>
+          <com:Name xml:lang="es">86 - Actividades de atención de la salud humana</com:Name>
+          <com:Name xml:lang="fr">86 - Activités relatives à la santé</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_G_46" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_G_46">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12660</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">46 - Wholesale trade, except of motor vehicles and motorcycles.</com:Name>
+          <com:Name xml:lang="es">46 - Comercio al por mayor, excepto el de vehículos automotores y motocicletas</com:Name>
+          <com:Name xml:lang="fr">46 - Commerce de gros à l'exception des véhicules automobiles et des motocycles</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_A" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_A">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12480</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">A. Agriculture; forestry and fishing</com:Name>
+          <com:Name xml:lang="es">A. Agricultura; ganadería; silvicultura y pesca</com:Name>
+          <com:Name xml:lang="fr">A. Agriculture; sylviculture et pêche</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_G_47" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_G_47">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12670</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">47 - Retail trade, except of motor vehicles and motorcycles</com:Name>
+          <com:Name xml:lang="es">47 - Comercio al por menor, excepto el de vehículos automotores y motocicletas</com:Name>
+          <com:Name xml:lang="fr">47 - Commerce de détail à l'exception des véhicules automobiles et des motocycles</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_G" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_G">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12650</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">G. Wholesale and retail trade; repair of motor vehicles and motorcycles</com:Name>
+          <com:Name xml:lang="es">G. Comercio al por mayor y al por menor; reparación de vehículos automotores y motocicletas</com:Name>
+          <com:Name xml:lang="fr">G. Commerce de gros et de détail, réparations de véhicules automobiles et de motocycles</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_H_49" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_H_49">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12690</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">49 - Land transport and transport via pipelines</com:Name>
+          <com:Name xml:lang="es">49 - Transporte por vía terrestre y transporte por tuberías</com:Name>
+          <com:Name xml:lang="fr">49 - Transports terrestres, transport par conduites</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_F" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_F">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12630</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">F. Construction</com:Name>
+          <com:Name xml:lang="es">F. Construcción</com:Name>
+          <com:Name xml:lang="fr">F. Construction</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_E" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_E">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12610</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">E. Water supply; sewerage, waste management and remediation activities</com:Name>
+          <com:Name xml:lang="es">E. Suministro de agua; evacuación de aguas residuales, gestión de desechos y descontaminación</com:Name>
+          <com:Name xml:lang="fr">E. Distribution d'eau; réseau d'assainissement; gestion des déchets et activités de remise en état</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_D" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_D">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12600</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">D. Electricity; gas, steam and air conditioning supply</com:Name>
+          <com:Name xml:lang="es">D. Suministro de electricidad, gas; vapor y aire acondicionado</com:Name>
+          <com:Name xml:lang="fr">D. Production et distribution d'électricité; de gaz, de vapeur et climatisation</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_14" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_14">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12570</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">14 - Manufacture of wearing apparel</com:Name>
+          <com:Name xml:lang="es">14 - Fabricación de prendas de vestir</com:Name>
+          <com:Name xml:lang="fr">14 - Fabrication d'articles d'habillement</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_13" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_13">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12560</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">13 - Manufacture of textiles</com:Name>
+          <com:Name xml:lang="es">13 - Fabricación de productos textiles</com:Name>
+          <com:Name xml:lang="fr">13 - Fabrication de textiles</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_I_55" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_I_55">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12710</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">55 - Accommodation</com:Name>
+          <com:Name xml:lang="es">55 - Actividades de alojamiento</com:Name>
+          <com:Name xml:lang="fr">55 - Hébergement</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_I_56" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_I_56">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12720</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">56 - Food and beverage service activities</com:Name>
+          <com:Name xml:lang="es">56 - Actividades de servicio de comidas y bebidas</com:Name>
+          <com:Name xml:lang="fr">56 - Activités de services de restauration et de consommation de boissons</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_10" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_10">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12540</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">10 - Manufacture of food products</com:Name>
+          <com:Name xml:lang="es">10 - Elaboración de productos alimenticios</com:Name>
+          <com:Name xml:lang="fr">10 - Fabrication de produits alimentaires</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12470</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_11" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_11">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12550</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">11 - Manufacture of beverages</com:Name>
+          <com:Name xml:lang="es">11 - Elaboración de bebidas</com:Name>
+          <com:Name xml:lang="fr">11 - Fabrication de boissons</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_K_64" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_K_64">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12760</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">64 - Financial service activities, except insurance and pension funding.</com:Name>
+          <com:Name xml:lang="es">64 - Actividades de servicios financieros, excepto las de seguros y fondos de pensiones</com:Name>
+          <com:Name xml:lang="fr">64 - Activités de services financiers, à l'exception des assurances et des caisses de retraite</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_K_65" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_K_65">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12770</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">65 - Insurance, reinsurance and pension funding, except compulsory social security.</com:Name>
+          <com:Name xml:lang="es">65 - Seguros, reaseguros y fondos de pensiones, excepto planes de seguridad social de afiliación obligatoria</com:Name>
+          <com:Name xml:lang="fr">65 - Activités d'assurances, réassurance et de caisses de retraite, à l'exception de la sécurité sociale obligatoire</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_C_31" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_C_31">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12590</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">31 - Manufacture of furniture</com:Name>
+          <com:Name xml:lang="es">31 - Fabricación de muebles</com:Name>
+          <com:Name xml:lang="fr">31 - Fabrication de meubles</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_A_01" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_A_01">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12490</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">01 - Crop and animal production, hunting and related service activities.</com:Name>
+          <com:Name xml:lang="es">01 - Agricultura, ganadería, caza y actividades de servicios conexas</com:Name>
+          <com:Name xml:lang="fr">01 - Culture et production animale, chasse et activités de services connexes</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_A_03" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_A_03">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12500</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">03 - Fishing and aquaculture</com:Name>
+          <com:Name xml:lang="es">03 - Pesca y acuicultura</com:Name>
+          <com:Name xml:lang="fr">03 - Pêche et aquaculture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_F_41" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_F_41">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12640</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">41 - Construction of buildings</com:Name>
+          <com:Name xml:lang="es">41 - Construcción de edificios</com:Name>
+          <com:Name xml:lang="fr">41 - Construction de bâtiments</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_N_78" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_N_78">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12810</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">2</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">78 - Employment activities</com:Name>
+          <com:Name xml:lang="es">78 - Actividades de empleo</com:Name>
+          <com:Name xml:lang="fr">78 - Activités relatives à l'emploi</com:Name>
+        </str:Code>
+        <str:Code id="ECO_ISIC4_X" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_ISIC4_X">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">12900</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">X. Not elsewhere classified</com:Name>
+          <com:Name xml:lang="es">X. No clasificados en otra parte</com:Name>
+          <com:Name xml:lang="fr">X. Non classés ailleurs</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_MIN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_MIN">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13940</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">N</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Mining and quarrying</com:Name>
+          <com:Name xml:lang="es">Explotación de minas y canteras</com:Name>
+          <com:Name xml:lang="fr">Activités extractives</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_MAN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_MAN">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13950</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Manufacturing</com:Name>
+          <com:Name xml:lang="es">Manufacturas</com:Name>
+          <com:Name xml:lang="fr">Manufacture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_X" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_X">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14010</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Not classified</com:Name>
+          <com:Name xml:lang="es">Sin clasificar</com:Name>
+          <com:Name xml:lang="fr">Non classé</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_MANEL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_MANEL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13960</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">N</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Manufacturing; Electricity, gas and water supply</com:Name>
+          <com:Name xml:lang="es">Manufacturas; Suministro de electricidad, gas y agua</com:Name>
+          <com:Name xml:lang="fr">Manufacture; Production et distribution d'électricité, de gaz et d'eau</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_MEL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_MEL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13980</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Mining and quarrying; Electricity, gas and water supply</com:Name>
+          <com:Name xml:lang="es">Explotación de minas y canteras; Suministro de electricidad, gas y agua</com:Name>
+          <com:Name xml:lang="fr">Activités extractives; Production et distribution d'électricité, de gaz et d'eau</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_MKT" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_MKT">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13990</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Trade, Transportation, Accommodation and Food, and Business and Administrative Services</com:Name>
+          <com:Name xml:lang="es">Comercio, Transporte, Hoteles y Restaurantes, y actividades empresariales</com:Name>
+          <com:Name xml:lang="fr">Commerce, Transports, Hôtels et restaurants et activités de services aux enterprises</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_AGR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_AGR">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13930</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Agriculture</com:Name>
+          <com:Name xml:lang="es">Agricultura</com:Name>
+          <com:Name xml:lang="fr">Agriculture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_CON" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_CON">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13970</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Construction</com:Name>
+          <com:Name xml:lang="es">Construcción</com:Name>
+          <com:Name xml:lang="fr">Construction</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13920</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGGREGATE_PUB" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGGREGATE_PUB">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14000</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Public Administration, Community, Social and other Services and Activities</com:Name>
+          <com:Name xml:lang="es">Administración pública y servicios y actividades comunales y sociales</com:Name>
+          <com:Name xml:lang="fr">Administration publique et activités de services collectifs, sociaux et personnels</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_AGR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_AGR">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14110</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Agriculture</com:Name>
+          <com:Name xml:lang="es">Agricultura</com:Name>
+          <com:Name xml:lang="fr">Agriculture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14100</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_SER" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_SER">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14140</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Services</com:Name>
+          <com:Name xml:lang="es">Servicios</com:Name>
+          <com:Name xml:lang="fr">Services</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_X" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_X">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14150</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Not classified</com:Name>
+          <com:Name xml:lang="es">No clasificados</com:Name>
+          <com:Name xml:lang="fr">Non classé</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_IND" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_IND">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14130</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Industry</com:Name>
+          <com:Name xml:lang="es">Industria</com:Name>
+          <com:Name xml:lang="fr">Industrie</com:Name>
+        </str:Code>
+        <str:Code id="ECO_SECTOR_NAG" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_SECTOR_NAG">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">14120</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">N</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Non-agriculture</com:Name>
+          <com:Name xml:lang="es">No agrícola</com:Name>
+          <com:Name xml:lang="fr">Non agricole</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGNAG_AGR" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGNAG_AGR">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13900</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Agriculture</com:Name>
+          <com:Name xml:lang="es">Agricultura</com:Name>
+          <com:Name xml:lang="fr">Agriculture</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGNAG_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGNAG_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13890</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_AGNAG_NAG" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_AGNAG_NAG">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13910</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Non-agriculture</com:Name>
+          <com:Name xml:lang="es">No agrícola</com:Name>
+          <com:Name xml:lang="fr">Non agricole</com:Name>
+        </str:Code>
+        <str:Code id="ECO_TOTNAG_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_TOTNAG_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13890</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_TOTNAG_NAG" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_TOTNAG_NAG">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13910</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Non-agriculture</com:Name>
+          <com:Name xml:lang="es">No agrícola</com:Name>
+          <com:Name xml:lang="fr">Non agricole</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_F" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_F">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13050</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Construction ~ISIC rev.4 F</com:Name>
+          <com:Name xml:lang="es">Construcción ~CIIU rev.4 F</com:Name>
+          <com:Name xml:lang="fr">Construction ~CITI rev.4 F</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_G" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_G">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13060</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Wholesale and retail trade; repair of motor vehicles and motorcycles ~ISIC rev.4 G</com:Name>
+          <com:Name xml:lang="es">Comercio al por mayor y al por menor; reparación de vehículos automotores y motocicletas ~CIIU rev.4 G</com:Name>
+          <com:Name xml:lang="fr">Commerce de gros et de détail; réparations de véhicules automobiles et de motocycles ~CITI rev.4 G</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_I" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_I">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13080</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Accommodation and food service activities ~ISIC rev.4 I</com:Name>
+          <com:Name xml:lang="es">Actividades de alojamiento y de servicio de comidas ~CIIU rev.4 I</com:Name>
+          <com:Name xml:lang="fr">Activités d'hébergement et de restauration ~CITI rev.4 I</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_HJ" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_HJ">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13070</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Transport; storage and communication ~ISIC rev.4 H; J</com:Name>
+          <com:Name xml:lang="es">Transporte; almacenamiento y comunicación ~CIIU rev.4 H; J</com:Name>
+          <com:Name xml:lang="fr">Transport; stockage et communication ~CITI rev.4 H; J</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_K" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_K">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13090</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Financial and insurance activities ~ISIC rev.4 K</com:Name>
+          <com:Name xml:lang="es">Actividades financieras y de seguros ~CIIU rev.4 K</com:Name>
+          <com:Name xml:lang="fr">Activités financières et d'assurances ~CITI rev.4 K</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_O" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_O">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13110</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Public administration and defence; compulsory social security ~ISIC rev.4 O</com:Name>
+          <com:Name xml:lang="es">Administración pública y defensa; planes de seguridad social de afiliación obligatoria ~CIIU rev.4 O</com:Name>
+          <com:Name xml:lang="fr">Administration publique et défense; sécurité sociale obligatoire ~CITI rev.4 O</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_P" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_P">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13120</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Education ~ISIC rev.4 P</com:Name>
+          <com:Name xml:lang="es">Enseñanza ~CIIU rev.4 P</com:Name>
+          <com:Name xml:lang="fr">Éducation ~CITI rev.4 P</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_Q" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_Q">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13130</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Human health and social work activities ~ISIC rev.4 Q</com:Name>
+          <com:Name xml:lang="es">Actividades de atención de la salud humana y de asistencia social ~CIIU rev.4 Q</com:Name>
+          <com:Name xml:lang="fr">Santé et et activités d'action sociale ~CITI rev.4 Q</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_DE" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_DE">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13040</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Utilities ~ISIC rev.4 D; E</com:Name>
+          <com:Name xml:lang="es">Utilidades ~CIIU rev.4 D; E</com:Name>
+          <com:Name xml:lang="fr">Utilitaires ~CITI rev.4 D; E</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_LMN" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_LMN">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13100</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Real estate; business and administrative activities ~ISIC rev.4 L; M; N</com:Name>
+          <com:Name xml:lang="es">Actividades inmobiliarias; comerciales y administrativas ~CIIU rev.4 L; M; N</com:Name>
+          <com:Name xml:lang="fr">Activités immobilières; commerciales et administratives ~CITI rev.4 L; M; N</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_RSTU" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_RSTU">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13140</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Other services ~ISIC rev.4 R; S; T; U</com:Name>
+          <com:Name xml:lang="es">Otros servicios ~CIIU rev.4 R; S; T; U</com:Name>
+          <com:Name xml:lang="fr">Autres services ~CITI rev.4 R; S; T; U</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_TOTAL" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_TOTAL">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13000</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Total</com:Name>
+          <com:Name xml:lang="es">Total</com:Name>
+          <com:Name xml:lang="fr">Total</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_C" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_C">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13030</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Manufacturing ~ISIC rev.4 C</com:Name>
+          <com:Name xml:lang="es">Industrias manufactureras ~CIIU rev.4 C</com:Name>
+          <com:Name xml:lang="fr">Activités de fabrication ~CITI rev.4 C</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_B" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_B">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13020</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Mining and quarrying ~ISIC rev.4 B</com:Name>
+          <com:Name xml:lang="es">Explotación de minas y canteras ~CIIU rev.4 B</com:Name>
+          <com:Name xml:lang="fr">Activités extractives ~CITI rev.4 B</com:Name>
+        </str:Code>
+        <str:Code id="ECO_DETAILS_A" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0).ECO_DETAILS_A">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">13010</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Agriculture; forestry and fishing ~ISIC rev.4 A</com:Name>
+          <com:Name xml:lang="es">Agricultura; ganadería; silvicultura y pesca ~CIIU rev.4 A</com:Name>
+          <com:Name xml:lang="fr">Agriculture; sylviculture et pêche ~CITI rev.4 A</com:Name>
+        </str:Code>
+        <str:Code id="_Z" urn="urn:sdmx:org.sdmx.infomodel.codelist.Code=ILO:CL_ECO(1.0)._Z">
+          <com:Annotations>
+            <com:Annotation>
+              <com:AnnotationTitle>Sort</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">999999</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Default</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">Y</com:AnnotationText>
+            </com:Annotation>
+            <com:Annotation>
+              <com:AnnotationTitle>Level</com:AnnotationTitle>
+              <com:AnnotationText xml:lang="en">1</com:AnnotationText>
+            </com:Annotation>
+          </com:Annotations>
+          <com:Name xml:lang="en">Not Applicable</com:Name>
+          <com:Name xml:lang="es">No aplicable en el caso</com:Name>
+          <com:Name xml:lang="fr">Non Applicable</com:Name>
+        </str:Code>
+      </str:Codelist>
+    </str:Codelists>
+  </mes:Structures>
+</mes:Structure>
