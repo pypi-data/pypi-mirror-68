@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dummy-poetry-repo
+Version: 0.1.1
+Summary: Just a repository for testing out different stuff so I don't have to clutter my offiail repos
+Author: Lovecraftian Horror
+Author-email: LovecraftianHorror@pm.me
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

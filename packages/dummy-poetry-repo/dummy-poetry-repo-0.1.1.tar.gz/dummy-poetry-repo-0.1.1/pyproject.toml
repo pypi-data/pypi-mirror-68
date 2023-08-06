@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dummy-poetry-repo"
+version = "0.1.1"
+description = "Just a repository for testing out different stuff so I don't have to clutter my offiail repos"
+authors = ["Lovecraftian Horror <LovecraftianHorror@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+flake8 = "^3.7"
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
