@@ -1,0 +1,3 @@
+[console_scripts]
+scvr = scvr.command_line:main
+
