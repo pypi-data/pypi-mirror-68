@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: salt-bootstrap-ssh
+Version: 1.0.0
+Summary: Bootstrap key based auth for salt-ssh
+Home-page: https://gitlab.com/davisd50/salt-bootstrap-ssh
+Author: David Davis
+Author-email: davisd50@gmail.com
+License: MIT
+Description: salt-bootstrap-ssh
+        ==============================
+        
+        0.0.1
+        ++++++++++++++++++
+        
+        * testing
+        
+Keywords: salt
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
