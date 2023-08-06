@@ -1,0 +1,3 @@
+[mopidy.ext]
+slack = mopidy_slack:Extension
+
