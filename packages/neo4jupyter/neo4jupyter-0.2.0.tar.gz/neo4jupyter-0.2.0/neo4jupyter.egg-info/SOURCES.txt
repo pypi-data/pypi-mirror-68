@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+neo4jupyter.py
+setup.py
+./__init__.py
+./neo4jupyter.py
+assets/index.html
+neo4jupyter.egg-info/PKG-INFO
+neo4jupyter.egg-info/SOURCES.txt
+neo4jupyter.egg-info/dependency_links.txt
+neo4jupyter.egg-info/requires.txt
+neo4jupyter.egg-info/top_level.txt
