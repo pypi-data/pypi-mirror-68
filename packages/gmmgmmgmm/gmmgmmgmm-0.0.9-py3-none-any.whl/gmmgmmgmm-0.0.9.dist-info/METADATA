@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gmmgmmgmm
+Version: 0.0.9
+Summary: get a chinesename by random
+Home-page: UNKNOWN
+Author: gmm
+Author-email: gmm_email@163.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+# Example Package
+
+
