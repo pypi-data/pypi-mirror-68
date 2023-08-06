@@ -1,0 +1,11 @@
+
+[dev]
+jupyterlab>=1.0.0
+notebook>=6.0.3
+pytest
+pytest-cov
+pylint
+flake8
+bump2version
+mock
+autopep8
