@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+
+{% block header %}
+	<h1>
+		{% block title %}
+			Transaction {{ 'Updated' if update else 'Submitted' }}
+		{% endblock %}
+	</h1>
+{% endblock %}
+
+
+{% block content %} 
+
+	<div id="receipt">
+
+		<p id="receipt-title">
+			The transaction was saved successfully.
+		</p>
+		<br>
+		
+		<p>
+			<b>Card:</b>
+			{{ transaction['bank'] }} ****-{{ transaction['last_four_digits'] }}
+		</p>
+
+		<p>
+			<b>Date: </b>
+			{{ transaction['transaction_date'] }}
+		</p>
+
+		<p>
+			<b>Vendor: </b>
+			{{ transaction['vendor'] }}
+		</p>
+
+		<p>
+			<b>Amount: </b>
+			{{ '${:,.2f}'.format(transaction['amount']) }}
+		</p>
+
+		<p>
+			<b>Notes: </b>
+			{{ transaction['notes'] }}
+		</p>
+
+		<p>
+			<b>Statement Date: </b>
+			{{ transaction['issue_date'] }}
+		</p>
+
+		{% if g.user %}
+			<br>
+			<a href="{{ url_for('credit.show_statement', statement_id=transaction['statement_id']) }}">
+				See the statement for this transaction
+			</a>
+			<br>
+			<a href="{{ url_for('credit.show_transactions') }}">
+				See transaction history
+			</a>
+			<br>
+			<a href="{{ url_for('credit.update_transaction', transaction_id=transaction['id']) }}">
+				Update this transaction
+			</a>
+			<br>
+			<a href="{{ url_for('credit.new_transaction') }}">
+				Create a new transaction
+			</a>
+		{% endif %}
+
+	</div>
+
+{% endblock %}
