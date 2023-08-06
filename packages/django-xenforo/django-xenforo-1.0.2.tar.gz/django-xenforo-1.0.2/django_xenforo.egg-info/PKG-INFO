@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-xenforo
+Version: 1.0.2
+Summary: A little app to integrate Xenforo 2 users in your Django project.
+Home-page: https://github.com/baxeico/django-xenforo
+Author: Augusto Destrero
+Author-email: a.destrero@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: django,xenforo,authentication
+Platform: UNKNOWN
