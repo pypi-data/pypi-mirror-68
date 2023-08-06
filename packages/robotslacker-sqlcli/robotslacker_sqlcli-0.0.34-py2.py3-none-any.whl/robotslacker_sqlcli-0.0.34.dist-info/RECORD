@@ -1,0 +1,12 @@
+sqlcli/__init__.py,sha256=IeOAFvenopBWYv9ajaYlgGYiPXMiGT008qnpbTQ0HPU,23
+sqlcli/commandanalyze.py,sha256=t_Refv_sgQ_I8-vnX45UnJ4Sj_cxP5VpHigx3cbLAK8,3174
+sqlcli/main.py,sha256=6hdTV3Mze7hwghhSPK6Vmzl-3BlI-tWcibNQLp5m-n4,29687
+sqlcli/sqlcliexception.py,sha256=vT-SiIFBlfJ3tAaFALWDg9vu2Mj8Mp7zF8mIXf4B-_0,164
+sqlcli/sqlexecute.py,sha256=_NIJnMkF1KpEDf8NpWCYoVy_uXI9OCIc_I5ypSSlohg,8221
+sqlcli/sqlinternal.py,sha256=vONCBriJCN3bwCYbTQzSL_0pcBFJXCl70dU1UnxLuE4,14581
+sqlcli/sqlparse.py,sha256=121pY5MmVEic7igdx1kAdLTiJFEdE-0bmw-3OvalSJY,31861
+robotslacker_sqlcli-0.0.34.dist-info/METADATA,sha256=vRJtZxBlYR_qP04mM7bx928zrta5YgupHeT4za9qSO0,667
+robotslacker_sqlcli-0.0.34.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+robotslacker_sqlcli-0.0.34.dist-info/entry_points.txt,sha256=HMKtybLjZ63kPhmBm9EkHHq5ooHjcZIzRhgvJ31bRvI,102
+robotslacker_sqlcli-0.0.34.dist-info/top_level.txt,sha256=pOvFebbv0CY-iCmgZCZBhYU-_PeMvuBpiXXv2JL4aro,7
+robotslacker_sqlcli-0.0.34.dist-info/RECORD,,
