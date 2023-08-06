@@ -1,0 +1,9 @@
+numpy
+jupyter
+networkx
+scipy
+networkx
+pyyaml
+Cython
+scikit-learn
+pandas
