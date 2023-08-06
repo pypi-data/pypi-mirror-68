@@ -1,0 +1,3 @@
+[console_scripts]
+is-url=is_url.cli:cli
+
