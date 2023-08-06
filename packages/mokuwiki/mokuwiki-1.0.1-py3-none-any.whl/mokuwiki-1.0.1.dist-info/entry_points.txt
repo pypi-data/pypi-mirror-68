@@ -1,0 +1,3 @@
+[console_scripts]
+mokuwiki = mokuwiki:main
+
