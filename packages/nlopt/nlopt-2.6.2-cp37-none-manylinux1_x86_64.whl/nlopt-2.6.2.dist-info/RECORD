@@ -1,0 +1,15 @@
+nlopt/nlopt.py,sha256=zfTBXiw_1WkKMDNPdAd1DIS9OOwI6G3n3Nrx5zQTEYk,17525
+nlopt/test.py,sha256=5894aqj-kcczjW6aQg_ZSpOM6KGB5ng1CxiPfI0c4G4,1005
+nlopt/__init__.py,sha256=xqOWZdOOLT1k3x2_PRDGba2xmtwyuPC-68QpR-yBSes,44
+nlopt/_nlopt.so,sha256=84eSAo2QJrAnsDYf1RL0P8DJZq3cbem7kGz_2WG5FQM,316256
+nlopt/__pycache__/__init__.cpython-38.pyc,sha256=jh7oTTg7Mc2yR2ElvIuPYGo_FSVAvESEwhBZNBw3ofo,155
+nlopt/__pycache__/__init__.cpython-36.pyc,sha256=RSlWMoK-ceOL42mimeXWH1f1Wzoro2oI4ASjbRyQlIU,147
+nlopt/__pycache__/__init__.cpython-37.pyc,sha256=s6VF_YIjDv3qxSI3H4OD8dEMUxykEiyw5-WyRCNd2ik,131
+nlopt/__pycache__/nlopt.cpython-36.pyc,sha256=2m2Rb9pksXveNAQuCSgMtDkyU-gV1x3HRikoXi7mLCE,24456
+nlopt/__pycache__/nlopt.cpython-38.pyc,sha256=T3cesgPhJUNScwnK3ismpJ8K8fwdI9E25OwAPostMzI,24795
+nlopt/__pycache__/nlopt.cpython-37.pyc,sha256=6DXNuYfFFPm7nnM9OmD6vzBZABRXR0PF1csqrp574cc,24445
+nlopt/.libs/libnlopt-6afff3b0.so.0.10.0,sha256=D8jCpSaopbrKKOo05rHlIQZAusrq2MOlrogVcYyy1xY,763840
+nlopt-2.6.2.dist-info/WHEEL,sha256=oSE2ayFBsjjt_oKgkdQuvhNPQ3-rjMJLj8ZESlwpXXQ,107
+nlopt-2.6.2.dist-info/METADATA,sha256=NmXbuF3_shRLtGlbXwqpfxmkO_5IJ3AQM8wcQYGySGQ,2053
+nlopt-2.6.2.dist-info/top_level.txt,sha256=M_MBIr2R4B0VZtq8N0NaQUid2k_mNshSIN1_-MasI3E,6
+nlopt-2.6.2.dist-info/RECORD,,
