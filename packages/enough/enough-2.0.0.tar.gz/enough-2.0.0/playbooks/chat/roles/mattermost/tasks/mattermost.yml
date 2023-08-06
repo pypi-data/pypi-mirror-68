@@ -1,0 +1,46 @@
+---
+- name: apt-get install git
+  apt:
+    name: git
+    state: present
+
+- name: chown debian {{ enough_storage_directory }}
+  file:
+    path: "{{ enough_storage_directory }}"
+    state: directory
+    owner: debian
+
+- name: git clone https://github.com/mattermost/mattermost-docker.git
+  git:
+    repo: https://github.com/mattermost/mattermost-docker.git
+#  force: yes
+    dest: "{{ enough_storage_directory }}/mattermost"
+  become: False
+
+- name: create mattermost directories
+  file:
+    dest: '{{ enough_storage_directory }}/mattermost/volumes/{{ item }}'
+    state: directory
+    owner: debian
+    group: debian
+    mode: '0755'
+  loop:
+    - app
+    - app/mattermost
+    - app/mattermost/data
+    - app/mattermost/config
+    - app/mattermost/logs
+
+- name: Copy docker-compose-infrastructure.yml
+  template:
+    src: docker-compose-infrastructure.yml
+    dest: "{{ enough_storage_directory }}/mattermost/docker-compose-infrastructure.yml"
+    owner: debian
+    mode: "0600"
+  become: False
+
+- name: (re)create mattermost
+  shell: |
+    docker-compose -f docker-compose-infrastructure.yml up -d
+  args:
+    chdir: "{{ enough_storage_directory }}/mattermost"

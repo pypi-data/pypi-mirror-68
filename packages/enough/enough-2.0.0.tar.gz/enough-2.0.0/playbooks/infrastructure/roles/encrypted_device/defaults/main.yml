@@ -1,0 +1,4 @@
+---
+encrypted_volume_name: "{{ openstack_volumes[0].name }}"
+encrypted_volume_for_docker: true
+encrypted_volume_for_snap: true

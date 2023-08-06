@@ -1,0 +1,28 @@
+---
+- name: create openvpnclientname
+  hosts: openvpnclient-host
+  become: true
+
+  tasks:
+    - name: apt-get install openvpn
+      apt:
+        name: [openvpn]
+        state: present
+
+    - name: copy client credentials
+      copy:
+        src: "{{ openvpn_local_directory }}/openvpnclientname.tar.gz"
+        dest: "/etc/openvpn/openvpnclientname.tar.gz"
+
+    - name: cd /etc/openvpn ; tar zxvf openvpnclientname.tar.gz
+      shell: |
+        set -ex
+        tar zxvf openvpnclientname.tar.gz
+      args:
+        chdir: /etc/openvpn
+      
+    - name: systemctl enable openvpn@openvpnclientname ; systemctl start openvpn@openvpnclientname
+      systemd:
+        name: openvpn@openvpnclientname
+        state: restarted
+        enabled: yes
