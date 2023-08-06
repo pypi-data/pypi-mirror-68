@@ -1,0 +1,6 @@
+README.md
+setup.py
+wordFunctions.egg-info/PKG-INFO
+wordFunctions.egg-info/SOURCES.txt
+wordFunctions.egg-info/dependency_links.txt
+wordFunctions.egg-info/top_level.txt
