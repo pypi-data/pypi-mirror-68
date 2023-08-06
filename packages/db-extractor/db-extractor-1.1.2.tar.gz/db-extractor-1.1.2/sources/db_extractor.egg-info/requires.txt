@@ -1,0 +1,10 @@
+Babel<3.0,>=2.8.0
+codetiming<2.0,>=1.1
+datedelta<2.0,>=1.3
+hdbcli<2.5,>=2.4.171
+mysql-connector-python<8.1,>=8.0.11
+pandas<2.0,>=1.0
+pyarrow<1.0,>=0.17
+xlrd<2.0,>=1
+xlsxwriter<1.3,>=1
+wheel<1.0,>=0.34.2

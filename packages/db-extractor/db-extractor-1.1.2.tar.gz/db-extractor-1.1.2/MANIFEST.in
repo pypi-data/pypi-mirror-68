@@ -1,0 +1,7 @@
+include *.md
+include *.cfg
+include LICENSE
+recursive-include sources *.json
+recursive-include sources *.py
+recursive-include sources *.po
+recursive-include sources *.pot
