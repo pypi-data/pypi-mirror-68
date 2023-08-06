@@ -1,0 +1,27 @@
+
+
+This Package will implement dummy columns for a column with multiple values.
+
+The various supported format are :
+
+1 :host_verifications is a column with values  ['email', 'phone', 'reviews', 'kba'] and we need to create dummy columns separately for each feature.
+
+2 :amenites is  a column with values {TV,"Cable TV",Internet,"Wireless Internet"} and we need to create dummy columns separately for each feature.
+
+The above two senarious are examples where this package can be used to get dummy columns embeded with original dataframe for further analysis.
+
+Code to execute:
+
+Step 1 :- create an object of Mdummies and provide dataframe name and column name as arguments.
+
+from Multiple_dummies import Mdummies
+
+dummies=Mdummies(airbnb_seatle_lis,'amenities')
+
+step 2: call the function create dummies.
+
+dummies.create_dummies()
+
+Step 3 : Result obtained.
+
+The output will be the dataframe with all the dummy columns attached to the original dataframe and the original column with multiple values will be dropped.
