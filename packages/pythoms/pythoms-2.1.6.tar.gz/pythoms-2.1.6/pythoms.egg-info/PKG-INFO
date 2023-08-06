@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pythoms
+Version: 2.1.6
+Summary: A Python library to aid in the processing and interpretation of mass spectrometric data.
+Home-page: https://gitlab.com/larsyunker/PythoMS
+Author: Lars Yunker
+License: MIT
+Description: 
+        Contains classes and methods for processing mzML files, determining isotope patterns and physicochemical properties, 
+        and combining spectra of dissimilar shape.
+        
+Keywords: mass spectrometry,mass spec,mzML,isotope pattern,HUPO PSI-MS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
