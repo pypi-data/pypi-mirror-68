@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyavanza/__init__.py
+pyavanza.egg-info/PKG-INFO
+pyavanza.egg-info/SOURCES.txt
+pyavanza.egg-info/dependency_links.txt
+pyavanza.egg-info/requires.txt
+pyavanza.egg-info/top_level.txt
