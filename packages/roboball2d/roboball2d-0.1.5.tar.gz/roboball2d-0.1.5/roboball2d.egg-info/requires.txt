@@ -1,0 +1,3 @@
+pyglet
+box2d-py
+numpy

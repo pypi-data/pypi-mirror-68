@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: roboball2d
+Version: 0.1.5
+Summary: A simulated 2d robot playing with balls
+Home-page: https://github.com/intelligent-soft-robots/roboball2d
+Author: Nicolas Guetler, Vincent Berenz
+Author-email: nico.guertler@tuebingen.mpg.de, vberenz@tuebingen.mpg.de
+License: UNKNOWN
+Description: see https://roboball2d.readthedocs.io/en/latest/
+Platform: UNKNOWN
