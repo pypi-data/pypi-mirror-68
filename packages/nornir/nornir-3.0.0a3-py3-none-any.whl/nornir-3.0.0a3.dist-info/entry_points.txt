@@ -1,0 +1,4 @@
+[nornir.plugins.runners]
+parallel=nornir.plugins.runners:ParallelRunner
+serial=nornir.plugins.runners:SerialRunner
+
