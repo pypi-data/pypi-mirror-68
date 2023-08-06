@@ -1,0 +1,8 @@
+docker
+google-api-python-client
+google-cloud-storage
+
+[tests]
+pytest
+flake8
+mock
