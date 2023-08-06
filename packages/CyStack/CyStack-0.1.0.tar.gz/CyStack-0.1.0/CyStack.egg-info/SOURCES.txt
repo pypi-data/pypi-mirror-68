@@ -1,0 +1,7 @@
+README.md
+Stack.cpp
+setup.py
+CyStack.egg-info/PKG-INFO
+CyStack.egg-info/SOURCES.txt
+CyStack.egg-info/dependency_links.txt
+CyStack.egg-info/top_level.txt
