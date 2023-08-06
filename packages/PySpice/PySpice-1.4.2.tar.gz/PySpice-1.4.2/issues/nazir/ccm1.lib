@@ -1,0 +1,16 @@
+**********************************************************
+* Parameters: none
+**********************************************************
+* Nodes:
+* 1: transistor positive (drain of an n-channel MOS)
+* 2: transistor negative (source of an n-channel MOS)
+* 3: diode cathode
+* 4: diode anode
+* 5: duty cycle control input
+**********************************************************
+**********************************************************
+.SUBCKT CCM1 1  2  3  4  5
+BEt 1 2 V={(1-v(5))*v(3,4)/v(5)}
+BGd 4 3 I={(1-v(5))*i(BEt)/v(5)}
+.ends
+**********************************************************
