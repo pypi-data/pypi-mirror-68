@@ -1,0 +1,10 @@
+README.md
+setup.py
+wutils/__init__.py
+wutils/general.py
+wutils/mat.py
+wutils.egg-info/PKG-INFO
+wutils.egg-info/SOURCES.txt
+wutils.egg-info/dependency_links.txt
+wutils.egg-info/requires.txt
+wutils.egg-info/top_level.txt
