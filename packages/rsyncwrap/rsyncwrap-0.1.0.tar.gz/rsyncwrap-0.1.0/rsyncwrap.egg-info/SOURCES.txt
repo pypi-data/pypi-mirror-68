@@ -1,0 +1,10 @@
+README.md
+setup.py
+rsyncwrap/__init__.py
+rsyncwrap/helpers.py
+rsyncwrap/main.py
+rsyncwrap.egg-info/PKG-INFO
+rsyncwrap.egg-info/SOURCES.txt
+rsyncwrap.egg-info/dependency_links.txt
+rsyncwrap.egg-info/requires.txt
+rsyncwrap.egg-info/top_level.txt
