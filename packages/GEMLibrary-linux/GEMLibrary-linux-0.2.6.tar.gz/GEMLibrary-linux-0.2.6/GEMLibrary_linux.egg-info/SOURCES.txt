@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+GEMLibrary_linux.egg-info/PKG-INFO
+GEMLibrary_linux.egg-info/SOURCES.txt
+GEMLibrary_linux.egg-info/dependency_links.txt
+GEMLibrary_linux.egg-info/top_level.txt
+Teleios/GEMLib.py
+Teleios/_GEMLib.so
+Teleios/__init__.py
