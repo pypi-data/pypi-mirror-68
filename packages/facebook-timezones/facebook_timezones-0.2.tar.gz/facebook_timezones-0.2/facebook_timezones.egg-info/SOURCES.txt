@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+facebook_timezones/__init__.py
+facebook_timezones.egg-info/PKG-INFO
+facebook_timezones.egg-info/SOURCES.txt
+facebook_timezones.egg-info/dependency_links.txt
+facebook_timezones.egg-info/top_level.txt
