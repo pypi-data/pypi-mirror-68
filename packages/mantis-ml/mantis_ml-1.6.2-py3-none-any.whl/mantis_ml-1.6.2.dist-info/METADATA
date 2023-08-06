@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: mantis-ml
+Version: 1.6.2
+Summary: Disease-agnostic gene prioritisation from high-throughput genomic screens by stochastic semi-supervised learning
+Home-page: https://github.com/astrazeneca-cgr-publications/mantis-ml-release
+Author: Dimitrios Vitsios
+Author-email: dvitsios@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: numpy (==1.14.5)
+Requires-Dist: numpydoc (==0.8.0)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: scipy (==1.2.1)
+Requires-Dist: scikit-learn (==0.20.3)
+Requires-Dist: bokeh (==1.1.0)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: tensorflow (==1.10.0)
+Requires-Dist: Keras (==2.2.4)
+Requires-Dist: matplotlib (==3.0.3)
+Requires-Dist: palettable (==3.1.1)
+Requires-Dist: plotly (==3.9.0)
+Requires-Dist: PyYAML (==5.1)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: tables (==3.5.1)
+Requires-Dist: twine (==3.0.0)
+Requires-Dist: tqdm (==4.14)
+Requires-Dist: umap-learn (==0.3.8)
+Requires-Dist: xgboost (==0.80)
+
+UNKNOWN
+
+
