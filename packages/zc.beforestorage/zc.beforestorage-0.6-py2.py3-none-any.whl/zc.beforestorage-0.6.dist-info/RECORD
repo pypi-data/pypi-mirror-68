@@ -1,0 +1,12 @@
+zc.beforestorage-0.6-py3.7-nspkg.pth,sha256=i7g33RdQzJ33LZYHfQ_YmQhLOchcWGnBnib2zxQJCiY,519
+zc/beforestorage/README.rst,sha256=oFVKnpOpxGDmVi9b5fVxFPlkr87mfhYXMpeWv9ACKr8,13345
+zc/beforestorage/__init__.py,sha256=y67pzxxRvIUiexXfYCmcnx5fI6NbEvamS6aYWKdfFaI,6616
+zc/beforestorage/component.xml,sha256=ey-sUB-uBsQfkTQfeddA3kpfC6BQzgTSBehoNNZpvEU,1487
+zc/beforestorage/tests.py,sha256=YpIP0XUlcYWPfWJK0-FaJbngG5SR8TIol_Yh-DYEHT0,1372
+zc.beforestorage-0.6.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+zc.beforestorage-0.6.dist-info/METADATA,sha256=PVQHTXCNHudqItMZsJMHboSoCowNai-IlyaD_ftA6Zo,17909
+zc.beforestorage-0.6.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+zc.beforestorage-0.6.dist-info/entry_points.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+zc.beforestorage-0.6.dist-info/namespace_packages.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.beforestorage-0.6.dist-info/top_level.txt,sha256=nptwHX5ivUBBZ49av8trjckjjvj_7OZ_f0bSLnluz1k,3
+zc.beforestorage-0.6.dist-info/RECORD,,
