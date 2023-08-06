@@ -1,0 +1,12 @@
+Cython
+matplotlib
+numpy
+pandas
+Pillow>=6.2.2
+pycocotools
+seaborn
+scikit-image
+tqdm
+setuptools==40.6.3
+wheel==0.32.3
+requests
