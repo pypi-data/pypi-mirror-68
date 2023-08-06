@@ -1,0 +1,10 @@
+iso8601>=0.1
+lxml>=3.4.1
+
+[dev]
+nose
+flake8
+
+[test]
+nose
+flake8
