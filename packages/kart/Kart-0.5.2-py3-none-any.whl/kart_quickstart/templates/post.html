@@ -1,0 +1,18 @@
+{% extends "minimal.html" %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-12 col-lg-9">
+      <h1>{{ page.title }}</h1>
+      <span>{{ date_to_string(page.date) }}</span>
+      <span style='float:right'>
+        Tags:
+        {% set filtered_tags = site.tags|selectattr('slug', 'equalto', tag)|list %}
+        {% if filtered_tags|length > 0 %}
+        <a href="{{ url("tags." + tag + ".1") }}">{{ (filtered_tags|first).name }}</a>
+        {% endif %}
+      </span>
+
+      {{ page.content }}
+    </div>
+  </div>
+{% endblock content %}
