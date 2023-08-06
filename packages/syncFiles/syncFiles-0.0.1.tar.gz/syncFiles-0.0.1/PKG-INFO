@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: syncFiles
+Version: 0.0.1
+Summary: Simple file synce.
+Home-page: https://github.com/MatteoLacki/syncFiles
+Author: Mateusz Krzysztof Łącki
+Author-email: matteo.lacki@gmail.com
+License: GPL-3.0-or-later
+Description: A simple file syncer, that works with network folders, and checks sums. Windows only.
+Keywords: simple sys admin tools
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

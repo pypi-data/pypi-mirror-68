@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bin/syncFiles.py
+syncFiles/__init__.py
+syncFiles/syncFiles.py
+syncFiles.egg-info/PKG-INFO
+syncFiles.egg-info/SOURCES.txt
+syncFiles.egg-info/dependency_links.txt
+syncFiles.egg-info/top_level.txt
