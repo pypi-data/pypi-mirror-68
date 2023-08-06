@@ -1,0 +1,9 @@
+fed_requests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fed_requests/fedbionet_api.py,sha256=R2-p8hYK80wAQzsZF2B_5XFTPXVu6ijGyI4Q_hiPLAc,6436
+fed_requests/loggers.py,sha256=TSuiEYQQXUofBQiqJc2-E7Jq5Mb8D_DX7JLW1mxGofk,1349
+fed_requests/settings.py,sha256=I6BFin4CHcxThv-TtNPFEPvuf-r8MgbDztRtCbRZq0g,1081
+fed_requests-0.0.6.dist-info/LICENSE,sha256=l34J0kk63iNNy07DmBy8QXA407jgdAGOhNVSuG6_WL0,1045
+fed_requests-0.0.6.dist-info/METADATA,sha256=4FeRrORgsSSwz5NkSpNtMhY764lxrQmUDHADFRb8TLM,1227
+fed_requests-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fed_requests-0.0.6.dist-info/top_level.txt,sha256=owY5h-qScAia7A_-BuB_9yS-RqzT6SSWjI2949jP7y8,13
+fed_requests-0.0.6.dist-info/RECORD,,
