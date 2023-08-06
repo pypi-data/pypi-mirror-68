@@ -1,0 +1,10 @@
+setup.py
+dsnd_probability_aordorica/Binomialdistribution.py
+dsnd_probability_aordorica/Gaussiandistribution.py
+dsnd_probability_aordorica/Generaldistribution.py
+dsnd_probability_aordorica/__init__.py
+dsnd_probability_aordorica.egg-info/PKG-INFO
+dsnd_probability_aordorica.egg-info/SOURCES.txt
+dsnd_probability_aordorica.egg-info/dependency_links.txt
+dsnd_probability_aordorica.egg-info/not-zip-safe
+dsnd_probability_aordorica.egg-info/top_level.txt
