@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: GenuineAI
+Version: 0.0.1
+Summary: Genuine AI functions used in iMICS Lab research projects
+Home-page: UNKNOWN
+Author: Ernest (Khashayar) Namdar
+Author-email: ernest.namdar@utoronto.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Genuine AI functions used in iMICS Lab research Projects.
+For more information, please refer to our website at imics.ca
+
+\@author: Ernest (Khashayar) Namdar ernest.namdar\@utoronto.ca
+
+AUCPlus is an augmented AUC function
+It returns conventional AUC, our augmented AUC, and multiple parameters such as sensitivity and specificity at each threshold
+
+
