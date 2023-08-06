@@ -1,0 +1,4 @@
+pandas>=0.23.4
+numpy>=1.16.3
+folium==0.10.1
+geopy==1.20.0
