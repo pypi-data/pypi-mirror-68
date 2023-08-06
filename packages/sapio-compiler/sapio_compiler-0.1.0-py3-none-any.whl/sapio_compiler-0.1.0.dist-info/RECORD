@@ -1,0 +1,7 @@
+tests/test_contract/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_contract/test_contract.py,sha256=d7hOyHf30csJv3BuPCRdEebc7Vm3Lg7GVdrKZwdzJyU,147
+sapio_compiler-0.1.0.dist-info/LICENSE,sha256=AzLIuxWRJsHCpIZe6Bi9TS8jg5M-dXj6EkUmDFk-tqM,21
+sapio_compiler-0.1.0.dist-info/METADATA,sha256=9lBaT-96ugJLOSD-iVcuYJOb_Iy9wcI5zfcZAcqR12Q,552
+sapio_compiler-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sapio_compiler-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+sapio_compiler-0.1.0.dist-info/RECORD,,
