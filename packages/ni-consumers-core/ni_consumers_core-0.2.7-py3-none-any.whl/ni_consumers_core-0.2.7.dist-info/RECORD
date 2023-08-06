@@ -1,0 +1,15 @@
+consumers_core/__init__.py,sha256=YLp3_rf-newwfYNysqjG4AXUDa373pKigc7NB75poSE,164
+consumers_core/common.py,sha256=moD6HpsicS1cv2_hwPQpfh4BIvSidwIcg296BZTDnQM,842
+consumers_core/consumer.py,sha256=9Ns1E2HUQx6F4wP-Fg0c_lNoedkoIyLMOuVKvV98qg4,17644
+consumers_core/cm/__init__.py,sha256=MiCHzY_OD_WvrH9BJzG5uPycPxFvipVmoS9Tcn0KwJE,28
+consumers_core/cm/commandLine.py,sha256=M2A39-OVuH-Lqau9zB1mXErJ1BTGU8Ts7KNmcFaQEZY,1407
+consumers_core/cm/main.py,sha256=00zm_F2ecMU1amIcafYDVoxxIoSwJAd3iGJ6HPYqVik,2757
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=-AV6vHUz-luJos_WBiafOLUPo-xfiOrspIJm4-odzjQ,179
+tests/test_common.py,sha256=borq6BjyUf44r_xodp6Bzk53tbtfb_MEZR3B5lgSkxk,475
+ni_consumers_core-0.2.7.dist-info/LICENSE,sha256=ibm4rN53d8GjJytPcfwkWSPLj6kEmES2YYcwVr8aUzQ,1228
+ni_consumers_core-0.2.7.dist-info/METADATA,sha256=RiLcly3IPPIDF46MxfFyPSVFIEDkTpB2H8r_eCbndNw,1129
+ni_consumers_core-0.2.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ni_consumers_core-0.2.7.dist-info/entry_points.txt,sha256=ktf5jstWwDd7PVe0pSf5Q_KzMvSvDhLdumQqrQGwvLY,67
+ni_consumers_core-0.2.7.dist-info/top_level.txt,sha256=OhG3ljDVkpiXKsl9wfxHh8S5vus7DMJXwfWvJfqbVxU,21
+ni_consumers_core-0.2.7.dist-info/RECORD,,
