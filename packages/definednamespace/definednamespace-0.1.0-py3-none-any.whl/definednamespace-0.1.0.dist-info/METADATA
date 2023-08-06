@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: definednamespace
+Version: 0.1.0
+Summary: Proposed replacement for rdflib ClosedNamespace
+Home-page: http://github.com/hsolbrig/definednamespace
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: CC0 1.0 Universal
+Keywords: rdflib,RDF,namespace
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: rdflib (~=5.0)
+
+UNKNOWN
+
+
