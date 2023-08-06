@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: podbean-client
+Version: 0.0.0
+Summary: A Python client library for the Podbean API!
+Home-page: https://github.com/masontadam/podbean_client
+Author: Mason Adam
+Author-email: masontadam@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: requests-oauthlib
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7); extra == 'dev'
+Requires-Dist: check-manifest; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+
+# podbean-client
+A Python client library for the Podbean API
+
+
