@@ -1,0 +1,6 @@
+joblib_zstd/__init__.py,sha256=Z-HHj45OkA8RfEkx4fxOg6-_Mh8B08uoB_uw6QXEojI,54
+joblib_zstd/file.py,sha256=D8mHKRtv4Zi3y51l_k2q52JveqkJH0GwoVCWLrhXuMA,2141
+joblib_zstd/wrapper.py,sha256=NICKgt7SLSnouxol5tl4CYV33GK1JabvoAlrEN23K9g,1780
+joblib_zstd-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+joblib_zstd-0.1.0.dist-info/METADATA,sha256=56IeHJadSYLFN8TVUJOPfDxLMo5q6DSGizC4xDRQscw,571
+joblib_zstd-0.1.0.dist-info/RECORD,,
