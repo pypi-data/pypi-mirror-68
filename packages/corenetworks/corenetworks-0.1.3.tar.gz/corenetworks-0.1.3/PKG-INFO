@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: corenetworks
+Version: 0.1.3
+Summary: Python API client for Domain Management Automation with Core Networks https://www.core-networks.de/
+Home-page: https://github.com/xoxys/corenetworks
+Author: Robert Kaussow
+Author-email: mail@geeklabor.de
+License: MIT
+Description: # corenetworks
+        
+        [![Build Status](https://img.shields.io/drone/build/xoxys/corenetworks?logo=drone)](https://cloud.drone.io/xoxys/corenetworks)
+        [![Python Version](https://img.shields.io/pypi/pyversions/corenetworks.svg)](https://pypi.org/project/corenetworks/)
+        [![PyPi Status](https://img.shields.io/pypi/status/corenetworks.svg)](https://pypi.org/project/corenetworks/)
+        [![PyPi Release](https://img.shields.io/pypi/v/corenetworks.svg)](https://pypi.org/project/corenetworks/)
+        [![Codecov](https://img.shields.io/codecov/c/github/xoxys/corenetworks)](https://codecov.io/gh/xoxys/corenetworks)
+        [![License: MIT](https://img.shields.io/github/license/xoxys/corenetworks)](LICENSE)
+        
+        Python library for the [https://core-networks.de](https://beta.api.core-networks.de/doc/) DNS API.
+        
+        You can find the full documentation at [https://corenetworks.geekdocs.de](https://corenetworks.geekdocs.de/).
+        
+        ## License
+        
+        This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+        
+        ## Maintainers and Contributors
+        
+        [Robert Kaussow](https://github.com/xoxys)
+        
+Keywords: dns,automation,nameserver,corenetworks
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,<4
+Description-Content-Type: text/markdown
