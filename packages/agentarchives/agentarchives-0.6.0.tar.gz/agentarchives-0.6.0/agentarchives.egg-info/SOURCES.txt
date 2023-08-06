@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+agentarchives/__init__.py
+agentarchives.egg-info/PKG-INFO
+agentarchives.egg-info/SOURCES.txt
+agentarchives.egg-info/dependency_links.txt
+agentarchives.egg-info/requires.txt
+agentarchives.egg-info/top_level.txt
+agentarchives/archivesspace/__init__.py
+agentarchives/archivesspace/client.py
+agentarchives/archivists_toolkit/__init__.py
+agentarchives/archivists_toolkit/client.py
+agentarchives/atom/__init__.py
+agentarchives/atom/client.py
