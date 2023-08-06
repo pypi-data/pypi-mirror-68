@@ -1,0 +1,4 @@
+PyYAML>=5.3.1
+nose
+rednose
+setuptools>=20.4
