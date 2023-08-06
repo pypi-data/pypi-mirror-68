@@ -1,0 +1,233 @@
+# -*- encoding: utf-8 -*-
+#
+# ** header v3.0
+# This file is a part of the CaosDB Project.
+#
+# Copyright (C) 2018 Research Group Biomedical Physics,
+# Max-Planck-Institute for Dynamics and Self-Organization Göttingen
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, either version 3 of the
+# License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+#
+# ** end header
+#
+import caosdb as db
+from nose.tools import assert_is, assert_is_none, assert_equals, assert_is_not_none, assert_raises
+
+
+def test_no_parameter():
+    rec = db.Record()
+    assert_equals(0, len(rec.get_properties()))
+
+    with assert_raises(UserWarning) as cm:
+        rec.add_property()
+    assert_equals(
+        cm.exception.args[0],
+        "This method expects you to pass at least an entity, a name or an id.")
+    assert_equals(0, len(rec.get_properties()))
+
+
+def test_only_value_parameter():
+    rec = db.Record()
+    assert_equals(0, len(rec.get_properties()))
+
+    with assert_raises(UserWarning) as cm:
+        rec.add_property(value="bla")
+    assert_equals(
+        cm.exception.args[0],
+        "This method expects you to pass at least an entity, a name or an id.")
+    assert_equals(0, len(rec.get_properties()))
+
+
+def test_property_name_ambiguity_1():
+    rec = db.Record()
+    assert_equals(0, len(rec.get_properties()))
+
+    with assert_raises(UserWarning) as cm:
+        rec.add_property("one_name", name="another_name")
+    assert_equals(
+        cm.exception.args[0],
+        "The first parameter was neither an instance of Entity nor an integer. Therefore the string representation of your first parameter would normally be interpreted name of the property which is to be added. But you have also specified a parameter 'name' in the method call. This is ambiguous and cannot be processed.")
+    assert_equals(0, len(rec.get_properties()))
+
+
+def test_property_name_ambiguity_2():
+    rec = db.Record()
+    assert_equals(0, len(rec.get_properties()))
+
+    with assert_raises(UserWarning) as cm:
+        rec.add_property({}, name="another_name")
+    assert_equals(
+        cm.exception.args[0],
+        "The first parameter was neither an instance of Entity nor an integer. Therefore the string representation of your first parameter would normally be interpreted name of the property which is to be added. But you have also specified a parameter 'name' in the method call. This is ambiguous and cannot be processed.")
+    assert_equals(0, len(rec.get_properties()))
+
+
+def test_property_id_ambiguity():
+    rec = db.Record()
+    assert_equals(0, len(rec.get_properties()))
+
+    with assert_raises(UserWarning) as cm:
+        rec.add_property(25, id=26)
+    assert_equals(
+        cm.exception.args[0],
+        "The first parameter was an integer which would normally be interpreted as the id of the property which is to be added. But you have also specified a parameter 'id' in the method call. This is ambiguous and cannot be processed.")
+    assert_equals(0, len(rec.get_properties()))
+
+
+def test_property_parameter_with_entity():
+    rec = db.Record()
+    abstract_property = db.Property(
+        name="length",
+        id=512,
+        datatype=db.DOUBLE,
+        unit="m",
+        description="This is the length of something.")
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(abstract_property)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property("length")
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.name, "length")
+    assert_equals(concrete_property.id, 512)
+    assert_equals(concrete_property.description,
+                  "This is the length of something.")
+    assert_equals(concrete_property.unit, "m")
+    assert_equals(concrete_property.datatype, db.DOUBLE)
+    assert_is(concrete_property._wrapped_entity, abstract_property)
+
+
+def test_property_parameter_with_entity_and_value():
+    rec = db.Record()
+    abstract_property = db.Property(
+        name="length",
+        id=512,
+        datatype=db.DOUBLE,
+        unit="m",
+        description="This is the length of something.")
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(abstract_property, 3.14)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property("length")
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.name, "length")
+    assert_equals(concrete_property.id, 512)
+    assert_equals(concrete_property.description,
+                  "This is the length of something.")
+    assert_equals(concrete_property.unit, "m")
+    assert_equals(concrete_property.value, 3.14)
+    assert_equals(concrete_property.datatype, db.DOUBLE)
+    assert_is(concrete_property._wrapped_entity, abstract_property)
+
+
+def test_property_parameter_with_id():
+    rec = db.Record()
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(512)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property(512)
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.id, 512)
+
+
+def test_property_parameter_with_id_and_value():
+    rec = db.Record()
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(512, 3.14)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property(512)
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.id, 512)
+    assert_equals(concrete_property.value, 3.14)
+
+
+def test_datatype():
+    rec = db.Record()
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(512, 3.14)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property(512)
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.id, 512)
+    assert_equals(concrete_property.value, 3.14)
+
+
+def test_property_parameter_with_entity_and_datatype():
+    rec = db.Record()
+    abstract_property = db.Property(
+        name="length",
+        id=512,
+        datatype=db.DOUBLE,
+        unit="m",
+        description="This is the length of something.")
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(abstract_property, 3.14, datatype=db.INTEGER)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property("length")
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.name, "length")
+    assert_equals(concrete_property.id, 512)
+    assert_equals(concrete_property.description,
+                  "This is the length of something.")
+    assert_equals(concrete_property.unit, "m")
+    assert_equals(concrete_property.value, 3.14)
+    assert_equals(concrete_property.datatype, db.INTEGER)
+    assert_is(concrete_property._wrapped_entity, abstract_property)
+
+
+def test_kw_name_and_value():
+    rec = db.Record()
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(name="length", value=3.14)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property("length")
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.value, 3.14)
+
+
+def test_kw_id_and_value():
+    rec = db.Record()
+
+    assert_equals(0, len(rec.get_properties()))
+    rec.add_property(id=512, value=3.14)
+    assert_equals(1, len(rec.get_properties()))
+    concrete_property = rec.get_property(512)
+    assert_is_not_none(concrete_property)
+    assert_equals(concrete_property.value, 3.14)
+
+
+def test_add_list_of_entitities():
+    rec = db.Record()
+    values = []
+    for i in range(10):
+        values.append(db.Record(name=str(i)))
+    rec.add_property("listOfEntities", values)
+    for e in rec.get_property("listOfEntities").value:
+        assert_is_none(e.id)
+
+    i = 0
+    for val in values:
+        val.id = i
+        i += 1
+
+    i = 0
+    for e in rec.get_property("listOfEntities").value:
+        assert_equals(i, e.id)
+        i += 1
