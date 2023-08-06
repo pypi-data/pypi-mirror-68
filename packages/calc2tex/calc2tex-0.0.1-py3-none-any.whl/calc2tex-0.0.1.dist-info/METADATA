@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: calc2tex
+Version: 0.0.1
+Summary: Calculating formulas and displaying them in LaTeX
+Home-page: https://github.com/stbech/calc2tex
+Author: Stefan Becherer
+Author-email: becherer.stefan1@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pint
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue May 12 16:02:40 2020
+
+@author: stefa
+"""
+
+
+
+

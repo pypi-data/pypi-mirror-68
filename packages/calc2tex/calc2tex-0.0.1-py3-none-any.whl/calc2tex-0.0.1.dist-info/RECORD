@@ -1,0 +1,13 @@
+calc2tex/__init__.py,sha256=zOy2nUwx97RPFQDxIsWPQsNXkkvG07WmtRkYC4BAXr0,164
+calc2tex/_back.py,sha256=BA9iWtiSQ9qx-OwNAu1P2jUBJufGFvyS63wIAhsxcx0,7701
+calc2tex/_formula.py,sha256=LM5LPdvF6tWgCzPgUYf1A1279qZrS1TYP44xk69SCYA,13163
+calc2tex/_helper.py,sha256=6kSvoa_fBCERBu-odRo6dFzICj_dDhg__N0-uAYAcSo,2230
+calc2tex/klasse.py,sha256=NIS8GA5XC2lcD5UUK9hupxMquLQHA0lIJDpoSclFE_k,4821
+calc2tex/parse_tex.py,sha256=q4AnOvtYsAQLEbcwD1e2prDSEtw1mbGapl1DZ1ps2CU,1684
+calc2tex/settings.py,sha256=Yzqc_gV0522m9iysb56TJ2eGiKQTgTqgQD3PgH3bRv4,595
+calc2tex/trigo.py,sha256=TTkjRglBscYYE96hmqN-DQgmsLoEEHmexmFFPhP3VbQ,712
+calc2tex-0.0.1.dist-info/LICENSE.txt,sha256=6OoqZ02RwnZQUwJLGvYWx7_eWJ8cAp2j04Ny90JtFOI,1113
+calc2tex-0.0.1.dist-info/METADATA,sha256=ydwMv3l24j0Pyvz8k1WTeCygDnkZgpDObV88qYX-ar8,431
+calc2tex-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+calc2tex-0.0.1.dist-info/top_level.txt,sha256=YOXno0NUUOmT6HE57d5UaYXuaca2hVZCEH8914ZBhuQ,9
+calc2tex-0.0.1.dist-info/RECORD,,
