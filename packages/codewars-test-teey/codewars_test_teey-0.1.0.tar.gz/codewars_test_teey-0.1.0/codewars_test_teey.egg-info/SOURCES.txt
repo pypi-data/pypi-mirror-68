@@ -1,0 +1,8 @@
+README.md
+setup.py
+codewars_test/__init__.py
+codewars_test/test_framework.py
+codewars_test_teey.egg-info/PKG-INFO
+codewars_test_teey.egg-info/SOURCES.txt
+codewars_test_teey.egg-info/dependency_links.txt
+codewars_test_teey.egg-info/top_level.txt
