@@ -1,0 +1,50 @@
+MANIFEST.in
+README.md
+setup.py
+science2/__init__.py
+science2/__main__.py
+science2/lib.py
+science2/creating variables/desktop.ini
+science2/creating variables/web of science cooccurrences.ipynb
+science2/creating variables/.ipynb_checkpoints/web of science cooccurrences-checkpoint.ipynb
+science2/figures/SB-best years.png
+science2/figures/SB-time lag.png
+science2/figures/auth.agedist.png
+science2/figures/auth.prop dead by cohort.png
+science2/figures/aysum_example_authordeath.png
+science2/figures/cdeath_logreg_Age.png
+science2/figures/cdeath_logreg_Cohort.png
+science2/figures/cdeath_logreg_Year.png
+science2/figures/cit.agedist.png
+science2/figures/cit.prop dead by cohort.png
+science2/figures/compauth.age.year.png
+science2/figures/compcit.age.year.png
+science2/figures/cysum_example_authordeath.png
+science2/figures/cysum_example_citationdeath.png
+science2/figures/desktop.ini
+science2/figures/log-log citation degree distribution.png
+science2/figures/prop dead by cohort.png
+science2/figures/summary_docs_founding.png
+science2/figures/totalauth.age.year.png
+science2/figures/totalcit.age.year.png
+science2/variables/authors.death1.apc-effects
+science2/variables/aysum
+science2/variables/comebacks
+science2/variables/desktop.ini
+science2/variables/journals_jw
+science2/variables/pubyears.wos.all.uid
+science2/variables/wos.all.cysum
+science2/variables/wos.all.death3.apc-effects
+science2/variables/wos.all.last.apc-effects
+science2/variables/wos.all.max.apc-effects
+science2/variables/wos.all.propdeath.apc-effects
+science2/variables/wos.all.uid.cysum
+science2/variables/wos.jstor.cysum
+science2/variables/wos.jstor.death3.apc-effects
+science2/variables/wos.jstor.last.apc-effects
+science2/variables/wos.jstor.max.apc-effects
+science2/variables/wos.jstor.propdeath.apc-effects
+science2_amcgail.egg-info/PKG-INFO
+science2_amcgail.egg-info/SOURCES.txt
+science2_amcgail.egg-info/dependency_links.txt
+science2_amcgail.egg-info/top_level.txt
