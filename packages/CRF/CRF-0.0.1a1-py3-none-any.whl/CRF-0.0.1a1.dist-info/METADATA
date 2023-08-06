@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: CRF
+Version: 0.0.1a1
+Summary: Conditional Random Fields for Vision and Language
+Home-page: https://github.com/ManifoldPerception/CRF
+Author: Manifold Perception
+Author-email: khue@manifoldperception.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CRF - Conditional Random Fields for Vision and Language
+
+This package intially serves as a codebase for our paper
+*Differentiable ADMM for Inference and Learning of Markov Random Fields*.
+
+
