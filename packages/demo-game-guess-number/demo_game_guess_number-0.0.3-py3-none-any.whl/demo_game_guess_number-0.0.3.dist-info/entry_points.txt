@@ -1,0 +1,3 @@
+[console_scripts]
+guess-number = 猜数字.__main__:main
+

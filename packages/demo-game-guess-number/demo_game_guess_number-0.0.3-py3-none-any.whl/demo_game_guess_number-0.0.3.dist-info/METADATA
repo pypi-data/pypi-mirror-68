@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: demo-game-guess-number
+Version: 0.0.3
+Summary: 小游戏演示——猜数字
+Home-page: https://github.com/program-in-chinese/study/
+Author: 无名
+Author-email: nobodxbodon.github@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+猜数字游戏
+
+
