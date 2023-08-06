@@ -1,0 +1,3 @@
+[console_scripts]
+degreedClient = degreedClient.cli:main
+
