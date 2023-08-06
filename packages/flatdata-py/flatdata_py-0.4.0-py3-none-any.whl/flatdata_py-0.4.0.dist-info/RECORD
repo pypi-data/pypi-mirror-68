@@ -1,0 +1,13 @@
+flatdata/lib/__init__.py,sha256=kvnjppZIGyGtzjWdjj6dKuqMAq4jAhuRf_z_s95wLYo,70
+flatdata/lib/archive.py,sha256=wDfDbNIp-4D2jkGRN3FCOjhJHS91_NRBvENSskme5MI,4665
+flatdata/lib/data_access.py,sha256=N4juAczWAzrvUhIPCNrSVb9FvQYCOAlqhjhAnFNVxcc,984
+flatdata/lib/errors.py,sha256=c1OO0gmdfZ5FoVEDHC63asbk2J-DHAY8MIaRV_uYyuA,1246
+flatdata/lib/file_resource_storage.py,sha256=eCDr_zNqVX2e8Q30QIPOrEvSRR0Mv11DC11WrLgXW7A,1078
+flatdata/lib/inspector.py,sha256=0n_qsNncThZYO_gMNePluIOI7PZbflfrfnoD3N6Ly28,3686
+flatdata/lib/resources.py,sha256=xbfrkhATkR1E04Vnh--2f7iq2rum75X-V1la8mHozBE,5708
+flatdata/lib/structure.py,sha256=A3xucXcW9OcJIo5mM06f9Mst8wi2sP8A1TnIZQ7cswQ,2256
+flatdata_py-0.4.0.dist-info/METADATA,sha256=RvIBhrgWasDiNEfd-pUVQW_3pUKTUWYyX2usoFzwBmM,1487
+flatdata_py-0.4.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flatdata_py-0.4.0.dist-info/entry_points.txt,sha256=BLJwa8Wo2D_0u7tnZHvOjX7FdbH9xrZAJi4w6juHrrs,80
+flatdata_py-0.4.0.dist-info/top_level.txt,sha256=7tjhjEWk7GSONn5C_nRSvvB4XrrnjjG0S38wbYlv3Vk,9
+flatdata_py-0.4.0.dist-info/RECORD,,
