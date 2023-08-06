@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: voice_analyzer
+Version: 1.0.0
+Summary: Human voice analyzer
+Home-page: https://github.com/artysold/voice-analyzer
+Author: Artem Soldatov
+Author-email: arty.sold@gmail.com
+License: UNKNOWN
+Description: # Voice-analyzer
+        Human voice analyzer for determining human parameters.
+        
+        ## Requirements
+        - python 3.7 x64 
+        - pip (for installation)
+        
+        ## Installation
+        ```
+        $ pip install voice-analyzer
+        ```
+        
+        ## Usage
+        ### Import
+        ```python
+        from voice_analyzer import *
+        ```
+        
+        ### Sex
+        To determine sex, a ml model trained on the basis of voice frequency is used. 
+        The success rate is ~87%.
+        ```python
+        va_sex = analyzer.Sex()
+        ```
+        You can use your own model.
+        ```python
+        va_sex = analyzer.Sex("path\\to\\model.h5")
+        ```
+        
+        #### Prediction
+        ```python
+        va_sex.predict("path\\to\\file.mp3")
+        ```
+        The function returns the gender as a string:
+        - male (0)
+        - female (1)
+        
+        #### Train
+        You can train the model based on your own dataset.
+        ```python
+        from voice_analyzer import *
+        import pandas as pd
+        
+        va_sex = analyzer.Sex()
+        data = [
+            {'sex': 0, 'frequency': 180},
+            {'sex': 1, 'frequency': 220}
+        ]
+        df = pd.DataFrame(data)
+        
+        va_sex.train(df, "path\\to\\save\\model.h5")
+        ```
+        #### Tests
+        You can check the percent accuracy of the model on your dataset.
+        ```python
+        from voice_analyzer import *
+        import pandas as pd
+        
+        va_sex = analyzer.Sex()
+        data = [
+            {'sex': 0, 'frequency': 180},
+            {'sex': 1, 'frequency': 220}
+        ]
+        df = pd.DataFrame(data)
+        
+        va_sex.tests(df)
+        ```
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
