@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: py-aiger-gridworld
+Version: 0.3.0
+Summary: Library for modeling gridworlds as AIGER circuits.
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: funcy (>=1.13,<2.0)
+Requires-Dist: py-aiger (>=6.0.0,<7.0.0)
+Requires-Dist: py-aiger-bv (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# py-aiger-gridworld
+
+Library for modeling gridworlds as AIGER circuits.
+
+[![Build Status](https://cloud.drone.io/api/badges/mvcisback/py-aiger-gridworld/status.svg)](https://cloud.drone.io/mvcisback/py-aiger-gridworld)
+[![codecov](https://codecov.io/gh/mvcisback/py-aiger-gridworld/branch/master/graph/badge.svg)](https://codecov.io/gh/mvcisback/py-aiger-gridworld)
+[![PyPI version](https://badge.fury.io/py/py-aiger-gridworld.svg)](https://badge.fury.io/py/py-aiger-gridworld)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<object data="assets/visualization_example.svg" type="image/svg+xml">
+  <img src="assets/visualization_example.svg" />
+</object>
+
+# Installation
+
+If you just need to use `aiger_gridworld`, you can just run:
+
+`$ pip install py-aiger-gridwolrd`
+
+For developers, note that this project uses the
+[poetry](https://poetry.eustace.io/) python package/dependency
+management tool. Please familarize yourself with it and then
+run:
+
+`$ poetry install`
+
