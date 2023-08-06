@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hidebound
+Version: 0.4.0
+Summary: A library for creating assets from files on disk.
+Home-page: https://github.com/theNewFlesh/hidebound
+Author: Alex Braun
+Author-email: Alexander.G.Braun@gmail.com
+License: MIT
+Download-URL: https://github.com/theNewFlesh/hidebound/archive/0.4.0.tar.gz
+Description: # Hidebound
+        
+        **[Documentation](https://thenewflesh.github.io/hidebound/)**
+        
+        # Installation
+        `pip install hidebound`
+        
+        # For Developers
+        ## Installation
+        1. Install [docker](https://docs.docker.com/v17.09/engine/installation)
+        2. Install [docker-machine](https://docs.docker.com/machine/install-machine)
+           (if running on macOS or Windows)
+        3. Ensure docker-machine has at least 4 GB of memory allocated to it.
+        4. `cd hidebound`
+        5. `chmod +x bin/hidebound`
+        6. `bin/hidebound start`
+        
+        The service should take a few minutes to start up.
+        
+        Run `bin/hidebound --help` for more help on the command line tool.
+        
+Keywords: asset,project,data
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
