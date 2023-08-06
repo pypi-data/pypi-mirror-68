@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: waterch-tasker
+Version: 0.0.3
+Summary: A scalable and extendable experiment task scheduler framework.
+Home-page: https://github.com/chenrz925/waterch-tasker
+Author: Chen Runze
+Author-email: chenrz925@icloud.com
+License: UNKNOWN
+Project-URL: Documentation, https://waterch-tasker.readthedocs.io/zh_CN/latest/
+Project-URL: Source Code, https://github.com/chenrz925/waterch-tasker
+Description: <h1>waterch-tasker</h1>
+        <p><img alt="License" src="https://img.shields.io/github/license/chenrz925/waterch-tasker?style=flat-square" />
+        <img alt="Last Commit" src="https://img.shields.io/github/last-commit/chenrz925/waterch-tasker?style=flat-square" />
+        <img alt="PyPI" src="https://img.shields.io/pypi/v/waterch-tasker?style=flat-square" />
+        <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/chenrz925/waterch-tasker/CI?style=flat-square" /></p>
+        <p>A scalable and extendable experiment task scheduler framework.</p>
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
