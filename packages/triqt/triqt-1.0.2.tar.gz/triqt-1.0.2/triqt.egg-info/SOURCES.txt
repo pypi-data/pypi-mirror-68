@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+triqt.py
+triqt.egg-info/PKG-INFO
+triqt.egg-info/SOURCES.txt
+triqt.egg-info/dependency_links.txt
+triqt.egg-info/requires.txt
+triqt.egg-info/top_level.txt
