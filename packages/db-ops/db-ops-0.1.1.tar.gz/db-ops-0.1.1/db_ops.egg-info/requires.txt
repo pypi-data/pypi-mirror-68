@@ -1,0 +1,4 @@
+pandas
+numpy
+pyrfc3339
+influxdb
