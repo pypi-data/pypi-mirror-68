@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: py-mob
+Version: 0.2
+Summary: Python Implementation of Monotonic Optimal Binning
+Home-page: https://github.com/statcompute/py_mob
+Author: WenSui Liu
+Author-email: liuwensui@gmail.com
+License: UNKNOWN
+Description: As an attempt to mimic the mob R package (https://CRAN.R-project.org/package=mob), the py\_mob is a collection of python functions that would generate the monotonic binning and perform the WoE (Weight of Evidence) transformation used in consumer credit scorecard developments. Being a piecewise constant transformation in the context of logistic regressions, the WoE has also been employed in other use cases, such as consumer credit loss estimation, prepayment, and even fraud detection models. In addition to monotonic binning and WoE transformation, Information Value and KS statistic of each independent variables is also calculated to evaluate the variable predictiveness. 
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
