@@ -1,0 +1,7 @@
+requests
+colorama
+
+[dev]
+pytest
+autopep8
+twine
