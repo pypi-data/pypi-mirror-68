@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: onion-w1-sysfs
+Version: 0.1.2
+Summary: w1 lib using the sysfs interface
+Home-page: https://github.com/grizmin/w1-gpio-linux
+Author: Grizmin
+Author-email: grizmin@gmail.com
+License: UNKNOWN
+Keywords: onion omega IoT w1 onewire 1w
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
+
+# w1-sysfs
+One Wire protocol library using the sysfs interface
+
+## Compatibility
+
+Now comptatible with all Python 3 versions.
+
+## Install
+
+pip install onion-w1-sysfs
+
+## Usage
+
+        OneWire# python
+        Python 3.6.9 (default, Dec 06 2019, 16:28:06)
+        [GCC 7.3.0] on linux
+        Type "help", "copyright", "credits" or "license" for more information.
+        >>> from OneWire import OneWire
+        >>> w1 = OneWire(0)
+        >>> w1.read_device()
+        ['85 01 4b 46 7f ff 0c 10 31 : crc=31 YES\n', '85 01 4b 46 7f ff 0c 10 31 t=24312\n']
+        >>> w1.read_device()[1].split('=')[1].rstrip()
+        '24312'
+        >>>
+
+## Author
+
+PyPi package by https://github.com/grizmin
+
