@@ -1,0 +1,2 @@
+parasail>=1.1.11
+edlib>=1.1.2
