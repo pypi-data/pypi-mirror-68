@@ -1,0 +1,5 @@
+backports.functools_lru_cache
+cherrypy
+pacifica-namespace
+python-dateutil
+requests

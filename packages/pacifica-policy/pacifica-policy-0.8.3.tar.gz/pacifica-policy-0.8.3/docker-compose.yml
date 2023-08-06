@@ -1,0 +1,32 @@
+version: '2'
+services:
+  policyserver:
+    build:
+      context: .
+    links:
+    - metadataserver:metadata
+    ports:
+    - 8181:8181
+    environment:
+      ADMIN_USER_ID: 10
+      METADATA_URL: http://metadata:8121
+      STATUS_URL: http://metadata:8121/groups
+
+  metadatadb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: metadata
+      POSTGRES_DB: pacifica_metadata
+      POSTGRES_USER: pacifica
+
+  metadataserver:
+    image: pacifica/metadata
+    links:
+    - metadatadb:postgres
+    environment:
+      PEEWEE_DATABASE: pacifica_metadata
+      PEEWEE_USER: pacifica
+      PEEWEE_ADDR: postgres
+      PEEWEE_PORT: 5432
+      PEEWEE_PROTO: postgres
+      PEEWEE_PASS: metadata
