@@ -1,0 +1,3 @@
+[console_scripts]
+fortios_xutils = fortios_xutils.cli:main
+
