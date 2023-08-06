@@ -1,0 +1,11 @@
+mats/__init__.py,sha256=BVk2uiOdjSwUPFLQ2DRN2fhxl3rHzhoOB38eZoNN6g0,407
+mats/archiving.py,sha256=9t1tKsf9KT0cEnVdgB7hkBOngdVbdZRww6vSI83p7uU,5053
+mats/test.py,sha256=wwbF9by71_wZAYgo3kQS8NKXfkngzpAHkzFXPW-Z47g,6231
+mats/test_sequence.py,sha256=japKYIU3QcgGmKruNuDCw-TtV-QcVqmvKqA3KlPhI14,9809
+mats/tkwidgets.py,sha256=qanb3jepkiaPQs_LogOBPPJxjJkv-VURufnJunei3rU,5359
+mats/version.py,sha256=tizRTMgw_I-HIOjVC6JW-HD67S-x2g59Xnd08p_FUmQ,24
+mats-0.32.0.dist-info/METADATA,sha256=ZdS0ZmoOTjeFdUydWSvuvU5nU41-JkJuu8JDq_cDOEA,2294
+mats-0.32.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+mats-0.32.0.dist-info/license.txt,sha256=61HI68mOwkxnq5MmYJg8rMYj8E8Q5F5kZBMenhEQ-uY,1092
+mats-0.32.0.dist-info/top_level.txt,sha256=eoqEyeXWif79smSm0s2skvo_JwRAsxdlbYAK1wkqXgE,5
+mats-0.32.0.dist-info/RECORD,,
