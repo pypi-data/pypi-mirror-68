@@ -1,0 +1,9 @@
+README.md
+setup.py
+tools_barebone/__init__.py
+tools_barebone.egg-info/PKG-INFO
+tools_barebone.egg-info/SOURCES.txt
+tools_barebone.egg-info/dependency_links.txt
+tools_barebone.egg-info/requires.txt
+tools_barebone.egg-info/top_level.txt
+tools_barebone/structure_importers/__init__.py
