@@ -1,0 +1,14 @@
+geoalchemy2/__init__.py,sha256=Ocz05KyfnWqlO2zKAX0cfDe7r8Rk0fR69qNRbNwA8WQ,5933
+geoalchemy2/comparator.py,sha256=EV8uVZDhiCt9HPEDj3OhH-uheMQ-OFCzr7CZ5ZmZMTs,7175
+geoalchemy2/compat.py,sha256=m9KrO8nHjDGrvI_srIHciurHdWLrzjEyoFoikrWWbf8,518
+geoalchemy2/elements.py,sha256=7xuTgMIbfz6McHHleW2Ktbic4vvb1MN9amrsXiDvxe0,8254
+geoalchemy2/exc.py,sha256=lpVPR1q43ceNh4-SGN0UBRFB5znWWnf-JwTAHuASMOA,240
+geoalchemy2/functions.py,sha256=1K32H1oapJBcoJZIHmZNkJxN14fsqMzSEkASBAVyGHg,30099
+geoalchemy2/shape.py,sha256=wEzcLEK153K0oD4zDPmrhDArXq2XoftmFbrfHb029Sg,3392
+geoalchemy2/types.py,sha256=QB-8tOTnDFR8FH0xaC3ghrK1aBTQ1co0FlJbsAjC_g8,13570
+GeoAlchemy2-0.8.2.dist-info/COPYING.rst,sha256=-bQKftq9uMOROzF7oN65kYBBIJKxTmBuDoftp27IC3I,1056
+GeoAlchemy2-0.8.2.dist-info/METADATA,sha256=OINvOJEc7BdrjTJV_Dj3ZMm_sgQ5VWECAK343fquKcc,1588
+GeoAlchemy2-0.8.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+GeoAlchemy2-0.8.2.dist-info/entry_points.txt,sha256=wqNxVlvawq3Rri3WwdPiHW4dRNTRo5iOFz5s8o8zqsA,33
+GeoAlchemy2-0.8.2.dist-info/top_level.txt,sha256=3kGUTcfBeXd61zFpof6-qiuw1peNF_HuZabgHQgrdis,12
+GeoAlchemy2-0.8.2.dist-info/RECORD,,
