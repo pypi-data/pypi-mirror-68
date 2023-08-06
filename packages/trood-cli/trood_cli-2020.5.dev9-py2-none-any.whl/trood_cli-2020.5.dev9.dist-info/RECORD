@@ -1,0 +1,10 @@
+trood/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trood/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trood/cli/spaces.py,sha256=9ws3yoA68Byw-XmVIfvWg_Z1mvlQP2OvCCdwIXR3lPc,3143
+trood/cli/trood.py,sha256=I4ayhNzLO4Y1qWpOOG-xBvWs-m3CgTY7FfdNActpeRE,1574
+trood/cli/utils.py,sha256=fvG0xnY4uiQjf1MWtmudqNVr2Vn3NVWTmoxy5vtafSU,741
+trood_cli-2020.5.dev9.dist-info/METADATA,sha256=WGS9ocy4XcmZtuzl9MqH1EfoVX3hLsp8LoeCGBYc94E,308
+trood_cli-2020.5.dev9.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+trood_cli-2020.5.dev9.dist-info/entry_points.txt,sha256=Tpbj7DGrjZeKc4ERXHB-FzOql7PgROjbqj3xhvoauo0,67
+trood_cli-2020.5.dev9.dist-info/top_level.txt,sha256=9H9vI8Yjlhb9J1YcXyFqgB8jIcZcMK_EjIbb3_kT120,6
+trood_cli-2020.5.dev9.dist-info/RECORD,,
