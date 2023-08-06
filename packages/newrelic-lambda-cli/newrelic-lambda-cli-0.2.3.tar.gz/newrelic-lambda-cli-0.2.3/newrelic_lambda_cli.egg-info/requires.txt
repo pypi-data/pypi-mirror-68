@@ -1,0 +1,7 @@
+boto3
+click
+colorama
+emoji
+gql
+requests
+tabulate
