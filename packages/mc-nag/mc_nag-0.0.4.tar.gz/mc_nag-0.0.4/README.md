@@ -1,0 +1,113 @@
+# Multi-Cloud (MC) Nag Static Analysis Tool
+
+![mc-nag](https://github.com/stelligent/mc-nag/workflows/mc-nag/badge.svg)
+![releases](https://github.com/stelligent/mc-nag/workflows/releases/badge.svg)
+![vscode-container](https://github.com/stelligent/mc-nag/workflows/vscode-container/badge.svg)
+
+# Background
+
+mc_nag provides the framework for platform-specific "nag" tools (e.g. [azure-nag](https://github.com/stelligent/azure-nag)) to validate IAC templates for patterns that may defy best practices or indicate insecure resources.  It provides base classes for parsers, template data models, and rules so those platform-specific "nag" tools can focus on the platform's logic.
+
+![mc-nag Process Flow](assets/mc-nag_process_flow.png)
+
+# Prerequisites
+
+* pyenv >= 1.2.18
+* Python >=3.7 (from pyenv)
+
+# Installation
+
+`pip install mc-nag`
+
+# Usage
+
+Once you've imported modules from `mc-nag`, you can subclass those base classes to provde a starting point for your platform-specific tool.
+
+```python
+from mc_nag.base_utils.models.template import BaseTemplate
+```
+
+```python
+class PlatformTemplate(BaseTemplate):
+    ...
+```
+
+# Development
+
+## VS Code Remote Development
+There is a complete remote development environment created and setup with all the tools and settings pre-configured for ease in rule development and creation. You can enable this by using the VS Code Remote development functionality.
+
+- Install the VS Code [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- Open the repo in VS Code
+- When prompted "`Folder contains a dev container configuration file. Reopen folder to develop in a container`" click the "`Reopen in Container`" button
+- When opening in the future use the "`[Dev Container] mc_nag Development`" option
+
+## Rule Creation
+
+Rules are at the crux of mc-nag's purpose.  They create its functionality but are flexible enough to be able to create/update/delete them at will.  Rules are stored within each platform-specific "nag" tool (e.g. [azure-nag](https://github.com/stelligent/azure-nag)), however the structure of the `BaseRule` class is defined here.
+
+### Structure
+
+All rules must be subclassed from the [`BaseRule` class](mc_nag/base_utils/models/rule.py).  It contains the basic necessities and structure for a rule class, as well as validation mechanisms to ensure your rule class will behave as expected.
+
+Every rule must have at least:
+* **Attributes**
+  * *rule_id*: Unique identifier for the rule.
+  * *description*: Plain language description of what the rule is trying to accomplish.
+  * *severity*: The impact the rule has on the run of mc-nag.  One of [`rule.ERROR`, `rule.WARNING`, `rule.STYLE`].
+  * *url*: Page at which more information can be found on the rule.
+  * *resolution*: Steps to take in order to remediate any violations the rule finds.
+* **Methods**
+  * *evaluate*: Logic to perform the rule's stated function.  Must return a list of violating resources.
+
+[Sample rule](https://github.com/stelligent/azure-nag/blob/master/azure_nag/rules/azure_storageaccount_encrypted_rule.py) which shows basic structure
+
+### Testing
+
+It is good practice to create unit tests and multiple example templates to accompany your new rule in order to prove your rule logic works properly.  Tests should consider both good and bad scenarios, as well as any novel scenarios which may crop up in practice.
+
+When you have a rule ready for evaluation, you can either pass its containing directory as a `--custom-platform-rules-dir` CLI option to the platform-specific "nag" executable or, if you have the source checked out, you can place the rule into the platform-specific tool's rules directory.
+
+[Sample unit tests](https://github.com/stelligent/azure-nag/blob/master/tests/rules/test_azure_storageaccount_encrypted_rule.py)
+
+[Sample test templates](https://github.com/stelligent/azure-nag/tree/master/tests/templates)
+
+## Template Model Creation
+
+The template model is a generic way to represent different platforms' templates.  After a template is parsed, its parsed data is stored in the template model for evaluation by the rule set.
+
+### Structure
+
+All template models must be subclassed from the [`BaseTemplate` class](mc_nag/base_utils/models/template.py).  It contains the basic necessities and structure for a template model class, as well as validation mechanisms to ensure your template model class will behave as expected.
+
+Every template model must have at least:
+* **Attributes**
+  * *template_string*: Raw string read from the template file.
+  * *parsed_template*: Platform-specific parser object (e.g. [`AzureParser`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/azure_parser.py)), which returns the parsed template model.
+  * *resources*: List of platform-specific resource objects (e.g. [`AzureResource`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_resource.py)) created from the parsed template model.
+  * *parameters*: List of platform-specific parameter objects (e.g. [`AzureParameter`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_parameter.py)) created from the parsed template model.
+  * *outputs*: List of platform-specific output objects (e.g. [`AzureOutput`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_output.py)) created from the parsed template model.
+  * *functions*: List of platform-specific function objects (e.g. [`AzureFunction`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_function.py)) created from the parsed template model.
+  * *variables*: List of platform-specific variable objects (e.g. [`AzureVariable`](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_variable.py)) created from the parsed template model.
+
+The attributes listed above must be defined, even if they are just empty lists.
+
+[Sample template model](https://github.com/stelligent/azure-nag/blob/master/azure_nag/models/azure_template.py) which shows basic structure
+
+### Testing
+
+It is good practice to create unit tests and multiple example templates to accompany your new template model in order to prove your data model logic works properly.  Tests should consider both good and bad scenarios, as well as any novel scenarios which may crop up in practice.
+
+[Sample unit tests](https://github.com/stelligent/azure-nag/blob/master/tests/test_azure_template.py)
+
+[Sample test templates](https://github.com/stelligent/azure-nag/tree/master/tests/templates)
+
+# Releases
+**Note**: Before releasing, ensure the version string in [`mc_nag/__init__.py`](mc_nag/__init__.py) has been updated with the new string.
+
+Currently, new releases are generated when a user manually publishes the previously created draft release in the GitHub UI.  The [mc-nag workflow](https://github.com/stelligent/mc-nag/actions?query=workflow%3Amc-nag) will generate a draft release for the repo via the `release-drafter` GitHub Action which contains the list of all changes since the previous release.
+![draft_release](assets/draft_release.png)
+
+# Support
+
+To report a bug or request a feature, submit an issue through the GitHub repository via https://github.com/stelligent/mc-nag/issues/new.
