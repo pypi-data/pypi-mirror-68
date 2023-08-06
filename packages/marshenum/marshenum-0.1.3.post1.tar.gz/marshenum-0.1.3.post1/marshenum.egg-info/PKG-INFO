@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: marshenum
+Version: 0.1.3.post1
+Summary: Use enums with marshmallow
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: zidder@hilearn.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha

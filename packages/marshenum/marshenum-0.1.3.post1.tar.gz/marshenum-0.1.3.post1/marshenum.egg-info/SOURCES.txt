@@ -1,0 +1,10 @@
+README.md
+setup.py
+marshenum/__init__.py
+marshenum/enum_field.py
+marshenum/marsh_schema.py
+marshenum.egg-info/PKG-INFO
+marshenum.egg-info/SOURCES.txt
+marshenum.egg-info/dependency_links.txt
+marshenum.egg-info/requires.txt
+marshenum.egg-info/top_level.txt
