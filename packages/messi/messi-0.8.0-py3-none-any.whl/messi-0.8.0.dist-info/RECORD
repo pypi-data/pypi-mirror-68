@@ -1,0 +1,16 @@
+messi/__init__.py,sha256=ZgpfOLWpOZEzaUWgZMrdeGJDCsC5W3pX1pHMkdJA-3k,1847
+messi/__main__.py,sha256=bsLOczAEG6CWP_4RF5dOdAxHZfxRwosHd0eJseAr638,59
+messi/version.py,sha256=27YY3zFpeaDh6JoC40AqkjBrn68SqFlsWZzjZtw5jwU,22
+messi/c_source/__init__.py,sha256=R76PG_WG2zvQBtp0BpLvmlNGl8LgSVawfc2RAC7WkXE,14479
+messi/c_source/messi.c,sha256=CziKksvu7dSdTMzsJSTXQZ2aANfG1_aX7uJ-hPPLICo,2245
+messi/c_source/messi.h,sha256=408qpV5xeEKb7UlYT7Fo27-cJ0ckF3Mfby1hH4n1kN4,2419
+messi/c_source/templates/client.c,sha256=BjdUYndm77-tsjxAXqXBmQNBUsUxQSoQca1U0Ushy3I,11654
+messi/c_source/templates/client.h,sha256=fE1vVc0QFZECKmn_ceCCdCW6UXb5adY-do1HxCteIgk,3380
+messi/c_source/templates/server.c,sha256=GSikTW8chXt7rK7i0ExgDzLoTrk71jM2HmXwMfAtBJg,16104
+messi/c_source/templates/server.h,sha256=PCGfXwCJuxNgadZnCSHPDLyRirHmt_JGH3He__5U5zo,4561
+messi-0.8.0.dist-info/LICENSE,sha256=fWni4NSkaAeLRi61QGjiKz1sqmIlKibFdhKsMLk5TIM,1080
+messi-0.8.0.dist-info/METADATA,sha256=Q2bGSec3GOVpua9PbMHkesqiYCJHwdEcJYvo9OysqQk,10798
+messi-0.8.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+messi-0.8.0.dist-info/entry_points.txt,sha256=In5HpOCvlrAJZ0bd7Q7NV6lBu5U71u7EIjQo_RxG9rc,47
+messi-0.8.0.dist-info/top_level.txt,sha256=_dVgiLFt8TmRBV5DuJ7coTjQSgvr4zDTLBG8UUyc__w,6
+messi-0.8.0.dist-info/RECORD,,
