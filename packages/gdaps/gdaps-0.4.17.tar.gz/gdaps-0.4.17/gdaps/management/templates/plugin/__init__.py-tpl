@@ -1,0 +1,5 @@
+# For plugin apps, the AppConfig is found automatically.
+default_app_config = '{{ plugin_group }}.{{ app_name }}.apps.{{ camel_case_app_name }}Config'
+
+__version__ = "{{ plugin_version }}"
+__license__ = "{{ license }}"
