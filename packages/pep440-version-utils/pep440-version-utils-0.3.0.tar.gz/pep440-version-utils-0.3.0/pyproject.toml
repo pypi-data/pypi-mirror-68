@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pep440-version-utils"
+version = "0.3.0"
+description = "Utilities to deal with pep440 versioning"
+authors = ["Maxime Verger <me@maxvdb.com>"]
+license = "MIT"
+maintainers = ["Maxime Verger <me@maxvdb.com>"]
+readme = "README.md"
+homepage = "https://github.com/m-vdb/pep440-version-utils"
+repository = "https://github.com/m-vdb/pep440-version-utils"
+keywords = ["pep440", "version"]
+classifiers = ["Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+packaging = "^20.3"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+mypy = "^0.770"
+pytest = "^5.4.2"
+pytest-cov = "^2.8.1"
+coveralls = "^2.0.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
