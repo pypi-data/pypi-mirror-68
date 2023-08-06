@@ -1,0 +1,9 @@
+backoff~=1.10.0
+googleapis-common-protos<2.0,>=1.5.3
+protobuf<4.0,>3.7.1
+requests<3.0,>=2.19
+opentelemetry-api==0.7b1
+opentelemetry-sdk==0.7b1
+
+[test]
+httpretty~=1.0.2
