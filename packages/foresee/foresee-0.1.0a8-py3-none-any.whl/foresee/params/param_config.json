@@ -1,0 +1,6 @@
+{
+"MODEL_LIST":			["sarimax","holt_winters","prophet","fft","ewm_model"],
+"FREQ":					12,
+"FORECAST_LEN":			10,
+"EPSILON":			0.0000001
+}

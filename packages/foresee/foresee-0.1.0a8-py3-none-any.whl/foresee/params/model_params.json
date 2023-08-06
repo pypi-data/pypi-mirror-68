@@ -1,0 +1,26 @@
+{
+"sarimax":				{
+							"p": 5,
+							"d": 2,
+							"q": 5,
+							"cp": 3,
+							"cd": 2,
+							"cq": 3
+						},
+"holt_winters":			[
+							"smoothing_level",
+							"smoothing_slope",
+							"smoothing_seasonal",
+							"damping_slope"
+						],
+"prophet":				{
+							"changepoint_prior_scale": 1,
+							"seasonality_prior_scale": 50
+						},
+"fft":					{
+							"n_harmonics": 20
+						},
+"ewm_model":			{
+							"span": 20
+						}
+}
