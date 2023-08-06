@@ -1,0 +1,7 @@
+assertpy
+jsonpath_rw_ext
+chardet
+DictObject
+cchardet
+html
+parameterized
