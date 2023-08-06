@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: animated-memory
+Version: 0.1
+Summary: A news aggregator with local training
+Home-page: https://github.com/mcpdude/animated-memory
+Author: Brian Posey
+Author-email: thebrianposey@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# animated-memory
+
+This is a tool for collecting news from user defined sources, then ordering those stories by how much a machine learning model thinks you'll like it.
+
+All the data is stored locally, and processed locally.
+
+To run, pull, then run setup.py, which will install necessary packages.
+
+Then, run `python aggregator.py &`, and go to your browser. At localhost:8080, you'll see the following:
+
+
+
