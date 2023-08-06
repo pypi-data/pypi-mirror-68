@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+mu_notedown.egg-info/PKG-INFO
+mu_notedown.egg-info/SOURCES.txt
+mu_notedown.egg-info/dependency_links.txt
+mu_notedown.egg-info/entry_points.txt
+mu_notedown.egg-info/requires.txt
+mu_notedown.egg-info/top_level.txt
+notedown/__init__.py
+notedown/contentsmanager.py
+notedown/main.py
+notedown/notedown.py
+notedown/templates/markdown.tpl
+notedown/templates/markdown_outputs.tpl
