@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: PrettyAnalyticPlots
+Version: 0.1.0
+Summary: PrettyAnalyticPlots: special plots for analysis
+Home-page: UNKNOWN
+Author: Victor Kharlamov
+Author-email: vi.kharlamov@gmail.com
+Maintainer: Victor Kharlamov
+Maintainer-email: vi.kharlamov@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Xapulc/PrettyAnalyticPlots
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.6

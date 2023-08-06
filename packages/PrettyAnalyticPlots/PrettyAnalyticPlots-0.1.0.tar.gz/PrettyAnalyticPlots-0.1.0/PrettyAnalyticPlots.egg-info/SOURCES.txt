@@ -1,0 +1,9 @@
+README.md
+setup.py
+PrettyAnalyticPlots.egg-info/PKG-INFO
+PrettyAnalyticPlots.egg-info/SOURCES.txt
+PrettyAnalyticPlots.egg-info/dependency_links.txt
+PrettyAnalyticPlots.egg-info/requires.txt
+PrettyAnalyticPlots.egg-info/top_level.txt
+analyticplots/__init__.py
+analyticplots/categorical.py
