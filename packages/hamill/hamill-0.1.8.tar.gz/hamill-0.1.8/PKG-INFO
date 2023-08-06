@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hamill
+Version: 0.1.8
+Summary: A lightweight markup language
+Home-page: https://xitog.github.io/dgx/informatique/hamill.html
+Author: Damien Gouteux
+Author-email: damien.gouteux@gmail.com
+Maintainer: Damien Gouteux
+Maintainer-email: damien.gouteux@gmail.com
+License: MIT
+Description: A simple lightweight markup language.
+Keywords: hamill,lml,lightweight markup language,markup,text,html
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries
+Requires-Python: >=3.5
+Description-Content-Type: text/plain
