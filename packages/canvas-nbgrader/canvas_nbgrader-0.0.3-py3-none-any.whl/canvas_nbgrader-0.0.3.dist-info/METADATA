@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: canvas-nbgrader
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Olav Vahtras
+Author-email: vahtras@kth.se
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: canvasapi
+Requires-Dist: pandas
+
+UNKNOWN
+
+
