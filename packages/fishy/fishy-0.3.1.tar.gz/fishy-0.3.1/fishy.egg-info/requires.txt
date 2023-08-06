@@ -1,0 +1,13 @@
+winshell
+imutils
+numpy
+opencv_python
+Pillow
+pypiwin32
+ttkthemes
+pyautogui
+requests
+beautifulsoup4
+whatsmyip
+pyqrcode
+pypng
