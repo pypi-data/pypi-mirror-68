@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: sparqlslurper
+Version: 0.4.0
+Summary: SPARQL Slurper for rdflib
+Home-page: http://github.com/hsolbrig/sparqlslurper
+Author: Harold Solbrig
+Author-email: solbrig@jhu.edu
+License: CC0 1.0 Universal
+Description: UNKNOWN
+Keywords: SPARQL,ShEx,RDF,rdflib
+Platform: UNKNOWN
+Requires-Python: >=3.6
