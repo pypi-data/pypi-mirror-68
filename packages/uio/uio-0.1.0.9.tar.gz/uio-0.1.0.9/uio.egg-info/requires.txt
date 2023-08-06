@@ -1,0 +1,8 @@
+logless
+
+[Azure]
+azure
+
+[S3]
+boto3
+s3fs
