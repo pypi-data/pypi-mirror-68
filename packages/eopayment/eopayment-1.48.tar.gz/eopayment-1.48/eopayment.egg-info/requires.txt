@@ -1,0 +1,6 @@
+click
+pycrypto>=2.5
+pytz
+requests
+six
+zeep>=2.5
