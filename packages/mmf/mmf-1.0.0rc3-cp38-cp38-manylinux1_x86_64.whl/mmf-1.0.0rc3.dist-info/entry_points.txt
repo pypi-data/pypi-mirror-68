@@ -1,0 +1,5 @@
+[console_scripts]
+mmf_convert_hm = tools.scripts.hateful_memes.convert:main
+mmf_predict = tools.predict:predict
+mmf_run = tools.run:run
+
