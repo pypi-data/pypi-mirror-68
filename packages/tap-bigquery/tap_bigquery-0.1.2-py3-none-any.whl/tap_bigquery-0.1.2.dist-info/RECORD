@@ -1,0 +1,9 @@
+tap_bigquery/__init__.py,sha256=r8kizeFUJGg7v49hFWmsRRwC9-DZdLtpX8rxjpWzYnc,5546
+tap_bigquery/sync_bigquery.py,sha256=nrZeyfCABl7CAvgwDaNccLYfgxsuKoEpIHbgI8J3jMs,5394
+tap_bigquery/schemas/sample_stream.json,sha256=k7tri-9CY4GKUrZ5VcWhZo2uc5XUAbvQxLMb1dVj1fY,390
+tap_bigquery-0.1.2.dist-info/LICENSE,sha256=wPfX_XYs2OPlMPG59SM2qfPlLfkQJ3atZ3WWUVQ57Wk,1063
+tap_bigquery-0.1.2.dist-info/METADATA,sha256=-1qxvrBGHn1oDfKmfpLaTQrxBIY9GfdNf5odkYUQUSw,410
+tap_bigquery-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tap_bigquery-0.1.2.dist-info/entry_points.txt,sha256=Hxz4in1LNGVkUD5JKnSNDjMYPNuL7xghp1Vv0bHxqrg,62
+tap_bigquery-0.1.2.dist-info/top_level.txt,sha256=grEzOcRtvuooouDM2aBUlTGIhbAaHcAzhBSMChi0suc,13
+tap_bigquery-0.1.2.dist-info/RECORD,,
