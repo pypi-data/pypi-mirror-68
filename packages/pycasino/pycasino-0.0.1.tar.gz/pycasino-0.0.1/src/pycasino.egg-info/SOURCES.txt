@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/pycasino/__init__.py
+src/pycasino/deck.py
+src/pycasino/die.py
+src/pycasino.egg-info/PKG-INFO
+src/pycasino.egg-info/SOURCES.txt
+src/pycasino.egg-info/dependency_links.txt
+src/pycasino.egg-info/entry_points.txt
+src/pycasino.egg-info/requires.txt
+src/pycasino.egg-info/top_level.txt
