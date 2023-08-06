@@ -1,0 +1,16 @@
+click
+gitpython
+gdspy
+hiyapyco
+jsondiff
+klayout
+numpy
+pandas
+phidl
+picwriter
+pyqtree
+qrcode
+scipy
+shapely
+xlrd
+pytest-regressions
