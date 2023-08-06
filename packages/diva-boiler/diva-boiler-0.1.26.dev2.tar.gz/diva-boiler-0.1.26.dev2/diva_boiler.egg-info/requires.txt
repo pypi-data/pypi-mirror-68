@@ -1,0 +1,11 @@
+attrs
+boto3
+click>=7.0
+GitPython
+packaging
+requests
+requests-toolbelt
+sentry-sdk
+tabulate
+pyyaml
+pyxdg
