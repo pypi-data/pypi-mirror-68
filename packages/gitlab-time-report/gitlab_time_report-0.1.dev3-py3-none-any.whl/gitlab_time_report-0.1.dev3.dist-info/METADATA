@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gitlab-time-report
+Version: 0.1.dev3
+Summary: GitLab time reporting made easy.
+Home-page: https://gitlab.dev.ifs.hsr.ch/ifs/gitlab-time-report/gitlab-time-report
+Author: Johannes Wildermuth
+Author-email: johannes.wildermuth@hsr.ch
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.2.1,<4.0.0)
+Requires-Dist: python-gitlab (>=2.2.0,<3.0.0)
+Project-URL: Documentation, http://ifs.pages.ifs.hsr.ch/gitlab-time-report/gitlab-time-report/
+Project-URL: Repository, https://gitlab.dev.ifs.hsr.ch/ifs/gitlab-time-report/gitlab-time-report
+Description-Content-Type: text/markdown
+
+# GitLab-time-report
+
+Please visit the [Read the Docs](http://ifs.pages.ifs.hsr.ch/gitlab-time-report/gitlab-time-report/) documentation for more information.
+
+## Development
+
+Please visit the [according documentation page](http://ifs.pages.ifs.hsr.ch/gitlab-time-report/gitlab-time-report/development/).
+

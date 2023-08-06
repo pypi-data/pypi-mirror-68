@@ -1,0 +1,11 @@
+gitlab_time_report/__init__.py,sha256=2nDnJzAt7ePsNmH1hUQ3-KtRy_2uMOPKh-Z0U9Qkxwg,593
+gitlab_time_report/bar_chart.py,sha256=6GUmJoPbFLItuxYzS1IE3sTQyaVSnNlF4SwK17bebgw,3930
+gitlab_time_report/cake_chart.py,sha256=aAdfxIJ2cZHuuyzlQCfE6vcy15z0XLETbe4IKGvVXIQ,3933
+gitlab_time_report/chart.py,sha256=JR9V7_YFdgrIVLBgvIcPzUNodJ6VTDOwC6BMgyON_Eg,661
+gitlab_time_report/gitlab_project.py,sha256=w0LCsxnKVpFkveLH-qtUxrik61RVhPWW0lG9lbtx5Mk,1728
+gitlab_time_report/template_renderer.py,sha256=mdQ0hIdbKeCH5b8i6SJNeVk6qPH4Zw2lfcTnHMr6VBg,1898
+gitlab_time_report/time_report.py,sha256=_0atT9cQ8E0x4MqjL5TdxwWRTcwxliLf7FwcBq64u58,2721
+gitlab_time_report-0.1.dev3.dist-info/LICENSE.md,sha256=MqCnOBu8uXsEOzRZWh9EBVfVz-kE9NkXcLCrtGXo2yU,34354
+gitlab_time_report-0.1.dev3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+gitlab_time_report-0.1.dev3.dist-info/METADATA,sha256=KYr9vUfaIRgLpbbu_AnRmIjvI26yAMAy3kOFi6NjkgI,1063
+gitlab_time_report-0.1.dev3.dist-info/RECORD,,
