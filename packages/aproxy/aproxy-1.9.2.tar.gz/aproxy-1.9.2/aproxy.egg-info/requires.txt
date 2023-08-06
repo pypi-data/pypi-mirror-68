@@ -1,0 +1,6 @@
+hexdump
+colorama
+knack
+kubernetes
+paramiko
+progress
