@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tbcalc
+Version: 1.0
+Summary: Calculate X-ray diffraction curves of toroidally bent crystal analysers.
+Home-page: https://github.com/aripekka/tbcalc/
+Author: Ari-Pekka Honkanen
+Author-email: honkanen.ap@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: matplotlib (>=2.2.3)
+Requires-Dist: pyTTE (>=1.0)
+
+UNKNOWN
+
+

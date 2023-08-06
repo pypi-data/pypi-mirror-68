@@ -1,0 +1,11 @@
+tbcalc/__init__.py,sha256=m113k1M_pgA5OPQRheEhf_DJNAWcVjl1oLUHby9pv_I,259
+tbcalc/analyser.py,sha256=U4stZSJsBdmToK9W95KVqklf4KJPxj8ID0zBWbNDbVQ,55074
+tbcalc/johann_error.py,sha256=snWA0v3-amqaqf-a9ePDCaQO0iDSRQ89_hgoGD80mlg,1261
+tbcalc/strip_bent.py,sha256=psb3JfOjozlAAENizWs9cuH6ODroP6uoQk2WvNT-vLE,14312
+tbcalc/tensor_transform.py,sha256=isJXq8wKsbQhoZLrh4SudkrjO1PCKxcF3RsprrvaGLA,2622
+tbcalc/transverse_deformation.py,sha256=XIN_ZqgEL5tqamzIZgj5l5pHPfkhj7vyGMbmz10G90o,23641
+tbcalc-1.0.dist-info/LICENSE,sha256=TkCu_IKRJQXk6cRtEzP09p9sROMKzKIzu9MfEOQbxkE,1096
+tbcalc-1.0.dist-info/METADATA,sha256=GXmUoW2E_cNGBBEd6LZp3DAPcLEB4mPsLAb8lZFreVw,383
+tbcalc-1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+tbcalc-1.0.dist-info/top_level.txt,sha256=_PqLVgVEXp3zkEuibG2SAZz47cB38I8-zzpKsumaecg,7
+tbcalc-1.0.dist-info/RECORD,,
