@@ -1,0 +1,8 @@
+README.md
+setup.py
+simpa/__init__.py
+simpa.egg-info/PKG-INFO
+simpa.egg-info/SOURCES.txt
+simpa.egg-info/dependency_links.txt
+simpa.egg-info/requires.txt
+simpa.egg-info/top_level.txt
