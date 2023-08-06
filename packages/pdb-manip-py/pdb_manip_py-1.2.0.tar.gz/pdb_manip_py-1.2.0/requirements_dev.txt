@@ -1,0 +1,10 @@
+sphinx-argparse
+sphinx_rtd_theme
+nbsphinx
+pytest
+codecov
+pytest-cov
+numpy
+scipy>=1.4.0
+os_command_py
+pdb2pqr_htmd_propka30
