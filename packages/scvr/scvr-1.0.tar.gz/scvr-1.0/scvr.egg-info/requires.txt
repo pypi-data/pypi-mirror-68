@@ -1,0 +1,7 @@
+pandas>=0.21
+numpy>=1.14.0
+networkx>=2.1
+anndata>=0.7
+loompy>=2.0
+matplotlib>=3.0
+scipy>=1.3

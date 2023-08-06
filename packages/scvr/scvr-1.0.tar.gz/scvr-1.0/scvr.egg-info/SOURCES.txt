@@ -1,0 +1,12 @@
+README.md
+setup.py
+scvr/__init__.py
+scvr/command_line.py
+scvr/converters.py
+scvr/palettes.py
+scvr.egg-info/PKG-INFO
+scvr.egg-info/SOURCES.txt
+scvr.egg-info/dependency_links.txt
+scvr.egg-info/entry_points.txt
+scvr.egg-info/requires.txt
+scvr.egg-info/top_level.txt
