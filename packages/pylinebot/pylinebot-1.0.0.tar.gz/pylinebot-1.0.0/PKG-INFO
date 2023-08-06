@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pylinebot
+Version: 1.0.0
+Summary: linebot-sdk-python wrapper.
+Home-page: https://github.com/nanato12/pylinebot
+Author: nanato12
+Author-email: admin@nanato12.info
+License: Apache License 2.0
+Description: # pylinebot
+        linebot-sdk-pythonを使いやすくしたもの
+        
+Keywords: linebot linebot-sdk linebot-sdk-python-wrapper
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
