@@ -1,0 +1,3 @@
+[console_scripts]
+rabbitmq_rpc = rabbitmq_rpc:main
+
