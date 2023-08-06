@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dftp/__init__.py
+dftp/app.py
+dftp.egg-info/PKG-INFO
+dftp.egg-info/SOURCES.txt
+dftp.egg-info/dependency_links.txt
+dftp.egg-info/entry_points.txt
+dftp.egg-info/requires.txt
+dftp.egg-info/top_level.txt
