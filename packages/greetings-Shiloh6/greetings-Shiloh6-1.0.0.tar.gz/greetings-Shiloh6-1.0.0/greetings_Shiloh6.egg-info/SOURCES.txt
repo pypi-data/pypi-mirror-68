@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+greetings/__init__.py
+greetings/greetings.py
+greetings_Shiloh6.egg-info/PKG-INFO
+greetings_Shiloh6.egg-info/SOURCES.txt
+greetings_Shiloh6.egg-info/dependency_links.txt
+greetings_Shiloh6.egg-info/top_level.txt
