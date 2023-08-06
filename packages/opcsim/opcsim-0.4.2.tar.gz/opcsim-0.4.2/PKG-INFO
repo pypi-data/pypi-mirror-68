@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: opcsim
+Version: 0.4.2
+Summary: OPCSIM: simulating low-cost optical particle counters
+Home-page: https://dhhagan.github.io/opcsim/
+Author: David H Hagan
+Author-email: dhagan@mit.edu
+Maintainer: David H Hagan
+Maintainer-email: dhagan@mit.edu
+License: MIT
+Download-URL: https://github.com/dhhagan/opcsim
+Description: UNKNOWN
+Keywords: atmospheric chemistry
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
