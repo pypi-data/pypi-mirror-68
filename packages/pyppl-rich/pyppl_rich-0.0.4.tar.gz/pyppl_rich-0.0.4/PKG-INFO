@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyppl-rich
+Version: 0.0.4
+Summary: Richer information in logs for PyPPL
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyppl
