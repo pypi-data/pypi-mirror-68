@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ghdl
+Version: 0.2.0
+Summary: Download and keep binaries from Github releases updated
+Home-page: UNKNOWN
+Author: Imran Khan
+Author-email: imrankhan@teknik.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8,<4.0
