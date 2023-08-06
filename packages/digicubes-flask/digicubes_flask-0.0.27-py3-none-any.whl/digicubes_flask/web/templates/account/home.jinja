@@ -1,0 +1,37 @@
+{% extends "account/base.jinja" %}
+
+{% block main_menu %}
+  <li><a href="{{ url_for('account.logout') }}">Logout</a></li>
+  {% if current_user.dbuser.first_name is defined and current_user.dbuser.last_Name is defined %}
+    <li><a href="{{ url_for('account.logout') }}">Welcome {{ current_user.dbuser.first_name }} {{ current_user.dbuser.last_name }}</a></li>
+  {% else %}
+    <li><a href="{{ url_for('account.logout') }}">Welcome {{ current_user.dbuser.login }}</a></li>
+  {% endif %}
+{% endblock %}
+
+{% block main_content %}
+  <div class="section">
+  {% if roles %}
+    <div class="row">
+      <div class="col s12"><h3>Continue as</h3></div>
+    </div>
+    <div class="row">
+    {% for role in roles %}
+    <div class="col s12 m6 l3">
+      <div class="card blue-grey darken-2">
+        <div class="card-content white-text">
+          <span class="card-title">{{ role.name }}</span>
+          <p>{{ role.description | md }}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{ url_for(role.home_route) }}">continue</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    </div>
+  {% else %}
+    You have no role. What's next? That doesn't make any sense
+  {% endif %}
+  </div>
+{% endblock %}        

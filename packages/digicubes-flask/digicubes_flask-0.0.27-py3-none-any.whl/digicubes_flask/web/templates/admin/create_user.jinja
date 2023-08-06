@@ -1,0 +1,48 @@
+{% extends "admin/base.jinja" %}
+{% import "macros/forms.jinja" as forms %}
+
+
+{% block page_title %}
+Create new User
+{% endblock %}
+
+{% block space_name %}New User{% endblock %}
+
+{% block main_content %}
+<div class="section">
+  <form method="POST" action="{{ action }}">
+    <div class="row">
+      <div class="col s12"><h3>New Account</h3></div>
+    </div>
+        <div class="row">
+      <div class="col s12" id="dc_main">
+          {{ form.csrf_token }}
+          {{ form.user.csrf_token }}
+          {{ form.role.csrf_token }}
+          {{ forms.row(form.user, "login") }}
+          {{ forms.row_two_columns(form.user, "first_name", "last_name") }}
+          {{ forms.row(form.user, "email") }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12"><h3>Roles</h3></div>
+    </div>
+    <div class="row">
+          {% for subfield in form.role %}
+            <div class="col s4 m3 xl2">{{ subfield }}</div>
+          {% endfor %} 
+    </div>
+    <div class="row">
+      <div class="col s12">{{ forms.submit(form.user) }}</div>
+    </div>
+  </form>
+</div>
+{% endblock %}   
+
+{% block page_script %}
+
+  $(document).ready(function() {
+    M.updateTextFields();
+  });
+        
+{% endblock %}   
