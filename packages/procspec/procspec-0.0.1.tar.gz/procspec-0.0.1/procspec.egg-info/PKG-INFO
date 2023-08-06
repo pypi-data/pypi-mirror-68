@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: procspec
+Version: 0.0.1
+Summary: Library for simple and powerful YAML specification of computational tasks.
+Home-page: https://github.com/supersergiy/procspec
+Author: Sergiy Popovych
+Author-email: sergiy.popovich@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

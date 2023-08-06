@@ -1,0 +1,9 @@
+README.md
+setup.py
+procspec/__init__.py
+procspec/scriber.py
+procspec.egg-info/PKG-INFO
+procspec.egg-info/SOURCES.txt
+procspec.egg-info/dependency_links.txt
+procspec.egg-info/requires.txt
+procspec.egg-info/top_level.txt
