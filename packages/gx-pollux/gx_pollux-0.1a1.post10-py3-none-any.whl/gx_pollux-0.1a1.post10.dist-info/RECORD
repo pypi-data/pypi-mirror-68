@@ -1,0 +1,14 @@
+gx_pollux-0.1a1.post10.data/scripts/pollux,sha256=FPj9qQo5g1qd9SoXAIBu1ARxba-XBqayzh_ZHpK24M0,175
+gx_pollux-0.1a1.post10.data/scripts/pollux-pip,sha256=z65f-rHF9U8YSDfHrVLVhUagMeMykDdroAzZ4R0-YfM,181
+pollux/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pollux/cli.py,sha256=iojMPDwa49fWwTBh0LGh5-hK3UOuDrhAF_I8x17u1eo,1326
+pollux/inputer.py,sha256=_0QtSeF9GoFvmH6R2hHEs0WvL3OIwwQqReZd4AZxHXo,1348
+pollux/license.py,sha256=k08UAphPmjHkwJxfgXlLNI4v9PuK5qhs7s3NzXiBLEc,47936
+pollux/pip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pollux/pip/cli.py,sha256=jZ7MNbzbQOmlCe4znpe1J6lhngVMxUDnXb1aZZRdV84,2418
+pollux/pip/utils.py,sha256=N9qswNFAvajxHZIqeKu0ktFF2HP0HgbHvSjV9HNpS0g,3272
+gx_pollux-0.1a1.post10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gx_pollux-0.1a1.post10.dist-info/METADATA,sha256=qtAVXf4msVhs2ZxAjELb9jymCqG8XGTdGUuhmyqx_Hk,470
+gx_pollux-0.1a1.post10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gx_pollux-0.1a1.post10.dist-info/top_level.txt,sha256=mSEI3uRyGM3TcqV6Hs-YftKC-y7A8sI4gxcHoSH97Gw,7
+gx_pollux-0.1a1.post10.dist-info/RECORD,,
