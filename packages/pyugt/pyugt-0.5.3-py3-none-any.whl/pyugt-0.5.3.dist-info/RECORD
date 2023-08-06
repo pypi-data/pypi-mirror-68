@@ -1,0 +1,11 @@
+pyugt/__init__.py,sha256=61jHSX9PdxBz8DAl5xbbAnjTuPx-uggi2GHNxKymsUI,60
+pyugt/_version.py,sha256=uvmcCdzpTpi7LUKEonUDKh6BCrLYW_WLgv5HDGYDnGA,21
+pyugt/config.ini,sha256=ZF8x4fHtMGCjb16YtkplW_nX_aLj5lvRge9g2VbdzBc,3284
+pyugt/config_example.ini,sha256=ZF8x4fHtMGCjb16YtkplW_nX_aLj5lvRge9g2VbdzBc,3284
+pyugt/pyugt.py,sha256=UV9IANymC8k45IAo_9XiXQzY6lqk4hinQOvVN9_eNVY,26344
+pyugt-0.5.3.dist-info/LICENSE,sha256=nW979wbKspd78sk79prLAHFl1UkK4HLJft9asy6FjTs,1078
+pyugt-0.5.3.dist-info/METADATA,sha256=D3ReMrxQX_0m6Q2bGp0-Txob31FTzUWux3eY7i6i8u0,12055
+pyugt-0.5.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyugt-0.5.3.dist-info/entry_points.txt,sha256=1FUps1w_s_2b_R7Goj6NsmhThLgqq_OcW5E8W4-eNus,44
+pyugt-0.5.3.dist-info/top_level.txt,sha256=9T1wiMUXW7-b-DdjjQZSjr6Ifi_JVqpGtHhmN_NnDQc,6
+pyugt-0.5.3.dist-info/RECORD,,
