@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: py-aiger-js
+Version: 0.1.0
+Summary: A Python library for compiling AIGs to Javascript.
+Home-page: https://github.com/mvcisback/py-aiger-js
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: funcy (>=1.14,<2.0)
+Requires-Dist: py-aiger (>=6.0.0,<7.0.0)
+Requires-Dist: py-aiger-ptltl (>=3.0.0,<4.0.0)
+Requires-Dist: pytest-flake8 (>=1.0.6,<2.0.0)
+Requires-Dist: pytest-xdist (>=1.32.0,<2.0.0)
+Project-URL: Repository, https://github.com/mvcisback/py-aiger-js
