@@ -1,0 +1,9 @@
+numpy
+setuptools
+datetime
+pandas
+Sphinx
+sphinx_rtd_theme
+sphinx-gallery
+pillow
+setuptools>=41.2
