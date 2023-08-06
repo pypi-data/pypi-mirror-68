@@ -1,0 +1,8 @@
+transvec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transvec/tokenizers.py,sha256=2tfX4n2gK2QmrHi0oEb1iyt6oX73Zkohg3wNGwlDvxE,2689
+transvec/transformers.py,sha256=OdicNJMTaqqLv6I3TQ_ial76KqV5rQ2Km3Wr0z5dUaw,9729
+transvec-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+transvec-0.0.1.dist-info/METADATA,sha256=2dRklpuGDoXxQNlNOfc5eYDy5dsB5_1b3ig_jJpqya4,7519
+transvec-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transvec-0.0.1.dist-info/top_level.txt,sha256=_ZHM23zY2icuNL5_RYtA6c2h-0wkFePMp9KSbCv4Z4Q,9
+transvec-0.0.1.dist-info/RECORD,,
