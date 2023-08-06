@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: Riseup-Mail
+Version: 0.1
+Summary: Writing and Reading Riseup Mails
+Home-page: https://github.com/m1ghtfr3e/RiseupMail
+Author: m1ghtfr3e
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Security
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+### Riseup Mail Program
+
+---
+##### Features:
+- Writing and (Reading) encrypted mails
+- Choose between IMAP (or POP) protocols
+- Check that Riseup Servers have not been compromised
+
+( Most features just available on Linux for now. )
+
+[!] You need gpg for encryption on your Computer.
+---
+
+
