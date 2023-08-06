@@ -1,0 +1,10 @@
+README.md
+setup.py
+spacerocks/__init__.py
+spacerocks/linalg3d.py
+spacerocks/spacerocks.py
+spacerocks.egg-info/PKG-INFO
+spacerocks.egg-info/SOURCES.txt
+spacerocks.egg-info/dependency_links.txt
+spacerocks.egg-info/requires.txt
+spacerocks.egg-info/top_level.txt
