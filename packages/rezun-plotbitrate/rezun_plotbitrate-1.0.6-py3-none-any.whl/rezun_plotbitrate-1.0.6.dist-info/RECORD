@@ -1,0 +1,10 @@
+plotbitrate.py,sha256=U3FSdqoK0AoKWmGCJqeTqhBAbue0UAKJcJTUr7EYynw,20176
+frame/__init__.py,sha256=9u37RUdBnzWuOeCdCz_138TVlUejJzjNSwd8ogWvnZ0,324
+frame/_frame_class.py,sha256=bzVeejfoEUVxymbC803DhWFJCbwRmeGPCjkHsGst-CM,235
+frame/_frame_dataclass.py,sha256=iVjNZl-GhYuvPJW4fU2CWzLedgyq6WizSNfuQEoXVzk,256
+rezun_plotbitrate-1.0.6.dist-info/LICENSE,sha256=hwRZ8CkEEipPwyguk4AiVe_Jl4de8jBWPsE9L6MySKo,1359
+rezun_plotbitrate-1.0.6.dist-info/METADATA,sha256=H5Bo-gEhj_igX5ATrboXm3K8arZ1cvSFicAB0njhKm0,2898
+rezun_plotbitrate-1.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+rezun_plotbitrate-1.0.6.dist-info/entry_points.txt,sha256=UZFyEAoODzZEh_0Y29aBcxi4lOM-gVqZgRV4nEnmS74,50
+rezun_plotbitrate-1.0.6.dist-info/top_level.txt,sha256=JeWBr1OWk8x_JVHfQRr10u6A3R8vLaV9XT6iEs1RzKU,18
+rezun_plotbitrate-1.0.6.dist-info/RECORD,,
