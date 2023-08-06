@@ -1,0 +1,12 @@
+README.md
+setup.py
+matplotlib_backend_qtquick/__init__.py
+matplotlib_backend_qtquick/backend_qtquick.py
+matplotlib_backend_qtquick/backend_qtquickagg.py
+matplotlib_backend_qtquick/qt_compat.py
+matplotlib_backend_qtquick.egg-info/PKG-INFO
+matplotlib_backend_qtquick.egg-info/SOURCES.txt
+matplotlib_backend_qtquick.egg-info/dependency_links.txt
+matplotlib_backend_qtquick.egg-info/top_level.txt
+tests/__init__.py
+tests/testBackend.py
