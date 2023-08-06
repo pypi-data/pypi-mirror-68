@@ -1,0 +1,17 @@
+flask
+openslide-python
+
+[gpu]
+torch
+torchvision
+opencv-python
+imgaug
+tqdm
+matplotlib
+scikit-learn
+scikit-image
+tensorflow-gpu<2,>=1.14
+pydensecrf
+tifffile
+pandas
+wget

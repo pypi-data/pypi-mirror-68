@@ -1,0 +1,4 @@
+include README.md
+include DigiPathAI/static/*/*
+include DigiPathAI/templates/*
+include DigiPathAI/*
