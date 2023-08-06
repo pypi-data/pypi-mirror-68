@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mglg
+Version: 0.1.3
+Summary: UNKNOWN
+Home-page: https://github.com/aforren1/mglg
+Author: Alex Forrence
+Author-email: alex.forrence@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: moderngl (==5.6.0)
+Requires-Dist: freetype-py
+Requires-Dist: pyglm (>=1.1.8)
+Requires-Dist: glfw (>=1.10.0)
+Requires-Dist: imgui (>=1.1.0)
+
+Built-for-purpose, minimal 2D graphics library.
+
+Working on documentation, but the file [examples/jamboree.py](https://github.com/aforren1/mglg/blob/master/examples/jamboree.py) is pretty comprehensive.
+
+To pre-create the glyphs and atlas, there's a command line tool, e.g.:
+
+```bash
+python -m mglg.util.prebake_font examples\UbuntuMono-B.ttf fonts\
+```
+
+Which saves a pickled file (in this case, `fonts\UbuntuMono-B.pklfont`) that includes the atlas, glyphs, and other info to avoid touching the font file.
+
+
