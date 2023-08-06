@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "poetry>=0.12",]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "pyppl_runners"
+version = "0.0.5"
+description = "More strict check of job success for PyPPL"
+authors = [ "pwwang <pwwang@pwwang.com>",]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pyppl = "*"
+cmdy = "*"
+diot = "*"
+psutil = "5.*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-cov = "*"
+
+[tool.poetry.plugins.pyppl_runner]
+pyppl_runner_dry = "pyppl_runners:DRY_RUNNER"
+pyppl_runner_ssh = "pyppl_runners:SSH_RUNNER"
+pyppl_runner_sge = "pyppl_runners:SGE_RUNNER"
+pyppl_runner_slurm = "pyppl_runners:SLURM_RUNNER"
