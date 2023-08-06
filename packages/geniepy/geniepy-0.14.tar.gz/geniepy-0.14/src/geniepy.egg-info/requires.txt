@@ -1,0 +1,17 @@
+numpy
+scipy
+jsonlines
+pandas
+pandas_schema
+pandas_gbq
+sqlalchemy
+pyyaml
+googledrivedownloader
+joblib
+sklearn
+tqdm
+wget
+
+[testing]
+pytest
+pytest-cov

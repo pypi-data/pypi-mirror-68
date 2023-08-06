@@ -1,0 +1,7 @@
+[console_scripts]
+geniepy-create = geniepy:create_tables
+geniepy-init = geniepy:init
+geniepy-predict = geniepy:run_predictions
+geniepy-sample = geniepy:sample_run
+geniepy-update = geniepy:update_tables
+
