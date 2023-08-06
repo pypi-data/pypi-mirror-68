@@ -1,0 +1,16 @@
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2-py3.6-nspkg.pth,sha256=JjySLBF/yJbKxcwq2GBNfjIiY3Xfqsn6ehBu4fXcICo=,1694
+pants/contrib/jax_ws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/register.py,sha256=SEviSjGt2VtTL7rWAwEI0tETa_FrLRSK3VFLi2axAdA,954
+pants/contrib/jax_ws/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/rules/targets.py,sha256=LkFcu7M-1qxuNI8aD-wdeI5q19qI2y-496l8cimbLVk,700
+pants/contrib/jax_ws/targets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/targets/jax_ws_library.py,sha256=PkdRAg8rZ_M_2hKoKPzqs9CQP8vP0i3GYrPYhePsH_U,1006
+pants/contrib/jax_ws/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/jax_ws/tasks/jax_ws_gen.py,sha256=N2TfhX-PXMRbUhZGZhNr7vs6w_JDbXEBdDZukD5l_v8,3894
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/METADATA,sha256=8lWNtjcddLG+rGWWSuh5s3ligmbKvS0fgQ4qyAmtpyU=,34697
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/WHEEL,sha256=t6JSySPSmBW55+j71sc/PLcz+hDL5syuxK+selSold0=,112
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/entry_points.txt,sha256=s+ia8OMkh9PptzCW8qio2TaBywqgPvqREgI5835qiBI=,203
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1
+pantsbuild.pants.contrib.jax_ws-1.27.0rc2.dist-info/RECORD,,
