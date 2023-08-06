@@ -1,0 +1,10 @@
+reddit_regex_counter/__init__.py,sha256=JEaaw6GKJmK8uDZTL6kK_7ygmiauownFWzCvi_2G8Qw,119
+reddit_regex_counter/__main__.py,sha256=ETUpT3Ze91s_CP4eDJhhncbq501tXsecMzxraAAYknw,1249
+reddit_regex_counter/redditDownloader.py,sha256=ZL8zv5ei85CSpJI32E41-6JeUODdK-nUdIAeg8IYgdM,6048
+reddit_regex_counter/redditRegexCounter.py,sha256=6z4dQBJ9JPbeHTMvD4yG_V3g7nfbP1L4paXr0kQFU24,6597
+reddit_regex_counter-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+reddit_regex_counter-0.0.1.dist-info/METADATA,sha256=PZc69YnlBKDVWrvvfGFKZYvssbJbRl9gXQUj6wNDqYw,3560
+reddit_regex_counter-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+reddit_regex_counter-0.0.1.dist-info/entry_points.txt,sha256=q8ZfxOM3aPZpAzxB06yAmMFF3zhsqKrjXoVsPF8yW4U,77
+reddit_regex_counter-0.0.1.dist-info/top_level.txt,sha256=tj8UW8DrjY807iD2SrxFo7ldY3X9sRLIrOmHBRJI280,21
+reddit_regex_counter-0.0.1.dist-info/RECORD,,

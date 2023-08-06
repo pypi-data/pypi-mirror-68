@@ -1,0 +1,3 @@
+[console_scripts]
+reddit-regex-counter = reddit_regex_counter.__main__:main
+
