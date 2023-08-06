@@ -1,0 +1,3 @@
+[console_scripts]
+G6_face_recognition = G6_face_recognition.main:main
+
