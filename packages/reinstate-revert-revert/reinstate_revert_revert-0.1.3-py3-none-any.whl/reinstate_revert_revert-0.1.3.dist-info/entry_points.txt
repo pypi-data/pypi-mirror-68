@@ -1,0 +1,3 @@
+[console_scripts]
+reinstate-revert-revert=reinstate_revert_revert.cli:main
+
