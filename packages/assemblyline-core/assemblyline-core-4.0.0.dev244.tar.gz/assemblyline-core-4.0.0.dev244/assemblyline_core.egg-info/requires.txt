@@ -1,0 +1,8 @@
+assemblyline
+docker
+
+[test]
+fakeredis[lua]
+pytest
+pytest-cov
+codecov
