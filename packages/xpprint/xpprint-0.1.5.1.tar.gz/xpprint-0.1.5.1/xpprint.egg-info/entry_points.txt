@@ -1,0 +1,3 @@
+[console_scripts]
+xpprint = xpprint.cli:main
+
