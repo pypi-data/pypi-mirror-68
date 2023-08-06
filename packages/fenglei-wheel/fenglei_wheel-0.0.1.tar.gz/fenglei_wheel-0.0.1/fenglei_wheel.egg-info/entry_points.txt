@@ -1,0 +1,3 @@
+[console_scripts]
+a1 = fenglei_wheel:a1
+
