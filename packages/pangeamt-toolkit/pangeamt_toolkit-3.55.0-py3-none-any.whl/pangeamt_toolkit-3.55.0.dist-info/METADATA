@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: pangeamt-toolkit
+Version: 3.55.0
+Summary: h1 align="center">
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: async-timeout
+Requires-Dist: attrs
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: Click
+Requires-Dist: ConfigArgParse
+Requires-Dist: future
+Requires-Dist: idna
+Requires-Dist: idna-ssl
+Requires-Dist: jieba
+Requires-Dist: joblib
+Requires-Dist: lxml
+Requires-Dist: mecab-python3
+Requires-Dist: multidict
+Requires-Dist: neologdn
+Requires-Dist: numpy
+Requires-Dist: OpenNMT-py
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: pycnnum
+Requires-Dist: PyYAML
+Requires-Dist: requests
+Requires-Dist: sacremoses
+Requires-Dist: six
+Requires-Dist: subword-nmt
+Requires-Dist: torch
+Requires-Dist: torchtext
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: uvloop
+Requires-Dist: XlsxWriter
+Requires-Dist: yarl
+
+<h1 align="center">
+    PANGEAMT TOOLKIT
+</h1>
+
+<p align="center">
+    <a href="https://pypi.org/project/pangeamt-toolkit/">
+        <img alt="GitHub release" src="https://img.shields.io/pypi/v/pangeamt-toolkit">
+    </a>
+</p>
+
+NMT toolkit.
+
