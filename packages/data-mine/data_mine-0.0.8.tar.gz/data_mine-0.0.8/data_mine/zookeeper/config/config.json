@@ -1,0 +1,62 @@
+[
+    {
+        "dataset": "RACE",
+        "config": {
+            "requirements": [
+                {
+                    "URL": "http://www.cs.cmu.edu/~glai1/data/race/RACE.tar.gz",
+                    "SHA256": "b2769cc9fdc5c546a693300eb9a966cec6870bd349fbc44ed5225f8ad33006e5"
+                }
+            ],
+	    "expectedFiles": "nlp/RACE/expected_files.txt.gz"
+        }
+    },
+    {
+        "dataset": "ALLEN_AI_DROP",
+        "config": {
+            "requirements": [
+                {
+                    "URL": "https://s3-us-west-2.amazonaws.com/allennlp/datasets/drop/drop_dataset.zip",
+                    "SHA256": "39d2278a29fd729de301b111a45f434c24834f40df8f4ff116d864589e3249d6"
+                }
+            ],
+	    "expectedFiles": "nlp/allen_ai_drop/expected_files.txt.gz"
+        }
+    },
+    {
+        "dataset": "CSQA",
+        "config": {
+            "requirements": [
+                {
+                    "URL": "https://s3.amazonaws.com/commensenseqa/train_rand_split.jsonl",
+                    "SHA256": "58ffa3c8472410e24b8c43f423d89c8a003d8284698a6ed7874355dedd09a2fb"
+                },
+		{
+                    "URL": "https://s3.amazonaws.com/commensenseqa/dev_rand_split.jsonl",
+                    "SHA256": "3210497fdaae614ac085d9eb873dd7f4d49b6f965a93adadc803e1229fd8a02a"
+                },
+		{
+                    "URL": "https://s3.amazonaws.com/commensenseqa/test_rand_split_no_answers.jsonl",
+                    "SHA256": "b426896d71a9cd064cf01cfaf6e920817c51701ef66028883ac1af2e73ad5f29"
+                }
+            ],
+	    "expectedFiles": "nlp/CSQA/expected_files.txt.gz"
+        }
+    },
+    {
+        "dataset": "ALLEN_AI_OBQA",
+        "config": {
+            "requirements": [
+                {
+                    "URL": "https://s3-us-west-2.amazonaws.com/ai2-website/data/OpenBookQA-V1-Sep2018.zip",
+                    "SHA256": "82368cf05df2e3b309c17d162e10b888b4d768fad6e171e0a041954c8553be46"
+                },
+		{
+                    "URL": "https://github.com/SebiSebi/DataMine/raw/master/data/nlp/allen_ai_obqa/extracted_facts.json.gz",
+                    "SHA256": "25072840676ded3bb5b7ce3224fd180b1b9dc445e9fc28fdbc823b6b82066420"
+                }
+            ],
+	    "expectedFiles": "nlp/allen_ai_obqa/expected_files.txt.gz"
+        }
+    }
+]
