@@ -1,0 +1,8 @@
+scikit-learn
+
+[natasha]
+natasha
+
+[udpipe]
+ufal.udpipe
+pyconll
