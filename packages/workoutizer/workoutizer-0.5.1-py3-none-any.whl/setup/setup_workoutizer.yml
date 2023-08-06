@@ -1,0 +1,23 @@
+---
+
+- name: setup workoutizer
+  hosts: workoutizer
+  remote_user: pi
+
+  tasks:
+  - name: import config variables
+    set_fact:
+      dropbox_token: "{{ lookup('ini', 'dropbox_token section=DROPBOX file=config.ini') }}"
+      path_to_workoutizer: "{{ lookup('ini', 'path_to_workoutizer section=GENERAL file=config.ini') }}"
+
+  - name: test connection
+    ping:
+
+  - name: Set timezone to Europe/Berlin
+    become: yes
+    timezone:
+      name: Europe/Berlin
+
+  - name: install workoutizer
+    include: "ansible/workoutizer.yml"
+...
