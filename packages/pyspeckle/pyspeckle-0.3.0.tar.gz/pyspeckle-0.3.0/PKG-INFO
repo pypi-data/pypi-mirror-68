@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pyspeckle
+Version: 0.3.0
+Summary: Routines for analysis of laser speckle
+Home-page: https://github.com/scottprahl/pyspeckle.git
+Author: Scott Prahl
+Author-email: scott.prahl@oit.edu
+License: MIT
+Description: pyspeckle
+        =========
+        
+        A basic collection of routines to track and analyze speckle.  This is a python
+        version of SimSpeckle Matlab Package by Duncan and Kirkpatrick.
+        
+        Currently incomplete and untested
+        
+        Usage
+        --------
+        
+        For examples, see the <https://pyspeckle2.readthedocs.io> directory
+        
+        Installation
+        ------------
+        
+        The `pyspeckle` package can be installed via `pip`::
+        
+            pip install pyspeckle
+        
+        Alternatively you can install from github
+        
+            git clone https://github.com/scottprahl/pyspeckle.git
+        
+        and add the `pyspeckle` directory to your PYTHONPATH
+        
+        
+        Dependencies
+        ------------
+        
+        Required Python modules: numpy, matplotlib, scipy
+        
+        
+        License
+        -------
+        
+        pyspeckle is licensed under the terms of the MIT license.
+Keywords: speckle,objective,subjective,contrast,size,autocorrelation,ACF,PDF
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst

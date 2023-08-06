@@ -1,0 +1,12 @@
+include CHANGELOG.rst
+include docs/changelog.rst
+include docs/index.rst
+include docs/readme.rst
+include LICENSE.txt
+exclude release.txt
+exclude .gitignore
+exclude Makefile
+exclude docs/0-One-Dim-Speckle-Basics.ipynb
+exclude docs/1-Two-Dim-Speckle-Basics.ipynb
+exclude docs/conf.py
+exclude docs/requirements.txt
