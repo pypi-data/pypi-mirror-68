@@ -1,0 +1,3 @@
+[console_scripts]
+basic_sftp = basic_sftp.cli:main
+
