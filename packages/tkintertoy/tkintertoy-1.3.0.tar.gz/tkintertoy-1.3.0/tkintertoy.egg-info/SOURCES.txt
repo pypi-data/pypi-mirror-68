@@ -1,0 +1,9 @@
+README.md
+setup.py
+tkintertoy/__init__.py
+tkintertoy/tt.py
+tkintertoy/ttgallery.py
+tkintertoy.egg-info/PKG-INFO
+tkintertoy.egg-info/SOURCES.txt
+tkintertoy.egg-info/dependency_links.txt
+tkintertoy.egg-info/top_level.txt
