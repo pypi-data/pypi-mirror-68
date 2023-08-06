@@ -1,0 +1,3 @@
+[console_scripts]
+social-watcher = social_watcher.cli:main
+

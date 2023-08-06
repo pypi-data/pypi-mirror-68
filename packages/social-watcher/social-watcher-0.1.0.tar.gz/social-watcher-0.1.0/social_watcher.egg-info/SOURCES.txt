@@ -1,0 +1,12 @@
+README.md
+setup.py
+social_watcher/__init__.py
+social_watcher/cli.py
+social_watcher/models.py
+social_watcher/watcher.py
+social_watcher.egg-info/PKG-INFO
+social_watcher.egg-info/SOURCES.txt
+social_watcher.egg-info/dependency_links.txt
+social_watcher.egg-info/entry_points.txt
+social_watcher.egg-info/requires.txt
+social_watcher.egg-info/top_level.txt

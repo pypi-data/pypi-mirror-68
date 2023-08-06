@@ -1,0 +1,6 @@
+twitter-scraper
+requests
+python-telegram-bot
+pytablewriter
+peewee
+click
