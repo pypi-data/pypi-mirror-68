@@ -1,0 +1,72 @@
+parameters:
+  gen2aclbundle:
+    storage:
+      name:
+      accountKey:
+    acl:
+      storages:
+        #- filesystem: 'file-system-name'
+        #  maxLevel: 1
+    activeDirectory: # Define key value pair for "User/Group name: 'object id from AAD'"
+      #datalake-admin-group: '73d755e9-c7eb-4bee-96df-c8b98398b845'
+      #datalake-user: '6e1a2e8e-856c-42bc-9849-035a8ae4da00'
+
+services:
+  gen2aclbundle.client.ServiceClientFactory:
+    arguments:
+      - '%gen2aclbundle.storage.name%'
+      - '%gen2aclbundle.storage.accountKey%'
+
+  gen2aclbundle.client.dataLakeServiceClient:
+    class: azure.storage.filedatalake._data_lake_service_client.DataLakeServiceClient
+    factory: ['@gen2aclbundle.client.ServiceClientFactory', 'create']
+
+  gen2aclbundle.acl.export.AclExporter:
+    arguments:
+      - '%project.configDir%'
+      - '%gen2aclbundle.storage.name%'
+      - '@consolebundle.logger'
+      - '%gen2aclbundle.activeDirectory%'
+
+  gen2aclbundle.acl.export.AclExportCommand:
+    arguments:
+      - '%gen2aclbundle.acl.storages%'
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  gen2aclbundle.acl.set.AclSetter:
+    arguments:
+      - '%project.configDir%'
+      - '%gen2aclbundle.storage.name%'
+      - '@consolebundle.logger'
+
+  gen2aclbundle.acl.set.AclSetCommand:
+    arguments:
+      - '%gen2aclbundle.acl.storages%'
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  gen2aclbundle.acl.set.AclStringGenerator:
+    arguments:
+      - '@consolebundle.logger'
+
+  gen2aclbundle.acl.check.AclChecker:
+    arguments:
+      - '%project.configDir%'
+      - '%gen2aclbundle.storage.name%'
+      - '@consolebundle.logger'
+
+  gen2aclbundle.acl.check.AclCheckCommand:
+    arguments:
+      - '%gen2aclbundle.acl.storages%'
+      - '@consolebundle.logger'
+    tags:
+      - 'console.command'
+
+  gen2aclbundle.acl.AclConfigReader:
+
+  gen2aclbundle.acl.AclPathResolver:
+    arguments:
+      - '@consolebundle.logger'
