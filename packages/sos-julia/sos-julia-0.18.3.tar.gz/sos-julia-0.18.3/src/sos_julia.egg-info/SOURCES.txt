@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/sos_julia/__init__.py
+src/sos_julia/_version.py
+src/sos_julia/kernel.py
+src/sos_julia.egg-info/PKG-INFO
+src/sos_julia.egg-info/SOURCES.txt
+src/sos_julia.egg-info/dependency_links.txt
+src/sos_julia.egg-info/entry_points.txt
+src/sos_julia.egg-info/requires.txt
+src/sos_julia.egg-info/top_level.txt
+test/conftest.py
+test/test_data_exchange.py
+test/test_interface.py
