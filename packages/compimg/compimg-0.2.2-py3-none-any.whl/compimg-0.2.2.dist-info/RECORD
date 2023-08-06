@@ -1,0 +1,14 @@
+compimg/__init__.py,sha256=Vevmy3q6afjpjM1DMSaUBHY9P4amnsKi0qHFdmaHc_Q,1674
+compimg/exceptions.py,sha256=4DG4oCKbaBCAwj4PUBb7epdWhsf63RQsSIShupkyvKg,1414
+compimg/kernels.py,sha256=OJ7Kje_sTW5t4zlDy4J-HGvyKbIMdhc0_FpJ66HcqMs,2771
+compimg/pads.py,sha256=hoXMyVisLac8Ll_mtEIGM-xMmee44fEImYwMlXDko1g,2773
+compimg/similarity.py,sha256=byl01VD4ngvr3NgkghI02BFvjHkRipQ6TAxSZkomOog,11409
+compimg/windows.py,sha256=Q6-nMDWOGhAkcQtp4YGeYd4ezknEs35_GtA6Lpv47Vs,1643
+compimg/_internals/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compimg/_internals/_decorators.py,sha256=M4QH1nIQRYnW9NA6WqRjn7scxhx7khbRtkOEL5MMvj4,1989
+compimg/_internals/_utilities.py,sha256=6RYOUYkz0CB8EpVDc80yXlajhLiuthXC62CkNNuI2Jc,724
+compimg-0.2.2.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+compimg-0.2.2.dist-info/METADATA,sha256=rBzJTStxhGYmZULZOFMwdrwUeL7KpJP1THnjYGJsJKI,3127
+compimg-0.2.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+compimg-0.2.2.dist-info/top_level.txt,sha256=oqZSEEcoO53zt5hVdx5VRHUpqg-97LiJdYA6jzAbFqY,8
+compimg-0.2.2.dist-info/RECORD,,
