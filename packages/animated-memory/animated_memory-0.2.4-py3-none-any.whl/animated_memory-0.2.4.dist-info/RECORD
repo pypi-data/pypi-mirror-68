@@ -1,0 +1,15 @@
+animated_memory-0.2.4.data/data/scripts/scraper.py,sha256=6xXN580OzTDXLCPnhjTqLo4-oWw6Et7U04gNZOYdEiU,3007
+animated_memory-0.2.4.data/data/scripts/train.py,sha256=i3qHWSjE3QuqIHnmpSXTrDFUn7aOZWd1IIocUueJrAk,2842
+animated_memory-0.2.4.data/data/sql/schema.sql,sha256=Awwjsdht7SJ6zOygzIHFY2M7vFxSjvt0uhDybZNA8iQ,614
+animated_memory-0.2.4.data/data/static/style.css,sha256=R-a-pUAA7m0Nrz7-RCjQEkEr2kfLSFm0KkliU9pFNpE,1136
+animated_memory-0.2.4.data/data/templates/layout.mako,sha256=QXcWSjdYpO7OWKYgShOCyzClD1sChHHmAumRpjt743U,551
+animated_memory-0.2.4.data/data/templates/list.mako,sha256=9BwVZXth2ZzXdolvbi38w7L0dJNgXbZPUbKZX4NEO_A,1119
+animated_memory-0.2.4.data/data/templates/new.mako,sha256=FQ2vZcun1h0UC3Id8qTEHX43UZbNxMeTl_OjX0y5HVU,765
+animated_memory-0.2.4.data/data/templates/read.mako,sha256=zQMZ5YIx6Mrg1k4Lo3QFY2upm6Ll8S6CPj4uS3ExzZA,729
+animated_memory-0.2.4.data/data/templates/settings.mako,sha256=nJC3URA9IsV5p7kaQq3fSfqJY98P6In8jpkIkO5E4XY,865
+animated_memory-0.2.4.data/scripts/animated-memory,sha256=M35AoWVQu8Dkv6Zeh35RQxVhBWv1IfIfmUlcWyQQq-4,8754
+animated_memory-0.2.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+animated_memory-0.2.4.dist-info/METADATA,sha256=TdPBG1PIM8XIAAgG1wB4v05geYvbT3cfk5eJLA4quxU,1030
+animated_memory-0.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+animated_memory-0.2.4.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+animated_memory-0.2.4.dist-info/RECORD,,
