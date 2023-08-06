@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wilight
+Version: 0.0.77
+Summary: Python client for WiLight
+Home-page: https://github.com/leofig-rj/python-wilight
+Author: Leonardo Figueiro
+Author-email: leoagfig@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Python control for WiLight devices
+
+A simple Python API for controlling devices from WiLight, developed for integration with Home Assistant. At present, the following devices are currently supported:
+
+- I-100
+- I-102
+- C-103
+- V-104
+- R-105
+- I-107
+
+
