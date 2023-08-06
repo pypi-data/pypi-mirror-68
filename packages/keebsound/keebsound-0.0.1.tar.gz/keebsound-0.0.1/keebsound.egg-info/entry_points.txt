@@ -1,0 +1,3 @@
+[console_scripts]
+keeb = keeb.main:main
+

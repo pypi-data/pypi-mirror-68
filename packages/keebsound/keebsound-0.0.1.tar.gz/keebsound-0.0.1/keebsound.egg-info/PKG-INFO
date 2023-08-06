@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: keebsound
+Version: 0.0.1
+Summary: Keeb generates realistic keyboard sounds depending on the input
+Home-page: https://github.com/sillyfatcat/keebsound
+Author: Shelby Shum
+Author-email: sshum00@gmail.com
+License: MIT
+Download-URL: https://github.com/sillyfatcat/keebsound/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: KEYBOARD,SOUND,MECHANICAL KEYBOARD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
