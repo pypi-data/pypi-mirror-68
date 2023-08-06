@@ -1,0 +1,48 @@
+#!python
+# ------------------------------------------------
+# Author:    krishna
+# USAGE:
+#       lalsi
+# Description:
+#
+#
+# ------------------------------------------------
+import os
+import sys
+import inspect
+import argparse
+import importlib
+
+
+def getOpts():
+    '''Process the options'''
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+        description='''Add description here'''
+    )
+
+    # return validateOpts(parser.parse_args())
+    return parser.parse_args()
+
+
+def main():
+    '''The Main'''
+
+    opts = getOpts()
+    print(opts)
+
+    if os.path.isfile('lalsifile.py'):
+        sys.path.append(os.environ['PWD'])
+        lalsifile = importlib.import_module('lalsifile')
+
+    print(lalsifile.__dir__())
+    print([i[1].__name__ for i in inspect.getmembers(lalsifile, inspect.isfunction)])
+    print(lalsifile.run())
+
+
+    # lalsifile.build(input='top.cpp', output='a.out')
+
+
+if __name__ == '__main__':
+    main()

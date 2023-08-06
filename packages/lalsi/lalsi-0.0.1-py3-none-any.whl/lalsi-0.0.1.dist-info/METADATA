@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lalsi
+Version: 0.0.1
+Summary: Pythonic Makefile
+Home-page: https://krishkasula.gitlab.io/lalsi/index.html
+Author: Krishna
+Author-email: krishna.vijay4444@gmail.com
+License: MIT License
+Keywords: alternative to makefile,makefile alternative,python makefile
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+lalsi
+-------
+
+Makefile in Python
+
+
