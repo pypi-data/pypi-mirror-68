@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: epb
+Version: 0.1.1
+Summary: Energy performance of buildings
+Home-page: https://github.com/immoveable/epb-py
+License: MIT
+Author: Arthur White
+Author-email: arthur@white.li
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/immoveable/epb-py
+Description-Content-Type: text/markdown
+
+# Energy performance of buildings
+
+This library provides helpers for energy performance of buildings computation.
+
+## Installing
+
+### With PIP
+
+```sh
+pip install epb
+```
+
+### With Poetry
+
+```sh
+poetry add epb
+```
+
+## Usage
+
+```py
+from epb.utils import Regulator, energy_class, total_consumption
+
+
+eclass = energy_class(Regulator.BRUSSELS, 100)
+# eclass == "C+"
+
+
+tconsum = total_consumption(100, 250)
+# tconsum == 25_000
+```
+
