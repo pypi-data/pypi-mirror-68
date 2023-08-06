@@ -1,0 +1,8 @@
+pyowapi/__init__.py,sha256=kvygDVjtJAQ_oar0KAmjspAC4JuItHqCt4C-ii3RT4c,4917
+pyowapi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyowapi/tests/test_api.py,sha256=aY1WRAs49K4_oxZPqiuh2Esc3oSvWWRyrE6tPEcp6LQ,532
+pyowapi-1.0.0.dist-info/LICENSE.md,sha256=Mx_Y7KrnH5J4l60C4hP2_CE8aDjnynD4m3s2LmDIIno,1090
+pyowapi-1.0.0.dist-info/METADATA,sha256=jA14cBkcxvO6_tclXZtVjz8qKbIoSb9He_A0SX4FRUk,2812
+pyowapi-1.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyowapi-1.0.0.dist-info/top_level.txt,sha256=GzgcaLylToSiVCi17yqVNEW1a-1OrBpCJ95Es35IqMA,8
+pyowapi-1.0.0.dist-info/RECORD,,
