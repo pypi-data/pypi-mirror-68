@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: nepali
+Version: 0.4.0
+Summary: Python package for nepali processes
+Home-page: https://github.com/aj3sh/nepali
+Author: Ajesh Sen Thapa
+Author-email: aj3sshh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: pytz (==2018.9)
+
+UNKNOWN
+
+
