@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: orbis-plugin-storage-csv-result-list
+Version: 2.2.4
+Summary: The csv_result_list storage plugin for Orbis
+Home-page: https://github.com/orbis-eval/orbis_plugin_storage_csv_result_list
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+
+# CSV Result List Storage Plugin for Orbis
+
+
