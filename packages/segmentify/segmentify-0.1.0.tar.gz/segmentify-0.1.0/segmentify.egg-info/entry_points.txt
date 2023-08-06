@@ -1,0 +1,3 @@
+[console_scripts]
+segmentify = segmentify.__main__:main
+
