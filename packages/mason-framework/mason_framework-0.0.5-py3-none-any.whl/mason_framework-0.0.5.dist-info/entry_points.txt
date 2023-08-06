@@ -1,0 +1,3 @@
+[console_scripts]
+mason=mason.cli:cli
+
