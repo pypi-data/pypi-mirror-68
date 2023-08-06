@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_aggregation_local_cache/__init__.py
+orbis_plugin_aggregation_local_cache/main.py
+orbis_plugin_aggregation_local_cache.egg-info/PKG-INFO
+orbis_plugin_aggregation_local_cache.egg-info/SOURCES.txt
+orbis_plugin_aggregation_local_cache.egg-info/dependency_links.txt
+orbis_plugin_aggregation_local_cache.egg-info/top_level.txt
