@@ -1,0 +1,7 @@
+README.md
+setup.py
+python_unittest_cogent.egg-info/PKG-INFO
+python_unittest_cogent.egg-info/SOURCES.txt
+python_unittest_cogent.egg-info/dependency_links.txt
+python_unittest_cogent.egg-info/requires.txt
+python_unittest_cogent.egg-info/top_level.txt
