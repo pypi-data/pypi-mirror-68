@@ -1,0 +1,10 @@
+click
+click_completion
+logbook
+more-itertools
+python-dateutil
+sortedcontainers
+xactor
+numpy
+tensorboard
+tensorboardx
