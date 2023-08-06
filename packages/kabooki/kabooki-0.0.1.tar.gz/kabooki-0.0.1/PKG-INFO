@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: kabooki
+Version: 0.0.1
+Summary: Simple Streaming Data Pipeline
+Home-page: https://github.com/kabooki/kabooki
+Author: Gilad Kutiel
+Author-email: gilad.kutiel@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

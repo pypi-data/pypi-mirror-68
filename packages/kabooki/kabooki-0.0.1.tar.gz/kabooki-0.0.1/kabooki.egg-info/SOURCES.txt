@@ -1,0 +1,14 @@
+README.md
+setup.py
+kabooki/__init__.py
+kabooki/pipe.py
+kabooki/pipes.py
+kabooki/version.py
+kabooki.egg-info/PKG-INFO
+kabooki.egg-info/SOURCES.txt
+kabooki.egg-info/dependency_links.txt
+kabooki.egg-info/requires.txt
+kabooki.egg-info/top_level.txt
+test/__init__.py
+test/test_pipes.py
+test/tests.py
