@@ -1,0 +1,13 @@
+pycnv/VERSION,sha256=9iGEzuh4fy9pQcggQaVyXU7cmqKT6-Xb9mRAboLsH-E,6
+pycnv/__init__.py,sha256=sImh9kAwXWfalJKc8hH8N9oGnCqq369fG3tjuil6E8s,186
+pycnv/pycnv.py,sha256=0ifH9wraoToqlAOVdqzk4ZLsLtFCGscYqu4gInBCgLc,52744
+pycnv/pycnv_obsolete.py,sha256=vI6YzAegfZC-XSfiZHrZmL44Lar-UIPoSx0MV4kKG2o,23692
+pycnv/pycnv_sum_folder.py,sha256=_rAH0L52gmlXGKgXzLv72-gPVbLFak-dKK9xroGxdEU,17055
+pycnv/rules/standard_names.yaml,sha256=Gm6Rx9aUHjpiNrhAMxadgcMS4D0Y2w1ccICgfxZTlCg,1025
+pycnv/stations/iow_stations.yaml,sha256=6uN800Mf96zYqIlsa6ufO5wUvlMVgf6z1LueV0FPqrY,6806
+pycnv-0.4.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+pycnv-0.4.1.dist-info/METADATA,sha256=dRjr8Zgf8avHZyAmyI-GU62ZeAEY5G6NkmGRDOIiMBY,6685
+pycnv-0.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pycnv-0.4.1.dist-info/entry_points.txt,sha256=YLlC7aEIYyicXcklyRoh1Rj-NpH-gYdPIgE9EuNO_a4,91
+pycnv-0.4.1.dist-info/top_level.txt,sha256=TjsyG_V5CtHDc5J43f2U7cg6mJrx4_JrytwmOSVOPAM,6
+pycnv-0.4.1.dist-info/RECORD,,
