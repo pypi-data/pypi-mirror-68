@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lama-phenotype-detection
+Version: 0.9.35
+Summary: Phenotype detection pipeline for finding abnormalities in mouse embryos
+Home-page: https://github.com/mpi2/LAMA
+Author: Neil Horner
+Author-email: n.horner@har.mrc.ac.uk, bit@har.mrc.ac.uk
+License: Apache2
+Download-URL: https://github.com/mpi2/lama/archive/0.9.4.tar.gz
+Description: UNKNOWN
+Keywords: image processing,bioinformatics,phenotype
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Provides-Extra: dev

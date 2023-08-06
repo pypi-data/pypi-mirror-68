@@ -1,0 +1,11 @@
+[console_scripts]
+lama_convert_16_to_8 = lama.utilities.lama_convert_16_to_8:main
+lama_get_test_data = lama.scripts.lama_get_test_data:main
+lama_get_walkthrough_data = lama.scripts.lama_get_walkthrough_data:main
+lama_img_info = lama.utilities.lama_img_info:main
+lama_job_runner = lama.scripts.lama_job_runner:main
+lama_pad_volumes = lama.utilities.lama_pad_volumes:main
+lama_permutation_stats = lama.scripts.lama_permutation_stats:main
+lama_reg = lama.scripts.lama_reg:main
+lama_stats = lama.scripts.lama_stats:main
+
