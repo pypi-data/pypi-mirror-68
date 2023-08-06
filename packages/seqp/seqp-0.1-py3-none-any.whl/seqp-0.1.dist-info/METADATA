@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: seqp
+Version: 0.1
+Summary: Sequence persistence library
+Home-page: https://github.com/noe/seqp
+Author: Noe Casas
+Author-email: contact@noecasas.com
+License: MIT
+Keywords: sequence persistence deep learning
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.5.0
+Requires-Dist: numpy
+Requires-Dist: h5py
+
+UNKNOWN
+
+
