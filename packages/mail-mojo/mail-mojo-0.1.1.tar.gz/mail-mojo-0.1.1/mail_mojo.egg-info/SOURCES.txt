@@ -1,0 +1,14 @@
+setup.py
+mail_mojo/QQMail.py
+mail_mojo/__init__.py
+mail_mojo/mail.py
+mail_mojo/mail163.py
+mail_mojo/message.py
+mail_mojo/outlookMail.py
+mail_mojo/recieved_email.py
+mail_mojo/sinaMail.py
+mail_mojo.egg-info/PKG-INFO
+mail_mojo.egg-info/SOURCES.txt
+mail_mojo.egg-info/dependency_links.txt
+mail_mojo.egg-info/requires.txt
+mail_mojo.egg-info/top_level.txt
