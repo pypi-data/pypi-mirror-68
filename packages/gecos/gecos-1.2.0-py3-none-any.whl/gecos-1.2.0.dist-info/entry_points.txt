@@ -1,0 +1,3 @@
+[console_scripts]
+gecos=gecos.cli:main
+
