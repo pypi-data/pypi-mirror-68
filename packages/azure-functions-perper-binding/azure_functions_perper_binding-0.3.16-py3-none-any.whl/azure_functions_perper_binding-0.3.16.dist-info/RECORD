@@ -1,0 +1,7 @@
+azure_functions/perper/__init__.py,sha256=Ia4mneajrgQBN1s-qXd5ZUOgw4RPLwIi-28PU6o5ePc,81
+azure_functions/perper/_perper.py,sha256=p0xivu27CCmY9VqP7cSZzWlIo-lw1LRX2XM_o-OsRMw,133
+azure_functions/perper/perper.py,sha256=Lxz28_8trUYluMp7QmSI31QpVvTOPnTRtimmuBNaMUI,1194
+azure_functions_perper_binding-0.3.16.dist-info/METADATA,sha256=AQzVGdHytyhG2g5_OrsvEqBTMm0SbcWUwopqVoudqoU,504
+azure_functions_perper_binding-0.3.16.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+azure_functions_perper_binding-0.3.16.dist-info/top_level.txt,sha256=QBLj7Zq0u5bgkZLBFd8B4XF7Xl8qBlhzolRT3xQ83Kc,16
+azure_functions_perper_binding-0.3.16.dist-info/RECORD,,
