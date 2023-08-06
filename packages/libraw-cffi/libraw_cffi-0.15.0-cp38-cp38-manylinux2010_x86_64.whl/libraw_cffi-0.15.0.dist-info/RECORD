@@ -1,0 +1,15 @@
+_raw.abi3.so,sha256=_7A7F8iYwO6yTtv21IsfZdm1bv8Hi8vQheTegFUlVAs,286712
+libraw_cffi.libs/libgomp-f7e03b3e.so.1.0.0,sha256=zbIl_S4-7kPHDUQOH1n_ENyLfww1WJv0eKBvWVHOPkI,93080
+libraw_cffi.libs/libraw-c3493c03.so.19.0.2,sha256=xlFpDUYLEjEPE5a-oCw561sMoEZ_Nftyoc-V1vIhqvk,2700944
+libraw_cffi/_build.py,sha256=uCHqHm8XCv-CeY-YBdqZcE_6xle3e0om6nBya1WjvfM,21772
+libraw_cffi/_api.py,sha256=6x6fe5WS_1GB7aVdjwwHM_n2eVhVpLElzwL2GcSinDs,3679
+libraw_cffi/__init__.py,sha256=ECVS_BUtVPGcdqQeHT6clz0Jp1ZM5F1Cdq8nhZCdIC0,239
+libraw_cffi/tests/test_overview.py,sha256=PKzAkjZtYYzobTsLK-bzTwC73zawFBQTGMqcehasHFY,476
+libraw_cffi/tests/test_api.py,sha256=2oE2UeEggzTIx-v6lLam0EadmGbI1eQ_Rkizu7WHgzg,1106
+libraw_cffi/tests/test_samples.py,sha256=wE3S9Nf4KnE6831G98imEHtphiIQKrmp6urcp2tLOKY,8197
+libraw_cffi/tests/__init__.py,sha256=-_FJzgXfCu7swxdJi7XTsmMsfkIMoPam0IlXAVwvlR0,563
+libraw_cffi-0.15.0.dist-info/RECORD,,
+libraw_cffi-0.15.0.dist-info/WHEEL,sha256=lcFHRL9nxOeSwmwIxlbY5bPkh5a_GtD4XbV-xJYB-ZU,111
+libraw_cffi-0.15.0.dist-info/top_level.txt,sha256=5gpGQ_tG-5yeAWeJE4PXBiTKVI1EHm4pkg8tyTXf98g,17
+libraw_cffi-0.15.0.dist-info/COPYING,sha256=OW6Dcg8AtDVNWlIRaV0GkMM9iOUau3FBuZfw-Pit9SY,1057
+libraw_cffi-0.15.0.dist-info/METADATA,sha256=V6pDc2IwDZRjqXsDjQZ-m-81kok1Lm-Mse1nhItJU2M,1869
