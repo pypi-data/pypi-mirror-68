@@ -1,0 +1,27 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "psiresp"
+description-file = "README.md"
+author = "Lily Wang"
+author-email = "lily.wang@anu.edu.au"
+home-page = "https://github.com/lilyminium/psiresp"
+classifiers = [
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)", 
+    "Programming Language :: Python :: 3",]
+requires-python = ">=3.6"
+requires = ["numpy", "qcelemental", "duecredit"]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    ]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+    "sphinxcontrib-bibtex",
+    "sphinx-sitemap",
+    ]
