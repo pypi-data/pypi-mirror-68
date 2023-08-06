@@ -1,0 +1,3 @@
+[console_scripts]
+keyhint = keyhint.__main__:run
+
