@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+version
+neuralDX7/__init__.py
+neuralDX7/constants.py
+neuralDX7/utils.py
+neuralDX7.egg-info/PKG-INFO
+neuralDX7.egg-info/SOURCES.txt
+neuralDX7.egg-info/dependency_links.txt
+neuralDX7.egg-info/requires.txt
+neuralDX7.egg-info/top_level.txt
+neuralDX7.egg-info/zip-safe
