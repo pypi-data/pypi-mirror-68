@@ -1,0 +1,3 @@
+[console_scripts]
+shaclgen = shaclgen.__main__:main
+
