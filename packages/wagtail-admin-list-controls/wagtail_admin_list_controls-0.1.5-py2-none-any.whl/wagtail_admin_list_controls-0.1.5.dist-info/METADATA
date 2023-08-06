@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wagtail-admin-list-controls
+Version: 0.1.5
+Summary: A UI toolkit to build custom filtering and other functionalities into wagtail's admin list views.
+Home-page: https://github.com/ixc/wagtail-admin-list-controls
+Author: Interaction Consortium
+Author-email: studio@interaction.net.au
+License: MIT
+Platform: UNKNOWN
+
+Documentation at https://github.com/ixc/wagtail-admin-list-controls
+
+

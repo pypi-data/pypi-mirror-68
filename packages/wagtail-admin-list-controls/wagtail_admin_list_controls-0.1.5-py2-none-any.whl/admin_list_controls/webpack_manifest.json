@@ -1,0 +1,9 @@
+{
+  "status": "built",
+  "errors": null,
+  "files": {
+    "admin_list_controls": [
+      "admin_list_controls/dist/admin_list_controls-094e99dc965dbf2b94bf.js"
+    ]
+  }
+}
