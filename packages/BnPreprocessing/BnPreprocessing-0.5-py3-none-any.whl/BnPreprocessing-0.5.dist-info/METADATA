@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: BnPreprocessing
+Version: 0.5
+Summary: UNKNOWN
+Home-page: https://github.com/Kowsher/Bangla-NLP/tree/master/Bangla%20Feature%20Extraction
+Author: Karigor
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Bangla Preprocessor (BnPreprocessing)
+==================================
+
+This page gives a basic introduction to the package.
+
+## Installation:
+
+```
+pip install BnPreprocessing
+```
+
+In Python a Bangla Linga is typically written as:
+
+## Usage:
+```python
+>>> from BnPreprocessing import preprocessor as pp
+>>> s = "আমরা কাজ করবো কিভাবে? ডকুমেন্টটা তৈরী করতে আমাদের সবাইকে কি করতে হবে? নিজেদের(গ্রুপ-৬ এর সবাই) মধ্যে  কাজ ভাগ করবো কেমনে?"
+>>> s = pp.remove_punc(s)
+>>> print(s)
+
+>>> s = pp.remove_sw(s)
+>>> print(s)
+
+```
+Output:
+```
+আমরা কাজ করবো কিভাবে ডকুমেন্টটা তৈরী করতে আমাদের সবাইকে কি করতে হবে নিজেদেরগ্রুপ৬ এর সবাই মধ্যে  কাজ ভাগ করবো কেমনে
+আমরা কাজ করবো কিভাবে ডকুমেন্টটা তৈরী করতে আমাদের সবাইকে করতে হবে নিজেদেরগ্রুপ৬ সবাই মধ্যে  কাজ ভাগ করবো কেমনে
+```
+
+
