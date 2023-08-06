@@ -1,0 +1,4 @@
+Django<2,>=1.11
+future
+html2text
+ievv_opensource>=5.22.1<6
