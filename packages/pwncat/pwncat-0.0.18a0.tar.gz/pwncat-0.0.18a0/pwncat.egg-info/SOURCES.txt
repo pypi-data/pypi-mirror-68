@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+bin/pwncat
+pwncat.egg-info/PKG-INFO
+pwncat.egg-info/SOURCES.txt
+pwncat.egg-info/dependency_links.txt
+pwncat.egg-info/top_level.txt
