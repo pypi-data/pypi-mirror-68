@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+jax_random_projections/__init__.py
+jax_random_projections/sparse.py
+jax_random_projections.egg-info/PKG-INFO
+jax_random_projections.egg-info/SOURCES.txt
+jax_random_projections.egg-info/dependency_links.txt
+jax_random_projections.egg-info/requires.txt
+jax_random_projections.egg-info/top_level.txt
