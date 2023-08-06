@@ -1,0 +1,65 @@
+{
+    "version": 4,
+    "language": "es",
+    "country": "ar",
+    "required_to_start": [
+        {
+            "code": "born_date",
+            "text": "Fecha de nacimiento",
+            "data_type": "date",
+            "formats": ["%Y-%m-%d", "%m/%d/%Y"],
+            "formats_txt_to_user": "Formatos permitidos: AAAA-MM-DD o DD/MM/AAAA. Por ejemplo 2020-12-01 o 01/12/2020",
+            "default": null
+        },
+        {
+            "code": "test_date",
+            "text": "Fecha de evaluación",
+            "data_type": "date",
+            "formats": ["%Y-%m-%d", "%m/%d/%Y"],
+            "formats_txt_to_user": "Formatos permitidos: AAAA-MM-DD o DD/MM/AAAA. Por ejemplo 2020-12-01 o 01/12/2020",
+            "default": "today",
+            "default_to_user": "Dejar en blanco para asignar el día de hoy"
+        }
+    ],
+    "tests": [
+        {
+        "name": "Comprension verbal",
+        "code": "CV",
+        "subtests": [
+            {"code": "S", "name": "Semejanzas", "mandatory": true, "orden": 1},
+            {"code": "V", "name": "Vocabulario", "mandatory": true, "orden": 2},
+            {"code": "C", "name": "Comprensión", "mandatory": true, "orden": 3},
+            {"code": "I", "name": "Información", "mandatory": false, "orden": 4},
+            {"code": "Ad", "name": "Adivinanzas", "mandatory": false, "orden": 5}
+            ]
+        },
+        {
+        "name": "Razonamiento Perceptivo",
+        "code": "RP",
+        "subtests": [
+            {"code": "CC", "name": "Construcción de cubos", "mandatory": true, "orden": 1},
+            {"code": "Co", "name": "Conceptos", "mandatory": true, "orden": 2},
+            {"code": "M", "name": "Matrices", "mandatory": true, "orden": 3},
+            {"code": "CF", "name": "Completar figuras", "mandatory": false, "orden": 4}
+            ]
+        },
+        {
+        "name": "Memoria Operativa",
+        "code": "MO",
+        "subtests": [
+            {"code": "RD", "name": "Retención de dígitos", "mandatory": true, "orden": 1},
+            {"code": "LN", "name": "Letras y números", "mandatory": true, "orden": 2},
+            {"code": "Ar", "name": "Aritmética", "mandatory": false, "orden": 3}
+            ]
+        },
+        {
+        "name": "Velocidad de procesamiento",
+        "code": "VP",
+        "subtests": [
+            {"code": "Cl", "name": "Claves", "mandatory": true, "orden": 1},
+            {"code": "BS", "name": "Búsqueda de símbolos", "mandatory": true, "orden": 2},
+            {"code": "A", "name": "Animales", "mandatory": false, "orden": 3}
+            ]
+        }
+    ]
+}

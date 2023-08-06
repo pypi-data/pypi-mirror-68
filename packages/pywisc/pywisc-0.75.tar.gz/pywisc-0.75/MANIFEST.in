@@ -1,0 +1,3 @@
+include pywisc/data/*
+include pywisc/tools/*
+include pywisc/tools/tmpdata/*
