@@ -1,0 +1,146 @@
+Metadata-Version: 2.1
+Name: gismo
+Version: 0.3.0
+Summary: GISMO is a NLP tool to rank and organize a corpus of documents according to a query.
+Home-page: https://github.com/balouf/gismo
+Author: Fabien Mathieu
+Author-email: fabien.mathieu@normalesup.org
+License: GNU General Public License v3
+Keywords: gismo
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: dill
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+
+=====
+GISMO
+=====
+
+
+.. image:: https://img.shields.io/pypi/v/gismo.svg
+        :target: https://pypi.python.org/pypi/gismo
+
+.. image:: https://img.shields.io/travis/balouf/gismo.svg
+        :target: https://travis-ci.org/balouf/gismo
+
+.. image:: https://readthedocs.org/projects/gismo/badge/?version=latest
+        :target: https://gismo.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://codecov.io/gh/balouf/gismo/branch/master/graphs/badge.svg
+        :target: https://codecov.io/gh/balouf/gismo/branch/master/graphs/badge
+        :alt: Code Coverage
+
+
+
+
+
+GISMO is a NLP tool to rank and organize a corpus of documents according to a query.
+
+Gismo stands for Generic Information Search... with a Mind of its Own.
+
+* Free software: GNU General Public License v3
+* Github: https://github.com/balouf/gismo.
+* Documentation: https://gismo.readthedocs.io.
+
+
+Features
+--------
+
+Gismo combines three main ideas:
+
+* **TF-IDTF**: a symmetric version of the TF-IDF embedding.
+* **DI-Iteration**: a fast, push-based, variant of the PageRank algorithm.
+* **Fuzzy dendrogram**: a variant of the Louvain clustering algorithm.
+
+Quickstart
+----------
+
+Install gismo:
+
+.. code-block:: console
+
+    $ pip install gismo
+
+Import gismo in a Python project::
+
+    import gismo as gs
+
+
+Credits
+-------
+
+Thomas Bonald, Anne Bouillard, Marc-Olivier Buob, Dohy Hong.
+
+This package was created with Cookiecutter_ and the `francois-durand/package_helper`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`francois-durand/package_helper`: https://github.com/francois-durand/package_helper
+
+
+=======
+History
+=======
+
+0.3.0 (2020-05-13)
+------------------
+
+* dblp module: url2source function added to directly load a small dblp source in memory instead of using a FileSource approach.
+* Possibility to disable query distortion in gismo.
+* XGismo class to cross analyze embeddings.
+* Tutorials updated
+
+0.2.5 (2020-05-11)
+------------------
+
+* auto_k feature: if not specified, a query-dependent, reasonable, number of results k is estimated.
+* covering methods added to gismo. It is now possible to use get_covering_* instead of get_ranked_* to maximize coverage and/or eliminate redundancy.
+
+
+0.2.4 (2020-05-07)
+------------------
+
+* Tutorials for ACM and DBLP added. After cleaning, there is currently 3 tutorials:
+    * Toy model, to get the hang of Gismo on a tiny example,
+    * ACM, to play with Gismo on a small example,
+    * DBLP, to play with a large dataset.
+
+
+0.2.3 (2020-05-04)
+------------------
+
+* ACM and DBLP dataset creation added.
+
+
+0.2.2 (2020-05-04)
+------------------
+
+* Notebook tutorials added (early version)
+
+0.2.1 (2020-05-03)
+------------------
+
+* Actual code
+* Coverage badge
+
+0.1.0 (2020-04-30)
+------------------
+
+* First release on PyPI.
+
+
