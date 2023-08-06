@@ -1,0 +1,17 @@
+
+[cover]
+coverage
+pytest
+codecov
+
+[docs]
+sphinx<=1.8.5
+sphinx_rtd_theme<=0.5
+
+[inspect]
+flake8
+pep8-naming
+mypy
+typing
+check-manifest
+twine
