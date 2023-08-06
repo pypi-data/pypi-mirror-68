@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+cake/__init__.py
+cake/__main__.py
+cli_cake.egg-info/PKG-INFO
+cli_cake.egg-info/SOURCES.txt
+cli_cake.egg-info/dependency_links.txt
+cli_cake.egg-info/top_level.txt
