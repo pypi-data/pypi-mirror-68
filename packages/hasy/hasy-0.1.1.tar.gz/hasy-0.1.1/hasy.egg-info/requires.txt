@@ -1,0 +1,8 @@
+click
+
+[all]
+tensorflow
+tflearn
+sklearn
+keras
+matplotlib
