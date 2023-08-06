@@ -1,0 +1,14 @@
+CHANGES
+=======
+
+0.0.2
+-----
+
+* Fix raw\_input on py3.x
+
+0.0.1
+-----
+
+* Rename cryptic to ghcrypt
+* Make README.rst more useful
+* Initial commit
