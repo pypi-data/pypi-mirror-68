@@ -1,0 +1,44 @@
+development:
+  log_file: '../../log/app_master.log'
+  com_port_log_file: '../../log/com_port.log'
+
+  master_state_configuration: '../master_state.yaml'
+
+  zabbix:
+    user: 'Admin'
+    password: 'zabbix'
+    api_url: 'http://192.168.56.101/zabbix'
+    sender_url: '192.168.56.101'
+
+
+
+testing:
+  log_file: '/var/opt/tracker_master/log/app_master.log'
+  com_port_log_file: '/var/opt/tracker_master/log/com_port.log'
+
+  master_state_configuration: '/var/opt/tracker_master/master_state.yaml'
+
+  zabbix:
+    user: 'Admin'
+    password: 'master8and'
+    api_url: 'http://zabbix.itmonit.ru'
+    sender_url: 'zabbix.itmonit.ru'
+
+  slave:
+    com_port:
+      port: '/dev/ttyS2'
+      baudrate: 9600
+
+
+
+integration-test:
+  log_file: ''
+  com_port_log_file: ''
+
+  master_state_configuration: './master_state_integration_test.yaml'
+
+  zabbix:
+      user: 'Admin'
+      password: 'master8and'
+      api_url: 'http://zabbix.itmonit.ru'
+      sender_url: 'zabbix.itmonit.ru'

@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "formatters": {
+        "com_port": {
+            "format": "%(asctime)s %(message)s"
+        },
+        "default": {
+            "format": "%(asctime)s %(msecs)03d %(levelname)-8s %(name)-8s %(message)s",
+            "datefmt": "%Y-%m-%d %H:%M:%S"
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "default"
+        },
+        "app_log": {
+            "class": "logging.FileHandler",
+            "filename": "",
+            "formatter": "default"
+        },
+        "com_port": {
+            "class": "logging.FileHandler",
+            "filename": "",
+            "formatter": "com_port"
+        }
+    },
+    "loggers": {
+        "com_port": {
+            "level": "INFO",
+            "handlers": ["com_port"]
+        }
+    },
+    "root": {
+        "level": "DEBUG",
+        "handlers": ["app_log", "console"]
+    }
+}
