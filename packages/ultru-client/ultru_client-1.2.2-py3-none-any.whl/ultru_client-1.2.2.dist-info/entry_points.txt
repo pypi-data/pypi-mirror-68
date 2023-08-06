@@ -1,0 +1,4 @@
+[console_scripts]
+ultru-cli = ultru_client.cli:main
+ultru-shell = ultru_client.shell:main
+
