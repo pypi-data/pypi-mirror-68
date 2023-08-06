@@ -1,0 +1,8 @@
+f2py_jit/__init__.py,sha256=gi5_rSIgOTc4tgSjbkVawEJ3d76YqXuvf-9DbHr-bCA,24
+f2py_jit/f2py_jit.py,sha256=ZLozdOzgitU4WYSQJCTz00MYpv7gZKQM43B89T_vrhc,7120
+f2py_jit/finline.py,sha256=Uf6r53nh9oUbNrBZyPO8mXQxFhaevQoQbagdNo7DKc4,7679
+f2py_jit-0.1.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+f2py_jit-0.1.4.dist-info/METADATA,sha256=Dj68jksBlwlPvBERMoQsNmU04eB6Jwff52S2TVgfnlM,929
+f2py_jit-0.1.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+f2py_jit-0.1.4.dist-info/top_level.txt,sha256=Xi441dBS-QozBDKDx-urOGz5AD0pCwfPgqV2Lef-BSY,9
+f2py_jit-0.1.4.dist-info/RECORD,,
