@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+renovate.json
+setup.py
+jupyter_dash/__init__.py
+jupyter_dash/comms.py
+jupyter_dash/jupyter_app.py
+jupyter_dash/version.py
+jupyter_dash.egg-info/PKG-INFO
+jupyter_dash.egg-info/SOURCES.txt
+jupyter_dash.egg-info/dependency_links.txt
+jupyter_dash.egg-info/requires.txt
+jupyter_dash.egg-info/top_level.txt
+jupyter_dash/labextension/package.json
+jupyter_dash/labextension/dist/jupyterlab-dash-v0.2.0-alpha.15.tgz
+jupyter_dash/nbextension/jupyter_dash.json
+jupyter_dash/nbextension/main.js
