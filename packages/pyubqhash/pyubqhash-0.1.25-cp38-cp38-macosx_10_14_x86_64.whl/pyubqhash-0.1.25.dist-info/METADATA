@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyubqhash
+Version: 0.1.25
+Summary: Python wrappers for ubqhash, the ethereum proof of workhashing function
+Home-page: https://github.com/maxmalysh/ubqhash
+Author: Matthew Wampler-Doty
+Author-email: matthew.wampler.doty@gmail.com
+License: GPL
+Download-URL: https://github.com/maxmalysh/ubqhash/tarball/master
+Platform: UNKNOWN
+
+UNKNOWN
+
+
