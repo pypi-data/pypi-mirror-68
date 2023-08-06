@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pipedrive
+Version: 0.2.0
+Summary: Pipedrive Client
+Home-page: https://github.com/ondrejsika/pipedrive
+Author: Ondrej Sika
+Author-email: ondrej@ondrejsika.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+
