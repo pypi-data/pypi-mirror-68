@@ -1,0 +1,46 @@
+Metadata-Version: 1.2
+Name: graphysio
+Version: 2020.5.11
+Summary: Graphical time series visualizer and analyzer.
+Home-page: https://github.com/jaj42/graphysio
+Author: Jona Joachim
+Author-email: jona@joachim.cc
+License: ISC
+Description: # GraPhysio
+        GraPhysio is a graphical time series visualizer created for physiologic
+        data signals from ICU patient monitors. It is however not limited to this.
+        It currently supports reading from CSV files.
+        It can handle low frequency and high frequency data as well as aggregating
+        and synchronizing signals from different sources.
+        GraPhysio supports basic mathematical operations and filters and can help
+        selecting and exporting time periods.
+        Performance is good depending on your hardware for files up to 1 GB.
+        
+        ## Install instructions
+        To make GraPhysio work you need Python 3.6 or greater.
+        
+        You can then install the latest version of GraPhysio by tying the
+        following command:
+        
+        > python -m pip install graphysio
+        
+        You can launch GraPhysio by typing:
+        
+        > python -m graphysio
+        
+        Alternatively, on Windows, you can use the release binaries.
+        
+Keywords: time series,data,visualizing,analysis
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.6
