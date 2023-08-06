@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: xtools
+Version: 0.1.2
+Summary: XTools API wrapper
+Home-page: https://github.com/bfontaine/xtools
+Author: Baptiste Fontaine
+Author-email: b@ptistefontaine.fr
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# xtools
+[![Version on Pypi](https://img.shields.io/pypi/v/xtools.svg?label=PyPI)](https://pypi.org/project/coveralls/)
+[![Coverage Status](https://coveralls.io/repos/github/bfontaine/xtools/badge.svg?branch=master)](https://coveralls.io/github/bfontaine/xtools?branch=master)
+
+**xtools** is a Python wrapper around [XTools][]’ API.
+
+[XTools]: https://xtools.readthedocs.io/en/stable/index.html
+
+Note this project is not affiliated with nor endorsed by XTools.
+
+## Install
+
+    pip install xtools
+
+### Requirements
+
+Python 3.5+.
+
+## Usage
+
+[Read the docs](https://python-xtools.readthedocs.io/en/latest/).
+
