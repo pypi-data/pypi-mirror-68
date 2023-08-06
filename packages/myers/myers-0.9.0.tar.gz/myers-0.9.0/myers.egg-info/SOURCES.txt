@@ -1,0 +1,8 @@
+README.rst
+myers.py
+setup.cfg
+setup.py
+myers.egg-info/PKG-INFO
+myers.egg-info/SOURCES.txt
+myers.egg-info/dependency_links.txt
+myers.egg-info/top_level.txt
