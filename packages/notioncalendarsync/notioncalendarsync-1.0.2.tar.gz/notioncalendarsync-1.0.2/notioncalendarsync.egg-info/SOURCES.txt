@@ -1,0 +1,10 @@
+README.md
+setup.py
+notioncalendarsync/__init__.py
+notioncalendarsync/google_calendar.py
+notioncalendarsync/notion_api.py
+notioncalendarsync.egg-info/PKG-INFO
+notioncalendarsync.egg-info/SOURCES.txt
+notioncalendarsync.egg-info/dependency_links.txt
+notioncalendarsync.egg-info/requires.txt
+notioncalendarsync.egg-info/top_level.txt
