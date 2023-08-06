@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "as_fastapi_toolbox"
+version = "0.3.6"
+description = ""
+authors = ["Andreas Moll <andreasm@ansto.gov.au>", "Alex Palma <alexp@ansto.gov.au>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = "^0.54.1"
+starlette = "^0.13.2"
+uvicorn = "^0.11.5"
+python-multipart = "^0.0.5"
+PyJWT = "^1.7.1"
+cryptography = "^2.9.2"
+pydantic = "^1.5.1"
+pytz = "^2020.1"
+email-validator = "^1.1.0"
+httpx = "^0.12.1"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+devpi-client = "^5.1.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
