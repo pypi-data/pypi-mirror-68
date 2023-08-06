@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: partial_web_file
+Version: 1.0.11
+Summary: Utilities to get the partial content of the web file or to unarchive a single file from a huge remote web zip.
+Home-page: https://github.com/alexappsnet/pypartialwebfile
+Author: Alex Malko
+Author-email: alex@alexapps.net
+License: MIT
+Description: Utilities to get the partial content of the web file or to unarchive a single file from a huge remote web zip.
+Platform: UNKNOWN
+Description-Content-Type: text/plain
