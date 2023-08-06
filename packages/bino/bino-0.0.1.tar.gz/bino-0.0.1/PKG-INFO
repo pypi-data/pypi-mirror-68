@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bino
+Version: 0.0.1
+Summary: A small example package to convert decimal numbers to binary
+Home-page: https://github.com/Arun1106/binary
+Author: Arun I
+Author-email: isarun20@gmail.com
+License: UNKNOWN
+Description: A small package to convert decimal to binary.
+        ## How to install
+        
+        ```
+        pip install bino
+        ```
+        
+        ## How to use
+        
+        Below example will help you
+        
+        ```
+        from bino import bino
+        x=2
+        print(bino.bino(x))	# returns the binary value
+        
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
