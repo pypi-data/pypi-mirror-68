@@ -1,0 +1,3 @@
+[console_scripts]
+matillioncli = client.console:main
+
