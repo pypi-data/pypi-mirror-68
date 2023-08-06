@@ -1,0 +1,6 @@
+pandas>=0.25.3
+keras>=2.3
+pymatgen>=2020.3.13
+matminer>=0.6.2
+numpy>=1.18.3
+scikit-learn

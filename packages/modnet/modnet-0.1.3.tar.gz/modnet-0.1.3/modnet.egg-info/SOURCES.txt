@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+modnet/__init__.py
+modnet/models.py
+modnet/preprocessing.py
+modnet.egg-info/PKG-INFO
+modnet.egg-info/SOURCES.txt
+modnet.egg-info/dependency_links.txt
+modnet.egg-info/requires.txt
+modnet.egg-info/top_level.txt
+modnet/data/Features_cross
