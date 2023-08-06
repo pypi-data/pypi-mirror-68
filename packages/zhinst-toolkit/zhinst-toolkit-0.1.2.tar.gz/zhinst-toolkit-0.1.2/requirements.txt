@@ -1,0 +1,5 @@
+zhinst
+numpy
+attrs
+pytest
+hypothesis
