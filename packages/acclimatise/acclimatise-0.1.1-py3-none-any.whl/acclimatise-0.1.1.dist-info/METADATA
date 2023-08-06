@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: acclimatise
+Version: 0.1.1
+Summary: Acclimatise is a Python library and command-line utility for parsing the help output of a command-line tool and then outputting a description of the tool in a more structured format
+Home-page: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyparsing
+Requires-Dist: jinja2
+Requires-Dist: spacy
+Requires-Dist: cwlgen
+Requires-Dist: dataclasses
+Requires-Dist: miniwdl
+Requires-Dist: wordsegment
+Requires-Dist: inflection
+Requires-Dist: illusional.wdlgen (~=0.2)
+Requires-Dist: ruamel.yaml (==0.16.5)
+Requires-Dist: click
+Requires-Dist: cwltool
+Requires-Dist: cwl-utils
+Requires-Dist: regex
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: sphinx-click ; extra == 'dev'
+
+UNKNOWN
+
+
