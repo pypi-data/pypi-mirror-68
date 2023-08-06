@@ -1,0 +1,56 @@
+{% include "common/header.j2" %}
+
+/**
+ * @defgroup    drivers_{{ driver.name }} {{ driver.displayed_name }}
+ * @ingroup     drivers_{{ driver.ingroup }}
+ * @brief       {{ driver.brief }}
+ *
+ * @{
+ *
+ * @file
+ *
+ * @author      {{ global.author_name }} <{{ global.author_email }}>
+ */
+
+#ifndef {{ driver.name|upper }}_H
+#define {{ driver.name|upper }}_H
+
+/* Add header includes here */
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* Declare the API of the driver */
+
+/**
+ * @brief   Device initialization parameters
+ */
+typedef struct {
+    /* add initialization params here */
+} {{ driver.name }}_params_t;
+
+/**
+ * @brief   Device descriptor for the driver
+ */
+typedef struct {
+    /** Device initialization parameters */
+    {{ driver.name }}_params_t params;
+} {{ driver.name }}_t;
+
+/**
+ * @brief   Initialize the given device
+ *
+ * @param[inout] dev        Device descriptor of the driver
+ * @param[in]    params     Initialization parameters
+ *
+ * @return                  0 on success
+ */
+int {{ driver.name }}_init({{ driver.name }}_t *dev, const {{ driver.name }}_params_t *params);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* {{ driver.name|upper }}_H */
+/** @} */
