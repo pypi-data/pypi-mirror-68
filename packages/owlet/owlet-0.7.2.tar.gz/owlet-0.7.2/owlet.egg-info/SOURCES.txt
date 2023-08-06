@@ -1,0 +1,8 @@
+README.md
+setup.py
+owlet/__init__.py
+owlet.egg-info/PKG-INFO
+owlet.egg-info/SOURCES.txt
+owlet.egg-info/dependency_links.txt
+owlet.egg-info/requires.txt
+owlet.egg-info/top_level.txt
