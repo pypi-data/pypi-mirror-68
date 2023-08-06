@@ -1,0 +1,3 @@
+[console_scripts]
+salt-bootstrap-ssh = salt_bootstrap_ssh:main
+
