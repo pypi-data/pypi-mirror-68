@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: python-deepdialog
+Version: 0.0.1
+Summary: DeepDialog is a lightweight library for deep generative dialogue models.
+Home-page: https://zheng-yanan.github.io/deepdialog/
+Author: Yanan Zheng
+Author-email: zyanan93@gmail.com
+License: UNKNOWN
+Description: # DeepDialog
+        
+        DeepDialog is a lightweight library for deep generative dialogue models.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: examples
