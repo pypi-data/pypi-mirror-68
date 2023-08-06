@@ -1,0 +1,11 @@
+scikit-learn>=0.22
+tensorflow>=2
+pandas
+numpy
+ftfy
+tweepy
+tqdm
+requests
+spacy
+bert-for-tf2
+tensorflow-hub
