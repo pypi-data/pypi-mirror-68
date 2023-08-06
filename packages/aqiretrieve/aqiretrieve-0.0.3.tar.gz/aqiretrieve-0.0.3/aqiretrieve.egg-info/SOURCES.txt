@@ -1,0 +1,7 @@
+README.md
+setup.py
+aqiretrieve/__init__.py
+aqiretrieve.egg-info/PKG-INFO
+aqiretrieve.egg-info/SOURCES.txt
+aqiretrieve.egg-info/dependency_links.txt
+aqiretrieve.egg-info/top_level.txt
