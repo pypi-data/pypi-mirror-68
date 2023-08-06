@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: difftorch
+Version: 1.2.0
+Summary: A differentiation API for PyTorch
+Home-page: https://github.com/gbaydin/difftorch
+Author: Atilim Gunes Baydin
+Author-email: gunes@robots.ox.ac.uk
+License: UNKNOWN
+Keywords: automatic differentiation autodiff pytorch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: torch (>=1.0.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+
+UNKNOWN
+
+
