@@ -1,0 +1,8 @@
+README.md
+setup.py
+Encoder/__init__.py
+Encoder/encoder.py
+Encoder.egg-info/PKG-INFO
+Encoder.egg-info/SOURCES.txt
+Encoder.egg-info/dependency_links.txt
+Encoder.egg-info/top_level.txt
