@@ -1,0 +1,13 @@
+docopt
+PyYAML
+requests
+kubernetes
+
+[dev]
+twine
+wheel
+pytest
+pytest-cov
+black
+mypy
+pre-commit
