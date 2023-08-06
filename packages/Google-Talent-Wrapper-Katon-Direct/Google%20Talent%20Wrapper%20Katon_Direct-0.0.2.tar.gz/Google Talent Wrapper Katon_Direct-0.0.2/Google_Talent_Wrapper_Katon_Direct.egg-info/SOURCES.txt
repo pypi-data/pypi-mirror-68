@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+Google_Talent_Wrapper_Katon_Direct.egg-info/PKG-INFO
+Google_Talent_Wrapper_Katon_Direct.egg-info/SOURCES.txt
+Google_Talent_Wrapper_Katon_Direct.egg-info/dependency_links.txt
+Google_Talent_Wrapper_Katon_Direct.egg-info/requires.txt
+Google_Talent_Wrapper_Katon_Direct.egg-info/top_level.txt
