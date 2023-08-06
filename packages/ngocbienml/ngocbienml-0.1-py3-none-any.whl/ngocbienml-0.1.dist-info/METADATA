@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ngocbienml
+Version: 0.1
+Summary: a eco system for machine learning project
+Home-page: https://github.com/ngocbien
+Author: Nguyen Ngoc Bien
+Author-email: ngocbien.nguyen.vn@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7.*
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16.6)
+Requires-Dist: scikit-learn (>=0.20.4)
+Requires-Dist: scipy (>=0.19.0)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: matplotlib (>=2.2.5)
+
+This is a machine learning tools with pipeline
+
+
