@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: BaiduImagesDownload
+Version: 0.0.2
+Summary: download image from Baidu Image
+Home-page: https://github.com/YXL76/BaiduImagesDownload
+Author: YXL
+Author-email: chenxin.lan.76@gmail.com
+License: MIT
+Description: # BaiduImagesDownload
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
