@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sphinx-toggleprompt
+Version: 0.0.1a0
+Summary: Add a python prompt toggle to each code cell.
+Home-page: https://github.com/jurasofish/sphinx-toggleprompt
+Author: Michael Jurasovic
+License: MIT License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: sphinx (>=1.8)
+
+# sphinx-toggleprompt
+
+Package for the python docs theme togglebutton.
+
+
