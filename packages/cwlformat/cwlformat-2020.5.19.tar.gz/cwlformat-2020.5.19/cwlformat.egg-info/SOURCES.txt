@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+cwlformat/__init__.py
+cwlformat/explode.py
+cwlformat/formatter.py
+cwlformat/keyorder.yml
+cwlformat/version.py
+cwlformat.egg-info/PKG-INFO
+cwlformat.egg-info/SOURCES.txt
+cwlformat.egg-info/dependency_links.txt
+cwlformat.egg-info/entry_points.txt
+cwlformat.egg-info/requires.txt
+cwlformat.egg-info/top_level.txt
