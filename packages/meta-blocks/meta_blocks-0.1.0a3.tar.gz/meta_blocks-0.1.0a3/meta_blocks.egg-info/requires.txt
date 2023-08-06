@@ -1,0 +1,10 @@
+albumentations
+filelock
+hydra-core<1.0,>=0.11
+hydra-colorlog
+numpy
+omegaconf<2.0,>=1.4
+Pillow
+scipy
+scikits.bootstrap<1.1,>=1.0
+tensorflow<2.3.0,>=2.2.0
