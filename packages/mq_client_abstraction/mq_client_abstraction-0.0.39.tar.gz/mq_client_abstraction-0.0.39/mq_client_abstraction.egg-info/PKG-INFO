@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mq-client-abstraction
+Version: 0.0.39
+Summary: Python package which provides an abstract mq client
+Home-page: https://github.com/rmetcalf9/object_store_abstraction
+Author: Robert Metcalf
+Author-email: rmetcalf9@googlemail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
