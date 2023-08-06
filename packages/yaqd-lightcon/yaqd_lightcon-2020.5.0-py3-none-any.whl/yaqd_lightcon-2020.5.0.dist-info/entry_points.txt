@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-topas4 = yaqd_lightcon._topas4:Topas4.main
+
