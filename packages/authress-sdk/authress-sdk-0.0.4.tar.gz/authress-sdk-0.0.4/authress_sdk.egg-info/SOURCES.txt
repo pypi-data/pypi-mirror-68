@@ -1,0 +1,7 @@
+README.md
+setup.py
+authress_sdk.egg-info/PKG-INFO
+authress_sdk.egg-info/SOURCES.txt
+authress_sdk.egg-info/dependency_links.txt
+authress_sdk.egg-info/requires.txt
+authress_sdk.egg-info/top_level.txt

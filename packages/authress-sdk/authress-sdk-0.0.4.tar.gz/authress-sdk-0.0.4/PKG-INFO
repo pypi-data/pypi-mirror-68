@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: authress-sdk
+Version: 0.0.4
+Summary: Authress SDK for authorization as a service and interact with the Authress API.
+Home-page: https://github.com/Authress/authress-sdk.py.git
+Author: Rhosys Developers
+Author-email: developers@authress.io
+License: UNKNOWN
+Download-URL: https://github.com/Authress/authress-sdk.py/tarball/0.0.4
+Description: UNKNOWN
+Keywords: Authentication,Authorization,Authorization as a service,Security,Authress
+Platform: UNKNOWN
