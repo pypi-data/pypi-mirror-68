@@ -1,0 +1,5 @@
+numpy
+pymavlink
+imutils
+opencv-python
+serial

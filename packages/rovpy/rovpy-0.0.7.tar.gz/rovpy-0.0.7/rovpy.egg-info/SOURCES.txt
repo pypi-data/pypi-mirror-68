@@ -1,0 +1,8 @@
+README.md
+setup.py
+rovpy/rovpy.py
+rovpy.egg-info/PKG-INFO
+rovpy.egg-info/SOURCES.txt
+rovpy.egg-info/dependency_links.txt
+rovpy.egg-info/requires.txt
+rovpy.egg-info/top_level.txt
