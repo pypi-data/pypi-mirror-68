@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scprint
+Version: 0.0.0b0
+Summary: None
+Home-page: https://github.com/DanGill/scprint
+Author: Daniel Gill
+Author-email: DanG_@outlook.com
+License: UNKNOWN
+Description: None
+Keywords: None
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
