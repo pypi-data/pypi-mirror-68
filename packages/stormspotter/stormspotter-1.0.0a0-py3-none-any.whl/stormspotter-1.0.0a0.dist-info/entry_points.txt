@@ -1,0 +1,4 @@
+[console_scripts]
+stormdash = Stormdash:main
+stormspotter = Stormspotter:main
+
