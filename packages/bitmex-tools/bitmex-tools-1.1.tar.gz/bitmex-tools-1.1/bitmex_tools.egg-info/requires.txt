@@ -1,0 +1,3 @@
+numpy
+pandas
+websocket-client==0.47.0
