@@ -1,0 +1,12 @@
+twitter_markov/__init__.py,sha256=lMSjQV5iDd08E5hTMf1X8sjadMY8uM3ZTGHIXE95xeg,857
+twitter_markov/__main__.py,sha256=Ds9RYXaxw7ez_y2gvFywAV86R64TP3SUnCYDPzggF6I,4868
+twitter_markov/checking.py,sha256=i5diST5pcrmuY3_ymNVmUAIVotvW6F6tADdHIsCIXik,6859
+twitter_markov/twitter_markov.py,sha256=dN7u5O7oS4BDIi_3m4XS-NdcCkdQd3MloP1iw8I75U0,11114
+twitter_markov-0.6.0.dist-info/LICENSE,sha256=0ElQUwUZZ-vnb7H6zSh9edHtgA2hvnXPUBpVa8OaBHI,32471
+twitter_markov-0.6.0.dist-info/METADATA,sha256=V3jJyzoLrNJ22oUNLjU9faMcG3fJainp6XK83mja7BM,2447
+twitter_markov-0.6.0.dist-info/WHEEL,sha256=aSdOKpzTGLLkKenfdFGiq92od_Dmr98YfEe8iw7iZoo,110
+twitter_markov-0.6.0.dist-info/entry_points.txt,sha256=QL4571vLmuTB01cgddO_eo8Br49vxgdR_7PpGrJJnbI,64
+twitter_markov-0.6.0.dist-info/pbr.json,sha256=Z-p7xzfI0PyGjuGK5Ycz_YtOEug9tJIvQFzmca6GxCM,47
+twitter_markov-0.6.0.dist-info/top_level.txt,sha256=2mg8DFFxU07xocOXIjTaDM38OfGq5qrrgxVUeH2xV4k,15
+twitter_markov-0.6.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+twitter_markov-0.6.0.dist-info/RECORD,,
