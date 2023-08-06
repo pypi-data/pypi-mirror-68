@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pymemdb
+Version: 1.4.2
+Summary: A very fast in-memory database with export to sqlite written purely in python
+Home-page: https://github.com/luerhard/pymemdb/
+Author: Lukas Erhard
+Author-email: luerhard@googlemail.com
