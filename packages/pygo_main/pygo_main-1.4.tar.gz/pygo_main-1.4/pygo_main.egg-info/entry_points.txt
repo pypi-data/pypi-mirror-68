@@ -1,0 +1,3 @@
+[console_scripts]
+pygo_fooo = main.cli:fooo
+

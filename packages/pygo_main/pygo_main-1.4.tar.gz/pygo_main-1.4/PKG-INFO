@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pygo_main
+Version: 1.4
+Summary: python project sdk
+Home-page: http://pygo2.cn
+Author: pygo
+Author-email: gaoming971366@163.com
+License: MIT Licence
+Description-Content-Type: UNKNOWN
+Description: this is the python project sdk by pygo to develop
+Keywords: main,pygo,python2
+Platform: any
+Requires-Python: >=2.7
