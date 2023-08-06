@@ -1,0 +1,8 @@
+README.md
+setup.py
+zetalytics/__init__.py
+zetalytics/zetalytics.py
+zetalytics_api.egg-info/PKG-INFO
+zetalytics_api.egg-info/SOURCES.txt
+zetalytics_api.egg-info/dependency_links.txt
+zetalytics_api.egg-info/top_level.txt
