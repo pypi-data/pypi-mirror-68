@@ -1,0 +1,5 @@
+Click
+translate-toolkit
+lxml
+requests
+colorama
