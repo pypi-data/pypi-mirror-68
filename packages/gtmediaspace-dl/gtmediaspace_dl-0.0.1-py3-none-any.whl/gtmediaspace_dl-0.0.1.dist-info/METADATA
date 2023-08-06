@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gtmediaspace-dl
+Version: 0.0.1
+Summary: Simple tool to download lecture videos from mediaspace.gatech.edu
+Home-page: https://github.com/bran22/gtmediaspace-dl
+Author: bran22
+Author-email: 8986312+bran22@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## Description
+
+`gtmediaspace-dl` is a simple tool to download lecture videos from `mediaspace.gatech.edu`.  It leverages the Kaltura extractor in `youtube-dl` to download playlists.
+
+## Installation
+
+```python
+pip install gtmediaspace-dl
+```
+
+## Usage
+
+Playlist links should be in the format: `https://mediaspace.gatech.edu/playlist/details/*`
+
+```
+gtmediaspace-dl *your playlist link here*
+```
+
+## Optional Arguments
+
+```
+--embed-subs        Embed subtitle track in downloaded video files (requires ffmpeg)
+```
+

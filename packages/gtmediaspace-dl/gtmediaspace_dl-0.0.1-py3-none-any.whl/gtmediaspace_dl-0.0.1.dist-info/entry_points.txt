@@ -1,0 +1,3 @@
+[console_scripts]
+gtmediaspace-dl = gtmediaspace_dl.gtmediaspace_dl:main
+
