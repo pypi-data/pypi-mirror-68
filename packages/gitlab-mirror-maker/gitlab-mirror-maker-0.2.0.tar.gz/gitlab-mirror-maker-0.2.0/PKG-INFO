@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gitlab-mirror-maker
+Version: 0.2.0
+Summary: Automatically mirror your repositories from GitLab to GitHub
+Home-page: https://gitlab.com/grdl/gitlab-mirror-maker
+License: MIT
+Keywords: gitlab,github
+Author: Grzegorz Dlugoszewski
+Author-email: pypi@grdl.dev
+Maintainer: Grzegorz Dlugoszewski
+Maintainer-email: pypi@grdl.dev
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Repository, https://gitlab.com/grdl/gitlab-mirror-maker
+Description-Content-Type: text/markdown
+
+# GitLab Mirror Maker
+
+Automatically mirror your repositories from GitLab to GitHub.
