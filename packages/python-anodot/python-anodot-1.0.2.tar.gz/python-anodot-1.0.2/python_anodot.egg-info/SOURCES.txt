@@ -1,0 +1,9 @@
+README.md
+setup.py
+anodot/__init__.py
+anodot/metric.py
+python_anodot.egg-info/PKG-INFO
+python_anodot.egg-info/SOURCES.txt
+python_anodot.egg-info/dependency_links.txt
+python_anodot.egg-info/requires.txt
+python_anodot.egg-info/top_level.txt
