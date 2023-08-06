@@ -1,0 +1,9 @@
+zwnlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zwnlp/__version__.py,sha256=FVRjQBT-QhKvZEbHuDgIAVAsbLzd4Ot8b5bMCUlZ3JA,265
+zwnlp/ner.py,sha256=48aZUCfgSimWgpvYxwgAMlUzUclXdg3xV3Ma7WRRVXU,5075
+zwnlp/utils.py,sha256=Ywa09a_oR_60ik4xRG1uuNezST2mUOoMy-Lxl7YmIwo,411
+zwnlp-0.0.10.dist-info/LICENSE,sha256=zkKEEXYGmpxISGnqJPG6Pg4O26K7KR4L0ZymaXNsZ8Y,1050
+zwnlp-0.0.10.dist-info/METADATA,sha256=QrhhsfPUSwrAsRxmgUrA61tjdTBJp1csQYzHdaOK_YU,870
+zwnlp-0.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zwnlp-0.0.10.dist-info/top_level.txt,sha256=49-wm2enKztoSJNKZOZsmuPQj5vIzcGj2eJr6_EjSAE,6
+zwnlp-0.0.10.dist-info/RECORD,,
