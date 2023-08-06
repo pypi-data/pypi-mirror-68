@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "netmagus"
+version = "0.9.0"
+description = "Python module for JSON data exchange with the Intelligent Visibility NetMagus system."
+authors = ["Richard Collins <richardc@intelligentvisibility.com>"]
+license = "LGPL-3.0"
+readme = "README.rst"
+homepage = "https://www.intelligentvisibility.com/netmagus/"
+repository = "https://github.com/intelligentvisibility/netmagus_python"
+keywords = ["netmagus", "network", "automation", "netops"]
+classifiers=[
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: System :: Networking"
+]
+
+packages = [
+    {include = "netmagus"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+autobahn = "^20.4.3"
+autobahn-sync = "0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+tox = "^3.0"
+coverage = "^4.5"
+sphinx = "^2.2.0"
+flake8 = "^3.7.8"
+sphinx_rtd_theme = "^0.4.3"
+pytest-cov = "^2.8.1"
+black = "^19.10b0"
+crossbar = "^20.4.2"
+msgpack = "^1.0.0"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py36,py37,py38
+isolated_build = True
+
+[testenv]
+whitelist_externals = poetry
+commands = poetry install -vvv
+    poetry run pytest tests/
+"""
+
+[tool.black]
+target-version = ['py36','py37','py38']
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: netmagus
+Version: 0.9.0
+Summary: Python module for JSON data exchange with the Intelligent Visibility NetMagus system.
+Home-page: https://www.intelligentvisibility.com/netmagus/
+License: LGPL-3.0
+Keywords: netmagus,network,automation,netops
+Author: Richard Collins
+Author-email: richardc@intelligentvisibility.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Networking
+Requires-Dist: autobahn (>=20.4.3,<21.0.0)
+Requires-Dist: autobahn-sync (==0.3.2)
+Project-URL: Repository, https://github.com/intelligentvisibility/netmagus_python
+Description-Content-Type: text/x-rst
+
+NetMāgus Python Package
+=======================
+
+This Python package is to be used with the `NetMāgus <http://www.intelligentvisibility.com/netmagus>`_ product from `Intelligent Visbility, Inc <http://www.intelligentvisibility.com>`_.
+
+It is used to create and exchange UI forms and Formula steps with the NetMāgus application.
+
+The code has been tested and should work for both Python 3.6+.
+
+Refer to the `NetMāgus <http://www.intelligentvisibility.com/netmagus>`_ documentation for usage details.
+
+To install: ``pip install netmagus``
+
