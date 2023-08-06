@@ -1,0 +1,7 @@
+rcsb.utils.chem>=0.28
+
+[dev]
+check-manifest
+
+[test]
+coverage
