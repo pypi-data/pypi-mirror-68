@@ -1,0 +1,3 @@
+[console_scripts]
+drheader = drheader.cli:main
+
