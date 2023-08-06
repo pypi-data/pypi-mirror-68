@@ -1,0 +1,15 @@
+ftw.upgrade
+setuptools
+plone.dexterity
+plone.app.dexterity
+plone.app.vocabularies
+plone.api
+Plone
+
+[tests]
+ftw.builder
+ftw.testing
+ftw.testbrowser
+plone.app.contenttypes
+plone.app.testing
+plone.testing
