@@ -1,0 +1,5 @@
+yaqd-core
+
+[dev]
+black
+pre-commit
