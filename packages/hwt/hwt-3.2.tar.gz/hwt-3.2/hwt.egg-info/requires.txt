@@ -1,0 +1,4 @@
+hdlConvertorAst>=0.1
+ipCorePackager>=0.5
+pycocotb>=0.6
+pyDigitalWaveTools>=0.5
