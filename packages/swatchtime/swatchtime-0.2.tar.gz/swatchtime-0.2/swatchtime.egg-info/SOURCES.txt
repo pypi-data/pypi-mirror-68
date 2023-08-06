@@ -1,0 +1,8 @@
+README.md
+setup.py
+swatchtime/__init__.py
+swatchtime/swatchtime.py
+swatchtime.egg-info/PKG-INFO
+swatchtime.egg-info/SOURCES.txt
+swatchtime.egg-info/dependency_links.txt
+swatchtime.egg-info/top_level.txt
