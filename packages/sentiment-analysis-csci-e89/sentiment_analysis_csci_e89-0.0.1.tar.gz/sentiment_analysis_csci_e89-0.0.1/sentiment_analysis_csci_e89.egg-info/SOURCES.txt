@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+sentiment_analysis_csci_e89/__init__.py
+sentiment_analysis_csci_e89/data_cleaning.py
+sentiment_analysis_csci_e89/modeling.py
+sentiment_analysis_csci_e89/pre_processing.py
+sentiment_analysis_csci_e89/predict_newdata.py
+sentiment_analysis_csci_e89/pretrained_embeddings.py
+sentiment_analysis_csci_e89.egg-info/PKG-INFO
+sentiment_analysis_csci_e89.egg-info/SOURCES.txt
+sentiment_analysis_csci_e89.egg-info/dependency_links.txt
+sentiment_analysis_csci_e89.egg-info/requires.txt
+sentiment_analysis_csci_e89.egg-info/top_level.txt
+sentiment_analysis_csci_e89/__pycache__/__init__.cpython-37.pyc
+sentiment_analysis_csci_e89/__pycache__/modeling.cpython-37.pyc
+sentiment_analysis_csci_e89/__pycache__/pretrained_embeddings.cpython-37.pyc
