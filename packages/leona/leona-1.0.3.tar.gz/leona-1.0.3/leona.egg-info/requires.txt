@@ -1,0 +1,8 @@
+bullet==2.1.0
+click==7.1.2
+jira==2.0.0
+pymsteams==0.1.12
+python-dotenv==0.13.0
+PyYAML==5.3.1
+requests==2.23.0
+questionary==1.5.2
