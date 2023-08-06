@@ -1,0 +1,14 @@
+ipymonaco/__init__.py,sha256=5Tw9y4URwMipWQFSuMi87ygUYhfhbrmuVZps8Qs0HfA,1028
+ipymonaco/_version.py,sha256=Zui3F-Xrsq32ctcLmyzgx-f2rIhwPNmVDM8mYBc5P-Q,388
+ipymonaco/example.py,sha256=IUsSLvhpZS4J3N_6TIUCYTH2ok310pBpaM391uNyZ3c,1231
+ipymonaco/static/extension.js,sha256=LX-TVEISP6xSUiHV9BdauKlHVETa3qnv6EduaIrsD3U,3333
+ipymonaco/static/index.js,sha256=Q4Xm3kXfFlo5L6BcAeTo6pKGwPdDyvmCZqWWUUZ7sY8,547289
+ipymonaco/static/index.js.map,sha256=uTOGOKs3owlqq0OSxHGBVYtk0DcWQ4JI99nzCc7DTec,674052
+ipymonaco-0.0.5a0.data/data/etc/jupyter/nbconfig/notebook.d/ipymonaco.json,sha256=tyN7ONNFF4IucNon8UdoRrGEARMWd1lZCEqqnI51kcQ,63
+ipymonaco-0.0.5a0.data/data/share/jupyter/nbextensions/ipymonaco/extension.js,sha256=LX-TVEISP6xSUiHV9BdauKlHVETa3qnv6EduaIrsD3U,3333
+ipymonaco-0.0.5a0.data/data/share/jupyter/nbextensions/ipymonaco/index.js,sha256=Q4Xm3kXfFlo5L6BcAeTo6pKGwPdDyvmCZqWWUUZ7sY8,547289
+ipymonaco-0.0.5a0.data/data/share/jupyter/nbextensions/ipymonaco/index.js.map,sha256=uTOGOKs3owlqq0OSxHGBVYtk0DcWQ4JI99nzCc7DTec,674052
+ipymonaco-0.0.5a0.dist-info/METADATA,sha256=VUysu72gQS6ZgMxkr86ZMAv2Q3veFoktNkrOSSueH9g,1065
+ipymonaco-0.0.5a0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ipymonaco-0.0.5a0.dist-info/top_level.txt,sha256=GiKf1ZBdgu2A2IklGvk775SJ-8GcSM5vkI7OIaY0xME,10
+ipymonaco-0.0.5a0.dist-info/RECORD,,
