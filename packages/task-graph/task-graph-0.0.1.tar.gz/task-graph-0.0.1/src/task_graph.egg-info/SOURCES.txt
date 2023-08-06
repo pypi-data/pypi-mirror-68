@@ -1,0 +1,17 @@
+setup.py
+src/task_graph/__init__.py
+src/task_graph.egg-info/PKG-INFO
+src/task_graph.egg-info/SOURCES.txt
+src/task_graph.egg-info/dependency_links.txt
+src/task_graph.egg-info/top_level.txt
+src/task_graph/core/__init__.py
+src/task_graph/core/graph.py
+src/task_graph/core/node.py
+src/task_graph/core/result.py
+src/task_graph/scheduler/__init__.py
+src/task_graph/utils/__init__.py
+src/task_graph/utils/error.py
+src/task_graph/utils/mixin.py
+src/task_graph/utils/preset.py
+src/task_graph/visualize/__init__.py
+test/test.py
