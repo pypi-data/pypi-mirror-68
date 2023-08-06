@@ -1,0 +1,17 @@
+README.md
+setup.py
+strix/__init__.py
+strix/base_functions.py
+strix/file_actions.py
+strix/gca.py
+strix/value_validation.py
+strix.egg-info/PKG-INFO
+strix.egg-info/SOURCES.txt
+strix.egg-info/dependency_links.txt
+strix.egg-info/top_level.txt
+strix/file_formats/__init__.py
+strix/file_formats/csv.py
+strix/file_formats/egf.py
+strix/file_formats/geo_json.py
+strix/file_formats/kml_base.py
+strix/file_formats/kml_gca.py
