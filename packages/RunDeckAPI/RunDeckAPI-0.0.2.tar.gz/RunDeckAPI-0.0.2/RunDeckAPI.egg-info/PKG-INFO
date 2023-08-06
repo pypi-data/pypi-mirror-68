@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: RunDeckAPI
+Version: 0.0.2
+Summary: A Library for interacting with RunDeck
+Home-page: https://github.com/rorymurdock/RunDeckAPI
+Author: Rory Murdock
+Author-email: rory@itmatic.com.au
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
