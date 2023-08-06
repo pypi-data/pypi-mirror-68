@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: eurekaClientShare
+Version: 0.0.1
+Summary: Simple eureka client
+Home-page: https://github.com/santiagoMeloMedina/eurekaClientShare
+Author: Santiago Melo Medina
+Author-email: santiagodevelopment001@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+<h1>Eureka Connection</h1>
+
+
+<h2>Enviroment variables:</h2>
+  'PROTOCOL': Protocol of comunication with discovery service (Optional)<br>
+  'HOSTDISCOVER': Host of Discovery Service<br>
+  'PORTDISCOVER': Port of Discovery Service (Optional)<br>
+  'SERVICENAME': Name or service registering to discovery service<br>
+  'HOSTINSTANCE': Host of instance holding service (Optional)<br>
+  'PORTINSTANCE': Port of instance holding service (Optional)<br>
+  'HEARTBEATDISCOVER': Hearth beat for notice to discovery service (Optional)<br>
+
+
