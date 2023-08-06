@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+Airer.egg-info/PKG-INFO
+Airer.egg-info/SOURCES.txt
+Airer.egg-info/dependency_links.txt
+Airer.egg-info/requires.txt
+Airer.egg-info/top_level.txt
+airer/__init__.py
+airer/sds011.py
