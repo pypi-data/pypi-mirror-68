@@ -1,0 +1,15 @@
+mapitio_ae
+mapitio_auth
+mapitio_consent
+mapitio_dashboard
+mapitio_edc
+mapitio_export
+mapitio_labs
+mapitio_lists
+mapitio_metadata_rules
+mapitio_prn
+mapitio_reference
+mapitio_screening
+mapitio_subject
+mapitio_visit_schedule
+tests
