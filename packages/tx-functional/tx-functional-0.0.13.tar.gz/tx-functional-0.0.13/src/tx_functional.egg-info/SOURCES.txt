@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/tx/functional/__init__.py
+src/tx/functional/either.py
+src/tx/functional/monad.py
+src/tx/functional/utils.py
+src/tx_functional.egg-info/PKG-INFO
+src/tx_functional.egg-info/SOURCES.txt
+src/tx_functional.egg-info/dependency_links.txt
+src/tx_functional.egg-info/requires.txt
+src/tx_functional.egg-info/top_level.txt
