@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: forensicstore
+Version: 0.16.0
+Summary: Python library for forensicstore files
+Home-page: https://github.com/forensicanalysis/pyforensicstore
+Author: Jonas Plum
+Author-email: jonas.plum@siemens.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: jsonschema (<4.0.0,>=3.0.1)
+Requires-Dist: fs (<3.0.0,>=2.4.5)
+Requires-Dist: flatten-json (==0.1.7)
+Requires-Dist: forensicstore-stix-schemas (==2.1.0)
+
+UNKNOWN
+
+
