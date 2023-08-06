@@ -1,0 +1,2 @@
+asyncpg==0.20.1
+pydantic==1.5.1
