@@ -1,0 +1,17 @@
+ffsubsync/__init__.py,sha256=ivJITSa3cKhwnh5nJzQbv4b4cxyg2ZAdxQ8m1WChUCM,100
+ffsubsync/aligners.py,sha256=wPu8gdpb26q4TYWNnt3033VqDnPq5WJlnmbH4DkxfdM,2810
+ffsubsync/constants.py,sha256=oQ0b9ybsSIZz9n4R8KAVYwJralXjFDYLv2fER0QIxag,347
+ffsubsync/file_utils.py,sha256=EZxYFMb5MRvcB3Ph_yDhLmXZxpl8k9kKhsGOfjcpw9A,1040
+ffsubsync/generic_subtitles.py,sha256=Lns66VwbOTd_5bn3gHdUxNiM2DwOiBpovbijyPewRvU,4265
+ffsubsync/speech_transformers.py,sha256=_LLdIpTOBu519AYYkwseWSRz-JVZ6NLNZVaBz2MRXiA,10090
+ffsubsync/suboffset.py,sha256=qRL87c3hmGlubnPPEOXL2BqqUrfs2q_w2tm6oV8m7s4,528
+ffsubsync/subsync.py,sha256=6xVdLsHg3p0h9gYnv8faoGcPfCcAZJzCv6HYRTvfHEU,9774
+ffsubsync/subtitle_parser.py,sha256=6H4umDIh8CaArIeu34iyGA6uWBE1Y-WjyPYJeUjzNdA,3923
+ffsubsync/subtitle_transformers.py,sha256=jp29nqSWbVu-V58ToBbu4mCo_pGRFyKp6OD11svhgPo,4593
+ffsubsync/version.py,sha256=HMaNvIQWDenRM1mF7vqUz6Yy_PEufONFEVSq__t8QtA,47
+ffsubsync-0.3.7.dist-info/LICENSE,sha256=DojZETNKKMCxh_kvQYZwyPFvuoM9pkllyQDqVdT9Ja4,1053
+ffsubsync-0.3.7.dist-info/METADATA,sha256=SD5Dch-j2hrV8cAANOjrnExY-ub3CAC03r9bEoFohwY,7151
+ffsubsync-0.3.7.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ffsubsync-0.3.7.dist-info/entry_points.txt,sha256=p6Fgft8AQPuUWzF9_7OK1au9OgXZY5-p8Mgp2fSotUc,71
+ffsubsync-0.3.7.dist-info/top_level.txt,sha256=rD4Pc_QfEQZsZ-i6QXAdnbhVWanzT9edNbD7htPRjWs,10
+ffsubsync-0.3.7.dist-info/RECORD,,
