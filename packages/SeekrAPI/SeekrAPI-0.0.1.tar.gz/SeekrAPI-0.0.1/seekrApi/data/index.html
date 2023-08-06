@@ -1,0 +1,27 @@
+<!doctype html>
+<title>Seekr Docs</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<section class="content">
+  <header>
+    {% block header %}<h1>{{ app_name }}</h1>{% endblock %}
+  </header>
+  {% for method in data %}
+    <p>{{ method }}</p>
+    <div>
+      <ul>
+        {% for info in data[method] %}
+          <li>{{ info['url'] }} </li>
+          {% if info['parameter']|length > 0 %}
+          <p>Parameters:</p>
+          <ul>
+            {% for param in info['parameter'] %}
+              <li>{{ param }}: {{ info['parameter'][param] }}</li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
