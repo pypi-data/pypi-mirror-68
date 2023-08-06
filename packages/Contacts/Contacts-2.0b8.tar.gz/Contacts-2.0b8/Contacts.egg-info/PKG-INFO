@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: Contacts
+Version: 2.0b8
+Summary: Store your contacts.
+Home-page: https://pypi.org/project/Contacts/
+Author: Delvian Valentine
+Author-email: delvian.valentine@gmail.com
+License: UNKNOWN
+Project-URL: GitHub, https://github.com/delvianv/Contacts/
+Description: # Contacts
+        
+        Store your contacts.
+        
+        ### How to install the app
+        
+        **From the [Python Package Index](https://pypi.org/project/Contacts/)**
+        
+            pip install Contacts
+        
+        **From the source code**
+        
+        `pip install .` or `./setup.py install`
+        
+        ### How to use the app
+        
+        **The graphical user interface**
+        
+            contacts_gui
+        
+        **The command line interface**
+        
+            contacts [option] {command}
+        
+        ### License
+        
+        Copyright (C) 2020  Delvian Valentine <delvian.valentine@gmail.com>
+        
+        This program comes with ABSOLUTELY NO WARRANTY.
+        This is free software, and you are welcome to redistribute it under
+        certain conditions.  See the GNU General Public License for more
+        details <https://www.gnu.org/licenses/>
+        
+Keywords: contacts
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

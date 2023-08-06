@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+Contacts.egg-info/PKG-INFO
+Contacts.egg-info/SOURCES.txt
+Contacts.egg-info/dependency_links.txt
+Contacts.egg-info/entry_points.txt
+Contacts.egg-info/top_level.txt
+contacts/__init__.py
+contacts/__main__.py
+contacts/cli.py
+contacts/gui.py
+test/test_cli.py
+test/test_contacts.py
