@@ -1,0 +1,13 @@
+setup.py
+zs_amazon_scraper/__init__.py
+zs_amazon_scraper/amazon.py
+zs_amazon_scraper.egg-info/PKG-INFO
+zs_amazon_scraper.egg-info/SOURCES.txt
+zs_amazon_scraper.egg-info/dependency_links.txt
+zs_amazon_scraper.egg-info/requires.txt
+zs_amazon_scraper.egg-info/top_level.txt
+zs_amazon_scraper/helpers/__init__.py
+zs_amazon_scraper/helpers/parser.py
+zs_amazon_scraper/utils/__init__.py
+zs_amazon_scraper/utils/url_creator.py
+zs_amazon_scraper/utils/utils.py
