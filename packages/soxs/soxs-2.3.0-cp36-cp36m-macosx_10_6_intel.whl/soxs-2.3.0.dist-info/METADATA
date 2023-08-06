@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: soxs
+Version: 2.3.0
+Summary: Simulated Observations of X-ray Sources
+Home-page: https://github.com/lynx-x-ray-observatory/soxs/
+Author: John ZuHone
+Author-email: john.zuhone@cfa.harvard.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: astropy (>=3.0)
+Requires-Dist: h5py
+Requires-Dist: numpy
+Requires-Dist: pyregion
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
