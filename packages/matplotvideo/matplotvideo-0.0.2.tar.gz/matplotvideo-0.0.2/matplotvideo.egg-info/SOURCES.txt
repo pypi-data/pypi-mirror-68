@@ -1,0 +1,8 @@
+README.md
+setup.py
+matplotvideo/__init__.py
+matplotvideo/video_player.py
+matplotvideo.egg-info/PKG-INFO
+matplotvideo.egg-info/SOURCES.txt
+matplotvideo.egg-info/dependency_links.txt
+matplotvideo.egg-info/top_level.txt
