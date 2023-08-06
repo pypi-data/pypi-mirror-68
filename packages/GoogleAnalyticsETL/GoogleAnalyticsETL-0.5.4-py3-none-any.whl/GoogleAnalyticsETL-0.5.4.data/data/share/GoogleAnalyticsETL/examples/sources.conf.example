@@ -1,0 +1,29 @@
+#
+# Obsolete file that configures the obsolete GACustomReportEmailToDB ETL.
+#
+
+#
+# Para obter uma app password para o GMail, ative 2-step verification na sua conta
+# e siga as instruções aqui: https://support.google.com/mail/answer/185833?hl=en
+# A senha gerada é a que deve ser colocada neste arquivo em imap_password.
+#
+#
+
+# IMAP user and password
+[imap]
+server=imap.gmail.com
+folder=braseg
+subject=test_ga_parcelas_atrasadas_clicadas
+
+user=a.....i@email.com
+password=w.......g
+
+
+
+
+
+[database]
+# Production database URL:
+url=mysql+pymysql://user:password@host.com/database?charset=utf8mb4
+
+
