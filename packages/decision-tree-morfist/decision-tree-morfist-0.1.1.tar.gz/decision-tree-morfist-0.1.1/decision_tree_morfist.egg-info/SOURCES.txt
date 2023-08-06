@@ -1,0 +1,10 @@
+README.md
+setup.py
+decision_tree_morfist.egg-info/PKG-INFO
+decision_tree_morfist.egg-info/SOURCES.txt
+decision_tree_morfist.egg-info/dependency_links.txt
+decision_tree_morfist.egg-info/requires.txt
+decision_tree_morfist.egg-info/top_level.txt
+morfist/__init__.py
+morfist/core.py
+test/test.py
