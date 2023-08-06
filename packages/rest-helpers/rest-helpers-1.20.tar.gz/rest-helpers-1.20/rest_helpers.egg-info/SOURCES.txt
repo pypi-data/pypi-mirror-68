@@ -1,0 +1,5 @@
+rest_helpers.egg-info/PKG-INFO
+rest_helpers.egg-info/SOURCES.txt
+rest_helpers.egg-info/dependency_links.txt
+rest_helpers.egg-info/requires.txt
+rest_helpers.egg-info/top_level.txt
