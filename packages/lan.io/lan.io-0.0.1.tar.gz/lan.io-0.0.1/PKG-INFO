@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: lan.io
+Version: 0.0.1
+Summary: Lan(懒)是一套测试框架 .
+Home-page: https://github.com/bbfpl/Lan
+Author: BIJ
+Author-email: bobofpl@gmail.com
+License: MIT
+Description: Lan(懒)是一套测试框架 .
+Keywords: lan python test
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2

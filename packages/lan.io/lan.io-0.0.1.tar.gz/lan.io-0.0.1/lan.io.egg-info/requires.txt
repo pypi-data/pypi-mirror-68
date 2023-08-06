@@ -1,0 +1,7 @@
+requests
+TinyDB
+logzero
+jinja2
+flask
+unittest2
+PyYAML
