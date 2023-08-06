@@ -1,0 +1,16 @@
+sqlalchemy_graphql_schemagen/__init__.py,sha256=TCwaeoAgLpa_Q9eiD8sjZBsbtKhqRR74nXmQ0mlOswg,91
+sqlalchemy_graphql_schemagen/baseclasses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_graphql_schemagen/baseclasses/logging.py,sha256=utpAquRIzQxxe6-BeQKjtKgozEpV__GKLnlkUoUQVHM,545
+sqlalchemy_graphql_schemagen/graphql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_graphql_schemagen/graphql/schemagen/__init__.py,sha256=i-9W3QTDwmC-HkFkYbAnM1NY_Mbx4z9qsvLGWXvFPPU,10278
+sqlalchemy_graphql_schemagen/graphql/schemagen/extra.py,sha256=YkYW9WX3ZUXJ_b7kYSne5D98lS76kaZM2ufF2KO7jsk,1598
+sqlalchemy_graphql_schemagen/graphql/schemagen/hooks.py,sha256=MyeSny8OlpuaVRg3AFsTOqxQHsOwa6wU6IKu8Z8flEY,2256
+sqlalchemy_graphql_schemagen/graphql/schemagen/utilities.py,sha256=oA2szr86fGqN1IKDdCi1hzBut7bArZgAWTcUZnq2iE0,29931
+sqlalchemy_graphql_schemagen/sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_graphql_schemagen/sqlalchemy/compositetypes/__init__.py,sha256=JMCyp9UUX4yKkZdOga5kT_vxk_awSzJiORSdm71oIBs,775
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_graphql_schemagen-0.9.9.dist-info/LICENSE,sha256=OlEoqPxTAp1YnoaNFvOBBrPNQIVxGJpwIqDTVR8vHug,1061
+sqlalchemy_graphql_schemagen-0.9.9.dist-info/METADATA,sha256=xXF5ZPAJPg-vYUadYCCLih9_livjYfePS9vU8I5DbTc,1321
+sqlalchemy_graphql_schemagen-0.9.9.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sqlalchemy_graphql_schemagen-0.9.9.dist-info/top_level.txt,sha256=FuQ6ZKGt2q-tIxtwQPLrf233A7an4RAXYQJgFVrUqBk,35
+sqlalchemy_graphql_schemagen-0.9.9.dist-info/RECORD,,
