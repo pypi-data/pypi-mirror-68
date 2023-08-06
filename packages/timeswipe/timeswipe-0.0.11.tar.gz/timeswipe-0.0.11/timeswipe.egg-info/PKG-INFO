@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: timeswipe
+Version: 0.0.11
+Summary: TimeSwipe python3 module
+Home-page: https://github.com/panda-official/TimeSwipe
+Author: Ilya Gavrilov
+Author-email: gilyav@gmail.com
+License: UNKNOWN
+Description: pydoc timeswipe
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
