@@ -1,0 +1,8 @@
+cryptography
+requests
+pyperclip
+
+[server]
+uvicorn
+asgineer
+psutil
