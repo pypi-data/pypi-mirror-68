@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+poli_sci_kit/__init__.py
+poli_sci_kit/analysis_utils.py
+poli_sci_kit/appointment_methods.py
+poli_sci_kit/appointment_utils.py
+poli_sci_kit/general_utils.py
+poli_sci_kit.egg-info/PKG-INFO
+poli_sci_kit.egg-info/SOURCES.txt
+poli_sci_kit.egg-info/dependency_links.txt
+poli_sci_kit.egg-info/requires.txt
+poli_sci_kit.egg-info/top_level.txt
