@@ -1,0 +1,5 @@
+[console_scripts]
+build-backend=poetry.masonry.api
+my-script=squarespace_commerce.app:start
+requires=['poetry>=0.12']
+
