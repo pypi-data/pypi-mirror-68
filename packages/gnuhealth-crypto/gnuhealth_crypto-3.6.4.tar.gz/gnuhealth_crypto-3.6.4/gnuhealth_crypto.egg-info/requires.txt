@@ -1,0 +1,4 @@
+gnuhealth==3.6.4
+
+[Pillow]
+Pillow
