@@ -1,0 +1,3 @@
+[console_scripts]
+ffdb = ffdb.scripts:main
+
