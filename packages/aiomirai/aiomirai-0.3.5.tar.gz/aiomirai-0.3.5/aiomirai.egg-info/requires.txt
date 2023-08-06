@@ -1,0 +1,10 @@
+httpx
+
+[all]
+quart
+
+[report]
+quart
+
+[ws]
+websockets
