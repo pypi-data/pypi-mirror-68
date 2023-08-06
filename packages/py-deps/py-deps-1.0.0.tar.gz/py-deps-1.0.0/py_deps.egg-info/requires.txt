@@ -1,0 +1,9 @@
+networkx==2.4
+pip>=20.0
+setuptools>=46.1
+
+[memcache]
+pylibmc
+
+[reST]
+Sphinx
