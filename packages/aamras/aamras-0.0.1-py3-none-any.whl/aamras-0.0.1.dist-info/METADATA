@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: aamras
+Version: 0.0.1
+Summary: Library for headless browser manipulation
+Home-page: https://github.com/allekmott/aamras
+Author: Allek Mott
+Author-email: allekmott@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: selenium
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pipenv-setup ; extra == 'dev'
+
+aamras
+======
+
+![build](https://github.com/allekmott/aamras/workflows/build/badge.svg)
+
+**aam ras** or *आम रस* - Hindi for mango juice 🥭.
+
+It is pronounced "*arm Russ*" if the *r* in *arm* is silent.
+
+aamras provides a high-level interface for headless browser manipulation. It is currently built on [selenium](https://github.com/SeleniumHQ/selenium).
+
+
