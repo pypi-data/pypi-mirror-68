@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydrift
+Version: 0.1.3
+Summary: How do we measure the degradation of a machine learning process? Why does the performance of our predictive models decrease? Maybe it is that a data source has changed (one or more variables) or maybe what changes is the relationship of these variables with the target we want to predict. `pydrift` tries to facilitate this task to the data scientist, performing this kind of checks and somehow measuring that degradation.
+Author: sergiocalde94
+Author-email: sergiocalde94@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: catboost (>=0.23,<0.24)
+Requires-Dist: coveralls (>=2.0.0,<3.0.0)
+Requires-Dist: flake8 (>=3.8.1,<4.0.0)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: missingno (>=0.4.2,<0.5.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: plotly_express (>=0.4.1,<0.5.0)
+Requires-Dist: pre-commit (>=2.4.0,<3.0.0)
+Requires-Dist: pytest (>=5.4.2,<6.0.0)
+Requires-Dist: shap (>=0.35.0,<0.36.0)
+Requires-Dist: sklearn (>=0.0,<0.1)
+Requires-Dist: sphinx (>=3.0.3,<4.0.0)
+Requires-Dist: sphinx_press_theme (>=0.5.1,<0.6.0)
+Requires-Dist: typing-extensions (>=3.7.4,<4.0.0)
