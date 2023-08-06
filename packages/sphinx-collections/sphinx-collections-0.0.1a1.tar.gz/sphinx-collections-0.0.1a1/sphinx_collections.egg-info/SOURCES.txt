@@ -1,0 +1,16 @@
+README.rst
+setup.py
+sphinx_collections.egg-info/PKG-INFO
+sphinx_collections.egg-info/SOURCES.txt
+sphinx_collections.egg-info/dependency_links.txt
+sphinx_collections.egg-info/namespace_packages.txt
+sphinx_collections.egg-info/not-zip-safe
+sphinx_collections.egg-info/requires.txt
+sphinx_collections.egg-info/top_level.txt
+sphinxcontrib/__init__.py
+sphinxcontrib/collections/__init__.py
+sphinxcontrib/collections/collections.py
+sphinxcontrib/collections/directives/__init__.py
+sphinxcontrib/collections/directives/if_collection.py
+sphinxcontrib/collections/drivers/__init__.py
+sphinxcontrib/collections/drivers/copy.py
