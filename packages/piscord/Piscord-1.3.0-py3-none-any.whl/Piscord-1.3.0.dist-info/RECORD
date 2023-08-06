@@ -1,0 +1,14 @@
+Piscord/API_Elements.py,sha256=-VqbI1twbezv8NDaKB__tOxA12h65fF27FZolAE_mEk,18093
+Piscord/Errors.py,sha256=YcEPS5DWwlMulrGt9DXfAoBcGa1h1k6plgagivVdCXY,290
+Piscord/Events.py,sha256=CzGXIBA3cFJpVFKlo3tzBihpFaxlwDyEB7cw2VGiyfA,7230
+Piscord/Gateway.py,sha256=TzIeTnqc1oGl9BtuhpVn4I6IgO3UMuwyU93Tn2vSn2k,1945
+Piscord/OAuth.py,sha256=a9kUYPH8XzvlUxalxNXUjzfVCrfl8FduPBTwsEE6Oac,1502
+Piscord/Permission.py,sha256=J50FDYasEStBaOh5vhYJzKOUZB5scw8LjdsXZFDdsw8,983
+Piscord/Piscord.py,sha256=Z-Lr7IZUZqREDEWGSaYn-txUDgjWaort_9x9k49U5ek,3941
+Piscord/Voice.py,sha256=aIpm_v4tZy7b000xbzEuSQ0uU2IgjbEV92DP0qJW1zo,2534
+Piscord/__init__.py,sha256=iNWHTm5IjKZ93UT4Tu6Set41Y60HHDEwGs25XSgSupI,99
+Piscord-1.3.0.dist-info/LICENSE,sha256=BkpXIJ9_YZUWtQKKzMpm6_1xvHDjP4_3dhdlcvQTzjw,1068
+Piscord-1.3.0.dist-info/METADATA,sha256=qGrf5frfeP5tpeWPpF5DmYdojgMNcawWjYmnWmKrUlM,1309
+Piscord-1.3.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Piscord-1.3.0.dist-info/top_level.txt,sha256=kq24iCOBV628SgMQMGBJMEeUdsUp7Og3WPE4GK72SNQ,8
+Piscord-1.3.0.dist-info/RECORD,,
