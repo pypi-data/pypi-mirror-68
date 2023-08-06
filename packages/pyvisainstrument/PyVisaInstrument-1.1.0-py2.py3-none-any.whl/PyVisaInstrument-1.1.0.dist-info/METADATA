@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: PyVisaInstrument
+Version: 1.1.0
+Summary: PyVisaInstrument provides boilerplate for various NI-VISA instruments.
+Home-page: https://github.com/Samtec-ASH/pyvisainstrument
+Author: Samtec - ASH
+Author-email: samtec-ash@samtec.com
+License: MIT
+Platform: Mac
+Platform: Linux
+Platform: Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
+Requires-Dist: pyvisa
+Requires-Dist: numpy
+Provides-Extra: libev
+Requires-Dist: pyev ; extra == 'libev'
+
+## PyVisaInstrument
+
+![PyPI](https://img.shields.io/pypi/v/pyvisainstrument)
+
+Provides boilerplate for various NI-VISA instruments and utilizes pyvisa.
+
+- KeysightVNA
+- KeysightDAQ
+- KeysightPSU
+- NumatoRelay (TCP/TELNET and USB)
+
+### Installation:
+
+pip install -U pyvisainstrument
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://bitbucket.org/samteccmd/pyvisainstruments/commits/).
+
+## Maintainers
+
+- [Adam Page](adam.page@samtec.com)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
