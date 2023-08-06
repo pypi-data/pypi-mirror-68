@@ -1,0 +1,10 @@
+stageflow/__init__.py,sha256=NnYc5iti9ISeTiMWovlKWr0stAnVXx8X3ud8n3mXJk8,203
+stageflow/core.py,sha256=qoufKiWgOkDE4ibpYsna26kqhRsD_60jfAY-5xuOlnE,2950
+stageflow/panda3d.py,sha256=7efK5w4zLMo5V0SR07lpGOQw4Se2c5InFtU-WQoYZls,3148
+stageflow/prefab.py,sha256=oxiI8oArMOHmmpJN1ewwvgP-dsLdq_OCN0oFvmiWcyM,1659
+stageflow/wecs.py,sha256=72NXIJmtLabZCmZbEaUkxZQM9Yoa--_A3_nNGI6zbkc,437
+panda3d_stageflow-0.1b0.dist-info/LICENSE,sha256=bdM7sioqQuVbuIph60KHCapBU_OQmpZ98D9DZzva-mQ,1525
+panda3d_stageflow-0.1b0.dist-info/METADATA,sha256=SJ4o5ac6oNrTn5n6_n9804b95YmQYin_DS7Pa7hkjDs,7160
+panda3d_stageflow-0.1b0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+panda3d_stageflow-0.1b0.dist-info/top_level.txt,sha256=byrtG44gmksw0XJXpaoPbYl38Px2_9Ww2BcRDmjBVZ0,10
+panda3d_stageflow-0.1b0.dist-info/RECORD,,
