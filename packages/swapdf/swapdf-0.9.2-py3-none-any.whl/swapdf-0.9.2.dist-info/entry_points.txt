@@ -1,0 +1,3 @@
+[console_scripts]
+swapdf=swapdf.__main__:main
+
