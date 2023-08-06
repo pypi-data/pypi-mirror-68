@@ -1,0 +1,10 @@
+README.md
+setup.py
+pynanostring/__init__.py
+pynanostring/__main__.py
+pynanostring.egg-info/PKG-INFO
+pynanostring.egg-info/SOURCES.txt
+pynanostring.egg-info/dependency_links.txt
+pynanostring.egg-info/entry_points.txt
+pynanostring.egg-info/requires.txt
+pynanostring.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+pynanostring = pynanostring.__main__:main
+
