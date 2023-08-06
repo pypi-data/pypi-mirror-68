@@ -1,0 +1,10 @@
+README.md
+setup.py
+eeghdf/__init__.py
+eeghdf/convert.py
+eeghdf/reader.py
+eeghdf/writer.py
+eeghdf.egg-info/PKG-INFO
+eeghdf.egg-info/SOURCES.txt
+eeghdf.egg-info/dependency_links.txt
+eeghdf.egg-info/top_level.txt
