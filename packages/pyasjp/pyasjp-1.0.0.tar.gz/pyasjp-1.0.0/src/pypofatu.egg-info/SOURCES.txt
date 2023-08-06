@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+src/pyasjp/__init__.py
+src/pyasjp/api.py
+src/pypofatu.egg-info/PKG-INFO
+src/pypofatu.egg-info/SOURCES.txt
+src/pypofatu.egg-info/dependency_links.txt
+src/pypofatu.egg-info/entry_points.txt
+src/pypofatu.egg-info/not-zip-safe
+src/pypofatu.egg-info/requires.txt
+src/pypofatu.egg-info/top_level.txt

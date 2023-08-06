@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pypofatu
+Version: 1.2.1.dev0
+Summary: programmatic access to pofatu-data
+Home-page: UNKNOWN
+Author: Robert Forkel
+Author-email: forkel@shh.mpg.de
+License: Apache 2.0
+Description: # pyasjp
+        Programmatic access to data in ASJP's text format
+        
+Keywords: data
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

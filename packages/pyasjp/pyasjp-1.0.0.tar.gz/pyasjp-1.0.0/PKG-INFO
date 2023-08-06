@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyasjp
+Version: 1.0.0
+Summary: programmatic access to ASJP
+Home-page: UNKNOWN
+Author: Robert Forkel
+Author-email: forkel@shh.mpg.de
+License: Apache 2.0
+Description: # pyasjp
+        Programmatic access to data in ASJP's text format
+        
+        [![Build Status](https://travis-ci.org/shh-dlce/pyasjp.svg?branch=master)](https://travis-ci.org/shh-dlce/pyasjp)
+        [![codecov](https://codecov.io/gh/shh-dlce/pyasjp/branch/master/graph/badge.svg)](https://codecov.io/gh/shh-dlce/pyasjp)
+        [![PyPI](https://img.shields.io/pypi/v/pyasjp.svg)](https://pypi.org/project/pyasjp)
+        
+        
+Keywords: data
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
