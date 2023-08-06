@@ -1,0 +1,12 @@
+crs_debuger/__init__.py,sha256=UD13_zaeTVRLau7gk-ytz7gDYcMFYqvohYCptO9gkEI,87
+crs_debuger/core.py,sha256=2_hUoArSb_hiPi1hJ2cZ4_QSJl94nsURLlqD2EbUS28,5750
+crs_debuger/exceptions.py,sha256=Ee3h-bAEt5NZEjOQeqgjmPwRmwuvdyE27lhwPJ7nezc,239
+crs_debuger/response.py,sha256=LCDOHpJDIQx1W7oStDT0F_NwwYiP2QY5gBioQ8aQJI4,2033
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_database.py,sha256=DTC3_2__CDd_8waWd2sAk-u6MpJomdauaO7e_h592rE,1694
+tests/test_response.py,sha256=gnUofYdaccYCltByk2A1b9ZVeRD3itoGjahd56KPszw,3296
+crs_debuger-0.3.1.dist-info/LICENSE,sha256=RWDUJqmiIBxrT5R_GJGM690509RZFQLNI3i0_xG7nN0,1067
+crs_debuger-0.3.1.dist-info/METADATA,sha256=6ovt3HSdV-lIACKxWeqU7WWSvOe_OnuxoPmdLc8NO5s,1082
+crs_debuger-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+crs_debuger-0.3.1.dist-info/top_level.txt,sha256=65H4Ym8d4WRR-Pp3_O2h9fuvSZ_uQJSkquvbGwku8Hs,18
+crs_debuger-0.3.1.dist-info/RECORD,,
