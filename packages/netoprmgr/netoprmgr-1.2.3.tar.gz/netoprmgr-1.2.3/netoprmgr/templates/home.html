@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 data-aos="fade-up">Automation <span class="typed-words"></span></h1>
+<p data-aos="fade-up" class=" w-75 mx-auto">Simple way to capture and generate network report</p>
+
+<script src="{{ url_for('static', filename='bootstrap/js/typed.js') }}"></script>
+    <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["Device Identification"," Device Availability Check"," Capture", " Create Report"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 4000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+    </script>
+{% endblock %}
