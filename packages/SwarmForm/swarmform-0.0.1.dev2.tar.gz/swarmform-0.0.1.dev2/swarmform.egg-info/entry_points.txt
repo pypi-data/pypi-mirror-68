@@ -1,0 +1,3 @@
+[console_scripts]
+sform = swarmform.scripts.sform_run:sform
+
