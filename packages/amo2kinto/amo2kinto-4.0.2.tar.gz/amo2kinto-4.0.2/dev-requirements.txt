@@ -1,0 +1,8 @@
+tox
+flake8
+mock
+pytest
+pytest-cache
+pytest-cover
+# Feel free to install this yourself if it appeals to you
+# pytest-sugar
