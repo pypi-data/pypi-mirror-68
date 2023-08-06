@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: agrafena
+Version: 0.0.0
+Summary: TN3270 automation library
+Home-page: https://github.com/lowobservable/agrafena
+Author: Andrew Kay
+Author-email: projects@ajk.me
+License: UNKNOWN
+Description: # agrafena
+        
+        Python TN3270 automation library.
+        
+        See [GitHub](https://github.com/lowobservable/agrafena#readme) for more information.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications
+Classifier: Topic :: Terminals
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
