@@ -1,0 +1,5 @@
+six
+pandas>=0.24
+requests
+python-rapidjson
+pymarc
