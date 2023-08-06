@@ -1,0 +1,15 @@
+aamras/__init__.py,sha256=MqZqhVG-jMbzMn6WKrAno0qCr8-90BTP9_rcuEIc9ww,160
+aamras/__version__.py,sha256=L671B6UonkGGAGvsiG0_IyEziiULmxXLzVP9Y_rIZ5I,236
+aamras/driver/__init__.py,sha256=S25LogDnQbMzGpDRqGpWabmDPCEhJG5zYt5SFkJj7wg,162
+aamras/driver/cookies.py,sha256=1xaORI8-L86fV4D9z5AwUUWznHj8f6quFnRSZg73kDA,2955
+aamras/driver/driver.py,sha256=VcKZ3Pi_xQSn_RhuK--bd-qYdyiJS7AwgvMuOQlM9OQ,6141
+aamras/driver/factory.py,sha256=_Sw4iez-H2bJ7LRE1AMsNf7zgEGhGCX-6EnkqsUW3r4,2502
+aamras/util/__init__.py,sha256=qX5Nt9GkVgZPPM1VTvG60IMMHjAJjYFypE2pOQp1m4A,110
+aamras/util/file_.py,sha256=xErAFrvnb-My2YEZqWhke6uKM58uzTl8dpYEl05gVfU,218
+aamras/util/logger.py,sha256=oIOFcsQ9reNriuSJTFmJhUgPtvIvD4moINw2fYWxeXQ,1244
+aamras-0.0.2.data/data/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aamras-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aamras-0.0.2.dist-info/METADATA,sha256=bVGmKkiDSxGVHP70pjfBg75tgb1lJ6S3vFQxgSQr7us,1453
+aamras-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aamras-0.0.2.dist-info/top_level.txt,sha256=A-vXfZYf-A4OcP62SNjwyyuq_9h7MBQKf4QIykOVcdc,7
+aamras-0.0.2.dist-info/RECORD,,
