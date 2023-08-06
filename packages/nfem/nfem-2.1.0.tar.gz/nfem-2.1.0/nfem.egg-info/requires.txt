@@ -1,0 +1,7 @@
+ipython
+mako
+matplotlib
+numpy
+plotly
+PyQt5<5.13,>=5.9.2
+scipy
