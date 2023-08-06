@@ -1,0 +1,4 @@
+include THORONDOR/Elements/*.txt
+include THORONDOR/Elements/*.nff
+include THORONDOR/Elements/THORONDORTutorial.pptx
+include THORONDOR/References/*.csv
