@@ -1,0 +1,6 @@
+Deprecated>=1.2.6
+opentracing~=2.0
+opentelemetry-api==0.7b1
+
+[test]
+opentelemetry-test==0.7b1

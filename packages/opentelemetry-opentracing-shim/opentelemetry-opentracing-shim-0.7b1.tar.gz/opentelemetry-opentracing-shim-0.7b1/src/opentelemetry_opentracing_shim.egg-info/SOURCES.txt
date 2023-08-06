@@ -1,0 +1,17 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/opentelemetry/ext/opentracing_shim/__init__.py
+src/opentelemetry/ext/opentracing_shim/util.py
+src/opentelemetry/ext/opentracing_shim/version.py
+src/opentelemetry_opentracing_shim.egg-info/PKG-INFO
+src/opentelemetry_opentracing_shim.egg-info/SOURCES.txt
+src/opentelemetry_opentracing_shim.egg-info/dependency_links.txt
+src/opentelemetry_opentracing_shim.egg-info/requires.txt
+src/opentelemetry_opentracing_shim.egg-info/top_level.txt
+tests/__init__.py
+tests/test_shim.py
+tests/test_util.py
