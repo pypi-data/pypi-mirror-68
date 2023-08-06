@@ -1,0 +1,3 @@
+[console_scripts]
+awful = awful.run:main
+

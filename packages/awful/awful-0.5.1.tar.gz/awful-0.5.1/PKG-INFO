@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: awful
+Version: 0.5.1
+Summary: Arguably Worst F*cked-Up Language
+Home-page: http://github.com/ArneBachmann/awful
+Author: Arne Bachmann
+Author-email: ArneBachmann@users.noreply.github.com
+Maintainer: Arne Bachmann
+Maintainer-email: ArneBachmann@users.noreply.github.com
+License: MPL-2.0
+Description: UNKNOWN
+Keywords: AWFUL programming language
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Other
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5

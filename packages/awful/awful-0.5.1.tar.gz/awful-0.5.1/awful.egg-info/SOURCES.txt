@@ -1,0 +1,10 @@
+README.md
+setup.py
+awful/awfl.py
+awful/run.py
+awful.egg-info/PKG-INFO
+awful.egg-info/SOURCES.txt
+awful.egg-info/dependency_links.txt
+awful.egg-info/entry_points.txt
+awful.egg-info/not-zip-safe
+awful.egg-info/top_level.txt
