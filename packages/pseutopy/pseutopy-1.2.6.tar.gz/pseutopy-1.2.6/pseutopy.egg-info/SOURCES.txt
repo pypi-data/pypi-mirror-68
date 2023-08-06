@@ -1,0 +1,14 @@
+README.rst
+setup.py
+pseutopy.egg-info/PKG-INFO
+pseutopy.egg-info/SOURCES.txt
+pseutopy.egg-info/dependency_links.txt
+pseutopy.egg-info/requires.txt
+pseutopy.egg-info/top_level.txt
+src/pseutopy/__init__.py
+src/pseutopy/pseudocode.tx
+src/pseutopy/pseutopy.py
+src/pseutopy/generators/__init__.py
+src/pseutopy/generators/expressions.py
+src/pseutopy/generators/statements.py
+src/pseutopy/generators/values.py
