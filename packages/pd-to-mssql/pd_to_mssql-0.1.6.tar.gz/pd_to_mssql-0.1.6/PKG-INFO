@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pd_to_mssql
+Version: 0.1.6
+Summary: Quick upload of pandas dataframes to Microsoft SQL Server
+Home-page: https://github.com/areisTaylorCorp/pd_to_mssql
+Author: Andrew Reis
+Author-email: areis@taylorcorp.com
+License: MIT
+Download-URL: https://github.com/areisTaylorCorp/pd_to_mssql/archive/v0.1.6.tar.gz
+Description: UNKNOWN
+Keywords: pandas,dataframe,mssql,sql,to_sql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
