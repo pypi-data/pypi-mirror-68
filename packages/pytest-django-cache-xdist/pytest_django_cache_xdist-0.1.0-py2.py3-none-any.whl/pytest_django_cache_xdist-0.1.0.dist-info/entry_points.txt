@@ -1,0 +1,3 @@
+[pytest11]
+djangocachexdist = pytest_django_cache_xdist
+
