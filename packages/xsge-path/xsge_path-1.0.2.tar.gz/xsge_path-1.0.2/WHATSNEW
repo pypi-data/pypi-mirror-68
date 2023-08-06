@@ -1,0 +1,89 @@
+This file has been dedicated to the public domain, to the extent
+possible under applicable law, via CC0. See
+http://creativecommons.org/publicdomain/zero/1.0/ for more
+information. This file is offered as-is, without any warranty.
+
+========================================================================
+
+1.0.2
+------------------------------------------------------------------------
+
+Misc changes:
+* Removed Python 2 support.
+
+
+1.0.1
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated and simplified the readme.
+* Replaced the static listing of unchanged parent arguments with **kwargs.
+
+
+1.0
+------------------------------------------------------------------------
+
+Unchanged compared to version 0.9.2.
+
+
+0.9.2
+------------------------------------------------------------------------
+
+Misc changes:
+* Updated to SGE 0.23.
+
+
+0.9.1
+------------------------------------------------------------------------
+
+Misc changes:
+* Added a safeguard against delta_mult values of 0.
+
+
+0.9
+------------------------------------------------------------------------
+
+Additions:
++ xsge_path.PathLink
+
+Bugfixes:
+- Imprecise movement which could cause following several paths in a row
+  to build up a difference in position.
+
+
+0.8
+------------------------------------------------------------------------
+
+Misc changes:
+* Renamed from xsge.path to xsge_path.
+
+Bugfixes:
+- Delta timing causing objects to get stuck at intersections of paths.
+
+
+0.7
+------------------------------------------------------------------------
+
+Misc changes:
+* xsge.path.Path's acceleration and deceleration can now work with delta
+  timing properly.
+
+
+0.6
+------------------------------------------------------------------------
+
+Bugfixes:
+- Crash when following a path
+
+
+0.5.3
+------------------------------------------------------------------------
+
+Misc changes:
+* Paths now support all sge.Object constructor arguments.
+
+
+0.5
+------------------------------------------------------------------------
+
+First release.
