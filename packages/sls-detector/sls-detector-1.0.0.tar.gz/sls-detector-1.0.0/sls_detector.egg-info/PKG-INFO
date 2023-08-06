@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: sls-detector
+Version: 1.0.0
+Summary: Mythen SLS detector interface
+Home-page: https://github.com/alba-synchrotron/sls-detector
+Author: Jose Tiago Macara Coutinho
+Author-email: coutinhotiago@gmail.com
+License: MIT license
+Description: Myhen SLS detector library and (optional) simulator
+Keywords: mythen,sls,simulator
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Provides-Extra: simulator
+Provides-Extra: gui
+Provides-Extra: lima
+Provides-Extra: server

@@ -1,0 +1,15 @@
+numpy
+
+[gui]
+pyqtgraph
+
+[lima]
+
+[server]
+fabric
+
+[simulator]
+pyyaml
+toml
+gevent
+scipy
