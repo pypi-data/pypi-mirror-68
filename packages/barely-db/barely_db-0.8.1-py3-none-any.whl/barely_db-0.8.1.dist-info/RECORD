@@ -1,0 +1,12 @@
+barely_db/__init__.py,sha256=IgDaYdy7qGHlO_eE69SiChjukRuSMooEm7c80ZrRzpM,21755
+barely_db/configs.py,sha256=10d4NGzl3qSr2XvH-jhlEvBL7ha1pjnJvLGIiNL_6AU,3302
+barely_db/examples.py,sha256=BcQpIcUUwSZUzxhr4EpEMi7EYqAn1kqYKQXtKF-9wbA,2906
+barely_db/file_management.py,sha256=uHgtHqHVV4fHr2-QzLzrcyczLOoY2T28rs46EwFEaio,26134
+barely_db/legacy.py,sha256=ms293NH_3OJIEp6L7ZWN8vb0wRskWF9SUvkO5Y02oeY,30691
+barely_db/parser.py,sha256=5mKO46pLYXJ44T9A8kCnmDoHlaF3fH5jRJjrGET-WhU,7834
+barely_db/tools.py,sha256=PdX2Kzu4c6YVxwG3VM21b_hMoGRGPnzNALJZmo6j3T4,6482
+barely_db-0.8.1.dist-info/LICENSE,sha256=hZQ1FXrh1O95PQKOOuIdpbQqLujfPL23mgpTE0KBAaY,1092
+barely_db-0.8.1.dist-info/METADATA,sha256=yxymEFS_gL-n9Ui83jhnUm6kHxrk5lsfKnTeKh6feWg,1461
+barely_db-0.8.1.dist-info/WHEEL,sha256=P3qJ5yBP-M5n4VbrgU3eTDIHvegviaBxiqCi1ejHWOs,97
+barely_db-0.8.1.dist-info/top_level.txt,sha256=LgG2wwNm67ecxxZ5S_7zKbj5PJS_4zn082rg8LfZFpU,10
+barely_db-0.8.1.dist-info/RECORD,,
