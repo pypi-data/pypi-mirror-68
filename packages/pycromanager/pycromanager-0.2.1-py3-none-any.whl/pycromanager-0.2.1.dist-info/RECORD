@@ -1,0 +1,12 @@
+pycromanager/__init__.py,sha256=YOwQ_JK1JQ5eea82vWyMhDoiBDF0oKMD9mMlXYSgm7Y,189
+pycromanager/acquire.py,sha256=OzrUiwKCnJsw7ucXt5zkzHp_67T2YjEX0d6Xiq_4ZzQ,15584
+pycromanager/core.py,sha256=qiv7-HsM5NADshl5mLVjL90WpRb9wSwsmfG7cPuLb94,20760
+pycromanager/data.py,sha256=MKWPe3U6bbm1cA50SgyBoNdXRBAuWTwg9rGiIXgQCGI,28328
+pygellan/__init__.py,sha256=hDNHCXYTgIXbXoBeOSqjjuLeyTEMLovU8HC3k2FhnFE,17
+pygellan/acquire.py,sha256=lGybUUFJVuMe8zmK1iEMlsDhmWJ7P530vB-swg3kF1s,14881
+pygellan/magellan_data.py,sha256=kY6p10EZFkhDumHbxbcb_1KFTcf_1Oc821GDWZOjaOM,28082
+pycromanager-0.2.1.dist-info/LICENSE,sha256=V50EYQbl4ABOWm6x_H2_V7DlrnwJ2UFS_GOY4zJHwog,1521
+pycromanager-0.2.1.dist-info/METADATA,sha256=HiGd4MhjUDMJB4JGeJc4qZ23nr181bPHyXDXXtqLQfk,1724
+pycromanager-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pycromanager-0.2.1.dist-info/top_level.txt,sha256=to252YIonD5jo9pmGKeVnbJvu_N_Pcdu4-j1SsMp2os,13
+pycromanager-0.2.1.dist-info/RECORD,,
