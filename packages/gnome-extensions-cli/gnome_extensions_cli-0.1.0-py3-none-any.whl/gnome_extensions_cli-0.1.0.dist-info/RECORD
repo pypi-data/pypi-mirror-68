@@ -1,0 +1,12 @@
+gnome_extensions_cli/__init__.py,sha256=W_NAJl9Ts4NM1O2JI5dptt0WZlGXTv6PY7ybUDR4Vyg,159
+gnome_extensions_cli/__main__.py,sha256=4JMK66Wj4uLZTKbF-sT3LAxOsr6buig77PmOkJCRRxw,83
+gnome_extensions_cli/cli.py,sha256=aFU3dnKJvSPnHM65tGKt85ydxCd62Ne75x_IEWIoqoI,9032
+gnome_extensions_cli/model.py,sha256=q_HFVEkKrOGdGqR1iD6rkhwx7JxbuIvigorWh24HXgk,5415
+gnome_extensions_cli/utils.py,sha256=pTGJe_2vCCEZWfRlASY3QlvMep8h6nHsmn9MEJn6thg,2334
+gnome_extensions_cli/version.py,sha256=8voDktylMfGL_japS0cTMQOwa4a2nFOgHA-KUuyWaSc,1670
+gnome_extensions_cli-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gnome_extensions_cli-0.1.0.dist-info/METADATA,sha256=tjo2JpdTlen0bc0Q2y-W4ydAvbONt0dYir_tvhdfzpw,5435
+gnome_extensions_cli-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gnome_extensions_cli-0.1.0.dist-info/entry_points.txt,sha256=a-swfB5v0n7f2hWWWWhXLlAh6AfqSE7HvEqCEJP4qU4,72
+gnome_extensions_cli-0.1.0.dist-info/top_level.txt,sha256=OsQdC_jP2Uo7AxfVhmfZ0y0VMDWK6kZo4_F4EntMPvo,21
+gnome_extensions_cli-0.1.0.dist-info/RECORD,,
