@@ -1,0 +1,3 @@
+[console_scripts]
+wol_api = wol_api.web:main
+

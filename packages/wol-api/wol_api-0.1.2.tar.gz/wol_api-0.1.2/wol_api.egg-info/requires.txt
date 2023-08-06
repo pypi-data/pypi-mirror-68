@@ -1,0 +1,4 @@
+docopt
+flask
+gevent
+wakeonlan
