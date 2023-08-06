@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: KD_Lib
+Version: 0.0.1
+Summary: A Pytorch Library to help extend all Knowledge Distillation works
+Home-page: https://github.com/SforAiDL/KD_Lib
+Author: Het Shah
+Author-email: divhet163@gmail.com
+License: MIT license
+Description: ======
+        KD_Lib
+        ======
+        
+        
+        .. image:: https://img.shields.io/travis/SforAiDl/KD_Lib.svg
+                :target: https://travis-ci.org/SforAiDl/KD_Lib
+        
+        A Pytorch Library to help extend all Knowledge Distillation works
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2020-05-11)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: KD_Lib
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
