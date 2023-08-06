@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aamras/__init__.py
+aamras.egg-info/PKG-INFO
+aamras.egg-info/SOURCES.txt
+aamras.egg-info/dependency_links.txt
+aamras.egg-info/requires.txt
+aamras.egg-info/top_level.txt

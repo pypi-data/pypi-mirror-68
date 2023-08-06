@@ -1,0 +1,8 @@
+selenium
+
+[dev]
+flake8
+mypy
+pytest
+pytest-cov
+pipenv-setup
