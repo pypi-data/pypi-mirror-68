@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: miblepy
+Version: 0.1.0
+Summary: miblepy fetches data from various (Xiaomi/Mijia/Mi) Bluetooth LE devices and push it to a MQTT broker in a coordinated, sequential manner.
+Author: Ben Lebherz
+Author-email: git@benleb.de
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bluepy (>=1.3,<2.0)
+Requires-Dist: btlewrap (>=0.0.8,<0.0.9)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: miflora (>=0.6,<0.7)
+Requires-Dist: paho-mqtt (>=1.5.0,<2.0.0)
+Requires-Dist: tomlkit (>=0.6.0,<0.7.0)
