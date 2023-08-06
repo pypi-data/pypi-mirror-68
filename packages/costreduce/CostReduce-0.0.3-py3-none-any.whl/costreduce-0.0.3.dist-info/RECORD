@@ -1,0 +1,15 @@
+LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+costreduce/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costreduce/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costreduce/core/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costreduce/core/providers/aws.py,sha256=g8NCul4dNuCZ9CLOG2MSem8_GVfUqdaAztoka27nPXM,245
+costreduce/core/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costreduce/core/services/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+costreduce/core/services/aws/ec2.py,sha256=ya2CEETLNXVkpcxLNYtZsm9qoSdIEtDUuq6Pa8gDz-M,2721
+costreduce/main.py,sha256=tI-GffZlopTtXXpIS5NYG0A-IC61eegD4hZsv4Of_84,1972
+costreduce/utils/format.py,sha256=vTLn6MZaCuSwuqk1kEeD93uSsBertZs_XOoHn3g4k8k,492
+costreduce-0.0.3.dist-info/entry_points.txt,sha256=8rI2Nd5Gsu9lNXnnaP4ahKPzMYP5iF8RXq0iDdccX00,50
+costreduce-0.0.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+costreduce-0.0.3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+costreduce-0.0.3.dist-info/METADATA,sha256=cri-y2HUcfHNim74wqabZRpeDTX17ZydT2yNqoXHDT0,1800
+costreduce-0.0.3.dist-info/RECORD,,
