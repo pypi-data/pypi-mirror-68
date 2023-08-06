@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: polygons
+Version: 0.1.5
+Classifier: Programming Language :: Python
+Summary: Computes distances to polygon edges and vertices and can check whether points are inside/outside.
+Author: Radovan Bast <bast@users.noreply.github.com>
+Author-Email: Radovan Bast <bast@users.noreply.github.com>
+License: GPL-3.0-only
+Requires-Python: >=3.6
