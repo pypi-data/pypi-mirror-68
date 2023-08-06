@@ -1,0 +1,6 @@
+argtoolbox<1.2.0,>=1.1.2
+linshareapi<1.1.0,>=1.0.5
+progressbar2
+veryprettytable==0.8.1
+humanfriendly
+mock==2.0.0
