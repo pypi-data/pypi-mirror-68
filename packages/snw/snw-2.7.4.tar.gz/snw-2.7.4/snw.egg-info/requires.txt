@@ -1,0 +1,7 @@
+configparser
+prettytable
+requests
+six>=1.14.0
+setuptools
+jsonschema
+packaging>=17.0
