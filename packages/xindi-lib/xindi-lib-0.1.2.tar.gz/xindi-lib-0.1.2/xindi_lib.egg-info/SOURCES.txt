@@ -1,0 +1,8 @@
+README.md
+setup.py
+xindi_lib.egg-info/PKG-INFO
+xindi_lib.egg-info/SOURCES.txt
+xindi_lib.egg-info/dependency_links.txt
+xindi_lib.egg-info/requires.txt
+xindi_lib.egg-info/top_level.txt
+xindilib/xindi.py
