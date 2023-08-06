@@ -1,0 +1,15 @@
+README.md
+setup.py
+dependency_detector.egg-info/PKG-INFO
+dependency_detector.egg-info/SOURCES.txt
+dependency_detector.egg-info/dependency_links.txt
+dependency_detector.egg-info/entry_points.txt
+dependency_detector.egg-info/not-zip-safe
+dependency_detector.egg-info/requires.txt
+dependency_detector.egg-info/top_level.txt
+detector/__init__.py
+detector/dependency.py
+detector/detect.py
+detector/detect_java.py
+detector/detect_nodejs.py
+detector/detect_python.py
