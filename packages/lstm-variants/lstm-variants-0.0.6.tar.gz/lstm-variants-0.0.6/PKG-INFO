@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lstm-variants
+Version: 0.0.6
+Summary: Long-Short Term Memory variants
+Home-page: https://github.com/urchade/lstm-variants.git
+Author: Urchade Zaratiana
+Author-email: urchade.zaratiana@gmail.com
+License: UNKNOWN
+Description: # LSTM Variants
+        
+        
+        pip install lstm-variants
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
