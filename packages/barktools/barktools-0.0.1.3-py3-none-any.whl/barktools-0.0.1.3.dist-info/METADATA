@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: barktools
+Version: 0.0.1.3
+Summary: Package containing various useful python modules and scripts
+Home-page: https://github.com/BarkenBark/python-tools
+Author: Oscar Bark
+Author-email: kurshid.ognianov@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# barktools
+
+A collection of utilities I find useful. Yes.
+
+## Modules
+### base_utils
+
+A collection of modules which only depend on the Python Standard Library (PSL)
+
+### plot_utils
+
+A collection of modules for plotting and data visualization which depends on common plotting and scientific packages such as matplotlib and scikit-learn
+
+
+## Scripts
+### index_files
+Renames files in a directory such that the filenames are numerically indexed
+Arguments:
+- -d, directory in which to index files
+- -n, number of leading zeros for target filenames
+- -e, only process files with this extension
+
+# TODO:
+
+- [ ] Reffa till variabler med ``var`` i docstrings fÃ¶r att tydliggÃ¶ra i dokumentationen att detta Ã¤r en variabel
+
