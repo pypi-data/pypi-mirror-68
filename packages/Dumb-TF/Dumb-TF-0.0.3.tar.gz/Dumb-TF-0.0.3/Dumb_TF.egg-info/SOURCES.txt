@@ -1,0 +1,13 @@
+README.md
+setup.py
+DumbTF/Activations.py
+DumbTF/Layer.py
+DumbTF/Losses.py
+DumbTF/Model.py
+DumbTF/Optimizer.py
+DumbTF/__init__.py
+DumbTF/test.py
+Dumb_TF.egg-info/PKG-INFO
+Dumb_TF.egg-info/SOURCES.txt
+Dumb_TF.egg-info/dependency_links.txt
+Dumb_TF.egg-info/top_level.txt

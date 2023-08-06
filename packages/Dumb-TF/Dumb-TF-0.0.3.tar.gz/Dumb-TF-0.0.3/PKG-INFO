@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Dumb-TF
+Version: 0.0.3
+Summary: A deep learning library for dumb people
+Home-page: https://github.com/Sidray-Infinity/DumbTF
+Author: Siddharth Panda
+Author-email: siddharth.pandathedancer@gmail.com
+License: UNKNOWN
+Description: ### Making the package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
