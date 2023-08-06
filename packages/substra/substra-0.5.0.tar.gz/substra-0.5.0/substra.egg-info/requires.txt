@@ -1,0 +1,6 @@
+click
+requests
+docker
+consolemd
+pyyaml
+keyring
