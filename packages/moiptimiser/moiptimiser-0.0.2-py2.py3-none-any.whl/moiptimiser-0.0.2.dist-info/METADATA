@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: moiptimiser
+Version: 0.0.2
+Summary: Multi-Objective Integer Programming with Gurobi and Python
+Home-page: https://github.com/bayan/python-moiptimiser
+Author: Bayan Khalili
+Author-email: bayan.net@gmail.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/bayan/python-moiptimiser/issues
+Project-URL: Documentation, https://python-moiptimiser.readthedocs.io/
+Project-URL: Changelog, https://python-moiptimiser.readthedocs.io/en/latest/changelog.html
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Requires-Dist: click
+
+========
+Overview
+========
+
+
+
+Multi-Objective Integer Programming with Gurobi and Python
+
+The optimisation software from `Gurobi <https://www.gurobi.com/>`_ now supports `multi-objective programming <https://www.gurobi.com/documentation/9.0/refman/multiple_objectives.html>`_.
+
+Since there are multiple objectives, there may be many solutions, each of which may optimise the objectives with a different set of priorities. Finding all such solutions can be algorithmically costly, so Gurobi's solver only returns a single result.
+
+However, due to the importance of such functionality, much research has been invested into finding better algorithms that can efficiently find all solutions.
+
+This python package extends Gurobi's multi-objective functionality by using the algorithm developed by (Ozlen et al., 2014). It provides a module that can be used in python programs, as well as a command line tool that can read `multi-objective LP <https://www.gurobi.com/documentation/9.0/refman/lp_format.html>`_ files.
+
+
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install moiptimiser
+
+You can also install the in-development version with::
+
+    pip install https://github.com/bayan/python-moiptimiser/archive/master.zip
+
+
+Documentation
+=============
+
+
+https://python-moiptimiser.readthedocs.io/
+
+
+Development
+===========
+
+To run the all tests run::
+
+    tox
+
+
+References
+==========
+
+Ozlen, M., Burton, B.A., MacRae, C.A.G., 2014. Multi-Objective Integer Programming: An Improved Recursive Algorithm. J Optim Theory Appl 160, 470–482. https://doi.org/10.1007/s10957-013-0364-y
+
+
+Changelog
+=========
+
+0.0.0 (2020-05-13)
+------------------
+
+* First release on PyPI.
+
+
