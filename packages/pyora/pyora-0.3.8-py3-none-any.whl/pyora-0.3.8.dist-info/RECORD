@@ -1,0 +1,13 @@
+pyora/Blend.py,sha256=l6GrBQswb1iKktSotgNburzz-G27BzZT_V3-Y2waA4w,10755
+pyora/BlendNonSep.py,sha256=1yyYDTMKmyl7xS_y9Jrn82yNM0lQCQbd3sLL-9FTlRI,5574
+pyora/Composite.py,sha256=r3HY2e_rPblKBWjzynW_ie55gc32zD1FbhLiL01zuKk,3618
+pyora/Layer.py,sha256=HdJ9vv6vsY0PYvYIpgiRjUr7pZSAFbHBDVxgqZPi_-w,13366
+pyora/OpenRasterProject.py,sha256=NhgIOejkk9KtdE53hxWNDDNjjA4XJ4XOm0xr3xr2KBc,21676
+pyora/Project.py,sha256=Q24Y9NiaC5btJCnJQO0fDE1LARQEIdF_udexYv61x8I,27043
+pyora/Render.py,sha256=1fjyZYF0cejnIACWHDmq3ISz2z--ibStrpgnwAQrFTA,12300
+pyora/__init__.py,sha256=UW-O4CWA25t-uTpmPxJ8HUC5XNfUWgjltCJzhqKlMvw,160
+pyora-0.3.8.dist-info/LICENSE,sha256=xzwdilraP47hqSPJqEZsCjGIaT4Wvge3m8ROzdNMgag,1067
+pyora-0.3.8.dist-info/METADATA,sha256=aL5TndEu_pFVnBa-PfrQ5Bws04WikVGL48YmFg0ftXc,910
+pyora-0.3.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyora-0.3.8.dist-info/top_level.txt,sha256=Int-RV3L1cHfA5aR5oAUyJf73-xUB03A6IE4LQZbhLE,6
+pyora-0.3.8.dist-info/RECORD,,
