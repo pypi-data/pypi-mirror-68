@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: fortios-xutils
+Version: 0.1.2
+Summary: Very experimental miscellaneous and extra utilities for fortios
+Home-page: https://github.com/ssato/fortios-xutils
+Author: Satoru SATOH
+Author-email: satoru.satoh@gmail.com
+Maintainer: Satoru SATOH
+Maintainer-email: satoru.satoh@gmail.com
+License: MIT
+Project-URL: CI: Travis, https://travis-ci.org/ssato/fortios-xutils
+Project-URL: Download, https://pypi.org/project/anyconfig-fortios-backend/
+Project-URL: Download RPMs, https://copr.fedoraproject.org/coprs/ssato/extras/
+Project-URL: Bug Tracker, https://github.com/ssato/fortios-xutils/issues
+Project-URL: Source, https://github.com/ssato/fortios-xutils
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: PyYAML
+Requires-Dist: anyconfig
+Requires-Dist: anyconfig-fortios-backend
+Requires-Dist: click
+Requires-Dist: jmespath
+Requires-Dist: netaddr
+Requires-Dist: networkx
+Requires-Dist: pandas
+
+fortios-xutils
+================
+
+.. .. image:: https://img.shields.io/pypi/v/fortios-xutils.svg
+   :target: https://pypi.python.org/pypi/fortios-xutils/
+   :alt: [Latest Version]
+
+.. .. image:: https://img.shields.io/pypi/pyversions/fortios-xutils.svg
+   :target: https://pypi.python.org/pypi/fortios-xutils/
+   :alt: [Python versions]
+
+.. .. image:: https://img.shields.io/pypi/l/fortios-xutils.svg
+   :target: https://pypi.python.org/pypi/fortios-xutils/
+   :alt: MIT License
+
+.. image:: https://img.shields.io/travis/ssato/fortios-xutils.svg
+   :target: https://travis-ci.org/ssato/fortios-xutils
+   :alt: Test status
+
+.. .. image:: https://img.shields.io/coveralls/ssato/fortios-xutils.svg
+      :target: https://coveralls.io/r/ssato/fortios-xutils
+      :alt: Coverage Status
+
+.. image:: https://img.shields.io/lgtm/grade/python/g/ssato/fortios-xutils.svg
+   :target: https://lgtm.com/projects/g/ssato/fortios-xutils/context:python
+   :alt: [Code Quality by LGTM]
+
+Very experimental miscellaneous and extra utilities for fortios (fortigate).
+
+Features
+==========
+
+- Parse and dump a structured JSON file from fortios CLI's "show
+  \*configuration" outputs
+- Search an item or items from JSON files generated as a parsed result from
+  fortios CLI's "show \*configuration" outputs, using JMESPath query
+- Collect nework information from the JSON files and generate a structured JSON
+  files gives that network information
+- Compose multiple network JSON files into a network file
+- Analyze and dump firewall policy table as a pandas data for further analysis
+- Seaerch firewall policy matches given ip address
+- Find the network paths from network JSON file by ip address (src and dst)
+
+CLI Usage
+============
+
+see fortios_xutils --help fore info.
+
+.. vim:sw=4:ts=4:et:
+
+
