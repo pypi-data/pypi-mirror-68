@@ -1,0 +1,17 @@
+Changes
+=======
+
+Version 1.0.2 (released 2020-05-13)
+
+- Deprecated Python versions lower than 3.6.0. Now supporting 3.6.0 and 3.7.0
+- Set Sphinx ``<3`` because of errors related to application context
+- Stop using example app
+
+Version 1.0.1 (released 2018-12-14)
+
+- Pypi classifier and deployment configuration
+- License detection
+
+Version 0.1.0 (released 2016-05-29)
+
+- Initial public release.
