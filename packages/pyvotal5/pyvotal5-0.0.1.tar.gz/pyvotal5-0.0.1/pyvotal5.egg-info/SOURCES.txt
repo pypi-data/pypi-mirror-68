@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyvotal5/__init__.py
+pyvotal5/pyvotal.py
+pyvotal5.egg-info/PKG-INFO
+pyvotal5.egg-info/SOURCES.txt
+pyvotal5.egg-info/dependency_links.txt
+pyvotal5.egg-info/top_level.txt
