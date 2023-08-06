@@ -1,0 +1,14 @@
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[pin]
+cryptography
+
+[test]
+flake8
+pytest
+bump2version
+coverage
+cryptography
