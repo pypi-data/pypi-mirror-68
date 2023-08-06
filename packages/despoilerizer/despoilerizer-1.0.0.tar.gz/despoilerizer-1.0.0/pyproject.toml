@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "despoilerizer"
+version = "1.0.0"
+description = "Remove spoilers from files."
+authors = [
+    "Daniele Parmeggiani <git@danieleparmeggiani.me>"
+]
+license = "GPLv3"
+
+readme = "README.md"
+
+repository = "https://github.com/dpdani/despoilerizer"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Environment :: Console",
+    "Operating System :: OS Independent",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Utilities"
+]
+
+# Requirements
+[tool.poetry.dependencies]
+python = ">=3.6"
+click = "*"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+despoilerizer = "despoilerizer"
