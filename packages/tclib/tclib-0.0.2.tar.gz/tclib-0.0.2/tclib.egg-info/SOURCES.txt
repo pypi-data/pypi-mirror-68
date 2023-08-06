@@ -1,0 +1,9 @@
+README.md
+setup.py
+tclib/__init__.py
+tclib/__main__.py
+tclib.egg-info/PKG-INFO
+tclib.egg-info/SOURCES.txt
+tclib.egg-info/dependency_links.txt
+tclib.egg-info/requires.txt
+tclib.egg-info/top_level.txt
