@@ -1,0 +1,6 @@
+qtdata_setupserver_and_tool.py
+setup.py
+qtdata_setupserver_and_tool.egg-info/PKG-INFO
+qtdata_setupserver_and_tool.egg-info/SOURCES.txt
+qtdata_setupserver_and_tool.egg-info/dependency_links.txt
+qtdata_setupserver_and_tool.egg-info/top_level.txt
