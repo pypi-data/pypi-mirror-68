@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: znlp
+Version: 0.0
+Summary: 中文 NLP.
+Home-page: https://github.com/hscspring/znlp
+Author: Yam
+Author-email: haoshaochun@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# znlp
+自然语言处理 中文分词 词性标注 命名实体识别 依存句法分析 新词发现 关键词短语提取 自动摘要 文本分类聚类 拼音简繁
+
+
