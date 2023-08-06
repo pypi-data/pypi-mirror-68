@@ -1,0 +1,14 @@
+djangocms_socialshare/__init__.py,sha256=IDg8PcoNiYyDndbTPJed55KTar7QP8l9T0fmzXM4aIE,24
+djangocms_socialshare/cms_plugins.py,sha256=HHM65HAbq9NKDYFBVqI9t-dR2WqXbYLfIdGEH5Cd6T0,647
+djangocms_socialshare/models.py,sha256=8fJ6MRjk2YA1_ptVGDtu4emG01-6Xcdxt4B5JrXgBU8,2190
+djangocms_socialshare/migrations/0001_initial.py,sha256=EK-po7wVmFGcd5mp0ZsWWHKB-pRyP9OLp5n3eRE4x4Y,1721
+djangocms_socialshare/migrations/0002_set_button_empty_by_default.py,sha256=qa5-K00cPaB7_UlMrvCWr7u4YvXjZ8yd26JDWWgFQLY,517
+djangocms_socialshare/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_socialshare/static/djangocms_socialshare/djangocms-socialshare.css,sha256=t56H5x4k2Xbj9reV_woMFabbMTfYfyrZ4OFVjmvyeMo,928
+djangocms_socialshare/templates/djangocms_socialshare/socialshare-plugin.html,sha256=77Ym-jbqnuwrXlj9OfBKOV9o0jypXPTAqT6imH99pPo,475
+djangocms_socialshare/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_socialshare/templatetags/socialshare.py,sha256=WWs89bNhVUCVV0Emv3vwrSL3rLI1NQQ_5H4p2-KogRw,945
+djangocms_socialshare-0.0.0.1.dist-info/METADATA,sha256=-lf0a7SppFlHA8o1Cnk5OiWtWPecJdezN8hn21zzIAA,472
+djangocms_socialshare-0.0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+djangocms_socialshare-0.0.0.1.dist-info/top_level.txt,sha256=aN_ZVzlDQD1-p78xoQUi683cDwpSZVpy1AqaGpngZ6A,22
+djangocms_socialshare-0.0.0.1.dist-info/RECORD,,
