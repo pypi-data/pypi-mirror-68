@@ -1,0 +1,8 @@
+recursive-include jsonmodel/models *.json
+prune */__pycache__
+exclude tests/*.py
+exclude samples/*.py
+include *.rst
+include *.txt
+include *.md
+include utils.py
