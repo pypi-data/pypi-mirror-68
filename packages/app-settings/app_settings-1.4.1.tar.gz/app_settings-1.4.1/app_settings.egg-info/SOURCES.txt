@@ -1,0 +1,10 @@
+README.rst
+setup.py
+app_settings/__init__.py
+app_settings/app_settings.py
+app_settings.egg-info/PKG-INFO
+app_settings.egg-info/SOURCES.txt
+app_settings.egg-info/dependency_links.txt
+app_settings.egg-info/not-zip-safe
+app_settings.egg-info/requires.txt
+app_settings.egg-info/top_level.txt
