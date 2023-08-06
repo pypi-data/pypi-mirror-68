@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hashdate"
+version = "1.0.0"
+description = "datetime to fixed hash. Shortable for lower precision"
+authors = ["sloev <johanned.valbjorn@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+colorama = "^0.4.3"
+python-dateutil = "^2.8.1"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+
+[tool.poetry.scripts]
+hashdate = 'hashdate.cli:cli'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
