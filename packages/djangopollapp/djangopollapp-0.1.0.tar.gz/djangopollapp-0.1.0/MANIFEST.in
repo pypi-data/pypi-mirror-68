@@ -1,0 +1,3 @@
+prune __pycache__
+include LICENSE
+include README.md
