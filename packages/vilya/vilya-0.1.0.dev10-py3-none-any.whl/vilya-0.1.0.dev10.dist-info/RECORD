@@ -1,0 +1,11 @@
+vilya/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vilya/records.py,sha256=F96R4GAhk6Q0kBKZWORSWN6Ly6QZpL6ZijZjQT-abRM,15748
+vilya/utils.py,sha256=KZJJMEdmOylBavG2yIjLS4xxXfQZN42w-kXwd1iio7U,13909
+vilya/vilya.py,sha256=CD0B9QJ8aoukOnDSHh8ifUCLSgEQL9YXhV-obRcWyEg,12774
+vilya-0.1.0.dev10.data/data/vilya/config.toml,sha256=7E66YFACjuJAvZF10-vIOFJHY96aLNrwn_hXKEH-Vas,5876
+vilya-0.1.0.dev10.dist-info/LICENSE,sha256=56mFKjn76YhAmpKKWOC4-ZPsYiMXqPHfbIOQ7NEZ4uQ,1075
+vilya-0.1.0.dev10.dist-info/METADATA,sha256=I3KOXSOcjLCZEcKr1VRlUhuLvGaBPKSqpMfSJ7IVvaw,2801
+vilya-0.1.0.dev10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vilya-0.1.0.dev10.dist-info/entry_points.txt,sha256=E2FIe_HKlV5JgTRgH3H_eJ5zSk68qF1eceyBGt0o4LA,44
+vilya-0.1.0.dev10.dist-info/top_level.txt,sha256=zyWrUyMrQ4puUhM571KyzobkkkGLWbBVNVTk1IkMw-0,6
+vilya-0.1.0.dev10.dist-info/RECORD,,

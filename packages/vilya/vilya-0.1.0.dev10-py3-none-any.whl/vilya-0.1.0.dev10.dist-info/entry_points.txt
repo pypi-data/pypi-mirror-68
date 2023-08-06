@@ -1,0 +1,3 @@
+[console_scripts]
+vilya = vilya.vilya:main
+
