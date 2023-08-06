@@ -1,0 +1,11 @@
+mframework/__init__.py,sha256=nUPNJtHmXT7wjWJOlmajzhFGNjp4lvuXLcPYTMDSmIw,153
+mframework/__version__.py,sha256=AA-_zj3TJSflt-SJA5MLJ3P3GYW1mfCXS_LTilXq1vE,62
+mframework/_documentation.py,sha256=di2eCdUc_nbx0z-3vmuZqbg8xgOaRFWrrleukzCmNXQ,2503
+mframework/_log.py,sha256=y03wfXXVR90Dl2o4jQoMuLcbNPPTLPmKLRxFMJqD7gI,1181
+mframework/_mframework.py,sha256=yTgFoyOUV_XCKBFzrTcc5v3ldyzOXA6x3Otx4Zd24PM,15273
+mframework/_serialize.py,sha256=c3EHXn-G6MtmB_thThBF1Kcq__fjs0OzP17Y4-sZkgg,949
+model_framework-0.0.4.dist-info/LICENSE.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+model_framework-0.0.4.dist-info/METADATA,sha256=1SDKS0JbNfFvgoqxXoHlRjRc9rR5BXOSDUPgoaSN5-E,5493
+model_framework-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+model_framework-0.0.4.dist-info/top_level.txt,sha256=dMPAVEi6xnsPJdqdpKPontl7SZ8hxnUtyHopZrcHl7g,11
+model_framework-0.0.4.dist-info/RECORD,,
