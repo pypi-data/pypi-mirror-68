@@ -1,0 +1,2169 @@
+#
+msgid "venn"
+msgstr ""
+
+msgid "unpublished"
+msgstr ""
+
+msgid "running"
+msgstr ""
+
+msgid "paused"
+msgstr ""
+
+msgid "not yet published"
+msgstr ""
+
+msgid "measurement tools"
+msgstr ""
+
+msgid "just for me (you can share later)"
+msgstr ""
+
+msgid "grid"
+msgstr ""
+
+msgid "by"
+msgstr ""
+
+msgid "axis"
+msgstr ""
+
+msgid "_%mod_ views"
+msgstr ""
+
+msgid "_%mod_ teachers have joined the class"
+msgstr ""
+
+msgid "_%mod_ students shared"
+msgstr ""
+
+msgid "_%mod_ students have left the class"
+msgstr ""
+
+msgid "_%mod_ shared a workspace with you."
+msgstr ""
+
+msgid "_%mod_ shared"
+msgstr ""
+
+msgid "_%mod_ participants"
+msgstr ""
+
+msgid "_%mod_ participant"
+msgstr ""
+
+msgid "_%mod_ of _%mod_ students in the workspace, _%mod_ questions"
+msgstr ""
+
+msgid "_%mod_ of _%mod_ students"
+msgstr ""
+
+msgid "_%mod_ left the class"
+msgstr ""
+
+msgid "_%mod_ joined the class"
+msgstr ""
+
+msgid "_%mod_ has shared a workspace with you."
+msgstr ""
+
+msgid "_%mod_ has control"
+msgstr ""
+
+msgid "_%mod_ has been shared with you"
+msgstr ""
+
+msgid "_%mod_ files with you"
+msgstr ""
+
+msgid "_%mod_ copies in progress"
+msgstr ""
+
+msgid "_%mod_ copies handed out"
+msgstr ""
+
+msgid "_%mod_ copies failed"
+msgstr ""
+
+msgid "_%mod_ copies _%mod_"
+msgstr ""
+
+msgid "_%mod_ (_%mod_ Individuals)"
+msgstr ""
+
+msgid "_%mod_ (_%mod_ Groups)"
+msgstr ""
+
+msgid "_%mod_ &ndash; _%mod_"
+msgstr ""
+
+msgid "\\\"Right Pointing Arrow\\\" "
+msgstr ""
+
+msgid "\\\"Double Headed Right/Left Arrow\\\" "
+msgstr ""
+
+msgid "Your workspace timed out due to inactivity."
+msgstr ""
+
+msgid "Your workspace is quickly approaching our size limit and soon won't be able to hold anything more."
+msgstr ""
+
+msgid "Your workspace has reached our size limit."
+msgstr ""
+
+msgid "Your teacher might be giving you additional instructions"
+msgstr ""
+
+msgid "Your teacher has temporarily paused this assessment. Wait for further instructions."
+msgstr ""
+
+msgid "Your teacher has temporarily paused the poll. Wait for further instructions."
+msgstr ""
+
+msgid "Your teacher canceled creating the class. Wait for further instruction."
+msgstr ""
+
+msgid "Your report isn't ready yet. Please reload the page."
+msgstr ""
+
+msgid "Your recent changes won't be saved."
+msgstr ""
+
+msgid "Your permissions to view or edit this workspace have been changed by your teacher or the workspace's owner."
+msgstr ""
+
+msgid "Your connection to the server has been disrupted. You might not see notifications from your teacher."
+msgstr ""
+
+msgid "Your class was created, but we're unable to connect the following student(s):"
+msgstr ""
+
+msgid "Your class was created, but we're unable to add any students. Please try again."
+msgstr ""
+
+msgid "YouTube videos"
+msgstr ""
+
+msgid "YouTube video"
+msgstr ""
+
+msgid "You've answered all the questions!"
+msgstr ""
+
+msgid "You're unable to use the Messaging feature right now. Check your network connection and try again."
+msgstr ""
+
+msgid "You're unable to join the class because your teacher left the class creation page. Ask your teacher to return to the class creation page and give you a new class code."
+msgstr ""
+
+msgid "You're sending messages too quickly! Messaging will be enabled again soon."
+msgstr ""
+
+msgid "You're leaving the SMART amp workspace. Your text changes won't be saved."
+msgstr ""
+
+msgid "You're already part of this class."
+msgstr ""
+
+msgid "You're already part of the class you're trying to join. Select your class or try joining another one."
+msgstr ""
+
+msgid "You need to join a class before you can publish an assessment."
+msgstr ""
+
+msgid "You might need to refresh the page for these changes to take effect."
+msgstr ""
+
+msgid "You might need to ask the workspace owner to give you edit permissions."
+msgstr ""
+
+msgid "You may be experiencing technical issues with SMART amp."
+msgstr ""
+
+msgid "You have opened a workspace template file. This will create a new workspace based on the template."
+msgstr ""
+
+msgid "You have control"
+msgstr ""
+
+msgid "You have become disconnected from your session, check your internet connect and try refreshing the page."
+msgstr ""
+
+msgid "You don't have permission to share this workspace."
+msgstr ""
+
+msgid "You don't have permission to share the following files or folders. Ask the owner to give you permission to share with others."
+msgstr ""
+
+msgid "You can't use this feature with View access."
+msgstr ""
+
+msgid "You can't use this feature in Follow Me mode."
+msgstr ""
+
+msgid "You can't upload images from your iOS 8 device because of OS limitations."
+msgstr ""
+
+msgid "You can't join this class because your teacher removed you from the class list."
+msgstr ""
+
+msgid "You can't join this class because your teacher removed you from the class list"
+msgstr ""
+
+msgid "You can't delete this class because you didn't create it. If you don't want to be included in this class, ask the teacher who created it to remove you from the class list."
+msgstr ""
+
+msgid "You can't add invalid email addresses to the class list. Remove or correct invalid email addresses and try again."
+msgstr ""
+
+msgid "You can still use it, but no more content can be added. Try emptying the Restore deleted objects list, or keep generating great ideas by creating a new workspace."
+msgstr ""
+
+msgid "You can still open it in a new tab to view it."
+msgstr ""
+
+msgid "You can only import SMART Notebook files from this tab."
+msgstr ""
+
+msgid "You can only import SMART Notebook and PDF files from this tab."
+msgstr ""
+
+msgid "You can bookmark any area in this workspace to go back to later, such as during a presentation."
+msgstr ""
+
+msgid "You aren't connected to a class"
+msgstr ""
+
+msgid "You are not connected to a class.  Connect to a class first, then try again to hand out copies."
+msgstr ""
+
+msgid "You are not connected to a class"
+msgstr ""
+
+msgid "You are leading"
+msgstr ""
+
+msgid "You are following"
+msgstr ""
+
+msgid "Yes / No"
+msgstr ""
+
+msgid "Yay! Your class has been created."
+msgstr ""
+
+msgid "Would you like to save this grouping to use again?"
+msgstr ""
+
+msgid "Workspaces Overview"
+msgstr ""
+
+msgid "Workspaces"
+msgstr ""
+
+msgid "Workspace timed out"
+msgstr ""
+
+msgid "Workspace successfully copied and shared to <strong>_%mod_</strong>."
+msgstr ""
+
+msgid "Workspace is full"
+msgstr ""
+
+msgid "Workspace is almost full"
+msgstr ""
+
+msgid "Workspace Overview"
+msgstr ""
+
+msgid "Work without connecting to a class but with access to your Google Drive and workspaces."
+msgstr ""
+
+msgid "Whole Class"
+msgstr ""
+
+msgid "Whiteboard Platform version: _%mod_"
+msgstr ""
+
+msgid "Which Providers Would you Like to See in SMART amp?"
+msgstr ""
+
+msgid "When others open this shared link, they can create their own copy of the workspace. Changes to the original or to the copy won't affect the template."
+msgstr ""
+
+msgid "What is happening?"
+msgstr ""
+
+msgid "Web content"
+msgstr ""
+
+msgid "Web Search"
+msgstr ""
+
+msgid "We're unable to open this workspace."
+msgstr ""
+
+msgid "We're unable to create this folder because Google doesn't seem to be responding. Please try again later."
+msgstr ""
+
+msgid "We're stumped"
+msgstr ""
+
+msgid "We're sorry, but your browser is not currently supported. Please download one of the compatible browsers below to continue."
+msgstr ""
+
+msgid "We're sorry to report that we're having problems communicating with a third party. Please wait and try again later."
+msgstr ""
+
+msgid "We're so happy to meet you. We hope you'll use SMART amp to connect and collaborate with your teachers and classmates."
+msgstr ""
+
+msgid "We're so happy to meet you. We hope you'll use SMART amp to connect and collaborate with your students."
+msgstr ""
+
+msgid "We're not sure what happened, but we're unable to upload this file. Please try again."
+msgstr ""
+
+msgid "We were unable to connect to YouTube.<br/><br/>Your school might have blocked access or there might be issues with your network connection. Please try again."
+msgstr ""
+
+msgid "We were unable to connect to SMART Exchange.<br/><br/>Your school might have blocked access or there might be issues with your network connection. Please try again."
+msgstr ""
+
+msgid "We were unable to connect to Microsoft Bing.<br/><br/>Your school might have blocked access or there might be issues with your network connection. Please try again."
+msgstr ""
+
+msgid "We couldn't find this image. It may have been removed from the original site."
+msgstr ""
+
+msgid "We couldn't add this object because we couldn't access the web site. Check the URL and try again."
+msgstr ""
+
+msgid "We can't seem to get any information about this video, but you can still open it in a new tab to view it."
+msgstr ""
+
+msgid "We aren't sure what happened, but we're unable to make the required changes to your workspace permissions."
+msgstr ""
+
+msgid "We aren't sure what happened, but we're unable to hand out copies of your workspace. Please try again."
+msgstr ""
+
+msgid "We aren't sure what happened, but we are not able to import the template to your workspace."
+msgstr ""
+
+msgid "Waiting for data from Google Drive&hellip;"
+msgstr ""
+
+msgid "View by:"
+msgstr ""
+
+msgid "View access"
+msgstr ""
+
+msgid "View Results"
+msgstr ""
+
+msgid "View Only"
+msgstr ""
+
+msgid "View My Report"
+msgstr ""
+
+msgid "View Class Report"
+msgstr ""
+
+msgid "View Class"
+msgstr ""
+
+msgid "Version: _%mod_"
+msgstr ""
+
+msgid "Venn Diagram"
+msgstr ""
+
+msgid "Using Content from TigTag"
+msgstr ""
+
+msgid "Using Content from Discovery Education"
+msgstr ""
+
+msgid "Use the following link to create a new workspace from the template:"
+msgstr ""
+
+msgid "Upward Pointing Arrow"
+msgstr ""
+
+msgid "Uppercase Theta"
+msgstr ""
+
+msgid "Uppercase Sigma"
+msgstr ""
+
+msgid "Uppercase Pi"
+msgstr ""
+
+msgid "Uppercase Omega"
+msgstr ""
+
+msgid "Uppercase Gamma"
+msgstr ""
+
+msgid "Uppercase Delta"
+msgstr ""
+
+msgid "Uploading file..."
+msgstr ""
+
+msgid "Uploading _%mod_ file(s)..."
+msgstr ""
+
+msgid "Updating permissions..."
+msgstr ""
+
+msgid "Unknown Class"
+msgstr ""
+
+msgid "Unexpected error"
+msgstr ""
+
+msgid "Unassigned students"
+msgstr ""
+
+msgid "Unable to update workspace"
+msgstr ""
+
+msgid "Unable to share"
+msgstr ""
+
+msgid "Unable to open workspace"
+msgstr ""
+
+msgid "Unable to edit assessment"
+msgstr ""
+
+msgid "Unable to delete class"
+msgstr ""
+
+msgid "Type your message here."
+msgstr ""
+
+msgid "Two Thirds"
+msgstr ""
+
+msgid "Two Fifths"
+msgstr ""
+
+msgid "Tutorial videos"
+msgstr ""
+
+msgid "Turn on the Follow Me feature so that I can present to my participants"
+msgstr ""
+
+msgid "Try to open the template again"
+msgstr ""
+
+msgid "Try reopening the workspace."
+msgstr ""
+
+msgid "Try emptying the Restore deleted objects list, or keep generating great ideas by creating a new workspace."
+msgstr ""
+
+msgid "True / False"
+msgstr ""
+
+msgid "Toll free 1.866.518.6791 (U.S./Canada) or +1.403.228.5940"
+msgstr ""
+
+msgid "To review your answers, tap the arrow."
+msgstr ""
+
+msgid "To new groups"
+msgstr ""
+
+msgid "To individual students"
+msgstr ""
+
+msgid "To hide this message and continue working while the process completes, tap Hide."
+msgstr ""
+
+msgid "To hand out copies of a workspace that is shared with you, you can save a copy of the workspace and then create handouts from the new workspace copy."
+msgstr ""
+
+msgid "To hand out copies of a student's workspace, you can save a copy of the workspace and then create handouts from the new workspace copy."
+msgstr ""
+
+msgid "To get started, enter the six-digit code provided by your teacher and join the class."
+msgstr ""
+
+msgid "To get started, create a class for your students to join."
+msgstr ""
+
+msgid "To existing groups"
+msgstr ""
+
+msgid "To access this assessment, you need to join the class it was created in."
+msgstr ""
+
+msgid "Titles can't be more than 90 characters."
+msgstr ""
+
+msgid "Three Quarters"
+msgstr ""
+
+msgid "Three Fifths"
+msgstr ""
+
+msgid "Three Eighths"
+msgstr ""
+
+msgid "This workspace has reached our size limit."
+msgstr ""
+
+msgid "This will remove the current groups."
+msgstr ""
+
+msgid "This question can't be more than 150 characters."
+msgstr ""
+
+msgid "This object has been deleted"
+msgstr ""
+
+msgid "This object has already been restored to the workspace."
+msgstr ""
+
+msgid "This isn't a valid web link."
+msgstr ""
+
+msgid "This information is required."
+msgstr ""
+
+msgid "This information is required to create a folder."
+msgstr ""
+
+msgid "This information is required to create a class. Enter a class name."
+msgstr ""
+
+msgid "This folder name already exists. Enter a different folder name."
+msgstr ""
+
+msgid "This folder isn't empty. We recommend that you save copies in their own folder so they're easier to find."
+msgstr ""
+
+msgid "This email address is invalid. Enter a valid email address."
+msgstr ""
+
+msgid "This email address couldn't be added. Please try again."
+msgstr ""
+
+msgid "This class code is invalid. Enter a valid class code."
+msgstr ""
+
+msgid "This assessment needs a title. Enter a title and try again."
+msgstr ""
+
+msgid "This assessment needs a title, and the following questions have invalid answers: _%mod_. Add a title and valid answers and try again."
+msgstr ""
+
+msgid "This assessment needs a title, and question _%mod_ has an invalid answer. Enter a title and a valid answer and try again."
+msgstr ""
+
+msgid "This assessment is currently under construction"
+msgstr ""
+
+msgid "This answer can't be more than 90 characters."
+msgstr ""
+
+msgid "This answer can't be more than 150 characters."
+msgstr ""
+
+msgid "These objects are too big for the Restore deleted objects list. They'll be permanently deleted."
+msgstr ""
+
+msgid "There's no poll in progress."
+msgstr ""
+
+msgid "There's been an unexpected network delay. Changes you made to the workspace in the last few seconds might not have been saved."
+msgstr ""
+
+msgid "There were problems connecting to some sites; see below for details."
+msgstr ""
+
+msgid "There was a problem adding the link as a video."
+msgstr ""
+
+msgid "There aren't any other participants in this class."
+msgstr ""
+
+msgid "There are some groups with no students assigned."
+msgstr ""
+
+msgid "There are no students to pass control to. Make sure students have Edit access and that students haven't left the class."
+msgstr ""
+
+msgid "There are no recently used items to display"
+msgstr ""
+
+msgid "There are no online students in the current class"
+msgstr ""
+
+msgid "There are no online participants in the current class"
+msgstr ""
+
+msgid "There are no objects to restore."
+msgstr ""
+
+msgid "There are no items in this folder."
+msgstr ""
+
+msgid "The template cannot be opened because the link is either invalid or cannot be found."
+msgstr ""
+
+msgid "The selection cannot be reordered because it contains certain objects that are always located at the back."
+msgstr ""
+
+msgid "The selected copies folder is not empty. It is recommended to save copies in their own folder to make them easier to find."
+msgstr ""
+
+msgid "The new folder above will be created by default for saving copies."
+msgstr ""
+
+msgid "The following questions have invalid answers: _%mod_. Enter valid answers and try again."
+msgstr ""
+
+msgid "The class you're trying to join has been deleted. Join a different class."
+msgstr ""
+
+msgid "The class has no students.  Add some students or connect to a different class first, then try again to hand out copies."
+msgstr ""
+
+msgid "The Teacher stopped the questions"
+msgstr ""
+
+msgid "The Teacher stopped the question"
+msgstr ""
+
+msgid "The Google services we depend on to update workspaces are slow to respond. You may see an increased number of update delay warnings because it's taking longer to save changes made to a workspace. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "The Google services we depend on to hand out copies of workspaces are slow to respond. You may see increased delays and failures when handing out copies of a workspace. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "That was strange! We were unable to verify your login information. Please sign out and sign in again."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened. Please try again."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we're unable to submit your answer. Please try again."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we're unable to share the selected files. Ensure that you have edit permissions and try again."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we're unable to locate the files you want to share. Please reload the page and ensure that the files haven't been deleted."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we're unable to load the assessment. Please try again."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we're unable to load the assessment results. Please reload the page."
+msgstr ""
+
+msgid "That was strange! We aren't sure what happened, but we can't locate the selected files. Please reload the page and ensure that the files haven't already been deleted."
+msgstr ""
+
+msgid "That was strange!  We aren't sure what happened."
+msgstr ""
+
+msgid "That was strange!"
+msgstr ""
+
+msgid "Temporary code:"
+msgstr ""
+
+msgid "Templates capture a workspace as it is, at that moment.  They are saved as .wst files and are great for reusing your work, or sharing with others.  Anyone that opens a template file gets a new workspace with that template's content."
+msgstr ""
+
+msgid "Technology Coordinator"
+msgstr ""
+
+msgid "Tap ▶ to start this question."
+msgstr ""
+
+msgid "Tap Continue to reload the workspace."
+msgstr ""
+
+msgid "Tap Continue to go back to your workspace."
+msgstr ""
+
+msgid "Take me to the Ideas Forum"
+msgstr ""
+
+msgid "Take me to Tigtag"
+msgstr ""
+
+msgid "Take me to Discovery Education"
+msgstr ""
+
+msgid "System Status"
+msgstr ""
+
+msgid "Switch Class"
+msgstr ""
+
+msgid "Supported file types:"
+msgstr ""
+
+msgid "Subtraction"
+msgstr ""
+
+msgid "Students in workspace"
+msgstr ""
+
+msgid "Students can see who created objects in the workspace"
+msgstr ""
+
+msgid "Student Grade"
+msgstr ""
+
+msgid "Storyboard"
+msgstr ""
+
+msgid "Stop assessment"
+msgstr ""
+
+msgid "Stop and Delete Now"
+msgstr ""
+
+msgid "Stop and Delete Copies"
+msgstr ""
+
+msgid "State/Province"
+msgstr ""
+
+msgid "Start with automatically filled groups or add your own groups and drag and drop students to assign them to those groups."
+msgstr ""
+
+msgid "Start the question to collect student responses."
+msgstr ""
+
+msgid "Start question"
+msgstr ""
+
+msgid "Start Pass Control"
+msgstr ""
+
+msgid "Start Follow Me"
+msgstr ""
+
+msgid "Start Exploring SMART amp"
+msgstr ""
+
+msgid "Square Root"
+msgstr ""
+
+msgid "Source:"
+msgstr ""
+
+msgid "Sorry. We're trying to catch up."
+msgstr ""
+
+msgid "Sorry! We're unable to create this class right now. Please try again."
+msgstr ""
+
+msgid "Something has gone wrong with the Google services that workspace templates depend on (.wst files). This may affect your ability to export workspaces as templates or open workspace templates. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with instant polling. This prevents teachers from creating and publishing instant polls and students from responding to polls. We are working hard to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with essential Google services we depend on for SMART amp. This may affect your ability to interact with workspaces. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with assessments. This may affect your ability to create, edit, or publish a question set. We are working hard to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with assessments reporting. This prevents teachers from viewing whole class reports for a question set. We are working hard to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with Google Drive. This may affect your ability to open, create, and share workspaces. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Something has gone wrong with Google Drive sharing. This prevents you from opening workspaces that have just been shared with you. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Someone is editing this text."
+msgstr ""
+
+msgid "Some groups have no students assigned to them."
+msgstr ""
+
+msgid "Show other handouts"
+msgstr ""
+
+msgid "Show only workspace files"
+msgstr ""
+
+msgid "Show more results (_%mod_ remaining)"
+msgstr ""
+
+msgid "Show more results"
+msgstr ""
+
+msgid "Show handouts"
+msgstr ""
+
+msgid "Show all files"
+msgstr ""
+
+msgid "Show More"
+msgstr ""
+
+msgid "Show Handouts"
+msgstr ""
+
+msgid "Sharing..."
+msgstr ""
+
+msgid "Sharing _%mod_ new workspace copies..."
+msgstr ""
+
+msgid "Shared with me"
+msgstr ""
+
+msgid "Shared by: _%mod_"
+msgstr ""
+
+msgid "Shared By"
+msgstr ""
+
+msgid "Share your workspace with others to collaborate and work together in real time."
+msgstr ""
+
+msgid "Share workspace: _%mod_"
+msgstr ""
+
+msgid "Share workspace"
+msgstr ""
+
+msgid "Share with selected participants"
+msgstr ""
+
+msgid "Share with selected online participants in the current class only"
+msgstr ""
+
+msgid "Share with all participants in the current class"
+msgstr ""
+
+msgid "Share with all online participants in the current class"
+msgstr ""
+
+msgid "Share files with selected participants only"
+msgstr ""
+
+msgid "Share files with everyone in this class"
+msgstr ""
+
+msgid "Share files"
+msgstr ""
+
+msgid "Share a copy of the workspace with each student in the current class"
+msgstr ""
+
+msgid "Share a copy of the workspace with each randomly assigned group"
+msgstr ""
+
+msgid "Share a copy of the workspace with each online student in the current class"
+msgstr ""
+
+msgid "Share Selected Files"
+msgstr ""
+
+msgid "Share Selected File"
+msgstr ""
+
+msgid "Share Link by Email"
+msgstr ""
+
+msgid "Shapes and lines"
+msgstr ""
+
+msgid "Seven Eighths"
+msgstr ""
+
+msgid "Session was closed: _%mod_"
+msgstr ""
+
+msgid "Service Disruption"
+msgstr ""
+
+msgid "Select the pages you would like to import."
+msgstr ""
+
+msgid "Select question type:"
+msgstr ""
+
+msgid "Select folder"
+msgstr ""
+
+msgid "Select answer:"
+msgstr ""
+
+msgid "Select an item below and tap the blue arrow to restore it to the workspace."
+msgstr ""
+
+msgid "Select all students"
+msgstr ""
+
+msgid "Select all pages"
+msgstr ""
+
+msgid "Select a student to pass control to:"
+msgstr ""
+
+msgid "Select a question type to poll your students. Results aren't saved to performance reports."
+msgstr ""
+
+msgid "Select a participant and tap the x."
+msgstr ""
+
+msgid "Select a content provider below or tell us about one you'd like to see in SMART amp."
+msgstr ""
+
+msgid "Select Files to Share"
+msgstr ""
+
+msgid "See which students are connected to the class, switch classes or edit your class list."
+msgstr ""
+
+msgid "See which students are connected to the class or switch classes."
+msgstr ""
+
+msgid "See all assessment results in your class report. You can create new assessments from any workspace."
+msgstr ""
+
+msgid "See all assessment results in your class report."
+msgstr ""
+
+msgid "Search your device for files to add to your workspace."
+msgstr ""
+
+msgid "Search your device for SMART Notebook files to add to your workspace."
+msgstr ""
+
+msgid "Search images"
+msgstr ""
+
+msgid "Search for content on Tigtag's website, copy the link and paste it into the URL field in SMART amp.  Insert it into your workspace and you will be able to access that content any time.  This content is available to UK subscribers and if you use your Google ID for Tigtag you won't need to sign in again."
+msgstr ""
+
+msgid "Search for content on Discovery's website, copy the link and paste it into the URL field in SMART amp. Insert it into your workspace and you will be able to access that content any time. This content is available to US subscribers and if you use your Google ID for Discovery you won't need to sign in again."
+msgstr ""
+
+msgid "Search for content on Discovery's website, copy the link and paste it into the URL field in SMART amp. Insert it into your workspace and you will be able to access that content any time. This content is available to Canadian subscribers and if you use your Google ID for Discovery you won't need to sign in again."
+msgstr ""
+
+msgid "Search cancelled"
+msgstr ""
+
+msgid "Saving copy..."
+msgstr ""
+
+msgid "Saving a copy..."
+msgstr ""
+
+msgid "Save workspace as"
+msgstr ""
+
+msgid "Save new groups"
+msgstr ""
+
+msgid "Save a copy of the workspace"
+msgstr ""
+
+msgid "Save a copy"
+msgstr ""
+
+msgid "Save a Copy to Hand Out"
+msgstr ""
+
+msgid "Save a Copy"
+msgstr ""
+
+msgid "SMART amp workspaces"
+msgstr ""
+
+msgid "SMART amp requires uncached access to this site."
+msgstr ""
+
+msgid "SMART amp classes are slow to respond. This may affect your ability to connect to a class or use features such as sharing, chat, follow me, or pass control. We are working hard to fix the problem."
+msgstr ""
+
+msgid "SMART amp classes are not responding. This prevents you from connecting to a class or using features such as sharing, chat, follow me, or pass control. We are working hard to fix the problem."
+msgstr ""
+
+msgid "SMART amp System Status"
+msgstr ""
+
+msgid "SMART amp Reachability Test"
+msgstr ""
+
+msgid "SMART amp Home"
+msgstr ""
+
+msgid "SMART amp Class Rosters"
+msgstr ""
+
+msgid "SMART amp"
+msgstr ""
+
+msgid "SMART Exchange provides access to approximately <strong>14000 classroom safe, copyright cleared</strong> image resources.<br/><br/>Recommended search terms:"
+msgstr ""
+
+msgid "Review your workspace assessment reports or participate in an instant poll."
+msgstr ""
+
+msgid "Review the email addresses above and ensure that there aren't any errors and that they belong to an activated domain."
+msgstr ""
+
+msgid "Review my performance"
+msgstr ""
+
+msgid "Review class workspace assessment results or start an instant poll."
+msgstr ""
+
+msgid "Review class performance"
+msgstr ""
+
+msgid "Retry Handing Out Failed Copies"
+msgstr ""
+
+msgid "Retake"
+msgstr ""
+
+msgid "Results will appear when your teacher stops the question."
+msgstr ""
+
+msgid "Results are unavailable because you missed the assessment."
+msgstr ""
+
+msgid "Restore deleted objects"
+msgstr ""
+
+msgid "Reshuffle"
+msgstr ""
+
+msgid "Requirements"
+msgstr ""
+
+msgid "Rename workspace"
+msgstr ""
+
+msgid "Remove and Continue"
+msgstr ""
+
+msgid "Recently Used"
+msgstr ""
+
+msgid "Quick Start Videos for Teachers"
+msgstr ""
+
+msgid "Questions answered (%)"
+msgstr ""
+
+msgid "Question sets"
+msgstr ""
+
+msgid "Question set"
+msgstr ""
+
+msgid "Question is stopped. Students can no longer answer."
+msgstr ""
+
+msgid "Question is stopped"
+msgstr ""
+
+msgid "Question is running"
+msgstr ""
+
+msgid "Question is paused. Students can't answer until you resume the question."
+msgstr ""
+
+msgid "Question _%mod_ has an invalid answer. Enter a valid answer and try again."
+msgstr ""
+
+msgid "Question _%mod_"
+msgstr ""
+
+msgid "Purchasing"
+msgstr ""
+
+msgid "Publishing<br/>assessment"
+msgstr ""
+
+msgid "Publish"
+msgstr ""
+
+msgid "Programming"
+msgstr ""
+
+msgid "Privacy policy"
+msgstr ""
+
+msgid "Previous Workspace"
+msgstr ""
+
+msgid "Presenting"
+msgstr ""
+
+msgid "Poster Board 2"
+msgstr ""
+
+msgid "Poster Board 1"
+msgstr ""
+
+msgid "Plus/Minus"
+msgstr ""
+
+msgid "Please try again."
+msgstr ""
+
+msgid "Please try again"
+msgstr ""
+
+msgid "Please enter a name for the new workspace."
+msgstr ""
+
+msgid "Perpendicular To"
+msgstr ""
+
+msgid "Permissions update"
+msgstr ""
+
+msgid "Permission issue"
+msgstr ""
+
+msgid "Perform a search for web images using Microsoft Bing's safe search."
+msgstr ""
+
+msgid "Perform a safe search for images from the web."
+msgstr ""
+
+msgid "Perform a safe search for YouTube videos and then embed them in your workspace."
+msgstr ""
+
+msgid "Percentage of Students"
+msgstr ""
+
+msgid "Pass control"
+msgstr ""
+
+msgid "Pass Control"
+msgstr ""
+
+msgid "Participants in this class (_%mod_):"
+msgstr ""
+
+msgid "Participants"
+msgstr ""
+
+msgid "Original"
+msgstr ""
+
+msgid "Open in a New Tab"
+msgstr ""
+
+msgid "Open Workspace"
+msgstr ""
+
+msgid "Open Now"
+msgstr ""
+
+msgid "Open Copy"
+msgstr ""
+
+msgid "Oops, some copies weren't handed out. Are you sure you want to delete failed copies and continue without retrying?"
+msgstr ""
+
+msgid "Oops, showing only workspaces in the file list is temporarily disabled because of Google Drive issues. Try again later."
+msgstr ""
+
+msgid "Oops! Your answer isn't an integer, a decimal or a fraction.<br/>To enter a mixed fraction, type a space to separate the whole number from the fraction and type a slash mark (/) to separate the numerator from the denominator (for example, -7 11/13)."
+msgstr ""
+
+msgid "Oops! Your answer isn't an integer, a decimal or a fraction."
+msgstr ""
+
+msgid "Oops! We couldn't find any results for you."
+msgstr ""
+
+msgid "Only I can unlock"
+msgstr ""
+
+msgid "One Third"
+msgstr ""
+
+msgid "One Sixth"
+msgstr ""
+
+msgid "One Quarter"
+msgstr ""
+
+msgid "One Half"
+msgstr ""
+
+msgid "One Fifth"
+msgstr ""
+
+msgid "One Eighth"
+msgstr ""
+
+msgid "Older handouts for this workspace can still be found in the associated folder in your Google Drive"
+msgstr ""
+
+msgid "Older handouts"
+msgstr ""
+
+msgid "Offline user"
+msgstr ""
+
+msgid "Offline participants"
+msgstr ""
+
+msgid "Numeric answers can't be more than 50 characters."
+msgstr ""
+
+msgid "Number of random groups to assign:"
+msgstr ""
+
+msgid "Notebook files"
+msgstr ""
+
+msgid "Notebook file"
+msgstr ""
+
+msgid "Note: This image might not appear correctly on some devices because its original size is larger than those devices support."
+msgstr ""
+
+msgid "Not in current class or are offline"
+msgstr ""
+
+msgid "Not in a class"
+msgstr ""
+
+msgid "Not Equal To"
+msgstr ""
+
+msgid "No unassigned students."
+msgstr ""
+
+msgid "No students responded."
+msgstr ""
+
+msgid "No students have responded yet."
+msgstr ""
+
+msgid "No students are available to answer the question."
+msgstr ""
+
+msgid "No objects"
+msgstr ""
+
+msgid "No more content can be added at this time. Continue to view this workspace or go back to the dashboard to create a new workspace."
+msgstr ""
+
+msgid "No issues found."
+msgstr ""
+
+msgid "No assigned students."
+msgstr ""
+
+msgid "No answers were submitted for this assessment."
+msgstr ""
+
+msgid "No Snapshots"
+msgstr ""
+
+msgid "No Issues"
+msgstr ""
+
+msgid "New shared workspace"
+msgstr ""
+
+msgid "New question"
+msgstr ""
+
+msgid "New Question"
+msgstr ""
+
+msgid "Need more help? Visit the SMART amp <a id='first-time-help-link' target='_blank'>online help</a> for detailed feature descriptions."
+msgstr ""
+
+msgid "Navigating a Workspace"
+msgstr ""
+
+msgid "Name cannot be empty or contain all spaces"
+msgstr ""
+
+msgid "N"
+msgstr ""
+
+msgid "My report: \\\"_%mod_\\\""
+msgstr ""
+
+msgid "My report"
+msgstr ""
+
+msgid "My answer:"
+msgstr ""
+
+msgid "My Drive"
+msgstr ""
+
+msgid "Multiple text objects"
+msgstr ""
+
+msgid "Multiple objects"
+msgstr ""
+
+msgid "Multiple ink objects"
+msgstr ""
+
+msgid "More providers coming soon!"
+msgstr ""
+
+msgid "Missing or invalid information"
+msgstr ""
+
+msgid "Messaging"
+msgstr ""
+
+msgid "Manager"
+msgstr ""
+
+msgid "Lowercase Theta"
+msgstr ""
+
+msgid "Lowercase Tau"
+msgstr ""
+
+msgid "Lowercase Rho"
+msgstr ""
+
+msgid "Lowercase Pi"
+msgstr ""
+
+msgid "Lowercase Omega"
+msgstr ""
+
+msgid "Lowercase Nu"
+msgstr ""
+
+msgid "Lowercase Mu"
+msgstr ""
+
+msgid "Lowercase Lambda"
+msgstr ""
+
+msgid "Lowercase Gamma"
+msgstr ""
+
+msgid "Lowercase Epsilon"
+msgstr ""
+
+msgid "Lowercase Delta"
+msgstr ""
+
+msgid "Lowercase Beta"
+msgstr ""
+
+msgid "Lowercase Alpha"
+msgstr ""
+
+msgid "Looks like we can't get any information about this content."
+msgstr ""
+
+msgid "Look for this icon next to the workspace title. It indicates that the current workspace has handouts associated with it. Press the icon to see the controls for viewing the handouts."
+msgstr ""
+
+msgid "Login error"
+msgstr ""
+
+msgid "Locked by:"
+msgstr ""
+
+msgid "Loading results..."
+msgstr ""
+
+msgid "Loading class information..."
+msgstr ""
+
+msgid "Loading assessment..."
+msgstr ""
+
+msgid "Load more messages..."
+msgstr ""
+
+msgid "Link to share"
+msgstr ""
+
+msgid "Lesson plans and resources for your SMART Board"
+msgstr ""
+
+msgid "Less Than or Equal To"
+msgstr ""
+
+msgid "Legal banner not found"
+msgstr ""
+
+msgid "Left Pointing Arrow"
+msgstr ""
+
+msgid "Last modified"
+msgstr ""
+
+msgid "Last edited: _%mod_"
+msgstr ""
+
+msgid "Last edited by"
+msgstr ""
+
+msgid "Joining class..."
+msgstr ""
+
+msgid "Join a class"
+msgstr ""
+
+msgid "Join Class"
+msgstr ""
+
+msgid "Integral"
+msgstr ""
+
+msgid "Instant poll"
+msgstr ""
+
+msgid "Instant Polling"
+msgstr ""
+
+msgid "Insert a Question"
+msgstr ""
+
+msgid "Information required"
+msgstr ""
+
+msgid "Infinity"
+msgstr ""
+
+msgid "Individuals"
+msgstr ""
+
+msgid "Individual Contributor"
+msgstr ""
+
+msgid "Import pages of <i>_%mod_</i>"
+msgstr ""
+
+msgid "Import Classes"
+msgstr ""
+
+msgid "If you stop this assessment, students won't be able to answer any more questions."
+msgstr ""
+
+msgid "If you have a SMART amp subscription, it might not be activated yet. Make sure you're signed in to the appropriate Google account or contact your Google Apps administrator."
+msgstr ""
+
+msgid "Identical To"
+msgstr ""
+
+msgid "IE 10+"
+msgstr ""
+
+msgid "How to Use Educational Content in SMART amp"
+msgstr ""
+
+msgid "Highlight all participants"
+msgstr ""
+
+msgid "Hide handouts"
+msgstr ""
+
+msgid "Hide Handouts"
+msgstr ""
+
+msgid "Hi _%mod_!"
+msgstr ""
+
+msgid "Have participants enter the temporary code _%mod_ or tap the QR code to let them scan it"
+msgstr ""
+
+msgid "Have participants enter the temporary code "
+msgstr ""
+
+msgid "Handouts of <i>_%mod_</i>"
+msgstr ""
+
+msgid "Handouts from:"
+msgstr ""
+
+msgid "Handing Out Copies"
+msgstr ""
+
+msgid "Hand out copies to individuals"
+msgstr ""
+
+msgid "Hand out copies to groups"
+msgstr ""
+
+msgid "Hand out copies of others' workspace"
+msgstr ""
+
+msgid "Hand out copies of a student's workspace"
+msgstr ""
+
+msgid "Hand out copies failed"
+msgstr ""
+
+msgid "Hand out copies"
+msgstr ""
+
+msgid "Hand out again"
+msgstr ""
+
+msgid "Hand Out Copies"
+msgstr ""
+
+msgid "Groups of _%mod_"
+msgstr ""
+
+msgid "Group Set Name:"
+msgstr ""
+
+msgid "Greek Characters"
+msgstr ""
+
+msgid "Greater Than or Equal To"
+msgstr ""
+
+msgid "Gradient Operator"
+msgstr ""
+
+msgid "Google users"
+msgstr ""
+
+msgid "Google doesn't seem to be responding. Check your network connection and try again."
+msgstr ""
+
+msgid "Google Drive is slow to respond. This may affect your ability to open, create, and share workspaces. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Google Drive is not responding. This prevents you from opening, creating, and sharing workspaces. We have reported the issue to Google and are working with them to fix the problem."
+msgstr ""
+
+msgid "Google Drive File Access"
+msgstr ""
+
+msgid "Google Domain Policy Violation"
+msgstr ""
+
+msgid "Go to workspaces"
+msgstr ""
+
+msgid "Go to Class"
+msgstr ""
+
+msgid "Give all participants View access"
+msgstr ""
+
+msgid "Give all participants Edit access"
+msgstr ""
+
+msgid "Getting Set Up"
+msgstr ""
+
+msgid "Get more"
+msgstr ""
+
+msgid "Generate a new QR code"
+msgstr ""
+
+msgid "Four Fifths"
+msgstr ""
+
+msgid "Following _%mod_"
+msgstr ""
+
+msgid "Follow Me"
+msgstr ""
+
+msgid "Five Sixths"
+msgstr ""
+
+msgid "Five Eighths"
+msgstr ""
+
+msgid "Firefox 22+"
+msgstr ""
+
+msgid "Filtering temporarily disabled"
+msgstr ""
+
+msgid "Fill groups with:"
+msgstr ""
+
+msgid "Feature settings"
+msgstr ""
+
+msgid "Feature Settings"
+msgstr ""
+
+msgid "Feature Overview"
+msgstr ""
+
+msgid "Exporting template to My Drive..."
+msgstr ""
+
+msgid "Export workspace as template"
+msgstr ""
+
+msgid "Export this workspace as a template"
+msgstr ""
+
+msgid "Executive"
+msgstr ""
+
+msgid "Examples: -3.14, 11, 2/3"
+msgstr ""
+
+msgid "Error: _%mod_"
+msgstr ""
+
+msgid "Equilibrium Arrow"
+msgstr ""
+
+msgid "Enter or paste one or more email addresses separated by commas or semicolons."
+msgstr ""
+
+msgid "Enter a valid email address."
+msgstr ""
+
+msgid "Enter a question:"
+msgstr ""
+
+msgid "Enter a new name:"
+msgstr ""
+
+msgid "Enter a new class name. Leave this box blank to keep the original class name."
+msgstr ""
+
+msgid "Enter a folder name:"
+msgstr ""
+
+msgid "Enter a class name:"
+msgstr ""
+
+msgid "Ensure that the file hasn't been deleted and that you have permission to view it."
+msgstr ""
+
+msgid "Ensure that the assessment hasn't been deleted or published and that you have edit permissions, and then try again."
+msgstr ""
+
+msgid "End of assessment"
+msgstr ""
+
+msgid "End Follow Me"
+msgstr ""
+
+msgid "Empty groups"
+msgstr ""
+
+msgid "Empty Groups"
+msgstr ""
+
+msgid "Email couldn't be added because its domain has not been given access to SMART amp."
+msgstr ""
+
+msgid "Email addresses added during the trial period must have the same domain as the teacher."
+msgstr ""
+
+msgid "Email"
+msgstr ""
+
+msgid "Edit assessment"
+msgstr ""
+
+msgid "Edit a class"
+msgstr ""
+
+msgid "Edit Class"
+msgstr ""
+
+msgid "Each student or student group will receive a copy of this workspace, and all the copies will be saved to a folder that you own. The original workspace won't change."
+msgstr ""
+
+msgid "Duplicating Workspace"
+msgstr ""
+
+msgid "Duplicate emails have been removed."
+msgstr ""
+
+msgid "Due to their screen size we do not currently support smartphones for use with SMART amp"
+msgstr ""
+
+msgid "Drop assigned students here to remove them from their group."
+msgstr ""
+
+msgid "Drag unassigned students here to assign them to the group."
+msgstr ""
+
+msgid "Downward Pointing Arrow"
+msgstr ""
+
+msgid "Double-click or drag text from the gallery below."
+msgstr ""
+
+msgid "Double-click or drag shapes and lines from the gallery below."
+msgstr ""
+
+msgid "Double Headed Up/Down Arrow"
+msgstr ""
+
+msgid "Don't see your provider?"
+msgstr ""
+
+msgid "Do you want to create random groups and replace all current groups?"
+msgstr ""
+
+msgid "Do you want to clear them?"
+msgstr ""
+
+msgid "Do you want to assign more students or remove the empty groups and continue handing out copies?"
+msgstr ""
+
+msgid "Do you have a content provider in your community that you would like us to work with? Tell us about it in our ideas forum!\\nThe ideas forum is a place where SMART users from around the world can share ideas for improving SMART products and vote on each other's ideas. It's a great way to influence what we do at SMART."
+msgstr ""
+
+msgid "Division"
+msgstr ""
+
+msgid "Discard changes"
+msgstr ""
+
+msgid "Derivative"
+msgstr ""
+
+msgid "Deleting..."
+msgstr ""
+
+msgid "Delete this object"
+msgstr ""
+
+msgid "Delete selected files"
+msgstr ""
+
+msgid "Delete participants:"
+msgstr ""
+
+msgid "Delete class"
+msgstr ""
+
+msgid "Delete Permanently"
+msgstr ""
+
+msgid "Delete Files"
+msgstr ""
+
+msgid "Delete Class"
+msgstr ""
+
+msgid "Degrees"
+msgstr ""
+
+msgid "Curriculum Coordinator"
+msgstr ""
+
+msgid "Currently, there are no assessments available to view."
+msgstr ""
+
+msgid "Creating random groups will discard all your changes."
+msgstr ""
+
+msgid "Creating page thumbnails"
+msgstr ""
+
+msgid "Creating new folder <strong>_%mod_</strong> and _%mod_ new workspace copies..."
+msgstr ""
+
+msgid "Creating and sharing workspace copies..."
+msgstr ""
+
+msgid "Creating and Sharing"
+msgstr ""
+
+msgid "Creating an Assessment"
+msgstr ""
+
+msgid "Creating a Workspace"
+msgstr ""
+
+msgid "Creating a New Workspace from Template"
+msgstr ""
+
+msgid "Creating a Class"
+msgstr ""
+
+msgid "Created by"
+msgstr ""
+
+msgid "Create workspace"
+msgstr ""
+
+msgid "Create new workspace"
+msgstr ""
+
+msgid "Create and Share"
+msgstr ""
+
+msgid "Create a class to easily connect with your students. Students join your class for the first time using a six-digit code."
+msgstr ""
+
+msgid "Create a class"
+msgstr ""
+
+msgid "Create a Workspace"
+msgstr ""
+
+msgid "Create Template"
+msgstr ""
+
+msgid "Create New Workspace"
+msgstr ""
+
+msgid "Create Class"
+msgstr ""
+
+msgid "Create And Replace"
+msgstr ""
+
+msgid "Copy saved. Find it here:"
+msgstr ""
+
+msgid "Copies will be stored here:"
+msgstr ""
+
+msgid "Copies that have already been handed out will be unshared and deleted."
+msgstr ""
+
+msgid "Connecting to your class&hellip;"
+msgstr ""
+
+msgid "Congruent To"
+msgstr ""
+
+msgid "Confirm stopping and deleting copies"
+msgstr ""
+
+msgid "Confirm continuing with failed copies"
+msgstr ""
+
+msgid "Confirm Creating Random Groups"
+msgstr ""
+
+msgid "Concept Map 2"
+msgstr ""
+
+msgid "Concept Map 1"
+msgstr ""
+
+msgid "Communication issues"
+msgstr ""
+
+msgid "Collaborate in a new or existing workspace."
+msgstr ""
+
+msgid "Collaborate in a new or existing workspace or share files with your teacher or class."
+msgstr ""
+
+msgid "Collaborate in a new or existing workspace or share files with your students."
+msgstr ""
+
+msgid "Close editor"
+msgstr ""
+
+msgid "Clear all Groups"
+msgstr ""
+
+msgid "Clear Answer"
+msgstr ""
+
+msgid "Class report: \\\"_%mod_\\\" "
+msgstr ""
+
+msgid "Class report"
+msgstr ""
+
+msgid "Class Dashboard Overview"
+msgstr ""
+
+msgid "Chrome"
+msgstr ""
+
+msgid "Check your network connection or wait a few seconds, and then tap Continue to reload the workspace."
+msgstr ""
+
+msgid "Check that your Google Drive settings are enabled and then sign in again."
+msgstr ""
+
+msgid "Channel: Show all"
+msgstr ""
+
+msgid "Channel: Khan Academy"
+msgstr ""
+
+msgid "Change Answer"
+msgstr ""
+
+msgid "Cannot open template"
+msgstr ""
+
+msgid "Cannot import template"
+msgstr ""
+
+msgid "Blank Template"
+msgstr ""
+
+msgid "Back to workspace"
+msgstr ""
+
+msgid "Back to _%mod_"
+msgstr ""
+
+msgid "Back to Home Page"
+msgstr ""
+
+msgid "Back to Dashboard"
+msgstr ""
+
+msgid "Back to Class"
+msgstr ""
+
+msgid "Automatically bring the selected students into the workspace"
+msgstr ""
+
+msgid "Automatically bring all students into their copies."
+msgstr ""
+
+msgid "Automatically bring all students into the workspace."
+msgstr ""
+
+msgid "Attempt _%mod_ of _%mod_"
+msgstr ""
+
+msgid "Assigned Students"
+msgstr ""
+
+msgid "Assign Students"
+msgstr ""
+
+msgid "Assessments are slow to respond. This may affect your ability to create, edit, or publish a question set. We are working hard to fix the problem."
+msgstr ""
+
+msgid "Assessments are not responding. This prevents you from creating, editing, or publishing a question set. We are working hard to fix the problem."
+msgstr ""
+
+msgid "Assessment title"
+msgstr ""
+
+msgid "Assessment is paused"
+msgstr ""
+
+msgid "Assessment has stopped"
+msgstr ""
+
+msgid "Assess"
+msgstr ""
+
+msgid "Ask and answer"
+msgstr ""
+
+msgid "Arrows"
+msgstr ""
+
+msgid "Are you sure you want to stop handing out copies?"
+msgstr ""
+
+msgid "Are you sure you want to start this question?<br/><br/>Starting this question clears the current results and responses (and you can't undo it)."
+msgstr ""
+
+msgid "Are you sure you want to discard your changes?"
+msgstr ""
+
+msgid "Are you sure you want to delete this class? Deleting this class removes all students from the class (and you can't undo it)."
+msgstr ""
+
+msgid "Are you sure you want to delete these files?"
+msgstr ""
+
+msgid "Are you sure you want to delete the class _%mod_? Deleting this class removes all students from the class (and you can't undo it)."
+msgstr ""
+
+msgid "Are you sure you want to create a new question?<br/><br/>Creating a new question clears the current question, results and responses (and you can't undo it)."
+msgstr ""
+
+msgid "Approximately Equal To"
+msgstr ""
+
+msgid "Anyone can unlock"
+msgstr ""
+
+msgid "Answer the new instant poll questions!"
+msgstr ""
+
+msgid "Answer the new instant poll question!"
+msgstr ""
+
+msgid "Answer is not case sensitive"
+msgstr ""
+
+msgid "Answer is case sensitive"
+msgstr ""
+
+msgid "Another workspace has the same name. Enter a different name."
+msgstr ""
+
+msgid "Another participant has started editing this text."
+msgstr ""
+
+msgid "Anonymous User"
+msgstr ""
+
+msgid "Angle"
+msgstr ""
+
+msgid "An error occurred while deleting this student. "
+msgstr ""
+
+msgid "An error occurred while deleting the class. Refresh the page and try again."
+msgstr ""
+
+msgid "An error occurred while communicating with the server. Please try again."
+msgstr ""
+
+msgid "An error occured while trying to connect to the assessment service, check your internet connect and try refreshing the page."
+msgstr ""
+
+msgid "Almost ready! If your workspace contains an assessment, you have to publish it in each shared file before students can answer."
+msgstr ""
+
+msgid "Allow students to view the copies of other students or groups."
+msgstr ""
+
+msgid "Allow Editing"
+msgstr ""
+
+msgid "All students are following"
+msgstr ""
+
+msgid "All participants have View access"
+msgstr ""
+
+msgid "All participants can edit file"
+msgstr ""
+
+msgid "All copies have been handed out."
+msgstr ""
+
+msgid "All connected students will see this question once you start it."
+msgstr ""
+
+msgid "Admin subscription app"
+msgstr ""
+
+msgid "Addition"
+msgstr ""
+
+msgid "Adding data to new files - _%mod_/_%mod_ completed..."
+msgstr ""
+
+msgid "Adding Images to a Workspace"
+msgstr ""
+
+msgid "Add yourself to a class by entering the six digit class code provided by your teacher. When your teacher finishes creating or editing the class, you can select it above."
+msgstr ""
+
+msgid "Add web content"
+msgstr ""
+
+msgid "Add videos"
+msgstr ""
+
+msgid "Add participants:"
+msgstr ""
+
+msgid "Add images from your device."
+msgstr ""
+
+msgid "Add images"
+msgstr ""
+
+msgid "Add files"
+msgstr ""
+
+msgid "Add an assessment to your workspace. Students' answers are saved in a class report."
+msgstr ""
+
+msgid "Add Questions"
+msgstr ""
+
+msgid "About SMART amp"
+msgstr ""
+
+msgid "Abc"
+msgstr ""
+
+msgid "<strong>_%mod_</strong> was exported to My Drive."
+msgstr ""
+
+msgid "<a id='learn-more-link' class='weblink'>_%mod_</a> about using content from leading educational providers."
+msgstr ""
+
+msgid "< Back to Workspace"
+msgstr ""
+
+msgid "*This information is required. Enter a title before you save or publish."
+msgstr ""
+
+msgid "(unpublished)"
+msgstr ""
+
+msgid "(not connected)"
+msgstr ""
+
+msgid "(Teacher)"
+msgstr ""
+
+msgid "(Teacher and Owner)"
+msgstr ""
+
+msgid "(Skipped)"
+msgstr ""
+
+msgid "(Owner)"
+msgstr ""
+
+msgid "&ndash; Class average _%mod_%"
+msgstr ""
+
+msgid "%"
+msgstr ""
+
+msgid " _%mod_ workspaces with you"
+msgstr ""
+
+msgid " _%mod_ with you"
+msgstr ""
