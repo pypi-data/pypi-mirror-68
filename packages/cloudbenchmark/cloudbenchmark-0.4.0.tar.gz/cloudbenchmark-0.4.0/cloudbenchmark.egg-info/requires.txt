@@ -1,0 +1,8 @@
+boto3
+numpy
+tqdm
+pandas
+requests
+blessings
+pyyaml
+cython
