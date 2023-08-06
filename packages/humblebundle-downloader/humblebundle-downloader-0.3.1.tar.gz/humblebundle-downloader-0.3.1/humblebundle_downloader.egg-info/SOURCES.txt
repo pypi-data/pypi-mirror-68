@@ -1,0 +1,12 @@
+README.md
+setup.py
+humblebundle_downloader/__init__.py
+humblebundle_downloader/_version.py
+humblebundle_downloader/cli.py
+humblebundle_downloader/download_library.py
+humblebundle_downloader.egg-info/PKG-INFO
+humblebundle_downloader.egg-info/SOURCES.txt
+humblebundle_downloader.egg-info/dependency_links.txt
+humblebundle_downloader.egg-info/entry_points.txt
+humblebundle_downloader.egg-info/requires.txt
+humblebundle_downloader.egg-info/top_level.txt

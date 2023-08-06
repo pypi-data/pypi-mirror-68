@@ -1,0 +1,3 @@
+[console_scripts]
+hbd = humblebundle_downloader.cli:cli
+
