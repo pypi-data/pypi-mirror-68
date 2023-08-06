@@ -1,0 +1,8 @@
+pytest_envvars/__init__.py,sha256=xEHI3JwJkUpD-jMeCikbYKgiOz1QkfA-cE0rr7_fIUs,2675
+pytest_envvars/django_utils.py,sha256=YDLnrlj8p5h0MusQ3rjIQpJd6XijO8nY8wxiL44Me9o,5686
+pytest_envvars-1.1.0.dist-info/LICENSE,sha256=p9c39lxGcgU6HfeTaRVw9hnu8l4Qtw_sGBTGY5AEmMs,1089
+pytest_envvars-1.1.0.dist-info/METADATA,sha256=1fZOVQIFm7jVDIs__sPtEMT-QRolho_TwoMcebxgJlc,2265
+pytest_envvars-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytest_envvars-1.1.0.dist-info/entry_points.txt,sha256=2DqE-zxaawJhr8UVDOb1T1wB_Ytj4bHyFsZ1wms5Js8,37
+pytest_envvars-1.1.0.dist-info/top_level.txt,sha256=Ki9tvjHsP3lLKKWuqTLAnwEOzis6zgOwqPTZmORq9TQ,15
+pytest_envvars-1.1.0.dist-info/RECORD,,
