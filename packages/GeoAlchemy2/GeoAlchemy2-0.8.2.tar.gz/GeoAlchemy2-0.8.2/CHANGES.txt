@@ -1,0 +1,156 @@
+GeoAlchemy 2 Changelog
+======================
+
+0.8.2
+-----
+
+* Fix __eq__() method in _SpatialElement so it can work with any type @adrien-berchet (#265)
+
+0.8.1
+-----
+
+* Fix ReadTheDoc compilation @adrien-berchet
+
+0.8.0
+-----
+
+* Fix Shapely requirements for Pypy @adrien-berchet (#262)
+* Add a gallery with tests and doc based on examples given in #219, #244 and #251 @adrien-berchet (#260)
+* Add support of the feature version of St_AsGeoJson() @adrien-berchet @zzzeek (#258)
+* Add __eq__ to WKBElement and make shape.from_shape() able to create extended elements @adrien-berchet matthew-emw (#247)
+* Extract all SQL concepts from Elements and refactor Raster type @adrien-berchet @elemoine @zzzeek (#256)
+
+0.7.0
+-----
+
+* Update test matrix removing Python 3.4 and adding 3.6, 3.7, 3.8 @cjmayo (#253)
+* Add reflection example in doc @adrien-berchet (#252)
+* Fix tests with PostGIS 3 @elemoine (#250)
+* Add default compilation rules to elements and functions which are required for SQLAlchemy < 1.1 @adrien-berchet (#242)
+* Raise an AttributeError when a function does not starts with ST_* @adrien-berchet @elemoine (#240)
+* Replace ST_Distance_Sphere by ST_DistanceSphere @borisuvarov (#237)
+* Make shape.to_shape() work for extended WKTElement objects @adrien-berchet (#236)
+
+0.6.3
+-----
+
+* Add some missing functions @adrien-berchet (#224)
+* Do not register functions.GenericFunction for sqlalchemy>=1.3.4 @adrien-berchet (#226)
+* Redefine the geometry_type/dimension consistency checks @elemoine (#228)
+* Correct a spelling mistake @EdwardBetts (#229)
+* Do not assume the "public" schema @elemoine (#231)
+* Add all geometry constructors @adrien-berchet (#232)
+
+0.6.2
+-----
+
+* Support WKBElement objects as bind values @elemoine (#221)
+* Document the use of spatial functions in primaryjoin conditions @elemoine (#222)
+
+0.6.1
+-----
+
+* Change WKBElement to read SRID from the EWKB string @SergeBouchut (#209)
+* Change WKTElement to read SRID from the EWKT string @adrien-berchet @elemoine (#211)
+
+0.6.0
+-----
+
+* Add AsGeoJSON for SpatiaLite @TomGoBravo @elemoine (#204)
+* Remove the use_st_prefix argument and use SpatiaLite-compiled functions @elemoine (#204)
+
+0.5.0
+-----
+
+* Add support for function ST_Azimuth @simlmx (#175)
+* Remove Python 3.3 from the test matrix @elemoine (#179)
+* Correct spelling mistakes @EdwardBetts @elemoine (#180)
+* Make WKTElement and WKBElement pickable @elemoine (#182)
+* Add SpatiaLite support @elemoine (#181)
+* Fix to_shape with SpatiaLite @elemoine (#185)
+
+0.4.2
+-----
+
+* Fix ST_LineLocatePoint return type @fredj (#170)
+
+0.4.1
+-----
+
+* Fix docstring for overlaps_or_above @dcere (#166)
+* Add a WKTElement extended example @movermeyer (#164)
+* Add checks to _GISType constructor @elemoine (#162)
+* Support geometry column with no typmod @elemoine (#161)
+* Add ST_AsTWKB function. @JacobHayes (#146)
+* Create MANIFEST.in. @pmlandwher (#147)
+* Fix build_sphinx maximum recursion depth. @ifedapoolarewaju (#148)
+* Fix typo in elements code. @elemoine (#153)
+
+#153 fixed a typo in the _SpatialElement class, where the attribute "extended"
+was incorrectly spelled "extented". So if your application code refers to this
+attribute on WKTElement or WKBElement objects you will need that code as well.
+
+0.4.0
+-----
+
+* Adapt links for "Read the Docs". @adamchainz (#134)
+* Simplify and fix tests. @elemoine (#138)
+* Set result_type when using operators. @elemoine (#140)
+* Add use_typmod option for AddGeometryColumn. @tsauerwein (#141)
+
+0.3.0
+-----
+
+* Read geometries with ST_AsEWKB. @loicgasser, @fredj, @elemoine (#122)
+* Fix SpatialElement.__str__ on Python 3 @b11z, @elemoine (#130)
+* Fix flake8 in tests @loicgrasser (#125)
+
+0.2.6
+-----
+
+* Distribute GeoAlchemy as wheels (#114)
+
+0.2.5
+-----
+
+* PyPy Support (#79)
+* Wrap column name in double-quotes (#83)
+* Add ST_Z, ST_AsEWKB and ST_AsEWKT functions (#91)
+* Python 3 Support (#99)
+* Travis config changes (#100, #102)
+
+0.2.4
+-----
+
+* SQLAlchemy 0.9.4 compatibility. @quiqua (#75 and #76)
+
+0.2.3
+-----
+
+* Add ST_Simplify. @nik-cars (#68)
+* SQLAlchemy 0.9 compatibility. @ilj (#59)
+
+0.2.2
+-----
+
+* Support EWKT and working with DBAPI's executemany(). Addresses issues
+  reported by @pgiraud. @elemoine (#62)
+
+0.2.1
+-----
+
+* Fix bug where AddGeometryColumn and DropGeometryColumn were not given
+  the actual schema of the table @dolfandringa (#55)
+
+0.2
+---
+
+* ST_Dump support @Turbo87 (#18)
+* Use of Travis CI and coveralls.io @Turbo87
+* New doc theme, new logo @Turbo87 (#23)
+* PostGIS 2 Raster support @Turbo87 (#25)
+
+0.1
+---
+
+* Initial release (PostGIS 2 support, Geometry et Geography types)
