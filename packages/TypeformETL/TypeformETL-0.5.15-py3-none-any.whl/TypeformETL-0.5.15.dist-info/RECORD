@@ -1,0 +1,11 @@
+Typeform/__init__.py,sha256=5w9FAbu6fDbFlGPvc-gCd8wBa9l-TpEVtnOaIGx3t2o,21719
+TypeformETL/__init__.py,sha256=X0D0LfmLVwM9xtVosFNLJNnkG6gei1pXhATKG6wHoWg,19345
+TypeformETL/__main__.py,sha256=caL0eGUCctoz0VRjUDlBdGpP2XxFo8Jk1QgZVyWDN_k,3282
+TypeformETL-0.5.15.data/data/share/TypeformETL/examples/NPS Analysis.ipynb,sha256=SGz7MwcvQVlvH-KnMHfCmh5XFsJNIA16lYqKHTBzVpc,14807
+TypeformETL-0.5.15.data/data/share/TypeformETL/examples/datamodel.sql,sha256=2upNdUJChdeDS2RtbEinxqhwAI19ZmBgkv_LLMy0XW4,8032
+TypeformETL-0.5.15.data/data/share/TypeformETL/examples/syncFromTypeform.conf.example,sha256=RyRhM3H6wrRaU3CDtGcyHi6Ai0ggaIOvktXQkvhmlCk,210
+TypeformETL-0.5.15.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+TypeformETL-0.5.15.dist-info/METADATA,sha256=U0CfUTSduB7QQIsIM9Nlr5ttffOJgETD7mKBhurEzZ8,10053
+TypeformETL-0.5.15.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+TypeformETL-0.5.15.dist-info/top_level.txt,sha256=uSuSmfBBbGa2eC46EyvH_p6E5YAjYxniJZ1QGeMTrHE,12
+TypeformETL-0.5.15.dist-info/RECORD,,
