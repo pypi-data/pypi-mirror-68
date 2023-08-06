@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lama-phenotype-detection
+Version: 0.9.35
+Summary: Phenotype detection pipeline for finding abnormalities in mouse embryos
+Home-page: https://github.com/mpi2/LAMA
+Author: Neil Horner
+Author-email: n.horner@har.mrc.ac.uk, bit@har.mrc.ac.uk
+License: Apache2
+Download-URL: https://github.com/mpi2/lama/archive/0.9.4.tar.gz
+Keywords: image processing,bioinformatics,phenotype
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: appdirs
+Requires-Dist: matplotlib (>=2.2.0)
+Requires-Dist: numpy (>=1.15.0)
+Requires-Dist: pandas (>=0.23.4)
+Requires-Dist: scikit-learn (>=0.19.2)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: scikit-image (>=0.15.0)
+Requires-Dist: seaborn (>=0.9.0)
+Requires-Dist: statsmodels (>=0.9.0)
+Requires-Dist: PyYAML (>=3.13)
+Requires-Dist: SimpleITK (>=1.1.0)
+Requires-Dist: filelock
+Requires-Dist: psutil
+Requires-Dist: logzero
+Requires-Dist: addict
+Requires-Dist: toml
+Requires-Dist: pynrrd
+Requires-Dist: pytest
+Provides-Extra: dev
+Requires-Dist: pyradiomics ; extra == 'dev'
+
+UNKNOWN
+
+
