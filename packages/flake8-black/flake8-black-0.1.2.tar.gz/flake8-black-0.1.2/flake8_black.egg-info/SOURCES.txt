@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.rst
+flake8_black.py
+requirements.txt
+setup.cfg
+setup.py
+flake8_black.egg-info/PKG-INFO
+flake8_black.egg-info/SOURCES.txt
+flake8_black.egg-info/dependency_links.txt
+flake8_black.egg-info/entry_points.txt
+flake8_black.egg-info/requires.txt
+flake8_black.egg-info/top_level.txt
