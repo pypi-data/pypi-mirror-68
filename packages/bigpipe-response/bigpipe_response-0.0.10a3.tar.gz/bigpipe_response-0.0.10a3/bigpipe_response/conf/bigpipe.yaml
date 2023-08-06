@@ -1,0 +1,57 @@
+bigpipe:
+  rendered_output_path: null
+  static_uri: null
+  is_production_mode: null
+  rendered_output_container: component_cache
+
+  java_script_install_folder: null
+
+  remote:
+    port_start: 7480
+    port_count: 10
+    extra_node_packages: []
+
+  javascript:
+    default_processor: jsx
+    bundle_link_dependencies: true
+    dom_bind: bigpipe_response.javascript_dom_bind.react_dom_bind.ReactDomBind
+  css:
+    default_processor: css
+    bundle_link_dependencies: true
+    complete_dependencies_by_js: true
+  i18n:
+    default_processor: i18n
+
+  processors:
+    jsx:
+      class: bigpipe_response.processors.remote_js_file_processor.RemoteJsFileProcessor
+      params:
+        processor_name: jsx
+        javascript_handler: bigpipe_response.processors.RollupReactProcessor.js
+        source_paths: null
+        source_ext:
+          - js
+          - jsx
+        target_ext: js
+        exclude_dir: node_modules
+
+    js_modules:
+      class: bigpipe_response.processors.remote_js_processor.RemoteJsProcessor
+      params:
+        processor_name: js_modules
+        javascript_handler: bigpipe_response.processors.WebpackModuleProcessor.js
+        target_ext: js
+
+    css:
+      class: bigpipe_response.processors.css_processor.CSSProcessor
+      params:
+        processor_name: css
+        source_paths: none
+        source_ext:
+          - scss
+        target_ext: css
+
+    i18n:
+      class: bigpipe_response.processors.i18n_processor.I18nProcessor
+      params:
+        processor_name: i18n

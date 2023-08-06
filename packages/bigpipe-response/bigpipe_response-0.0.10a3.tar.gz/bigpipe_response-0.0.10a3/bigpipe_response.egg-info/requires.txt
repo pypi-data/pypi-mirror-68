@@ -1,0 +1,7 @@
+django
+libsass
+watchdog
+ansi2html
+requests
+pre-commit
+hydra-core
