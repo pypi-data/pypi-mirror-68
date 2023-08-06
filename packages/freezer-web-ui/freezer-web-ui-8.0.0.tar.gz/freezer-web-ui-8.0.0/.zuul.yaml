@@ -1,0 +1,27 @@
+- project:
+    templates:
+      - check-requirements
+      - horizon-non-primary-django-jobs
+      - openstack-lower-constraints-jobs
+      - openstack-python3-ussuri-jobs
+    check:
+      jobs:
+        - freezer-web-ui-ubuntu
+        - openstack-tox-pylint
+    gate:
+      jobs:
+        - openstack-tox-pylint
+
+- job:
+    name: freezer-web-ui-ubuntu
+    parent: legacy-dsvm-base
+    run: playbooks/legacy/freezer-web-ui-ubuntu/run.yaml
+    post-run: playbooks/legacy/freezer-web-ui-ubuntu/post.yaml
+    timeout: 7800
+    required-projects:
+      - openstack/devstack-gate
+      - openstack/freezer
+      - openstack/freezer-api
+      - openstack/freezer-web-ui
+      - openstack/python-freezerclient
+
