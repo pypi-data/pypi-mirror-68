@@ -1,0 +1,14 @@
+-r base.txt
+
+black
+bpython
+flake8
+guzzle_sphinx_theme
+pip
+pylama
+pytest
+pytest-cov
+setuptools
+sphinx
+twine
+wheel
