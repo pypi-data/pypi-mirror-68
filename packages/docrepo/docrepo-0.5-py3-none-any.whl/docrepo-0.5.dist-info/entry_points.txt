@@ -1,0 +1,4 @@
+[console_scripts]
+docrepo = docrepo:main
+initgitdoc = initgitdoc:main
+
