@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aws-whoami
+Version: 0.1.0
+Summary: Shows what AWS account and identity you're using
+License: Apache-2.0
+Author: Ben Kehoe
+Author-email: ben@kehoe.io
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: boto3
