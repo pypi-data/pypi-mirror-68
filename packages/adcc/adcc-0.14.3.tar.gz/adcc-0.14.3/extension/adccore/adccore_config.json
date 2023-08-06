@@ -1,0 +1,5 @@
+{
+    "version":   "0.13.7",
+    "libraries": ["adccore"],
+    "platform": "linux_x86_64"
+}

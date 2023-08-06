@@ -1,0 +1,12 @@
+pybind11>=2.2
+numpy>=1.14
+scipy>=1.2
+matplotlib>=3.0
+h5py>=2.9
+tqdm>=4.30
+
+[build_docs]
+sphinx>=2
+breathe
+sphinxcontrib-bibtex
+sphinx-automodapi
