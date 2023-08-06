@@ -1,0 +1,5 @@
+[pantsbuild.plugin]
+build_file_aliases = pants.contrib.thrifty.register:build_file_aliases
+register_goals = pants.contrib.thrifty.register:register_goals
+targets2 = pants.contrib.thrifty.register:targets2
+
