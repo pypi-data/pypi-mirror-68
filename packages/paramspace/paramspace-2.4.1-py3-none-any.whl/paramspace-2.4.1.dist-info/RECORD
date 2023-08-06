@@ -1,0 +1,12 @@
+paramspace/__init__.py,sha256=EUkx1VQ-iebKIbgCPA-7Xp8gxz3D75PkLHHBFYkh2OI,800
+paramspace/paramdim.py,sha256=FP2jnR90UG-wDbCc7Ulk6IEfdzDSE0gf8kBhq3qxAfs,38377
+paramspace/paramspace.py,sha256=vRSDSOYXqR024IY7KVaI4YvUmPP62xsZ0BnJ2-by-V4,53805
+paramspace/tools.py,sha256=TzSWoSrJIgQuPCirpllOcWzUsE4sbXyXlR2LMUR1ygY,18360
+paramspace/yaml.py,sha256=wC1aOAoB6j2yUvrLpynKC2cLMJEY1J0cShzhBIKNzZE,2681
+paramspace/yaml_constructors.py,sha256=jgjukspVtqNXMmlzJteTl8LHQSwvdBPohk2h6OeFwJ0,7211
+paramspace/yaml_representers.py,sha256=V_-8e0HJQlWYWj5qfvHRsLJzMD1JJ2SbeJHkI3Bm3W0,1168
+paramspace-2.4.1.dist-info/LICENCE,sha256=lyBbd743lCJ_0no55YLZt3MQe-0gqj-y8LXXPxz4EsI,1330
+paramspace-2.4.1.dist-info/METADATA,sha256=Q7BWvn3S0VgKbJuEZoeZQly4zPmfrJd-m26fNuHEL0M,3780
+paramspace-2.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+paramspace-2.4.1.dist-info/top_level.txt,sha256=S6EDkEm68iNIKF04gX4lM4cz8qtQn9UwCJO8wxoBKwY,11
+paramspace-2.4.1.dist-info/RECORD,,
