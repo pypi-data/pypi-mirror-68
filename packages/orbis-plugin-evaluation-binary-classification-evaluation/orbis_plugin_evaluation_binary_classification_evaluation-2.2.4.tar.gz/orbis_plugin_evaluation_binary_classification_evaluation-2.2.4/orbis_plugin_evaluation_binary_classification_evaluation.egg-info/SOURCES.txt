@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_evaluation_binary_classification_evaluation/__init__.py
+orbis_plugin_evaluation_binary_classification_evaluation/main.py
+orbis_plugin_evaluation_binary_classification_evaluation.egg-info/PKG-INFO
+orbis_plugin_evaluation_binary_classification_evaluation.egg-info/SOURCES.txt
+orbis_plugin_evaluation_binary_classification_evaluation.egg-info/dependency_links.txt
+orbis_plugin_evaluation_binary_classification_evaluation.egg-info/top_level.txt
