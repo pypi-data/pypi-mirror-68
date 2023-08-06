@@ -1,0 +1,11 @@
+flake8_spellcheck/__init__.py,sha256=FaFjROCfIHQzd7L3nEW8CXhY5J5y2yt-m_X6IGzi-o4,5277
+flake8_spellcheck/django.txt,sha256=v5X19YZoTAYfH2y2gXZ1OxDi7poE6WgmzvUlgK3DLdk,1903
+flake8_spellcheck/en_US.txt,sha256=ANGS1zprM3uCa9DLRh8tqL67azqP-eo9xfrXeeGC6lc,1226086
+flake8_spellcheck/python.txt,sha256=uub-iQUv8V-TvQtnCrQtK7kdxey3GsAIvYM9gOGXT5Q,1241
+flake8_spellcheck/technical.txt,sha256=JvwNORiWc_Esi__qzG03_VGQC5rJg01h15HKw-Cn1fM,571
+flake8_spellcheck-0.13.0.dist-info/LICENSE,sha256=vjYMqYMp4lDhS_QWyPhZxn-MqGDF45oVUfgZIERh6cQ,1060
+flake8_spellcheck-0.13.0.dist-info/METADATA,sha256=wP8X8uXjCc2-JuEOeWJKZpdDKazMZU-7_gRH5Zibjjo,2369
+flake8_spellcheck-0.13.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+flake8_spellcheck-0.13.0.dist-info/entry_points.txt,sha256=BUVAEcHqoG6dtqxLLNGdPenY4xViW7o7i_dP1C6rRHc,60
+flake8_spellcheck-0.13.0.dist-info/top_level.txt,sha256=Aknz7B66DVEBb02y2H2A9K2XW6WHX94i0TkqrMvVSHY,18
+flake8_spellcheck-0.13.0.dist-info/RECORD,,
