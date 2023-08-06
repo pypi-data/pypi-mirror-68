@@ -1,0 +1,11 @@
+pywandio-0.2.1.dist-info/METADATA,sha256=1OiKDt8MKC3oARNL7ECORytN9dYdLYRiMp2ORvjBQR8,335
+pywandio-0.2.1.dist-info/RECORD,,
+pywandio-0.2.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+pywandio-0.2.1.dist-info/entry_points.txt,sha256=xXA8tTwehKwVN_XgbfWO0jUKallV-93kycwgfI6j93M,140
+pywandio-0.2.1.dist-info/top_level.txt,sha256=dD7W8Mu1NY7SQxlWm6vcVaQsZzrcsnSXx2KIbDTCob4,7
+wandio/__init__.py,sha256=DgFRce6GAcVOD34dYUpC2fcIG_7VRhX7XuB-w6ljXeo,134
+wandio/compressed.py,sha256=TVNSMZGlNcVxqQCSTLqCHH-GCoT1JmA3rZyywyxJMjU,4531
+wandio/file.py,sha256=S8am6JwaRGGd6eJi9wYCIUtECZG_6rR84r4KVYDO8Lo,1588
+wandio/http.py,sha256=xLs2aXPzAQ5YrX7kN8C4AW0ry5w7puid2l_Wxn0iU5I,1048
+wandio/opener.py,sha256=6zSf36VD19eWaseNHsyZJH5vnObk5ID19Y2qEa31STQ,6343
+wandio/swift.py,sha256=lAJI9wZFDNmwHH_3ADYFA-mqiUFuAt8ihLbyg95kR_o,7038

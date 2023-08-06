@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pywandio
+Version: 0.2.1
+Summary: High-level file IO library
+Home-page: https://github.com/CAIDA/pywandio
+Author: Alistair King, Chiara Orsini, Mingwei Zhang
+Author-email: software@caida.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: python-keystoneclient
+Requires-Dist: python-swiftclient
+
+UNKNOWN
+
+
