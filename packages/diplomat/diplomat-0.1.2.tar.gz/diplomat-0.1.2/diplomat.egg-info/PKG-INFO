@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: diplomat
+Version: 0.1.2
+Summary: is the arbiter between shell scripts and commands.
+Home-page: https://gitlab.com/wobcom/diplomat
+Author: Veit Heller
+Author-email: veit.heller@port-zero.com
+License: GPLv3
+Description: # diplomat
+        
+        `diplomat` is the arbiter between shell scripts and commands. You give it
+        commands, and it gives you back diplomats that you can inquire about the
+        state of those commands, their output, and files containing their complete
+        output thus far.
+        
+        ## Installation
+        
+        ```
+        pip install diplomat
+        ```
+        
+        ## Usage
+        
+        A `Diplomat` is a high level, yet simple interface to commands and scripts.
+        You can give it shell commands as variable arguments, and it will execute
+        them asynchronously using subprocesses, writing the output into files.
+        
+        ```python
+        from diplomat import Diplomat
+        
+        diplo = Diplomat("ls", "-l", "example")
+        assert diplo.is_running()
+        
+        # we can register asynchronous exit functions, can also be provided to
+        # constructor as on_exit, along with pre_start and post_start
+        diplo.register_exit_fn(lambda x: print("Diplomat is done"))
+        
+        diplo.wait()
+        
+        output = diplo.output()
+        file_name = diplo.output_file_name()
+        diplo.has_finished()
+        ````
+        
+        Output files can also be reused by providing the `out` and `err` keyword
+        arguments to the constructor of `Diplomat`.
+        
+        An `Attachee` is an unprivileged grunt worker. It’s a read-only copy of a
+        `Diplomat`, or an interface to the files that a `Diplomat` created.
+        
+        ```python
+        from diplomat import Attachee, Diplomat
+        
+        diplo = Diplomat("ls", "-l", "example")
+        
+        diplo.wait()
+        
+        # we can create an attachee either from the diplomat directly
+        att = diplo.to_attachee()
+        
+        # or from the file names; this is useful if we saved those
+        # references somewhere, for instance in a database
+        out = diplo.output_file_name()
+        err = diplo.error_file_name()
+        att = Attachee(out, err)
+        ```
+        
+        <hr/>
+        
+        Have fun!
+        
+Keywords: shell scripting subprocess
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
