@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: HelloWorldWcy
+Version: 0.1
+Summary: This is an Example Package
+Home-page: http://example.com/HelloWorld/
+Author: Me
+Author-email: me@example.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://bugs.example.com/HelloWorld/
+Project-URL: Documentation, https://docs.example.com/HelloWorld/
+Project-URL: Source Code, https://code.example.com/HelloWorld/
+Description: UNKNOWN
+Keywords: hello world example examples
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Python Software Foundation License

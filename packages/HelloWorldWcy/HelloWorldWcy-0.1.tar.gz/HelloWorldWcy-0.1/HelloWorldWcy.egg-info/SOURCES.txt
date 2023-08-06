@@ -1,0 +1,9 @@
+say_hello.py
+setup.py
+HelloWorldWcy.egg-info/PKG-INFO
+HelloWorldWcy.egg-info/SOURCES.txt
+HelloWorldWcy.egg-info/dependency_links.txt
+HelloWorldWcy.egg-info/requires.txt
+HelloWorldWcy.egg-info/top_level.txt
+myapp/__init__.py
+myapp/great.py
