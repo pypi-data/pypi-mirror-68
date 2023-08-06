@@ -1,0 +1,7 @@
+wheel
+hyperopt<0.2
+pymongo
+prometheus_client
+
+[dev]
+tox
