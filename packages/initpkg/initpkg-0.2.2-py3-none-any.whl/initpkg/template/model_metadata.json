@@ -1,0 +1,46 @@
+[
+    {
+      "model name": "Model owner ",
+      "PMA": "AAD CoE CdX"
+    },
+    {
+      "model name": "Mdel approval ",
+      "PMA": "MAAP/MLOps"
+    },
+    {
+      "model name": "Model version ",
+      "PMA": "0.2 "
+    },
+    {
+      "model name": "Model purpose ",
+      "PMA": "Fraud detection in transaction "
+    },
+    {
+      "model name": "Model class",
+      "PMA": "D"
+    },
+    {
+      "model name": "Model monitorng responsibility ",
+      "PMA": "MLOps Circle"
+    },
+    {
+      "model name": "Fairness neede  ",
+      "PMA": "No"
+    },
+    {
+      "model name": "Explainablity needed ",
+      "PMA": "No"
+    },
+    {
+      "model name": "Data used in model",
+      "PMA": "data sources "
+    },
+    {
+      "model name": "Code repo used in model",
+      "PMA": "code repo"
+    },
+    {
+      "model name": "Metrics and statistics of model",
+      "PMA": "take it from Mlflow "
+    }
+   ]

@@ -1,0 +1,3 @@
+[console_scripts]
+initpkg = initpkg.cli:main
+
