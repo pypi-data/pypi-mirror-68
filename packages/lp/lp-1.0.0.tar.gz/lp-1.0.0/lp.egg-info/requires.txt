@@ -1,0 +1,4 @@
+ansicolors
+flask
+opencv-python
+pillow
