@@ -1,0 +1,12 @@
+binance/__init__.py,sha256=O763LJ1K_aY04CFXSxYdqtr1u0GGMIn-vizfKFj21BQ,101
+binance/client.py,sha256=FixQptPMbSikrrGeO6R1lnqyZjBfVklL90KI5VrmYXw,127757
+binance/depthcache.py,sha256=A-0LtyWnT6LD5sPQfQOnfPKZXA5PG7ZO9zBqD0rhxr0,7344
+binance/enums.py,sha256=HD2GeNUBEStJEmwU16nnjROd_TEysi2YIZkSmifzyGU,1352
+binance/exceptions.py,sha256=sArnDoZKvtGOAYk5iNLZQosJOZxwxRLBijoMfNpR6cc,2534
+binance/helpers.py,sha256=S4kauoj4vJfxeVCWTzDK3BQzqAHu_49-U6ruo25lXiQ,1548
+binance/websockets.py,sha256=DQsT42xa5JEYLqTglcbBwRMGzji7Ke_YhXbBSJw1VJs,21482
+binance_upsage-0.7.6.dist-info/LICENSE,sha256=sOZ_Wlz0vmPhfC4m212erhkaDlBxjkomFyQXwgmiR-w,1067
+binance_upsage-0.7.6.dist-info/METADATA,sha256=gjiEoQfeSGx_CBTHblSh-KLhB0PGOk6MZ8ZbIfvOCUk,1132
+binance_upsage-0.7.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+binance_upsage-0.7.6.dist-info/top_level.txt,sha256=xMXwvXpjhx_3huR75xLUk8CBjUv0g4S8-TM8cROS1HA,8
+binance_upsage-0.7.6.dist-info/RECORD,,
