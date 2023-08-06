@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pyniva
+Version: 0.4.0
+Summary: Python wrapper/API for interacting with NIVA's data platform
+Home-page: https://github.com/NIVANorge/pyniva
+Author: Zofia Rudjord
+Author-email: zofia.rudjord@niva.no
+License: MIT license
+Description: UNKNOWN
+Keywords: metadata timeseries data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

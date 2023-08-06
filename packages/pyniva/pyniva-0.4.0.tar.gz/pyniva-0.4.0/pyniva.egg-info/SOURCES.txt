@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.cfg
+setup.py
+pyniva/__init__.py
+pyniva/get_data.py
+pyniva/metaflow.py
+pyniva/thing.py
+pyniva/tsb.py
+pyniva.egg-info/PKG-INFO
+pyniva.egg-info/SOURCES.txt
+pyniva.egg-info/dependency_links.txt
+pyniva.egg-info/requires.txt
+pyniva.egg-info/top_level.txt
