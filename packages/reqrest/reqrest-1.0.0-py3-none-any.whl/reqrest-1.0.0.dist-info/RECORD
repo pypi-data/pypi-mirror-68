@@ -1,0 +1,9 @@
+reqrest/__init__.py,sha256=t_GkpRkQR3nRKrRV-s3r92nK17NlB7Szq0JAk_qtrsw,60
+reqrest/reqrest.py,sha256=gjkjIJA6Vv7cIpZgJSyTKUsIef9hTS3xSq79SkZtbfM,4246
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_reqrest.py,sha256=KS5dy-SCKJ6IGdQ41bfEI4wBt0mIoVWq6g2oWi7yrs4,3358
+reqrest-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+reqrest-1.0.0.dist-info/METADATA,sha256=t2ySLOP3XuSZvzdhOz6uoAxSRly4MSjXuXI0KeNxUK4,2065
+reqrest-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+reqrest-1.0.0.dist-info/top_level.txt,sha256=Y1fNy1soo6yM74lB8PMu43yyK_H-8EtcaiPFmFIQ8t0,14
+reqrest-1.0.0.dist-info/RECORD,,
