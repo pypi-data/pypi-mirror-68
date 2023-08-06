@@ -1,0 +1,15 @@
+invenio_base/__init__.py,sha256=U04rthgIaFKh5KMgqpuwno30Op4638gEBNVIsYPaG6E,7398
+invenio_base/__main__.py,sha256=OLi_2_pn43KDIzYYCi6tLK-jWjOCJdFS-cULeIuFkRg,440
+invenio_base/app.py,sha256=B4YDrlT98KQhA2FXRQ-sGYkrTnPK0AN9oqLFMqBhnSg,9930
+invenio_base/cli.py,sha256=W_miF_EMzYvasZ8VL8AJBOGw54DLwNs78AQKAG0HmXo,2905
+invenio_base/signals.py,sha256=W40bWRWxZc5SGSoC6389TP7mvzGyJNUeyCYY8j6tyYw,976
+invenio_base/utils.py,sha256=SjG5skXYQACa09qbHsMz3Lnfcf-jRZuvYnERv73s6po,1220
+invenio_base/version.py,sha256=cbaEGmgmG_7Nf8YsrhrYdVKer-n0ihrv1A-urT3ZPaY,468
+invenio_base/wsgi.py,sha256=xVHPgBFQN8NNf1qrUqR08_PAgEDfEMFkJujsobeM8ps,3975
+invenio_base-1.2.3.dist-info/AUTHORS.rst,sha256=_BNOM1n06FbtuQy-vHhsFa4RL3JwS3GtEvqDDWJMw44,540
+invenio_base-1.2.3.dist-info/LICENSE,sha256=7NdusrwW2CBXoBZXOYFnEKLE736o9LpcXGBRdwj0lQg,1067
+invenio_base-1.2.3.dist-info/METADATA,sha256=7XRxcgYIozn_fkqFSaKO2Sqrw2pnR6SvL4-VjkrogRg,5140
+invenio_base-1.2.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+invenio_base-1.2.3.dist-info/entry_points.txt,sha256=GaiaMuBR9chiqfpkh7zM341LvJPSGucn-fZz_p-7kvw,116
+invenio_base-1.2.3.dist-info/top_level.txt,sha256=Heu2aFQlswUY1VAvBC7-gcvrNmq0vMUFsvS1ddfYTC0,13
+invenio_base-1.2.3.dist-info/RECORD,,
