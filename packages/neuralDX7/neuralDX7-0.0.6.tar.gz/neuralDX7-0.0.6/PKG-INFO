@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: neuralDX7
+Version: 0.0.6
+Summary: Models related to the DX7 fm synthesizer
+Home-page: https://github.com/nintorac/neuralDX7
+Author: Nintorac
+Author-email: neuralDX7@nintorac.dev
+License: MIT
+Description: # FM Synth Parameter Generator
+        
+        Random machine learning experiments related to the classic Yamaha DX7
+        
+        ## Dexed
+        
+        Dexed is a linux open source DX7 emulator and was used heavily in the testing of this project
+        
+        ## SYX
+        
+        DX7 and it's similar instruments are programmable bt
+        
+        format [found here](https://github.com/asb2m10/dexed/tree/master/Documentation
+        ) under `sysexformat.txt`
+        
+        ## Dataset
+        
+        Big thanks to Bobby Blues for collecting [these](http://bobbyblues.recup.ch/yamaha_dx7/dx7_patches.html) DX7 patches. This was the only data source
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
