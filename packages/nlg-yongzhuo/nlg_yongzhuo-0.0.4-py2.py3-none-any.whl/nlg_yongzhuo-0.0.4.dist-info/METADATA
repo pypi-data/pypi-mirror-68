@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: nlg-yongzhuo
+Version: 0.0.4
+Summary: text-summarization of extractive, include text_pronouns, text_teaser, mmr, text_rank, lead3, lda, lsi, nmf
+Home-page: https://github.com/yongzhuo/nlg-yongzhuo
+Author: yongzhuo
+Author-email: 1903865025@qq.com
+License: MIT
+Requires-Dist: gensim (==3.7.1)
+Requires-Dist: jieba (==0.39)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: passlib (==1.7.1)
+Requires-Dist: scikit-learn (==0.19.1)
+Requires-Dist: textrank4zh (==0.3)
+Requires-Dist: tqdm (==4.31.1)
+
+# [nlg-yongzhuo](https://github.com/yongzhuo/nlg-yongzhuo)
+
+
