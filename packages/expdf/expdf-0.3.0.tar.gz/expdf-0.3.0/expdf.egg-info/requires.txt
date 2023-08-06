@@ -1,0 +1,8 @@
+requests
+pdfminer2
+tqdm
+networkx
+plotly
+
+[test]
+pytest
