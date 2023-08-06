@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: mundi
+Version: 0.2.1
+Summary: Centralize data from countries and regions around the World and expose it
+Home-page: https://github.com/pydemic/mundi
+Author: Fábio Macêdo Mendes
+Author-email: fabiomacedomendes@gmail.com
