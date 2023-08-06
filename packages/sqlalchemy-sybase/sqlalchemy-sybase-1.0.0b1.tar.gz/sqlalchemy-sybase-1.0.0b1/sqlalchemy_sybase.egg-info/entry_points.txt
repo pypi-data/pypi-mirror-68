@@ -1,0 +1,3 @@
+[sqlalchemy.dialects]
+sybase.pyodbc = sqlalchemy_sybase.pyodbc:SybaseDialect_pyodbc
+
