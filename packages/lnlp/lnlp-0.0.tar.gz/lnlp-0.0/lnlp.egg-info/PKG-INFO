@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lnlp
+Version: 0.0
+Summary: Last Mile for NLP.
+Home-page: https://github.com/hscspring/lnlp
+Author: Yam
+Author-email: haoshaochun@gmail.com
+License: UNKNOWN
+Description: # lnlp
+        Last Mile for NLP.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
