@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/github_automation.egg-info/PKG-INFO
+src/github_automation.egg-info/SOURCES.txt
+src/github_automation.egg-info/dependency_links.txt
+src/github_automation.egg-info/top_level.txt
