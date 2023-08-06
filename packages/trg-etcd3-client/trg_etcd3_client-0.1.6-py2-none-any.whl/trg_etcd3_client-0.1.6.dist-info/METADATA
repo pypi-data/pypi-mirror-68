@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: trg-etcd3-client
+Version: 0.1.6
+Summary: etcd client
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Fork https://github.com/Revolution1/etcd3-py
+
+
