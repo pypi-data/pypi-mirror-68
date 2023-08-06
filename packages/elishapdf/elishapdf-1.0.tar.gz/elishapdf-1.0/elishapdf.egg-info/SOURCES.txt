@@ -1,0 +1,9 @@
+README.md
+setup.py
+elishapdf/__init__.py
+elishapdf/pdf2image.py
+elishapdf/pdf2text.py
+elishapdf.egg-info/PKG-INFO
+elishapdf.egg-info/SOURCES.txt
+elishapdf.egg-info/dependency_links.txt
+elishapdf.egg-info/top_level.txt
