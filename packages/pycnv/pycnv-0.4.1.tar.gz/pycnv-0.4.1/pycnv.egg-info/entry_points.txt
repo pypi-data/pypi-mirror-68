@@ -1,0 +1,4 @@
+[console_scripts]
+pycnv = pycnv.pycnv:main
+pycnv_sum_folder = pycnv.pycnv_sum_folder:main
+
