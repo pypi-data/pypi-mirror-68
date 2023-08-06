@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>bcx.channels &#8212; Blockchain Exchange Python API 0.2.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/clipboard.min.js"></script>
+    <script src="../../_static/js/copybutton.js"></script>
+    <script src="../../_static/js/toggle_navbar.js"></script>
+    <script src="../../_static/js/toggle_header_rst_container.js"></script>
+    <link rel="shortcut icon" href="../../_static/bc-favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Module code</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar"><a href="
+    ../../index.html" class="text-logo">Blockchain Exchange Python API 0.2.1 documentation</a>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>
+      <a href="https://github.com/ilya-bc/blockchain-exchange-api"><i class="fab fa-github fa-lg"></i> Fork me on GitHub</a>
+    </h2>
+  </div>
+</div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated_sphinx_gallery/index.html">Gallery of examples</a></li>
+</ul>
+
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../../index.html">Docs</a></li>
+              
+                <li><a href="../index.html">Module code</a></li>
+              
+              <li>bcx.channels</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <h1>Source code for bcx.channels</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span>
+
+<span class="kn">from</span> <span class="nn">bcx.utils</span> <span class="kn">import</span> <span class="n">timestamp_to_datetime</span>
+<span class="kn">from</span> <span class="nn">bcx.websocket</span> <span class="kn">import</span> <span class="n">BlockchainWebsocket</span>
+<span class="kn">from</span> <span class="nn">bcx.orders</span> <span class="kn">import</span> <span class="n">Order</span>
+
+
+<div class="viewcode-block" id="Channel"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel">[docs]</a><span class="k">class</span> <span class="nc">Channel</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Base class for all channels&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">ws</span><span class="p">:</span> <span class="n">BlockchainWebsocket</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ws</span> <span class="o">=</span> <span class="n">ws</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Additional message to be send to server&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="nb">dict</span><span class="p">()</span>
+
+<div class="viewcode-block" id="Channel.subscribe"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.subscribe">[docs]</a>    <span class="k">def</span> <span class="nf">subscribe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Subscribe to a channel&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ws</span><span class="o">.</span><span class="n">send_json</span><span class="p">({</span>
+            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;subscribe&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">extra_message</span>
+        <span class="p">})</span></div>
+
+<div class="viewcode-block" id="Channel.unsubscribe"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.unsubscribe">[docs]</a>    <span class="k">def</span> <span class="nf">unsubscribe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Unsubscribe from a channel&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ws</span><span class="o">.</span><span class="n">send_json</span><span class="p">({</span>
+            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;unsubscribe&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">extra_message</span>
+        <span class="p">})</span></div>
+
+<div class="viewcode-block" id="Channel.on_event"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_event">[docs]</a>    <span class="k">def</span> <span class="nf">on_event</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action based on event type received from server</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        event_type : str</span>
+<span class="sd">        event_response : Dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;subscribed&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">on_subscribe</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;unsubscribed&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">on_unsubscribe</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;rejected&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">on_reject</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;snapshot&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">on_snapshot</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">event_type</span> <span class="o">==</span> <span class="s2">&quot;updated&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">on_update</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="Channel.on_subscribe"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_subscribe">[docs]</a>    <span class="k">def</span> <span class="nf">on_subscribe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action upon **subscribe** event message received from server&quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Channel.on_unsubscribe"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_unsubscribe">[docs]</a>    <span class="k">def</span> <span class="nf">on_unsubscribe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action upon **unsubscribe** event message received from server&quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Channel.on_reject"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_reject">[docs]</a>    <span class="k">def</span> <span class="nf">on_reject</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action upon **reject** event message received from server</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        event_response : Dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Channel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action upon **snapshot** event message received from server</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        event_response : Dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span></div>
+
+<div class="viewcode-block" id="Channel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.Channel.html#bcx.channels.Channel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Perform action upon **update** event message received from server</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        event_response : Dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span></div></div>
+
+
+<div class="viewcode-block" id="HeartbeatChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.HeartbeatChannel.html#bcx.channels.HeartbeatChannel">[docs]</a><span class="k">class</span> <span class="nc">HeartbeatChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `heartbeat &lt;https://exchange.blockchain.com/api/#heartbeat&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    last_heartbeat : datetime</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_heartbeat</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+<div class="viewcode-block" id="HeartbeatChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.HeartbeatChannel.html#bcx.channels.HeartbeatChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_heartbeat</span> <span class="o">=</span> <span class="n">timestamp_to_datetime</span><span class="p">(</span><span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;timestamp&quot;</span><span class="p">])</span></div></div>
+
+
+<div class="viewcode-block" id="OrderbookChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookChannel.html#bcx.channels.OrderbookChannel">[docs]</a><span class="k">class</span> <span class="nc">OrderbookChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of generic order book channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshot : Dict[str, List]</span>
+<span class="sd">    updates : Dict[str, List]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;asks&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">&quot;bids&quot;</span><span class="p">:</span> <span class="p">[]}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;asks&quot;</span><span class="p">:</span> <span class="p">[],</span> <span class="s2">&quot;bids&quot;</span><span class="p">:</span> <span class="p">[]}</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(symbol=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="si">}</span><span class="s2">, is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="OrderbookChannel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookChannel.html#bcx.channels.OrderbookChannel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="OrderbookChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookChannel.html#bcx.channels.OrderbookChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">:</span>
+            <span class="n">update</span> <span class="o">=</span> <span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">update</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">update</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="OrderbookL2Channel"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL2Channel.html#bcx.channels.OrderbookL2Channel">[docs]</a><span class="k">class</span> <span class="nc">OrderbookL2Channel</span><span class="p">(</span><span class="n">OrderbookChannel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `L2 order book &lt;https://exchange.blockchain.com/api/#l2-order-book&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshot : Dict[str, List]</span>
+<span class="sd">    updates : Dict[str, List]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">symbol</span><span class="o">=</span><span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">extra_message</span>
+
+<div class="viewcode-block" id="OrderbookL2Channel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL2Channel.html#bcx.channels.OrderbookL2Channel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_snapshot</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="OrderbookL2Channel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL2Channel.html#bcx.channels.OrderbookL2Channel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_update</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="OrderbookL3Channel"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL3Channel.html#bcx.channels.OrderbookL3Channel">[docs]</a><span class="k">class</span> <span class="nc">OrderbookL3Channel</span><span class="p">(</span><span class="n">OrderbookChannel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `L3 order book &lt;https://exchange.blockchain.com/api/#l3-order-book&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshot : Dict[str, List]</span>
+<span class="sd">    updates : Dict[str, List]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">symbol</span><span class="o">=</span><span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">extra_message</span>
+
+<div class="viewcode-block" id="OrderbookL3Channel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL3Channel.html#bcx.channels.OrderbookL3Channel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_snapshot</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="OrderbookL3Channel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.OrderbookL3Channel.html#bcx.channels.OrderbookL3Channel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">on_update</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="PricesChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.PricesChannel.html#bcx.channels.PricesChannel">[docs]</a><span class="k">class</span> <span class="nc">PricesChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `prices &lt;https://exchange.blockchain.com/api/#prices&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    granularity : int</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    updates : List</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">granularity</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">granularity</span> <span class="o">=</span> <span class="n">granularity</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(symbol=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="si">}</span><span class="s2">, granularity=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">granularity</span><span class="si">}</span><span class="s2">, is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span>
+            <span class="s2">&quot;granularity&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">granularity</span>
+        <span class="p">}</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">last_price</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Last available price from this channel&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="p">[]</span>
+
+<div class="viewcode-block" id="PricesChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.PricesChannel.html#bcx.channels.PricesChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;price&quot;</span><span class="p">))</span></div></div>
+
+
+<div class="viewcode-block" id="SymbolsChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.SymbolsChannel.html#bcx.channels.SymbolsChannel">[docs]</a><span class="k">class</span> <span class="nc">SymbolsChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `symbols &lt;https://exchange.blockchain.com/api/#symbols&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshot : Dict[str, List]</span>
+<span class="sd">    updates : Dict[str, List]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+<div class="viewcode-block" id="SymbolsChannel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.SymbolsChannel.html#bcx.channels.SymbolsChannel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span> <span class="o">=</span> <span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;symbols&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="SymbolsChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.SymbolsChannel.html#bcx.channels.SymbolsChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="n">symbol</span> <span class="o">=</span> <span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;symbol&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">symbol</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">[</span><span class="n">symbol</span><span class="p">]:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="p">[</span><span class="n">symbol</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="TickerChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.TickerChannel.html#bcx.channels.TickerChannel">[docs]</a><span class="k">class</span> <span class="nc">TickerChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `ticker &lt;https://exchange.blockchain.com/api/#ticker&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshots : List</span>
+<span class="sd">    updates : List</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshots</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(symbol=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="si">}</span><span class="s2">, is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="TickerChannel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.TickerChannel.html#bcx.channels.TickerChannel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TickerChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.TickerChannel.html#bcx.channels.TickerChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="TradesChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradesChannel.html#bcx.channels.TradesChannel">[docs]</a><span class="k">class</span> <span class="nc">TradesChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `trades &lt;https://exchange.blockchain.com/api/#trades&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    symbol : str</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    updates : List</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">symbol</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span> <span class="o">=</span> <span class="n">symbol</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(symbol=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">symbol</span><span class="si">}</span><span class="s2">, is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;symbol&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">symbol</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="TradesChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradesChannel.html#bcx.channels.TradesChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="AuthChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.AuthChannel.html#bcx.channels.AuthChannel">[docs]</a><span class="k">class</span> <span class="nc">AuthChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `auth &lt;https://exchange.blockchain.com/api/#authenticated-channels&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    api_secret : str</span>
+<span class="sd">    is_authenticated : bool</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="n">api_secret</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;BLOCKCHAIN_API_SECRET&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">api_secret</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;Missing credentials for subscriptions to authenticated channel&quot;</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_secret</span> <span class="o">=</span> <span class="n">api_secret</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_authenticated</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">extra_message</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s2">&quot;token&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_secret</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="AuthChannel.on_subscribe"><a class="viewcode-back" href="../../api/generated/bcx.channels.AuthChannel.html#bcx.channels.AuthChannel.on_subscribe">[docs]</a>    <span class="k">def</span> <span class="nf">on_subscribe</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_authenticated</span> <span class="o">=</span> <span class="kc">True</span></div></div>
+
+
+<div class="viewcode-block" id="TradingChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel">[docs]</a><span class="k">class</span> <span class="nc">TradingChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `trading &lt;https://exchange.blockchain.com/api/#trading&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshot : List</span>
+<span class="sd">    updates : List</span>
+<span class="sd">    rejects : List</span>
+<span class="sd">    open_orders : set</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_authenticated</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rejects</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">open_orders</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+<div class="viewcode-block" id="TradingChannel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="n">orders</span> <span class="o">=</span> <span class="n">event_response</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;orders&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshot</span> <span class="o">=</span> <span class="n">orders</span>
+        <span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">orders</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">open_orders</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">order</span><span class="p">[</span><span class="s2">&quot;orderID&quot;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="TradingChannel.on_update"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.on_update">[docs]</a>    <span class="k">def</span> <span class="nf">on_update</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">updates</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;ordStatus&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;open&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">open_orders</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;orderID&quot;</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;ordStatus&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;filled&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">open_orders</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;orderID&quot;</span><span class="p">])</span></div>
+
+<div class="viewcode-block" id="TradingChannel.on_reject"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.on_reject">[docs]</a>    <span class="k">def</span> <span class="nf">on_reject</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">:</span> <span class="n">Dict</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">rejects</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TradingChannel.create_order"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.create_order">[docs]</a>    <span class="k">def</span> <span class="nf">create_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">:</span> <span class="n">Order</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send create order message</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        order : Order</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Submitting order </span><span class="si">{</span><span class="n">order</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ws</span><span class="o">.</span><span class="n">send_json</span><span class="p">({</span>
+            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;NewOrderSingle&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">order</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
+        <span class="p">})</span></div>
+
+<div class="viewcode-block" id="TradingChannel.cancel_order"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.cancel_order">[docs]</a>    <span class="k">def</span> <span class="nf">cancel_order</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send cancel order message</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        order_id : str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ws</span><span class="o">.</span><span class="n">send_json</span><span class="p">({</span>
+            <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;CancelOrderRequest&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">&quot;orderID&quot;</span><span class="p">:</span> <span class="n">order_id</span>
+        <span class="p">})</span></div>
+
+<div class="viewcode-block" id="TradingChannel.cancel_all_orders"><a class="viewcode-back" href="../../api/generated/bcx.channels.TradingChannel.html#bcx.channels.TradingChannel.cancel_all_orders">[docs]</a>    <span class="k">def</span> <span class="nf">cancel_all_orders</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send messages to cancel all open orders&quot;&quot;&quot;</span>
+        <span class="k">for</span> <span class="n">order_id</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">open_orders</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">cancel_order</span><span class="p">(</span><span class="n">order_id</span><span class="o">=</span><span class="n">order_id</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="BalancesChannel"><a class="viewcode-back" href="../../api/generated/bcx.channels.BalancesChannel.html#bcx.channels.BalancesChannel">[docs]</a><span class="k">class</span> <span class="nc">BalancesChannel</span><span class="p">(</span><span class="n">Channel</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Representation of `balances &lt;https://exchange.blockchain.com/api/#balances&gt;`_ channel</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    name : str</span>
+<span class="sd">    ws : BlockchainWebsocket</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    is_subscribed : bool</span>
+<span class="sd">    snapshots : List</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_authenticated</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshots</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">class_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">class_name</span><span class="si">}</span><span class="s2">(is_subscribed=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_subscribed</span><span class="si">}</span><span class="s2">)&quot;</span>
+
+<div class="viewcode-block" id="BalancesChannel.on_snapshot"><a class="viewcode-back" href="../../api/generated/bcx.channels.BalancesChannel.html#bcx.channels.BalancesChannel.on_snapshot">[docs]</a>    <span class="k">def</span> <span class="nf">on_snapshot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_response</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">snapshots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_response</span><span class="p">[</span><span class="s2">&quot;balances&quot;</span><span class="p">])</span></div></div>
+
+
+<div class="viewcode-block" id="ChannelFactory"><a class="viewcode-back" href="../../api/generated/bcx.channels.ChannelFactory.html#bcx.channels.ChannelFactory">[docs]</a><span class="k">class</span> <span class="nc">ChannelFactory</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Class to create any channel</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    channels : Dict[str, Channel]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">channels</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;heartbeat&quot;</span><span class="p">:</span> <span class="n">HeartbeatChannel</span><span class="p">,</span>
+            <span class="s2">&quot;l2&quot;</span><span class="p">:</span> <span class="n">OrderbookL2Channel</span><span class="p">,</span>
+            <span class="s2">&quot;l3&quot;</span><span class="p">:</span> <span class="n">OrderbookL3Channel</span><span class="p">,</span>
+            <span class="s2">&quot;prices&quot;</span><span class="p">:</span> <span class="n">PricesChannel</span><span class="p">,</span>
+            <span class="s2">&quot;symbols&quot;</span><span class="p">:</span> <span class="n">SymbolsChannel</span><span class="p">,</span>
+            <span class="s2">&quot;ticker&quot;</span><span class="p">:</span> <span class="n">TickerChannel</span><span class="p">,</span>
+            <span class="s2">&quot;trades&quot;</span><span class="p">:</span> <span class="n">TradesChannel</span><span class="p">,</span>
+            <span class="s2">&quot;auth&quot;</span><span class="p">:</span> <span class="n">AuthChannel</span><span class="p">,</span>
+            <span class="s2">&quot;trading&quot;</span><span class="p">:</span> <span class="n">TradingChannel</span><span class="p">,</span>
+            <span class="s2">&quot;balances&quot;</span><span class="p">:</span> <span class="n">BalancesChannel</span><span class="p">,</span>
+        <span class="p">}</span>
+
+<div class="viewcode-block" id="ChannelFactory.create_channel"><a class="viewcode-back" href="../../api/generated/bcx.channels.ChannelFactory.html#bcx.channels.ChannelFactory.create_channel">[docs]</a>    <span class="k">def</span> <span class="nf">create_channel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">ws</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create channel</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        name : str</span>
+<span class="sd">        ws : BlockchainWebsocket</span>
+<span class="sd">        kwargs : dict</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        Channel</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">channels</span><span class="p">[</span><span class="n">name</span><span class="p">](</span><span class="n">ws</span><span class="o">=</span><span class="n">ws</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div></div>
+</pre></div>
+
+          </div>
+            
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Module code</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2020 - 2020, Ilya Kisil. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

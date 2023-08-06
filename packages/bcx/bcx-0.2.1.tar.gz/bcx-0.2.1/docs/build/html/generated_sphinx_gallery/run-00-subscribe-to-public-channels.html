@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Subscribe to Public channels &#8212; Blockchain Exchange Python API 0.2.1 documentation</title>
+    <link rel="stylesheet" href="../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/custom.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/js/clipboard.min.js"></script>
+    <script src="../_static/js/copybutton.js"></script>
+    <script src="../_static/js/toggle_navbar.js"></script>
+    <script src="../_static/js/toggle_header_rst_container.js"></script>
+    <link rel="shortcut icon" href="../_static/bc-favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Subscribe to Trading Channel" href="run-01-subscribe-to-trading-channel.html" />
+    <link rel="prev" title="Gallery of examples" href="index.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="run-01-subscribe-to-trading-channel.html" title="Subscribe to Trading Channel"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Gallery of examples"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Gallery of examples</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar"><a href="
+    ../index.html" class="text-logo">Blockchain Exchange Python API 0.2.1 documentation</a>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>
+      <a href="https://github.com/ilya-bc/blockchain-exchange-api"><i class="fab fa-github fa-lg"></i> Fork me on GitHub</a>
+    </h2>
+  </div>
+</div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gallery of examples</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Subscribe to Public channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="run-01-subscribe-to-trading-channel.html">Subscribe to Trading Channel</a></li>
+</ul>
+</li>
+</ul>
+
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../index.html">Docs</a></li>
+              
+                <li><a href="index.html">Gallery of examples</a></li>
+              
+              <li>Subscribe to Public channels</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-generated-sphinx-gallery-run-00-subscribe-to-public-channels-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="subscribe-to-public-channels">
+<span id="sphx-glr-generated-sphinx-gallery-run-00-subscribe-to-public-channels-py"></span><h1>Subscribe to Public channels<a class="headerlink" href="#subscribe-to-public-channels" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="table-of-contents">
+<p class="topic-title">Table of Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#initialise-client" id="id1">Initialise client</a></p></li>
+<li><p><a class="reference internal" href="#subscribe-for-monitoring" id="id2">Subscribe for monitoring</a></p></li>
+</ul>
+</div>
+<div class="section" id="initialise-client">
+<h2><a class="toc-backref" href="#id1">Initialise client</a><a class="headerlink" href="#initialise-client" title="Permalink to this headline">¶</a></h2>
+<p>By default all incoming messages are being logged at INFO level without
+any modifications. So you would want to set logging accordingly in case
+you need to visually inspect results.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+
+<span class="kn">from</span> <span class="nn">bcx.client</span> <span class="kn">import</span> <a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">BlockchainWebsocketClient</span></a>
+
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a> <span class="o">=</span> <a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">BlockchainWebsocketClient</span></a><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="subscribe-for-monitoring">
+<h2><a class="toc-backref" href="#id2">Subscribe for monitoring</a><a class="headerlink" href="#subscribe-for-monitoring" title="Permalink to this headline">¶</a></h2>
+<p>Subscription can happen on a fly, i.e. you don’t need to restart client
+(or re-run script) to be able to subscribe to new channels.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_heartbeat</span><span class="p">()</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_prices</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">,</span> <span class="n">granularity</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_prices</span><span class="p">(</span><span class="s2">&quot;ETH-USD&quot;</span><span class="p">,</span> <span class="n">granularity</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_ticker</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">)</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_trades</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">)</span>
+
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">connected_channels</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[HeartbeatChannel(is_subscribed=True),
+ PricesChannel(symbol=BTC-USD, granularity=60, is_subscribed=True),
+ PricesChannel(symbol=ETH-USD, granularity=60, is_subscribed=True),
+ TickerChannel(symbol=BTC-USD, is_subscribed=True),
+ TradesChannel(symbol=BTC-USD, is_subscribed=True)]
+</pre></div>
+</div>
+<p>Some channels send a snapshot of when you connect to them for the very
+first time.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_symbols</span><span class="p">()</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_orderbook_l2</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">)</span>
+
+<a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">subscribe_to_orderbook_l3</span><span class="p">(</span><span class="s2">&quot;BTC-USD&quot;</span><span class="p">)</span>
+
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">connected_channels</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>[HeartbeatChannel(is_subscribed=True),
+ OrderbookL2Channel(symbol=BTC-USD, is_subscribed=True),
+ OrderbookL3Channel(symbol=BTC-USD, is_subscribed=True),
+ PricesChannel(symbol=BTC-USD, granularity=60, is_subscribed=True),
+ PricesChannel(symbol=ETH-USD, granularity=60, is_subscribed=True),
+ SymbolsChannel(is_subscribed=True),
+ TickerChannel(symbol=BTC-USD, is_subscribed=True),
+ TradesChannel(symbol=BTC-USD, is_subscribed=True)]
+</pre></div>
+</div>
+<p>This is a simple use case showing that the client not only reads incoming
+messages and logs them, but also can parse them and store the result in
+memory in order to be used later on, i.e. by external API.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Last Heart Beat: </span><span class="si">{</span><a href="../api/generated/bcx.client.BlockchainWebsocketClient.html#bcx.client.BlockchainWebsocketClient" title="View documentation for bcx.client.BlockchainWebsocketClient"><span class="n">client</span></a><span class="o">.</span><span class="n">get_last_heartbeat</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="sphx-glr-script-out">Out:</p>
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Last Heart Beat: 2020-05-17 22:25:27.069964
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  13.331 seconds)</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-generated-sphinx-gallery-run-00-subscribe-to-public-channels-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/15746912e84ab1303b0cdd7edf15d1e4/run-00-subscribe-to-public-channels.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">run-00-subscribe-to-public-channels.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../_downloads/d5bdd2b96e98bd000a0e627c1874c0ec/run-00-subscribe-to-public-channels.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">run-00-subscribe-to-public-channels.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="index.html" title="previous chapter (use the left arrow)">Gallery of examples</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="run-01-subscribe-to-trading-channel.html" title="next chapter (use the right arrow)">Subscribe to Trading Channel</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="run-01-subscribe-to-trading-channel.html" title="Subscribe to Trading Channel"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Gallery of examples"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="index.html" >Gallery of examples</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2020 - 2020, Ilya Kisil. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

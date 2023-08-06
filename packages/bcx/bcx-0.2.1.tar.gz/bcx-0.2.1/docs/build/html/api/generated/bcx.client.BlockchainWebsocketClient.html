@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="../../_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>BlockchainWebsocketClient &#8212; Blockchain Exchange Python API 0.2.1 documentation</title>
+    <link rel="stylesheet" href="../../_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/custom.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/js/clipboard.min.js"></script>
+    <script src="../../_static/js/copybutton.js"></script>
+    <script src="../../_static/js/toggle_navbar.js"></script>
+    <script src="../../_static/js/toggle_header_rst_container.js"></script>
+    <link rel="shortcut icon" href="../../_static/bc-favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="BlockchainWebsocket" href="bcx.websocket.BlockchainWebsocket.html" />
+    <link rel="prev" title="Module for interacting with exchange" href="../bcx.client.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="bcx.websocket.BlockchainWebsocket.html" title="BlockchainWebsocket"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../bcx.client.html" title="Module for interacting with exchange"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../bcx.client.html" accesskey="U">Module for interacting with exchange</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar"><a href="
+    ../../index.html" class="text-logo">Blockchain Exchange Python API 0.2.1 documentation</a>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="../../search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>
+      <a href="https://github.com/ilya-bc/blockchain-exchange-api"><i class="fab fa-github fa-lg"></i> Fork me on GitHub</a>
+    </h2>
+  </div>
+</div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Table Of Contents</h2>
+  </div>
+  <div class="sidebar-toc">
+    
+    
+      <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../installation.html">Quick start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../bcx.client.html">Module for interacting with exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bcx.channels.html">Module for interacting with exchange channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bcx.orders.html">Module for creating orders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bcx.utils.html">Module with various utils</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../generated_sphinx_gallery/index.html">Gallery of examples</a></li>
+</ul>
+
+    
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="../../index.html">Docs</a></li>
+              
+                <li><a href="../index.html">API Reference</a></li>
+              
+                <li><a href="../bcx.client.html">Module for interacting with exchange</a></li>
+              
+              <li>BlockchainWebsocketClient</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="blockchainwebsocketclient">
+<h1>BlockchainWebsocketClient<a class="headerlink" href="#blockchainwebsocketclient" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import statement</span>
+
+<span class="kn">from</span> <span class="nn">bcx.client</span> <span class="kn">import</span> <span class="n">BlockchainWebsocketClient</span>
+</pre></div>
+</div>
+<dl class="py class">
+<dt id="bcx.client.BlockchainWebsocketClient">
+<em class="property">class </em><code class="sig-name descname">BlockchainWebsocketClient</code><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>High level API to interact with Blockchain Exchange</p>
+<p class="rubric">Attributes</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 54%" />
+<col style="width: 46%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>channel_manager</strong></p></td>
+<td><p>(ChannelManager)</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.cancel_all_orders" title="bcx.client.BlockchainWebsocketClient.cancel_all_orders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cancel_all_orders</span></code></a>(self)</p></td>
+<td><p>Cancel all orders</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.cancel_order" title="bcx.client.BlockchainWebsocketClient.cancel_order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cancel_order</span></code></a>(self, order_id)</p></td>
+<td><p>Cancel order</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.create_limit_order" title="bcx.client.BlockchainWebsocketClient.create_limit_order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_limit_order</span></code></a>(self, price, symbol, …)</p></td>
+<td><p>Create limit order</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.create_market_order" title="bcx.client.BlockchainWebsocketClient.create_market_order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_market_order</span></code></a>(self, symbol, side, …)</p></td>
+<td><p>Create market order</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.create_order" title="bcx.client.BlockchainWebsocketClient.create_order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_order</span></code></a>(self, order)</p></td>
+<td><p>Create generic order</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.get_channel" title="bcx.client.BlockchainWebsocketClient.get_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_channel</span></code></a>(self, name, \*\*channel_params)</p></td>
+<td><p>Get connection to a channel of interest</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.get_last_heartbeat" title="bcx.client.BlockchainWebsocketClient.get_last_heartbeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_last_heartbeat</span></code></a>(self)</p></td>
+<td><p>Get last heartbeat</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.get_prices_channel" title="bcx.client.BlockchainWebsocketClient.get_prices_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_prices_channel</span></code></a>(self, symbol, granularity)</p></td>
+<td><p>Get connection to <a class="reference external" href="https://exchange.blockchain.com/api/#prices">prices</a> channel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.get_trading_channel" title="bcx.client.BlockchainWebsocketClient.get_trading_channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_trading_channel</span></code></a>(self)</p></td>
+<td><p>Get connection to <a class="reference external" href="https://exchange.blockchain.com/api/#trading">trading</a> channel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_balances" title="bcx.client.BlockchainWebsocketClient.subscribe_to_balances"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_balances</span></code></a>(self)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#balances">balances</a> channel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_heartbeat" title="bcx.client.BlockchainWebsocketClient.subscribe_to_heartbeat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_heartbeat</span></code></a>(self)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#heartbeat">heartbeat</a> channel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l2" title="bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_orderbook_l2</span></code></a>(self, symbol)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#l2-order-book">L2 order book</a> channel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l3" title="bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_orderbook_l3</span></code></a>(self, symbol)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#l3-order-book">L3 order book</a> channel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_prices" title="bcx.client.BlockchainWebsocketClient.subscribe_to_prices"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_prices</span></code></a>(self, symbol, granularity)</p></td>
+<td><p><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#prices">prices</a> channel</p>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_symbols" title="bcx.client.BlockchainWebsocketClient.subscribe_to_symbols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_symbols</span></code></a>(self)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#symbols">symbols</a> channel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_ticker" title="bcx.client.BlockchainWebsocketClient.subscribe_to_ticker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_ticker</span></code></a>(self, symbol)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#ticker">ticker</a> channel</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_trades" title="bcx.client.BlockchainWebsocketClient.subscribe_to_trades"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_trades</span></code></a>(self, symbol)</p></td>
+<td><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#trades">trades</a> channel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_trading" title="bcx.client.BlockchainWebsocketClient.subscribe_to_trading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">subscribe_to_trading</span></code></a>(self)</p></td>
+<td><p><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#trading">trading</a> channel</p>
+</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.available_channels">
+<em class="property">property </em><code class="sig-name descname">available_channels</code><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.available_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of all available channels on Blockchain Exchange</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.cancel_all_orders">
+<code class="sig-name descname">cancel_all_orders</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.cancel_all_orders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.cancel_all_orders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel all orders</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.cancel_order">
+<code class="sig-name descname">cancel_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">order_id</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.cancel_order"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.cancel_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel order</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>order_id</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.connected_channels">
+<em class="property">property </em><code class="sig-name descname">connected_channels</code><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.connected_channels" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of all channels that you can interact with</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.create_limit_order">
+<code class="sig-name descname">create_limit_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">price</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">side</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">quantity</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">time_in_force</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">order_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.create_limit_order"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.create_limit_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create limit order</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>price</strong></dt><dd></dd>
+<dt><strong>symbol</strong></dt><dd></dd>
+<dt><strong>side</strong></dt><dd></dd>
+<dt><strong>quantity</strong></dt><dd></dd>
+<dt><strong>time_in_force</strong></dt><dd></dd>
+<dt><strong>order_id</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.create_market_order">
+<code class="sig-name descname">create_market_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">side</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">quantity</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">time_in_force</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">order_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.create_market_order"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.create_market_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create market order</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>symbol</strong></dt><dd></dd>
+<dt><strong>side</strong></dt><dd></dd>
+<dt><strong>quantity</strong></dt><dd></dd>
+<dt><strong>time_in_force</strong></dt><dd></dd>
+<dt><strong>order_id</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.create_order">
+<code class="sig-name descname">create_order</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">order</span><span class="p">:</span> <span class="n"><a class="reference internal" href="bcx.orders.Order.html#bcx.orders.Order" title="bcx.orders.Order">bcx.orders.Order</a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.create_order"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.create_order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create generic order</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>order</strong><span class="classifier">Order</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.get_channel">
+<code class="sig-name descname">get_channel</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">name: str</em>, <em class="sig-param">\*\*channel_params</em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="bcx.channels.Channel.html#bcx.channels.Channel" title="bcx.channels.Channel">bcx.channels.Channel</a><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.get_channel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.get_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get connection to a channel of interest</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd><p>Name of the channel</p>
+</dd>
+<dt><strong>channel_params: Dict</strong></dt><dd><p>Parameters used to subscribe to channel</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>channel: Channel</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.get_last_heartbeat">
+<code class="sig-name descname">get_last_heartbeat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> &#x2192; datetime.datetime<a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.get_last_heartbeat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.get_last_heartbeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get last heartbeat</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.get_prices_channel">
+<code class="sig-name descname">get_prices_channel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">granularity</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="bcx.channels.PricesChannel.html#bcx.channels.PricesChannel" title="bcx.channels.PricesChannel">bcx.channels.PricesChannel</a><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.get_prices_channel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.get_prices_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get connection to <a class="reference external" href="https://exchange.blockchain.com/api/#prices">prices</a> channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>symbol</strong></dt><dd></dd>
+<dt><strong>granularity</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>channel</strong><span class="classifier">PricesChannel</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.get_trading_channel">
+<code class="sig-name descname">get_trading_channel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="bcx.channels.TradingChannel.html#bcx.channels.TradingChannel" title="bcx.channels.TradingChannel">bcx.channels.TradingChannel</a><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.get_trading_channel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.get_trading_channel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get connection to <a class="reference external" href="https://exchange.blockchain.com/api/#trading">trading</a> channel</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>channel</strong><span class="classifier">TradingChannel</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_balances">
+<code class="sig-name descname">subscribe_to_balances</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_balances"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_balances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#balances">balances</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_heartbeat">
+<code class="sig-name descname">subscribe_to_heartbeat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_heartbeat"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_heartbeat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#heartbeat">heartbeat</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l2">
+<code class="sig-name descname">subscribe_to_orderbook_l2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_orderbook_l2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#l2-order-book">L2 order book</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l3">
+<code class="sig-name descname">subscribe_to_orderbook_l3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_orderbook_l3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_orderbook_l3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#l3-order-book">L3 order book</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_prices">
+<code class="sig-name descname">subscribe_to_prices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">granularity</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_prices"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_prices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#prices">prices</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_symbols">
+<code class="sig-name descname">subscribe_to_symbols</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_symbols"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_symbols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#symbols">symbols</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_ticker">
+<code class="sig-name descname">subscribe_to_ticker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_ticker"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_ticker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#ticker">ticker</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_trades">
+<code class="sig-name descname">subscribe_to_trades</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">symbol</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_trades"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_trades" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#trades">trades</a> channel</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="bcx.client.BlockchainWebsocketClient.subscribe_to_trading">
+<code class="sig-name descname">subscribe_to_trading</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/bcx/client.html#BlockchainWebsocketClient.subscribe_to_trading"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#bcx.client.BlockchainWebsocketClient.subscribe_to_trading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subscribe to <a class="reference external" href="https://exchange.blockchain.com/api/#trading">trading</a> channel</p>
+</dd></dl>
+
+</dd></dl>
+
+<div class="clearer"></div></div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="../bcx.client.html" title="previous chapter (use the left arrow)">Module for interacting with exchange</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="bcx.websocket.BlockchainWebsocket.html" title="next chapter (use the right arrow)">BlockchainWebsocket</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="bcx.websocket.BlockchainWebsocket.html" title="BlockchainWebsocket"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../bcx.client.html" title="Module for interacting with exchange"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Blockchain Exchange Python API 0.2.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >API Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../bcx.client.html" >Module for interacting with exchange</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="../../_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2020 - 2020, Ilya Kisil. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
