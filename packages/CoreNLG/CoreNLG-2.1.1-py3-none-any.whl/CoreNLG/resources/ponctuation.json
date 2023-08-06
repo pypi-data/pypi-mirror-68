@@ -1,0 +1,18 @@
+{
+  "lang": {
+    "fr": {
+      "capitalize": [".", "!", "?"],
+      "space_after": [")", "]", ".", ","],
+      "space_before": ["(", "["],
+      "space_before_and_after": [";", ":", "!", "?"],
+      "no_spaces": ["'", "’"]
+    },
+    "en": {
+      "capitalize": [".", "!", "?"],
+      "space_after": [")", "]", ".", ",", ":", "!", "?", ";"],
+      "space_before": ["(", "["],
+      "space_before_and_after": [],
+      "no_spaces": ["'", "’"]
+    }
+  }
+}
