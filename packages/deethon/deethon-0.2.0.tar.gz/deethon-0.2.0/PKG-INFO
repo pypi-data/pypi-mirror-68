@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: deethon
+Version: 0.2.0
+Summary: Python3 library to easily download music from Deezer
+Home-page: https://github.com/deethon/deethon
+License: GPL-3.0-or-later
+Author: Aykut Yilmaz
+Author-email: aykuxt@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: mutagen (>=1.44.0,<2.0.0)
+Requires-Dist: pycryptodome (>=3.9.7,<4.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Project-URL: Repository, https://github.com/deethon/deethon
+Description-Content-Type: text/x-rst
+
+Deethon
+=======
+Python3 library to easily download music from `Deezer`_.
+
+Quickstart
+----------
+Installing
+^^^^^^^^^^
+.. code-block:: sh
+
+    pip3 install deethon
+
+Initialize
+^^^^^^^^^^
+.. code-block:: python
+
+    import deethon
+
+    deezer = deethon.Deezer("DEEZER ARL TOKEN")
+
+Download tracks
+^^^^^^^^^^^^^^^
+Download track by Deezer link
+
+.. code-block:: python
+
+    deezer.download(
+        "Deezer track url",
+        bitrate="FLAC" # MP3_320 / MP3_256 / MP3_128 (optional)
+    )
+
+Disclaimer
+----------
+| Deethon - Python3 library to download music from Deezer
+| Copyright (C) 2020  Aykut Yilmaz
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see https://www.gnu.org/licenses/.
+
+Do not use this package illegaly and against Deezer's `Terms Of Use`_.
+
+.. _Deezer: https://www.deezer.com
+.. _Terms Of Use: https://www.deezer.com/legal/cgu/
