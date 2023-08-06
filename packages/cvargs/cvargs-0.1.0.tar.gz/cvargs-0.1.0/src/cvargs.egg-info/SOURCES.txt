@@ -1,0 +1,8 @@
+README.rst
+setup.py
+src/cvargs/__init__.py
+src/cvargs.egg-info/PKG-INFO
+src/cvargs.egg-info/SOURCES.txt
+src/cvargs.egg-info/dependency_links.txt
+src/cvargs.egg-info/requires.txt
+src/cvargs.egg-info/top_level.txt

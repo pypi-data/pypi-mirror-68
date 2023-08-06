@@ -1,0 +1,7 @@
+
+[tests]
+pytest>=4.6
+pytest-cov<3.0,>=^2.7
+pytest-watch>=4.2<5.0
+pytest-randomly>=3.1<4.0
+pdbpp
