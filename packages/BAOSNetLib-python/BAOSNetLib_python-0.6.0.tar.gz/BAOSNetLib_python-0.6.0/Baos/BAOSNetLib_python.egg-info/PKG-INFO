@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: BAOSNetLib-python
+Version: 0.5.0
+Summary: My short description for my project.
+Home-page: http://hqsmartbot.com:10081/huanlixing/BAOSNetLib-python.git
+Author: jacky_huang
+Author-email: 1412165974@qq.com
+License: MIT
+Description: 
+        ### 1、install requires
+        
+        ```bash
+        sudo apt -y install autoconf protobuf-compiler libprotobuf-dev
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
