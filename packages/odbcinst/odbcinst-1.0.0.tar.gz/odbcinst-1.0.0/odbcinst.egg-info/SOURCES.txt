@@ -1,0 +1,8 @@
+README.md
+setup.py
+odbcinst/__init__.py
+odbcinst/_base.py
+odbcinst.egg-info/PKG-INFO
+odbcinst.egg-info/SOURCES.txt
+odbcinst.egg-info/dependency_links.txt
+odbcinst.egg-info/top_level.txt
