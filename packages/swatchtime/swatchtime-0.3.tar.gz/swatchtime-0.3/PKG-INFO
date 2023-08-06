@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: swatchtime
+Version: 0.3
+Summary: Calculates Swatch Internet Time
+Home-page: https://github.com/tjbay/swatchtime
+Author: T.J. Bay
+Author-email: spintronic@gmail.com
+License: MIT
+Download-URL: https://github.com/tjbay/swatchtime/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: Swatch,Internet,Time
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.0

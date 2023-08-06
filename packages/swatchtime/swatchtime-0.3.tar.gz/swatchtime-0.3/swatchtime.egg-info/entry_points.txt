@@ -1,0 +1,3 @@
+[console_scripts]
+swatchtime = swatchtime.command_line:main
+
