@@ -1,0 +1,12 @@
+README.md
+setup.py
+mrsdb2/__init__.py
+mrsdb2/atomicwrite.py
+mrsdb2/cache.py
+mrsdb2/exceptions.py
+mrsdb2/mrsdb.py
+mrsdb2/utils.py
+mrsdb2.egg-info/PKG-INFO
+mrsdb2.egg-info/SOURCES.txt
+mrsdb2.egg-info/dependency_links.txt
+mrsdb2.egg-info/top_level.txt

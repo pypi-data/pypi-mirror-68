@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mrsdb2
+Version: 2.1.0
+Summary: The quick, rich, serverless, and efficient json-like Python 3 document database.
+Home-page: https://netriza.github.io/mrsdb/
+Author: Netriza
+Author-email: info@mrsdb.netriza.ml
+License: UNKNOWN
+Description: # MRSDB
+        The quick, rich, serverless, and efficient json-like Python 3 document database.
+        
+        [Learn more at https://netriza.github.io/mrsdb/](https://netriza.github.io/mrsdb/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
