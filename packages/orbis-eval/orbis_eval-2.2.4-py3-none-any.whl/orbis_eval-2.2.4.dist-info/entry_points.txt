@@ -1,0 +1,6 @@
+[console_scripts]
+orbis-addons = orbis_eval.interfaces.addons.main:run
+orbis-cli = orbis_eval.interfaces.cli.main:run
+orbis-eval = orbis_eval.main:run
+orbis-webgui = orbis_eval.interfaces.webgui.main:run
+
