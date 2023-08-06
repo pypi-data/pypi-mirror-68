@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: tx-functional
+Version: 0.0.13
+Summary: A pickleable generic functional programming library
+Home-page: https://github.com/RENCI/tx-functional
+Author: Hao Xu
+Author-email: xuhao@renci.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: autorepr (==0.3.0)
+
+[![Build Status](https://travis-ci.com/RENCI/tx-functional.svg?branch=master)](https://travis-ci.com/RENCI/tx-functional)
+
+# tx-functional
+Generic functional programming library for Python
+
+# Either monad
+
+```
+Left(1)
+Right(1)
+Either.pure(1)
+a.bind(lambda x: Left(1))
+a.map(lambda x: 1)
+```
+
+
