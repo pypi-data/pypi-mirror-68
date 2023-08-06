@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libvis_mods
+Version: 0.1.9
+Summary: cli tool to manage libivs modules
+Home-page: https://github.com/libvis
+Author: Danil Lykov
+Author-email: lkvdan@gmail.com
+License: MIT
+Description: Package manager for libvis modules
+        
+Keywords: tools,libvis,package manager,data,framework,visualization
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
