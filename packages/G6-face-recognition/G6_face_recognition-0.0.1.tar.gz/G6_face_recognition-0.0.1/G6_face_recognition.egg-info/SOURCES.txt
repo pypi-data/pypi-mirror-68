@@ -1,0 +1,13 @@
+README.md
+setup.py
+G6_face_recognition/__init__.py
+G6_face_recognition/encode_face_model.py
+G6_face_recognition/face_matching.py
+G6_face_recognition/feature_encode.py
+G6_face_recognition/main.py
+G6_face_recognition.egg-info/PKG-INFO
+G6_face_recognition.egg-info/SOURCES.txt
+G6_face_recognition.egg-info/dependency_links.txt
+G6_face_recognition.egg-info/entry_points.txt
+G6_face_recognition.egg-info/requires.txt
+G6_face_recognition.egg-info/top_level.txt
