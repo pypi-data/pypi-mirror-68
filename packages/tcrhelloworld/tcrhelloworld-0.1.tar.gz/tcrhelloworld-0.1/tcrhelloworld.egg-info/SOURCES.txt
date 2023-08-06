@@ -1,0 +1,10 @@
+README.md
+setup.py
+tcrhelloworld/__init__.py
+tcrhelloworld/__main__.py
+tcrhelloworld.egg-info/PKG-INFO
+tcrhelloworld.egg-info/SOURCES.txt
+tcrhelloworld.egg-info/dependency_links.txt
+tcrhelloworld.egg-info/entry_points.txt
+tcrhelloworld.egg-info/not-zip-safe
+tcrhelloworld.egg-info/top_level.txt
