@@ -1,0 +1,11 @@
+transcriptor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+transcriptor/alternatives.py,sha256=Y89X7kbYc-luFBbssFTyPtAGSM2Flv-AE1HdB_VDsJ4,189
+transcriptor/amazon.py,sha256=9UuDuZyYzvnHLrJdT4SQosWrvC_ErHpCnjwgNASwfQs,3938
+transcriptor/job.py,sha256=A-xhjg5fHboX5wRdV-DFourDLD8nJ7YqY-W0G2npudE,2874
+transcriptor/markers.py,sha256=NJ9kQeR51RFyhmt8GUeJVSnaa8fmmOrVnKGeWrjccwM,179
+transcriptor/speakers.py,sha256=xGDFy73MFCQL3o8q28HjRxnALis78Xc1K4UpZs70SXU,216
+transcriptor-2020.5.12.dist-info/LICENSE,sha256=-FUXj1PKVuXCQodLQMyUZoRcAEE2lhXjcyOGRqnz1JE,1067
+transcriptor-2020.5.12.dist-info/METADATA,sha256=oJtWWWW4MhiTckhY6xXgBpZ7LcO5zembmEKuAIDZlx4,895
+transcriptor-2020.5.12.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+transcriptor-2020.5.12.dist-info/top_level.txt,sha256=6a7Uf7xr5zKAKT_ItQsbYg9lvZrUdiAKCIhTsw8GAyg,13
+transcriptor-2020.5.12.dist-info/RECORD,,
