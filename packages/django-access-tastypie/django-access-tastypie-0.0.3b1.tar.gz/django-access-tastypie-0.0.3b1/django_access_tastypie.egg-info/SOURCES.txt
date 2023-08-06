@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+access_tastypie/__init__.py
+access_tastypie/authorization.py
+access_tastypie/resources.py
+django_access_tastypie.egg-info/PKG-INFO
+django_access_tastypie.egg-info/SOURCES.txt
+django_access_tastypie.egg-info/dependency_links.txt
+django_access_tastypie.egg-info/not-zip-safe
+django_access_tastypie.egg-info/requires.txt
+django_access_tastypie.egg-info/top_level.txt
