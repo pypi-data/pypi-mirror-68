@@ -1,0 +1,4 @@
+notebook
+boto3
+pandas
+tqdm

@@ -1,0 +1,8 @@
+README.md
+setup.py
+infinstor/__init__.py
+infinstor.egg-info/PKG-INFO
+infinstor.egg-info/SOURCES.txt
+infinstor.egg-info/dependency_links.txt
+infinstor.egg-info/requires.txt
+infinstor.egg-info/top_level.txt
