@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+piweatherrock/webconfig/__init__.py
+piweatherrock/webconfig/html/config.html
+piweatherrock/webconfig/html/serialize_script.js
+piweatherrock/webconfig/html/style.css
+piweatherrock/webconfig/icons/bg.png
+piweatherrock/webconfig/icons/256/chancetstorms.png
+piweatherrock_webconfig.egg-info/PKG-INFO
+piweatherrock_webconfig.egg-info/SOURCES.txt
+piweatherrock_webconfig.egg-info/dependency_links.txt
+piweatherrock_webconfig.egg-info/requires.txt
+piweatherrock_webconfig.egg-info/top_level.txt
+scripts/pwr-webconfig
