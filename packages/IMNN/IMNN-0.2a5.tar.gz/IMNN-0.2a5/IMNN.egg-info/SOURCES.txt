@@ -1,0 +1,14 @@
+README.md
+setup.py
+IMNN/IMNN.py
+IMNN/__init__.py
+IMNN.egg-info/PKG-INFO
+IMNN.egg-info/SOURCES.txt
+IMNN.egg-info/dependency_links.txt
+IMNN.egg-info/requires.txt
+IMNN.egg-info/top_level.txt
+IMNN/LFI/LFI.py
+IMNN/LFI/__init__.py
+IMNN/utils/TFRecords.py
+IMNN/utils/__init__.py
+IMNN/utils/utils.py
