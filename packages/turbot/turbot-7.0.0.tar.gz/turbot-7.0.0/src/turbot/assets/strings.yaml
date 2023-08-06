@@ -1,0 +1,216 @@
+allart: '__**All Pieces of Art**__
+
+  > $list'
+art_fake: '> **$name** can be fake.
+
+  > **Description:** $desc
+
+  > **Real:** <$real_url>
+
+  > **Fake:** <$fake_url>'
+art_header: __**Art Search Results**__
+art_invalid: 'Did not recognize the following pieces of art:
+
+  > $items'
+art_real: '> **$name** is always genuine.
+
+  > **Real:** <$real_url>'
+authorize: 'Turbot is now authorized to operate in the following channels: $channels.'
+best: '> **$name:** $timestamp for $price bells'
+best_buy_header: __**Best Buying Prices in the Last 12 Hours**__
+best_invalid_param: Please choose either best buy or best sell.
+best_sell_header: __**Best Selling Prices in the Last 12 Hours**__
+bugs: '> **$name** is available $time, $location (sells for $price bells) $alert'
+bugs_header: '```diff
+
+  -Eeek! What wretched things. Alas, I am obliged to respond...
+
+  ```'
+bugs_none_available: No bugs that you haven't already caught are available at this
+  time.
+bugs_none_found: Did not find any bugs searching for "$search".
+buy: Logged buying price of $price for user $name.
+buy_no_params: Please include buying price after command name.
+buy_nonnumeric_price: Buying price must be a number.
+buy_nonpositive_price: Buying price must be greater than zero.
+cant_find_buy: There is no recent buy price for $name.
+cant_find_user: Can not find the user named $name in this channel.
+clear: '**Cleared history for $name.**'
+collect_art_dupe: 'The following art had already been collected:
+
+  > $items'
+collect_art_new: 'Marked the following art as collected:
+
+  > $items'
+collect_bugs_dupe: 'The following bugs had already been collected:
+
+  > $items'
+collect_bugs_new: 'Marked the following bugs as collected:
+
+  > $items'
+collect_fish_dupe: 'The following fish had already been collected:
+
+  > $items'
+collect_fish_new: 'Marked the following fish as collected:
+
+  > $items'
+collect_fossils_dupe: 'The following fossils had already been collected:
+
+  > $items'
+collect_fossils_new: 'Marked the following fossils as collected:
+
+  > $items'
+collect_no_params: Please provide the name of something to mark as collected.
+collect_songs_dupe: 'The following songs had already been collected:
+
+  > $items'
+collect_songs_new: 'Marked the following songs as collected:
+
+  > $items'
+collected_art: '__**$count pieces of art donated by $name**__
+
+  > $items'
+collected_bugs: '__**$count bugs donated by $name**__
+
+  > $items'
+collected_fish: '__**$count fish donated by $name**__
+
+  > $items'
+collected_fossils: '__**$count fossils donated by $name**__
+
+  > $items'
+collected_songs: '__**$count songs collected by $name**__
+
+  > $items'
+congrats_all_art: '**Congratulations, you''ve collected all art!**'
+congrats_all_bugs: '**Congratulations, you''ve collected all bugs!**'
+congrats_all_fish: '**Congratulations, you''ve collected all fish!**'
+congrats_all_fossils: '**Congratulations, you''ve collected all fossils!**'
+congrats_all_songs: '**Congratulations, you''ve collected all songs!**'
+count_art_valid: '> **$name** has $count pieces of art remaining.'
+count_art_valid_header: __**Art Count**__
+count_bugs_valid: '> **$name** has $count bugs remaining.'
+count_bugs_valid_header: __**Bugs Count**__
+count_fish_valid: '> **$name** has $count fish remaining.'
+count_fish_valid_header: __**Fish Count**__
+count_fossils_valid: '> **$name** has $count fossils remaining.'
+count_fossils_valid_header: __**Fossil Count**__
+count_invalid: '> $name'
+count_invalid_header: __**Did not recognize the following names**__
+count_songs_valid: '> **$name** has $count songs remaining.'
+count_songs_valid_header: __**Songs Count**__
+creator_invalid: Your Animal Crossing creator code should be 12 numbers.
+creature_available_now: __**$kind available right now**__
+creature_available_this_month: __**$kind available this month**__
+day_of_week_invalid: Please use monday, wednesday, tuesday, etc for the day parameter.
+did_you_mean: 'Did you mean: $possible?'
+fish: '> **$name** (shadow size $shadow) is available $time at $location (sells for
+  $price bells) $alert'
+fish_none_available: No fish that you haven't already caught are available at this
+  time.
+fish_none_found: Did not find any fish searching for "$search".
+friend_invalid: Your switch friend code should be 12 numbers.
+fruit_invalid: Your native fruit can be apple, cherry, orange, peach, or pear.
+graph_all_users: __**Historical Graph for All Users**__
+hemisphere_invalid: Please provide either "northern" or "southern" as your hemisphere
+  name.
+history_buy: '> Can buy turnips from Daisy Mae for $price bells $timestamp ($day_and_time)'
+history_header: __**Historical info for $name**__
+history_sell: '> Can sell turnips to Timmy & Tommy for $price bells $timestamp ($day_and_time)'
+info_no_params: Please provide a search term.
+info_not_found: No users found.
+invalid_collectable: 'Unrecognized collectable names:
+
+  > $items'
+lastweek: __**Historical Graph from Last Week**__
+lastweek_none: No graph from last week.
+needed: '> **$name** needs $items'
+needed_invalid_param: 'Invalid parameter, use one of: fossils, bugs, fish, art, or
+  songs.'
+needed_lots: _more than $limit $kind..._
+needed_no_param: 'Please provide a parameter: fossils, bugs, fish, art, or songs.'
+needed_none: No $kind are known to be needed at this time, new users must collect
+  at least one before being considered for this search.
+no_hemisphere: Please enter your hemisphere choice first using the !pref hemisphere
+  command.
+not_a_command: Sorry, there is no command named "$request"
+not_admin: Sorry, you are not a Turbot Admin.
+oops: '**Deleting last logged price for $name.**'
+oops_no_data: Sorry, you have no data to delete.
+predict: '__**Predictive Graph for $name**__
+
+  Details: <$url>'
+pref: Registered $pref preference for $name.
+pref_invalid_pref: Please provide a valid preference name, possible preferences include
+  $prefs.
+pref_no_params: Please provide a preference and a value, possible preferences include
+  $prefs.
+pref_no_value: Please provide the value for your $pref preference.
+price_time_invalid: Please provide both the day of the week and time of day.
+reset: '**Resetting data for a new week!**'
+search_all_not_needed: No one currently needs this. Note that new users must have
+  collected at least one item before they are considered for this search.
+search_art_row: '> $name needs arts: $items'
+search_bugs_row: '> $name needs bugs: $items'
+search_fish_row: '> $name needs fish: $items'
+search_fossils_row: '> $name needs fossils: $items'
+search_invalid: 'Did not recognize the following collectables:
+
+  > $items'
+search_no_params: Please provide the name of a collectable to search for.
+search_not_needed: '> No one needs: $items'
+search_songs_row: '> $name needs songs: $items'
+sell_higher_price: Logged selling price of $price for user $name. (Higher than last
+  selling price of $last_price bells)
+sell_lower_price: Logged selling price of $price for user $name. (Lower than last
+  selling price of $last_price bells)
+sell_new_price: Logged selling price of $price for user $name.
+sell_no_params: Please include selling price after command name.
+sell_nonnumeric_price: Selling price must be a number.
+sell_nonpositive_price: Selling price must be greater than zero.
+sell_same_price: Logged selling price of $price for user $name. (Same as last selling
+  price)
+time_of_day_invalid: Please use either morning or evening as the time parameter.
+timezone_invalid: Please provide a valid timezone name, see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  for the complete list of TZ names.
+uncollect_art_already: 'The following pieces of art were already marked as not collected:
+
+  > $items'
+uncollect_art_deleted: 'Unmarked the following pieces of art as collected:
+
+  > $items'
+uncollect_bugs_already: 'The following bugs were already marked as not collected:
+
+  > $items'
+uncollect_bugs_deleted: 'Unmarked the following bugs as collected:
+
+  > $items'
+uncollect_fish_already: 'The following fish were already marked as not collected:
+
+  > $items'
+uncollect_fish_deleted: 'Unmarked the following fish as collected:
+
+  > $items'
+uncollect_fossils_already: 'The following fossils were already marked as not collected:
+
+  > $items'
+uncollect_fossils_deleted: 'Unmarked the following fossils as collected:
+
+  > $items'
+uncollect_no_params: Please provide the name of something to mark as uncollected.
+uncollect_songs_already: 'The following songs were already marked as not collected:
+
+  > $items'
+uncollect_songs_deleted: 'Unmarked the following songs as collected:
+
+  > $items'
+uncollected_art_count: __**$count Pieces of art remaining for $name**__
+uncollected_art_remaining: '> $items'
+uncollected_bugs_count: __**$count bugs remaining for $name**__
+uncollected_bugs_remaining: '> $items'
+uncollected_fish_count: __**$count fish remaining for $name**__
+uncollected_fish_remaining: '> $items'
+uncollected_fossils_count: __**$count fossils remaining for $name**__
+uncollected_fossils_remaining: '> $items'
+uncollected_songs_count: __**$count songs remaining for $name**__
+uncollected_songs_remaining: '> $items'
