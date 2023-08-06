@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: github-back-up
+Version: 1.0
+Summary: Github Backup
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Description: ## Github backup
+        Back up all your github repositories
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

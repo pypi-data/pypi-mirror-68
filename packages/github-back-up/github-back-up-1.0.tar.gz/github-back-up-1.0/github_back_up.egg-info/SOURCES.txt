@@ -1,0 +1,10 @@
+README.md
+setup.py
+gitbackup/__init__.py
+gitbackup/cli.py
+github_back_up.egg-info/PKG-INFO
+github_back_up.egg-info/SOURCES.txt
+github_back_up.egg-info/dependency_links.txt
+github_back_up.egg-info/entry_points.txt
+github_back_up.egg-info/requires.txt
+github_back_up.egg-info/top_level.txt
