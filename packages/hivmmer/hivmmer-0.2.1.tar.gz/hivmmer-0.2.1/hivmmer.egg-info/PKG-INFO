@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: hivmmer
+Version: 0.2.1
+Summary: 
+        An alignment and variant-calling pipeline for Illumina deep sequencing of
+        HIV-1, based on the probabilistic aligner HMMER.
+Home-page: https://github.com/kantorlab/hivmmer
+Author: Mark Howison
+Author-email: mhowison@ripl.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Provides: hivmmer
