@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+mojimoji.cpp
+mojimoji.pyx
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+mojimoji/__init__.pyi
+mojimoji/py.typed
+mojimoji.egg-info/PKG-INFO
+mojimoji.egg-info/SOURCES.txt
+mojimoji.egg-info/dependency_links.txt
+mojimoji.egg-info/top_level.txt
