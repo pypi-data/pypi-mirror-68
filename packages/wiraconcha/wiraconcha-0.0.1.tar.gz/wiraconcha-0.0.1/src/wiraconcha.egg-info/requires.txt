@@ -1,0 +1,13 @@
+google-api-core
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
+google-cloud
+google-cloud-bigquery
+google-cloud-core
+google-cloud-pubsub
+google-cloud-storage
+
+[dev]
+check-manifest

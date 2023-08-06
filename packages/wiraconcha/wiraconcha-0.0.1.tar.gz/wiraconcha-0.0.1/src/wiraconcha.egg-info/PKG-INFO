@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: wiraconcha
+Version: 0.0.1
+Summary: This is a python package with lots of helpful function for working with GCP. Someday, like in the case of the Inca god wiraconcha, it will probably be replaced with Apu
+Home-page: https://github.com/krapes/wiraconcha.git
+Author: Kerri Rapes
+Author-email: kerri.rapes@gmail.com
+License: UNKNOWN
+Description: # Wiraconcha
+        
+        This is a python package with a mix of helpful tools for working with GCP. Someday, like in the story of the Inca god Wiraconcha, it will probably be replaced by Apu. 
+        But for now, this is where the creating happens.
+        
+        
+        ## Installation
+        
+        Run the following to install:
+        
+        ```python
+        pip install wiraconcha
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
