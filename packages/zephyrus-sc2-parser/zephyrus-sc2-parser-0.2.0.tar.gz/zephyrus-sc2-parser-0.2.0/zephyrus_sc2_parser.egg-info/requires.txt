@@ -1,0 +1,4 @@
+requests
+mpyq
+pytz
+pytest
