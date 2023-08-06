@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: deepsensemaking
+Version: 0.1.2020.5.16.3
+Summary: deepsensemaking (sm)
+Home-page: https://github.com/deepsensemaking/deepsensemaking
+Author: DeepSenseMaking Developes
+Author-email: deepsensemaking@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/deepsensemaking/deepsensemaking/releases/download/v0.1.2020.05.16.1/sensemaking-0.1.2020.5.16.1-py3-none-any.whl
+Keywords: deepsensemaking,nlp,ml,ai
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: argparse (>=1.1)
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: scipy (>=1.4.1)
+
+# sensemaking
+
+sensemaking
+
+
