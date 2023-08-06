@@ -1,0 +1,6 @@
+README.md
+setup.py
+Linq.py.egg-info/PKG-INFO
+Linq.py.egg-info/SOURCES.txt
+Linq.py.egg-info/dependency_links.txt
+Linq.py.egg-info/top_level.txt
