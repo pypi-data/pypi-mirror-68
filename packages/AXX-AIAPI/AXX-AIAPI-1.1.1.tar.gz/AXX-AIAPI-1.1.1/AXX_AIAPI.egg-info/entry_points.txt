@@ -1,0 +1,3 @@
+[console_scripts]
+axx_aiapp = axx_aiapp:main
+
