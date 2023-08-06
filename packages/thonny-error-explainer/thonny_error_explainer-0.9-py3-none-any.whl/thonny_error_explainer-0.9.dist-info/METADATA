@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: thonny-error-explainer
+Version: 0.9
+Summary: Thonny plugin for error-explainer
+Home-page: https://github.com/K44rel/thonny-error-explainer-plugin
+Author: Kaarel Loide
+Author-email: kaarel.loide@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: thonny (>=3.2.1)
+Requires-Dist: error-explainer (>=0.14)
+
+# thonny-error-explainer
+
+This is a Thonny plug-in for the error-explainer project.
+
+See more at: https://github.com/K44rel/error-explainer
+
+To install this plug-in in Thonny 
+
+1) Go to Tools -> Manage Plug-ins...
+2) Search for thonny-error-explainer
+3) Click install 
+4) Restart Thonny
+5) You are done! error-explainer generated messages will be displayed in the Assistant window
+
+
