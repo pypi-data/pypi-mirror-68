@@ -1,0 +1,3 @@
+[console_scripts]
+qlint = qmenta.lint:main
+

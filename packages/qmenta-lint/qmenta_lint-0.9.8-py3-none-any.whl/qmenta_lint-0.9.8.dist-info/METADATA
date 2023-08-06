@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qmenta-lint
+Version: 0.9.8
+Summary: Run qlint to perform linting (flake8) on QMENTA components.
+Home-page: https://qmenta.com
+Author: QMENTA
+Author-email: dev@qmenta.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Requires-Dist: flake8 (==3.7.9)
+Requires-Dist: tabulate
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
