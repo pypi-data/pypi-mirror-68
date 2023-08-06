@@ -1,0 +1,4 @@
+[console_scripts]
+hikari = hikari.__main__:main
+hikari-test = hikari.clients.test:main
+
