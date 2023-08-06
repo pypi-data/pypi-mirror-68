@@ -1,0 +1,13 @@
+.DS_Store,sha256=X87hGZJZkc-BrPVl1SSQsbP--1JJ5jGjetbdHBKQDwo,8196
+civicpy/__init__.py,sha256=_CAgYXNbhpu9VP7tl2h1YzQLdaBR9tvI-4WHaZINpiU,540
+civicpy/__version__.py,sha256=WvYkCFnJSsOILnkk9CebW0DIAsarxLvIgcelF-UQYVA,506
+civicpy/civic.py,sha256=kKjePj65lCNuR-1ONahA2kdVqgwY4OhiowigM9Z1Jjg,42069
+civicpy/cli.py,sha256=u2QLygxBe2ks2jhYRj9dyZTgFme-7koJELYB-wVTzwM,1638
+civicpy/exports.py,sha256=01WjeHiAyRWpfv3zErCuS3rX9yEsD6FSeEy7zQ1yeBk,13066
+civicpy/recipes.py,sha256=Gl0Px-z5t8HCQxXg1m0OiuHWnIlEIYeoTBBhgdi-4vM,1911
+civicpy-1.0.1.dist-info/LICENSE,sha256=bgaIvmJ7f39m9HxAVpmjRROUJ2L-1Xsui3ok00lo4OU,1073
+civicpy-1.0.1.dist-info/METADATA,sha256=SR0lkQ_cc3fBRtGdVmbKjTfYOqNX48br92vs0nBn5b0,1021
+civicpy-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+civicpy-1.0.1.dist-info/entry_points.txt,sha256=Gh8ZA2gKkiZ-ZFSiwNezksmP9jwbXhezZPLkTOdfegk,45
+civicpy-1.0.1.dist-info/top_level.txt,sha256=VKqRARzOQYK4FhMojtcMnj_YqhmWVirJSKzWFUBx9GQ,8
+civicpy-1.0.1.dist-info/RECORD,,
