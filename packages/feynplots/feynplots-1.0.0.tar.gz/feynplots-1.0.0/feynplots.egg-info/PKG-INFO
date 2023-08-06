@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: feynplots
+Version: 1.0.0
+Summary: Plotting Feyn graphs
+Home-page: https://github.com/chriscave/cave-plots
+Author: Chris Cave
+Author-email: chris.cave@abzu.ai
+License: MIT
+Description: Feynplots is a package to visualise each interaction in a Feyn Graph. See [here for more on starting with Feyn](https://docs.abzu.ai/docs/guides/quick_start.html) and [understanding the QLattice.](https://docs.abzu.ai/docs/guides/qlattice.html)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

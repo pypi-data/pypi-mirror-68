@@ -1,0 +1,9 @@
+README.md
+setup.py
+feynplots/__init__.py
+feynplots/main.py
+feynplots.egg-info/PKG-INFO
+feynplots.egg-info/SOURCES.txt
+feynplots.egg-info/dependency_links.txt
+feynplots.egg-info/requires.txt
+feynplots.egg-info/top_level.txt
