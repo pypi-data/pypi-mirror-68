@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+high_order_layers/FourierLayers.py
+high_order_layers/Functions.py
+high_order_layers/HighOrderConvolution2D.py
+high_order_layers/HighOrderLayer.py
+high_order_layers/PolynomialLayers.py
+high_order_layers/__init__.py
+high_order_layers.egg-info/PKG-INFO
+high_order_layers.egg-info/SOURCES.txt
+high_order_layers.egg-info/dependency_links.txt
+high_order_layers.egg-info/requires.txt
+high_order_layers.egg-info/top_level.txt
