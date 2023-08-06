@@ -1,0 +1,15 @@
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx_rtd_theme
+tpDcc-libs-python
+tpDcc-core
+tpDcc-libs-qt
+tpDcc-dccs-maya
+
+[dev]
+wheel
+
+[test]
+pytest
