@@ -1,0 +1,11 @@
+click
+pyconfig
+appdirs
+requests
+jsonschema
+PyYAML
+pytest
+pytest-datafiles
+junit_xml
+termcolor
+coloredlogs
