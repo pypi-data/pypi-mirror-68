@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: StealthFlow
+Version: 0.0.9
+Summary: Supporting Modules for MachineLearning.
+Home-page: https://github.com/p-geon/StealthFlow
+Author: StealthFlow
+Author-email: deeplearnerstealthflow@gmail.com
+License: MIT
+Keywords: stealthflow StealthFlow
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# StealthFlow
+TensorFlow custom layer
+
+
