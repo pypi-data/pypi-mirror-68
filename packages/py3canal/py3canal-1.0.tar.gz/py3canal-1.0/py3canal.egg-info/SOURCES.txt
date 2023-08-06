@@ -1,0 +1,13 @@
+README.md
+setup.py
+py3canal.egg-info/PKG-INFO
+py3canal.egg-info/SOURCES.txt
+py3canal.egg-info/dependency_links.txt
+py3canal.egg-info/top_level.txt
+pycanal/__init__.py
+pycanal/client.py
+pycanal/connector.py
+pycanal/example.py
+pycanal/protocol/CanalProtocol_pb2.py
+pycanal/protocol/EntryProtocol_pb2.py
+pycanal/protocol/__init__.py
