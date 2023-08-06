@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dtool_smb/__init__.py
+dtool_smb/storagebroker.py
+dtool_smb.egg-info/PKG-INFO
+dtool_smb.egg-info/SOURCES.txt
+dtool_smb.egg-info/dependency_links.txt
+dtool_smb.egg-info/entry_points.txt
+dtool_smb.egg-info/requires.txt
+dtool_smb.egg-info/top_level.txt
