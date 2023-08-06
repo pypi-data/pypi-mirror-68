@@ -1,0 +1,10 @@
+setup.py
+probdists_udacity_tarciso/Binomialdistribution.py
+probdists_udacity_tarciso/Gaussiandistribution.py
+probdists_udacity_tarciso/Generaldistribution.py
+probdists_udacity_tarciso/__init__.py
+probdists_udacity_tarciso.egg-info/PKG-INFO
+probdists_udacity_tarciso.egg-info/SOURCES.txt
+probdists_udacity_tarciso.egg-info/dependency_links.txt
+probdists_udacity_tarciso.egg-info/not-zip-safe
+probdists_udacity_tarciso.egg-info/top_level.txt
