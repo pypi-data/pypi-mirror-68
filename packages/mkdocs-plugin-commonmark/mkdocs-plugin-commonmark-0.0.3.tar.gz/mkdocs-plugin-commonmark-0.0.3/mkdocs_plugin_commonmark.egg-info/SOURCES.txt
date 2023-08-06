@@ -1,0 +1,11 @@
+README.md
+setup.py
+mkdocs_plugin_commonmark/__init__.py
+mkdocs_plugin_commonmark/mistletoe_interop.py
+mkdocs_plugin_commonmark/serializers.py
+mkdocs_plugin_commonmark.egg-info/PKG-INFO
+mkdocs_plugin_commonmark.egg-info/SOURCES.txt
+mkdocs_plugin_commonmark.egg-info/dependency_links.txt
+mkdocs_plugin_commonmark.egg-info/entry_points.txt
+mkdocs_plugin_commonmark.egg-info/requires.txt
+mkdocs_plugin_commonmark.egg-info/top_level.txt
