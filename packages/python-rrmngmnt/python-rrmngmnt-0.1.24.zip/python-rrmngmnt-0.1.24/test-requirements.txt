@@ -1,0 +1,5 @@
+pytest>=2.8.7
+pytest-cov
+pytest-docker
+docker-compose
+attrs==19.1.0
