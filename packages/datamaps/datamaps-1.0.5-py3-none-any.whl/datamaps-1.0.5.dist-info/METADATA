@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: datamaps
+Version: 1.0.5
+Summary: Collect and clean data using Excel spreadsheets.
+Home-page: https://github.com/hammerheadlemon/datamaps
+Author: Matthew Lemon
+Author-email: matt@matthewlemon.com
+Maintainer: Matthew Lemon
+Maintainer-email: matt@matthewlemon.com
+License: UNKNOWN
+Keywords: data console commandline excel
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: python-dateutil
+Requires-Dist: bcompiler-engine (>=1.0.5)
+
+![Tests](https://github.com/hammerheadlemon/datamaps/workflows/Tests/badge.svg)
+
+This software is a CLI UI layer for
+[bcompiler-engine](https://github.com/hammerheadlemon/bcompiler-engine).  It
+allows for easy access to adapters available within `bcompiler-engine` and is
+intended to be packaged using a packaging application such as `PyInstaller` and
+thus making `bcompiler-engine` palatable to non-technical users, and users who
+do not have access to a Python installation.
+
+
+Details, including links to the downloadable version of this software are be
+found at [Datamaps - Twenty Four
+Software](https://www.datamaps.twentyfoursoftware.com).
+
+
