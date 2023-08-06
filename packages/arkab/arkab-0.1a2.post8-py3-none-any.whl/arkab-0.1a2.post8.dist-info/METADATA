@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: arkab
+Version: 0.1a2.post8
+Summary: DeepLearning Toolkit for myself
+Home-page: UNKNOWN
+Author: gawainx
+Author-email: liangyi@bupt.edu.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: networkx
+Requires-Dist: toml
+Requires-Dist: tensorflow
+
+# Arkab
+
+Private deep learning framework for boosting my deep learning development
+
+## Contents
++ NLP
+    + Knowledge
+    + SeqText
+
++ TensorWrapper
+    + Tensorflow Backend
+    + Torch Backend
+
++ Tensorflow
+
++ Torch
+    + Model Hooker
+
