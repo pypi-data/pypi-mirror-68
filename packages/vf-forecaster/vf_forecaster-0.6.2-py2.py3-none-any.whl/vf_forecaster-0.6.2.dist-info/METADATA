@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: vf-forecaster
+Version: 0.6.2
+Summary: A portable optimized time-series forecasting framework for Python
+Home-page: https://github.com/visualfabriq/forecaster
+Author: Dipanjan Kalithya, Christos Tselas
+Author-email: dkailthya@visualfabriq.com, ctselas@visualfabriq.com
+License: GNU
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: cloudpickle (==1.3.0)
+Requires-Dist: convertdate (==2.2.0)
+Requires-Dist: coverage (==5.0.4)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: Cython (==0.29.16)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: ephem (==3.7.7.1)
+Requires-Dist: fbprophet (==0.4.post2)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: holidays (==0.9.12)
+Requires-Dist: hyperopt (==0.2.3)
+Requires-Dist: importlib-metadata (==1.5.1)
+Requires-Dist: joblib (==0.14.1)
+Requires-Dist: kiwisolver (==1.1.0)
+Requires-Dist: LunarCalendar (==0.0.9)
+Requires-Dist: networkx (==2.2)
+Requires-Dist: setuptools-git (==1.2)
+Requires-Dist: packaging (==20.3)
+Requires-Dist: patsy (==0.5.1)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: PyMeeus (==0.3.7)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pystan (==2.19.1.1)
+Requires-Dist: pytest-cov (==2.8.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: seaborn (>=0.9.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: statsmodels (==0.10.1)
+Requires-Dist: tqdm (==4.43.0)
+Requires-Dist: wcwidth (==0.1.9)
+Requires-Dist: matplotlib (<=2.2.4) ; (python_version <= '2.7')
+Requires-Dist: numpy (==1.16.4) ; (python_version <= '2.7')
+Requires-Dist: pandas (==0.23.4) ; (python_version <= '2.7')
+Requires-Dist: pytest (==4.6.9) ; (python_version <= '2.7')
+Requires-Dist: scikit-learn (==0.20.4) ; (python_version <= '2.7')
+Requires-Dist: scipy (==1.2.2) ; (python_version <= '2.7')
+Requires-Dist: matplotlib (>=3.1.2) ; (python_version > '3.3')
+Requires-Dist: numpy (>=1.18.1) ; (python_version > '3.3')
+Requires-Dist: pandas (==0.23.4) ; (python_version > '3.3')
+Requires-Dist: pytest (>=5.3.5) ; (python_version > '3.3')
+Requires-Dist: scikit-learn (==0.22.1) ; (python_version > '3.3')
+Requires-Dist: scipy (>=1.4.1) ; (python_version > '3.3')
+
+# forecaster
+Optimized time-series forecasting models for Visualfabriq Demand Prediction.
+
+
+
