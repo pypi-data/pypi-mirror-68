@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tegregr
+Version: 0.0.2
+Summary: Multiple and hierarchical regression
+Home-page: https://github.com/thomasgladwin/tegregr
+Author: Thomas E Gladwin
+Author-email: thomasgladwin@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# tegregr
+
+This is a function that runs a multiple regression analysis and provides the F-test for explained variance of the overall model and t-tests per coefficient. The function also lets you test significance of additional explained variance of a set of predictors added to a baseline model.
+
