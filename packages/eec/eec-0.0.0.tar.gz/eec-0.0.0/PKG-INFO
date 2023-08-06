@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eec
+Version: 0.0.0
+Summary: EEC computations in python
+Home-page: https://github.com/pkomiske/EnergyEnergyCorrelators
+Author: Patrick T. Komiske III
+Author-email: pkomiske@mit.edu
+License: GPL-3.0
+Description: # EnergyEnergyCorrelators
+        C++ code with a python wrapper for computing energy-energy correlators (EECs) efficiently
+        
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
