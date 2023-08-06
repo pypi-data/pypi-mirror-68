@@ -1,0 +1,4 @@
+[console_scripts]
+s-infra = slalom.dataops.infra:main
+s-spark = slalom.dataops.sparkutils:main
+
