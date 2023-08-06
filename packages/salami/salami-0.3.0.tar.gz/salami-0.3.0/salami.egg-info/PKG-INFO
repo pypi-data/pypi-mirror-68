@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: salami
+Version: 0.3.0
+Summary: Lightweight NLO BSM cross-sections, to go
+Home-page: UNKNOWN
+Author: Andy Buckley, Abhijeet Gangan, Jack Murphy
+Author-email: andy.buckley@cern.ch
+License: GPL
+Description: 
+        Salami: lightweight BSM NLO cross-sections, to go
+        
+        Absolute cross-sections for BSM processes are an essential component,
+        along with analysis acceptances & efficiencies and collider luminosities,
+        of signal event-yield predictions in particle collider experiments.
+        Leading-order (LO) cross-sections can be calculated quickly, but next-to-LO
+        ones are hundreds of times slower to calculate: too slow for use in
+        large-scale parameter scan and fitting codes. Salami solves this problem
+        by rapid prediction of pre-trained NLO cross-sections as functions of the
+        SUSY/BSM spectrum.
+        
+        TODO:
+         - More careful treatment of negative masses (implies phases, not simply a modulus)
+        
+Keywords: supersymmetry susy slha hep physics particle cross-section xsec prospino
+Platform: UNKNOWN
