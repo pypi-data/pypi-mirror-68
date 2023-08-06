@@ -1,0 +1,10 @@
+README.md
+setup.py
+productionize/__init__.py
+productionize/product.py
+productionize/workbench.py
+productionize.egg-info/PKG-INFO
+productionize.egg-info/SOURCES.txt
+productionize.egg-info/dependency_links.txt
+productionize.egg-info/not-zip-safe
+productionize.egg-info/top_level.txt
