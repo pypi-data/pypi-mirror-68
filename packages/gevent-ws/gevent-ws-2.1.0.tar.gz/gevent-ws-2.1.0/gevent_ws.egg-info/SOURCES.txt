@@ -1,0 +1,7 @@
+README.md
+setup.py
+gevent_ws/__init__.py
+gevent_ws.egg-info/PKG-INFO
+gevent_ws.egg-info/SOURCES.txt
+gevent_ws.egg-info/dependency_links.txt
+gevent_ws.egg-info/top_level.txt
