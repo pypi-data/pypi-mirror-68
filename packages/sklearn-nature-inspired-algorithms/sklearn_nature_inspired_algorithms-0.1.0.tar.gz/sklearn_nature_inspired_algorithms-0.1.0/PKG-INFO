@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sklearn-nature-inspired-algorithms
+Version: 0.1.0
+Summary: Search using nature inspired algorithms over specified parameter values for an sklearn estimator.
+Home-page: https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms
+License: MIT
+Keywords: sklearn,nature,inspired,algorithms
+Author: Timotej Zatko
+Author-email: timi.zatko@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: NiaPy (==2.0.0rc10)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: scikit-learn (>=0.22.2,<0.23.0)
+Requires-Dist: toml (>=0.9,<0.10)
+Project-URL: Repository, https://github.com/timzatko/Sklearn-Nature-Inspired-Algorithms
+Description-Content-Type: text/markdown
+
+# Nature Inspired Algorithms for scikit-learn
+
