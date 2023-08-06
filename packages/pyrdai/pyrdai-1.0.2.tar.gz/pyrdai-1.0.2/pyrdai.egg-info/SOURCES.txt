@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyrdai/__init__.py
+pyrdai/nlp.py
+pyrdai/ocr.py
+pyrdai.egg-info/PKG-INFO
+pyrdai.egg-info/SOURCES.txt
+pyrdai.egg-info/dependency_links.txt
+pyrdai.egg-info/requires.txt
+pyrdai.egg-info/top_level.txt
