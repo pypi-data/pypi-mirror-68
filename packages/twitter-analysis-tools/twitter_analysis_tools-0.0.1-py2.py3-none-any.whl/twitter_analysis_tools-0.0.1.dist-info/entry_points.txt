@@ -1,0 +1,3 @@
+[console_scripts]
+my_example = twitter_analysis_tools.bin.my_example:main
+
