@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: replit
+Version: 1.1.3
+Summary: A package for repl.it that allows you to clear the console and play audio.
+Home-page: UNKNOWN
+Author: mat
+Author-email: pypi@matdoes.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: AsyncIO
+Description-Content-Type: text/markdown
+
+# Replit
+
+Some basic tools for your repl at [repl.it](https://repl.it).
+
+## `clear`
+
+###### `def replit.clear()`
+
++ `replit.clear`
+
+> Clear the terminal.
+
+## `Audio`
+
+###### `class replit._Audio()`
+
+Note: It is not recommended to call this directly. Instead, use `import audio from replit` to get an `_Audio` object.
+
++ `play(file_path, volume=1, does_loop=False, loop_count=1)`
+
+> Request for a file to be played.  Returns a `Source` object.
+> + `volume` is the volume at which the file is to be played at.
+> + `does_loop`: A boolean, must be `True` if you want the file to be played more than once.
+> + `loop_count`: The amount of times the player should replay the file.
+
++ `get_source(source_id)`
+
+> Get a source by it's ID.  Returns `None` if the source wasn't found.
+
++ `read_status()`
+
+> Read the raw status of the audio player.  It's not recommended to call this directly.
+
++ `get_playing()`
+
+> Get a list of playing sources.  Returns a list of `Source` objects.
+
++ `get_paused()`
+
+> Get a list of paused sources.  Returns a list of `Source` objects.
+
++ `get_sources()`
+
+> Get a list of all sources, playing or paused.  Returns a list of `Source` objects.
+
+
+## `Source`
+
+###### `class replit.Source()`
+
+Note: It is not recommended to call this directly, instead retrieve the source via `replit.audio`.
+
+
++ `path`
+
+> The provided path to the file. Readonly.
+
++ `id`
+
+> The id of the source. Readonly.
+
++ `start_time`
+
+> When the audio player originally retrieved the source. Readonly.
+
++ `end_time`
+
+> The estimated time the source will finish playing.  Readonly.  Note: This does not account for the source restarting.
+
++ `remaining`
+
+> The estimated time remaining before the source finishes playing.  Readonly. Note: This does not account for the source restarting.
+
++ `duration`
+
+> The estimated duration of the source. Readonly.  Note: This does not account for the source restarting.
+
++ `does_loop`
+
+> Wether the source repeats or not.  Readonly.
+
++ `loops_remaining`
+
+> The remaining times the source will replay.  Readonly.
+
++ `volume`
+
+> The volume of the source. 1 is the sources native volume.  This can be set to change the source's volume.
+
++ `paused`
+
+> Wether the source is playing or not. The source is not playing when this is `True`.  Set to play/pause the source.
+
++ `set_loop(does_loop: bool, loop_count: int = 0)`
+
+> Set the looping status of the source.
+> + `does_loop`: Wether or not the file will play again.
+> + `loop_count`: The remaining amount of repeats the source has.  Set to a negative value to repeat the source infinitely.
+
++ `toggle_playing()`
+
+> Toggel wether the source is playing or not.
+
+
+
