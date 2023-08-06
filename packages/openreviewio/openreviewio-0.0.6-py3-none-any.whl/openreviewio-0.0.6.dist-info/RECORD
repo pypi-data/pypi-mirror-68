@@ -1,0 +1,17 @@
+openreviewio/Content.py,sha256=M0zh7-4H5tOvMOrhBPqWlvPjm365UPvo3mpWILS4zgo,4013
+openreviewio/MediaReview.py,sha256=nvpJhpSpaezBRpBGL7Rs_Wn-LwQKtQ8D_G1KSxYkd1g,5434
+openreviewio/Note.py,sha256=XlHVAmXJeDktiR6reVac3wZJgZXPPJlCNzY9Hu-BQFY,2265
+openreviewio/Status.py,sha256=_CdjhtQGCgWPzVgPeVhjqVU1y7BHLSuixK-_QKFRN4Y,1764
+openreviewio/__init__.py,sha256=hfcyjVm1kYXvRgI2JtXbV5JcKRvJOf5BTDCdMCjr9VM,2651
+openreviewio/orio_classes/Content.toml,sha256=WT7mgl1sr9E1NS4CJyihU4-5cymqX_a5m2FhoKXWqpM,18
+openreviewio/orio_classes/Image.toml,sha256=kjm29lP3mPezB8kgQ6MYwU12iQtkXqnQvh0IIJEuHX8,87
+openreviewio/orio_classes/ImageAnnotation.toml,sha256=Xc7GN_-SWOV69ZmAe36RsDDYmdYPlw6taf_w8jV9mxY,86
+openreviewio/orio_classes/Note.toml,sha256=lrqITRimzMHJ31blWIL2dN6q1BFd_eBupO80f1xBdes,160
+openreviewio/orio_classes/Review.toml,sha256=2Yfkt5ltgPMT8tprzkbSFvi6MsaXrnR8LL8RRuwy4w4,160
+openreviewio/orio_classes/Status.toml,sha256=ONO0JxLzWpp4Lp4-hOfUyrVtfiflOukyipZRfRSCj08,138
+openreviewio/orio_classes/TextComment.toml,sha256=ITnmcgmokF3zuE3pmpougDFPX7LKlPN4Mt5aRvPago0,47
+openreviewio-0.0.6.dist-info/LICENCE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+openreviewio-0.0.6.dist-info/METADATA,sha256=jjjPMCS6AjV0ZXlLQ8jJKfe2RsViMkERoDdEi1gheA4,519
+openreviewio-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+openreviewio-0.0.6.dist-info/top_level.txt,sha256=b5k0ErwojO705aVGpn2xsRrCZkbQH8qrNxq3UzKHOb4,13
+openreviewio-0.0.6.dist-info/RECORD,,
