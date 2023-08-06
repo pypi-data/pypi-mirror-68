@@ -1,0 +1,11 @@
+dizbot/__init__.py,sha256=xvfTyihMSnVTnpZ-qge7twGOyh9LFb2SuZY6HM0ODGM,145
+dizbot/dizbot.py,sha256=k-99RgkVvSAB3oQ6aqGLUzikiw5TMTv5L7iufGELoz0,4224
+dizbot/dizbot_config.py,sha256=MQXTtvwWHfrWuO8ydqTgPoLUWzs9SlVYK47u0gVr8Uc,3018
+dizbot/dizbot_generator.py,sha256=UkyFsaZBzRbK9oON8kRy8TwFn_O7HhzYdFrzRRcm36g,2405
+dizbot/dizbot_utils.py,sha256=u28w9PiZh5B3eIWxmgOeORW2yIiVMwKYf7kT-qyZEAY,3431
+dizbot-1.0.3.dist-info/LICENSE,sha256=eV8Lz2BX-QaHBxomhl4PKu9PKn5KXQYWZ1Kr2Y3TgHA,1072
+dizbot-1.0.3.dist-info/METADATA,sha256=zPmmf06qOMkRmZT_2IusJa-0_Yfw7ZmgknA7YwuiATs,2362
+dizbot-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dizbot-1.0.3.dist-info/entry_points.txt,sha256=I6myGimSnFOJTofFcD5qIfUMla7N2FeSJLcKhQnVtNI,46
+dizbot-1.0.3.dist-info/top_level.txt,sha256=kKUU4fLxaU5VLbyI_hCV8D_1VTC8K0wUOKgI_nI-PGU,7
+dizbot-1.0.3.dist-info/RECORD,,
