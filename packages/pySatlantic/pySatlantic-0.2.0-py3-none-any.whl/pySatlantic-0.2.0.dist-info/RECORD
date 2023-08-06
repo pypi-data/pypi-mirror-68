@@ -1,0 +1,10 @@
+pySatlantic/__init__.py,sha256=jJXaK0aXsKUPRwLVMs-kfBp3NL21OwkO0tjXfwU7oes,48
+pySatlantic/__main__.py,sha256=1Qk3Rbx2_Jp9QZdHdmn3eAYdvrm7Nle1SO4bcAStlnk,1032
+pySatlantic/dev.py,sha256=Ftv4Inmhw90OYTiyZctuSomnOpA_wIJp70ru4ooSEgk,1536
+pySatlantic/instrument.py,sha256=e691kwP7U_UW0rpi8RVUH-uifGZLZVhNNj0LqoipC8U,31704
+pySatlantic/test.py,sha256=oH_uTCpQbQb0WnOcKFItHSKvNM99jUNvi8wKTuo1AqQ,15474
+pySatlantic-0.2.0.dist-info/LICENSE,sha256=_-u-pGie9vIZEuVV_HXmlmvI4ZZF-QDCSKGaGKlSTeE,1070
+pySatlantic-0.2.0.dist-info/METADATA,sha256=klXvRToSRDC6u4i1Ww5UZruAILKXvncZoMDTELqvn50,3343
+pySatlantic-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pySatlantic-0.2.0.dist-info/top_level.txt,sha256=g3HPq7td63uGTG6ooXcScYgwEWhT8UTkexKStTQvox4,12
+pySatlantic-0.2.0.dist-info/RECORD,,
