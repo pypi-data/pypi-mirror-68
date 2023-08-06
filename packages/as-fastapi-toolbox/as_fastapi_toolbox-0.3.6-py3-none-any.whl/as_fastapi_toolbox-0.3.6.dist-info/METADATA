@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: as-fastapi-toolbox
+Version: 0.3.6
+Summary: 
+Author: Andreas Moll
+Author-email: andreasm@ansto.gov.au
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyJWT (>=1.7.1,<2.0.0)
+Requires-Dist: cryptography (>=2.9.2,<3.0.0)
+Requires-Dist: email-validator (>=1.1.0,<2.0.0)
+Requires-Dist: fastapi (>=0.54.1,<0.55.0)
+Requires-Dist: httpx (>=0.12.1,<0.13.0)
+Requires-Dist: pydantic (>=1.5.1,<2.0.0)
+Requires-Dist: python-multipart (>=0.0.5,<0.0.6)
+Requires-Dist: pytz (>=2020.1,<2021.0)
+Requires-Dist: starlette (>=0.13.2,<0.14.0)
+Requires-Dist: uvicorn (>=0.11.5,<0.12.0)
