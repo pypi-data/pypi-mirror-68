@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyterum
+Version: 0.4.8
+Summary: A Python client for interfacing with the Iterum framework for repeatable data science
+Home-page: https://github.com/iterum-provenance/pyterum
+Author: Edser & Mark
+Author-email: UNKNOWN
+License: MIT
+Download-URL: https://github.com/iterum-provenance/pyterum/archive/v0.4.8.tar.gz
+Description: UNKNOWN
+Keywords: Iterum,Python Client,Framework,Provenance,Data Science
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
