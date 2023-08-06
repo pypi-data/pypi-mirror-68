@@ -1,0 +1,16 @@
+aquarius/__init__.py,sha256=t-RG0vn9gY-yj0aW5AZWvZdmmvkda9W4CV8hcqZr1Ak,223
+aquarius/config.py,sha256=R7QqU1b9GPXDM9fByr8bzDZEWENch1jPuvF_528aTPE,2710
+aquarius/constants.py,sha256=lvOxRiF6S2u-72oteo5qA0VxCSQ1_UY_LbOQJIb8-gQ,573
+aquarius/log.py,sha256=U2kThZTITzFEustmS0PUwBIYaH-5d14t5vHK3VpOLwE,1035
+aquarius/myapp.py,sha256=HAvuvYDI138rO4_F0vzzcx0RqpZysic5NqI38wbbPpo,420
+aquarius/run.py,sha256=09prFs0Z9k31eYJOCR1oimAJV8yDSRqYlcBsDo9a9rM,2514
+aquarius/app/__init__.py,sha256=U-4a7I2NYrK1uhqt0crZfqXem_Fsqbx40TXBUdLOEi4,83
+aquarius/app/assets.py,sha256=lU4_ruHpBG0bki15uYciHCC7tChio4PEH8OrlwxpYvI,49528
+aquarius/app/auth_util.py,sha256=aIuan9e9UG23OqDEpoz752o05hPy9EldDzwhAn9mF_8,3511
+aquarius/app/dao.py,sha256=JIOr_VgEw5DFHv_7foBFaCE4zpjeFmRHYnWyC3Z_WHE,2487
+aquarius/app/util.py,sha256=DLnNmmiJ15p3ODhZuSYaZsrU7190VXskVdna8jQTgEU,3443
+ocean_aquarius-1.1.0.dist-info/LICENSE,sha256=6xMoNVMh9QyiirpnvpHPcsp7YsP0apWbeQaPFOye1ww,11345
+ocean_aquarius-1.1.0.dist-info/METADATA,sha256=f4m2gNuJ16akZgl-77X8h0VwCZS-uuL6g9rfpjbX6rE,9061
+ocean_aquarius-1.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ocean_aquarius-1.1.0.dist-info/top_level.txt,sha256=n47MAADkNmjU1OH9Vm0be1t0Lms8VJ53i3nP2z9kchY,9
+ocean_aquarius-1.1.0.dist-info/RECORD,,
