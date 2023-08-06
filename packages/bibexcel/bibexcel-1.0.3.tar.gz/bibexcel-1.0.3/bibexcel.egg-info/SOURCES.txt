@@ -1,0 +1,10 @@
+README.md
+setup.py
+bibexcel/__init__.py
+bibexcel/bibexcel.py
+bibexcel.egg-info/PKG-INFO
+bibexcel.egg-info/SOURCES.txt
+bibexcel.egg-info/dependency_links.txt
+bibexcel.egg-info/not-zip-safe
+bibexcel.egg-info/requires.txt
+bibexcel.egg-info/top_level.txt
