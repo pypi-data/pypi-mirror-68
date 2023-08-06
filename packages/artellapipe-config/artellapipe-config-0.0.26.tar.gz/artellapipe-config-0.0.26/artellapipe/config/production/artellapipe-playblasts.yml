@@ -1,0 +1,4 @@
+# Base Configuration for Artella Playblasts in Maya used by Artella Playblasts Manager (not the tool)
+
+# Defines path where Playblast presets are located
+presets_paths: []

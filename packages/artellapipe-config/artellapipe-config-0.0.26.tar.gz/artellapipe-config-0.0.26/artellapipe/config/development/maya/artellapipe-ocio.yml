@@ -1,0 +1,12 @@
+# Base Configuration for Artella OCIO in Maya
+
+ocio_plugins:
+  arnold:
+    plugin_name: "mtoa.mll"
+    rendering_space: "ACEScg"
+    default_filter: "blackman_harris"
+    default_filter_width: 1.2
+    default_antialiasing: [1, 1, 1, 1, 1, 1]
+    settings:
+      defaultRenderGlobals:
+        currentRenderer: "arnold"

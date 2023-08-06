@@ -1,0 +1,54 @@
+# Base Configuration file for artellapipe-tools-welcome
+
+# Defines tool name
+name: Welcome
+
+# Unique ID for the tool
+id: artellapipe-tools-welcome
+
+# Description of the tool
+description: Tool that shows useful information for newcomers
+
+# Defines icon of the tool
+icon: ${project + "_tray"}
+
+# URL to tool documentation web page
+url: www.google.es
+
+# Name of the logo for the tool
+logo_name: ""
+
+# Defines the ID used by Sentry to monitorize error traces
+sentry_id: https://b0114e6428964b20ae057087f5fda45b@sentry.io/1763194
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "artellapipe", "logs", "tools")}
+
+# Directory where tool resources are located
+resources_path: ""
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}
+
+# List that defines the import order of the tool modules
+import_order: []
+
+# Tool Menu definition
+#menu:
+#  label: Test
+#  type: menu
+#  childrens:
+#    - id: test
+#      type: tool
+#    - id: test2
+#    - type: tool
+
+# Tool Shelf definition
+#shelf:
+#  name: ${project}
+#  children:
+#    - id: ${project + ".shelf.test"}
+#      displayLabel: False
+#      children:
+#        - id: test
+#          type: tool

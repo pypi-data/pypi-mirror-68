@@ -1,0 +1,34 @@
+# Base Configuration file for artellapipe-tools-alembicmanager
+
+# Defines tool name
+name: Tool Box
+
+# Unique ID for the tool
+id: artellapipe-tools-toolbox
+
+# Description of the tool
+description: Tool tool to manage the rest of the tools
+
+# URL to tool documentation web page
+url: www.google.es
+
+# Tags relatedi with this tool
+tags: ['tools', 'all']
+
+# Name of the logo for the tool
+logo_name: toolbox_logo
+
+# Defines the ID used by Sentry to monitorize error traces
+sentry_id: https://c05927148920439bad4fb0acef336bfb@sentry.io/1797439
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "artellapipe", "logs", "tools")}
+
+# Default logger level used by tool logger
+logger_level: WARNING
+
+# Directory where tool resources are located
+resources_path: ${join(filename, "resources")}
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}

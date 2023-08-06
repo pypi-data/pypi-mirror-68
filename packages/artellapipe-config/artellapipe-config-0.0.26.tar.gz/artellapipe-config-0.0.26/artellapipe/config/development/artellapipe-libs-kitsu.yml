@@ -1,0 +1,19 @@
+# Base Configuration file for artellapipe-libs-drive
+
+# Defines lib name
+name: Kitsu
+
+# Unique ID for the tool
+id: artellapipe-libs-kitsu
+
+# Defines the Kitsu Project ID
+project_id: ""
+
+# Defines the URL of the Kitsu project
+project_url: ""
+
+# Defines Gazy API url of the Kitsu project
+gazu_api: ""
+
+# Defines custom attribute to use to identify Kitsu assets
+custom_id_attribute: ""

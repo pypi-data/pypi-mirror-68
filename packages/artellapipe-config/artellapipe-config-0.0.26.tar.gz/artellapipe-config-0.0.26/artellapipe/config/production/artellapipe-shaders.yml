@@ -1,0 +1,10 @@
+# Base Configuration for Artella Shaders
+
+# Defines list of paths where shaders can be found
+paths: []
+
+# Defines the template name used to define shader files
+file_type: "shader"
+
+# Defines the file type used in Solstice to define asset shaders
+asset_file_type: "shaders"

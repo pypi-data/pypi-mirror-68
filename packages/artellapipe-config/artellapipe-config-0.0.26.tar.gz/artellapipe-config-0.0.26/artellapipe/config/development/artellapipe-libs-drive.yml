@@ -1,0 +1,23 @@
+# Base Configuration file for artellapipe-libs-drive
+
+# Defines lib name
+name: Google Drive
+
+# Unique ID for the tool
+id: artellapipe-libs-drive
+
+# Defines modules that will be skipped during import
+skip_modules:
+  - externals
+
+# Defines the name of the spreadsheets that contains all the tracking information
+spreadsheets: []
+
+# Defines credentials dictionary info for Drive
+credentials: {}
+
+# Defines the scope
+scope: []
+
+# Defines the tables used in the project
+tables: {}

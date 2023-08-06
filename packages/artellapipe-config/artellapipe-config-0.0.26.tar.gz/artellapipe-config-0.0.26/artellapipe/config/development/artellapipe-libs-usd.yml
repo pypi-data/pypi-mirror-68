@@ -1,0 +1,7 @@
+# Base Configuration file for artellapipe-libs-usd
+
+# Defines lib name
+name: USD
+
+# Unique ID for the tool
+id: artellapipe-libs-usd

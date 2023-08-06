@@ -1,0 +1,7 @@
+# Base Configuration file for artellapipe-tools-playblastmanager
+
+# Defines list of plugins to enable for Playblast Manager
+plugins: {}
+
+# Defines the tokens for Playblast Manager
+tokens: {}

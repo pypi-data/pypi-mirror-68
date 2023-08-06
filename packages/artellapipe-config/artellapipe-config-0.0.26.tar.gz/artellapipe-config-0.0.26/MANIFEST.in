@@ -1,0 +1,4 @@
+recursive-include artellapipe/config/* *.json
+recursive-include artellapipe/config/* *.yml
+include versioneer.py
+include artellapipe/config/_version.py

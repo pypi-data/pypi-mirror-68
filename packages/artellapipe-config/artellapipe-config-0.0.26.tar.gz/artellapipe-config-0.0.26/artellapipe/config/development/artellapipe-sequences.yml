@@ -1,0 +1,15 @@
+# Base Configuration for Artella Sequences
+
+# Defines dictionary of sequences types used by the project
+types: {}
+
+# Defines the default name used by sequences
+default_name: 'New Sequence'
+
+# Defines dictionary with default sequence data info
+data:
+  id_attribute: 'id'
+  name_attribute: 'name'
+  thumb_attribute: 'thumb'
+  description_attribute: 'description'
+  path_template_name: 'sequence_path'

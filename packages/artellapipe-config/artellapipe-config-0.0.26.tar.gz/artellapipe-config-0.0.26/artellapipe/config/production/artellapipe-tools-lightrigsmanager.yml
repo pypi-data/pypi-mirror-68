@@ -1,0 +1,7 @@
+# Base Configuration file for artellapipe-tools-lightrigsmanager
+
+# Defines the file type for light rigs
+lightrig_file_type: 'lightrig'
+
+# Defines the template used to retrieve light rigs location
+lightrigs_template: 'lightrigs'

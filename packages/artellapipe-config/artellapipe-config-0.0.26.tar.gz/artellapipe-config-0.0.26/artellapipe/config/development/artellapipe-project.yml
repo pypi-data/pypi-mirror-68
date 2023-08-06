@@ -1,0 +1,126 @@
+# Base Configuration for Artella Projects
+
+# Defines the name of the project
+name: ${title}
+
+# Defines the environment variable that stores project path
+env_var: ${project_upper + "_PROJECT"}
+
+# Defines of the project tray icon name
+tray_icon_name: ${project_lower + "_tray"}
+
+# Defines the Artella project type (indie or enterprise)
+project_type: indie
+
+# Defines the Artella ID number
+id_number: ""
+
+# Defines the Artella Project ID
+id: ""
+
+# Defines Assets folder of the current project in Artella server
+assets_folder: "Assets"
+
+# Defines Production folder of the current project in Artella server
+production_folder: "Production"
+
+# Defines the ID name used by DCC tags
+tag_type_id: ${project_upper + "_TAG"}
+
+# Defines the name of the tolder that contains logos
+icon_resources_folder: "logos"
+
+# Defines the name of the icon for the project
+icon_name: ${project_lower}
+
+# Defines the colors used in menubar and title on tools when development mode is on
+dev_color0: "75, 165, 135, 150"
+dev_color1: "65, 145, 120, 100"
+
+# Defines then name of the file that manages project tools version
+version_file: "__version__.py"
+
+# Defines the list of emails to notify when a tool is broken
+emails: []
+
+# Defines the URL of the project
+url: ""
+
+# Defines Slack token of the project
+slack_token: ""
+
+# Defines Slack channel used by Slack Bot
+slack_channel: ""
+
+# Defines the default icon for Artella projects
+icon: "artella"
+
+# Defines the name of the image used as background on tool headers
+title_background: "title_background"
+
+# Defines the URL where project tools documentations is located
+documentation_url: ""
+
+# Defines modules which paths should be registered in sys.path
+modules_to_register:
+  - bootstrap
+  - externals
+
+# Defines paths that should be added to sys.path
+paths_to_register: []
+
+# Defines list of departments that
+departments: []
+
+# Define configuration variables for project shots
+shot:
+  regex: "*"
+  file_types: []
+  extension: ".shot"
+
+# Define configuration variables for project progress bar
+progress_bar:
+  color0: "75, 165, 135"
+  color1: "65, 145, 120"
+
+# Defines available libs
+libs:
+  - artella
+  - naming
+
+# Defines available tools
+tools:
+  - welcome
+  - changelog
+  - bugtracker
+
+# Defines settings for project menu
+menu:
+  name: ${title}
+  object_name: ${project_lower + "_mainMenu"}
+
+# Defines settings for project shelf
+shelf:
+  name: ${title}
+  icon_name: ${project_lower + "_shelf"}
+
+# Defines tray
+tray:
+  name: ${project_lower + "_tray"}
+  children:
+    - label: ${title + " Documentation"}
+      icon: manual
+      tip: ${"Open " + title + " Tools Documentation webpage"}
+      command: "import artellapipe; artellapipe.project.open_documentation()"
+    - label: ${title + " Web"}
+      icon: ${project_lower + "_tray"}
+      tip: ${"Open " + title + " Project webpage"}
+      command: "import artellapipe; artellapipe.project.open_webpage()"
+    - label: ${title + " Artella Project"}
+      icon: artella
+      tip: ${"Open " + title + " Artella Project webpage"}
+      command: "import artellapipe; artellapipe.project.open_artella_project_url()"
+    - label: ${title + " Folder"}
+      icon: folder
+      tip: ${"Open " + title + " Project Local folder"}
+      command: "import artellapipe; artellapipe.project.open_folder()"

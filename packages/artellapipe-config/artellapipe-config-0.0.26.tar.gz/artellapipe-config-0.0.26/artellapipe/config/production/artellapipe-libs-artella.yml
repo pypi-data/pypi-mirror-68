@@ -1,0 +1,25 @@
+# Base Configuration file for artellapipe-libs-artella
+
+# Defines lib name
+name: Artella
+
+# Unique ID for the tool
+id: artellapipe-libs-artella
+
+app:
+  name: lifecycler                                    # Defines the name of the Artella executable
+  plugin: Artella.py                                  # Defines the name of the Artella plugin
+  root_prefix: ART_LOCAL_ROOT                         # Defines the environment variable used by Artella to reference to user local installation folder
+  next_version_filename: version_to_run_next          # Defines file name used by Artella to detect next version name
+
+server:
+  indie:
+    url: https://indie.artella.com                    # Defines path to Artella webpage
+    cms_url: https://cms-static.artella.com           # Defines path to Artella server
+    working_folder: __working__                       # Defines the name of the working folder used by Artella
+    production_folder: _art/production                # Defines Artella production folder
+  enterprise:
+    url: https://www.artella.com                      # Defines path to Artella webpage
+    cms_url: https://cms-static.artella.com           # Defines path to Artella server
+    working_folder: ''                                # Defines the name of the working folder used by Artella
+    production_folder: ''                             # Defines Artella production folder

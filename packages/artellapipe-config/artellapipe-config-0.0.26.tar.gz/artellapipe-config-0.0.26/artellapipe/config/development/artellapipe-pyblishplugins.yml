@@ -1,0 +1,6 @@
+# Base Configuration for Pyblish Plugins
+
+pyblish_modules:
+  - artellapipe.libs.pyblish
+
+plugins: {}

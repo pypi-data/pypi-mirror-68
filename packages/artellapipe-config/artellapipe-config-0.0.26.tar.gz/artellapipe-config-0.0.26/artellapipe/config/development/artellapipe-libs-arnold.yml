@@ -1,0 +1,10 @@
+# Base Configuration file for artellapipe-libs-arnold
+
+# Defines lib name
+name: Arnold
+
+# Unique ID for the tool
+id: artellapipe-plugins-arnold
+
+# Name for the assets Arnold operator node
+assets_operator_name: 'assets_operator'

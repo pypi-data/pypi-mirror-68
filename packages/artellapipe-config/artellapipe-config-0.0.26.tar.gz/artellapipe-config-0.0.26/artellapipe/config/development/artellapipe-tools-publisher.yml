@@ -1,0 +1,60 @@
+# Base Configuration file for artellapipe-tools-publisher
+
+# Defines tool name
+name: Publisher
+
+# Unique ID for the tool
+id: artellapipe-tools-publisher
+
+# Defines logo name of the tool
+logo: publisher_logo
+
+# Defines icon of the tool
+icon: artella
+
+# Description of the tool
+description: Tool to generate customized playblasts
+
+# URL to tool documentation web page
+url: www.google.es
+
+# Tags relatedi with this tool
+tags: ['manager', 'playblast']
+
+# Defines the ID used by Sentry to monitorize error traces
+sentry_id: https://e5441aa7578e48ac8d3fc8f6a6690caf@sentry.io/1764743
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "artellapipe", "logs", "tools")}
+
+# Default logger level used by tool logger
+logger_level: INFO
+
+# Directory where tool resources are located
+resources_path: ${join(filename, "resources")}
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}
+
+# Menu representation of this tool
+menu_ui:
+  label: "Publisher"
+  is_checkable: False
+  is_checked: False
+  load_on_startup: False
+
+# Tool Menu definition where this tool is registered
+menu:
+  - label: General
+    type: menu
+    children:
+      - id: artellapipe-tools-publisher
+        type: tool
+
+# Tool Shelf definition
+shelf:
+  - name: General
+    children:
+      - id: artellapipe-tools-publisher
+        displayLabel: False
+        type: tool

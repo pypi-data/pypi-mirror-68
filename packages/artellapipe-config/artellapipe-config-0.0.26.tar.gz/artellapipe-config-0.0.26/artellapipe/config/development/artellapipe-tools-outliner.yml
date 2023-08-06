@@ -1,0 +1,4 @@
+# Base Configuration file for artellapipe-tools-outliner
+
+# Defines the outliners that should be added
+outliners: {}

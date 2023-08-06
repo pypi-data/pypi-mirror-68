@@ -1,0 +1,19 @@
+# Base Configuration file for artellapipe-libs-naming
+
+# Defines lib name
+name: Naming
+
+# Unique ID for the tool
+id: Naming
+
+# Defines the rules for names
+rules: []
+
+# Defines the tokens for names
+tokens: []
+
+# Defines the tokens for templates (file paths and directories)
+template_tokens: {}
+
+# Defines the templates
+templates: []
