@@ -1,0 +1,8 @@
+kwant>=1.4
+numpy
+scipy
+
+[test]
+pytest
+pytest-cov
+pytest-flake8

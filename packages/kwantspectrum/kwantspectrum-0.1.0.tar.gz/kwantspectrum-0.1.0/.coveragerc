@@ -1,0 +1,12 @@
+[run]
+omit =
+    *tests*
+    *__init__*
+    kwantspectrum/_kwant_spectrum_version.py
+    kwantspectrum/version.py
+branch = True
+[report]
+exclude_lines =
+    skip coverage
+    @abc.abstractmethod
+    @abc.abstractproperty
