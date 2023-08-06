@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyate
+Version: 0.2.1
+Summary: PYthon Automated Term Extraction, running on spacy for POS tagging
+Home-page: https://github.com/kevinlu1248/pyate
+Author: Kevin Lu
+Author-email: kevinlu1248@gmail.com
+License: MIT
+Download-URL: https://github.com/kevinlu1248/pyate/archive/0.2.tar.gz
+Description: # PYthon Automated Term Extraction
+        Python implementation of JATE.
+Keywords: nlp,python3,spacy,term_extraction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
