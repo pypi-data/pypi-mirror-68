@@ -1,0 +1,6 @@
+boto3
+botocore
+click
+cmd2
+pyjwt
+requests
