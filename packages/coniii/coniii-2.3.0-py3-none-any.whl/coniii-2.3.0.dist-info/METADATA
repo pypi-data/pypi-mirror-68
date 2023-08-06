@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: coniii
+Version: 2.3.0
+Summary: Convenient Interface to Inverse Ising (ConIII)
+Home-page: https://github.com/eltrompetero/coniii
+Author: Edward D. Lee, Bryan C Daniels
+Author-email: edlee@santafe.edu
+License: MIT
+Keywords: inverse Ising maxent maximum entropy inference
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7.4
+Requires-Dist: multiprocess (<1,>=0.70.7)
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: numpy (<2,>=1.16.2)
+Requires-Dist: numba (<1,>=0.45.1)
+Requires-Dist: mpmath (>=1.1.0)
+Requires-Dist: dill
+
+Python 3 package for solving the inverse maximum entropy problem with a focus on
+the pairwise maximum entropy model, also known as the inverse Ising problem.
+
+See GitHub page for overview on how to install and use package. Directions for
+massive speed up of Metropolis sampling with C++ are also available there.
+
+Examples are included in the Jupyter notebook "usage_guide.ipynb" and the Python
+script "usage_guide.py" (see GitHub). An overview for version 1 is also
+published in the
+[paper](https://github.com/eltrompetero/coniii/blob/py3/guide/guide.pdf).
+
+Authors: Edward D. Lee, Bryan C. Daniels
+
+
