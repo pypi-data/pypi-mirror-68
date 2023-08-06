@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: fcs_api_py
+Version: 1.1
+Summary: Unnoficial Python library to do requests on FCS API. https://fcsapi.com/
+Home-page: https://github.com/JoaquinChartier/fcs_api_python
+Author: Joaquin Chartier
+Author-email: joak.chartier@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: API,Fcs,Forex,Crypto,Stock
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
