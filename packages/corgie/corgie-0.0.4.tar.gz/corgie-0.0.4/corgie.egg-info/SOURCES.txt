@@ -1,0 +1,8 @@
+README.md
+setup.py
+corgie.egg-info/PKG-INFO
+corgie.egg-info/SOURCES.txt
+corgie.egg-info/dependency_links.txt
+corgie.egg-info/entry_points.txt
+corgie.egg-info/requires.txt
+corgie.egg-info/top_level.txt
