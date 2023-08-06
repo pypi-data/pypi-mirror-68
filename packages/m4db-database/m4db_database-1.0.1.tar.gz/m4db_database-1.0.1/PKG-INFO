@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: m4db_database
+Version: 1.0.1
+Summary: M4DB database specification and utiltiles
+Home-page: https://bitbucket.org/micromag/m4db_database/src/master/
+Author: L. Nagy, W. Williams
+Author-email: lnagy2@ed.ac.uk
+License: MIT
+Download-URL: https://bitbucket.org/micromag/m4db_database/get/m4db_database-1.0.1.zip
+Description: UNKNOWN
+Keywords: micromagnetics,database
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
