@@ -1,0 +1,8 @@
+cookiecutter
+jinja2~=2.9
+jsonschema
+jupyterlab~=1.2
+
+[test]
+pytest
+pytest-asyncio
