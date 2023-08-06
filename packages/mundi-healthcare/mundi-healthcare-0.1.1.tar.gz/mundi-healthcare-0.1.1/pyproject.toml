@@ -1,0 +1,39 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "mundi_healthcare"
+dist-name = "mundi-healthcare"
+author = "Fábio Macêdo Mendes"
+author-email = "fabiomacedomendes@gmail.com"
+home-page = "https://github.com/pydemic/mundi-healthcare"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Libraries",
+]
+description-file = "README.rst"
+requires = [
+  "mundi",
+]
+
+[tool.flit.metadata.requires-extra]
+dev = [
+  "black",
+  "twine",
+  "pycountry",
+  "coverage~=5.0",
+  "pytest~=5.0",
+  "bump2version",
+]
+
+[tool.black]
+line-length = 90
