@@ -1,0 +1,13 @@
+README.md
+setup.py
+etsy2/__init__.py
+etsy2/_core.py
+etsy2/_v2.py
+etsy2/etsy_env.py
+etsy2/oauth.py
+etsy2.egg-info/PKG-INFO
+etsy2.egg-info/SOURCES.txt
+etsy2.egg-info/dependency_links.txt
+etsy2.egg-info/requires.txt
+etsy2.egg-info/top_level.txt
+test/test_core.py
