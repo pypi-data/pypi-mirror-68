@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: peewee-storages
+Version: 0.0.1
+Summary: Support for FileField and storage backends in Peewee
+Home-page: https://github.com/python-folks/peewee-storages
+Author: Dexax
+Author-email: d.exax@hotmail.com
+License: GNU
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: !=2.*, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Provides-Extra: boto3
+Provides-Extra: libcloud
+Provides-Extra: google
+Provides-Extra: dropbox
+Provides-Extra: azure
+Provides-Extra: sftp
