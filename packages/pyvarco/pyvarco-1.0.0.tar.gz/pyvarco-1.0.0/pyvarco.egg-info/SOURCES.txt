@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyvarco/__init__.py
+pyvarco/pyvarco.py
+pyvarco.egg-info/PKG-INFO
+pyvarco.egg-info/SOURCES.txt
+pyvarco.egg-info/dependency_links.txt
+pyvarco.egg-info/top_level.txt
