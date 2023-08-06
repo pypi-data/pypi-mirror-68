@@ -1,0 +1,15 @@
+requests
+obonet
+networkx
+pandas
+Click
+
+[docs]
+sphinx
+sphinxjp.themes.basicstrap
+sphinxcontrib.programoutput
+
+[test]
+pytest
+pytest-cov
+python-coveralls
