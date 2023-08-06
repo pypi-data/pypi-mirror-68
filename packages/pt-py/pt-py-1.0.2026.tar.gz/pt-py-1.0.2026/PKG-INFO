@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pt-py
+Version: 1.0.2026
+Summary: pt
+Home-page: https://github.com/xyz71148/pt.git
+Author: tommy
+Author-email: xyz71148@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
