@@ -1,0 +1,7 @@
+beautifulsoup4
+betterreads
+click
+fuzzywuzzy
+requests
+python-Levenshtein
+Unidecode
