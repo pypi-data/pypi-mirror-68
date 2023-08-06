@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Vollkorn|PT+Sans+Caption');
+
+::-moz-selection {
+    color: #fff;
+    background: #6062ff;
+}
+
+::selection {
+    color: #fff;
+    background: #6062ff;
+}

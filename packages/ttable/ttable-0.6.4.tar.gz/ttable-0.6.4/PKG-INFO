@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ttable
+Version: 0.6.4
+Summary: A library and command-line tool for working with Boolean expressions
+Home-page: https://tt.brianwel.ch
+Author: Brian Welch
+Author-email: welch18@vt.edu
+License: MIT
+Description: Please see the project site for more details.
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
