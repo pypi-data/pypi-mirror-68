@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: depth-to-mesh
+Version: 0.1.2
+Summary: Converts depth maps into triangle meshes
+Home-page: https://github.com/hesom/depth_to_mesh
+Author: Hendrik Sommerhoff
+Author-email: sommerhoff.hendrik@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
