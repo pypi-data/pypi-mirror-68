@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: salesfly
+Version: 1.0.0
+Summary: Python client for Salesfly API
+Home-page: http://github.com/salesfly/salesfly-python
+Author: Salesfly
+Author-email: hello@salesfly.com
+License: MIT
+Keywords: salesfly,api,geoip,geolocation,mail
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (>=2.5.0)
+Requires-Dist: jsonschema (>=3.1.1)
+Requires-Dist: PyJWT (>=1.6.1)
+
+Python client for Salesfly API
+==============================
+
+A Python library for the Salesfly API.
+
+
+Setup
+-----
+
+You can install this package by using the pip tool and installing:
+
+    $ pip install salesfly
+
+Or:
+
+    $ easy_install salesfly
+
+
+Setting up a Salesfly API account
+---------------------------------
+
+Sign up for Salesfly at https://salesfly.com
+
+
+Using the Salesfly API
+----------------------
+
+Documentation for the Python client can be found alongside the other API clients here:
+
+- https://docs.salesfly.com/python/
+
+

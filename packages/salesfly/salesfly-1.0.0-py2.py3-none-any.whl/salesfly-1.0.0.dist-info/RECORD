@@ -1,0 +1,14 @@
+salesfly/__init__.py,sha256=oz3YgVlg6E1klF4BN-NKa11d8ug2m3t-iosr-4_hgkA,1581
+salesfly/errors.py,sha256=NwBUd8ROOlQw_YYlmfkfvSWsPKlDCxmpJL__r2CizS0,618
+salesfly/geoip_api.py,sha256=OSmUPwaSiTK5XLDrhHiYV58Vkfzntcv-TFDp7fbt3Es,1130
+salesfly/mail_api.py,sha256=QScsgt2A1fgWsQKWMjhGh7cX9ianUDC0_hKZ2gV8e08,2787
+salesfly/multipart.py,sha256=xKHK42IbyW7AnPjJ18bRBPctTta8A6sVSaLfojAaxd8,1695
+salesfly/pdf_api.py,sha256=wAtN-ILClulkumCqTtyZV7Vwy2uiQl2B8DKka3c-jwE,302
+salesfly/rest.py,sha256=op4v0V1ca3rd3ganeYyK9Bg5zIzDHHSMsS06Qr8d5Z4,3584
+salesfly/usage_api.py,sha256=FYrPh0FEH1WcEkKGCEc10aP4oLr33jtdSTWRcs4x-Bg,199
+salesfly/version.py,sha256=lzGFsymf0DtA_1oAZcPbeQ557iY-1BRkekhfA2qaFh8,18
+salesfly-1.0.0.dist-info/LICENSE,sha256=-XtTUIzkqfgCFwKNSYS0pdKPchWnIgbf2quxzvfbi-c,1073
+salesfly-1.0.0.dist-info/METADATA,sha256=VfOnNH6QyD-PVzk66DF5l4suDgi0vQfHe8oJbCnui3k,1524
+salesfly-1.0.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+salesfly-1.0.0.dist-info/top_level.txt,sha256=YhImP0DEJNx5i4bhOp7z5I8yTL7K7KOsv4d7TuvTCS8,9
+salesfly-1.0.0.dist-info/RECORD,,
