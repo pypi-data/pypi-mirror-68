@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pyjdbcconnector/Connectors.py
+pyjdbcconnector/__init__.py
+pyjdbcconnector/connectors.py
+pyjdbcconnector.egg-info/PKG-INFO
+pyjdbcconnector.egg-info/SOURCES.txt
+pyjdbcconnector.egg-info/dependency_links.txt
+pyjdbcconnector.egg-info/not-zip-safe
+pyjdbcconnector.egg-info/requires.txt
+pyjdbcconnector.egg-info/top_level.txt
