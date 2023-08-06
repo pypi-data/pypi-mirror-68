@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        salt-packets = salt_packets.main:main
+    

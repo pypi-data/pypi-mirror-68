@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: salt-packets
+Version: 0.2.7b2
+Summary: portable, reusable, self-managed salt projects
+Home-page: https://code.netprophet.tech/netp/salt-packets
+Author: Leeward Bound
+Author-email: lee@netprophet.tech
+License: unlicensed
+Description: # portable, reusable, self-managed salt projects
+        
+        ## Installation
+        
+        ```
+        $ pip install -r requirements.txt
+        
+        $ pip install setup.py
+        ```
+        
+        ## Development
+        
+        This project includes a number of helpers in the `Makefile` to streamline common development tasks.
+        
+        ### Environment Setup
+        
+        The following demonstrates setting up and working with a development environment:
+        
+        ```
+        ### create a virtualenv for development
+        
+        $ make virtualenv
+        
+        $ source env/bin/activate
+        
+        
+        ### run spack cli application
+        
+        $ spack --help
+        
+        
+        ### run pytest / coverage
+        
+        $ make test
+        ```
+        
+        
+        ### Releasing to PyPi
+        
+        Before releasing to PyPi, you must configure your login credentials:
+        
+        **~/.pypirc**:
+        
+        ```
+        [pypi]
+        username = YOUR_USERNAME
+        password = YOUR_PASSWORD
+        ```
+        
+        Then use the included helper function via the `Makefile`:
+        
+        ```
+        $ make dist
+        
+        $ make dist-upload
+        ```
+        
+        ## Deployments
+        
+        ### Docker
+        
+        Included is a basic `Dockerfile` for building and distributing `salt-packets`,
+        and can be built with the included `make` helper:
+        
+        ```
+        $ make docker
+        
+        $ docker run -it spack --help
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
