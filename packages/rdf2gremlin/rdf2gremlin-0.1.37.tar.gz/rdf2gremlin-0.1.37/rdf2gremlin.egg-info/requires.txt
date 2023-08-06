@@ -1,0 +1,10 @@
+uuid
+rdflib
+pathlib
+gremlinpython
+tornado<5.0,>=4.5.3
+
+[test]
+coverage
+pytest
+pytest-cov
