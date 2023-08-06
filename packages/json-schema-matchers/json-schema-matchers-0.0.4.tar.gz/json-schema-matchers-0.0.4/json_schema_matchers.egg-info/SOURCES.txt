@@ -1,0 +1,10 @@
+README.md
+setup.py
+json_schema_matchers.egg-info/PKG-INFO
+json_schema_matchers.egg-info/SOURCES.txt
+json_schema_matchers.egg-info/dependency_links.txt
+json_schema_matchers.egg-info/requires.txt
+json_schema_matchers.egg-info/top_level.txt
+matchers/__init__.py
+matchers/common_matcher.py
+tests/__init__.py
