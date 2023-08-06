@@ -1,0 +1,4 @@
+unidecode
+bigml-chronos>=0.4.3
+requests-toolbelt
+requests
