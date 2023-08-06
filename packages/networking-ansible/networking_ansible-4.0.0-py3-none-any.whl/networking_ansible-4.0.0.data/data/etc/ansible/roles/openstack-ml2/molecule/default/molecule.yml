@@ -1,0 +1,19 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: podman
+lint:
+  name: yamllint
+platforms:
+  - name: instance
+    image: docker.io/centos:7
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+    enabled: false
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

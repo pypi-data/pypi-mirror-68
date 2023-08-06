@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include openstack-ml2"
+      include_role:
+        name: "openstack-ml2"
