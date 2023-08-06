@@ -1,0 +1,10 @@
+README.rst
+setup.py
+senator_trading/__init__.py
+senator_trading/senator_trading.py
+senator_trading.egg-info/PKG-INFO
+senator_trading.egg-info/SOURCES.txt
+senator_trading.egg-info/dependency_links.txt
+senator_trading.egg-info/not-zip-safe
+senator_trading.egg-info/requires.txt
+senator_trading.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: senator-trading
+Version: 0.3
+Summary: Reads in publicly available stock trading information of senators
+Home-page: https://github.com/c-type/senator_trading
+Author: ctype
+Author-email: ctypecodes@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
