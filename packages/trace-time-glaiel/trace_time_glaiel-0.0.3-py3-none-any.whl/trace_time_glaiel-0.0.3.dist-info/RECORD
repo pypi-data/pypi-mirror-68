@@ -1,0 +1,9 @@
+trace_time/__init__.py,sha256=5w_g7fReAv8-2KHmgwpOmhZZLgDWmBDxCCFS13Om4Ek,44
+trace_time/timer.py,sha256=KsogZ6kZBHnGffWwZeidK2SbOB9BME3EHbU54vktLCc,4844
+trace_time/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trace_time/tests/test_timer.py,sha256=iZ9FFnGg6ketpOMAq-Dh4KVhGk69gcAgVBPAEbNY6kg,479
+trace_time_glaiel-0.0.3.dist-info/LICENSE,sha256=FhJZI4ZnSdExH0ylmDsxolnil-ZzNwLMpUXzS14bez0,1062
+trace_time_glaiel-0.0.3.dist-info/METADATA,sha256=-64wAYfmZE3qkzitqqlJ2f9G4Qw05lrKp5kwgBgj8rI,540
+trace_time_glaiel-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+trace_time_glaiel-0.0.3.dist-info/top_level.txt,sha256=y_ocwh4MI3T08MGzH67fl3SM2Ec1eVr40juInoBQrr8,11
+trace_time_glaiel-0.0.3.dist-info/RECORD,,
