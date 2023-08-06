@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nujo
+Version: 0.2.0
+Summary: A Reverse-mode Automatic Differentiation library for Neural Networks
+License: MIT
+Author: Victor Velev
+Author-email: victorivelev@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphviz (>=0.13.2,<0.14.0)
+Requires-Dist: numpy (>=1.18.1,<2.0.0)
+Requires-Dist: pillow (>=7.1.2,<8.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
