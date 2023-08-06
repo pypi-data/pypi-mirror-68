@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: just-db-driver
+Version: 1.0.5
+Summary: JUST Python DB Driver
+Home-page: http://just.urban-computing.cn/
+Author: hujian
+Author-email: hujian@qq.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pandas
+
+JUST Python DB Driver
+
+
