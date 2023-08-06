@@ -1,0 +1,3 @@
+[console_scripts]
+masonite-orm = masonite.orm.commands.Entry:application.run
+
