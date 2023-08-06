@@ -1,0 +1,8 @@
+README.md
+pencilcase.py
+setup.py
+pencilcase.egg-info/PKG-INFO
+pencilcase.egg-info/SOURCES.txt
+pencilcase.egg-info/dependency_links.txt
+pencilcase.egg-info/requires.txt
+pencilcase.egg-info/top_level.txt
