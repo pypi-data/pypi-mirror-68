@@ -1,0 +1,16 @@
+AUTHORS.rst,sha256=koPxhnY2a-GWgTDWlKQhtSB7djWNA6nf30Jyc5DM1_o,701
+HISTORY.md,sha256=X1AE0fvav5m8KyFQqKqUwJJHDew_9Ilpbya-0eWy00A,1419
+README.md,sha256=9zkLzhMyIyGNQpTK5eEZEQ5k4veRs5SR2L6fUOOKR_c,3717
+pdfgen/__init__.py,sha256=HadUWF9jHSVV_7OhuNQMMZnNWQUwwZmFOooCSm3Vzxk,403
+pdfgen/api_async.py,sha256=3Bgh5oeOpk4zm783Z7alWDkWY8NrUs8I68FPskUi4KM,2377
+pdfgen/api_sync.py,sha256=HJpBVsNliW-W7DsyU6mM28qXdvvPO5eEA9Nk34s24Eg,2075
+pdfgen/configuration.py,sha256=AEItsHi3Yxgdc_E2_XP7GH6kFWYvLJOeL0gY4d0-XA0,1146
+pdfgen/errors.py,sha256=B2d0D3cy06LmOZz8-e8VXH4rLwKu2-8MqBR2zDoFiv8,118
+pdfgen/pdfgen.py,sha256=A3vnxPwWjksmdY3695e_72RaosAsbA3q4n7ODfl6AVc,3950
+pdfgen/source.py,sha256=APmU4e-KXq3ZASRrIIIJ3TnX9aFMmT_LZ0srowmM1JU,1456
+pdfgen/utils.py,sha256=qYgfX6XF8BZSKs43Erwv9xHpAhebqp3nLglPVxf86Po,232
+pdfgen-1.0.2.dist-info/entry_points.txt,sha256=vFDPKRf_MivlyVktJuLyhhB009Mk304s_XprWji2_-0,37
+pdfgen-1.0.2.dist-info/LICENSE,sha256=8TU0gRUornDPIXxPmduFDfJHDwmUuMjI39R3LkPLVUg,1085
+pdfgen-1.0.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pdfgen-1.0.2.dist-info/METADATA,sha256=2XoF9QDEdKuEuyeV_N7dAdda2qdlxONigpbN7OE6qm4,4730
+pdfgen-1.0.2.dist-info/RECORD,,
