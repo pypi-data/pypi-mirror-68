@@ -1,0 +1,27 @@
+CHANGES
+=======
+
+* Minor error in clean
+* Better capture management
+* Better capture management
+* Fixed make release
+* Fixed content type
+* fixed env
+* Preliminary work on release
+* Fixed requrirements
+* Forgotten a req
+* ok
+* FINALLY got my tests linted
+* Lots of linting
+* Basic scaffolding
+* Oops
+* Minor doc addendum
+* Fixed provision directory for subdirectories inside gits
+* Added comparisons in README
+* Give an example command
+* Proper display
+* Show build status in README
+* Fixing requirements with travis
+* Fixed #1
+* Importing inital project
+* Initial commit
