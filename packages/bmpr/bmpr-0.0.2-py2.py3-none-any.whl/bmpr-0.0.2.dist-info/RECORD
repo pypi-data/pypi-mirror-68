@@ -1,0 +1,10 @@
+bmpr/__init__.py,sha256=Yn9irnzVc8SP-eoPCQvMpkjzf_7wXdjgud-EoTQIi_M,1607
+bmpr/__main__.py,sha256=ygVKqBcUrmuOjGuoanUJdgxOaRdvkz4mJVx6BpoHIGw,355
+bmpr/cli.py,sha256=h0vwGx5OJeDLLxSHq4gqx01mcBwo9u9TAs5U-q4Bpjo,786
+bmpr-0.0.2.dist-info/AUTHORS.rst,sha256=eQLmmoRjR4CmyD_SVkePwbRr9GGMORMVNAhMOjvFlKs,58
+bmpr-0.0.2.dist-info/LICENSE,sha256=VeKgdOo7spjMeE-bq4TocCZu45DJqRr4KW2sqt9p_LM,1099
+bmpr-0.0.2.dist-info/METADATA,sha256=q26Cym0NdngOQkDIS73WHSjuU4ycvKliVC7ro2ISMDM,2057
+bmpr-0.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+bmpr-0.0.2.dist-info/entry_points.txt,sha256=HCY0Hkn4laFQljzWtH1maChlKpQrVemP1QYLhmPNIEA,40
+bmpr-0.0.2.dist-info/top_level.txt,sha256=GWYHr1NYYbiU5qZED0lsKHn5rl9pTUYMgh2epwcwLcc,5
+bmpr-0.0.2.dist-info/RECORD,,
