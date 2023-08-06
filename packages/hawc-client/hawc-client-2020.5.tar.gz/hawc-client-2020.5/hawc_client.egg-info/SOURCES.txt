@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+hawc_client/__init__.py
+hawc_client.egg-info/PKG-INFO
+hawc_client.egg-info/SOURCES.txt
+hawc_client.egg-info/dependency_links.txt
+hawc_client.egg-info/requires.txt
+hawc_client.egg-info/top_level.txt

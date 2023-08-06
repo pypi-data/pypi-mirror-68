@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hawc-client
+Version: 2020.5
+Summary: A client for the Health Assessment Workspace Collaborative (HAWC)
+Home-page: https://github.com/shapiromatron/hawc
+Maintainer: The HAWC development team
+Maintainer-email: shapiromaron@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/shapiromatron/hawc/issues
+Project-URL: Documentation, https://hawc.readthedocs.io/
+Project-URL: Source Code, https://github.com/shapiromatron/hawc
+Description: Documentation available at https://hawc.readthedocs.io/.
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
