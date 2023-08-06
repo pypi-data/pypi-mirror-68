@@ -1,0 +1,5 @@
+numpy
+scipy
+io3d # for test purpose
+pandas # for tests
+loguru
