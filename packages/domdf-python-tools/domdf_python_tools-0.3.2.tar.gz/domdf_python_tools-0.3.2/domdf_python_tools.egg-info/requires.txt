@@ -1,0 +1,7 @@
+pydash>=4.7.4
+
+[all]
+pytz>=2019.1
+
+[dates]
+pytz>=2019.1
