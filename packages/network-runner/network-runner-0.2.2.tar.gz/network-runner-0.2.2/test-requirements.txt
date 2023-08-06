@@ -1,0 +1,8 @@
+six
+ansible
+ansible-runner
+paramiko
+flake8
+mock
+pytest
+pytest-cov

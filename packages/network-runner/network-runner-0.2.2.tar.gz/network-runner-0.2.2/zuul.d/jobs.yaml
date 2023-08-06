@@ -1,0 +1,15 @@
+---
+- job:
+    name: network-runner-test-functional-eos
+    parent: ansible-network-eos-appliance
+    run: tests/run.yaml
+
+- job:
+    name: network-runner-test-functional-junos
+    parent: ansible-network-junos-appliance
+    run: tests/run.yaml
+
+- job:
+    name: network-runner-test-functional-nxos
+    parent: ansible-network-nxos-appliance
+    run: tests/run.yaml
