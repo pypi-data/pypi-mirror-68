@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: adyengo
+Version: 0.0.10
+Summary: Django app for easy Adyen integration.
+Home-page: https://github.com/gitaarik/adyengo
+Author: gitaarik
+Author-email: gitaarik@gmail.com
+License: LGPL licence, see LICENCE.txt
+Description: UNKNOWN
+Keywords: django adyen payment integration
+Platform: UNKNOWN

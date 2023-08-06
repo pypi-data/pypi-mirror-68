@@ -1,0 +1,28 @@
+{% extends "adyengo/base.html" %}
+
+{% block content %}
+
+    <form method="POST" action="{{ url }}">
+
+        <h2>Post to:</h2>
+        {{ url }}
+
+        <h2>Params:</h2>
+
+        <table>
+            {% for name, value in params.items %}
+                <tr>
+                    <th>{{ name }}</th>
+                    <td>
+                        {{ value }}
+                        <input type="hidden" name="{{ name }}" value="{{ value }}" />
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <input type="submit" value="Dispatch">
+
+    </form>
+
+{% endblock %}
