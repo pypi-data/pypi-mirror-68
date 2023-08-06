@@ -1,0 +1,82 @@
+# Cross-platform ENIAM with useful bindings :rocket:
+
+This project provides only a wrapper for ENIAM ([see online](http://eniam.nlp.ipipan.waw.pl/) [source code](http://git.nlp.ipipan.waw.pl/wojciech.jaworski/ENIAM))
+Author of original code is Wojciech Jaworski.
+
+### Using eniam library
+
+1. First, you have to install eniam by calling `pip install eniam`
+2. Then you can try parsing some example phrases (see `examples/example.ipynb`):
+
+```python
+# !pip install opencv-python
+# !pip install camelot-py
+# !pip install wand
+from eniam import *
+
+dom_result = Eniam(['KOT', 'MYSZ'], {
+    rule(lemma='kot',pos=subst,case=nom):     gram('KOT'),
+    rule(lemma='gonić',pos=fin,person=ter):   (ip<gram('KOT'))>gram('MYSZ'),
+    rule(lemma='mysz',pos=subst,case=acc):    gram('MYSZ'),
+    root_rule():                                  s % ip,
+}, ['KOT', 'MYSZ', 'ZDARZENIE'], {
+    valence_rule('kot', 'noun'): 'KOT',
+    valence_rule('mysz', 'noun'): 'MYSZ',
+    valence_rule('gonić', 'verb'): 'ZDARZENIE',
+}).dom("Kot goni mysz.")
+
+dom_result.show()
+```
+
+## Eniam syntax
+
+The eniam library uses custom primitive AST the most of the operations looks exactly the same as in normal ENIAM convensions except for those modifications:
+1. `/` is replaced with `>`
+2. `\` is replaced with `<`
+3. `ip{ |x1, |x2, |x3... |xn} ` is replaced with `ip[ x1 | x2 | ... | xn]`
+4. `?x` is replaced with function `optional(x)`
+5. `a\?(x)` is replaced with `a % x`
+6. the grammar can contain inline literals created using `gram()` function for example `rule(lemma='kot',pos=subst): gram('np/np\\np'),` would be a valid rule.
+
+## Useful methods
+
+1. Showing the result in Jupyter notebook
+`Eniam(...).dom("Kot goni mysz.").show()`
+2. Getting the html code
+`Eniam(...).dom("Kot goni mysz.").html()`
+3. Saving the html code
+`Eniam(...).dom("Kot goni mysz.").save_html('output_file')`
+4. Multiple input sentences
+1. Showing the result in Jupyter notebook
+`Eniam(...).dom(["Kot goni mysz.", "Mysz goni kota."]).show()`
+
+### Using raw ENIAM interface
+
+## Running inside docker
+
+To run ENIAM docker please use the following commands:
+```bash
+    # Run subsyntax tool
+    $ docker run -it styczynski/eniam:1.0 /root/subsyntax --help
+    # Run lexicon printer
+    $ docker run -it styczynski/eniam:1.0 /root/print_lexicon --help
+    # Run DOM parser
+    $ docker run -it styczynski/eniam:1.0 /root/domparser --help
+```
+
+## Running with Python wrapper
+
+You can install Python wrapper to get a nice wrapper around the docker container (this requires Python +3 and Docker installed):
+```bash
+    $ pip install eniam
+    $ eniam-cli sub --help
+    $ eniam-cli lex --help
+    $ eniam-cli dom --help
+```
+
+**Note:** Before installing you may wish to add python /bin/ directory to the PATH variable.
+On MacOS for Python 3.7 that would be:
+```bash
+    $ export PATH="$PATH:/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/bin"
+```
+See [setting up Python PATH](https://www.tutorialspoint.com/python/python_environment.htm)
