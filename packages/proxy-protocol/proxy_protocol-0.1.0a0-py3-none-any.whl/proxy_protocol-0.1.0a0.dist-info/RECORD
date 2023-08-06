@@ -1,0 +1,14 @@
+proxyprotocol/__init__.py,sha256=HX0Zu6bgCHjOiAn98xg-i5pwdXUnQMMq5dIp1wD6hag,266
+proxyprotocol/any.py,sha256=C1nNWpTgqM854rGEl4cWx_RojssF8LNeLftG0Lbg4w4,1710
+proxyprotocol/base.py,sha256=y4x-xnvpuNKD5I_SSWj7LPyPih-VEE4FSzJd4SeJs6U,1382
+proxyprotocol/echo.py,sha256=gve1ttd8rihUqk_Zri37pjtnlGBHNq23Yaq7HcamNbg,1702
+proxyprotocol/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+proxyprotocol/result.py,sha256=p8feuuWpGKeIUsJ4lNBoOaJHe50WnqKqzcpYNC-Ig0o,3287
+proxyprotocol/v1.py,sha256=8Me7f70IQnOh6rfp2bhLPkNAWKbWv635hufMrcw4Uco,3188
+proxyprotocol/v2.py,sha256=zJ2uQ7jV56L6h2Q1BJli9Hun3JkfPRSa_W1OF_8sR2Y,4123
+proxy_protocol-0.1.0a0.dist-info/LICENSE.md,sha256=q4hAtItymchLbjqg-jCVqQ_q_dC0B4MAJ9q14fGluV0,1078
+proxy_protocol-0.1.0a0.dist-info/METADATA,sha256=9zDuHMTewwcyfI8wvqmugbpkGPkp_GRMB4AMuduj1bk,5211
+proxy_protocol-0.1.0a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+proxy_protocol-0.1.0a0.dist-info/entry_points.txt,sha256=4TYGuFi2kkG1IwQlFLEQ4yivOsEPsNP7_Lxig7rOUeI,64
+proxy_protocol-0.1.0a0.dist-info/top_level.txt,sha256=9-gxMtB2Uf7d4lLzHb-hWwFR9o6WQACZRme7fYkc9Yo,14
+proxy_protocol-0.1.0a0.dist-info/RECORD,,
