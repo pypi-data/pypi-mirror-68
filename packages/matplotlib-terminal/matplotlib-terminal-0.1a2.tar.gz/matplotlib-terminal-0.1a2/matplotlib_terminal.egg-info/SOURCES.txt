@@ -1,0 +1,10 @@
+README.md
+setup.py
+matplotlib_terminal/__init__.py
+matplotlib_terminal/backend.py
+matplotlib_terminal.egg-info/PKG-INFO
+matplotlib_terminal.egg-info/SOURCES.txt
+matplotlib_terminal.egg-info/dependency_links.txt
+matplotlib_terminal.egg-info/not-zip-safe
+matplotlib_terminal.egg-info/requires.txt
+matplotlib_terminal.egg-info/top_level.txt
