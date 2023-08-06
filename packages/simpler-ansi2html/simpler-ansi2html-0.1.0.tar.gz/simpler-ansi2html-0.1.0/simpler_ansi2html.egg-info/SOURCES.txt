@@ -1,0 +1,7 @@
+README.rst
+ansi2html.py
+setup.py
+simpler_ansi2html.egg-info/PKG-INFO
+simpler_ansi2html.egg-info/SOURCES.txt
+simpler_ansi2html.egg-info/dependency_links.txt
+simpler_ansi2html.egg-info/top_level.txt
