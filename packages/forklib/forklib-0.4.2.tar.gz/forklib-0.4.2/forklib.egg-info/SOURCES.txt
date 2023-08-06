@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+forklib/__init__.py
+forklib/forking.py
+forklib/iterator.py
+forklib.egg-info/PKG-INFO
+forklib.egg-info/SOURCES.txt
+forklib.egg-info/dependency_links.txt
+forklib.egg-info/top_level.txt
