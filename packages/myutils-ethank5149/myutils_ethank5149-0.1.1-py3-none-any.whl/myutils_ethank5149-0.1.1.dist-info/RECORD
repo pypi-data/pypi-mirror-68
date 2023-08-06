@@ -1,0 +1,10 @@
+myutils_ethank5149/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+myutils_ethank5149/linspace.py,sha256=33SfumIDKSlZRZ0cnK5LaDIBAkUL4oK6EnRxpSanAK0,1190
+myutils_ethank5149/math.py,sha256=ztkqQpd3lQD5HLWkJlOBQJfJoJTjSkWCPGY5oSEUho8,1194
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_linspace.py,sha256=S7BDOshGNmAdbi-I2y8uEacquLA9qLWyWUKnk3Cu7Vk,4986
+myutils_ethank5149-0.1.1.dist-info/LICENSE,sha256=lylqEUYZuiZloiXWW8hH3mYs81CPMTyLqFhQVsyz7OU,1067
+myutils_ethank5149-0.1.1.dist-info/METADATA,sha256=PTzzZzMd4agehknmjPRNW-ob5jnP1Uek8fY6DBBVEGM,580
+myutils_ethank5149-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+myutils_ethank5149-0.1.1.dist-info/top_level.txt,sha256=_yhwgZuB93UOB33yaOrzG6UcU6SCueKWWp6F0_lf2-A,25
+myutils_ethank5149-0.1.1.dist-info/RECORD,,
