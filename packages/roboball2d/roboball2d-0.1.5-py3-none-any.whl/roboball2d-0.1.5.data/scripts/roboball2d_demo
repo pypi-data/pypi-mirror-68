@@ -1,0 +1,6 @@
+#!python
+
+from roboball2d.demos.simple import run
+
+run()
+

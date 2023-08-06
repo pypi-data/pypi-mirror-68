@@ -1,0 +1,7 @@
+#!python
+
+from roboball2d.demos.rendering_callback import run
+
+run()
+
+    
