@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: apogee
+Version: 0.2.0b4
+Summary: A set of tools for quickly building and deploying Probabilistic Graphical Models.
+Home-page: UNKNOWN
+Author: Mark Douthwaite
+Author-email: mark.douthwaite@peak.ai
+License: MIT
+Download-URL: https://pypi.org/project/apogee/#files
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: jupyter
+Requires-Dist: networkx
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: Cython
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+
+<h1 align="center">Apogee</h1>
+
+<p align="center">
+<a href="https://github.com/markdouthwaite/apogee/actions"><img alt="Build: Unknown" src="https://github.com/markdouthwaite/apogee/workflows/Build/badge.svg"></a>
+<img alt="Code Style" src="https://img.shields.io/badge/code%20style-black-000000.svg">
+<a href="https://pypi.org/project/apogee/"><img alt="PyPI" src="https://img.shields.io/badge/pypi-apogee-blue.svg"></a>
+</p>
+
+A package for probabilistic graphical modelling in Python.
+
+You'll need Python 3.6 or greater to use Apogee.
+
+## Installation
+
+Apogee is now available on PyPI! Install it with:
+
+`pip install apogee`
+
+If you want to pull the latest available GitHub version, install it with:
+
+`pip install -e git+https://github.com/markdouthwaite/apogee#egg=apogee`
+
+## A note of warning
+
+This repository is a work-in-progress. As code is migrated from an older repository and cleaned, you can 
+expect the API to shift quite significantly. 
+
+
