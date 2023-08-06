@@ -1,0 +1,49 @@
+Metadata-Version: 2.0
+Name: vFXT
+Version: 0.5.4.2
+Summary: The Avere virtual FXT (vFXT) Python library and vfxt.py command line utility
+Home-page: http://www.averesystems.com
+Author: Jason Woodward
+Author-email: woodwardj@averesystems.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: adal (==1.2.1)
+Requires-Dist: azure-cli-core (==2.0.65)
+Requires-Dist: azure-cli-nspkg (==3.0.3)
+Requires-Dist: azure-common (==1.1.21)
+Requires-Dist: azure-mgmt-authorization (==0.52.0)
+Requires-Dist: azure-mgmt-compute (==5.0.0)
+Requires-Dist: azure-mgmt-msi (==1.0.0)
+Requires-Dist: azure-mgmt-network (==3.0.0)
+Requires-Dist: azure-mgmt-nspkg (==3.0.2)
+Requires-Dist: azure-mgmt-resource (==2.1.0)
+Requires-Dist: azure-mgmt-storage (==3.3.0)
+Requires-Dist: azure-nspkg (==3.0.2)
+Requires-Dist: azure-storage-blob (==2.0.1)
+Requires-Dist: azure-storage-common (==2.0.0)
+Requires-Dist: azure-storage-nspkg (==3.1.0)
+Requires-Dist: azure-storage-queue (==2.0.1)
+Requires-Dist: boto
+Requires-Dist: future
+Requires-Dist: google-api-python-client
+Requires-Dist: knack (==0.6.2)
+Requires-Dist: msrest (==0.6.6)
+Requires-Dist: msrestazure (==0.6.0)
+Requires-Dist: oauth2client
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib
+
+The Avere virtual FXT (vFXT) Python library and vfxt.py command line utility
+provide the ability to create, extend, destroy, start, and stop vFXT clusters in
+all supported cloud environments.
+
+Licensed under the MIT license.
+
