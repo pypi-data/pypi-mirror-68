@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}{{ type.id }}{% endblock %}
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ type.id }}</li>
+      </ol>
+    </nav>
+{% endblock %}
+
+{% block body %}
+
+<h2>{{ type.id }}</h2>
+
+<table class="table">
+    <tr>
+        <th>id</th>
+        {% for field_name in type.list_fields %}
+            <th>{{ field_name }}</th>
+        {% endfor %}
+        <th>&nbsp;</th>
+    </tr>
+    {% for item_id in datastore.get_ids_in_type(type.id) %}
+        <tr>
+            <td>{{ item_id }}</td>
+            {% for field_name in type.list_fields %}
+                <td>
+                    {# Get Field Type, display accordingly #}
+                    {{ datastore.get_field(type.id, item_id, field_name) }}
+                </td>
+            {% endfor %}
+            <td><a href="/type/{{ type.id }}/item/{{ item_id }}/"><button type="button" class="btn btn-link">View</button></a></td>
+        </tr>
+    {% endfor %}
+</table>
+
+{% if type.json_schema %}
+    <h3>New</h3>
+    <p class="text-right">
+        {% if type.json_schema %}
+            <a href="newweb/"><button type="button" class="btn btn-primary">New</button></a>
+        {% endif %}
+    </p>
+{% endif %}
+
+{% endblock %}

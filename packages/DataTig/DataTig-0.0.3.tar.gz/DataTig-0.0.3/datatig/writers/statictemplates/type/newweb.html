@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}{{ type.id }}{% endblock %}
+
+{% block breadcrumbs %}
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/type/{{ type.id }}/">{{ type.id }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">New in Browser</li>
+      </ol>
+    </nav>
+{% endblock %}
+
+{% block body %}
+
+<h2>New {{ type.id }}</h2>
+
+<div id="editor_holder">
+</div>
+
+<h3>How To Submit</h3>
+
+<div>
+    <textarea id="raw_data_out" readonly="readonly"></textarea>
+</div>
+
+<p class="text-right">
+    <a href="#" onclick="copy(); return false;"><button type="button" class="btn btn-primary">Copy Data</button></a>
+</p>
+{% if site_github_url %}
+    <p>Go to the Github page to add a new file in <em>{{ type.directory_in_git_repository }}</em> and copy and paste in the content above.</p>
+    <p class="text-right">
+        <a href="https://github.com/{{ site_github_url }}/new/{{ site_github_primary_branch }}/{{  type.directory_in_git_repository }}" target="_new"><button type="button" class="btn btn-primary">Edit on GitHub</button></a>
+    </p>
+{% else %}
+    <p>In the git repository, create a new file in <em>{{ type.directory_in_git_repository }}</em> and copy and paste in the content above.</p>
+{% endif %}
+
+{% endblock %}
+
+
+{% block javascript %}
+<script src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@2.2.1/dist/jsoneditor.min.js"></script>
+<script>
+    var data = {};
+    var schema = JSON.parse("{{ type.json_schema_string | escapejs }}");
+    var pretty_json_indent = {{ type.pretty_json_indent }};
+</script>
+<script src="/web-edit-or-new.js"></script>
+{% endblock %}
