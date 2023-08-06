@@ -1,0 +1,3 @@
+[console_scripts]
+litstrings = lsclib.cmdline:main
+
