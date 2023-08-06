@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pysnip
+Version: 1.1.0
+Summary: Python snippets
+Home-page: https://github.com/AgeOfMarcus/pysnip
+Author: AgeOfMarcus
+Author-email: marcus@marcusweinberger.com
+License: UNKNOWN
+Description: # pysnip
+        Python snippets, easily accessable.
+Platform: UNKNOWN
