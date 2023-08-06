@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+appfw/__init__.py
+appfw/app.py
+appfw/app_init.py
+appfw.egg-info/PKG-INFO
+appfw.egg-info/SOURCES.txt
+appfw.egg-info/dependency_links.txt
+appfw.egg-info/entry_points.txt
+appfw.egg-info/top_level.txt
+appfw/tpl/app.tpl
+appfw/tpl/config.tpl
