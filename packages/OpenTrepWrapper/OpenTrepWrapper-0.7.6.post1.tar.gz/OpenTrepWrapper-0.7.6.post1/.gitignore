@@ -1,0 +1,16 @@
+*pyc
+.settings
+.project
+.pydevproject
+build
+dist
+*.egg-info/
+*.pid
+*.sw[po]
+# Ignoring virtualenv
+.Python
+bin/
+lib/
+lib64
+include/
+*.log
