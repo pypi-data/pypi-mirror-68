@@ -1,0 +1,9 @@
+belinear/__init__.py,sha256=rY6OCwec865_WQ1EvfPndJG4P0TMzoeHv6ts3RBO7ts,7187
+belinear/tests/__init__.py,sha256=yIbxEwtQLCsxJK2ZkvOTljbNizt52pMIFj9wNI_IfkY,21
+belinear/tests/test_data.pickle,sha256=nZ0x8SWLYmmp9zumCAtWr3myhkVIfuBmRzezGQVSBFE,6424601
+belinear/tests/tests.py,sha256=uVVbxAWJz416WC4IYolmfDNPEtc4zFWPku6a6U-B77M,5427
+belinear-1.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+belinear-1.0.dist-info/METADATA,sha256=lzt1-DXHtQMhuRTC0zqspgzxtPYdm1LI4BE74I66wpg,10659
+belinear-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+belinear-1.0.dist-info/top_level.txt,sha256=PIbDKC5dJ-xyssFBRiYWMyxAQJ3GU9YPnSWXVM6p-qQ,9
+belinear-1.0.dist-info/RECORD,,
