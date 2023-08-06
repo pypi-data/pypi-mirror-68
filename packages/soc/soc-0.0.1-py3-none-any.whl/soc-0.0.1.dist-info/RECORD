@@ -1,0 +1,12 @@
+soc/__init__.py,sha256=lV9oYGHAacOxuyokCwwMabyiu-wztjRewMin7cI1U0A,119
+soc/helpers.py,sha256=rDG4ayHMipJcIl9raxbnszk6O50FDFfmET-Zno1sd5k,87
+soc/request.py,sha256=g7j8q7VH527mUCcQCeR6USH4Cv7Dsn6e9_YKfPsDgtk,1172
+soc/soc.py,sha256=8s0XZPTHkYV84iQ0cb4Jw9t7l5tfwgFBzaDrNh7BIas,3453
+soc/socket_view.py,sha256=kAKYTpktsku8hFjDJU7pLVNVrkKWHU7NQpxCzRMmdxE,203
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_soq.py,sha256=PoonQre5EVp7YzCKwRp5cqTMnymSk7Lx1iCE-W9CIgQ,644
+soc-0.0.1.dist-info/LICENSE,sha256=o4hCeaq_kHhhbL9htp71cr9nWUT9ahJlm_dcFRBiinE,1072
+soc-0.0.1.dist-info/METADATA,sha256=9paQMy0zuQLJQYmu65qVmQRsXW5r6AaX-gRc9Wdmwy0,1136
+soc-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+soc-0.0.1.dist-info/top_level.txt,sha256=faKTvwFC2BTKab--QKNMlRiWAIa0ebo1lK--9OELL9w,10
+soc-0.0.1.dist-info/RECORD,,
