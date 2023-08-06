@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: f2py-jit
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://gitlab.info-ufr.univ-montp2.fr/daniele.coslovich/f2py-jit
+Author: Daniele Coslovich
+Author-email: daniele.coslovich@umontpellier.fr
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Requires-Dist: numpy
+
+f2py-jit
+==================
+
+Just-in-time compilation of fortran code in python (via f2py).
+
+Quick start
+-----------
+
+```python
+import f2py_jit
+```
+
+Installation
+------------
+The easiest way to install f2py-jit is with pip
+```
+pip install f2py-jit
+```
+
+Alternately, you can clone the code repository and install from source
+```
+git clone https://gitlab.info-ufr.univ-montp2.fr/daniele.coslovich/f2py-jit.git
+cd f2py_jit
+make install
+```
+
+Authors
+-------
+Daniele Coslovich: http://www.coulomb.univ-montp2.fr/perso/daniele.coslovich/
+
+
