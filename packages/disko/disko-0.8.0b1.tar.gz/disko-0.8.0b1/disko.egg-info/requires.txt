@@ -1,0 +1,15 @@
+astropy
+dask
+dask-ms
+dmsh
+h5py
+healpy
+matplotlib
+numpy
+pylops
+scikit-learn
+scipy
+svgwrite
+tart
+tart-tools
+toolz
