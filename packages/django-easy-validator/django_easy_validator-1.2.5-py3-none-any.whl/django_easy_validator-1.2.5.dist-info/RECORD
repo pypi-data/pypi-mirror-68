@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=P8Fb-jCccEz5b2bYVHYALM6sXp7f-CivXevBb8Zcge0,202
+tests/settings.py,sha256=kLcrOCHAohNwumMCjWFuNEZq0olIewIHkKv4Z-2Q1HM,536
+tests/tests.py,sha256=ckcQ9nT389jY8A81SAidykquHpdj1jf1IUYL4vhqdc8,38207
+validator/__init__.py,sha256=jWqdN5ZcXg7BDsrmVMTp9u9W7uBpvgzcbeN9uBT5M3g,284
+validator/validators.py,sha256=wks1RYdTuwBOJ0e1pYvvtHeR2XgqcRXuoN0D5rl5IMg,38172
+django_easy_validator-1.2.5.dist-info/LICENSE.txt,sha256=DS-Uzi1YYK9sMp8n_UMTor-jPkrfgt1cWnIUczAQ9Wo,1071
+django_easy_validator-1.2.5.dist-info/METADATA,sha256=7RmD_SbTkwn3hOMpFIVrPsxtgzZXT3vAsIHeUY5te2I,14983
+django_easy_validator-1.2.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_easy_validator-1.2.5.dist-info/top_level.txt,sha256=HfFaSdo1wFXBQdFJ1nBxU0qlZPW6KILN5w59f2-wcM0,16
+django_easy_validator-1.2.5.dist-info/RECORD,,
