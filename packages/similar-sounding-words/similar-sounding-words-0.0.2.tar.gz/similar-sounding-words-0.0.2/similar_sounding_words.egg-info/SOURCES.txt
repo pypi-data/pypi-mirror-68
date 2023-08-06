@@ -1,0 +1,7 @@
+README.md
+setup.py
+similar_sounding_words.py
+similar_sounding_words.egg-info/PKG-INFO
+similar_sounding_words.egg-info/SOURCES.txt
+similar_sounding_words.egg-info/dependency_links.txt
+similar_sounding_words.egg-info/top_level.txt
