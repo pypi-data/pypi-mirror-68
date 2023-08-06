@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "schemahq-migra"
+version = "1.0.9"
+authors = [ "Robert Lechte <robertlechte@gmail.com>",]
+license = "Unlicense"
+readme = "README.md"
+description = "Like `diff` but for PostgreSQL schemas"
+packages = [
+    { include = "migra" }
+]
+
+repository = "https://github.com/djrobstep/migra"
+homepage = "https://migra.djrobstep.com/"
+
+[tool.poetry.dependencies]
+python = "*"
+sqlbag = "*"
+six = "*"
+schemahq-schemainspect = "^1.0.10"
+psycopg2-binary = { version="*", optional = true }
+
+[tool.poetry.dev-dependencies]
+sqlbag = "*"
+pytest = "*"
+pytest-cov = "*"
+psycopg2-binary = "*"
+flake8 = "*"
+isort = "*"
+black = { version = ">=19.10b0", python=">=3.6" }
+
+[tool.poetry.extras]
+pg = ["psycopg2-binary"]
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+line_length = 88
+
