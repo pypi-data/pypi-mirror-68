@@ -1,0 +1,3 @@
+[console_scripts]
+usgs-topo-tiler = usgs_topo_tiler.cli:main
+

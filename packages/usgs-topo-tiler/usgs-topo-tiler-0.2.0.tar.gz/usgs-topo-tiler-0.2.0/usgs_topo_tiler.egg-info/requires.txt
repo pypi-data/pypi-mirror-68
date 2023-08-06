@@ -1,0 +1,14 @@
+numpy
+rasterio
+rio-tiler>=2.0a6
+
+[cli]
+boto3
+click
+cogeo_mosaic
+geopandas
+mercantile
+pandas
+python-dateutil
+requests
+shapely
