@@ -1,0 +1,12 @@
+robotstxt/__init__.py,sha256=GSKA9i3m3-ddW-Q69HN7CAwAemjDMcawiFg_rJ9hdTM,134
+robotstxt/processor.py,sha256=MPBgxNPS8wf2DZDsxZO1lTrc4I8AF8BxWHa5EMuzqWU,4450
+robotstxt/robots_processing.py,sha256=7RpZfLRi_pLVBx_1eKqNScAijzkNT_W7TY496QKEcsQ,1332
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/test_models.py,sha256=3Azp9lC8fGr2XWminzaYirP5KjwZiDHHadBOUQv_oUU,4776
+tests/test_processor.py,sha256=AT0aIpwcVUdJLCUwMpC612IVFNVOc6WXkTwzNZnSFpg,4781
+tests/test_robots_processing.py,sha256=kFfO8bdvd2qcpjeQetX_n_0g7JRkflwCLl3NGHRMbP4,364
+robotstxt-0.0.3.dist-info/LICENSE,sha256=7NkO19jHtJYZc-j2FYZNTfexVLDlUltumUL4qPizgn0,1101
+robotstxt-0.0.3.dist-info/METADATA,sha256=kcz9i-ax8PawV1SKdlSmJfz7ajO8uE9VYkGXFmpS-Kw,554
+robotstxt-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+robotstxt-0.0.3.dist-info/top_level.txt,sha256=IMdJISB0pSvn5sYFAHO4Hewg5XJJHgj8l6hNaaIkNmg,16
+robotstxt-0.0.3.dist-info/RECORD,,
