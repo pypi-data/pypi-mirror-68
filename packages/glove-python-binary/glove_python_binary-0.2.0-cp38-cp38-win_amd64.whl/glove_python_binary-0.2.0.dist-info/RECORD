@@ -1,0 +1,13 @@
+glove/__init__.py,sha256=dFl7lgEwPxpDZVSeiS5rpcmg6ohHqLNONiN1jROyUhY,52
+glove/corpus.py,sha256=1jGqH59Tv5bOB5BqegC2205FJmDbaSbsRIoDPDpwqIY,2667
+glove/corpus_cython.cp38-win_amd64.pyd,sha256=1ihBYeEA-eJHp1BrKbugsPoYndTjy1RDHDptQxEGk5I,177664
+glove/glove.py,sha256=g8HvVwgCrtTed9SjMbafO9el8DI1r_nOMjobuimO1Go,10373
+glove/glove_cython.cp38-win_amd64.pyd,sha256=zos2ag2AriiRp7ZZ1eSmrrdZqDfyJ4hHi9p0bqDw25o,182272
+glove/metrics/__init__.py,sha256=1fui3XPXWA48MjLKqBGvxfblROKZuSzlCjmgETTzNbs,136
+glove/metrics/accuracy.py,sha256=rz1pbcFSTl-N5ZmEFSKJc6oXSEM0iPaujWNP62l6TzI,3242
+glove/metrics/accuracy_cython.cp38-win_amd64.pyd,sha256=7P9DObUbd4-zj-FMkRwwTeLfp1ZEY0255IV7RBrJ1EU,162304
+glove_python_binary-0.2.0.dist-info/LICENSE,sha256=-kddTAfX18grxStTCQ0rMMFyteOVN12NWC-xVxf4np4,11341
+glove_python_binary-0.2.0.dist-info/METADATA,sha256=Ah7OZ9UDrpJy6JUmA3CangGsy1pCoZ2nSk-YCYdjf50,580
+glove_python_binary-0.2.0.dist-info/WHEEL,sha256=-ODc2a2AO_YJ5T46NOquHfWjRM7bQvlt-f3zRaLBjL4,105
+glove_python_binary-0.2.0.dist-info/top_level.txt,sha256=37L8VMs0xTR_J8HWIhfuhkwv_VGa5IBT10kXH7mdxjs,6
+glove_python_binary-0.2.0.dist-info/RECORD,,
