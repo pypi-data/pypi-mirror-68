@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: testmynb
+Version: 0.0.1
+Summary: A Jupyter Notebook Testing Framework
+Home-page: https://github.com/youngchanpark/testmynb
+Author: Young-Chan Park
+Author-email: young.chan.park93@gmail.com
+License: MIT
+Project-URL: Issue Tracker, https://github.com/youngchanpark/testmynb/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5.3
+Description-Content-Type: text/markdown
+Requires-Dist: nbformat (>=5.0.0)
+Requires-Dist: ipython
+Requires-Dist: click
+Requires-Dist: pytest
+
+# testmynb
+Test My Notebook, or testmynb, is a framework which allows users to write and run Jupyter Notebook code cells as tests.
+
+
+## Install
+```sh
+pip install testmynb
+```
+
+
+## Usage
+```sh
+testmynb
+```
+
+

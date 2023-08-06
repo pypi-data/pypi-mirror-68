@@ -1,0 +1,14 @@
+testmynb/__init__.py,sha256=zX9xQb0zKPPHsuaObPZp6rwtD6ABYSourLKehcV_TEg,318
+testmynb/__main__.py,sha256=yv853EfEx18Er0-lXqu9BkJ6mQcoBwZgneLp9ddOeCs,68
+testmynb/_ansi.py,sha256=HUNZGJeUiD3Sy4Vsflm2tOrJ1Lhf8F8eN35CVg_4VD8,353
+testmynb/handler.py,sha256=4vI2wyJjxiLYgnb-ApfqK_aoS-fz30SAqXL8Gc6MZLU,5046
+testmynb/magic.py,sha256=Qaf9fg2sBy01G-oXKGIX3DizeZxjKeUiC0ybqHMGPMM,2634
+testmynb/main.py,sha256=Iut4fk7gnG-dTSMSTC27jAB3lAhFYdu0fPZrdfJlVsk,468
+testmynb/notebook.py,sha256=uAa3hmOGZQDTNCwpAOdOFVpDoWj8WaB8RXy5KyvImq4,5503
+testmynb-0.0.1.dist-info/AUTHORS.rst,sha256=RXDiZt5-Vesz1vshvpJLfQRdKZYbpD5aGpRjUvmCbz0,71
+testmynb-0.0.1.dist-info/LICENSE,sha256=p2PrTekstRChXurtxwlAfR9alXwpDf8pqTsGFD4_Dcs,1072
+testmynb-0.0.1.dist-info/METADATA,sha256=DdY5FCK-wCBMV-o2J3pJdcXH9qzjnW16qHeBZCWjKfg,1210
+testmynb-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+testmynb-0.0.1.dist-info/entry_points.txt,sha256=1OSPhpbOmByGnsXWjwkoqBajuY48bfKkKC5UxxOGqTE,48
+testmynb-0.0.1.dist-info/top_level.txt,sha256=IweVfPxoo_E-KxM8x8i7OxrjJD0p5N7g3K78KRyR3Sk,9
+testmynb-0.0.1.dist-info/RECORD,,
