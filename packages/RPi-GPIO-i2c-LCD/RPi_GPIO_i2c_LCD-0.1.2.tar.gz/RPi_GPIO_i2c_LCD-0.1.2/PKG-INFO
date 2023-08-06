@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: RPi_GPIO_i2c_LCD
+Version: 0.1.2
+Summary: Simple module for using a HD44780 LCD over I2C
+Home-page: https://github.com/AllanGallop/RPi_GPIO_i2c_LCD
+Author: Allan Gallop
+Author-email: allangallop@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/AllanGallop/RPi_GPIO_i2c_LCD/archive/0.1.2.tar.gz
+Description: UNKNOWN
+Keywords: LCD i2c HD44780 PCF8574 raspberry pi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
