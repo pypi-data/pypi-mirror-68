@@ -1,0 +1,2 @@
+django-tenant-schemas>=1.10.0
+django-q>=1.2.1
