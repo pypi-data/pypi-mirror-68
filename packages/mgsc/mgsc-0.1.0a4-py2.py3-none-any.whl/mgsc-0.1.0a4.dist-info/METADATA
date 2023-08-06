@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: mgsc
+Version: 0.1.0a4
+Summary: Multi git server client. A basic client for multiple git servers like GItlab, Github and Gitea
+Home-page: https://github.com/amritanshu-pandey/mgsc
+Author: Amritanshu Pandey
+Author-email: email@amritanshu.in
+License: MIT license
+Keywords: mgsc
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: GitPython
+Requires-Dist: requests
+
+mgsc
+====
+
+Multi git server client. A basic client for multiple git servers like GItlab, Github and Gitea
+
+
+* Free software: MIT license
+* Documentation: https://mgsc.readthedocs.io.
+
+
+Features
+--------
+
+- Initial version supports listing retrieving all the repositories, namespaces and associated details
+  from multiple git servers
+
+
+Supported servers
+-----------------
+
+- Gitea
+- Gitlab (Self hosted and Gitlab.com)
+- Github.com
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-04-19)
+------------------
+
+* First release on PyPI.
+
+
