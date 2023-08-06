@@ -1,0 +1,3 @@
+Flask>=0.12
+python-arango>=5.4.0
+six
