@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: teenypm
+Version: 0.1.1
+Summary: A tiny CLI project manager
+Home-page: https://github.com/joeyspacerocks/pm
+License: UNKNOWN
+Author: Joe Trewin
+Author-email: joe.trewin@gmail.com
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: colorama
