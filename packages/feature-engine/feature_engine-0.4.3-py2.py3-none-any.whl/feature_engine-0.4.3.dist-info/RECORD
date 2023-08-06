@@ -1,0 +1,16 @@
+feature_engine/VERSION,sha256=DX1KfmGNz63ZKyT_zvkH2nYi_HcIGeIJOvk5nzfmqKI,5
+feature_engine/__init__.py,sha256=54yxrYogTxdes2BQ-d9JNLA-Q2lhW7au7XHvfaEZYMA,265
+feature_engine/base_transformers.py,sha256=VDrrTlrv-pIKPD5cg5g0CBfvvXS22Ox_1CTjaqHV8rQ,4350
+feature_engine/categorical_encoders.py,sha256=zGvppKaCuvnaocnrpEobCMxJxDTWyIAPwlQ8WHyvAiM,27932
+feature_engine/dataframe_checks.py,sha256=80SdNQVthXcfchqx8ybjityPHyw7oV-SiXjFgej3ddc,1000
+feature_engine/discretisers.py,sha256=NQIpnvSrobs-LfhoCVf1I0IUaFS0jm67DbaICfkoj6w,15217
+feature_engine/missing_data_imputers.py,sha256=vD7MmIdJjCstDv99jg3HnXLGd-TUwsumftGiFF1lOvw,27602
+feature_engine/outlier_removers.py,sha256=AKvwYoVM8x88V9HQ9jtlW1TbREad-8NSZR4CaRSrx5Q,14578
+feature_engine/variable_manipulation.py,sha256=05DDQbdqxdWfRfqb4tymnri82wTIz9ohG2qLXobAtbk,1463
+feature_engine/variable_transformers.py,sha256=VJdKzkhsKA0pdIVRHYsV2E0QFInLM9vAVmrJ0cK7Kq4,13416
+feature_engine/wrappers.py,sha256=u-S9YIbal0tuxEFRoIeioGhumMn0aQmeY_3QNnpJJWk,1705
+feature_engine-0.4.3.dist-info/LICENSE.md,sha256=G8HQnUHtyxjZlU5NfLVThXsmb-pRhzSkSNwWagygaQE,1521
+feature_engine-0.4.3.dist-info/METADATA,sha256=m_pQLahEnQiKeCFLyWv7nZGX0lcUgp3-eJNlz4Y2oGs,4840
+feature_engine-0.4.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+feature_engine-0.4.3.dist-info/top_level.txt,sha256=9jbwBU2qIFURSjwtC_W8qBLR7Wwag3nFa9LdqsVPUlk,15
+feature_engine-0.4.3.dist-info/RECORD,,
