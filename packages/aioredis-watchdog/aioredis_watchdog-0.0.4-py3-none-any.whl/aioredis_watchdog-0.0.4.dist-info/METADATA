@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aioredis-watchdog
+Version: 0.0.4
+Summary: python asyncio Redis watchdog for key changes
+Home-page: https://github.com/cr0hn/aioredis-watchdog
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: License :: OSI Approved :: BSD License
+Keywords: redis,monitor,watchdog
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: aioredis
+
+UNKNOWN
+
+

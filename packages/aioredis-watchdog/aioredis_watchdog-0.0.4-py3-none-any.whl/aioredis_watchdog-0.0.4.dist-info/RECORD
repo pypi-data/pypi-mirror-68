@@ -1,0 +1,8 @@
+aioredis_watchdog/__init__.py,sha256=Mmvwe1WhZOAep9-Ye2fn2a02Ltyq0t9Hkjb4vnrZR5E,24
+aioredis_watchdog/__main__.py,sha256=3UlOMqZKyVhYtlcJslxHkzY3-tRsCHxAYCw9Q1F8Uzs,2219
+aioredis_watchdog/watchdog.py,sha256=RlWat1qIMeNJOQm0Z1Sv9booo_N2nyIL8iYvLnIGr48,1270
+aioredis_watchdog-0.0.4.dist-info/METADATA,sha256=ho-At2Zrr3MVEum8frFcQ51D7CZAs_tvLvdSmn8vrgc,561
+aioredis_watchdog-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aioredis_watchdog-0.0.4.dist-info/entry_points.txt,sha256=h4n4rjXyPNsBhWbPZxZn2NI5-y4vPev2WahVQcfK1Zk,68
+aioredis_watchdog-0.0.4.dist-info/top_level.txt,sha256=YABS-yKrilxUdjV2gJAVocy1fGVdFc-N8Dk7ekeN2co,18
+aioredis_watchdog-0.0.4.dist-info/RECORD,,

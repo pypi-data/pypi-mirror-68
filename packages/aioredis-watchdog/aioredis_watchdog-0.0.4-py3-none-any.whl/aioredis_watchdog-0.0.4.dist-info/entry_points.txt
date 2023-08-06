@@ -1,0 +1,3 @@
+[console_scripts]
+redis-watchdog = aioredis_watchdog.__main__:main
+
