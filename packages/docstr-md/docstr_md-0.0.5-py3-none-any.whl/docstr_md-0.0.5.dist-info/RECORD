@@ -1,0 +1,17 @@
+docstr_md/__init__.py,sha256=SmgI8ZEPPMYOOGdoR9rYRbv-AVY91D6HG8KUYfCBPmI,20
+docstr_md/python/__init__.py,sha256=eRyS2r7gexnADWEGIdclJbkEiBzqjO_8LqYZ_vPJ2go,4523
+docstr_md/python/soup_objects.py,sha256=KCO1d_wnrnh-uUTA3j5Yh_gC8gxdV6Q4Ra6Y3_l8QpE,3669
+docstr_md/python/compilers/__init__.py,sha256=l9NdYO8qPEj-91npV92tCnUUVPuwpyqcgEjP4zM6Zx0,36
+docstr_md/python/compilers/sklearn.py,sha256=4f_BmvRbcI8eEzlGmV64KHgu3EWR4R77-fTYm6rv6do,6915
+docstr_md/python/compilers/sklearn_templates/field.html,sha256=4Mp1ozwcEF4SOgOQj3gHFliC5iOeECkgQUVod_xh1dA,124
+docstr_md/python/compilers/sklearn_templates/head.html,sha256=_WTKEDM_jnn5e-_D5ocCJik2UouTD9uD4DqSiRu3rlY,536
+docstr_md/python/compilers/sklearn_templates/header.html,sha256=QPVNonTu4qrF4NS88-HIE6bo4o7cfvp81PUdkC6zmBw,87
+docstr_md/python/compilers/sklearn_templates/item.html,sha256=c_zIH40qNSD6jhbrobJlJCrdI8DBztExRA4wLMWpCBI,73
+docstr_md/python/compilers/sklearn_templates/table.html,sha256=1Gm5_dDt2KO1LnmP3IVdHTuDIN-jSbe9fXRsYpF_RuI,199
+docstr_md/python/parsers/__init__.py,sha256=Ukv4bMiR2X91yb7fPfKkLAIe-jW8YrWXBeCZs73gQLI,34
+docstr_md/python/parsers/sklearn.py,sha256=9UW8wzxYQ5xhf4UZWFOMLP8ldhBQVMWPDqqfwRq2RHk,6863
+docstr_md-0.0.5.dist-info/LICENSE,sha256=dLiBNvqmfuZ3PlE24JTmnuoxZSN6K6Q7fuAouwpPxTw,1051
+docstr_md-0.0.5.dist-info/METADATA,sha256=wV_D-E09-qKIoH-AUMJz0gHfFoWHS2vS_y5m7UtTkIM,1869
+docstr_md-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+docstr_md-0.0.5.dist-info/top_level.txt,sha256=8dRphDlIzvRhvkoZlqmzcytiGOqk2fq0mT07Bvu2LLo,10
+docstr_md-0.0.5.dist-info/RECORD,,
