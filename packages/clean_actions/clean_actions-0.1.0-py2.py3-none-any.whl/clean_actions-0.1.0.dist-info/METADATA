@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: clean_actions
+Version: 0.1.0
+Summary: Clean Actions
+Home-page: https://github.com/cybojenix/clean-actions
+License: UNKNOWN
+Author: Anthony King
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Pre-processors
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: ruamel.yaml
+Requires-Dist: click
+Requires-Dist: autoflake ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-randomly ; extra == "test"
+Requires-Dist: py ; extra == "test"
+Provides-Extra: dev
+Provides-Extra: test
+
+# Clean Actions
+
+A Tool for generating Github Action Workflows following DRY principals.
+
+## Install
+
+\#TODO
+
+## Usage
+
+\#TODO
+
+### Advanced
+
+For advanced examples, you can view the [test cases][test-cases] for a full overview
+of functionality available.
+
+## Contributing
+
+Contributions are welcome! See the [Contributing Guide][contributing] for more details
+
+[test-cases]: ./tests/cases/
+[contributing]: ./contributing.md
+
