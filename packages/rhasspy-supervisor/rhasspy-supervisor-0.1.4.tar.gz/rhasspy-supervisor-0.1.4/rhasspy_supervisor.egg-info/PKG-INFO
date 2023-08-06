@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: rhasspy-supervisor
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/rhasspy/rhasspy-supervisor
+Author: Michael Hansen
+Author-email: hansen.mike@gmail.com
+License: UNKNOWN
+Description: # Rhasspy Supervisor
+        
+        [![Continous Integration](https://github.com/rhasspy/rhasspy-supervisor/workflows/Tests/badge.svg)](https://github.com/rhasspy/rhasspy-supervisor/actions)
+        [![PyPI package version](https://img.shields.io/pypi/v/rhasspy-supervisor.svg)](https://pypi.org/project/rhasspy-supervisor)
+        [![Python versions](https://img.shields.io/pypi/pyversions/rhasspy-supervisor.svg)](https://www.python.org)
+        [![GitHub license](https://img.shields.io/github/license/rhasspy/rhasspy-supervisor.svg)](https://github.com/rhasspy/rhasspy-supervisor/blob/master/LICENSE)
+        
+        Generates a supervisord configuration from a Rhasspy profile.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
