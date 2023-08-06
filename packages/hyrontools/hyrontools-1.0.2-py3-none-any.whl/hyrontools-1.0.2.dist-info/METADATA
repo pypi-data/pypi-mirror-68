@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hyrontools
+Version: 1.0.2
+Summary: Hyron CLI Tools
+Home-page: https://github.com/jacobneiltaylor/hyrontools
+Author: Jacob Neil Taylor
+Author-email: me@jacobtaylor.id.au
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: hyron
+Requires-Dist: boto3
+
+HyronTools
+==========
+
+CLI Interface for Hyron
+-----------------------
+
+### Introduction
+
+These CLI tools provide a simple CLI interface for Hyron functionality.
+Unlike the Hyron library itself, this package is not rigourously tested.
+This simply serves as a reference implementation, allow for a simple demonstration of Hyron's capabilities.
+
+
