@@ -1,0 +1,4 @@
+redis>=3.2.0
+click
+croniter>=0.3.23
+pytz

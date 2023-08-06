@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: redis-tasks
+Version: 0.0.9
+Summary: redis-tasks is a lightweight library for processing background tasks
+Home-page: https://github.com/djangsters/redis-tasks/
+Author: Christian Fersch
+Author-email: christian@djangsters.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
