@@ -1,0 +1,13 @@
+halite_season_converter/__init__.py,sha256=pmO8pzhsAdu1_r31qH8O9-eOdYk8pg8sh9y87WTB1nE,2317
+halite_season_converter/converters/__init__.py,sha256=6WQuXdOVvaQ5x-MZRKyNrxEYDez6aHJ2RQ1ZUnaFGg8,610
+halite_season_converter/converters/convert_31_to_3.py,sha256=5je_dpHcB6wjTqhxeDo_eVEoB9HvC2wx4752ux9HY64,10398
+halite_season_converter/converters/convert_3_to_31.py,sha256=YaFUjG1M0b4EeAeP4qLlb_5lP9HQr2qD_XLEvGcfXy4,5416
+halite_season_converter/schemas/__init__.py,sha256=X9b1h7WqWDF52je7BHW_P87OlKSNiovZYEtSkB-Xjpo,136
+halite_season_converter/schemas/halite_2.py,sha256=0VIz2UM4Vu_opTq41pw_BxK8rIAg0f3YWGoCXH8a4O4,236
+halite_season_converter/schemas/halite_3.py,sha256=6w8yP7uBUrdTT23TDuv2NFKNLhKoEx14Hz26UK5VXVk,4705
+halite_season_converter/schemas/halite_31.py,sha256=Qv3_rGNfvuNsaskdVe8rGN__aZcRhilLme07PLw_iQM,1787
+halite_season_converter/utils.py,sha256=Ek-eJG4yqwxsvHU2uPezmYaCimeBPWUZdyYwPhHPVRw,397
+halite_season_converter-0.1.0.dist-info/LICENSE,sha256=Jia8t-ZKvp8zZ0BXYoBi9CpAY-hx2M705PjxG0QvdTs,1077
+halite_season_converter-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+halite_season_converter-0.1.0.dist-info/METADATA,sha256=x4pqNs8TJPcO9GMlnfIvObaTRTKwAUCGdFjxGTEFtiQ,617
+halite_season_converter-0.1.0.dist-info/RECORD,,
