@@ -1,0 +1,13 @@
+README.md
+setup.py
+fastGAT/__init__.py
+fastGAT/demo.py
+fastGAT/fastGAT.py
+fastGAT/layer.py
+fastGAT/model.py
+fastGAT/utils.py
+fastGAT/visual.py
+fastGAT.egg-info/PKG-INFO
+fastGAT.egg-info/SOURCES.txt
+fastGAT.egg-info/dependency_links.txt
+fastGAT.egg-info/top_level.txt
