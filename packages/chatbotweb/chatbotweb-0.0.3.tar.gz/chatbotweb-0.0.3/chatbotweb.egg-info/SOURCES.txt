@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+chatbotweb/CallbackServer.py
+chatbotweb/__init__.py
+chatbotweb.egg-info/PKG-INFO
+chatbotweb.egg-info/SOURCES.txt
+chatbotweb.egg-info/dependency_links.txt
+chatbotweb.egg-info/top_level.txt
