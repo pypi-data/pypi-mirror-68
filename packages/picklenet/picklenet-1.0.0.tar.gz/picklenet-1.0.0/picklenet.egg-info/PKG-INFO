@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: picklenet
+Version: 1.0.0
+Summary: pickle-like interface for .NET serialization
+Home-page: https://github.com/gaming32/picklenet
+Author: Gaming32
+Author-email: gaming32i64@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

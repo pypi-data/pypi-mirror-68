@@ -1,0 +1,7 @@
+picklenet.py
+setup.py
+picklenet.egg-info/PKG-INFO
+picklenet.egg-info/SOURCES.txt
+picklenet.egg-info/dependency_links.txt
+picklenet.egg-info/requires.txt
+picklenet.egg-info/top_level.txt
