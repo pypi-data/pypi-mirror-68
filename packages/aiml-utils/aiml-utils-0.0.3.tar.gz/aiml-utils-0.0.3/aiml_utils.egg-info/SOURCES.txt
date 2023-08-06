@@ -1,0 +1,9 @@
+README.md
+setup.py
+aiml-utils/__init__.py
+aiml-utils/utils.py
+aiml_utils.egg-info/PKG-INFO
+aiml_utils.egg-info/SOURCES.txt
+aiml_utils.egg-info/dependency_links.txt
+aiml_utils.egg-info/requires.txt
+aiml_utils.egg-info/top_level.txt

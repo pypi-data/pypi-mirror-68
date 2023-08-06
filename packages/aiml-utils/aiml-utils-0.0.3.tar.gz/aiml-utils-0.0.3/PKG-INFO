@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: aiml-utils
+Version: 0.0.3
+Summary: aiml-utils is a python package for artificial intelligence and machine learning.
+Home-page: https://github.com/jyotiprasadpal/aiml-utils
+Author: Pal, Jyoti Prasad
+Author-email: jyotipal.iitkgp@gmail.com
+License: MIT
+Description: Test
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5
