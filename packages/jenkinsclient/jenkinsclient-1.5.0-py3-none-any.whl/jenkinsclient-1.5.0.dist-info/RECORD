@@ -1,0 +1,17 @@
+jenkins_client.py,sha256=mCd8xOqxrXHWoIM6jKMpZ6nZrplkLMrO6crvBi2i5GU,3582
+jenkinsclient/__init__.py,sha256=t3GwLc2mmJdb_4CtXtBdKMaiZHAwkYj3H5pcUgB6n2Q,622
+jenkinsclient/build.py,sha256=w5huASLpIfxLQXU9OUl20trk_2YYZZqKAwL4Wq341w0,2341
+jenkinsclient/config.py,sha256=z1JZ8zarzsEKZi8Ypq7Rz-i1vaPVjhzVgI5VRIgg4GA,4079
+jenkinsclient/credentials.py,sha256=ixQXubZLCIcaAAv3XjUMEnj3PSp-XibxvHoJiRXEZGM,1299
+jenkinsclient/executor.py,sha256=TWDCB9RMwvPVVeRcM36ftEY_KsXwgS8nL3FbsHr_NBc,1124
+jenkinsclient/jenkins_server.py,sha256=O6NbBDSWIIkU_4PIrcaR6oPIBLlz6-4SCcDMFiDtcJw,2160
+jenkinsclient/job.py,sha256=9PjN_7UJ2lvDSRB3ydx2Llm4rjKafF2sC5oz7G6ROcA,4883
+jenkinsclient/node.py,sha256=PxKxmlNTgIOwbZcoh8q4Kc8hfC8bFoCJqbv8JJzqVhs,3471
+jenkinsclient/plugin.py,sha256=pflwHBFqbrBXJbI0vNtzQ_cRf03kmgv-S5dfz6BSqbU,3240
+jenkinsclient/queue.py,sha256=zYDlvlY81lZ7RkIVnj9hXNZD6yYk7Am4BnFT50R0C3s,1443
+jenkinsclient-1.5.0.dist-info/LICENSE,sha256=0LFqPLYDVpSGg0y1X6ilOYMgY4ZHkzOThvXh9kaSiYc,9592
+jenkinsclient-1.5.0.dist-info/METADATA,sha256=Dy_ood_-mtcHrMraEddoakP9A3YlAGHdCW8zZzlIRlM,3289
+jenkinsclient-1.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jenkinsclient-1.5.0.dist-info/entry_points.txt,sha256=6aNPNHEe_0uyl2t3GwT7h35t2l7xGxS0Sm5fBAZL8UA,67
+jenkinsclient-1.5.0.dist-info/top_level.txt,sha256=2cFfhdvCuSaxo3nBPG1GBFweMYfuilya_09lXzULqNo,29
+jenkinsclient-1.5.0.dist-info/RECORD,,
