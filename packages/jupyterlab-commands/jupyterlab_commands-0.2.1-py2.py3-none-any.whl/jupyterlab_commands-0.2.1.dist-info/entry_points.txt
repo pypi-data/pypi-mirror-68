@@ -1,0 +1,4 @@
+[nbconvert.exporters]
+html_hidecode = jupyterlab_commands.nbconvert_functions.hideinput.exporters:HTMLHideCodeExporter
+pdf_hidecode = jupyterlab_commands.nbconvert_functions.hideinput.exporters:PDFHideCodeExporter
+

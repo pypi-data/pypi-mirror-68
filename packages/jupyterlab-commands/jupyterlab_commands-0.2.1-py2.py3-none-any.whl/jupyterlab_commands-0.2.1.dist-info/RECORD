@@ -1,0 +1,15 @@
+jupyterlab_commands/__init__.py,sha256=lIRL-Ef4xWs7DvcmPD3mVkkmbgvJs_6H4U_43xEWnDc,160
+jupyterlab_commands/_version.py,sha256=oR3oGHfhyVCKz9vA4gYMmO9BXwGaUmDsvGAEr2dm5L8,677
+jupyterlab_commands/extension.py,sha256=6ZscCOXdWCMbV3-nvX4GIrH-dbfHaLv9SX2TUGPliJo,1718
+jupyterlab_commands/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterlab_commands/tests/test_all.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterlab_commands/tests/test_extension.py,sha256=DMeE9XrQIS29QOVOlFFTme1kTM9-kql2L0hyrgVeHgQ,734
+jupyterlab_commands/tests/test_init.py,sha256=WZw6GqLzXH5JR6s1tviaMkiNkCFwO4ucZdQ7jw1IRxo,688
+jupyterlab_commands-0.2.1.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab_commands.json,sha256=vNwtxVSzezpIE985640iODHAey6aGH77A3yg8w9d41Y,96
+jupyterlab_commands-0.2.1.data/data/share/jupyter/lab/extensions/jupyterlab_commands-0.2.1.tgz,sha256=Bf5zvtNqmpAt8ZENw6XWmUTo2fnDAFEQVMdixldJwP0,8166
+jupyterlab_commands-0.2.1.dist-info/LICENSE,sha256=Ze6c3ORWTZ1eG3ZU1bZsMQWuoaDUmMPmPvA_h8GhncQ,11362
+jupyterlab_commands-0.2.1.dist-info/METADATA,sha256=YKmk88QkCaN3yYvugQ903DcXbdHC7lQT3tGQSCsJE1s,3804
+jupyterlab_commands-0.2.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jupyterlab_commands-0.2.1.dist-info/entry_points.txt,sha256=o-AQiIImQin6SO21_VVgmYcJYq4PdwQvOW8bdqbuGi4,215
+jupyterlab_commands-0.2.1.dist-info/top_level.txt,sha256=B8yuFqEyEX5AaGiEYI8xivd0GJrRAO7MYdW_LJBDvIo,20
+jupyterlab_commands-0.2.1.dist-info/RECORD,,
