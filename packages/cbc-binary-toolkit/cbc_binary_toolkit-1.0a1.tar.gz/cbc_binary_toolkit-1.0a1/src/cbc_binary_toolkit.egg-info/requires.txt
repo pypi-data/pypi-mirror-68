@@ -1,0 +1,7 @@
+argparse
+cbapi
+python-dateutil
+pyyaml
+requests
+schema
+yara-python
