@@ -1,0 +1,13 @@
+README.md
+setup.py
+Edatora.egg-info/PKG-INFO
+Edatora.egg-info/SOURCES.txt
+Edatora.egg-info/dependency_links.txt
+Edatora.egg-info/requires.txt
+Edatora.egg-info/top_level.txt
+Script/__init__.py
+Script/main.py
+Script/Graph/__init__.py
+Script/Graph/plot.py
+Script/Report/__init__.py
+Script/Report/model.py
