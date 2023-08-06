@@ -1,0 +1,29 @@
+Metadata-Version: 1.0
+Name: scipion-em-dynamo
+Version: 3.0
+Summary: Scipion plugin for dynamo.
+Home-page: https://github.com/scipion-em/scipion-em-dynamo
+Author: you
+Author-email: you@yourinstitution.email
+License: UNKNOWN
+Description: =======================
+        Scipion - Dynamo plugin
+        =======================
+        
+        This is a plugin for **scipion** and dynamo
+        
+        =====
+        Setup
+        =====
+        
+        - **Install this plugin in devel mode:**
+        
+        Using the command line:
+        
+        .. code-block::
+        
+            scipion installp -p local/path/to/scipion-em-dynamo --devel
+        
+        
+Keywords: scipion cryoem imageprocessing scipion-3.0
+Platform: UNKNOWN
