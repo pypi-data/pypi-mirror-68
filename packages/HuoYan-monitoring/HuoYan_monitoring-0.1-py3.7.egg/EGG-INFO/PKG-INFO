@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: HuoYan-monitoring
+Version: 0.1
+Summary: HuoYan laboratory COVID-19 samples testing lifetime monitoring
+Home-page: https://github.com/JaylanLiu/HuoYan_monitoring
+Author: JaylanLiu
+Author-email: liujilong@genomics.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
