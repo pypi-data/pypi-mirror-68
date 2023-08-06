@@ -1,0 +1,15 @@
+docker
+dock-r
+fire
+logless
+pyyaml
+runnow
+uio
+
+[AWS]
+boto3
+s3fs
+
+[Azure]
+azure-storage-blob
+azure-storage-file-datalake
