@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+lektor_simplemde.py
+setup.py
+tasks.py
+lektor_simplemde.egg-info/PKG-INFO
+lektor_simplemde.egg-info/SOURCES.txt
+lektor_simplemde.egg-info/dependency_links.txt
+lektor_simplemde.egg-info/entry_points.txt
+lektor_simplemde.egg-info/requires.txt
+lektor_simplemde.egg-info/top_level.txt
