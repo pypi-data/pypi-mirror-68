@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: guietta
+Version: 0.2.3
+Summary: Simple GUI for Python
+Home-page: https://github.com/alfiopuglisi/guietta
+Author: Alfio Puglisi
+Author-email: alfio.puglisi@inaf.it
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+# guietta
+
+A tool for making simple Python GUIs
+
+
+
