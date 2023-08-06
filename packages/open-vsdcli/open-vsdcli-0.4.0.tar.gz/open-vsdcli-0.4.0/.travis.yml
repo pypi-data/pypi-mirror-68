@@ -1,0 +1,43 @@
+language: python
+
+python:
+  - '2.7'
+#  - '3.5' # Skip: Tests failled for this version
+  - '3.6'
+  - '3.7'
+
+before_install:
+  - wget https://github.com/sstephenson/bats/archive/v0.4.0.tar.gz
+  - tar xzf v0.4.0.tar.gz
+  - export PATH=$PWD/bats-0.4.0/bin:$PATH
+  - bats -v
+
+install:
+  - virtualenv .venv
+  - . ./.venv/bin/activate
+  - pip install -r requirements.txt
+  - pip install -r test-requirements.txt
+  - pip install -e .
+
+script:
+  - export PATH=$PWD/bats-0.4.0/bin:$PATH
+  - tests/run_tests.sh
+
+sudo: false
+
+jobs:
+  include:
+    - stage: build
+      python: "3.7"
+      script: echo "Starting Pypi build"
+      deploy:
+        edge: true
+        provider: pypi
+        user: "__token__"
+        password:
+          secure: "Q2sHZKh043MQqE/iZJMi8J/4DIoCX4xDo+BGqzm/ioVWUc1Y70a7Fq3syZpQ3NvBxjF5osrZujq8w4ZSylPHTSNQSWUBi/u4LrfPntHSp6zZJ+m+Qc64vG5+IzGBY/lLUAlYLl6JRH1t92Qa1Ua7+2wy4d12J9x0ZBVKlzUiyBRbWIc9ZoSuqZiKKRIMYDmiwdNaRooYp3SIubIqYfqTZDlu6eTZ92WS2tKaT+AykADHWMZ2N9SPlcpJVSG41m3oD1527YhNEMB5uyOFaPqvZLSYwlQ7v7elIft9LJD/WLJxZkY4J5HyEF6FqcJ3sw8ekWuCNZoQgj2o6MXvcCoPc754JrLcQDxirM8yupXOSY9PswPz1R+GdDKnLlu3F5UksUmPqGGeWFpQdE58KBuKVx1AR4D4ciYYHbcIIV9XcnDbakJ/LqJz284Ec0u8ymH7ukfx0bgA7WQp5qZ1Ojy7H9+Qat75jN3yex0KIR7Tntp3J4gXaE8fdop+8/eBYRef4J1gk1Ua+CAOyeUL7mF9/AvoqCgXbDRDVaHGd9Jb5m0/KIAOPEwhch/Ol2JWlKPDrzdS8rVgyTIn2qK04lQxM/XpM3OpswSGIo3NtXWzWYridZuC3r/zs9+FtIWKLgPL8evCwvqZJSpT2X3iuHnW544bB3VG+Prn0fq8656Bmow="
+        on:
+          tags: true
+          branch: master
+          repo: maxiterr/openvsd
+        skip_existing: true

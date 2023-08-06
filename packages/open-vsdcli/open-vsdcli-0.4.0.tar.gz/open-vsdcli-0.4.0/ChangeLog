@@ -1,0 +1,129 @@
+CHANGES
+=======
+
+0.4.0
+-----
+
+* Bump to version 0.4.0
+* Update travis api token after changing repository From Numergy to Maxime Terras
+* Update config for build and deploy to Pypi
+* run tests for different python versions
+* Make code python3 compatible
+* Add doc explaining completion
+* Add shell completion option
+* Add tests for virtual ip commands
+* Add Virtual ip commands
+* Add vm related tests and fix vsd mock
+* Add missing trunk commands and all trunk tests
+* Add tests for vport
+* Update travis links since repo get out fron Numergy
+* Improve output of vm interface show command
+* Add trunk related command
+
+0.3.6
+-----
+
+* Bump to version 0.3.6
+* Add  option to active bfd on staticroute creation
+* Domain and subnet has no parent in v5\_0
+* Add option to set a proxy to reach the VSD
+* Add option to disable existing proxy in the env
+* Click>=7.1 change output for missing option
+
+0.3.5
+-----
+
+* Bump to version 0.3.5
+* Free-api can accept '/endpoint' or 'endpoint'
+* Make ENV credentials compatible with VSPK
+* Improve staticroute command and add related tests
+
+0.3.4
+-----
+
+* Bump to version 0.3.4
+* Add route command #15
+* Bugfix: Previous Bugfix introduce extra print..
+* Bugfix: Date may be None, conversion must be skiped
+* Bugfix: in API v5 and >, License string can be null
+* Add a minimun pep8 test for all python files
+* Bump to version 0.3.3
+* Bump to version 0.3.2
+* Fix deploy to pypi
+* Bump to Version 0.3.1
+* Bufix: VSD API>4.0 remove floating IP in vm interface
+* BUGFIX: Error message change with click > 7.0
+
+0.3.0
+-----
+
+* Bump to version 0.3.0
+* Fix wording
+* Add vminterface-create command
+* Add vm-update command
+* Add vm create command
+* Add metadata and metatada tag related tests
+* Add metadata tag related command
+* Add metadata related command
+* Fix header option when free-api in used
+* Add 'is Cluster' column for license-list
+* Revert "Add 'is Cluster' column for license-list"
+* Add 'is Cluster' column for license-list
+* Bump api version to 3.2
+* Bugfix: bad variable name
+
+0.2.8
+-----
+
+* Bump to version 0.2.8
+* Fix gateway redundancy groups creation without enterprise-id
+* Gateway and redundant gateway features:
+
+0.2.7
+-----
+
+* Bump to version 0.2.7
+* Implement redundant groups between two gateways
+
+0.2.6
+-----
+
+* Bump to version 0.2.6
+* Fix #26 CLI not working with requests >= 2.11.1
+* Fix error when date is null #24
+
+0.2.5
+-----
+
+* Bump to version 0.2.5
+* Fix minimum version for requirements
+* Set minimum version for requests to 2.4.0
+* Make tests independent by reseting mock database for each test
+
+0.2.3
+-----
+
+* Bump to version 0.2.3
+* Add show version related tests
+* Add show version command
+* Add creds option to display creds file exemple
+* Create creds file for mock
+* Print all date to human readable format
+* Add pep8 tests
+* Split tests code into several files
+* Make the code fully compliant with pep8
+* Split code into several files
+* Fix version conflic for pbr
+* Add free-api related tests
+* Add free-api command
+
+0.2.1
+-----
+
+* Update Pypi password
+* Bump to version 0.2.1
+* Add auto-deployment to Pypi
+* Add vlan\_id option for vport-create
+* Catch error when VSD reply is not JSON
+* Add port type when list all gateway ports
+* Improve debug output format
