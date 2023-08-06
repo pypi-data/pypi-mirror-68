@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: kubectl-kadalu
+Version: 0.7.0
+Summary: Kadalu Kubectl Plugin
+Home-page: https://github.com/kadalu/kadalu
+Author: Kadalu Authors
+Author-email: support@kadalu.io
+License: Apache-2.0
+Description: 
+            Kadalu Kubectl Plugin
+            
+Keywords: kadalu,container,kubernetes,kubectl
+Platform: linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only

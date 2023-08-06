@@ -1,0 +1,4 @@
+[console_scripts]
+kubectl-kadalu = kubectl_kadalu.main:main
+oc-kadalu = kubectl_kadalu.main:main
+
