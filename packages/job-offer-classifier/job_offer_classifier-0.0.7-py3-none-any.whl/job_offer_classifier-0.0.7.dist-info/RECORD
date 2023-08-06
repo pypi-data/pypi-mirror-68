@@ -1,0 +1,13 @@
+job_offer_classifier/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+job_offer_classifier/_nbdev.py,sha256=pWOIx81I6fK34rpiYlUxphnwNYZl4r1M2buRIhuS0-U,1475
+job_offer_classifier/k_fold_validation.py,sha256=R9cPcpXxCBjign3wtVp521UvjAx0-4UF4eCj9dmv9u4,3210
+job_offer_classifier/merge_datasets.py,sha256=IIK2pk-xEco43oLIfvoXF7_lL5aiSUwwNoSVEk2BpJ0,814
+job_offer_classifier/multiclass.py,sha256=2gGBSt74puzq4_jKVOkAaI3XvqN0SF-Vchb5B62_MPE,8277
+job_offer_classifier/pipeline_classifier.py,sha256=RjEmUctg0kFQECWQEv3tKrNFHXELncCLk1i2_Jcerfs,8373
+job_offer_classifier/validations.py,sha256=cgXwBLq6B3OJPu0-6F1POw-9lwXpie43EX79Dubd-J4,3021
+job_offer_classifier-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+job_offer_classifier-0.0.7.dist-info/METADATA,sha256=y1zP1Jg_KBPn1KujSh_fCgDlScEVRguSVM1iAoERtIU,6694
+job_offer_classifier-0.0.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+job_offer_classifier-0.0.7.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+job_offer_classifier-0.0.7.dist-info/top_level.txt,sha256=hgGUhmEuTpmhykaw8exYc_-z68sf8ntPP2XOZx1mcsw,21
+job_offer_classifier-0.0.7.dist-info/RECORD,,
