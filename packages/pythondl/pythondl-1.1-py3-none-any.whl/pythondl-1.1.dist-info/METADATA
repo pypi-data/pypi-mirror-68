@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pythondl
+Version: 1.1
+Summary: Download YT videos using this simple tool!
+Home-page: UNKNOWN
+Author: Calamity34
+Author-email: nick.goloushckin@ya.ru
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: bs4
+Requires-Dist: pytube3
+Requires-Dist: requests
+
+# PyTubeDownloader
+This little program was created to ease your YT video downloading
+
+## Install
+Installation instructions:
+```bash
+git clone https://github.com/Calamity34/PyTubeDownloader.git PTD
+cd PTD
+./install.sh
+```
+Now it is ready for your use!
+
+## Use
+- Run `$ pydownloader` in the required folder. \ 
+- Provide it the YT link, and it will do all the work! 
+
+## Update
+Did a new update come out?
+Upgrade your pydownloader by going into the package folder and running 
+- `git fetch && git pull`
+- `pip3 install . -U` (sudo access may be required)
+
+
