@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="cp1252" />
+    <title>Gradient Descent</title>
+    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="next" title="Polynomial Regression" href="polynomial-regression.html" />
+    <link rel="prev" title="Interactive k-Means" href="interactive-kmeans.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="polynomial-regression.html" title="Polynomial Regression"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="interactive-kmeans.html" title="Interactive k-Means"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Educational 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="gradient-descent">
+<h1>Gradient Descent</h1>
+<p>Educational widget that shows the gradient descent algorithm on a logistic or linear regression.</p>
+<p><strong>Inputs</strong></p>
+<ul class="simple">
+<li><p>Data: input data set</p></li>
+</ul>
+<p><strong>Outputs</strong></p>
+<ul class="simple">
+<li><p>Data: data with columns selected in the widget</p></li>
+<li><p>Classifier: model produced at the current step of the algorithm.</p></li>
+<li><p>Coefficients: coefficients at the current step of the algorithm.</p></li>
+</ul>
+<div class="section" id="description">
+<h2>Description</h2>
+<p>This widget incrementally shows steps of <a class="reference external" href="https://en.wikipedia.org/wiki/Gradient_descent" target="_blank">gradient descent</a> for a logistic or linear regression. Gradient descent is demonstrated on two attributes that are selected by the user.</p>
+<p>Gradient descent is performed on logistic regression if the class in the data set is categorical and linear regression if the class is numeric.</p>
+<p><img alt="../_images/gradient-descent-stamped.png" src="../_images/gradient-descent-stamped.png" /></p>
+<ol class="simple">
+<li><p>Select two attributes (<strong>x</strong> and <strong>y</strong>) on which the gradient descent algorithm is preformed. Select the <strong>target class</strong>. It is the class that is classified against all other classes.</p></li>
+<li><p><strong>Learning rate</strong> is a step size in the gradient descent
+With <strong>stochastic</strong> checkbox you can select whether gradient descent is <a class="reference external" href="https://en.wikipedia.org/wiki/Stochastic_gradient_descent" target="_blank">stochastic</a> or not.
+If stochastic is checked you can set <strong>step size</strong> that is amount of steps of stochastic gradient descent performed in one press on step button.
+<strong>Restart</strong>: start algorithm from the beginning</p></li>
+<li><p><strong>Step</strong>: perform one step of the algorithm
+<strong>Step back</strong>: make a step back in the algorithm</p></li>
+<li><p><strong>Run</strong>: automatically perform several steps until the algorithm converges
+<strong>Speed</strong>: set speed of the automatic stepping</p></li>
+<li><p><strong>Save Image</strong> saves the image to the computer in a .svg or .png
+format.
+<strong>Report</strong> includes widget parameters and visualization in the report.</p></li>
+</ol>
+</div>
+<div class="section" id="example">
+<h2>Example</h2>
+<p>In Orange we connected <em>File</em> widget with <em>Iris</em> data set to the <em>Gradient Descent</em> widget. Iris data set has discrete class, so <em>Logistic regression</em> will be used this time. We connected outputs of the widget to <em>Predictions</em> widget to see how the data are classified and the <em>Data Table</em> widget where
+we inspect coefficients of logistic regression.</p>
+<p><img alt="../_images/gradient-descent-flow.png" src="../_images/gradient-descent-flow.png" /></p>
+<p>We open the <em>Gradient Descent</em> widget and set <em>X</em> to <em>sepal width</em> and <em>Y</em> to <em>sepal length</em>. Target class is set to <em>Iris-virginica</em>. We set <em>learning rate</em> to 0.02. With a click in the graph we set the initial coefficients (red dot).</p>
+<p><img alt="../_images/gradient-descent1.png" src="../_images/gradient-descent1.png" /></p>
+<p>We perform step of the algorithm by pressing the <strong>Step</strong> button. When we get bored with clicking we can finish stepping by pressing on the <strong>Run</strong> button.</p>
+<p><img alt="../_images/gradient-descent2.png" src="../_images/gradient-descent2.png" /></p>
+<p>If we want to go back in the algorithm we can do it by pressing <strong>Step back</strong> button. This will also change the model. Current model uses positions of last coefficients (red-yellow dot).</p>
+<p><img alt="../_images/gradient-descent3.png" src="../_images/gradient-descent3.png" /></p>
+<p>In the end we want to see the predictions for input data so we can open the <em>Predictions</em> widget. Predictions are listed in the left column. We can compare this predictions to the real classes.</p>
+<p><img alt="../_images/gradient-descent4.png" src="../_images/gradient-descent4.png" /></p>
+<p>If we want to demonstrate the <em>linear regression</em> we can change the data set to <em>Housing</em>. This data set has a continuous class variable. When using linear regression we can select only one feature which means that our function is linear. Another parameter that is plotted in the graph is <a class="reference external" href="https://en.wikipedia.org/wiki/Y-intercept" target="_blank">intercept</a> of a <a class="reference external" href="https://en.wikipedia.org/wiki/Linear_function" target="_blank">linear function</a>.</p>
+<p>This time we selected <em>INDUS</em> as an <a class="reference external" href="https://en.wikipedia.org/wiki/Dependent_and_independent_variables" target="_blank">independent variable</a>. In the widget we can make the same actions as before. In the end we can also check the predictions for each point with the <em>Predictions</em> widget. And check coefficients of linear regression in a <em>Data Table</em>.</p>
+<p><img alt="../_images/gradient-descent-housing.png" src="../_images/gradient-descent-housing.png" /></p>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="polynomial-regression.html" title="Polynomial Regression"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="interactive-kmeans.html" title="Interactive k-Means"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Orange3 Educational 0.1 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Biolab.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.3.1.
+    </div>
+  </body>
+</html>
