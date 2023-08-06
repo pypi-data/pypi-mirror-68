@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mason-framework
+Version: 0.0.5
+Summary: Node based building blocks.
+Author: Eric Hulser
+Author-email: eric.hulser@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: importlib-metadata (>=1.6.0,<2.0.0)
+Requires-Dist: protobuf (>=3.11.3,<4.0.0)
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
