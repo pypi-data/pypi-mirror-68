@@ -1,0 +1,3 @@
+[console_scripts]
+onthefly = onthefly.onthefly:main
+

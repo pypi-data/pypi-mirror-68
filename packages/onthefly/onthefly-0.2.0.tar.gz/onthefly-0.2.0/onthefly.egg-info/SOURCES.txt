@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+onthefly/__init__.py
+onthefly/cli.py
+onthefly/onthefly.py
+onthefly.egg-info/PKG-INFO
+onthefly.egg-info/SOURCES.txt
+onthefly.egg-info/dependency_links.txt
+onthefly.egg-info/entry_points.txt
+onthefly.egg-info/not-zip-safe
+onthefly.egg-info/requires.txt
+onthefly.egg-info/top_level.txt
