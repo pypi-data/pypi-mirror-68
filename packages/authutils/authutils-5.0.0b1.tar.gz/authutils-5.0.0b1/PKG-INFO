@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: authutils
+Version: 5.0.0b1
+Summary: Gen3 auth utility functions
+License: Apache-2.0
+Author: CTDS UChicago
+Author-email: cdis@uchicago.edu
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: fastapi
+Provides-Extra: flask
+Requires-Dist: Flask (>=0.10.1); extra == "flask"
+Requires-Dist: authlib (>=0.11,<1.0)
+Requires-Dist: cached-property (>=1.4,<2.0)
+Requires-Dist: cdiserrors (>=1.0.0-beta.1,<2.0.0)
+Requires-Dist: fastapi (>=0.54.1,<0.55.0); extra == "fastapi"
+Requires-Dist: httpx (>=0.12.1,<0.13.0)
+Requires-Dist: pyjwt[crypto] (>=1.5,<2.0)
+Requires-Dist: xmltodict (>=0.9,<1.0)
