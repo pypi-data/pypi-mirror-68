@@ -1,0 +1,37 @@
+deprecation
+pymongo
+bidict
+pytray>=0.2.1
+stevedore
+click
+tabulate
+
+[:python_version < "3.6"]
+pyblake2
+
+[cli]
+click
+tabulate
+
+[dev]
+ipython
+pip
+pytest>4
+pytest-benchmark
+pytest-cov
+pre-commit
+prospector
+pylint
+twine
+yapf
+
+[dev:python_version < "3.7"]
+contextlib2
+
+[docs]
+nbsphinx
+sphinx
+sphinx-autobuild
+
+[gui]
+mincepy-gui
