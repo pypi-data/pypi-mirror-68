@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: cs46-caseytrees
+Version: 1.0.0
+Summary: Implementation of the tree data structure with search algs
+Home-page: https://github.com/cmorris21/trees/Trees
+Author: CaseyM
+Author-email: cmorris21@cmc.edu
+License: GPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: project for cs46: https://github.com/mikeizbicki/cmc-csci046/tree/master/hw13
+Requires-Dist: hypothesis
+Requires-Dist: pytest
+
+# Trees ![](https://api.travis-ci.com/cmorris21/trees.svg?branch=master)
+
+This is a homework for CMC's [CS46: data structures](https://github.com/mikeizbicki/cmc-csci046) course.
+
+
