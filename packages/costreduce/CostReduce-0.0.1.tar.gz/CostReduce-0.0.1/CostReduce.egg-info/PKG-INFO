@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: CostReduce
+Version: 0.0.1
+Summary: An essential toolset that eases server administration
+Home-page: https://www.costreduce.io
+Author: Maxence Maireaux
+Author-email: maxence@maireaux.fr
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<4.0
