@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: cs.py3
+Version: 20200517
+Summary: Aids for code sharing between python2 and python3.
+Home-page: https://bitbucket.org/cameron_simpson/css/commits/all
+Author: Cameron Simpson
+Author-email: cs@cskk.id.au
+License: GNU General Public License v3 or later (GPLv3+)
+Description: Aids for code sharing between python2 and python3.
+        
+        *Latest release 20200517*:
+        Add date_fromisoformat and datetime_fromisoformat being the datetime.date and datetime.datetime isoformat factories.
+        
+        This package presents various names in python 3 flavour for common use in
+        python 2 and python 3.
+        
+        ## Function `ustr(s, e='utf-8', errors='strict')`
+        
+        Upgrade string to unicode: no-op for python 3.
+        
+        # Release Log
+        
+        
+        
+        *Release 20200517*:
+        Add date_fromisoformat and datetime_fromisoformat being the datetime.date and datetime.datetime isoformat factories.
+        
+        *Release 20200229*:
+        Minor fixes.
+        
+        *Release 20190729*:
+        Add DEVNULL, which only arrived with 3.3.
+        
+        *Release 20190331*:
+        cs.py3._for3.raise3: bugfix raise-with-traceback.
+        
+        *Release 20190108*:
+        New raise_from function to provide raise...from in py3 and plain raise in py2.
+        
+        *Release 20181108*:
+        Small import fix for pread.
+        
+        *Release 20180805*:
+        Implement pread for systems lacking os.pread.
+        
+        *Release 20170903*:
+        * Make into a package subsuming cs.py3_for2 and cs.py3_for3.
+        * Implementation of struct.iter_unpack.
+        * Make bytes.__eq__ work with str for Python 2.
+        * New name joinbytes for Python 2 and 3.
+        * Backports for Python 2.5.
+        
+        *Release 20160828*:
+        Use "install_requires" instead of "requires" in DISTINFO.
+        
+        *Release 20160827*:
+        * Move python 2 and 3 specific code into cs.py3_for2 and cs.py3_for3.
+        * Do not bother with StringIO and BytesIO, modules can get them directly from the io module.
+        * Redo python 2 bytes class.
+        * Python3 compatible versions of struct.pack and struct.unpack.
+        
+        *Release 20150126*:
+        bugfix py2 ustr()
+        
+        *Release 20150120*:
+        cs.py3: add __contains__ to python 2 bytes type
+        
+        *Release 20150112*:
+        Rerelease with separate README.rst file.
+        
+        *Release 20150111*:
+        ustr: accept errors= parameter, default "strict"; update PyPI distinfo and arrangements
+        
+        *Release 20150103*:
+        initial release tag for cs.py3
+Keywords: python2,python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description-Content-Type: text/markdown
