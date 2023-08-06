@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cpaassdk
+Version: 1.2.0
+Summary: Python SDK to build robust real-time communication applications.
+Home-page: https://github.com/Kandy-IO/kandy-cpaas-python-sdk
+Author: KeepWorks
+Author-email: kandy@keepworks.com
+License: SEE LICENSE IN LICENSE FILE
+Description: UNKNOWN
+Keywords: cpaassdk
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
