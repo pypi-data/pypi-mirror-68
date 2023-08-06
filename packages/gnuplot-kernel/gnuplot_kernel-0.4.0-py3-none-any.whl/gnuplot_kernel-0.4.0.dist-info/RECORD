@@ -1,0 +1,17 @@
+gnuplot_kernel/__init__.py,sha256=u-CnTAaUe1Edm3vIRPy2uKzgJ6tONC52xGR0FcHp3qE,226
+gnuplot_kernel/__main__.py,sha256=dguEY4lD8OQKiMFs-UZL3CdYjijxA1ejAqTW6SUQyo4,95
+gnuplot_kernel/exceptions.py,sha256=2-7cSIJzDsQHDXXhCc02tm5BhKo1WRMdAs913tNlkuk,127
+gnuplot_kernel/kernel.py,sha256=pbW7Z56fQ2WtStdPfDH7-s1gerMxg8D6OGF69gyAcMM,11733
+gnuplot_kernel/replwrap.py,sha256=_J6NmR47lZ08Kt2IMSseffsif7Ruo2aHBJorM7ECbp8,6812
+gnuplot_kernel/images/logo-32x32.png,sha256=Qc7-jH1G7RlWMoBew6gXlw-U7xS4JlJjNQSjqcNg49U,1423
+gnuplot_kernel/images/logo-64x64.png,sha256=9K6s6lEUho9m3a5spfwAtfSOgfziQKy8tsKvrX32NZI,4408
+gnuplot_kernel/magics/__init__.py,sha256=unnDzPd40RDVFoR3g4rYZaCFbCmIiiwAMkv1_ePu9BU,120
+gnuplot_kernel/magics/gnuplot_magic.py,sha256=PGTNTjT7ahFR4x772nOjAwMa3eJIyEVNuNhIHL7skUo,4104
+gnuplot_kernel/magics/reset_magic.py,sha256=cTHZ9ZTUmkwcF8F_yJ2fJheM-MwLrHIb_zyc4Yf-N6Y,681
+gnuplot_kernel/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gnuplot_kernel/tests/conftest.py,sha256=zoy_wmulRy8jwKuAGje0nw04ljYOhg9K3U9-67cICEg,230
+gnuplot_kernel/tests/test_kernel.py,sha256=T45rpCEpy-4F1PbL3mcNy4SqywVoYCGcL5nrXQ3d0UM,8205
+gnuplot_kernel-0.4.0.dist-info/METADATA,sha256=3vG8w8zeq4cPxP5QM5LnPzD6q5sKmloaskvYllYwhV4,3008
+gnuplot_kernel-0.4.0.dist-info/RECORD,,
+gnuplot_kernel-0.4.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+gnuplot_kernel-0.4.0.dist-info/top_level.txt,sha256=PpgCJ-Vo4NriMly3bQxV6Z1Q_yDCXe8hmhlovrr9UEM,15
