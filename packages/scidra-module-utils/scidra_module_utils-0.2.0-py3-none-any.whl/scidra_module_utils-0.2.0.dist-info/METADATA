@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: scidra-module-utils
+Version: 0.2.0
+Summary: Utilities and Classes to create scidra compatible modules
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: humps
+Requires-Dist: pydantic
+Requires-Dist: requests
+Requires-Dist: clint
+Requires-Dist: loguru
+
+UNKNOWN
+
+
