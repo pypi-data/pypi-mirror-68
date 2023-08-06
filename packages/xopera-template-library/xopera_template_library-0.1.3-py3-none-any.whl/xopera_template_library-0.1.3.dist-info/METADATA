@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xopera-template-library
+Version: 0.1.3
+Summary: Python CLI for managing template library.
+Home-page: https://gitlab.xlab.si/radon/template-library-cli/-/tree/pypi
+Author: XLAB d.o.o.
+Author-email: pypi@xlab.si
+License: UNKNOWN
+Project-URL: Source Code, https://gitlab.xlab.si/radon/template-library-cli/-/tree/pypi
+Project-URL: Bug Tracker, https://gitlab.xlab.si/radon/template-library-cli/-/issues
+Keywords: radon,templates,library,artifact,parlicles
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython (==3.1.0)
+Requires-Dist: PyYAML (==5.3)
+Requires-Dist: psycopg2-binary (==2.8.4)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+
+### Examples:
+```
+xopera-template-library setup
+xopera-template-library login --username "username1" --password "password1"
+
+xopera-template-library template save --name AwsLambda --path example/AwsLambdaFunction --public_access True --version 0.0.4
+
+xopera-template-library template list --name AwsLambda --public_access True
+xopera-template-library template version list --template_id 4
+
+xopera-template-library template get --version_id 4 --path test-folder --public_access True
+``` 
+
+
+### Particle to upload structure
+ ```        
+|-- ParticleFolder
+        |-- files
+            |-- create.yml
+            |-- undeploy.yml
+        |-- NodeType.tosca
+```
+
