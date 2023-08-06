@@ -1,0 +1,6 @@
+Click
+PyGithub==1.51
+requests
+asyncclick==7.0.9
+pyppeteer==0.2.2
+trio==0.14.0
