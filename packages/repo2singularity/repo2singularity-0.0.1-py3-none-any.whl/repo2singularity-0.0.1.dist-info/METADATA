@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: repo2singularity
+Version: 0.0.1
+Summary: Repo2singularity: Wrapper around repo2docker producing producing Jupyter enabled Singularity images.
+Home-page: https://github.com/andersy005/repo2singularity
+Maintainer: Anderson Banihirwe
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
