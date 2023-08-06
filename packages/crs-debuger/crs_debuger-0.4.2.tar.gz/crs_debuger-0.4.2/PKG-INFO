@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: crs_debuger
+Version: 0.4.2
+Summary: crs debuger
+Home-page: https://github.com/ywyt738/crs_debuger
+Author: HuangXiaojun
+Author-email: huangxiaojun@sightp.com
+License: MIT
+Description: <h1 align="center">Welcome to CRS Debuger 👋</h1>
+        
+        ![Python package](https://github.com/ywyt738/crs_debuger/workflows/Python%20package/badge.svg)
+        ![Upload Python Package](https://github.com/ywyt738/crs_debuger/workflows/Upload%20Python%20Package/badge.svg)
+        [pypi](https://img.shields.io/pypi/v/crs_debuger.svg)
+        ![license](https://img.shields.io/pypi/l/crs_debuger.svg)
+        
+        > 视辰crs调试sdk
+        
+        ## Install
+        
+        ```sh
+        pip install crs_debuger
+        ```
+        
+        ## Run tests
+        
+        ```sh
+        pytest
+        ```
+        
+        ## Author
+        
+        👤 **HuangXiaojun**
+        
+        * Github: [@ywyt738](https://github.com/ywyt738)
+        
+        ## Show your support
+        
+        Give a ⭐️ if this project helped you!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
