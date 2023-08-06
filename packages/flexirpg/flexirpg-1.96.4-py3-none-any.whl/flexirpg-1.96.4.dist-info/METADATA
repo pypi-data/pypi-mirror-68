@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flexirpg
+Version: 1.96.4
+Summary: Flexible RPG virtual tabletop application
+Home-page: https://gitlab.com/flexirpg/flexirpg
+Author: David Vrabel
+Author-email: dvrabel@cantab.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Topic :: Games/Entertainment :: Board Games
+Requires-Python: >=3.7
+Requires-Dist: cmd2
+Requires-Dist: importlib-metadata
+Requires-Dist: ply (>=3.11)
+Requires-Dist: setuptools
+Requires-Dist: wxPython (>=4)
+
+UNKNOWN
+
+
