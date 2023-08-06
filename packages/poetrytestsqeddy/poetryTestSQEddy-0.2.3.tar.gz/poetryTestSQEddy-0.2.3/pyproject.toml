@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "poetryTestSQEddy"
+version = "0.2.3"
+description = "This is a test to see if Poetry works for the task."
+authors = ["Eddy Ferrara Jr. <e.ferrara@semquest.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+
