@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ComputerCommands/__init__.py
+ComputerCommands/commands.py
+ComputerCommands.egg-info/PKG-INFO
+ComputerCommands.egg-info/SOURCES.txt
+ComputerCommands.egg-info/dependency_links.txt
+ComputerCommands.egg-info/top_level.txt
