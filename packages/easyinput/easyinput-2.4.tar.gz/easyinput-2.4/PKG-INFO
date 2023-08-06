@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: easyinput
+Version: 2.4
+Summary: Easy functions to read input from Python
+Home-page: https://github.com/jutge-org/easyinput
+Author: Jordi Petit et al
+Author-email: jpetit@cs.upc.edu
+License: Apache
+Download-URL: https://github.com/jutge-org/easyinput/tarball/2.4
+Description: Easy functions to read input from Python
+Keywords: easyinput,education,input
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Education
