@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: DrawPy
+Version: 0.5
+Summary: A simple game and graphics library built on pygame
+Home-page: UNKNOWN
+Author: Joel Kalai
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: game,graphics,simple
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
