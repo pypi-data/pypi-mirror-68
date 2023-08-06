@@ -1,0 +1,2 @@
+gnuhealth_crypto==3.6.4
+gnuhealth_lab==3.6.4
