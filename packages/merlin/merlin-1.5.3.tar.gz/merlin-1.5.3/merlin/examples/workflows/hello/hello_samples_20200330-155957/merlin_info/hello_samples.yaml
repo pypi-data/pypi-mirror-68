@@ -1,0 +1,56 @@
+description:
+  name: hello_samples
+  description: a very simple merlin workflow, with samples
+
+batch:
+  type: local
+  dry_run: false
+  shell: /bin/bash
+
+env:
+  variables:
+    N_SAMPLES: 3
+
+study:
+- name: step_1
+  description: say hello
+  run:
+    cmd: echo "$(GREET), $(WORLD)!"
+    task_queue: merlin
+    shell: /bin/bash
+    max_retries: 30
+- name: step_2
+  description: print a success message
+  run:
+    cmd: print("Hurrah, we did it!")
+    depends:
+    - step_1_*
+    shell: /usr/bin/env python3
+    task_queue: merlin
+    max_retries: 30
+
+global.parameters:
+  GREET:
+    values:
+    - hello
+    - hola
+    label: GREET.%%
+
+merlin:
+  samples:
+    generate:
+      cmd: python3 /g/g13/bay1/merlin/merlin/examples/workflows/hello/make_samples.py --filepath=/g/g13/bay1/merlin/merlin/examples/workflows/hello/hello_samples_20200330-155957/merlin_info/samples.csv
+        --number=3
+    file: /g/g13/bay1/merlin/merlin/examples/workflows/hello/hello_samples_20200330-155957/merlin_info/samples.csv
+    column_labels:
+    - WORLD
+    level_max_dirs: 25
+  resources:
+    task_server: celery
+    overlap: false
+    workers:
+      default_worker:
+        steps:
+        - all
+        nodes:
+        batch:
