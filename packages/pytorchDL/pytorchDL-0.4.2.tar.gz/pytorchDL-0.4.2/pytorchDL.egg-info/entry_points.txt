@@ -1,0 +1,5 @@
+[console_scripts]
+pdl-neural-style-transfer = apps.neural_style_transfer:main
+pdl-train-image-classifier = apps.train_image_classifier:main
+pdl-train-image-segmenter = apps.train_image_segmenter:main
+
