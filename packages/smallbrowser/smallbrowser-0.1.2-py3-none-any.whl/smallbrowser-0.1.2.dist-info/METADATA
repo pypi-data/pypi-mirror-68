@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: smallbrowser
+Version: 0.1.2
+Summary: A small HTTP browser library in Python based on the 'requests' library
+Home-page: https://github.com/ivandustin/smallbrowser
+Author: Ivan Dustin B. Bilon
+Author-email: ivan22.dust@gmail.com
+License: gpl-3.0
+Project-URL: Documentation, https://github.com/ivandustin/smallbrowser
+Project-URL: Source, https://github.com/ivandustin/smallbrowser
+Keywords: http,browser,client,requests,pyquery
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pyquery
+
+# smallbrowser
+
+A small HTTP browser library in Python based on the 'requests' library
+
+
+GRACE AND PEACE TO YOU FROM OUR LORD JESUS CHRIST
+
+
