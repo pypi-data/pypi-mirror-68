@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: nodequery
+Version: 0.0.1
+Summary: NodeQuery https://nodequery.com integration for your Python project.
+Home-page: https://github.com/JeffResc/nodequery
+Author: Jeff Rescignano
+Author-email: jeff@jeffresc.dev
+License: Apache 2.0 License
+Description: UNKNOWN
+Keywords: nodequery,API,monitoring
+Platform: OS Independent
+Classifier: Programming Language :: Python :: 3

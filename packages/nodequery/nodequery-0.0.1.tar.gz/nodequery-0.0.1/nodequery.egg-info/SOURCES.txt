@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+nodequery/__init__.py
+nodequery.egg-info/PKG-INFO
+nodequery.egg-info/SOURCES.txt
+nodequery.egg-info/dependency_links.txt
+nodequery.egg-info/top_level.txt
