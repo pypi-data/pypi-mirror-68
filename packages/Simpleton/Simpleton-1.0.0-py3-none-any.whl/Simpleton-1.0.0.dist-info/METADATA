@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Simpleton
+Version: 1.0.0
+Summary: Imports commonly used standard-library modules.
+Home-page: https://github.com/c00lhawk607/simpleton
+Author: Jordan Dixon
+Author-email: jordandixon2004@outlook.com
+License: GNU General Public License v3 (GPLv3)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Utilities
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Simpleton
+## Made and Updated by: Jordan Dixon
+
+Find me on [repl.it](https://repl.it/@JordanDixon1)
+
+This module imports most-used modules for python such as: random, os, sys, and more!
+The syntax is simple:
+```python3
+import simpleton
+
+simpleton.importall()
+```
+And that's it!
+
+# Full List of Modules:
+math, re, datetime, json, random, os, copy, sqlite3, io, threading, multiprocessing, urllib, http, and locale
+
