@@ -1,0 +1,3 @@
+[console_scripts]
+ec2u = ec2u.cli:main
+

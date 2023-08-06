@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: ec2u
+Version: 0.1.2
+Summary: EC2 Utils
+Home-page: https://github.com/nthienan/ec2-utils
+Author: An Nguyen
+Author-email: nthienan.it@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/nthienan/ec2-utils/issues
+Project-URL: Source, https://github.com/nthienan/ec2-utils
+Description: # EC2 Utils
+        - Before you can begin using **ec2-utils**, you must set up authentication credentials. 
+        If you have the AWS CLI installed, then you can use it to configure your credentials file:
+        ```
+        aws configure 
+        ```
+        Alternatively, you can create the credential file yourself. By default, its location is at `~/.aws/credentials`:
+        ```
+        [default]
+        aws_access_key_id = YOUR_ACCESS_KEY
+        aws_secret_access_key = YOUR_SECRET_KEY
+        ```
+        You may also want to set a default region. This can be done in the configuration file. By default, its location is at ~/.aws/config:
+        ```
+        [default]
+        region=us-east-1
+        ```
+        
+        This sets up credentials for the default profile as well as a default region to use when creating connections. 
+        See [Credentials](https://boto3.readthedocs.io/en/latest/guide/configuration.html#guide-configuration) for in-depth configuration sources and options.
+        
+        - Supported Python: 2.7
+        - Install dependencies: `pip install -r requirements.txt`
+        - Features:
+            - Get public IP address by EC2 instance name.
+                ```python
+                from ec2-utils import get_public_ip
+          
+                print(get_public_ip("Instance Name"))
+                ```
+                Output: `{"public_ip": "54.254.212.129", "name": "Instance Name"}`
+                
+            - Assign an Elastic IP to EC2 instance
+                ```python
+                from ec2-utils import assign_elastic_ip
+          
+                assign_elastic_ip("10.11.12.13", "Instance Name")
+                ```
+        
+Keywords: aws,ec2,ec2-utils,ec2u,devops
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

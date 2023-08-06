@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ec2u.egg-info/PKG-INFO
+ec2u.egg-info/SOURCES.txt
+ec2u.egg-info/dependency_links.txt
+ec2u.egg-info/entry_points.txt
+ec2u.egg-info/requires.txt
+ec2u.egg-info/top_level.txt
+src/main/python/__init__.py
+src/main/python/cli.py
+src/main/python/ec2.py
