@@ -1,0 +1,3 @@
+[console_scripts]
+scake = statuscake.cli:main
+

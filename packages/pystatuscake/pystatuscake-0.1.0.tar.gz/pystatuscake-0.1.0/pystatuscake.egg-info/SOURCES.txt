@@ -1,0 +1,9 @@
+setup.py
+pystatuscake.egg-info/PKG-INFO
+pystatuscake.egg-info/SOURCES.txt
+pystatuscake.egg-info/dependency_links.txt
+pystatuscake.egg-info/entry_points.txt
+pystatuscake.egg-info/requires.txt
+pystatuscake.egg-info/top_level.txt
+statuscake/__init__.py
+statuscake/cli.py
