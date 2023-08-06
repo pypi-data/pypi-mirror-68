@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: TracDynamicFields
+Version: 2.5.0
+Summary: Dynamically hide, default, copy, clear, validate, set ticket fields
+Home-page: https://trac-hacks.org/wiki/DynamicFieldsPlugin
+Author: Rob Guttman
+Author-email: guttman@alum.mit.edu
+License: 3-Clause BSD
+Platform: UNKNOWN
+Classifier: Framework :: Trac
+Requires-Dist: Trac
+Provides-Extra: babel
+Requires-Dist: Babel (>=0.9.5) ; extra == 'babel'
+
+UNKNOWN
+
+
