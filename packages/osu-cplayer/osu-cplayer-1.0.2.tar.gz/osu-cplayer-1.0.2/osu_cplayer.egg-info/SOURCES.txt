@@ -1,0 +1,10 @@
+README.md
+setup.py
+osu_cplayer/__init__.py
+osu_cplayer/osu_cplayer.py
+osu_cplayer.egg-info/PKG-INFO
+osu_cplayer.egg-info/SOURCES.txt
+osu_cplayer.egg-info/dependency_links.txt
+osu_cplayer.egg-info/entry_points.txt
+osu_cplayer.egg-info/requires.txt
+osu_cplayer.egg-info/top_level.txt
