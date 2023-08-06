@@ -1,0 +1,27 @@
+django-siteforms changelog
+==========================
+
+
+v0.3.0 [2020-05-19]
+-------------------
++ Added support for multiple forms handled by the same view.
++ Added support for non-field errors.
++ Now showing hidden fields errors in non-field area.
++ Subform fields errors is now rendered in non-field area.
+
+
+v0.2.0 [2020-05-18]
+-------------------
++ Added automatic files handling.
++ Added basic support for subforms.
++ Added support for 'ALL_FIELDS' as group row.
++ Allow groups without titles.
++ Bootstrap 4. Auto layout in rows.
++ Form data populated only if request method matches.
+* Exposed 'toolbox.Form'.
+* Fixed 'disabled_fields' and 'hidden_fields' setting declaratively.
+
+
+v0.1.0 [2020-05-13]
+-------------------
++ Basic functionality.
