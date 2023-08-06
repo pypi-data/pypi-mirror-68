@@ -1,0 +1,5 @@
+setuptools
+ZODB
+
+[test]
+zope.testing
