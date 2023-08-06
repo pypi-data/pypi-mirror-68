@@ -1,0 +1,7 @@
+appdirs
+cliff
+icalendar
+jinja2
+pyyaml>5
+requests
+xhtml2pdf
