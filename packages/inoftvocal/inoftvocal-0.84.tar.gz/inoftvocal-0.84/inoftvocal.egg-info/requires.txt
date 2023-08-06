@@ -1,0 +1,6 @@
+PyYAML
+cerberus
+boto3
+click
+inflect
+pydub
