@@ -1,0 +1,30 @@
+development:
+
+  log_file: '../../log/app_server.log'
+
+  zabbix:
+    user: 'Admin'
+    password: 'zabbix'
+    api_url: 'http://192.168.56.101/zabbix/'
+
+
+
+testing:
+
+  log_file: '/var/opt/tracker_master/log/app_server.log'
+
+  zabbix:
+    user: 'Admin'
+    password: 'master8and'
+    api_url: 'http://zabbix.itmonit.ru/'
+
+
+
+integration-test:
+
+  log_file: ''
+
+  zabbix:
+    user: 'Admin'
+    password: 'zabbix'
+    api_url: 'http://192.168.56.101/zabbix/'
