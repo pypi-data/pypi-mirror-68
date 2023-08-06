@@ -1,0 +1,183 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import re
+
+from datetime import datetime
+from typing import Union, List, Set, Optional
+from pathlib import Path
+from shutil import copyfile
+
+import click
+import todotxtio
+import dateparser
+
+from prompt_toolkit import prompt
+from prompt_toolkit.shortcuts import message_dialog, input_dialog, button_dialog
+from prompt_toolkit.completion import FuzzyWordCompleter
+from prompt_toolkit.validation import Validator, ValidationError
+from prompt_toolkit.formatted_text import HTML
+
+PathIsh = Union[Path, str]
+
+
+class ProjectTagValidator(Validator):
+    def validate(self, document):
+        text = document.text
+
+        if len(text.strip()) == 0:
+            raise ValidationError(
+                message="You must specify at least one project tag")
+
+        # check if all input matches '+projectag'
+        for project_tag in text.split():
+            if not bool(re.match("\+\w+", project_tag)):
+                raise ValidationError(
+                    message=
+                    f"'{project_tag}' doesn't look like a project tag. e.g. '+home'"
+                )
+
+
+# global tag information
+all_tags: List[str] = []
+
+
+# prompt the user to add a todo
+def prompt_todo(add_due: bool, time_format: str) -> Optional[todotxtio.Todo]:
+
+    # prompt the user for a new todo (just the text)
+    todo_text = input_dialog(title="Add Todo:").run()
+
+    if todo_text is None:
+        return None
+    elif not todo_text.strip():
+        message_dialog(title="Error",
+                       text="No input provided for the todo").run()
+        return None
+
+    # project tags
+    print("Enter one or more tags, hit 'Tab' to autocomplete")
+    projects_raw = prompt("[Enter Project Tags]> ",
+                          completer=FuzzyWordCompleter(all_tags),
+                          complete_while_typing=True,
+                          validator=ProjectTagValidator(),
+                          bottom_toolbar=HTML(
+                              "<b>Todo:</b> {}".format(todo_text)))
+    todo_project_tags: Set[str] = set(projects_raw.split())
+
+    # select priority
+    todo_priority = button_dialog(title="Priority:",
+                                  text="A is highest, C is lowest",
+                                  buttons=[
+                                      ("A", "A"),
+                                      ("B", "B"),
+                                      ("C", "C"),
+                                  ]).run()
+
+    # ask if the user wants to add a time
+    add_time = button_dialog(
+        title="Deadline:",
+        text="Do you want to add a deadline for this todo?",
+        buttons=[
+            ("No", False),
+            ("Yes", True),
+        ]).run()
+
+    # prompt for adding a deadline
+    todo_time = None
+    if add_time:
+        while todo_time is None:
+            todo_time_str = input_dialog(
+                title="Describe the deadline.",
+                text=
+                "For example:\n'9AM', 'noon', 'tomorrow at 10PM', 'may 30th at 8PM'"
+            ).run()
+            if todo_time_str is None:
+                add_time = False
+                break
+            else:
+                todo_time = dateparser.parse(
+                    todo_time_str, settings={"PREFER_DATES_FROM": "future"})
+                if todo_time is None:
+                    message_dialog(
+                        title="Error",
+                        text="Could not parse '{}' into datetime".format(
+                            todo_time_str)).run()
+
+    # create todotxtio.Todo object based on responses.
+    new_todo = todotxtio.Todo(text=todo_text,
+                              priority=todo_priority,
+                              creation_date=datetime.strftime(
+                                  datetime.now(), "%Y-%m-%d"))
+    if todo_time is not None:
+        new_todo.tags = {
+                "deadline": datetime.strftime(todo_time, time_format)
+                }
+        if add_due:
+            new_todo.tags["due"] = datetime.strftime(todo_time, "%Y-%m-%d")
+
+    new_todo.projects = [proj.lstrip("+") for proj in todo_project_tags]
+
+    return new_todo
+
+
+def full_backup(todotxt_file: PathIsh) -> None:
+    """
+    Backs up the todo.txt file before writing to it
+    """
+    backup_file = f"{todotxt_file}.full.bak"
+    copyfile(todotxt_file, backup_file)
+
+
+def parse_projects(todo_sources: List[List[todotxtio.Todo]]):
+    """Get a list of all tags from the todos"""
+    global all_tags
+    seen_tags: Set[todotxtio.Todo] = set()
+    for todo_source in todo_sources:
+        for todo in todo_source:
+            for tag in todo.to_dict()["projects"]:
+                seen_tags.add(tag)
+    all_tags = [f"+{t}" for t in seen_tags]
+
+
+@click.command()
+@click.argument("todotxt-file", type=click.Path(exists=True))
+@click.option("--add-due",
+              is_flag=True,
+              help="Add due: key/value flag based on deadline:")
+@click.option("--time-format",
+              default="%Y-%m-%d-%H-%M",
+              help="Specify a different time format for deadline:")
+def cli(todotxt_file: PathIsh, add_due: bool, time_format: str):
+    # read from main todo.txt file
+    todos: List[todotxtio.Todo] = todotxtio.from_file(todotxt_file)
+
+    # backup todo.txt file
+    full_backup(todotxt_file)
+
+    # list of sources, done.txt will be added if it exists
+    todo_sources: List[List[todotxtio.Todo]] = [todos]
+
+    done_file: PathIsh = os.path.join(os.path.dirname(todotxt_file),
+                                      "done.txt")
+    if not os.path.exists(done_file):
+        click.secho(f"Could not find the done.txt file at {done_file}", err=True, fg="red")
+    else:
+        todo_sources.append(todotxtio.from_file(done_file))
+
+    # parse a list of all tags from the todo.txt/done.txt file
+    parse_projects(todo_sources)
+
+    # prompt user for new todo
+    new_todo: Optional[todotxtio.Todo] = prompt_todo(add_due, time_format)
+
+    # write back to file
+    if new_todo is not None:
+        todos.append(new_todo)
+        click.echo("{}: {}".format(click.style("Adding Todo", fg="green"), new_todo))
+        todotxtio.to_file(todotxt_file, todos)
+
+
+if __name__ == "__main__":
+    cli()
