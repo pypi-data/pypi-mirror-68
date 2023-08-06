@@ -1,0 +1,8 @@
+README.md
+setup.py
+Riseup_Mail.egg-info/PKG-INFO
+Riseup_Mail.egg-info/SOURCES.txt
+Riseup_Mail.egg-info/dependency_links.txt
+Riseup_Mail.egg-info/top_level.txt
+riseup/__init__.py
+riseup/riseup.py
