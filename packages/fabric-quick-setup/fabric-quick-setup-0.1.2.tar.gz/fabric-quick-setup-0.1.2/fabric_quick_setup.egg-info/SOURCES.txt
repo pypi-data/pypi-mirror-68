@@ -1,0 +1,10 @@
+README.md
+setup.py
+fabric_quick_setup/__init__.py
+fabric_quick_setup/cli.py
+fabric_quick_setup/mod.py
+fabric_quick_setup.egg-info/PKG-INFO
+fabric_quick_setup.egg-info/SOURCES.txt
+fabric_quick_setup.egg-info/dependency_links.txt
+fabric_quick_setup.egg-info/entry_points.txt
+fabric_quick_setup.egg-info/top_level.txt

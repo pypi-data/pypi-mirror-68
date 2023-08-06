@@ -1,0 +1,3 @@
+[console_scripts]
+fabric-quick-setup = fabric_quick_setup.cli:main
+

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fabric-quick-setup
+Version: 0.1.2
+Summary: CLI to quickly and easily install Fabric Loader and Popular Minecraft Mods
+Home-page: http://github.com/max-niederman/fabric-quick-setup
+Author: Max Niederman
+Author-email: maxniederman@gmail.com
+License: MIT
+Description: # **Fabric Quick Setup**
+        ### CLI to install Fabric Loader and Popular Mods
+        
+        ## Installation:
+        ### Prerequisites:
+        - Python 3 & Pip
+        - Java 1.8 or higher
+        
+        ### Install with Pip:
+        > pip install fabric-quick-setup
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
