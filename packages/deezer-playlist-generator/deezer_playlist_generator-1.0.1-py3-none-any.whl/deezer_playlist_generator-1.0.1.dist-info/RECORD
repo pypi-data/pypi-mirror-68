@@ -1,0 +1,10 @@
+deezer_api/__init__.py,sha256=451X9ZKrk7JTxNWdY7yW23RD6NhbWN0RI5ylItOCjZU,198
+deezer_api/deezer_api.py,sha256=hCTXnlUufv6GzscZNSqJ43YCnH_BK6BKBDQym1FWEdw,13547
+deezer_api/deezer_auth.py,sha256=QT8u-n3YUJtOOf-LTQ_fFyzNLbu-PKADOW2hv9i2ft0,3421
+deezer_api/deezer_objects.py,sha256=qucqDW67GZyNnDLF4aOPcfp8zA7Nd9Xh84J1h-XvtAQ,10084
+deezer_api/deezer_player.py,sha256=lcTNmoFtTuM9U-kKV_CyISKKnxOjGiXIJYxigpSJBM4,5121
+deezer_playlist_generator-1.0.1.dist-info/LICENSE,sha256=kwVeMQ0frRbn5ZOxf-d31Ld_8caKQEMxIpR8J2nm3P4,1070
+deezer_playlist_generator-1.0.1.dist-info/METADATA,sha256=rq8y0VZRxEul3YbI4UyLh9L-e0w1fH8K9Sc1l3_KYq4,3542
+deezer_playlist_generator-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+deezer_playlist_generator-1.0.1.dist-info/top_level.txt,sha256=tNb8kaXBiPJCSBA78l95XP6bQAKNmQa1BGMVpA1zaBw,11
+deezer_playlist_generator-1.0.1.dist-info/RECORD,,
