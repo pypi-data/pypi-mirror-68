@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_storage_cache_webservice_results/__init__.py
+orbis_plugin_storage_cache_webservice_results/main.py
+orbis_plugin_storage_cache_webservice_results.egg-info/PKG-INFO
+orbis_plugin_storage_cache_webservice_results.egg-info/SOURCES.txt
+orbis_plugin_storage_cache_webservice_results.egg-info/dependency_links.txt
+orbis_plugin_storage_cache_webservice_results.egg-info/top_level.txt
