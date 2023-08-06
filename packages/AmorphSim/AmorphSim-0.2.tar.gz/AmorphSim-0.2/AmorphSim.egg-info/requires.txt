@@ -1,0 +1,5 @@
+hyperspy>=1.5
+numpy!=1.70.0,>=1.10
+matplotlib
+scipy
+scikit-image
