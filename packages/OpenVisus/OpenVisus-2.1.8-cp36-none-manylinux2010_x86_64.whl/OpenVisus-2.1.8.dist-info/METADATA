@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: OpenVisus
+Version: 2.1.8
+Summary: ViSUS multiresolution I/O, analysis, and visualization system
+Home-page: https://github.com/sci-visus/OpenVisus
+Author: visus.net
+Author-email: support@visus.net
+License: BSD
+Platform: Linux
+Platform: OS-X
+Platform: Windows
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: PyQt5 (~=5.12.0)
+Requires-Dist: PyQtWebEngine (~=5.12.0)
+Requires-Dist: PyQt5-sip (<13,>=12.7)
+Requires-Dist: matplotlib
+Requires-Dist: pymap3d
+Requires-Dist: pytz
+Requires-Dist: pyzbar
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: pysolar
+Requires-Dist: json-tricks
+Requires-Dist: cmapy
+Requires-Dist: opencv-python
+Requires-Dist: opencv-contrib-python
+Requires-Dist: tifffile
+Requires-Dist: pyexiftool
+
+UNKNOWN
+
+
