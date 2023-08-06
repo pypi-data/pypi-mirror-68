@@ -1,0 +1,21 @@
+
+rule snpeff_joint:
+    """ SnpEff adds annotation of variants detected in a VCF file.
+    """
+    input:
+        vcf = __snpeff_joint__input, 
+        annotation = __snpeff_joint__annotation
+    output:
+        ann = __snpeff_joint__output,
+        html = __snpeff_joint__html
+    log:
+        log = __snpeff_joint__log
+    params:
+        options = __snpeff_joint__options
+    run:
+        from sequana import SnpEff
+
+        mydata = SnpEff(input.annotation, log=log.log)
+        mydata.launch_snpeff(input.vcf, output.ann, html_output=output.html,
+                             options=params.options)
+    
