@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk8s_debore/__init__.py
+src/cdk8s_debore/py.typed
+src/cdk8s_debore.egg-info/PKG-INFO
+src/cdk8s_debore.egg-info/SOURCES.txt
+src/cdk8s_debore.egg-info/dependency_links.txt
+src/cdk8s_debore.egg-info/requires.txt
+src/cdk8s_debore.egg-info/top_level.txt
+src/cdk8s_debore/_jsii/__init__.py
+src/cdk8s_debore/_jsii/cdk8s-debore@0.1.1.jsii.tgz
