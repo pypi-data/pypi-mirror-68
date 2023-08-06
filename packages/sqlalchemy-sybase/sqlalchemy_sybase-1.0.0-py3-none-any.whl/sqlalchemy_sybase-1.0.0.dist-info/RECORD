@@ -1,0 +1,10 @@
+sqlalchemy_sybase/__init__.py,sha256=XnMOtJP57YsMvotveDdgBopvwJ-y_qEwzPgZA12KyEE,1513
+sqlalchemy_sybase/base.py,sha256=rBIGeXYIX15e6-nOso2WKOWaxUvSp1FvQnXN3kwKJfM,32450
+sqlalchemy_sybase/pyodbc.py,sha256=kOj5dZZUpSx38gpUI0eaikWnfgneOX8qTbmK8DV2Rx8,2516
+sqlalchemy_sybase/requirements.py,sha256=-dKQ39K1Kg-ryJHpk8VTR_eJ7LlrfvRkVB6uTZLmVVo,1663
+sqlalchemy_sybase-1.0.0.dist-info/LICENSE,sha256=O319QGNk_cu2H6Hj6gnmCacJRA93ytC7yhtuHfFz_48,1070
+sqlalchemy_sybase-1.0.0.dist-info/METADATA,sha256=sFxDmPPeDEfzFxb6cKt8B621e6BF9qLs_jUQtAD6viQ,3482
+sqlalchemy_sybase-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sqlalchemy_sybase-1.0.0.dist-info/entry_points.txt,sha256=ryov3t6zKukcKPig-Bb-AzApT6_OzsKTtAtWaBwlC90,85
+sqlalchemy_sybase-1.0.0.dist-info/top_level.txt,sha256=QuZx-k4Iv03tkYmnZgOi2BWOvLTFEOqQujtMjQ-7nA0,18
+sqlalchemy_sybase-1.0.0.dist-info/RECORD,,
