@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: Macropodus
+Version: 0.0.6
+Summary: Macropodus: Tookit of Chinese Natural Language Processing
+Home-page: https://github.com/yongzhuo/Macropodus
+Author: yongzhuo
+Author-email: 1903865025@qq.com
+License: MIT
+Requires-Dist: gensim (==3.7.1)
+Requires-Dist: networkx (==2.4)
+Requires-Dist: nlg-yongzhuo (==0.0.4)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: passlib (==1.7.1)
+Requires-Dist: scikit-learn (==0.19.1)
+Requires-Dist: tqdm (==4.31.1)
+
+<p align="center">
+
+

@@ -1,0 +1,110 @@
+# !/usr/bin/python
+# -*- coding: utf-8 -*-
+# @time    : 2020/1/2 20:51
+# @author  : Mo
+# @function:
+
+
+# 适配linux
+import pathlib
+import sys
+import os
+project_path = str(pathlib.Path(os.path.abspath(__file__)).parent.parent.parent)
+sys.path.append(project_path)
+# network
+from macropodus.conf.path_config import path_model, path_fineture, path_hyper_parameters
+from macropodus.preprocess.tools_common import load_json, save_json, txt_read, txt_write
+from macropodus.network.preprocess.preprocess_generator import PreprocessGenerator
+from macropodus.conf.path_config import path_embedding_albert
+from macropodus.preprocess.tools_ml import extract_chinese
+from tensorflow.python.keras.models import model_from_json
+from macropodus.preprocess.tools_common import load_json
+from keras_bert import Tokenizer
+import numpy as np
+import macropodus
+import pickle
+import codecs
+import json
+import os
+# 模型图
+# from macropodus.network.graph.crf import CRFGraph as Graph
+from macropodus.network.graph.bilstm_crf import BilstmCRFGraph as Graph
+
+# 模型评估
+from sklearn.metrics import classification_report
+# 计算时间
+import time
+
+
+
+
+def pred_input(path_model_dir=None):
+    # 输入预测
+    # 加载超参数
+    path_model_l2i_i2l = os.path.join(path_model_dir, "l2i_i2l.json")
+    path_hyper_parameter = os.path.join(path_model_dir, "params.json")
+    hyper_parameters = load_json(path_hyper_parameter)
+    pt = PreprocessGenerator(path_model_l2i_i2l)
+    # 模式初始化和加载
+    graph = Graph(hyper_parameters)
+    graph.load_model()
+    ra_ed = graph.word_embedding
+    ques = '印度海军近日从“加尔各答”级驱逐舰上试射了由印度和以色列联合研制的远程面空导弹?试验在位于印度西海岸的“加尔各答”级驱逐舰上进行?'
+    # str to token
+    ques_embed = ra_ed.sentence2idx(ques)
+    print(ques_embed)
+
+    if hyper_parameters['embedding_type'] in ['bert', 'albert']:
+        x_val_1 = np.array([ques_embed[0]])
+        x_val_2 = np.array([ques_embed[1]])
+        x_val = [x_val_1, x_val_2]
+    else:
+        x_ = np.array([ques_embed])
+        x_1 = np.array([x[0] for x in x_])
+        x_2 = np.array([x[1] for x in x_])
+        if hyper_parameters['model']['crf_mode'] == 'pad':
+            x_val = [x_1, x_2]
+        elif hyper_parameters['model']['crf_mode'] == 'reg':
+            x_val = x_1
+        else:
+            x_val = x_1
+
+    # 预测
+    pred = graph.predict(x_val)
+    pred0 = pred[0]
+    pred0_argmax = np.argmax(pred0, axis=-1)
+    print(pred)
+    # 取id to label and pred
+    pre = pt.prereocess_idx2label(pred0_argmax)
+    print(pre)
+    while True:
+        print("请输入: ")
+        ques = input()
+        ques_embed = ra_ed.sentence2idx(ques)
+        print(ques_embed)
+        if hyper_parameters['embedding_type'] in ['bert', 'albert']:
+            x_val_1 = np.array([ques_embed[0]])
+            x_val_2 = np.array([ques_embed[1]])
+            x_val = [x_val_1, x_val_2]
+        else:
+            x_ = np.array([ques_embed])
+            x_1 = np.array([x[0] for x in x_])
+            x_2 = np.array([x[1] for x in x_])
+            if hyper_parameters['model']['crf_mode'] == 'pad':
+                x_val = [x_1, x_2]
+            elif hyper_parameters['model']['crf_mode'] == 'reg':
+                x_val = x_1
+            else:
+                x_val = x_1
+        pred = graph.predict(x_val)
+        pred0_argmax = np.argmax(pred[0], axis=-1)
+        pre = pt.prereocess_idx2label(pred0_argmax)
+        print(pre)
+
+
+if __name__=="__main__":
+    # 可输入 input 预测
+    # path_model_dir = "D:/workspace/pythonMyCode/Macropodus/macropodus/data/model/crf_ccks_2020_ner"
+    path_model_dir = "D:/workspace/pythonMyCode/Macropodus/macropodus/data/model/ccks_2020_ner_RandomBiLstmCrf"
+
+    pred_input(path_model_dir)
