@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bitcoin-script-compiler
+Version: 0.1.0
+Summary: Bitcoin Transaction Programming Language
+Home-page: https://github.com/jeremyrubin/sapio
+Author: Jeremy Rubin
+Author-email: j@rubin.io
+License: All rights reserved.
+
+Description: # Bitcoin Script Compiler
+        
+        
+Platform: UNKNOWN
+Provides-Extra: server

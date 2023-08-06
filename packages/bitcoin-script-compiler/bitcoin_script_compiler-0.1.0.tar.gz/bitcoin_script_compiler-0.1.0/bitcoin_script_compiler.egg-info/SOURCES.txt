@@ -1,0 +1,9 @@
+README.md
+setup.py
+bitcoin_script_compiler.egg-info/PKG-INFO
+bitcoin_script_compiler.egg-info/SOURCES.txt
+bitcoin_script_compiler.egg-info/dependency_links.txt
+bitcoin_script_compiler.egg-info/requires.txt
+bitcoin_script_compiler.egg-info/top_level.txt
+tests/test_script/__init__.py
+tests/test_script/test_compiler.py
