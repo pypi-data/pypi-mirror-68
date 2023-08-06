@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: axioms-flask-py
+Version: 0.0.9
+Summary: Flask SDK for Axioms
+Home-page: https://github.com/axioms-io/axioms-flask-py
+Author: Axioms
+Author-email: info@axioms.io
+License: MIT
+Project-URL: Documentation, https://github.com/axioms-io/axioms-flask-py
+Project-URL: Source, https://github.com/axioms-io/axioms-flask-py
+Project-URL: Tracker, https://github.com/axioms-io/axioms-flask-py/issues
+Description: # axioms-flask-py ![PyPI](https://img.shields.io/pypi/v/axioms-flask-py)
+        [Axioms](https://axioms.io) Python client for Flask. Secure your Flask APIs using Axioms Authentication and Authorization.
+        
+        ## Prerequisite
+        
+        * Python 3.7+
+        * An [Axioms](https://axioms.io) client which can obtain access token after user's authentication and authorization and include obtained access token as bearer in `Authorization` header of all API request sent to Python/Flask application server..
+        
+        ## Install SDK
+        Install `axioms-flask-py` in you Flask API project,
+        
+        ```
+        pip install axioms-flask-py
+        ```
+        
+        ## Documentation
+        See [documentation](https://developer.axioms.io/docs/sdks-samples/use-with-apis/python/flask-apis) `axioms-flask-py`.
+        
+        ## Flask Sample
+        To see a complete working example download [Flask sample](https://github.com/axioms-io/sample-python-flask) from our Github repository or simply deploy to heroku by clicking following button. You will need to provide Axioms domain and Axioms audience to complete deployment.
+        
+        <a href="https://heroku.com/deploy?template=https://github.com/axioms-io/sample-python-flask">
+          <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy" width="200px" />
+        </a>
+Keywords: axioms authentication authorization iam authz authn jwt openid oauth2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
