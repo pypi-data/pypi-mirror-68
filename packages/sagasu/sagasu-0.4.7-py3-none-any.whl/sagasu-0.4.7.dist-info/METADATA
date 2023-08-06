@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sagasu
+Version: 0.4.7
+Summary: sagasu is search all my contents
+License: MIT
+Author: funwarioisii
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: caption
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: ginza (>=3.1.2,<4.0.0)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: pillow (>=7.1.2,<8.0.0)
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
+Requires-Dist: spacy (>=2.2.4,<3.0.0)
+Requires-Dist: tqdm (>=4.46.0,<5.0.0)
+Requires-Dist: tweepy (>=3.8.0,<4.0.0)
