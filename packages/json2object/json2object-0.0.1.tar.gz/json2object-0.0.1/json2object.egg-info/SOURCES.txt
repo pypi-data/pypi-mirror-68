@@ -1,0 +1,8 @@
+README.md
+setup.py
+json2object/__init__.py
+json2object/jsontoobject.py
+json2object.egg-info/PKG-INFO
+json2object.egg-info/SOURCES.txt
+json2object.egg-info/dependency_links.txt
+json2object.egg-info/top_level.txt
