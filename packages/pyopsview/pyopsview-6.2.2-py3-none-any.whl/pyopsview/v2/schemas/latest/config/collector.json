@@ -1,0 +1,74 @@
+{
+    "definitions": {
+        "reference": {
+            "properties": {
+                "name": {
+                    "required": true,
+                    "type": "string"
+                },
+                "ref": {
+                    "readonly": true,
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "properties": {
+        "id": {
+            "readonly": true,
+            "type": "number"
+        },
+        "name": {
+            "required": true,
+            "type": "string"
+        },
+        "ip": {
+            "readonly": true,
+            "type": "string"
+        },
+        "hostname": {
+            "readonly": true,
+            "type": "string"
+        },
+        "os": {
+            "readonly": true,
+            "type": "string"
+        },
+        "host": {
+            "readonly": true,
+            "$ref": "#/definitions/reference",
+            "type": "object"
+        },
+        "collector_ref": {
+            "readonly": true,
+            "type": "string"
+        },
+        "version": {
+            "readonly": true,
+            "type": "string"
+        },
+        "monitoringcluster": {
+            "altname": "monitoring_cluster",
+            "$ref": "#/definitions/reference",
+            "type": "object"
+        },
+        "active": {
+            "readonly": true,
+            "type": "boolean"
+        },
+        "last_heartbeat": {
+            "readonly": true,
+            "type": "number"
+        },
+        "ref": {
+            "readonly": true,
+            "type": "string"
+        },
+        "uncommitted": {
+            "readonly": true, 
+            "type": "boolean"
+        }
+    },
+    "type": "object"
+}
