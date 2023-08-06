@@ -1,0 +1,3 @@
+[console_scripts]
+pyugt = pyugt.pyugt:main
+
