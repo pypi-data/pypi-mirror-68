@@ -1,0 +1,9 @@
+setuptools
+wheel
+numpy==1.16.*
+tox
+setuptools-scm
+cython
+dask
+pandas ; python_version > '3.5'
+psutil
