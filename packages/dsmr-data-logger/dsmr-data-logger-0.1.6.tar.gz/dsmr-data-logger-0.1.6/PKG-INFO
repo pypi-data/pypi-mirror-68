@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dsmr-data-logger
+Version: 0.1.6
+Summary: DSMR data logger
+Home-page: https://github.com/paprins/dsmr
+Author: Pascal Prins
+Author-email: pascal.prins@foobar-it.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: configparser (>=5.0.0,<6.0.0)
+Requires-Dist: dsmr_parser (>=0.18,<0.19)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Project-URL: Repository, https://github.com/paprins/dsmr
+Description-Content-Type: text/markdown
+
+# p1-data-logger
