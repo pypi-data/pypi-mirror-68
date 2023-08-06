@@ -1,0 +1,56 @@
+Metadata-Version: 1.1
+Name: oda-knowledge-base
+Version: 0.6.12
+Summary: oda-sparql
+Home-page: https://odahub.io/
+Author: V.S.
+Author-email: vladimir.savchenko@gmail.com
+License: GPL-2+
+Description: # find
+        
+        start from root
+        make all thinks referring to root
+        
+        # run
+        
+        execution method:
+        
+        * active execution
+        * active request
+        * worker
+        * callback
+        
+        # reasonong
+        disconneceted realms
+        reason derivations 
+        
+        reasoning is based on rules, e.g. transitive:
+        
+        ?x a ?y . ?y a ?z => ?x a ?z
+        
+        or
+        
+        ?x oda:blocks ?y => ?y oda:blocked-by ?x
+        
+        rule might generate another rule
+        
+        emergent geometry
+        
+        
+        # ontology?
+        
+        first but last
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet
+Classifier: Topic :: Scientific/Engineering :: Astronomy
