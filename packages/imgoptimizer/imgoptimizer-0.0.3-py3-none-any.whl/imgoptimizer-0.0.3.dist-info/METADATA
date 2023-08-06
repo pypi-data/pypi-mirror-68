@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: imgoptimizer
+Version: 0.0.3
+Summary: e. Optimize image size, make thumbnail, cover, and upload directly to S3
+Home-page: https://github.com/ucodevn/image_optimizer
+Author: Thuc Nguyen, Quy PhamNgoc
+Author-email: gthuc.nguyen@gmail.com
+License: MIT
+Download-URL: https://github.com/ucodevn/image_optimizer
+Keywords: Image,Optimize,S3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: boto3
+
+# Image Optimizer
+Python CLI tools and library to work with images. Best for your website performance. Optimize image size, make thumbnail, cover, and upload directly to S3 and Google Cloud Storage
+
+
+
+
