@@ -1,0 +1,17 @@
+scikit-learn
+pandas
+numpy
+seaborn
+black
+tqdm
+wget
+nbdev
+sklearn-pandas
+graphviz
+gdown
+pyarrow
+numba
+Cython
+fastprogress
+giotto-tda
+pillow
