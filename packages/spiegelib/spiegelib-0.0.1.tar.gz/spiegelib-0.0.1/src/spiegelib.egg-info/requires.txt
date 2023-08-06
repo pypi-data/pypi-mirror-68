@@ -1,0 +1,16 @@
+numpy
+librosa
+tqdm
+matplotlib
+tensorflow
+deap
+
+[dev]
+sphinx
+sphinx_rtd_theme
+ipython
+pytest
+pytest-datadir
+pytest-mpl
+tox
+twine
