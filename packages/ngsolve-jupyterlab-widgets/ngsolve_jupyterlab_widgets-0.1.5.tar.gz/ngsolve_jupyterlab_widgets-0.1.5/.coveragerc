@@ -1,0 +1,5 @@
+[run]
+omit = ngsolve_jupyterlab_widgets/tests/*
+
+[report]
+omit = ngsolve_jupyterlab_widgets/tests/*
