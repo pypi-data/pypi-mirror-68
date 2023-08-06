@@ -1,0 +1,12 @@
+DumbTF/Activations.py,sha256=vfaTjjzB1irVHElzWPrL5O2Wz1GbbA4x3LipCzc6Kns,1415
+DumbTF/Layer.py,sha256=tHsPYKF8iTqo9zYUurt9y1tTPFSljR0M-5cHIsD-gQ4,1264
+DumbTF/Losses.py,sha256=_QinRhT2SBaqRyrMRUZ3q_DoXTA1XfXXhweLOn-EbLo,767
+DumbTF/Model.py,sha256=GY2m9yw-Ql3sgJDw6o6Dse0KJ9XzKJQBpi5eIJK0tfs,4838
+DumbTF/Optimizer.py,sha256=ap4rZN9cZtJCTxGl0IP4KRolQ04QJVzv3DJctxdlBGc,397
+DumbTF/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DumbTF/test.py,sha256=0-2LH9S1D9KW6XTU1Keib7kbUzWIgzPP9MIH1lQYhBc,869
+Dumb_TF-0.0.3.dist-info/LICENSE,sha256=ky-2Fm7EE6lAQndi258q3qQZColEqEkVvr0asLOJdjY,1080
+Dumb_TF-0.0.3.dist-info/METADATA,sha256=X-ynIF5b1-V7IBykUf3pCL6oZwhdw9QkFyUI2Jfr9wo,496
+Dumb_TF-0.0.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Dumb_TF-0.0.3.dist-info/top_level.txt,sha256=AlWZHurGdoX4qAuLM--iK3lrFWqIlycyyWxpgpXeCeA,7
+Dumb_TF-0.0.3.dist-info/RECORD,,
