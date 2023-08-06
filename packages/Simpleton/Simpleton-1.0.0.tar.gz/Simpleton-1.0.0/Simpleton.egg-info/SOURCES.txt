@@ -1,0 +1,9 @@
+README.md
+setup.py
+Simpleton.egg-info/PKG-INFO
+Simpleton.egg-info/SOURCES.txt
+Simpleton.egg-info/dependency_links.txt
+Simpleton.egg-info/top_level.txt
+Simpleton.egg-info/zip-safe
+simpleton/__init__.py
+simpleton/functions.py
