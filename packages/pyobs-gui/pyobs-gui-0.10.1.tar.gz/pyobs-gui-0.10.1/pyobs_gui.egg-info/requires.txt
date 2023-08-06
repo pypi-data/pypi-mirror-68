@@ -1,0 +1,7 @@
+PyQt5==5.13
+astroplan
+astropy
+astroquery
+colour
+matplotlib
+qfitsview
