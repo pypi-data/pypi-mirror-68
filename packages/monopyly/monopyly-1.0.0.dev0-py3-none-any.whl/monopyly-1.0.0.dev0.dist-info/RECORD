@@ -1,0 +1,17 @@
+monopyly/__init__.py,sha256=Ad1h_Z_AA9147adJorKlPcJ28K0ObaxkqNSSodIJOqo,1265
+monopyly/db.py,sha256=H0QqYTKUeJxdgL9Y042zLxdMXHqxCBABYXel1SZkmNY,1237
+monopyly/form_utils.py,sha256=dpwJ00cpo3pIe_nFWxjCxSp2dA-6HJhLgfT-zQZKSD0,1220
+monopyly/utils.py,sha256=6-2kB0w2JdyuwvFC3Sa8PuDzlp_mB_NnQYEbpkPyrds,10534
+monopyly/core/creditcards.py,sha256=MUz_apqI8zUMA8Ux6EP2fqC_PDTnr_CjTfIOOq2fJZ8,5438
+monopyly/core/database.py,sha256=C6VIQfq8oP9yCFBbwXpAMxdkJWQzsUB5SoovvXu5A_8,3546
+monopyly/core/utils.py,sha256=DxmYGUkCxhm2Lnpmx8Iln3Gmr3DUzM3qUZ3VjabCUS4,2224
+monopyly/gui/app.py,sha256=l7nMoBN0uQlsZom7q2j-MqrNKyGLGDCHtubHv4NCHNA,3571
+monopyly/gui/custom_widgets.py,sha256=Mx128B5HB1ScgIaiymEG9-scqeLYxRWvEPRy5q3yGxQ,7464
+monopyly-1.0.0.dev0.data/scripts/backup_db.py,sha256=9XAcRMHbHO-5IUGxbP9h6IiqiiE9BTsLnEYSUVoVX6o,1498
+monopyly-1.0.0.dev0.data/scripts/monopyly,sha256=_nBO1vl_A5Oz7ZWSoPOxHeAZixlUj1uIUK1sjC5tdb4,926
+monopyly-1.0.0.dev0.dist-info/COPYING,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+monopyly-1.0.0.dev0.dist-info/LICENSE,sha256=94rIicMccmTPhqXiRLV9JsU8P2ocMuEUUtUpp6LPKiE,253
+monopyly-1.0.0.dev0.dist-info/METADATA,sha256=dAn9Tv0S4hYFB1GjA3qLyTPP2-1s433M-Rt75_xV8HM,1261
+monopyly-1.0.0.dev0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+monopyly-1.0.0.dev0.dist-info/top_level.txt,sha256=3zxJxAK7RKntJQqUa8ttopbnFDAHDEzNynBO9xDtbkA,9
+monopyly-1.0.0.dev0.dist-info/RECORD,,
