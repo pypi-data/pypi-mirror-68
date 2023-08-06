@@ -1,0 +1,13 @@
+matplotlib
+numpy
+scipy
+pynrrd
+scikit-image
+torch
+xmltodict
+h5py
+pandas
+batchgenerators
+sphinx
+rst2pdf
+m2r
