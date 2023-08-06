@@ -1,0 +1,6 @@
+[console_scripts]
+dataframe_image = dataframe_image._command_line:main
+
+[nbconvert.exporters]
+dataframe_image_bundler_pdf = dataframe_image._exporters:DataFramePDFExporter
+
