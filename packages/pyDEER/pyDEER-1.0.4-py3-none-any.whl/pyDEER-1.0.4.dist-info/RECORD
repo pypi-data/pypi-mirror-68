@@ -1,0 +1,9 @@
+pyDEER/__init__.py,sha256=0LK4IghY90sC-flqSvOWtirg1-bS8vP7gTehaad3niE,67
+pyDEER/awg.py,sha256=2Kt0wB3mtR7JzJGP7USm3257bwJMB9OniR1Zc9pFDG4,6133
+pyDEER/elexsys.py,sha256=RxI3a2t7t8wKXm99XniXr9oZxc551_gMIISjvO8lTzc,3319
+pyDEER/tikreg.py,sha256=CL9PWueXEqVbgYut-h-ss_zk77R_IJASAaxYo7JDbl8,15116
+pyDEER-1.0.4.dist-info/LICENSE.txt,sha256=zwJA3z19FLNMCbiauSgEP8Ov4G5f6yAozUEMnp5TXtI,1092
+pyDEER-1.0.4.dist-info/METADATA,sha256=zDEUCtJ83vE0k6AlXKJQb0hlCy9xR6lmvDU8fPRYsTc,2391
+pyDEER-1.0.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyDEER-1.0.4.dist-info/top_level.txt,sha256=AoXjE64PTH67cvuJGxf51VHp_tiEw1myaiM6tCePhFQ,7
+pyDEER-1.0.4.dist-info/RECORD,,
