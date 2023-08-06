@@ -1,0 +1,13 @@
+nlp_utils/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+nlp_utils/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp_utils/dataset/download.py,sha256=g-e3xX3NxoadV6OZq8iYdY_WYRX-E9xS9jOGT-KUoHg,1794
+nlp_utils/preprocess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp_utils/preprocess/lookup_table.py,sha256=Bf_6yv8bbP9HyXvqEjlI_8Ge4sBO-zaFk69upypjGsU,4195
+nlp_utils/preprocess/padding.py,sha256=aRnoAmGWcQZwFQYfEIzCI8g6U2ZHmS4XRchJl-SO5mE,121
+nlp_utils/preprocess/read_embedding.py,sha256=QP5OuYl3wbgdaALY4Bl42uBwU4Aqk_SPASX3AFPSSas,5067
+nlp_utils/preprocess/seq.py,sha256=ex4BtdBMcIN-a7IJuHkws1b8_hDuAgfFiRIea27D4Bw,3823
+nlp_utils/preprocess/text_preprocess.py,sha256=obEfBj9fSdGSomqI2kONvKiedMuDrpQx8aUTTB8jvbM,1594
+nlp_utils-0.4.0.dist-info/METADATA,sha256=WVyPP92XU7dcVnz7FoimrE7KdLKYPYcwsMTowz2JliA,289
+nlp_utils-0.4.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+nlp_utils-0.4.0.dist-info/top_level.txt,sha256=HuYVdIfvaHSbGTSDXDYSljYt8nZtaUhoyt6aoXDE72Q,10
+nlp_utils-0.4.0.dist-info/RECORD,,
