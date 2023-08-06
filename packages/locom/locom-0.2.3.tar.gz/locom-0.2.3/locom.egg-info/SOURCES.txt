@@ -1,0 +1,17 @@
+README.md
+setup.py
+locom/__init__.py
+locom/data.py
+locom/parser.py
+locom/recognizer.py
+locom/render.py
+locom.egg-info/PKG-INFO
+locom.egg-info/SOURCES.txt
+locom.egg-info/dependency_links.txt
+locom.egg-info/entry_points.txt
+locom.egg-info/requires.txt
+locom.egg-info/top_level.txt
+locom/template/dark.html
+tests/__init__.py
+tests/basic_run.py
+tests/test_initial.py
