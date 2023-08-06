@@ -1,0 +1,7 @@
+numpy
+astropy>=3.0
+tqdm
+h5py
+scipy
+pyyaml
+pyregion
