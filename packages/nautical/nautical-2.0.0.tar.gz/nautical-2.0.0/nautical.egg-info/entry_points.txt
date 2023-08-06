@@ -1,0 +1,3 @@
+[console_scripts]
+NauticalTests = nautical.tests.nautical_tests:main
+
