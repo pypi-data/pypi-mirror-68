@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_emailuser.egg-info/PKG-INFO
+django_emailuser.egg-info/SOURCES.txt
+django_emailuser.egg-info/dependency_links.txt
+django_emailuser.egg-info/requires.txt
+django_emailuser.egg-info/top_level.txt
+emailuser/__init__.py
+emailuser/admin.py
+emailuser/apps.py
+emailuser/models.py
+emailuser/views.py
