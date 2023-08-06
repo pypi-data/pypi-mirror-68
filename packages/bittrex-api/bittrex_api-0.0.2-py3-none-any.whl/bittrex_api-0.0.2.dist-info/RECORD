@@ -1,0 +1,12 @@
+bittrex_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bittrex_api/additions.py,sha256=YuwhUligEc7Ru95qW3YMv85LDyEARWcQGT7fZz12iAc,4494
+bittrex_api/v1.py,sha256=LI2ZsTbCld_-VRpHd-6sCaVrtzpLoMyWH3X-r0B3VD4,14826
+bittrex_api/v2.py,sha256=5TzsCn7nsRPGEahOhsV-iLzYV8Pmkaz85uVjKwOPL1k,5791
+bittrex_api/utils/RequestManager.py,sha256=n6LIVnRttYIaVOApmyWUNd1EU30IGCRcDsri-WzOFBI,5156
+bittrex_api/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bittrex_api/utils/json2obj.py,sha256=cEArgkOwMEeeTHTZxBAAdjxt4FUwQlR_MvEMs6QDNMU,277
+bittrex_api-0.0.2.dist-info/LICENSE,sha256=fpoAq-19W9yDhw5HO22d8KHmAoEx15dfgl5x2ImqAHQ,1080
+bittrex_api-0.0.2.dist-info/METADATA,sha256=u-CpUp7HNiL_fSfAZqL8S6YidTn6HPMu9a2Pvm-7sv4,437
+bittrex_api-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bittrex_api-0.0.2.dist-info/top_level.txt,sha256=1YPWvt0zKIvS-3-RZHSrJiBLm6Y1_VFqwJUtQ1jzGCE,12
+bittrex_api-0.0.2.dist-info/RECORD,,
