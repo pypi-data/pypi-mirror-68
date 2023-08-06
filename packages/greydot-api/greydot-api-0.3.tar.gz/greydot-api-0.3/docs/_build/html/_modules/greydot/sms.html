@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>greydot.sms &#8212; greydot-api 1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for greydot.sms</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Use the API to send an sms to a number. If you enable notify by email, you will receive an email every time the url is called with your APP Key.</span>
+
+<span class="sd">URL :</span>
+<span class="sd">https://greydotapi.me/?par1=[Number-to-SMS]&amp;par2=[url-encoded-text-message]&amp;k=[APP-Key]&amp;do=[FID]</span>
+
+<span class="sd">[**Number to SMS**] Number that will receive the sms message or list of numbers each separated by an e</span>
+
+<span class="sd">[**url encoded text message**] Text to be sent to number in url encoded form</span>
+
+<span class="sd">[**APP Key**] Your APP Key</span>
+
+<span class="sd">[**FID**] The function ID for Send sms is 11</span>
+
+
+
+<span class="sd">Bulk Example url :</span>
+<span class="sd">https://greydotapi.me/?par1=0820000000e0820000001e0820000002&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11</span>
+
+<span class="sd">Example url :</span>
+<span class="sd">https://greydotapi.me/?par1=0820000000&amp;par2=Test+sms%2C+Hallo+world.&amp;k=abcdefghijklmnopqrst&amp;do=11</span>
+
+<span class="sd">Example reply :</span>
+
+<span class="sd">    &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;</span>
+
+<span class="sd">    &lt;query&gt;</span>
+
+<span class="sd">    &lt;query_result&gt;</span>
+
+<span class="sd">    &lt;status&gt;Success&lt;/status&gt;</span>
+
+<span class="sd">    &lt;status&gt;Send_SMS&lt;/status&gt;</span>
+
+<span class="sd">    &lt;to&gt;27110000000&lt;/to&gt;</span>
+
+<span class="sd">    &lt;sms_id&gt;000&lt;/sms_id&gt;</span>
+
+<span class="sd">    &lt;/query_result&gt;</span>
+
+<span class="sd">    &lt;query_status&gt;DONE&lt;/query_status&gt;</span>
+
+<span class="sd">    &lt;query_code&gt;D0011&lt;/query_code&gt;</span>
+
+<span class="sd">    &lt;/query&gt;</span>
+
+
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">lxml</span> <span class="k">import</span> <span class="n">etree</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">urllib.parse</span>
+
+<span class="n">API_URL</span> <span class="o">=</span> <span class="s2">&quot;https://greydotapi.me/&quot;</span>
+<span class="n">FID</span> <span class="o">=</span> <span class="mi">11</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GREYDOT_APP_KEY&quot;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">GREYDOT_APP_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GREYDOT_APP_KEY&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">GREYDOT_APP_KEY</span> <span class="o">=</span> <span class="s2">&quot;GREYDOT_APP_KEY&quot;</span>
+    <span class="c1"># raise ValueError(&quot;GREYDOT_APP_KEY environment variable is not set.&quot;)</span>
+
+
+<div class="viewcode-block" id="parse_xml_response"><a class="viewcode-back" href="../../api.html#greydot.sms.parse_xml_response">[docs]</a><span class="k">def</span> <span class="nf">parse_xml_response</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    **Args**::</span>
+
+<span class="sd">    - `response`: String of raw xml response returned</span>
+
+<span class="sd">    **Returns**::</span>
+
+<span class="sd">    &gt;</span>
+<span class="sd">    {</span>
+<span class="sd">        &#39;result_status&#39;:&quot;Success&quot;,</span>
+<span class="sd">        &#39;to&#39;:&#39;27110000000&#39;,</span>
+<span class="sd">        &#39;sms_id&#39;:&#39;0001&#39;,</span>
+<span class="sd">        &#39;query_status&#39;:&#39;DONE&#39;,</span>
+<span class="sd">        &#39;query_code&#39;:&#39;D0011&#39;</span>
+<span class="sd">    }</span>
+
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    <span class="n">base</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+    <span class="n">query_result</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//query/query_result/status&quot;</span><span class="p">)</span>
+    <span class="n">query_status</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//query/query_status&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">query_code</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//query/query_code&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">to</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//query/query_result/to&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">sms_id</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="s2">&quot;//query/query_result/sms_id&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">result_status</span> <span class="o">=</span> <span class="n">query_result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s2">&quot;result_status&quot;</span><span class="p">:</span> <span class="n">result_status</span><span class="p">,</span>
+        <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="n">to</span><span class="p">,</span>
+        <span class="s2">&quot;sms_id&quot;</span><span class="p">:</span> <span class="n">sms_id</span><span class="p">,</span>
+        <span class="s2">&quot;query_status&quot;</span><span class="p">:</span> <span class="n">query_status</span><span class="p">,</span>
+        <span class="s2">&quot;query_code&quot;</span><span class="p">:</span> <span class="n">query_code</span><span class="p">,</span>
+    <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="send_sms"><a class="viewcode-back" href="../../api.html#greydot.sms.send_sms">[docs]</a><span class="k">def</span> <span class="nf">send_sms</span><span class="p">(</span><span class="n">recipients</span><span class="o">=</span><span class="p">[],</span> <span class="n">message</span><span class="o">=</span><span class="s2">&quot;Test Message&quot;</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    **Args**::</span>
+
+<span class="sd">    - `recipients`: Number that will receive the sms message or list of numbers</span>
+
+<span class="sd">    - `message`: Text to be sent to number</span>
+
+<span class="sd">    **Returns**::</span>
+
+<span class="sd">    &gt;</span>
+<span class="sd">    {</span>
+<span class="sd">        &#39;result_status&#39;:&quot;Success&quot;,</span>
+<span class="sd">        &#39;to&#39;:&#39;27110000000&#39;,</span>
+<span class="sd">        &#39;sms_id&#39;:&#39;0001&#39;,</span>
+<span class="sd">        &#39;query_status&#39;:&#39;DONE&#39;,</span>
+<span class="sd">        &#39;query_code&#39;:&#39;D0011&#39;</span>
+<span class="sd">    }</span>
+
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">recipients</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">par1</span> <span class="o">=</span> <span class="s2">&quot;e&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">recipients</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">par1</span> <span class="o">=</span> <span class="n">recipients</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;par1&quot;</span><span class="p">:</span> <span class="n">par1</span><span class="p">,</span>
+        <span class="s2">&quot;par2&quot;</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span>
+        <span class="s2">&quot;k&quot;</span><span class="p">:</span> <span class="n">GREYDOT_APP_KEY</span><span class="p">,</span>
+        <span class="s2">&quot;do&quot;</span><span class="p">:</span> <span class="n">FID</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">encoded_params</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">parse</span><span class="o">.</span><span class="n">urlencode</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">API_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">encoded_params</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">parse_xml_response</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">greydot-api</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Tralah M Brian.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
