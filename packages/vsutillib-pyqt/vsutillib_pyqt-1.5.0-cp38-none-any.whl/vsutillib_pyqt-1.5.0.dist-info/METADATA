@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vsutillib-pyqt
+Version: 1.5.0
+Summary: vsutillib.pyqt sub package part of vsutillib
+Home-page: UNKNOWN
+Author: Efrain Vergara
+Author-email: akai10tsuki@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8, <3.9
+Requires-Dist: PySide2 (>=5.14)
+Requires-Dist: vsutillib.macos
+
+vsutillib.pyqt sub package part of vsutillib
+
+
