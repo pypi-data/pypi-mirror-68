@@ -1,0 +1,3 @@
+[console_scripts]
+imapmon = imapmon.scripts:run
+
