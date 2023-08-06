@@ -1,0 +1,5 @@
+[console_scripts]
+fcoll = fruit.fruit:collect
+fmake = fruit.fruit:make
+fruit = fruit.fruit:main
+
