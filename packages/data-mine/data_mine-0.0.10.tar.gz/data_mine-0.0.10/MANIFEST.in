@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+include README_PyPI.md
+include requirements.txt
+global-include *.json *.txt.gz
+prune data/
+prune scripts/
+prune env/
+prune env27/
+prune images/
+prune examples/
