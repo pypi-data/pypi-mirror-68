@@ -1,0 +1,3 @@
+[pyppl]
+pyppl_flowchart=pyppl_flowchart
+
