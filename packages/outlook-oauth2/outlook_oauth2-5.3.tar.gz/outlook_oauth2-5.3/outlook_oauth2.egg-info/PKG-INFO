@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: outlook-oauth2
+Version: 5.3
+Summary: This is a fork of pyOutlook (https://pypi.python.org/pypi/pyOutlook) with support for multiple mailboxes.
+Home-page: https://gitlab.com/alexbishop/pyOutlook
+Author: Alex Bishop
+Author-email: alexbishop1234@gmail.cpm
+License: MIT
+Description: UNKNOWN
+Keywords: outlook office365 microsoft email
+Platform: UNKNOWN
