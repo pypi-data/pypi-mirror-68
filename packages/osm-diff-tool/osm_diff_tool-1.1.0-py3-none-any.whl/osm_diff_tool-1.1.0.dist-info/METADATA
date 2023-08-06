@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: osm-diff-tool
+Version: 1.1.0
+Summary: Tool for retrieving OpenStreetMap planet diffs and extracting data.
+Home-page: http://github.com/ethan-nelson/osm_diff_tool
+Author: Ethan Nelson
+Author-email: git@ethan-nelson.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
