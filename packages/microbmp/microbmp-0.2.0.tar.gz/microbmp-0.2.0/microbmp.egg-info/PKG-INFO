@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: microbmp
+Version: 0.2.0
+Summary: A simple python package for loading and saving BMP image.
+Home-page: https://github.com/jacklinquan/microbmp
+Author: Quan Lin
+Author-email: jacklinquan@gmail.com
+License: MIT
+Description: https://github.com/jacklinquan/microbmp
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

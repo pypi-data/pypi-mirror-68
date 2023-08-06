@@ -1,0 +1,7 @@
+README.md
+setup.py
+microbmp/__init__.py
+microbmp.egg-info/PKG-INFO
+microbmp.egg-info/SOURCES.txt
+microbmp.egg-info/dependency_links.txt
+microbmp.egg-info/top_level.txt
