@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/MongoDBLibrary/__init__.py
+src/MongoDBLibrary/mongo_connection_manager.py
+src/MongoDBLibrary/mongoquery.py
+src/MongoDBLibrary/version.py
+src/robotframework_mongodb_library3.egg-info/PKG-INFO
+src/robotframework_mongodb_library3.egg-info/SOURCES.txt
+src/robotframework_mongodb_library3.egg-info/dependency_links.txt
+src/robotframework_mongodb_library3.egg-info/not-zip-safe
+src/robotframework_mongodb_library3.egg-info/requires.txt
+src/robotframework_mongodb_library3.egg-info/top_level.txt

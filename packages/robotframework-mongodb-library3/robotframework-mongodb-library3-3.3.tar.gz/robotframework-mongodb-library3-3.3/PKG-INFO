@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: robotframework-mongodb-library3
+Version: 3.3
+Summary: Mongo Database utility library for Robot Framework
+Home-page: https://github.com/yimwhancafe/robotframework-mongodb-library
+Author: Kittichai Khamdee
+Author-email: yimwhancafe@hotmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: mongodb,robotframework,robotframework-mongodb-library,MongoDBLibrary
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
