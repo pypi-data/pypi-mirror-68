@@ -1,0 +1,6 @@
+requests
+docker
+Jinja2
+pyyaml
+six
+colorlog
