@@ -1,0 +1,3 @@
+[console_scripts]
+gnome-extensions-cli = gnome_extensions_cli.cli:main
+
