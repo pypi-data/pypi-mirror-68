@@ -1,0 +1,9 @@
+hopper_api/__init__.py,sha256=LgWDCV2pBUG8ycGBQ4UohSV7TMAsktSCdKwTC13DRi8,187
+hopper_api/app.py,sha256=nGKsPen3jgoo6tj_Dfnzmrl2rHfXagfmJLetFRsdBcI,2237
+hopper_api/crypto.py,sha256=vUMW3m4Yj-34SDTrci5jIgHVdKPXzKxDJaMzq82MJJw,953
+hopper_api/hopper_api.py,sha256=lBm-ptRIKJ2a2x-K_0x1dBWYqs8shFgHN-mrRnPTUOM,4500
+hopper_api/notification.py,sha256=4fZ29aMxf90w0jbMO3vU1CJGVxY1ZbxqtZEZic9uz4c,3085
+hopper_api-0.3.0.dist-info/METADATA,sha256=BpN733S-yyWwPDguBTzmOGCE9eVAgsV_f07SIojBNJ4,583
+hopper_api-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hopper_api-0.3.0.dist-info/top_level.txt,sha256=EWL4W9xTgmv2n9iHVLT-0A8Ftxzt42Uz5SCSazgk4UU,11
+hopper_api-0.3.0.dist-info/RECORD,,
