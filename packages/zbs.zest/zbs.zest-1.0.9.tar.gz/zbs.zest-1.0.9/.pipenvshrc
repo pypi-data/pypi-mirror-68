@@ -1,0 +1,3 @@
+function zest() {
+    python -m zest.zest_runner "$@"
+}
