@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pywebify
+Version: 0.2.4
+Summary: Browser-based html/image file report builder
+Home-page: https://github.com/endangeredoxen/pywebify
+Author: Steve Nicholes
+Author-email: endangeredoxen@users.noreply.github.com
+License: GPLv3
+Download-URL: https://github.com/endangeredoxen/pywebify/archive/v0.2.4.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: data,web report
+Platform: UNKNOWN
