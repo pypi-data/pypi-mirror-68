@@ -1,0 +1,15 @@
+esig/ERROR_MESSAGE,sha256=Fr6GlocmZORg4GKbTbVLkKzlviONxYy7FzHYG7id_rk,883
+esig/VERSION,sha256=gaTznOgD9B2K2eSSvWej_spwJX1RDMyG8W5FpeC431E,7
+esig/__init__.py,sha256=xJjzGz7BRTybz0ITLR_Rd8JbWn9siGV_fWvH8cdCgv8,1804
+esig/install_helpers.py,sha256=RcMOfOOUPPJmKOQNATHbxz5o3CgtL_0i4NRXbIY8UtI,36173
+esig/tosig.cp38-win32.pyd,sha256=WaLBHhy0PsJJiTRHM-tw-ROa_a1toxtH6XW9mRGhCis,1905664
+esig/tests/__init__.py,sha256=ZQILJXAaBz2gKQWVlpAnpf3dOzWNvhZ35RM3-0xBT8Y,951
+esig/tests/auxiliaryfunct.py,sha256=8D14rojbjRMBApDnT3PMg3cmjirAVZGMsww_Zom6h8c,17207
+esig/tests/esigtests.py,sha256=IauwONg4H_Am3onPYZ3dVzK8vfx8wcQluWI8gz-uZ98,9579
+esig/tests/test_package.py,sha256=1LTVMzV6NYf_k3Qb0VvS3fjFwnJkRfauj27U3QL3DSI,3712
+esig-0.7.1.dist-info/AUTHORS,sha256=fsxhu3L37AyfR0liFLMhw7Behl0YNkgbdSuIKkw4e8k,587
+esig-0.7.1.dist-info/LICENSE,sha256=IsGR_xcqumzNSr2smynaE0ZwaQxhFrNBD11CMqmW-RA,35827
+esig-0.7.1.dist-info/METADATA,sha256=OqSDwXOyWru-qjzJlIZywENcq0I2kzPO32MJwvOnYK0,1045
+esig-0.7.1.dist-info/WHEEL,sha256=4TRfulwMrP8YSxpInGvijpm1wI5U2HlC51tdD-QDOYU,101
+esig-0.7.1.dist-info/top_level.txt,sha256=F1eEcl8RqWaqM2uiFckw6psL2BknGzFQS44-WMtHetA,5
+esig-0.7.1.dist-info/RECORD,,
