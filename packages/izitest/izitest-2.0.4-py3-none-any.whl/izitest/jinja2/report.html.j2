@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <style type="text/css">{% include "bootstrap.min.css" %}</style>
+
+    <title>izitest report</title>
+  </head>
+  <body>
+    <h1 class="text-center pt-2 pb-0"><code>izitest</code> report</h1>
+    <p class="text-center font-italic">Generated on {{ timestamp }}</p>
+    <h3 class="text-center pt-1 pb-0"><code class="text-primary">{{ testsuite.exec[0] }}</code></h3>
+
+    <div class="d-flex justify-content-center">
+      <div class="row text-center h5 pb-3">
+        <div class="col badge badge-pill badge-success m-2" title="Passed">{{ testsuite.status["Passed"] }}</div>
+        <div class="col badge badge-pill badge-danger m-2" title="Failed">{{ testsuite.status["Failed"] }}</div>
+        <div class="col badge badge-pill badge-warning m-2" title="Timed out">{{ testsuite.status["Timed out"] }}</div>
+        <div class="col badge badge-pill badge-secondary m-2" title="Skipped">{{ testsuite.status["Skipped"] }}</div>
+      </div>
+    </div>
+
+    <ul class="list-group pb-4">
+    {% for tf in testsuite.testfiles %}
+      {% set tfloop = loop %}
+      <li class="list-group-item py-2">
+      {% if tf.tests|length > 0 %} {# Testfile contains Tests #}
+        <code class="pb-2 text-info h5">{{ tf.path }}</code>
+        {% for t in tf.tests %}
+        {% if "Passed" in t.status or "Failed" in t.status %} {# Test has Tescases #}
+          <a class="btn btn-lg btn-block text-left shadow-none p-0 m-0" data-toggle="collapse" href="#testcase{{ tfloop.index }}-{{ loop.index }}" role="button" aria-expanded="false" aria-controls="testcase{{ tfloop.index }}-{{ loop.index }}">
+          {% if "Passed" in t.status %}
+            <span class="badge badge-success">{{ t.status }}</span>
+          {% elif "Failed" in t.status %}
+            <span class="badge badge-danger">{{ t.status }}</span>
+          {% endif %}
+            <span>{{ t.name }}</span><span class="h6 font-italic">{{ " - " + t.desc if t.desc }}</span>
+          </a>
+          <div class="collapse p-0 list-group" id="testcase{{ tfloop.index }}-{{ loop.index }}">
+            <div class="list-group-item">
+            {% for tc in t.testcases %}
+              <div>
+              {% if "Passed" in tc.status %}
+                <span class="h6 text-success">{{ tc.check_name }}</span>
+              {% elif "Failed" in tc.status %}
+                <span class="h6 text-danger">{{ tc.check_name }}</span>
+                <div class="bg-dark text-light px-2 rounded">
+                  {{ tc.diff|replace('\n', '<br>') }}
+                </div>
+              {% endif %}
+              </div>
+            {% endfor %}
+            </div>
+          </div>
+        {% else %} {# Test has no Testcase #}
+          <a class="btn btn-lg btn-block text-left shadow-none p-0 m-0" style="cursor: default;">
+            {% if "Timed out" in t.status %}
+              <span class="badge badge-warning">{{ t.status }}</span>
+            {% elif "Skipped" in t.status %}
+              <span class="badge badge-secondary">{{ t.status }}</span>
+            {% endif %}
+              <span>{{ t.name }}</span><span class="h6 font-italic">{{ " - " + t.desc if t.desc }}</span>
+            {% endif %}
+          </a>
+        {% endfor %}
+      {% else %} {# Testfile contains no Test #}
+        <code class="pb-2 text-muted h5">{{ tf.path }}</code>
+      {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>{% include "jquery-3.4.1.slim.min.js" %}</script>
+    <script>{% include "popper.min.js" %}</script>
+    <script>{% include "bootstrap.min.js" %}</script>
+
+  </body>
+</html>
