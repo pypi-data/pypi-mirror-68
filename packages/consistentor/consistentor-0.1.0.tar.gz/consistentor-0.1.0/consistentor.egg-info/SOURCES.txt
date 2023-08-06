@@ -1,0 +1,10 @@
+README.md
+setup.py
+consistentor/__init__.py
+consistentor/rendezvous.py
+consistentor/selector.py
+consistentor.egg-info/PKG-INFO
+consistentor.egg-info/SOURCES.txt
+consistentor.egg-info/dependency_links.txt
+consistentor.egg-info/requires.txt
+consistentor.egg-info/top_level.txt
