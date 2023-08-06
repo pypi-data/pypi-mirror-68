@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: guruguru
+Version: 0.1.0
+Summary: guruguru cli toolkit
+Home-page: https://atma.co.jp/
+Author: nyk510
+Author-email: yamaguchi@atma.co.jp
+License: BSD License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: pandas
+Provides-Extra: document
+Requires-Dist: sphinx ; extra == 'document'
+Requires-Dist: sphinx-rtd-theme ; extra == 'document'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: responses ; extra == 'test'
+Requires-Dist: freezegun ; extra == 'test'
+
+# Guruguru Cli
+
+
