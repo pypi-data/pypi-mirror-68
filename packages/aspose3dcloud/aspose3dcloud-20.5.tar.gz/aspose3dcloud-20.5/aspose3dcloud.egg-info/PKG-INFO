@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: aspose3dcloud
+Version: 20.5
+Summary: Aspose.3D.Cloud for Python
+Home-page: https://github.com/aspose-3d-cloud/aspose-3d-cloud-python
+Author: asposecloud
+Author-email: aspose.cloud@aspose.com
+License: UNKNOWN
+Description: Aspose.3D Cloud SDK for Python allows you to use Aspose.3D APIs in your Python applications
+Keywords: aspose,3D,cloud
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
