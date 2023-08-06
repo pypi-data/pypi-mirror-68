@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fxrt
+Version: 1.0
+Summary: Realtime FX prices
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+## FXRT
+*Retrieve realtime FX prices* 
+
