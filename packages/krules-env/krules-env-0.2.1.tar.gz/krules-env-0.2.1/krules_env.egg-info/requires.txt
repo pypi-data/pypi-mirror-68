@@ -1,0 +1,2 @@
+krules-dispatcher-cloudevents==0.2.1
+krules-core==0.2.0
