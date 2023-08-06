@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: portmanpy
+Version: 0.0.0
+Summary: Portfolio Management for Jupyter
+Home-page: https://github.com/genarionogueira/portmanpy
+Author: Genario Nogueira
+Author-email: genarionogueira2@gmail.com
+License: BSD 2-clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
