@@ -1,0 +1,13 @@
+hdf5plugin-2.3.0.dist-info/RECORD,,
+hdf5plugin-2.3.0.dist-info/METADATA,sha256=QcvbBuPi0dS_6buhiupN1bP6wUW6dSTCk8yF3cPpwsg,10489
+hdf5plugin-2.3.0.dist-info/WHEEL,sha256=2tv064rflg4ktWMcw3rbCySbqRa5zUmWGIWd4fpp2k8,145
+hdf5plugin-2.3.0.dist-info/LICENSE,sha256=-VZsscaorVXlp2tFgHuCnpa1NzFotVWQIxZDjXHqytk,1446
+hdf5plugin-2.3.0.dist-info/top_level.txt,sha256=jAEIrQv1oLDBJ_KZTG5Ah8w4TcQahNlN52faR_PcG24,11
+hdf5plugin/test.py,sha256=N6V5YXfSjK-N0YtpC_XwcTinGFEMroSI32o8vT9tgO8,6363
+hdf5plugin/__init__.py,sha256=oRmra4LW6daZf_hdIkRNcKi4jaWJN7hs6-qE4LsALG8,11440
+hdf5plugin/_version.py,sha256=Mdty_OcYwDfR7P4clx8GIWG2IH_Hg9TcOSqKFjccuXc,4459
+hdf5plugin/plugins/libh5bshuf.so,sha256=xi02dw9nrVJAs3u_VKDH8caAmioCHZhoTZukPdoJ898,864680
+hdf5plugin/plugins/libh5fcidecomp.so,sha256=Z77GJdmnB7dd6VOcR1mk0j36GzOj3VLP9m_2iMHdUQM,2953184
+hdf5plugin/plugins/libh5zfp.so,sha256=2nwKHRi57T7nOCYRH_rt1BXEKHi-Vai2IJeereFagF0,2075960
+hdf5plugin/plugins/libh5lz4.so,sha256=bQy2aqVFA1ogYkeiifvd8vqsb_cOi8fN0LLbo-I_tvE,1762000
+hdf5plugin/plugins/libh5blosc.so,sha256=47xOeyiVahD4ORX7MQzNe_Qli_nWcU6-nrLhhAWUY4k,14331928
