@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: icsTodoCreator
+Version: 0.1
+Summary: A tool to create multiple tasks at once to speed up decentralized specialized manufacturing.
+Home-page: UNKNOWN
+Author: Fabian Becker
+Author-email: fab.becker@outlook.de
+License: GNU GPLv3
+Keywords: ics tasks todo scale MakerVsVirus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# icsToDoCreator
+Originally for [MakerVsVirus](https://makervsvirus.de) created to help organize the progress of printing a couple hundred pieces per model for any model the customer desires.
+
+## Supported VCALENDAR attributes
+Syntax: ```<attribute>: <type> = <default value>```
+```
+summary: str,
+type: str = "VTODO",
+uid: str = get_random_uid(),
+created: str = datetime.now().strftime("%Y%m%dT%H%M%S"),
+last_modified: str = datetime.now().strftime("%Y%m%dT%H%M%S"),
+dtstamp: str = (datetime.now()).strftime("%Y%m%dT%H%M%S"),
+dtstart: str = (datetime.now()).strftime("%Y%m%dT%H%M%S"),
+due: str = None,
+status: str = "NEEDS-ACTION",
+percent_complete: [str, int, float] = 0,
+priority: [str, int] = 0,
+categories: [List[str], str] = None,
+description: str = None
+```
+__Note:__ ``uid`` needs to be set on every new item. Otherwise every new item will have the same uid, which is not acceptable for external programs.
+
+If outdated, check [``__init__.py``](ics_creator/__init__.py)
+
+## Save objects to file
+Use ``write_task`` to store your events.
+
+Syntax: ```<attribute>: <type> = <default value>```
+
+```
+header: dict = {
+    "version": "2.0",
+    "calscale": "GREGORIAN",
+    "prodid": "-//SabreDAV//SabreDAV//EN",
+    "x-wr-calname": "icsToDoCreator",
+    "refresh-interval;value=duration": "PT4H",
+    "x-published-ttl": "PT4H"
+}
+filename: str = "output.ics"
+tasks: List[Event] = None```
+
+
