@@ -1,0 +1,11 @@
+attrs
+numpy
+
+[:platform_python_implementation != "PyPy"]
+scipy>=1.4
+
+[:platform_python_implementation == "PyPy"]
+scipy<1.4
+
+[:python_version < "3.8"]
+importlib_metadata
