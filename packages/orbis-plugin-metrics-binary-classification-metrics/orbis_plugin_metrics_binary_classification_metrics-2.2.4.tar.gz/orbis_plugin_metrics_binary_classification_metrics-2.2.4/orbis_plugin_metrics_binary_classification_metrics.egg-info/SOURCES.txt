@@ -1,0 +1,11 @@
+README.md
+setup.py
+orbis_plugin_metrics_binary_classification_metrics/__init__.py
+orbis_plugin_metrics_binary_classification_metrics/main.py
+orbis_plugin_metrics_binary_classification_metrics.egg-info/PKG-INFO
+orbis_plugin_metrics_binary_classification_metrics.egg-info/SOURCES.txt
+orbis_plugin_metrics_binary_classification_metrics.egg-info/dependency_links.txt
+orbis_plugin_metrics_binary_classification_metrics.egg-info/top_level.txt
+tests/__init__.py
+tests/confusion_matrices.py
+tests/test_main.py
