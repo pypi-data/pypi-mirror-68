@@ -1,0 +1,3 @@
+[jupyterhub.spawners]
+remote-singularity-spawner = remotesingularityspawner:RemoteSingularitySpawner
+

@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+remotesingularityspawner/__init__.py
+remotesingularityspawner/remotesingularityspawner.py
+remotesingularityspawner.egg-info/PKG-INFO
+remotesingularityspawner.egg-info/SOURCES.txt
+remotesingularityspawner.egg-info/dependency_links.txt
+remotesingularityspawner.egg-info/entry_points.txt
+remotesingularityspawner.egg-info/requires.txt
+remotesingularityspawner.egg-info/top_level.txt
