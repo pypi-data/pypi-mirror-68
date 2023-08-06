@@ -1,0 +1,10 @@
+certifi==2019.11.28
+chardet==3.0.4
+dnspython==1.16.0
+email-validator==1.0.5
+idna==2.9
+lazy==1.4
+pydantic==1.4
+requests==2.23.0
+urllib3==1.25.8
+PyJWT==1.7.1
