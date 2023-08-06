@@ -1,0 +1,14 @@
+pyyaml>=3
+iso8601~=0.1
+sob<1,>=0.5.7
+jsonpointer~=2.0
+
+[dev]
+pytest~=5.4
+tox~=3.14
+flake8~=3.7
+
+[test]
+pytest~=5.4
+tox~=3.14
+flake8~=3.7
