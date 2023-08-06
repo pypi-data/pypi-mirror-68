@@ -1,0 +1,8 @@
+README.md
+setup.py
+diplomat/__init__.py
+diplomat/diplomat.py
+diplomat.egg-info/PKG-INFO
+diplomat.egg-info/SOURCES.txt
+diplomat.egg-info/dependency_links.txt
+diplomat.egg-info/top_level.txt
