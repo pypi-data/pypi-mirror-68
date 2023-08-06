@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nationality_predictor
+Version: 1.1.1
+Summary: An API for predicting nationality from a name
+Home-page: https://github.com/dewittethomas/nationality_predictor
+Author: Thomas Dewitte
+Author-email: thomasdewittecontact@gmail.com
+License: MIT
+Description: # nationality-predictor
+        
+        [![npm](https://img.shields.io/pypi/v/nationality-predictor.svg)](https://pypi.org/project/nationality-predictor/)
+        
+        An API for predicting nationality from a name
+        
+        ## Installation
+        To install the package run this command:
+        
+        ```bash
+        pip install nationality-predictor
+        ```
+        
+        ## Usage
+        
+        ### Predict
+        
+        ```python
+        from nationality_predictor import predict
+        
+        predict("Thomas")
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+nationality_predictor/__init__.py
+nationality_predictor/nationality_predictor.py
+nationality_predictor.egg-info/PKG-INFO
+nationality_predictor.egg-info/SOURCES.txt
+nationality_predictor.egg-info/dependency_links.txt
+nationality_predictor.egg-info/requires.txt
+nationality_predictor.egg-info/top_level.txt
