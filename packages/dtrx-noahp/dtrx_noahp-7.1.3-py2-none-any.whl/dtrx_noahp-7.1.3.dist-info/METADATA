@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: dtrx-noahp
+Version: 7.1.3
+Summary: Script to intelligently extract multiple archive types
+Home-page: http://www.brettcsmith.org/2007/dtrx/
+Author: Brett Smith
+Author-email: brettcsmith@brettcsmith.org
+License: GNU General Public License, version 3 or later
+Download-URL: https://github.com/noahp/dtrx
+Project-URL: Code, https://github.com/noahp/dtrx
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+[![PyPI
+version](https://img.shields.io/pypi/v/dtrx-noahp.svg?style=for-the-badge)](https://pypi.org/project/dtrx-noahp/)
+[![PyPI
+pyversions](https://img.shields.io/pypi/pyversions/dtrx-noahp.svg?style=for-the-badge)](https://pypi.python.org/pypi/dtrx-noahp/)
+
+# dtrx-noah
+
+"**Do The Right eXtraction**" - don't remember what set of `tar` flags or where to
+pipe the output to extract it? no worries!
+
+TL;DR
+
+```bash
+pip install dtrx-noahp
+
+dtrx yolo.tar.gz
+```
+
+This is a copy-paste of the original dtrx repo:
+
+https://github.com/moonpyk/dtrx
+
+The dtrx utility is not right now (2020-04-06) available on the Ubuntu 20.04
+PPA, and the package published to pypi.org is no longer installable from pip,
+due to pypi.python.org now redirecting to pypi.org, and the pypi dtrx package
+404's due to empty list of packages:
+
+> https://pypi.org/simple/dtrx/
+
+Main dtrx pypi page is here:
+
+> https://pypi.org/project/dtrx/
+
+📦🐍🌀
+
+I've submitted these changes to https://github.com/brettcs/dtrx/pull/1 .
+
+## What is this repo then
+
+This repo is just enough patch to deploy a `dtrx-noah` to pypi so I can keep
+using this tool on Ubuntu 20.04.
+
+I attempted to get the tests all working via `tox` , for which I used a
+Dockerfile to try to get some kind of environment consistency. You can run the
+tests by running:
+
+```bash
+./test.sh
+```
+
+
