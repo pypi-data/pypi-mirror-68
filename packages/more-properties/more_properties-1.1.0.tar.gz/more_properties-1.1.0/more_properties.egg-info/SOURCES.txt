@@ -1,0 +1,12 @@
+README.md
+more_properties/__init__.py
+more_properties/cached_property.py
+more_properties/class_property.py
+more_properties/property.py
+more_properties/types.py
+more_properties/util_properties.py
+more_properties.egg-info/PKG-INFO
+more_properties.egg-info/SOURCES.txt
+more_properties.egg-info/dependency_links.txt
+more_properties.egg-info/requires.txt
+more_properties.egg-info/top_level.txt
