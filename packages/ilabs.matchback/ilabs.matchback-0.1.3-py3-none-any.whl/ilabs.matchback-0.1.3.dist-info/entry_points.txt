@@ -1,0 +1,3 @@
+[console_scripts]
+matchback = ilabs.matchback.main:main
+
