@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+src/mframework/__init__.py
+src/mframework/__version__.py
+src/mframework/_docgen.py
+src/mframework/_log.py
+src/mframework/_mframework.py
+src/mframework/_serialize.py
+src/model_framework.egg-info/PKG-INFO
+src/model_framework.egg-info/SOURCES.txt
+src/model_framework.egg-info/dependency_links.txt
+src/model_framework.egg-info/requires.txt
+src/model_framework.egg-info/top_level.txt
