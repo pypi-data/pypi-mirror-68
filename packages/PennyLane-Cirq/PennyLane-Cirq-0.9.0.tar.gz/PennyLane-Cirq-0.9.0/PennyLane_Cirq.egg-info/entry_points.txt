@@ -1,0 +1,4 @@
+[pennylane.plugins]
+cirq.mixedsimulator = pennylane_cirq:MixedStateSimulatorDevice
+cirq.simulator = pennylane_cirq:SimulatorDevice
+

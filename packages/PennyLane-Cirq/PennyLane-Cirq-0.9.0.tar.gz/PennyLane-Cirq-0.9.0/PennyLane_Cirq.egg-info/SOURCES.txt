@@ -1,0 +1,14 @@
+README.rst
+setup.py
+PennyLane_Cirq.egg-info/PKG-INFO
+PennyLane_Cirq.egg-info/SOURCES.txt
+PennyLane_Cirq.egg-info/dependency_links.txt
+PennyLane_Cirq.egg-info/entry_points.txt
+PennyLane_Cirq.egg-info/requires.txt
+PennyLane_Cirq.egg-info/top_level.txt
+pennylane_cirq/__init__.py
+pennylane_cirq/_version.py
+pennylane_cirq/cirq_device.py
+pennylane_cirq/cirq_operation.py
+pennylane_cirq/ops.py
+pennylane_cirq/simulator_device.py
