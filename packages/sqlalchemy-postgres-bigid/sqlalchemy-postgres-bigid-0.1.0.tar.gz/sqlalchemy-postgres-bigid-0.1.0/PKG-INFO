@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: sqlalchemy-postgres-bigid
+Version: 0.1.0
+Summary: SQLAlchemy Postgres Big Integer ID
+Home-page: https://github.com/alvinchow86/sqlalchemy-postgres-bigid
+Author: Alvin Chow
+Author-email: alvinchow86@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
