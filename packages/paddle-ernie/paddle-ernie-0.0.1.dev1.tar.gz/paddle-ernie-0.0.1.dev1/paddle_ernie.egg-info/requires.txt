@@ -1,0 +1,3 @@
+paddlepaddle-gpu>=1.7.1
+requests
+tqdm
