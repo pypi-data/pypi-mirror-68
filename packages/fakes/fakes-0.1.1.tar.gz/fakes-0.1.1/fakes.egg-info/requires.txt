@@ -1,0 +1,7 @@
+numpy>=1.18.0
+scipy>=1.4.1
+pytest>=5.3.1
+astropy>=4.0.0
+galsim>=2.2.3
+requests>=2.23.0
+photutils>=0.7.2
