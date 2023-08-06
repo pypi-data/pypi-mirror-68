@@ -1,0 +1,17 @@
+numpy>==1.16.4
+joblib
+matplotlib
+nibabel
+pandas>==1.0.0
+scipy>==1.4.1
+statsmodels
+seaborn
+webcolors
+PyPDF2
+scikit-learn
+nilearn
+psutil
+networkx
+patsy
+xlrd
+tabulate
