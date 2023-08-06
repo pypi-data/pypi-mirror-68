@@ -1,0 +1,10 @@
+README.md
+setup.py
+classforge/__init__.py
+classforge/classes.py
+classforge/fields.py
+classforge.egg-info/PKG-INFO
+classforge.egg-info/SOURCES.txt
+classforge.egg-info/dependency_links.txt
+classforge.egg-info/requires.txt
+classforge.egg-info/top_level.txt
