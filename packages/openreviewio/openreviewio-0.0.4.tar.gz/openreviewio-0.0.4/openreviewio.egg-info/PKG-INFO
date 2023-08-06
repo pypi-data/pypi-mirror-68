@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: openreviewio
+Version: 0.0.4
+Summary: OpenReviewIO Python API
+Home-page: https://gitlab.com/openreviewio/openreviewio
+Author: Félix David
+Author-email: felixg.david@gmail.com
+License: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Description: 
+        
+        Copyright 2020, Félix David ©
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
