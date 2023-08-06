@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.md
+example.py
+requirements.txt
+setup.py
+test.py
+.circleci/config.yml
+gearsclient/__init__.py
+gearsclient/redisgears_builder.py
+gearsclient.egg-info/PKG-INFO
+gearsclient.egg-info/SOURCES.txt
+gearsclient.egg-info/dependency_links.txt
+gearsclient.egg-info/requires.txt
+gearsclient.egg-info/top_level.txt
