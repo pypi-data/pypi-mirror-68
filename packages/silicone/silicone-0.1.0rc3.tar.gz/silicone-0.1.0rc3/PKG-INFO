@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: silicone
+Version: 0.1.0rc3
+Summary: Automated filling of detail in reported emission scenarios
+Home-page: https://github.com/GranthamImperial/silicone
+Author: Robin Lamboll, Zebedee Nicholls, Jarmo Kikstra
+Author-email: r.lamboll@imperial.ac.uk, zebedee.nicholls@climate-energy-college.org, kikstra@iiasa.ac.at
+License: 3-Clause BSD License
+Project-URL: Bug Reports, https://github.com/GranthamImperial/silicone/issues
+Project-URL: Documentation, https://silicone.readthedocs.io/en/latest
+Project-URL: Source, https://github.com/GranthamImperial/silicone
+Description: Silicone
+        ========
+        
+        .. sec-begin-index
+        
+        
+        Silicone is a Python package which can be used to infer emissions from other emissions data.
+        It is intended to 'infill' integrated assessment model (IAM) data so that their scenarios
+        quantify more climate-relevant emissions than are natively reported by the IAMs themselves.
+        It does this by comparing the incomplete emissions set to complete data from other sources.
+        It uses the relationships within the complete data to make informed infilling estimates of
+        otherwise missing emissions timeseries.
+        For example, it can add emissions of aerosol precurors based on carbon dioxide emissions
+        and infill nitrous oxide emissions based on methane, or split HFC emissions pathways into
+        emissions of different specific HFC gases.
+        
+        
+        .. sec-end-index
+        
+        License
+        -------
+        
+        .. sec-begin-license
+        
+        Silicone is free software under a BSD 3-Clause License, see
+        `LICENSE <https://github.com/GranthamImperial/silicone/blob/master/LICENSE>`_.
+        
+        .. sec-end-license
+        
+        .. sec-begin-funders
+        
+        Funders
+        -------
+        This project has received funding from the European Union Horizon 2020 research and
+        innovation programme under grant agreement No 820829.
+        
+        .. sec-end-funders
+Keywords: emissions,automation,filling,detail,climate
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: notebooks
+Provides-Extra: deploy
+Provides-Extra: dev
+Provides-Extra: tests
+Provides-Extra: docs
