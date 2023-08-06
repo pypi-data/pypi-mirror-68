@@ -1,0 +1,10 @@
+tspf_stomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tspf_stomp/stomp.py,sha256=A9ux2Q0aa61nbeKCNbTdl1mEfidmRBPAgc0v3tzHPNk,9479
+tspf_util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tspf_util/generate.py,sha256=QroHAKV9UCFiWuc0GQwNCFLUriC2yUKlV-2LYqTWr9U,1406
+TSPatternFinding-0.0.1.dist-info/LICENSE.txt,sha256=p53IRqCDDFBb45X3Lfek65gXC3P2R8rTT02eXsr4QOI,1104
+TSPatternFinding-0.0.1.dist-info/METADATA,sha256=bAWuCjaT6rwCCAr-y5mcTChp65YgEvRRDRo8c79GcEU,2449
+TSPatternFinding-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+TSPatternFinding-0.0.1.dist-info/entry_points.txt,sha256=t4DiDqWEcdRr9EVb14fpfDMLHD8w-aXTHfGf_GapehY,54
+TSPatternFinding-0.0.1.dist-info/top_level.txt,sha256=xBD_YdBdFwE9cjDFS3BXV38RLs9k5EBJiFEuRDC-5CU,21
+TSPatternFinding-0.0.1.dist-info/RECORD,,
