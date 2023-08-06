@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: megamind
+Version: 0.0.3
+Summary: Deep Learning Framework
+Home-page: https://github.com/Aiden-Python/Megamind.git
+Author: Rahul Raman
+Author-email: rahulraman1604@gmail.com
+License: MIT
+Download-URL: https://github.com/Aiden-Python/Megamind/archive/v_0.0.3.tar.gz
+Description: UNKNOWN
+Keywords: deep learning,neural network,from scratch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
