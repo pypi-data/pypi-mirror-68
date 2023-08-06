@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: rkt_armutils
+Version: 2.2.1.dev22
+Summary: RiotKit Tools - ARMUtils
+Home-page: https://riotkit.org
+Author: RiotKit non-profit organization
+Author-email: riotkit@riseup.net
+License: Apache-2
+Description: :docker:inject-qemi-bins
+        ------------------------
+        
+        Injects QEMU binaries into a docker image required to run ARM binaries
+        on x86\_64 processors.
+        
+        **NOTICE: This operation is flattening the docker layers by doing export
+        and import**
+        
+        **Examples:**
+        
+        .. code:: bash
+        
+            rkd :docker:inject-qemi-bins --image=arm32v7/php:7.2-fpm
+        
+        :travis:use-experimental-docker
+        -------------------------------
+        
+        Turns on experimental features in Docker client. **NOTICE: Overrides
+        ~/.docker/config.json - but useful on CI**
+        
+        :travis:configure-qemu
+        ----------------------
+        
+        Configures Travis-CI to use QEMU for building docker containers.
+        
+        
+Keywords: docker,travis,ci,continuous-integration,devops,arm
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
