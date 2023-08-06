@@ -1,0 +1,9 @@
+README.md
+setup.py
+flask_pydantic_easy/__init__.py
+flask_pydantic_easy/core.py
+flask_pydantic_easy.egg-info/PKG-INFO
+flask_pydantic_easy.egg-info/SOURCES.txt
+flask_pydantic_easy.egg-info/dependency_links.txt
+flask_pydantic_easy.egg-info/requires.txt
+flask_pydantic_easy.egg-info/top_level.txt

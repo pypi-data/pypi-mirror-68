@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flask_pydantic_easy
+Version: 0.0.1
+Summary: 快速，方便的flask路由参数校验器
+Home-page: https://github.com/674197141/flask_pydantic_easy
+Author: 刘宇
+Author-email: 674197141@qq.com
+License: MIT Licence
+Description: UNKNOWN
+Platform: any
