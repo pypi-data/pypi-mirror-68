@@ -1,0 +1,17 @@
+numpy
+joblib
+matplotlib
+nibabel
+pandas
+scipy
+statsmodels
+seaborn
+webcolors
+PyPDF2
+scikit-learn
+nilearn
+psutil
+networkx
+patsy
+xlrd
+tabulate
