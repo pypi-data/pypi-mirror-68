@@ -1,0 +1,10 @@
+data/web.conllu,sha256=1vkrErdPNno24w3T1kTXoLsBqZFYRgLm5p8RkWZPhr8,2924696
+data/wiki.conllu,sha256=WPBJ-ujQZTuglApYFowXx867xQ-IytKYXRLTSsG5rN4,4442922
+turkish_treebanks/__init__.py,sha256=HdLasmvG8kMM18O9jJL5PNzWvW5eO0b-bzYQTOegSGM,607
+turkish_treebanks/read.py,sha256=ZC4PDsA64z4hQM49MGOfh58up0XWJ0_bUtALVgFUtIo,8868
+turkish_treebanks/twt_pb2.py,sha256=F2i9Z_ZIFwwWPX3Pf9eoSkPkyK505IzhQcEJVazN_eg,10620
+turkish_treebanks-1.0.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+turkish_treebanks-1.0.0.dist-info/METADATA,sha256=jLmQeHzPOV_CFhFLtzSgZNcqJ5Ubd-OuKNoxRRq3qlQ,844
+turkish_treebanks-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+turkish_treebanks-1.0.0.dist-info/top_level.txt,sha256=iA24yjA3_VecaugPbrvLm-888FEac1NOjduHH-MENOA,18
+turkish_treebanks-1.0.0.dist-info/RECORD,,

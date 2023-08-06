@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: turkish-treebanks
+Version: 1.0.0
+Summary: Turkish Web Treebank
+Home-page: https://github.com/google-research-datasets/turkish-treebanks
+License: Apache 2.0
+Download-URL: https://github.com/google-research-datasets/turkish-treebanks/releases
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Turkish
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Requires-Dist: protobuf
+
+A Python API to read annotations of the Turkish Web Treebank (TWT).
+
+
