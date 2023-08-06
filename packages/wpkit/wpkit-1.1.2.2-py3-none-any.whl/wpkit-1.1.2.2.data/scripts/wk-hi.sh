@@ -1,0 +1,1 @@
+echo "Hello , Welcome to use wpkit !"
