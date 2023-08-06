@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: paddlex
+Version: 0.1.7
+Summary: PaddleX. A end-to-end deeplearning model development toolkit base on PaddlePaddle
+
+
+Home-page: https://github.com/PaddlePaddle/PaddleX
+Author: paddlex
+Author-email: paddlex@baidu.com
+License: Apache 2.0
+Description: PaddleX. A end-to-end deeplearning model development toolkit base on PaddlePaddle
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
