@@ -1,0 +1,10 @@
+README.md
+setup.py
+video_stabilizer/__init__.py
+video_stabilizer/io.py
+video_stabilizer/stab.py
+video_stabilizer.egg-info/PKG-INFO
+video_stabilizer.egg-info/SOURCES.txt
+video_stabilizer.egg-info/dependency_links.txt
+video_stabilizer.egg-info/requires.txt
+video_stabilizer.egg-info/top_level.txt
