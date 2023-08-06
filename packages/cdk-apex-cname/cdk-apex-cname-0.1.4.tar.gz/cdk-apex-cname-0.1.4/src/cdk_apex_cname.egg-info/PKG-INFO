@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cdk-apex-cname
+Version: 0.1.4
+Summary: CDK construct to allow setting an apex record to a cname
+Home-page: https://github.com/maskerade/cdk-apex-cname.git
+Author: Stefan De Figueiredo
+License: ISC
+Project-URL: Source, https://github.com/maskerade/cdk-apex-cname.git
+Description: # CDK Apex Cname - Route53
+        
+        A CDK utility construct to allowing setting an domain apex (in Route53) to resolve to a cname record of a resource
+        not in Route 53.
+        
+        ## Usage
+        
+        ### Typescript
+        
+        First install the package
+        
+        ```
+        npm install cdk-apex-cname
+        ```
+        
+        Then you can use the Apex CNAME in your code:
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        from cdk_apex_cname import CdkApexCname
+        
+        CdkApexCname(self, "CdkApexCname",
+            apex_name="apex.com",
+            record_name="cname.example.com",
+            hosted_zone_id="ZONE1234",
+            apex_cname_rule_cron="cron(0 * ? * * *)"
+        )
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
