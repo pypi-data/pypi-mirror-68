@@ -1,0 +1,5 @@
+chatstats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatstats/sync_api.py,sha256=DvZ6h9TP3u59SbYkiyQyJ_P0D7Okrrmfh-Tv2K4FgIM,3636
+chatstats-0.1.5.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+chatstats-0.1.5.dist-info/METADATA,sha256=HA4J4yHV6oB4I5L1mlV0ss6MMHP2V0axkG5JxHtIyvk,409
+chatstats-0.1.5.dist-info/RECORD,,
