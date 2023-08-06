@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: askdata
+Version: 0.3.311
+Summary: A library for creating a client for interacting with Askdata
+Home-page: https://github.com/AskdataInc/askdata-api-python-client
+Author: ['Giuseppe De Maio', 'Matteo Giacalone']
+Author-email: datascience@askdata.com
+License: Apache License 2.0
+Description: # Askdata python client
+        
+        Askdata python client is a friendly Python library that helps developers, data scientists and engineers build and manage agent using Askdata platform. 
+        
+        For more information, see [Askdata's website](https://askdata.com).
+        
+        ## Getting Started
+        
+        Getting up and running with Askdata python client is easy. Install client from [pypi](https://pypi.org/project/...../):
+        
+        >```sh
+        >pip install askdata
+        >```
+        
+        and access tutorials by typing:
+        
+        >```sh
+        >working in progres
+        >```
+        For to use askdata client, you send us a request on [Contact us](https://www.askdata.com/contact) or for e-mail.
+        We'll send you as soon as possible your credentials to access.
+        
+        ## Get in Touch
+        There are several ways to get in touch with us:
+        
+        * [Contact us](https://www.askdata.com/contact)
+        * Email us at: datascience@askdata.com
+        * Email us at: info@askdata.com
+Keywords: nlp
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
