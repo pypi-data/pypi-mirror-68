@@ -1,0 +1,152 @@
+#!/usr/bin/env python
+
+# todo: make z3 the default, have separate flag for file analysis that just does it all
+
+# Kmax
+# Copyright (C) 2012-2019 Paul Gazzillo
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+if __name__ == '__main__':
+    import argparse    
+    from kmaxtools.vcommon import getLogLevel , getLogger
+    import kmaxtools.settings
+    import kmaxtools.analysis
+    import kmaxtools.about
+
+    aparser = argparse.ArgumentParser("find interactions from Kbuild Makefiles")
+    ag = aparser.add_argument
+    ag('makefile',
+       nargs="*",
+       type=str,
+       help="""the name of a Linux Makefiles or subdirs""")
+    
+    ag("--log_level", "-log_level",
+       help="set logger info",
+       type=int, 
+       choices=range(5),
+       default = 3)    
+    
+    ag('-z',
+       '--output-smtlib2',
+       action="store_true",
+       help="""Pickle a dictionary mapping names to z3's smtlib2 format""")
+    
+    ag('-t',
+       '--table',
+       action="store_true",
+       help="""show symbol table entries""")
+    
+    ag('-r',
+       '--recursive',
+       action="store_true",
+       help="""\
+    recursively enter subdirectories""")
+
+    ag('-C',
+       '--config-vars',
+       type=str,
+       help="""the name of a KConfigData file containing configuration variable data""")
+
+    ag('-D',
+       '--define',
+       action='append',
+       help="""\
+    define a makefile variable""")
+
+    ag('-B',
+       '--boolean-configs',
+       action="store_true",
+       default=True,
+       help="""\
+    Treat all configuration variables as Boolean variables""")
+
+    ag('-T',
+       '--tristate-configs',
+       action="store_true",
+       help="""\
+    Treat all Boolean configuration variables as tri-state variables""")
+
+    ag('-F',
+       '--file-analysis',
+       action="store_true",
+       help="""\
+    Also perform C file analysis""")
+
+    ag('--unit-pc-format',
+       action="store_true",
+       help="""\
+    Output presence conditions in the original Kmax unit_pc format""")
+
+    ag('--version',
+        action="store_true",
+        help="""Print the version number.""")
+    # ag('--case-study',
+    #    type=str,
+    #    help="""avail options: busybox/linux""")
+
+    args = aparser.parse_args()
+
+    if args.version:
+        print("%s %s" % (kmaxtools.about.__title__, kmaxtools.about.__version__))
+        exit(0)
+        
+    if args.log_level != kmaxtools.settings.logger_level and 0 <= args.log_level <= 4:
+        kmaxtools.settings.logger_level = args.log_level
+
+    kmaxtools.settings.logger_level = getLogLevel(kmaxtools.settings.logger_level)
+    mlog = getLogger(__name__, kmaxtools.settings.logger_level)    
+    if __debug__:
+        mlog.warn("DEBUG MODE ON. Can be slow! (Use python -O ... for optimization)")
+
+    kmaxtools.settings.do_table = args.table
+    kmaxtools.settings.do_recursive = args.recursive
+    if not args.tristate_configs:
+        kmaxtools.settings.do_boolean_configs = args.boolean_configs
+    kmaxtools.settings.unit_pc_format = args.unit_pc_format
+    kmaxtools.settings.defines = args.define
+    kmaxtools.settings.output_smtlib2 = args.output_smtlib2
+
+    # case_study = args.case_study
+    # if not case_study:
+    #     inp = args.makefile
+    #     print inp
+    #     myAnalysis = kmaxtools.analysis.GeneralAnalysis(inp)
+    # else:
+    #     case_study = case_study.lower()
+    #     inp = args.makefile[0]
+
+    #     if case_study == "busybox":
+    #         kmaxtools.settings.do_boolean_configs = True
+    #         myAnalysis = kmaxtools.analysis.BusyboxCaseStudy(inp)
+    #         kmaxtools.settings.do_recursive = True
+    #     elif case_study == "linux":
+    #         kmaxtools.settings.do_boolean_configs = True
+    #         inp = args.makefile
+    #         myAnalysis = kmaxtools.analysis.LinuxCaseStudy(inp)
+    #         kmaxtools.settings.do_recursive = False
+    #     elif case_study == "tests":
+    #         myAnalysis = kmaxtools.analysis.Tests(inp)
+
+    inp = args.makefile
+    mlog.info("processing {}\n".format(inp))
+
+    from kmaxtools.alg import Run
+    myrun = Run()
+    myrun.run(inp)
+    print(myrun.results)
+
+    if args.file_analysis:
+        from kmaxtools.analysis import FileAnalysis
+        FileAnalysis.analyze(myrun.results)

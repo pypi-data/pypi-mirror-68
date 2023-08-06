@@ -1,0 +1,3 @@
+include kextractor/menu.c
+include kextractor/util.c
+recursive-include kextractor *.h
