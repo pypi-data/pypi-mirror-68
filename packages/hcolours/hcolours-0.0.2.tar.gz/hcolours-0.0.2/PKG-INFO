@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hcolours
+Version: 0.0.2
+Summary: A colours package
+Home-page: https://github.com/pypa/sampleproject
+Author: Hs sH
+Author-email: spi0003@boxhillhs.vic.edu.au
+License: UNKNOWN
+Description: # hcolours
+        
+        This is a colours in python package made by Hs sH
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
