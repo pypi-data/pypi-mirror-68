@@ -1,0 +1,4 @@
+numpy<1.17,>=1.9.2
+tornado<6
+munkres<1.1,>=1.0.7
+networkx<=2.2,>=1.10
