@@ -1,0 +1,13 @@
+numpyro~=0.2.4
+pandas~=1.0.1
+jax~=0.1.67
+jaxlib~=0.1.47
+
+[docs]
+sphinx~=2.4.4
+m2r
+numpydoc
+
+[test]
+black
+pytest
