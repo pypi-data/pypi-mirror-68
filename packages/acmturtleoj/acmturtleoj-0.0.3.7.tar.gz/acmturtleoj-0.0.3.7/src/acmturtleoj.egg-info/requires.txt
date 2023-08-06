@@ -1,0 +1,8 @@
+peppercorn
+svgwrite
+
+[dev]
+check-manifest
+
+[test]
+coverage
