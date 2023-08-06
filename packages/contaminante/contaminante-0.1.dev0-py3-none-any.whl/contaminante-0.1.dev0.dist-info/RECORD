@@ -1,0 +1,10 @@
+contaminante/__init__.py,sha256=HGHA-z83xIo3MXONktC4Rt8p7N_32YV5XqkzM1ubU8w,603
+contaminante/conftest.py,sha256=4D7xowrfv96t5xXnfIFcxQzLtDkCWeCxdE4YNHPVjDc,474
+contaminante/gaia.py,sha256=XidxJff1hP7VnK7RbAePuT7Eiq2vGHn_LYPRgXOTdB8,1762
+contaminante/tests,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+contaminante/utils.py,sha256=Ddyuto7tO3i06v5htKXlI5OePM15O5bj7hRaUNvkdoM,22685
+contaminante/version.py,sha256=hxpzFlzbq6ogxksMGmpBRNRJowb7NAXfLM7dlg9bwlE,158
+contaminante-0.1.dev0.dist-info/METADATA,sha256=QkgCha0mNkwKQeGMgx5SsfOhHTuo84dG6dCSLkrFSrY,2464
+contaminante-0.1.dev0.dist-info/RECORD,,
+contaminante-0.1.dev0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+contaminante-0.1.dev0.dist-info/top_level.txt,sha256=CpGLs2nVoczhbnIwluapbdIcEUX1wiNi31o1KXjvZ1Y,13
