@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ipo
+Version: 0.0.1
+Summary: Infix piping operator
+Home-page: https://framagit.org/Midgard/ipo
+Author: Midgard
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Ipo
+
+Infix piping operator for Python.
+
+Inspired by but not based on
+
+* https://pypi.org/project/pipe/
+* https://arvindn.livejournal.com/68137.html
+
+
