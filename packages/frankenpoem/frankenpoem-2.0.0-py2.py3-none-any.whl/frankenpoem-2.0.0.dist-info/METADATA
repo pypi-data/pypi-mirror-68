@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: frankenpoem
+Version: 2.0.0
+Summary: Generate poems cobbled together from the remains of older, better poems, with a particular emphasis on rhyme and meter consistency.
+Home-page: https://github.com/ruthlee/frankenpoems
+Author: Kyelee Fitts
+Author-email: kyelee.fitts@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pronouncing
+Requires-Dist: pandas
+Requires-Dist: collections
+Requires-Dist: re
+
+UNKNOWN
+
+
