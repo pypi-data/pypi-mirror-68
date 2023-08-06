@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=17yQ379g7N1FZhymU51Ja5O0y1lioJ3iPq0H1jo_k2g,618
+typehint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typehint/typehint.py,sha256=lIFgnWXJno2M9xd8VIkxcViwVTGalf4CkZL6FP7Lg4s,2379
+pymdown_typehint-0.2.0.dist-info/LICENSE,sha256=H9OEoSPkU-AZKd0VFNnkeJkDw3SG-H3o3j4hWerA2hI,1066
+pymdown_typehint-0.2.0.dist-info/METADATA,sha256=-0XJ7OR_CvpA6Z1FdNMSoisi8QTzKBpPJ5MDr5ZGBNQ,1658
+pymdown_typehint-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pymdown_typehint-0.2.0.dist-info/entry_points.txt,sha256=mUui1pepW59fCPTmTLzIe2tnUmp1a1_vU1wMIQN1Xy4,70
+pymdown_typehint-0.2.0.dist-info/top_level.txt,sha256=9V0LHByg-yZ1W5hqlQoWIETmOTMy8yBM6Pxa6-U70To,15
+pymdown_typehint-0.2.0.dist-info/RECORD,,

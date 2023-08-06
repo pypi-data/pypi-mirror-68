@@ -1,0 +1,3 @@
+[markdown.extensions]
+typehint = typehint.typehint:TypeHintExtension
+
