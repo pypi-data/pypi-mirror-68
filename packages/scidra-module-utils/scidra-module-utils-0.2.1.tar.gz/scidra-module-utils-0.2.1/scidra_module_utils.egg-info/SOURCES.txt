@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+scidra/module_utils/__init__.py
+scidra/module_utils/base_module.py
+scidra/module_utils/models.py
+scidra/module_utils/utils.py
+scidra_module_utils.egg-info/PKG-INFO
+scidra_module_utils.egg-info/SOURCES.txt
+scidra_module_utils.egg-info/dependency_links.txt
+scidra_module_utils.egg-info/requires.txt
+scidra_module_utils.egg-info/top_level.txt

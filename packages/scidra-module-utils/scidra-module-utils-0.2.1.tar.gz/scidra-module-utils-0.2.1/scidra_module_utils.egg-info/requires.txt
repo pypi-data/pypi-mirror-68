@@ -1,0 +1,6 @@
+click
+humps
+pydantic
+requests
+clint
+loguru
