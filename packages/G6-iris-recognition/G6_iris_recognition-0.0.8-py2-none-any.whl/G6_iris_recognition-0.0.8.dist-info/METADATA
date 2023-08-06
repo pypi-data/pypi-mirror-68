@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: G6-iris-recognition
+Version: 0.0.8
+Summary: A Python package to iris recognition.
+Home-page: UNKNOWN
+Author: Gate6
+Author-email: rajendra.khabiya@gate6.com
+License: MIT
+Project-URL: Source, https://github.com/gate6/iris-recognition-sample-code/tree/iris-recognition
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: opencv-contrib-python
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: imutils
+
+# Gate6 Iris Recognition Package
+   G6_iris_recognition is a module for iris recognition.   Using the image processing libraries and high-level mathematical functions, we’ll be providing fast and secure iris recognition solution. 
+
+## Installation 
+
+#### Installations required before installing the package module
+  ```
+     python 
+     numpy
+     opencv-python
+     matplotlib
+     opencv-contrib-python
+     requests
+     scikit-image
+     scipy
+     imutils==0.5.2
+  ```  
+
+#### - Install Python
+
+[Windows](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/), [Mac](http://docs.python-guide.org/en/latest/starting/install/osx/), [Linux](https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux-python.html)
+
+
+#### - Install package module using ``pip``:
+  ```
+    $ pip install G6-iris-recognition
+  ```  
+
+## Project Structure
+
+  - On your project folder, create an encodingModel directory & in that directory create a file named irisEncodings.pickle(encodingModel/irisEncodings.pickle).
+  - Create a directory named Input_database & under that directory put an individual's eye iris images, in the directories made on their individual names.
+
+
+```shell
+
+    Project/
+    ├── encodingModel/
+    │   ├── irisEncodings.pickle/                               # train model
+    | 
+    ├── Input_database/ 
+    │   ├── person1 name/                                       # person1 directory
+    |   │   ├── eye iris images of person1 /                    # images of person eye iris
+    │   ├── person2 name/                                       # person2 directory
+    |   │   ├── eye iris images of person2 /                    # images of person eye iris
+    │   ├── person3 name/                                       # person3 directory
+    |   │   ├── eye iris images of person3 /                    # images of person eye iris                   
+
+```
+
+
+
+## How to use
+
+Once all the settings of project are configured, you are ready to run the project. Import G6_iris_recognition module in your project to start.
+
+
+```shell
+   import G6_iris_recognition
+```
+
+Once the import is completed, user need to train existing images which are saved in the Input_database Folder.
+
+```shell
+   Input_database/
+```
+
+After that, create and train encoding module using Input_database Folder images, as per the instructions given below:
+
+
+```shell
+   G6_iris_recognition.iris_model_train(train_database_path,train_encoding_model_path)
+   train_database_path        ===>  Input_database/
+   train_encoding_model_path  ===>  encodingModel/irisEncodings.pickle
+```
+
+Once the model is trained, it’s ready to test with real-time images. Follow the process that is mentioned to test real time iris image:
+
+```shell
+   iris_name = G6_iris_recognition.iris_model_test(test_encoding_model_path,real_time_image_path) 
+   test_encoding_model_path   ===>  encodingModel/irisEncodings.pickle
+   real_time_image_path       ===>  real-time_image_path
+   iris_name                  ===>  In response you’ll get the registered person’s name if image matches with the person’s image in the trained image model & if the image doesn’t match then the name returns as unmatched.
+```
+
+
+## Requirements :
+
+  * Need clearer images from the scanner.
+  * Images shouldn't be captured in direct sunlight.
+  * Person shouldn't wear glasses or lenses while scanning.
+  * All the scanned images should be of same size/resolution (eg - 320x240).
+  * The parameters of filters need to be changed as per the size and quality/noise of the images.
+  * 90% of the eye iris needs to be captured.
+  * Minimum 5 clear images are required to train the model.
+  * Once everything is done accordingly, set threshold of Hamming Distance for easier recognition.
+
+
+
+## Support
+
+If you face any difficulty in configuration or usage of Gate6 Iris Recognition Package as per the instructions documented above, please feel free to contact our development team.
+
+## License
+
+[MIT](LICENSE)
+
