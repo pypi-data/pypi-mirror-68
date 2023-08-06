@@ -1,0 +1,17 @@
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1-py3.6-nspkg.pth,sha256=JjySLBF/yJbKxcwq2GBNfjIiY3Xfqsn6ehBu4fXcICo=,1694
+pants/contrib/awslambda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/awslambda/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/awslambda/python/register.py,sha256=0aii7UXJKMHcEV5cvTsjC1vqIrWWsZbrNen1KdznrU4,949
+pants/contrib/awslambda/python/target_types.py,sha256=J32KzjRTpNMH1BA9GuyGKf0_jxA5GyxZqe1d9M1LWpQ,814
+pants/contrib/awslambda/python/targets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/awslambda/python/targets/python_awslambda.py,sha256=GcZFQLlbWLz3dQncDmFlTpMlbLidFlCY3rFslCgULN8,2158
+pants/contrib/awslambda/python/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/awslambda/python/tasks/lambdex_prep.py,sha256=TAVXvyNVqAE4mHOJOHt9aA0HiZHF1mxKshwLDmMMPCs,459
+pants/contrib/awslambda/python/tasks/lambdex_run.py,sha256=QgTd0nCHu1AFIbm4WYU25axMzTC8ICWdNANF8aEqgYU,4492
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/METADATA,sha256=VDrlMO8uxL/GC+ziFdxm0b1EcsLa2Av7hJL4bzlcIAc=,19585
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/WHEEL,sha256=l1c8NwvStgjlPY31ePysM6wACe8eVuieRLlDoGEUFrs=,112
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/entry_points.txt,sha256=fek9dey10IdUxdrFm83MAl2qFFBWsGG+J+lnfgQOuA4=,241
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/namespace_packages.txt,sha256=6AC+Aj1bWEVgkeqWwy4mym2haDbcVyfHWa+j1hZGtbQ=,20
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1
+pantsbuild.pants.contrib.awslambda_python-1.28.0rc1.dist-info/RECORD,,
