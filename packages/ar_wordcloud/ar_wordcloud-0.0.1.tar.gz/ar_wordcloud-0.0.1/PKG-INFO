@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: ar_wordcloud
+Version: 0.0.1
+Summary: A tiny wrapper around `wordcloud.WordCloud` to support Arabic WordCloud
+Home-page: https://github.com/iamaziz/ar_wordcloud
+Author: Aziz Alto
+Author-email: iamaziz.alto@gmail.com
