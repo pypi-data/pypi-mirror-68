@@ -1,0 +1,4 @@
+netaddr
+osc_lib
+python-designateclient
+python-openstackclient
