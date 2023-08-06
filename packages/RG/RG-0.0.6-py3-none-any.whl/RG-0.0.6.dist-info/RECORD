@@ -1,0 +1,14 @@
+RG/PCA.py,sha256=GsEfYLFaZm6zTeaodzzhiymyfg-olj2nll-is1c-To4,1118
+RG/PLS.py,sha256=gnXjbOZoKHEeMmTrmRyGVRA9fMP1Bda8-OZdCaq9Mlc,1788
+RG/R2.py,sha256=YojQ_OpWCq8yC8kg08YMpAmU9PZBO9jYSkAEQqtrc1g,304
+RG/__init__.py,sha256=PpX2FBhhD7rvZ3Cld2G8nStdYd7yloGuqnck0vtEWp0,224
+RG/autoscale.py,sha256=55CVmsmEO4Xsn0Yc7ouDnBVPvRR9krGtRgT0VeauaSA,599
+RG/colorspectra.py,sha256=bzP-bwVdlkj1_tXjqRRcePdif5zdg7khgHnLqGdjnTo,1594
+RG/mbPLS.py,sha256=VK6rIMnHGqUXcxW9yffpiKJe_6WN-JODvOVyr_zQsz4,3935
+RG/regress.py,sha256=ck2MVOV3f5wrjIpnfee-ScQcq633YaMmsfIMy37zwjM,528
+RG/snv.py,sha256=b9_HDLehUNzgIE9FoJJ5ducukqiJr3dhRUrUhleIFTY,525
+RG/xlsread.py,sha256=iW_SdwomxrARa3K1c_8mQvNQ7m6Mzl9DPhTvjacl8fA,664
+RG-0.0.6.dist-info/METADATA,sha256=NmtFMGu4A-s204TN2UMJ0zCwOvWNwlSWZIT2pnujKpk,565
+RG-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+RG-0.0.6.dist-info/top_level.txt,sha256=Pc7MoQfOwGI8QQ2c4YclinuVwzrkDHtlQfZbvniozpY,3
+RG-0.0.6.dist-info/RECORD,,
