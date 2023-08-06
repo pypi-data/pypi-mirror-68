@@ -1,0 +1,21 @@
+impala_reader:
+    dwh:
+        host: cloudera-impala-proxy.live.bi.hellofresh.io
+        user: /US/OA/ServiceAccount/SCA/user
+        password: /US/OA/ServiceAccount/SCA/password
+        port: 21050
+        auth_mechanism: PLAIN
+        use_ssl: True
+    sql_validate:
+        allowed_command: ['select', 'refresh', 'show',
+                          'invalidate', 'alter table', 'create']
+        forbidden_command: ['drop', 'truncate', 'delete', 'update', 'alter']
+data_master:
+    bodega:
+        user: /Prod/BodegaDB/etl_user
+        password: /Prod/BodegaDB/etl_user_password
+        intermediate_schema: intermediate_tables
+    sql_validate_reader:
+        allowed_command: ['select', 'explain']
+    sql_validate_writer:
+        forbidden_prod_command: ['drop', 'truncate', 'delete', 'update', 'alter']
