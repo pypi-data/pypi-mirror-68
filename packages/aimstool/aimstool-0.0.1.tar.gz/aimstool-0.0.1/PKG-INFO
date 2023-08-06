@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aimstool
+Version: 0.0.1
+Summary: A tool leveraging aimslib
+Home-page: https://github.com/JonHurst/aimstool
+Author: Jon Hurst
+Author-email: jon.a@hursts.org.uk
+License: UNKNOWN
+Description: # AIMStool
+        
+        A tool leveraging aimslib to work with AIMS.
+        
+        ## Input:
+        * Access AIMS server using username and password.
+        * Process a downloaded detailed roster.
+        
+        ## Output:
+        * Logbook in csv format ready for importing into spreadsheets.
+        * Roster in ical format ready for importing into calendars.
+        * Simple text roster
+        * Logbook in 'freeform' format, an intermediate format that allows easy editing
+          prior to further processing.
+        * A quick test for changes.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
