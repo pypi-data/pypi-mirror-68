@@ -1,0 +1,11 @@
+README.md
+setup.py
+ldap_attributes_selector/__init__.py
+ldap_attributes_selector/_version.py
+ldap_attributes_selector/ldap_attributes_selector.py
+ldap_attributes_selector.egg-info/PKG-INFO
+ldap_attributes_selector.egg-info/SOURCES.txt
+ldap_attributes_selector.egg-info/dependency_links.txt
+ldap_attributes_selector.egg-info/entry_points.txt
+ldap_attributes_selector.egg-info/requires.txt
+ldap_attributes_selector.egg-info/top_level.txt
