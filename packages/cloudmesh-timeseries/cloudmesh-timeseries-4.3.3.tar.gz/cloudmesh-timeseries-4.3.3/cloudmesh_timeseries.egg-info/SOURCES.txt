@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+cloudmesh/__init__.py
+cloudmesh/timeseries/__init__.py
+cloudmesh/timeseries/__version__.py
+cloudmesh/timeseries/metric.py
+cloudmesh/timeseries/transform.py
+cloudmesh/timeseries/widgets.py
+cloudmesh_timeseries.egg-info/PKG-INFO
+cloudmesh_timeseries.egg-info/SOURCES.txt
+cloudmesh_timeseries.egg-info/dependency_links.txt
+cloudmesh_timeseries.egg-info/namespace_packages.txt
+cloudmesh_timeseries.egg-info/not-zip-safe
+cloudmesh_timeseries.egg-info/requires.txt
+cloudmesh_timeseries.egg-info/top_level.txt
