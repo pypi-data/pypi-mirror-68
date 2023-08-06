@@ -1,0 +1,3 @@
+[console_scripts]
+oktajwt = jwt.__main__:main
+
