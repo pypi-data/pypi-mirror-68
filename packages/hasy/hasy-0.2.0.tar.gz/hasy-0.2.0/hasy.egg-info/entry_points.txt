@@ -1,0 +1,3 @@
+[console_scripts]
+hasy = hasy.cli:entry_point
+
