@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: clubear
+Version: 0.0.28
+Summary: Subsample-based Model and Research Toolkit.
+Home-page: UNKNOWN
+Author: Hansheng Wang
+Author-email: hansheng@gsm.pku.edu.cn
+License: UNKNOWN
+Description: Welcome to CluBear!
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
