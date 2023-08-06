@@ -1,0 +1,18 @@
+BASELINE DIRECTORY: C:\Users\mjaquier\PycharmProjects\aithermal\tests\Parameter\Baseline
+GRADIENT: 30
+ISOTHERMS:
+- 190
+- 220
+- 350
+PROJECT DIRECTORY: C:\Users\mjaquier\PycharmProjects\aithermal\tests
+RMS: false
+TECHNIQUES:
+  GC: false
+  IR: true
+  MS: true
+  STA: true
+WAVE LENGTHS:
+-
+-
+-
+-
