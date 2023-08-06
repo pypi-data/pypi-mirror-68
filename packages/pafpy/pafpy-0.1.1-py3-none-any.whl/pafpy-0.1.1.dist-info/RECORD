@@ -1,0 +1,10 @@
+pafpy/__init__.py,sha256=x0PdcL0MixJKHLHGtwo9ETrJHp1sfdYLhhQWAVfDQBQ,1889
+pafpy/__version__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pafpy/paffile.py,sha256=c6jDiycFJNOLHyOIfH3sK0z-x76WLGJTF5Ud_OwPjuI,3450
+pafpy/pafrecord.py,sha256=N5MyzS12-ofytTzvJSdtI_ZuZ3XesBrfjabipRntrBI,13005
+pafpy/strand.py,sha256=cnQV1XTlsZ3tBvArwViy6XjcdI4CIRZBJ7CdtpN94wY,627
+pafpy/tag.py,sha256=LqbSJ76k5qURJk8SXCxLskjRpagM1kMUmKgaIvYcVDo,4019
+pafpy-0.1.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+pafpy-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pafpy-0.1.1.dist-info/METADATA,sha256=BcTQFvW5C1yqUHPZWcNu3CGvmKOPhcRLo-oVRkG7wYE,3952
+pafpy-0.1.1.dist-info/RECORD,,
