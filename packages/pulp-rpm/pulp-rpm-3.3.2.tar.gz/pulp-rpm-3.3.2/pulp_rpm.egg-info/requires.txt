@@ -1,0 +1,7 @@
+createrepo_c<1.0,>=0.15.10
+jsonschema
+libcomps~=0.1.11
+productmd>=1.25
+pulpcore<3.4,>=3.3
+PyGObject~=3.22
+solv
