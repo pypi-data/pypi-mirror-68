@@ -1,0 +1,11 @@
+gphotospy/__init__.py,sha256=R4OK5FzXx5xt8CO4pGH07x7YC0_XvnhpKEA0dhdPynw,171
+gphotospy/album.py,sha256=zMGSyijAZU4gX8ooxDoHPAO7VBy9BDo8Qrt3tXRUCWg,16614
+gphotospy/authorize.py,sha256=89TSd-tdcJ7fknPKs_03aSWn9XJBZwGfmge6eGxn8DQ,1757
+gphotospy/media.py,sha256=tWsxhtLJf7tlhFKZseq4gDFVKcdjZFUsbdmP6Cs_bLQ,22738
+gphotospy/sharedalbum.py,sha256=U2x0zN_siRfmuiCuqQ_QEniOj5FzNpobWa0eR0aQnB8,5394
+gphotospy/upload.py,sha256=lCDHH0rPiqOL9xiYbKYRXcF4qolGdXRlSj4j2_Z1whQ,1035
+gphotospy-0.1.0.dist-info/LICENSE,sha256=LcmXC_Ypk_0pMnlZYWvXes5X3sz5KAz2WN-TZzA1A3M,1054
+gphotospy-0.1.0.dist-info/METADATA,sha256=6QDwk6eak60SR9jIsBqonwKxnRihh1eyNv0Wf7lLs68,4660
+gphotospy-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gphotospy-0.1.0.dist-info/top_level.txt,sha256=8RlhgOJxRQqbW0BaaofNNGuVAbHdz3Xej4GeCzXWX48,10
+gphotospy-0.1.0.dist-info/RECORD,,
