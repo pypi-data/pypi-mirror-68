@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: abstract-queue
+Version: 1.2
+Summary: Queuing tools for python
+Home-page: https://google.com
+Author: Laurent Evrard
+Author-email: evrardlaurent77@gmail.com
+License: WTFPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications
