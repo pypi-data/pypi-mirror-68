@@ -1,0 +1,6 @@
+pyyaml
+neddy
+fundamentals
+astrocalc
+eventlet
+numpy
