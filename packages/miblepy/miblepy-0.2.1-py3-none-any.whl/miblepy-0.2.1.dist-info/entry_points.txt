@@ -1,0 +1,3 @@
+[console_scripts]
+miblepy=miblepy.cli:cli
+
