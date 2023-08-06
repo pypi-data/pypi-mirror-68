@@ -1,0 +1,11 @@
+pycanal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycanal/client.py,sha256=LRdi4gnlGAWly-bfMzK3Ijfy18QqHCEVYnj4uIcUFeY,6713
+pycanal/connector.py,sha256=AQgT2sb272cuPevCFWBncKwkY9Qq5TXVAPqZ7ZtX96k,530
+pycanal/example.py,sha256=5KZ842RaP9u4neiwIZM5iuIbTKxmN0ue7GIkGWr-t98,3605
+pycanal/protocol/CanalProtocol_pb2.py,sha256=4blDlIt6vA8eDFX_u-mFPl_oZQnxhvWyCSy7xJLeS20,38935
+pycanal/protocol/EntryProtocol_pb2.py,sha256=KK2eGqjoUFeFSZn7BT2KPwPuwJgbVxSl5U21a-oOzC8,37441
+pycanal/protocol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py3canal-1.0.dist-info/METADATA,sha256=QAVlYk_nHvim0Ye93Geor4CgMJfsM_q4JdtcS0vH2oM,211
+py3canal-1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+py3canal-1.0.dist-info/top_level.txt,sha256=KLWgNzlv4ExCI3vOdwad5QssQamsVthFZx5WkoVW6A4,8
+py3canal-1.0.dist-info/RECORD,,
