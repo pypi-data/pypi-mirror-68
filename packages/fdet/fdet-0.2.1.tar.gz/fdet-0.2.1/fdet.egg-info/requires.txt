@@ -1,0 +1,6 @@
+ttictoc
+opencv-python
+click
+tqdm
+colour
+colorama
