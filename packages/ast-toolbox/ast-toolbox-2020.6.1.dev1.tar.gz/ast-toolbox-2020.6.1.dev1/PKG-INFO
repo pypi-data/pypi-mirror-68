@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ast-toolbox
+Version: 2020.6.1.dev1
+Summary: A toolbox for worst-case validation of autonomous policies
+Home-page: https://github.com/sisl/AdaptiveStressTestingToolbox
+Author: Stanford Intelligent Systems Laboratory
+Author-email: mkoren@stanford.edu
+License: UNKNOWN
+Project-URL: Source, https://github.com/sisl/AdaptiveStressTestingToolbox
+Project-URL: Documentation, https://ast-toolbox.readthedocs.io/en/master/
+Project-URL: Tracker, https://github.com/sisl/AdaptiveStressTestingToolbox/issues
+Project-URL: Status, https://travis-ci.org/github/sisl/AdaptiveStressTestingToolbox
+Project-URL: Testing, https://codecov.io/gh/sisl/AdaptiveStressTestingToolbox
+Description: # AST
+        [![Build Status](https://travis-ci.org/sisl/AdaptiveStressTestingToolbox.svg?branch=master)](https://travis-ci.org/sisl/AdaptiveStressTestingToolbox)
+        [![Documentation Status](https://readthedocs.org/projects/ast-toolbox/badge/?version=master)](https://ast-toolbox.readthedocs.io/en/master/?badge=master)
+        [![license: MIT](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/sisl/AdaptiveStressTestingToolbox/blob/master/LICENSE)
+        [![codecov](https://codecov.io/gh/sisl/AdaptiveStressTestingToolbox/branch/master/graph/badge.svg)](https://codecov.io/gh/sisl/AdaptiveStressTestingToolbox)
+        
+        Adaptive Stress Testing is a worst-case validation method for autonomous policies. This toolbox is currently under construction, and is being actively developed by the Stanford Intelligent Systems Lab.
+        
+        See https://ast-toolbox.readthedocs.io/en/master/ for documentation.
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
