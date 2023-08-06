@@ -1,0 +1,7 @@
+setup.py
+taste/__init__.py
+taste.egg-info/PKG-INFO
+taste.egg-info/SOURCES.txt
+taste.egg-info/dependency_links.txt
+taste.egg-info/requires.txt
+taste.egg-info/top_level.txt
