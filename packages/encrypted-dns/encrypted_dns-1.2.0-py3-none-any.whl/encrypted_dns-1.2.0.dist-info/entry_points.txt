@@ -1,0 +1,3 @@
+[console_scripts]
+encrypted-dns = encrypted_dns.main:start
+
