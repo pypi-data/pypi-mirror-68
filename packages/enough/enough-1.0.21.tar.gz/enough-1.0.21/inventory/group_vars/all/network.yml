@@ -1,0 +1,5 @@
+---
+openstack_network: Ext-Net
+# openstack_network: internal
+openstack_internal_network: internal
+openstack_internal_network_cidr: "10.30.20.0/24"

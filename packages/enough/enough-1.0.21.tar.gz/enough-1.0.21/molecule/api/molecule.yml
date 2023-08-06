@@ -1,0 +1,45 @@
+---
+driver:
+  name: delegated
+lint:
+  name: yamllint
+platforms:
+  - name: bind-host
+  - name: api-host
+    groups:
+      - gitlab
+  - name: packages-host
+  - name: icinga-host
+  - name: gitlab-host
+    groups:
+      - gitlab
+provisioner:
+  name: ansible
+  options:
+    i: ../../development-inventory
+    limit: bind-host,packages-host,icinga-host,api-host,gitlab-host,localhost
+  lint:
+    name: ansible-lint
+  env:
+    ANSIBLE_ROLES_PATH: roles:../infrastructure/roles:../firewall/roles:../bind/roles:../packages/roles:../gitlab/roles:../icinga/roles:../jdauphant.nginx/roles:../enough-nginx/roles:../certificate/roles
+  inventory:
+    links:
+      group_vars: ../../inventory/group_vars
+      host_vars: ../../inventory/host_vars
+scenario:
+  name: api
+  test_sequence:
+    - destroy
+    - create
+    - converge
+    - verify
+    - destroy
+verifier:
+  name: testinfra
+  options:
+    v: True
+    s: True
+    # see https://lab.enough.community/main/infrastructure/issues/147
+    k: 'not test_create_or_upgrade'
+  lint:
+    name: flake8
