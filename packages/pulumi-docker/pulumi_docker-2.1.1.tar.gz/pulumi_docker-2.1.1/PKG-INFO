@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pulumi_docker
+Version: 2.1.1
+Summary: A Pulumi package for interacting with Docker in Pulumi programs
+Home-page: https://pulumi.io
+License: Apache-2.0
+Project-URL: Repository, https://github.com/pulumi/pulumi-docker
+Description: [![Build Status](https://travis-ci.com/pulumi/pulumi-docker.svg?token=eHg7Zp5zdDDJfTjY8ejq&branch=master)](https://travis-ci.com/pulumi/pulumi-docker)
+        
+        # Pulumi Docker Helpers
+        
+        Pulumi helper library for interacting with Docker.  Used so that this logic can be shared with other parts of the Pulumi stack.
+        
+Keywords: pulumi docker
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
