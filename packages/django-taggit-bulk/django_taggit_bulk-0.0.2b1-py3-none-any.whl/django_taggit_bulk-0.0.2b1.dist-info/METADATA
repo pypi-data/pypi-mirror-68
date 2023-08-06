@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: django-taggit-bulk
+Version: 0.0.2b1
+Summary: Bulk update of tags
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: LGPL
+Keywords: django taggit admin bulk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.10
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Requires-Dist: django
+Requires-Dist: django-taggit
+Requires-Dist: django-formtools
+Requires-Dist: six
+
+Django-Taggit-Bulk
+==================
+
+The application introducing admin action for bulk tag/untag instances
+
+See details at the home page: https://github.com/nnseva/django-taggit-bulk
+
+
+

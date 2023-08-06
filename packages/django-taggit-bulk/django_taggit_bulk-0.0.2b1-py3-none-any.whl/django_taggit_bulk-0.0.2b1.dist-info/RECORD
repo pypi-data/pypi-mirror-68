@@ -1,0 +1,13 @@
+taggit_bulk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taggit_bulk/actions.py,sha256=9m-gIsEfCJkAuKbgdUxd29zcFnhBehETeldsUOzgqvk,922
+taggit_bulk/forms.py,sha256=l34WWmD_ttaC-uMM9x5Gg3DFcLikP8twnmrZKZDM1ts,525
+taggit_bulk/settings.py,sha256=6dtuRxlvTUVd476JLlMt70bO639eBpKaeGYNhk4XQyI,108
+taggit_bulk/urls.py,sha256=VEURH_BRAebpFv0Wc4TeHkUA4h_B2hbXgnN653F_VgQ,278
+taggit_bulk/version.py,sha256=8v8eDny1QfuKer8sRMZ8Mwzk_Z2G9D_ccPwcagd2Atw,24
+taggit_bulk/views.py,sha256=cQlx5it6Z2JLlL84CGBMokaRV-oV_EzzlZpM1QGeOPE,3995
+taggit_bulk/templates/taggit_bulk/wizard/form.html,sha256=P_3kqnA54z5tYHIKD1An8-3NbrWwWWVf1Y6md5XUWiY,813
+django_taggit_bulk-0.0.2b1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+django_taggit_bulk-0.0.2b1.dist-info/METADATA,sha256=Hb6GMDIu_zrs_uJmkk3otxBpop9P1k31Ey-a65K2gL8,1176
+django_taggit_bulk-0.0.2b1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_taggit_bulk-0.0.2b1.dist-info/top_level.txt,sha256=SftYAN6erSD58rEHIxVqEFL8Pv1nvQJgORLdRaIwaa4,12
+django_taggit_bulk-0.0.2b1.dist-info/RECORD,,
