@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: medspacy_io
+Version: 0.1.0.dev14
+Summary: A collection of modules to facilitate reading text from various sources and writing to various sources.
+Home-page: https://github.com/medspacy/medspacy_io
+Author: medSpaCy
+Author-email: medspacy.dev@gmail.com
+License: MIT License
+Description: 
+        medspacy-io
+        ------------
+        
+        medspacy-io is a collection of modules to facilitate reading text from various sources and writing to various sources.
+        
+        
+        Installation
+        ------------
+        
+            pip install medspacy-io
+        
+        
+        How to use
+        ------------
+        
+        Please refer to the samples in the tests.
+        
+        A Colab notebook demo is available at:
+        
+        https://colab.research.google.com/drive/12EBOaKej9uPmGAb5dV2oB1goEWrwXjSD
+            
+        
+        
+Keywords: medspacy,reader,writer,ehost,brat,xmi,io,reader,writer,nlp,annotation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
