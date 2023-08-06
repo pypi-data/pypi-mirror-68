@@ -1,0 +1,11 @@
+typing_extensions
+
+[dev]
+black
+flake8
+mypy
+
+[docs]
+
+[testing]
+evilunit
