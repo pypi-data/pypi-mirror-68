@@ -1,0 +1,14 @@
+ai_transformersx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai_transformersx/configuration.py,sha256=XoBBFcOPnjmMCrQGmuUF-hL7WUrtuP0qs8eORKjrKSE,4191
+ai_transformersx/dataprocessor.py,sha256=uO5c4VMKrrGxwYsJR3MyBCFo8JZU0SJxHpevQyIGRlw,519
+ai_transformersx/dataset.py,sha256=Lcm5RNQ_lunmJIWegI9LO3yTo7yc_if4t5nH9uNJNRY,5881
+ai_transformersx/down_tasks.py,sha256=DakwZtmUaCobp14vjExkO-czYoEcGCo7NLYDV8QS3RY,894
+ai_transformersx/models.py,sha256=NKsXAsks4U89osBwjmCaExEbmqkoniGkyyZKzjIuxdU,6237
+ai_transformersx/tasks.py,sha256=N35_oWAdk5VRAsf6Ve_2Q5X2kWapNdEWRjD7HzBlFGc,8442
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_models.py,sha256=3SbJq-qw_EfIJpDmB5-7pEAQYajHO0RPuQJdeUxDFVo,191
+ai_transformersx-0.2.0.dist-info/LICENSE.txt,sha256=2L4tF1iFgUDvgVkxv1BVaQTCeChF1pdNU4gwAgnmyys,1061
+ai_transformersx-0.2.0.dist-info/METADATA,sha256=Ohb7Ajt-R3Cf6jxSTeOSyuZGIYziV_TYy8lAxLkjpSc,1749
+ai_transformersx-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ai_transformersx-0.2.0.dist-info/top_level.txt,sha256=5FonyGnYZAO96e02Et05mXFrEGMZOJ9G_Sef2N1GsKk,23
+ai_transformersx-0.2.0.dist-info/RECORD,,
