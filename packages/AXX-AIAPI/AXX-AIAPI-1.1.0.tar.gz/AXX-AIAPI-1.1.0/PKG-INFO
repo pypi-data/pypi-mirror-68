@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: AXX-AIAPI
+Version: 1.1.0
+Summary: create application template for axx ai-api.
+Home-page: UNKNOWN
+Author: ZhenYu Dan
+Author-email: ljqwzan@vip.qq.com
+License: GUN V3
+Description: create application template for axx ai-api.
+Keywords: AXX,axx,axx ai,axx aiapi
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
