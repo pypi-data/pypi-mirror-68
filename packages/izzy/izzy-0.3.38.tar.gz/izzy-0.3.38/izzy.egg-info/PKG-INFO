@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: izzy
+Version: 0.3.38
+Summary: A toolkit for executing and analyzing machine learning classification
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Description: A toolkit for executing and analyzing machine learning classification
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst

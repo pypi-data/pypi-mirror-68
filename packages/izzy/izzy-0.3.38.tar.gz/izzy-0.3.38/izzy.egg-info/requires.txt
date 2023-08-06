@@ -1,0 +1,16 @@
+codecov
+coverage
+gitpipe
+hypothesis
+iox
+matplotlib
+numpy
+openpyxl
+pandas
+privatize
+pyyaml
+scikit-learn
+scipy
+sphinx
+six
+typelike>=0.0.31
