@@ -1,0 +1,15 @@
+README.md
+setup.py
+GAAPItoDB/__init__.py
+GACustomReportEmailToDB/GACustomReportParcelasClicadas.py
+GACustomReportEmailToDB/__init__.py
+GACustomReportEmailToDB/__main__.py
+GoogleAnalyticsETL.egg-info/PKG-INFO
+GoogleAnalyticsETL.egg-info/SOURCES.txt
+GoogleAnalyticsETL.egg-info/dependency_links.txt
+GoogleAnalyticsETL.egg-info/requires.txt
+GoogleAnalyticsETL.egg-info/top_level.txt
+examples/GABradescoSegurosToDB.py
+examples/etl-by-email.py
+examples/etl.py
+examples/sources.conf.example

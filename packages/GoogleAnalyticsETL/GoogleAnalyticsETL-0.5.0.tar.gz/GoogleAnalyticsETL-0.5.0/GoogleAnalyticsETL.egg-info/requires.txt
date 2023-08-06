@@ -1,0 +1,8 @@
+sqlalchemy
+pandas
+oauth2client
+apiclient
+dateutil
+queue
+threading
+json
