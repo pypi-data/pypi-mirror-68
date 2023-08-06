@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+COG/COG.py
+COG/__init__.py
+COG/cognames2003-2014.tab
+COG/fun2003-2014.tab
+COG_translator.egg-info/PKG-INFO
+COG_translator.egg-info/SOURCES.txt
+COG_translator.egg-info/dependency_links.txt
+COG_translator.egg-info/top_level.txt
