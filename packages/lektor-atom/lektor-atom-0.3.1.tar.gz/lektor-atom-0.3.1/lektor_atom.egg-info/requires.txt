@@ -1,0 +1,6 @@
+MarkupSafe
+Werkzeug<1.0
+
+[test]
+lxml
+pytest
