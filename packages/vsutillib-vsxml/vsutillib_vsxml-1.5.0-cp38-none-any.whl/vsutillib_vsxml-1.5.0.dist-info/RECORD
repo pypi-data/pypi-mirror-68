@@ -1,0 +1,10 @@
+vsutillib/vsxml/__init__.py,sha256=dTVI60wonaSREy-s4PDQzvWT-B3xvSD3QYCcM4oG-AY,98
+vsutillib/vsxml/xml.py,sha256=VUsWBOnyi12yqWqvhdJ5gIfDnw6VufE--3UGHDLdB-k,566
+vsutillib/vsxml/classes/__init__.py,sha256=l35lJakONvAlClvW6hjO_aOFx_5mGaileXA49S5Sc6E,54
+vsutillib/vsxml/classes/xmldb.py,sha256=h32o2wYA6GACdR9-ZCiBzoaapZ5uQRybuR-KJGbvgtw,9949
+vsutillib_vsxml-1.5.0.dist-info/AUTHORS,sha256=llm7PvxUuq0L7ZrdDeOz5t7A3v9AlGrlecu0LnCWgDU,38
+vsutillib_vsxml-1.5.0.dist-info/LICENSE.txt,sha256=Nz1_maIKIczSjgEzvm7w645_fL_Q2oI3P5fjMogBsM0,1121
+vsutillib_vsxml-1.5.0.dist-info/METADATA,sha256=t_V6IFawDLR76KDMqqQvQKQaomY1ExWKdKWnG0IfsGc,329
+vsutillib_vsxml-1.5.0.dist-info/WHEEL,sha256=SWZulq6g1CZQGXDR2ENi1Gbvady4EX5Xz64_g7XInro,98
+vsutillib_vsxml-1.5.0.dist-info/top_level.txt,sha256=M_5yAwOf6EP-keOFAKDIGNikI6UK2ButYYjCMCyHOBE,10
+vsutillib_vsxml-1.5.0.dist-info/RECORD,,

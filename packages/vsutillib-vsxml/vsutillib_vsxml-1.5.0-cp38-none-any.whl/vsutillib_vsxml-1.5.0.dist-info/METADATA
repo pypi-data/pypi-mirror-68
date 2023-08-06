@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: vsutillib-vsxml
+Version: 1.5.0
+Summary: vsutillib.vsxml sub package part of vsutillib
+Home-page: UNKNOWN
+Author: Efrain Vergara
+Author-email: akai10tsuki@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8, <3.9
+Requires-Dist: lxml (>=4.5)
+
+vsutillib.vsxml sub package part of vsutillib
+
+
