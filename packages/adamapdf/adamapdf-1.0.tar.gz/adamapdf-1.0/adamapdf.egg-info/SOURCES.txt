@@ -1,0 +1,9 @@
+README.md
+setup.py
+adamapdf/__init__.py
+adamapdf/pdf2image.py
+adamapdf/pdf2text.py
+adamapdf.egg-info/PKG-INFO
+adamapdf.egg-info/SOURCES.txt
+adamapdf.egg-info/dependency_links.txt
+adamapdf.egg-info/top_level.txt
