@@ -1,0 +1,19 @@
+img2unicode/Ubuntu Mono.npz,sha256=w3Cnp_k9Z0QsU8XnjdcKByWRmAvPvBaJhZFk11hNk0c,20610562
+img2unicode/__init__.py,sha256=QG8fR2u7OlkNz4L2RZyuTSH4gr9T0zzVDQEdrX6X5LM,65
+img2unicode/dual.py,sha256=CN6rx6xH_t1JkAmykmPxbMeV2ISzG4PdYMuift0mKAw,8732
+img2unicode/gamma.py,sha256=hvsXCN1wrEPY9haYihODfp5JvNIsm78-Qcp9nZoeDlM,5996
+img2unicode/renderer.py,sha256=h-lxF1TjyZkby1stq8Fyr926hbFrNySRcs0pUfRo4I4,6944
+img2unicode/templates.py,sha256=st-f1Ub8Ot6K3BTLCdWxPJ3wiUxAmVb9LzDHvOcXbPE,3501
+img2unicode/unicodeit.py,sha256=OLskUUGO4hOk9o-bcqB4d-lgUcb8C9DRe2uMbcGyfhI,26342
+img2unicode/utils.py,sha256=1bpJuAzm7xYsUbgeMilQjbHKCQj4ibHOfHEiymIn5lA,1081
+img2unicode/__pycache__/__init__.cpython-37.pyc,sha256=7PUL4q5g1fNr3T9qIFRT0hi6MsJ1e6u6bsc7E_BRCXc,222
+img2unicode/__pycache__/dual.cpython-37.pyc,sha256=oyBL41JJmip68qW1ykP91Fa_iDRxqlfWiCWxgyc9xpo,9605
+img2unicode/__pycache__/gamma.cpython-37.pyc,sha256=Mq1Jq6QUqe8Sih0Ha3mVEl8OMHg4ljqYX3CkkdQvG50,6266
+img2unicode/__pycache__/renderer.cpython-37.pyc,sha256=eIAECRne3nAkurAAy6yd5v4EdVX1aa5KkIJbZEu6unU,5693
+img2unicode-0.1a7.data/scripts/imgcat,sha256=YCLfDwVG7Wi4uCZaalRqsVlAktCXGiuRV4Qs4XHE4LI,1623
+img2unicode-0.1a7.data/scripts/termview,sha256=fmXBpzkiGrTdUXSmCrUM9K_vS3GXL8AsXUz1GN7GRL8,17289
+img2unicode-0.1a7.dist-info/LICENSE,sha256=PISt8IfvPJwgP-37vqWU18Rixv0qpuModgccHmEMhqU,1073
+img2unicode-0.1a7.dist-info/METADATA,sha256=JlR8wmrf64LiUd8Yq17WTmrtG4fn_uBMPc-p5_WzrdU,4260
+img2unicode-0.1a7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+img2unicode-0.1a7.dist-info/top_level.txt,sha256=mqYXJsVUeGKOvBRvEUwd1qbsKHa-7QtXMpIJJ9pqW_o,12
+img2unicode-0.1a7.dist-info/RECORD,,
