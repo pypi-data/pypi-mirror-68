@@ -1,0 +1,13 @@
+datatosk/__init__.py,sha256=8D5a8oKgqd6WA1RUkiKCn4l_PVemtyuckxQut0vDHXM,20
+datatosk/consts/__init__.py,sha256=FLywvjz1qQ5tSJ8pVzBc63T1JuKU6TFq-Ef6_FdTEjs,27
+datatosk/consts/output_types.py,sha256=3IxbSJuAgsZ8rqYW5pymnQcX-41zI22sznYX-89hqzo,108
+datatosk/engines/__init__.py,sha256=wrE-UmYG8KXRHpvm-cw63CjlQM8rtLT0-3tGBB-5XwU,124
+datatosk/engines/database.py,sha256=CgDVQftNaV7NYllLPxMyepdjxe8rdyHN-w978EpYzLM,7219
+datatosk/engines/files.py,sha256=trVXWF2Bc8Q4Bped2IIBMZ7BoFaGJqu3pPVZQja_t_Y,1421
+datatosk/engines/network.py,sha256=NNz21jmH5fbcV3RdHsYiq3UP3-yQrNsTUw-MaN3uXIE,3292
+datatosk/main.py,sha256=sj9UB1Rg3tHzYdbgkdZaGRFWrd5Zns2BqIe5RdFh_8M,843
+py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatosk-0.2.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datatosk-0.2.7.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+datatosk-0.2.7.dist-info/METADATA,sha256=pTjx7EmEi35rLsJSdNCwLVIim2J8lXBoND8ahnh71ZI,1348
+datatosk-0.2.7.dist-info/RECORD,,
