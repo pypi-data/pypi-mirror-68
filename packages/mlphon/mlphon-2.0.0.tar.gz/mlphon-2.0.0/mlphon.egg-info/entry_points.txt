@@ -1,0 +1,5 @@
+[console_scripts]
+mlg2p = mlphon.g2p:main
+mlipa = mlphon.ml2ipa:main
+mlsyllablize = mlphon.syllablizer:main
+
