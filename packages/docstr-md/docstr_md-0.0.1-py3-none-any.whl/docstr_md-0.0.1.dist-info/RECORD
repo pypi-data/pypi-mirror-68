@@ -1,0 +1,12 @@
+docstr_md/__init__.py,sha256=SmgI8ZEPPMYOOGdoR9rYRbv-AVY91D6HG8KUYfCBPmI,20
+docstr_md/python/__init__.py,sha256=eRyS2r7gexnADWEGIdclJbkEiBzqjO_8LqYZ_vPJ2go,4523
+docstr_md/python/soup_objects.py,sha256=KCO1d_wnrnh-uUTA3j5Yh_gC8gxdV6Q4Ra6Y3_l8QpE,3669
+docstr_md/python/compilers/__init__.py,sha256=l9NdYO8qPEj-91npV92tCnUUVPuwpyqcgEjP4zM6Zx0,36
+docstr_md/python/compilers/sklearn.py,sha256=4f_BmvRbcI8eEzlGmV64KHgu3EWR4R77-fTYm6rv6do,6915
+docstr_md/python/parsers/__init__.py,sha256=Ukv4bMiR2X91yb7fPfKkLAIe-jW8YrWXBeCZs73gQLI,34
+docstr_md/python/parsers/sklearn.py,sha256=9UW8wzxYQ5xhf4UZWFOMLP8ldhBQVMWPDqqfwRq2RHk,6863
+docstr_md-0.0.1.dist-info/LICENSE,sha256=dLiBNvqmfuZ3PlE24JTmnuoxZSN6K6Q7fuAouwpPxTw,1051
+docstr_md-0.0.1.dist-info/METADATA,sha256=YI1RquAHw5Enx7tsh4RvRBzKdZkCjWzJlOL3KWFnqQQ,1869
+docstr_md-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+docstr_md-0.0.1.dist-info/top_level.txt,sha256=8dRphDlIzvRhvkoZlqmzcytiGOqk2fq0mT07Bvu2LLo,10
+docstr_md-0.0.1.dist-info/RECORD,,
