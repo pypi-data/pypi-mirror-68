@@ -1,0 +1,4 @@
+[mkdocs.plugins]
+add-number = mkdocs_add_number_plugin.plugin:AddNumberPlugin
+mkdocs-add-number-plugin = mkdocs_add_number_plugin.plugin:AddNumberPlugin
+
