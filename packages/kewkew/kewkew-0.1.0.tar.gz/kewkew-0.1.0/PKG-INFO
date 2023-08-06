@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: kewkew
+Version: 0.1.0
+Summary: A tiny queue library leveraging asyncio
+Home-page: https://github.com/flyinactor91/kewkew
+Author: Michael duPont
+Author-email: michael@mdupont.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >= 3.7
