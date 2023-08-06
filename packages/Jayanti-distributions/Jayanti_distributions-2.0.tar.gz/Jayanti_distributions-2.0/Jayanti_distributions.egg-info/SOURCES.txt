@@ -1,0 +1,10 @@
+setup.py
+Jayanti_distributions/Binomialdistribution.py
+Jayanti_distributions/Gaussiandistribution.py
+Jayanti_distributions/Generaldistribution.py
+Jayanti_distributions/__init__.py
+Jayanti_distributions.egg-info/PKG-INFO
+Jayanti_distributions.egg-info/SOURCES.txt
+Jayanti_distributions.egg-info/dependency_links.txt
+Jayanti_distributions.egg-info/not-zip-safe
+Jayanti_distributions.egg-info/top_level.txt
