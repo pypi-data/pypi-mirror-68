@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+yaqd_ti/__init__.py
+yaqd_ti/__version__.py
+yaqd_ti/_ads1115.py
+yaqd_ti.egg-info/PKG-INFO
+yaqd_ti.egg-info/SOURCES.txt
+yaqd_ti.egg-info/dependency_links.txt
+yaqd_ti.egg-info/entry_points.txt
+yaqd_ti.egg-info/not-zip-safe
+yaqd_ti.egg-info/requires.txt
+yaqd_ti.egg-info/top_level.txt
