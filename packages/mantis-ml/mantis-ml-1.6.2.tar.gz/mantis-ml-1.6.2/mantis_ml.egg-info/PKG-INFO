@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: mantis-ml
+Version: 1.6.2
+Summary: Disease-agnostic gene prioritisation from high-throughput genomic screens by stochastic semi-supervised learning
+Home-page: https://github.com/astrazeneca-cgr-publications/mantis-ml-release
+Author: Dimitrios Vitsios
+Author-email: dvitsios@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
