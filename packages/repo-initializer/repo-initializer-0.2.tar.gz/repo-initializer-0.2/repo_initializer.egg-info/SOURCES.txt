@@ -1,0 +1,5 @@
+setup.py
+repo_initializer.egg-info/PKG-INFO
+repo_initializer.egg-info/SOURCES.txt
+repo_initializer.egg-info/dependency_links.txt
+repo_initializer.egg-info/top_level.txt
