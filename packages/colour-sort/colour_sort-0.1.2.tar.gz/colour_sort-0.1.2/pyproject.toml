@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "colour_sort"
+version = "0.1.2"
+description = "A tool to generate images using all rgb colours with no duplicates."
+authors = ["David Buckley <buckley.w.david@gmail.com>"]
+license = "MIT"
+readme="README.md"
+homepage = "https://github.com/buckley-w-david/colour_sort"
+repository = "https://github.com/buckley-w-david/colour_sort"
+include = [
+    "LICENSE",
+    "colour_sort/all.npy"
+]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3.7"
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.6.7"
+numpy = "^1.17"
+pillow = "^6.2"
+
+# A list of all of the optional dependencies, some of which are included in the
+# below `extras`. They can be opted into by apps.
+importlib_resources = { version = "^1.0", optional = true }
+
+[tool.poetry.extras]
+cli = ["importlib_resources"]
+
+[tool.poetry.scripts]
+colour = 'colour_sort:cli.run'
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pyinstrument = "^3.0"
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
