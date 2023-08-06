@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: GEMLibrary-windows
+Version: 0.2.6
+Summary: GEM Derivatives Library
+Home-page: UNKNOWN
+Author: Kevin Morgan
+Author-email: KMorgan@teleioscommodities.com
+License: UNKNOWN
+Description: # GEM Derivatives Library
+        
+        Contents of Library
+        * Options
+          * Vanilla
+            * Black Scholes (b = ir)
+            * Merton Stock Option (b = ir - dividend yield)
+            * Black76, option on Futures (b = 0)
+            * Black76, fully margined options account (b = 0 and ir = 0)
+            * Currency Option, b = ir - foreign risk free rate
+          * Multi Asset
+            * Duel Asset Spread Option
+          * Barrier
+            * Digital
+        * Correlated Linear
+          * Load Following Imbalance
+          * Ancillary Imbalance
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

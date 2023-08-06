@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+GEMLibrary_windows.egg-info/PKG-INFO
+GEMLibrary_windows.egg-info/SOURCES.txt
+GEMLibrary_windows.egg-info/dependency_links.txt
+GEMLibrary_windows.egg-info/top_level.txt
+Teleios/GEMLib.py
+Teleios/_GEMLib.exp
+Teleios/_GEMLib.lib
+Teleios/_GEMLib.pyd
+Teleios/_GEMLib.pyd.manifest
+Teleios/__init__.py
