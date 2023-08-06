@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyephys.egg-info/PKG-INFO
+pyephys.egg-info/SOURCES.txt
+pyephys.egg-info/dependency_links.txt
+pyephys.egg-info/top_level.txt
