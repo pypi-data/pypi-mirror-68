@@ -1,0 +1,13 @@
+dsmr/__init__.py,sha256=MrY4HnvGt9z1aNrsTDxwAz1oHvyEk4t_C0JYzoIxDdU,1097
+dsmr/cli.py,sha256=j_AI4hfod8yJCMTmi7-vfhkr-yfvm38J40Pb2enMu2c,338
+dsmr/datalogger.py,sha256=tUNOJtYgm65Z7Nf5BE2R_IUeLtkGVFOZqci4MFod3M8,274
+dsmr/dsmr/__init__.py,sha256=YeCoWwFVmgJ10ZQZ5Z2_75Xo88KMS1xzRRkE2cX0RNU,6331
+dsmr/plugins/__init__.py,sha256=pj3dX1DQqYPMYMFPKHkT5okaBn7AxtEs8_8MASCyLZY,492
+dsmr/plugins/pvoutput.py,sha256=PKMp_pi7CJxLi3umzfh3TqG89CaROqFJECaRKEKqQUE,2451
+dsmr/telegram/__init__.py,sha256=8RcQy7JB0VLU3ep0TZfGWCV1o2gBDSwDIvxc94yRruY,1495
+pyproject.toml,sha256=Z0hId3NugGrV_Y_bBdErjkZU-EU3qGidJee7GewQ9jY,630
+dsmr_data_logger-0.1.16.dist-info/entry_points.txt,sha256=xqB_mss2Mt11tay_VKYVRvnw4G1cmJCJ29rEJe1Yr1E,38
+dsmr_data_logger-0.1.16.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+dsmr_data_logger-0.1.16.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+dsmr_data_logger-0.1.16.dist-info/METADATA,sha256=h-wOHps3h6OtlCVJRNrolgzc1lIVvgFjUaozUMZ8J1I,647
+dsmr_data_logger-0.1.16.dist-info/RECORD,,
