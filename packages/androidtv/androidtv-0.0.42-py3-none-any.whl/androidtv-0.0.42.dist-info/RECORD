@@ -1,0 +1,12 @@
+androidtv/__init__.py,sha256=S9gnVF2S0rq_ODS4hRNpn0xqsm5wHCZ76Fdmf_GLVOQ,3473
+androidtv/adb_manager.py,sha256=7WGIWMDF9Av9f70S94wIHccnG_0jSpWmKECk6DIuTwQ,15916
+androidtv/androidtv.py,sha256=d__vwRU4bDkhzxa_HYfpPfa4p7MT0cN2KTHkls9pkXw,14616
+androidtv/basetv.py,sha256=_OeuS3hMZVS36IiDL07j9JYiF5IVaRW279HXRklCnqQ,44737
+androidtv/constants.py,sha256=lFX0F-8lMVYDUml_bQ-SMs_FwyHplAsZJNOYqsWqN90,12638
+androidtv/exceptions.py,sha256=yrtvavrSCDA3xZeg7yoVsk4abWQt83DbzDUSWjAFLog,139
+androidtv/firetv.py,sha256=nKHfoxO-OrBPx5DuEE7BBpqTF47iJlnU92UaKQL4FPo,13699
+androidtv-0.0.42.dist-info/LICENSE,sha256=eFpaGjurZXEgBYAlgVcrV8S1GawWdkkgJ71CIhBUFGQ,1077
+androidtv-0.0.42.dist-info/METADATA,sha256=1tXlUu0cvnKFi3OFBTkw4-F8-rn5b4wCvraXS9q4PFA,2227
+androidtv-0.0.42.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+androidtv-0.0.42.dist-info/top_level.txt,sha256=4p0s2-QNCjDXCO8sI1d99Q1SPsN5l9WJMZbTZ-zF9WQ,10
+androidtv-0.0.42.dist-info/RECORD,,
