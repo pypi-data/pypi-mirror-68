@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycocotools-windows
+Version: 2.0
+Summary: UNKNOWN
+Home-page: https://github.com/zmic/cocoapi
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: setuptools (>=18.0)
+Requires-Dist: cython (>=0.27.3)
+Requires-Dist: matplotlib (>=2.1.0)
+
+UNKNOWN
+
+
