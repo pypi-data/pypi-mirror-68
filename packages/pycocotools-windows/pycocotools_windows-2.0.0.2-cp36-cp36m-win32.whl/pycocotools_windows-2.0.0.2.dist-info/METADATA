@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: pycocotools-windows
+Version: 2.0.0.2
+Summary: cocotools for Windows
+Home-page: https://github.com/zmic/cocoapi
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: setuptools (>=18.0)
+Requires-Dist: cython (>=0.27.3)
+Requires-Dist: matplotlib (>=2.1.0)
+
+=================
+What is it?
+=================
+
+cocoapi for python >= 3.6 that pip-installs on Windows.
+
+* only works on Windows. 
+
+How do I set it up?
+-------------------------------
+
+* pip install cocoapi-windows
+
+
+
