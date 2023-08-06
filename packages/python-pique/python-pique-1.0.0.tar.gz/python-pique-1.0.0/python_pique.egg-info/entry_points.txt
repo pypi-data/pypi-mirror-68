@@ -1,0 +1,3 @@
+[console_scripts]
+pq = pique.pq:main
+
