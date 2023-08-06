@@ -1,0 +1,11 @@
+setup.py
+analogica_probability/Binomialdistribution.py
+analogica_probability/Gaussiandistribution.py
+analogica_probability/Generaldistribution.py
+analogica_probability/__init__.py
+analogica_probability/python_code.py
+analogica_probability.egg-info/PKG-INFO
+analogica_probability.egg-info/SOURCES.txt
+analogica_probability.egg-info/dependency_links.txt
+analogica_probability.egg-info/not-zip-safe
+analogica_probability.egg-info/top_level.txt
