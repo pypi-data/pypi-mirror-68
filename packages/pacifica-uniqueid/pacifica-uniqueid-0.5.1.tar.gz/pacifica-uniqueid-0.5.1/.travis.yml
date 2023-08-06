@@ -1,0 +1,72 @@
+language: python
+dist: bionic
+cache: pip
+python: 3.6
+stages:
+  - lint
+  - test
+  - test-docs
+  - test-docker
+  - deploy
+before_script:
+  - pip install ansible
+  - ansible-galaxy install pacifica.ansible_pacifica pacifica.ansible_travis
+  - ansible-playbook ~/.ansible/roles/pacifica.ansible_travis/molecule/common/playbook.yml -i ~/.ansible/roles/pacifica.ansible_travis/molecule/common/inventory.yml -e "ansible_python_interpreter=/home/travis/virtualenv/python${TRAVIS_PYTHON_VERSION}/bin/python travis_virtualenv=python${TRAVIS_PYTHON_VERSION} github_repository=uniqueid"
+script:
+  - cd tests
+  - coverage run --include='*/pacifica/uniqueid/*' -m pytest -xsv
+  - coverage report --include='*/pacifica/uniqueid/*' --omit='*/pacifica/uniqueid/wsgi*' -m --fail-under 100
+jobs:
+  include:
+    - stage: lint
+      script: pre-commit run -a
+    - python: 3.7
+      script: pre-commit run -a
+    - python: 3.8
+      script: pre-commit run -a
+    - stage: test
+    - python: 3.7
+    - python: 3.8
+    - stage: test-docs
+      python: 3.8
+      before_script: skip
+      script: >
+        cd docs;
+        sphinx-build -T -E -b readthedocs -d _build/doctrees-readthedocs -D language=en . _build/html;
+        sphinx-build -T -b readthedocssinglehtmllocalmedia -d _build/doctrees-readthedocssinglehtmllocalmedia -D language=en . _build/localmedia;
+        sphinx-build -b latex -D language=en -d _build/doctrees . _build/latex;
+        sphinx-build -T -b epub -d _build/doctrees-epub -D language=en . _build/epub
+    - stage: test-docker
+      sudo: required
+      python: 3.8
+      services:
+      - docker
+      script: >
+        docker-compose build --pull;
+        docker-compose up -d;
+        MAX_TRIES=60;
+        HTTP_CODE=$(curl -sL -w "%{http_code}\\n" 'localhost:8051/getid' -o /dev/null || true);
+        while [[ $HTTP_CODE != 404 && $MAX_TRIES > 0 ]] ; do
+          sleep 1;
+          HTTP_CODE=$(curl -sL -w "%{http_code}\\n" 'localhost:8051/getid' -o /dev/null || true)
+          MAX_TRIES=$(( MAX_TRIES - 1 ))
+        done;
+        curl 'http://127.0.0.1:8051/getid?range=1&mode=test'
+    - stage: deploy
+      language: python
+      before_install: skip
+      script: skip
+      python: 3.8
+      deploy:
+        skip_cleanup: true
+        provider: pypi
+        user: dmlb2000
+        distributions: sdist bdist_wheel
+        password:
+          secure: JDfdgUub3ICxJNW8LStwJLXsq6R7YI7RbRsrLNFj88ZhzY5MqVfsgVoFd1iWQ1radHiAQmDRMMFVFGE2tdMzuuKjvcPS1ziofzpvhzHQ2nAolFIKF96/20i1q0Rv8PEQxyyhrctpFzUttd9bwyaSXmh4aB0Ltx3w71yCWxFeyEQv6Qr288tvEydvcxaaZm5oKoH3ztvX7pXWFAkjv5AtzHz9chli1ROGY9IHaDAEmPzdIbnky5SMoMl4vnNXHNQOVipEW6Ru+FILa5mzYanyBauQ+KP+gAc+SkMXNEnb/QrfU3rY1jcEbUYqgwcK/Z0VD8iAV+Kc3NRQhZdy//kmqRVEA/r4Zo6JewR/zj+Fq9ArrNeig3qnKTYZBwGSsc5Es70rtZieYdUYw/A5KDSmkGHgzYFUbKPG8xu4hilVHOS4cBLhPokoER4AyJbChRvrk8eSA2FsuQy7UMfcRMXT3m9xOhdati+dok8LCL8qhKRqMJ/UX12kfw5aL2kWQKFLDkahNswONXQQdOeRV2uq/6RR9TZE++G2+jXZ8PcPlwuP2SH7tW9ChOunaspE62QUosfZnJtU8RggHjbXqeE/22LBE48uO4WLIqzmSvjF9LiWdXz2E9+b9GfKqcTZPOqnseiIEnWkxAwVfcUnrGCdBZS+CNpbPwUlHsNPcarGeUI=
+        on:
+          tags: true
+install:
+  - pip install -r requirements-dev.txt
+  - pip install .
+  - pip freeze
