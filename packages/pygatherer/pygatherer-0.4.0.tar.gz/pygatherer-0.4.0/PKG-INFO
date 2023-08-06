@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pygatherer
+Version: 0.4.0
+Summary: An API for the gatherer
+Home-page: https://github.com/spapanik/pygatherer
+License: LGPL-3.0+
+Keywords: magic,MtG
+Author: Stephanos Kuma
+Author-email: spapanik21@gmail.com
+Requires-Python: >=3.6.0,<4.0.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: beautifulsoup4 (>=4.0.0,<5.0.0)
+Requires-Dist: lxml (>=4.0.0,<5.0.0)
+Requires-Dist: requests (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/spapanik/pygatherer
+Description-Content-Type: text/markdown
+
+<p align="center">
+<a href="https://travis-ci.org/spapanik/pygatherer"><img alt="Build" src="https://travis-ci.org/spapanik/pygatherer.svg?branch=master"></a>
+<a href="https://coveralls.io/github/spapanik/pygatherer"><img alt="Coverage" src="https://coveralls.io/repos/github/spapanik/pygatherer/badge.svg?branch=master"></a>
+<a href="https://github.com/spapanik/pygatherer/blob/master/LICENSE.txt"><img alt="License" src="https://img.shields.io/github/license/spapanik/pygatherer"></a>
+<a href="https://pypi.org/project/pygatherer"><img alt="PyPI" src="https://img.shields.io/pypi/v/pygatherer"></a>
+<a href="https://pepy.tech/project/pygatherer"><img alt="Downloads" src="https://pepy.tech/badge/pygatherer"></a>
+<a href="https://github.com/psf/black"><img alt="Code style" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+</p>
+
+Installation
+------------
+
+You can install pygatherer directly with pip:
+
+    $ pip install pygatherer
+
