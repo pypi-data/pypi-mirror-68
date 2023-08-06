@@ -1,0 +1,8 @@
+sockio>=0.8
+
+[simulator]
+sinstruments
+scpi-protocol>=0.2
+
+[tango-ds]
+PyTango

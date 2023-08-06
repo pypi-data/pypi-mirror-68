@@ -1,0 +1,3 @@
+[console_scripts]
+CryoConTempController = cryocon.tango:main [tango-ds]
+
