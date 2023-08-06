@@ -1,0 +1,16 @@
+dgp_server/VERSION,sha256=g38ZMkDDUTKRERdrRB0Qj-naa3Mi1eNvSRB_6n_m8nM,7
+dgp_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dgp_server/blueprint.py,sha256=Z9tFqf3Y1Nv8XpIQ7HD9cDUl5II-zQO3fq6QafN-3Lg,8675
+dgp_server/config_storer.py,sha256=c7Wqe4wAwVm0zZZBcbE-Jm3H1BLSLexD_asGDH_NelI,1546
+dgp_server/configurations.py,sha256=MAXLUJSzz0-qz8qXLwLBgbdyf__1LxRBIuhCky_BDek,3762
+dgp_server/line_selector.py,sha256=xKcAQO67L63OE8u1WJLr9sV19dxOfdPc5lMwvbBDHh4,199
+dgp_server/log.py,sha256=UwNHRm1o01_rppDgWBWreg4McBm9SHBSZPQEaIKnwXc,268
+dgp_server/poster.py,sha256=LqHFsO9E2Tos28uwDJ1BkP20jl9WC5TOQ19xlNQbBP4,1183
+dgp_server/publish_flow.py,sha256=0xhowhKH6FRFuWKPJBJy0x5eZubhbd3G0r9-ieJkFEQ,3625
+dgp_server/row_sender.py,sha256=j55zyfkC-MjvugD3J9wYaEELExW8gjj7iArkDJyRpCQ,2824
+dgp_server/server.py,sha256=z1zZuJd6-zYHdiDrRbneFpMW3rYkm6xFhTyiU8sPE7k,361
+dgp_server-0.0.66.dist-info/LICENSE,sha256=2PDp1cNW4PVf_oIPxvtwbVMN4gYey181vlzGL7Lx1VI,1067
+dgp_server-0.0.66.dist-info/METADATA,sha256=M5AO_06IVnZzaErEFElitXqOUx_-b7Igd27idaLlQKM,908
+dgp_server-0.0.66.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+dgp_server-0.0.66.dist-info/top_level.txt,sha256=uBxfKhkG7ZdM4qIlGZzW-PllC44Wn9Y17SPuC7TwEHQ,11
+dgp_server-0.0.66.dist-info/RECORD,,
