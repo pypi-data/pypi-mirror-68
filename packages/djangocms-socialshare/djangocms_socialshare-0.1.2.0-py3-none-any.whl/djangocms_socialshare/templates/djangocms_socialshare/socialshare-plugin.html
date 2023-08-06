@@ -1,0 +1,11 @@
+{% load i18n cms_tags menu_tags staticfiles page_meta_tags meta_extra socialshare %}
+
+{% page_meta request.current_page as meta %}
+
+<div class="djangocms-socialshare-plugin">
+    {% for item in instance.items.all %}
+        <a class="icon" href="{% item_url item %}" target="_blank">
+            <i class="{{ item.get_icon_css_class }}"></i>
+        </a>
+    {% endfor %}
+</div>
