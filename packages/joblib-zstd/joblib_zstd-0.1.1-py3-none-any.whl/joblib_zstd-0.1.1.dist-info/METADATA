@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: joblib-zstd
+Version: 0.1.1
+Summary: Add Zstandard compression/decompression functionality for joblib
+Home-page: https://github.com/roy-ht/joblib-zstd
+License: MIT
+Keywords: joblib,Zstandard
+Author: Hiroyuki Tanaka
+Author-email: aflc0x@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: joblib
+Requires-Dist: zstandard
+Project-URL: Repository, https://github.com/roy-ht/joblib-zstd
+Description-Content-Type: text/markdown
+
+joblib-zstd is a plugin, which enables Zstandard (.zst) compression and decompression through joblib.dump and joblib.load.
+
+# Prerequisites
+
+You need [joblib](https://joblib.readthedocs.io/en/latest/).
+
+# Install
+
+```
+pip install joblib-zstd
+```
+
+If you failed to install, update version of pip and setuptools:
+
+```
+pip install -U pip setuptools
+```
+
+# Usage
+
+```python
+import joblib
+import joblib_zstd
+joblib_zstd.register()
+
+joblib.dump({'a': 1, 'b': 2}, 'obj.zst', compress=5)  # implicit compression
+joblib.dump({'a': 1, 'b': 2}, 'obj.bin', compress=('zstd', 5))  # explicit compression
+
+joblib.load('obj.zst')  # implicit decompression
+```
+
+# LISENCE
+
+MIT
+
