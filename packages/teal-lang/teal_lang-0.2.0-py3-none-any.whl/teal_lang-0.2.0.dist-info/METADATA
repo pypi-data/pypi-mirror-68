@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: teal-lang
+Version: 0.2.0
+Summary: The Teal Programming Language
+Home-page: https://www.condense9.com
+License: Apache-2.0
+Keywords: serverless,orchestration,concurrency,aws,language
+Author: Ric da Silva
+Author-email: ric@condense9.com
+Maintainer: Ric da Silva
+Maintainer-email: ric@condense9.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Dist: docopt
+Requires-Dist: graphviz (>=0.13.2,<0.14.0)
+Requires-Dist: pydot (>=1.4.1,<2.0.0)
+Requires-Dist: pynamodb
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
+Requires-Dist: schema (>=0.7.2,<0.8.0)
+Requires-Dist: sly (>=0.4,<0.5)
+Project-URL: Bug Tracker, https://github.com/condense9/teal-lang/issues
+Project-URL: Changelog, https://github.com/condense9/teal-lang/blob/master/CHANGELOG.md
+Project-URL: Repository, https://github.com/condense9/teal-lang
+Description-Content-Type: text/markdown
+
+## The Teal Programming Language
+
+![Tests](https://github.com/condense9/teal-lang/workflows/Build/badge.svg?branch=master) [![PyPI](https://badge.fury.io/py/teal-lang.svg)](https://pypi.org/project/teal-lang)
+
+Teal is a programming language for microservice orchestration. With it, you can 
+- get "bare-metal" concurrency on AWS Lambda
+- test data pipelines locally
+- worry less about building infrastructure
+
+**Teal is alpha quality - unstable, but usable.**
+
+[Play with Teal in your browser!](https://www.condense9.com/playground)
+
+```shell
+$ pip install teal-lang
+```
+
+Getting started:
+- Clone this repository
+- `poetry install`
+- See [the hello example](examples/hello) to get started
+
+*Do not be afraid, the parentheses will not harm you.*
+
+---
+
+
+### Known Limitations and Issues
+
+Only one program file is supported (module/package system coming soon).
+
+There's no error handling. Coming soon!
+
+The tests are pretty much all broken.
+
