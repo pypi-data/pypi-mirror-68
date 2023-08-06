@@ -1,0 +1,11 @@
+aiohttp_tools/__init__.py,sha256=lk2gt2Ukqe1QbIjFiwBEHS5Yqc-FWODMdbtKr0JZpbQ,2109
+aiohttp_tools/context_processors.py,sha256=lKdVeFxvlXrOMutO8EK_JgAKR4gzliH41HJOeA50Gjg,335
+aiohttp_tools/flash.py,sha256=oxCs-o67TXMfwz38qCKy24nLvkfGDDZjT_dYCcXH8TA,1272
+aiohttp_tools/jinja.py,sha256=TwL1YlkAnP5BmN6R52mJukH1HT5gcwS1mWoWll5fNtI,208
+aiohttp_tools/middlewares.py,sha256=bGsKWBvFprLSqK0QPAq3tJhK_7XH5PG1c5wVCHwCc6U,746
+aiohttp_tools/static_url.py,sha256=G6eezyiHeBLpavlWsUU6bxrtSHxDLpus6rU0tlSthns,716
+aiohttp_tools-0.2.1.dist-info/LICENSE,sha256=0BDHwBbqPGnM7ZEFv3mLDiUwq7M8sFAUNndMt9gu2Ro,725
+aiohttp_tools-0.2.1.dist-info/METADATA,sha256=RYSEVN_8vBmmAf3QaR6Hxsjxso1RTKGJvznzKQL0Ios,2040
+aiohttp_tools-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aiohttp_tools-0.2.1.dist-info/top_level.txt,sha256=QtqJW-7UxkdXPZ95dl1RtzjQm35ZG3AnUetjflzO1Vw,14
+aiohttp_tools-0.2.1.dist-info/RECORD,,
