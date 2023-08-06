@@ -1,0 +1,8 @@
+README.md
+setup.py
+HIDUU.egg-info/PKG-INFO
+HIDUU.egg-info/SOURCES.txt
+HIDUU.egg-info/dependency_links.txt
+HIDUU.egg-info/top_level.txt
+hiduu/_init_.py
+hiduu/hiduu.py
