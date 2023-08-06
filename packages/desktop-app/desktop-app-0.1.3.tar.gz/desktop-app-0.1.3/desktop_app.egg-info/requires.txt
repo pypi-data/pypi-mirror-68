@@ -1,0 +1,5 @@
+setuptools_scm
+importlib_metadata
+
+[:sys_platform == "win32"]
+pywin32
