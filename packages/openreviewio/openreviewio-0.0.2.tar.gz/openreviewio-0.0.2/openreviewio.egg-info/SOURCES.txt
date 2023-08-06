@@ -1,0 +1,6 @@
+README.md
+setup.py
+openreviewio.egg-info/PKG-INFO
+openreviewio.egg-info/SOURCES.txt
+openreviewio.egg-info/dependency_links.txt
+openreviewio.egg-info/top_level.txt
