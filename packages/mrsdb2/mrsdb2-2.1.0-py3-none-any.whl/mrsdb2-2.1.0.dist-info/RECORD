@@ -1,0 +1,11 @@
+mrsdb2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mrsdb2/atomicwrite.py,sha256=PQe6ljC-g2BvXubUnlBOhcKBqG3PfJCh7odxSCJ_4A8,3929
+mrsdb2/cache.py,sha256=ZZaJRhBZUu1qWJlLRbGDqqIOPErQtZwj8ZFTXpEbpek,947
+mrsdb2/exceptions.py,sha256=yJcVvfhDlDwffsLG1oKctjlVEhTwwqZsk8W8c6mU5nk,197
+mrsdb2/mrsdb.py,sha256=FIVbTc2Xt6uizfCf04ieOi9URFfoIYpPcTHoXzhOTNc,6390
+mrsdb2/utils.py,sha256=XXdCm5cpxCAraBy3D95ftHUTCoI5VlYQCEkZYwMI7cY,582
+mrsdb2-2.1.0.dist-info/LICENSE,sha256=JJG3YSB7xaiVtyOEvzsKtJoIWqdL0ePYFH478IkdzX4,1069
+mrsdb2-2.1.0.dist-info/METADATA,sha256=DVyTHorRpwoSFqM-3vA9jteyJeIckthytN7MUJALGsY,655
+mrsdb2-2.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mrsdb2-2.1.0.dist-info/top_level.txt,sha256=kcws3TNoU_0PSpbxiPVL3LNgKoOVssD2X249Gcpo4AM,7
+mrsdb2-2.1.0.dist-info/RECORD,,
