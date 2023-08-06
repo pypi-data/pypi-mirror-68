@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+etaler/__init__.py
+etaler/etaler_rflx.so
+etaler/etaler_rflx_rdict.pcm
+pyetaler.egg-info/PKG-INFO
+pyetaler.egg-info/SOURCES.txt
+pyetaler.egg-info/dependency_links.txt
+pyetaler.egg-info/requires.txt
+pyetaler.egg-info/top_level.txt
