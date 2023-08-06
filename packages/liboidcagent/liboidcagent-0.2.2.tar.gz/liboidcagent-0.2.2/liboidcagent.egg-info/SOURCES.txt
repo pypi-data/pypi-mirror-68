@@ -1,0 +1,8 @@
+README.md
+setup.py
+liboidcagent/__init__.py
+liboidcagent/liboidcagent.py
+liboidcagent.egg-info/PKG-INFO
+liboidcagent.egg-info/SOURCES.txt
+liboidcagent.egg-info/dependency_links.txt
+liboidcagent.egg-info/top_level.txt

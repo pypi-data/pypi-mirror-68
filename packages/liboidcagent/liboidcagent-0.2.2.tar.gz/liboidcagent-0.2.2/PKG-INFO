@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: liboidcagent
+Version: 0.2.2
+Summary: A python library for requesting OpenID Connect access tokens from oidc-agent.
+Home-page: https://github.com/indigo-dc/liboidc-agent-py
+Author: Gabriel Zachmann
+Author-email: oidc-agent-contact@lists.kit.edu
+License: MIT
+Project-URL: Source, https://github.com/indigo-dc/liboidc-agent-py
+Project-URL: Tracker, https://github.com/indigo-dc/liboidc-agent-py/issues
+Project-URL: Documentation, https://indigo-dc.gitbooks.io/oidc-agent/api-py.html
+Description: # liboidcagent
+        
+        A python library for requesting OpenID Connect access tokens from
+        [oidc-agent](https://github.com/indigo-dc/oidc-agent).
+        
+        ## Usage
+        
+        ```python
+        import liboidcagent as agent
+        
+        token, issuer, expires_at = agent.get_token_response("iam")
+        token, issuer, expires_at = agent.get_token_response("iam", 60)
+        
+        tokenresponse = agent.get_token_response("iam", application_hint="Example-Py-App")
+        tokenresponse = agent.get_token_response("iam", 60, "Example-Py-App")
+        tokenresponse = agent.get_token_response("iam", 60, "Example-Py-App", "openid profile email")
+        tokenresponse = agent.get_token_response("iam", 60, "Example-Py-App", "openid profile email", "foo bar")
+        
+        token = agent.get_access_token("iam", 60, "Example-Py-App")
+        
+        token, issuer, expires_at = agent.get_token_response_by_issuer_url("https://issuer.example.com", 60, "Example-Py-App")
+        
+        token = agent.get_access_token_by_issuer_url("https://issuer.example.com", 60, "Example-Py-App")
+        ```
+        
+        ## Installation
+        `pip install liboidcagent`
+        
+        
+        ## License
+        `liboidcagent` is provided under the [MIT License](https://opensource.org/licenses/MIT).
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Unix
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: Topic :: Utilities
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
