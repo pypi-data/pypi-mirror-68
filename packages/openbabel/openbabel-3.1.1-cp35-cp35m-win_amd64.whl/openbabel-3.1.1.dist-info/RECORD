@@ -1,0 +1,8 @@
+_openbabel.pyd,sha256=rQitI3jAgIC3tVAxlWb5v4pxZUbFyk1Lvu8ybfWaYug,2890752
+openbabel/__init__.py,sha256=KPjL3YWEiLSvdawucBiLFQ4cShf-VGLUCPIGtEAOZJs,546
+openbabel/openbabel.py,sha256=AdRLU9Az20hFnpkLbuDblbUIgis3tFmVifd_4ksRC2U,287957
+openbabel/pybel.py,sha256=uauH3dtAno5R76tC4CVvDp3FTBcju8iu2lYBRyI6_vs,35761
+openbabel-3.1.1.dist-info/METADATA,sha256=on36eMmNmTQTR6oLtwUhBaoJ1Q8lG6QMKbtXFENrcjU,1463
+openbabel-3.1.1.dist-info/WHEEL,sha256=lAhx1E7vuMdfB15XOB_cxzoqY_rMvOvDnKwTbnMf6lo,106
+openbabel-3.1.1.dist-info/top_level.txt,sha256=X4-ciUKaw_RjEikrp9gxzI4p36I7FpZwTuGDDFKvQDI,21
+openbabel-3.1.1.dist-info/RECORD,,
