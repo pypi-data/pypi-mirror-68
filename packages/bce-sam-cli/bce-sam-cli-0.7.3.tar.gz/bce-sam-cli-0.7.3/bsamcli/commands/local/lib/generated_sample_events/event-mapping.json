@@ -1,0 +1,129 @@
+{
+  "http": {
+    "api-proxy": {
+      "filename": "ApiProxy",
+      "help": "Generates a HTTP Trigger Event",
+      "tags": {
+        "resource": {
+          "type": "string",
+          "default": "/{proxy+}"
+        },
+        "path": {
+          "type": "string",
+          "default": "test"
+        },
+        "method": {
+          "type": "string",
+          "default": "POST"
+        },
+        "body": {
+          "type": "string",
+          "default": "{\"test\":\"body\"}",
+          "encoding": "base64"
+        }
+      }
+    }
+  },
+  "bos": {
+    "put": {
+      "filename": "BosPut",
+      "help": "Generates an Baidu BOS Put Event",
+      "tags": {
+        "bucket": {
+          "type": "string",
+          "default": "example-bucket"
+        },
+        "object": {
+          "type": "string",
+          "default": "test/black-hole.png"
+        },
+        "region": {
+          "type": "string",
+          "default": "bj"
+        }
+      }
+    }
+  },
+  "dueros": {
+    "end-session": {
+      "filename": "DuerOSEndSession",
+      "help": "Generates a DuerOS End Session Event",
+      "tags": {
+        "session-id": {
+          "type": "string",
+          "default": "123456789012"
+        },
+        "application-id": {
+          "type": "string",
+          "default": "personal_income_tax"
+        },
+        "request-id": {
+          "type": "string",
+          "default": "1234"
+        },
+        "reason": {
+          "type": "string",
+          "default": "USER_INTIATED"
+        }
+      }
+    },
+    "intent-answer": {
+      "filename": "DuerOSIntentAnswer",
+      "help": "Generates a Dueros Intent Answer Event",
+      "tags": {
+        "session-id": {
+          "type": "string",
+          "default": "123456789012"
+        },
+        "application-id": {
+          "type": "string",
+          "default": "personal_income_tax"
+        },
+        "request-id": {
+          "type": "string",
+          "default": "1234"
+        }
+      }
+    },
+    "start-session": {
+      "filename": "DuerOSStartSession",
+      "help": "Generates a Dueros Start Session Event",
+      "tags": {
+        "session-id": {
+          "type": "string",
+          "default": "123456789012"
+        },
+        "application-id": {
+          "type": "string",
+          "default": "personal_income_tax"
+        },
+        "request-id": {
+          "type": "string",
+          "default": "1234"
+        }
+      }
+    },
+    "event-report": {
+      "filename": "DuerOSEventReport",
+      "help": "Generates a Dueros Report Event",
+      "tags": {
+        "session-id": {
+          "type": "string",
+          "default": "123456789012"
+        },
+        "application-id": {
+          "type": "string",
+          "default": "33c78c8f-22db-4d6a-bfd5-075d264377b7"
+        },
+        "request-id": {
+          "type": "string",
+          "default": "1234"
+        },
+        "user-id": {
+          "type": "string",
+          "default": "1234"
+        }
+      }
+    }
+  }
+}
