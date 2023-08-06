@@ -1,0 +1,10 @@
+setup.py
+tuyaface/__init__.py
+tuyaface/aescipher.py
+tuyaface/const.py
+tuyaface/helper.py
+tuyaface.egg-info/PKG-INFO
+tuyaface.egg-info/SOURCES.txt
+tuyaface.egg-info/dependency_links.txt
+tuyaface.egg-info/requires.txt
+tuyaface.egg-info/top_level.txt
