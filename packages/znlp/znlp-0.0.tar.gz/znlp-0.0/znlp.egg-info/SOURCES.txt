@@ -1,0 +1,6 @@
+README.md
+setup.py
+znlp.egg-info/PKG-INFO
+znlp.egg-info/SOURCES.txt
+znlp.egg-info/dependency_links.txt
+znlp.egg-info/top_level.txt
