@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tradocs
+Version: 0.0.3
+Summary: DocFX localization
+Home-page: https://github.com/eberjoe/ui-docs-zanata-md
+Author: Eber Rodrigues
+Author-email: eberjoe@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: translate-toolkit
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: colorama
+
+# Translation of Source Code for DocFX Websites
+
+This tool translates the source code in Markdown and Yaml for DocFX websites, preserving markup sintax.
+
+Powered by [Yandex.Translate](http://translate.yandex.com)
+
