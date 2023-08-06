@@ -1,0 +1,10 @@
+instachatbot/__init__.py,sha256=3PiH-R_CaUKizoOf3K5t3tKZEdES6wDRDvDhJcBczGA,20
+instachatbot/bot.py,sha256=7KAUYREwz6xadsjB2IkGTJhrQRMiNyM0DiFs60WE5ME,4714
+instachatbot/nodes.py,sha256=6Mm9KyoEiupGzQ70CBDZgvJ1RnSInerKsREztes-xhk,5300
+instachatbot/state.py,sha256=jjnu1vJttRprIJHePc8uU5ZCFYk5oobc0uJYbFzHRus,1533
+instachatbot/storage.py,sha256=Y54Ryym9n_c8Z8A381EITslFgOJRzq722nUF9UzkEZE,777
+instachatbot-0.4.dist-info/LICENSE,sha256=um9yP5XqCqgW32RWr8AU_BEE7RTaZJWuQTDq571R1DI,1071
+instachatbot-0.4.dist-info/METADATA,sha256=rU-UZc1joCHyLPUt2ThOVDwY4Q8LwyqyyXAZeS9pME0,2573
+instachatbot-0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+instachatbot-0.4.dist-info/top_level.txt,sha256=Pkd50xMlcomrQ_HyDmb3jg49gnpcKFalNb-g5FAJsJ8,13
+instachatbot-0.4.dist-info/RECORD,,
