@@ -1,0 +1,14 @@
+json_schema_for_humans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_schema_for_humans/generate.py,sha256=sYbmX_3fTnErReF8DWt2JRK3w0Z-D7qlyzx7dqUYmvw,16626
+json_schema_for_humans/schema_doc.css,sha256=mIoqMiZPmWOiIN8AAED9ys0udBbJZzMumoTdqiNd9H0,1270
+json_schema_for_humans/schema_doc.js,sha256=YMobVs2lyDP4s8qL86SIjD9sDZsw9cMbf619be-hHkM,1955
+json_schema_for_humans/schema_doc.min.js,sha256=tmWph1cik52cC6w2ZRG742JTv25oupm4Itr1hUfB_JY,734
+json_schema_for_humans/templates/schema_doc.template.html,sha256=X3Pc1KUCbZnvEbaYx-JHHGo4I5UBvy2ifvx0-lg2YUE,14995
+json_schema_for_humans-0.9.0.dist-info/AUTHORS,sha256=p728JgnMYQT4lZqnafexZheiJr5y8lnyK41BISde_1c,319
+json_schema_for_humans-0.9.0.dist-info/LICENSE,sha256=TlYXXA_FmkwY_nU4dM1Nxv02Vrt2FOyCoDSmJx-GvIA,563
+json_schema_for_humans-0.9.0.dist-info/METADATA,sha256=ZEBI-K-ecBmF6SHTXMsuQLbu_5qozPLQzoijBctozaM,4204
+json_schema_for_humans-0.9.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+json_schema_for_humans-0.9.0.dist-info/entry_points.txt,sha256=_FXiv28WKdJa-6pj8r_rVKRXE3dQkCH6oEWCKy-S964,78
+json_schema_for_humans-0.9.0.dist-info/pbr.json,sha256=9oiiRcxidlTDHPlaypJo__JHXqZkpsY2aJ4p0PlWDo4,47
+json_schema_for_humans-0.9.0.dist-info/top_level.txt,sha256=66W8L93MQJEiwoyTKDMiu4bFoTPOPM8wh_OyAGJzQyg,23
+json_schema_for_humans-0.9.0.dist-info/RECORD,,
