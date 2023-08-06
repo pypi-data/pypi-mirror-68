@@ -1,0 +1,13 @@
+PyYAML>=4.2b1
+six
+filelock
+tabulate
+dill
+jsonschema>=3.2.0
+coloredlogs
+
+[:python_version < "3"]
+chainmap
+
+[:python_version < "3.4"]
+enum34
