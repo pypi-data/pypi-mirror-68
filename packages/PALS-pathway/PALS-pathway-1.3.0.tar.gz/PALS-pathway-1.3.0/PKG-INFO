@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: PALS-pathway
+Version: 1.3.0
+Summary: Pathway-level Analysis of Metabolites Expression Data
+Home-page: https://github.com/glasgowcompbio/PALS
+Author: Joe Wandy
+Author-email: joe.wandy@glasgow.ac.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
