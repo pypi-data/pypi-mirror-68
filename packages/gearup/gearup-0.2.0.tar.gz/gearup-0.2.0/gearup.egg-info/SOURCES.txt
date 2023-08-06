@@ -1,0 +1,13 @@
+README.md
+setup.py
+gearup/__init__.py
+gearup/common.py
+gearup/meta.py
+gearup/path.py
+gearup/special.py
+gearup/utils.py
+gearup.egg-info/PKG-INFO
+gearup.egg-info/SOURCES.txt
+gearup.egg-info/dependency_links.txt
+gearup.egg-info/requires.txt
+gearup.egg-info/top_level.txt
