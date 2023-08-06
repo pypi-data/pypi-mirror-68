@@ -1,0 +1,3 @@
+[console_scripts]
+translate=googletrans.cli:main
+

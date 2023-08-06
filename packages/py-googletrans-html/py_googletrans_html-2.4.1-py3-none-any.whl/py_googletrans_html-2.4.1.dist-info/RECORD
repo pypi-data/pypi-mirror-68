@@ -1,0 +1,15 @@
+googletrans/__init__.py,sha256=D4Fgo3TxMYODOas0u_OQ6VIc95Bam6-1H7q-XjGz97w,224
+googletrans/adapters.py,sha256=YlXDdFUKSeDePaibAGXtXikHTOXCYmEYgTvnvV3JIgc,562
+googletrans/cli.py,sha256=R2ExiwlApG07_f2KfD04m2rJyNSkn1_W9Xq-HSwAWH8,1415
+googletrans/client.py,sha256=JuMJe6-hlYvjx6DV1bD6ASArhZPEmlRfxo0JXESTHLc,10493
+googletrans/compat.py,sha256=6tLt985lQahfFUTaFuQBjHqgowk7rZ4yoaIqtSA4ZKU,218
+googletrans/constants.py,sha256=S6H0HyoEUzUeT_teyYSYtMDuEm9MxRq3tTL3iSPXplk,2612
+googletrans/gtoken.py,sha256=KgTx3m4Gf5fVHoZoViCC3DQQkbx__iylFlrx1P1Ro_A,7210
+googletrans/models.py,sha256=zOAZKRGLsW_VQ-iZr3vHBYXsIKz68WN9yh4QUlHV874,1507
+googletrans/urls.py,sha256=uq_Hp_X0fDoFbv3qTrKibuGNAE6gsh4HOXFZSRP-Ukc,165
+googletrans/utils.py,sha256=wfDqKrkPYqyJDe3FB2yOb1ZhInjsvzs2O773M9F7Kws,1785
+py_googletrans_html-2.4.1.dist-info/entry_points.txt,sha256=H2lOljQ18GY__iF_7yq2UpUem4SDYBhwkQvz0j1iGEs,50
+py_googletrans_html-2.4.1.dist-info/LICENSE,sha256=WBM2Ad-P6SHHkQtDIQ1yTaFnUDezNlLZDd4QGp_NoZc,1077
+py_googletrans_html-2.4.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+py_googletrans_html-2.4.1.dist-info/METADATA,sha256=kfIhePe-AaghXt922X_eyFrti0If2F3SpqnEgLC3hj4,10198
+py_googletrans_html-2.4.1.dist-info/RECORD,,
