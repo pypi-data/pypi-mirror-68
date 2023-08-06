@@ -1,0 +1,11 @@
+README.md
+setup.py
+imagegengan/__init__.py
+imagegengan/models.py
+imagegengan/util.py
+imagegengan.egg-info/PKG-INFO
+imagegengan.egg-info/SOURCES.txt
+imagegengan.egg-info/dependency_links.txt
+imagegengan.egg-info/requires.txt
+imagegengan.egg-info/top_level.txt
+tests/__init__.py
