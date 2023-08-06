@@ -1,0 +1,4 @@
+aws_cdk.core==1.35.0
+aws_cdk.aws_lambda==1.35.0
+aws_cdk.aws_sns==1.35.0
+aws_cdk.aws_sns_subscriptions==1.35.0
