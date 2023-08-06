@@ -1,0 +1,17 @@
+ISCN_example.txt
+MANIFEST.in
+Mitelman.txt
+README.md
+setup.py
+ISCNSNAKE/ISCNParser.py
+ISCNSNAKE/ISCN_storage.h5
+ISCNSNAKE/__init__.py
+ISCNSNAKE/quick_SNAKE.py
+ISCNSNAKE/run_SNAKE.py
+ISCNSNAKE/run_SNAKE_unstable.py
+ISCNSNAKE/tests.py
+ISCNSNAKE.egg-info/PKG-INFO
+ISCNSNAKE.egg-info/SOURCES.txt
+ISCNSNAKE.egg-info/dependency_links.txt
+ISCNSNAKE.egg-info/requires.txt
+ISCNSNAKE.egg-info/top_level.txt
