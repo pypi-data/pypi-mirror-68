@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: ffp
+Version: 0.2.0
+Summary: Interface to finalfusion embeddings
+Home-page: https://github.com/sebpuetz/ffp
+Author: Sebastian Pütz
+Author-email: seb.puetz@gmail.com
+License: BlueOak-1.0.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
