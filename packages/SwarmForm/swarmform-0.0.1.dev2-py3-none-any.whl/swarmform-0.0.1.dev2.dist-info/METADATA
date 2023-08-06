@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: swarmform
+Version: 0.0.1.dev2
+Summary: SwarmForm Workflow Management Software
+Home-page: https://github.com/SwarmForm/SwarmForm
+Author: Kalana Wijethunga, Randika Jayasekara, Ayesh Weerasinghe
+Author-email: kalana.16@cse.mrt.ac.lk, rpjayaseka.16@cse.mrt.ac.lk, ayeshweerasinghe.16@cse.mrt.ac.lk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: FireWorks (>=1.9.5)
+Requires-Dist: PyYAML (>=5.3.1)
+
+# SwarmForm
+
+
