@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+gaubi_probability/Binomialdistribution.py
+gaubi_probability/Gaussiandistribution.py
+gaubi_probability/Generaldistribution.py
+gaubi_probability/__init__.py
+gaubi_probability.egg-info/PKG-INFO
+gaubi_probability.egg-info/SOURCES.txt
+gaubi_probability.egg-info/dependency_links.txt
+gaubi_probability.egg-info/not-zip-safe
+gaubi_probability.egg-info/top_level.txt
