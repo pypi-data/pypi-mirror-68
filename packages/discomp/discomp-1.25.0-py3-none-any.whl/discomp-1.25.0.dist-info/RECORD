@@ -1,0 +1,13 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/func_examples.py,sha256=A4kPQHpRvBkJwXH5ANe3y51g0Cqdwy3wgPenJRtpHZg,231
+tests/test_pool.py,sha256=14LNW4qnGfVFEVrpucUtwL0U5p4wNPaKl2Cf2Lex4SI,63947
+tests/test_process.py,sha256=zVeuIXvLImsEqz3TYjWdH-ly0F_gwdWUz4CyLHgAoTE,1486
+tests/live/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/live/test_live_discomp.py,sha256=o2suSxH1v1-EaWej7Cktzw0G1jAVC0YH0GfezsZedMY,2914
+tests/live/test_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/live/test_files/pool_helper.py,sha256=SBCbV-M8zJkWTxuBioCtqMYGvw3t1oJ2IjuO7j1lweU,478
+tests/live/test_files/process_helper.py,sha256=G7BL9dB00_M6HQGICfRwWUETPPLiTTsFEf_Jrl39UZE,388
+discomp-1.25.0.dist-info/METADATA,sha256=CY82YHp8jVsxjtiI3OHKQF6l8jUK6TVRQXN1GZOlL7c,5161
+discomp-1.25.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+discomp-1.25.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+discomp-1.25.0.dist-info/RECORD,,
