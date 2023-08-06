@@ -1,0 +1,5 @@
+docutils==0.11
+dulwich==0.15.0
+PyYAML==3.10.0
+Sphinx==1.6.1
+stestr==2.1.0
