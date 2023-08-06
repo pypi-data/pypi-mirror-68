@@ -1,0 +1,1 @@
+#define HTS_VERSION_TEXT "1.10.2-69-g382867a"
