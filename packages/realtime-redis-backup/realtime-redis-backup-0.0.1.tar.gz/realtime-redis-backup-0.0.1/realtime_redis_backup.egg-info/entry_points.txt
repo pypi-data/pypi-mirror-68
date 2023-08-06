@@ -1,0 +1,4 @@
+[console_scripts]
+rrb = realtime_redis_backup.__main__:main
+rrb-restore = realtime_redis_backup.__main__restore__:main
+

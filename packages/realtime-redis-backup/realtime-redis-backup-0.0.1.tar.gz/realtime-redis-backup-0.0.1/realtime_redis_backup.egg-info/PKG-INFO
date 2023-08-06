@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: realtime-redis-backup
+Version: 0.0.1
+Summary: Realtime backup Redis data to S3
+Home-page: https://github.com/cr0hn/realtime-redis-backup
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: License :: OSI Approved :: BSD License
+Description: UNKNOWN
+Keywords: unix,pipes,stdin,stderr
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
