@@ -1,0 +1,6 @@
+README.md
+setup.py
+onthefly.egg-info/PKG-INFO
+onthefly.egg-info/SOURCES.txt
+onthefly.egg-info/dependency_links.txt
+onthefly.egg-info/top_level.txt
