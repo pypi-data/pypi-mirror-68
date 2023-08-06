@@ -1,0 +1,7 @@
+README.md
+setup.py
+nadar/__init__.py
+nadar.egg-info/PKG-INFO
+nadar.egg-info/SOURCES.txt
+nadar.egg-info/dependency_links.txt
+nadar.egg-info/top_level.txt
