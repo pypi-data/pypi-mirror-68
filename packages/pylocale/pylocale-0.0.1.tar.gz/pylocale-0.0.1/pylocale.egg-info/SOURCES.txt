@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pylocale/__init__.py
+pylocale/aliases.py
+pylocale/errors.py
+pylocale/main.py
+pylocale/parser.py
+pylocale.egg-info/PKG-INFO
+pylocale.egg-info/SOURCES.txt
+pylocale.egg-info/dependency_links.txt
+pylocale.egg-info/top_level.txt
