@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pyqtconfig
+Version: 0.9.0
+Summary: An API for keeping PyQt widgets in sync with a config dictionary or QSettings object.
+Home-page: https://github.com/learnpyqt/pyqtconfig
+Author: Martin Fitzpatrick
+Author-email: martin.fitzpatrick@gmail.com
+License: GPL
+Description: pyqtconfig is a simple API for keeping a config dict in sync with PyQt widgets.     Updating the widget automagically updates the dict; updating the dict updates the widget. Internal support     for both dictionary config, QSettings and config XML import/export. Combo and list boxes also support     mapping from display->internal values.
+Keywords: pyqt desktop gui pyqt5 qt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
