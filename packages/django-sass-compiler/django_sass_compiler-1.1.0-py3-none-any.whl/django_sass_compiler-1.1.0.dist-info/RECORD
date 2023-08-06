@@ -1,0 +1,8 @@
+django_sass_compiler/__init__.py,sha256=KDYluy7WNXi_uvOc0ROO6QVvEU9fZLjvVR3KZoSuqTQ,3534
+django_sass_compiler/apps.py,sha256=TPrIiCNHCJMkQRcYvjNn0E376bV_D0uNyT7rQ5obRVw,113
+django_sass_compiler/management/commands/sass-compiler.py,sha256=fMSGHMDEf6I30C4sXfigGl_cf1Xb3GR68SzAwD7rblA,12841
+django_sass_compiler-1.1.0.dist-info/LICENSE,sha256=3NKe-jAEJ-Rw70XwgepkYS6AMWYMCs0Mffl3O57DfIg,1511
+django_sass_compiler-1.1.0.dist-info/METADATA,sha256=P_GcANUlfN16dQT9RBkT3fuwYEYUr0FMk0zfAQF9fjk,5871
+django_sass_compiler-1.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_sass_compiler-1.1.0.dist-info/top_level.txt,sha256=FKqvVDaoSZI-7TVodS5wIaF1OtupgMr7-mi7bn-o9Uk,21
+django_sass_compiler-1.1.0.dist-info/RECORD,,
