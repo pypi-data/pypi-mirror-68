@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: provers
+Version: 0.1.16
+Summary: Library to access different theorem provers
+Home-page: https://github.com/mmaroti/provers
+Author: Miklos Maroti
+Author-email: mmaroti@gmail.com
+License: GPL 3
+Description: Provers
+        =======
+        
+        Just a simple python library to access multiple theorem provers through a 
+        common interface.
+        
+Keywords: tptp logic theorem prover
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.5

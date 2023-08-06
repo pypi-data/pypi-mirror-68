@@ -1,0 +1,2 @@
+exclude provers/bin/*
+include provers/bin/Makefile

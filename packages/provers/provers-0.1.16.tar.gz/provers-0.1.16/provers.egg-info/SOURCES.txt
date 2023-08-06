@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+provers/__init__.py
+provers/eprover.py
+provers/fol.py
+provers/prover9.py
+provers/util.py
+provers.egg-info/PKG-INFO
+provers.egg-info/SOURCES.txt
+provers.egg-info/dependency_links.txt
+provers.egg-info/entry_points.txt
+provers.egg-info/top_level.txt
+provers/bin/Makefile
