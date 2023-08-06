@@ -1,0 +1,4 @@
+[console_scripts]
+pick = pick_kernel:main
+pick-install = pick_kernel.kernelspec:main
+
