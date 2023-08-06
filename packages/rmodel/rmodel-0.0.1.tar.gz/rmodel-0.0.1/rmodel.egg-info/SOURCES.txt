@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+rmodel/__init__.py
+rmodel/example.py
+rmodel/polyfit.py
+rmodel.egg-info/PKG-INFO
+rmodel.egg-info/SOURCES.txt
+rmodel.egg-info/dependency_links.txt
+rmodel.egg-info/requires.txt
+rmodel.egg-info/top_level.txt

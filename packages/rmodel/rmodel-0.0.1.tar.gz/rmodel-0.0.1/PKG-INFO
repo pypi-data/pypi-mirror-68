@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: rmodel
+Version: 0.0.1
+Summary: rmodel: simple statistical models that follow R-like naming conventions
+Home-page: https://github.com/MatteoLacki/rmodel.git
+Author: MatteoLacki
+Author-email: matteo.lacki@gmail.com
+License: UNKNOWN
+Description: The point of this project is to set up a standardized UI for the statistical models one can use. The conventions are inspired by how it is handles in R. But, this is Python, so it must be way better, right?
+Keywords: R,models,R feel but Python structures
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
