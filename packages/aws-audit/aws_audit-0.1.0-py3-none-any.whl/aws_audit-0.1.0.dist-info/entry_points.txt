@@ -1,0 +1,3 @@
+[console_scripts]
+awsaudit = aws_audit.audit:main
+

@@ -1,0 +1,335 @@
+Metadata-Version: 2.1
+Name: aws-audit
+Version: 0.1.0
+Summary: This Utility will help you with the security audit of AWS cloud services.
+Home-page: UNKNOWN
+Author: TheCloudRecipes
+Author-email: thecloudrecipes@gmail.com
+License: UNKNOWN
+Keywords: AWS,Amazon Web Services,Security,Audit,Infrastructure Audit,Security Audit,Python,Amazon,boto3,Cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: boto3 (>=1.13.0)
+Requires-Dist: python-dotenv (>=0.11.0)
+Requires-Dist: pytz (>=2019.3)
+Requires-Dist: xlsxwriter (>1.2.6)
+Requires-Dist: tqdm (>=4.40.1)
+
+# AWS Audit
+
+AWS Audit is a command line utility that will help end-user/application owner to audit the AWS services from the security perspective.
+
+> Here are the features of the AWS Audit
+>
+> 1. Command line utility
+> 2. Generate report in excel
+> 3. No additional setup is required
+
+## Installation
+
+The easiest way to install AWS Audit is to use pip.
+
+```sh
+$ pip install aws-audit
+```
+
+or install it globally using below command:
+
+```sh
+$ sudo pip install aws-audit
+```
+
+## Verify Installation
+
+Verify which version is installed on system using below command.
+
+```sh
+$ awsaudit -v
+```
+
+or
+
+```sh
+$ awsaudit --version
+```
+
+## Configure AWS Audit
+
+> The AWS IAM user which you are using to configure the utility needs to have "ReadOnlyAccess" policy assigned.
+
+> You have to provide AWS Access Key ID and AWS Secret Access Key to complete the configuration. 
+
+Once you installed and verify the setup of AWS Audit, configure the utility using below command.
+
+```sh
+$ awsaudit --configure
+```
+
+## Getting Started
+
+To get help for AWS Audit run below command.
+
+```sh
+$ awsaudit -h
+```
+
+Run the following command to get list of AWS Services available with utility.
+
+```sh
+$ awsaudit --list-services
+```
+
+Run the following command to get the list of rules for specific service.
+
+```sh
+$ awsaudit --list-rules acm
+```
+
+If you want to run the audit for specific service and for the specific region:
+
+```sh
+$ awsaudit --services ec2 --regions us-east-1
+```
+
+or, for multiple services:
+
+```sh
+$ awsaudit --services ec2,rds --regions us-east-1
+```
+
+or, if you want to run for all regions do not pass regions:
+
+```sh
+$ awsaudit --services ec2,rds
+```
+
+or, for all services for specific regions:
+
+```sh
+$ awsaudit --regions us-east-1,us-east-2
+```
+
+Shorthand parameters are also available.
+
+```sh
+$ awsaudit -s ec2 -r us-east-1
+```
+
+## Available Services
+
+| Service | Rule ID | Severity | Rule |
+| ------ | ------ | ------ | ------ |
+| acm | ACM_001 | High | AWS ACM Certificates are expired. |
+|| ACM_002 | Medium | ACM Certificates are about to expires in 30 days. |
+|| ACM_003 | Low | ACM Certificate issued for wildcard domain. |
+| apigateway | APIGATEWAY_001 | Medium | Production stage APIs not integratated with AWS WAF. |
+|| APIGATEWAY_002 | Medium | Production and Staging stage APIs not configured for SSL certificate. |
+|| APIGATEWAY_003 | Medium | APIs are publicly accessible. |
+| backup | BACKUP_001 | High | Backup vault access policy is not configured to prevent the deletion. |
+|| BACKUP_001 | High | Backup valult is not encrypted with KMS CMK. |
+|| BACKUP_003 | Medium | Backup plans lifecycle configuration is not enabled. |
+| cloudfront | CLOUDFRONT_001 | Low | Cloudfront distributions are not using geo restriction. |
+|| CLOUDFRONT_002 | Medium | Cloudfront distributions are using insecure SSL protocols |
+|| CLOUDFRONT_003 | Medium | Cloudfront distributions are not integrated with AWS WAF. |
+|| CLOUDFRONT_004 | Medium | Access Logging is not enabled for Cloudfront distributions. |
+|| CLOUDFRONT_005 | Medium | CloudFront distributions are not using improved security policies for HTTPS connections. |
+|| CLOUDFRONT_006 | Medium | Traffic between the AWS CloudFront distributions and their origins is not encrypted. |
+|| CLOUDFRONT_007 | Medium | Cloudfront not using secure viewer protocol policy. |
+|| CLOUDFRONT_008 | Medium | Origin access identity is not enabled for Cloudfront distributions |
+|| CLOUDFRONT_009 | Medium | Field level encryption is not enabled for Cloudfront distributions. |
+| cloudtrail | CLOUDTRAIL_001 | High | Cloudtrail trails are not enabled. |
+|| CLOUDTRAIL_002 | High | Cloudtrail is not enabled for global services. |
+|| CLOUDTRAIL_003 | Medium | Cloudtrail logs are not encrypted. |
+|| CLOUDTRAIL_004 | Medium | Management events are not included into Cloudtrail. |
+|| CLOUDTRAIL_005 | Medium | File integrity validation not enabled for Cloudtrail. |
+|| CLOUDTRAIL_006 | Medium | Log delivery failing for Cloudtrail. |
+|| CLOUDTRAIL_007 | Medium | Bucket logging is not enabled for Cloudtrail. |
+|| CLOUDTRAIL_008 | High | Cloudtrail logging bucket is publicly accessible. |
+| config | CONFIG_001 | High | AWS Config is not enabled. |
+|| CONFIG_001 | Medium | Global resources are not included in AWS Config. |
+|| CONFIG_001 | Medium | AWS Config log delivery failed. |
+| dms | DMS_001 | High | DMS replication instances are not encrypted with KMS CMK. |
+|| DMS_002 | High | DMS replication instances are publicly accessible. |
+|| DMS_003 | Medium | DMS replication instances auto minor version upgrade feature not enabled. |
+| documentdb | DOCUMENTDB_001 | High | DocumentDB clusters are not encrypted with KMS CMK. |
+|| DOCUMENTDB_002 | High | DocumentDB Clusters are not encrypted at rest. |
+|| DOCUMENTDB_003 | Low | Log export feature is not enabled for DocumentDB Clusters. |
+| dynamodb | DYNAMODB_001 | High | DynamoDB is not encrypted with KMS CMK. |
+| ec2 | EC2_001 | High | AMI is not encrypted. |
+|| EC2_002 | Medium | AMI is publicly shared. Your data on AMI is accessible to everyone. |
+|| EC2_003 | Medium | EC2 Default security groups are unrestricted. |
+|| EC2_004 | Medium | Default EC2 security group is in use. |
+|| EC2_005 | Low | Security groups rule description not present. |
+|| EC2_006 | Low | Your account has too old AMI. |
+|| EC2_007 | Medium | EC2 instance not in VPC |
+|| EC2_008 | Medium | EC2 instances are not using IAM role. |
+|| EC2_009 | Low | EC2 security groups prefixed with 'launch-wizard'. |
+|| EC2_010 | Medium | EC2 Security groups opening wide port range to allow inbound traffic. |
+|| EC2_011 | Medium | EC2 security group allows unrestricted inbound access for TCP port 445. |
+|| EC2_012 | Medium | EC2 security group allows unrestricted inbound access for TCP port 53. |
+|| EC2_013 | Medium | EC2 security group allows unrestricted inbound access for TCP port 9200. |
+|| EC2_014 | Medium | EC2 security group allows unrestricted inbound access for TCP port 20 and 21. |
+|| EC2_015 | Medium | EC2 security group allows unrestricted inbound access for TCP port 80. |
+|| EC2_016 | Medium | EC2 security group allows unrestricted inbound access for TCP port 443. |
+|| EC2_017 | Medium | EC2 security group allows unrestricted inbound access for ICMP. |
+|| EC2_018 | Medium | EC2 security group allows unrestricted inbound access for TCP port 27017. |
+|| EC2_019 | Medium | EC2 security group allows unrestricted inbound access for TCP port 1433. |
+|| EC2_020 | Medium | EC2 security group allows unrestricted inbound access for TCP port 3306. |
+|| EC2_021 | Medium | EC2 security group allows unrestricted inbound access for TCP port 137, 138, and 139. |
+|| EC2_022 | Medium | EC2 security group allows unrestricted inbound access for TCP port 1521. |
+|| EC2_023 | Medium | EC2 security group allows unrestricted outbound access for all ports. |
+|| EC2_024 | Medium | EC2 security group allows unrestricted inbound access for TCP port 5432. |
+|| EC2_025 | Medium | EC2 security group allows unrestricted inbound access for TCP port 3389. |
+|| EC2_026 | Medium | EC2 security group allows unrestricted inbound access for TCP port 135. |
+|| EC2_027 | Medium | EC2 security group allows unrestricted inbound access for TCP port 25. |
+|| EC2_028 | Medium | EC2 security group allows unrestricted inbound access for TCP port 22. |
+|| EC2_029 | Medium | EC2 security group allows unrestricted inbound access for TCP port 23. |
+|| EC2_030 | Medium | EC2 security group allows unrestricted inbound access for TCP port 5601. |
+|| EC2_031 | Medium | EC2 security group allows unrestricted inbound access for TCP port 5500. |
+|| EC2_032 | Medium | EC2 security group allows unrestricted inbound access for TCP port 5900. |
+|| EC2_033 | Medium | EC2 security group allows unrestricted inbound access for TCP port 8020. |
+|| EC2_034 | Medium | EC2 security group allows unrestricted inbound access for TCP port 50070 and 50470. |
+|| EC2_035 | Medium | Unused key pairs present |
+|| EC2_036 | High | EBS Volume snapshots are public. |
+|| EC2_037 | High | EBS volumes are not encrypted |
+|| EC2_038 | High | EBS volumes are not encrypted with KMS CMK. |
+|| EC2_039 | Medium | EBS snapshots are not encrypted. |
+|| EC2_040 | Medium | VPC enpoints allows cross account access. |
+|| EC2_041 | Medium | VPC endpoints are exposed to everyone. |
+|| EC2_042 | Low | VPC Flow Log is not enabled. |
+|| EC2_043 | Medium | Default VPC exists. |
+| ecr | ECR_001 | High | Repositories are exposed to everyone. |
+|| ECR_002 | High | Repositories are allows cross account access. |
+| efs | EFS_001 | High | Encryption is not enabled for EFS File systems. |
+|| EFS_002 | High | EFS file systems are not encrypted with KMS CMK. |
+| eks | EKS_001 | Low | EKS Clusters logging is not enabled. |
+|| EKS_002 | Medium | EKS Cluster security group is not secure. |
+|| EKS_003 | Medium | EKS Cluster endpoint is publicly accessible. |
+| elasticache | ELASTICACHE_001 | Low | ElastiCache clusters are using default port. |
+|| ELASTICACHE_002 | Medium | ElastiCache clusters are not in VPC. |
+|| ELASTICACHE_003 | High | ElastiCache clusters end-to-end encryption is not enabled. |
+| elbv2 | ELBV2_001 | Medium | Application load balancer not using HTTPS listener. |
+|| ELBV2_002 | Medium | ALB Access logging in not enabled |
+|| ELBV2_003 | Medium | WAF is not configured for ALBs |
+|| ELBV2_004 | Medium | ALBs are using insecure ciphers. |
+|| ELBV2_005 | Medium | ALBs Invalid HTTP header dropped feature is not enabled. |
+|| ELBV2_006 | Medium | ALB deletion protection is not enabled. |
+| emr | EMR_001 | Medium | EMR clusters are not in VPC. |
+|| EMR_002 | High | EMR clusters end-to-end encryption is not enabled. |
+| es | ES_001 | High | AWS ElasticSearch domains are not encrypted with KMS Customer Master Keys. |
+|| ES_002 | High | Node to Node encryption is not enabled for ES clusters. |
+|| ES_003 | High | ES Clusters are allowed cross account access. |
+|| ES_004 | High | ES Domains are exposed to everyone. |
+|| ES_005 | Medium | ES Domains are not in VPC. |
+|| ES_006 | High | ES domains are not encrypted at-rest. |
+|| ES_007 | High | ES Domains are not enforcing HTTPS connections. |
+| firehose | FIREHOSE_001 | High | Firehose delivery stream source records are not encrypted. |
+|| FIREHOSE_002 | High | Firehose delivery stream S3 destination is not encrypted. |
+| fsx | FSX_001 | Medium | FSx for Windows File Server file systems are not encrypted using AWS KMS CMks |
+| iam | IAM_001 | Medium | IAM password policy is not defined. |
+|| IAM_002 | High | IAM users are having full administrator permission. |
+|| IAM_003 | High | IAM policies have full administrator access. |
+|| IAM_004 | Medium | IAM ggroups are using inline policies. |
+|| IAM_005 | Medium | IAM users are not present. |
+|| IAM_006 | High | MFA is not enabled for IAM users. |
+|| IAM_007 | High | IAM root account is using access keys. |
+|| IAM_008 | High | MFA for root account is not enabled. |
+|| IAM_009 | Medium | IAM users having more than one active access keys. |
+|| IAM_010 | Medium | IAM users having more than one active ssh keys. |
+|| IAM_011 | Low | IAM groups are not having users. |
+|| IAM_012 | Medium | IAM having unused users. |
+| kafka | KAFKA_001 | Medium | Kafka clusters are not encrypted using KMS CMK. |
+| kinesis | KINESIS_001 | High | Kinesis streams are not using server side encryption. |
+|| KINESIS_002 | High | Kinesis streams are not encrypted using KMS CMK. |
+| kms | KMS_001 | High | KMS Key is exposed to everyone. |
+|| KMS_002 | Medium | KMS Key rotation is not enabled |
+|| KMS_003 | Medium | KMS key is scheduled for deleteion. It may impact services if key is in use. |
+|| KMS_004 | High | KMS Key allows cross account access. |
+| lambda | LAMBDA_001 | High | Lambda functions are exposed to everyone. |
+|| LAMBDA_002 | Medium | Lambda functions are allows cross account access. |
+|| LAMBDA_003 | Medium | Lambda functions are not in VPC. |
+| mq | MQ_001 | Low | MQ brokers log export feature is not enabled. |
+|| MQ_002 | Medium | MQ Brokers are publicly accessible. |
+|| MQ_003 | Medium | MQ brokers, auto minor version upgrade feature is not enabled. |
+| neptune | NEPTUNE_001 | Medium | Neptune clusters are not using IAM Database authentication. |
+|| NEPTUNE_002 | Medium | Neptune instances are not encrypted using KMS CMK. |
+|| NEPTUNE_003 | High | Neptune instances are not encrypted. |
+|| NEPTUNE_004 | High | Neptune instances are publicly accessible. |
+|| NEPTUNE_005 | Medium | Neptune instances auto minor version upgrade feature not enabled. |
+|| NEPTUNE_006 | Low | Neptune instances are using default port. |
+| rds | RDS_001 | High | RDS Database snapshots are publicly accessible. |
+|| RDS_002 | Medium | RDS Aurora database deletetion protection feature is not enabled. |
+|| RDS_003 | Low | RDS Log exports feature is not enabled. |
+|| RDS_004 | Low | Log exports features is not enabled for Aurora Serverless databases. |
+|| RDS_005 | Medium | IAM database authentication feature is not enabled. |
+|| RDS_006 | Medium | RDS deletetion protection is not enabled for database instances. |
+|| RDS_007 | Medium | RDS auto minor version upgrade is not enabled. |
+|| RDS_008 | Low | RDS insatnces are using default ports. |
+|| RDS_009 | High | RDS instances are not encypted with KMS CMK. |
+|| RDS_0010 | High | RDS instances are not encrypted. |
+|| RDS_0011 | High | RDS instance is publicly accessible. |
+|| RDS_0012 | Medium | Unrestricted security groups assign to RDS Instances. |
+|| RDS_0013 | High | RDS Database snapshots are not encrypted. |
+| redshift | REDSHIFT_001 | Low | Activity logging is not enabled for Redshift clusters. |
+|| REDSHIFT_002 | Medium | Audit logging is not eneabled for Redshift clusters. |
+|| REDSHIFT_003 | Low | Redshift clusters are using default port. |
+|| REDSHIFT_004 | High | Redshift clusters are not encrypted. |
+|| REDSHIFT_005 | High | Redshift clusters are not encrypted using KMS CMK. |
+|| REDSHIFT_006 | Medium | Redshift clusters not in VPC. |
+|| REDSHIFT_007 | High | Redshift clusters are publicly accessible. |
+|| REDSHIFT_008 | Medium | Parameter groups associated with Redshift cluster do not have the require_ssl parameter enabled. |
+| route53 | ROUTE53_001 | Low | Privacy protection is not enabled for Route53 Domains. |
+|| ROUTE53_002 | Medium | SPF record is not present for Hosted Zones. |
+|| ROUTE53_003 | Medium | Transfer lock is not enabled for Route53 Domains. |
+| s3 | S3_001 | Medium | Server side encryption is not enabled for S3 buckets. |
+|| S3_002 | Medium | In-Transit encryption not enabled for S3 buckets. |
+|| S3_003 | Low | Object lock feature is not enabled for S3 Buckets. |
+|| S3_004 | High | S3 Buckets are allowing cross account access. |
+|| S3_005 | Low | Lifecycle rules are not configured for S3 Buckets. |
+|| S3_006 | Medium | S3 Buckets are not encrypted using KMS CMK. |
+|| S3_007 | High | S3 Buckets are not encrypted using default encryption. |
+|| S3_008 | High | S3 Buckets are allowing global Read, Write, Delete permissions. |
+| sagemaker | SAGEMAKER_001 | Medium | Notebook instances are not in VPC. |
+|| SAGEMAKER_002 | High | Notebook instances are not encrypted. |
+|| SAGEMAKER_003 | High | Notebook instances are not encrypted using KMS CMK. |
+|| SAGEMAKER_004 | Medium | Notebook instances are publicly accessible. |
+| secretsmanager | SECRETSMANAGER_001 | High | Secret is not encrypted with KMS CMK. |
+|| SECRETSMANAGER_002 | Medium | Secret rotation is not enabled. |
+|| SECRETSMANAGER_003 | Medium | Secret rotation interval is not configured. |
+| ses | SES_001 | Low | SES DKIM is not enabled. |
+|| SES_002 | High | SES identities are exposed to everyone. |
+|| SES_003 | High | SES identities allows cross account access. |
+| shield | SHIELD_001     | Medium | AWS Shield is not enabeld. |
+| sns | SNS_001 | High | SNS topics are not encrypted. |
+|| SNS_002 | High | SNS topics are not encrypted with KMS CMK. |
+|| SNS_003 | High | SNS topics are exposed to everyone. |
+|| SNS_004 | High | SNS topics allows cross account access |
+|| SNS_005 | Medium | SNS topics are using insecure subscription. |
+|| SNS_006 | Medium | SNS topics allows everyone to publish. |
+|| SNS_007 | Medium | SNS topics allows everyone to subscribe. |
+| sqs | SQS_001 | High | SQS queues are enforcing server side encryption |
+|| SQS_002 | High | SQS queues are not encrypted with KMS CMK. |
+|| SQS_003 | High | SQS Queues are exposed to everyone. |
+|| SQS_004 | High | SQS queues are allowing cross account access. |
+| ssm | SSM_001 | Medium | SSM Paramters are not encrypted. |
+| transfer | TRANSFER_001 | Medium | Cloudwatch logging is not enabled for Transfer for SFTP. |
+|| TRANSFER_002 | Medium | Transfer for SFTP servers are not using PrivateLink for endpoints |
+| xray | XRAY_001     | High | X-ray not encrypts traces and related data using KMS CMK. |
+
+### For Issues
+
+>For any issues/queries/suggestions please reach us at **thecloudrecipes[at]gmail[dot]com**
+
