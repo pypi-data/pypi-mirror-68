@@ -1,0 +1,8 @@
+numpy
+h5py
+termcolor
+toml
+matplotlib
+tqdm
+colorama
+python-telegram-bot
