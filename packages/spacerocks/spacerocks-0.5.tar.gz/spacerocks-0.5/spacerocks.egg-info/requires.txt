@@ -1,0 +1,8 @@
+healpy
+numpy
+matplotlib
+scipy
+skyfield
+astropy
+numba
+pandas
