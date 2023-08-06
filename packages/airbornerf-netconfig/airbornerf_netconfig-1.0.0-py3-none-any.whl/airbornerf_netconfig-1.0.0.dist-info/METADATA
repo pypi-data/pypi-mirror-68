@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: airbornerf-netconfig
+Version: 1.0.0
+Summary: AirborneRF NetConfig
+Home-page: https://www.airbornerf.com/
+Author: Thomas Wana
+Author-email: support@airbornerf.com
+License: Proprietary
+Platform: UNKNOWN
+Requires-Dist: sqlalchemy
+
+UNKNOWN
+
+
