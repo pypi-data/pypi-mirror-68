@@ -1,0 +1,7 @@
+future
+requests
+pypacker==4.9
+pytest
+pytest-cov
+
+pytrafficgen==1.5.5
