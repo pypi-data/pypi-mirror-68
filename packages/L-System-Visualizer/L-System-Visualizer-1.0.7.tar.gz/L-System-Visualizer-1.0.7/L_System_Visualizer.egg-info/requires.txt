@@ -1,0 +1,12 @@
+PyQt5
+matplotlib
+numpy
+Pillow
+PyGLM
+PyOpenGL
+pyparsing
+pyqtgraph
+scipy
+pyscreenshot
+pyrr
+pywavefront

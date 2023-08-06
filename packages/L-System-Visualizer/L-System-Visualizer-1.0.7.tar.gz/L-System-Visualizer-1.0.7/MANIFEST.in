@@ -1,0 +1,4 @@
+include *.txt setup.py
+global-include *.json
+global-include *.png
+global-exclude *.py[cod]

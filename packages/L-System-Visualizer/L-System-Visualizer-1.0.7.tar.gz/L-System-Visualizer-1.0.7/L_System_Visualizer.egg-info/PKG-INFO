@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: L-System-Visualizer
+Version: 1.0.7
+Summary: Generates visualizations of L Systems after a certain number of productions.
+Home-page: https://github.com/wrathofrathma/L-System-Visualizer.git
+Author: Team BRAWT
+Author-email: lbones1@gulls.salisbury.edu
+License: Unknown
+Description: UNKNOWN
+Keywords: pyside2 qt5 lsystem
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
