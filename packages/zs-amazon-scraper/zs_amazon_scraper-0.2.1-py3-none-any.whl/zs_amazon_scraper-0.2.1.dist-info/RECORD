@@ -1,0 +1,11 @@
+zs_amazon_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zs_amazon_scraper/amazon.py,sha256=iJm0ouUuUEFdxUuHuuI_PdMWBrqiY43Lz6oZmI_9rzY,1630
+zs_amazon_scraper/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zs_amazon_scraper/helpers/parser.py,sha256=BTJCg-_bJcdBo0S_gFboixDjkyu-zy4_rHbPSbtcze4,6855
+zs_amazon_scraper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zs_amazon_scraper/utils/url_creator.py,sha256=7xFYA1S32pBJ5nFk_mzm4zHwm8HkjOXZsB51L1k3nyk,529
+zs_amazon_scraper/utils/utils.py,sha256=i_HjEMrxf4AEy-Bc8Va7jMpqUYW7NDf8HxVQu4LjM7c,375
+zs_amazon_scraper-0.2.1.dist-info/METADATA,sha256=TLYPDtRwqQFI2bmA_D9K7Ai6g16L8xPXj0mF7RSzlwo,528
+zs_amazon_scraper-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+zs_amazon_scraper-0.2.1.dist-info/top_level.txt,sha256=eGiNHObOI8HC0uxUfSfqtI2AP5e1XP6ioh7wS84gyoQ,18
+zs_amazon_scraper-0.2.1.dist-info/RECORD,,
