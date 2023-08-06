@@ -1,0 +1,2 @@
+avocado-framework==79.0
+Fabric3<2.0.0,>=1.1.4
