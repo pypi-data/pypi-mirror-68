@@ -1,0 +1,10 @@
+setup.py
+main/__init__.py
+main/bar.py
+main/foo.py
+pygo_main.egg-info/PKG-INFO
+pygo_main.egg-info/SOURCES.txt
+pygo_main.egg-info/dependency_links.txt
+pygo_main.egg-info/entry_points.txt
+pygo_main.egg-info/requires.txt
+pygo_main.egg-info/top_level.txt
