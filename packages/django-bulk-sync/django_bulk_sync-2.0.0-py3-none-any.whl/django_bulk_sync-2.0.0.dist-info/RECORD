@@ -1,0 +1,10 @@
+bulk_sync/__init__.py,sha256=2nTIZV4KZ4VBgNFgitDe5JeQWZVcQkQabLOOsVsRdwc,6148
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=x7Rt7TJd-Vfayt1z_Knb6jlmzOm1dAMTMA8QEjDHR6M,459
+tests/test_settings.py,sha256=4JkMWRATQnpbGy_2Up47ckSOF8uhGWbbu1Szjm9WYEg,406
+tests/tests.py,sha256=o_U2z7gzEGJ099oxkR6YxWoV670qfG1vG6J_ntIcIjs,7162
+django_bulk_sync-2.0.0.dist-info/LICENSE,sha256=GYhycMho-_pn_y45K-FlqF51D5RmVmdDTT9p-9gpBLQ,1091
+django_bulk_sync-2.0.0.dist-info/METADATA,sha256=pzZvDEjC_b1wpZHvFJ0uRQoLkem35AjRMOcSKDvoZTg,5326
+django_bulk_sync-2.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+django_bulk_sync-2.0.0.dist-info/top_level.txt,sha256=Hg7-WPLDccGujR6aBVgfCQPQ5ZGRBXTwB71tdtJ9Li4,16
+django_bulk_sync-2.0.0.dist-info/RECORD,,
