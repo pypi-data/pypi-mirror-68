@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+dnaApi.egg-info/PKG-INFO
+dnaApi.egg-info/SOURCES.txt
+dnaApi.egg-info/dependency_links.txt
+dnaApi.egg-info/requires.txt
+dnaApi.egg-info/top_level.txt
