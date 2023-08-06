@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hack-assembler
+Version: 0.4.2
+Summary: nand2tetris hack assembler
+Home-page: https://github.com/ITD27M01/hack-assembler
+Author: itd27m01
+Author-email: igortiunov@gmail.com
+License: UNKNOWN
+Description: # Python implementation of Hack assembler
+        
+        ![Linter](https://github.com/ITD27M01/hack-assembler/workflows/Linter/badge.svg)
+        
+        [nand2tetris project6](https://www.nand2tetris.org/project06)
+        
+            assembler Prog.asm
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
