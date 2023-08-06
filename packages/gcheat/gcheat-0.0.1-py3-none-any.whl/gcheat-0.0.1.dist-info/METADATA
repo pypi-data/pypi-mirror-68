@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gcheat
+Version: 0.0.1
+Summary: A on point lib for reading and writing to google sheets.
+Home-page: https://github.com/jjabba/gcheat
+Author: Karl Berggren
+Author-email: kalle@jjabba.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# gcheat
+A on point wrapper to read and update google sheets with minimal effort
+
+
