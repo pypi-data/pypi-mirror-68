@@ -1,0 +1,11 @@
+msgpack>=1.0.0
+pyzmq>=18.0.1
+
+[docs]
+Sphinx
+sphinxcontrib-napoleon
+sphinxcontrib-zopeext
+
+[test]
+pytest>=4.4.0
+pytest-asyncio>=0.10.0
