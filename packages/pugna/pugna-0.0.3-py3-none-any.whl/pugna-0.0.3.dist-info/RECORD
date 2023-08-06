@@ -1,0 +1,10 @@
+pugna/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pugna/callbacks.py,sha256=iO5x8oOX0GDjSSfz6-PEwYQhk6J9Mv-lURo5qGRIks0,454
+pugna/model_utils.py,sha256=6OzkB8cKPMBEhOW-IPYz7iTqsvm0UPBW0ItDH7NgK-Q,1296
+pugna/trainer.py,sha256=H7ogBCEtJzj2esCKQtJlVUVYGbfWntmUjxcrXGclF5o,6820
+pugna/training_utils.py,sha256=XFArrCkzhfIAe5KUnmkXdRf8TIE-yCEDOzxuDDPdeaA,566
+pugna-0.0.3.dist-info/LICENSE,sha256=TdRRdGlOyr6L6rq9gOnOeRytw-9nUxQ-zdAwdcKdDNA,35069
+pugna-0.0.3.dist-info/METADATA,sha256=gWM3up0bRCMep8ikyamjep9ON7BX3_GL6F8-X0I3oBA,482
+pugna-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pugna-0.0.3.dist-info/top_level.txt,sha256=JMhmWwJ3EhgO8ucmJkiThFoXWSptaeMTzxQ8P750Xtw,6
+pugna-0.0.3.dist-info/RECORD,,
