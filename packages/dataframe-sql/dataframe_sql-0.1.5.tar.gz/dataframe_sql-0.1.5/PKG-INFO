@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dataframe_sql
+Version: 0.1.5
+Summary: A package for querying dataframes using SQL
+Home-page: https://github.com/zbrookle/dataframe_sql
+Author: Zach Brookler
+Author-email: zachb1996@yahoo.com
+License: UNKNOWN
+Download-URL: https://github.com/zbrookle/dataframe_sql/archive/master.zip
+Description: Coming soon...
+Keywords: pandas,data,dataframe,sql
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
