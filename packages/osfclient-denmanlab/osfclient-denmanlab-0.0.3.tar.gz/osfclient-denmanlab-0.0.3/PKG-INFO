@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: osfclient-denmanlab
+Version: 0.0.3
+Summary: An OSF command-line library extension for the denmanlab
+Home-page: https://github.com/denmanlab/osfclient
+Author: The OSF-cli authors; danieljdenman
+Author-email: UNKNOWN
+License: BSD3
+Description: .. image:: LOGO/osf-cli-logo-v1-small.png
+           :alt: osfclient
+           :align: right
+        
+        *********
+        osfclient
+        *********
+        
+        This is a small modification of the osfclient package to allow for use with the Denman Lab 
+        at the University of Colarado School of Medicince's experimental workflow
+        
+        Main ``osfclient`` repo is `here <https://github.com/denmanlab/osfclient>`. 
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Utilities
