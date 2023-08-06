@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: protobuf-serialization
+Version: 0.1.1
+Summary: Helpers for protobuf3 serialization and deserialization
+Home-page: https://github.com/alvinchow86/protobuf-serialization-py
+Author: Alvin Chow
+Author-email: alvinchow86@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: python-dateutil (>=2.7)
+Requires-Dist: protobuf (>=3.6.0)
+
+UNKNOWN
+
+
