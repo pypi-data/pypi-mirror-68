@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: eziod
+Version: 0.0.3
+Summary: a easy image object dataset
+Home-page: https://github.com/alexw994/eziod
+Author: alexwww94
+Author-email: 243114328@qq.com
+License: MIT Licence
+Description: a easy image object dataset parent class
+Keywords: pip,eziod
+Platform: any
