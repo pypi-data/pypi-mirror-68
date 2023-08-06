@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pangeamt-toolkit
+Version: 3.54.0
+Summary: h1 align="center">
+Home-page: UNKNOWN
+License: MIT
+Description: <h1 align="center">
+            PANGEAMT TOOLKIT
+        </h1>
+        
+        <p align="center">
+            <a href="https://pypi.org/project/pangeamt-toolkit/">
+                <img alt="GitHub release" src="https://img.shields.io/pypi/v/pangeamt-toolkit">
+            </a>
+        </p>
+        
+        NMT toolkit.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
