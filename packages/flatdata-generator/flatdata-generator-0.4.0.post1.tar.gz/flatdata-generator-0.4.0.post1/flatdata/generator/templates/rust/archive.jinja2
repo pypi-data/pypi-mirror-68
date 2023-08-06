@@ -1,0 +1,274 @@
+{% import "rust/index.jinja2" as index %}
+{% import "rust/variadic.jinja2" as variadic %}
+
+{%- macro declaration(archive) %}
+
+{# variadic structs #}
+{% for r in archive.resources | multivector_resources %}
+
+{{- variadic.declaration(archive, r) }}
+{%- endfor %}
+
+{# archive definition #}
+{%- set archive_ns = archive.name | camel_to_snake_case %}
+
+{% if archive.doc %}
+{{ archive.doc | rust_doc }}
+{% endif %}
+#[derive(Clone)]
+pub struct {{archive.name}} {
+    _storage: ::std::rc::Rc<dyn flatdata::ResourceStorage>,
+    {% for r in archive.resources | supported_resources %}
+    {{r.name}} : {% if r.optional %}Option<{% endif %}
+    {%- if [r] | vector_resources -%}
+    &'static [{{fully_qualified_name(archive, r.referenced_structures[0].node)}}]
+    {%- elif [r] | instance_resources -%}
+    &'static {{fully_qualified_name(archive, r.referenced_structures[0].node)}}
+    {%- elif [r] | rawdata_resources -%}
+    flatdata::RawData<'static>
+    {%- elif [r] | multivector_resources -%}
+    flatdata::MultiArrayView<'static, {{r.name | snake_to_upper_camel_case}}>
+    {%- elif [r] | rawdata_resources -%}
+    flatdata::MemoryDescriptor
+    {%- elif [r] | subarchive_resources -%}
+    {{ fully_qualified_name(archive, r.target.node) }}
+    {% endif %}
+    {% if r.optional %}>{% endif %},
+    {% endfor %}
+}
+
+impl {{archive.name}} {
+    fn signature_name(archive_name: &str) -> String {
+        format!("{}.archive", archive_name)
+    }
+
+    {% for r in archive.resources | supported_resources %}
+    {% if [r] | rawdata_resources %}
+    {% if r.doc %}
+    {{ r.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{r.name}}(&self) -> {% if r.optional %}Option<flatdata::RawData>{% else %}flatdata::RawData{% endif %} {
+        self.{{r.name}}
+    }
+
+    {% elif [r] | instance_resources %}
+    {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+    {% if r.doc %}
+    {{ r.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{r.name}}(&self) -> {% if r.optional %}Option<&{{t}}>{% else %}&{{t}}{% endif %} {
+        self.{{r.name}}
+    }
+
+    {% elif [r] | vector_resources %}
+    {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+    {% if r.doc %}
+    {{ r.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{r.name}}(&self) -> {% if r.optional %}Option<&[{{t}}]>{% else %}&[{{t}}]{% endif %} {
+        self.{{r.name}}
+    }
+
+    {% elif [r] | multivector_resources %}
+    {% set t = r.name | snake_to_upper_camel_case %}
+    {% if r.doc %}
+    {{ r.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{r.name}}(&self) -> {% if r.optional %}Option<&flatdata::MultiArrayView<{{t}}>>{% else %}&flatdata::MultiArrayView<{{t}}>{% endif %} {
+        {%+ if r.optional %}self.{{r.name}}.as_ref(){% else %}&self.{{r.name}}{% endif %}
+
+    }
+
+    {% elif [r] | subarchive_resources %}
+    {% set t = fully_qualified_name(archive, r.target.node) %}
+    {% if r.doc %}
+    {{ r.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{r.name}}(&self) -> {% if r.optional %}Option<&{{t}}>{% else %}&{{t}}{% endif %} {
+        {%+ if r.optional %}self.{{r.name}}.as_ref(){% else %}&self.{{r.name}}{% endif %}
+
+    }
+
+    {% endif %}
+    {% endfor %}
+}
+
+impl ::std::fmt::Debug for {{archive.name}} {
+    fn fmt(&self, f: &mut ::std::fmt::Formatter) -> ::std::fmt::Result {
+        f.debug_struct("{{archive.name}}")
+            {% for r in archive.resources | supported_resources %}
+            .field("{{r.name}}", &self.{{r.name}}())
+            {% endfor %}
+            .finish()
+    }
+}
+
+impl flatdata::Archive for {{archive.name}} {
+    const NAME: &'static str = "{{archive.name}}";
+    const SCHEMA: &'static str = schema::{{ archive_ns }}::{{ archive.name | camel_to_snake_case | upper }};
+
+    fn open(storage: ::std::rc::Rc<dyn flatdata::ResourceStorage>)
+        -> ::std::result::Result<Self, flatdata::ResourceStorageError>
+    {
+        #[allow(unused_imports)]
+        use flatdata::SliceExt;
+        // extend lifetime since Rust cannot know that we reference a cache here
+        #[allow(unused_variables)]
+        let extend = |x : Result<&[u8], flatdata::ResourceStorageError>| -> Result<&'static [u8], flatdata::ResourceStorageError> {x.map(|x| unsafe{std::mem::transmute(x)})};
+
+        storage.read(&Self::signature_name(Self::NAME), Self::SCHEMA)?;
+
+        {% for r in archive.resources | supported_resources %}
+        {% if [r] | vector_resources %}
+        {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+        let resource = extend(storage.read("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}));
+        let {{r.name}} = resource.map(|x| <&[{{t}}]>::from_bytes(x)){% if r.optional %}.ok().transpose()?{% else %}??{% endif %};
+        {% elif [r] | instance_resources %}
+        {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+        let resource = extend(storage.read("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}));
+        let {{r.name}} = resource.map(|x| {{t}}::from_bytes_slice(x)){% if r.optional %}.ok().transpose()?{% else %}??{% endif %};
+        {% elif [r] | rawdata_resources %}
+        let resource = extend(storage.read("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}));
+        let {{r.name}} = resource.map(|x| flatdata::RawData::new(x)){% if r.optional %}.ok(){% else %}?{% endif %};
+        {% elif [r] | multivector_resources %}
+        {% set i = fully_qualified_name(archive, r.index_reference.node) %}
+        let {{r.name}} = {
+            let index_schema = &format!("index({})", schema::{{ archive_ns }}::resources::{{ r.name | upper }});
+            let index = extend(storage.read("{{r.name}}_index", &index_schema));
+            let data = extend(storage.read("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}));
+            let result = match (index, data) {
+                (Ok(index), Ok(data)) => {
+                    Ok(flatdata::MultiArrayView::new(
+                        <&[{{i}}]>::from_bytes(index)?,
+                        data
+                    ))
+                }
+                (Ok(_), Err(x)) | (Err(x), Ok(_)) => {return Err(x);}
+                (Err(x), Err(_)) => Err(x),
+            };
+            {% if r.optional %}
+            result.ok()
+            {% else %}
+            result?
+            {% endif %}
+        };
+        {% elif [r] | subarchive_resources %}
+        {% set t = fully_qualified_name(archive, r.target.node) %}
+        let {{r.name}} = {{t}}::open(storage.subdir("{{r.name}}")){% if r.optional %}.ok(){% else %}?{% endif %};
+        {% endif %}
+        {% endfor %}
+
+        Ok(Self {
+            _storage: storage,
+            {% for r in archive.resources | supported_resources %}
+            {{r.name}},
+            {% endfor %}
+        })
+    }
+}
+
+/// Builder for creating [`{{archive.name}}`] archives.
+///
+///[`{{archive.name}}`]: struct.{{archive.name}}.html
+#[derive(Clone, Debug)]
+pub struct {{archive.name}}Builder {
+    storage: ::std::rc::Rc<dyn flatdata::ResourceStorage>
+}
+
+{% if archive.resources | supported_resources | length -%}
+impl {{archive.name}}Builder {
+    {% for r in archive.resources | supported_resources %}
+    {% if [r] | rawdata_resources %}
+    /// Stores [`{{r.name}}`] in the archive.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    #[inline]
+    pub fn set_{{r.name}}(&self, data: &[u8]) -> ::std::io::Result<()> {
+        self.storage.write("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}, data)
+    }
+
+    {% elif [r] | instance_resources %}
+    {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+    #[inline]
+    /// Stores [`{{r.name}}`] in the archive.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    /// Stores [`{{r.name}}`] in the archive.
+    pub fn set_{{r.name}}(&self, resource: &{{t}}) -> ::std::io::Result<()> {
+        let data = resource.as_bytes();
+        self.storage.write("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}, data)
+    }
+
+    {% elif [r] | vector_resources %}
+    {% set t = fully_qualified_name(archive, r.referenced_structures[0].node) %}
+    #[inline]
+    /// Stores [`{{r.name}}`] in the archive.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    pub fn set_{{ r.name }}(&self, vector: &[{{t}}]) -> ::std::io::Result<()> {
+        use flatdata::SliceExt;
+        self.storage.write("{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }}, vector.as_bytes())
+    }
+
+    /// Opens [`{{r.name}}`] in the archive for buffered writing.
+    ///
+    /// Elements can be added to the vector until the [`ExternalVector::close`] method
+    /// is called. To flush the data fully into the archive, this method must be called
+    /// in the end.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    /// [`ExternalVector::close`]: flatdata/struct.ExternalVector.html#method.close
+    #[inline]
+    pub fn start_{{ r.name }}(&self) -> ::std::io::Result<flatdata::ExternalVector<{{t}}>> {
+        flatdata::create_external_vector(&*self.storage, "{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }})
+    }
+
+    {% elif [r] | multivector_resources %}
+    {% set t = r.name | snake_to_upper_camel_case %}
+    /// Opens [`{{r.name}}`] in the archive for buffered writing.
+    ///
+    /// Elements can be added to the multivector until the [`MultiVector::close`] method
+    /// is called. To flush the data fully into the archive, this method must be called
+    /// in the end.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    /// [`MultiVector::close`]: flatdata/struct.MultiVector.html#method.close
+    #[inline]
+    pub fn start_{{ r.name }}(&self) -> ::std::io::Result<flatdata::MultiVector<{{t}}>> {
+        flatdata::create_multi_vector(&*self.storage, "{{r.name}}", schema::{{ archive_ns }}::resources::{{ r.name | upper }})
+    }
+
+    {% elif [r] | subarchive_resources %}
+    {% set t = fully_qualified_name(archive, r.target.node) %}
+    /// Stores [`{{r.name}}`] in the archive.
+    ///
+    /// [`{{r.name}}`]: struct.{{archive.name}}.html#method.{{r.name}}
+    #[inline]
+    pub fn {{r.name}}(&self) -> Result<{{t}}Builder, flatdata::ResourceStorageError> {
+        use flatdata::ArchiveBuilder;
+        let storage = self.storage.subdir("{{r.name}}");
+        {{t}}Builder::new(storage)
+    }
+
+    {% endif %}
+    {% endfor %}
+}
+{% endif %}
+
+impl flatdata::ArchiveBuilder for {{archive.name}}Builder {
+    const NAME: &'static str = "{{archive.name}}";
+    const SCHEMA: &'static str = schema::{{ archive_ns }}::{{ archive.name | camel_to_snake_case | upper }};
+
+    fn new(
+        storage: ::std::rc::Rc<dyn flatdata::ResourceStorage>,
+    ) -> Result<Self, flatdata::ResourceStorageError> {
+        flatdata::create_archive::<Self>(&storage)?;
+        Ok(Self { storage })
+    }
+}
+{% endmacro %}

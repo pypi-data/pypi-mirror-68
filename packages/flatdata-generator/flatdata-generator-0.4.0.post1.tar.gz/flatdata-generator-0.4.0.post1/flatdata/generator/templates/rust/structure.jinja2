@@ -1,0 +1,177 @@
+{%- macro declaration(struct) %}
+{% if struct.doc %}
+{{ struct.doc | rust_doc }}
+{% endif %}
+#[repr(transparent)]
+{% if not struct | has_range %}
+#[derive(Clone)]
+{% endif %}
+pub struct {{struct.name}} {
+    data: [u8; {{ struct.size_in_bytes }}],
+}
+
+impl {{ struct.name }} {
+    /// Unsafe since the struct might not be self-contained
+    pub unsafe fn new_unchecked( ) -> Self {
+        Self{data : [0; {{ struct.size_in_bytes }}]}
+    }
+}
+
+impl flatdata::Struct for {{ struct.name }} {
+    unsafe fn create_unchecked( ) -> Self {
+        Self{data : [0; {{ struct.size_in_bytes }}]}
+    }
+
+    const SIZE_IN_BYTES: usize = {{ struct.size_in_bytes }};
+    const IS_OVERLAPPING_WITH_NEXT : bool = {% if struct | has_range %}true{%else%}false{%endif%};
+}
+
+{% if not struct | has_range %}
+impl {{ struct.name }} {
+    pub fn new( ) -> Self {
+        Self{data : [0; {{ struct.size_in_bytes }}]}
+    }
+
+    /// Create reference from byte array of matching size
+    pub fn from_bytes(data: &[u8; {{ struct.size_in_bytes }}]) -> &Self {
+        // Safety: This is safe since {{ struct.name }} is repr(transparent)
+        unsafe{ std::mem::transmute( data ) }
+    }
+
+    /// Create reference from byte array of matching size
+    pub fn from_bytes_mut(data: &mut [u8; {{ struct.size_in_bytes }}]) -> &mut Self {
+        // Safety: This is safe since {{ struct.name }} is repr(transparent)
+        unsafe{ std::mem::transmute( data ) }
+    }
+
+    /// Create reference from byte array
+    pub fn from_bytes_slice(data: &[u8]) -> Result<&Self, flatdata::ResourceStorageError> {
+        // We cannot rely on TryFrom here, since it does not yet support > 33 bytes
+        if data.len() < {{ struct.size_in_bytes }} {
+            assert_eq!(data.len(), {{ struct.size_in_bytes }});
+            return Err(flatdata::ResourceStorageError::UnexpectedDataSize);
+        }
+        let ptr = data.as_ptr() as *const [u8; {{ struct.size_in_bytes }}];
+        // Safety: We checked length before
+        Ok(Self::from_bytes(unsafe { &*ptr }))
+    }
+
+    /// Create reference from byte array
+    pub fn from_bytes_slice_mut(data: &mut [u8]) -> Result<&mut Self, flatdata::ResourceStorageError> {
+        // We cannot rely on TryFrom here, since it does not yet support > 33 bytes
+        if data.len() < {{ struct.size_in_bytes }} {
+            assert_eq!(data.len(), {{ struct.size_in_bytes }});
+            return Err(flatdata::ResourceStorageError::UnexpectedDataSize);
+        }
+        let ptr = data.as_ptr() as *mut [u8; {{ struct.size_in_bytes }}];
+        // Safety: We checked length before
+        Ok(Self::from_bytes_mut(unsafe { &mut *ptr }))
+    }
+
+    pub fn as_bytes(&self) -> &[u8; {{ struct.size_in_bytes }}] {
+        &self.data
+    }
+}
+
+impl Default for {{ struct.name }} {
+    fn default( ) -> Self {
+        Self::new( )
+    }
+}
+
+unsafe impl flatdata::NoOverlap for {{struct.name}} {}
+{% else %}
+impl flatdata::Overlap for {{struct.name}} {}
+{% endif %}
+
+impl {{ struct.name }} {
+    {% for field in struct.fields %}
+    {% if field.doc and not field.range %}
+    {{ field.doc | rust_doc }}
+    {% elif field.range %}
+    /// First element of the range [`{{ field.range | escape_rust_keywords }}`].
+    ///
+    /// [`{{ field.range | escape_rust_keywords }}`]: #method.{{ field.range | escape_rust_keywords }}
+    {% endif %}
+    #[inline]
+    pub fn {{ field.name | escape_rust_keywords }}(&self) -> {% if field.invalid_value %}Option<{{ field | field_type }}>{% else %}{{ field | field_type }}{% endif %} {
+        let value = flatdata_read_bytes!({{ field | primitive_type }}, self.data.as_ptr(), {{ field.offset }}, {{ field.type.width }});
+        {% if field.invalid_value %}
+        let x = unsafe { std::mem::transmute::<{{ field | primitive_type }}, {{ field | field_type }}>(value) };
+        Some(x).filter(|&x| x != {{ fully_qualified_name(struct, field.invalid_value.node) }})
+        {% else %}
+        unsafe { std::mem::transmute::<{{ field | primitive_type }}, {{ field | field_type }}>(value) }
+        {% endif %}
+    }
+
+    {% if field.range %}
+    {% if field.doc %}
+    {{ field.doc | rust_doc }}
+    {% endif %}
+    #[inline]
+    pub fn {{ field.range | escape_rust_keywords }}(&self) -> std::ops::Range<{% if field.invalid_value %}Option<{{ field | field_type }}>{% else %}{{ field | field_type }}{% endif %}> {
+        let start = flatdata_read_bytes!({{ field.type.name }}, self.data.as_ptr(), {{ field.offset }}, {{ field.type.width }});
+        let end = flatdata_read_bytes!({{ field.type.name }}, self.data.as_ptr(), {{ field.offset }} + {{ struct.size_in_bytes }} * 8, {{ field.type.width }});
+        {% if field.invalid_value %}
+        let check = |x| {% if field.invalid_value %}Some(x).filter(|&x| x != {{ fully_qualified_name(struct, field.invalid_value.node) }}{% else %}x{% endif %};
+        check(start)..check(end)
+        {% else %}
+        start..end
+        {% endif %}
+    }
+
+    {% endif %}
+    {% endfor %}
+}
+
+impl std::fmt::Debug for {{ struct.name }} {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        f.debug_struct("{{ struct.name }}")
+            {% for field in struct.fields %}
+            {% set name = field.name | escape_rust_keywords %}
+            .field("{{ name }}", &self.{{ name }}())
+            {% endfor %}
+            .finish()
+    }
+}
+
+impl std::cmp::PartialEq for {{ struct.name }} {
+    #[inline]
+    fn eq(&self, other: &Self) -> bool {
+        {% for field in struct.fields %}
+        {% set name = field.name | escape_rust_keywords %}
+        self.{{ name }}() == other.{{ name }}() {% if not loop.last %}&&{% endif %}
+        {% endfor %}
+    }
+}
+
+impl {{ struct.name }} {
+    {% for field in struct.fields %}
+    {% set name = field.name | escape_rust_keywords %}
+    {% if field.doc and not field.range %}
+    {{ field.doc | rust_doc }}
+    {% elif field.range %}
+    /// First element of the range [`{{ field.range | escape_rust_keywords }}`].
+    ///
+    /// [`{{ field.range | escape_rust_keywords }}`]: struct.{{ struct.name }}Ref.html#method.{{ field.range | escape_rust_keywords }}
+    {% endif %}
+    #[inline]
+    #[allow(missing_docs)]
+    pub fn set_{{ name }}(&mut self, value: {% if field.invalid_value %}Option<{{ field | field_type }}>{% else %}{{ field | field_type }}{% endif %}) {
+        {% if field.invalid_value %}let value = value.unwrap_or({{ fully_qualified_name(struct, field.invalid_value.node) }});{% endif %}
+        flatdata_write_bytes!({{ field | primitive_type }}; value, self.data, {{ field.offset }}, {{ field.type.width }})
+    }
+
+    {% endfor %}
+
+    /// Copies the data from `other` into this struct.
+    #[inline]
+    pub fn fill_from(&mut self, other: &{{ struct.name }}) {
+        {% for field in struct.fields %}
+        {% set name = field.name | escape_rust_keywords %}
+        self.set_{{ name }}(other.{{ name }}());
+        {% endfor %}
+    }
+}
+
+{%- endmacro %}
