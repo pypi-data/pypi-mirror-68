@@ -1,0 +1,12 @@
+[Lima_camera]
+MythenSLS = sls.lima.camera
+
+[Lima_tango_camera]
+MythenSLS = sls.lima.tango
+
+[console_scripts]
+sls-gui = sls.gui:main [gui]
+sls-lima = sls.lima.camera:main [lima]
+sls-lima-tango-server = sls.lima.tango:main [lima]
+sls-simulator = sls.simulator:main [simulator]
+
