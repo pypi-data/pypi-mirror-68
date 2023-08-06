@@ -1,0 +1,3 @@
+requests
+matplotlib
+pyarrow>=0.17.0
