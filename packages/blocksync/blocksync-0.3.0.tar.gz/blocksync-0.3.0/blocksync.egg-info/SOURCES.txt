@@ -1,0 +1,14 @@
+README.rst
+setup.cfg
+setup.py
+blocksync/__init__.py
+blocksync/consts.py
+blocksync/file.py
+blocksync/interrupt.py
+blocksync/syncer.py
+blocksync/utils.py
+blocksync.egg-info/PKG-INFO
+blocksync.egg-info/SOURCES.txt
+blocksync.egg-info/dependency_links.txt
+blocksync.egg-info/requires.txt
+blocksync.egg-info/top_level.txt
