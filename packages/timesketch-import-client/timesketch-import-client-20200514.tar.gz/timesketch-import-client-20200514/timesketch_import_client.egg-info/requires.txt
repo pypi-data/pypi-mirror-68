@@ -1,0 +1,4 @@
+pyyaml
+xlrd
+pandas
+timesketch-api-client
