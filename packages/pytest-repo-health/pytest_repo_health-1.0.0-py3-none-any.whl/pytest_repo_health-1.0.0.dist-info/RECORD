@@ -1,0 +1,8 @@
+pytest_repo_health/__init__.py,sha256=hpz9jEVkOjEGEua9gcX1fbEyemeTzayiqAI6uFkHh7w,2277
+pytest_repo_health/plugin.py,sha256=Tpw2ALmKEYbH4KtHWOhexslFlhRsmld06f-KkTY7NPg,5297
+pytest_repo_health-1.0.0.dist-info/LICENSE,sha256=EGobS4txMkp4nvtKWfbPrHgaw0-Nl0_gZ5QYYWL0eRc,35135
+pytest_repo_health-1.0.0.dist-info/METADATA,sha256=yHL60gV-fmawrYQ4AaM_BQ6kEqIWV3GeIhCGjyLA9os,6866
+pytest_repo_health-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytest_repo_health-1.0.0.dist-info/entry_points.txt,sha256=X6J3TD6qHktWzML-uyPJNc7-7zieq2cqFsq9AihA8sI,47
+pytest_repo_health-1.0.0.dist-info/top_level.txt,sha256=gBwBLa15M80fFOz7LNEJnte8Nr9JDdUUc1xe42qy8ME,19
+pytest_repo_health-1.0.0.dist-info/RECORD,,
