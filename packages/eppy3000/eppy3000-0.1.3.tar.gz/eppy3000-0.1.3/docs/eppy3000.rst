@@ -1,0 +1,78 @@
+eppy3000 package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    eppy3000.experimental
+    eppy3000.oldeppy
+
+Submodules
+----------
+
+eppy3000.epMunch module
+-----------------------
+
+.. automodule:: eppy3000.epMunch
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.eppy3000 module
+------------------------
+
+.. automodule:: eppy3000.eppy3000
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.epschema module
+------------------------
+
+.. automodule:: eppy3000.epschema
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.idfjsonconverter module
+--------------------------------
+
+.. automodule:: eppy3000.idfjsonconverter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.modelmaker module
+--------------------------
+
+.. automodule:: eppy3000.modelmaker
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.rawidf module
+----------------------
+
+.. automodule:: eppy3000.rawidf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+eppy3000.readepj module
+-----------------------
+
+.. automodule:: eppy3000.readepj
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: eppy3000
+    :members:
+    :undoc-members:
+    :show-inheritance:
