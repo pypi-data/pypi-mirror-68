@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pynamodb_mypy/__init__.py
+pynamodb_mypy/plugin.py
+pynamodb_mypy.egg-info/PKG-INFO
+pynamodb_mypy.egg-info/SOURCES.txt
+pynamodb_mypy.egg-info/dependency_links.txt
+pynamodb_mypy.egg-info/requires.txt
+pynamodb_mypy.egg-info/top_level.txt
+tests/__init__.py
+tests/mypy_helpers.py
+tests/test_plugin.py
