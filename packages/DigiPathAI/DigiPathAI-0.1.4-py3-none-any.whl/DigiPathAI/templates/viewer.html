@@ -1,0 +1,308 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Slide Viewer</title>
+	<meta name="viewport" content="user-scalable=no">
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/dark-mode.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body class="bg-white">
+    {% include 'nav.html' %}
+    <div id="sidebar" class="container" >
+        <br>
+        <div class="col">
+            <div class="row">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="mask-toggle-btn">
+                        <label class="custom-control-label" for="mask-toggle-btn" id="mask-overlay-text"></label>
+                    </div>
+            </div>
+            <div class="row">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="uncertainty-toggle-btn">
+                        <label class="custom-control-label" for="uncertainty-toggle-btn" id="uncertainty-overlay-text"></label>
+                    </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="form-group">
+                    <button class="btn btn-dark dropdown-toggle form-control" type="button" id="tissuetypemenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Tissue Type <strong style="color: red;">*</strong>
+                        <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="tissuetypemenu" id="tissuetypedd">
+                        <a class="dropdown-item" href="#">Colon</a>
+                        <a class="dropdown-item" href="#">Liver</a>
+                        <a class="dropdown-item" href="#">Breast</a>
+                    </div>
+                </div>
+                    {% if viewer_only %}
+                        <button id="get-segmentation-btn" class='btn btn-success' disabled>Segmentation Disabled</button>
+			<p>GPU not available</p>
+                    {% else %}
+                    <form>
+                        <a href=# ><button id="get-segmentation-btn" class='btn btn-success'>Get segmentation</button></a>
+                    </form>
+                    {% endif %}
+                <div class="col">
+                    <a id="segment-status"></a>
+                    <a id="segment-progress"></a>
+                </div>
+            </div>
+            <div class="progress" id="segment-progress" style="display: none;">
+                <div class="progress-bar" role="progressbar" style="" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <hr/>
+            <div class="row">
+                    <h2>Image List</h2>
+                    <ul>
+                        {% for entry in root_dir.children recursive %}
+                            <li>
+                                {% if entry.url_path %}
+                                    <a href="{{ url_for('slide', path=entry.url_path) }}">
+                                        {{ entry.name }}
+                                    </a>
+                                {% else %}
+                                    {{ entry.name }}
+                                {% endif %}
+
+                                {% if entry.children %}
+                                    <ul>
+                                        {{ loop(entry.children) }}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div id="view"></div>
+    <div class="container" id="properties">
+        <div class="col">
+            <div class="row">
+            <h1>Slide properties</h1>
+            </div>
+            <div class="row">
+            {% if properties %}
+                <ul>
+                    {% for name in properties %}
+                    <li>
+                        <p><b>{{ name }}</b>: {{ properties[name] }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="notice">None</div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../static/js/popper.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/dark-mode-switch.js"></script>
+<script type="text/javascript" src="../static/js/openseadragon-latest.js"></script>
+<script type="text/javascript" src="../static/js/openseadragon-scalebar.js"></script>
+<!--<script type="text/javascript" src="static/custom/multiple_img.js"></script>-->
+<script type="text/javascript">$(document).ready(function() {
+    $("#mask-toggle-btn").prop('checked', false); 
+    $("#uncertainty-toggle-btn").prop('checked', false); 
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    function enable_mask_overlay(mask_on){
+        if(mask_on){
+            $("#mask-toggle-btn").prop('disabled', false); 
+            $("#mask-overlay-text").text("Overlay mask");
+        }
+        else{
+            $("#mask-toggle-btn").prop('disabled', true); 
+            $("#mask-overlay-text").text("Mask not available");
+        }
+    }
+
+    function enable_uncertainty_overlay(mask_on){
+        if(mask_on){
+            $("#uncertainty-toggle-btn").prop('disabled', false); 
+            $("#uncertainty-overlay-text").text("Overlay uncertainty");
+        }
+        else{
+            $("#uncertainty-toggle-btn").prop('disabled', true); 
+            $("#uncertainty-overlay-text").text("Uncertainty not available");
+        }
+    }
+
+    {% if mask_url==False %}
+    enable_mask_overlay(false)
+    {% else %}
+    enable_mask_overlay(true);
+    {% endif %}
+    
+    {% if uncertainty_url == False %}
+    enable_uncertainty_overlay(false)
+    {% else %}
+    enable_uncertainty_overlay(true);
+    {% endif %}
+
+    var dzi_data = {{ dzi_data|default('{}')|safe }};
+    var viewer = new OpenSeadragon({
+        id: "view",
+        prefixUrl: "static/images/",
+        timeout: 120000,
+        animationTime: 0.5,
+        blendTime: 0.1,
+        constrainDuringPan: true,
+        maxZoomPixelRatio: 2,
+        minZoomLevel: 1,
+        visibilityRatio: 1,
+        zoomPerScroll: 2,
+    });
+    viewer.addHandler("open", function() {
+        // To improve load times, ignore the lowest-resolution Deep Zoom
+        // levels.  This is a hack: we can't configure the minLevel via
+        // OpenSeadragon configuration options when the viewer is created
+        // from DZI XML.
+        viewer.source.minLevel = 8;
+    });
+    viewer.scalebar({
+        xOffset: 10,
+        yOffset: 10,
+        barThickness: 3,
+        color: '#555555',
+        fontColor: '#333333',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    });
+
+    function open_slide(url,mask_url,uncertainty_url, mpp) {
+        var tile_source, mask_source, uncertainty_source;
+
+        if (dzi_data[url]) {
+            // DZI XML provided as template argument (deepzoom_tile.py)
+            tile_source = new OpenSeadragon.DziTileSource(
+                    OpenSeadragon.DziTileSource.prototype.configure(
+                    OpenSeadragon.parseXml(dzi_data[url]), url));
+            mask_source = new OpenSeadragon.DziTileSource(
+                    OpenSeadragon.DziTileSource.prototype.configure(
+                    OpenSeadragon.parseXml(dzi_data[mask_url]), mask_url));
+            uncertain_source = new OpenSeadragon.DziTileSource(
+                   OpenSeadragon.DziTileSource.prototype.configure(
+                    OpenSeadragon.parseXml(dzi_data[uncertainty_url]), uncertainty_url));
+        } else {
+            // DZI XML fetched from server (deepzoom_server.py)
+            tile_source = url;
+            mask_source = mask_url;
+            uncertainty_source = uncertainty_url;
+        }
+        viewer.open(tile_source);
+        viewer.addTiledImage({
+            tileSource: mask_source,
+            opacity: 0,
+        });
+        viewer.addTiledImage({
+            tileSource: uncertainty_source,
+            opacity: 0,
+        });
+
+        $("#mask-toggle-btn").change(function(){
+            tiledImage = viewer.world.getItemAt(1);
+            if($(this).is(':checked')) {
+                console.log("checked");
+                tiledImage.setOpacity(0.5);
+            } else {
+                tiledImage.setOpacity(0);
+            }
+        });
+
+        $("#uncertainty-toggle-btn").change(function(){
+            tiledImage = viewer.world.getItemAt(1);
+            if($(this).is(':checked')) {
+                console.log("checked");
+                tiledImage.setOpacity(0.5);
+            } else {
+                tiledImage.setOpacity(0);
+            }
+        });
+
+        viewer.scalebar({
+            pixelsPerMeter: mpp ? (1e6 / mpp) : 0,
+        });
+    }
+
+    open_slide("{{ slide_url }}","{{ mask_url }}", "{{ uncertainty_url }}", parseFloat('{{ slide_mpp }}'));
+//    $(".load-slide").click(function(ev) {
+//        $(".current-slide").removeClass("current-slide");
+//        $(this).parent().addClass("current-slide");
+//        open_slide($(this).attr('data-url'),
+//                parseFloat($(this).attr('data-mpp')));
+//        ev.preventDefault();
+//    });
+    function update_segment_status(){
+        $.getJSON('/check_segment_status',
+            function(data){
+                //console.log(data);
+                $('#segment-status').text(data.status);
+                $('#segment-progress').text(data.progress);
+                $('.progress').show();
+                $('.progress-bar').attr('style', 'width: ' + Number(data.progress) + '%');
+                if(data.status==="Done"){
+                    clearInterval(intervalId);
+		            location.reload(true);
+                    $('#segment-progress').hide("slow");
+                    enable_mask_overlay(true);
+                }
+            });
+    }
+    
+    var intervalId;
+    var tissuetype = null;
+
+    $(function () {
+        $("#tissuetypedd a").click(function () {
+        $("#tissuetypemenu").html($(this).html() + ' <span class="caret"></span>');
+        tissuetype = $(this).html();
+        });
+    });
+
+    $('#get-segmentation-btn').bind('click', function() {
+            if (tissuetype == null){
+                alert("Select Tissue Type");
+                return false;
+            }
+                // $.getJSON('/segment',
+                //     function(data) {
+                //         console.log("===================");
+                //         console.log(data);
+                //         $('#get-segmentation-btn').prop('disabled',true);
+                //         intervalId=setInterval(update_segment_status,2000);
+                //         update_segment_status();
+                // });
+
+
+                $.ajax({
+                    url: '/segment',
+                    type: "POST",
+                    data: {tissuetype: tissuetype},
+                    dataType: "json",
+                    success: function (data) {
+                        console.log(data);
+                        $('#get-segmentation-btn').prop('disabled',true);
+                        intervalId = setInterval(update_segment_status,2000);
+                        update_segment_status();
+                    },
+                    error: function(data) {
+                        console.log("error ...")
+                        console.log(data);
+                    }
+                });
+
+                return false;
+              });
+});
+</script>
+
+
