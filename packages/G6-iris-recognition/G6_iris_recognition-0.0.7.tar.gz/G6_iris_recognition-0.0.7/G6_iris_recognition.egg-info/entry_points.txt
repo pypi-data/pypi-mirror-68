@@ -1,0 +1,3 @@
+[console_scripts]
+G6_iris_recognition = G6_iris_recognition.main:main
+
