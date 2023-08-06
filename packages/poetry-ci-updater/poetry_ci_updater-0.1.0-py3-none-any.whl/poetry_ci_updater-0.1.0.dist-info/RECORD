@@ -1,0 +1,10 @@
+poetry_ci_updater/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_ci_updater/main.py,sha256=DxtnCfKmrPhk-qE4zbo2aRTWa87l5weNVDSHQOZf0D8,2287
+poetry_ci_updater/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poetry_ci_updater/providers/gitlab.py,sha256=TI8ZAIYteXaY-aHNJe5SuXy5aqZIdfNZF7W_yl1jMb4,1475
+poetry_ci_updater/providers/provider.py,sha256=FS3ATvMXpXwzZ_qyEQ3Nw8Y5P8Sr9S_S-0Bk_x2zDfE,262
+poetry_ci_updater-0.1.0.dist-info/entry_points.txt,sha256=3oCAem-NbJ-O94VNmY3nSc6DfV1gE8_4GauORE3dtLw,65
+poetry_ci_updater-0.1.0.dist-info/LICENSE,sha256=1XdGjiFlKTE40GgRbojjogTQkLmEAu9mo5b8n1iUTXs,1070
+poetry_ci_updater-0.1.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+poetry_ci_updater-0.1.0.dist-info/METADATA,sha256=PPI0ESsG3Cbw8Zl2-AZnGD-U9zU3JqmwX4J8vcSAqWA,1918
+poetry_ci_updater-0.1.0.dist-info/RECORD,,

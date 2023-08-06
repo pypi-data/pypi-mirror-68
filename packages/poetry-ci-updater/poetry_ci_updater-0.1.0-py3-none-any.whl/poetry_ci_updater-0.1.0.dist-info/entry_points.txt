@@ -1,0 +1,3 @@
+[console_scripts]
+poetry-ci-updater=poetry_ci_updater.main:main
+
