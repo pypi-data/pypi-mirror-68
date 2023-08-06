@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+pysparkfgdevbi/__init__.py
+pysparkfgdevbi/version.py
+pysparkfgdevbi.egg-info/PKG-INFO
+pysparkfgdevbi.egg-info/SOURCES.txt
+pysparkfgdevbi.egg-info/dependency_links.txt
+pysparkfgdevbi.egg-info/top_level.txt
