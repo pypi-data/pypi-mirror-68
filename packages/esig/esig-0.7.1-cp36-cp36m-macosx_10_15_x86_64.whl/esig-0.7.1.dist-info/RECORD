@@ -1,0 +1,17 @@
+esig/install_helpers.py,sha256=RcMOfOOUPPJmKOQNATHbxz5o3CgtL_0i4NRXbIY8UtI,36173
+esig/tosig.cpython-36m-darwin.so,sha256=vaHJGtmUNP44ps0KRhjK2T3fP0zNiuj6ZkWpuwHXmzM,4051756
+esig/__init__.py,sha256=xJjzGz7BRTybz0ITLR_Rd8JbWn9siGV_fWvH8cdCgv8,1804
+esig/VERSION,sha256=kCMRx7s4-hZY_0A972FY7nN4_p1uLihPocOHNcMb0ws,6
+esig/ERROR_MESSAGE,sha256=Fr6GlocmZORg4GKbTbVLkKzlviONxYy7FzHYG7id_rk,883
+esig/tests/test_package.py,sha256=1LTVMzV6NYf_k3Qb0VvS3fjFwnJkRfauj27U3QL3DSI,3712
+esig/tests/__init__.py,sha256=ZQILJXAaBz2gKQWVlpAnpf3dOzWNvhZ35RM3-0xBT8Y,951
+esig/tests/auxiliaryfunct.py,sha256=8D14rojbjRMBApDnT3PMg3cmjirAVZGMsww_Zom6h8c,17207
+esig/tests/esigtests.py,sha256=IauwONg4H_Am3onPYZ3dVzK8vfx8wcQluWI8gz-uZ98,9579
+esig/.dylibs/libboost_thread-mt.dylib,sha256=XIxLRuyJvZkUU8QAtdMku6ytPDF5oEH-TToQ-xXsads,174752
+esig/.dylibs/libboost_system-mt.dylib,sha256=lwmGqAeEQ2z96h-HQgBloRvGkf3SCq7ihr_HcH9Z9Hk,4712
+esig-0.7.1.dist-info/RECORD,,
+esig-0.7.1.dist-info/LICENSE,sha256=IsGR_xcqumzNSr2smynaE0ZwaQxhFrNBD11CMqmW-RA,35827
+esig-0.7.1.dist-info/AUTHORS,sha256=fsxhu3L37AyfR0liFLMhw7Behl0YNkgbdSuIKkw4e8k,587
+esig-0.7.1.dist-info/WHEEL,sha256=p5Lb2lHVNUS4rBFWfl86oHIDtdgVLuZ3-zCQave9-OM,111
+esig-0.7.1.dist-info/top_level.txt,sha256=F1eEcl8RqWaqM2uiFckw6psL2BknGzFQS44-WMtHetA,5
+esig-0.7.1.dist-info/METADATA,sha256=OqSDwXOyWru-qjzJlIZywENcq0I2kzPO32MJwvOnYK0,1045
