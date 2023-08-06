@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: airflow-django
+Version: 0.4.0
+Summary: A kit for using Django features, like its ORM, in Airflow DAGs.
+License: MIT
+Author: Paris Kasidiaris
+Author-email: paris@sourcelair.com
+Requires-Python: >=3.6,<3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: apache-airflow (>=1.10,<2.0)
+Requires-Dist: django (>=2.0)
