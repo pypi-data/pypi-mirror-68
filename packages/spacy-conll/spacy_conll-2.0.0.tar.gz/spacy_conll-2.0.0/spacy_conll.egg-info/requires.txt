@@ -1,0 +1,11 @@
+spacy>=2.0
+packaging
+
+[dev]
+pytest
+flake8
+isort
+black
+
+[pd]
+pandas

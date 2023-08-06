@@ -1,0 +1,3 @@
+[console_scripts]
+parse-as-conll = spacy_conll.__main__:main
+
