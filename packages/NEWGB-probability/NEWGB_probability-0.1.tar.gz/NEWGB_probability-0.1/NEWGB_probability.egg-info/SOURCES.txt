@@ -1,0 +1,10 @@
+setup.py
+NEWGB_probability/Binomialdistribution.py
+NEWGB_probability/Gaussiandistribution.py
+NEWGB_probability/Generaldistribution.py
+NEWGB_probability/__init__.py
+NEWGB_probability.egg-info/PKG-INFO
+NEWGB_probability.egg-info/SOURCES.txt
+NEWGB_probability.egg-info/dependency_links.txt
+NEWGB_probability.egg-info/not-zip-safe
+NEWGB_probability.egg-info/top_level.txt
