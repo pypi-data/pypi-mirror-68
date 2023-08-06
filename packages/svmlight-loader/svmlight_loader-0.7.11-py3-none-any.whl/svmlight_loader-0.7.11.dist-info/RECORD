@@ -1,0 +1,10 @@
+svmlight_loader/__init__.py,sha256=8NnbQqLHt7So1YTc41bFoMJ-SwOcAEOctGuoNh1sYlw,302
+svmlight_loader/_api.py,sha256=6vXSTM4mDuEN8AOT-ULICJMLsPiA770YyqLiHdnd-mw,3310
+svmlight_loader/_sklearn.py,sha256=rTiRW02w6hSjqBClgGGwOXLjx-AcdtR-U26OSNu-gNA,2102
+svmlight_loader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svmlight_loader/tests/test_api.py,sha256=8rFKsQ_pvV3DEJJ5L-seMDnYRZboAdEhLzybmRGQ7nQ,6535
+svmlight_loader-0.7.11.dist-info/COPYING,sha256=aJtU0WW4EihEQhEnxtGa_8pzit5Fhfz3CMOXgo7SeUg,1057
+svmlight_loader-0.7.11.dist-info/METADATA,sha256=u72LDxez6u9cyrZ9dbP-zL_y2d_1UXXntAJpzcykMY0,2782
+svmlight_loader-0.7.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+svmlight_loader-0.7.11.dist-info/top_level.txt,sha256=T9MBYAXpED_sh28DqQVAKBwcvA60Med9hPXnmr633Ys,16
+svmlight_loader-0.7.11.dist-info/RECORD,,
