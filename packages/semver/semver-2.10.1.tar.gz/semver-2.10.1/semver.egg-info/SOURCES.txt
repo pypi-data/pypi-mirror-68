@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+semver.py
+setup.cfg
+setup.py
+test_semver.py
+semver.egg-info/PKG-INFO
+semver.egg-info/SOURCES.txt
+semver.egg-info/dependency_links.txt
+semver.egg-info/entry_points.txt
+semver.egg-info/top_level.txt
