@@ -1,0 +1,12 @@
+iosresignapp/__init__.py,sha256=kVOLBpgBEN0fTweuplQx4RKCefUutgfahfoKTTRRBmY,107
+iosresignapp/codesign.py,sha256=DgXkEcRi4megXeojF48lsUghm9f7YwA0v6i62CvYeoY,1864
+iosresignapp/command.py,sha256=zfCvMqLe8dHpyyUYPvOdqcEcbo91uZZ1rhQyLsyoWGQ,2214
+iosresignapp/resign.py,sha256=X1RvtzQN-DEn_Zmt5llOOHGMf8yHo3puV43VqJmuj78,8882
+iosresignapp/security.py,sha256=YTTBPgHA9DVxQBj_IQGNqHG3m93eOcdRpWQsV3rrgpM,1613
+iosresignapp/util.py,sha256=78azRVd5LoN9ajVbG40kGm5-CMluEcm91JcuKGbjBws,165
+iOSReSignApp-1.3.dist-info/LICENSE,sha256=INDiG0-WBxevq7__Lq8OUSQ6AwglVHXhQtDH6OcUCBM,1065
+iOSReSignApp-1.3.dist-info/METADATA,sha256=N0yrcUAu2bGvAAnGsMTXY4hTNqdx2YpDmRwRkmAwoSo,3929
+iOSReSignApp-1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iOSReSignApp-1.3.dist-info/entry_points.txt,sha256=0QNFNOusJeSS3W9ocmu3J6GD67_DRn6mBn1PxOpR3xg,60
+iOSReSignApp-1.3.dist-info/top_level.txt,sha256=FzLmZ1Co-LSCWcn0ny_dLCGSiqXWIGFEbLXLMikr830,13
+iOSReSignApp-1.3.dist-info/RECORD,,
