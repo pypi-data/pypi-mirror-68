@@ -1,0 +1,9 @@
+sgextVersion.py,sha256=MzyYhA1QAGIXoBWHL6rG8a-D77N5gmEwU2BOz9Z3nnQ,706
+sgext/__init__.py,sha256=2HxQke-Vab3zURtO8Vq9ima4R1BnLlWdgyrOIEm9D68,48
+sgext/_sgext.cp35-win_amd64.pyd,sha256=w6d5W3_SeTOe5_vcDc8ON_iZZtkhx4z7--pcxQlgfRs,18558976
+sgext/from_to.py,sha256=9XOWTCn8MrRGmKJchF6Z8naZNzXzUAaQjCu98pFNWCc,1903
+sgext/fixtures/__init__.py,sha256=n4vbbf4m5cXLM1fnCMn6N6Qpkerc0hhEl9NxHIOGuWE,1730
+sgext-0.9.4.dist-info/METADATA,sha256=tzx_4k-rno5k_p10HHtMLKEq5Yz65JsY1hykp8vu52E,1456
+sgext-0.9.4.dist-info/WHEEL,sha256=qJtOKWfJjo2oi0awVHQji_JNc3lK7V7amUin2w7JWQA,112
+sgext-0.9.4.dist-info/top_level.txt,sha256=SO29HFAhWcb01Wgl9oqj4GlrDv0LltJ1qJCxSZljbuQ,19
+sgext-0.9.4.dist-info/RECORD,,
