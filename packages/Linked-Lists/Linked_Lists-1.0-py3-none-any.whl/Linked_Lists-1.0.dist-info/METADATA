@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Linked-Lists
+Version: 1.0
+Summary: Package for immplementing Linked List operations
+Home-page: https://github.com/iamdonm/Linked_List
+Author: Don Mathew
+Author-email: don.19pmc325@mcka.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# Linked_List
+
+This is a simple Linked List package. You can useto implement Linked List. 
+[Github](https://github.com/iamdonm/Linked_List)
+
