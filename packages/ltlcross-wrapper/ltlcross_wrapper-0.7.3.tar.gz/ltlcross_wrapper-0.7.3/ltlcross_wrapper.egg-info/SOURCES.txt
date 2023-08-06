@@ -1,0 +1,13 @@
+README.md
+setup.py
+ltlcross_wrapper/__init__.py
+ltlcross_wrapper/analyzer.py
+ltlcross_wrapper/locate_errors.py
+ltlcross_wrapper/modular.py
+ltlcross_wrapper/runner.py
+ltlcross_wrapper/tables_utils.py
+ltlcross_wrapper.egg-info/PKG-INFO
+ltlcross_wrapper.egg-info/SOURCES.txt
+ltlcross_wrapper.egg-info/dependency_links.txt
+ltlcross_wrapper.egg-info/requires.txt
+ltlcross_wrapper.egg-info/top_level.txt
