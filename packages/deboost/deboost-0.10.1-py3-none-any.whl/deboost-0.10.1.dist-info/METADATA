@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: deboost
+Version: 0.10.1
+Summary: DEBoost: A Python Library for Weighted Distance Ensembling in Machine Learning
+Home-page: https://github.com/weihao94/DEBoost
+Author: Wei Hao Khoong
+Author-email: khoongweihao@u.nus.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# DEBoost
+
+A Python Library for Weighted Distance Ensembling in Machine Learning
+
+
+
