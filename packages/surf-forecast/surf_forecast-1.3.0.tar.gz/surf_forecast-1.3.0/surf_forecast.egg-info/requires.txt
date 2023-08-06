@@ -1,0 +1,2 @@
+mechanize>=0.4.5
+lxml>=4.5.0
