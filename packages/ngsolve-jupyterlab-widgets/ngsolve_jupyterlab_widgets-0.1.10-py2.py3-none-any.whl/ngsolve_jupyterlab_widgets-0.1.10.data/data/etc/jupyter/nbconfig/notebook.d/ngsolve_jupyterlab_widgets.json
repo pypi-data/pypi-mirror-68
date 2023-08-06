@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "ngsolve_jupyterlab_widgets/extension": true
+  }
+}
