@@ -1,0 +1,13 @@
+sphinx_collections-0.0.1a1-py3.8-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/collections/__init__.py,sha256=zHQvWGkVh9ik12aUxW4l5SZUaHF4_yB8VIT7s_05lRk,64
+sphinxcontrib/collections/collections.py,sha256=3NWlQpq5tDh7FAvODXsfmR_kQAUuEINnYnmRCkTqTpM,5513
+sphinxcontrib/collections/directives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sphinxcontrib/collections/directives/if_collection.py,sha256=yE0vn7ALi7CCDz1oEsA8Ci1M1zoYUqNDQlgrE1Xn9LI,2128
+sphinxcontrib/collections/drivers/__init__.py,sha256=kxvbkIE2ZRL1kuGhZIuZpDCvB_BN-Cx72HxTjwJPjt4,1837
+sphinxcontrib/collections/drivers/copy.py,sha256=mGX8R8pCLoMisNnOMoUc3XA60PRMybeY1bSkmhDee6E,889
+sphinx_collections-0.0.1a1.dist-info/LICENSE,sha256=elqX7qokVKipOmz4MEY7IA76IjxnyzWRtlOaIr0Ph_k,1066
+sphinx_collections-0.0.1a1.dist-info/METADATA,sha256=QuV_FnEXtPc_ECrNkc5sI7r5tYy1EiMorxkAG_qPTSI,3627
+sphinx_collections-0.0.1a1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sphinx_collections-0.0.1a1.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinx_collections-0.0.1a1.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinx_collections-0.0.1a1.dist-info/RECORD,,
