@@ -1,0 +1,13 @@
+djheroku/__init__.py,sha256=aKIDlPEEK2LWKgd3apY50gxWoKxX1dqNzoHTBiBd52k,1096
+djheroku/_version.py,sha256=H2isq-WXvCvhFTgvpeQBSg5owP-8S20i-054y4QflyU,18454
+djheroku/auth.py,sha256=2XnEHZQE9J1KX5iFfMWfH3Pa7oLrBMaO96VjKwNhDN0,2778
+djheroku/authpatch.py,sha256=D5YKB-CTba7rmD9o3j719NYrDZQvqybGe5hGfxuYOiA,964
+djheroku/conf.py,sha256=W6Vkkks50rtR07jh81R1w2MlxpiHe0RsM_IngLEgyLM,3698
+djheroku/fixture.py,sha256=NgOw04TivTVB2EA7RhbMleq9TQAt7dgk_KRhdyNgytk,174
+djheroku/middleware.py,sha256=aEu3_B2vm7MSBkeb2lthccub8Q4iKEWjAEPDrqpxn28,3567
+djheroku/tests.py,sha256=LcqQoyqkz0weoe_xbiN5dWKxnMb18n2bIZoI99OS264,18857
+Djheroku-0.6.0.dist-info/LICENSE.md,sha256=NzFf3mDYMP76MIAH18WUZrsoWrTEAmWgsBfEFWKt1fI,1100
+Djheroku-0.6.0.dist-info/METADATA,sha256=-I-1YyyDLk9bFSIu1oLtfP7J1muHvW5GAu-UTj4uMgA,3454
+Djheroku-0.6.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Djheroku-0.6.0.dist-info/top_level.txt,sha256=X_dfNqAdYSB5j0K2ONw4fAn836zol3l88Unq598KXoQ,9
+Djheroku-0.6.0.dist-info/RECORD,,
