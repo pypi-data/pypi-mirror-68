@@ -1,0 +1,8 @@
+# Base Configuration for Artella Media Manager in Solstice
+
+# Defines a list of paths where media profiles for playblats are stored
+media_profiles_paths:
+  - "Assets/Scripts/PIPELINE/__working__/PlayblastStampProfiles"
+
+# Defines default profile that will be used by Media Manager
+default_profile: 'solstice_profile'

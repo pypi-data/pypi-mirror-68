@@ -1,0 +1,22 @@
+# Base Configuration file for artellapipe-tools-playblastmanager in Solstice for Maya
+
+# Defines the tokens for Playblast Manager
+tokens:
+  - <Camera>:
+      label: 'Insert camera name'
+      fn: get_camera_token
+  - <Scene>:
+      label: 'Insert current scene name'
+      fn: get_scene_token
+  - <RenderLayer>:
+      label: 'Insert active render layer name'
+      fn: get_render_layer_token
+  - <Images>:
+      label: 'Insert images director of current set project'
+      rule: images
+  - <Movies>:
+      label: 'Insert movies directory of current set project'
+      rule: movies
+  - <${project}>:
+      label: 'Insert project path'
+      fn: get_project_path_token

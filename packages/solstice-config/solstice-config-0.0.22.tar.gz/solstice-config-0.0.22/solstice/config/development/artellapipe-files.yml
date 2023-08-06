@@ -1,0 +1,94 @@
+# Base Configuration for Artella Files for Solstice
+
+# Defines dictionary of file types (textures, model, etc) used by the project
+files:
+  textures:
+    name: Textures
+    class: solstice.files.texture.SolsticeTextureAssetFile
+    extensions:
+      - tx
+      - png
+      - jpg
+      - jpeg
+  model:
+    name: Model
+    class: solstice.files.model.SolsticeModelAssetFile
+    extensions:
+      - ma
+  shading:
+    name: Shading
+    class: solstice.files.shading.SolsticeShadingAssetFile
+    extensions:
+      - ma
+  library_shader:
+    name: Library Shader
+    class: solstice.files.shader.SolsticeShaderFile
+    template: shader
+    extensions:
+      - sshader
+  shader:
+    name: Asset Shader
+    class: solstice.files.shader.SolsticeShaderAssetFile
+    template: shader
+    extensions:
+      - sshader
+  shaders:
+    name: Shaders
+    class: solstice.files.shader.SolsticeShadersAssetFile
+    extensions:
+      - sshader
+  shadersmapping:
+    name: Shaders Map
+    class: solstice.files.shader.SolsticeShaderMappingAssetFile
+    extensions:
+      - json
+  rig:
+    name: Rig
+    class: solstice.files.rig.SolsticeRigAssetFile
+    extensions:
+      - ma
+  groom:
+    name: Groom
+    class: solstice.files.groom.SolsticeGroomAssetFile
+    extensions:
+      - ma
+  alembic:
+    name: Alembic
+    class: solstice.files.alembic.SolsticeAlembicAssetFile
+    extensions:
+      - abc
+  gpualembic:
+    name: GPU Cache
+    class: solstice.files.alembic.SolsticeGpuAlembicAssetFile
+    extensions:
+      - abc
+  standin:
+    name: Standin
+    class: solstice.files.standin.SolsticeStandinAssetFile
+    extensions:
+      - ass
+  lightrig:
+    name: Light Rig
+    class: solstice.files.lightrig.SolsticeLightRigFile
+    rule: lightrig
+    template: lightrig
+    extensions:
+      - ma
+  master:
+    name: Master Layout
+    class: solstice.files.masterlayout.SolsticeMasterLayoutSequenceFile
+    template: master_layout
+    extensions:
+      - ma
+  shot_layout:
+    name: Layout Shot File
+    class: solstice.files.shotlayout.SolsticeShotLayoutFile
+    template: shot_layout
+    extensions:
+      - ma
+  shot_layout_anim:
+    name: Layout Shot Animation File
+    class: solstice.files.shotlayout.SolsticeShotAnimationLayoutFile
+    template: shot_layout_anim
+    extensions:
+      - anim

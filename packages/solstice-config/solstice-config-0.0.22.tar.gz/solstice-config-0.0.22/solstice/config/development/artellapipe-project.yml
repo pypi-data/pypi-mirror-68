@@ -1,0 +1,91 @@
+# Configuration for Solstice Project
+
+# Defines Artella project ID number
+id_number: "2"
+
+# Defines the Artella Project ID
+id: "2252d6c8-407d-4419-a186-cf90760c9967"
+
+# Defines the URL of the project
+url: "https://www.solsticeshortfilm.com/"
+
+# Defines Slack token of the project
+slack_token: "159181652112-912347863872-dqrXVzQWgK0ESWsPn3hGr4B0"
+
+# Defines Slack channel used by Slack Bot
+slack_channel: "CSTRRSSAG"
+
+# Defines the list of emails to notify when a tool is broken
+emails:
+  - tpovedatd@gmail.com
+
+# Defines the URL where project tools documentations is located
+documentation_url: "https://solstice-short-film.github.io/solstice-docs/pipeline/"
+
+extensions:
+  - ma
+  - abc
+  - ass
+
+default_extension: ma
+
+# Defines list of departments
+departments:
+  - Modeling
+  - Shading
+  - FX
+  - Lighting
+  - Comp
+  - Grooming
+  - Rigging
+  - Layout
+
+# Define configuration variables for project shots
+shot:
+  regex: "(\\A[^_]+_\\d{2,2}_\\d{2,3})"
+  file_types:
+    - "Layout"
+    - "Animation"
+    - "FX"
+    - "Lighting"
+
+# Define configuration variables for project progress bar
+progress_bar:
+  color0: "245, 180, 148"
+  color1: "75, 70, 170"
+
+# Defines available libs
+libs:
+  - artella
+  - naming
+  - kitsu
+  - pyblish
+  - alembic
+  - arnold
+  - ffmpeg
+
+# Defines available tools
+tools:
+  - welcome
+  - changelog
+  - bugtracker
+  - alembicmanager
+  - artellamanager
+  - artellauploader
+  - assetsmanager
+  - shadersmanager
+  - lightrigsmanager
+  - assetslibrary
+  - namemanager
+  - playblastmanager
+  - modelchecker
+  - assetspublisher
+  - outliner
+  - sequencespublisher
+  - breakdown
+#  - toolbox
+  - tagger
+  - dependenciesmanager
+  - xgenmanager
+  - snowgenerator
+  - renamer

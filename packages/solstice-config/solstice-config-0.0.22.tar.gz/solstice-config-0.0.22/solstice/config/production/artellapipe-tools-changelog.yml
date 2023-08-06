@@ -1,0 +1,10 @@
+# Base Configuration file for artellapipe-tools-changelog in Solstice
+
+# Defines icon of the tool
+icon: changelog
+
+# URL to tool documentation web page
+help_url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/changelog/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: False

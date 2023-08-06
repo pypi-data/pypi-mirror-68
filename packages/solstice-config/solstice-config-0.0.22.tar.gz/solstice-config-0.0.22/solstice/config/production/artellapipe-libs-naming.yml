@@ -1,0 +1,281 @@
+active_rule: ''
+rules:
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  _fields: []
+  auto_fix: false
+  description: Rule used to manage naming of assets
+  expression: '{project}_{asset_type}_{asset_id}_{description}'
+  iterator_format: '@'
+  name: asset
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  _fields: []
+  auto_fix: false
+  description: Rule used to rename asset files
+  expression: '{asset_name}_{asset_file_type}'
+  iterator_format: '@'
+  name: asset_file
+- _Serializable_classname: Rule
+  _Serializable_version: '1.0'
+  auto_fix: false
+  description: Defines the name of a light rig
+  expression: '{light_rig_prefix}_{description}'
+  iterator_format: '@'
+  name: lightrig
+template_tokens:
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the texture.
+  name: texture_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Type of the file.
+  name: file_type
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Extension of the file.
+  name: file_extension
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Type of the asset.
+  name: asset_type
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the asset.
+  name: asset_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Version folder of the file.
+  name: version_folder
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Path where project is located in user local disk.
+  name: project_path
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Type of the folder.
+  name: folder_type
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the light rig
+  name: light_rig_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the shader
+  name: shader_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the sequence. This must be unique
+  name: sequence_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of the shot. This must be unique
+  name: shot_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Name of shot layout file
+  name: shot_layout_name
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Unique ID number of the Artella Project
+  name: project_id_number
+- _Serializable_classname: TemplateToken
+  _Serializable_version: '1.0'
+  description: Unique ID of the Artella Project
+  name: project_id
+templates:
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: asset_path
+  pattern: '{@project_path}/Assets/{asset_type}/{asset_name}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: rig
+  pattern: '{@asset_path}/{version_folder}/rig/{asset_name}_RIG.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: model
+  pattern: '{@asset_path}/{version_folder}/model/{asset_name}.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shading
+  pattern: '{@asset_path}/{version_folder}/shading/{asset_name}_SHD.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: textures
+  pattern: '{@asset_path}/{version_folder}/textures'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: groom
+  pattern: '{@asset_path}/{version_folder}/groom'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: lightrig
+  pattern: '{@lightrigs}/{light_rig_name}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: lightrigs
+  pattern: '{@project_path}/Assets/lighting/Light Rigs/__working__/'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: alembic
+  pattern: '{@asset_path}/{version_folder}/model/{asset_name}.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: gpualembic
+  pattern: '{@asset_path}/{version_folder}/model/{asset_name}.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shadersmapping
+  pattern: '{@shaders}/{asset_name}_MAP.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shader
+  pattern: '{@shaders}/{shader_name}.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shaders
+  pattern: '{@asset_path}/{version_folder}/shaders'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: production_path
+  pattern: '{@project_path}/Production'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: master_layout
+  pattern: '{@production_path}/{sequence_name}/_master_layout/{version_folder}/seq_layout/_seq_master_layout.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: sequence_path
+  pattern: '{@production_path}/{sequence_name}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: standin
+  pattern: '{@asset_path}/{version_folder}/model/{asset_name}.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shot_layout
+  pattern: '{@project_path}/Production/{sequence_name}/{shot_name}/{version_folder}/rough/{shot_name}_ROUGH.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: shot_layout_anim
+  pattern: '{@project_path}/Production/{sequence_name}/{shot_name}/{version_folder}/rough/{shot_name}_ANIM.{file_extension}'
+- _Serializable_classname: Template
+  _Serializable_version: '1.0'
+  name: project_path
+  pattern: /_art/production/{project_id_number}/{project_id}
+tokens:
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: Description of the asset.
+  items: {}
+  name: description
+  override_value: ''
+  values:
+    key: []
+    value: []
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: -1
+  description: 'The format of the id
+
+
+    #: Id with a unique numeric value
+
+    @: Id with an alphabetic value (lowercase)
+
+    @^: Id with an alphabetic value (upperase)
+
+
+    NOTE: @ key do not need multiples keys ( @@, @@@) beause the system\nautomatically
+    will add double alphabetic characters if we pass the ''z'' character (a...z, aa,
+    ab, ac, ad ...)'
+  items: {}
+  name: id
+  override_value: ''
+  values:
+    key:
+    - iterator
+    value:
+    - '#'
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: ''
+  items: {}
+  name: asset_type
+  override_value: ''
+  values:
+    key:
+    - props
+    - backgroundelements
+    - characters
+    value:
+    - PRP
+    - BGE
+    - CHR
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: Short name of the current project
+  items: {}
+  name: project
+  override_value: ''
+  values:
+    key: []
+    value: []
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: Unique number for each one of the assets inside a category
+  items: {}
+  name: asset_id
+  override_value: ''
+  values:
+    key: []
+    value: []
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: ''
+  items: {}
+  name: asset_file_type
+  override_value: ''
+  values:
+    key:
+    - shading
+    - rig
+    - groom
+    - Shading
+    - Rig
+    - Groom
+    value:
+    - SHD
+    - RIG
+    - GROOM
+    - SHD
+    - RIG
+    - GROOM
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: 0
+  description: Complete name of the asset
+  items: {}
+  name: asset_name
+  override_value: ''
+  values:
+    key: []
+    value: []
+- _Serializable_classname: Token
+  _Serializable_version: '1.0'
+  default: -1
+  description: Prefix used by light rigs in Solstice
+  name: light_rig_prefix
+  override_value: ''
+  values:
+    key:
+    - LR
+    value:
+    - LR

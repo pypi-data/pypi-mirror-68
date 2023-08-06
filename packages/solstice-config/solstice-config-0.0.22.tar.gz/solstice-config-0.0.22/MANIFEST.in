@@ -1,0 +1,8 @@
+include solstice/config/development/*.json
+include solstice/config/development/*.yml
+include solstice/config/development/maya/*.yml
+include solstice/config/production/*.json
+include solstice/config/production/*.yml
+include solstice/config/production/maya/*.yml
+include versioneer.py
+include solstice/config/_version.py

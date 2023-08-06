@@ -1,0 +1,36 @@
+# Base Configuration file for artellapipe-tools-playblastmanager in Solstice
+
+# Defines icon of the tool
+icon: playblastmanager
+
+# URL to tool documentation web page
+help_url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/playblastmanager/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True
+
+# Defines list of plugins to enable for Playblast Manager
+plugins:
+  - Camera
+  - Resolution
+  - TimeRange
+  - Codec
+  - PanZoom
+  - Renderer
+  - DisplayOptions
+  - ViewportOptions
+  - Stamp
+  - Tracker
+  - Save
+
+# Defines the tokens for Playblast Manager
+tokens:
+  - <Camera>:
+      label: 'Insert camera name'
+      fn: get_camera_token
+  - <Scene>:
+      label: 'Insert current scene name'
+      fn: get_scene_token
+  - <${project}>:
+      label: 'Insert project path'
+      fn: get_project_path_token

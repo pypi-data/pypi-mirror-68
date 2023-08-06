@@ -1,0 +1,15 @@
+# Base Configuration for Artella Tags in Solstice
+
+# Defines list of tag types
+types:
+  - Scene
+  - Prop
+  - Character
+  - Background Element
+  - Light Rig
+  - Model
+  - Animation
+  - Shading
+  - Cloth
+  - Groom
+  - Camera

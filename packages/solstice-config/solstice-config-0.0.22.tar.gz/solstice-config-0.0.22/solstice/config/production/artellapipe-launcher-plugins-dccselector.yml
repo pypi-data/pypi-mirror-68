@@ -1,0 +1,40 @@
+# Base Configuration file for artellapipe-launcher-plugins-dccselector for Solstice
+
+maya:
+  enabled: True
+  icon: color/maya
+  supported_versions:
+    - 2019
+  default_version: 2019
+  departments: ["modeling", "shading", "fx", "lighting", "comp", "grooming", "rigging", "layout"]
+  plugins:
+    arnold:
+      version: ""
+
+nuke:
+  enabled: True
+  icon: color/nuke
+  supported_versions: [11.3v3]
+  default_version: 11.3v3
+  departments: ["lighting", "comp"]
+
+houdini:
+  enabled: True
+  icon: color/houdini
+  supported_versions: ["17.5.173"]
+  default_version: 17.5.173
+  departments: ["fx"]
+
+photoshop:
+  enabled: True
+  icon: color/photoshop
+  supported_versions: ["2017", "2019"]
+  default_version: "2019"
+  departments: ["lighting", "comp", "grooming"]
+
+zbrush:
+  enabled: True
+  icon: color/zbrush
+  supported_versions: ["4R8"]
+  default_version: "4R8"
+  departments: ["modeling"]

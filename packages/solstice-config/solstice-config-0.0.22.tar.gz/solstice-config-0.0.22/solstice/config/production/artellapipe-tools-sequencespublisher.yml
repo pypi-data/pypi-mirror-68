@@ -1,0 +1,15 @@
+# Base Configuration file for artellapipe-tools-sequencespublisher for Solstice
+
+# Defines icon of the tool
+icon: sequencespublisher
+
+# URL to tool documentation web page
+url: https://solstice-short-film.github.io/solstice-docs/pipeline/pipeline/tools/sequencespublisher/
+
+# Defines whether this needs Kitsu data to work or not
+kitsu_login: True
+
+pyblish_plugins:
+  CollectShots: {}
+  CollectComment: {}
+  ExportShot: {}
