@@ -1,0 +1,8 @@
+README.md
+setup.py
+sphinx_target_theme/__init__.py
+sphinx_target_theme.egg-info/PKG-INFO
+sphinx_target_theme.egg-info/SOURCES.txt
+sphinx_target_theme.egg-info/dependency_links.txt
+sphinx_target_theme.egg-info/top_level.txt
+sphinx_target_theme/static/__init__.py

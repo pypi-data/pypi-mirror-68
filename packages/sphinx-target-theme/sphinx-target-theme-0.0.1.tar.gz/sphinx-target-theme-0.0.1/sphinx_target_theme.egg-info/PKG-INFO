@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sphinx-target-theme
+Version: 0.0.1
+Summary: Sphinx theme
+Home-page: https://github.com/kkholst/sphinx_target_theme
+Author: Klaus Kähler Holst
+Author-email: klaus@holst.it
+License: UNKNOWN
+Description: # Sphinx theme: target
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
