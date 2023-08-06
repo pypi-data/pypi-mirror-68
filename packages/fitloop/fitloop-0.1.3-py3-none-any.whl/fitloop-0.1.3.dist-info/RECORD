@@ -1,0 +1,14 @@
+fitloop/__init__.py,sha256=7Zz0uLW9MNjCYOa7-N9MVi6hwPFaBhjgssUdpSGt5M4,53
+fitloop/main_class.py,sha256=SaFY6EiCkNriYRmw91W5nJrDve4_pzu7rmJ8LDoJqG4,47937
+fitloop/main_constants.py,sha256=rZoYoTP0YrjUQUoP4sMGuTaWX3R7Q6_Mr7ANwqU2bUM,512
+fitloop/helpers/__init__.py,sha256=b4ug1YSjaSVriboz3kL2fD980bm1DEv4HMIZmpjVHKg,114
+fitloop/helpers/constants.py,sha256=3UG8SrIQmUU4f4MVb_yIyrDCxrO8Mwazh49TqNMATfo,532
+fitloop/helpers/defaults.py,sha256=zaDQ9afeTzxLlYzJw638tFSYY2AXW9BwDO2DaOKwaws,2243
+fitloop/helpers/helpers.py,sha256=96DwEwWnwdLfhcYKvC1hV5e-zRXc7EimvBggc8HnuQE,805
+fitloop/helpers/metrics.py,sha256=sdtF3k60EnDkdM_To2XJQEX-g_IoD0ECJosr6P1omf8,9938
+fitloop/helpers/state.py,sha256=UgQPVOibFlX4E0eixrpONxaIhbzk87Rn-dur_qMOlg8,5317
+fitloop-0.1.3.dist-info/LICENSE,sha256=v3p19zTm9avVu2LVZ8V-fJn91WzcLeVY9SXsBHLzx08,1065
+fitloop-0.1.3.dist-info/METADATA,sha256=ZI98l23Jxb1QXlgt6RVfkCNqPETt3p1r609NT6bfaww,8457
+fitloop-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fitloop-0.1.3.dist-info/top_level.txt,sha256=xTsjC-hMy4Uk--mLghUfEyCHpXtyhTLQ5AIiEZbDUT0,8
+fitloop-0.1.3.dist-info/RECORD,,
