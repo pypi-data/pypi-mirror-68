@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+proximity/__init__.py
+proximity/convenience.py
+proximity/package_version.py
+proximity/proximity.py
+proximity.egg-info/PKG-INFO
+proximity.egg-info/SOURCES.txt
+proximity.egg-info/dependency_links.txt
+proximity.egg-info/requires.txt
+proximity.egg-info/top_level.txt
