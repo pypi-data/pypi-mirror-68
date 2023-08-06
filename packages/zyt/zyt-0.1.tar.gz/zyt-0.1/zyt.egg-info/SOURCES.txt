@@ -1,0 +1,8 @@
+README.md
+setup.py
+zyt.egg-info/PKG-INFO
+zyt.egg-info/SOURCES.txt
+zyt.egg-info/dependency_links.txt
+zyt.egg-info/not-zip-safe
+zyt.egg-info/requires.txt
+zyt.egg-info/top_level.txt
