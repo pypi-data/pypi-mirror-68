@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+rainbowpy/__init__.py
+rainbowpy/_version.py
+rainbowpy/colormap.py
+rainbowpy/coolors.py
+rainbowpy/file_utils.py
+rainbowpy/generate_maps_from_config.py
+rainbowpy.egg-info/PKG-INFO
+rainbowpy.egg-info/SOURCES.txt
+rainbowpy.egg-info/dependency_links.txt
+rainbowpy.egg-info/requires.txt
+rainbowpy.egg-info/top_level.txt
