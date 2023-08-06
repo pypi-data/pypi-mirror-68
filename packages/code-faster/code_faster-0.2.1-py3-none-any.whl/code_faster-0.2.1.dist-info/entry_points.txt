@@ -1,0 +1,4 @@
+[console_scripts]
+cfetch = code_faster.fetcher:main
+crun = code_faster.runner:main
+
