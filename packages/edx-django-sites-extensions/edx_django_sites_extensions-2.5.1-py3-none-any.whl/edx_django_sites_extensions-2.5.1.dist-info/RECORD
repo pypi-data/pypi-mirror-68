@@ -1,0 +1,11 @@
+django_sites_extensions/__init__.py,sha256=oOTzVL3Pns2T6cB5_gBqv8Hd4ysePlmAtGpwO6-MRWU,144
+django_sites_extensions/apps.py,sha256=aWT8IQ-_wJv_3bxw36RtDqPDSWefG30DPEBj19mLfBs,589
+django_sites_extensions/middleware.py,sha256=yq5TWPvxPJ8QDmvehMVuBFJt2bp8geHFpYt95lsFMJw,1171
+django_sites_extensions/models.py,sha256=D_H3hqrmLW-Rimhwv4D7GX-I9QEYtK_nKi8sEmyXBYg,4320
+django_sites_extensions/signals.py,sha256=NDVE4Lu_AM8rYZKy8bYO8FMkRx0kRXL6NryjCMBpz0M,896
+edx_django_sites_extensions-2.5.1.dist-info/AUTHORS,sha256=n4Tzi0xfO7kQFLZzut0uaNv5wXsCzDXvAfBK0j_kV58,29
+edx_django_sites_extensions-2.5.1.dist-info/LICENSE.txt,sha256=KLyUK4E0tp8Q3LAW1UVu-oEJHqLiFfL0svApWmMsIu0,35116
+edx_django_sites_extensions-2.5.1.dist-info/METADATA,sha256=Q6eB_YTDGgpMrM6vTcWnF7udMxstvTCrEIbUcZcN9N8,4884
+edx_django_sites_extensions-2.5.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+edx_django_sites_extensions-2.5.1.dist-info/top_level.txt,sha256=nVuGHoF0Rsh_V3nX6rLUoQ-iog_6qxkVZ24uE-SCD_M,24
+edx_django_sites_extensions-2.5.1.dist-info/RECORD,,
