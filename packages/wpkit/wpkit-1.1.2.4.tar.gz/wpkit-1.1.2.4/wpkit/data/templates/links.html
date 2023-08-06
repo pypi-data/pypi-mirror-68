@@ -1,0 +1,18 @@
+{% extends "jquery_base.tem" %}
+
+{% block head %}
+    <link href="/pkg-resource/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/pkg-resource/js/bootstrap.min.js"></script>
+{% endblock %}
+{% block body %}
+    <table class="table table-bordered table-striped">
+        <thead>Links</thead>
+        <tbody>
+        {% for k,v in links.items() %}
+            <tr>
+                <td><a href="{{ v }}">{{ k }}</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>Hello, world!</title>
+    <script src="/pkg-resource/js/jquery-3.4.1.js"></script>
+
+
+    <!--      在这里放脚本-->
+    {% block head %}{% endblock %}
+
+    <!--      结束-->
+</head>
+<body>
+{% block body %}
+
+{% endblock %}
+
+</body>
+</html>
