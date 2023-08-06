@@ -1,0 +1,10 @@
+neispy/__init__.py,sha256=qQRyLAzmo9CJTHfv7SxHXWNdqSIC4el2tPw2tlwjQjg,74
+neispy/client.py,sha256=1o6QOp_6A0gb9TPGt5XYTOF-VlMqdxOTPTo8Q1G0UZI,5882
+neispy/error.py,sha256=eSSp9wlx-wRFpfrgXAnKlClnHk4n9NOGWIbCQ0kgUEg,959
+neispy/http.py,sha256=wQ3Jenxgv__nH3n8pK0KbgBI8NOwWJIS3VtSs1Ns3fQ,3319
+neispy/model.py,sha256=KZkV8qdTmrpNmNfh9sVbiSogWyu6-YoJd63DG4rulrc,1335
+neispy-0.3.4.dist-info/LICENSE,sha256=GIJMbffhHIfv4nx0ls2Uot7zU-EwvSXD0osbkyG9Aus,1088
+neispy-0.3.4.dist-info/METADATA,sha256=ieF2KQLtOedjdI4l1xfmG-QhbHpS-v7H2ZFzSWmU-S4,4363
+neispy-0.3.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+neispy-0.3.4.dist-info/top_level.txt,sha256=mFPJ3MXdeOzZME6ITYtd4U0mOCy6icTLRW8dbjBVOUI,7
+neispy-0.3.4.dist-info/RECORD,,
