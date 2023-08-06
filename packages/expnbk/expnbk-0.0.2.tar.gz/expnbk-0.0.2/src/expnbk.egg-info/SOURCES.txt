@@ -1,0 +1,15 @@
+.editorconfig
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/expnbk/__init__.py
+src/expnbk/example.py
+src/expnbk/experiment.py
+src/expnbk.egg-info/PKG-INFO
+src/expnbk.egg-info/SOURCES.txt
+src/expnbk.egg-info/dependency_links.txt
+src/expnbk.egg-info/not-zip-safe
+src/expnbk.egg-info/requires.txt
+src/expnbk.egg-info/top_level.txt
