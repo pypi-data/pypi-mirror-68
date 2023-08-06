@@ -1,0 +1,12 @@
+bcx/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+bcx/channels.py,sha256=X7p_VMh4uZ4m21i_pAlFjPVaq97a_v_afeU0vXmvgUM,14322
+bcx/client.py,sha256=WsL8TjLa4FV07kzlbKCJd2mqKG7_GxQx1C88aBTc7k0,8388
+bcx/manager.py,sha256=8q6FMNDvVCHAiehogq-T3HpkK_hsEVr4cjAwAwQNPrg,2741
+bcx/orders.py,sha256=VQ0ohhWKMdQgPu_VWJ1ClrCaoBiwH8fE620UrlS3MLo,4366
+bcx/utils.py,sha256=q_WGA3p2nUoTwCZ2sttlycP4DkkbqP-OQJ0jvi7ipN0,1567
+bcx/websocket.py,sha256=w5KNr2GdkkT5oJvjHNIw-JBdbAwFtm5h6LUu3SW529I,4509
+bcx-0.2.1.dist-info/LICENSE,sha256=3lzCi5ODEwMapiraI3Q1COptXlLydxzH7dCzMowWHiQ,1076
+bcx-0.2.1.dist-info/METADATA,sha256=31ZaanBn5fr4oZht_m69zLjO2X63T-K9BmeevoSxE2U,8655
+bcx-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+bcx-0.2.1.dist-info/top_level.txt,sha256=luANetENElychXKN3z2_8S-wWxCqXpg-41NXmox0eQM,4
+bcx-0.2.1.dist-info/RECORD,,
