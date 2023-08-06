@@ -1,0 +1,17 @@
+README.md
+setup.py
+coffeeRequests/UA.json
+coffeeRequests/__init__.py
+coffeeRequests/_version.py
+coffeeRequests/coffeeRequests.py
+coffeeRequests/pool.py
+coffeeRequests/proxy_pool.py
+coffeeRequests/user_agent_pool.py
+coffeeRequests.egg-info/PKG-INFO
+coffeeRequests.egg-info/SOURCES.txt
+coffeeRequests.egg-info/dependency_links.txt
+coffeeRequests.egg-info/top_level.txt
+coffeeRequests/tests/__init__.py
+coffeeRequests/tests/test_coffeeRequests.py
+coffeeRequests/tests/test_proxy_pool.py
+coffeeRequests/tests/test_user_agent_pool.py
