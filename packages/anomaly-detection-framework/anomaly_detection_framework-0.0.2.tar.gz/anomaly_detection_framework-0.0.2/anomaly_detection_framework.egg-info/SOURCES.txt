@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+setup.py
+.idea/tsad.iml
+anomaly_detection_framework.egg-info/PKG-INFO
+anomaly_detection_framework.egg-info/SOURCES.txt
+anomaly_detection_framework.egg-info/dependency_links.txt
+anomaly_detection_framework.egg-info/requires.txt
+anomaly_detection_framework.egg-info/top_level.txt
+documents/apis.yaml
+documents/docker-compose.yml
+src/__init__.py
+src/run.py

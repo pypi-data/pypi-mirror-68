@@ -1,0 +1,57 @@
+model_iso_f:
+  port: 6000
+  host: mac-macbook-air.local
+  api_name: ml
+  py_file: main
+  function: main
+  params:
+    - data_query_path
+    - data_source
+    - date
+    - feature
+    - groups
+    - job
+    - model
+    - time_indicator
+    - time_period
+model_lstm:
+  port: 6001
+  host: mac-macbook-air.local
+  api_name: ml
+  py_file: main
+  function: main
+  params:
+    - data_query_path
+    - data_source
+    - feature
+    - groups
+    - job
+    - model
+    - time_indicator
+    - time_period
+model_prophet:
+  port: 6002
+  host: mac-macbook-air.local
+  api_name: ml
+  py_file: main
+  function: main
+  params:
+    - data_query_path
+    - data_source
+    - feature
+    - groups
+    - job
+    - model
+    - time_indicator
+    - time_period
+ml_execute:
+  port: 7000
+  host: mac-macbook-air.local
+  api_name: ml_execute
+  py_file: ml_executor
+  function: start_job
+  params:
+    - job
+
+
+
