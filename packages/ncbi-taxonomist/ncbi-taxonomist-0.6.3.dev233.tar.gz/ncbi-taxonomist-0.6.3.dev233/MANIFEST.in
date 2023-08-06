@@ -1,0 +1,2 @@
+include src/ncbi_taxonomist/VERSION
+include src/ncbi_taxonomist/VERSION.pypi
