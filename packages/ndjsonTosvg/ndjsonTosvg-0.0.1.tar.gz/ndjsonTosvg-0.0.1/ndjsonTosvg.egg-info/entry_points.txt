@@ -1,0 +1,3 @@
+[console_scripts]
+ndjsontosvg = ndjsontosvg.__main__:main
+

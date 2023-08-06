@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+ndjsonTosvg.egg-info/PKG-INFO
+ndjsonTosvg.egg-info/SOURCES.txt
+ndjsonTosvg.egg-info/dependency_links.txt
+ndjsonTosvg.egg-info/entry_points.txt
+ndjsonTosvg.egg-info/requires.txt
+ndjsonTosvg.egg-info/top_level.txt
+ndjsontosvg/__init__.py
+ndjsontosvg/__main__.py
+ndjsontosvg/_version.py
+ndjsontosvg/ndjsontosvg.py
+ndjsontosvg/ui/__init__.py
+ndjsontosvg/ui/ndjsontosvg_command_line.py
