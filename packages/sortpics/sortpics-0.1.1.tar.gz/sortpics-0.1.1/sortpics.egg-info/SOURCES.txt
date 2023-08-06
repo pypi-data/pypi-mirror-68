@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+sortpics/__init__.py
+sortpics/cli.py
+sortpics/normalize.py
+sortpics/tags.py
+sortpics/timestamp.py
+sortpics/version.py
+sortpics.egg-info/PKG-INFO
+sortpics.egg-info/SOURCES.txt
+sortpics.egg-info/dependency_links.txt
+sortpics.egg-info/entry_points.txt
+sortpics.egg-info/requires.txt
+sortpics.egg-info/top_level.txt
