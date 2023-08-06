@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+anitya_schema/__init__.py
+anitya_schema/distro_messages.py
+anitya_schema/project_messages.py
+anitya_schema.egg-info/PKG-INFO
+anitya_schema.egg-info/SOURCES.txt
+anitya_schema.egg-info/dependency_links.txt
+anitya_schema.egg-info/entry_points.txt
+anitya_schema.egg-info/not-zip-safe
+anitya_schema.egg-info/requires.txt
+anitya_schema.egg-info/top_level.txt
