@@ -1,0 +1,12 @@
+pyyaml
+dotmap
+fs
+fs-s3fs
+fs.sshfs
+python-baseconv
+regex
+observable
+gitignore_parser
+click
+pendulum
+sh
