@@ -1,0 +1,14 @@
+quoted/__init__.py,sha256=ioVF6g6tiGJqe5__wyVdpE9nKTqrqwCUHGtEMIt7UfI,31
+quoted/quoted.py,sha256=-gZOEc3aQf2EnxiPHKGMKlzVGxREsFjdPv1Lr_wlzvI,6507
+quoted/scrapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quoted/scrapy/extensions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quoted/scrapy/extensions/storage.py,sha256=Rncv581UNZ4utlSglfE2FKzBwOZcGo_DlpNcKsbLILc,2263
+quoted/scrapy/spiders/__init__.py,sha256=1ml78rHvoFKjkz2xZUKTQYrRXZlvdpro8V1R4_owZCQ,2528
+quoted/scrapy/spiders/brainyquote.py,sha256=xeetfKTRWMS7JOMgCfAtrtA6Hry9_mm6N2xYz4VqUQA,831
+quoted/scrapy/spiders/goodreads.py,sha256=B-4QnJtkvAxaQijS9czCc0pjLKaJ-SWBoe4i3KQLh0c,1100
+quoted/scrapy/spiders/toscrape.py,sha256=66ZteInJzNOCU6b63l4DcXlsk5vDEfHSe4D9jkCWmUQ,998
+quoted-0.4.1.dist-info/entry_points.txt,sha256=pilijAWM1SqrWJscsZE5sGX6rbHNp8McatnDR1iqeE8,45
+quoted-0.4.1.dist-info/LICENSE,sha256=9TDa8_0n4v9d24aU5GqW8_v6aeKfTyY8oxEkhu2IBF8,1070
+quoted-0.4.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+quoted-0.4.1.dist-info/METADATA,sha256=MKvZ9lL1sK2zTkMcVupzEIUHubAkakvCpDwOu-N31lA,2396
+quoted-0.4.1.dist-info/RECORD,,
