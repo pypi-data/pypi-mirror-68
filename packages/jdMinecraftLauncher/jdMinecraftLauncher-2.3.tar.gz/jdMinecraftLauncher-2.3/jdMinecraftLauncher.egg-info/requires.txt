@@ -1,0 +1,6 @@
+PyQt5
+PyQtWebEngine
+requests
+minecraft-launcher-lib
+jdTranslationHelper
+cryptography
