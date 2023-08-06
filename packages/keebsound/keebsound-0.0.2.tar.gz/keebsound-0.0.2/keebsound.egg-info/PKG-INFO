@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: keebsound
+Version: 0.0.2
+Summary: Keeb generates realistic keyboard sounds depending on the input
+Home-page: https://github.com/sillyfatcat/keebsound
+Author: Shelby Shum
+Author-email: sshum00@gmail.com
+License: MIT
+Download-URL: https://github.com/sillyfatcat/keebsound/archive/v0.1.tar.gz
+Description: # Keebsound
+        
+        Keebsound is a package that I built to generate realistic keyboard tap sounds. You can provide a string and it will "type" those characters out, providing ASMR goodness. 
+        It also supports hooking into the keyboard and replacing your keytap sound with whichever key switch profile you desire. 
+        
+        ## Getting Started
+        
+        TODO
+        
+        ### Prerequisites
+        
+        What things you need to install the software and how to install them
+        
+        ```
+        Give examples
+        ```
+        
+        ### Installing
+        
+        TODO
+        
+        ## Usage
+        
+        ```bash
+        Options:
+          --hook           This hooks into your keyboard and plays a sound when you
+                           type
+        
+          --switches TEXT  Provide the sound profile, by default it's set to gateron-
+                           red
+        
+          --delay FLOAT    Sound delay multiplier for playing keyboard sound from a
+                           string
+        
+          --string TEXT    Pass some arbitrary string to play a keyboard typing sound
+                           typing said string
+        
+          --help           Show this message and exit.
+        ```
+        
+        ### Playing the sound of a string
+        
+        `python main.py --string "Foo bar is not enough. What are you up to?" --delay 3`
+        
+        ### Hooking to the keyboard
+        
+        `python main.py --hook`
+        
+        You can now start typing and it will generate sounds for you. 
+        
+        ### Using explicit key switch sounds
+        
+        `python main.py --string "Foo bar is not enough. What are you up to?" --switches gateron-red`
+        
+        ## Contributing
+        
+        TODO
+        
+        ## License
+        
+        This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+        
+        ## Acknowledgments
+        
+        * Hat tip to anyone whose code was used
+        * Inspiration
+        * etc
+        
+        
+Keywords: KEYBOARD,SOUND,MECHANICAL KEYBOARD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Games/Entertainment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
