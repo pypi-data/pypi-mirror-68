@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: orbis-addon-repoman
+Version: 2.2.4.1
+Summary: The Repoman Addon for Orbis to download and install Corpora and Monocle files.
+Home-page: https://github.com/orbis-eval/orbis_addon_repoman
+Author: fabod
+License: GPL2
+Platform: UNKNOWN
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rdflib (==4.2.2)
+
+# Repoman Addon for Orbis
+
+Downloads corpora or monocle files.
+
+Needs the Python TKinter Package installed (not on PyPI, please use download and install your Distribution ode OS Version of TKinter)
+
+
