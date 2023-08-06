@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stream-processor
+Version: 0.0.1
+Summary: Library for stream processing
+Home-page: https://github.com/shuttl-tech/shuttl_workflows
+Author: Shuttl
+Author-email: rameez.shuhaib@shuttl.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-runner ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-pep8 ; extra == 'test'
+Requires-Dist: hypothesis ; extra == 'test'
+
+UNKNOWN
+
+
