@@ -1,0 +1,9 @@
+README.md
+setup.py
+image-encoder/__init__.py
+image-encoder/image_encoder.py
+image_encoder.egg-info/PKG-INFO
+image_encoder.egg-info/SOURCES.txt
+image_encoder.egg-info/dependency_links.txt
+image_encoder.egg-info/requires.txt
+image_encoder.egg-info/top_level.txt
