@@ -1,0 +1,7 @@
+mnemonic<1,>=0.19
+requests<3,>=2.22.0
+ed25519<2,>=1.5
+
+[tests]
+pytest<6,>=5.4.1
+pytest-cov<3,>=2.8.1
