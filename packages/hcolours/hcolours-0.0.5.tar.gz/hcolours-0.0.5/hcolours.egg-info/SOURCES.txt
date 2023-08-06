@@ -1,0 +1,8 @@
+README.rst
+setup.py
+hcolours/__init__.py
+hcolours/hcolours.py
+hcolours.egg-info/PKG-INFO
+hcolours.egg-info/SOURCES.txt
+hcolours.egg-info/dependency_links.txt
+hcolours.egg-info/top_level.txt
