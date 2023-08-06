@@ -1,0 +1,17 @@
+pywulai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/aibot.py,sha256=9caDM0SKXDcSnMAJc7Vah3qAQ-ZWPsq4iGXT1peO56Y,5337
+pywulai/data.py,sha256=gPbXHL0NS5sXKGMjHPPhpAQAsSmTMZJ2uuvc0elkznA,711
+pywulai/deeplearn.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/dialog.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/global.py,sha256=Q1gkH_Rn0N1dAJQW7ts6cDyy0GwX2csTJzHyb-5kBb4,143
+pywulai/kmbase.py,sha256=6j5iathrNn3Lcmkr8DXHSFdFvSLO6yHIyb2TmqB9RpA,8657
+pywulai/model.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/multiple.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/nlp.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/schedule.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai/task.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pywulai-1.0.4.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pywulai-1.0.4.dist-info/METADATA,sha256=BttqViu6OaHy4liXxQLGszaC2C4Cu_wHRhL_jORWr4E,459
+pywulai-1.0.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pywulai-1.0.4.dist-info/top_level.txt,sha256=4B-P3JCs43KdwvJCyP3aS6fd5vpaCTdnekGjtfBn6fc,8
+pywulai-1.0.4.dist-info/RECORD,,
