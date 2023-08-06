@@ -1,0 +1,14 @@
+numpy
+pandas
+geopandas
+scipy
+powerlaw
+tqdm
+requests
+scikit-learn
+statsmodels
+folium
+matplotlib
+geojson
+shapely
+fiona
