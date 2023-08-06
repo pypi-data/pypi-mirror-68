@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flowpy
+Version: 0.3.1
+Summary: Tools for working with optical flow
+Home-page: http://github.com/mickaelseznec/flowpy
+Author: Mickaël Seznec
+Author-email: flowpy@seznec.xyz
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pypng
+
+UNKNOWN
+
+
