@@ -1,0 +1,13 @@
+cachetools
+future
+flask
+flask-compress
+flask_classful
+flask-request-id-header
+Flask-Markdown
+littlepython
+ujson
+msgpack
+gevent
+dataclasses
+pycryptodome
