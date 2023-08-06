@@ -1,0 +1,161 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import shutil
+import pathlib
+
+from argparse import ArgumentParser
+
+from m4db_database.configuration import write_config_to_file
+
+
+def create_file_root(file_root):
+    r"""
+    Create's a new file root directory to hold models, neb paths etc.
+    Args:
+        file_root: the file root directory which will store micromagnetic models.
+
+    Returns:
+        None.
+    """
+    print("Attempting to set up 'm4db' database...")
+
+    if os.path.isdir(file_root):
+        response = input(
+            "WARNING: the directory '{}' already exists, should I delete it (y/n)? ".format(file_root)
+        )
+        if response.lower() == "y":
+            shutil.rmtree(file_root)
+            os.mkdir(file_root)
+        elif response.lower() == "n":
+            print("WARNING: The directory '{}' is now managed by multiple database!".format(file_root))
+        else:
+            print("ERROR: unknown option!")
+            sys.exit(1)
+    else:
+        pathlib.Path(file_root).mkdir(parents=True, exist_ok=True)
+
+    print("Done!")
+
+
+def postgres(user, database, host, file_root, config_file, echo=False):
+    r"""
+    Function to handle the postgres option.
+    Args:
+        user: database user name
+        database: database name
+        host: url host of the database
+        file_root: the root directory of all models, neb paths, etc.
+        config_file: the configuration file to write config information to.
+        echo: boolean (default False) set to True if verbose SQLAlchemy output is required.
+
+    Returns:
+        None.
+    """
+    from m4db_database.util_postgres import setup_database
+    create_file_root(file_root)
+
+    db_url = setup_database(user, database, host, echo)
+
+    config = {
+        "file_root": os.path.abspath(file_root),
+        "db_url": db_url
+    }
+
+    write_config_to_file(config_file, config)
+
+
+def sqlite(file, file_root, config_file, echo=False):
+    r"""
+    Function to handle sqlite option.
+    Args:
+        file: argument object containing values needed to create a new sqlite database.
+        file_root: the root directory of all models, neb paths, etc.
+        config_file: the configuration file to write config information to.
+        echo: boolean (default False) set to True if verbose SQLAlchemy output is required.
+    Returns:
+        None.
+    """
+    from m4db_database.util_sqlite import setup_database
+    create_file_root(file_root)
+    db_url = setup_database(file, echo)
+
+    config = {
+        "file_root": os.path.abspath(file_root),
+        "db_url": db_url
+    }
+
+    write_config_to_file(config_file, config)
+
+
+def get_cmd_line_parser():
+    r"""
+    Function to create a command line argument parser.
+
+    Returns:
+        A command line argument parser object.
+
+    """
+    parser = ArgumentParser()
+
+    subparsers = parser.add_subparsers(dest="database_type",
+                                       help="create different database types (sqlite/postgres)")
+
+    # Postgres parser
+    parser_postgres = subparsers.add_parser("postgres",
+                                            help="create a new m4db postgres database")
+    parser_postgres.add_argument("user",
+                                 help="the database user name with which to access the database")
+    parser_postgres.add_argument("database",
+                                 help="the database name in which to create the new database")
+    parser_postgres.add_argument("host",
+                                 help="the name of the host on which the database lives")
+    parser_postgres.add_argument("file_root",
+                                 help="the root location of models/paths and other data")
+    parser_postgres.add_argument("config_file",
+                                 help="the configuration file to save values to")
+    parser_postgres.add_argument("-v", "--verbose", action="store_true",
+                                 help="produce verbose output when creating the database")
+
+    # SqlLite parser
+    parser_sqlite = subparsers.add_parser("sqlite",
+                                          help="create a new sqlite database")
+    parser_sqlite.add_argument("file",
+                               help="the file containing the sqlite database")
+    parser_sqlite.add_argument("file_root",
+                               help="the root location of models/paths and other data")
+    parser_sqlite.add_argument("config_file",
+                               help="the configuration file to save values to")
+    parser_sqlite.add_argument("-v", "--verbose", action="store_true",
+                               help="produce verbose output when creating the database")
+
+    return parser
+
+
+def main():
+    r"""
+    Program entry point.
+
+    Returns:
+        None.
+    """
+    parser = get_cmd_line_parser()
+    args = parser.parse_args()
+
+    print("Attempting to create M4DB database ...")
+
+    if args.database_type == "postgres":
+        postgres(args.user, args.database, args.host, args.file_root, args.config_file, echo=args.verbose)
+    elif args.database_type == "sqlite":
+        sqlite(args.file, args.file_root, args.config_file, echo=args.verbose)
+    else:
+        print("Unknown database type: '{}'".format(args.database_type))
+        sys.exit(1)
+
+    print("Created M4DB database, tables and directories")
+    print("WARNING! make sure to set 'M4DB_CONFIG={}'!".format(args.config_file))
+
+
+if __name__ == "__main__":
+    main()

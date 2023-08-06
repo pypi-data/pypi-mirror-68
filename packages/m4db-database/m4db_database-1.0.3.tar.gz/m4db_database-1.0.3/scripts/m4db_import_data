@@ -1,0 +1,179 @@
+#!python3
+
+import sys
+import os
+import zipfile
+import shutil
+import tempfile
+
+from argparse import ArgumentParser
+
+from m4db_database.utilities import import_anisotropy_forms
+from m4db_database.utilities import import_db_users
+from m4db_database.utilities import import_materials
+from m4db_database.utilities import import_softwares
+from m4db_database.utilities import import_projects
+from m4db_database.utilities import import_sizeconvention
+from m4db_database.utilities import import_unit
+from m4db_database.utilities import import_running_status
+from m4db_database.utilities import import_physical_constants
+from m4db_database.utilities import import_metadatas
+from m4db_database.utilities import import_neb_calculation_types
+from m4db_database.utilities import import_geometries
+from m4db_database.utilities import import_models
+from m4db_database.utilities import import_nebs
+
+from m4db_database.configuration import read_config_from_environ
+
+# Global variables for this script
+geometry_archive = "geometry.zip"
+model_archive = "model.zip"
+neb_archive = "neb.zip"
+table_data_archive = "table_data.zip"
+
+
+def verify_sample_data_dir(data_dir):
+    r"""
+    Verifies that the directory containing sample data is of the correct form.
+    Args:
+        data_dir: directory containing sample data.
+
+    Returns:
+        True if the data directory is valid, otherwise False.
+
+    """
+    # If the path doesn't exist it is not valid.
+    if not os.path.isdir(data_dir):
+        return False
+
+    contents = os.listdir(data_dir)
+
+    if geometry_archive not in contents:
+        return False
+    if model_archive not in contents:
+        return False
+    if neb_archive not in contents:
+        return False
+    if table_data_archive not in contents:
+        return False
+
+    return True
+
+
+def un_archive(archive, destination):
+    r"""
+    Un-archives a file to a destination directory.
+    Args:
+        archive: the file to be unarchived.
+        destination: the directory in to which the file should be unarchived.
+
+    Returns:
+        None.
+
+    """
+    with zipfile.ZipFile(archive, "r") as zfin:
+        zfin.extractall(destination)
+
+
+def import_database_tables(archive, session):
+    r"""
+    Imports database table dara from the archive.
+    Args:
+        archive: an archive containing table data.
+        session: the database session in to which we import test data.
+
+    Returns:
+        None.
+    """
+    tmp_data_dir = tempfile.mkdtemp()
+    un_archive(archive, tmp_data_dir)
+    table_files = os.path.join(tmp_data_dir, "table_data")
+
+    import_anisotropy_forms(os.path.join(table_files, "anisotropy_form.dat"), session)
+    import_db_users(os.path.join(table_files, "db_user.dat"), session)
+    import_materials(os.path.join(table_files, "material.dat"), session)
+    import_softwares(os.path.join(table_files, "software.dat"), session)
+    import_projects(os.path.join(table_files, "project.dat"), session)
+    import_sizeconvention(os.path.join(table_files, "size_convention.dat"), session)
+    import_unit(os.path.join(table_files, "unit.dat"), session)
+    import_running_status(os.path.join(table_files, "running_status.dat"), session)
+    import_physical_constants(os.path.join(table_files, "physical_constant.dat"), session)
+    import_metadatas(os.path.join(table_files, "metadata.dat"), session)
+    import_neb_calculation_types(os.path.join(table_files, "neb_calculation_type.dat"), session)
+    import_geometries(os.path.join(table_files, "geometry.dat"), session)
+    import_models(os.path.join(table_files, "model.dat"), session)
+    import_nebs(os.path.join(table_files, "neb.dat"), session)
+    shutil.rmtree(tmp_data_dir)
+
+
+def import_data(data_dir, echo=False):
+    r"""
+    Function to handle sqlite option.
+    Args:
+        data_dir: directory containing sample data.
+        echo: boolean (default False) set to True if verbose SQLAlchemy output is required.
+
+    Returns:
+        None.
+    """
+    from m4db_database.util_sqlite import get_session
+
+    config = read_config_from_environ()
+
+    session = get_session(echo=echo)
+
+    file_root = config["file_root"]
+
+    if not verify_sample_data_dir(data_dir):
+        print("The data directory is invalid")
+        sys.exit(1)
+
+    un_archive(os.path.join(data_dir, geometry_archive), file_root)
+    un_archive(os.path.join(data_dir, model_archive), file_root)
+    un_archive(os.path.join(data_dir, neb_archive), file_root)
+
+    import_database_tables(os.path.join(data_dir, table_data_archive), session)
+
+
+def get_cmd_line_parser():
+    r"""
+    Function to create a command line parser.
+
+    Returns:
+        A command line parser object.
+
+    """
+    parser = ArgumentParser()
+
+    parser.add_argument("data_dir",
+                        help="A location containing sample data.")
+    parser.add_argument("-f", "--force", action="store_true",
+                        help="Ignore any checks and import.")
+    parser.add_argument("-v", "--verbose", action="store_true",
+                        help="produce verbose output when creating the database")
+    return parser
+
+
+def main():
+    r"""
+    Program entry point.
+
+    Returns:
+        None.
+    """
+    parser = get_cmd_line_parser()
+    args = parser.parse_args()
+
+    if not args.force:
+        response = input("WARNING! Please make sure you are running this on an empty database! Continue (y/n)? ")
+        if response.lower() != "y":
+            print("OK! Exiting without doing anything...")
+            sys.exit(0)
+
+    print("Importing test data...")
+    import_data(args.data_dir, echo=args.verbose)
+    print("Done!")
+
+
+if __name__ == "__main__":
+    main()
