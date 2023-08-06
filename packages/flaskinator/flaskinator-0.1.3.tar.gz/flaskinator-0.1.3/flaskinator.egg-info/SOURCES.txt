@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+flaskinator.egg-info/PKG-INFO
+flaskinator.egg-info/SOURCES.txt
+flaskinator.egg-info/dependency_links.txt
+flaskinator.egg-info/top_level.txt
