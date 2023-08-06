@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: vayu
+Version: 0.0.204
+Summary: Tools for Air Quality Data Analysis.
+Home-page: https://sustainability-lab.github.io/vayu
+Maintainer: Sustainability-Lab@IITGN
+Maintainer-email: apoorv.agnihotri@iitgn.ac.in, deepak.narayanan@iitgn.ac.in
+License: MIT
+Download-URL: https://sustainability-lab.github.io/vayu
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: geopandas
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: folium
+Requires-Dist: plotly
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-gallery ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+### Tools for Air Quality Data Analysis
+
+Python Library to better understand the air quality data through visualizations.
+
+Inspired from the R package [OpenAir][3].
+
+
+Documentations
+==============
+View documentations hosted at [GitHub][1].
+
+# Installation
+
+```shell
+pip install vayu
+```
+
+# Sample Usage
+For sample usage please look for jupyer notebooks in `examples/nbs` in the [official repository][2].
+
+[1]: https://sustainability-lab.github.io/vayu/
+[2]: https://github.com/sustainability-lab/vayu/
+[3]: https://davidcarslaw.github.io/openair/
+
+
