@@ -1,0 +1,15 @@
+not_grep/__init__.py,sha256=gRw6V2swrYXSG9Ppcj5Hj13uOcBrBdztfL76S0hkx4E,1655
+not_grep/_config.py,sha256=XzRdt1bEPDZpuJku1BmodG-rDatQliDdsTNOWzDcp-Q,1534
+not_grep/_plugin_loader.py,sha256=1WFC31T1AY0QJUhLexQIlDM6X-nrVzvKxet8LLszJKs,1262
+not_grep/_run_checks.py,sha256=M8XjGGFvlltFu0_i_MWNgXPgyPdhMvjfjNv6em2exw0,1788
+not_grep/checkers.py,sha256=GmgH7CidRbNaDWyQalbiaUUAQ6a71K9fPs-v30_9fis,1209
+not_grep-1.0.0.data/data/CHANGELOG.rst,sha256=oUVcAWDzpEdsDocuezhcs7qGawQhdKMsB9PT5LBoCKo,613
+not_grep-1.0.0.data/data/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+not_grep-1.0.0.data/data/README.rst,sha256=dIl_mr3hx4t2allQd9ih-w7563TGJzWS7e5wUSnkv88,3546
+not_grep-1.0.0.data/data/requirements.txt,sha256=L3uT8hJj8K07Dy0PRzuPdiXDmdYLwPiLMRK9qYiQm_s,51
+not_grep-1.0.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+not_grep-1.0.0.dist-info/METADATA,sha256=DV10ssr2Bhqgcasf58iZeIQohbZXB7CqkZHzm6YCePg,4499
+not_grep-1.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+not_grep-1.0.0.dist-info/entry_points.txt,sha256=RbgzN0u316QDMhQq3gDM-SNRt5cDC0Vb-D0sUF9b_vk,247
+not_grep-1.0.0.dist-info/top_level.txt,sha256=ImXBb5sLy-S-o5Vfgn4ufDs8zwTsMdIzG2PyTDc2C3o,9
+not_grep-1.0.0.dist-info/RECORD,,
