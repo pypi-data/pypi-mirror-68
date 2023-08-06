@@ -1,0 +1,5 @@
+[pantsbuild.plugin]
+build_file_aliases = pants.contrib.go.register:build_file_aliases
+register_goals = pants.contrib.go.register:register_goals
+targets2 = pants.contrib.go.register:targets2
+
