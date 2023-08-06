@@ -1,0 +1,7 @@
+resourcetype = "drums"
+name = "example_drums"
+
+[waves]
+x = "3_kick_drum.wav"
+- = "0_hihat_closed.wav"
+o = "0_snare_drum.wav"
