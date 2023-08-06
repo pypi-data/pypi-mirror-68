@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+RPi_GPIO_i2c_LCD/__init__.py
+RPi_GPIO_i2c_LCD/i2c_HD44780.py
+RPi_GPIO_i2c_LCD/lcd.py
+RPi_GPIO_i2c_LCD.egg-info/PKG-INFO
+RPi_GPIO_i2c_LCD.egg-info/SOURCES.txt
+RPi_GPIO_i2c_LCD.egg-info/dependency_links.txt
+RPi_GPIO_i2c_LCD.egg-info/requires.txt
+RPi_GPIO_i2c_LCD.egg-info/top_level.txt
