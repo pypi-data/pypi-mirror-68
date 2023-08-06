@@ -1,0 +1,9 @@
+README.md
+setup.py
+libcloud_driver_kamatera/__init__.py
+libcloud_driver_kamatera/kamatera.py
+libcloud_driver_kamatera.egg-info/PKG-INFO
+libcloud_driver_kamatera.egg-info/SOURCES.txt
+libcloud_driver_kamatera.egg-info/dependency_links.txt
+libcloud_driver_kamatera.egg-info/requires.txt
+libcloud_driver_kamatera.egg-info/top_level.txt
