@@ -1,0 +1,13 @@
+pantsbuild.pants.contrib.avro-1.27.0rc2-py3.6-nspkg.pth,sha256=x2gxxGOI1J+JfPIbHDMk2KotlcUZB5y76V0RuWIgV9Q=,8559
+pants/contrib/avro/register.py,sha256=vmkWH_6WH7wWBLL7J3xPtcUVCkZ7KVc_m5xyT_xjO7g,931
+pants/contrib/avro/rules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pants/contrib/avro/rules/targets.py,sha256=CP0ZCY28gTAumbvBe4zfx0R23_FBjdDHfGqbogk69Og,452
+pants/contrib/avro/targets/java_avro_library.py,sha256=pE_HrrIC5ZA_jmVOJ-TT__m4TsyMMNLU_WwWpVUu_mM,570
+pants/contrib/avro/tasks/avro_gen.py,sha256=OwM5nwPZ5rylqaWAHYbZ18LfdssG_TXlDczy4DKI6ss,3422
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/METADATA,sha256=9KXa+mihNXniq0vefokauC4AwEGzP5tHGaLO6xDAP6s=,34719
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/WHEEL,sha256=t6JSySPSmBW55+j71sc/PLcz+hDL5syuxK+selSold0=,112
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/entry_points.txt,sha256=ytWNGk7V+om4orYUsImtanvuiKuV1b87f7sfEHhQtJY=,197
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/namespace_packages.txt,sha256=t6L7vMc3khwmlEmBRWyDMrudV2UtlVA/lMySvJ3Xmuc=,91
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/top_level.txt,sha256=2Q8psuu2hJtsFCjjCwiV13hd9u3l423C+k0dbNSWQC8=,6
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/zip-safe,sha256=AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=,1
+pantsbuild.pants.contrib.avro-1.27.0rc2.dist-info/RECORD,,

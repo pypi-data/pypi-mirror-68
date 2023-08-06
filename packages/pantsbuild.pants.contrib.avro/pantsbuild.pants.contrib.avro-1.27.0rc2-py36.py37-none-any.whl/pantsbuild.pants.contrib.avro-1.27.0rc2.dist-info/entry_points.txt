@@ -1,0 +1,5 @@
+[pantsbuild.plugin]
+build_file_aliases = pants.contrib.avro.register:build_file_aliases
+register_goals = pants.contrib.avro.register:register_goals
+targets2 = pants.contrib.avro.register:targets2
+
