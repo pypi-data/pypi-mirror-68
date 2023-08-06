@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: nettools
+Version: 2.0.1
+Summary: A tool allowing to create, calculate and manipulate networks and subnetworks easily
+Home-page: https://github.com/BioTheWolff/NetworkUtilities
+Author: Fabien Z.
+Author-email: contact.biowolf@gmx.fr
+Maintainer: Fabien Z.
+Maintainer-email: contact.biowolf@gmx.fr
+License: MIT
+Project-URL: Source Code, https://github.com/BioTheWolff/NetworkUtilities
+Project-URL: Bug Tracker, https://github.com/BioTheWolff/NetworkUtilities/issues
+Description: # NetTools
+        
+        [![Build Status](https://travis-ci.com/BioTheWolff/NetTools.svg?branch=master)](https://travis-ci.com/BioTheWolff/NetworkUtilities)
+        [![Codacy Badge](https://api.codacy.com/project/badge/Grade/30e87ae5f5954348b5112171998db645)](https://www.codacy.com/manual/BioTheWolff/NetworkUtilities?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BioTheWolff/NetworkUtilities&amp;utm_campaign=Badge_Grade)
+        
+        NetworkUtilities aims to provide an easy and simple way to create, handle and modify virtual IPv4 networks.
+        
+        Now on pypi !
+        ```ignorelang
+        python3 -m pip install nettools
+        ```
+        
+        - Documentation: todo...
+        - Website: todo...
+        - Source code: [https://github.com/BioTheWolff/NetTools](https://github.com/BioTheWolff/NetTools)
+        - Bug reports: [https://github.com/BioTheWolff/NetTools/issues](https://github.com/BioTheWolff/NetTools/issues)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
