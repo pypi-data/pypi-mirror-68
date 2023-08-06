@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestData>
+  <Comment>
+    ...
+  </Comment>
+  <Item id="1" case="Standard fields">
+    <name>A</name>
+    <coordinates>
+      <x>1</x>
+      <y>0</y>
+    </coordinates>
+  </Item>
+  <Item id="2" case="Standard fields">
+    <name>B</name>
+    <coordinates>
+      <x>4</x>
+      <y>0</y>
+    </coordinates>
+  </Item>
+  <Item id="3" case="Standard fields">
+    <name>C</name>
+    <coordinates>
+      <x>3</x>
+      <y>2</y>
+    </coordinates>
+  </Item>
+  <Item id="4" case="Standard fields">
+    <name>D</name>
+    <coordinates>
+      <x>-9</x>
+      <y>5</y>
+    </coordinates>
+  </Item>
+</TestData>
