@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ranking-metrics
+Version: 0.1.1
+Summary: ranking metrics
+Home-page: https://github.com/nju-luke/rank-metrics
+Author: Luke
+Author-email: nju.hyhb@gmail.com
+License: MIT
+Description: # ranking-metrics
+        
+Keywords: ranking,ranking-metrics,ndcg,errs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
