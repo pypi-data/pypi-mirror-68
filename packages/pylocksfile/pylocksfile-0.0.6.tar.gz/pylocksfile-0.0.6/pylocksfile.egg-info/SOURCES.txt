@@ -1,0 +1,9 @@
+README.md
+pylocksfile.py
+setup.py
+pylocksfile.egg-info/PKG-INFO
+pylocksfile.egg-info/SOURCES.txt
+pylocksfile.egg-info/dependency_links.txt
+pylocksfile.egg-info/top_level.txt
+tests/__init__.py
+tests/tests.py
