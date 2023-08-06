@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: anomaly-detection-framework
+Version: 0.0.2
+Summary: Anomaly Detection Frameworks allows us to caluculate Anomalities on any Time - Series Data Sets. It has an interdace which easy to manage to train - predict given dataset.
+Home-page: https://github.com/caglanakpinar/tsad
+Author: Caglan Akpinar
+Author-email: cakpinar23@gmail.com
+License: UNKNOWN
+Keywords: anomaly Time Series Anomaly LSTM Prophet Isolation Forest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: docker-compose (>=1.25.5)
+Requires-Dist: PyYAML
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+# tsad
+
+## Installation
+
