@@ -1,0 +1,11 @@
+README.md
+setup.py
+OSMEvolution/__init__.py
+OSMEvolution/collect.py
+OSMEvolution/request.py
+OSMEvolution/restructure.py
+OSMEvolution.egg-info/PKG-INFO
+OSMEvolution.egg-info/SOURCES.txt
+OSMEvolution.egg-info/dependency_links.txt
+OSMEvolution.egg-info/requires.txt
+OSMEvolution.egg-info/top_level.txt
