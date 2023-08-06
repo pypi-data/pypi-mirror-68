@@ -1,0 +1,6 @@
+
+[dev]
+zest.releaser[recommended]
+pytest
+tox
+pylint
