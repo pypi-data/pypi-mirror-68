@@ -1,0 +1,4 @@
+[console_scripts]
+yukon-backend = api.main:main
+yukon-demo-node = api.uavcan_node_demo:main
+

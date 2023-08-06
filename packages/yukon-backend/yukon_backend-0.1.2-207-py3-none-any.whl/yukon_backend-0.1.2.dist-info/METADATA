@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: yukon-backend
+Version: 0.1.2
+Summary: UAVCAN Yukon Python backend
+Home-page: https://uavcan.org
+Author: UAVCAN Development Team
+Author-email: uavcan-maintainers@googlegroups.com
+License: MIT
+Keywords: uavcan,backend,api,can,can-bus,yukon
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: quart
+Requires-Dist: quart-cors
+Requires-Dist: typing
+
+################################################
+Yukon Backend
+################################################
+
+* UAVCAN/Yukon python backend
+* Uses new asynchronous pyuavcan to provide a REST interface over a libuavcan data bus
+* Swagger Documentation provided
+
+************************************************
+Build Setup // Generated
+************************************************
+
+* Python 3.7 at least required
+
+Start the demo UAVCAN node::
+
+    python3 uavcan_node_demo.py
+
+Run server::
+
+    python3 api/main.py
+
+
