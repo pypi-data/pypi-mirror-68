@@ -1,0 +1,7 @@
+bs4
+weasyprint
+python-magic
+yattag
+ebooklib
+colorama
+requests
