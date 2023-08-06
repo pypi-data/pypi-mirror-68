@@ -1,0 +1,15 @@
+pennylane_forest/__init__.py,sha256=q_P6-YHCdpwnhe8_hHjafmHOdpxsc6z9VBFghSv-KhM,355
+pennylane_forest/_version.py,sha256=hq1M1ubP-Z9IlZTK-2HUogpUTKMvFVf62wYrYdMfijs,97
+pennylane_forest/converter.py,sha256=rINJeAJR7bv6VKFU-U-wfziG3uaIt5cMmBc01OTyj5E,21287
+pennylane_forest/device.py,sha256=aS78okola2sqQZ2fAvcJCVSHGWq7t8_xeZNHaDNQQFM,13536
+pennylane_forest/numpy_wavefunction.py,sha256=tezERiksm8E3LFUKtS7XiZrVLOVPZkguTujcGWRgQ6c,2039
+pennylane_forest/ops.py,sha256=GSfPpP6y_tdmz8GVZSYk4jxSLIBcVyBsANpoqFge0Eo,4673
+pennylane_forest/qpu.py,sha256=mWjEnnI7X5oeKIAeCM10t01P2rTxeW73gM1gkwMVZLw,9565
+pennylane_forest/qvm.py,sha256=FssdzwGnKvLGnS04f_TfCiojvyXvU49sj253jobac8s,10730
+pennylane_forest/wavefunction.py,sha256=vyBFp0qy6lCN57lpsKiqhUl6qK0RolKqKV0LVOg60Ng,3970
+PennyLane_Forest-0.9.0.dist-info/LICENSE,sha256=Tqk3MkoiBTMiCQqQb2SqOSyb1tILgaiXHLn26Qa0pBA,1517
+PennyLane_Forest-0.9.0.dist-info/METADATA,sha256=9DsFQC6iDw8F_2FhS-jKl4NTXGl-QxWMUtAdAy0QxjE,5117
+PennyLane_Forest-0.9.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PennyLane_Forest-0.9.0.dist-info/entry_points.txt,sha256=cdfJ2pyRL8vrrNPPQtEF-qgplR2ZENeVgnDkBKeJV-A,374
+PennyLane_Forest-0.9.0.dist-info/top_level.txt,sha256=jUfuKy_AnB6vN1wvU6602Z7GU_dWA5a6gSX7iQXoxSY,17
+PennyLane_Forest-0.9.0.dist-info/RECORD,,
