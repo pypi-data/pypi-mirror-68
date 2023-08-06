@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+agi/__init__.py
+agi/version.py
+agi.egg-info/PKG-INFO
+agi.egg-info/SOURCES.txt
+agi.egg-info/dependency_links.txt
+agi.egg-info/requires.txt
+agi.egg-info/top_level.txt
