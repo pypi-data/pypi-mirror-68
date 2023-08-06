@@ -1,0 +1,304 @@
+{% extends 'page.html' %}
+
+{% block pageHeader %}
+<link rel="stylesheet" href="{{url_for('static', filename='libs/jqueryui/jquery-ui.min.css')}}"/>
+<script src="{{url_for('static', filename='libs/jqueryui/jquery-ui.min.js')}}"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='libs/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.css')}}"/>
+<script src="{{url_for('static', filename='libs/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.min.js')}}"></script>
+{% endblock %}
+
+{% block pageStyle %}
+  #messageTodo {
+    padding: 1rem 2rem .8rem 2rem;
+    border: .1rem solid #cb4335;
+    border-radius: .6rem;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 2rem;
+  }
+  #messageTodo.hidden {
+    display: none;
+  }
+  .infobox {
+    padding: 1rem 2rem .8rem 2rem;
+    border: .1rem solid #ddd;
+    border-radius: .6rem;
+    margin-top: 4rem;
+    margin-bottom: -1rem;
+    background: #f3f3f3;
+    font-size: 2rem;
+  }
+  .question {
+    display: list-item;
+    margin-top: 4rem;
+    list-style-type: disk;
+    list-style-position: outside;
+    font-size: 2rem;
+  }
+  .question.todo .questionText {
+    color: #e74c3c;
+  }
+  .question .questionText {
+    margin-bottom: 2rem;
+  }
+  .question .choice {
+    display: flex;
+    justify-content: center;
+  }
+  .question .choice .option {
+    min-width: 10rem;
+    margin: 0 .5em 0 0;
+    padding: 1rem 1.5rem;
+    border: .2rem solid #ddd;
+    border-bottom: .25rem solid #229954;
+    border-radius: .6rem;
+    text-align: center;
+    color: #229954;
+    cursor: pointer;
+  }
+  .question .choice .option:hover {
+    padding-bottom: .4rem;
+    border-bottom-width: .4rem;
+  }
+  .question .choice .option.active {
+    background-color: #229954;
+    border-color: #229954;
+    color: #fff;
+  }
+  .question .text {
+    width: 100%;
+    padding: 1rem;
+    border: .2rem solid #ddd;
+    border-radius: .6rem;
+    outline: none;
+    resize: none;
+  }
+  .question .slider {
+    padding-top: .5rem;
+    padding-bottom: 2.8rem;
+    padding: .5rem 4rem 2.8rem 4rem;
+  }
+  .question .slider .ui-slider {
+    height: .6rem;
+    background: #ddd;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0!important;
+  }
+  .question .slider .ui-slider .ui-slider-handle {
+    background: #229954;
+    border: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-left: -.9rem;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+  }
+  .question .slider[data-null] .ui-slider .ui-slider-handle {
+    display: none;
+  }
+  .question .slider .ui-slider .ui-slider-pip {
+    top: -.3rem;
+  }
+  .question .slider .ui-slider .ui-slider-pip .ui-slider-line {
+    background: #fff;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: -.6rem;
+    box-shadow: 0 0 0 .2rem #229954;
+    border-radius: 100%;
+  }
+  .question .slider .ui-slider .ui-slider-pip .ui-slider-line:hover {
+    width: .8rem;
+    height: .8rem;
+    margin-top: .2rem;
+    margin-left: -.4rem;
+    box-shadow: 0 0 0 .4rem #229954;
+  }
+  .question .slider .ui-slider .ui-slider-pip .ui-slider-label {
+    width: 10rem;
+    margin-left: -5rem;
+    text-align: center;
+    top: 1.8rem;
+    color: #999!important;
+    font-weight: 500!important;
+  }
+{% endblock %}
+
+{% block pageScript %}
+  nextStepShow(() => {
+    const questionsRequiredTodo = $('#questionnaire .question[data-required]').filter((i, question) => valueFor(question) == null)
+    $('#questionnaire .question').removeClass('todo')
+    $(questionsRequiredTodo).addClass('todo')
+    if ($(questionsRequiredTodo).length > 0) $('#messageTodo').removeClass('hidden')
+    else $('#messageTodo').addClass('hidden')
+    return (questionsRequiredTodo.length == 0)
+  })
+  $('#title').html(settings.title)
+  // DATA
+  prepareData = () => {
+    return {
+      questionnaire: Object.assign(...$('#questionnaire .question').map((i, question) => ({
+        [$(question).attr('data-key')]: valueFor(question),
+      })).get()),
+    }
+  }
+  // PARSE
+  class Parser {
+    static _replace(selector, format, parent, parseContent = el => {}) {
+      const el = (parent) ? $(parent).find(selector) : $(selector)
+      $(el).each((i, s) => {
+        parseContent(s, $(s).html(), a => $(s).attr(a))
+        $(s).replaceWith(format(s, $(s).html(), a => $(s).attr(a)))
+      })  
+    }
+    static _mapContent(generator, mapContent) {
+      return (s, content, attr) => generator(s, mapContent(s, content, attr), attr)
+    }
+  }
+  class ParserQuestionnaire extends Parser {
+    static run(parent=null) {
+      const questionnaire = $('#questionnaire')
+      $(questionnaire).html(settings.questions)
+      ParserInfobox.run(questionnaire)
+      ParserChoice.run(questionnaire)
+      ParserSlider.run(questionnaire)
+      ParserText.run(questionnaire)
+    }
+  }
+  class ParserInfobox extends Parser {
+    static run(parent=null) {
+      this._replace(
+        'infobox',
+        (s, content, attr) => `<div class="infobox">${content}</div>`,
+        parent)
+    }
+  }
+  class ParserQuestion extends Parser {
+    static _generateQuestion(s, content, attr) {
+      return `<div class="question" data-key="${attr('key')}" ${((attr('required') !== undefined) ? 'data-required' : '')}>
+        <div class="questionText">${attr('text')}</div>
+        ${content}
+      </div>`
+    }
+  }
+  class ParserChoice extends ParserQuestion {
+    static run(parent=null) {
+      this._replace(
+        'choice',
+        this._mapContent(this._generateQuestion,
+        (el, content, attr) => `<div class="choice">${content}</div>`),
+        parent,
+        (el, content, attr) => {
+          this._replace('option', (s, content, attr) => `<div class="option">${content}</div>`, el)
+        })
+    }
+  }
+  class ParserSlider extends ParserQuestion {
+    static run(parent=null) {
+      this._replace(
+        'slider',
+        this._mapContent(
+          this._generateQuestion,
+          (el, content, attr) => `<div class="slider" data-null data-min="${attr('min')}" data-max="${attr('max')}" data-min-label="${attr('min-label')}" data-center-label="${attr('center-label')}" data-max-label="${attr('max-label')}"><div class="sliderInner"></div></div>`
+        ),
+        parent)
+    }
+  }
+  class ParserText extends ParserQuestion {
+    static run(parent=null) {
+      this._replace(
+        'text',
+        this._generateQuestion,
+        parent,
+        (el, content, attr) => {
+          $(el).append(`<textarea class="text" rows="${attr('rows')}"/>`)
+        })
+    }
+  }
+  ParserQuestionnaire.run()
+  // CHOICE
+  $('#questionnaire .question .choice').each((i, choice) => {
+    const c = $(choice).find('.option')
+    $(c).on('click', e => {
+      const question = $(choice).parent('.question')
+      $(question).removeClass('todo')
+      $(c).removeClass('active')
+      $(e.target).addClass('active')
+      logging('choice changed', {
+        key: $(question).attr('data-key'),
+        value: valueForChoice(question),
+      })
+    })
+  })
+  const valueForChoice = question => {
+    const active = $(question).find('.choice .option.active')
+    if (active.length) return $(active).text()
+    return null
+  }
+  // SLIDER
+  $('#questionnaire .question .slider').each((i, slider) => {
+    const dataAttr = (key, defaultValue='') => ($(slider).attr(`data-${key}`) != 'undefined') ? $(slider).attr(`data-${key}`) : defaultValue
+    const dataAttrInt = (key, defaultValue) => parseInt(dataAttr(key, defaultValue))
+    const min = dataAttrInt('min', -2)
+    const max = dataAttrInt('max', 2)
+    const center = Math.round(.5 * (min + max))
+    const labels = Array(max - min + 1).fill('')
+    labels[0] = dataAttr('min-label')
+    labels[center - min] = dataAttr('center-label')
+    labels[labels.length - 1] = dataAttr('max-label')
+    $(slider).find('.sliderInner').slider({
+      min: min,
+      max: max,
+      value: center,
+      animate: 400,
+    }).on('slidechange', (event, ui) => {
+      const question = $(slider).parent('.question')
+      $(question).removeClass('todo')
+      $(slider).removeAttr('data-null')
+      logging('slider value changed', {
+        key: $(question).attr('data-key'),
+        value: valueForSlider(question),
+      })
+    }).slider('pips', {
+      rest: 'label',
+      labels: labels,
+    })
+  })
+  const valueForSlider = question => {
+    const slider = $(question).find('.slider')
+    if ($(slider).is('[data-null]')) return null
+    return $(slider).find(' .sliderInner').slider('value')
+  }
+  // TEXT
+  $('#questionnaire .question .text').each((i, text) => {
+    if ($(text).attr('rows') == 'undefined') $(text).attr('rows', '2')
+  }).on('keyup', e => {
+    const question = $(e.target).parent('.question')
+    $(question).removeClass('todo')
+    logging('text changed', {
+      key: $(question).attr('data-key'),
+      value: valueForText(question),
+    }, {
+      compareDataForUpdateLog: (d1, d2) => d1.key == d2.key,
+    })
+  })
+  const valueForText = question => {
+    const text = $(question).find('.text').val()
+    return (text == '') ? null : text
+  }
+  // VALUE
+  const valueFor = question => {
+    if ($(question).find('.choice').length) return valueForChoice(question)
+    else if ($(question).find('.slider').length) return valueForSlider(question)
+    else if ($(question).find('.text').length) return valueForText(question)
+    return null
+  }
+{% endblock %}
+
+{% block pageContent %}
+  <h2 id="title"></h2>
+  <div id="messageTodo" class="hidden">Please fill out all required questions, which are marked in red.</div>
+  <div id="questionnaire"></div>
+{% endblock %}

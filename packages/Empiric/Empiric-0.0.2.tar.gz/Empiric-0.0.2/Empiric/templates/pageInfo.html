@@ -1,0 +1,12 @@
+{% extends 'page.html' %}
+
+{% block pageScript %}
+  nextStepShow()
+  $('#title').html(settings.title)
+  $('#message').html(settings.message)
+{% endblock %}
+
+{% block pageContent %}
+  <h2 id="title"></h2>
+  <div id="message" class="text"></div>
+{% endblock %}

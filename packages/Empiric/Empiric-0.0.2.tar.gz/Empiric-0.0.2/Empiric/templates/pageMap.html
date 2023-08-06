@@ -1,0 +1,248 @@
+{% extends 'page.html' %}
+
+{% block pageHeader %}
+  <link rel="stylesheet" href="{{url_for('static', filename='libs/leaflet/dist/leaflet.css')}}"/>
+  <script src="{{url_for('static', filename='libs/leaflet/dist/leaflet.js')}}"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='libs/leaflet-draw/dist/leaflet.draw.css')}}"/>
+  <script src="{{url_for('static', filename='libs/leaflet-draw/dist/leaflet.draw.js')}}"></script>
+  <script src="{{url_for('static', filename='libs/leaflet-path-transform/dist/L.Path.Transform.js')}}"></script>
+{% endblock %}
+
+{% block pageStyle %}
+  body {
+    background: #000;
+  }
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+  }
+  #map {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background: #000;
+  }
+{% endblock %}
+
+{% block pageScript %}
+  // CONSTANTS
+  const DRAW_GEOMETRIES = 'DRAW_GEOMETRIES'
+  const TRANSFORM_GEOMETRIES = 'TRANSFORM_GEOMETRIES'
+  // INSTRUCTION
+  showInstruction(settings.instruction)
+  // COLOURS
+  const color = name => {
+    if (name == 'RED') return '#e74c3c'
+    if (name == 'PURPLE') return '#9b59b6'
+    if (name == 'BLUE') return '#3498db'
+    if (name == 'GREEN') return '#2ecc71'
+    if (name == 'YELLOW') return '#f1c40f'
+    if (name == 'ORANGE') return '#f39c12'
+    if (name == 'GRAY') return '#c3c3c3'
+    return name
+  }
+  // STYLE
+  const styleDrawn = c => ({
+    stroke: true,
+    color: color(c),
+    weight: 4,
+    opacity: .75,
+    fill: true,
+    fillOpacity: .6,
+  })
+  const styleDrawing = c => Object.assign(styleDrawn(c), {
+    fill: false,
+  })
+  // COMPUTE SIZE
+  const size = settings.backgroundImageSize
+  const windowHeight = window.innerHeight - 50
+  const windowWidth = window.innerWidth
+  const fillHeight = (size.height / size.width > windowHeight / windowWidth)
+  const height = (fillHeight) ? windowHeight : size.height / size.width * windowWidth
+  const width = (fillHeight) ? size.width / size.height * windowHeight : windowWidth
+  const scale = (fillHeight) ? windowHeight / size.height : windowWidth / size.width
+  const bounds = [[0, 0], [height, width]]
+  $('#map').css('height', height)
+  // DATA
+  prepareData = () => {
+    if (settings.task == TRANSFORM_GEOMETRIES) return {geometries: settings.geometries}
+    return {}
+  }
+  // PROJECTION
+  const layerToGeoJSON = layer => unproject(layer.toGeoJSON())
+  const project = gj => {
+    gj = JSON.parse(JSON.stringify(gj))
+    gj.geometry.coordinates[0] = gj.geometry.coordinates[0].map(([x, y]) => [x * scale, y * scale])
+    return gj
+  }
+  const unproject = gj => {
+    gj = JSON.parse(JSON.stringify(gj))
+    gj.geometry.coordinates[0] = gj.geometry.coordinates[0].map(([x, y]) => [x / scale, y / scale])
+    return gj
+  }
+  class GeoJSON {
+    static type(gj) {
+      return gj.geometry.type
+    }
+    static toCoordinates(gj) {
+      return gj.geometry.coordinates[0].map(([x, y]) => [y, x])
+    }
+    static centroid(gj) {
+      let x = 0
+      let y = 0
+      const n = gj.geometry.coordinates[0].length
+      for (const c of gj.geometry.coordinates[0]) {
+        x += c[0]
+        y += c[1]
+      }
+      return [x / n, y / n]
+    }
+    static translate(gj, shift) {
+      gj = JSON.parse(JSON.stringify(gj))
+      gj.geometry.coordinates[0] = gj.geometry.coordinates[0].map(([x, y]) => [x + shift[0], y + shift[1]])
+      return gj
+    }
+    static scale(gj, scale) {
+      if (typeof(scale) == 'number') scale = [scale, scale]
+      const centroid = GeoJSON.centroid(gj)
+      const translated = GeoJSON.translate(gj, [-centroid[0], -centroid[1]])
+      translated.geometry.coordinates[0] = translated.geometry.coordinates[0].map(([x, y]) => [scale[0] * x, scale[1] * y])
+      return GeoJSON.translate(translated, centroid)
+    }
+    static rotate(gj, angle) {
+      const centroid = GeoJSON.centroid(gj)
+      const translated = GeoJSON.translate(gj, [-centroid[0], -centroid[1]])
+      const sinAngle = Math.sin(angle)
+      const cosAngle = Math.cos(angle)
+      translated.geometry.coordinates[0] = translated.geometry.coordinates[0].map(([x, y]) => [cosAngle * x - sinAngle * y, sinAngle * x + cosAngle * y])
+      return GeoJSON.translate(translated, centroid)
+    }
+  }
+  // MAP
+  const map = L.map('map', {
+    crs: L.CRS.Simple,
+    zoomSnap: 0,
+    doubleClickZoom: false,
+    dragging: false,
+    keyboard: false,
+    scrollWheelZoom: false,
+    touchZoom: false,
+    attributionControl: false,
+    zoomControl: false,
+    minZoom: 0,
+    maxZoom: 18,
+  }).fitBounds(bounds)
+  // BACKGROUND IMAGE
+  L.imageOverlay(`{{url_for('static', filename='files/')}}${settings.backgroundImage}`, bounds, {opacity: settings.backgroundOpacity}).addTo(map)
+  // GEOMETRIES
+  if (settings.geometries) {
+    settings.geometries = settings.geometries.map(geometry => (geometry.filename !== undefined) ? geometry : {filename: geometry})
+    settings.geometries.map(geometry => {
+      $.getJSON(`{{url_for('static', filename='files/')}}${geometry.filename}`).done(g => {
+        if (GeoJSON.type(g) == 'Polygon') {
+          if (geometry.translate) g = GeoJSON.translate(g, geometry.translate)
+          if (geometry.scale) g = GeoJSON.scale(g, geometry.scale)
+          if (geometry.rotate) g = GeoJSON.rotate(g, geometry.rotate)
+          const layer = L.polygon(GeoJSON.toCoordinates(project(g)), {
+            ...styleDrawn(settings.geometriesColor),
+            transform: settings.transformRotate || settings.transformResize || settings.transformResizeNonUniform,
+            draggable: settings.transformTranslate,
+          }).addTo(map)
+          // TRANSFORM GEOMETRIES
+          if (settings.task == TRANSFORM_GEOMETRIES) layer.transform.enable({
+            rotation: settings.transformRotate,
+            scaling: settings.transformResize || settings.transformResizeNonUniform,
+            uniformScaling: !settings.transformResizeNonUniform,
+            handlerOptions: {
+              radius: 8,
+            },
+            rotateHandleOptions: {
+              weight: 3,
+            },
+            handleLength: 18,
+          })
+          if (settings.transformTranslate) layer.dragging.enable()
+          if (settings.task == TRANSFORM_GEOMETRIES) {
+            layer.on('rotateend', e => {
+              map.dragging.disable()
+              if (geometry.userRotate === undefined) geometry.userRotate = 0
+              geometry.userRotate += e.rotation
+              logging('geometry rotated', {
+                geometry: geometry.filename,
+                userRotate: geometry.userRotate,
+              })
+            })
+            layer.on('transformed', e => {
+              map.dragging.disable()
+              if (e.scale && (e.scale.x != 1 || e.scale.y != 1)) {
+                if (geometry.userScale === undefined) geometry.userScale = [1, 1]
+                geometry.userScale = [geometry.userScale[0] * e.scale.x, geometry.userScale[1] * e.scale.y]
+                logging('geometry scaled', {
+                  geometry: geometry.filename,
+                  userScale: geometry.userScale,
+                })
+              }
+              if (e.translate) {
+                if (geometry.userTranslate === undefined) geometry.userTranslate = [0, 0]
+                geometry.userTranslate = [geometry.userTranslate[0] + e.translate.x / scale, geometry.userTranslate[1] - e.translate.y / scale]
+                logging('geometry translated', {
+                  geometry: geometry.filename,
+                  userTranslate: geometry.userTranslate,
+                })
+              }
+            })
+          }
+        } else L.geoJSON(project(g), {
+          style: styleDrawn(settings.geometriesColor),
+        }).addTo(map)
+      })
+    })
+  }
+  // DRAW GEOMETRIES
+  if (settings.task == DRAW_GEOMETRIES) {
+    let drawCount = settings.drawCount
+    const startDrawing = () => {
+      new L.Draw.Polygon(map, {
+        shapeOptions: styleDrawing(settings.drawColor),
+      }).enable()
+    }
+    const nextStep = () => {
+      setTimeout(() => {
+        $('#map').css('display', 'none')
+        setTimeout(() => {
+          nextStepActivate()
+          saveAndNext()
+        }, settings.waitBeforeNext)
+      }, settings.waitAfterLastDraw)
+    }
+    map.on(L.Draw.Event.CREATED, e => {
+      logging('geometry drawn', layerToGeoJSON(e.layer))
+      if (data.geometries === undefined) data.geometries = []
+      data.geometries.push(layerToGeoJSON(e.layer))
+      map.addLayer(e.layer)
+      e.layer.setStyle(styleDrawn(settings.drawColor))
+      if (drawCount == null) {
+        startDrawing()
+        nextStepShow()
+      } else {
+        drawCount -= 1
+        if (drawCount > 0) startDrawing()
+        else nextStep()
+      }
+    })
+    startDrawing()
+  }
+  // TRANSFORM GEOMETRIES
+  if (settings.task == TRANSFORM_GEOMETRIES) nextStepShow()
+{% endblock %}
+
+{% block pageContent %}
+  <div id="map"></div>
+{% endblock %}

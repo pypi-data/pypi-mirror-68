@@ -1,0 +1,24 @@
+{% extends 'page.html' %}
+
+{% block pageStyle %}
+  .content {
+    text-align: center;
+  }
+  .bigIcon {
+    color: #2ecc71;
+    font-size: 20rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+{% endblock %}
+
+{% block pageScript %}
+  $('#title').html(settings.title)
+  $('#message').html(settings.message)
+{% endblock %}
+
+{% block pageContent %}
+  <i class="bigIcon far fa-check-circle"></i>
+  <h2 id="title"></h2>
+  <div id="message" class="text"></div>
+{% endblock %}

@@ -1,0 +1,261 @@
+{% extends 'html.html' %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block header %}
+  <script src="{{url_for('static', filename='libs/dayjs/dayjs.min.js')}}"></script>
+  <script src="{{url_for('static', filename='libs/vega/build/vega.min.js')}}"></script>
+  <script src="{{url_for('static', filename='libs/vega-lite/build/vega-lite.min.js')}}"></script>
+  <script src="{{url_for('static', filename='libs/vega-embed/build/vega-embed.min.js')}}"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='libs/leaflet/dist/leaflet.css')}}"/>
+  <script src="{{url_for('static', filename='libs/leaflet/dist/leaflet.js')}}"></script>
+{% endblock %}
+
+{% block style %}
+  .content.header, .content.loading, .content.footer {
+    text-align: center;
+  }
+  .content.loading {
+    font-size: 3rem;
+  }
+  h2 {
+    margin-top: .1rem;
+  }
+  .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .contentInner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .version {
+    margin-top: -2rem;
+  }
+  .visualization h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: -1rem;
+  }
+  .visualization h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 4rem;
+  }
+  .visualization .visOuter {
+    position: relative;
+    text-align: center;
+  }
+  .visualization .visOuter .vis {
+    position: initial;
+    padding-right: 0;
+  }
+  .visualization .visOuter .vis details {
+    position: absolute;
+    right: -40px;
+    top: 4px;
+  }
+  .textLarge {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  ul.contentInner {
+    list-style-position: inside;
+    margin-bottom: 0;
+  }
+{% endblock %}
+
+{% block script %}
+  // STATISTICS
+  const bundleStatisticsInSheets = statistics => {
+    ss = []
+    lastKey = null
+    lastTitle = null
+    for (const s of statistics) {
+      if (ss.length == 0 || s['key'] != lastKey || s['title'] != lastTitle) ss.push([])
+      lastKey = s['key']
+      lastTitle = s['title']
+      ss[ss.length - 1].push(s)
+    }
+    return ss
+  }
+  // HELPERS FOR THE VISUALIZATION
+  const dataAggregate = data => {
+    r = {}
+    for (const d of data) {
+      if (r[d] === undefined) r[d] = 0
+      r[d] += 1
+    }
+    return Object.entries(r).map(x => ({'value': x[0], 'count':x[1]}))
+  }
+  const _dataKeyValueForList = (data, defaultKey='key') => data
+    .filter(v => v !== null)
+    .map(v => ((v instanceof Object) ? Object.entries(v).map((x, _) => ({key: x[0], value: x[1]})) : [{key: defaultKey, value: v}]))
+    .flat()
+  const dataKeyValue = data => {
+    if (Array.isArray(data)) return _dataKeyValueForList(data)
+    else return Object.entries(data).map((x, _) => _dataKeyValueForList(x[1], x[0])).flat()
+  }
+  const visVegaLite = (c, id, spec) => {
+    $(c).append(`<div class="visOuter"><div id='${id}' class="vis"></div></div>`)
+    vegaEmbed(`#${id}`, spec, {
+      mode: 'vega-lite',
+      width: 475,
+      downloadFileName: id,
+    })
+  }
+  // HELPERS FOR THE VISUALIZATION: COLOURS
+  const color = name => {
+    if (name == 'RED') return '#e74c3c'
+    if (name == 'PURPLE') return '#9b59b6'
+    if (name == 'BLUE') return '#3498db'
+    if (name == 'GREEN') return '#2ecc71'
+    if (name == 'YELLOW') return '#f1c40f'
+    if (name == 'ORANGE') return '#f39c12'
+    if (name == 'GRAY') return '#c3c3c3'
+  }
+  // HELPERS FOR THE VISUALIZATION: STYLE
+  const styleDrawn = c => ({
+    stroke: true,
+    color: color(c),
+    weight: 1,
+    opacity: .75,
+    fill: true,
+    fillOpacity: .3,
+  })
+  const styleBackground = {
+    opacity: .2,
+  }
+  // HELPERS FOR THE VISUALIZATION: PROJECTION
+  const project = (gj, scale) => {
+    gj = JSON.parse(JSON.stringify(gj))
+    gj.geometry.coordinates[0] = gj.geometry.coordinates[0].map(([x, y]) => [x * scale, y * scale])
+    return gj
+  }
+  // VISUALIZATIONS
+  const visBarChart = (c, id, data, settings) => {
+    visVegaLite(c, id, {
+      data: {values: dataAggregate(data)},
+      mark: 'bar',
+      encoding: {
+        x: {field: 'count', type: 'quantitative', axis: {title: null}},
+        y: {field: 'value', type: 'ordinal', axis: {title: null}},
+      }
+    })
+  }
+  const visBoxPlot = (c, id, data, settings) => {
+    const multipleKeys = (data instanceof Object) || (data[0] instanceof Object)
+    const spec = {
+      data: {values: dataKeyValue(data)},
+      mark: {
+        type: 'boxplot',
+        extent: 1.5,
+        median: {color: 'red'},
+      },
+      encoding: {
+        x: {field: 'value', type: 'quantitative', axis: {title: null}},
+        y: {field: 'key', type: 'ordinal', axis: (multipleKeys) ? {title: null} : null},
+      }
+    }
+    const min = settings['visualization']['min']
+    const center = settings['visualization']['center']
+    const max = settings['visualization']['max']
+    const minLabel = settings['visualization']['min-label']
+    const centerLabel = settings['visualization']['center-label']
+    const maxLabel = settings['visualization']['max-label']
+    if (min !== undefined && min !== null && max !== undefined && max !== null) spec['encoding']['x']['scale'] = {domain: [min, max]}
+    labelExpr = ''
+    if (min !== undefined && min !== null && minLabel) labelExpr += `datum.value == ${min} ? \'${minLabel}\' : `
+    if (max !== undefined && max !== null && maxLabel) labelExpr += `datum.value == ${max} ? \'${maxLabel}\' : `
+    if (center !== undefined && center != null && centerLabel) labelExpr += `datum.value == ${center} ? \'${centerLabel}\' : `
+    if (labelExpr.length > 0) {
+      labelExpr += '\'\''
+      spec['encoding']['x']['axis']['labelExpr'] = labelExpr
+    }
+    visVegaLite(c, id, spec)
+  }
+  const visTextCollection = (c, id, data, settings) => {
+    const ul = $(`<ul id='${id}' class="contentInner text"></ul>`).appendTo($(c))
+    for (const d of data) if (d) $(ul).append(`<li>${d}</li>`)
+  }
+  const visMAP = (c, id, data, settings) => {
+    $(c).append(`<div id='${id}' class="map"></div>`)
+    // COMPUTE SIZE
+    const size = settings['visualization']['backgroundImageSize']
+    const width = 560
+    const height = width / size.width * size.height
+    const scale = width / size.width
+    const bounds = [[0, 0], [height, width]]
+    // INIT ELEMENT
+    $(`#${id}`).css({
+      marginLeft: 20,
+      height: height,
+      width: width,
+    })
+    // MAP
+    const map = L.map(id, {
+      crs: L.CRS.Simple,
+      zoomSnap: 0,
+      doubleClickZoom: false,
+      dragging: false,
+      keyboard: false,
+      scrollWheelZoom: false,
+      touchZoom: false,
+      attributionControl: false,
+      zoomControl: false,
+      minZoom: 0,
+      maxZoom: 18,
+    }).fitBounds(bounds)
+    // BACKGROUND IMAGE
+    L.imageOverlay(`{{url_for('static', filename='files/')}}${settings['visualization']['backgroundImage']}`, bounds, styleBackground).addTo(map)
+    // GEOMETRIES
+    for (const g of data) L.geoJSON(project(g, scale), {
+      style: styleDrawn('BLUE'),
+    }).addTo(map)
+  }
+  // RUN
+  $.getJSON('/data/statistics.json').done(statistics => {
+    for (const sheet of bundleStatisticsInSheets(statistics)) {
+      const c = $('<div class="content visualization"></div>').appendTo($('#visualizations'))
+      $(c).append(`<h2>${sheet[0]['settings']['title']}</h2>`)
+      for (const s of sheet) {
+        const key = s['key']
+        const subkey = s['subkey']
+        const data = s['data']
+        const settings = s['settings']
+        const id = `vis-${key.replace('.', '-')}-${subkey.replace('.', '-')}`
+        $(c).append(`<h3>${settings['subtitle']}${(s['subtitleAddition'] !== undefined) ? ` – ${s['subtitleAddition']}` : ''}</h3>`)
+        switch (settings['visualization']['type']) {
+          case 'BAR_CHART':
+            visBarChart(c, id, data, settings)
+            break
+          case 'BOX_PLOT':
+            visBoxPlot(c, id, data, settings)
+            break
+          case 'TEXT_COLLECTION':
+            visTextCollection(c, id, data, settings)
+            break
+          case 'MAP':
+            visMAP(c, id, data, settings)
+            break
+        }
+      }
+    }
+    $('.loading').remove()
+  })
+  $('.now').text(dayjs().format('D MMMM YYYY'))
+{% endblock %}
+
+{% block bodyWithContent %}
+  <div class="content header">
+    <h2 id="title">Empiric</h2>
+    <div class="version textLarge">Version <span class="now"></span></div>
+  </div>
+  <div class="content loading">... loading</div>
+  <div id="visualizations"></div>
+  <div class="content footer">
+    <div class="text">Created with <a href="https://github.com/mocnik-science/empiric" target="_blank">Empiric</a></div>
+  </div>
+{% endblock %}

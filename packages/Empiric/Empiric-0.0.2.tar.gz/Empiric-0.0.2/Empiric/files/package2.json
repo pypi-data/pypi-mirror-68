@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+  },
+  "scripts": {
+    "postinstall": "rm -rf node_modules"
+  }
+}

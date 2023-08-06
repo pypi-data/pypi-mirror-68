@@ -1,0 +1,21 @@
+{% extends 'html.html' %}
+
+{% block script %}
+const login = e => {
+  e.preventDefault()
+  $('.button').click()
+}
+$('.inputbox').on('keyup', e => {
+  if (e.keyCode == 13) login(e)
+})
+{% endblock %}
+
+{% block contentBox %}
+  {% if message %}<div class="text errorMessage">{{message}}</div>{% endif %}
+  <h2 id="title">Empiric</h2>
+  <div id="message" class="text">Please provide your password:</div>
+  <form action="" method="POST">
+    <div class="text"><input class="inputbox" type="password" name="password" placeholder="password"></input></div>
+    <div><input class="button" type="submit" name="Login"></div>
+  </form>
+{% endblock %}

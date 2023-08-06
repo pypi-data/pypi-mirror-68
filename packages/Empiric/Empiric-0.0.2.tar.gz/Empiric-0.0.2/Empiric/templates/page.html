@@ -1,0 +1,112 @@
+{%- macro script() -%}
+  {% block pageScript %}
+    nextStepShow()
+  {% endblock %}
+{%- endmacro -%}
+{% extends 'html.html' %}
+
+{% block title %}{% if step != -1 %}Step {{step}}{% endif %}{% endblock %}
+
+{% block header %}
+{% block pageHeader %}{% endblock %}
+{% endblock %}
+
+{% block style %}
+.content {
+  margin: 5rem auto 0 auto;
+  padding: 2rem 0 0 0;
+  width: 60rem;
+  box-shadow: initial;
+  border-radius: initial;
+}
+.topMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  background: #c3c3c3;
+  border-bottom: #aaa;
+}
+.topMenu .instruction {
+  padding: 1rem 3rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #229954;
+}
+.nextStepButton {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5rem 1rem;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #229954;
+}
+{% block pageStyle %}{% endblock %}
+{% endblock %}
+
+{% block script %}
+const step = {{step}}
+if (step == -1) {
+  const nextStepShow = () => {}
+  {{ script() }}
+} else {
+  $.getJSON('{{url_for('settings', accessCode=accessCode, step=step)}}').done(settings => {
+    // DATA
+    let data = {
+      log: [],
+    }
+    const logging = (message, d) => {
+      data.log.push({
+        timestamp: new Date().toISOString(),
+        message: message,
+        d: d,
+      })
+    }
+    let prepareData = () => {}
+    // INSTRUCTIONS
+    const showInstruction = instruction => {
+      $('.instruction').html(instruction)
+    }
+    // NEXT STEP
+    let allowedToProceed = null
+    const saveAndNext = () => {
+      if (saveAndNext === null || !allowedToProceed()) return
+      data = Object.assign(data, prepareData())
+      $.ajax({
+        url: '{{url_for('save', accessCode=accessCode, step=step)}}',
+        type: 'POST',
+        dataType: 'json',
+        contentType: 'application/json; charset=utf-8',
+        data: JSON.stringify(data),
+      }).done(() => {
+        window.location.assign('{{url_for('step', accessCode=accessCode)}}')
+      })
+    }
+    $('.nextStepButton').on('click', e => {
+      e.preventDefault()
+      saveAndNext()
+    })
+    const nextStepActivate = (atp = () => true) => {
+      allowedToProceed = atp
+    }
+    const nextStepShow = (atp = () => true) => {
+      nextStepActivate(atp)
+      $('.nextStepButton').css('display', 'block')
+    }
+    {{ script() }}
+  })
+}
+{% endblock %}
+
+{% block body %}
+<div class="topMenu">
+  <div class="instruction"></div>
+  <a href="" class="nextStepButton"><i class="fas fa-chevron-circle-right"></i></a>
+</div>
+<div class="content">
+  {% block pageContent %}{% endblock %}
+</div>
+{% endblock %}
