@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        gears-cli=gears_cli.__main__:main
+    
