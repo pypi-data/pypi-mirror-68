@@ -1,0 +1,7 @@
+README.md
+setup.py
+fakes.egg-info/PKG-INFO
+fakes.egg-info/SOURCES.txt
+fakes.egg-info/dependency_links.txt
+fakes.egg-info/requires.txt
+fakes.egg-info/top_level.txt
