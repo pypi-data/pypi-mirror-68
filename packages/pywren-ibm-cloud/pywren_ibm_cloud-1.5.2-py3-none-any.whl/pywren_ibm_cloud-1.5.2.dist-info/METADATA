@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pywren-ibm-cloud
+Version: 1.5.2
+Summary: Run many jobs over IBM Cloud
+Home-page: https://github.com/pywren/pywren-ibm-cloud
+Author: Gil Vernik
+Author-email: gilv@il.ibm.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Requires-Dist: Click
+Requires-Dist: pandas
+Requires-Dist: PyYAML
+Requires-Dist: python-dateutil
+Requires-Dist: pika (==0.13.1)
+Requires-Dist: enum34
+Requires-Dist: glob2
+Requires-Dist: tqdm
+Requires-Dist: lxml
+Requires-Dist: tblib
+Requires-Dist: docker
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: kubernetes
+Requires-Dist: ibm-cos-sdk (==2.6.0)
+
+PyWren lets you transparently run your Python functions on IBM Cloud
+
+

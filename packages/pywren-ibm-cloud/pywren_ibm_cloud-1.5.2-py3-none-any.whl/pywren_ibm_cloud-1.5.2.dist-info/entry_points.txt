@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pywren-ibm-cloud=pywren_ibm_cloud.cli.cli:cli
+    
