@@ -1,0 +1,11 @@
+README.md
+setup.py
+please_readme.egg-info/PKG-INFO
+please_readme.egg-info/SOURCES.txt
+please_readme.egg-info/dependency_links.txt
+please_readme.egg-info/entry_points.txt
+please_readme.egg-info/top_level.txt
+pleasereadme/__init__.py
+pleasereadme/entrypoint.py
+pleasereadme/gather_user_data.py
+pleasereadme/generate_readme.py
