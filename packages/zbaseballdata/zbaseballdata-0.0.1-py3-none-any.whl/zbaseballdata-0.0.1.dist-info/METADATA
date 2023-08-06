@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: zbaseballdata
+Version: 0.0.1
+Summary: A python client for the zBaseballData API
+Home-page: https://github.com/jzuhusky/zbaseball-client
+Maintainer-email: joey@zbaseballdata.com
+License: UNKNOWN
+Keywords: client retrosheet python api zbaseballdata baseball data zbaseballdata zbaseball
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.23.0)
+
+UNKNOWN
+
+
