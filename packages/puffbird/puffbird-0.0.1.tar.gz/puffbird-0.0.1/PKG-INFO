@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: puffbird
+Version: 0.0.1
+Summary: Handling and transforming complex pandas.DatataFrame objects
+Home-page: https://github.com/gucky92/puffbird
+Author: gucky92
+Author-email: gucky@gucky.eu
+License: MIT license
+Description: UNKNOWN
+Keywords: puffbird
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
