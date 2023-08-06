@@ -1,0 +1,11 @@
+urwid
+
+[dev]
+black
+mypy
+
+[test]
+pytest
+pytest-asyncio
+pytest-coverage
+pytest-mock
