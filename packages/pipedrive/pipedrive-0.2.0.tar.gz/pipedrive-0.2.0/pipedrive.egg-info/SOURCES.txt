@@ -1,0 +1,8 @@
+README.md
+setup.py
+pipedrive/__init__.py
+pipedrive.egg-info/PKG-INFO
+pipedrive.egg-info/SOURCES.txt
+pipedrive.egg-info/dependency_links.txt
+pipedrive.egg-info/requires.txt
+pipedrive.egg-info/top_level.txt
