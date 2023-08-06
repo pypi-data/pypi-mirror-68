@@ -1,0 +1,3 @@
+[console_scripts]
+airshare = airshare.cli:main
+
