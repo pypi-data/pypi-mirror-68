@@ -1,0 +1,5 @@
+Wheel-Version: 1.0
+Generator: skbuild 0.10.0+59.ga8d4328
+Root-Is-Purelib: false
+Tag: cp36-cp36m-manylinux2014_x86_64
+
