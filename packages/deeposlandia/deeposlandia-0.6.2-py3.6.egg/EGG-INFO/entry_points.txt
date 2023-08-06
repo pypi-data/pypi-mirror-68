@@ -1,0 +1,3 @@
+[console_scripts]
+deepo = deeposlandia.__main__:main
+
