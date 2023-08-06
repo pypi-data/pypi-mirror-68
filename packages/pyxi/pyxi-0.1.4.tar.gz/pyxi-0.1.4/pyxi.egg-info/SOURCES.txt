@@ -1,0 +1,14 @@
+README.md
+setup.py
+pyxi/__init__.py
+pyxi/animation.py
+pyxi/canvas.py
+pyxi/image.py
+pyxi/layer.py
+pyxi/palette.py
+pyxi/tile_ref.py
+pyxi/tileset.py
+pyxi.egg-info/PKG-INFO
+pyxi.egg-info/SOURCES.txt
+pyxi.egg-info/dependency_links.txt
+pyxi.egg-info/top_level.txt
