@@ -1,0 +1,12 @@
+README.md
+setup.py
+robotstxt/__init__.py
+robotstxt/processor.py
+robotstxt/robots_processing.py
+robotstxt.egg-info/PKG-INFO
+robotstxt.egg-info/SOURCES.txt
+robotstxt.egg-info/dependency_links.txt
+robotstxt.egg-info/top_level.txt
+tests/__init__.py
+tests/test_processor.py
+tests/test_robots_processing.py
