@@ -1,0 +1,10 @@
+README.txt
+setup.py
+FoxHustleQR/QRCodeViewer.py
+FoxHustleQR/__init__.py
+FoxHustleQR.egg-info/PKG-INFO
+FoxHustleQR.egg-info/SOURCES.txt
+FoxHustleQR.egg-info/dependency_links.txt
+FoxHustleQR.egg-info/not-zip-safe
+FoxHustleQR.egg-info/requires.txt
+FoxHustleQR.egg-info/top_level.txt
