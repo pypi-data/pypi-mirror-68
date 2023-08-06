@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: optical-lattice
+Version: 1.0
+Summary: Resolve atom occupations in an optical lattice
+Home-page: https://github.com/phys201/optical_lattice
+Author: Furkan Ozturk, Can Knaut, Erik Knall
+Author-email: erikknall@g.harvard.edu
+License: GNU GPL
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: Pillow (==7.1.1)
+Requires-Dist: pymc3 (==3.8)
+Requires-Dist: scikit-image (==0.16.2)
+Requires-Dist: Theano (==1.0.4)
+Requires-Dist: scipy (==1.4.1)
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
