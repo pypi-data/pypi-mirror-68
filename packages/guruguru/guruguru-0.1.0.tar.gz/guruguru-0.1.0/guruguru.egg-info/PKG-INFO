@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: guruguru
+Version: 0.1.0
+Summary: guruguru cli toolkit
+Home-page: https://atma.co.jp/
+Author: nyk510
+Author-email: yamaguchi@atma.co.jp
+License: BSD License
+Description: # Guruguru Cli
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: document
+Provides-Extra: test
