@@ -1,0 +1,35 @@
+#right_part{	
+	position: absolute;
+	left: 20%;
+	top: 0;
+	height: 100%;
+	width: 80%;
+}
+
+.right_content{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+}
+
+.group_name{
+	position: absolute;
+	left: 0;
+	top: 0%;
+	height: 5%;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.chart_container{
+	position: absolute;
+	left: 0;
+	top: 5%;
+	height: 95%;
+	width: 30%;
+	overflow: hidden;
+}
