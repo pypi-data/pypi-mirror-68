@@ -1,0 +1,5 @@
+[pantsbuild.plugin]
+build_file_aliases = pants.contrib.awslambda.python.register:build_file_aliases
+register_goals = pants.contrib.awslambda.python.register:register_goals
+targets2 = pants.contrib.awslambda.python.register:targets2
+
