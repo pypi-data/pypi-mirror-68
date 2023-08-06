@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+stupidity/__init__.py
+stupidity/braces.py
+stupidity/closure_variables.py
+stupidity/nostalgia.py
+stupidity/switch.py
+stupidity.egg-info/PKG-INFO
+stupidity.egg-info/SOURCES.txt
+stupidity.egg-info/dependency_links.txt
+stupidity.egg-info/requires.txt
+stupidity.egg-info/top_level.txt
