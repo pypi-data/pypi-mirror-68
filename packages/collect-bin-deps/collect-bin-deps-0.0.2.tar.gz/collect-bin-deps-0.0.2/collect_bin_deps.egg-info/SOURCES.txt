@@ -1,0 +1,8 @@
+README.md
+collect-bin-deps.py
+setup.py
+collect_bin_deps.egg-info/PKG-INFO
+collect_bin_deps.egg-info/SOURCES.txt
+collect_bin_deps.egg-info/dependency_links.txt
+collect_bin_deps.egg-info/requires.txt
+collect_bin_deps.egg-info/top_level.txt
