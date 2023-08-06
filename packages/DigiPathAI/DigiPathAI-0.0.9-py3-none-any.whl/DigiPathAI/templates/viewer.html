@@ -1,0 +1,246 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Slide Viewer</title>
+	<meta name="viewport" content="user-scalable=no">
+        <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../static/css/dark-mode.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body class="bg-white">
+    <nav class="navbar navbar-expand-md navbar-light ">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('about_info') }}">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/haranrk/DigiPathAI">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Documentation</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">DigiPathAI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <div class="navbar-nav ml-auto">
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch">
+            <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+          </div>
+        </div>
+    </div>
+    </nav>
+    <div id="images" style="padding-top: 0px; margin-top: 0px">
+        <div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="toggle-btn">
+                <label class="custom-control-label" for="toggle-btn" id="overlay-text"></label>
+            </div>
+        </div>
+        <div>
+            {% if viewer_only %}
+                <button id="get-segmentation-btn" class='btn btn-dark' disabled>Segmentation Disabled</button>
+                <p>Server running in viewer only mode</p>
+            {% else %}
+            <form>
+                <a href=# ><button id="get-segmentation-btn" class='btn btn-dark'>Get segmentation</button></a>
+            </form>
+            {% endif %}
+        </div>
+        <div>
+            <p id="segment-status"></p>
+            <p id="segment-progress"></p>
+        </div>
+        <div class="progress" id="segment-progress" style="display: none">
+                <div class="progress-bar" role="progressbar" style="" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h2>Pathology Images</h2>
+        <ul>
+            {% for entry in root_dir.children recursive %}
+                <li>
+                    {% if entry.url_path %}
+                        <a href="{{ url_for('slide', path=entry.url_path) }}">
+                            {{ entry.name }}
+                        </a>
+                    {% else %}
+                        {{ entry.name }}
+                    {% endif %}
+
+                    {% if entry.children %}
+                        <ul>
+                            {{ loop(entry.children) }}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% else %}
+                <li class="none">None</li>
+            {% endfor %}
+        </ul>
+
+
+    </div>
+
+    <div id="view"></div>
+
+    <div id="properties">
+        <h1>Slide properties</h1>
+        {% if properties %}
+            <div id="properties-inner">
+                <dl>
+                {% for name in properties %}
+                    <dt>{{ name }}
+                    <dd>{{ properties[name] }}
+                {% endfor %}
+                </dl>
+            </div>
+        {% else %}
+            <span class="notice">None</span>
+        {% endif %}
+    </div>
+</body>
+
+<script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../static/js/popper.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/dark-mode-switch.js"></script>
+<script type="text/javascript" src="../static/js/openseadragon-latest.js"></script>
+<script type="text/javascript" src="../static/js/openseadragon-scalebar.js"></script>
+<!--<script type="text/javascript" src="static/custom/multiple_img.js"></script>-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#toggle-btn").prop('checked', false); 
+    $('[data-toggle="tooltip"]').tooltip();
+    function enable_overlay(mask_on){
+        if(mask_on){
+            $("#toggle-btn").prop('disabled', false); 
+            $("#overlay-text").text("Overlay mask");
+        }
+        else{
+            $("#toggle-btn").prop('disabled', true); 
+            $("#overlay-text").text("Mask not available");
+        }
+    }
+
+    {% if mask_status %}
+    enable_overlay(true);
+    {% else %}
+    enable_overlay(false);
+    {% endif %}
+    
+    var dzi_data = {{ dzi_data|default('{}')|safe }};
+    var viewer = new OpenSeadragon({
+        id: "view",
+        prefixUrl: "static/images/",
+        timeout: 120000,
+        animationTime: 0.5,
+        blendTime: 0.1,
+        constrainDuringPan: true,
+        maxZoomPixelRatio: 2,
+        minZoomLevel: 1,
+        visibilityRatio: 1,
+        zoomPerScroll: 2,
+    });
+    viewer.addHandler("open", function() {
+        // To improve load times, ignore the lowest-resolution Deep Zoom
+        // levels.  This is a hack: we can't configure the minLevel via
+        // OpenSeadragon configuration options when the viewer is created
+        // from DZI XML.
+        viewer.source.minLevel = 8;
+    });
+    viewer.scalebar({
+        xOffset: 10,
+        yOffset: 10,
+        barThickness: 3,
+        color: '#555555',
+        fontColor: '#333333',
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    });
+
+    function open_slide(url, mpp) {
+        var tile_source, mask_source;
+        var mask_url = url.replace("slide", "mask");
+
+        console.log(url);
+        if (dzi_data[url]) {
+            console.log("if");
+            // DZI XML provided as template argument (deepzoom_tile.py)
+            tile_source = new OpenSeadragon.DziTileSource(
+                    OpenSeadragon.DziTileSource.prototype.configure(
+                    OpenSeadragon.parseXml(dzi_data[url]), url));
+            mask_source = new OpenSeadragon.DziTileSource(
+                    OpenSeadragon.DziTileSource.prototype.configure(
+                    OpenSeadragon.parseXml(dzi_data[mask_url]), mask_url));
+        } else {
+            console.log("else");
+            // DZI XML fetched from server (deepzoom_server.py)
+            tile_source = url;
+            mask_source = mask_url
+        }
+        viewer.open(tile_source);
+        viewer.addTiledImage({
+            tileSource: mask_source,
+            opacity: 0,
+        });
+
+        $("#toggle-btn").change(function(){
+            tiledImage = viewer.world.getItemAt(1);
+            if($(this).is(':checked')) {
+                console.log("checked");
+                tiledImage.setOpacity(0.5);
+            } else {
+                tiledImage.setOpacity(0);
+            }
+        });
+
+        viewer.scalebar({
+            pixelsPerMeter: mpp ? (1e6 / mpp) : 0,
+        });
+    }
+
+    open_slide("{{ slide_url }}", parseFloat('{{ slide_mpp }}'));
+//    $(".load-slide").click(function(ev) {
+//        $(".current-slide").removeClass("current-slide");
+//        $(this).parent().addClass("current-slide");
+//        open_slide($(this).attr('data-url'),
+//                parseFloat($(this).attr('data-mpp')));
+//        ev.preventDefault();
+//    });
+    function update_segment_status(){
+        $.getJSON('/check_segment_status',
+            function(data){
+                console.log(data);
+                $('#segment-status').text(data.status);
+                $('#segment-progress').text(data.progress);
+                $('.progress-bar').attr('style', 'width: ' + Number(data.progress) + '%');
+                if(data.status==="Done"){
+                    clearInterval(intervalId);
+		    location.reload(true);
+                    $('#segment-progress').hide("slow");
+                    enable_overlay(true);
+                }
+            });
+    }
+    
+    var intervalId;
+
+    $('#get-segmentation-btn').bind('click', function() {
+		$('.progress').show();
+                $.getJSON('/segment',
+                    function(data) {
+                        console.log(data);
+                        $('#get-segmentation-btn').prop('disabled',true);
+                        intervalId=setInterval(update_segment_status,2000);
+                        update_segment_status();
+                });
+                return false;
+              });
+});
+</script>

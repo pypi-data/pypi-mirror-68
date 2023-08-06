@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: DigiPathAI
+Version: 0.0.9
+Summary: Deep Learning toolbox for WSI (digital histopatology) analysis
+Home-page: https://github.com/haranrk/DigiPathAI
+Author: Avinash Kori, Haran Rajkumar
+Author-email: koriavinash1@gmail.com, haranrajkumar97@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: openslide-python
+Provides-Extra: gpu
+Requires-Dist: torch ; extra == 'gpu'
+Requires-Dist: torchvision ; extra == 'gpu'
+Requires-Dist: opencv-python ; extra == 'gpu'
+Requires-Dist: imgaug ; extra == 'gpu'
+Requires-Dist: tqdm ; extra == 'gpu'
+Requires-Dist: matplotlib ; extra == 'gpu'
+Requires-Dist: scikit-learn ; extra == 'gpu'
+Requires-Dist: scikit-image ; extra == 'gpu'
+Requires-Dist: tensorflow-gpu (<2,>=1.14) ; extra == 'gpu'
+Requires-Dist: pydensecrf ; extra == 'gpu'
+Requires-Dist: pandas ; extra == 'gpu'
+Requires-Dist: wget ; extra == 'gpu'
+
+# DigiPathAI
+A software application for viewing [whole slide images (WSI)](https://www.ncbi.nlm.nih.gov/pubmed/30307746) and performing pathological analysis 
+
+# Features
+- Responsive WSI image viewer 
+- State of the art cancer AI pipeline to segment the and display the cancer cell
+
+# Usage 
+##Requirements
+Just for the viewer 
+- `openslide`
+
+For the segmentation as well
+- `tensorflow<2.0.0`
+- `pytorch`
+
+## Installation 
+```
+pip install DigiPathAI
+pip install DigiPathAI 
+```
+
+
+
