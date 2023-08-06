@@ -1,0 +1,187 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Tue May 12 06:50:48 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24250 11048 56270 0) (desktop . "208") "danirus@timina.local" nil nil ((((minibuffer . t) (font-backend mac-ct) (fontsize . 0) (font . "-*-Monaco-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "Black") (background-color . "White") (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (undecorated) (ns-appearance . light) (ns-transparent-titlebar . f) (z-group) (no-focus-on-map) (no-accept-focus) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen . fullheight) (display-type . color) (background-mode . light) (cursor-color . "black") (environment) (frameset--id . "BB35-4FBC-1E25-C3B7") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . "timina.local") (explicit-name) (tool-bar-position . top) (user-size . t) (visibility . t) (height . 44) (width . 163) (left . 116) (top . 23)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 8) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 76) (min-pixel-width . 160) (min-pixel-height-ignore . 38) (min-pixel-width-ignore . 64) (min-pixel-height-safe . 19) (min-pixel-width-safe . 32)) hc (pixel-width . 1320) (pixel-height . 832) (total-width . 165) (total-height . 43) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 664) (pixel-height . 832) (total-width . 83) (total-height . 43) (normal-height . 1.0) (normal-width . 0.5) (buffer "like.html" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 718) (start . 1))) (leaf (last . t) (pixel-width . 656) (pixel-height . 832) (total-width . 82) (total-height . 43) (normal-height . 1.0) (normal-width . 0.5) (buffer "dislike.html" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 951) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("renderxtdcommenttreenode" "users_flagging" "users_fl" "users_flagging" "users_flagging(self" "get_new_dict" "get_user_feedback" "get_flags" "add_children" "get_comment_dict" "get_feedback" "get_new_dict" "add_children" "get_new_dict" "settings" "get_user_feedback"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/Code/Repos/django-comments-xtd" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templates/django_comments_xtd/dislike.html" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templates/django_comments_xtd/like.html" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templatetags/comments_xtd.py" "/Users/danirus/Code/Repos/django-comments-xtd/example/comp/templates/django_comments_xtd/comment.html" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/views.py" "~/Code/Repos/django-comments-xtd" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/comment.jsx" "~/Code/Repos/django-comments-xtd" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/commentbox.jsx" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/views.py" "~/Code/Repos/django-comments-xtd" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templatetags/comments_xtd.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/models.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_templatetags.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_models.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/urls.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_api_views.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/serializers.py" "/Users/danirus/Code/Repos/django-comments-xtd/setup.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/__init__.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/urls.py" "/Users/danirus/Code/Repos/django-comments-xtd/docs/tutorial.rst" "/Users/danirus/Code/Repos/django-comments-xtd/package.json" "/Users/danirus/Code/Repos/django-comments-xtd/webpack.config.js" "/Users/danirus/Code/Repos/django-comments-xtd/docs/conf.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/__init__.py" "/Users/danirus/venv/py38/lib/python3.8/site-packages/rest_framework/mixins.py" "/Users/danirus/Code/Repos/django-rest-framework/rest_framework/mixins.py" "/Users/danirus/Code/Repos/django-rest-framework/rest_framework/generics.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/models.py" "/Users/danirus/Code/Repos/django-contrib-comments/django_comments/models.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/views.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/serializers.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/urls.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templatetags/comments_xtd.py" "/Users/danirus/Code/Repos/django-comments-xtd/example/comp/templates/articles/article_detail.html" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/frontend.py" "/Users/danirus/Code/Repos/django-comments-xtd/package.json" "/Users/danirus/Code/Repos/django-comments-xtd/webpack.config.js" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/comment.jsx" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/commentbox.jsx" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/index.js" "/Users/danirus/Code/Repos/django-contrib-comments/django_comments/views/moderation.py" "/Users/danirus/Code/Repos/django-contrib-comments/django_comments/moderation.py" "/Users/danirus/Code/Repos/django-contrib-comments/django_comments/models.py" "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/models.py" "/Users/danirus/Code/Repos/django-comments-xtd/example/simple/templates/articles/article_detail.html" "/Users/danirus/Code/Repos/django-comments-xtd/setup.py" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Conference.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/package.json" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/JoinAs.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/public/locales/translation_en-US.json" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Home.tsx" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Conference.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/utils/telemetryservice.ts" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/TelemetryProvider.tsx" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/scripts/fake-parties.js" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/setupProxy.js" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/PartyVideo.tsx" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/Router.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/BottomBar.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/QualityIcon.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/MobilePanel.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/PartyVideo.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/Router.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/SettingsDialog.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/SettingsCamWidget.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/PartyTile.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/Ifaces.d.ts" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/Userlist.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Conference.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/Router.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/utils/helpers.ts" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/Router.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/BottomBar.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/ConferenceMobile.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/econf-lib/.gitignore" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/SettingsSpkWidget.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/SettingsDialog.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/ConferenceMobile.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/theme.tsx" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/econf-lib/conferenceController.ts" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Conference.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/index.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/package.json" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/index.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/utils/helpers.ts" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/BlindTile.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/components/PartyTile.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Conference.tsx" "/Users/danirus/Code/Contractor/estos/Stage2/econf-frontend-ea/src/pages/Home.tsx" "~/Code/Contractor/estos/Stage2/econf-frontend-ea/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templates/django_comments_xtd/like.html"
+  "like.html"
+  'web-mode
+  '(override-global-mode flycheck-mode company-mode)
+  718
+  '(2781 nil)
+  nil
+  nil
+  '((buffer-display-time 24250 11041 626408 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (718 457 812 804 817 796 789 869 914 968))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templates/django_comments_xtd/dislike.html"
+  "dislike.html"
+  'web-mode
+  '(override-global-mode flycheck-mode company-mode)
+  951
+  '(2801 nil)
+  nil
+  nil
+  '((buffer-display-time 24250 11041 626408 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (311 944))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/templatetags/comments_xtd.py"
+  "comments_xtd.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  18675
+  '(9459 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24250 10500 98226 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (11417 11117 8820 8840 10889 8584 14455 7558 8950 14431 12294 7558 10369 8832 17544 18634))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/models.py"
+  "models.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  6696
+  '(8274 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24249 48155 687527 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (8274 8274 1109 606 7700 8274 8274 5184 7215 7215 6900 6900 5184 6507 6589 7163))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/views.py"
+  "views.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  1304
+  '(16530 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24249 47892 177301 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (15737 15558 14028 14201 14046 14200 14201 14351 14201 14169 14201 1959 14320 1 14201 1367))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_models.py"
+  "test_models.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  5389
+  '(5617 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24249 43437 445246 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6358))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/serializers.py"
+  "serializers.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  9325
+  '(10349 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24249 42581 185615 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1 9465 10018 10018 10078 9758 9948 9931 10078 10019 10066 10349 8917 9325))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/comment.jsx"
+  "comment.jsx"
+  'web-mode
+  '(override-global-mode flycheck-mode company-mode)
+  6965
+  '(1645 nil)
+  nil
+  nil
+  '((buffer-display-time 24249 37889 670360 0) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1619 1619 1561 1561 1509 1509 1536 1 1536 7134 6799 6965))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/static/django_comments_xtd/js/src/commentbox.jsx"
+  "commentbox.jsx"
+  'web-mode
+  '(override-global-mode flycheck-mode company-mode)
+  3170
+  '(4132 nil)
+  nil
+  nil
+  '((buffer-display-time 24249 37020 887255 158000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1226 1226 4165 3644 3644 3323 3170))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/api/views.py"
+  "views.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  725
+  '(13 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24248 47955 566094 895000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (111 2279 1989 1 3132 2144 2279 2185 1988 2209 2279 443 450 156 110 1034))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_templatetags.py"
+  "test_templatetags.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  1505
+  '(1505 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24248 29373 459108 895000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/tests/test_api_views.py"
+  "test_api_views.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  1804
+  '(1637 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24248 29218 612702 895000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1178 1637 2333 2322 1908))))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/django_comments_xtd/urls.py"
+  "urls.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  1658
+  '(1658 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24248 29147 956147 895000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/Users/danirus/Code/Repos/django-comments-xtd/setup.py"
+  "setup.py"
+  'python-mode
+  '(eldoc-mode hs-minor-mode override-global-mode flycheck-mode company-mode auto-complete-mode)
+  1304
+  '(1752 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24249 37310 624224 0) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1297 1304))))
+
