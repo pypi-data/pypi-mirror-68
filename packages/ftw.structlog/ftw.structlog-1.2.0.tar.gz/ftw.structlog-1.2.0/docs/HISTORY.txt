@@ -1,0 +1,35 @@
+Changelog
+=========
+
+
+1.2.0 (2020-05-19)
+------------------
+
+- Track query execution time if SQLAlchemy is present. [lgraf]
+
+
+1.1.0 (2019-01-11)
+------------------
+
+- DEPRECATED: The ``host`` field is deprecated. Instead, the newly introduced
+  ``client_ip`` field should be used to get the client's IP address.
+  [lgraf]
+
+- Always log missing referer as empty string instead of ``null``.
+  [lgraf]
+
+
+1.0.1 (2017-09-03)
+------------------
+
+- Fail gracefully if eventlog config can't be found in order to derive
+  log location from it. Instead of preventing instance startup, log a
+  noticeable error message using the root logger.
+  [lgraf]
+
+
+1.0.0 (2017-09-03)
+------------------
+
+- Initial implementation
+  [lgraf]

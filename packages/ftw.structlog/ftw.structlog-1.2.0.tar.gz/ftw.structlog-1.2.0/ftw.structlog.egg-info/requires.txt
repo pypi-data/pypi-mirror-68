@@ -1,0 +1,12 @@
+setuptools
+Zope2
+pytz
+tzlocal
+
+[tests]
+unittest2
+ftw.testing
+ftw.testbrowser
+requests_toolbelt
+plone.rest
+freezegun<0.3.15
