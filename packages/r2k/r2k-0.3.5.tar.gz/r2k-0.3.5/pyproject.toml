@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "r2k"
+version = "0.3.5"
+description = "A tool that lets you periodically send articles received from an RSS feed to your Kindle"
+authors = ["Pavel Brodsky <mcouthon@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/mcouthon/r2k"
+homepage = "https://github.com/mcouthon/r2k"
+keywords = ["rss", "atom", "kindle", "reading"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+r2k = "r2k.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+# Make it optional, as it's only relevant if we're using the mercury parser API
+docker = { version = "^4.2.0", optional = true }
+
+feedparser = "^5.2.1"
+click = "^7.1.1"
+pyyaml = "^5.3.1"
+beautifulsoup4 = "^4.9.0"
+pick = "^0.6.7"
+python-dateutil = "^2.8.1"
+orjson = "^2.6.6"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.2.0"
+isort = "^4.3.21"
+black = "^19.10b0"
+pyupgrade = "^2.2.0"
+mypy = "^0.770"
+pydocstyle = "^5.0.2"
+pytest = "^5.4.1"
+
+# Installing from git as without it we can't use features from Python 3.8 (e.g. PEP 572)
+flake8 = { git = "https://gitlab.com/pycqa/flake8.git" }
+pycodestyle = { git = "git@github.com:PyCQA/pycodestyle.git" }
+
+[tool.poetry.extras]
+docker = ["docker"]
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
