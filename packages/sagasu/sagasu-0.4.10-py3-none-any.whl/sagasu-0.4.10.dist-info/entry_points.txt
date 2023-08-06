@@ -1,0 +1,3 @@
+[console_scripts]
+sagasu=sagasu.app:app
+
