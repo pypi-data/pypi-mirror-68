@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: fiabilipyg
+Version: 2.8.1
+Summary: fiabilipy with .draw
+Home-page: http://fiabilipy.org
+Author: chabotsi, crubier, cdrom1
+Author-email: contact@fiabilipy.org
+License: UNKNOWN
+Description: Slight enhancement of fiabilipy for draw(): supports latest versions of networkx. Description of fiabilipy: This package provides some functions to learn engineering reliability at university. One can build components, put them together to build a system and evaluate its reliability, maintainability, availability, the Mean-Time-To-Failure, etc. This package also provides functions to describe a system by a Markov process.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
