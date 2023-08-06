@@ -1,0 +1,10 @@
+md2gemini/__init__.py,sha256=JIIuk5Ua46Q7PEeTlM_mPdL5IOLxeLm8HJngcaz8ams,4685
+md2gemini/__main__.py,sha256=NSYN4BDxtx0TgM3sm6e9-oUORXc5nK6sElLD9zGsSdk,90
+md2gemini/renderers.py,sha256=-S6qrlkf9Yf4qL4D86mHElGmm3l4xVnpj88uY7jhTw0,7443
+md2gemini/unitable.py,sha256=Ufy09l7f8UQDMhMayssfDqZX645o-px1ee3jt07c0Ec,38753
+md2gemini-1.0.1.dist-info/LICENSE,sha256=BAv_QajAJ3Ri1KaLkJ07fxnDpClAs6vFGJwFI-uk1TA,1066
+md2gemini-1.0.1.dist-info/METADATA,sha256=im4KpGTsGvIBONYnDgIOI5Fgz2QlAvxEKfqhOOHJmI4,4195
+md2gemini-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+md2gemini-1.0.1.dist-info/entry_points.txt,sha256=7xrDfC964fviWPqfbfvekAuvBP7Pq52H-kweAgHg3ng,46
+md2gemini-1.0.1.dist-info/top_level.txt,sha256=kMcxuBv6dpvv5lSwXbEFzHLbmtWXtwl7F9mDUMlV_ms,10
+md2gemini-1.0.1.dist-info/RECORD,,
