@@ -1,0 +1,14 @@
+flask
+flask-cors
+requests
+apscheduler
+jsonpath-rw
+munch
+PyYaml
+readerwriterlock
+confluent-kafka
+sqlalchemy==1.3.3
+mysqlclient
+gevent
+Celery
+redis
