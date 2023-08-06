@@ -1,0 +1,87 @@
+//
+// Copyright (c) 2018-present, wobe-systems GmbH
+//
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+//
+
+// UJS LALR(1) grammar file for LARK
+
+begin: module? (_NEWLINE | define)*
+
+?define: primitive_type
+         |  record
+         |  object
+
+module          :  "module" identifier (documentation)? ";"
+primitive_type  :  identifier "=" (data_type) (constraint)* (documentation)? ";"
+record          :  identifier "=" (extending)? "[" item ("," item)* "]" (documentation)? ";"   
+object          :  identifier "=" (extending)? (map_type)? "{" object_item ("," object_item)* "}" (documentation)? ";"
+
+
+?data_type  :  atomic_type
+            |  custom_type
+            |  map_type
+            |  variant
+            |  multi_type
+            |  list
+
+custom_type :  NAME
+
+map_type    :  "<" key_type "->" value_type ">"
+list        :  data_type"*"
+multi_type  :  "(" data_type ("," data_type)* ")"
+
+extending   : "extend" custom_type
+
+documentation:  ":" "doc" (LONG_STRING | STRING)
+
+?constraint :  ":" not_null
+            |  ":" value_set
+            |  ":" not_in
+            |  ":" of_length
+
+field_name   :  ":" "name" NAME
+
+?key_type :  number
+          |  string
+          |  variant
+          |  custom_type
+
+
+?value_type : data_type
+
+item        : identifier "=" data_type (constraint)* (documentation)?
+object_item : constant optional? (("->" data_type) (constraint)*)? (documentation)?
+optional    : "?"|"optional"
+
+fixed_key : (STRING | NUMBER) -> key
+
+not_null    : "not" "null" (default)?
+default     : "default" (chars | value)
+value_set   : "in" "(" (range | words) ")"
+not_in      : "not" "in" "(" (range | words) ")"
+of_length   : "length" "(" length ")"
+
+?length: (equals | below | between | above)
+
+?range : (below) ("," (equals | between))* ("," above)?
+      | (equals | between) ("," (equals | between))* ("," above)?
+      | (above)
+
+equals : value (documentation)?
+below  : ".." value (documentation)?
+above  : value ".." (documentation)?
+between: value ".." value (documentation)?
+
+identifier :  NAME
+
+?constant : value | chars
+
+value : NUMBER
+
+?words: word ("," word)*
+word: chars (documentation)?
+chars: STRING
+
+

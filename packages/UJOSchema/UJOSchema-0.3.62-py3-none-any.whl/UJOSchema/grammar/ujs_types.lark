@@ -1,0 +1,82 @@
+//
+// Copyright (c) 2018-present, wobe-systems GmbH
+//
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+//
+
+// ## atomic types
+
+?atomic_type:  number
+            |  string
+            |  date_time
+            |  bool
+            |  binary
+
+
+binary: "binary"
+bool  : "bool"
+
+
+// ### string types
+
+?string:  utf8string
+       |  cstring
+
+utf8string: "string"
+cstring   : "cstring"
+
+
+// ### date and/or time
+
+?date_time:  date
+          |  time
+          |  datetime
+          |  timestamp
+
+date: "date"
+time: "time"
+datetime : "datetime"
+timestamp: "timestamp"
+
+
+// ### numeric types
+
+?number:  int
+       |  uint
+       |  float
+
+?int:  int64
+    |  int32
+    |  int16
+    |   int8
+
+?uint:  uint64
+     |  uint32
+     |  uint16
+     |   uint8
+
+?float:  float64
+      |  float32
+      |  float16
+
+int64: "int64"
+int32: "int32"
+int16: "int16"
+int8 :  "int8"
+
+uint64: "uint64"
+uint32: "uint32"
+uint16: "uint16"
+uint8 :  "uint8"
+
+float64: "float64"
+float32: "float32"
+float16: "float16"
+
+// # variant
+variant: "variant"
+
+
+
+

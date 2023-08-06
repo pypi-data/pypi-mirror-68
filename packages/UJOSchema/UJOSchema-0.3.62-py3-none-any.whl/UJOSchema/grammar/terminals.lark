@@ -1,0 +1,22 @@
+//
+// Copyright (c) 2018-present, wobe-systems GmbH
+//
+// This source code is licensed under the MIT license found in the
+// LICENSE file in the root directory of this source tree.
+//
+
+// terminals
+COMMENT : /#[^\n]*/
+_NEWLINE: ( /\r?\n[\t ]*/ | COMMENT )+
+
+STRING       : /[ubf]?r?("(?!"").*?(?<!\\)(\\\\)*?"|'(?!'').*?(?<!\\)(\\\\)*?')/i
+LONG_STRING.2: /[ubf]?r?(""".*?(?<!\\)(\\\\)*?"""|'''.*?(?<!\\)(\\\\)*?''')/is
+
+%ignore COMMENT
+%ignore _NEWLINE
+
+%import common.CNAME         -> NAME
+%import common.SIGNED_NUMBER -> NUMBER
+
+%import common.WS
+%ignore WS
