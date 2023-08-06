@@ -1,0 +1,15 @@
+- project:
+    templates:
+      - tempest-plugin-jobs
+      - check-requirements
+    check:
+      jobs: &cloudkitty_tempest_jobs
+        - cloudkitty-tempest-full-v2-storage-influxdb:
+            voting: true
+        - cloudkitty-tempest-full-v1-storage-sqlalchemy:
+            voting: true
+        - cloudkitty-tempest-full-v2-storage-elasticsearch:
+            voting: true
+    gate:
+      queue: cloudkitty
+      jobs: *cloudkitty_tempest_jobs
