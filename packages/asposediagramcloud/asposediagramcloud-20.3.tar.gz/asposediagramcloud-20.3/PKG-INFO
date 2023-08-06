@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: asposediagramcloud
+Version: 20.3
+Summary: Aspose.Diagram.Cloud for Python
+Home-page: https://github.com/aspose-diagram-cloud/aspose-diagram-cloud-python
+Author: asposecloud
+Author-email: aspose.cloud@aspose.com
+License: UNKNOWN
+Description: Aspose.Diagram Cloud SDK for Python allows you to use Aspose.Diagram APIs in your Python applications
+Keywords: aspose,diagram,cloud
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
