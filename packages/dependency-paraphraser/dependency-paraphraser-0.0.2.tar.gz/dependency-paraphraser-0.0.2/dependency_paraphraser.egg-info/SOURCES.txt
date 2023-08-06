@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+dependency_paraphraser/__init__.py
+dependency_paraphraser/natasha.py
+dependency_paraphraser/projection.py
+dependency_paraphraser/synonyms.py
+dependency_paraphraser/utils.py
+dependency_paraphraser.egg-info/PKG-INFO
+dependency_paraphraser.egg-info/SOURCES.txt
+dependency_paraphraser.egg-info/dependency_links.txt
+dependency_paraphraser.egg-info/requires.txt
+dependency_paraphraser.egg-info/top_level.txt
+dependency_paraphraser/models/natasha_projector.pkl
