@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pylum
+Version: 0.0.1
+Summary: python lumerical templates
+Home-page: https://github.com/joamatab/SiliconPhotonicsDesign
+Author: Joaquin
+License: MIT
+Description: python lumerical templates
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6

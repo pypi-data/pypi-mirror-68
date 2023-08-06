@@ -1,0 +1,6 @@
+hiyapyco
+jinja2
+matplotlib
+numpy
+h5py
+pytest-regressions
