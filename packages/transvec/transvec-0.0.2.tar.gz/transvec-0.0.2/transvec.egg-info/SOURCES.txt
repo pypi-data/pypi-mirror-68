@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+requirements-dev.txt
+requirements-test.txt
+requirements.txt
+setup.cfg
+setup.py
+transvec/__init__.py
+transvec/tokenizers.py
+transvec/transformers.py
+transvec.egg-info/PKG-INFO
+transvec.egg-info/SOURCES.txt
+transvec.egg-info/dependency_links.txt
+transvec.egg-info/requires.txt
+transvec.egg-info/top_level.txt
