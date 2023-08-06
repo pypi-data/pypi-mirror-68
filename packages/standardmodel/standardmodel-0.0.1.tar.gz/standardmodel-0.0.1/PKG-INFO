@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: standardmodel
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/terminal-labs/standardmodel
+Author: Terminal Labs
+Author-email: solutions@terminallabs.com
+License: MIT
+Download-URL: https://github.com/terminal-labs/standardmodel/archive/master.zip
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
