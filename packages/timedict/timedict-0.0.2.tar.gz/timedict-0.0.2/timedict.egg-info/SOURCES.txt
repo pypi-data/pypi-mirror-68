@@ -1,0 +1,9 @@
+README.md
+setup.py
+time_dict/__init__.py
+time_dict/time_dict.py
+time_dict/updater.py
+timedict.egg-info/PKG-INFO
+timedict.egg-info/SOURCES.txt
+timedict.egg-info/dependency_links.txt
+timedict.egg-info/top_level.txt
