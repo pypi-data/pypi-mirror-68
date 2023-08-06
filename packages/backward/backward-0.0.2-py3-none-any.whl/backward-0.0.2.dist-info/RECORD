@@ -1,0 +1,13 @@
+backward/__init__.py,sha256=cChuJJFjlcg7LsmKEv8BKr2Jgd2Q6FJSlWw_WXjcTjQ,75
+backward/__main__.py,sha256=WgmflmUU5TqTHwbtm8LXJSkev3uav94LKZhHjzukc7g,878
+backward/backward.py,sha256=pLUaG5lKkuM9N4LQsyMXFrg5ytlAEsCSS6KwxncgJHk,261
+backward/evaluate.py,sha256=SABUrJBmF48W4QiAlt67uS4l-5HHet7vZEgvUiFs0uo,2043
+backward/main.py,sha256=3W7UnpnjNkZ57ZmHEvS70YYDWeeHtenIf4to11Ax0hU,5100
+backward/read.py,sha256=QzXiIG59a-wY14zKyM3gnOoxGZTtlNu8CiHs_t7Apo0,1973
+backward-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+backward-0.0.2.dist-info/METADATA,sha256=to1I1YifHpkaGFfZVCqIaQrf3lwdLSO-4DAOecfQMko,3053
+backward-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+backward-0.0.2.dist-info/entry_points.txt,sha256=6mffa_Jm55iNAcBeboq35-R9yrQNR9GohjxYsPXd-HM,49
+backward-0.0.2.dist-info/top_level.txt,sha256=GbfrxKf5BIZ4CX7ZXDQrEwJ4L6SRqlSPyRTK-9ihbzU,9
+backward-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+backward-0.0.2.dist-info/RECORD,,
