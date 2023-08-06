@@ -1,0 +1,4 @@
+PyYAML>=5.3.1
+mashumaro~=1.12
+setuptools~=46.2.0
+pytest~=5.4.2
