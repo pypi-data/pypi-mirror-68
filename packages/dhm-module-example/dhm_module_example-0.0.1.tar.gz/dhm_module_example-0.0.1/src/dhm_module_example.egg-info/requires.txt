@@ -1,0 +1,7 @@
+click>=7.1
+click_plugins
+dhm_module_base>=0.0.1
+
+[dev]
+pytest
+black
