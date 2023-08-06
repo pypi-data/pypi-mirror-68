@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: seller-stats
+Version: 0.0.2
+Summary: Various statistics for marketplace sellers
+Home-page: https://github.com/wondersell/seller-stats
+Author: Artem Kiselev
+Author-email: artem.kiselev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# seller-stats
+
+Python package built on top of Pandas for calculating different e-commerce stats.
+
+**Warning!** Package is under heavy developments, so it's APIs can be changed.
+
+## Installation
+
+```
+pip install seller-stats
+```
+
