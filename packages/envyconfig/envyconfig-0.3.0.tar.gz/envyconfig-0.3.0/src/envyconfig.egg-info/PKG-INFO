@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: envyconfig
+Version: 0.3.0
+Summary: YAML reader with ENV interpolation.
+Home-page: https://github.com/geirem/envyconfig
+Author: https://github.com/geirem
+Author-email: geiremb@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/geirem/envyconfig/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/geirem/envyconfig/
+Description: # pyconfig
+        Python package for YAML config files.  Reads a specified YAML file, and returns the corresponding dict structure.
+        
+        Builds on the PyYAML package, with the following additions:
+        * Environment variables can be specified as config values.
+        * Nested YAML structures can be flattened get a simple key / value dict.
+        * Default values can be specified, for instance from the command line.
+        
+        
+        ## Usage
+        ```python
+        import src.envyconfig.ConfigLoader as ConfigLoader
+        
+        def get_config(config_file: str, extra_args: dict) -> dict:
+            return ConfigLoader(config_file, flat_map=True, args=extra_args).load()
+        ```
+        
+Keywords: configtools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: googlesecrets
