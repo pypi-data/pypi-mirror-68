@@ -1,0 +1,11 @@
+upb/__init__.py,sha256=gnyk13yllFQudwbMFNvUVaNexAMg79vDO9Fhf2ueDQw,42
+upb/client.py,sha256=ErLotm5wCwTjB_XrD4kMbdn6H657g_XN5soR9QnZ-6s,3988
+upb/const.py,sha256=1ZHLA-33p50pI7H6rX4l9XhyYS8xQyMZGj2n-aP8AxU,9291
+upb/protocol.py,sha256=AJygAYBwlPCkD0reOxNpAo22Z8nnp_M6sgxTd7t8BDI,11091
+upb/register.py,sha256=Mb0h-jIgJeLG4D7AtRl3grd2HDCe9dCVxSSA6LWYb4s,423
+upb/util.py,sha256=c8iMl7uz7WaRzG0R2x_Pb1MNAFLpNCorRJbCi2P9mY0,1431
+upb-0.0.1.dist-info/LICENSE,sha256=PcvGFYqCts28UoT3J6FCR5ZA7PJhDVKC1UNkUMQkrQw,1071
+upb-0.0.1.dist-info/METADATA,sha256=HA2YDrfqVXHdIrhDMhmFHpNsPz1h2VCm8wCIy6wYWTU,316
+upb-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+upb-0.0.1.dist-info/top_level.txt,sha256=CFqaeK5KT5Bw3AO2dVW2jrMSy65z62cBhqCFTNTBrq8,4
+upb-0.0.1.dist-info/RECORD,,
