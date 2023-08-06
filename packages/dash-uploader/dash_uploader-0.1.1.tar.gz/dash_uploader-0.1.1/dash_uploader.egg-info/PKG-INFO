@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash-uploader
+Version: 0.1.1
+Summary: Upload large files using resumable.js
+Home-page: UNKNOWN
+Author: Niko Pasanen <niko@pasanen.me>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
