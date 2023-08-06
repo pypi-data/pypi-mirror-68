@@ -1,0 +1,8 @@
+werkzeug
+numpy
+
+[jupyter]
+ipykernel
+
+[socketio]
+python-socketio[client]
