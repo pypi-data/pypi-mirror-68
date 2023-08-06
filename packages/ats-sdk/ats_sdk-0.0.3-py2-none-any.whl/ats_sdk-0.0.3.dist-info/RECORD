@@ -1,0 +1,12 @@
+ats_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ats_sdk/domain.py,sha256=OkigbKkc7zFEenNSR6OL5b3zcf73tjHZiYn62AmG12w,107
+ats_sdk/error.py,sha256=xD4b_pfnTrpAu9i7qMo-93h0ojnQa2HRyGgvFMn6uOU,93
+ats_sdk/services.py,sha256=nutAPAUnd6ZMcG4LSt5lKca01_PQogqwTOqR66Jdm28,1900
+ats_sdk/translation.py,sha256=o0xMvGPkLWnIR7dJgrNUhnPM7e68zTfpHg3OMNRSycE,880
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_services.py,sha256=agLTPvDoNjrWWsOZ5eFFdrzsvrm_eYLWtvpLrruvmyk,2053
+tests/test_translation.py,sha256=F0cKIVVO0PiKWhVFkgVF9J9lBqXMT5iCAcZiBbP5lhM,4153
+ats_sdk-0.0.3.dist-info/METADATA,sha256=-xt3GQO_uNEGAGiKjxtdZayFEF3wqmCMF2ndqe20kTw,698
+ats_sdk-0.0.3.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ats_sdk-0.0.3.dist-info/top_level.txt,sha256=d-iD5kEe3RMzQBttOaiomTp9_DFkO_hSEbpXK6tf9k4,14
+ats_sdk-0.0.3.dist-info/RECORD,,

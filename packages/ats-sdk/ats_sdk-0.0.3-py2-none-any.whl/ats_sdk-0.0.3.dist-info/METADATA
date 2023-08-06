@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ats-sdk
+Version: 0.0.3
+Summary: SDK for alternate text service
+Home-page: https://github.com/shuttl-tech/ats_sdk
+Author: Shuttl
+Author-email: pratik.singh@shuttl.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: pyshuttlis
+Requires-Dist: cachetools
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-runner ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-pep8 ; extra == 'test'
+Requires-Dist: responses ; extra == 'test'
+Requires-Dist: bumpversion ; extra == 'test'
+
+UNKNOWN
+
+
