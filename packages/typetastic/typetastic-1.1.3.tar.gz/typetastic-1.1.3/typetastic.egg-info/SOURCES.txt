@@ -1,0 +1,13 @@
+README.md
+setup.py
+typetastic/__init__.py
+typetastic/bot_handlers.py
+typetastic/handler_data.py
+typetastic/robot.py
+typetastic/session_config.py
+typetastic/text_colors.py
+typetastic.egg-info/PKG-INFO
+typetastic.egg-info/SOURCES.txt
+typetastic.egg-info/dependency_links.txt
+typetastic.egg-info/requires.txt
+typetastic.egg-info/top_level.txt
