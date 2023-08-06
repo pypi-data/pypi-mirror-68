@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+VERSION
+setup.cfg
+setup.py
+logless/__init__.py
+logless/main.py
+logless.egg-info/PKG-INFO
+logless.egg-info/SOURCES.txt
+logless.egg-info/dependency_links.txt
+logless.egg-info/entry_points.txt
+logless.egg-info/requires.txt
+logless.egg-info/top_level.txt

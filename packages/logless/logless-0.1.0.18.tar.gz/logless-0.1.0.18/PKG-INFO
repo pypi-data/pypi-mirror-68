@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: logless
+Version: 0.1.0.18
+Summary: Logless logging tool.
+Home-page: https://www.github.com/aaronsteers/logless
+Author: Aaron (AJ) Steers
+Author-email: aj.steers@slalom.com
+License: MIT
+Download-URL: https://www.github.com/aaronsteers/logless/archive
+Description: UNKNOWN
+Keywords: DATAOPS,LOGGING
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
