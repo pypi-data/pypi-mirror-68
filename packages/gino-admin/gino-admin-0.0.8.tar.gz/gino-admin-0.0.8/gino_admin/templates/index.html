@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Index Page{% endblock %}
+
+{% block body %}
+<h1 class="ui header">Welcome to Sanic-Gino Admin Panel</h1>
+<br><br>
+
+{% for key, value in objects.items() %}
+
+    <button class="ui labeled icon button">
+      <a href="{{url_prefix}}/{{key.lower()}}" class="item">
+      <i class="database icon"></i>
+      {{key.capitalize()}} model </a>
+    </button>
+        {% endfor %}
+
+{% endblock %}
