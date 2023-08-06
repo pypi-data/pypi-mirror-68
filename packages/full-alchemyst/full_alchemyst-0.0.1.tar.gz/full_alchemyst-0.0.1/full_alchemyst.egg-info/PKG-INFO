@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: full-alchemyst
+Version: 0.0.1
+Summary: Les's to use a unique ORM to manage the persistence in one project. 
+Home-page: https://github.com/pochecho/full_alchemyst
+Author: Sergio Posada Urrea
+Author-email: sergio.posadaurrea@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/pochecho/full_alchemyst.git
+Description: # full_alchemyst
+        Let's you to use both SqlAlchemyst and MongoAlchemyst libraries
+        Les's to use a unique ORM to manage the persistence in one project. 
+Keywords: MongoAlchemyst,SqlAlchemyst,Flask,DB
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
