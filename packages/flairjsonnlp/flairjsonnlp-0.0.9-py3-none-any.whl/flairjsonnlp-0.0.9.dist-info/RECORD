@@ -1,0 +1,10 @@
+flairjsonnlp/__init__.py,sha256=yjAFRhy540eTx_lJaMZHPyF-aHfDEkMDlsLwxUttXRw,9484
+flairjsonnlp/server.py,sha256=NpxeSiyIWpHXua4jSdjl5wn28W-YMZJcOSPaJDa73s0,541
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mocks.py,sha256=Yqnut-FwRPaQg0Zno7_8u2GMZ8s0a1ElHykcdhxFxkk,14318
+tests/test_flairjsonnlp.py,sha256=q8qj93SJHdpOoe588AJlr8mKmdwOaXVYEoGqK2wBtAs,27274
+flairjsonnlp-0.0.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flairjsonnlp-0.0.9.dist-info/METADATA,sha256=r8QKvMsWtvj-Sv-sRSBXe71jM5KoVyeBisnFXiv21pQ,4122
+flairjsonnlp-0.0.9.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+flairjsonnlp-0.0.9.dist-info/top_level.txt,sha256=TTpROvFB_0wkL0kaah_D4CECg0XjLi1UxeUeoCGwjwI,19
+flairjsonnlp-0.0.9.dist-info/RECORD,,
