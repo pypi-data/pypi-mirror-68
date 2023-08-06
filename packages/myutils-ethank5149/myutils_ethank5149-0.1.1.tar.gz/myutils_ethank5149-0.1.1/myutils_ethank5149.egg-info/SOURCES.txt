@@ -1,0 +1,11 @@
+README.md
+setup.py
+myutils_ethank5149/__init__.py
+myutils_ethank5149/math.py
+myutils_ethank5149.egg-info/PKG-INFO
+myutils_ethank5149.egg-info/SOURCES.txt
+myutils_ethank5149.egg-info/dependency_links.txt
+myutils_ethank5149.egg-info/requires.txt
+myutils_ethank5149.egg-info/top_level.txt
+tests/__init__.py
+tests/test_linspace.py
