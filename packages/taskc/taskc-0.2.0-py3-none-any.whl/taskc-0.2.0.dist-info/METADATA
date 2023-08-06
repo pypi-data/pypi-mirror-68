@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: taskc
+Version: 0.2.0
+Summary: A python client library for taskwarrior's taskd
+Home-page: https://github.com/jrabbit/taskd-client-py
+License: LGPL-3.0+
+Keywords: taskwarrior,taskd,client,todo
+Author: Jack Laxson
+Author-email: jackjrabbit@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs
+Requires-Dist: six
+Project-URL: Documentation, https://taskd-client-py.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/jrabbit/taskd-client-py
