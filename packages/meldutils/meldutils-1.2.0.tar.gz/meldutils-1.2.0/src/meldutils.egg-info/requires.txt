@@ -1,0 +1,10 @@
+
+[linguist]
+ghlinguist
+
+[lint]
+flake8
+mypy
+
+[tests]
+pytest
