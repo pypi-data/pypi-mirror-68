@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+BunnyPy.egg-info/PKG-INFO
+BunnyPy.egg-info/SOURCES.txt
+BunnyPy.egg-info/dependency_links.txt
+BunnyPy.egg-info/top_level.txt
+bunnypy/__init__.py
+bunnypy/bunnypy.py
+bunnypy/asset/error.html
