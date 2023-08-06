@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: radcam
+Version: 1.0.0
+Summary: simple image perturber for CNN visualization
+License: MIT
+Author: pdoyle5000
+Author-email: pdoyle5000@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ipywidgets (>=7.5.1,<8.0.0)
+Requires-Dist: numpy (>=1.18.4,<2.0.0)
+Requires-Dist: pillow (>=7.1.2,<8.0.0)
+Requires-Dist: plotly (>=4.7.1,<5.0.0)
+Requires-Dist: torch (>=1.5.0,<2.0.0)
