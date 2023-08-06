@@ -1,0 +1,16 @@
+goodlibs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodlibs/cli.py,sha256=vVEDu5sHF2F1Wce3mrzgu6gF8WxpbqQL3XqmkW2iZ6M,4349
+goodlibs/goodreads/__init__.py,sha256=-WVdgA5tlYqY97nLCcIn1jgyALZw72DdZEyzU8i6u1A,60
+goodlibs/goodreads/book.py,sha256=SYCFYm42iZhZb9Mw8H6xLRPdKIAnjq9p9tOWzPyb3Xw,2682
+goodlibs/libgen/__init__.py,sha256=NMqzMHQ-Zsq4sx8QlBY5BAoJnszM2XvmFdvjOfIA7rw,69
+goodlibs/libgen/downloaders.py,sha256=hmSExPe-FdlP0BbsEPIgFUSGRzAbTZvjP0rSfvBWcjU,4809
+goodlibs/libgen/exceptions.py,sha256=xeK-Ama9WAs_TpstYpKVxpqgDIagCo2shwBVWfJnkQE,706
+goodlibs/libgen/mirrors.py,sha256=Z3qBCoAJGru4qKVL_lVL0M-QH1pm2RP8qs_8n5v2ZE8,7904
+goodlibs/libgen/publication.py,sha256=gcG35KlxcoYbk66Nh7AJkzRJKrRB0kFvvsPQN_k_Ewk,1832
+goodlibs/libgen/utils.py,sha256=Y3VvQ1fyGIsHCqPkPwTcs9vOQVTcQF6-XUPRJutA3vA,413
+goodlibs-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+goodlibs-0.1.1.dist-info/METADATA,sha256=fNhAtcBe45wJv8-4e5keUwJw2iJtSZjI0hwZ0pzv7bQ,3949
+goodlibs-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+goodlibs-0.1.1.dist-info/entry_points.txt,sha256=ych2knx5LxHKfFCdEULnAogYbzjiAOPDUgtFd9iYdDU,47
+goodlibs-0.1.1.dist-info/top_level.txt,sha256=dZVXgGBtafqUwuTuw9dPk4hWeM06KJAVHd2skJtn6Z0,9
+goodlibs-0.1.1.dist-info/RECORD,,
