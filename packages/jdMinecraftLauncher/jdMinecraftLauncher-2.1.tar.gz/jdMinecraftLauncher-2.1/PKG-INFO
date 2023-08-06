@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jdMinecraftLauncher
+Version: 2.1
+Summary:  A Minecraft Launcher writen in Python
+Home-page: https://gitlab.com/JakobDev/jdMinecraftLauncher
+Author: JakobDev
+Author-email: jakobdev@gmx.de
+License: GPL v3
+Download-URL: https://gitlab.com/JakobDev/jdMinecraftLauncher/-/releases
+Description: # jdMinecraftLauncher
+        
+        jdMinecraftLauncher is a OpenSource Minecraft Launcher written in Python. You need Java and a Mojang Account to use this programm.
+        
+        This program uses [minecraft-launcher-lib](https://pypi.org/project/minecraft-launcher-lib) to install and start Minecraft.
+        
+        You need [Python](https://www.python.org/) to run jdMinecraftLauncher.
+        
+        Install all needed dependencies before the first run:
+        `pip install -r requirements.txt`
+        
+Keywords: JakobDev,Minecraft,Mojang,Java,PyQt,PyQt5
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Other Environment
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: German
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
