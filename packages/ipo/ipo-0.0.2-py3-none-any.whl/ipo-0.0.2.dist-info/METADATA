@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: ipo
+Version: 0.0.2
+Summary: Infix piping operator
+Home-page: https://framagit.org/Midgard/ipo
+Author: Midgard
+License: UNKNOWN
+Project-URL: Source, https://framagit.org/Midgard/ipo
+Project-URL: Change log, https://framagit.org/Midgard/ipo/-/blob/master/CHANGELOG.md
+Project-URL: Bug tracker, https://framagit.org/Midgard/ipo/-/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Ipo
+
+Infix piping operator for Python. Iterator-native decluttering of your code.
+
+## Demo
+
+```python
+from ipo import list, str, write, sort, take
+
+# Chaining without adding data yet. And this ipo will be useful for the later examples, too. Bam!
+print_as_list = list | str | write  # No output yet
+
+
+# Ipo makes data flows much easier to follow.
+[5, 2, 3, 1, 4] | sort           | print_as_list  # [1, 2, 3, 4, 5]
+[5, 2, 3, 1, 4] | take(3)        | print_as_list  # [5, 2, 3]
+[5, 2, 3, 1, 4] | sort | take(3) | print_as_list  # [1, 2, 3]
+[5, 2, 3, 1, 4] | take(3) | sort | print_as_list  # [2, 3, 5]
+
+# Much more readable than the original!
+#   sort(itertools.islice([5, 2, 3, 1, 4], 3))
+```
+
+```python
+from ipo import from_csv, skip, starmap, to_csv, before, write
+
+# Ipo is ideally suited for working with CSV data.
+"""
+#Voltage,Current
+12,1
+8,2
+220,6
+""".strip().split() | from_csv | skip(1) | \
+	starmap(lambda v, a: (v, a, float(v) * float(a))) | \
+	to_csv | before(["#Voltage,Current,Power"]) | write
+# #Voltage,Current,Power
+# 12,1,12.0
+# 8,2,16.0
+# 220,6,1320.0
+```
+
+```python
+from ipo import read, map, write
+
+# Most ipo chains that work over iterable data are lazy by default. You can load huge files,
+# process them and write the results to another file.
+with open("bigfile.txt") as f_in, open("processed.txt") as f_out:
+	read(file=f_in) | map(some_preprocessing) | \
+	map(some_advanced_function) | \
+	map(some_formatting) | write(file=f_out)
+```
+
+```python
+import math
+
+# Don't confuse the module and the function.
+# You can do `import ipo` and then use `ipo.ipo()`, or you can do...
+from ipo import ipo
+# ...and then use `ipo()`.
+
+# Ipo-ify any function where it makes sense to pass the first argument by pipe.
+# Functions that work with iterables make a great fit, but any function will work.
+
+# Call ipo as a function...
+sqrt = ipo(math.sqrt)
+
+# ...or use it as a decorator.
+@ipo
+def double(x):
+	return 2 * x
+
+# More arguments are supported.
+@ipo
+def times(x, y):
+	return x * y
+
+9 | double | times(2) | sqrt  # 6.0
+
+# Psst: times(2) is actually the same as double! Now that times exists, we could also define it as
+double = times(2)
+```
+
+## Troubleshooting
+* “I'm experimenting with ipo in Python's interactive mode (REPL), but I get `ipo(<function ipo.__or__.<locals>.<lambda> at ...>)`.”
+
+Make sure that the first object in your pipe chain is *not* an ipo object. It should be data.
+
+* `TypeError: unsupported operand type(s) for |: '...' and '...'` and other weird errors
+
+Make sure the rightmost element is an ipo object. If you want to use one of ipo objects that ship
+in this module, make sure you imported it.
+
+Ipo's magic `|` works by overriding `__ror__` and `__or__`. Make sure the data does not override
+the `__or__` function, because that would mess with the order of precedence.
+
+To nail down the expression that is causing errors, you can break up your pipe, insert a pipe to
+`ipo.list` and assign to a variable. If you have huge amounts of data or expensive computations in
+your chain, try limiting the flow with `take(n)`.
+```python
+foo = stdin | take(500) | map(random_function) | list
+foo | write
+```
+
+## Inspiration
+
+Inspired by but not based on
+
+* https://pypi.org/project/pipe/
+* https://arvindn.livejournal.com/68137.html
+
+
