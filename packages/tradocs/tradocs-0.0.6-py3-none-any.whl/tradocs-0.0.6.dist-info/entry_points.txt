@@ -1,0 +1,3 @@
+[console_scripts]
+tradocs = tradocs.tradocs:root
+
