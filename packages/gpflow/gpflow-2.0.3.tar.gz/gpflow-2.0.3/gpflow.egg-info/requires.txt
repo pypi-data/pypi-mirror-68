@@ -1,0 +1,11 @@
+numpy>=1.10.0
+scipy>=0.18.0
+multipledispatch>=0.6
+tabulate
+typing_extensions
+dataclasses
+tensorflow>=2.1.0
+tensorflow-probability>=0.9
+
+[ImageToTensorBoard]
+matplotlib
