@@ -1,0 +1,9 @@
+
+[dev]
+sphinx>=2.0
+sphinx_rtd_theme
+ipython
+
+[test]
+flake8
+pytest>=5.0
