@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/cgc-cli.py
+cgc/__init__.py
+cgc/cgc.py
+cgc.egg-info/PKG-INFO
+cgc.egg-info/SOURCES.txt
+cgc.egg-info/dependency_links.txt
+cgc.egg-info/requires.txt
+cgc.egg-info/top_level.txt
