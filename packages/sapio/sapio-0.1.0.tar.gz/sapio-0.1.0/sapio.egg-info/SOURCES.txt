@@ -1,0 +1,7 @@
+README.md
+setup.py
+sapio.egg-info/PKG-INFO
+sapio.egg-info/SOURCES.txt
+sapio.egg-info/dependency_links.txt
+sapio.egg-info/requires.txt
+sapio.egg-info/top_level.txt
