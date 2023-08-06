@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: aws_jsiisamples.jsii_native_python
+Version: 1.5.0
+Summary: A simple Python library to benchmark against a jsii module with similar, simple logic.
+Home-page: https://github.com/aws-samples/jsii-native-python
+Author: Hari Pachuveetil
+Author-email: pachuvee@amazon.com
+License: MIT
+Download-URL: https://pypi.org/project/jsii-native-python/
+Description: # jsii-native-python [![PyPI][pypi-image]](pypi-url)
+        
+        > A simple Python library to benchmark against a jsii module with similar, simple logic.
+        
+        ## License
+        
+        This library is licensed under the MIT-0 License. See the LICENSE file.
+        
+        [pypi-image]: https://img.shields.io/pypi/v/aws-jsiisamples.jsii-native-python
+        [pypi-url]: https://pypi.org/project/aws-jsiisamples.jsii-native-python/
+        
+        
+        # Change log
+        
+        0.0.1 - initial version (2020-05-15)
+        
+        
+Keywords: jsii,python,java,dotnet,typescript,aws
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
