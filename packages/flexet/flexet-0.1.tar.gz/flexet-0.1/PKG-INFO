@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: flexet
+Version: 0.1
+Summary: Flexible Network
+Home-page: https://github.com/ShadowCodeCz/flexet
+Author: ShadowCodeCz
+Author-email: shadow.code.cz@gmail.com
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Project-URL: Source, https://github.com/ShadowCodeCz/flexet
+Project-URL: Tracker, https://github.com/ShadowCodeCz/flexet/issues
+Description: # flexet
+        Flexible Network
+        
+Keywords: flexible modular plugin network
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

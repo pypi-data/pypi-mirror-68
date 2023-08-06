@@ -1,0 +1,7 @@
+README.md
+setup.py
+flexet/__init__.py
+flexet.egg-info/PKG-INFO
+flexet.egg-info/SOURCES.txt
+flexet.egg-info/dependency_links.txt
+flexet.egg-info/top_level.txt
