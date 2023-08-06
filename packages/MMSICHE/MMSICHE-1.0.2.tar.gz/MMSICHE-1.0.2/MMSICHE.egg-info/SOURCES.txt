@@ -1,0 +1,9 @@
+README.md
+setup.py
+MMSICHE/MMSICHE.py
+MMSICHE/__init__.py
+MMSICHE.egg-info/PKG-INFO
+MMSICHE.egg-info/SOURCES.txt
+MMSICHE.egg-info/dependency_links.txt
+MMSICHE.egg-info/requires.txt
+MMSICHE.egg-info/top_level.txt
