@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: imgcompressionkit
+Version: 0.1
+Summary: Image compression kit for halftoning and block truncation coding (BTC).
+Home-page: https://github.com/kuroipearls/imgcompressionkit
+Author: kuroipearls
+Author-email: dellafitrayani@gmail.com
+License: MIT
+Description: Image compression kit for halftoning and block truncation coding (BTC).
+Keywords: halftoning
+Platform: UNKNOWN

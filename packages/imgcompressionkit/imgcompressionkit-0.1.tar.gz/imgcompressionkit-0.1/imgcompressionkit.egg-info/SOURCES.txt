@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+imgcompressionkit/__init__.py
+imgcompressionkit/algorithms.py
+imgcompressionkit/tools.py
+imgcompressionkit.egg-info/PKG-INFO
+imgcompressionkit.egg-info/SOURCES.txt
+imgcompressionkit.egg-info/dependency_links.txt
+imgcompressionkit.egg-info/not-zip-safe
+imgcompressionkit.egg-info/requires.txt
+imgcompressionkit.egg-info/top_level.txt
