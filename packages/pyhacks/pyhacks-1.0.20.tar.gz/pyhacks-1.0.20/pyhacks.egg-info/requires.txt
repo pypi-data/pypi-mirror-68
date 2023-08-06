@@ -1,0 +1,4 @@
+uuid
+ping3
+dnspython
+whois
