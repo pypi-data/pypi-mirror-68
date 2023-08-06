@@ -1,0 +1,5 @@
+pygobject
+pycairo
+asyncssh
+cytoolz
+iterfzf
