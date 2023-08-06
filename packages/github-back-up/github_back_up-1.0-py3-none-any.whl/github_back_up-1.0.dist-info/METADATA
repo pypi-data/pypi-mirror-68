@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: github-back-up
+Version: 1.0
+Summary: Github Backup
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython
+Requires-Dist: PyGithub
+Requires-Dist: tqdm
+Requires-Dist: click
+
+## Github backup
+Back up all your github repositories
+
+
