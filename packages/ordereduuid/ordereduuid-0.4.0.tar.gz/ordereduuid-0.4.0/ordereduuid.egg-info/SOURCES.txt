@@ -1,0 +1,10 @@
+README.md
+setup.py
+ordereduuid/__init__.py
+ordereduuid/ordereduuid.py
+ordereduuid.egg-info/PKG-INFO
+ordereduuid.egg-info/SOURCES.txt
+ordereduuid.egg-info/dependency_links.txt
+ordereduuid.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ordereduuid.py
