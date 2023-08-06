@@ -1,0 +1,11 @@
+numpy
+requests
+patool
+scipy
+hurry
+gdown
+scikit-image
+pyunpack
+py7zr
+PrettyTable
+opencv-python
