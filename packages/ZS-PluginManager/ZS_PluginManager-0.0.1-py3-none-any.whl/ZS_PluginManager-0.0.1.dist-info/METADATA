@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: ZS-PluginManager
+Version: 0.0.1
+Summary: Library to use plugins in Python programs. 
+Home-page: https://github.com/Zoynels/ZS-PluginManager
+License: GNU Affero General Public License v3
+Keywords: plugin,plug-in,manager
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Plugins
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Description-Content-Type: text/markdown
+Requires-Dist: entrypoints (>=0.3)
+
+# ZS-PluginManager
+
+PluginManager to use entry-points in projects
+
+# Usage
+
+## Import
+```
+from zs_pluginmanager.manager import PluginManager
+```
+
+## Load plugins (entry-points)
+```
+plugins_manager = PluginManager()
+plugins_manager.load_global("distutils.commands", label="commands")
+plugins_manager.load_global("distutils.setup_keywords", label="setup_keywords")
+```
+
+## Show loaded plugins (entry-points)
+### All
+```
+print("print all plugins (entry-points):")
+for plugin in plugins_manager:
+    print("", plugin.name, plugin.plugin)
+```
+
+Output:
+```
+print all plugins (entry-points):
+ alias <class 'setuptools.command.alias.alias'>
+ bdist_egg <class 'setuptools.command.bdist_egg.bdist_egg'>
+ bdist_rpm <class 'setuptools.command.bdist_rpm.bdist_rpm'>
+ bdist_wininst <class 'setuptools.command.bdist_wininst.bdist_wininst'>
+ build_clib <class 'setuptools.command.build_clib.build_clib'>
+ build_ext <class 'setuptools.command.build_ext.build_ext'>
+ build_py <class 'setuptools.command.build_py.build_py'>
+ develop <class 'setuptools.command.develop.develop'>
+ dist_info <class 'setuptools.command.dist_info.dist_info'>
+ easy_install <class 'setuptools.command.easy_install.easy_install'>
+ egg_info <class 'setuptools.command.egg_info.egg_info'>
+ install <class 'setuptools.command.install.install'>
+ install_egg_info <class 'setuptools.command.install_egg_info.install_egg_info'>
+ install_lib <class 'setuptools.command.install_lib.install_lib'>
+ install_scripts <class 'setuptools.command.install_scripts.install_scripts'>
+ rotate <class 'setuptools.command.rotate.rotate'>
+ saveopts <class 'setuptools.command.saveopts.saveopts'>
+ sdist <class 'setuptools.command.sdist.sdist'>
+ setopt <class 'setuptools.command.setopt.setopt'>
+ test <class 'setuptools.command.test.test'>
+ upload_docs <class 'setuptools.command.upload_docs.upload_docs'>
+ bdist_wheel <class 'wheel.bdist_wheel.bdist_wheel'>
+ convert_2to3_doctests <function assert_string_list at 0x000001A90BCDF160>
+ dependency_links <function assert_string_list at 0x000001A90BCDF160>
+ eager_resources <function assert_string_list at 0x000001A90BCDF160>
+ entry_points <function check_entry_points at 0x000001A90BCDF550>
+ exclude_package_data <function check_package_data at 0x000001A90BCDF670>
+ extras_require <function check_extras at 0x000001A90BCDF280>
+ include_package_data <function assert_bool at 0x000001A90BCDF3A0>
+ install_requires <function check_requirements at 0x000001A90BCDF430>
+ namespace_packages <function check_nsp at 0x000001A90BCDF1F0>
+ package_data <function check_package_data at 0x000001A90BCDF670>
+ packages <function check_packages at 0x000001A90BCDF700>
+ python_requires <function check_specifier at 0x000001A90BCDF4C0>
+ setup_requires <function check_requirements at 0x000001A90BCDF430>
+ test_loader <function check_importable at 0x000001A90BCDF0D0>
+ test_runner <function check_importable at 0x000001A90BCDF0D0>
+ test_suite <function check_test_suite at 0x000001A90BCDF5E0>
+ tests_require <function check_requirements at 0x000001A90BCDF430>
+ use_2to3 <function assert_bool at 0x000001A90BCDF3A0>
+ use_2to3_exclude_fixers <function assert_string_list at 0x000001A90BCDF160>
+ use_2to3_fixers <function assert_string_list at 0x000001A90BCDF160>
+ zip_safe <function assert_bool at 0x000001A90BCDF3A0>
+```
+
+### Only selected
+```
+print("print selected entry-points by label:")
+for plugin in plugins_manager.filter(label="commands"):
+    print("", plugin.name, plugin.plugin)
+```
+Output:
+```
+print selected entry-points by label:
+ alias <class 'setuptools.command.alias.alias'>
+ bdist_egg <class 'setuptools.command.bdist_egg.bdist_egg'>
+ bdist_rpm <class 'setuptools.command.bdist_rpm.bdist_rpm'>
+ bdist_wininst <class 'setuptools.command.bdist_wininst.bdist_wininst'>
+ build_clib <class 'setuptools.command.build_clib.build_clib'>
+ build_ext <class 'setuptools.command.build_ext.build_ext'>
+ build_py <class 'setuptools.command.build_py.build_py'>
+ develop <class 'setuptools.command.develop.develop'>
+ dist_info <class 'setuptools.command.dist_info.dist_info'>
+ easy_install <class 'setuptools.command.easy_install.easy_install'>
+ egg_info <class 'setuptools.command.egg_info.egg_info'>
+ install <class 'setuptools.command.install.install'>
+ install_egg_info <class 'setuptools.command.install_egg_info.install_egg_info'>
+ install_lib <class 'setuptools.command.install_lib.install_lib'>
+ install_scripts <class 'setuptools.command.install_scripts.install_scripts'>
+ rotate <class 'setuptools.command.rotate.rotate'>
+ saveopts <class 'setuptools.command.saveopts.saveopts'>
+ sdist <class 'setuptools.command.sdist.sdist'>
+ setopt <class 'setuptools.command.setopt.setopt'>
+ test <class 'setuptools.command.test.test'>
+ upload_docs <class 'setuptools.command.upload_docs.upload_docs'>
+ bdist_wheel <class 'wheel.bdist_wheel.bdist_wheel'>
+```
+
+## Limitation
+
+ Key of PluginManager.plugins Should be unique by (namespace, entry_point.name, label, local).  
+ If one name of entry_point is in several different groups, then it will be several times.  
+ To find exact pligun do use plugins_manager.filter() which filter plugins by different options.  
+
+

@@ -1,0 +1,10 @@
+zs_pluginmanager/__init__.py,sha256=Aio7vnKdZmyy4P4qEi14SjyRLJDPSln52D-po8toni0,185
+zs_pluginmanager/manager.py,sha256=khfX2E-NFe9ph9hsUJwTouofegD4ZxoUwwRlJkTZwz4,6408
+zs_pluginmanager/plugin.py,sha256=UXpotLSQS7TAf5-dr_PbFoBUlhFx3OUF1mCkDkKTPhU,8158
+zs_pluginmanager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zs_pluginmanager/utils.py,sha256=vWf1Q87x1eP-7weG9ZV2zEsFmaLhrPrlJawEgkfrXk0,2226
+ZS_PluginManager-0.0.1.dist-info/LICENSE,sha256=K0xCc38czEA_lzKMWX4KvScqrV5BOiJTmzulwx6pQ8I,35164
+ZS_PluginManager-0.0.1.dist-info/METADATA,sha256=gL0LdU4cAuz1qf_OR6kBJDnPlcEj9gRRW_HLezucAVM,5671
+ZS_PluginManager-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ZS_PluginManager-0.0.1.dist-info/top_level.txt,sha256=md5bryu-dSIP2ZYPxyJwm27v55thljnFcwWYYiCW2yE,17
+ZS_PluginManager-0.0.1.dist-info/RECORD,,
