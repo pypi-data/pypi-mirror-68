@@ -1,0 +1,3 @@
+[console_scripts]
+digipathai = DigiPathAI.main_server:main
+
