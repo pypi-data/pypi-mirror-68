@@ -1,0 +1,4 @@
+include jupyter_dash/nbextension *.json
+include jupyter_dash/nbextension *.js
+include jupyter_dash/labextension/package.json
+include jupyter_dash/labextension/dist *.tgz

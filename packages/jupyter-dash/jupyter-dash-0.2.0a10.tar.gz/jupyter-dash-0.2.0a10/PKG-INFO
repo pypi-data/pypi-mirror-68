@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jupyter-dash
+Version: 0.2.0a10
+Summary: Dash support for the Jupyter notebook interface
+Home-page: https://github.com/plotly/jupyter-dash
+Author: Plotly
+License: MIT
+Project-URL: Github, https://github.com/plotly/jupyter-dash
+Description: Work in progress. Stay tuned!
+        
+        # Jupyter Dash
+        [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/plotly/jupyter-dash/master?urlpath=lab/tree/notebooks/getting_started.ipynb)
+        
+        This library makes it easy to develop Plotly Dash apps interactively from with Jupyter environments.
+        
+        See the [notebooks/getting_started.ipynb](https://github.com/plotly/jupyter-dash/blob/master/notebooks/getting_started.ipynb) for more information and example usage.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
