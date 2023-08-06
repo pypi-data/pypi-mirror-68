@@ -1,0 +1,16 @@
+protobuf_serialization/__init__.py,sha256=bOgCGtDU2wZ7vRzW_j_oTserhxt2asBJukm4GA_jDKA,319
+protobuf_serialization/constants.py,sha256=TEFA9bLXG8Q3SQqFsfD61G0INJslCmFvh7sXYT4yImc,258
+protobuf_serialization/utils.py,sha256=3zGZrdbKyHkeoezI5Ui2s29YUbdleiROtB-yXN5s6aQ,1786
+protobuf_serialization/version.py,sha256=mf6gUSrb0L6MQcNj27Zqkix6VcdI7rmgQVB5DUNrl1I,405
+protobuf_serialization/deserialization/__init__.py,sha256=sbI4VycWaXVQ-xIPqrDpMi2Ue9YFZ6pu58FaBBbCNBA,109
+protobuf_serialization/deserialization/protobuf_to_dict.py,sha256=6FlEXUNTi571O2k2GqR5FcBbEj7JdBH7L2i15JWaO0c,2591
+protobuf_serialization/deserialization/utils.py,sha256=2Sz5cvbg3L89SFBmfEoHC9k7ff1WzobUMi8f66Wi8N0,152
+protobuf_serialization/serialization/__init__.py,sha256=xpma8r2P7umgwMwJ0Onyp9oJXq47Qicf-HGX3sOWkEc,174
+protobuf_serialization/serialization/auto.py,sha256=yp4nYOhyIWV-10MOqCLbZwpwfdCJNsC5CSeSrZKLPRQ,3321
+protobuf_serialization/serialization/fields.py,sha256=dE_-wMKQeuuO7KEGkY3YIunPL4MNyaVzaIHbaV7dYPM,3032
+protobuf_serialization/serialization/serializer.py,sha256=ZP-B0JojopUEAXIU8nSfsCI44scL2_-C8gWKsFt5ieY,7188
+protobuf_serialization-0.1.0.dist-info/LICENSE,sha256=yhMD2FJAAoqWQINqo5hTGHGouW4Raf7cKmumkIzRtCE,1067
+protobuf_serialization-0.1.0.dist-info/METADATA,sha256=TIIfWCbpbMkwu0C5DYtn7z7PqAKKprzOI-1UHCSgtyA,588
+protobuf_serialization-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+protobuf_serialization-0.1.0.dist-info/top_level.txt,sha256=icXsbnET7970YbE0Cl46RxsAkVpTyZOpFL0UKoSy6k0,99
+protobuf_serialization-0.1.0.dist-info/RECORD,,
