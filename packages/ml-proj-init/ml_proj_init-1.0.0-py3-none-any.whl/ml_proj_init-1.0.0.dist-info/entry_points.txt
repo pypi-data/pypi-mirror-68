@@ -1,0 +1,3 @@
+[console_scripts]
+ml-proj-init = ml_proj_init.main:start
+
