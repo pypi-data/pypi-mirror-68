@@ -1,0 +1,17 @@
+README.md
+setup.py
+JoeLiu_RF_Refactoring.egg-info/PKG-INFO
+JoeLiu_RF_Refactoring.egg-info/SOURCES.txt
+JoeLiu_RF_Refactoring.egg-info/dependency_links.txt
+JoeLiu_RF_Refactoring.egg-info/requires.txt
+JoeLiu_RF_Refactoring.egg-info/top_level.txt
+rfrefactoring/__init__.py
+rfrefactoring/refactorHelper.py
+rfrefactoring/refactoringFacade.py
+rfrefactoring/reference.py
+rfrefactoring/referencesMethods.py
+rfrefactoring/testDataDependencyBuilder.py
+rfrefactoring/testDataVisitor.py
+rfrefactoring/usageFinder.py
+test/testDataDependencyBuilderTest.py
+test/testRunner.py
