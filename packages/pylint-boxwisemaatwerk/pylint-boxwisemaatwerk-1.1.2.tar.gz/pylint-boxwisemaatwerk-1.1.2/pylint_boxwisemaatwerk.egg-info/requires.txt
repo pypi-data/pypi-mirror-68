@@ -1,0 +1,8 @@
+pylint>=1.9.4
+pylint-plugin-utils>=0.5
+astroid>=1.6.6
+jedi
+
+[for_tests]
+coverage
+pytest
