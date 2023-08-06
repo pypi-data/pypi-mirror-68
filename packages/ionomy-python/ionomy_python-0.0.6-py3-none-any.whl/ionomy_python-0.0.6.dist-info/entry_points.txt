@@ -1,0 +1,3 @@
+
+    [console_scripts]
+    ionomy=cli.cli:cli
