@@ -1,0 +1,3 @@
+[console_scripts]
+pktktimer = pktktimer.pechatimer:main
+

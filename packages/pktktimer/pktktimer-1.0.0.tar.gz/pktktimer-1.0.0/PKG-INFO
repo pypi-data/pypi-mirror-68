@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pktktimer
+Version: 1.0.0
+Summary: A more flexible pecha kucha timer
+Home-page: https://github.com/eshrh/pktktimer
+Author: Eshan Ramesh
+Author-email: esrh@netc.eu
+License: UNKNOWN
+Description: # pktktimer
+        I didn't like any existing pecha kucha timers, so I made my own. 
+        Existing timers are either too bloated and built with silly frameworks for such a simple application, or didn't have the features I wanted, like title slide delays.
+        
+        ## Usage
+        Just download and run `pechatimer.py`
+        The following command line arguments are available:
+        + `-d seconds` denotes the time the zeroth(title) slide should run for. 
+        + `--no-zero-slide` starts the timer without the zeroth slide
+        
+        ## TODO
+        + package and upload to pypi
+        + more options to fine-tune variables like time/slide.
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
