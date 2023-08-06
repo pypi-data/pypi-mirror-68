@@ -1,0 +1,7 @@
+README.md
+setup.py
+simses.egg-info/PKG-INFO
+simses.egg-info/SOURCES.txt
+simses.egg-info/dependency_links.txt
+simses.egg-info/requires.txt
+simses.egg-info/top_level.txt
