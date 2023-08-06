@@ -1,0 +1,48 @@
+
+
+--------------------------------------------------------------------------------
+                         IOOS Compliance Checker Report                         
+                                    ioos:1.2                                    
+      https://ioos.github.io/ioos-metadata/ioos-metadata-profile-v1-2.html      
+--------------------------------------------------------------------------------
+                               Corrective Actions                               
+A0142.ocean.001m.merged.nc has 9 potential issues
+
+
+                               Highly Recommended                               
+--------------------------------------------------------------------------------
+infoUrl
+
+
+platform variables
+* With a single platform provided, the dimension of the cf_role variable station (cf_role==timeseries_id) should also be equal to 1 (it is 5)
+
+standard_name_vocabulary
+* standard_name_vocabulary must match regular expression re.compile('^CF Standard Name Table v[1-9]\\d*$')
+
+
+                                  Recommended                                   
+--------------------------------------------------------------------------------
+_FillValue
+* Attr '_FillValue' not present on var 'time' while checking for IOOS concept: '_FillValue'
+
+contributor_email
+* contributor_email must be a valid email address
+
+contributor_role_vocabulary
+* contributor_role_vocabulary should be one of NERC or NOAA-NCEI
+
+missing_value
+* Attr 'missing_value' not present on var 'time' while checking for IOOS concept: 'missing_value'
+
+qartod_variable:references
+* "references" attribute not present for variable conductivity_qc_agg.If present, it should be a valid URL.
+* "references" attribute not present for variable temperature_qc_agg.If present, it should be a valid URL.
+* "references" attribute not present for variable salinity_qc_agg.If present, it should be a valid URL.
+* "references" attribute not present for variable sigma_t_qc_agg.If present, it should be a valid URL.
+
+standard_name_url
+* Attr 'standard_name_url' not present on var 'conductivity' while checking for IOOS concept: 'standard_name_url'
+* Attr 'standard_name_url' not present on var 'temperature' while checking for IOOS concept: 'standard_name_url'
+* Attr 'standard_name_url' not present on var 'salinity' while checking for IOOS concept: 'standard_name_url'
+* Attr 'standard_name_url' not present on var 'sigma_t' while checking for IOOS concept: 'standard_name_url'
