@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wol-api
+Version: 0.1.0
+Summary: A simple wake on LAN interface that accepts post commands
+Home-page: https://github.com/rix1337/docker-wakeonlan
+Author: rix1337
+Author-email: 
+License: UNKNOWN
+Description: #  WakeOnLAN-API
+        
+        [![PyPI version](https://badge.fury.io/py/wol_api.svg)](https://badge.fury.io/py/wol_api)
+        [![Github Sponsorship](https://img.shields.io/badge/support-me-red.svg)](https://github.com/users/rix1337/sponsorship)
+        
+        A simple flask interface to send wake on LAN commands. Just send a `POST` to `/ff.ff.ff.ff.ff.ff`
+        
+        The official docker image is available at [Docker Hub](https://hub.docker.com/r/rix1337/docker-wol_api).
+        
+        # Setup
+        
+        `pip install wol_api`
+        
+        # Run
+        
+        wol_api --port=8080` 
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
