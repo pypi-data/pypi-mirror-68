@@ -1,0 +1,8 @@
+damealgorithms
+damejson
+damenumpy
+damepandas
+damescipy
+damescraping
+damescikit
+dameopencv
