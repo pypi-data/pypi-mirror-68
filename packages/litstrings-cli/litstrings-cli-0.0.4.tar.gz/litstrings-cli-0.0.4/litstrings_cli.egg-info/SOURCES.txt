@@ -1,0 +1,12 @@
+README.md
+setup.py
+litstrings_cli.egg-info/PKG-INFO
+litstrings_cli.egg-info/SOURCES.txt
+litstrings_cli.egg-info/dependency_links.txt
+litstrings_cli.egg-info/entry_points.txt
+litstrings_cli.egg-info/not-zip-safe
+litstrings_cli.egg-info/requires.txt
+litstrings_cli.egg-info/top_level.txt
+lsclib/__init__.py
+lsclib/__main__.py
+lsclib/cmdline.py
