@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: umobj
+Version: 3.0.2
+Summary: UMIACS Object Storage Commands
+Home-page: https://github.com/UMIACS/umobj
+Author: UMIACS Staff
+Author-email: github@umiacs.umd.edu
+License: LGPL v2.1
+Description: Command-line utilities for S3-compatible Object Storage
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
