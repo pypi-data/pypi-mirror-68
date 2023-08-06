@@ -1,0 +1,52 @@
+Metadata-Version: 1.1
+Name: hedaro
+Version: 0.0.4
+Summary: A pentesting library for Python
+Home-page: https://github.com/hedaro-project/hedaro
+Author: David Rojas
+Author-email: david@hedaro.com
+License: MIT
+Description: hedaro
+        ======
+        
+        .. image:: https://img.shields.io/pypi/v/hedaro.svg
+            :target: https://pypi.python.org/pypi/hedaro
+            :alt: Latest PyPI version
+        
+        .. image:: https://api.travis-ci.org/hedaro-project/hedaro.png
+           :target: https://travis-ci.org/github/hedaro-project/hedaro
+           :alt: Latest Travis CI build status
+        
+        A pentesting library for Python
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `hedaro` was written by `David Rojas <david@hedaro.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

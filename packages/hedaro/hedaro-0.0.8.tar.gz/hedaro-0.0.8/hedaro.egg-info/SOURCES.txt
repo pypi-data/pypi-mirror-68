@@ -1,0 +1,13 @@
+README.rst
+setup.py
+hedaro/__init__.py
+hedaro.egg-info/PKG-INFO
+hedaro.egg-info/SOURCES.txt
+hedaro.egg-info/dependency_links.txt
+hedaro.egg-info/top_level.txt
+hedaro.egg-info/.ipynb_checkpoints/PKG-INFO-checkpoint
+hedaro.egg-info/.ipynb_checkpoints/SOURCES-checkpoint.txt
+hedaro.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
+hedaro.egg-info/.ipynb_checkpoints/top_level-checkpoint.txt
+hedaro/core/__init__.py
+hedaro/core/main.py
