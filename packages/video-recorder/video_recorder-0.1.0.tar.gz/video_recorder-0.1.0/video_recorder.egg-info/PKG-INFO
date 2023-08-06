@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: video-recorder
+Version: 0.1.0
+Summary: easy script to record video via USB camera
+Home-page: https://github.com/jim0575/desktop-tutorial
+Author: james
+Author-email: jim0575@qq.com
+License: MIT Licence
+Description: easy script to record video via USB camera,very easy to use: video_recorder.Video_Recorder()
+Keywords: pip,video,recorder,mp4,cv2
+Platform: any

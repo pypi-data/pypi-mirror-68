@@ -1,0 +1,7 @@
+setup.py
+video_recorder/__init__.py
+video_recorder/video_recorder.py
+video_recorder.egg-info/PKG-INFO
+video_recorder.egg-info/SOURCES.txt
+video_recorder.egg-info/dependency_links.txt
+video_recorder.egg-info/top_level.txt
