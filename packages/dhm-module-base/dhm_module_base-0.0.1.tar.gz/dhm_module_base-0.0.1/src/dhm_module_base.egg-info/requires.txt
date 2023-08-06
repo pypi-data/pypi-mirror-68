@@ -1,0 +1,6 @@
+click>=7.1
+click_plugins
+
+[dev]
+pytest
+black

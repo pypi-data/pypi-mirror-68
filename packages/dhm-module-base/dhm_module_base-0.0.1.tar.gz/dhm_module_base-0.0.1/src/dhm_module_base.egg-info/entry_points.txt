@@ -1,0 +1,3 @@
+
+      [console_scripts]
+      dhm_module_base=dhm_module_base.cli:cli
