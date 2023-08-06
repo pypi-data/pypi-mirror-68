@@ -1,0 +1,71 @@
+Metadata-Version: 1.2
+Name: pytest-django-cache-xdist
+Version: 0.1.1
+Summary: A djangocachexdist plugin for pytest
+Home-page: https://github.com/atuchak/pytest-django-cache-xdist
+Author: Anton Tuchak
+Author-email: anton.tuchak@gmail.com
+Maintainer: Anton Tuchak
+Maintainer-email: anton.tuchak@gmail.com
+License: BSD-3
+Project-URL: Source, https://github.com/atuchak/pytest-django-cache-xdist
+Description: .. image:: https://travis-ci.org/atuchak/pytest-django-cache-xdist.svg?branch=master
+            :target: https://travis-ci.org/atuchak/pytest-django-cache-xdist
+        
+        
+        ==========================
+        pytest-django-cache-xdist
+        ==========================
+        
+        
+        A pytest-django-cache-xdist plugin for pytest
+        
+        
+        
+        Installation
+        ------------
+        
+        You can install "pytest-django-cache-xdist" via `pip`_ from `PyPI`_::
+        
+            $ pip install pytest-django-cache-xdist
+        
+        
+        
+        Usage
+        -----
+        
+        * TODO
+        
+        
+        License
+        -------
+        
+        Distributed under the terms of the `BSD-3`_ license.
+        
+        
+        
+        .. _`BSD-3`: http://opensource.org/licenses/BSD-3-Clause
+        .. _`pip`: https://pypi.org/project/pip/
+        .. _`PyPI`: https://pypi.org/project
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.4
