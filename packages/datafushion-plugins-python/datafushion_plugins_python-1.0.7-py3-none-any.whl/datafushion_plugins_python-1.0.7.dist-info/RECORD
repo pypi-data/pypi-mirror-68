@@ -1,0 +1,12 @@
+datafushion/__init__.py,sha256=7IaSxYcXczFaX0Q_ItXXRHfhvKQG_E6XnSix-E0D2Tc,151
+datafushion/args.py,sha256=fopwHAxuMqhKhSrF_b7eA2Z0iEpFTq7lGsCKGaUsjdM,5391
+datafushion/handle.py,sha256=yyKKZeOeC4egpYzBdOrcUx_BwJv1B4HeSMRSn_alLt8,4140
+datafushion/parse_utils.py,sha256=uCZXl4OOU5gvjh95bQaOO4dj28duTYZSY8nwksiqtMw,2594
+datafushion/version.py,sha256=feKmps1rrHZNpZ1j1JIQJAYNvGvJlZHDb7p1IYXq81w,508
+datafushion_plugins_python-1.0.7.data/data/README.md,sha256=tGzjMyWegco5pfHPClrq88yXmpMifY4ys0YLsH9P7as,2502
+datafushion_plugins_python-1.0.7.dist-info/METADATA,sha256=dWTmfO0Un_t4K9cJiOmVKXAI2oKPx2iUCIdQ8G7AHBc,2703
+datafushion_plugins_python-1.0.7.dist-info/WHEEL,sha256=NvLheO0f8_uAcwoMijaCN7IVIIaldpzEnN1plXS6P6E,97
+datafushion_plugins_python-1.0.7.dist-info/entry_points.txt,sha256=7KNBa_TjH7A2VA_yiC-Yrwjfi0jbLXgye4S-QJ0lrwA,52
+datafushion_plugins_python-1.0.7.dist-info/top_level.txt,sha256=igRVvm41ssLACw37Y3q2RX7QjS7f14_WlePbdphbayI,12
+datafushion_plugins_python-1.0.7.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+datafushion_plugins_python-1.0.7.dist-info/RECORD,,
