@@ -1,0 +1,273 @@
+syntax = "proto3";
+
+package treppb;
+
+message IATACode {
+  string code = 1;
+} 
+
+message ICAOCode {
+  string code = 1;
+} 
+
+message FAACode {
+  string code = 1;
+} 
+
+message UNLOCode {
+  string code = 1;
+} 
+
+message UNLOCodeList {
+  repeated UNLOCode unlocode = 1;
+} 
+
+message UICCode {
+  int32 code = 1;
+} 
+
+message UICCodeList {
+  repeated UICCode uiccode = 1;
+} 
+
+message GeonamesID {
+  int32 id = 1;
+}
+
+message EnvelopeID {
+  int32 id = 1;
+}
+
+message StateCode {
+  string code = 1;
+}
+
+message CountryCode {
+  string code = 1;
+}
+
+message AltCountryCode {
+  string code = 1;
+}
+
+message WorldAreaCode {
+  int32 code = 1;
+}
+
+message ContinentCode {
+  string code = 1;
+}
+
+message CurrencyCode {
+  string code = 1;
+}
+
+message FeatureClass {
+  string code = 1;
+}
+
+message FeatureCode {
+  string code = 1;
+}
+
+message FeatureType {
+  FeatureClass fclass = 1;
+  FeatureCode fcode = 2;
+}
+
+message Comment {
+  string text = 1;
+}
+
+message Date {
+  string date = 1;
+} 
+
+message Admin1Code {
+  string code = 1;
+} 
+
+message Admin2Code {
+  string code = 1;
+} 
+
+message Admin3Code {
+  string code = 1;
+} 
+
+message Admin4Code {
+  string code = 1;
+} 
+
+message Population {
+  int32 value = 1;
+}
+
+message Elevation {
+  int32 value = 1;
+}
+
+message GTopo30 {
+  int32 value = 1;
+}
+
+message TravelRelatedList {
+  repeated string tvl_code = 1;
+} 
+
+message TimeZone {
+  string tz = 1;
+} 
+
+message TZOffSet {
+  sint32 offset = 1;
+} 
+
+message LanguageCode {
+  string code = 1;
+} 
+
+message AltName {
+  LanguageCode lang = 1;
+  string name = 2;
+} 
+
+message AltNameList {
+  repeated AltName name = 1;
+} 
+
+message WikiLink {
+  LanguageCode lang = 1;
+  string link = 2;
+} 
+
+message WikiLinkList {
+  repeated WikiLink link = 1;
+} 
+
+message City {
+  IATACode code = 1;
+  GeonamesID geonames_id = 2;
+  string name_utf = 3;
+  string name_ascii = 4;
+}
+
+message CityList {
+  repeated City city = 1;
+}
+
+message GeoPoint {
+  double latitude = 1;
+  double longitude = 2;
+}
+
+message PageRank {
+  double rank = 1;
+}
+
+message MatchingPercentage {
+  double percentage = 1;
+}
+
+message KeywordList {
+  repeated string word = 1;
+} 
+
+message EditDistance {
+  int32 dist = 1;
+}
+
+message PlaceType {
+  enum LocationType {
+    CTY_AIRP = 0;
+    CTY_HPT = 1;
+    CTY_RSTN = 2;
+    CTY_BSTN = 3;
+    CTY_FERRY = 4;
+    CITY = 5;
+    AIRP = 6;
+    HPT = 7;
+    RSTN = 8;
+    BSTN = 9;
+    FERRY = 10;
+    OFF = 11;
+    UNKNOWN = 12;
+  }
+
+  LocationType type = 1;
+}
+
+message PlaceList {
+  repeated Place place = 1;
+}
+
+message Place {
+  IATACode tvl_code = 1;
+  ICAOCode icao_code = 2;
+  FAACode faa_code = 3;
+  UNLOCodeList unlocode_list = 4;
+  UICCodeList uiccode_list = 5;
+  bool is_geonames = 6;
+  GeonamesID geonames_id = 7;
+  EnvelopeID env_id = 8;
+  string name_utf = 9;
+  string name_ascii = 10;
+  GeoPoint coord = 11;
+  FeatureType feat_type = 12;
+  PageRank page_rank = 13;
+  Date date_from = 14;
+  Date date_end = 15;
+  Comment comment = 16;
+  CountryCode country_code = 17;
+  AltCountryCode alt_country_code = 18;
+  string country_name = 19;
+  CurrencyCode currency_code = 20;
+  ContinentCode continent_code = 21;
+  string continent_name = 22;
+  Admin1Code adm1_code = 23;
+  string adm1_name_utf = 24;
+  string adm1_name_ascii = 25;
+  Admin2Code adm2_code = 26;
+  string adm2_name_utf = 27;
+  string adm2_name_ascii = 28;
+  Admin3Code adm3_code = 29;
+  Admin4Code adm4_code = 30;
+  Population population = 31;
+  Elevation elevation = 32;
+  GTopo30 gtopo30 = 33;
+  TimeZone tz = 34;
+  TZOffSet gmt_offset = 35;
+  TZOffSet dst_offset = 36;
+  TZOffSet raw_offset = 37;
+  Date mod_date = 38;
+  CityList city_list = 39;
+  TravelRelatedList tvl_por_list = 40;
+  StateCode state_code = 41;
+  WorldAreaCode wac_code = 42;
+  string wac_name = 43;
+  PlaceType loc_type = 44;
+  WikiLinkList link_list = 45;
+  AltNameList alt_name_list = 46;
+  KeywordList original_keyword_list = 47;
+  KeywordList corrected_keyword_list = 48;
+  EditDistance edit_distance_actual = 49;
+  EditDistance edit_distance_allowable = 50;
+  MatchingPercentage matching_percentage = 51;
+  PlaceList extra_place_list = 52;
+  PlaceList alt_place_list = 53;
+}
+
+message UnknownKeywordList {
+  repeated string word = 1;
+}
+
+message ErrorMessage {
+  string msg = 1;
+}
+
+message QueryAnswer {
+  bool ok_status = 1;
+  ErrorMessage error_msg = 2;
+  PlaceList place_list = 3;
+  UnknownKeywordList unmatched_keyword_list = 4;
+}
