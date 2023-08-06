@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: hwrt
+Version: 0.2.0
+Summary: Handwriting Recognition Tools
+Home-page: https://github.com/MartinThoma/hwrt
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT
+Download-URL: https://github.com/MartinThoma/hwrt
+Description: [![Build Status](https://travis-ci.org/MartinThoma/hwrt.svg?branch=master)](https://travis-ci.org/MartinThoma/hwrt)
+        [![Coverage Status](https://img.shields.io/coveralls/MartinThoma/hwrt.svg)](https://coveralls.io/r/MartinThoma/hwrt?branch=master)
+        [![Documentation Status](http://img.shields.io/badge/docs-latest-brightgreen.svg)](http://pythonhosted.org/hwrt)
+        [![Code Health](https://landscape.io/github/MartinThoma/hwrt/master/landscape.svg)](https://landscape.io/github/MartinThoma/hwrt/master)
+        
+        
+        ## Handwriting Recognition Toolkit
+        
+        A toolkit for handwriting recognition (HWR). Especially on-line HWR. It
+        was developed for the bachelor's thesis of Martin Thoma.
+        
+        ### Version history
+        
+        * 0.1 First uploads
+        
+        ### Documentation
+        
+        The documentation is available at https://pythonhosted.org/hwrt
+        
+Keywords: HWRT,recognition,handwriting,on-line
+Platform: Linux
+Platform: MacOS X
+Platform: Windows
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >= 3.0
+Description-Content-Type: text/markdown
+Provides-Extra: visualization
+Provides-Extra: all
+Provides-Extra: tests
