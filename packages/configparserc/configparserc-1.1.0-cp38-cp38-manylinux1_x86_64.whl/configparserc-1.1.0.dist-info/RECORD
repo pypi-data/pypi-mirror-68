@@ -1,0 +1,9 @@
+configparserc/__init__.py,sha256=jYGzt5-1XANreIR9fBb2ynoftJBG7ss9q0nAfDO7DQQ,674
+configparserc/tools.cpython-38-x86_64-linux-gnu.so,sha256=DJF2wYkMPZZ790Od2XA59R1Kj86cnLAWXcxJBg2iskM,106120
+configparserc/config.cpython-38-x86_64-linux-gnu.so,sha256=viOXDjPwDnw6z6-dBYl01eSgXo_soENdboIajgKlg14,624984
+configparserc/config.pyi,sha256=A8DKdqjFHIhCVnWXu5k0cF5iRScYJw1dl8JVljSdDK4,2772
+configparserc/include/_config.h,sha256=6rN5q8xJD0kOmLhL9uf0tU-H4Np3f8WHFLugUn-Hq2Y,456
+configparserc-1.1.0.dist-info/RECORD,,
+configparserc-1.1.0.dist-info/WHEEL,sha256=VEyGcIFAmk_1KbI6gaZGw_mMiT-pdGweASQLX-DzYaY,108
+configparserc-1.1.0.dist-info/METADATA,sha256=26Qf_1qZw_lHlZxTIUZHZb91BO-z43OGn2VfQ_Yl32s,5115
+configparserc-1.1.0.dist-info/top_level.txt,sha256=HeCyLRRE7cKZLhO7wIqBXGIJIn9SNc45PEx_um2vlio,14
