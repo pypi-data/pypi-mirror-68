@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+readme.md
+requirements.txt
+setup.py
+shaclgen/__init__.py
+shaclgen/__main__.py
+shaclgen/constraint.py
+shaclgen/schema.py
+shaclgen/shaclgen.py
+shaclgen.egg-info/PKG-INFO
+shaclgen.egg-info/SOURCES.txt
+shaclgen.egg-info/dependency_links.txt
+shaclgen.egg-info/entry_points.txt
+shaclgen.egg-info/requires.txt
+shaclgen.egg-info/top_level.txt
+shaclgen/prefixes/namespaces.json
