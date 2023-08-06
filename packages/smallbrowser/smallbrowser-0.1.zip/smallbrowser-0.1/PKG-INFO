@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: smallbrowser
+Version: 0.1
+Summary: A small HTTP browser library in Python based on the 'requests' library
+Home-page: https://github.com/ivandustin/smallbrowser
+Author: Ivan Dustin B. Bilon
+Author-email: ivan22.dust@gmail.com
+License: gpl-3.0
+Description: UNKNOWN
+Keywords: http,browser,client,requests,web,scraping,small,simple,easy,beginners
+Platform: UNKNOWN
