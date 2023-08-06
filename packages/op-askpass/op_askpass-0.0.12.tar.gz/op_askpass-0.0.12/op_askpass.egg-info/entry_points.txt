@@ -1,0 +1,4 @@
+[console_scripts]
+op-askpass = op_askpass.cli.main:main
+op-askpass-get-password = op_askpass.cli.get_password:main
+

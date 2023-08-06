@@ -1,0 +1,11 @@
+click
+requests
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+pytest
+black
+wheel
+pytest-mockito
