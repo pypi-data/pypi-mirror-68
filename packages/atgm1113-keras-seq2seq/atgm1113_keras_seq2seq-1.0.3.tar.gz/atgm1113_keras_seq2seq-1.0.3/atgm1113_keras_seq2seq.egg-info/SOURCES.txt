@@ -1,0 +1,6 @@
+README.md
+setup.py
+atgm1113_keras_seq2seq.egg-info/PKG-INFO
+atgm1113_keras_seq2seq.egg-info/SOURCES.txt
+atgm1113_keras_seq2seq.egg-info/dependency_links.txt
+atgm1113_keras_seq2seq.egg-info/top_level.txt
