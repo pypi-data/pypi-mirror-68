@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jsondate3-aware
+Version: 0.1.0
+Summary: JSON with datetime support
+Home-page: https://github.com/freelawproject/jsondate3-aware
+Author: Rick Harris, Maciej nitZ Krol, Free Law Project
+Author-email: rconradharris@gmail.com, nitz@o2.pl, info@free.law
+License: BSD
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: six
+
+UNKNOWN
+
+
