@@ -1,0 +1,4 @@
+
+       [console_scripts]
+       consumer=consumers_core.cm:cm
+    
