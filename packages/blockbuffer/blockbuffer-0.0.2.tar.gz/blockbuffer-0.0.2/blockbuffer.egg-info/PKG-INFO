@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: blockbuffer
+Version: 0.0.2
+Summary: Buffer audio samples into fixed-sized blocks, with overlap
+Home-page: https://github.com/ideoforms/python-blockbuffer
+Author: Daniel Jones
+Author-email: dan-code@erase.net
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: buffer,data,dsp,audio
+Platform: UNKNOWN
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
