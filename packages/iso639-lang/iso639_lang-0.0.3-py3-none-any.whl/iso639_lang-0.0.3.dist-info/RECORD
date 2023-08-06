@@ -1,0 +1,10 @@
+iso639/__init__.py,sha256=NxR7t-cm2_vY5sz7VaPlCDYRnOFSF0LWCZI5CGn9vjY,44
+iso639/exceptions.py,sha256=2x6O9U2siVEovjUAgP6iIGT5rum5XDAqu196RsyJn3Y,362
+iso639/iso-639-3.tab,sha256=4rTLvdF5_OBJC4pYXbqTe9KyuVVe7qOn4HrT5BxD6B8,184451
+iso639/iso639.py,sha256=lYU_2DBZceaGVCHYo81qUWnm70_plRcNgk68zVqjaWQ,2387
+iso639/mapping.py,sha256=EVtPZ96bFiuVJlEBfCUQ6RSO-lbWLTfP-lP7vUyGFQs,1550
+iso639_lang-0.0.3.dist-info/LICENSE.txt,sha256=zjCxVsQVwKIp6OzuLFYpUWiKc63Piby6VN35aSSKjXc,1066
+iso639_lang-0.0.3.dist-info/METADATA,sha256=7YIITPeJ2vagV8g7F5NmQC8LJHdOL2KiRiwOiPHUTJM,1340
+iso639_lang-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+iso639_lang-0.0.3.dist-info/top_level.txt,sha256=phLVuJxujEeJhkT0hgTMQiSvs3UVIIwVHW4lbuJdCb0,7
+iso639_lang-0.0.3.dist-info/RECORD,,
