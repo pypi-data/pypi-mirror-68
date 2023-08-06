@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: periodo_reconciler
+Version: 0.1.18
+Summary:       Python wrapper around Open Refine reconciliation service
+      for PeriodO data
+Home-page: https://github.com/rdhyee/periodo-reconciler-py
+Author: Raymond Yee
+Author-email: raymond.yee@gmail.com
+License: Apache 2.0
+Description: Open Refine reconciliation service for PeriodO data
+Keywords: utilities
+Platform: UNKNOWN
+Provides-Extra: dev

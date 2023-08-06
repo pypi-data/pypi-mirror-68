@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/periodo-reconciler-py
+periodo_reconciler/__init__.py
+periodo_reconciler.egg-info/PKG-INFO
+periodo_reconciler.egg-info/SOURCES.txt
+periodo_reconciler.egg-info/dependency_links.txt
+periodo_reconciler.egg-info/entry_points.txt
+periodo_reconciler.egg-info/not-zip-safe
+periodo_reconciler.egg-info/requires.txt
+periodo_reconciler.egg-info/top_level.txt
