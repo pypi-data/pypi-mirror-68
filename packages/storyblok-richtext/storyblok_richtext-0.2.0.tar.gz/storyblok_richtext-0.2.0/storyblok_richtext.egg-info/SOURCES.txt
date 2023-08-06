@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+storyblok_richtext/__init__.py
+storyblok_richtext/html_schema.py
+storyblok_richtext/renderer.py
+storyblok_richtext/utils.py
+storyblok_richtext.egg-info/PKG-INFO
+storyblok_richtext.egg-info/SOURCES.txt
+storyblok_richtext.egg-info/dependency_links.txt
+storyblok_richtext.egg-info/top_level.txt
