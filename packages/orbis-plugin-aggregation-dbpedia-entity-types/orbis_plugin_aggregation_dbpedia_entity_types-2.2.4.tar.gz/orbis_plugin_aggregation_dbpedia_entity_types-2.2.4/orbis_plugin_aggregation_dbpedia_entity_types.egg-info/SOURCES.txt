@@ -1,0 +1,10 @@
+README.md
+setup.py
+orbis_plugin_aggregation_dbpedia_entity_types/__init__.py
+orbis_plugin_aggregation_dbpedia_entity_types/main.py
+orbis_plugin_aggregation_dbpedia_entity_types/regex_patterns.py
+orbis_plugin_aggregation_dbpedia_entity_types.egg-info/PKG-INFO
+orbis_plugin_aggregation_dbpedia_entity_types.egg-info/SOURCES.txt
+orbis_plugin_aggregation_dbpedia_entity_types.egg-info/dependency_links.txt
+orbis_plugin_aggregation_dbpedia_entity_types.egg-info/requires.txt
+orbis_plugin_aggregation_dbpedia_entity_types.egg-info/top_level.txt
