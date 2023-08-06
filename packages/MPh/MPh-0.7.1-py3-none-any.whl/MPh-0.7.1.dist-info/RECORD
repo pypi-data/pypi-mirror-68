@@ -1,0 +1,9 @@
+mph/__init__.py,sha256=3jBG3fcv4xpnvG_bOxtIrmSdrolApz1piH0SgT9jNJc,394
+mph/backend.py,sha256=ygCqQlYlVitU_PZNFwlrJbWn_DDttwJzMRhBJfPhhEk,12772
+mph/client.py,sha256=AHP8mnhhomayrA1zI5DB6zoluAGAptaQgPN__DWvRVM,7597
+mph/model.py,sha256=4tDsvoo67lLDPvsa9X1AVzTKor8Ma3mR4IS4YG9vHR8,21777
+mph/server.py,sha256=uzF4LesnE368ARpdekikDwfcNNpQlZWUBL4p-7WJoqc,5790
+MPh-0.7.1.dist-info/license.txt,sha256=NTbuW4CPu2i6gti7skvKgVdMUILszoUp7hILXUvwEUs,1093
+MPh-0.7.1.dist-info/WHEEL,sha256=GLESb-AiO9TFjbXrEA7UrNl4dwWlkXoKZg6N6Vg0OJg,81
+MPh-0.7.1.dist-info/METADATA,sha256=kHjQhxCt3arGLNBGQoOHolmpcgzfaoO3BD7RZo5TPts,2779
+MPh-0.7.1.dist-info/RECORD,,
