@@ -1,0 +1,20 @@
+setuptools
+
+[:python_version < "3.8"]
+importlib_metadata>=1.0
+
+[:sys_platform == "win32"]
+pywin32>=227
+
+[development]
+pre-commit>=2.3.0
+black==19.10b0
+flake8==3.7.9
+
+[docs]
+Sphinx==3.0.1
+sphinx-rtd-theme==0.4.3
+recommonmark==0.6.0
+
+[testing]
+pytest
