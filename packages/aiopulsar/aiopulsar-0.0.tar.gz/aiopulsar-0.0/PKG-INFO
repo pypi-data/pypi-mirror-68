@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aiopulsar
+Version: 0.0
+Summary: Async Python client for Apache Pulsar
+Home-page: UNKNOWN
+Author: Michele Lacchia
+Author-email: michelelacchia@gmail.com
+License: MIT
+Download-URL: https://pypi.python.org/aiopulsar/
+Description: # AioPulsar
+        
+        An asynchronous framework for [Apache Pulsar](https://pulsar.apache.org/).
+        
+Keywords: apache pulsar async message queue pub-sub
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown

@@ -1,0 +1,7 @@
+README.md
+setup.py
+aiopulsar.egg-info/PKG-INFO
+aiopulsar.egg-info/SOURCES.txt
+aiopulsar.egg-info/dependency_links.txt
+aiopulsar.egg-info/requires.txt
+aiopulsar.egg-info/top_level.txt
