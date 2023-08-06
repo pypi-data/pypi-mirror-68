@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ambient
+Version: 0.0.1a6
+Summary: A package for building engineering physics
+Home-page: UNKNOWN
+License: Apache License, Version 2
+Description: ambient
+        =======
+        
+        ambient is a building physics python library.
+        
+Keywords: building engineering physics,psychrometrics
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
