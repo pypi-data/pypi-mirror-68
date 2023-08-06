@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+py4tfidf/__init__.py
+py4tfidf/vectorizer.py
+py4tfidf.egg-info/PKG-INFO
+py4tfidf.egg-info/SOURCES.txt
+py4tfidf.egg-info/dependency_links.txt
+py4tfidf.egg-info/top_level.txt
