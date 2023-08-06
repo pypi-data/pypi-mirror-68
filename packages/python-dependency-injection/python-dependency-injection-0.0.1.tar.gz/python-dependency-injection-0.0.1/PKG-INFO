@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: python-dependency-injection
+Version: 0.0.1
+Summary: Python-dependency-injection is a simple yet powerful mini-framework for dependency injection in Python
+Home-page: https://github.com/emalka/python-dependency-injection
+Author: Eli Malka
+Author-email: eli.malka.mail@gmail.com
+License: MIT
+Description: # Python-dependency-injection
+        
+        Python-dependency-injection is a simple yet powerful mini-framework for dependency injection in Python
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Python-dependency-injection.
+        
+        ```bash
+        pip install Python-dependency-injection
+        ```
+        
+        ## Usage
+        
+        ```python
+        # this class will be injected
+        class InjectedClass:
+            def __init__(self):
+                self.message: str = ' from InjectedClass'
+        
+            def foo(self, str1: str) -> str:
+                return str1 + self.message
+        
+        
+        # class objects will be injected to
+        from dependency_injection.decorators.autowired import autowired
+        class TestSingletonInjection:
+            @autowired()
+            def __init__(self, my_name: str, injected_class: InjectedClass):
+                self.injected_class = injected_class
+                self.my_name = my_name
+        
+            def boo(self) -> str:
+                return self.injected_class.foo('hello TestClassSingleton')
+        
+        
+        # class objects will be injected to
+        from dependency_injection.decorators.autowired import autowired
+        from dependency_injection.decorators.autowired_enums import AutoWiredType
+        class TestSingleCallInjection:
+            @autowired(AutoWiredType.SINGLECALL)
+            def __init__(self, my_name: str, injected_class: InjectedClass):
+                self.injected_class = injected_class
+                self.my_name = my_name
+        
+            def boo(self) -> str:
+                return self.injected_class.foo('hello TestClassSinglecall')
+        
+        
+        
+        
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        Please make sure to update tests as appropriate.
+        
+        ##License 
+        [MIT](https://choosealicense.com/licenses/mit/)
+Keywords: python dependency injection
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
