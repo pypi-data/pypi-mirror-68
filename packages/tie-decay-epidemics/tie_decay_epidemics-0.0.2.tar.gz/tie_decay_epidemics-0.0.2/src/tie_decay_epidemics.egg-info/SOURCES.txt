@@ -1,0 +1,16 @@
+.editorconfig
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/tie_decay_epidemics/__init__.py
+src/tie_decay_epidemics/example.py
+src/tie_decay_epidemics/tie_decay_epidemics.py
+src/tie_decay_epidemics/utils.py
+src/tie_decay_epidemics.egg-info/PKG-INFO
+src/tie_decay_epidemics.egg-info/SOURCES.txt
+src/tie_decay_epidemics.egg-info/dependency_links.txt
+src/tie_decay_epidemics.egg-info/not-zip-safe
+src/tie_decay_epidemics.egg-info/requires.txt
+src/tie_decay_epidemics.egg-info/top_level.txt
