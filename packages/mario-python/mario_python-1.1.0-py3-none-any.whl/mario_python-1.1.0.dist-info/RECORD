@@ -1,0 +1,14 @@
+mario/__init__.py,sha256=Mgx3M0Q7Em1pFuvk1Nrjd-5NM5mzdc9lvgsYvI4rWPg,236
+mario/attrdict.py,sha256=eVmIO8VRGec_aZ1wvvJpYrso0xBe-O11XSKKaTipbW4,438
+mario/chaining.py,sha256=2JGU1zblqxzIwQ2B-ofJJJan2hgZzSMqJWmTuQS3750,903
+mario/funcs.py,sha256=mV4MqiNR0xze5hs2gPV75wyMe6YYKviLrvgt4GKME50,1915
+mario/pipeline.py,sha256=VGGmyep_8ghfUClBFF6YXnM_Z0CnFrMC7-PF9O9BgTQ,2805
+mario/registry.py,sha256=96DV9sPZ7zKMHFtkZ82oGaU4vFbgj2mjM1Kj9xP8H6o,1496
+mario/util.py,sha256=R2_8JSDKy2NcqywwoPAWjmqOS8KYW2AVe_3fxzDKZLg,118
+mario/sinks/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mario/sinks/base.py,sha256=HCV6nDJBT2GM23pkiRpKyqsmbwe1dJViieaVCqUwhw0,145
+mario/sinks/mongo.py,sha256=wX-ggit9dbhrt_sJufyuF-j-rzUbDxfpnoMVO8bfW6g,818
+mario_python-1.1.0.dist-info/METADATA,sha256=h4mee7a57o3_Na9a2Bj9Pm6CQ6-f8OuUf556lkcmsgo,347
+mario_python-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mario_python-1.1.0.dist-info/top_level.txt,sha256=npPHLup1NF_ifjKuue-G4otUbE8aElym78eU0vfIQkY,6
+mario_python-1.1.0.dist-info/RECORD,,

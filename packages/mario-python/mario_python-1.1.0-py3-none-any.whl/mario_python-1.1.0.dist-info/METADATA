@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mario-python
+Version: 1.1.0
+Summary: A configurable data pipeline library.
+Home-page: https://github.com/mitchelllisle/mario
+Author: Mitchell Lisle
+Author-email: m.lisle90@gmail.com
+License: UNKNOWN
+Keywords: mario
+Platform: UNKNOWN
+Provides-Extra: mongo
+Requires-Dist: pymongo (==3.10.1) ; extra == 'mongo'
+
+UNKNOWN
+
+
