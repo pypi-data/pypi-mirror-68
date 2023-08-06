@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: contractor-jwt-lib
+Version: 0.0.8
+Summary: Internal library for managing JWTs
+Home-page: https://github.com/pypa/sampleproject
+Author: Daniel Gellman
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.4.5.1)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: ecdsa (==0.15)
+Requires-Dist: idna (==2.9)
+Requires-Dist: okta-jwt (==1.3.5)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: python-jose (==3.1.0)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: rsa (==4.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: urllib3 (==1.25.9)
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
