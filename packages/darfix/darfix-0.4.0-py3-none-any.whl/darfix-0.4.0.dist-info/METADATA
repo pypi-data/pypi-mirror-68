@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: darfix
+Version: 0.4.0
+Summary: Computer vision software for the interpretation of diffracted images
+Home-page: https://gitlab.com/julia.garriga/darfix
+Author: data analysis unit
+Author-email: julia.garriga@esrf.fr
+License: MIT License
+Platform: linux
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy
+Requires-Dist: setuptools
+Requires-Dist: darfix
+
+darfix
+=========
+
+Darfix is a Python library to provide the id06 at the ESRF a series of computer vision techniques, together with a graphical user interface and an Orange3(https://github.com/biolab/orange3) add-on to define the workflow.
+
+Installation
+------------
+
+To install the last release run
+
+.. code-block:: bash
+
+    pip install darfix
+
+To install from sources:
+
+.. code-block:: bash
+
+    git clone https://gitlab.esrf.fr/julia.garriga/darfix.git
+    cd darfix
+    pip install -r requirements.txt
+    pip install .
+
+To test the orange workflow (only from sources) just run
+
+.. code-block:: bash
+
+    orange-canvas orangecontrib/tutorials/example_tutorial.ows
+
