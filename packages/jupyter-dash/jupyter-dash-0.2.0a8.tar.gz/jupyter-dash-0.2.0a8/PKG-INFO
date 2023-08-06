@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jupyter-dash
+Version: 0.2.0a8
+Summary: Dash support for the Jupyter notebook interface
+Home-page: https://github.com/plotly/jupyter-dash
+Author: Plotly
+License: MIT
+Project-URL: Github, https://github.com/plotly/jupyter-dash
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
