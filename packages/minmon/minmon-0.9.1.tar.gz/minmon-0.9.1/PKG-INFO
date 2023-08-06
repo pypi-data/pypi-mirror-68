@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: minmon
+Version: 0.9.1
+Summary: MINimum MONitor - display on stdout: mem, swap, cpu, temp, disk i/o and net i/o
+Home-page: None
+Author: Carlo Alessandro Verre
+Author-email: carlo.alessandro.verre@gmail.com
