@@ -1,0 +1,7 @@
+README.md
+setup.py
+OneWire/OneWire.py
+OneWire/onion_w1_sysfs.egg-info/PKG-INFO
+OneWire/onion_w1_sysfs.egg-info/SOURCES.txt
+OneWire/onion_w1_sysfs.egg-info/dependency_links.txt
+OneWire/onion_w1_sysfs.egg-info/top_level.txt
