@@ -1,0 +1,6 @@
+yaqd-core>=2020.05.1
+smbus
+
+[dev]
+black
+pre-commit

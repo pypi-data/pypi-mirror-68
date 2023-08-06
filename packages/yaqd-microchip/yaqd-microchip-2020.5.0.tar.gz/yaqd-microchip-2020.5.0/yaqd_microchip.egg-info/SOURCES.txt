@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+yaqd_microchip/__init__.py
+yaqd_microchip/__version__.py
+yaqd_microchip/_mcp3428.py
+yaqd_microchip/_mcp9600.py
+yaqd_microchip.egg-info/PKG-INFO
+yaqd_microchip.egg-info/SOURCES.txt
+yaqd_microchip.egg-info/dependency_links.txt
+yaqd_microchip.egg-info/entry_points.txt
+yaqd_microchip.egg-info/not-zip-safe
+yaqd_microchip.egg-info/requires.txt
+yaqd_microchip.egg-info/top_level.txt
