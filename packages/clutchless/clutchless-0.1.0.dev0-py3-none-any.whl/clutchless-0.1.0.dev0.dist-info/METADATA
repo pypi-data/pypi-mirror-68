@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: clutchless
+Version: 0.1.0.dev0
+Summary: A CLI tool for importing data into the Transmission BitTorrent client
+Author: mhadam
+Author-email: michael@hadam.us
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bencode.py (>=2.1.0,<3.0.0)
+Requires-Dist: colorama (>=0.4.3,<0.5.0)
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: texttable (>=1.6.2,<2.0.0)
+Requires-Dist: torrentool (>=1.0.2,<2.0.0)
+Requires-Dist: transmission-clutch (>=3.1.1,<4.0.0)
