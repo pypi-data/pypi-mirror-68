@@ -1,0 +1,8 @@
+pandas
+numpy>=1.16
+keras==2.3.1
+pandas-confusion==0.0.6
+pandas-ml==0.6.1
+tensorflow==2.0.1
+tensorflow-estimator==2.0.1
+setuptools>=41.0.0
