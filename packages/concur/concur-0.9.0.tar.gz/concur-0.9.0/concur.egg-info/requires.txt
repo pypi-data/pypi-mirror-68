@@ -1,0 +1,7 @@
+Pillow
+PyOpenGL
+concur-imgui>=1.3.3
+glfw
+imageio
+imageio-ffmpeg
+numpy
