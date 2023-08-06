@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: chromwindow
+Version: 1.1.4
+Summary: Utilities for working with windows on a chromosome.
+Home-page: https://github.com/kaspermunch/chromwindow
+Author: Kasper Munch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

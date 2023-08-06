@@ -1,0 +1,9 @@
+README.md
+setup.py
+chromwindow/__init__.py
+chromwindow/chrom_sizes.py
+chromwindow.egg-info/PKG-INFO
+chromwindow.egg-info/SOURCES.txt
+chromwindow.egg-info/dependency_links.txt
+chromwindow.egg-info/requires.txt
+chromwindow.egg-info/top_level.txt
