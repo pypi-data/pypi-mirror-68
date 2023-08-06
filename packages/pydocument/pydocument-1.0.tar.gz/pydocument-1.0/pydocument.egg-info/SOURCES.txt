@@ -1,0 +1,8 @@
+README.md
+setup.py
+pydocument/__init__.py
+pydocument/document.py
+pydocument.egg-info/PKG-INFO
+pydocument.egg-info/SOURCES.txt
+pydocument.egg-info/dependency_links.txt
+pydocument.egg-info/top_level.txt

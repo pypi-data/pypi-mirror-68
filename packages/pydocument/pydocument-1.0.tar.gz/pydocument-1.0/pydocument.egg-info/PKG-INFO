@@ -1,0 +1,346 @@
+Metadata-Version: 2.1
+Name: pydocument
+Version: 1.0
+Summary: Easy way to make documents with gui (tkinter)
+Home-page: UNKNOWN
+Author: Jack Murrow
+Author-email: jack.murrow122005@gmail.com
+License: UNLICENSED
+Description: # PyDocument
+        
+        Easy way to make a document with gui (tkinter)
+        
+        ## Installing
+        
+        Here is a simple way to install:
+        ```
+        pip install pydocument
+        ```
+        
+        Here is a simple way to upgrade the package to the newest version:
+        ```
+        pip install pydocument --upgrade
+        ```
+        
+        ## Example
+        
+        ```python
+        from pydocument import Document, ARIALBOLD
+        
+        document = Document(1000, 900, "Hello World")
+        
+        document.add_text("Hello World", ARIALBOLD)
+        document.add_space()  # document.add_newline() also works
+        
+        document.add_text("""
+        Hello world.. With PyDocument here, we can make such great documents..
+        PyDocument is so simple, and so small.. It's really easy to make documents
+        using PyDocument. It's really fun as well!
+        """)
+        
+        document.start()
+        ```
+        
+        ## Documentation
+        
+        * Classes
+          * Document
+        ***
+        ## Document
+        
+        ### Object
+        
+        Creates new Document object
+        
+        **Note:** All arguments are optional, so for example, the width will always be 200 unless you change it.
+        
+        **Parameters**
+        
+        * width (Integer) = 200
+        * height (Integer) = 200
+        * title (String) = "pydocument"
+        * bg (String) = "white"
+        
+        **Returns**
+        
+        * Object
+        
+        **Example**
+        
+        ```python
+        Document(500, 500, "Hello Title", "gray")
+        ```
+        
+        **Example on changing specific argument**
+        
+        ```python
+        Document(height=500, bg="gray")
+        ```
+        
+        ### Properties
+        
+        * app (Tkinter) - The document / window you created.
+        * width (Integer) - The current width of the document / window.
+        * height (Integer) - The current height of the document / window.
+        * bg (String) - The background color of the document / window.
+        
+        ### Methods
+        
+        * start
+        * set_title
+        * disable_maximize
+        * enable_maximize
+        * change_width
+        * change_height
+        * change_size
+        * add_text
+        * add_arial_text
+        * add_arial_bold_text
+        * add_space / add_newline
+        
+        ### start
+        
+        Starts the application / document (mainloop of tkinter)
+        
+        **Parameters**
+        
+        None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .start()
+        ```
+        
+        ### set_title
+        
+        Sets the title of the application / document
+        
+        **Parameters**
+        
+        * title (String)
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .set_title("Hello Title")
+        ```
+        
+        ### disable_maximize
+        
+        Disables the user from maximizing the window
+        
+        **Parameters**
+        
+        None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .disable_maximize()
+        ```
+        
+        ### enable_maximize
+        
+        Enables the user from maximizing the window
+        
+        **Parameters**
+        
+        None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .enable_maximize()
+        ```
+        
+        ### change_width
+        
+        Changes the width of the window
+        
+        **Parameters**
+        
+        * width (Integer)
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .change_width(500)
+        ```
+        
+        ### change_height
+        
+        Changes the height of the window
+        
+        **Parameters**
+        
+        * height (Integer)
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .change_height(500)
+        ```
+        
+        ### change_size
+        
+        Changes the size of the window
+        
+        **Parameters**
+        
+        * width (Integer)
+        * height (Integer)
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .change_size(500, 500)
+        ```
+        
+        ### add_text
+        
+        Adds text to the application / document
+        
+        **Note:** Arguments 'font', 'font_size', and 'bg' are optional
+        
+        **Parameters**
+        
+        * text (String)
+        * font (String) = "Arial"
+        * font_size (Integer) = 20
+        * bg (String) = None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .add_text("Hello Text", "Arial Bold", 25, "gray")
+        ```
+        
+        **Example on changing specific argument**
+        
+        ```python
+        .add_text("Hello Text", font_size=15)
+        ```
+        
+        ### add_arial_text
+        
+        Adds arial font text to the application / document
+        
+        **Note:** Arguments 'font_size' and 'bg' are optional
+        
+        **Parameters**
+        
+        * text (String)
+        * font_size (Integer) = 20
+        * bg (String) = None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .add_arial_text("Hello Text", 25, "gray")
+        ```
+        
+        **Example on changing specific argument**
+        
+        ```python
+        .add_arial_text("Hello Text", bg="gray")
+        ```
+        
+        ### add_arial_bold_text
+        
+        Adds arial bold font text to the application / document
+        
+        **Note:** Arguments 'font_size' and 'bg' are optional
+        
+        **Parameters**
+        
+        * text (String)
+        * font_size (Integer) = 20
+        * bg (String) = None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .add_arial_bold_text("Hello Text", 25, "gray")
+        ```
+        
+        **Example on changing specific argument**
+        
+        ```python
+        .add_arial_bold_text("Hello Text", bg="gray")
+        ```
+        
+        ### add_space
+        
+        Adds a space to the application / document
+        
+        **Note:** Arguments 'spaces' and 'bg' are optional
+        
+        **Parameters**
+        
+        * spaces (Integer) = 1
+        * bg (String) = None
+        
+        **Returns**
+        
+        None
+        
+        **Example**
+        
+        ```python
+        .add_space(3, "gray")
+        ```
+        
+        **Example on changing specific argument**
+        
+        ```python
+        .add_space(bg="gray")
+        ```
+        
+        ### add_newline
+        
+        Same thing as `add_space`.
+Keywords: PyDocument,Python Document,Document
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
