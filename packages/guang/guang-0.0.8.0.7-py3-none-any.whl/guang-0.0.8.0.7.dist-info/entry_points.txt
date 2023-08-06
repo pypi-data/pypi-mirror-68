@@ -1,0 +1,3 @@
+[console_scripts]
+guang = guang.guang:main
+
