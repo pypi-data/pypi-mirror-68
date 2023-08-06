@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cgc
+Version: 1.4.0
+Summary: Card Games Converters. A utility to convert images of cards into a printable format.
+Home-page: https://github.com/ekultails/card_games_converter
+Author: Luke Short
+Author-email: ekultails@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: Pillow
+
+UNKNOWN
+
+
