@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: upb
+Version: 0.0.3
+Summary: Library for interacting with UPB Devices.
+Home-page: https://github.com/jameshilliard/upb
+Author: James Hilliard
+Author-email: james.hilliard1@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
