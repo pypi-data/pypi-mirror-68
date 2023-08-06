@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyvotal5
+Version: 0.0.2
+Summary: lib for easy access to pivotal tracker's APIv5
+Home-page: https://github.com/jjabba/pyvotal
+Author: Karl Berggren
+Author-email: kalle@jjabba.com
+License: UNKNOWN
+Description: # Pyvotal
+        Python 3 lib for easy access to pivotal tracker's APIv5
+        
+        ### Installation
+        Install using pip
+        
+             python3 -m pip install pyvotal5
+        
+        ### Example
+        List all epics in all projects
+        
+             from pyvotal5.pyvotal import set_token, Project
+             set_token('yOuRsEcReTtOk3n')
+             for p in Project.fetch_all():
+                  for e in p.epics():
+                      print(e.name)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
