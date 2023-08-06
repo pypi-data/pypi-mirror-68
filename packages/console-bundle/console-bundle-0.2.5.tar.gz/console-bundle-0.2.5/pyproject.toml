@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "console-bundle"
+version = "0.2.5"
+description = "Console Bundle for the Pyfony Framework"
+readme = "README.md"
+repository = "https://github.com/pyfony/console-bundle"
+
+license = "MIT"
+
+authors = [
+    "Jiri Koutny <jiri.koutny@datasentics.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml"]
+
+packages = [
+    { include = "consolebundle", from = "src" },
+]
+
+[tool.poetry.scripts]
+"console" = "consolebundle.CommandRunner:runCommand"
+
+[tool.poetry.dependencies]
+python = "~3.7.3"
+colorlog = "4.0.*"
+pyfony-bundles = "0.2.*"
+python-dotenv = "^0.13.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "2.4.*"
+pytest = "5.2.*"
+pyfony = "^0.4.1"
