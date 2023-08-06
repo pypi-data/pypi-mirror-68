@@ -1,0 +1,6 @@
+tornado>=4.3
+six
+pillow
+logzero
+uiautomator2>=2.8.2
+facebook-wda>=0.7.7
