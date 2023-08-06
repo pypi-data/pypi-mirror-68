@@ -1,0 +1,11 @@
+README.md
+setup.py
+itembed/__init__.py
+itembed/optimization.py
+itembed/task.py
+itembed/util.py
+itembed.egg-info/PKG-INFO
+itembed.egg-info/SOURCES.txt
+itembed.egg-info/dependency_links.txt
+itembed.egg-info/requires.txt
+itembed.egg-info/top_level.txt
