@@ -1,0 +1,9 @@
+recursive-include matador/config *
+recursive-include docs *
+recursive-include matador/tests/data *
+recursive-include matador/data *
+include README.rst
+include CHANGELOG.rst
+include INSTALL.rst
+include LICENSE
+include contributors.txt
