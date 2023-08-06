@@ -1,0 +1,7 @@
+README.md
+setup.py
+prometheus_python.egg-info/PKG-INFO
+prometheus_python.egg-info/SOURCES.txt
+prometheus_python.egg-info/dependency_links.txt
+prometheus_python.egg-info/requires.txt
+prometheus_python.egg-info/top_level.txt
