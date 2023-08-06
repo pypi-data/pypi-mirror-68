@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: hg-git
+Version: 0.9.0a1
+Summary: push to and pull from a Git repository using Mercurial
+Home-page: https://hg-git.github.io/
+Author: The hg-git Authors
+Maintainer: Kevin Bullock
+Maintainer-email: kbullock+mercurial@ringworld.org
+License: GPLv2
+Description: This extension lets you communicate (push and pull) with a Git server.
+        This way you can use Git hosting for your project or collaborate with a
+        project that is in Git.  A bridger of worlds, this plugin be.
+Keywords: hg git mercurial
+Platform: UNKNOWN
