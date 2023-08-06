@@ -1,0 +1,9 @@
+dfx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dfx/datasets.py,sha256=dybp6vD7XrGDnPafpLdOQptvxnGoYiDnfzD6Ore_M34,3816
+dfx/grain.py,sha256=TWdUOQ03XadQgYNx6fGqNoB74Vukqc9lvjF4TljzpWo,19927
+dfx/ops.py,sha256=bSFerNG8lTzvQsOFd_UbGjVwHlKmMVUre-QTK5W572s,20194
+dfx-0.0.1.dist-info/LICENSE,sha256=MV8zR8RdpJIhGgG9heCZNI_uyTEYb_14eJCMsP5lNVY,1060
+dfx-0.0.1.dist-info/METADATA,sha256=axNsvVIiNdjNEHmlzlApZHCMP9ri1TPvHDkrf6PQ2VA,451
+dfx-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dfx-0.0.1.dist-info/top_level.txt,sha256=UrzvLaO3_Baawyodpq_ZfVMb612ZXkMnMr9IJlwflpA,4
+dfx-0.0.1.dist-info/RECORD,,
