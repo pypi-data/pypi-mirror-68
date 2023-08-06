@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: interfacer
+Version: 0.0.1
+Summary: Pacote para facilitar a utilização do descdist em Python
+Home-page: UNKNOWN
+Author: Felipe Carlos
+Author-email: felipe.carlos@inpe.br
+License: UNKNOWN
+Description: # interfacer-descdist
+        
+        Pacote para facilitar a utilização do descdist em Python
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
