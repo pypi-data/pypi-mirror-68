@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: Tbqc
+Version: 0.0.3
+Summary: Taiwan Bartender Quizdata Crawler
+Home-page: https://github.com/dapingtai/Tw-Bartender-Quizdata-crawler/
+Author: HungChang
+Author-email: zero100x@gmail.com
+License: BSD-5
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
