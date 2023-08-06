@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: iqsms-rest
+Version: 0.0.2
+Summary: Модуль для работы с REST API смс-шлюза iqsms.ru (СМС Дисконт)
+Home-page: https://github.com/fgbm/iqsms-rest-python
+Author: Chmelyuk Vladislav
+Author-email: neimp@yandex.ru
+License: UNKNOWN
+Description: # IQSMS REST Gate
+        
+        Модуль для работы с REST API смс-шлюза [iqsms.ru](https://iqsms.ru/) (СМС Дисконт)
+        
+        ## Установка
+        
+        ```bash
+        pip install iqsms-rest
+        ```
+        
+        ## Использование
+        
+        Для начала использования необходимо инициализировать шлюз при помощи логина и пароля к личному кабинету:
+        ```python
+        from iqsms import Gate
+        
+        gate = Gate('login', 'password')
+        ```
+        
+        ### Отправка сообщений
+        
+        ```python
+        gate.send_message('79990001122', 'Hello, World!')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
