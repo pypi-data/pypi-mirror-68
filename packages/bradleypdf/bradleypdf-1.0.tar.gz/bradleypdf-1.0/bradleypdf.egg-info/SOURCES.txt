@@ -1,0 +1,10 @@
+README.md
+setup.py
+bradleypdf/__init__.py
+bradleypdf/app.py
+bradleypdf/pdf2image.py
+bradleypdf/pdf2text.py
+bradleypdf.egg-info/PKG-INFO
+bradleypdf.egg-info/SOURCES.txt
+bradleypdf.egg-info/dependency_links.txt
+bradleypdf.egg-info/top_level.txt
