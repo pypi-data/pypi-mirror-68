@@ -1,0 +1,28 @@
+name: py_tools_ds
+
+channels: &id1
+  - http://conda.anaconda.org/conda-forge
+
+dependencies:
+  - python=3.*.*
+  - pip  # avoids that conda uses the wrong pip
+  - numpy
+  - gdal
+  - conda-forge::libgdal  # force to use conda-forge for libgdal to avoid package version incompatiblies due to mixed channels (libkea.so.1.4.7: cannot open shared object file: No such file or directory)
+  # - kealib    # fix for libkea.so.1.4.7: cannot open shared object file: No such file or directory (not needed as long as libgdal and gdal are conda-forge packages)
+  - pyproj
+  - scikit-image
+  - geopandas
+  - pip:
+    - sphinx-argparse
+    - six
+    - spectral
+    - flake8
+    - pycodestyle
+    - pylint
+    - pydocstyle
+    - nose
+    - nose2
+    - nose-htmloutput
+    - coverage
+    - rednose
