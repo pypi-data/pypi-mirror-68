@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.cfg
+setup.py
+docs/.DS_Store
+docs/Makefile
+docs/README.rst
+docs/conf.py
+docs/documentation.rst
+docs/index.rst
+docs/make.bat
+docs/requirements.txt
+pynetworks/__init__.py
+pynetworks/core.py
+pynetworks.egg-info/PKG-INFO
+pynetworks.egg-info/SOURCES.txt
+pynetworks.egg-info/dependency_links.txt
+pynetworks.egg-info/top_level.txt
