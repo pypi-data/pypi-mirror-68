@@ -1,0 +1,6 @@
+compare-locales<8.1,>=7.6
+fluent.syntax<0.18,>=0.17.0
+six
+
+[hg]
+python-hglib
