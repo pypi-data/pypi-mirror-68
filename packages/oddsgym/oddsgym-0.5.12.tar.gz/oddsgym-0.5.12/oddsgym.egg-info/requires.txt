@@ -1,0 +1,13 @@
+gym
+more-itertools
+pandas
+
+[examples]
+jupyter
+notebook
+stable-baselines
+
+[tests]
+pytest
+pytest-cov
+coveralls
