@@ -1,0 +1,8 @@
+cement==3.0.4
+jinja2
+pyyaml
+colorlog
+colored
+pyfiglet
+python-dotenv
+influxdb
