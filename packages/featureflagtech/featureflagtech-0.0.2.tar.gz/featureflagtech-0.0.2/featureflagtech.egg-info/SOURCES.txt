@@ -1,0 +1,8 @@
+README.md
+setup.py
+featureflagtech/__init__.py
+featureflagtech/main.py
+featureflagtech.egg-info/PKG-INFO
+featureflagtech.egg-info/SOURCES.txt
+featureflagtech.egg-info/dependency_links.txt
+featureflagtech.egg-info/top_level.txt
