@@ -1,0 +1,10 @@
+elasticsearch<=7.6.0
+requests>=2.23.0
+PyMySQL>=0.9.3
+python_dateutil>=2.8.1
+redis>=3.4.1
+pycryptodome>=3.9.7
+tornado==6.0.4
+bleach>=3.1.5
+pycket>=0.3.0
+ufile>=3.2.2
