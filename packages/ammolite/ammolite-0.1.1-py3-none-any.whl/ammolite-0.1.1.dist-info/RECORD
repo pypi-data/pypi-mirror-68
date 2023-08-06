@@ -1,0 +1,9 @@
+biotite2pymol/__init__.py,sha256=KrvbIwOuK8ZYfq1qmMw8z8ZeyFDu--A_OwgsCgtVLz0,385
+biotite2pymol/display.py,sha256=zqD7sDt8Igv_ycRp2Lin9yaabByzWQo9r2QMC_CRfTA,2410
+biotite2pymol/model.py,sha256=ItqyDlyppNBmMbeaIDaQEZGJI0ffbz3_PUHfDJBA8l0,8291
+biotite2pymol/selection.py,sha256=p8i37teYj1QJrhmhu0mDbqpt2_zw0PkKWQ-br0Rs_uY,2042
+biotite2pymol/startup.py,sha256=KfUGQmplgXcFOJYorsTriIKbuDj77sFlaJaUBVDojwg,1261
+ammolite-0.1.1.dist-info/LICENSE,sha256=Ziwm-V0CAgOgtuUQalrbCuRemrq62EvuKU2JbkIsp3c,1656
+ammolite-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+ammolite-0.1.1.dist-info/METADATA,sha256=mjs2uRynxjdrCSRIlVKqkqxAnhVl3z0I1MXr3kpD25o,2201
+ammolite-0.1.1.dist-info/RECORD,,
