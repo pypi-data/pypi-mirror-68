@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: perm-montecarlo
+Version: 0.1.1
+Summary: PERM: Prune and Enrichment Rosenbluth Method for self-avoiding walks
+Home-page: https://github.com/phcerdan/perm-montecarlo
+Author: Pablo Hernandez-Cerdan
+Author-email: pablo.hernandez.cerdan@outlook.com
+License: MPL2
+Download-URL: https://github.com/phcerdan/perm-montecarlo
+Keywords: PERM montecarlo SAW polymer simulation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C++
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+
+perm_montecarlo is an open-source, cross-platform c++ library performing montecarlo simulations of self-avoiding walks.
+Includes rosenbluth sampling, and PERM (Prune and Enriched Rosenbluth Method. It allows to control the amount of nearest neighbors, in 2D and 3D.
+
