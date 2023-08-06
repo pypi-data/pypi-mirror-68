@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: cdk8s-redis
+Version: 0.0.0
+Summary: redis constructs for cdk8s
+Home-page: https://github.com/eladb/cdk8s-redis.git
+Author: Elad Ben-Israel<benisrae@amazon.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/eladb/cdk8s-redis.git
+Description: # cdk8s-redis
+        
+        > Redis constructs for cdk8s
+        
+        Basic implementation of a Redis construct for cdk8s. Contributions are welcome!
+        
+        ## Usage
+        
+        The following will define a Redis cluster with a master and 2 slave replicas:
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        from cdk8s_redis import Redis
+        
+        # inside your chart:
+        redis = Redis(self, "my-redis")
+        ```
+        
+        DNS names can be obtained from `redis.masterHost` and `redis.slaveHost`.
+        
+        You can specify how many slave replicas to define:
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        Redis(self, "my-redis",
+            slave_replicas=4
+        )
+        ```
+        
+        Or, you can specify no slave:
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        Redis(self, "my-redis",
+            slave_replicas=0
+        )
+        ```
+        
+        ## License
+        
+        Distributed under the [Apache 2.0](./LICENSE) license.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Typing :: Typed
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
