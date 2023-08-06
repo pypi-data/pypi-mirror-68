@@ -1,0 +1,10 @@
+udnd_probability/Basedistribution.py,sha256=Jbs8PYHA_UZjAX_DI6FB38V0gPxSJNRemF--A4xP2PM,932
+udnd_probability/Binomialdistribution.py,sha256=zrKUHFX0dOa3TMOYJbKJrvX663QgVJlP3kpx3mx860U,4675
+udnd_probability/Gaussiandistribution.py,sha256=2Kj8FKq9_luAXVV65Clc-zu-GlOAa6kd9_CshEuuEec,3628
+udnd_probability/__init__.py,sha256=0x5xInZkmBodPUmHVJ-Ug_j_t0JugOzUY8RQ7aUbZ44,86
+udnd_probability-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+udnd_probability-0.1.dist-info/METADATA,sha256=se-HS24PQvWOiVhwIXOWq8pPTvEqB3F4zBZPR4bXDwo,240
+udnd_probability-0.1.dist-info/RECORD,,
+udnd_probability-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+udnd_probability-0.1.dist-info/metadata.json,sha256=vngZQd-85Py_mW6Y0ZllAf1z-RP7qrC4Lyxeoodqezs,289
+udnd_probability-0.1.dist-info/top_level.txt,sha256=f1gIpk7GPKOfGbHIJ5KNxFYrcZGkPh3z7eiWEPsHFic,17
