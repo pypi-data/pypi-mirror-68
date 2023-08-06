@@ -1,0 +1,12 @@
+biobb_structure_checking/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+biobb_structure_checking/check_structure.py,sha256=XTPm0pBdgpZCCwU0blf3D0QmU5n0CQ5vb-R526Kvr1s,1465
+biobb_structure_checking/constants.py,sha256=9oC1QDYETA30gGhpMZIN4-hpnmNUfSbmDCWUDjNVkic,14412
+biobb_structure_checking/json_writer.py,sha256=fv9yVQmohrv53kN9PAGP-g_o9GJO_4Mejc7lqjbB124,766
+biobb_structure_checking/param_input.py,sha256=6paG5TgLj-nOHmfBDuKSN5vLpH3ZCB9Ew6lTBJDSXGE,8281
+biobb_structure_checking/structure_checking.py,sha256=gVAjZrCjMqVsby9svzEVqp8W2oiOZw6QLeqhQYkLdOg,64483
+biobb_structure_checking/dat/all_amino03.in,sha256=gmKsM818eXMhPNqjt_N4QbU44pkr0HLmrSKW-gpiPLw,51705
+biobb_structure_checking/dat/data_lib.json,sha256=mNo0NiMzrBYuqlbF6DipDNQjrhnMLCSNATe7tC6pSfg,87907
+biobb_structure_checking-3.0.0.dist-info/METADATA,sha256=TT04CmepgVanfV3ZdCvtpxsD_QNrd4Cc7Hjfsk9m21A,6792
+biobb_structure_checking-3.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+biobb_structure_checking-3.0.0.dist-info/top_level.txt,sha256=t-7FLKTQ5MSHaRn9wQ7l4a9YcDNDQjd2tE_wDnfjRcM,25
+biobb_structure_checking-3.0.0.dist-info/RECORD,,
