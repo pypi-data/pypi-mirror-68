@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: IronDomo
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Matteo Ferrabone
+Author-email: matteo.ferrabone@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/desmoteo/IronDomo/releases/tag/1.0.1
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: zmq
