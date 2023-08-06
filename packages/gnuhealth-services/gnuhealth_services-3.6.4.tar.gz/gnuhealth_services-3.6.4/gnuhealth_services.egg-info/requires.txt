@@ -1,0 +1,2 @@
+gnuhealth==3.6.4
+trytond_account_invoice<5.1,>=5.0
