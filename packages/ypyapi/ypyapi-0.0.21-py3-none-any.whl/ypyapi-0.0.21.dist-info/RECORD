@@ -1,0 +1,8 @@
+ypyapi/__init__.py,sha256=YTZgeKP7lu9_2DlHaXabSZ4Nm21ko1zOLpEn5xKufy0,236
+ypyapi/chrome_api.py,sha256=7ADwdQkRtxLlCSDz9wkyLBQOSPEAmmm9fzux7JWUNrs,12933
+ypyapi/thread_api.py,sha256=tqhTMvqV6czwvVNw9UVUsfDRCREktGonQoy4pMJtfOI,1045
+ypyapi-0.0.21.dist-info/LICENSE,sha256=VxqtjPcPjjdhAmrLealZz2BAzMANaG6-Hk90vUaE8Hs,1137
+ypyapi-0.0.21.dist-info/METADATA,sha256=0IE3dS89m1gmAzMRPgvNZRv0ExvQedH1huK4TAyZeSc,574
+ypyapi-0.0.21.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ypyapi-0.0.21.dist-info/top_level.txt,sha256=3h_5Tsp5Bkg0iHeFKTAn0jAzk8uYkDh1eal6oL_4cUU,7
+ypyapi-0.0.21.dist-info/RECORD,,
