@@ -1,0 +1,15 @@
+classeval
+wget
+d3graph
+matplotlib
+numpy
+pandas
+statsmodels
+networkx
+community
+python-louvain
+tqdm
+sklearn
+ismember
+imagesc
+df2onehot
