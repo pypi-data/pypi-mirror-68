@@ -1,0 +1,13 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/providers/aws.py,sha256=g8NCul4dNuCZ9CLOG2MSem8_GVfUqdaAztoka27nPXM,245
+src/core/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/services/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/core/services/aws/ec2.py,sha256=ya2CEETLNXVkpcxLNYtZsm9qoSdIEtDUuq6Pa8gDz-M,2721
+CostReduce-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+CostReduce-0.0.1.dist-info/METADATA,sha256=H45lYqMwNhDPIlo_WrWoAhPm_F28w4OsSkoq4EV6FtU,283
+CostReduce-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+CostReduce-0.0.1.dist-info/entry_points.txt,sha256=k-Ijyfa8F5S45xGIHV1n_iBLpUHEPCyiOO6PNYCsG8Q,75
+CostReduce-0.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+CostReduce-0.0.1.dist-info/RECORD,,
