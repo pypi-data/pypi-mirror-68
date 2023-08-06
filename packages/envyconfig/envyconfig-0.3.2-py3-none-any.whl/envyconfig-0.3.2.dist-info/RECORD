@@ -1,0 +1,10 @@
+envyconfig/__init__.py,sha256=hrlNEuPMfgEj4ja-_8H2DPtS221bjNJX9Civqwp778U,29
+envyconfig/envyconfig.py,sha256=CbNCe4htKZo0j-EfF9yW28WRXHzjaHU1K9GbxrsJkL0,2239
+envyconfig/methods.py,sha256=CGop4YLNcFO7-BRgkO0R4DneEQ1NbqUycz05C6PrCms,1365
+envyconfig/exceptions/UnsupportedInterpolationError.py,sha256=9UoHkceD76HpJRPUKKkd35RoH3nvDP0ANda2UKOXB28,57
+envyconfig/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envyconfig-0.3.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+envyconfig-0.3.2.dist-info/METADATA,sha256=RBdrm41gGkpSZY_6uys65gVYC5zgwbjA2bsvZQ900ts,1518
+envyconfig-0.3.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+envyconfig-0.3.2.dist-info/top_level.txt,sha256=ZTPnfeG305DVWnJh8UWFnEBDV-X6BmLj6oKEsePjVe4,11
+envyconfig-0.3.2.dist-info/RECORD,,
