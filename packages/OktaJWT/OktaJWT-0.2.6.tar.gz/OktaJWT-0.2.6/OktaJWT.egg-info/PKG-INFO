@@ -1,0 +1,152 @@
+Metadata-Version: 2.1
+Name: OktaJWT
+Version: 0.2.6
+Summary: A subset of RFC 7519 for working with JWTs minted by Okta API Access Management.
+Home-page: https://github.com/mdwallick/okta-jwt
+Author: Mike Wallick
+Author-email: mike@wallick.net
+License: GPLv3
+Description: 
+        # oktajwt
+        
+        This is a simple JWT package built to work specifically with Okta's API Access Management product (API AM). It was inspried in part by [jpadilla's PyJWT package](https://github.com/jpadilla/pyjwt). This is not meant to be a full implementation of [RFC 7519](https://tools.ietf.org/html/rfc7519), but rather a subset of JWT operations specific to working with Okta.
+        
+        ## Requirements
+        * Python >= 3.7
+        
+        ## Installing
+        Install with **pip**:
+        ```
+        $ pip install OktaJWT
+        ```
+        
+        ## Usage
+        This package is very simple; there are two functions, `is_token_valid()` and `decode()`.
+        
+        ```python
+        from oktajwt import *
+        
+        issuer = "your OAuth issuer"
+        client_id = "OIDC client ID"
+        client_secret = "OIDC client secret or None if using PKCE"
+        expected_audience = "expected audience"
+        access_token = "your base64 encoded JWT, pulled out of the HTTP Authorization header bearer token"
+        
+        jwtVerifier = JwtVerifier(issuer, client_id, client_secret)
+        
+        # just check to see if the token is valid or not
+        is_valid = jwtVerifier.is_token_valid(access_token, expected_audience)
+        
+        # validate the token and get claims as a JSON dict
+        claims = jwtVerifier.decode(access_token, expected_audience)
+        ```
+        
+        This module also has a basic command line interface:
+        ```
+        usage:
+            Decodes and verifies JWTs from an Okta authorization server.
+        
+            oktajwt [options] <JWT>
+        
+        
+        positional arguments:
+          JWT                   The base64 encoded JWT to decode and verify
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          --version             show program's version number and exit
+          --verbosity {0,1,2}   increase output verbosity
+          -i ISSUER, --issuer ISSUER
+                                The expected issuer of the token
+          -a AUDIENCE, --audience AUDIENCE
+                                The expected audience of the token
+          -c CLIENT_ID, --client_id CLIENT_ID
+                                The OIDC client ID
+          -s CLIENT_SECRET, --client_secret CLIENT_SECRET
+                                The OIDC client secret (not required if using PKCE)
+          --claims              Show verified claims in addition to validating the JWT
+        ```
+        
+        However, it's much more likely that this package will be used inside something like Flask API server, so the
+        usage would look something more like this.
+        
+        ```python
+        import json
+        import request
+        from oktajwt import *
+        
+        def get_access_token():
+            access_token = None
+            authorization_header = request.headers.get("authorization")
+            print("Authorization header {0}".format(authorization_header))
+        
+            if authorization_header != None:
+                header = "Bearer"
+                bearer, access_token = authorization_header.split(" ")
+                if bearer != header:
+                    abort(401)
+        
+            return access_token
+        
+        @app.route("/api/v1/token_test", methods=["GET"])
+        def token_test():
+            """ a simple route to show token validation """
+            logger.debug("token_test()")
+            access_token = get_access_token()
+            issuer = os.getenv("ISSUER")
+            client_id = os.getenv("CLIENT_ID")
+            client_secret = os.getenv("CLIENT_SECRET")
+            audience = os.getenv("AUDIENCE")
+        
+            try:
+                jwtVerifier = JwtVerifier(issuer, client_id, client_secret)
+                claims = jwtVerifier.decode(access_token, audience)
+                return jsonify(claims)
+            except (ExpiredTokenError, InvalidSignatureError, KeyNotFoundError, 
+                    InvalidKeyError, Exception) as e:
+                # something is wrong with the token
+                # expired, bad signature, etc.
+                logger.debug("Exception in token_test(): {0}".format(e))
+                abort(401)
+        ```
+        
+        If you're interested, I have a [super basic Flask API server](https://github.com/mdwallick/okta-admin-api) that fronts a subset of the Okta APIs (users, groups, factors) that uses this package as an example.
+        
+        ## Okta Configuration
+        **NOTE:** this package will **NOT** work with the "stock" organization authorization server as access tokens minted by that server are opaque and no public key is published.
+        
+        **Okta Org**
+        You need to have an Okta org with API Access management available. You can get a free developer account at https://developer.okta.com. Developer tenants will have API Access Management available.
+        
+        **"How can I tell if I have API Access Management enabled or not?"**
+        
+        It's actually quite easy. Copy this link and replace the subdomain with yours (a free developer tenant subdomain will look like dev-123456).
+        
+        https://<YOUR_SUBDOMAIN>.okta.com/oauth2/default/.well-known/oauth-authorization-server
+        
+        Paste the link with your subdomain in your browser and if you see this:
+        
+        ```json
+        {
+            "errorCode": "E0000015",
+            "errorSummary": "You do not have permission to access the feature you are requesting",
+            "errorLink": "E0000015",
+            "errorId": "oaeNmCVqapuSJWf017UlTMjbg",
+            "errorCauses": []
+        }
+        ```
+        You don't have API Access Management enabled in your org.
+        
+        **Create an OIDC Application**
+        Create a new OIDC application in Okta. This is where you'll get the client ID and client secret values. If you create an app that uses PKCE, a client secret value is not necessary and will not be generated.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
