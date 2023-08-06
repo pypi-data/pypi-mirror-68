@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: greetings-Shiloh6
+Version: 1.1.0
+Summary: A Python package that can say greetings in python.
+Home-page: https://github.com/Shiloh6/Greetings
+Author: Shiloh Hiebert
+Author-email: shilohhiebert@gmail.com
+License: MIT
+Description: # Greetings by Shiloh6
+        This is a python package that can say greetings in python.
+        
+        ## Usage
+        ```python
+        import greetings
+        
+        # Say hello to any name
+        greetings.sayHello('Shiloh')
+        
+        # Say bye to any name
+        greetings.sayBye('Shiloh)
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
