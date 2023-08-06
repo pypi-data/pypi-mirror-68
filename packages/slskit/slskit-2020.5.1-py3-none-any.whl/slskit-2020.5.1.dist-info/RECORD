@@ -1,0 +1,11 @@
+slskit/__init__.py,sha256=jZX8BNWYSepeAV17HJk9_hF2juqrWsXTLG-Xpsjf3zM,137
+slskit/__main__.py,sha256=C1mLZVH4WRHJ3FPwUPV3IZL--DeM9T2MsGfhRNJrnBk,2521
+slskit/commands.py,sha256=CIR-9OCLhBNdT54eD2HQNHWQ5o9YiaaWCsoQZ23zlVY,2257
+slskit/opts.py,sha256=uQxWIGMbQ_9qJQOrHWHRTJgxlFNLBbh9ERySSk-KSOc,3445
+slskit/pillar.py,sha256=tTSqUkNnHkIc3-xv90RdMZKSDnTcFLY41j_tzoLX9ro,680
+slskit/state.py,sha256=ojKUQCyTJHO0Us3SxFWZnytZ5l8PaCdegy19qasuz40,1526
+slskit/types.py,sha256=zOIzHfEteG5gjD69N72yUdCVIVRoNM7Ug8VxmZk0s5I,434
+slskit-2020.5.1.dist-info/entry_points.txt,sha256=ISzfU1WC4ose5OkK3aeG48maCxlXePkYbFQwjRESEKM,44
+slskit-2020.5.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+slskit-2020.5.1.dist-info/METADATA,sha256=qxTIJiX5d8TTNaFN6ztHVHAhsNEpd-7SihNiZG4Lp9g,3698
+slskit-2020.5.1.dist-info/RECORD,,
