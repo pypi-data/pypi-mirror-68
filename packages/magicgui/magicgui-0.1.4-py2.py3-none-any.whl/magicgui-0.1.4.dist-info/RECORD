@@ -1,0 +1,12 @@
+magicgui/__init__.py,sha256=E08sJCA74mTRu6fOcHx8EVJx8lYjd9QJzvjiaa5wqR0,439
+magicgui/_qt.py,sha256=-58ff98cEpfgD-ZYE6Rav9yXZyfROjUT7RavQpc3PMU,9207
+magicgui/_version.py,sha256=BYuxKSu2MecSQUtyi7Qo0FjCLE9mId665W9dAbns71U,116
+magicgui/core.py,sha256=QCwmpCZvg6_aMkk51uo2zZHMhcQvBG3TulFTPxnciA4,31433
+magicgui/_tests/__init__.py,sha256=sXlUwJBUU0zWHhTvnKzvAtB0_tOT3KKupZvJiJzwqaE,38
+magicgui/_tests/test_ qt.py,sha256=LgruVUKm_u1Z4R1FFcQo3nGJFEVQbHnOdCpipSiwxDg,2285
+magicgui/_tests/test_magicgui.py,sha256=NTH_cgFWKtZNoDU4CUZHcxMhY_bkpdt4r8TUGSpiClw,13615
+magicgui-0.1.4.dist-info/LICENSE,sha256=_ML8mBhVWpWxwYuIkEhLKIA1lKrWcMh7j3ecmQmA1Ok,1072
+magicgui-0.1.4.dist-info/METADATA,sha256=saOr8P54M1XPtJkABAftmV20B0r6t4hVDFthh2mQzSI,3801
+magicgui-0.1.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+magicgui-0.1.4.dist-info/top_level.txt,sha256=2pQfNnQjV4_PdSMUNRmY_nGjrTPLShDbi0YtoleSZJk,9
+magicgui-0.1.4.dist-info/RECORD,,
