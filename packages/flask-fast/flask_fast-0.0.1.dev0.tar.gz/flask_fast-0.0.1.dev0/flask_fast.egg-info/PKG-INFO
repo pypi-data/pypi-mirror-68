@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: flask-fast
+Version: 0.0.1.dev0
+Summary: Flask-fast. It's fast.
+Home-page: https://github.com/lucasdurand/flask-fast
+Author: Lucas Durand
+Author-email: lucas@lucasdurand.xyz
+License: UNKNOWN
+Description: # instantapi
+        
+        Quickly generate a flask (or Dash) app with endpoints exposed from arbitrary functions. Swagger UI will also be generated and default to the app root. 
+        
+        Flaskit. Dashit. It's instantapi.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test

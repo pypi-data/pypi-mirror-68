@@ -1,0 +1,10 @@
+dash
+flask
+pandas
+
+[dev]
+black
+pre-commit
+
+[test]
+coverage
