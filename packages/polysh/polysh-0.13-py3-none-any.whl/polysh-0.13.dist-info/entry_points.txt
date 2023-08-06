@@ -1,0 +1,3 @@
+[console_scripts]
+polysh = polysh.main:main
+
