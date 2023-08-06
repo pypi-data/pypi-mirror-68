@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ntc-netbox-plugin-onboarding
+Version: 0.9.2
+Summary: A plugin for NetBox to easily onboard new devices.
+Home-page: https://github.com/networktocode/ntc-netbox-plugin-onboarding
+License: Apache-2.0
+Keywords: netbox,network,onboarding,django
+Author: Info
+Author-email: info@networktocode.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: invoke (>=1.4.1,<2.0.0)
+Requires-Dist: napalm (>=2.5.0,<3.0.0)
+Project-URL: Repository, https://github.com/networktocode/ntc-netbox-plugin-onboarding
+Description-Content-Type: text/markdown
+
+# NetBox Onboaring plugin
+
+<!-- Build status with linky to the builds for ease of access. -->
+[![Build Status](https://travis-ci.com/networktocode/ntc-netbox-plugin-onboarding.svg?token=29s5AiDXdkDPwzSmDpxg&branch=master)](https://travis-ci.com/networktocode/ntc-netbox-plugin-onboarding)
+
+<!-- TODO: https://github.com/networktocode/ntc-netbox-plugin-onboarding/issues/3
+
+Improve this readme with accurate descriptions of what this does, as well as
+appropriate links to rendered documentation and standard sections such as:
+
+## Installation
+
+## Usage
+
+## Contributing
+
+-->
+
+
+```
+invoke --list
+Available tasks:
+
+  build            Build all docker images.
+  cli              Launch a bash shell inside the running NetBox container.
+  create-user      Create a new user in django (default: admin), will prompt for password
+  debug            Start NetBox and its dependencies in debug mode.
+  destroy          Destroy all containers and volumes.
+  makemigrations   Run Make Migration in Django
+  nbshell          Launch a nbshell session.
+  start            Start NetBox and its dependencies in detached mode.
+  stop             Stop NetBox and its dependencies.
+```
+
