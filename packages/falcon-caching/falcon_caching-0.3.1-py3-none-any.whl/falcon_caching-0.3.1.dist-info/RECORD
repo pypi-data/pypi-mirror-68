@@ -1,0 +1,16 @@
+falcon_caching/__init__.py,sha256=bS-G3Iq4glJvn5gN24pDotObr2cW6VATrMmgCI2VJFg,134
+falcon_caching/cache.py,sha256=8bQi7DKOfAUdlNKUeaAsXvVtmXFIvSZlpt0EQbN3i9E,27916
+falcon_caching/middleware.py,sha256=tYDwoa9CajBRnvhBc06OvSXFfPUcSdhVQQAf_8FtU6I,7085
+falcon_caching/options.py,sha256=YIIjV2k3JuBStJYMn36xTJucOMCYZXlT6WVps3PimGk,385
+falcon_caching/backends/__init__.py,sha256=04LoZ8WaDcrjcrIc5x9U80Jjg7MK-9bOl-HSojweJ_4,4331
+falcon_caching/backends/base.py,sha256=55trsYhwvq-RUCKqLtUZ2ydgmcTTkoTk_5e40Nk6xuU,6938
+falcon_caching/backends/filesystem.py,sha256=qZ7QFJG5Mo-db0NPSWRUDGt8Owlq3e84icxpZR2CIRc,7377
+falcon_caching/backends/memcache.py,sha256=c6kdC87egAfws7F9XZG5qKy7TCnOBMHAGmYs0fKtgno,11715
+falcon_caching/backends/null.py,sha256=yIBohvNo6Ub9OrefTZzWtGaVRumY0wv1TG42BXAHqb8,649
+falcon_caching/backends/redis.py,sha256=_B86F9_X8GmbNfejJvuDMffWQ6z-bkQbhqmeMpbm3Qk,9218
+falcon_caching/backends/simple.py,sha256=euGa1r_3UCpbdWV3bItDEm9g3cBkcnBFFGb2emYQgEo,3529
+falcon_caching/backends/uwsgicache.py,sha256=-uChY9myykqocI6cwG_7R5y6JJgZ4SBZeDRmcI0-UDQ,2587
+falcon_caching-0.3.1.dist-info/LICENSE,sha256=i9IMDTGf2rpg8Lz3WWPLXAc8iGiN4pu4zkppzeAyejU,1069
+falcon_caching-0.3.1.dist-info/WHEEL,sha256=bH-u_BY_RnUj9Z3s1FehhR3OifYy3H_vQHEtDkXLu84,81
+falcon_caching-0.3.1.dist-info/METADATA,sha256=nSHcB3xyvBSrcR2NpEyM2MXirrw39oytGoLpWwa4blY,6116
+falcon_caching-0.3.1.dist-info/RECORD,,
