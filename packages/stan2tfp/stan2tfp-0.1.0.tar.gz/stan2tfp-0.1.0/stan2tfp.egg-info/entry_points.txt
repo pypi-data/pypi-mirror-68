@@ -1,0 +1,3 @@
+[console_scripts]
+stan2tfp = stan2tfp.cli:main
+

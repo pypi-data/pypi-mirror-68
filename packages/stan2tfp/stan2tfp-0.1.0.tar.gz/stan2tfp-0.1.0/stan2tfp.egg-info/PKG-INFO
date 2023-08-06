@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stan2tfp
+Version: 0.1.0
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Home-page: https://github.com/adamhaber/stan2tfp
+Author: Adam Haber
+Author-email: adamhaber@gmail.com
+License: MIT license
+Description: UNKNOWN
+Keywords: stan,tfp,bayesian models
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
