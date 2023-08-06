@@ -1,0 +1,166 @@
+aiolos-tools
+============
+
+.. image:: https://img.shields.io/pypi/v/aiolos-tools.svg
+    :target: https://pypi.python.org/pypi/aiolos-tools
+    :alt: Latest PyPI version
+
+python libraries for use in the reduction and analysis of experimental or computational aerodynamic data
+
+Usage
+-----
+
+code_instrumentation.timer
+
+    add the following to any function or scope in a program and the execution time will be logged (must use logging library and add the "aiolos_code_instrumentation.timer" logger)
+
+    >>> from code_instrumentation.timer import timer
+    >>> _ = timer.Timer()
+
+    to display the execution time, add the timer logger and set the logging lever to TIMER
+
+    >>> import logging
+    >>> from aiolos_code_instrumentation.add_logging_level import TIMER
+    >>> log = logging.getLogger("aiolos_code_instrumentation.timer")
+    >>> log.setLevel(TIMER)
+
+    to output to terminal:
+
+    >>> streamhandler = logging.StreamHandler()
+    >>> streamhandler.setLevel(TIMER)
+    >>> log.addHandler(streamhandler)
+
+    this can all be achieved using a log.conf file as well.
+
+commissoning_tools.units
+
+    the unit conversions are to be used when importing data to convert the data to base SI units. e.g.:
+
+    >>> import commissoning_tools.units as units
+    >>> p = read(data_file_pressures_psi) * units.psi # Yeilds a pressure value in Pascals
+    >>> t = read(data_file_temperatre_C) + units.celsius # Yeilds a temperature value in Kelvin
+
+    base units are:
+        - length      --> meter, m
+        - time        --> second, s
+        - mass        --> kilogram, kg
+        - temperature --> Kelvin
+
+    derived units use only the base. i.e. velocity is m/s, pressure is Pa (N/m^2)
+
+
+Package Maintenance
+-------------------
+1. To contribute to the development of the Package, first clone the repository locally and create a development branch:
+
+    $ git clone https://github.com/csooriyakumaran/aiolos-tools
+
+    $ git branch <branch name>
+
+    $ git branch dev-cfd-tools (e.g.)
+
+2. Create a local environment (using venv or virtualenv) and activate
+
+    $ python3 -m venv <virtual environment name>
+
+    $ python3 -m venv venv (e.g. will create venv\\ directory)
+
+    $ venv\\Scripts\\activate.bat (windows)
+
+    $ source venv/bin/activate (linux)
+
+3. install requirements
+
+    $ python3 -m pip install --upgrade pip
+
+    $ python3 -m pip install -r requirements.txt
+
+4. When testing the functionality, ensure that the local version of the package is installed in the virtual environment
+
+    $ python3 -m pip install -e <path to local copy of aiolos-tools>
+
+    $ python3 -m pip install -e C:\\users\\christopher\\aiolos-tools (e.g.)
+
+Merging branches
+----------------
+
+1.
+
+Uploading changes
+-----------------
+1. Freeze development dependencies (remove an references to the aiolos-tools package if they exist)
+
+    $ python3 -m pip uninstall aiolos-tools
+
+    $ python3 -m pip freeze > requirements.txt
+
+2. commit changes to git:
+
+    $ git add .
+
+    $ git commit -m "commit message"
+
+3. Increment version:
+
+    $ bumpversion <major | minor | patch>
+
+    $ bumpversion minor (e.g.)
+
+4. Push to github:
+
+    $ git push <remote_name> <branch_name>
+
+    $ git push origin master (e.g.)
+
+5. Creating distribution archives (should only be done with master branch)
+
+    $ python3 -m pip install --upgrade setuptools wheel
+
+    $ python3 setup.py sdist bdist_wheel
+
+6. Uploading to PyPI (should only be done with master branch)
+
+    $ python3 -m twine upload dist/*
+
+Installation
+------------
+A. for use
+
+    $ python3 -m pip install aiolos-tools
+
+B. for development
+
+    $ git clone https://github.com/csooriyakumaran/aiolos-tools
+    $ python3 -m pip install -e <path to local copy of aiolos tools>
+    $ python3 -m pip install -e c:\\users\\christopher\\aiolos-tools
+
+Requirements
+^^^^^^^^^^^^
+
+    1. "numpy"
+    2. "matplotlib"
+    3. "scipy"
+    4. "pandas"
+
+Versions
+--------
+
+current version : 0.2.2
+
+changes:
+
+    0.0.0 : initial release based on aiolos-commissioning-tools 0.2.8
+
+    0.2.2 : added boundary layer and aspg procedural functions and some plotting features but removed @np.vectorize decorators in some places
+
+
+Compatibility
+-------------
+
+Licence
+-------
+
+Authors
+-------
+
+`aiolos-tools` was written by `Christopher Sooriyakumaran <c.sooriyakumaran@gmail.com>`_.
