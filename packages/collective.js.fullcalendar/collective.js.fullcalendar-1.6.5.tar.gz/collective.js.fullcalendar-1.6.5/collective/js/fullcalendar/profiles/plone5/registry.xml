@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.resources/fullcalendar"
+           interface="Products.CMFPlone.interfaces.IResourceRegistry">
+    <value key="css">
+      <element>++resource++collective.js.fullcalendar/fullcalendar.css</element>
+      <element>++resource++collective.js.fullcalendar/fullcalendar.plone5.print.css</element>
+    </value>
+    <value key="js">++resource++collective.js.fullcalendar/fullcalendar.min.js</value>
+  </records>
+
+  <records prefix="plone.resources/fullcalendar-gcal"
+           interface="Products.CMFPlone.interfaces.IResourceRegistry">
+    <value key="js">++resource++collective.js.fullcalendar/fullcalendar.gcal.js</value>
+  </records>
+
+
+  <records prefix="plone.bundles/fullcalendar"
+           interface="Products.CMFPlone.interfaces.IBundleRegistry">
+    <value key="resources">
+      <element>fullcalendar</element>
+      <element>fullcalendar-gcal</element>
+    </value>
+    <value key="depends">jqueryui</value>
+    <value key="csscompilation">++plone++static/fullcalendar-compiled.css</value>
+    <value key="jscompilation">++plone++static/fullcalendar-compiled.js</value>
+    <value key="compile">False</value>
+    <value key="enabled">True</value>
+  </records>
+</registry>
