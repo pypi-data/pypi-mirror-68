@@ -1,0 +1,4 @@
+numpy>=1.18.1
+psycopg2>=2.8.5
+ruamel.yaml>=0.16.10
+awesome-slugify>=1.6.5
