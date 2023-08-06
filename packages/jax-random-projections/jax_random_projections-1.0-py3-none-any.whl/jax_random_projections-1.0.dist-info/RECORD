@@ -1,0 +1,7 @@
+jax_random_projections/__init__.py,sha256=8LaWZV2y5yW1wcK1kmVP0kZHt_E7uz3dmpsTIXM4bDU,100
+jax_random_projections/sparse.py,sha256=1weP353EG5QyT4lhcAZcvhNvkA70O3cFKp9_wvmKSr8,1751
+jax_random_projections-1.0.dist-info/LICENSE.txt,sha256=M6UyepQAGcag_t9tdvVh3G0qPDecSm2irfSYQP03yUs,1074
+jax_random_projections-1.0.dist-info/METADATA,sha256=bhP_pjS2UpKiJHykRuQmsFkZRISIt0HspNt98nMLBf4,994
+jax_random_projections-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jax_random_projections-1.0.dist-info/top_level.txt,sha256=gVrN4B33ChEV5ZAKO45B4mlfxnLp-4vRB9C_U_YoNfg,23
+jax_random_projections-1.0.dist-info/RECORD,,
