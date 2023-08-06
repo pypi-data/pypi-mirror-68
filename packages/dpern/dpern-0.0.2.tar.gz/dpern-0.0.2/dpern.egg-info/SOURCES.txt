@@ -1,0 +1,8 @@
+README.md
+setup.py
+dpern/__main__.py
+dpern/dpern.py
+dpern.egg-info/PKG-INFO
+dpern.egg-info/SOURCES.txt
+dpern.egg-info/dependency_links.txt
+dpern.egg-info/top_level.txt
