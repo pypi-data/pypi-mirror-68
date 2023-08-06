@@ -1,0 +1,7 @@
+README.md
+setup.py
+GenuineAI/__init__.py
+GenuineAI.egg-info/PKG-INFO
+GenuineAI.egg-info/SOURCES.txt
+GenuineAI.egg-info/dependency_links.txt
+GenuineAI.egg-info/top_level.txt
