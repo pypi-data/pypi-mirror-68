@@ -1,0 +1,13 @@
+# Base Configuration file for artellapipe-tools-tagger
+
+# Specify the core modules where artellapipe-tools-tagger editors are located
+editors_module: artellapipe.tools.tagger.editors
+
+# Specify extra modules to find editors in. Usueful to specify project specific editors
+extra_editors_modules: []
+
+# List of all editors that should be enabled
+available_editors:
+  - Name
+  - Description
+  - Type

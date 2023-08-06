@@ -1,0 +1,28 @@
+# Base Configuration for Artella Shots
+
+# Defines dictionary of shots types used by the project
+types: {}
+
+# Defines the default size used by shot thumbs
+thumb_size: [200, 200]
+
+# Defines the name of the icon used by default in shot thumbs
+default_thumb: 'default'
+
+# Defines the default name used by shot
+default_name: 'New Shot'
+
+# Defines start frame for all shots
+start_frame: 101
+
+# File Type used to define shot layouts
+shot_layout_file_type: 'shot_layout'
+
+# Defines dictionary with default shot data info
+data:
+  id_attribute: 'id'
+  name_attribute: 'name'
+  thumb_attribute: 'thumb'
+  description_attribute: 'description'
+  sequence_attribute: 'sequence_name'
+  shot_rule: 'shot'

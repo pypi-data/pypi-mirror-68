@@ -1,0 +1,59 @@
+# Base Configuration file for artellapipe-launcher-plugins-dccselector
+
+maya:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+  plugins: {}
+
+3ds max:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+  plugins: {}
+
+nuke:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+
+houdini:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+
+photoshop:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+
+zbrush:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+
+substance painter:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []
+
+substance designer:
+  enabled: False
+  icon: color/maya
+  supported_versions: []
+  default_version: ""
+  departments: []

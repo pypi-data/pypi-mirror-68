@@ -1,0 +1,7 @@
+# Base Configuration file for artellapipe-libs-pyblish
+
+# Defines lib name
+name: Pyblish
+
+# Unique ID for the tool
+id: artellapipe-libs-pyblish

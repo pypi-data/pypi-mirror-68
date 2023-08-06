@@ -1,0 +1,8 @@
+# Base Configuration file for artellapipe-libs-ffmpeg
+
+# Defines lib name
+name: FFmpeg
+
+# Unique ID for the tool
+id: artellapipe-plugins-ffmpeg
+

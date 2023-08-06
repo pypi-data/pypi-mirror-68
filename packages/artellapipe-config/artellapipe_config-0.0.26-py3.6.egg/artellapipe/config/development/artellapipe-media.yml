@@ -1,0 +1,14 @@
+# Base Configuration used by Artella Media Manager
+
+# Define regex patters that MediaConfig classes must respect
+media_config_regex_pattern: '[a-zA-Z0-9_]\[.+\]'
+
+# Defines supported extensions for media profiles
+media_profiles_extensions:
+  - '.yml'
+
+# Defines a list of paths where media profiles are stored
+media_profiles_paths: []
+
+# Defines default profile that will be used by Media Manager
+default_profile: ''

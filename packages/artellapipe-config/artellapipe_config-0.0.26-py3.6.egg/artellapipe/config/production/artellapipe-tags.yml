@@ -1,0 +1,4 @@
+# Base Configuration for Artella Tags
+
+# Defines list of tag types
+types: []

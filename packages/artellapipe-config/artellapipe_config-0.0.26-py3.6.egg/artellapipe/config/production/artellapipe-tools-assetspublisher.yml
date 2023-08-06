@@ -1,0 +1,68 @@
+# Base Configuration file for artellapipe-tools-assetspublisher
+
+# Defines tool name
+name: Assets Publisher
+
+# Unique ID for the tool
+id: artellapipe-tools-assetspublisher
+
+# Defines logo name of the tool
+logo: assetspublisher_logo
+
+# Defines icon of the tool
+#icon: control_panel
+
+# Description of the tool
+description: Tool to publish assets into the pipeline
+
+# URL to tool documentation web page
+url: www.google.es
+
+# Tags relatedi with this tool
+tags: ['assets', 'publisher']
+
+# Defines the ID used by Sentry to monitorize error traces
+#sentry_id: https://503219603a654de1a4f34d677816a592@sentry.io/1764558
+
+# Directory where tool logger will be created
+logger_dir: ${join(user, "artellapipe", "logs", "tools")}
+
+# Default logger level used by tool logger
+logger_level: WARNING
+
+# Directory where tool resources are located
+resources_path: ${join(filename, "resources")}
+
+# File that defines tool logger settings
+logging_file: ${join(filename, "__logging__.ini")}
+
+# List that defines the import order of the tool modules
+import_order:
+  - widgets
+  - core
+
+# Menu representation of this tool
+menu_ui:
+  label: "Assets Publisher"
+  is_checkable: False
+  is_checked: False
+  load_on_startup: False
+
+# Tool Menu definition where this tool is registered
+menu:
+  - label: Assets
+    type: menu
+    children:
+      - id: artellapipe-tools-assetspublisher
+        type: tool
+
+# Tool Shelf definition
+shelf:
+  - name: Assets
+    children:
+      - id: artellapipe-tools-assetspublisher
+        displayLabel: False
+        type: tool
+
+
+publishers: {}

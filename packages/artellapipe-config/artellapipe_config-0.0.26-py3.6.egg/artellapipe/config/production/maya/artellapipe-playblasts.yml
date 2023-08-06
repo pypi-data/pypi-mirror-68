@@ -1,0 +1,146 @@
+# Base Configuration for Artella Playblasts in Maya used by Artella Playblasts Manager (not the tool)
+
+options:
+  camera:
+    displayGateMask: False
+    displayResolution: False
+    displayFilmGate: False
+    displayFieldChart: False
+    displaySafeAction: False
+    displaySafeTitle: False
+    displayFilmPivot: False
+    displayFilmOrigin: False
+    overscan: 1.0
+    depthOfField: False
+  display:
+    displayGradient: True
+    background: [0.631, 0.631, 0.631]
+    backgroundTop: [0.535, 0.617, 0.702]
+    backgroundBottom: [0.052, 0.052, 0.052]
+  displayRGB:
+    - "background"
+    - "backgroundTop"
+    - "backgroundBottom"
+  viewport:
+    rendererName: "vp2Renderer"
+    fogging: False
+    fogMode: "linear"
+    fogDensity: 1
+    fogStart: 1
+    fogEnd: 1
+    fogColor: [0, 0, 0, 0]
+    shadows: False
+    displayTextures: True
+    displayLights: "default"
+    useDefaultMaterial: False
+    wireframeOnShaded: False
+    displayAppearance: "smoothShaded"
+    selectionHiliteDisplay: False
+    headsUpDisplay: True
+    imagePlane: True
+    nurbsCurves: False
+    nurbsSurfaces: False
+    polymeshes: True
+    subdivSurfaces: False
+    planes: True
+    cameras: False
+    controlVertices: True
+    lights: False
+    grid: False
+    hulls: True
+    joints: False
+    ikHandles: False
+    deformers: False
+    dynamics: False
+    fluids: False
+    hairSystems: False
+    follicles: False
+    nCloths: False
+    nParticles: False
+    nRigids: False
+    dynamicConstraints: False
+    locators: True                   # We need to enable this option by default so Mask plugin can is showed
+    manipulators: False
+    dimensions: False
+    handles: False
+    pivots: False
+    textures: False
+    strokes: False
+    motionTrails: False
+  viewport2:
+    consolidateWorld: True
+    enableTextureMaxRes: False
+    bumpBakeResolution: 64
+    colorBakeResolution: 64
+    floatingPointRTEnable: True
+    floatingPointRTFormat: 1
+    gammaCorrectionEnable: False
+    gammaValue: 2.2
+    lineAAEnable: False
+    maxHardwareLights: 8
+    motionBlurEnable: False
+    motionBlurSampleCount: 8
+    motionBlurShutterOpenFraction: 0.2
+    motionBlurType: 0
+    multiSampleCount: 8
+    multiSampleEnable: False
+    singleSidedLighting: False
+    ssaoEnable: False
+    ssaoAmount: 1.0
+    ssaoFilterRadius: 16
+    ssaoRadius: 16
+    ssaoSamples: 16
+    textureMaxResolution: 4096
+    threadDGEvaluation: False
+    transparencyAlgorithm: 1
+    transparencyQuality: 0.33
+    useMaximumHardwareLights: True
+    vertexAnimationCache: 0
+    hwFogAlpha: 1.0
+    hwFogFalloff: 0
+    hwFogDensity: 0.1
+    hwFogEnable: False
+    holdOutDetailMode: 1
+    hwFogEnd: 100.0
+    holdOutMode: True
+    hwFogColorR: 0.5
+    hwFogColorG: 0.5
+    hwFogColorB: 0.5
+    hwFogStart: 0.0
+      
+object_types:
+  NURBS Curves: "nurbsCurves"
+  NURBS Surfaces: "nurbsSurfaces"
+  NURBS CVs: "controlVertices"
+  NURBS Hulls: "hulls"
+  Polygons: "polymeshes"
+  Subdiv Surfaces: "subdivSurfaces"
+  Planes: "planes"
+  Lights: "lights"
+  Cameras: "cameras"
+  Image Planes: "imagePlane"
+  Joints: "joints"
+  IK Handles: "ikHandles"
+  Deformers: "deformers"
+  Dynamics: "dynamics"
+  Particle Instancers: "particleInstancers"
+  Fluids: "fluids"
+  Hair Systems: "hairSystems"
+  Follicles: "follicles"
+  nCloths: "nCloths"
+  nParticles: "nParticles"
+  nRigids: "nRigids"
+  Dynamic Constraints: "dynamicConstraints"
+  Locators: "locators"
+  Dimensions: "dimensions"
+  Pivots: "pivots"
+  Handles: "handles"
+  Textures Placements: "textures"
+  Strokes: "strokes"
+  Motion Trails: "motionTrails"
+  Plugin Shapes: "pluginShapes"
+  Clip Ghosts: "clipGhosts"
+  Grease Pencil: "greasePencils"
+  Manipulators: "manipulators"
+  Grid: "grid"
+  HUD: "hud"

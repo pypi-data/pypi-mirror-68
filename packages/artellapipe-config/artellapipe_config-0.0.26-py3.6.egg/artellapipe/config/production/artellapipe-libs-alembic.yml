@@ -1,0 +1,7 @@
+# Base Configuration file for artellapipe-libs-alembic
+
+# Defines lib name
+name: Alembic
+
+# Unique ID for the tool
+id: artellapipe-plugins-alembic

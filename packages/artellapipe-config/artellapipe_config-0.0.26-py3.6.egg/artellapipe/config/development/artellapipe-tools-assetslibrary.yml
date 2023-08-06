@@ -1,0 +1,4 @@
+# Base Configuration file for artellapipe-tools-assetslibrary
+
+# Defines the files that are supported by the Assets Library
+supported_files: []
