@@ -1,0 +1,14 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+ari/__init__.py
+ari/client.py
+ari/model.py
+py3ari.egg-info/PKG-INFO
+py3ari.egg-info/SOURCES.txt
+py3ari.egg-info/dependency_links.txt
+py3ari.egg-info/requires.txt
+py3ari.egg-info/top_level.txt
