@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pudgetool
+Version: 1.0
+Summary: pudge tools is automatic coding tools
+Home-page: https://github.com/ThePolarNight/pudgetools.git
+Author: zhouh
+Author-email: zhouhui295@163.com
+License: MIT Licence
+Keywords: pudge tools,CLI tools
+Platform: any
+Requires-Dist: requests
+Requires-Dist: Click
+
+pudge convenient tools
+
+

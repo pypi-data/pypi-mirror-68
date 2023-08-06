@@ -1,0 +1,3 @@
+[console_scripts]
+pudge = pudge.entry_point:entry_point
+
