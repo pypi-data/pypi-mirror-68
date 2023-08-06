@@ -1,0 +1,12 @@
+setup.py
+grabutils/__init__.py
+grabutils.egg-info/PKG-INFO
+grabutils.egg-info/SOURCES.txt
+grabutils.egg-info/dependency_links.txt
+grabutils.egg-info/requires.txt
+grabutils.egg-info/top_level.txt
+grabutils/bs/__init__.py
+grabutils/bs/pageobj.py
+tests/__init__.py
+tests/conftest.py
+tests/test_bs_pageobj.py
