@@ -1,0 +1,7 @@
+apscheduler
+
+[dev]
+pylint
+coverage
+flask
+twine
