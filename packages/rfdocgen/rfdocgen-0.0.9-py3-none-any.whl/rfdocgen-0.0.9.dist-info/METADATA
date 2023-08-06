@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: rfdocgen
+Version: 0.0.9
+Summary: Generate and view Robot Framework Documentation live
+Home-page: https://github.com/tobikris/rfdocgen
+Author: Tobias Krischer
+Author-email: tobias.krischer@elyxon.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: Jinja2 (==2.10.1)
+Requires-Dist: livereload (==2.6.1)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: tornado (==6.0.3)
+Requires-Dist: Werkzeug (==0.15.4)
+
+# rfdocgen
+
+Generate and view Robot Framework Documentation live.
+
+
