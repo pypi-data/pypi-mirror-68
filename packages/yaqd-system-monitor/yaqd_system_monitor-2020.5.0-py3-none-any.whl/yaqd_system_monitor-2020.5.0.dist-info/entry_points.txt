@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-system-monitor = yaqd_system_monitor._system_monitor:SystemMonitor.main
+
