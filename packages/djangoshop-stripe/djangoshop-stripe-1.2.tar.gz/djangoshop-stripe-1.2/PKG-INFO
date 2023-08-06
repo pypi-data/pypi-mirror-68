@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: djangoshop-stripe
+Version: 1.2
+Summary: Stripe Payment Provider Integration for django-shop
+Home-page: https://github.com/jrief/djangoshop-stripe
+Author: Jacob Rief
+Author-email: jacob.rief@gmail.com
+License: MIT License
+Description: # Stripe Payment Provider Integration for django-shop
+        
+        This integrates the Stripe for django-shop version 1.0 and above.
+        
+        
+        ## Installation
+        
+        for django-shop version 1.0.x:
+        
+        ```
+        pip install djangoshop-stripe<1.1
+        ```
+        
+        
+        ## Configuration
+        
+        In ``settings.py`` of the merchant's project:
+        
+        Add ``'shop_stripe'`` to ``INSTALLED_APPS``.
+        
+        At [Stripe](https://stripe.com/) create an account and apply for a public/private key-pair. Then add
+        these keys:
+        
+        ```
+        SHOP_STRIPE = {
+            'PUBKEY': 'pk_<public-key-as-delivered-by-Stripe>',
+            'APIKEY': 'sk_<api-key-as-delivered-by-Stripe>',
+            'PURCHASE_DESCRIPTION': _("Thanks for purchasing at MyShop"),
+        }
+        ```
+        
+        Add ``'shop_stripe.modifiers.StripePaymentModifier'`` to the list of ``SHOP_CART_MODIFIERS``.
+        
+        Add ``'shop_stripe.payment.OrderWorkflowMixin'`` to the list of ``SHOP_ORDER_WORKFLOWS``.
+        
+        Add ``'shop_stripe.context_processors.public_keys'`` to the list of template
+        ``OPTIONS['context_processors']``
+        
+        
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
