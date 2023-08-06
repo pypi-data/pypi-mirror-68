@@ -1,0 +1,17 @@
+BASELINE DIRECTORY: C:\Users\mjaquier\PycharmProjects\aithermal\tests\Calibrated\Parameter\Baseline
+GRADIENT: 30
+ISOTHERMS:
+- 190
+- 220
+- 350
+PROJECT DIRECTORY: C:\Users\mjaquier\PycharmProjects\aithermal\tests\Calibrated
+RMS: false
+Techniques:
+  GC: false
+  IR: true
+  MS: true
+  STA: true
+WAVE LENGTHS:
+- 2950
+- 1900
+- 1400
