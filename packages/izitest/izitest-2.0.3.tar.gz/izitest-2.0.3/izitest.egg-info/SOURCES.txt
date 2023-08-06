@@ -1,0 +1,15 @@
+README.rst
+setup.py
+izitest/__init__.py
+izitest/betterprint.py
+izitest/checks.py
+izitest/path.py
+izitest/test.py
+izitest/testcase.py
+izitest/testfile.py
+izitest/testsuite.py
+izitest.egg-info/PKG-INFO
+izitest.egg-info/SOURCES.txt
+izitest.egg-info/dependency_links.txt
+izitest.egg-info/requires.txt
+izitest.egg-info/top_level.txt
